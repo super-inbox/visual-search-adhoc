@@ -1,0 +1,59 @@
+query,intent,old_count_baseline,old_bucket_baseline,new_count_pr512,new_strict_insp,new_strict_tpl,new_bucket_pr512,delta,notes
+单词,consumer,10,rich,530,530,0,rich,same,Count grew from capped-10 to actual 530; still rich
+卡通,consumer,10,rich,587,587,0,rich,same,Count grew to actual 587; still rich
+吉伊卡哇,consumer,10,rich,25,25,0,rich,same,Chiikawa fandom content confirmed rich
+家居装饰,hybrid/consumer,10,rich,38,38,0,rich,same,Home decor content rich
+工程,consumer,10,rich,11,11,0,rich,same,Engineering content rich
+植物,consumer,10,rich,200,200,0,rich,same,Botanical content very rich
+水果中文,creative,0,empty,0,0,0,empty,same,Known c1 alias gap — bigram path misses 水果+中文 combo
+电商详情图,creative,4,thin,23,23,0,rich,improved,P0.1 tag expansion surfaced e-commerce detail page content
+自行车,consumer,10,rich,24,24,0,rich,same,Bicycle content rich
+葡萄酒,consumer,10,rich,18,18,0,rich,same,Wine content rich
+蔬菜,consumer,10,rich,31,31,0,rich,same,Vegetable content rich
+词汇,hybrid/creative,10,rich,611,611,3,rich,same,Vocabulary is core catalog — 3 templates + 608 inspirations
+趣味经济学知识科普,creative,6,moderate,20,20,0,rich,improved,Economics infographic content expanded via P0.1 metadata
+音乐,consumer,10,rich,71,71,0,rich,same,Music content rich
+食物,consumer,10,rich,168,168,0,rich,same,Food content very rich
+香薰,consumer,10,rich,5,5,0,moderate,regressed,Possible P0.1 re-enrichment side-effect — inspect tag coverage on aromatherapy records
+唯美春天,consumer,10,rich,59,59,0,rich,same,Aesthetic spring content rich
+证件照,creative,10,rich,16,16,0,rich,same,ID photo / portrait content rich
+手作,creative,10,rich,48,48,0,rich,same,DIY craft content rich
+historical character,consumer,7,moderate,155,155,0,rich,improved,Historical character content now very rich — P0.1 expansion effective
+future characters,consumer,8,moderate,35,35,0,rich,improved,Future / sci-fi character content now rich
+homophones and homonyms,creative,4,thin,6,6,0,moderate,improved,Homophones content improved; still below rich threshold
+english-chinese,creative,10,rich,282,282,0,rich,same,Bilingual content very rich
+language learning expressions,creative,10,rich,207,207,0,rich,same,Language learning expressions very rich
+global influence,consumer,0,empty,38,38,0,rich,improved,P0.1 expansion rescued this query — cultural/global content now surfaces
+remote destination,consumer,0,empty,177,177,0,rich,improved,Travel destination content now very rich — P0.1 alias expansion effective
+unique cultural experiences,consumer,0,empty,0,0,0,empty,same,Known c3 gap — too abstract for current catalog
+short city escapes,consumer,3,thin,177,177,0,rich,improved,Short trip / city travel content now very rich
+creative comfort food,hybrid/consumer,10,rich,117,117,0,rich,same,Comfort food content rich
+mbti marvel,hybrid/creative,7,moderate,74,74,0,rich,improved,Marvel MBTI content now rich — template + inspiration expansion
+spring flowers,consumer,10,rich,71,71,0,rich,same,Spring flower content rich
+反义词,creative,10,rich,57,57,0,rich,same,Antonym vocabulary content rich
+paper cutting,creative,10,rich,49,49,0,rich,same,Paper cutting content rich
+met gala,consumer,10,rich,40,40,0,rich,same,Met Gala fashion content rich
+动物 词汇,creative,10,rich,172,172,0,rich,same,Animal vocabulary content very rich — core use case
+wedding planner,creative,5,moderate,28,28,0,rich,improved,Wedding content now rich — P0.1 expansion effective
+minimalist autumn outfit for japan travel,hybrid/consumer,0,empty,11,11,0,rich,improved,Fashion + Japan travel content now surfaces via enriched tags
+infj vs entp dating compatibility chart,creative,0,empty,0,0,0,empty,same,Known c2 gap — MBTI compatibility chart content not yet generated
+cuban sandwich recipe poster,creative,4,thin,1,1,0,thin,same,Recipe gap remains; only 1 Cuban sandwich item
+bilingual flashcards for kids learning korean fruits,creative,5,moderate,1,1,0,thin,regressed,"6-token strict query; only 1 exact match record; P0.1 may have narrowed tags on sibling vocab records"
+watercolor map of europe travel destinations,hybrid/creative,2,thin,1,1,0,thin,same,Watercolor map gap remains; only 1 Europe map item
+monstera plant care guide infographic,hybrid/creative,8,moderate,105,105,0,rich,improved,Plant care infographic content now very rich — P0.1 tag expansion
+marvel mbti character chart 16 types,creative,7,moderate,92,92,0,rich,improved,Marvel MBTI chart now rich — matches well via fandom + mbti tags
+lunar new year red envelope graphic design,creative,4,thin,8,8,0,moderate,improved,Red envelope graphic design content improved — alias batch effective
+1950s vintage diner illustration retro poster,creative,10,rich,323,323,0,rich,same,Vintage diner poster content very rich
+before after kitchen organization makeover,creative,3,thin,2,2,0,thin,same,Before-after content thin — only 2 kitchen items
+phonics worksheets kindergarten,creative,4,thin,0,0,0,empty,regressed,Phonics alias fix shipped on baobao branch not yet in main — needs merge or re-alias
+Spanish vocabulary printable,creative,4,thin,15,15,0,rich,improved,Spanish vocabulary now rich — P0.1 expansion + alias top-up effective
+ESL flashcards printable,creative,4,thin,16,16,0,rich,improved,ESL flashcards now rich — flashcard + printable alias expansion effective
+easy weeknight dinners healthy,hybrid/creative,0,empty,0,0,0,empty,same,Recipe gap — no weeknight dinner content generated yet
+gluten free dinner ideas,hybrid/creative,0,empty,0,0,0,empty,same,Recipe gap — no gluten-free content generated yet
+meal prep weekly recipes,creative,0,empty,5,5,0,moderate,improved,Meal prep content now surfaces — partial rescue via recipe + weekly alias
+cozy reading aesthetic,hybrid/consumer,1,thin,103,103,0,rich,improved,Cozy reading content now very rich — book + lifestyle alias expansion
+book lovers gift guide,hybrid/creative,6,moderate,7,7,0,moderate,same,Book lovers content moderate — stable
+chiikawa,consumer,10,rich,14,14,0,rich,same,Chiikawa fandom content rich
+samurai,consumer,10,rich,9,9,0,moderate,regressed,Samurai content dropped just below rich threshold — minor; 9 hits
+genshin,consumer,7,moderate,7,7,0,moderate,same,Genshin moderate — fandom template covers but not deep
+maps,consumer,10,rich,199,199,0,rich,same,Map content very rich

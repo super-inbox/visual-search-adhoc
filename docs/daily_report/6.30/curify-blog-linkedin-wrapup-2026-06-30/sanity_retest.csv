@@ -1,0 +1,11 @@
+query,result_count,relevance_observation,template_or_content_found,notes
+FDE meme frontend deployed engineer,"0 (manual live)",low,none,Manual live verification: no results.
+Backend Engineer rear wheel drive meme,"0 (manual live)",low,none,Manual live verification: no results.
+ESL flashcards printable,"manual live fallback; categories shown 16/16/16/15",high,flashcards + template results,Manual live verification: fallback rewrites triggered and results are strongly aligned with ESL / printable / flashcards intent.
+Spanish vocabulary printable,"manual live; categories shown 15/15/15/15",high,Language Learning Card template + flashcards,Manual live verification: strong match for bilingual vocabulary printable intent.
+青铜打工小兽,"manual live fallback; categories shown 15/15/11/3/3",medium,LLM rewrite / multi-query fallback,"Manual live verification: fallback expanded to bronze beast office worker / bronze worker mascot / bronze artifact employee. Recall rescued, but ranking remains noisy."
+动物 词汇,"manual live; categories shown 20/13/7/2/2",medium-high,animal vocabulary / science illustration content,"Manual live verification: strong recall, though not all top results are vocabulary-specific."
+genshin,"manual live; categories shown 7/7/4/4/3",high,Character IP / social media / illustration,Manual live verification: relevant Genshin results clearly appear.
+canva presentation template,"0 (manual live)",low,none,Manual live verification: no results.
+vocabulary flashcards,"manual live; categories shown 20/15/11/10/5",high,flashcards / study sheets / infographics,Manual live verification: strong recall and good relevance.
+classroom poster printable,"manual live; categories shown 16/16/11",medium,templates + printable poster results,"Manual live verification: results exist and templates are shown, but top results are somewhat broad/noisy (seasonal posters/calendars, not all classroom-specific)."
