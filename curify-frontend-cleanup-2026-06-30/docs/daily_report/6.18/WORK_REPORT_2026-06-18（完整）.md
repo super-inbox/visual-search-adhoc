@@ -23,7 +23,7 @@
 
 每条 inspiration 的自身 topics 与父模板 topics 合并去重，生成 `mergedTopics`；对 Top-20 ranked inspirations 计算 topic 共现频次，每条结果对同一 topic 只计一次。**Intent chip 数据来源从原先的 matched templates 改为 Top-20 result-level 共现证据**，chip 完全由当前检索结果支撑，不是运行时 LLM zero-shot。
 
-**8 个高层 Intent Cluster**（基于老板指定方向，完成 topic slug 映射与 ranking）
+**8 个高层 Intent Cluster**
 
 | Cluster | 中文标签 |
 |---|---|
