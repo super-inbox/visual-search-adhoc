@@ -1,0 +1,175 @@
+{
+  "index": 53,
+  "query": "cozy reading aesthetic",
+  "group": "pinterest-discovery-2026-05-29",
+  "curifyUrl": "http://localhost:3000/en/search?q=cozy%20reading%20aesthetic",
+  "finalUrl": "http://localhost:3000/search?q=cozy+reading+aesthetic",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:24:55.358Z",
+  "labels": [
+    {
+      "text": "Visual & Art20",
+      "type": "chip",
+      "href": "/en/search?q=cozy%20reading%20aesthetic&intent=visual-art"
+    },
+    {
+      "text": "Social & Personal19",
+      "type": "chip",
+      "href": "/en/search?q=cozy%20reading%20aesthetic&intent=social-personal"
+    },
+    {
+      "text": "Storytelling & Identity12",
+      "type": "chip",
+      "href": "/en/search?q=cozy%20reading%20aesthetic&intent=storytelling-identity"
+    },
+    {
+      "text": "Learning Materials8",
+      "type": "chip",
+      "href": "/en/search?q=cozy%20reading%20aesthetic&intent=learning-materials"
+    },
+    {
+      "text": "Travel & Place6",
+      "type": "chip",
+      "href": "/en/search?q=cozy%20reading%20aesthetic&intent=travel-place"
+    },
+    {
+      "text": "📚Reading",
+      "type": "suggestion",
+      "href": "/en/topics/reading"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "cozy winter tea",
+      "subtitle": "cozy winter tea",
+      "templateId": "watercolor-theme-collage-illustration",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/watercolor-theme-collage-illustration/template-watercolor-theme-collage-illustration-cozy-winter-tea?media=image&from=%2Fsearch%3Fq%3Dcozy%2Breading%2Baesthetic&ids=template-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-lifestyle-info-card-reading-habits%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-vintage-travel-scrapbook-poster-langkawi%2Ctemplate-vintage-travel-scrapbook-poster-phnom-penh%2Ctemplate-vintage-travel-scrapbook-poster-riga%2Ctemplate-vintage-collage-fashion-collection-poster-denim-chic-stella-mccartney%2Ctemplate-vintage-collage-fashion-collection-poster-fall-fashion-vibes-cicybell%2Ctemplate-vintage-collage-fashion-collection-poster-parisian-vibes-alba%2Ctemplate-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-figure-principles-infographic-albert-einstein%2Ctemplate-figure-principles-infographic-leonardo-da-vinci%2Ctemplate-figure-principles-infographic-marie-curie%2Ctemplate-quote-poster-generator-farewell-my-concubine%2Ctemplate-quote-poster-generator-green-book%2Ctemplate-quote-poster-generator-natural-ways%2Ctemplate-book-minimalist-gardening-beginners%2Ctemplate-book-minimalist-personal-growth-wellness%2Ctemplate-phonics-consonant-blend-bl%2Ctemplate-phonics-consonant-blend-ch%2Ctemplate-phonics-consonant-blend-gr%2Ctemplate-ai-outfit-try-on-poster-cozy-summer-male%2Ctemplate-kids-theme-fill-in-worksheet-best-friend%2Ctemplate-kids-theme-fill-in-worksheet-daily-routine%2Ctemplate-kids-theme-fill-in-worksheet-dream-career",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-theme-collage-illustration-cozy-winter-tea-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "cozy winter tea | cozy winter tea"
+    },
+    {
+      "rank": 2,
+      "title": "plant lovers",
+      "subtitle": "plant lovers",
+      "templateId": "book-minimalist",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/book-minimalist/template-book-minimalist-plant-lovers?media=image&from=%2Fsearch%3Fq%3Dcozy%2Breading%2Baesthetic&ids=template-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-lifestyle-info-card-reading-habits%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-vintage-travel-scrapbook-poster-langkawi%2Ctemplate-vintage-travel-scrapbook-poster-phnom-penh%2Ctemplate-vintage-travel-scrapbook-poster-riga%2Ctemplate-vintage-collage-fashion-collection-poster-denim-chic-stella-mccartney%2Ctemplate-vintage-collage-fashion-collection-poster-fall-fashion-vibes-cicybell%2Ctemplate-vintage-collage-fashion-collection-poster-parisian-vibes-alba%2Ctemplate-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-figure-principles-infographic-albert-einstein%2Ctemplate-figure-principles-infographic-leonardo-da-vinci%2Ctemplate-figure-principles-infographic-marie-curie%2Ctemplate-quote-poster-generator-farewell-my-concubine%2Ctemplate-quote-poster-generator-green-book%2Ctemplate-quote-poster-generator-natural-ways%2Ctemplate-book-minimalist-gardening-beginners%2Ctemplate-book-minimalist-personal-growth-wellness%2Ctemplate-phonics-consonant-blend-bl%2Ctemplate-phonics-consonant-blend-ch%2Ctemplate-phonics-consonant-blend-gr%2Ctemplate-ai-outfit-try-on-poster-cozy-summer-male%2Ctemplate-kids-theme-fill-in-worksheet-best-friend%2Ctemplate-kids-theme-fill-in-worksheet-daily-routine%2Ctemplate-kids-theme-fill-in-worksheet-dream-career",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-minimalist-plant-lovers-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "plant lovers | plant lovers"
+    },
+    {
+      "rank": 3,
+      "title": "reading habits",
+      "subtitle": "reading habits",
+      "templateId": "lifestyle-info-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-reading-habits?media=image&from=%2Fsearch%3Fq%3Dcozy%2Breading%2Baesthetic&ids=template-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-lifestyle-info-card-reading-habits%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-vintage-travel-scrapbook-poster-langkawi%2Ctemplate-vintage-travel-scrapbook-poster-phnom-penh%2Ctemplate-vintage-travel-scrapbook-poster-riga%2Ctemplate-vintage-collage-fashion-collection-poster-denim-chic-stella-mccartney%2Ctemplate-vintage-collage-fashion-collection-poster-fall-fashion-vibes-cicybell%2Ctemplate-vintage-collage-fashion-collection-poster-parisian-vibes-alba%2Ctemplate-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-figure-principles-infographic-albert-einstein%2Ctemplate-figure-principles-infographic-leonardo-da-vinci%2Ctemplate-figure-principles-infographic-marie-curie%2Ctemplate-quote-poster-generator-farewell-my-concubine%2Ctemplate-quote-poster-generator-green-book%2Ctemplate-quote-poster-generator-natural-ways%2Ctemplate-book-minimalist-gardening-beginners%2Ctemplate-book-minimalist-personal-growth-wellness%2Ctemplate-phonics-consonant-blend-bl%2Ctemplate-phonics-consonant-blend-ch%2Ctemplate-phonics-consonant-blend-gr%2Ctemplate-ai-outfit-try-on-poster-cozy-summer-male%2Ctemplate-kids-theme-fill-in-worksheet-best-friend%2Ctemplate-kids-theme-fill-in-worksheet-daily-routine%2Ctemplate-kids-theme-fill-in-worksheet-dream-career",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-reading-habits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "reading habits | reading habits"
+    },
+    {
+      "rank": 4,
+      "title": "AI Outfit Try-On Poster preview 1",
+      "subtitle": "",
+      "templateId": "ai-outfit-try-on-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/ai-outfit-try-on-poster",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-ai-outfit-try-on-poster-cozy-summer-male-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "AI Outfit Try-On Poster preview 1"
+    },
+    {
+      "rank": 5,
+      "title": "Famous Figure Principles Infographic preview 1",
+      "subtitle": "",
+      "templateId": "figure-principles-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/figure-principles-infographic?famous_figure=albert+einstein",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-figure-principles-infographic-albert-einstein-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Famous Figure Principles Infographic preview 1"
+    },
+    {
+      "rank": 6,
+      "title": "Travel Scrapbook Posters preview 1",
+      "subtitle": "",
+      "templateId": "vintage-travel-scrapbook-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/vintage-travel-scrapbook-poster?destination=langkawi",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vintage-travel-scrapbook-poster-langkawi-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Travel Scrapbook Posters preview 1"
+    },
+    {
+      "rank": 7,
+      "title": "Watercolor Travel Journals preview 1",
+      "subtitle": "",
+      "templateId": "watercolor-travel-journal-collage",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/watercolor-travel-journal-collage?expedition_theme=coastal+vibe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-travel-journal-collage-coastal-vibe-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Watercolor Travel Journals preview 1"
+    },
+    {
+      "rank": 8,
+      "title": "Phonics Learning Poster preview 1",
+      "subtitle": "",
+      "templateId": "phonics-consonant-blend",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/phonics-consonant-blend?phonics_blend=bl",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-phonics-consonant-blend-bl-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Phonics Learning Poster preview 1"
+    },
+    {
+      "rank": 9,
+      "title": "Book Recommendation Grid Poster preview 1",
+      "subtitle": "",
+      "templateId": "book-recommendation-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/book-recommendation-grid-poster?book_category=fantasy+adventures",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-recommendation-grid-poster-fantasy-adventures-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Book Recommendation Grid Poster preview 1"
+    },
+    {
+      "rank": 10,
+      "title": "Quote Poster preview 1",
+      "subtitle": "",
+      "templateId": "quote-poster-generator",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/quote-poster-generator?quote_text=farewell+my+concubine",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-quote-poster-generator-farewell-my-concubine-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Quote Poster preview 1"
+    }
+  ],
+  "counts": {
+    "labels": 8,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/053-cozy-reading-aesthetic/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/053-cozy-reading-aesthetic/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

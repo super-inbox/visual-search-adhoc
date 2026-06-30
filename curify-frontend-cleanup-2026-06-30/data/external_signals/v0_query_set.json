@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-06-19",
+  "phase": "v0_pilot",
+  "description": "Five pilot queries for the V0 external-signal manual collection. Selected to validate schema and manual workflow before scaling to 20 queries.",
+  "queries": [
+    {
+      "query": "cat",
+      "category": "broad_entity",
+      "reason_selected": "Single broad noun; rich Curify catalog; will surface many sub-intents across multiple clusters. Validates that the schema handles high-suggestion-volume queries without artificial limits.",
+      "known_curify_status": {
+        "bucket": "rich",
+        "strict_hits": 33,
+        "strict_template_count": 5,
+        "top_templates": [
+          "lunar-new-year-red-envelope-set × 8",
+          "pet-life-journey-infographic × 6",
+          "disney-character-color-grid-art × 5",
+          "pet-care-guide × 4"
+        ],
+        "eval_status": "not_in_eval_set",
+        "eval_notes": "Not a tracked eval query. Mentioned in 2026-06-18 daily report as a browser-validation query for the multi-intent chip implementation."
+      },
+      "repository_evidence": "Referenced in docs/daily_report/2026-06-18.md as a browser-validated query for the intent-cluster chip system. score_user_queries.cjs output: 33 strict hits, rich bucket."
+    },
+    {
+      "query": "paris",
+      "category": "place",
+      "reason_selected": "Canonical place query with documented multi-intent ambiguity (travel poster / watercolor map / city guide / itinerary / scrapbook). Validated in eval-framework-visual-intent-routing-2026-06-15.md as a worked example. Also the parent query of the sparse 'paris travel itinerary'.",
+      "known_curify_status": {
+        "bucket": "rich",
+        "strict_hits": 35,
+        "strict_template_count": 4,
+        "top_templates": [
+          "city-miniature × 15",
+          "tourist-spot-watercolor-map-infographic × 6",
+          "global-city-walkability-infographic-card × 6",
+          "city-mbti × 5"
+        ],
+        "eval_status": "not_in_eval_set",
+        "eval_notes": "Not a tracked eval query. Paris travel itinerary (child query) is in the eval set as a WARN."
+      },
+      "repository_evidence": "Named as a worked example in docs/eval-framework-visual-intent-routing-2026-06-15.md (the VIR routing doc). The Paris landmark record was semantically reviewed in claude_prompt6_5_paris_topic_review.md. The watercolor-map-infographic template explicitly generates an ordered visual tour route."
+    },
+    {
+      "query": "science poster",
+      "category": "learning_reference",
+      "reason_selected": "Highest-hit query in the pilot (221 strict hits across 17 templates). Validates schema for ultra-rich queries. Mentioned in the 2026-06-18 daily report as a browser-validated query. Broad enough to span learning-materials and visual-art clusters simultaneously.",
+      "known_curify_status": {
+        "bucket": "rich",
+        "strict_hits": 221,
+        "strict_template_count": 17,
+        "top_templates": [
+          "herbal × 77",
+          "food × 40",
+          "weird-cold-knowledge-popular-science-card × 15",
+          "figure-principles-infographic × 11"
+        ],
+        "eval_status": "not_in_eval_set",
+        "eval_notes": "Not a tracked eval query. Referenced in 2026-06-18 daily report as browser-validated."
+      },
+      "repository_evidence": "Cited in docs/daily_report/2026-06-18.md as a browser-validation query for the intent-cluster chip implementation. Extremely high hit count indicates broad alias coverage across the science/learning content family."
+    },
+    {
+      "query": "paris travel itinerary",
+      "category": "travel_sparse",
+      "reason_selected": "Known sparse-content query with WARN status in the eval (actual: thin, 2 results vs expected: rich). Highest-value target for external-signal research: if Bing and Pinterest show strong refinement demand for this query, it confirms a real catalog gap. The Paris watercolor-map record reviewed in Prompt 6.5 is one of the 2 matching results.",
+      "known_curify_status": {
+        "bucket": "thin",
+        "strict_hits": 2,
+        "strict_template_count": 1,
+        "top_templates": [
+          "tourist-spot-watercolor-map-infographic × 1",
+          "city-miniature × 1"
+        ],
+        "eval_status": "WARN",
+        "eval_notes": "source=prefill-pool-2026-06-14; expected=rich; actual=thin; hits=2. The discrepancy between score_user_queries (7 hits, moderate) and the eval (2 hits, thin) reflects different pipeline paths: score_user_queries uses raw alias matching; the eval pipeline applies the full strict-AND + relaxed + rewrite path with result deduplication.",
+        "score_user_queries_raw": "7 hits, moderate bucket (raw alias scorer; broader than eval pipeline)"
+      },
+      "repository_evidence": "Explicitly in search_eval_set.json as a WARN query (prefill-pool-2026-06-14, expected=rich). Reviewed in claude_prompt6_5_paris_topic_review.md (topic: itinerary confirmed accurate for the watercolor-map template). The eval notes it was adopted from the prefill pool path A quality findings."
+    },
+    {
+      "query": "warmup routine running checklist",
+      "category": "diy_guide_sparse",
+      "reason_selected": "Known sparse-content query with WARN status in the eval (actual: thin, 1 result vs expected: rich). Represents the diy-guides cluster. External signals may reveal whether demand is for running-specific content (content gap) or for broader fitness/checklist content (alias gap).",
+      "known_curify_status": {
+        "bucket": "thin",
+        "strict_hits": 1,
+        "strict_template_count": 0,
+        "top_templates": [
+          "warmup-routine × 1"
+        ],
+        "eval_status": "WARN",
+        "eval_notes": "source=prefill-pool-2026-06-14; expected=rich; actual=thin; hits=1. A single inspiration from the warmup-routine template family is the only match. Zero template-level matches (strict_template_count=0)."
+      },
+      "repository_evidence": "Explicitly in search_eval_set.json as a WARN query (prefill-pool-2026-06-14, expected=rich). Listed in the Prompt 7 plan as one of the four known-sparse queries warranting external signal research. Relevant cluster: diy-guides (fitness, step-by-step-tutorial, guides, before-after in lib/intent_taxonomy.ts)."
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "index": 42,
+  "query": "monstera plant care guide infographic",
+  "group": "progseo-2026-05-26",
+  "curifyUrl": "http://localhost:3000/en/search?q=monstera%20plant%20care%20guide%20infographic",
+  "finalUrl": "http://localhost:3000/search?q=monstera+plant+care+guide+infographic",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:22:53.844Z",
+  "labels": [
+    {
+      "text": "Learning Materials20",
+      "type": "chip",
+      "href": "/en/search?q=monstera%20plant%20care%20guide%20infographic&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art18",
+      "type": "chip",
+      "href": "/en/search?q=monstera%20plant%20care%20guide%20infographic&intent=visual-art"
+    },
+    {
+      "text": "DIY & Guides12",
+      "type": "chip",
+      "href": "/en/search?q=monstera%20plant%20care%20guide%20infographic&intent=diy-guides"
+    },
+    {
+      "text": "Social & Personal11",
+      "type": "chip",
+      "href": "/en/search?q=monstera%20plant%20care%20guide%20infographic&intent=social-personal"
+    },
+    {
+      "text": "📋DIY & Guides",
+      "type": "suggestion",
+      "href": "/en/topics/guides"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "🔬Science",
+      "type": "suggestion",
+      "href": "/en/topics/science"
+    },
+    {
+      "text": "🐾Pets & Animals",
+      "type": "suggestion",
+      "href": "/en/topics/animal"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "golden camellia",
+      "subtitle": "golden camellia",
+      "templateId": "species-science",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/species-science/template-species-science-golden-camellia?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-species-science-zh-golden-camellia-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "golden camellia | golden camellia"
+    },
+    {
+      "rank": 2,
+      "title": "plant care",
+      "subtitle": "plant care",
+      "templateId": "lifestyle-info-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-plant-care?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-plant-care-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "plant care | plant care"
+    },
+    {
+      "rank": 3,
+      "title": "indoor plant care",
+      "subtitle": "indoor plant care",
+      "templateId": "vintage-ultimate-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/vintage-ultimate-guide-infographic/template-vintage-ultimate-guide-infographic-indoor-plant-care?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vintage-ultimate-guide-infographic-indoor-plant-care-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "indoor plant care | indoor plant care"
+    },
+    {
+      "rank": 4,
+      "title": "monstera",
+      "subtitle": "monstera",
+      "templateId": "houseplant-care-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/houseplant-care-guide-infographic/template-houseplant-care-guide-infographic-monstera?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-houseplant-care-guide-infographic-monstera-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "monstera | monstera"
+    },
+    {
+      "rank": 5,
+      "title": "snake plant",
+      "subtitle": "snake plant",
+      "templateId": "houseplant-care-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/houseplant-care-guide-infographic/template-houseplant-care-guide-infographic-snake-plant?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-houseplant-care-guide-infographic-snake-plant-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "snake plant | snake plant"
+    },
+    {
+      "rank": 6,
+      "title": "plant",
+      "subtitle": "plant",
+      "templateId": "houseplant-care-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/houseplant-care-guide-infographic/template-houseplant-care-guide-infographic-zz-plant?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-houseplant-care-guide-infographic-zz-plant-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "plant | plant"
+    },
+    {
+      "rank": 7,
+      "title": "Plant Care Guide",
+      "subtitle": "Plant Care Guide",
+      "templateId": "professional-category-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-plant-care-guide?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-plant-care-guide-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Plant Care Guide | Plant Care Guide"
+    },
+    {
+      "rank": 8,
+      "title": "angelica",
+      "subtitle": "angelica",
+      "templateId": "herbal",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/herbal/template-herbal-angelica?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-herbal-zh-angelica-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "angelica | angelica"
+    },
+    {
+      "rank": 9,
+      "title": "forsythia",
+      "subtitle": "forsythia",
+      "templateId": "herbal",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/herbal/template-herbal-forsythia?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-herbal-zh-forsythia-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "forsythia | forsythia"
+    },
+    {
+      "rank": 10,
+      "title": "houttuynia cordata",
+      "subtitle": "houttuynia cordata",
+      "templateId": "herbal",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/herbal/template-herbal-houttuynia-cordata?media=image&from=%2Fsearch%3Fq%3Dmonstera%2Bplant%2Bcare%2Bguide%2Binfographic&ids=template-species-science-golden-camellia%2Ctemplate-lifestyle-info-card-plant-care%2Ctemplate-vintage-ultimate-guide-infographic-indoor-plant-care%2Ctemplate-houseplant-care-guide-infographic-monstera%2Ctemplate-houseplant-care-guide-infographic-snake-plant%2Ctemplate-houseplant-care-guide-infographic-zz-plant%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-herbal-angelica%2Ctemplate-herbal-forsythia%2Ctemplate-herbal-houttuynia-cordata%2Ctemplate-species-science-alsophila%2Ctemplate-beauty-step-by-step-guide-hairstyle-tutorial%2Ctemplate-lifestyle-info-card-dog-care-essentials%2Ctemplate-pet-care-guide-british-shorthair-5mo%2Ctemplate-pet-care-guide-budgerigar-1yo%2Ctemplate-pet-care-guide-corgi-puppy-2mo%2Ctemplate-lifestyle-watercolor-infographic-self-care%2Ctemplate-weird-science-facts-infographic-plant-facts%2Ctemplate-lifestyle-info-card-laundry-care-symbols-guide%2Ctemplate-chinese-radical-learning-plant-radical%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-abstract-illustration%2Ctemplate-health-tips-six-method-cartoon-poster-brain-care-cute-cartoon",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-herbal-zh-houttuynia-cordata-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "houttuynia cordata | houttuynia cordata"
+    }
+  ],
+  "counts": {
+    "labels": 8,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/042-monstera-plant-care-guide-infographic/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/042-monstera-plant-care-guide-infographic/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

@@ -1,0 +1,126 @@
+{
+  "index": 54,
+  "query": "book lovers gift guide",
+  "group": "pinterest-discovery-2026-05-29",
+  "curifyUrl": "http://localhost:3000/en/search?q=book%20lovers%20gift%20guide",
+  "finalUrl": "http://localhost:3000/search?q=book+lovers+gift+guide",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:25:06.546Z",
+  "labels": [
+    {
+      "text": "Learning Materials7",
+      "type": "chip",
+      "href": "/en/search?q=book%20lovers%20gift%20guide&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art7",
+      "type": "chip",
+      "href": "/en/search?q=book%20lovers%20gift%20guide&intent=visual-art"
+    },
+    {
+      "text": "Social & Personal6",
+      "type": "chip",
+      "href": "/en/search?q=book%20lovers%20gift%20guide&intent=social-personal"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "📚Reading",
+      "type": "suggestion",
+      "href": "/en/topics/reading"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    },
+    {
+      "text": "📋DIY & Guides",
+      "type": "suggestion",
+      "href": "/en/topics/guides"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "fantasy adventures",
+      "subtitle": "fantasy adventures",
+      "templateId": "book-recommendation-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/book-recommendation-grid-poster/template-book-recommendation-grid-poster-fantasy-adventures?media=image&from=%2Fsearch%3Fq%3Dbook%2Blovers%2Bgift%2Bguide&ids=template-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-top10-visual-guide-infographic-top-10-book-genres",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-recommendation-grid-poster-fantasy-adventures-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fantasy adventures | fantasy adventures"
+    },
+    {
+      "rank": 2,
+      "title": "historical fiction",
+      "subtitle": "historical fiction",
+      "templateId": "book-recommendation-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/book-recommendation-grid-poster/template-book-recommendation-grid-poster-historical-fiction?media=image&from=%2Fsearch%3Fq%3Dbook%2Blovers%2Bgift%2Bguide&ids=template-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-top10-visual-guide-infographic-top-10-book-genres",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-recommendation-grid-poster-historical-fiction-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "historical fiction | historical fiction"
+    },
+    {
+      "rank": 3,
+      "title": "mystery thriller",
+      "subtitle": "mystery thriller",
+      "templateId": "book-recommendation-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/book-recommendation-grid-poster/template-book-recommendation-grid-poster-mystery-thriller?media=image&from=%2Fsearch%3Fq%3Dbook%2Blovers%2Bgift%2Bguide&ids=template-book-recommendation-grid-poster-fantasy-adventures%2Ctemplate-book-recommendation-grid-poster-historical-fiction%2Ctemplate-book-recommendation-grid-poster-mystery-thriller%2Ctemplate-book-minimalist-plant-lovers%2Ctemplate-top10-visual-guide-infographic-top-10-book-genres",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-recommendation-grid-poster-mystery-thriller-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "mystery thriller | mystery thriller"
+    },
+    {
+      "rank": 4,
+      "title": "Top 10 Visual Guide Infographic preview 1",
+      "subtitle": "",
+      "templateId": "top10-visual-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/top10-visual-guide-infographic?topic=Top+10+Book+Genres",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-top10-visual-guide-infographic-top-10-book-genres-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Top 10 Visual Guide Infographic preview 1"
+    },
+    {
+      "rank": 5,
+      "title": "Book Recommendation Grid Poster preview 1",
+      "subtitle": "",
+      "templateId": "book-recommendation-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/book-recommendation-grid-poster?book_category=fantasy+adventures",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-recommendation-grid-poster-fantasy-adventures-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Book Recommendation Grid Poster preview 1"
+    },
+    {
+      "rank": 6,
+      "title": "Minimalist Book Summary preview 1",
+      "subtitle": "",
+      "templateId": "book-minimalist",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/book-minimalist?book_theme=plant+lovers",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-book-minimalist-plant-lovers-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Minimalist Book Summary preview 1"
+    }
+  ],
+  "counts": {
+    "labels": 7,
+    "topResults": 6
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/054-book-lovers-gift-guide/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/054-book-lovers-gift-guide/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

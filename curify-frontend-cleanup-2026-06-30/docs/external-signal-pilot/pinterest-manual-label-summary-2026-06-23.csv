@@ -1,0 +1,59 @@
+index,query,primaryIntent,manual_label_count,labels_raw
+1,单词,consumer,5,"插画,Logo,设计,App,Icon"
+2,卡通,consumer,25,"狗狗,男生头像,马,外星人,鲨鱼,狗,鸟,熊,財神爺,馬,涂鸦,海豹,Logo,乌鸦,生日蛋糕,Ig頭像,牛,Ip,花,史迪仔,著色畫,云朵,西高地,Katong,餅乾"
+3,吉伊卡哇,consumer,25,"桌布,小桃,小八,桌布電腦高清,拼豆,桌布吉伊,烏薩奇,桌布ipad,桌布iphone,著色圖,獅薩,桌布電腦,拼拼豆豆,著色,電腦桌布,吉伊,小八貓,烏薩琪,Gif,拼豆图纸,電腦桌布1920x1080,兒童著色,頭像,小巴,古本"
+4,家居装饰,consumer,0,
+5,工程,consumer,25,"デザイン,Logo,イラスト,名片,名片設計,デザインレイアウト,図,展示,工場,Icon,メイク,海報,插画,环保poster,デザインパンフレット,図解,レイアウト,デザインweb,厚塗り,網站設計,会社案内,デッサン,Banner,旅行,插畫"
+6,植物,consumer,25,"插画,インテリア,イラスト,部屋,日本画,デザイン,つた,素材,壁掛け,藤蔓,図鑑,ロゴ,室内,热带,鬼灯イラスト,ベランダ,花,玄関,熱帯,描き方,ほおずき,写真,Logo,扁平插画,水彩"
+7,水果中文,creative,0,
+8,电商详情图,creative,0,
+9,自行车,consumer,25,"插画,海报,骑行,设计,自行车设计,手绘,Icon,插画素材,配件,车把,Logo,双人,复古,Banner,摄影,Kv,小布,素材,卡通,贴纸,可爱,贴花,花,停车,车轮"
+10,葡萄酒,consumer,25,"Logo,Kv,海報,排版,包裝,Dm,矢量,包装设计,酒标,酿造,插畫,设计,场景,摄影,氛围,创意,Poster,素材,品鉴,画,广告,Icon,廣告,周边,Banner"
+11,蔬菜,consumer,25,"插画,素材,Logo,包装,Ip,插画扁平,Icon,幼兒園,著色,插圖,摄影,水果,水彩,Worksheet,黏土,萝卜,卡通,图案,插画黑白,麥克筆,设计,海報,Laq,Illustration,鉤針"
+12,词汇,creative,3,"圣诞节,衣服,Hsk3"
+13,趣味经济学知识科普,creative,0,
+14,音乐,consumer,19,"插画,海报,Logo,设计,氛围,氛围图,元素,主视觉,Icon,背景,装饰画,律动,App,Kv,符号,挂画,图标,人物,情绪"
+15,食物,consumer,0,
+16,香薰,consumer,25,"包装,氛围图,新中式,Logo,观夏,车载,海报,摆件,包装盒,摄影,罗意威,设计,Tom dixon,氛围,包装设计,浴室,祖马龙,插画,品牌,包装设计packingdesign,礼盒,闻献,中式,卫生间,晶石"
+17,唯美春天,consumer,0,
+18,证件照,creative,21,"插画,模板,男,美式,动漫,设计,排版,素材,二次元,画,绘画,男白底,白底,星见雅,欧美,背景,Cortis,Seventeen,Oc,海报,半身"
+19,手作,creative,20,"Diy,生日禮物,手作diy,Logo,幼兒diy,中秋節,馬,卡片,新年,萬聖節,花,聖誕節,母親節,聖誕,馬年,聖誕禮物,卡片设计,布包,畢業花束,端午節"
+20,historical character,consumer,25,"Design,Manhwa,Art,Costume,Drawing,Chinese,Dress to impress,Design 18th century,My,Manhwa boy,Design art,Costume ideas,Inspiration,Art male,Design 17th century,Halloween costumes,Illustration,Pre,Cartoon,Japanese,Male,Kids,Indian,Design male,Maker"
+21,future characters,consumer,25,"Design,Jet set radio,Steven universe,Retro,Free dive to,Design cyberpunk,Art,Dystopian,Bluey,Hsr,Near,Genshin impact,Distopic,Concept art,Genshin,Tokyo revengers,Dark,Marvel rivals,Rpg,Design female,Doraemon,Shinchan,Zzz,Wuwa,Art male"
+22,homophones and homonyms,creative,20,"Worksheet,Chart,Difference between,Worksheet for class 4,Worksheets grade 5,Worksheet grade 7,Working model,Activities,Anchor chart,Tlm,Project,Notes,Poster,Explanation,Definition,Examples,Model,Grade 5,Worksheet grade 2,Educational poster"
+23,english-chinese,creative,0,
+24,language learning expressions,creative,0,
+25,global influence,consumer,24,"Interior design,Bedroom,Interior design bedroom,Anthropologie window displays,Aesthetic,Street style fashion,Award,Usa,Fashion,China,Video,Design,Kpop,Style,Hollywood,Poster,Image,Icon,American,Modern,India,Marketing,Japan,Style bedroom"
+26,remote destination,consumer,0,
+27,unique cultural experiences,consumer,0,
+28,short city escapes,consumer,0,
+29,creative comfort food,consumer,0,
+30,mbti marvel,creative,5,"Characters,Personality types,Personality,Chart,Rivals"
+31,spring flowers,consumer,25,"Nails,Arrangements,Bouquet,Aesthetic,Wallpaper,Drawing,Wedding,Illustration,Field,Painting,Garden,Crafts preschool,Crafts,Cake,Watercolor,Early,Nail designs,Wreath,Background,Clipart,Activities for preschool,Arrangements centerpieces,Art,Cookies,Pink"
+32,反义词,creative,3,"中文,Worksheet,幼儿园"
+33,paper cutting,creative,25,"Art,Art patterns,Chinese,Out,Patterns,Illustration,Design,Craft,Png,Leaf,Layered,Animation,Templates,Light box,Poster,Ideas,Portrait,Border design,Collage,Butterfly,Background,Design pattern,Artists,Texture,Mexican"
+34,met gala,consumer,27,"调色板,体型,2026,2025,Looks,2024,Lisa,2018,2023,Dresses,Outfits,Jennie,Jisoo,Ariana grande,Kendall jenner,Dress to impress,Sabrina carpenter,Outfits ideas,Billie eilish,Gigi hadid,Aesthetic,Blackpink,Zendaya,Lana del rey,Dti,Rose,Stray kids"
+35,动物 词汇,creative,0,
+36,wedding planner,creative,25,"Aesthetic,Checklist,Outfit,Templates,Logo,Printables,Branding,Aesthetic job,Photoshoot,Book,Branding photoshoot,Website,Job,Office,Binder,Ideas,Movie,Headshots,Checklist indonesia,Branding shoot,Website design,Logo design,Diy,Spreadsheet,Social media"
+37,minimalist autumn outfit for japan travel,consumer,12,"调色板,Minimal chic,2025,Men,Casual,Soft,Chic,Aesthetic,Women,Korean,Ideas,Dark"
+38,infj vs entp dating compatibility chart,creative,0,
+39,cuban sandwich recipe poster,creative,0,
+40,bilingual flashcards for kids learning korean fruits,creative,0,
+41,watercolor map of europe travel destinations,creative,0,
+42,monstera plant care guide infographic,creative,25,"Indoor,Swiss cheese,Tips,Swiss,Philodendron,Outdoor,Yellow leaves,Cobra,Aerial roots,Adansonii,Deliciousa,Winter,Peru,Water,Minima,Monkey,Beginners,Split leaf,Esqueleto,White,Cheese,Moss pole,Variegated,Soil,Thai constellation"
+43,marvel mbti character chart 16 types,creative,0,
+44,lunar new year red envelope graphic design,creative,0,
+45,1950s vintage diner illustration retro poster,creative,0,
+46,before after kitchen organization makeover,creative,2,"Cabinets,Bread drawer"
+47,phonics worksheets kindergarten,creative,21,"Satpin,Phonics worksheets,Reading,Phonics worksheets preschool,Free,Free printable,Letter a,Group 2 jolly,Ck,Jolly,Coloring,Sounds,1,Halloween,Kidpid,Christmas,Tricky words jolly,Letter b,Writing,3,Letter e"
+48,Spanish vocabulary printable,creative,0,
+49,ESL flashcards printable,creative,3,"Free,Teaching resources,Kids"
+50,easy weeknight dinners healthy,creative,25,"High protein,Families,Low carb,Quick and,Simple,Quick,Kid friendly,Clean eating,Casserole recipes,Crockpot keto,Gluten free,Instapot,Vegetarian,Summer,Dairy free,Super,Picky eaters,Kids,Fish,Meal prep,Shrimp,Recipes,Sweet potato,Orzo,Trader joes"
+51,gluten free dinner ideas,creative,25,"Easy,Dairy free,Healthy,Quick and easy,Quick,Cheap and easy,Vegan,Simple,Kids,Family,Main dishes,Cheap,Best,High protein,Crock pots,Summer,2,A crowd,Vegetarian,Low carb,Instant pot,Naturally,Yummy,Hamburger,Kid friendly"
+52,meal prep weekly recipes,creative,8,"The week high protein,The week,The week lunches,The week ideas,The week for beginners,Healthy breakfast,Lunch,The week dinner easy"
+53,cozy reading aesthetic,consumer,25,"Dark,Kindle,Bed,Night,Winter,Wallpaper,Pink,Summer,Art,Video,Blue,Rainy,Quotes,Cat,Autumn,Vintage,Room,Man,Rain,Photo,Beige,Brown,Illustration,Cottage,Cartoon"
+54,book lovers gift guide,creative,0,
+55,chiikawa,consumer,25,"Usagi,Wallpapers,Icon,Pfp,Momonga,Characters,Matching pfp,Hachiware,Sticker,Png,Nails,Rakko,Poster,Banner,Friends,Widget,Oc,Kani,Plush,Cake,Reaction image,Trio,Shisa,Background,Reaction"
+56,samurai,consumer,25,"Tattoo,Jack,Blue eye,Mizu blue eye,Tattoo design,Ilustración de,Afro,Japanese art,Oc,Mask tattoo,Suzuki,Power rangers,Pfp,Mask,Tatuagem,Oni,Dibujo,Outfit,Japanese,Sketch,Wallpaper 4k phone,Champloo wallpapers,Lady,Rpg,Black"
+57,genshin,consumer,25,"Lohen,Nahida,Istaroth,Nilou,Shenhe,Lohen x illuga,Impact,Columbina,Impact characters,Varka,Pfp,Oc,Durin,Skirk,Impact wallpaper,Alice,Characters,Impact icon,Icon,Dahlia,Wallpaper,Matching pfp,Childe,Mizuki,Pantalone"
+58,maps,consumer,25,"Lash,Mind,Lash cluster,World,Fantasy,Design,India,Cat eye lash,Rpg,Creative mind,Dnd,Concept,Europe,Drawing,Illustration,Projection,Indian,Fantasy world,Treasure,Topographic,City,Aesthetic,Art,Usa,Japan"

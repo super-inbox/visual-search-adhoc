@@ -1,0 +1,94 @@
+{
+  "index": 49,
+  "query": "ESL flashcards printable",
+  "group": "pinterest-discovery-2026-05-29",
+  "curifyUrl": "http://localhost:3000/en/search?q=ESL%20flashcards%20printable",
+  "finalUrl": "http://localhost:3000/search?q=ESL+flashcards+printable",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:24:11.742Z",
+  "labels": [
+    {
+      "text": "Learning Materials3",
+      "type": "chip",
+      "href": "/en/search?q=esl%20flashcards%20printable&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art3",
+      "type": "chip",
+      "href": "/en/search?q=esl%20flashcards%20printable&intent=visual-art"
+    },
+    {
+      "text": "Travel & Place2",
+      "type": "chip",
+      "href": "/en/search?q=esl%20flashcards%20printable&intent=travel-place"
+    },
+    {
+      "text": "📖Vocabulary",
+      "type": "suggestion",
+      "href": "/en/topics/vocabulary"
+    },
+    {
+      "text": "🌸Kawaii",
+      "type": "suggestion",
+      "href": "/en/topics/kawaii"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "family members",
+      "subtitle": "family members",
+      "templateId": "children-english-vocab-spelling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/children-english-vocab-spelling/template-children-english-vocab-spelling-family-members?media=image&from=%2Fsearch%3Fq%3DESL%2Bflashcards%2Bprintable&ids=template-children-english-vocab-spelling-family-members%2Ctemplate-children-english-vocab-spelling-fruits%2Ctemplate-children-english-vocab-spelling-vegetables",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-children-english-vocab-spelling-family-members-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "family members | family members"
+    },
+    {
+      "rank": 2,
+      "title": "fruits",
+      "subtitle": "fruits",
+      "templateId": "children-english-vocab-spelling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/children-english-vocab-spelling/template-children-english-vocab-spelling-fruits?media=image&from=%2Fsearch%3Fq%3DESL%2Bflashcards%2Bprintable&ids=template-children-english-vocab-spelling-family-members%2Ctemplate-children-english-vocab-spelling-fruits%2Ctemplate-children-english-vocab-spelling-vegetables",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-children-english-vocab-spelling-fruits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits | fruits"
+    },
+    {
+      "rank": 3,
+      "title": "vegetables",
+      "subtitle": "vegetables",
+      "templateId": "children-english-vocab-spelling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/children-english-vocab-spelling/template-children-english-vocab-spelling-vegetables?media=image&from=%2Fsearch%3Fq%3DESL%2Bflashcards%2Bprintable&ids=template-children-english-vocab-spelling-family-members%2Ctemplate-children-english-vocab-spelling-fruits%2Ctemplate-children-english-vocab-spelling-vegetables",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-children-english-vocab-spelling-vegetables-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "vegetables | vegetables"
+    },
+    {
+      "rank": 4,
+      "title": "Kids Learning & Vocabulary Posters preview 1",
+      "subtitle": "",
+      "templateId": "children-english-vocab-spelling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/children-english-vocab-spelling?theme=family+members",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-children-english-vocab-spelling-family-members-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Kids Learning & Vocabulary Posters preview 1"
+    }
+  ],
+  "counts": {
+    "labels": 5,
+    "topResults": 4
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/049-esl-flashcards-printable/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/049-esl-flashcards-printable/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

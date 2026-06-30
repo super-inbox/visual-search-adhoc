@@ -1,0 +1,325 @@
+{
+  "index": 58,
+  "query": "maps",
+  "group": "user-report-2026-06-05",
+  "curifyUrl": "http://localhost:3000/en/search?q=maps",
+  "finalUrl": "http://localhost:3000/topics/map",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "topic",
+  "capturedAt": "2026-06-23T13:25:44.515Z",
+  "labels": [
+    {
+      "text": "⚽World Cup🔥",
+      "type": "suggestion",
+      "href": "/topics/world-cup"
+    },
+    {
+      "text": "🎭MBTI & Characters",
+      "type": "suggestion",
+      "href": "/topics/character"
+    },
+    {
+      "text": "📸AI Portraits",
+      "type": "suggestion",
+      "href": "/topics/portrait"
+    },
+    {
+      "text": "🧠Infographics",
+      "type": "suggestion",
+      "href": "/topics/learning"
+    },
+    {
+      "text": "🗣️EdTech Flashcards",
+      "type": "suggestion",
+      "href": "/topics/language"
+    },
+    {
+      "text": "🌿Social Media Assets",
+      "type": "suggestion",
+      "href": "/topics/lifestyle"
+    },
+    {
+      "text": "✈️Travel Posters & Maps",
+      "type": "suggestion",
+      "href": "/topics/travel"
+    },
+    {
+      "text": "🍳Recipes & Food Cards",
+      "type": "suggestion",
+      "href": "/topics/food"
+    },
+    {
+      "text": "🎨Posters & Designs",
+      "type": "suggestion",
+      "href": "/topics/design"
+    },
+    {
+      "text": "🛍️Commerce & Branding",
+      "type": "suggestion",
+      "href": "/topics/product"
+    },
+    {
+      "text": "🎁Merch & Stickers",
+      "type": "suggestion",
+      "href": "/topics/merch"
+    },
+    {
+      "text": "City",
+      "type": "suggestion",
+      "href": "/topics/city"
+    },
+    {
+      "text": "Itinerary & Planning",
+      "type": "suggestion",
+      "href": "/topics/itinerary"
+    },
+    {
+      "text": "Seasonal & Weather",
+      "type": "suggestion",
+      "href": "/topics/seasonal"
+    },
+    {
+      "text": "Maps",
+      "type": "suggestion",
+      "href": "/topics/map"
+    },
+    {
+      "text": "Spain",
+      "type": "suggestion",
+      "href": "/topics/spain"
+    },
+    {
+      "text": "France",
+      "type": "suggestion",
+      "href": "/topics/france"
+    },
+    {
+      "text": "India",
+      "type": "suggestion",
+      "href": "/topics/india"
+    },
+    {
+      "text": "Japan",
+      "type": "suggestion",
+      "href": "/topics/japan"
+    },
+    {
+      "text": "Korea",
+      "type": "suggestion",
+      "href": "/topics/korea"
+    },
+    {
+      "text": "Thailand",
+      "type": "suggestion",
+      "href": "/topics/thailand"
+    },
+    {
+      "text": "Mexico",
+      "type": "suggestion",
+      "href": "/topics/mexico"
+    },
+    {
+      "text": "UK",
+      "type": "suggestion",
+      "href": "/topics/uk"
+    },
+    {
+      "text": "Brazil",
+      "type": "suggestion",
+      "href": "/topics/brazil"
+    },
+    {
+      "text": "Vietnam",
+      "type": "suggestion",
+      "href": "/topics/vietnam"
+    },
+    {
+      "text": "Singapore",
+      "type": "suggestion",
+      "href": "/topics/singapore"
+    },
+    {
+      "text": "Egypt",
+      "type": "suggestion",
+      "href": "/topics/egypt"
+    },
+    {
+      "text": "Australia",
+      "type": "suggestion",
+      "href": "/topics/australia"
+    },
+    {
+      "text": "Italy",
+      "type": "suggestion",
+      "href": "/topics/italy"
+    },
+    {
+      "text": "Middle East",
+      "type": "suggestion",
+      "href": "/topics/middle-east"
+    },
+    {
+      "text": "China",
+      "type": "suggestion",
+      "href": "/topics/china"
+    },
+    {
+      "text": "Germany",
+      "type": "suggestion",
+      "href": "/topics/germany"
+    },
+    {
+      "text": "Greece",
+      "type": "suggestion",
+      "href": "/topics/greece"
+    },
+    {
+      "text": "Russia",
+      "type": "suggestion",
+      "href": "/topics/russia"
+    },
+    {
+      "text": "United States",
+      "type": "suggestion",
+      "href": "/topics/united-states"
+    },
+    {
+      "text": "Iran",
+      "type": "suggestion",
+      "href": "/topics/iran"
+    },
+    {
+      "text": "Portugal",
+      "type": "suggestion",
+      "href": "/topics/portugal"
+    },
+    {
+      "text": "Travel Scrapbooks",
+      "type": "suggestion",
+      "href": "/topics/scrapbooks"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "central park",
+      "subtitle": "",
+      "templateId": "tourist-spot-watercolor-map-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/tourist-spot-watercolor-map-infographic/example/template-tourist-spot-watercolor-map-infographic-central-park",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-tourist-spot-watercolor-map-infographic-central-park-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "central park"
+    },
+    {
+      "rank": 2,
+      "title": "egypt",
+      "subtitle": "",
+      "templateId": "3d-region-landmark-map",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/3d-region-landmark-map/example/template-3d-region-landmark-map-egypt",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-3d-region-landmark-map-egypt-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "egypt"
+    },
+    {
+      "rank": 3,
+      "title": "africa",
+      "subtitle": "",
+      "templateId": "watercolor-world-map-illustration",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/watercolor-world-map-illustration/example/template-watercolor-world-map-illustration-africa",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-world-map-illustration-africa-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "africa"
+    },
+    {
+      "rank": 4,
+      "title": "australia",
+      "subtitle": "",
+      "templateId": "whimsical-travel-map",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/whimsical-travel-map/example/template-whimsical-travel-map-australia",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-whimsical-travel-map-australia-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "australia"
+    },
+    {
+      "rank": 5,
+      "title": "china",
+      "subtitle": "",
+      "templateId": "world-travel-map-illustration",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/world-travel-map-illustration/example/template-world-travel-map-illustration-china",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-world-travel-map-illustration-china-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "china"
+    },
+    {
+      "rank": 6,
+      "title": "animals nature",
+      "subtitle": "",
+      "templateId": "word-origins-map-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/word-origins-map-infographic/example/template-word-origins-map-infographic-animals-nature",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-origins-map-infographic-animals-nature-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "animals nature"
+    },
+    {
+      "rank": 7,
+      "title": "alexander the great",
+      "subtitle": "",
+      "templateId": "historical-event-map-illustration",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/historical-event-map-illustration/example/template-historical-event-map-illustration-alexander-the-great",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-historical-event-map-illustration-alexander-the-great-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "alexander the great"
+    },
+    {
+      "rank": 8,
+      "title": "made in china",
+      "subtitle": "",
+      "templateId": "national-theme-map-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/national-theme-map-infographic/example/template-national-theme-map-infographic-made-in-china",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-national-theme-map-infographic-made-in-china-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "made in china"
+    },
+    {
+      "rank": 9,
+      "title": "Hidden Gems of Rome",
+      "subtitle": "",
+      "templateId": "tourist-spot-watercolor-map-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/tourist-spot-watercolor-map-infographic/example/template-tourist-spot-watercolor-map-infographic-hidden-gems-of-rome",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-tourist-spot-watercolor-map-infographic-hidden-gems-of-rome-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Hidden Gems of Rome"
+    },
+    {
+      "rank": 10,
+      "title": "france",
+      "subtitle": "",
+      "templateId": "3d-region-landmark-map",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/3d-region-landmark-map/example/template-3d-region-landmark-map-france",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-3d-region-landmark-map-france-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "france"
+    }
+  ],
+  "counts": {
+    "labels": 38,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/058-maps/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/058-maps/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

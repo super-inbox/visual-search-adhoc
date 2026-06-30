@@ -1,0 +1,180 @@
+{
+  "index": 21,
+  "query": "future characters",
+  "group": "reddit",
+  "curifyUrl": "http://localhost:3000/en/search?q=future%20characters",
+  "finalUrl": "http://localhost:3000/search?q=future+characters",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:19:03.464Z",
+  "labels": [
+    {
+      "text": "Social & Personal20",
+      "type": "chip",
+      "href": "/en/search?q=future%20characters&intent=social-personal"
+    },
+    {
+      "text": "Storytelling & Identity18",
+      "type": "chip",
+      "href": "/en/search?q=future%20characters&intent=storytelling-identity"
+    },
+    {
+      "text": "Visual & Art18",
+      "type": "chip",
+      "href": "/en/search?q=future%20characters&intent=visual-art"
+    },
+    {
+      "text": "Learning Materials7",
+      "type": "chip",
+      "href": "/en/search?q=future%20characters&intent=learning-materials"
+    },
+    {
+      "text": "Merch & Commerce3",
+      "type": "chip",
+      "href": "/en/search?q=future%20characters&intent=merch-commerce"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "🎬Pop Culture",
+      "type": "suggestion",
+      "href": "/en/topics/film"
+    },
+    {
+      "text": "📷Nostalgia",
+      "type": "suggestion",
+      "href": "/en/topics/nostalgia"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "China",
+      "subtitle": "China",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-China?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-en-China-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "China | China"
+    },
+    {
+      "rank": 2,
+      "title": "Germany",
+      "subtitle": "Germany",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-Germany?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-en-Germany-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Germany | Germany"
+    },
+    {
+      "rank": 3,
+      "title": "Japan",
+      "subtitle": "Japan",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-Japan?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-en-Japan-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Japan | Japan"
+    },
+    {
+      "rank": 4,
+      "title": "microsoft ai dilemma 08 future path",
+      "subtitle": "microsoft ai dilemma 08 future path",
+      "templateId": "series-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/series-infographic/template-series-infographic-microsoft-ai-dilemma-08-future-path?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-infographic-microsoft-ai-dilemma-08-future-path-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "microsoft ai dilemma 08 future path | microsoft ai dilemma 08 future path"
+    },
+    {
+      "rank": 5,
+      "title": "microsoft ai dilemma 08 future path en",
+      "subtitle": "microsoft ai dilemma 08 future path en",
+      "templateId": "series-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/series-infographic/template-series-infographic-microsoft-ai-dilemma-08-future-path-en?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-infographic-microsoft-ai-dilemma-08-future-path-en-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "microsoft ai dilemma 08 future path en | microsoft ai dilemma 08 future path en"
+    },
+    {
+      "rank": 6,
+      "title": "ghibli chinese zodiac characters",
+      "subtitle": "ghibli chinese zodiac characters",
+      "templateId": "pop-culture-matching-chart",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/pop-culture-matching-chart/template-pop-culture-matching-chart-ghibli-chinese-zodiac-characters?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pop-culture-matching-chart-ghibli-chinese-zodiac-characters-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "ghibli chinese zodiac characters | ghibli chinese zodiac characters"
+    },
+    {
+      "rank": 7,
+      "title": "harry potter zodiac hogwarts characters",
+      "subtitle": "harry potter zodiac hogwarts characters",
+      "templateId": "pop-culture-matching-chart",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/pop-culture-matching-chart/template-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "harry potter zodiac hogwarts characters | harry potter zodiac hogwarts characters"
+    },
+    {
+      "rank": 8,
+      "title": "video game heroes",
+      "subtitle": "video game heroes",
+      "templateId": "fandom-character-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/fandom-character-grid-poster/template-fandom-character-grid-poster-video-game-heroes?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-fandom-character-grid-poster-video-game-heroes-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "video game heroes | video game heroes"
+    },
+    {
+      "rank": 9,
+      "title": "Chiikawa Characters",
+      "subtitle": "Chiikawa Characters",
+      "templateId": "celebrity-movie-group-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/celebrity-movie-group-poster/template-celebrity-movie-group-poster-chiikawa-characters?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-celebrity-movie-group-poster-chiikawa-characters-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Chiikawa Characters | Chiikawa Characters"
+    },
+    {
+      "rank": 10,
+      "title": "Famous Samurai of Japan",
+      "subtitle": "Famous Samurai of Japan",
+      "templateId": "fandom-character-grid-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/fandom-character-grid-poster/template-fandom-character-grid-poster-famous-samurai-japan?media=image&from=%2Fsearch%3Fq%3Dfuture%2Bcharacters&ids=template-mbti-generic-China%2Ctemplate-mbti-generic-Germany%2Ctemplate-mbti-generic-Japan%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path%2Ctemplate-series-infographic-microsoft-ai-dilemma-08-future-path-en%2Ctemplate-pop-culture-matching-chart-ghibli-chinese-zodiac-characters%2Ctemplate-pop-culture-matching-chart-harry-potter-zodiac-hogwarts-characters%2Ctemplate-fandom-character-grid-poster-video-game-heroes%2Ctemplate-celebrity-movie-group-poster-chiikawa-characters%2Ctemplate-fandom-character-grid-poster-famous-samurai-japan%2Ctemplate-fandom-character-grid-poster-genshin-impact%2Ctemplate-then-vs-now-comparison-infographic-one-person-companies%2Ctemplate-generation-comparison-infographic-one-person-companies%2Ctemplate-pop-culture-matching-chart-samurai-of-anime%2Ctemplate-character-multi-panel-comic-strip-poster-captain-tsubasa%2Ctemplate-character-multi-panel-comic-strip-poster-looney-tunes%2Ctemplate-disney-dual-character-intro-book-spread-remy-linguini-ratatouille%2Ctemplate-disney-dual-character-intro-book-spread-riley-joy-inside-out%2Ctemplate-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-fandom-character-grid-poster-famous-samurai-japan-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Famous Samurai of Japan | Famous Samurai of Japan"
+    }
+  ],
+  "counts": {
+    "labels": 9,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/021-future-characters/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/021-future-characters/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

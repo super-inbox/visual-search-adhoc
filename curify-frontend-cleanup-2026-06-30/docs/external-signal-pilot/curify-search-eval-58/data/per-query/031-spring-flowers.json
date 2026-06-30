@@ -1,0 +1,180 @@
+{
+  "index": 31,
+  "query": "spring flowers",
+  "group": "popular",
+  "curifyUrl": "http://localhost:3000/en/search?q=spring%20flowers",
+  "finalUrl": "http://localhost:3000/search?q=spring+flowers",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:20:52.337Z",
+  "labels": [
+    {
+      "text": "Learning Materials20",
+      "type": "chip",
+      "href": "/en/search?q=spring%20flowers&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art20",
+      "type": "chip",
+      "href": "/en/search?q=spring%20flowers&intent=visual-art"
+    },
+    {
+      "text": "DIY & Guides5",
+      "type": "chip",
+      "href": "/en/search?q=spring%20flowers&intent=diy-guides"
+    },
+    {
+      "text": "Social & Personal4",
+      "type": "chip",
+      "href": "/en/search?q=spring%20flowers&intent=social-personal"
+    },
+    {
+      "text": "Travel & Place4",
+      "type": "chip",
+      "href": "/en/search?q=spring%20flowers&intent=travel-place"
+    },
+    {
+      "text": "🎨Watercolor",
+      "type": "suggestion",
+      "href": "/en/topics/watercolor"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    },
+    {
+      "text": "📋DIY & Guides",
+      "type": "suggestion",
+      "href": "/en/topics/guides"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "butterfly",
+      "subtitle": "butterfly",
+      "templateId": "watercolor-painting-tutorial-guide",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-butterfly?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-butterfly-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "butterfly | butterfly"
+    },
+    {
+      "rank": 2,
+      "title": "lemon",
+      "subtitle": "lemon",
+      "templateId": "watercolor-painting-tutorial-guide",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-lemon?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-lemon-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "lemon | lemon"
+    },
+    {
+      "rank": 3,
+      "title": "mushrooms",
+      "subtitle": "mushrooms",
+      "templateId": "watercolor-painting-tutorial-guide",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-mushrooms?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-mushrooms-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "mushrooms | mushrooms"
+    },
+    {
+      "rank": 4,
+      "title": "animals pinyin",
+      "subtitle": "animals pinyin",
+      "templateId": "multilingual-vocabulary-poster-watercolor",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/multilingual-vocabulary-poster-watercolor/template-multilingual-vocabulary-poster-watercolor-animals-pinyin?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-multilingual-vocabulary-poster-watercolor-animals-pinyin-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "animals pinyin | animals pinyin"
+    },
+    {
+      "rank": 5,
+      "title": "fruits pinyin",
+      "subtitle": "fruits pinyin",
+      "templateId": "multilingual-vocabulary-poster-watercolor",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/multilingual-vocabulary-poster-watercolor/template-multilingual-vocabulary-poster-watercolor-fruits-pinyin?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-multilingual-vocabulary-poster-watercolor-fruits-pinyin-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits pinyin | fruits pinyin"
+    },
+    {
+      "rank": 6,
+      "title": "jobs pinyin",
+      "subtitle": "jobs pinyin",
+      "templateId": "multilingual-vocabulary-poster-watercolor",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/multilingual-vocabulary-poster-watercolor/template-multilingual-vocabulary-poster-watercolor-jobs-pinyin?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-multilingual-vocabulary-poster-watercolor-jobs-pinyin-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "jobs pinyin | jobs pinyin"
+    },
+    {
+      "rank": 7,
+      "title": "am",
+      "subtitle": "am",
+      "templateId": "CVC-english-word-coloring-flower-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/CVC-english-word-coloring-flower-card/template-CVC-english-word-coloring-flower-card-am?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-CVC-english-word-coloring-flower-card-am-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "am | am"
+    },
+    {
+      "rank": 8,
+      "title": "ap",
+      "subtitle": "ap",
+      "templateId": "CVC-english-word-coloring-flower-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/CVC-english-word-coloring-flower-card/template-CVC-english-word-coloring-flower-card-ap?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-CVC-english-word-coloring-flower-card-ap-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "ap | ap"
+    },
+    {
+      "rank": 9,
+      "title": "at",
+      "subtitle": "at",
+      "templateId": "CVC-english-word-coloring-flower-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/CVC-english-word-coloring-flower-card/template-CVC-english-word-coloring-flower-card-at?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-CVC-english-word-coloring-flower-card-at-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "at | at"
+    },
+    {
+      "rank": 10,
+      "title": "france",
+      "subtitle": "france",
+      "templateId": "country-top10-travel-destinations",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/country-top10-travel-destinations/template-country-top10-travel-destinations-france?media=image&from=%2Fsearch%3Fq%3Dspring%2Bflowers&ids=template-watercolor-painting-tutorial-guide-butterfly%2Ctemplate-watercolor-painting-tutorial-guide-lemon%2Ctemplate-watercolor-painting-tutorial-guide-mushrooms%2Ctemplate-multilingual-vocabulary-poster-watercolor-animals-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-fruits-pinyin%2Ctemplate-multilingual-vocabulary-poster-watercolor-jobs-pinyin%2Ctemplate-CVC-english-word-coloring-flower-card-am%2Ctemplate-CVC-english-word-coloring-flower-card-ap%2Ctemplate-CVC-english-word-coloring-flower-card-at%2Ctemplate-country-top10-travel-destinations-france%2Ctemplate-country-top10-travel-destinations-india%2Ctemplate-country-top10-travel-destinations-italy%2Ctemplate-country-souvenirs-watercolor-brazil%2Ctemplate-country-souvenirs-watercolor-india%2Ctemplate-country-souvenirs-watercolor-italy%2Ctemplate-gardening-how-to-infographic-bell-peppers%2Ctemplate-gardening-how-to-infographic-carrots%2Ctemplate-gardening-how-to-infographic-lettuce%2Ctemplate-lifestyle-watercolor-infographic-healthy-habits%2Ctemplate-lifestyle-watercolor-infographic-mindfulness-practices%2Ctemplate-lifestyle-watercolor-infographic-morning-routine%2Ctemplate-watercolor-theme-collage-illustration-autumn-harvest%2Ctemplate-watercolor-theme-collage-illustration-cozy-winter-tea%2Ctemplate-watercolor-theme-collage-illustration-music-lover.jp%2Ctemplate-watercolor-travel-journal-collage-coastal-vibe%2Ctemplate-watercolor-travel-journal-collage-countryside-tour%2Ctemplate-watercolor-travel-journal-collage-island-vacation%2Ctemplate-watercolor-world-map-illustration-africa%2Ctemplate-watercolor-world-map-illustration-asia%2Ctemplate-watercolor-world-map-illustration-europe",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-country-top10-travel-destinations-france-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "france | france"
+    }
+  ],
+  "counts": {
+    "labels": 9,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/031-spring-flowers/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/031-spring-flowers/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

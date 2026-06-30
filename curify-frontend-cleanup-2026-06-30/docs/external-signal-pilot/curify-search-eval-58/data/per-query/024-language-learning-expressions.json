@@ -1,0 +1,170 @@
+{
+  "index": 24,
+  "query": "language learning expressions",
+  "group": "reddit",
+  "curifyUrl": "http://localhost:3000/en/search?q=language%20learning%20expressions",
+  "finalUrl": "http://localhost:3000/search?q=language+learning+expressions",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:19:35.727Z",
+  "labels": [
+    {
+      "text": "Learning Materials20",
+      "type": "chip",
+      "href": "/en/search?q=language%20learning%20expressions&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art20",
+      "type": "chip",
+      "href": "/en/search?q=language%20learning%20expressions&intent=visual-art"
+    },
+    {
+      "text": "Social & Personal10",
+      "type": "chip",
+      "href": "/en/search?q=language%20learning%20expressions&intent=social-personal"
+    },
+    {
+      "text": "📖Vocabulary",
+      "type": "suggestion",
+      "href": "/en/topics/vocabulary"
+    },
+    {
+      "text": "🗣️Expressions",
+      "type": "suggestion",
+      "href": "/en/topics/expressions"
+    },
+    {
+      "text": "🌸Kawaii",
+      "type": "suggestion",
+      "href": "/en/topics/kawaii"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "compliments",
+      "subtitle": "compliments",
+      "templateId": "english-top5-phrases",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-top5-phrases/template-english-top5-phrases-compliments?media=video&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-top5-phrases-compliments-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "compliments | compliments"
+    },
+    {
+      "rank": 2,
+      "title": "greetings",
+      "subtitle": "greetings",
+      "templateId": "english-top5-phrases",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-top5-phrases/template-english-top5-phrases-greetings?media=video&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-top5-phrases-greetings-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "greetings | greetings"
+    },
+    {
+      "rank": 3,
+      "title": "thank you",
+      "subtitle": "thank you",
+      "templateId": "english-top5-phrases",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-top5-phrases/template-english-top5-phrases-thank-you?media=video&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-top5-phrases-thank-you-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "thank you | thank you"
+    },
+    {
+      "rank": 4,
+      "title": "break",
+      "subtitle": "break",
+      "templateId": "english-phrasal-verb",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-phrasal-verb/template-english-phrasal-verb-break?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-phrasal-verb-break-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "break | break"
+    },
+    {
+      "rank": 5,
+      "title": "go",
+      "subtitle": "go",
+      "templateId": "english-phrasal-verb",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-phrasal-verb/template-english-phrasal-verb-go?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-phrasal-verb-go-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "go | go"
+    },
+    {
+      "rank": 6,
+      "title": "look",
+      "subtitle": "look",
+      "templateId": "english-phrasal-verb",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-phrasal-verb/template-english-phrasal-verb-look?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-phrasal-verb-look-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "look | look"
+    },
+    {
+      "rank": 7,
+      "title": "bet drip stan clapped rent free main character",
+      "subtitle": "bet drip stan clapped rent free main character",
+      "templateId": "slang-week-recap-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/slang-week-recap-infographic/template-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "bet drip stan clapped rent free main character | bet drip stan clapped rent free main character"
+    },
+    {
+      "rank": 8,
+      "title": "ghosting salty flex lowkey vibe check slaps",
+      "subtitle": "ghosting salty flex lowkey vibe check slaps",
+      "templateId": "slang-week-recap-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/slang-week-recap-infographic/template-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "ghosting salty flex lowkey vibe check slaps | ghosting salty flex lowkey vibe check slaps"
+    },
+    {
+      "rank": 9,
+      "title": "ghosting sus salty flex rizz delulu",
+      "subtitle": "ghosting sus salty flex rizz delulu",
+      "templateId": "slang-week-recap-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/slang-week-recap-infographic/template-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu?media=image&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "ghosting sus salty flex rizz delulu | ghosting sus salty flex rizz delulu"
+    },
+    {
+      "rank": 10,
+      "title": "greeting",
+      "subtitle": "greeting",
+      "templateId": "english-dialogue-scene",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/english-dialogue-scene/template-english-dialogue-scene-greeting?media=video&from=%2Fsearch%3Fq%3Dlanguage%2Blearning%2Bexpressions&ids=template-english-top5-phrases-compliments%2Ctemplate-english-top5-phrases-greetings%2Ctemplate-english-top5-phrases-thank-you%2Ctemplate-english-phrasal-verb-break%2Ctemplate-english-phrasal-verb-go%2Ctemplate-english-phrasal-verb-look%2Ctemplate-slang-week-recap-infographic-bet-drip-stan-clapped-rent-free-main-character%2Ctemplate-slang-week-recap-infographic-ghosting-salty-flex-lowkey-vibe-check-slaps%2Ctemplate-slang-week-recap-infographic-ghosting-sus-salty-flex-rizz-delulu%2Ctemplate-english-dialogue-scene-greeting%2Ctemplate-english-dialogue-scene-restaurant%2Ctemplate-english-dialogue-scene-shopping%2Ctemplate-native-english-expressions-abbreviations-greetings%2Ctemplate-native-english-expressions-contractions%2Ctemplate-native-english-expressions-interjections%2Ctemplate-chinese-idiom-learning-card-chi-gan-fan%2Ctemplate-chinese-idiom-learning-card-dui-niu-tan-qin%2Ctemplate-chinese-idiom-learning-card-hua-she-tian-zu%2Ctemplate-kids-opposite-concept-education-comparison-concepts%2Ctemplate-kids-opposite-concept-education-learn-before-and-after%2Ctemplate-kids-opposite-concept-education-learn-opposites%2Ctemplate-cartoon-action-visual-guide-infographic-body-language%2Ctemplate-chinese-verb-opposite-infographic-1cu51jx",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-dialogue-scene-greeting-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "greeting | greeting"
+    }
+  ],
+  "counts": {
+    "labels": 7,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/024-language-learning-expressions/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/024-language-learning-expressions/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

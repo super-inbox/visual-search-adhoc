@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2026-06-19",
+  "phase": "v0_pilot",
+  "collection_method": "manual_browser_observation",
+  "collection_notes": "Bing Image Search API v7 was retired on 2025-08-11 and is not available. Pinterest API does not expose public search or refinement signals. All data in this file is collected manually via browser observation. No automation, scraping, or API calls are used for external platforms.",
+  "signal_type_vocabulary": [
+    "related_search",
+    "refinement_chip",
+    "autocomplete",
+    "visual_category",
+    "entity_refinement",
+    "style_refinement",
+    "format_refinement",
+    "audience_refinement",
+    "occasion_refinement",
+    "task_refinement",
+    "unknown"
+  ],
+  "curify_cluster_vocabulary": [
+    "learning-materials",
+    "visual-art",
+    "merch-commerce",
+    "social-personal",
+    "storytelling-identity",
+    "travel-place",
+    "events-hot-now",
+    "diy-guides",
+    "unmapped"
+  ],
+  "status_vocabulary": [
+    "pending_manual_capture",
+    "captured",
+    "not_visible",
+    "login_blocked",
+    "empty_result"
+  ],
+  "records": [
+    {
+      "query": "cat",
+      "curify_baseline": {
+        "captured_at": "2026-06-19",
+        "result_count_strict": 33,
+        "result_count_eval_bucket": "rich",
+        "template_count_strict": 5,
+        "top_templates": [
+          "lunar-new-year-red-envelope-set × 8",
+          "pet-life-journey-infographic × 6",
+          "disney-character-color-grid-art × 5",
+          "pet-care-guide × 4"
+        ],
+        "intent_chips_visible": "pending_manual_capture",
+        "intent_chip_notes": "Requires browser verification at http://localhost:3000/search?q=cat. The co-occurrence implementation maps results to clusters; expected dominant clusters: storytelling-identity (disney, character), social-personal (lifestyle, pet), diy-guides (pet-care, guides). Verify order in browser.",
+        "rewrite_banner_visible": "pending_manual_capture",
+        "localhost_url": "http://localhost:3000/en/search?q=cat"
+      },
+      "bing_images": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "bing_images_browser",
+        "browser_url": "https://www.bing.com/images/search?q=cat",
+        "collection_notes": "Use private/incognito browser. Record refinement chips at top of page, related searches at bottom, autocomplete from search bar. Save screenshot as bing_manual/bing_cat_<date>.png",
+        "autocomplete": [],
+        "refinement_chips": [],
+        "related_searches": [],
+        "entity_labels": [],
+        "visual_categories": [],
+        "suggestions": []
+      },
+      "pinterest": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "pinterest_browser",
+        "browser_url": "https://www.pinterest.com/search/pins/?q=cat",
+        "collection_notes": "Use private/incognito browser. Record refinement bubbles (horizontal chip row below search bar), autocomplete, and dominant visual themes from top 20 pins. Save screenshot as pinterest_manual/pinterest_cat_<date>.png. Note if login wall appears.",
+        "login_required": "pending_manual_capture",
+        "autocomplete": [],
+        "refinement_bubbles": [],
+        "board_labels_visible": [],
+        "dominant_visual_themes": "pending_manual_capture",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "paris",
+      "curify_baseline": {
+        "captured_at": "2026-06-19",
+        "result_count_strict": 35,
+        "result_count_eval_bucket": "rich",
+        "template_count_strict": 4,
+        "top_templates": [
+          "city-miniature × 15",
+          "tourist-spot-watercolor-map-infographic × 6",
+          "global-city-walkability-infographic-card × 6",
+          "city-mbti × 5"
+        ],
+        "intent_chips_visible": "pending_manual_capture",
+        "intent_chip_notes": "Requires browser verification at http://localhost:3000/search?q=paris. Expected dominant clusters: travel-place (city, travel, map, itinerary), visual-art (watercolor, illustration, vintage), storytelling-identity (city-mbti). Verify order and which clusters actually appear.",
+        "rewrite_banner_visible": "pending_manual_capture",
+        "localhost_url": "http://localhost:3000/en/search?q=paris"
+      },
+      "bing_images": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "bing_images_browser",
+        "browser_url": "https://www.bing.com/images/search?q=paris",
+        "collection_notes": "Use private/incognito browser. Paris is a rich query — expect many entity refinements (Eiffel Tower, Louvre, Montmartre), style refinements (watercolor, vintage, poster), and format refinements (map, poster, wallpaper). Save screenshot as bing_manual/bing_paris_<date>.png",
+        "autocomplete": [],
+        "refinement_chips": [],
+        "related_searches": [],
+        "entity_labels": [],
+        "visual_categories": [],
+        "suggestions": []
+      },
+      "pinterest": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "pinterest_browser",
+        "browser_url": "https://www.pinterest.com/search/pins/?q=paris",
+        "collection_notes": "Use private/incognito browser. Paris is a strong Pinterest query — expect refinement bubbles for aesthetic, travel, art, fashion, and itinerary angles. Note if login wall appears. Save screenshot as pinterest_manual/pinterest_paris_<date>.png",
+        "login_required": "pending_manual_capture",
+        "autocomplete": [],
+        "refinement_bubbles": [],
+        "board_labels_visible": [],
+        "dominant_visual_themes": "pending_manual_capture",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "science poster",
+      "curify_baseline": {
+        "captured_at": "2026-06-19",
+        "result_count_strict": 221,
+        "result_count_eval_bucket": "rich",
+        "template_count_strict": 17,
+        "top_templates": [
+          "herbal × 77",
+          "food × 40",
+          "weird-cold-knowledge-popular-science-card × 15",
+          "figure-principles-infographic × 11"
+        ],
+        "intent_chips_visible": "pending_manual_capture",
+        "intent_chip_notes": "Requires browser verification at http://localhost:3000/search?q=science+poster. With 221 hits across 17 templates, many clusters will have evidence. Expected clusters: learning-materials (science, anatomy, insight, fact), visual-art (posters, illustration), diy-guides (guides). Verify which clusters surface and their order.",
+        "rewrite_banner_visible": "pending_manual_capture",
+        "localhost_url": "http://localhost:3000/en/search?q=science+poster"
+      },
+      "bing_images": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "bing_images_browser",
+        "browser_url": "https://www.bing.com/images/search?q=science+poster",
+        "collection_notes": "Use private/incognito browser. Expect refinement chips for subject area (biology, chemistry, physics, astronomy), audience (kids, classroom), format (printable, school project). Save screenshot as bing_manual/bing_science_poster_<date>.png",
+        "autocomplete": [],
+        "refinement_chips": [],
+        "related_searches": [],
+        "entity_labels": [],
+        "visual_categories": [],
+        "suggestions": []
+      },
+      "pinterest": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "pinterest_browser",
+        "browser_url": "https://www.pinterest.com/search/pins/?q=science+poster",
+        "collection_notes": "Use private/incognito browser. Science poster is likely to surface refinement bubbles for classroom, printable, kids, biology, space. Note if login wall appears. Save screenshot as pinterest_manual/pinterest_science_poster_<date>.png",
+        "login_required": "pending_manual_capture",
+        "autocomplete": [],
+        "refinement_bubbles": [],
+        "board_labels_visible": [],
+        "dominant_visual_themes": "pending_manual_capture",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "paris travel itinerary",
+      "curify_baseline": {
+        "captured_at": "2026-06-19",
+        "result_count_strict": 2,
+        "result_count_eval_bucket": "thin",
+        "result_count_raw_scorer": 7,
+        "template_count_strict": 1,
+        "top_templates": [
+          "tourist-spot-watercolor-map-infographic × 1",
+          "city-miniature × 1"
+        ],
+        "eval_status": "WARN",
+        "eval_discrepancy_note": "score_user_queries.cjs returns 7 hits (moderate bucket) while the eval pipeline records 2 hits (thin). The difference reflects the strict-AND + deduplication in the full search pipeline vs the raw alias scorer.",
+        "intent_chips_visible": "pending_manual_capture",
+        "intent_chip_notes": "With only 2 results, the co-occurrence pool is very thin. The cluster chip fallback to OUTPUT_TYPE_SLUG chips may trigger (minCount threshold). Verify in browser whether cluster chips or output-type chips appear, or neither.",
+        "rewrite_banner_visible": "pending_manual_capture",
+        "localhost_url": "http://localhost:3000/en/search?q=paris+travel+itinerary"
+      },
+      "bing_images": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "bing_images_browser",
+        "browser_url": "https://www.bing.com/images/search?q=paris+travel+itinerary",
+        "collection_notes": "Key target query — Curify has very thin content here. Bing's refinement chips and related searches may reveal whether demand is for day-by-day plans, map-based routes, packing lists, or specific landmark sequences. Record ALL refinement signals carefully. Save screenshot as bing_manual/bing_paris_travel_itinerary_<date>.png",
+        "autocomplete": [],
+        "refinement_chips": [],
+        "related_searches": [],
+        "entity_labels": [],
+        "visual_categories": [],
+        "suggestions": []
+      },
+      "pinterest": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "pinterest_browser",
+        "browser_url": "https://www.pinterest.com/search/pins/?q=paris+travel+itinerary",
+        "collection_notes": "Key target query — Pinterest is strong on travel itinerary content. Expect many refinement bubbles (days, season, tips, map, budget). Record ALL chips and note dominant visual themes (text-heavy day plans vs visual maps vs collages). Note if login wall appears. Save screenshot as pinterest_manual/pinterest_paris_travel_itinerary_<date>.png",
+        "login_required": "pending_manual_capture",
+        "autocomplete": [],
+        "refinement_bubbles": [],
+        "board_labels_visible": [],
+        "dominant_visual_themes": "pending_manual_capture",
+        "suggestions": []
+      }
+    },
+    {
+      "query": "warmup routine running checklist",
+      "curify_baseline": {
+        "captured_at": "2026-06-19",
+        "result_count_strict": 1,
+        "result_count_eval_bucket": "thin",
+        "template_count_strict": 0,
+        "top_templates": [
+          "warmup-routine × 1"
+        ],
+        "eval_status": "WARN",
+        "eval_discrepancy_note": "score_user_queries.cjs returns 1 hit (thin bucket). The eval also records 1 hit (thin). No discrepancy. Zero template-level strict matches — the single result is inspiration-level only.",
+        "intent_chips_visible": "pending_manual_capture",
+        "intent_chip_notes": "With only 1 result, no cluster chip will have enough co-occurrence evidence to meet the minCount threshold. The system will likely fall back to no chips or output-type chips. Verify in browser.",
+        "rewrite_banner_visible": "pending_manual_capture",
+        "localhost_url": "http://localhost:3000/en/search?q=warmup+routine+running+checklist"
+      },
+      "bing_images": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "bing_images_browser",
+        "browser_url": "https://www.bing.com/images/search?q=warmup+routine+running+checklist",
+        "collection_notes": "Key target query — Curify has only 1 result. Bing's refinement chips may reveal whether users need: beginner vs advanced versions, specific muscle groups, printable formats, or broader fitness content. This informs whether the gap is in warmup-specific content or broader fitness/guide content. Save screenshot as bing_manual/bing_warmup_routine_running_checklist_<date>.png",
+        "autocomplete": [],
+        "refinement_chips": [],
+        "related_searches": [],
+        "entity_labels": [],
+        "visual_categories": [],
+        "suggestions": []
+      },
+      "pinterest": {
+        "status": "pending_manual_capture",
+        "captured_at": null,
+        "locale": "en-US",
+        "surface": "pinterest_browser",
+        "browser_url": "https://www.pinterest.com/search/pins/?q=warmup+routine+running+checklist",
+        "collection_notes": "Key target query — Pinterest has strong fitness/wellness content. Expect refinement bubbles for beginner, printable, stretching, marathon, morning. Note visual themes of top pins (illustrated vs text-heavy vs photograph-based). Note if login wall appears. Save screenshot as pinterest_manual/pinterest_warmup_routine_running_checklist_<date>.png",
+        "login_required": "pending_manual_capture",
+        "autocomplete": [],
+        "refinement_bubbles": [],
+        "board_labels_visible": [],
+        "dominant_visual_themes": "pending_manual_capture",
+        "suggestions": []
+      }
+    }
+  ]
+}

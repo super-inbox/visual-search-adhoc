@@ -1,0 +1,165 @@
+{
+  "index": 7,
+  "query": "水果中文",
+  "group": "user-2026-05-20",
+  "curifyUrl": "http://localhost:3000/en/search?q=%E6%B0%B4%E6%9E%9C%E4%B8%AD%E6%96%87",
+  "finalUrl": "http://localhost:3000/search?q=%E6%B0%B4%E6%9E%9C%E4%B8%AD%E6%96%87",
+  "status": "ok",
+  "redirected": false,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:16:48.411Z",
+  "labels": [
+    {
+      "text": "Learning Materials8",
+      "type": "chip",
+      "href": "/en/search?q=%E6%B0%B4%E6%9E%9C%E4%B8%AD%E6%96%87&intent=learning-materials"
+    },
+    {
+      "text": "Visual & Art8",
+      "type": "chip",
+      "href": "/en/search?q=%E6%B0%B4%E6%9E%9C%E4%B8%AD%E6%96%87&intent=visual-art"
+    },
+    {
+      "text": "Travel & Place4",
+      "type": "chip",
+      "href": "/en/search?q=%E6%B0%B4%E6%9E%9C%E4%B8%AD%E6%96%87&intent=travel-place"
+    },
+    {
+      "text": "📖Vocabulary",
+      "type": "suggestion",
+      "href": "/en/topics/vocabulary"
+    },
+    {
+      "text": "🌸Kawaii",
+      "type": "suggestion",
+      "href": "/en/topics/kawaii"
+    },
+    {
+      "text": "🍜Food",
+      "type": "suggestion",
+      "href": "/en/topics/food"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "fruits",
+      "subtitle": "fruits",
+      "templateId": "children-english-vocab-spelling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/children-english-vocab-spelling/template-children-english-vocab-spelling-fruits?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-children-english-vocab-spelling-fruits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits | fruits"
+    },
+    {
+      "rank": 2,
+      "title": "apple",
+      "subtitle": "apple",
+      "templateId": "detailed-vocab-flashcard",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/detailed-vocab-flashcard/template-detailed-vocab-flashcard-apple?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-detailed-vocab-flashcard-apple-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "apple | apple"
+    },
+    {
+      "rank": 3,
+      "title": "fruits",
+      "subtitle": "fruits",
+      "templateId": "daily-essentials-learning-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/daily-essentials-learning-card/template-daily-essentials-learning-card-fruits?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-daily-essentials-learning-card-fruits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits | fruits"
+    },
+    {
+      "rank": 4,
+      "title": "xinjiang",
+      "subtitle": "xinjiang",
+      "templateId": "cuisine-food-vocab-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/cuisine-food-vocab-poster/template-cuisine-food-vocab-poster-xinjiang?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cuisine-food-vocab-poster-xinjiang-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "xinjiang | xinjiang"
+    },
+    {
+      "rank": 5,
+      "title": "apple",
+      "subtitle": "apple",
+      "templateId": "bilingual-object-structure-labeling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/bilingual-object-structure-labeling/template-bilingual-object-structure-labeling-apple?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-bilingual-object-structure-labeling-apple-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "apple | apple"
+    },
+    {
+      "rank": 6,
+      "title": "fruits",
+      "subtitle": "fruits",
+      "templateId": "kids-vocabulary-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/kids-vocabulary-poster/template-kids-vocabulary-poster-fruits?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-kids-vocabulary-poster-fruits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits | fruits"
+    },
+    {
+      "rank": 7,
+      "title": "fruits",
+      "subtitle": "fruits",
+      "templateId": "cartoon-english-vocabulary-flashcards",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/cartoon-english-vocabulary-flashcards/template-cartoon-english-vocabulary-flashcards-fruits?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cartoon-english-vocabulary-flashcards-fruits-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "fruits | fruits"
+    },
+    {
+      "rank": 8,
+      "title": "en-zh",
+      "subtitle": "en-zh",
+      "templateId": "vocabulary",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/vocabulary/template-vocabulary-fruits-en-zh?media=image&from=%2Fsearch%3Fq%3D%25E6%25B0%25B4%25E6%259E%259C%25E4%25B8%25AD%25E6%2596%2587&ids=template-children-english-vocab-spelling-fruits%2Ctemplate-detailed-vocab-flashcard-apple%2Ctemplate-daily-essentials-learning-card-fruits%2Ctemplate-cuisine-food-vocab-poster-xinjiang%2Ctemplate-bilingual-object-structure-labeling-apple%2Ctemplate-kids-vocabulary-poster-fruits%2Ctemplate-cartoon-english-vocabulary-flashcards-fruits%2Ctemplate-vocabulary-fruits-en-zh",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-fruits-en-zh-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "en-zh | en-zh"
+    },
+    {
+      "rank": 9,
+      "title": "Cuisine Food Vocabulary Posters preview 1",
+      "subtitle": "",
+      "templateId": "cuisine-food-vocab-poster",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/cuisine-food-vocab-poster?cuisine_theme=Xinjiang+Cuisine",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cuisine-food-vocab-poster-xinjiang-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Cuisine Food Vocabulary Posters preview 1"
+    },
+    {
+      "rank": 10,
+      "title": "Bilingual Structure Labeling preview 1",
+      "subtitle": "",
+      "templateId": "bilingual-object-structure-labeling",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/bilingual-object-structure-labeling?object_name=Apple",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-bilingual-object-structure-labeling-apple-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "Bilingual Structure Labeling preview 1"
+    }
+  ],
+  "counts": {
+    "labels": 6,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/007-q007/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/007-q007/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

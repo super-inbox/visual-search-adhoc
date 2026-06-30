@@ -1,0 +1,180 @@
+{
+  "index": 10,
+  "query": "葡萄酒",
+  "group": "user-2026-05-20",
+  "curifyUrl": "http://localhost:3000/en/search?q=%E8%91%A1%E8%90%84%E9%85%92",
+  "finalUrl": "http://localhost:3000/search?q=%E8%91%A1%E8%90%84%E9%85%92",
+  "status": "ok",
+  "redirected": false,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:17:16.542Z",
+  "labels": [
+    {
+      "text": "Visual & Art18",
+      "type": "chip",
+      "href": "/en/search?q=%E8%91%A1%E8%90%84%E9%85%92&intent=visual-art"
+    },
+    {
+      "text": "Learning Materials17",
+      "type": "chip",
+      "href": "/en/search?q=%E8%91%A1%E8%90%84%E9%85%92&intent=learning-materials"
+    },
+    {
+      "text": "DIY & Guides16",
+      "type": "chip",
+      "href": "/en/search?q=%E8%91%A1%E8%90%84%E9%85%92&intent=diy-guides"
+    },
+    {
+      "text": "Travel & Place15",
+      "type": "chip",
+      "href": "/en/search?q=%E8%91%A1%E8%90%84%E9%85%92&intent=travel-place"
+    },
+    {
+      "text": "Social & Personal12",
+      "type": "chip",
+      "href": "/en/search?q=%E8%91%A1%E8%90%84%E9%85%92&intent=social-personal"
+    },
+    {
+      "text": "🍜Food",
+      "type": "suggestion",
+      "href": "/en/topics/food"
+    },
+    {
+      "text": "📋DIY & Guides",
+      "type": "suggestion",
+      "href": "/en/topics/guides"
+    },
+    {
+      "text": "🖼️Posters & Flyers",
+      "type": "suggestion",
+      "href": "/en/topics/posters"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "Red Wine",
+      "subtitle": "Red Wine",
+      "templateId": "wine-variety-intro-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/wine-variety-intro-infographic/template-wine-variety-intro-infographic-red-wine?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-wine-variety-intro-infographic-red-wine-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Red Wine | Red Wine"
+    },
+    {
+      "rank": 2,
+      "title": "White Wine",
+      "subtitle": "White Wine",
+      "templateId": "wine-variety-intro-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/wine-variety-intro-infographic/template-wine-variety-intro-infographic-white-wine?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-wine-variety-intro-infographic-white-wine-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "White Wine | White Wine"
+    },
+    {
+      "rank": 3,
+      "title": "Champagne",
+      "subtitle": "Champagne",
+      "templateId": "wine-variety-intro-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/wine-variety-intro-infographic/template-wine-variety-intro-infographic-champagne?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-wine-variety-intro-infographic-champagne-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Champagne | Champagne"
+    },
+    {
+      "rank": 4,
+      "title": "Coffee Brewing Guide",
+      "subtitle": "Coffee Brewing Guide",
+      "templateId": "professional-category-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-coffee-brewing-guide?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-coffee-brewing-guide-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Coffee Brewing Guide | Coffee Brewing Guide"
+    },
+    {
+      "rank": 5,
+      "title": "Interior Design Styles",
+      "subtitle": "Interior Design Styles",
+      "templateId": "professional-category-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-interior-design-styles?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-interior-design-styles-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Interior Design Styles | Interior Design Styles"
+    },
+    {
+      "rank": 6,
+      "title": "Plant Care Guide",
+      "subtitle": "Plant Care Guide",
+      "templateId": "professional-category-guide-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-plant-care-guide?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-plant-care-guide-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Plant Care Guide | Plant Care Guide"
+    },
+    {
+      "rank": 7,
+      "title": "wine mussels",
+      "subtitle": "wine mussels",
+      "templateId": "food",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/food/template-food-wine-mussels?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-wine-mussels-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "wine mussels | wine mussels"
+    },
+    {
+      "rank": 8,
+      "title": "wine tasting notes",
+      "subtitle": "wine tasting notes",
+      "templateId": "lifestyle-info-card",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-wine-tasting-notes?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-wine-tasting-notes-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "wine tasting notes | wine tasting notes"
+    },
+    {
+      "rank": 9,
+      "title": "portuguese",
+      "subtitle": "portuguese",
+      "templateId": "regional-alcoholic-drinks-infographic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/regional-alcoholic-drinks-infographic/template-regional-alcoholic-drinks-infographic-portuguese?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-regional-alcoholic-drinks-infographic-portuguese-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "portuguese | portuguese"
+    },
+    {
+      "rank": 10,
+      "title": "en-zh",
+      "subtitle": "en-zh",
+      "templateId": "vocabulary",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/vocabulary/template-vocabulary-english-chinese-wine-varieties?media=image&from=%2Fsearch%3Fq%3D%25E8%2591%25A1%25E8%2590%2584%25E9%2585%2592&ids=template-wine-variety-intro-infographic-red-wine%2Ctemplate-wine-variety-intro-infographic-white-wine%2Ctemplate-wine-variety-intro-infographic-champagne%2Ctemplate-professional-category-guide-infographic-coffee-brewing-guide%2Ctemplate-professional-category-guide-infographic-interior-design-styles%2Ctemplate-professional-category-guide-infographic-plant-care-guide%2Ctemplate-food-wine-mussels%2Ctemplate-lifestyle-info-card-wine-tasting-notes%2Ctemplate-regional-alcoholic-drinks-infographic-portuguese%2Ctemplate-vocabulary-english-chinese-wine-varieties%2Ctemplate-vocabulary-english-french-wine-vocabulary%2Ctemplate-3d-region-landmark-map-french-wine-regions-map",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-english-chinese-wine-varieties-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "en-zh | en-zh"
+    }
+  ],
+  "counts": {
+    "labels": 9,
+    "topResults": 10
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/010-q010/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/010-q010/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}

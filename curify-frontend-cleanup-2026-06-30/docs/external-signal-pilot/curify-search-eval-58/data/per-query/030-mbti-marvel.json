@@ -1,0 +1,148 @@
+{
+  "index": 30,
+  "query": "mbti marvel",
+  "group": "popular",
+  "curifyUrl": "http://localhost:3000/en/search?q=mbti%20marvel",
+  "finalUrl": "http://localhost:3000/search?q=mbti+marvel",
+  "status": "ok",
+  "redirected": true,
+  "redirectType": "other",
+  "capturedAt": "2026-06-23T13:20:40.489Z",
+  "labels": [
+    {
+      "text": "Learning Materials20",
+      "type": "chip",
+      "href": "/en/search?q=mbti%20marvel&intent=learning-materials"
+    },
+    {
+      "text": "Storytelling & Identity20",
+      "type": "chip",
+      "href": "/en/search?q=mbti%20marvel&intent=storytelling-identity"
+    },
+    {
+      "text": "Visual & Art20",
+      "type": "chip",
+      "href": "/en/search?q=mbti%20marvel&intent=visual-art"
+    },
+    {
+      "text": "🧠MBTI & Personality",
+      "type": "suggestion",
+      "href": "/en/topics/mbti"
+    },
+    {
+      "text": "🎬Pop Culture",
+      "type": "suggestion",
+      "href": "/en/topics/film"
+    },
+    {
+      "text": "📐Isometric",
+      "type": "suggestion",
+      "href": "/en/topics/isometric"
+    },
+    {
+      "text": "👥Groups",
+      "type": "suggestion",
+      "href": "/en/topics/groups"
+    }
+  ],
+  "topResults": [
+    {
+      "rank": 1,
+      "title": "marvel hulk",
+      "subtitle": "marvel hulk",
+      "templateId": "mbti-marvel",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-marvel/template-mbti-marvel-marvel-hulk?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-marvel-en-marvel-hulk-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "marvel hulk | marvel hulk"
+    },
+    {
+      "rank": 2,
+      "title": "ogan",
+      "subtitle": "ogan",
+      "templateId": "mbti-marvel",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-marvel/template-mbti-marvel-ogan?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-marvel-en-ogan-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "ogan | ogan"
+    },
+    {
+      "rank": 3,
+      "title": "rogue",
+      "subtitle": "rogue",
+      "templateId": "mbti-marvel",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-marvel/template-mbti-marvel-rogue?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-marvel-en-rogue-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "rogue | rogue"
+    },
+    {
+      "rank": 4,
+      "title": "Marvel Carol Bucky Sam Scott",
+      "subtitle": "Marvel Carol Bucky Sam Scott",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-Marvel-Carol-Bucky-Sam-Scott?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-Marvel-Carol-Bucky-Sam-Scott-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Marvel Carol Bucky Sam Scott | Marvel Carol Bucky Sam Scott"
+    },
+    {
+      "rank": 5,
+      "title": "Marvel TChalla Wanda Vision Clint",
+      "subtitle": "Marvel TChalla Wanda Vision Clint",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Marvel TChalla Wanda Vision Clint | Marvel TChalla Wanda Vision Clint"
+    },
+    {
+      "rank": 6,
+      "title": "Marvel Thor Strange Banner Loki",
+      "subtitle": "Marvel Thor Strange Banner Loki",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/carousel/template-example/mbti-generic/template-mbti-generic-Marvel-Thor-Strange-Banner-Loki?media=image&from=%2Fsearch%3Fq%3Dmbti%2Bmarvel&ids=template-mbti-marvel-marvel-hulk%2Ctemplate-mbti-marvel-ogan%2Ctemplate-mbti-marvel-rogue%2Ctemplate-mbti-generic-Marvel-Carol-Bucky-Sam-Scott%2Ctemplate-mbti-generic-Marvel-TChalla-Wanda-Vision-Clint%2Ctemplate-mbti-generic-Marvel-Thor-Strange-Banner-Loki",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-Marvel-Thor-Strange-Banner-Loki-prev.jpg",
+      "sourceType": "inspiration",
+      "visibleText": "Marvel Thor Strange Banner Loki | Marvel Thor Strange Banner Loki"
+    },
+    {
+      "rank": 7,
+      "title": "MBTI Personality Comparison Meme preview 1",
+      "subtitle": "",
+      "templateId": "mbti-generic",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/mbti-generic?mbti_topic=Marvel&character_set=Carol+Danvers%2C+Bucky+Barnes%2C+Sam+Wilson%2C+Scott+Lang",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-Marvel-Carol-Bucky-Sam-Scott-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "MBTI Personality Comparison Meme preview 1"
+    },
+    {
+      "rank": 8,
+      "title": "MBTI Character Infographic Category preview 1",
+      "subtitle": "",
+      "templateId": "mbti-marvel",
+      "templateName": "",
+      "href": "http://localhost:3000/en/nano-template/mbti-marvel?character_name=Hulk",
+      "imageUrl": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-marvel-en-marvel-hulk-prev.jpg",
+      "sourceType": "template",
+      "visibleText": "MBTI Character Infographic Category preview 1"
+    }
+  ],
+  "counts": {
+    "labels": 7,
+    "topResults": 8
+  },
+  "screenshots": {
+    "page1": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/030-mbti-marvel/curify-search-page1.png",
+    "page2": "/Users/baobaoli/Desktop/curify-frontend/docs/external-signal-pilot/curify-search-eval-58/screenshots/030-mbti-marvel/curify-search-page2.png"
+  },
+  "notes": "",
+  "error": null
+}
