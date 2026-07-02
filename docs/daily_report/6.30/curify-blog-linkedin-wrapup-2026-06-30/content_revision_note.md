@@ -24,7 +24,7 @@ Original files **blog_draft.md** and **linkedin_post.md** are preserved untouche
 | Topic category distribution table (8 categories, counts, share %) | EXTERNAL_SIGNAL_INSIGHTS_zh.md §3.1 | blog §2 |
 | Consumption / creation / mixed split (25/26/7 queries) | EXTERNAL_SIGNAL_INSIGHTS_zh.md §3.2 | blog §2 |
 | Visual search spectrum diagram | EXTERNAL_SIGNAL_INSIGHTS_zh.md §7.2 | blog §3, LinkedIn |
-| Platform star rating table (5 platforms × 5 dimensions) | EXTERNAL_SIGNAL_INSIGHTS_zh.md §5 | blog §4, LinkedIn |
+| Platform star rating table (5 platforms × 5 dimensions) | EXTERNAL_SIGNAL_INSIGHTS_zh.md §5 | blog §4 only |
 | Bing avg 39.9 label chips, Google avg 17.8 label chips | label-count-statistics-report-2026-06-23.md; blog_draft.md | blog §5, LinkedIn |
 | Pinterest One Bar sub-intent chip examples (monstera, weeknight dinners, samurai, chiikawa, 香薰) | EXTERNAL_SIGNAL_INSIGHTS_zh.md §6.4 | blog §5 |
 | Pinterest: 36/58 queries with chips, avg 19.9 chips (non-zero), 12.4 overall | EXTERNAL_SIGNAL_INSIGHTS_zh.md §5, §6.4 | blog §5 |
@@ -80,22 +80,35 @@ These items were removed even from internal notes because they are too version-s
 | Platform signal recommendation table (§8 in blog) | Adapted from EXTERNAL_SIGNAL_INSIGHTS_zh.md §7.1 into English and external-facing framing |
 | Case Study 2 — "monstera plant care guide infographic" | New case study; added to show Pinterest sub-intent chips in action (was in internal report but not in blog_draft.md) |
 | Image TODO table | New; minimal placeholder section to track what images are needed for next step |
-| LinkedIn star rating table | New addition to LinkedIn post — summarizes the key comparative data concisely |
+| LinkedIn condensed public summary | Summarizes the 58-query pilot, consumption-to-creation spectrum, and 3 cross-platform insights without including the full star rating table (full table is in the blog only) |
 
 ---
 
 ## Image Needs for Next Step
 
-All image collection deferred. Placeholders are in place in blog_public_v2.md. No CDN work, no uploads.
+**Collected local image set**
 
-| Image | Query | Platform(s) | Priority |
+Query: `ESL flashcards printable`
+
+| Platform / asset | Local path | Status |
+|---|---|---|
+| Google Images | `assets/esl_flashcards_printable/google_esl_flashcards_printable.png` | Collected locally |
+| Bing Images | `assets/esl_flashcards_printable/bing_esl_flashcards_printable.png` | Collected locally |
+| Pinterest | `assets/esl_flashcards_printable/pinterest_esl_flashcards_printable.png` | Collected locally |
+| Canva | `assets/esl_flashcards_printable/canva_esl_flashcards_printable.png` | Collected locally |
+| Curify results | `assets/esl_flashcards_printable/curify_esl_flashcards_printable_results.png` | Collected locally |
+| Curify generate path | `assets/esl_flashcards_printable/curify_esl_flashcards_printable_generate.png` | Collected locally |
+
+These are local draft assets only. External platform screenshots have not been uploaded to CDN yet. Curify screenshots may later be replaced with existing Curify-hosted asset links if available.
+
+**Remaining optional image needs**
+
+| Item | Query | Platform(s) | Status |
 |---|---|---|---|
-| Label chip bar + top image results | ESL flashcards printable | Google Images | High |
-| Label chip bar + top image results | ESL flashcards printable | Bing Images | High |
-| One Bar sub-intent chip row + pin grid | monstera plant care guide infographic | Pinterest | High |
-| Template grid with filter label chips | phonics worksheets kindergarten | Canva | Medium |
-| Result grid with intent label chips | ESL flashcards printable | Curify | High |
-| Full Case Study 1 set | ESL flashcards printable | Google / Pinterest / Canva / Curify | High |
-| Pinterest chip bar for Case Study 2 | monstera plant care guide infographic | Pinterest | Medium |
+| Pinterest One Bar label chip screenshot | `monstera plant care guide infographic` | Pinterest | Not collected |
+| English consumption-to-creation spectrum visual | — | All 5 platforms | Optional |
+| Final side-by-side comparison layout | Any selected query | All 5 platforms | Optional |
+| CDN upload for external platform screenshots | `ESL flashcards printable` | Google / Bing / Pinterest / Canva | Not done |
 
-Recommendation for collection: take fresh screenshots — the June 2026 pilot screenshots may not match current platform UIs, and Canva/Pinterest UIs change frequently.
+Recommendation for remaining collection: take fresh screenshots because current platform UIs, especially Canva and Pinterest, may differ from the June 2026 pilot collection.
+
