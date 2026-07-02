@@ -102,6 +102,44 @@
 
 ---
 
+## 5. C2 食谱家族小批量生成跟进（2026-07-02）
+
+- **仓库**：curify-frontend
+- **分支**：`baobao/c1-c2-gap-fixes-2026-07-02`
+- **提交**：`1d673b13` — "add c2 recipe batch: weeknight gluten-free meal-prep"（在第 4 节 C1 提交 `2af3ca2f` 基础上继续）
+- **详细报告**：[`docs/daily_report/7.2/c2-recipe-batch-2026-07-02.md`](./c2-recipe-batch-2026-07-02.md)
+
+本节是第 4 节 C1/C2 小批量修复的延续，聚焦 `project_gap_retest_2026_06_30.md` 中被标记为 **c2（内容生成类）** 的 14 项 gap 里的 **recipe 家族**（3 项），其余 c2 家族本次仍未处理。
+
+**C1 别名修复（回顾，详见第 4 节，本次未新增改动）**：
+- `水果中文` / `中文水果` —— 已修复。
+- `warmup routine running checklist` —— 仅补齐了 6 个非 running 热身模板（gym/swimming/yoga/badminton/basketball/fencing）的 `checklist` 别名，原查询本身（running 专属）因缺少对应模板/素材仍未修复。
+
+**C2 食谱小批量（本次新增，严格控制在 3 条，非大批量生成）**：
+
+目标查询（3 个）：
+- `easy weeknight dinners healthy`
+- `gluten free dinner ideas`
+- `meal prep weekly recipes`
+
+使用模板：`template-premium-recipe-card-infographic`（未采用 gap 复测报告最初建议的 `template-recipe`，因为该模板的 prompt 固定绑定"年夜饭"主题，与"weeknight / gluten-free / meal prep"语义不符）。
+
+新增记录 ID（3 条，一一对应上述查询）：
+- `template-premium-recipe-card-infographic-easy-weeknight-healthy-chicken-skillet`
+- `template-premium-recipe-card-infographic-gluten-free-lemon-herb-baked-salmon`
+- `template-premium-recipe-card-infographic-meal-prep-chicken-veggie-bowls`
+
+**人工审核**：3 张生成图片均由 Baobao 逐张人工目测，2026-07-02 全部标记为 **PASS**（布局清晰、文字可读、内容与目标查询语义匹配，无乱码/错位/明显语义偏差；仅有预览图水印的轻微视觉痕迹，属预期内、不阻塞）。
+
+**搜索验证**：`node scripts/eval_search.cjs --quiet` 运行前后对比，3 个目标查询均从 0 命中提升为新记录严格命中（`easy weeknight dinners healthy`、`gluten free dinner ideas`：0→1；`meal prep weekly recipes`：命中数从 5 降为 1，但经复核，原 5 条是仅松散关联的宽松匹配（沙拉海报、健康饮食指南、三明治食谱等，均与"meal prep"无直接关系），新记录的 1 条则是真正语义相关的严格匹配，是匹配器 strict-floor 规则下的桶计数副作用，非质量回归）。详细的逐查询前后对比表见 [C2 详细报告](./c2-recipe-batch-2026-07-02.md)。
+
+**局限性 / 待办**：
+- 生成图片目前**仅本地留存**（`public/images/nano_insp/`、`nano_insp_preview/`，均被 `.gitignore` 排除），尚未同步至 CDN —— 与第 4 节 MBTI 条目同样的阻塞原因：本机未安装 `gcloud` / `gsutil`。
+- 本次改动（`scripts/configs/recipe_c2_batch_2026-07-02.json` 新增、`public/data/nano_inspiration.json` 变更）已提交至 `1d673b13` 并已 push 至 origin（已用 `git fetch` + `git log origin/<branch>..HEAD` 核实为空）。
+- 其余 c2 家族（建筑地标、三明治系列、英韩词汇、then-vs-now 对比、复古邮票、热身路线变体、巴黎行程、水彩世界地图、before-after 房间整理，以及仍处于延期状态的 MBTI INFJ×ENTP）均未在本次处理，留待后续小批次逐步推进，避免一次性大批量生成。
+
+---
+
 ## 已提交 / 已 push 的内容
 
 | 仓库 | 分支 | Commit | 提交信息 | Push 状态 |
