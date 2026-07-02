@@ -116,15 +116,5 @@
 
 ---
 
-## 仍未完成 / Follow-ups
-
-- **Blog 配图 CDN 上传**：6 张 ESL flashcards printable 截图 + 光谱图形素材，均为本地文件，未上传 CDN，是发布前的阻塞项。
-- **可选 Pinterest monstera 截图**：`monstera plant care guide infographic` 查询在 Pinterest 上的 One Bar 标签截图尚未收集（可选项）。
-- **Blog 翻译未开始**。
-- **Relevance scoring 体系未开始**。
-- **C2 MBTI 检索策略已延期**：需要匹配器/检索层面的方案决策后才能安全上线；已生成图片和人工审核结果予以保留待复用。
-- **gcloud/gsutil 工具缺失**：当前机器无法执行 CDN 同步，需要在装有该工具的机器上操作，或先完成本机安装（参考 `docs/onboarding-runbook.md` §1）。
-- **curify-frontend 分支已 push，PR 仍需打开**。
-
 ---
 
