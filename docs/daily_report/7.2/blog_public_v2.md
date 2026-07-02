@@ -286,7 +286,7 @@ Pinterest's sub-intent label chips are qualitatively different from both: they a
 | §6 Curify | Template result grid + 8-cluster label chips | ESL flashcards printable | Curify | `assets/esl_flashcards_printable/curify_esl_flashcards_printable_results.png` | Not uploaded |
 | §6 Curify (generation) | Search-to-generation path | ESL flashcards printable | Curify | `assets/esl_flashcards_printable/curify_esl_flashcards_printable_generate.png` | Not uploaded — optional |
 | §6 Pinterest (monstera) | One Bar label chip row + pin grid | monstera plant care guide infographic | Pinterest | Not yet collected | Not uploaded |
-| §7.2 Spectrum | Optional side-by-side comparison | any single query | All 5 platforms | Not yet collected | Not uploaded |
+| §7.2 Spectrum | Editorial spectrum graphic (consumption→creation) | n/a — explanatory diagram | All 5 platforms | `assets/platform_spectrum/visual_search_platform_spectrum.svg` (see `assets/platform_spectrum/image_inventory.md`) | Not uploaded |
 
 ---
 

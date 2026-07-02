@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" width="1200" height="440" role="img" aria-labelledby="svgTitle svgDesc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="svgTitle">Visual Search Platform Spectrum</title>
+  <desc id="svgDesc">A horizontal spectrum showing five visual search platforms arranged from consumption-oriented discovery to creation-oriented templates: Google Images, Bing Images, Pinterest, Curify, and Canva.</desc>
+
+  <defs>
+    <linearGradient id="axisGradient" x1="100" y1="156" x2="1100" y2="156" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#184f95"/>
+      <stop offset="25%"  stop-color="#3987e5"/>
+      <stop offset="50%"  stop-color="#4a3aa7"/>
+      <stop offset="75%"  stop-color="#eb6834"/>
+      <stop offset="100%" stop-color="#b8431f"/>
+    </linearGradient>
+
+    <marker id="arrowStart" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 10 1 L 2 5 L 10 9 z" fill="#184f95"/>
+    </marker>
+    <marker id="arrowEnd" viewBox="0 0 10 10" refX="2" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+      <path d="M 10 1 L 2 5 L 10 9 z" fill="#b8431f"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1200" height="440" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="600" y="54" text-anchor="middle" font-size="30" font-weight="700" fill="#0b0b0b">Visual Search Platform Spectrum</text>
+  <!-- Subtitle -->
+  <text x="600" y="84" text-anchor="middle" font-size="16" fill="#52514e">From open-web discovery signals to template-led creation systems</text>
+
+  <!-- Axis end labels -->
+  <text x="60" y="127" text-anchor="start" font-size="14.5" font-weight="600" fill="#52514e">Consumption-oriented discovery &#9668;</text>
+  <text x="1140" y="127" text-anchor="end" font-size="14.5" font-weight="600" fill="#52514e">&#9658; Creation-oriented templates</text>
+
+  <!-- Axis line -->
+  <line x1="100" y1="156" x2="1100" y2="156" stroke="url(#axisGradient)" stroke-width="4" stroke-linecap="round" marker-start="url(#arrowStart)" marker-end="url(#arrowEnd)"/>
+
+  <!-- Platform 1: Google Images (x=160) -->
+  <line x1="160" y1="168" x2="160" y2="204" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="160" cy="156" r="9" fill="#184f95" stroke="#ffffff" stroke-width="2"/>
+  <rect x="60" y="204" width="200" height="172" rx="14" fill="#ffffff" stroke="#0b0b0b" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="138" y="220" width="44" height="4" rx="2" fill="#184f95"/>
+  <text x="160" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#0b0b0b">Google Images</text>
+  <text x="160" y="285" text-anchor="middle" font-size="13" fill="#52514e">Open-web recall</text>
+  <text x="160" y="338" text-anchor="middle" font-size="20" letter-spacing="3"><tspan fill="#b8860b">&#9733;&#9733;&#9733;&#9733;&#9733;</tspan></text>
+
+  <!-- Platform 2: Bing Images (x=380) -->
+  <line x1="380" y1="168" x2="380" y2="204" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="380" cy="156" r="9" fill="#3987e5" stroke="#ffffff" stroke-width="2"/>
+  <rect x="280" y="204" width="200" height="172" rx="14" fill="#ffffff" stroke="#0b0b0b" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="358" y="220" width="44" height="4" rx="2" fill="#3987e5"/>
+  <text x="380" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#0b0b0b">Bing Images</text>
+  <text x="380" y="276" text-anchor="middle" font-size="13" fill="#52514e">Rich taxonomy +</text>
+  <text x="380" y="294" text-anchor="middle" font-size="13" fill="#52514e">labels</text>
+  <text x="380" y="338" text-anchor="middle" font-size="20" letter-spacing="3"><tspan fill="#b8860b">&#9733;&#9733;&#9733;&#9733;&#9733;</tspan></text>
+
+  <!-- Platform 3: Pinterest (x=600) -->
+  <line x1="600" y1="168" x2="600" y2="204" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="600" cy="156" r="9" fill="#4a3aa7" stroke="#ffffff" stroke-width="2"/>
+  <rect x="500" y="204" width="200" height="172" rx="14" fill="#ffffff" stroke="#0b0b0b" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="578" y="220" width="44" height="4" rx="2" fill="#4a3aa7"/>
+  <text x="600" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#0b0b0b">Pinterest</text>
+  <text x="600" y="276" text-anchor="middle" font-size="13" fill="#52514e">Inspiration +</text>
+  <text x="600" y="294" text-anchor="middle" font-size="13" fill="#52514e">label chips</text>
+  <text x="600" y="338" text-anchor="middle" font-size="20" letter-spacing="3"><tspan fill="#b8860b">&#9733;&#9733;&#9733;&#9733;</tspan><tspan fill="#c3c2b7">&#9734;</tspan></text>
+
+  <!-- Platform 4: Curify (x=820) -->
+  <line x1="820" y1="168" x2="820" y2="204" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="820" cy="156" r="9" fill="#eb6834" stroke="#ffffff" stroke-width="2"/>
+  <rect x="720" y="204" width="200" height="172" rx="14" fill="#ffffff" stroke="#0b0b0b" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="798" y="220" width="44" height="4" rx="2" fill="#eb6834"/>
+  <text x="820" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#0b0b0b">Curify</text>
+  <text x="820" y="285" text-anchor="middle" font-size="13" fill="#52514e">Template-led creation</text>
+  <text x="820" y="338" text-anchor="middle" font-size="20" letter-spacing="3"><tspan fill="#b8860b">&#9733;&#9733;&#9733;&#9733;</tspan><tspan fill="#c3c2b7">&#9734;</tspan></text>
+
+  <!-- Platform 5: Canva (x=1040) -->
+  <line x1="1040" y1="168" x2="1040" y2="204" stroke="#c3c2b7" stroke-width="1"/>
+  <circle cx="1040" cy="156" r="9" fill="#b8431f" stroke="#ffffff" stroke-width="2"/>
+  <rect x="940" y="204" width="200" height="172" rx="14" fill="#ffffff" stroke="#0b0b0b" stroke-opacity="0.10" stroke-width="1"/>
+  <rect x="1018" y="220" width="44" height="4" rx="2" fill="#b8431f"/>
+  <text x="1040" y="250" text-anchor="middle" font-size="17" font-weight="700" fill="#0b0b0b">Canva</text>
+  <text x="1040" y="285" text-anchor="middle" font-size="13" fill="#52514e">Template marketplace</text>
+  <text x="1040" y="338" text-anchor="middle" font-size="20" letter-spacing="3"><tspan fill="#b8860b">&#9733;&#9733;&#9733;&#9733;&#9733;</tspan></text>
+
+  <!-- Footer -->
+  <text x="600" y="410" text-anchor="middle" font-size="12" fill="#898781">Source: 58-query visual search pilot study across 5 platforms (June 2026)</text>
+</svg>
