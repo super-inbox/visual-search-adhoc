@@ -88,7 +88,7 @@
 2. `warmup routine running checklist`（原 P1 gap 查询）：检查发现该 query 专指"跑步"热身，但当前没有任何 running 专属的热身模板/灵感图，因此**原始 query 本身仍未修复**。本批次改为给 6 个非 running 的热身活动模板（gym、swimming、yoga、badminton、basketball、fencing）补充 `checklist` 变体别名，修复了这些运动类型下的「checklist」措辞覆盖缺口。
 
 **验证结果**：
-- `node scripts/eval_search.cjs --quiet` → `PASS=87 WARN=38 FAIL=0`（共 125 条）。与批次前基线相比只有一处 verdict 变化：`infj vs entp dating compatibility chart` 从 WARN 变为 PASS —— 属于「回退到批次前真实状态」（因为未上线的 MBTI 记录被移除后，也一并移除了它对该查询的宽松匹配贡献），不是回归。
+- `node scripts/eval_search.cjs --quiet` → `PASS=87 WARN=38 FAIL=0`（共 125 条）。与批次前基线相比只有一处 verdict 变化：`infj vs entp dating compatibility chart` 从 WARN 变为 PASS —— 这不代表该 MBTI 查询被修复，而是「回退到批次前真实状态」：MBTI C2 记录本身未上线（未加入 `nano_inspiration.json`），随之也移除了它对该查询的宽松匹配贡献，不是回归。该 MBTI C2 条目仍是未完成的延期跟进项，详见下方说明。
 - `npx vitest run --config vitest.unit.config.ts lib/__tests__/thin_recall_queries.test.ts` → 28/28 通过。
 - Ad-hoc 严格匹配复核（因部分查询不在 125 条固定 eval 集合内，直接对 `nano_inspiration.json` 做分词器/匹配器重放验证）：`水果中文`、`中文水果`、`gym warmup checklist`、`swimming warmup checklist` 均命中 1 条目标记录，`yoga warmup checklist` 命中 5 条相关记录（gym/yoga/badminton/basketball/fencing）—— 5 项确认全部命中，C1 修复符合预期。
 
@@ -110,9 +110,9 @@
 | visual-search-adhoc | main | `e0d1594` | update revision note image status | 已 push |
 | visual-search-adhoc | main | `93320ad` | move blog linkedin wrapup files to 7.2 daily report | 已 push |
 | visual-search-adhoc | main | `0b1887c` | add visual search platform spectrum graphic | 已 push |
-| curify-frontend | `baobao/c1-c2-gap-fixes-2026-07-02` | `2af3ca2f` | add c1 alias fixes for fruit and warmup checklist queries | **未 push**（远程无此分支，`git ls-remote` 查询为空）|
+| curify-frontend | `baobao/c1-c2-gap-fixes-2026-07-02` | `2af3ca2f` | add c1 alias fixes for fruit and warmup checklist queries | 已 push |
 
-> 已用 `git fetch origin main` + `git log origin/main..HEAD` 核实：visual-search-adhoc 的 main 分支与 origin/main 完全一致，今日 4 个提交均已推送。
+> 已用 `git fetch origin main` + `git log origin/main..HEAD` 核实：visual-search-adhoc 的 main 分支与 origin/main 完全一致，今日 4 个提交均已推送。curify-frontend 分支在报告生成后已成功 push 至 origin。
 
 ---
 
@@ -124,7 +124,7 @@
 - **Relevance scoring 体系未开始**。
 - **C2 MBTI 检索策略已延期**：需要匹配器/检索层面的方案决策后才能安全上线；已生成图片和人工审核结果予以保留待复用。
 - **gcloud/gsutil 工具缺失**：当前机器无法执行 CDN 同步，需要在装有该工具的机器上操作，或先完成本机安装（参考 `docs/onboarding-runbook.md` §1）。
-- **curify-frontend 分支可能仍需开 PR**：`baobao/c1-c2-gap-fixes-2026-07-02` 尚未 push 到远程，也未查到对应的已开 PR（`gh pr list` 无结果）。
+- **curify-frontend 分支已 push，PR 仍需打开**。
 
 ---
 
