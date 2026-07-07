@@ -1,0 +1,11 @@
+{
+  "name": "curify-search-collect",
+  "private": true,
+  "type": "module",
+  "description": "Ad-hoc Playwright script to collect Curify search results for gold query test set review. Not part of curify-frontend production code.",
+  "dependencies": {
+    "csv-parse": "^7.0.1",
+    "csv-stringify": "^6.8.1",
+    "playwright": "^1.61.1"
+  }
+}

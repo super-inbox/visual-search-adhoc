@@ -1,0 +1,329 @@
+term,language,term_type,primary_scene,secondary_scene,expansion_potential,example_expansion_1,example_expansion_2,example_expansion_3,notes
+鲜花,zh,object,文创,营销电商,high,鲜花插画海报,鲜花品牌包装设计,鲜花种草配图,基础对象词，可与材质/风格/场景组合成长尾query
+flower,en,object,文创,营销电商,high,pressed flower sticker sheet,flower shop brand kit,flower arrangement moodboard,基础对象词，可与材质/风格/场景组合成长尾query
+猫,zh,object,文创,教育,high,猫咪表情包设计,猫用品品牌视觉,猫咪科普识字卡,基础对象词，可与材质/风格/场景组合成长尾query
+cat,en,object,文创,品牌,high,cat cafe brand mascot,cat breed flashcard,cat aesthetic sticker sheet,基础对象词，可与材质/风格/场景组合成长尾query
+狗,zh,object,文创,营销电商,medium,狗狗训练教程海报,宠物狗品牌包装设计,狗狗写真摄影海报,基础对象词，可与材质/风格/场景组合成长尾query
+书,zh,object,教育,文创,high,读书角落装饰插画,读书打卡海报,儿童绘本封面设计,基础对象词，可与材质/风格/场景组合成长尾query
+book,en,object,教育,文创,high,reading log printable,book lovers brand kit,book cover illustration,基础对象词，可与材质/风格/场景组合成长尾query
+咖啡杯,zh,object,营销电商,品牌,high,咖啡杯品牌包装设计,咖啡杯产品摄影图,咖啡杯周边贴纸,基础对象词，可与材质/风格/场景组合成长尾query
+蜡烛,zh,object,品牌,文创,high,香薰蜡烛品牌视觉,蜡烛产品摄影海报,蜡烛手作教程图解,基础对象词，可与材质/风格/场景组合成长尾query
+candle,en,object,品牌,营销电商,high,candle brand unboxing moodboard,candle label design,candle DIY tutorial infographic,基础对象词，可与材质/风格/场景组合成长尾query
+相机,zh,object,文创,教育,medium,复古相机插画海报,摄影教学信息图,相机产品摄影图,基础对象词，可与材质/风格/场景组合成长尾query
+眼镜,zh,object,品牌,文创,medium,眼镜品牌视觉设计,眼镜产品摄影图,复古眼镜插画贴纸,基础对象词，可与材质/风格/场景组合成长尾query
+背包,zh,object,营销电商,品牌,medium,背包电商详情页设计,背包品牌包装设计,户外背包产品摄影图,基础对象词，可与材质/风格/场景组合成长尾query
+雨伞,zh,object,营销电商,文创,low,雨伞电商主图设计,雨伞图案插画设计,雨伞品牌包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+自行车,zh,object,营销电商,文创,medium,自行车品牌视觉设计,自行车海报插画,骑行生活方式摄影图,基础对象词，可与材质/风格/场景组合成长尾query
+钢笔,zh,object,教育,品牌,medium,钢笔书法教学海报,钢笔品牌视觉设计,文具产品摄影图,基础对象词，可与材质/风格/场景组合成长尾query
+地球仪,zh,object,教育,文创,medium,地球仪教学海报,地理知识信息图,复古地球仪插画,基础对象词，可与材质/风格/场景组合成长尾query
+台灯,zh,object,品牌,营销电商,low,台灯产品摄影图,家居灯具品牌视觉,台灯电商详情页设计,基础对象词，可与材质/风格/场景组合成长尾query
+镜子,zh,object,文创,品牌,low,复古镜子插画海报,家居镜子产品摄影图,镜子品牌包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+花瓶,zh,object,文创,营销电商,medium,花瓶产品摄影图,花瓶插画设计,花瓶电商详情页设计,基础对象词，可与材质/风格/场景组合成长尾query
+手机,zh,object,营销电商,品牌,low,手机壳图案设计,手机品牌视觉海报,手机电商详情页设计,基础对象词，可与材质/风格/场景组合成长尾query
+耳机,zh,object,营销电商,品牌,medium,耳机产品摄影图,耳机品牌视觉设计,耳机电商详情页设计,基础对象词，可与材质/风格/场景组合成长尾query
+key,en,object,文创,品牌,low,vintage key illustration,keychain merch design,key symbol logo concept,基础对象词，可与材质/风格/场景组合成长尾query
+相框,zh,object,文创,品牌,low,相框产品摄影图,复古相框插画设计,相框品牌包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+沙发,zh,object,品牌,营销电商,low,沙发家居摄影图,沙发品牌电商详情页,北欧风沙发插画,基础对象词，可与材质/风格/场景组合成长尾query
+帽子,zh,object,营销电商,文创,low,帽子产品摄影图,帽子品牌包装设计,国风帽饰插画,基础对象词，可与材质/风格/场景组合成长尾query
+围巾,zh,object,营销电商,文创,low,围巾产品摄影图,围巾品牌包装设计,围巾图案插画设计,基础对象词，可与材质/风格/场景组合成长尾query
+handbag,en,object,品牌,营销电商,medium,handbag brand lookbook,handbag product photo mockup,handbag packaging concept,基础对象词，可与材质/风格/场景组合成长尾query
+teddy bear,en,object,文创,营销电商,low,teddy bear character design,teddy bear packaging mockup,teddy bear sticker sheet,基础对象词，可与材质/风格/场景组合成长尾query
+风筝,zh,object,文创,教育,low,风筝插画设计,传统风筝科普海报,风筝图案文创周边,基础对象词，可与材质/风格/场景组合成长尾query
+气球,zh,object,营销电商,文创,medium,生日派对气球布置海报,气球装饰摄影图,气球图案贴纸设计,基础对象词，可与材质/风格/场景组合成长尾query
+蝴蝶,zh,object,文创,教育,medium,蝴蝶插画贴纸设计,蝴蝶生命周期科普卡,蝴蝶图案包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+羽毛,zh,object,文创,品牌,low,羽毛插画素材,羽毛质感品牌视觉,羽毛图案包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+贝壳,zh,object,文创,营销电商,low,贝壳插画海报,海滩主题产品摄影图,贝壳图案包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+石头,zh,object,文创,教育,low,石头插画素材,岩石科普信息图,禅意石头摄影海报,基础对象词，可与材质/风格/场景组合成长尾query
+树叶,zh,object,文创,教育,medium,树叶插画贴纸设计,植物科普识字卡,秋叶主题海报设计,基础对象词，可与材质/风格/场景组合成长尾query
+云朵,zh,object,文创,教育,low,云朵插画壁纸,天气科普信息图,云朵图案包装设计,基础对象词，可与材质/风格/场景组合成长尾query
+星星,zh,object,文创,教育,medium,星空插画海报,星座科普信息图,星星图案贴纸设计,基础对象词，可与材质/风格/场景组合成长尾query
+月亮,zh,object,文创,品牌,medium,月亮插画海报,中秋节主题包装设计,月相科普信息图,基础对象词，可与材质/风格/场景组合成长尾query
+太阳,zh,object,文创,教育,low,太阳插画海报,太阳系科普信息图,阳光主题品牌视觉,基础对象词，可与材质/风格/场景组合成长尾query
+彩虹,zh,object,文创,教育,medium,彩虹插画贴纸设计,多巴胺穿搭色卡海报,彩虹图案儿童识字卡,基础对象词，可与材质/风格/场景组合成长尾query
+金属,zh,material,品牌,文创,high,金属质感包装设计,金属光泽品牌视觉,金属材质产品摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+metal,en,material,品牌,文创,high,liquid metal texture brand visual,metal packaging mockup,metal finish product photo,材质/质感词，常作为风格修饰词与产品/包装组合
+玻璃,zh,material,品牌,文创,high,玻璃质感包装设计,玻璃器皿产品摄影图,玻璃工艺品插画,材质/质感词，常作为风格修饰词与产品/包装组合
+glass,en,material,品牌,文创,high,glass skin skincare visual,glass jar packaging mockup,glass texture illustration,材质/质感词，常作为风格修饰词与产品/包装组合
+木头,zh,material,文创,品牌,high,木纹质感包装设计,木工手作教程图解,原木风家居摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+wood,en,material,品牌,文创,high,wood grain packaging mockup,wooden toy product photo,woodworking tutorial infographic,材质/质感词，常作为风格修饰词与产品/包装组合
+陶瓷,zh,material,文创,品牌,high,陶瓷纹样插画设计,陶瓷工作室品牌视觉,陶瓷器皿产品摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+皮革,zh,material,品牌,营销电商,medium,皮革质感包装设计,皮具工作室品牌视觉,皮革产品摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+布料,zh,material,品牌,营销电商,medium,布料纹理素材,服装品牌视觉设计,手作布艺教程图解,材质/质感词，常作为风格修饰词与产品/包装组合
+纸,zh,material,文创,教育,medium,纸艺手作教程图解,纸质包装设计,剪纸图案插画,材质/质感词，常作为风格修饰词与产品/包装组合
+paper,en,material,文创,教育,medium,paper craft tutorial infographic,paper texture packaging mockup,paper cut illustration,材质/质感词，常作为风格修饰词与产品/包装组合
+竹子,zh,material,文创,品牌,medium,竹编工艺品插画,竹子品牌视觉设计,竹林插画海报,材质/质感词，常作为风格修饰词与产品/包装组合
+bamboo,en,material,文创,品牌,medium,bamboo texture packaging concept,bamboo craft tutorial,bamboo aesthetic moodboard,材质/质感词，常作为风格修饰词与产品/包装组合
+石材,zh,material,品牌,文创,low,石材质感包装设计,大理石纹理素材,石材建筑插画,材质/质感词，常作为风格修饰词与产品/包装组合
+塑料,zh,material,营销电商,品牌,low,塑料包装设计,环保塑料替代品牌视觉,塑料材质产品摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+丝绸,zh,material,文创,品牌,medium,丝绸质感插画,丝绸品牌包装设计,国风丝绸摄影海报,材质/质感词，常作为风格修饰词与产品/包装组合
+羊毛,zh,material,品牌,文创,low,羊毛质感产品摄影图,羊毛毡手作教程,羊毛材质包装设计,材质/质感词，常作为风格修饰词与产品/包装组合
+大理石,zh,material,品牌,营销电商,medium,大理石纹理包装设计,大理石质感品牌视觉,大理石背景产品摄影图,材质/质感词，常作为风格修饰词与产品/包装组合
+marble,en,material,品牌,营销电商,medium,marble texture packaging mockup,marble aesthetic moodboard,marble product photo background,材质/质感词，常作为风格修饰词与产品/包装组合
+黄铜,zh,material,品牌,文创,low,黄铜质感包装设计,黄铜五金产品摄影图,黄铜复古风插画,材质/质感词，常作为风格修饰词与产品/包装组合
+藤编,zh,material,文创,品牌,low,藤编工艺品插画,藤编家居产品摄影图,藤编包装设计,材质/质感词，常作为风格修饰词与产品/包装组合
+混凝土,zh,material,品牌,文创,low,混凝土质感包装设计,工业风混凝土背景摄影图,混凝土建筑插画,材质/质感词，常作为风格修饰词与产品/包装组合
+亚克力,zh,material,文创,营销电商,medium,亚克力立牌设计参考,亚克力材质产品摄影图,亚克力包装展示设计,材质/质感词，常作为风格修饰词与产品/包装组合
+珍珠,zh,material,品牌,文创,medium,珍珠质感珠宝摄影图,珍珠品牌视觉设计,珍珠图案插画,材质/质感词，常作为风格修饰词与产品/包装组合
+水晶,zh,material,文创,品牌,medium,水晶质感插画海报,水晶饰品产品摄影图,治愈系水晶摄影海报,材质/质感词，常作为风格修饰词与产品/包装组合
+棉麻,zh,material,品牌,营销电商,low,棉麻质感产品摄影图,棉麻服饰品牌视觉,棉麻材质包装设计,材质/质感词，常作为风格修饰词与产品/包装组合
+cork,en,material,品牌,文创,low,cork texture packaging mockup,cork material product photo,sustainable cork brand visual,材质/质感词，常作为风格修饰词与产品/包装组合
+denim,en,material,营销电商,品牌,low,denim texture product photo,denim brand packaging concept,denim aesthetic moodboard,材质/质感词，常作为风格修饰词与产品/包装组合
+velvet,en,material,品牌,文创,low,velvet texture packaging mockup,velvet aesthetic moodboard,luxury velvet product photo,材质/质感词，常作为风格修饰词与产品/包装组合
+terrazzo,en,material,品牌,文创,low,terrazzo texture packaging design,terrazzo aesthetic moodboard,terrazzo pattern illustration,材质/质感词，常作为风格修饰词与产品/包装组合
+极简,zh,style,文创,品牌,high,极简风品牌视觉设计,极简海报设计,极简家居摄影图,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+minimalist,en,style,品牌,文创,high,minimalist logo design,minimalist packaging concept,minimalist poster template,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+复古,zh,style,文创,品牌,high,复古海报插画设计,复古品牌视觉焕新,复古摄影风格参考图,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+vintage,en,style,文创,品牌,high,vintage poster illustration,vintage packaging design,vintage aesthetic moodboard,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+国风,zh,style,文创,品牌,high,国风插画海报,国风品牌包装设计,国风婚礼场景插画,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+日系,zh,style,文创,品牌,high,日系小清新摄影海报,日系包装设计,日系插画风格参考,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+北欧,zh,style,品牌,文创,high,北欧风家居摄影图,北欧风品牌视觉设计,北欧简约海报设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+Scandinavian,en,style,品牌,文创,medium,Scandinavian interior moodboard,Scandinavian brand visual identity,Scandinavian minimalist poster,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+波西米亚,zh,style,文创,品牌,medium,波西米亚风家居摄影图,波西米亚风穿搭插画,波西米亚风品牌视觉,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+bohemian,en,style,文创,品牌,medium,bohemian home decor moodboard,bohemian brand packaging concept,boho wedding invitation design,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+工业风,zh,style,品牌,文创,medium,工业风品牌视觉设计,工业风空间摄影图,工业风海报设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+industrial,en,style,品牌,文创,medium,industrial style brand kit,industrial loft moodboard,industrial packaging design,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+田园,zh,style,文创,品牌,medium,田园风插画海报,田园风品牌包装设计,田园婚礼场景摄影图,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+未来感,zh,style,文创,品牌,medium,未来感金属质感插画,未来感品牌视觉设计,未来感海报设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+赛博朋克,zh,style,文创,品牌,medium,赛博朋克插画海报,赛博朋克国潮插画,赛博朋克风品牌视觉,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+cyberpunk,en,style,文创,品牌,medium,cyberpunk character design,cyberpunk poster illustration,cyberpunk brand visual concept,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+水彩,zh,style,文创,教育,high,水彩插画海报,水彩地图插画设计,水彩风格贺卡设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+watercolor,en,style,文创,教育,high,watercolor illustration poster,watercolor map design,watercolor greeting card,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+手绘,zh,style,文创,教育,high,手绘插画海报,手绘风格教学海报,手绘风品牌视觉设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+hand-drawn,en,style,文创,教育,medium,hand-drawn illustration style,hand-drawn poster template,hand-drawn brand mascot,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+扁平化,zh,style,品牌,营销电商,medium,扁平化插画海报,扁平化品牌视觉设计,扁平化信息图设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+涂鸦,zh,style,文创,品牌,medium,涂鸦风格插画海报,涂鸦风品牌视觉设计,涂鸦贴纸设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+卡通,zh,style,文创,教育,high,卡通头像制作素材,卡通动物插画素材,卡通吉祥物品牌设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+写实,zh,style,文创,品牌,low,写实风格插画海报,写实人像摄影参考图,写实风品牌视觉,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+极繁,zh,style,文创,品牌,low,极繁风海报设计,极繁风包装设计,极繁美学插画参考,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+侘寂,zh,style,文创,品牌,medium,侘寂风家居摄影图,侘寂风品牌视觉设计,侘寂美学插画海报,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+wabi-sabi,en,style,文创,品牌,low,wabi-sabi aesthetic moodboard,wabi-sabi ceramic product photo,wabi-sabi interior illustration,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+法式,zh,style,文创,品牌,medium,法式复古海报设计,法式甜品包装设计,法式穿搭插画,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+美式,zh,style,文创,品牌,medium,美式复古海报设计,美式餐厅品牌视觉,美式怀旧插画风格,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+韩系,zh,style,品牌,营销电商,high,韩系咖啡馆菜单板模板,韩系穿搭插画,韩系美妆品牌视觉,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+中古,zh,style,文创,品牌,low,中古风家居摄影图,中古风品牌视觉设计,中古风插画海报,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+童趣,zh,style,教育,文创,medium,童趣插画海报,童趣风儿童品牌视觉,童趣风教学素材,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+奢华,zh,style,品牌,文创,medium,奢华品牌视觉设计,奢华包装设计,奢华质感摄影图,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+清新,zh,style,文创,营销电商,medium,清新风海报设计,清新风种草配图,清新风品牌视觉,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+暗黑,zh,style,文创,品牌,low,暗黑风插画海报,暗黑美学品牌视觉,暗黑风包装设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+梦幻,zh,style,文创,品牌,medium,梦幻风插画海报,梦幻风包装设计,梦幻风儿童插画,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+街头,zh,style,文创,品牌,medium,街头风插画海报,街头潮牌品牌视觉,街头涂鸦风包装设计,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+cottagecore,en,style,文创,品牌,medium,cottagecore aesthetic moodboard,cottagecore packaging design,cottagecore illustration poster,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+dark academia,en,style,文创,品牌,low,dark academia aesthetic moodboard,dark academia poster design,dark academia brand visual,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+Y2K,en,style,文创,品牌,high,Y2K chrome skincare launch poster,Y2K aesthetic sticker design,Y2K packaging concept,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+教室,zh,scene,教育,文创,high,教室墙面装饰海报,课堂管理图表设计,教室布置主题套装,场景词，常与行业/风格/物料组合成具体品牌或营销query
+classroom,en,scene,教育,文创,high,classroom decor theme kit,classroom procedures poster,classroom bulletin board design,场景词，常与行业/风格/物料组合成具体品牌或营销query
+咖啡馆,zh,scene,品牌,营销电商,high,咖啡馆品牌logo设计,咖啡馆菜单板模板,咖啡馆室内摄影图,场景词，常与行业/风格/物料组合成具体品牌或营销query
+cafe,en,scene,品牌,营销电商,high,cafe brand identity moodboard,cafe menu board template,cafe interior aesthetic photo,场景词，常与行业/风格/物料组合成具体品牌或营销query
+婚礼,zh,scene,品牌,文创,high,婚礼策划清单模板,婚礼请柬设计,婚礼摄影工作室品牌视觉,场景词，常与行业/风格/物料组合成具体品牌或营销query
+wedding,en,scene,品牌,文创,high,wedding invitation design,wedding planner template,wedding photography brand kit,场景词，常与行业/风格/物料组合成具体品牌或营销query
+生日派对,zh,scene,营销电商,文创,medium,生日派对气球布置海报,生日派对邀请函设计,生日派对甜品台摄影图,场景词，常与行业/风格/物料组合成具体品牌或营销query
+办公室,zh,scene,品牌,营销电商,low,办公室品牌形象设计,办公室文创周边设计,办公室装饰海报,场景词，常与行业/风格/物料组合成具体品牌或营销query
+厨房,zh,scene,品牌,营销电商,medium,厨房收纳前后对比图,厨房用品产品摄影图,厨房品牌视觉设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+卧室,zh,scene,文创,品牌,low,卧室装饰插画海报,卧室家居产品摄影图,卧室美学moodboard,场景词，常与行业/风格/物料组合成具体品牌或营销query
+花园,zh,scene,文创,品牌,medium,花园主题插画海报,花园婚礼场景摄影图,花园品牌视觉设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+海滩,zh,scene,营销电商,文创,medium,海滩主题产品摄影图,海滩度假风穿搭插画,海滩婚礼场景设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+beach,en,scene,营销电商,文创,medium,beach vacation aesthetic moodboard,beach wedding invitation design,beach product photo mockup,场景词，常与行业/风格/物料组合成具体品牌或营销query
+山间,zh,scene,文创,营销电商,low,山间露营场景插画,山系穿搭moodboard,山间民宿品牌视觉,场景词，常与行业/风格/物料组合成具体品牌或营销query
+森林,zh,scene,文创,教育,medium,森林插画海报,森林动物科普识字卡,森林系品牌视觉设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+图书馆,zh,scene,教育,文创,medium,图书馆主题海报,图书馆阅读打卡海报,图书馆装饰插画,场景词，常与行业/风格/物料组合成具体品牌或营销query
+市集,zh,scene,营销电商,文创,medium,市集摊位招牌设计,农夫市集品牌视觉,市集活动海报设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+展览,zh,scene,文创,营销电商,low,展览海报设计,展览导览手册设计,展览打卡背景板,场景词，常与行业/风格/物料组合成具体品牌或营销query
+演唱会,zh,scene,文创,营销电商,medium,演唱会应援手幅设计,演唱会海报设计,演唱会灯牌设计参考,场景词，常与行业/风格/物料组合成具体品牌或营销query
+concert,en,scene,文创,营销电商,low,concert poster design,concert lightstick fanart,concert merch design,场景词，常与行业/风格/物料组合成具体品牌或营销query
+游乐园,zh,scene,营销电商,文创,low,游乐园海报设计,游乐园门票设计,游乐园主题插画,场景词，常与行业/风格/物料组合成具体品牌或营销query
+餐厅,zh,scene,品牌,营销电商,high,餐厅品牌识别系统设计,餐厅菜单设计模板,餐厅招牌设计参考,场景词，常与行业/风格/物料组合成具体品牌或营销query
+restaurant,en,scene,品牌,营销电商,high,restaurant brand identity package,restaurant menu design template,restaurant signage concept,场景词，常与行业/风格/物料组合成具体品牌或营销query
+健身房,zh,scene,品牌,营销电商,medium,健身房品牌logo设计,健身房海报设计,健身打卡社群海报,场景词，常与行业/风格/物料组合成具体品牌或营销query
+机场,zh,scene,营销电商,文创,low,机场旅行插画海报,机场穿搭moodboard,机场广告banner设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+校园,zh,scene,教育,文创,medium,校园活动海报设计,校园文创周边设计,校园招生宣传单,场景词，常与行业/风格/物料组合成具体品牌或营销query
+农场,zh,scene,文创,营销电商,low,农场主题插画海报,农场直供包装设计,农场生活方式摄影图,场景词，常与行业/风格/物料组合成具体品牌或营销query
+夜市,zh,scene,营销电商,文创,medium,夜市摊位招牌设计参考,夜市美食探店封面,夜市主题插画海报,场景词，常与行业/风格/物料组合成具体品牌或营销query
+阳台,zh,scene,文创,品牌,low,阳台花园装饰插画,阳台改造前后对比图,阳台植物摄影图,场景词，常与行业/风格/物料组合成具体品牌或营销query
+书房,zh,scene,文创,教育,low,书房装饰插画海报,书房阅读角moodboard,书房收纳整理图解,场景词，常与行业/风格/物料组合成具体品牌或营销query
+温室,zh,scene,文创,品牌,low,温室植物摄影图,温室花园插画海报,温室品牌视觉设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+便利店,zh,scene,营销电商,品牌,low,便利店联名周边包装设计,便利店陈列摄影图,便利店品牌视觉设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+茶馆,zh,scene,文创,品牌,medium,茶馆国风插画海报,茶馆品牌视觉设计,茶馆菜单设计模板,场景词，常与行业/风格/物料组合成具体品牌或营销query
+寺庙,zh,scene,文创,教育,low,寺庙建筑插画海报,传统文化科普信息图,寺庙祈福贺卡设计,场景词，常与行业/风格/物料组合成具体品牌或营销query
+湖畔,zh,scene,文创,营销电商,low,湖畔婚礼场景插画,湖畔度假摄影图,湖畔生活方式moodboard,场景词，常与行业/风格/物料组合成具体品牌或营销query
+咖啡,zh,industry,品牌,营销电商,high,咖啡品牌视觉设计,咖啡包装设计,咖啡产品摄影图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+coffee,en,industry,品牌,营销电商,high,coffee brand identity moodboard,coffee packaging label design,coffee roastery logo concept,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+烘焙,zh,industry,品牌,营销电商,high,烘焙品牌包装设计,烘焙店招牌设计,烘焙产品摄影图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+美妆,zh,industry,品牌,营销电商,high,美妆品牌视觉识别,美妆产品包装设计,美妆种草配图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+珠宝,zh,industry,品牌,文创,medium,珠宝品牌视觉设计,珠宝产品摄影图,珠宝包装设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+服装,zh,industry,品牌,营销电商,high,服装品牌吊牌设计,服装电商详情页设计,服装品牌视觉手册,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+宠物,zh,industry,品牌,营销电商,high,宠物品牌包装设计,宠物用品电商详情页,宠物店品牌视觉设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+母婴,zh,industry,品牌,教育,high,母婴品牌视觉系统,母婴产品包装设计,母婴知识科普信息图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+健身,zh,industry,品牌,营销电商,medium,健身品牌logo设计,健身课程海报设计,健身社群运营海报,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+房地产,zh,industry,品牌,营销电商,low,房地产品牌视觉设计,房产宣传单设计,房产项目海报,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+汽车,zh,industry,品牌,营销电商,low,汽车品牌视觉设计,汽车配件包装设计,汽车服务品牌logo,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+酒店,zh,industry,品牌,文创,medium,酒店品牌识别系统设计,酒店宣传海报设计,酒店室内摄影图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+hospitality,en,industry,品牌,文创,medium,boutique hotel brand identity,hotel amenity packaging design,hotel lifestyle photo moodboard,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+婚庆,zh,industry,品牌,营销电商,medium,婚庆品牌视觉设计,婚庆服务宣传海报,婚庆行业物料设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+教育培训,zh,industry,教育,品牌,medium,教育培训机构品牌视觉,培训课程海报设计,教育机构招生宣传单,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+医疗健康,zh,industry,品牌,教育,low,医疗健康品牌视觉设计,健康知识科普信息图,医疗器械包装设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+金融,zh,industry,品牌,营销电商,low,金融品牌视觉设计,金融科普信息图,理财课程海报设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+旅游,zh,industry,营销电商,文创,high,旅游品牌视觉设计,旅游宣传海报设计,旅游攻略长图设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+travel,en,industry,营销电商,文创,high,travel agency brand logo design,travel itinerary poster template,travel destination infographic,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+餐饮,zh,industry,品牌,营销电商,high,餐饮品牌视觉设计,餐饮菜单设计模板,餐饮营销海报设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+家居,zh,industry,品牌,文创,high,家居品牌视觉设计,家居产品摄影图,家居装饰插画海报,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+3C数码,zh,industry,品牌,营销电商,low,数码品牌视觉设计,数码产品电商详情页,数码产品海报设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+游戏,zh,industry,文创,营销电商,high,游戏角色插画设计,游戏品牌视觉识别,游戏周边产品设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+gaming,en,industry,文创,品牌,high,game studio brand identity design,gaming merch sticker design,gaming character concept art,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+出版,zh,industry,文创,教育,low,出版物封面设计,书籍插画设计,出版品牌视觉设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+农业,zh,industry,营销电商,品牌,low,农产品包装设计,农业品牌视觉设计,农场直供电商详情页,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+花艺,zh,industry,文创,品牌,medium,花艺工作室品牌视觉,花艺教程图解,花艺产品摄影图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+摄影,zh,industry,品牌,文创,medium,摄影工作室品牌视觉,摄影海报设计,摄影风格参考图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+二手交易,zh,industry,营销电商,品牌,low,二手交易平台品牌视觉,二手商品电商详情页,循环时尚品牌视觉设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+物流,zh,industry,品牌,营销电商,low,物流品牌视觉设计,物流包装设计,物流服务宣传海报,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+美发美甲,zh,industry,品牌,营销电商,low,美发店品牌视觉设计,美甲海报设计,美发沙龙宣传单,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+瑜伽,zh,industry,品牌,文创,medium,瑜伽馆品牌视觉手册,瑜伽课程海报设计,瑜伽生活方式摄影图,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+潮玩,zh,industry,文创,营销电商,high,潮玩手办摄影海报,潮玩包装设计,潮玩品牌视觉设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+茶饮,zh,industry,品牌,营销电商,high,茶饮品牌视觉设计,茶饮包装设计,茶饮店招牌设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+香氛,zh,industry,品牌,营销电商,medium,香氛品牌视觉手册,香氛产品摄影图,香氛包装设计,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+海报,zh,format,文创,营销电商,high,国风海报设计,促销海报设计,教学海报设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+poster,en,format,文创,营销电商,high,vintage poster illustration,classroom poster template,product launch poster,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+贴纸,zh,format,文创,营销电商,high,IP角色贴纸设计,种草贴纸设计,识字贴纸设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+sticker,en,format,文创,营销电商,high,character sticker sheet,aesthetic sticker pack,classroom reward sticker,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+名片,zh,format,品牌,营销电商,medium,品牌名片设计,名片模板设计,个人名片视觉设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+信封,zh,format,品牌,文创,low,品牌信封设计,请柬信封设计,复古信封插画,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+明信片,zh,format,文创,营销电商,medium,文旅明信片设计,国风明信片插画,明信片套装设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+请柬,zh,format,品牌,文创,medium,婚礼请柬设计,生日请柬设计,活动邀请函设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+菜单,zh,format,品牌,营销电商,high,餐厅菜单设计模板,咖啡馆菜单板模板,菜单排版设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+menu,en,format,品牌,营销电商,high,restaurant menu design template,cafe menu board template,seasonal menu design concept,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+包装盒,zh,format,品牌,营销电商,high,礼品包装盒设计,食品包装盒设计,包装盒结构设计参考,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+packaging,en,format,品牌,营销电商,high,product packaging mockup,gift box packaging concept,sustainable packaging design,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+手提袋,zh,format,营销电商,品牌,low,品牌手提袋设计,购物袋图案设计,礼品手提袋设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+标签,zh,format,品牌,营销电商,medium,产品标签设计,服装吊牌标签设计,包装标签设计模板,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+台历,zh,format,文创,品牌,low,品牌定制台历设计,国风插画台历,台历模板设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+书签,zh,format,文创,教育,medium,文创书签设计,国风书签插画,书签套装设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+徽章,zh,format,文创,营销电商,medium,徽章胸针设计模板,IP徽章设计,团队徽章设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+badge,en,format,文创,营销电商,medium,enamel pin badge design,achievement badge design,event badge template,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+横幅,zh,format,营销电商,品牌,medium,促销横幅设计,活动横幅设计,电商banner设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+banner,en,format,营销电商,品牌,high,ecommerce homepage banner design,sale banner template,social media banner design,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+展架,zh,format,营销电商,品牌,low,展会展架设计,品牌展架设计,易拉宝展架设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+折页,zh,format,品牌,营销电商,low,企业折页设计,产品折页设计模板,活动折页设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+画册,zh,format,品牌,营销电商,low,品牌画册设计,产品画册设计模板,企业宣传画册,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+卡片,zh,format,文创,教育,high,节日贺卡设计,识字卡片设计,IP角色卡片设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+card,en,format,文创,教育,high,greeting card design template,flashcard printable,trading card design concept,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+头像,zh,format,文创,营销电商,high,IP头像设计,品牌头像设计,卡通头像制作素材,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+avatar,en,format,文创,品牌,medium,brand avatar icon design,character avatar illustration,social media profile avatar,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+壁纸,zh,format,文创,营销电商,high,IP角色壁纸设计,国风壁纸插画,品牌主题壁纸设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+wallpaper,en,format,文创,品牌,high,character wallpaper design,aesthetic phone wallpaper,brand desktop wallpaper,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+表情包,zh,format,文创,营销电商,medium,IP表情包设计,品牌表情包设计,节日表情包设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+手账,zh,format,文创,教育,medium,手账贴纸设计,手账模板设计,手账周边产品设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+planner,en,format,教育,文创,high,weekly planner template,homeschool planner printable,brand planner design concept,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+抱枕,zh,format,文创,营销电商,low,IP抱枕产品设计,抱枕图案插画,家居抱枕摄影图,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+帆布袋,zh,format,文创,营销电商,medium,文创帆布袋设计,品牌帆布袋图案,国风帆布袋插画,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+马克杯,zh,format,文创,营销电商,medium,IP马克杯产品设计,品牌马克杯图案,节日马克杯插画设计,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+儿童,zh,audience,教育,文创,high,儿童识字卡设计,儿童海报设计,儿童品牌吉祥物设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+children,en,audience,教育,文创,high,children science flashcards,children's book illustration,children's brand mascot design,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+青少年,zh,audience,教育,文创,medium,青少年读物封面设计,青少年心理健康海报,青少年潮流插画设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+婴儿,zh,audience,品牌,教育,medium,婴儿用品包装设计,婴儿护理知识信息图,婴儿房装饰插画,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+学生,zh,audience,教育,文创,high,学生课堂海报设计,学生手账模板设计,学生活动宣传单,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+student,en,audience,教育,文创,high,student planner template,student council poster design,student ID card template,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+上班族,zh,audience,营销电商,文创,low,上班族穿搭插画,上班族生活方式摄影图,上班族效率手账模板,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+老年人,zh,audience,品牌,教育,medium,老年健康品牌视觉识别,适老化产品科普信息图,老年生活方式摄影图,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+新手妈妈,zh,audience,品牌,教育,medium,新手妈妈育儿指南信息图,母婴品牌视觉设计,新手妈妈社群海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+宠物主人,zh,audience,品牌,营销电商,medium,宠物主人社群运营海报,宠物用品种草配图,宠物主人生活方式摄影图,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+大学生,zh,audience,教育,营销电商,medium,大学生兼职招募海报,校园活动宣传单,大学生社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+自由职业者,zh,audience,品牌,营销电商,low,自由职业者个人品牌设计,自由职业者工作空间摄影图,自由职业者社群海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+教师,zh,audience,教育,品牌,high,教师节贺卡设计,教师资源模板设计,教师个人品牌视觉设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+teacher,en,audience,教育,品牌,high,teacher planner cover editable,teacher appreciation card design,teacher resource bundle cover,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+医生,zh,audience,品牌,教育,low,医生个人品牌视觉设计,医疗科普信息图,医生诊所宣传物料,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+健身爱好者,zh,audience,品牌,营销电商,medium,健身爱好者社群海报,健身打卡挑战海报,健身爱好者穿搭插画,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+旅行者,zh,audience,营销电商,文创,medium,旅行者攻略长图设计,旅行者穿搭插画,旅行者行李清单设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+手工艺人,zh,audience,文创,品牌,medium,手工艺人个人品牌视觉,手作教程图解设计,手工艺人展位设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+收藏家,zh,audience,文创,营销电商,low,收藏家展示柜摄影图,收藏品展示海报设计,收藏家社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+Z世代,zh,audience,文创,营销电商,high,Z世代穿搭插画,Z世代网络热词海报,Z世代品牌视觉定位设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+Gen Z,en,audience,文创,营销电商,high,Gen Z slang classroom poster,Gen Z aesthetic moodboard,Gen Z brand tone visual,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+二次元爱好者,zh,audience,文创,营销电商,high,二次元爱好者同人壁纸,二次元爱好者周边设计,二次元爱好者社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+素食者,zh,audience,品牌,营销电商,low,素食品牌视觉设计,素食餐厅菜单设计,素食生活方式摄影图,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+新婚夫妇,zh,audience,品牌,文创,medium,新婚夫妇婚礼请柬设计,新婚夫妇家居装饰插画,新婚夫妇纪念相册设计,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+数字游民,zh,audience,品牌,营销电商,low,数字游民生活方式摄影图,数字游民工作空间插画,数字游民社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+家庭主妇,zh,audience,品牌,教育,low,家庭主妇生活方式摄影图,家务收纳教程图解,家庭主妇社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+创业者,zh,audience,品牌,营销电商,medium,创业者个人品牌视觉设计,初创公司品牌全套素材设计,创业者社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+留学生,zh,audience,教育,营销电商,low,留学生活方式摄影图,留学申请指南信息图,留学生社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+宝妈,zh,audience,品牌,教育,medium,宝妈社群运营海报,宝妈好物种草配图,宝妈育儿知识信息图,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+猫奴,zh,audience,文创,营销电商,medium,猫奴表情包设计,猫奴周边产品设计,猫奴社群运营海报,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+春节,zh,festival,文创,营销电商,high,春节红包设计,春节海报设计,春节礼盒包装设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+中秋节,zh,festival,文创,营销电商,high,中秋节海报设计,中秋礼盒包装设计,中秋节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+端午节,zh,festival,文创,营销电商,medium,端午节海报设计,端午粽子包装设计,端午节插画贺卡,节日词，强时效性，常驱动季节性营销/文创内容需求
+圣诞节,zh,festival,营销电商,文创,high,圣诞节电商包装设计,圣诞节海报设计,圣诞节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+christmas,en,festival,营销电商,文创,high,christmas gift guide poster,christmas packaging design,christmas card illustration,节日词，强时效性，常驱动季节性营销/文创内容需求
+万圣节,zh,festival,营销电商,文创,medium,万圣节海报设计,万圣节贴纸设计,万圣节包装设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+halloween,en,festival,营销电商,文创,medium,halloween poster design,halloween sticker sheet,halloween packaging concept,节日词，强时效性，常驱动季节性营销/文创内容需求
+情人节,zh,festival,营销电商,品牌,high,情人节礼盒包装设计,情人节海报设计,情人节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+母亲节,zh,festival,营销电商,品牌,high,母亲节礼品清单海报,母亲节海报设计,母亲节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+父亲节,zh,festival,营销电商,品牌,medium,父亲节礼品清单海报,父亲节海报设计,父亲节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+感恩节,zh,festival,营销电商,品牌,low,感恩节海报设计,感恩节促销banner设计,感恩节贺卡插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+thanksgiving,en,festival,营销电商,品牌,medium,thanksgiving listing image design,thanksgiving poster template,thanksgiving greeting card,节日词，强时效性，常驱动季节性营销/文创内容需求
+复活节,zh,festival,营销电商,文创,low,复活节海报设计,复活节彩蛋插画,复活节包装设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+元宵节,zh,festival,文创,营销电商,medium,元宵节海报设计,元宵节灯笼插画,元宵节贺卡设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+七夕,zh,festival,文创,营销电商,medium,七夕情人节海报设计,七夕礼盒包装设计,七夕主题插画贺卡,节日词，强时效性，常驱动季节性营销/文创内容需求
+儿童节,zh,festival,教育,营销电商,medium,儿童节海报设计,儿童节礼物清单海报,儿童节活动宣传单,节日词，强时效性，常驱动季节性营销/文创内容需求
+教师节,zh,festival,教育,文创,medium,教师节贺卡设计,教师节海报设计,教师节礼物清单,节日词，强时效性，常驱动季节性营销/文创内容需求
+国庆节,zh,festival,营销电商,文创,low,国庆节促销海报设计,国庆节包装设计,国庆出游攻略长图,节日词，强时效性，常驱动季节性营销/文创内容需求
+双十一,zh,festival,营销电商,品牌,high,双十一促销海报设计,双十一预售定金尾款流程图,双十一电商banner设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+black friday,en,festival,营销电商,品牌,high,black friday sale banner design,black friday countdown graphic,black friday email header design,节日词，强时效性，常驱动季节性营销/文创内容需求
+新年,zh,festival,文创,营销电商,medium,新年祝福海报设计,新年贺卡插画设计,新年促销banner设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+光棍节,zh,festival,营销电商,品牌,low,双十一光棍节促销海报,单身经济营销海报,光棍节电商banner设计,节日词，强时效性，常驱动季节性营销/文创内容需求
+冬至,zh,festival,文创,营销电商,low,冬至海报设计,冬至习俗科普信息图,冬至节气插画,节日词，强时效性，常驱动季节性营销/文创内容需求
+光明节,en,festival,营销电商,文创,low,hanukkah greeting card design,hanukkah packaging concept,hanukkah social media post,节日词，强时效性，常驱动季节性营销/文创内容需求
+香水,zh,product_category,品牌,营销电商,high,香水品牌视觉设计,香水包装设计,香水产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+perfume,en,product_category,品牌,营销电商,high,perfume brand visual identity,perfume packaging mockup,perfume product photo,具体商品品类词，是电商/品牌场景组合query的核心主体词
+茶叶,zh,product_category,品牌,文创,medium,茶叶包装设计,茶叶品牌视觉手册,国风茶叶插画设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+咖啡豆,zh,product_category,品牌,营销电商,medium,咖啡豆包装设计,咖啡豆品牌标签设计,咖啡豆产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+巧克力,zh,product_category,品牌,营销电商,medium,巧克力包装设计,巧克力品牌视觉设计,巧克力礼盒摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+护肤品,zh,product_category,品牌,营销电商,high,护肤品品牌视觉手册,护肤品包装设计,护肤品种草配图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+skincare,en,product_category,品牌,营销电商,high,skincare brand visual identity,skincare packaging mockup,skincare launch poster,具体商品品类词，是电商/品牌场景组合query的核心主体词
+口红,zh,product_category,品牌,营销电商,medium,口红产品摄影图,口红包装设计,口红品牌视觉设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+首饰,zh,product_category,品牌,文创,medium,首饰产品摄影图,首饰包装设计,首饰品牌视觉设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+手表,zh,product_category,品牌,营销电商,low,手表产品详情页设计,手表品牌视觉识别,复古手表插画海报,具体商品品类词，是电商/品牌场景组合query的核心主体词
+包包,zh,product_category,品牌,营销电商,medium,包包电商详情页设计,包包品牌视觉手册,包包产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+鞋子,zh,product_category,营销电商,品牌,medium,鞋子品牌视觉海报,鞋子电商详情页设计,运动鞋产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+童装,zh,product_category,品牌,营销电商,medium,童装品牌视觉设计,童装电商详情页设计,童装产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+家纺,zh,product_category,品牌,营销电商,low,家纺产品摄影图,家纺品牌视觉设计,家纺电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+厨具,zh,product_category,品牌,营销电商,low,厨具产品摄影图,厨具品牌视觉设计,厨具电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+文具用品,zh,product_category,教育,品牌,medium,文具用品品牌视觉设计,文具产品摄影图,文具电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+玩具,zh,product_category,文创,营销电商,medium,玩具包装设计,玩具品牌视觉设计,玩具产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+toys,en,product_category,文创,营销电商,medium,toy packaging mockup,toy brand visual identity,toy product photo,具体商品品类词，是电商/品牌场景组合query的核心主体词
+宠物用品,zh,product_category,品牌,营销电商,high,宠物用品包装设计,宠物用品电商详情页,宠物用品品牌视觉设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+保健品,zh,product_category,品牌,营销电商,medium,保健品包装设计,保健品品牌视觉设计,保健品电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+酒类,zh,product_category,品牌,营销电商,medium,酒类包装设计,酒类品牌视觉设计,酒类产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+零食,zh,product_category,品牌,营销电商,high,零食包装设计,零食品牌视觉设计,零食电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+乳制品,zh,product_category,品牌,营销电商,low,乳制品包装设计,乳制品品牌视觉设计,乳制品产品摄影图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+调味品,zh,product_category,品牌,营销电商,low,调味品包装设计,调味品品牌视觉设计,调味品电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+花束,zh,product_category,文创,品牌,medium,花束产品摄影图,花束包装设计,花束插画海报,具体商品品类词，是电商/品牌场景组合query的核心主体词
+盆栽,zh,product_category,文创,品牌,medium,盆栽产品摄影图,盆栽养护指南信息图,盆栽包装设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+香薰机,zh,product_category,品牌,营销电商,medium,香薰机产品摄影图,香薰机品牌视觉设计,香薰机电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+沙发家具,zh,product_category,品牌,营销电商,low,沙发家具产品摄影图,家具品牌视觉设计,家具电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+灯具,zh,product_category,品牌,营销电商,low,灯具产品摄影图,灯具品牌视觉设计,灯具电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+地毯,zh,product_category,品牌,营销电商,low,地毯产品摄影图,地毯图案插画设计,地毯电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+窗帘,zh,product_category,品牌,营销电商,low,窗帘产品摄影图,窗帘品牌视觉设计,窗帘电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+化妆刷,zh,product_category,品牌,营销电商,low,化妆刷产品摄影图,化妆刷品牌视觉设计,化妆刷电商详情页设计,具体商品品类词，是电商/品牌场景组合query的核心主体词
+护发产品,zh,product_category,品牌,营销电商,medium,护发产品包装设计,护发产品品牌视觉设计,护发产品种草配图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+婴儿用品,zh,product_category,品牌,教育,medium,婴儿用品包装设计,婴儿用品品牌视觉设计,婴儿护理知识信息图,具体商品品类词，是电商/品牌场景组合query的核心主体词
+学习,zh,action,教育,文创,high,学习计划表设计,学习打卡海报设计,学习方法信息图,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+庆祝,zh,action,文创,营销电商,medium,生日庆祝海报设计,节日庆祝贺卡插画,庆祝活动宣传单,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+送礼,zh,action,营销电商,品牌,high,送礼指南海报设计,礼物清单导购图,送礼包装设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+装饰,zh,action,文创,品牌,high,家居装饰插画海报,节日装饰海报设计,装饰灵感moodboard,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+收纳,zh,action,教育,品牌,medium,收纳整理教程图解,收纳前后对比图,收纳产品电商详情页,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+打卡,zh,action,营销电商,文创,high,打卡背景板设计,打卡海报设计,打卡奖励贴纸设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+分享,zh,action,营销电商,文创,medium,好物分享封面图,分享海报设计模板,分享笔记封面设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+种草,zh,action,营销电商,文创,high,种草图设计,种草文案配图,种草合集海报,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+促销,zh,action,营销电商,品牌,high,促销海报设计,促销banner设计,促销倒计时海报,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+招募,zh,action,品牌,教育,low,招募海报设计,团队招募宣传单,社群招募海报,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+招聘,zh,action,品牌,营销电商,low,招聘海报设计,企业招聘宣传单,招聘社交媒体banner,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+开业,zh,action,品牌,营销电商,medium,开业庆典海报设计,开业活动宣传单,开业优惠券设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+打折,zh,action,营销电商,品牌,medium,打折促销海报设计,打折标签设计,打折倒计时banner,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+预售,zh,action,营销电商,品牌,medium,预售海报设计,预售定金尾款流程图,预售倒计时banner设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+众筹,zh,action,品牌,营销电商,low,众筹项目海报设计,众筹宣传长图,众筹感谢卡设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+直播,zh,action,营销电商,品牌,high,直播预告海报设计,直播间背景设计,直播倒计时banner,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+拍照,zh,action,文创,营销电商,low,拍照打卡背景板设计,拍照姿势参考图,拍照场景布置插画,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+手工制作,zh,action,文创,教育,medium,手工制作教程图解,手工制作材料包包装设计,手工制作展示摄影图,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+旅行,zh,action,营销电商,文创,high,旅行攻略长图设计,旅行穿搭插画,旅行打卡海报设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+撸铁,zh,action,品牌,营销电商,low,撸铁打卡海报设计,健身房撸铁训练卡片,撸铁社群运营海报,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+冥想,zh,action,文创,教育,low,冥想主题插画海报,冥想引导卡片设计,冥想空间摄影图,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+阅读,zh,action,教育,文创,high,阅读打卡海报设计,阅读记录表模板,阅读角落装饰插画,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+烹饪,zh,action,营销电商,教育,medium,烹饪教程图解设计,烹饪课程海报设计,烹饪食谱卡片设计,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+野餐,zh,action,文创,营销电商,medium,野餐场景插画海报,野餐清单设计,野餐主题产品摄影图,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展

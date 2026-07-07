@@ -1,0 +1,59 @@
+index,query,primary_scene,secondary_scene,intent_type,reason,confidence,source_tier1
+1,单词,教育,,consumption,词汇裸词，用户浏览生词卡/学习素材，教育信号强,high,Vocabulary & Language
+2,卡通,文创,营销电商,consumption,卡通IP/角色插画内容，是文创设计素材来源，也可用于周边或电商图设计,high,Character & IP & Pop Culture
+3,吉伊卡哇,文创,营销电商,consumption,吉伊卡哇是动漫IP粉丝内容，同时带动周边商品图需求,high,Character & IP & Pop Culture
+4,家居装饰,营销电商,文创,consumption,家居装饰图片多用于家居产品/生活方式营销素材，同时具备美学/mood board属性,medium,Lifestyle & Aesthetic
+5,工程,教育,,consumption,工程图纸/技术参考类内容，最接近知识科普/学习教育场景,medium,DIY / How-to / Craft
+6,植物,教育,文创,consumption,植物图鉴/识别类学习参考，同时具备植物插画审美属性,medium,Nature & Botanical
+7,水果中文,教育,,creation,双语儿童识字卡打印，教育意图明确,high,Vocabulary & Language
+8,电商详情图,营销电商,品牌,creation,电商详情图是明确的电商设计需求，同时承担品牌视觉呈现功能,high,Art & Design & Visual
+9,自行车,营销电商,文创,consumption,自行车产品/生活方式图片，可用于电商或品牌素材，也有美学浏览需求,medium,Lifestyle & Aesthetic
+10,葡萄酒,营销电商,品牌,consumption,葡萄酒产品/生活方式营销图，酒标/品牌调性是次要信号,medium,Lifestyle & Aesthetic
+11,蔬菜,教育,营销电商,consumption,蔬菜图鉴/识别学习内容，同时可作为食品电商素材,medium,Nature & Botanical
+12,词汇,教育,,creation,词汇海报/学习打印品，教育意图明确,high,Vocabulary & Language
+13,趣味经济学知识科普,教育,,creation,经济学知识科普信息图，教育/科普意图明确,high,DIY / How-to / Craft
+14,音乐,文创,营销电商,consumption,音乐美学/文创内容素材，也可用于活动/专辑视觉营销,medium,Lifestyle & Aesthetic
+15,食物,营销电商,文创,consumption,食物摄影/餐饮营销素材，同时具备美食美学内容属性,medium,Food & Recipe
+16,香薰,营销电商,品牌,consumption,香薰产品/生活方式营销图，品牌调性为次要信号,medium,Lifestyle & Aesthetic
+17,唯美春天,文创,营销电商,consumption,季节美学内容/mood board，也可用于春季营销素材,medium,Nature & Botanical
+18,证件照,营销电商,,creation,证件照模板类产品/服务，与四大场景贴合度较低，暂归入营销电商(模板产品),low,Art & Design & Visual
+19,手作,文创,教育,creation,手工艺/文创创作内容，教程属性提供教育次要信号,high,DIY / How-to / Craft
+20,historical character,文创,,consumption,历史人物IP/角色插画内容，文创设计素材,high,Character & IP & Pop Culture
+21,future characters,文创,,consumption,未来角色/科幻IP内容，文创设计素材,high,Character & IP & Pop Culture
+22,homophones and homonyms,教育,,creation,语言学习教材(同音词/同形词)，教育意图明确,high,Vocabulary & Language
+23,english-chinese,教育,,creation,双语学习素材(英中对照)，教育意图明确,high,Vocabulary & Language
+24,language learning expressions,教育,,creation,语言学习表达/常用语，教育意图明确,high,Vocabulary & Language
+25,global influence,文创,营销电商,consumption,文化影响力主题内容，抽象度较高，归入文创；国际传播素材为次要,low,Travel & Place & Culture
+26,remote destination,文创,营销电商,consumption,旅行文化探索内容，同时具备旅游营销素材属性,medium,Travel & Place & Culture
+27,unique cultural experiences,文创,营销电商,consumption,文化体验主题内容，同时具备旅游营销素材属性,medium,Travel & Place & Culture
+28,short city escapes,营销电商,文创,consumption,短途旅行营销/旅游产品推广内容，文化探索为次要,medium,Travel & Place & Culture
+29,creative comfort food,营销电商,文创,mixed,餐饮/美食内容营销，comfort food美学为次要,medium,Food & Recipe
+30,mbti marvel,文创,,mixed,漫威IP+MBTI人格文化内容，文创图表设计,high,Character & IP & Pop Culture
+31,spring flowers,文创,营销电商,consumption,春季花卉美学内容，也可用于节日营销素材,medium,Nature & Botanical
+32,反义词,教育,,creation,反义词词汇学习海报，教育意图明确,high,Vocabulary & Language
+33,paper cutting,文创,教育,creation,传统剪纸手工艺文创内容，教程属性提供教育次要信号,high,DIY / How-to / Craft
+34,met gala,文创,品牌,consumption,时尚文化盛事内容(Met Gala)，红毯造型与时尚品牌高度相关,medium,Character & IP & Pop Culture
+35,动物 词汇,教育,,creation,动物词汇学习卡，教育意图明确,high,Vocabulary & Language
+36,wedding planner,营销电商,品牌,creation,婚礼策划服务/产品营销模板，婚礼品牌视觉为次要,medium,Art & Design & Visual
+37,minimalist autumn outfit for japan travel,营销电商,文创,mixed,穿搭/旅行营销内容，美学穿搭为次要,medium,Lifestyle & Aesthetic
+38,infj vs entp dating compatibility chart,文创,,creation,MBTI人格文化图表内容，文创图表设计,high,Character & IP & Pop Culture
+39,cuban sandwich recipe poster,营销电商,教育,creation,食谱海报=餐饮内容营销模板，食谱教程为次要,high,Food & Recipe
+40,bilingual flashcards for kids learning korean fruits,教育,,creation,双语儿童识字卡(韩语水果)，教育意图明确,high,Vocabulary & Language
+41,watercolor map of europe travel destinations,文创,营销电商,creation,水彩地图插画/文创设计，旅游营销素材为次要,high,Art & Design & Visual
+42,monstera plant care guide infographic,教育,,creation,植物养护知识信息图，教育/科普意图明确,high,Nature & Botanical
+43,marvel mbti character chart 16 types,文创,,creation,漫威IP人格图表内容，文创图表设计,high,Character & IP & Pop Culture
+44,lunar new year red envelope graphic design,营销电商,文创,creation,节庆营销平面设计(春节红包)，传统文化元素设计为次要,high,Art & Design & Visual
+45,1950s vintage diner illustration retro poster,文创,品牌,creation,复古插画海报设计，餐饮品牌复古视觉调性为次要,medium,Art & Design & Visual
+46,before after kitchen organization makeover,营销电商,教育,creation,家居整理内容营销/产品展示，整理教程为次要,medium,DIY / How-to / Craft
+47,phonics worksheets kindergarten,教育,,creation,幼儿拼读练习册，教育意图明确,high,Vocabulary & Language
+48,Spanish vocabulary printable,教育,,creation,西班牙语词汇打印品，教育意图明确,high,Vocabulary & Language
+49,ESL flashcards printable,教育,,creation,ESL识字卡打印品，教育意图明确,high,Vocabulary & Language
+50,easy weeknight dinners healthy,营销电商,教育,mixed,健康餐饮内容营销，食谱指导为次要,medium,Food & Recipe
+51,gluten free dinner ideas,营销电商,教育,mixed,无麸质餐饮内容营销，食谱指导为次要,medium,Food & Recipe
+52,meal prep weekly recipes,营销电商,教育,creation,周计划食谱内容/模板，教育指导为次要,medium,Food & Recipe
+53,cozy reading aesthetic,文创,,consumption,阅读美学内容/mood board，文创属性明确,high,Lifestyle & Aesthetic
+54,book lovers gift guide,营销电商,文创,mixed,礼物指南=电商导购内容，书籍文化审美为次要,high,Lifestyle & Aesthetic
+55,chiikawa,文创,营销电商,consumption,IP粉丝内容，周边商品图为次要,high,Character & IP & Pop Culture
+56,samurai,文创,,consumption,历史文化角色IP内容,high,Character & IP & Pop Culture
+57,genshin,文创,营销电商,consumption,游戏IP粉丝内容，周边商品图为次要,high,Character & IP & Pop Culture
+58,maps,文创,营销电商,mixed,地图插画设计，旅游营销素材为次要,medium,Art & Design & Visual

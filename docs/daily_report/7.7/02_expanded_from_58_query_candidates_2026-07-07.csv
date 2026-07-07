@@ -1,0 +1,189 @@
+seed_query,expanded_query,primary_scene,source_platform,source_signal,expected_content_type,expansion_reason,confidence
+单词,小学英语单词卡片模板,教育,Bing,chip: 单词卡 Template / 小学英语单词表总汇,flashcard,裸词扩展为具体年级+载体形式，贴近真实搜索习惯,high
+单词,四年级英语上册单词表打印,教育,Bing,chip: 四年级英语上册单词表,printable,教材年级信号明确，指向可打印词表,high
+单词,英语单词分类记忆卡片,教育,Bing,chip: 分类记单词,flashcard,记忆法/分类学习是常见二次搜索方向,medium
+单词,初中英语词汇思维导图,教育,Google,related search: 初中英语词汇,infographic,从裸词过渡到学段+可视化学习工具,medium
+卡通,卡通头像制作素材,文创,Google,related search: 卡通头像,avatar/sticker,头像是卡通类目下最高频具体需求,high
+卡通,卡通动物插画素材包,文创,Google,related search: 卡通動物,illustration set,角色插画是文创设计常用输入,high
+卡通,卡通风PPT背景素材,营销电商,Bing,chip: PPT 壁纸 卡通,template,办公/教学场景的卡通素材需求,medium
+卡通,卡通形象商用授权素材,营销电商,Pinterest,"title: ""cartoon eyes clip art set for commercial use in adobe""",clipart,Pinterest结果明确标注商用授权，指向电商/品牌素材需求,medium
+吉伊卡哇,吉伊卡哇高清电脑壁纸,文创,Bing,chip: 吉伊卡哇高清壁纸,wallpaper,壁纸是该IP最高频具体需求,high
+吉伊卡哇,吉伊卡哇头像图片,文创,Bing,chip: 吉伊卡哇头像,avatar,头像需求在角色IP类目中稳定出现,high
+吉伊卡哇,吉伊卡哇钥匙圈周边设计,营销电商,Google,related search: 鑰匙圈,merch design,周边商品设计是IP到电商场景的自然延伸,medium
+吉伊卡哇,吉伊卡哇生日快乐贺图,文创,Bing,chip: 吉伊卡哇生日快乐,greeting card,节庆/生日场景是粉丝内容常见细分,medium
+家居装饰,北欧风客厅装饰效果图,营销电商,Bing,chip: Scandinavian Home Interior Design,moodboard/product photo,风格化+空间细分，贴近真实家居搜索,high
+家居装饰,波西米亚风家居摆件图,营销电商,Bing,chip: Bohemian Style Home Decor,product photo,风格+品类组合，电商选品参考图常见形态,medium
+家居装饰,电视墙设计效果图,营销电商,Bing,chip: Designs for TV Unit,moodboard,具体空间部件是家装搜索的典型颗粒度,medium
+家居装饰,新古典主义客厅装饰灵感,文创,Bing,chip: Neoclassical Interior Design,moodboard,风格美学类目，偏审美浏览而非产品,low
+工程,土木工程施工图纸模板,教育,Bing,chip: 工程图纸 / Google: 土木工程,diagram/template,学科细分+图纸载体，贴近参考学习场景,medium
+工程,智能建造知识科普图,教育,Bing,chip: 智能建造,infographic,新兴工程话题的科普可视化需求,medium
+工程,机械工程师素材海报,教育,Bing,chip: 工程师元素,poster,职业形象类素材，学习/展示场景兼有,low
+植物,多肉植物养护图鉴,教育,Google,related search: 多肉 / 多肉品種,reference card,细分品类+养护属性，教育参考类目典型形态,high
+植物,植物器官结构示意图,教育,Bing,chip: Plant Organ System Diagram,educational diagram,明确的教学类示意图信号,high
+植物,室内植物风水摆放指南,教育,Google,related search: 室內植物風水,infographic,文化+实用结合的科普向内容,medium
+植物,水培植物装饰素材图,营销电商,Google,related search: 水培,product/lifestyle photo,水培作为家居装饰/电商素材的细分场景,low
+水果中文,水果中文拼音识字卡,教育,Google,related search: 拼音 / 水果词汇,flashcard,拼音+词汇是该query最核心的教育诉求,high
+水果中文,水果双语儿童海报 中英对照,教育,Pinterest,"title pattern: ""english and chinese language poster with different fruits""",poster,Pinterest高频出现的双语海报形态,high
+水果中文,对外汉语水果词汇教材封面,教育,Google,related search: 对外汉语 / 汉语教学,worksheet cover,对外汉语教学场景的具体细分,medium
+水果中文,水果中文识字游戏卡,教育,Pinterest,"long-tag: ""Chinese Fruit Vocabulary Practice""",game card,长尾board标签指向练习类游戏化内容,medium
+电商详情图,电商产品主图设计模板,营销电商,Bing,chip: 产品主图设计,template,主图是电商详情图最核心的子需求,high
+电商详情图,淘宝详情页版式设计,营销电商,Bing,chip: 淘宝详情页,template,平台+版式细分，贴近真实电商设计搜索,high
+电商详情图,产品介绍海报设计,营销电商,Bing,chip: 产品介绍海报,poster,详情图之外的关联营销物料形态,high
+电商详情图,美妆快消品促销广告图,营销电商,Pinterest,title pattern: FMCG/vitamin/soap ad examples,ad banner,Pinterest结果集中在快消品广告图，指向细分行业,medium
+自行车,城市通勤自行车产品图,营销电商,Google,related search: 城市自行车,product photo,场景+品类细分，电商选品图常见形态,medium
+自行车,山地自行车海报设计,营销电商,Bing,chip: 山地自行车,poster,细分车型的营销物料需求,medium
+自行车,骑行生活方式摄影素材,文创,Bing,chip: 骑行,lifestyle photo,从产品转向生活方式类审美内容,medium
+葡萄酒,葡萄酒品牌Logo设计,品牌,Bing,chip: 葡萄酒 Logo,logo,品牌视觉是葡萄酒类目的明确细分需求,high
+葡萄酒,红酒品鉴会邀请函设计,营销电商,Bing,chip: 葡萄酒品鉴,invitation template,品鉴活动是常见的酒类营销场景,medium
+葡萄酒,葡萄酒庄园风景海报,营销电商,Bing,chip: 葡萄酒庄园,poster,庄园场景图是酒类营销素材的典型来源,medium
+葡萄酒,葡萄酒中英双语产品介绍模板,营销电商,Canva,"template: ""Wine Translation Chinese-English Facebook""",presentation/menu,Canva实际模板证实该细分需求存在,medium
+蔬菜,蔬菜简笔画识字卡,教育,Bing,chip: 蔬菜简笔画,flashcard,简笔画+识字是蔬菜类目最常见的教育形态,high
+蔬菜,有机蔬菜电商产品图,营销电商,Bing,chip: 有机蔬菜,product photo,有机品类是蔬菜电商图的常见细分,medium
+蔬菜,膳食纤维科普信息图,教育,Google,related search: 膳食纖維,infographic,营养科普是蔬菜类目的知识向延伸,medium
+词汇,HSK词汇突破练习册封面,教育,Google,related search: Hsk 词汇突破,worksheet cover,HSK是词汇类目最具体的考试场景细分,high
+词汇,中英对照词汇表模板,教育,Bing,chip: 中英对照 词汇表 Vocabulary,template,双语对照表是词汇学习的核心载体,high
+词汇,GRE词汇考试知识海报,教育,Bing,chip: GRE 词汇,poster,留学考试场景是词汇类目的高价值细分,medium
+词汇,词汇学习图标信息图,教育,Bing,chip: 词汇 图标,infographic,图标化学习工具是常见的可视化需求,medium
+趣味经济学知识科普,儿童经济学知识科普海报,教育,Bing,chip: 儿童 科普,poster,受众细分（儿童）是科普类目常见方向,high
+趣味经济学知识科普,经济学概念信息图设计,教育,Bing,chip: 科普 图文,infographic,图文科普是知识科普的核心呈现形态,high
+趣味经济学知识科普,曼昆经济学漫画科普图,教育,Google,related search: 漫画 / 曼昆,comic/infographic,具体作者/教材IP细分，漫画化呈现,medium
+音乐,音乐节海报设计,营销电商,Bing,chip: 花火音乐节海报 / 丹麦音乐节海报,poster,音乐节海报是音乐类目最具体的营销物料需求,high
+音乐,五线谱音符插画素材,文创,Bing,chip: 五线谱 / 音符,illustration,乐理元素插画是音乐审美内容的核心素材,high
+音乐,录音棚话筒场景素材图,营销电商,Bing,chip: Music Recording Studio Mic,photo/mockup,录音场景图指向音乐产业相关营销素材,low
+食物,餐厅菜单设计模板,营销电商,Canva,"template: ""Black and Gray Simple Modern Food Menu"" / ""Red and White Minimalist Chinese Food Menu""",menu template,Canva实证模板需求，菜单是食物类目最具体的商用形态,high
+食物,美食摄影海报素材,营销电商,Bing,chip: 美食图片,photo/poster,美食摄影是餐饮营销的基础素材,high
+食物,日式餐厅杂志封面设计,营销电商,Canva,"template: ""White Modern Minimalist Japan Food Magazine Cover""",magazine cover,细分菜系+载体形式的具体模板需求,medium
+食物,食物热量表信息图,教育,Bing,chip: 食物热量表,infographic,营养知识科普是食物类目的教育向延伸,medium
+香薰,无印良品风香薰蜡烛产品图,营销电商,Google,related search: Muji 香薰 / 香氛蠟燭,product photo,具体品牌风格是香薰电商图的常见细分,high
+香薰,轻奢香薰品牌视觉设计,品牌,Bing,chip: Loewe 香薰 / Coach 香薰,brand visual,多个奢侈品牌高频出现，指向品牌调性需求,medium
+香薰,酒店香氛场景海报,营销电商,Bing,chip: 酒店香薰,lifestyle/ad photo,场景化营销图是香薰品类常见形态,medium
+唯美春天,春天唯美壁纸素材,文创,Bing,chip: 春天壁纸,wallpaper,壁纸是该query最直接的具体形态,high
+唯美春天,樱花公园海报设计,营销电商,Pinterest,title pattern: cherry blossom park with skyscrapers,poster,樱花季场景图常被用作营销物料,medium
+唯美春天,春天风景朋友圈配图,文创,Bing,chip: 春天的风景,social image,社交配图是审美类内容最常见的使用场景,medium
+证件照,证件照标准尺寸模板,营销电商,Bing,chip: 证件照模板 / 证件照尺寸,template,尺寸标准是证件照最核心的实用需求,high
+证件照,蓝底红底证件照背景素材,营销电商,Bing,chip: 蓝底证件照 / 红底证件照,background asset,背景色是证件照素材最具体的细分,high
+证件照,AI证件照生成参考图,营销电商,Pinterest,"title: ""One selfie turns into a polished portrait with Pictoria AI""",AI template reference,Pinterest显示AI证件照生成是新兴细分需求,medium
+手作,儿童手工DIY教程图解,教育,Bing,chip: 儿童手工艺 / Summer Craft Activities for Kids,tutorial,教程类内容是手作类目的教育向延伸,high
+手作,折纸花手作教程,教育,Bing,chip: Origami Flower Tutorial,tutorial,具体手工品类+教程形态,high
+手作,非遗手工艺文创设计,文创,Bing,chip: 非遗手工,craft design,非遗文化是手作类目的文创延伸方向,medium
+手作,干花手作装饰素材,文创,Pinterest,"title: ""dried flower crafts""",craft/moodboard,干花手作是Pinterest高频出现的细分手作品类,medium
+historical character,历史人物服装插画设计,文创,Bing,chip: Historical Character Costumes,illustration,服装细节是历史角色类目最具体的视觉需求,high
+historical character,历史人物剪贴画素材,教育,Bing,chip: Historical Figures Clip Art,clipart,教学场景中历史人物剪贴画是常见素材,medium
+historical character,复古历史人物展示模板,营销电商,Canva,"template: ""Brown Beige Vintage Historical Characters Presentation""",presentation template,Canva实证该细分模板存在,medium
+historical character,著名历史人物海报,教育,Bing,chip: Important Historical Figures,poster,知名人物合集海报是教学展示常见形态,medium
+future characters,未来科幻角色设计概念图,文创,Bing,chip: Futuristic Character Design,concept art,角色设计概念图是最直接的创作类需求,high
+future characters,赛博朋克风角色插画,文创,Google,related search: Cyberpunk,illustration,赛博朋克是未来角色类目最主流的美学分支,high
+future characters,未来科技主题演示模板,营销电商,Canva,"template: ""Blue and Purple Modern Future Technology Presentation""",presentation template,未来主题延伸到商业演示场景,medium
+future characters,未来城市概念海报,文创,Bing,chip: Future City Concept Art,poster,城市概念图是科幻角色类目的常见配套素材,medium
+homophones and homonyms,同音词分级练习册 三年级,教育,Bing,chip: Homophones Worksheet Grade 3,worksheet,年级细分是该教学类query的常见具体化方向,high
+homophones and homonyms,同音词/同形词教学挂图,教育,Pinterest,"title: ""Homonyms Anchor Chart""",poster,Anchor chart是课堂教学的典型呈现形态,high
+homophones and homonyms,多义词识字卡,教育,Canva,"template: ""Multiple Meaning Words Pictures Flashcards""",flashcard,Canva实证该细分模板存在,high
+homophones and homonyms,同音词与同形词对比图,教育,Bing,chip: Homonym vs Homophone vs Homograph,infographic,概念辨析类信息图是常见教学需求,medium
+english-chinese,中英对照拼音练习单,教育,Bing,chip: Chinese Pinyin Worksheet,worksheet,拼音练习是双语学习最具体的落地形式,high
+english-chinese,英汉双语词典封面设计,教育,Bing,chip: Chinese-English Dictionary Book,book cover,词典载体是双语类目常见的具体产品形态,medium
+english-chinese,双语翻译社交媒体模板,营销电商,Canva,"template: ""Sandwich/Noodles Translation Chinese-English Facebook""",social template,Canva模板显示该双语翻译系列已被产品化,medium
+language learning expressions,英语课堂常用语海报,教育,Google,related search: Classroom phrases,poster,课堂常用语是该query最具体的教学场景,high
+language learning expressions,面部表情词汇双语海报,教育,Pinterest,"title: ""100 words to describe facial expressions""",poster,表情词汇海报是Pinterest高频出现的具体形态,high
+language learning expressions,英语习语教学信息图,教育,Google,related search: Idiomatic expressions,infographic,习语是语言表达类目的经典教学细分,medium
+global influence,全球软实力信息图,教育,Bing,chip: Global Political Influence Infographic,infographic,抽象主题落地为具体的信息图形态,medium
+global influence,世界地图创意插画,文创,Pinterest,title pattern: hands holding globe over world map,illustration,地球/地图意象是该抽象主题最常见的视觉载体,medium
+global influence,全球化商业网络示意图,营销电商,Bing,chip: Global Business Network,infographic,商业向延伸，信号较弱,low
+remote destination,世界最偏远海岛旅行海报,文创,Bing,chip: Remote Island / Most Remote Place On Earth,poster,具体地理细分（海岛/极地）比抽象词更贴近真实搜索,high
+remote destination,小众偏远旅行目的地清单图,营销电商,Bing,chip: Remote Vacation Spots,listicle graphic,清单化呈现是旅游营销常见形态,medium
+remote destination,偏远旅行目的地地图插画,文创,Pinterest,"title: ""11 most remote destinations worth visiting""",map illustration,Pinterest显示地图+清单是常见组合呈现,medium
+unique cultural experiences,亚洲独特文化体验清单海报,文创,Pinterest,"title: ""10 unique cultural experiences in asia""",listicle poster,地域细分清单是该抽象主题最具体的落地形式,high
+unique cultural experiences,沉浸式文化体验旅行海报,营销电商,Bing,chip: Immersive Cultural Experience,poster,沉浸式体验是旅游营销的常见卖点,medium
+unique cultural experiences,传统茶道节庆插画素材,文创,Pinterest,title: tea ceremony / street festival visuals,illustration/moodboard,具体文化场景（茶道/节庆）比抽象词更利于视觉呈现,medium
+short city escapes,欧洲短途旅行海报 12城市推荐,营销电商,Pinterest,"title: ""12 perfect short european getaways""",poster,具体城市数量+地域，贴近真实旅游营销物料,high
+short city escapes,周末城市短途游打包清单,营销电商,Canva,"template: ""Weekend Escape Package Poster""",checklist/poster,Canva实证周末游套餐海报需求,high
+short city escapes,美国周末旅行城市榜单图,营销电商,Pinterest,"title: ""the best us cities for weekend trips""",listicle graphic,榜单化城市推荐是常见旅游内容形态,medium
+creative comfort food,秋季舒适晚餐菜谱卡片,营销电商,Pinterest,"title pattern: ""Fall Comfort Food Recipes Dinners""",recipe card,季节+品类细分比抽象词更具体可执行,high
+creative comfort food,舒适食物摄影海报,营销电商,Bing,chip: Comfort Food + recipe photography,photo/poster,美食摄影是该品类核心营销素材,high
+creative comfort food,comfort food风Ins拼贴图,营销电商,Canva,"template: ""Comfort Foods Collage Instagram Post""",social collage,Canva实证拼贴社交模板需求,medium
+mbti marvel,漫威角色MBTI人格图表,文创,Bing,chip: Marvel MBTI Chart,chart/infographic,图表化是该跨界主题最核心的呈现形态,high
+mbti marvel,复仇者联盟性格分类海报,文创,Bing,chip: Avengers MBTI,poster,具体角色群体细分（复仇者联盟）,high
+mbti marvel,漫威人物贴纸设计,营销电商,Canva,"template: ""Marvel Spider-Man Circle Sticker""",sticker,Canva模板显示该IP已延伸到周边贴纸场景,medium
+spring flowers,水彩春季花卉插画,文创,Bing,chip: Watercolor Spring Flowers,illustration,水彩风格是花卉插画最常见的具体形式,high
+spring flowers,春季促销海报 花卉主题,营销电商,Canva,"template: ""Pink and Yellow Illustration Spring Flyer""",poster,Canva实证花卉主题促销物料需求,high
+spring flowers,春季花卉涂色页打印,教育,Bing,chip: Spring Flowers Coloring Pages,printable/coloring page,涂色页是儿童教育向的具体细分,medium
+反义词,一年级反义词配对练习,教育,Google,related search: 反义词配对 / 一年级反义词练习,worksheet,年级+练习形式，贴近真实教学搜索,high
+反义词,幼儿园反义词益智卡片,教育,Bing,chip: 反义词 幼儿园练习 / 反义词 益智游戏,game card,幼儿园阶段+游戏化是常见细分方向,high
+反义词,反义词词语大全海报,教育,Google,related search: 反义词大全,poster,大全类合集海报是词汇学习常见形态,medium
+paper cutting,中国剪纸新年图案模板,文创,Bing,chip: Chinese New Year Paper Cutting,template,节庆+品类细分，剪纸最核心的应用场景,high
+paper cutting,剪纸镂空花鸟图案设计,文创,Pinterest,"title: ""paper cut silhouettes with flowers and butterflies""",illustration/template,花鸟图案是剪纸最常见的具体主题,high
+paper cutting,剪纸手工教程 儿童向,教育,Bing,chip: Paper Cutting Art for Kids,tutorial,儿童教程是剪纸类目的教育向延伸,medium
+met gala,Met Gala红毯造型海报,文创,Bing,chip: Met Gala Best Dress / Met Gala Style,poster/moodboard,红毯造型是该事件类query最核心的视觉需求,high
+met gala,时尚品牌红毯造型灵感图,品牌,Pinterest,title pattern: designer/couture fashion editorial tags,moodboard,Pinterest结果高度聚焦时尚品牌造型，指向品牌调性,medium
+met gala,名人红毯造型合集插画,文创,Pinterest,title: celebrity red carpet collage descriptions,illustration/collage,合集化呈现是事件类内容常见形态,medium
+动物 词汇,动物英语单词卡片,教育,Bing,chip: English Animal Words,flashcard,双语识字卡是该query最直接的落地形式,high
+动物 词汇,野生动物分类图鉴,教育,Bing,chip: 动物 的 分类,infographic,分类图鉴是动物词汇类目的知识向延伸,high
+动物 词汇,动物拟声词学习卡,教育,Pinterest,"title: ""an animal sound chart with pictures of different animals""",flashcard,拟声词卡是Pinterest高频出现的具体细分,medium
+wedding planner,婚礼策划清单模板,营销电商,Bing,chip: Wedding Checklist / Wedding Planner Template,template,清单模板是该query最核心的产品形态,high
+wedding planner,婚礼预算规划表,营销电商,Canva,"template: ""Simple and Minimal Printable Wedding Budget Planner""",planner document,Canva实证预算规划表模板需求,high
+wedding planner,婚礼策划师名片设计,品牌,Bing,chip: Wedding Planner Business Cards,business card,名片设计指向婚礼策划师的品牌视觉需求,medium
+minimalist autumn outfit for japan travel,日本秋季旅行穿搭Lookbook,营销电商,Bing,chip: Japan Style Travel Lookbook,lookbook/moodboard,Lookbook形式是穿搭类目最具体的呈现方式,high
+minimalist autumn outfit for japan travel,东京街拍风穿搭图,文创,Pinterest,hashtags: #TokyoFashion #StreetFashion #JapanStyle,moodboard,Pinterest标签高度集中在东京街拍美学,medium
+minimalist autumn outfit for japan travel,极简旅行穿搭打包清单信息图,营销电商,Google,related search: Travel capsule wardrobe,infographic/checklist,打包清单是旅行穿搭常见的实用延伸,medium
+infj vs entp dating compatibility chart,MBTI恋爱契合度对比图表,文创,Bing,chip: MBTI Compatibility Chart,comparison chart,泛化为MBTI通用契合度图表，覆盖更广搜索,high
+infj vs entp dating compatibility chart,INFJ与ENTP关系分析信息图,文创,Bing,chip: INFJ and Entp Relationship,infographic,关系分析是该细分人格组合的核心需求,high
+infj vs entp dating compatibility chart,人格类型配对Ins互动帖,营销电商,Canva,"template: ""Dark Blue Zodiac Compatibility Relationship Interactive Instagram Story""",social interactive post,Canva实证人格/星座配对类互动模板需求,medium
+cuban sandwich recipe poster,古巴三明治食谱卡片,营销电商,Bing,chip: Cuban Sandwich Recipe Card,recipe card,食谱卡是该query最直接的产品形态,high
+cuban sandwich recipe poster,三明治店招牌海报设计,营销电商,Canva,"template: ""sandwich"" banner/signage tags",banner/signage,Canva模板显示三明治品类已延伸到店铺招牌场景,medium
+cuban sandwich recipe poster,三明治制作步骤图解,教育,Pinterest,"title: ""the anatomy of a cuban sandwich...instructions on how to make it""",infographic,步骤图解是食谱类内容的教育向延伸,medium
+bilingual flashcards for kids learning korean fruits,韩语水果词汇卡片,教育,Bing,chip: Korean Fruits Vocabulary,flashcard,词汇卡是该query最核心的产品形态,high
+bilingual flashcards for kids learning korean fruits,儿童双语水果识字卡A-Z,教育,Canva,"template: ""A to Z Fruit Flashcards""",flashcard,Canva实证A-Z水果识字卡模板存在,high
+bilingual flashcards for kids learning korean fruits,韩语水果单词搜索游戏,教育,Bing,chip: Korean Fruits Word Search,worksheet/game,游戏化练习是儿童学习类目常见延伸,medium
+watercolor map of europe travel destinations,欧洲水彩地图插画海报,文创,Bing,chip: Watercolor Europe Map Illustration,illustration/poster,水彩地图插画是该query最直接的创作形态,high
+watercolor map of europe travel destinations,欧洲地标水彩地图设计,文创,Bing,chip: Europe Landmarks Map,map illustration,地标细分是地图插画类目常见的具体化方向,high
+watercolor map of europe travel destinations,欧洲旅游目的地信息图,营销电商,Canva,"template: ""Blue and Orange Illustrated Travel Destinations Travel Infographic""",infographic,Canva实证旅游目的地信息图模板需求,medium
+monstera plant care guide infographic,龟背竹养护指南信息图,教育,Bing,chip: Monstera Basic Care Guide,infographic,具体品种（龟背竹）+指南形式，贴近真实搜索,high
+monstera plant care guide infographic,龟背竹浇水施肥小贴士卡片,教育,Bing,chip: Monstera Plant Care Tips,tip card,养护细节（浇水/施肥）是信息图的常见拆解维度,high
+monstera plant care guide infographic,室内植物养护对比信息图,教育,Canva,"template: ""Purple Cute Simple How To Take Care of Plants Infographic""",infographic,Canva实证同类植物养护信息图模板需求,medium
+marvel mbti character chart 16 types,漫威16型人格全类型图表,文创,Bing,chip: MBTI 16 Personality Types / MBTI Chart,full chart,16型全量图表是该query最直接的完整形态,high
+marvel mbti character chart 16 types,漫威角色性格分析海报,教育,Canva,"template: ""Character Analysis Presentation""",poster/presentation,Canva实证角色性格分析类展示模板需求,medium
+marvel mbti character chart 16 types,超级英雄人格类型对照表,文创,Bing,chip: MBTI Super Heroes,comparison table,泛化为超级英雄群体，覆盖更广搜索,medium
+lunar new year red envelope graphic design,新年红包设计模板,营销电商,Bing,chip: Chinese New Year Red Envelope Template,template,模板形态是该query最直接的产品需求,high
+lunar new year red envelope graphic design,新年祝福Ins帖子模板,营销电商,Canva,"template: ""Red and Cream Illustrative Happy Lunar New Year Instagram Post""",social template,Canva实证新年社交媒体模板需求量大,high
+lunar new year red envelope graphic design,蛇年红包插画设计,文创,Bing,chip: Chinese Red Packet Design Year of Snake,illustration,生肖细分（蛇年）是节庆插画的具体化方向,medium
+1950s vintage diner illustration retro poster,复古美式餐厅海报设计,文创,Bing,chip: Retro Diner Posters,poster,海报是该query最直接的产出形态,high
+1950s vintage diner illustration retro poster,复古餐厅品牌Logo设计,品牌,Canva,"template: ""Purple and Green Modern Retro Diner Brand Logo""",logo,Canva实证复古餐厅品牌Logo模板需求,high
+1950s vintage diner illustration retro poster,50年代餐厅菜单模板,营销电商,Bing,chip: 50s Diner Menu Template,menu template,菜单是复古餐厅视觉系统的常见配套物料,medium
+before after kitchen organization makeover,厨房收纳前后对比图,营销电商,Bing,chip: Kitchen Redos Before and After,before/after collage,对比图是该query最核心的呈现形态,high
+before after kitchen organization makeover,厨房置物架收纳教程图解,教育,Pinterest,description: labeled glass jars / open shelving storage ideas,tutorial infographic,Pinterest长描述展示了具体收纳方法教程,high
+before after kitchen organization makeover,小厨房改造Ins对比帖模板,营销电商,Canva,"template tag: ""before and after""",social post template,Canva实证对比类社交模板需求,medium
+phonics worksheets kindergarten,幼儿园自然拼读练习册,教育,Bing,chip: Free Kindergarten Phonics Worksheets,worksheet,练习册是该query最直接的产品形态,high
+phonics worksheets kindergarten,CVC单词拼读练习卡,教育,Canva,"template: ""Initial, Middle and End CVC Word Spelling Practice Worksheet""",worksheet,Canva实证CVC拼读练习卡模板需求,high
+phonics worksheets kindergarten,字母组合发音配对练习图,教育,Canva,"template: ""Wh Digraph Sound Worksheet""",worksheet,digraph练习是拼读教学的常见细分,medium
+Spanish vocabulary printable,西班牙语词汇打印卡片,教育,Bing,chip: Spanish Vocabulary Flashcards Printable,flashcard,打印卡片是该query最直接的产品形态,high
+Spanish vocabulary printable,西班牙语颜色单词练习表,教育,Bing,chip: Spanish Color Words Worksheet,worksheet,颜色词汇是初级西语学习的常见细分,high
+Spanish vocabulary printable,西班牙语课堂海报,教育,Canva,"template: ""Red Yellow and Blue Playful Kids Spanish Class Poster""",poster,Canva实证课堂海报模板需求,medium
+ESL flashcards printable,ESL职业词汇识字卡,教育,Pinterest,"title: ""Jobs & Occupations Flashcards | 72 Printable ESL Cards for Kids""",flashcard,Pinterest直接展示了具体主题+数量的识字卡产品,high
+ESL flashcards printable,情绪表达识字卡,教育,Canva,"template: ""Feelings Flashcards""",flashcard,Canva实证情绪主题识字卡模板需求,high
+ESL flashcards printable,ESL动物分类识字卡,教育,Canva,"template: ""Animal Groups Flashcards""",flashcard,动物分类是ESL识字卡常见主题,medium
+easy weeknight dinners healthy,健康快手晚餐图鉴,营销电商,Bing,chip: Healthy Weeknight Dinners / Quick Healthy Weeknight Dinners,recipe card/collage,图鉴合集是该query最直接的营销内容形态,high
+easy weeknight dinners healthy,30分钟健康晚餐清单,营销电商,Pinterest,"title: ""15 easy healthy dinner recipes under 30 minutes""",listicle graphic,时间限定清单是Pinterest高频出现的具体形式,high
+easy weeknight dinners healthy,健康饮食知识科普图,教育,Canva,"template: ""Green And Yellow Simple Healthy Eating Presentation""",infographic,Canva实证健康饮食科普类演示模板需求,medium
+gluten free dinner ideas,无麸质晚餐食谱卡片,营销电商,Bing,chip: Gluten Free Dinner Ideas Easy,recipe card,食谱卡是该query最核心的内容形态,high
+gluten free dinner ideas,无麸质意面食谱图解,营销电商,Pinterest,"title: ""6 gluten-free pasta recipes that are super easy to make""",recipe infographic,具体品类（意面）+数量清单，贴近真实搜索,high
+gluten free dinner ideas,无麸质饮食知识科普,教育,Bing,chip: Gluten-Free Diet Recipes,infographic,饮食限制类知识科普是常见教育向延伸,medium
+meal prep weekly recipes,一周备餐计划表模板,营销电商,Canva,"template: ""White Simple Weekly Meal Planner And Grocery List""",planner template,Canva实证周计划模板需求量大,high
+meal prep weekly recipes,备餐购物清单模板,营销电商,Bing,chip: Meal Prep Grocery List,checklist template,购物清单是备餐类目的核心配套工具,high
+meal prep weekly recipes,健身备餐食谱图解,营销电商,Bing,chip: Fitness Meal Prep / Bodybuilding Meal Prep,recipe infographic,健身人群是备餐类目的高价值细分受众,medium
+cozy reading aesthetic,阅读角美学壁纸,文创,Bing,chip: Cozy Reading Aesthetic Wallpaper,wallpaper,壁纸是该美学类query最直接的具体形态,high
+cozy reading aesthetic,秋冬慢生活阅读Ins帖,文创,Canva,"template: ""Brown and Beige Cozy Reading Instagram Post""",social post,Canva实证秋冬慢生活主题社交模板需求,high
+cozy reading aesthetic,读书角落装饰灵感图,文创,Bing,chip: Aesthetic Reading Corner,moodboard,空间角落是cozy美学类目的常见具体场景,medium
+book lovers gift guide,书迷礼物清单导购图,营销电商,Bing,chip: Gift Ideas for Book Lovers,guide/listicle graphic,导购清单是该query最直接的内容形态,high
+book lovers gift guide,读书礼盒摄影素材,营销电商,Bing,chip: Book Lovers Gift Basket,product photo,礼盒是书迷礼物类目的具体产品形态,high
+book lovers gift guide,国际读书日主题海报,文创,Canva,"template: ""Nostalgic Simple Happy National Book Lovers Day Instagram Story""",poster,Canva实证读书日主题海报模板需求,medium
+chiikawa,chiikawa透明背景贴纸素材,文创,Bing,chip: Chiikawa PNG,sticker/clipart,PNG透明素材是该IP最高频具体需求,high
+chiikawa,chiikawa钥匙圈周边设计,营销电商,Bing,chip: Chiikawa Keychain,merch design,周边商品设计是IP到电商场景的延伸,high
+chiikawa,chiikawa玩偶产品图,营销电商,Bing,chip: Chiikawa Plushie,product photo,玩偶是该IP最主流的实体商品形态,medium
+samurai,武士主题插画海报设计,文创,Bing,chip: Samurai Poster / Samurai Art,poster,海报插画是该query最直接的创作形态,high
+samurai,武士主题品牌Logo设计,品牌,Canva,"template: ""Black Red Bold Samurai Apparel Warrior Logo""",logo,Canva实证武士主题品牌Logo模板需求,high
+samurai,武士概念设计图,文创,Bing,chip: Samurai Concept Art,concept art,概念设计是游戏/影视向的创作延伸,medium
+genshin,原神角色高清壁纸,文创,Google,related search: Wallpaper,wallpaper,壁纸是游戏IP类目最高频的具体需求,high
+genshin,原神同人头像设计,文创,Google,related search: Pfp / Fanart,avatar/fanart,同人头像是游戏IP粉丝内容的核心细分,high
+genshin,原神角色周边贴纸设计,营销电商,Google,related search pattern consistent with other game/IP queries (merch),sticker design,参照吉伊卡哇等IP query的周边规律推断，信号为跨query模式而非该query直接标签,low
+maps,复古世界地图插画海报,文创,Bing,chip: Old Map / Map Art,illustration/poster,复古+艺术化是地图类目最常见的创作方向,high
+maps,地图知识教学演示模板,教育,Canva,"template: ""Reading a Map Education Presentation""",education template,Canva实证地图教学类演示模板需求,high
+maps,旅行路线思维导图海报,营销电商,Canva,"template: ""White and Purple Simple Travel Mind Map Poster""",mind map poster,地图与旅行规划结合的具体应用场景,medium
