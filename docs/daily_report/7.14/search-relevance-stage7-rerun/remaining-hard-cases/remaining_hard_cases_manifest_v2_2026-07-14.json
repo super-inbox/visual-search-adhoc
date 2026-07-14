@@ -1,0 +1,112 @@
+{
+  "project": "visual-search-adhoc / curify-frontend search relevance",
+  "stage": "Prompt 7 - Remaining Hard Cases root cause / owner / priority / treatment route",
+  "analysis_date": "2026-07-14",
+  "production_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "production_head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "adhoc_branch": "main",
+  "adhoc_head": "39d8d0a1c6a1c3bd9d31fedfc2d51954cff44f18",
+  "baseline_hash": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "input_files": [
+    "hard_queries_baseline_locked_68_2026-07-14.csv",
+    "hard_queries_refreshed_dg_guarded_68_2026-07-14.csv",
+    "hard_queries_before_after_68_2026-07-14.csv",
+    "hard_queries_ablation_abcd_68_2026-07-14.csv",
+    "hard_queries_manual_review_68_2026-07-14.csv",
+    "stage7_final_manual_labels_68_2026-07-14.csv",
+    "stage7_remaining_failures_2026-07-14.csv",
+    "STAGE7_RERUN_SUMMARY_2026-07-14_zh.md",
+    "STAGE7_FINAL_MANUAL_SPOT_CHECK_2026-07-14_zh.md",
+    "stage7_rerun_manifest_2026-07-14.json",
+    "p0_12_before_after_2026-07-14.csv",
+    "P0_12_SCREENSHOT_VALIDATION_2026-07-14_zh.md",
+    "P0_SCREENSHOT_INDEX_2026-07-14.md",
+    "p0_12_screenshot_manifest_2026-07-14.json",
+    "external_screenshot_queries_12_2026-07-09.csv"
+  ],
+  "input_hashes": {
+    "hard_queries_baseline_locked_68_2026-07-14.csv": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "hard_queries_refreshed_dg_guarded_68_2026-07-14.csv": "4bc91e427cde00e3e907b6ab0d83ce3d1e25a0ab86768cba89c43f3054dac07f",
+    "hard_queries_before_after_68_2026-07-14.csv": "c62ea5241eb21f0da5f562b414200e07b665674ff06ce187292d4e91275417d0",
+    "hard_queries_ablation_abcd_68_2026-07-14.csv": "c358ca06ae3b50e5a6eeaddc01e6cba4e0972a959a1b3fe79a45ccbd708c29e9",
+    "hard_queries_manual_review_68_2026-07-14.csv": "2f3205c665b27b3e7674fd01151b109145f287dc61ab62c3a272a7197bd69fd2",
+    "stage7_final_manual_labels_68_2026-07-14.csv": "557e4a8677e2153c442ca29cbf7b01a0a4af2d19943ebdee3d85e04ab87ccf5b",
+    "stage7_remaining_failures_2026-07-14.csv": "b6c10a2e3d079571b681a4ebc90cebdd190f6bcaaa4dd9f1df324640d1cb2b7b",
+    "STAGE7_RERUN_SUMMARY_2026-07-14_zh.md": "0d647c997e6f564ac271c8bef9036ae6b1884b7368b366ea8ad61855a70d76a4",
+    "STAGE7_FINAL_MANUAL_SPOT_CHECK_2026-07-14_zh.md": "d9edce5146a629949bb03973c3fa0f996284b4128aa6f1ea14cfc8fb47b614f4",
+    "stage7_rerun_manifest_2026-07-14.json": "fb91dde487641e0ae6c2fc6fa2851113af93d2a35e488556558f23b5d043b78b",
+    "p0_12_before_after_2026-07-14.csv": "f39ecd2ebce2c5272ae85d1534bdaf603cf76d8f024c5b879a7061273b16e0db",
+    "P0_12_SCREENSHOT_VALIDATION_2026-07-14_zh.md": "35e269ca276e40eda03f91c50d0b77cceaf42b3d513b1102bf7a90f0fd6e786e",
+    "P0_SCREENSHOT_INDEX_2026-07-14.md": "45ea313bc04d8a649f278f468e0d37e257512083f6f6e1f1371110788682c9e5",
+    "p0_12_screenshot_manifest_2026-07-14.json": "0b4904af191dfeddafe17b780d7fdb40d57ea6bec5f6a627f0b3c1f24fb2c161",
+    "external_screenshot_queries_12_2026-07-09.csv": "7383167685e00317a8f3698057665173a3a89dbd09c6af4c7a7ce484e745017d"
+  },
+  "total_unique_cases": 65,
+  "verified_fail_count": 22,
+  "regression_count": 7,
+  "p0_count": 12,
+  "high_risk_partial_count": 42,
+  "root_cause_distribution": {
+    "CATALOG_CONTENT_GAP_CONFIRMED": 41,
+    "WRONG_ENTITY": 1,
+    "MATCHING_THRESHOLD": 5,
+    "VERTICAL_INTENT_COVERAGE": 1,
+    "TAXONOMY_COVERAGE": 7,
+    "FORMAT_INTENT_COVERAGE": 2,
+    "RANKING": 1,
+    "TOKENIZER_PRECISION": 5,
+    "TOKENIZER_RECALL": 1,
+    "SCREENSHOT_ENVIRONMENT": 1
+  },
+  "owner_distribution": {
+    "CONTENT_CATALOG": 43,
+    "SEARCH": 6,
+    "TAXONOMY": 8,
+    "RANKING": 1,
+    "TOKENIZER": 6,
+    "DATA_EVAL": 1
+  },
+  "priority_distribution": {
+    "P2": 45,
+    "P0": 1,
+    "P1": 19
+  },
+  "treatment_distribution": {
+    "CONTENT_HANDOFF": 42,
+    "FIX_NOW_SEARCH": 1,
+    "MATCHING_EXPERIMENT": 5,
+    "TAXONOMY_DRY_RUN": 8,
+    "RANKING_INVESTIGATION": 1,
+    "FIX_NOW_TOKENIZER": 5,
+    "SHOW_AS_LIMITATION": 2,
+    "DATA_VALIDATION_REQUIRED": 1
+  },
+  "repair_candidate_count": 12,
+  "content_handoff_count": 42,
+  "taxonomy_count": 8,
+  "search_fixable_count": 1,
+  "tokenizer_fixable_count": 5,
+  "limitations": [
+    "Pre-existing file remaining_hard_cases_2026-07-14.csv found in the output directory at task start with no provenance in this session's history; left untouched, all new outputs use _v2 suffix.",
+    "34/42 PARTIAL cases classified using Stage 7 human-reviewed root_cause_category without independent re-verification this session (confidence marked MEDIUM where applicable).",
+    "Catalog gap verification is based on static JSON text-field matching (tags/search_aliases/topics/locale title+category) against the production catalog; cannot rule out image-semantic/embedding-based recall that text fields do not capture.",
+    "Q08-C=1600 (C-mode) vs this report's >=1000 threshold using D-mode (Q08-D=88) are different ablation arms, not a data contradiction; both values independently verified in hard_queries_ablation_abcd_68_2026-07-14.csv."
+  ],
+  "output_files": [
+    "remaining_hard_cases_v2_2026-07-14.csv",
+    "remaining_verified_failures_22_v2_2026-07-14.csv",
+    "p0_12_root_cause_owner_priority_v2_2026-07-14.csv",
+    "remaining_hard_cases_owner_handoff_v2_2026-07-14.csv",
+    "remaining_hard_cases_repair_candidates_v2_2026-07-14.csv",
+    "REMAINING_HARD_CASES_SUMMARY_v2_2026-07-14_zh.md",
+    "remaining_hard_cases_manifest_v2_2026-07-14.json"
+  ],
+  "output_hashes": {
+    "remaining_hard_cases_v2_2026-07-14.csv": "f91a653ee7bff61626c54375b501652a185de04ab4b5df10723a6f5586e3577b",
+    "remaining_verified_failures_22_v2_2026-07-14.csv": "761ae886b3ae8a147bb6353bdb5319d528780b68e34069096d70d837e66e025d",
+    "p0_12_root_cause_owner_priority_v2_2026-07-14.csv": "47e9597561dadbbc298c2ca9c74957d20b542420b3af0e5e82cee43d84e38b20",
+    "remaining_hard_cases_owner_handoff_v2_2026-07-14.csv": "589914327d6e9b04ab47eed06398af7d6685e24c1a64d7974784e5a00c008a53",
+    "remaining_hard_cases_repair_candidates_v2_2026-07-14.csv": "744616d6a9cd4fee5e6fc8febfc3bd78e1f3afa8d3809240b8ffbba35fd7f687",
+    "REMAINING_HARD_CASES_SUMMARY_v2_2026-07-14_zh.md": "85954d62823a79d5535447b75e91bf8bdf3ecdd0e1835d5b9e018139a10fa6cd"
+  }
+}

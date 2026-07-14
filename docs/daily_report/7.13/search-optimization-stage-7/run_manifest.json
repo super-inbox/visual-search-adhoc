@@ -1,0 +1,54 @@
+{
+  "stage": 7,
+  "date": "2026-07-13",
+  "production_repo": "/Users/baobaoli/Desktop/curify-frontend",
+  "report_repo": "/Users/baobaoli/Desktop/visual-search-adhoc",
+  "active_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head_commit": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "git_status_before": " M app/[locale]/(public)/search/page.tsx\n M lib/__tests__/search_metadata_scenarios.test.ts\n M lib/query_phrase_aliases.ts\n M lib/searchRewrite.ts\n M lib/zh_normalize.ts\n M next.config.ts\n M package-lock.json\n M package.json\n M scripts/eval_search.cjs\n?? lib/__tests__/searchRewrite.test.ts\n?? lib/__tests__/stage6_dictionary_hybrid.test.ts\n?? lib/cjk_tokenizer.ts",
+  "git_status_after": " M app/[locale]/(public)/search/page.tsx\n M lib/__tests__/search_metadata_scenarios.test.ts\n M lib/query_phrase_aliases.ts\n M lib/searchRewrite.ts\n M lib/zh_normalize.ts\n M next.config.ts\n M package-lock.json\n M package.json\n M scripts/eval_search.cjs\n?? lib/__tests__/searchRewrite.test.ts\n?? lib/__tests__/stage6_dictionary_hybrid.test.ts\n?? lib/cjk_tokenizer.ts (byte-identical, 996 insertions/82 deletions, verified via git diff --stat before/after)",
+  "query_source": "docs/daily_report/7.7/gold_query_test_set_2026-07-07.csv (authoritative 68-query manifest, chosen because it is the query list that was actually executed to produce curify_search_auto_collect_2026-07-07.csv, the only real pre-Stage-2/5/6 production execution of these 68 queries; no other 68-row query-execution file exists in the repo)",
+  "query_count": 68,
+  "query_manifest_sha256": "00bd2cff0f1dee8168c366020198ed592d0f9654786ff417aa00a19ba4c7ae68",
+  "baseline_source": "docs/daily_report/7.7/curify_search_auto_collect_2026-07-07.csv (historical production snapshot, Playwright vs live https://www.curify-ai.com, collected 2026-07-07, before commits 4210e21f/c062e618 and before the entire uncommitted Stage 2/5/6 diff) + relevance labels reused unmodified from docs/daily_report/7.9/manual_review/curify_68_manual_relevance_audit_2026-07-09.csv (claude_relevance_label; human_relevance_label columns were never filled in as of 7.9/7.13, confirmed 0/68)",
+  "baseline_sha256": {
+    "curify_search_auto_collect_2026-07-07.csv": "a4b0f322839241505d7b94c0348461947e3d3ba1fa9f6efe6b78857c60a18404",
+    "curify_68_manual_relevance_audit_2026-07-09.csv": "e8bb59bdd35d90955b4c5039ac806dfad46e8a90a8bb515e1b6bb344d2b862ce",
+    "hard_queries_68_baseline.csv (this stage's normalized copy)": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233"
+  },
+  "collector_path": "/Users/baobaoli/Desktop/visual-search-adhoc/scripts/curify-search-collect-stage7/ (new, this stage: build_bundle.cjs, run_mode.cjs, run_judge.cjs, aggregate.cjs, judge_prompt.js) — build_bundle.cjs esbuild-bundles the real, unmodified curify-frontend Stage 5/6 modules (lib/searchRewrite.ts, lib/query_phrase_aliases.ts, lib/cjk_tokenizer.ts, lib/zh_normalize.ts, lib/topic_resolver.ts); run_mode.cjs re-implements only the page.tsx-local orchestration (buildSearchTokens/scoreBlob/scoreQueryTokens/merge/hasStrict), transcribed verbatim from the working tree (d=ON) and from `git show HEAD:app/[locale]/(public)/search/page.tsx` (d=OFF, the actual last-committed pre-Stage-6 code, read-only, no working-tree mutation)",
+  "collector_sha256_of_bundled_sources": {
+    "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+    "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+    "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+    "lib/searchRewrite.ts": "24fe7493f44e7028887ed3301a01fa139218e30002c777a960d3a0669746e962",
+    "lib/topic_resolver.ts": "180bb8cc4c419abb5d75d013505fe14e1fe30147c9840b5d617cd25865981b0f"
+  },
+  "top_k": 10,
+  "low_result_threshold": 5,
+  "run_modes": [
+    { "mode": "A", "d_enabled": false, "g_enabled": false, "meaning": "neither — reconstructed offline via harness, using pre-Stage-6 page.tsx logic (git HEAD) and no rewrite call" },
+    { "mode": "B", "d_enabled": true, "g_enabled": false, "meaning": "dictionary-only — Stage 6 tokenizer/scoring, no rewrite call" },
+    { "mode": "C", "d_enabled": false, "g_enabled": true, "meaning": "rewrite-only — pre-Stage-6 tokenizer/scoring, real Stage 5 getMultiQueryPaths() calls" },
+    { "mode": "D", "d_enabled": true, "g_enabled": true, "meaning": "d+g — Stage 6 tokenizer/scoring + real Stage 5 rewrite, the current production code path" }
+  ],
+  "environment": {
+    "node_version": "v26.3.0",
+    "package_manager": "npm (curify-frontend node_modules symlinked read-only into the harness dir)",
+    "openai_model": "gpt-4o-mini (production model, unchanged)",
+    "jieba_dependency": "@node-rs/jieba@^2.0.1, present in package.json + node_modules, loaded via the real lib/cjk_tokenizer.ts",
+    "catalog": "public/data/nano_inspiration.json (3209 records) + public/data/nano_templates.json + messages/{en,zh}/nano.json, read live from curify-frontend, unmodified",
+    "judge_model": "gpt-4o-mini, temperature=0, response_format=json_object",
+    "judge_prompt_sha256": "264bc59e37b08a8421c6cb2cb9ef57d17b76285c7b21bd87ff349319fd9ec2c0",
+    "cache_isolation": "each mode (A/B/C/D) run as a separate node process so lib/searchRewrite.ts's in-memory MULTI_CACHE starts empty per mode; no cross-mode cache reuse"
+  },
+  "limitations": [
+    "Mode A/C's d=OFF tokenizer is reconstructed by literally reading `git show HEAD:app/[locale]/(public)/search/page.tsx` (the real last-committed pre-Stage-6 code) — high fidelity, but this is a read-only textual reproduction executed in a standalone harness, not the actual page.tsx file running through Next.js SSR.",
+    "The harness scores only the inspiration/template catalog match (buildSearchTokens/scoreBlob/scoreQueryTokens/merge/hasStrict). It does NOT reproduce: topic-page redirects, the concept-expansion secondary pass on templates (page.tsx lines ~760-793, template-rail-only, does not touch inspirations), the client-side template matcher (lib/searchTemplateMatch.ts), bot/garbage-UA gating (no real user-agent in an offline harness — isGarbage is reproduced, isBot is not applicable), or any rendering-layer behavior. Historical baseline (from the live Playwright collector) reflects the FULL page including these features, so baseline vs. harness-Mode-A counts are not perfectly comparable on an absolute basis — relevance verdicts (the primary comparison signal) are unaffected by this gap.",
+    "Historical baseline (2026-07-07) predates not just Stage 5/6 but also Stage 2's Fix1/Fix2 phrase-protection commits (4210e21f, c062e618) — it is an even earlier 'before' than a strict Stage-5/6-only ablation baseline would be. Documented, not hidden: this makes the baseline-vs-D comparison in hard_queries_68_before_after.csv slightly more generous toward D than a strict pre-Stage-2 vs Stage-6 comparison would be, since some precision fixes baseline lacks are Stage 2's, not Stage 5/6's. The separately-computed harness Mode A (in hard_queries_68_ablation.csv) is the strict, code-accurate 'neither' for d/g attribution purposes.",
+    "Discovered during this run, not previously documented at this scale: a generic single-word LLM decomposition/rewrite slot (e.g. 'poster', 'design', 'template') can flood results catalog-wide when combined with Stage 6's real tokenization (23/68 = 34% of Mode D rows exceeded 1000 results, two hit the full 3209-record catalog exactly when the slot value was itself the stopword 'template', which produces zero primary tokens and a trivially-true allPrimary check). This is the same class of risk Stage 5 Section 12 and Stage 6 Section 17 already flagged from 2 examples each; this run quantifies it across the full 68-query set. Not fixed in this stage (forbidden by scope) — see Known Limitations / Remaining Risks in the summary.",
+    "LLM rewrite calls (gpt-4o-mini, temperature=0.4) are inherently non-deterministic; a re-run would not reproduce byte-identical rewrite text, though the same gating/caching/parsing logic would apply.",
+    "The relevance judge (gpt-4o-mini, temperature=0) is itself an LLM and can misjudge; a representative manual spot-check (all count-increased-but-relevance-decreased rows, all >1000-result rows, the one in-scope named-risk query, all zero-result transitions in both directions) plus an automated cross-consistency check across all 272 judge outputs (PASS-but-noisy / FAIL-but-apparently-fine) found zero internal inconsistencies and confirmed judge output against raw evidence in every manually re-read case.",
+    "5 of the 6 explicitly-named risk query families in the Stage 7 prompt (蔚来ES6, 比亚迪海豹, 白箱, 五菱宏光, 蜜雪冰城) are NOT present in the actual 68-query gold set (grep-verified) — they appear only in Stage 5/6's own separate, smaller test matrices. Per this stage's explicit no-query-modification rule, they were not added to the 68. Only 二手奢侈品鉴定品牌视觉 is both in the 68 and in the named-risk list; it was checked (see summary)."
+  ]
+}

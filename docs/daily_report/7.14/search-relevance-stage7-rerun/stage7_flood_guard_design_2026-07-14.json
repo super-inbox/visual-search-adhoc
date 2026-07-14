@@ -1,0 +1,325 @@
+{
+  "version": "2026-07-14",
+  "source_baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "analysis_scope": {
+    "queries_analyzed": 23,
+    "query_ids": ["Q06","Q09","Q10","Q11","Q12","Q15","Q16","Q19","Q25","Q26","Q27","Q28","Q33","Q39","Q40","Q41","Q42","Q43","Q45","Q46","Q47","Q48","Q52"],
+    "full_catalog_cases_analyzed": ["Q39","Q40","Q42"],
+    "partial_verdict_cases_analyzed": ["Q06","Q12","Q18","Q19"],
+    "readonly_analysis_only": true,
+    "no_production_code_modified": true,
+    "no_full_68_rerun": true,
+    "no_bulk_llm_calls": true
+  },
+  "mode_flood_counts": {
+    "definition": "count of the 68 queries where result_count >= 1000, taken from hard_queries_68_ablation.csv, independently recomputed",
+    "mode_a_ge_1000": 0,
+    "mode_b_ge_1000": 0,
+    "mode_c_ge_1000": 4,
+    "mode_d_ge_1000": 23,
+    "mode_a_full_catalog_3209": 0,
+    "mode_b_full_catalog_3209": 0,
+    "mode_c_full_catalog_3209": 1,
+    "mode_d_full_catalog_3209": 2,
+    "mode_c_ge_1000_query_ids": ["Q01", "Q16", "Q42", "Q53"],
+    "mode_d_ge_1000_query_ids": ["Q06","Q09","Q10","Q11","Q12","Q15","Q16","Q19","Q25","Q26","Q27","Q28","Q33","Q39","Q40","Q41","Q42","Q43","Q45","Q46","Q47","Q48","Q52"],
+    "note": "Mode C and Mode D flood sets overlap only at Q16 and Q42 (2 of 23). Q01 and Q53 flood in Mode C but NOT Mode D (949 and 1 respectively); Q39/Q40 flood in Mode D but not Mode C. This is because Mode C and Mode D are SEPARATE, non-deterministic LLM rewrite calls (temperature 0.4) for the same query text, not a shared/cached rewrite reused across modes -- confirmed by comparing rewrite_output_json between the two modes for the same query_id."
+  },
+  "full_catalog_cases": [
+    {
+      "query_id": "Q39",
+      "query": "亚马逊评论截图水印素材",
+      "mode": "D",
+      "result_count": 3209,
+      "mechanism": "decomposition.output resolved to the bare string \"template\", which is a STOPWORD in app/[locale]/(public)/search/page.tsx's STOPWORDS set (line ~139 in working tree, line ~135 at HEAD). buildSearchTokens(\"template\") produces primary=[] and aliasGroups=[]. In scoreBlob(), requiredSlots = primary.length + aliasGroups.length = 0, and allPrimary = (primaryHitsOnly + groupHits === requiredSlots) = (0 === 0) = true for every single record/template blob in the catalog, regardless of content. This vacuously-true allPrimary flag is then used both to promote every inspiration to a strict, score=100 match (promoteAllUnderStrictTpl path) and, for the per-record blob loop, to push every one of the 3209 nano_inspiration.json records into the strict result set.",
+      "evidence": "hard_queries_68_refreshed.csv rewrite_output_json for Q39 = {\"decomposition\":{\"subject\":\"Amazon review screenshot\",\"style\":\"watermark\",\"output\":\"template\"}}; strict_result_count=3209, relaxed_result_count=0, has_strict=false (because hasStrict is scoped to baseResult only, per Stage 6 fix, so this flood is invisible to the hasStrict gate and is not filtered)",
+      "confidence": "HIGH"
+    },
+    {
+      "query_id": "Q40",
+      "query": "小红书图文笔记模板 数字标题",
+      "mode": "D",
+      "result_count": 3209,
+      "mechanism": "identical mechanism to Q39: decomposition.output resolved to bare \"template\", producing the same requiredSlots=0 vacuous-true allPrimary condition across the entire catalog.",
+      "evidence": "hard_queries_68_refreshed.csv rewrite_output_json for Q40 = {\"decomposition\":{\"subject\":\"Xiaohongshu post\",\"style\":\"graphic\",\"output\":\"template\"}}; strict_result_count=3209, relaxed_result_count=0",
+      "confidence": "HIGH"
+    },
+    {
+      "query_id": "Q42",
+      "query": "小红书封面模板 白底大字",
+      "mode": "C (g_only) reaches 3209; Mode D (d_plus_g) reaches only 2291",
+      "result_count": "C=3209 (full catalog), D=2291 (not full catalog)",
+      "mechanism": "In Mode C's independent rewrite call, decomposition.output resolved to bare \"template\" (same vacuous-match bug as Q39/Q40), producing 3209. In Mode D's SEPARATE rewrite call for the same query, decomposition.output instead resolved to the two-word phrase \"cover template\" -- after stopword-filtering out \"template\", buildSearchTokens(\"cover template\") yields primary=[\"cover\"], which is NOT empty, so the vacuous-match bug is not triggered in Mode D. The 2291-record result instead comes from \"cover\" being a genuinely common token across many catalog blobs (GENERIC_STANDALONE_REWRITE), not from the empty-primary bug. This is NOT evidence that d (Stage 6 tokenizer) mitigates the vacuous-match bug -- it is evidence that Mode C and Mode D received two different LLM outputs for the same input query due to temperature=0.4 non-determinism.",
+      "evidence": "hard_queries_68_ablation.csv rewrite_output_json: Mode C = {\"decomposition\":{\"subject\":\"Xiaohongshu cover\",\"style\":\"minimalist\",\"output\":\"template\"}}; Mode D = {\"decomposition\":{\"style\":\"minimalist\",\"output\":\"cover template\"}}",
+      "confidence": "HIGH for the mechanism difference; MEDIUM for generalizing beyond this one observed pair of calls"
+    }
+  ],
+  "confirmed_root_causes": [
+    {
+      "id": "EMPTY_PRIMARY_VACUOUS_MATCH",
+      "description": "scoreBlob() in app/[locale]/(public)/search/page.tsx computes requiredSlots = tokens.primary.length + aliasGroups.length and allPrimary = (primaryHitsOnly + groupHits === requiredSlots). When a decomposition slot's text reduces to zero tokens after STOPWORDS filtering (most commonly triggered by a slot value equal to the bare word \"template\", which is itself a STOPWORD), requiredSlots=0 and the equality is vacuously true for every blob in the catalog, producing a full-catalog match for that single path.",
+      "file": "app/[locale]/(public)/search/page.tsx",
+      "function": "scoreBlob",
+      "line_range_working_tree": "301-326",
+      "line_range_head_pre_stage6": "254-273",
+      "pre_existing": true,
+      "note_on_pre_existing": "This exact arithmetic bug (requiredSlots = primary.length + aliasGroups.length; allPrimary = sum === requiredSlots) is present identically in both the current working-tree (Stage 6) version and the HEAD (pre-Stage-6) version of scoreBlob. It is not introduced by Stage 6's tokenizer changes; it is a latent bug in the original matching function, only reachable when some retrieval path (uniquely, the P0.2 decomposition-slot mechanism) produces a token set that fully stopword-filters to empty.",
+      "necessity_sufficiency": "SUFFICIENT when triggered (produces exactly 3209/3209 in both confirmed occurrences); NOT a NECESSARY cause for the other 21 flood cases, which flood via genuinely non-empty but overly generic single-word or low-specificity multi-word paths",
+      "confirmed_cases": ["Q39", "Q40"],
+      "confidence": "HIGH"
+    },
+    {
+      "id": "GENERIC_STANDALONE_REWRITE",
+      "description": "A decomposition slot (or, less often, a paraphrase rewrite) resolves to a single common design/marketing word (poster, design, moodboard, branding, infographic, visual, creative, emoji, graphic, watermark, illustration) with no accompanying entity token. Because flattenPaths() runs each decomposition slot as an INDEPENDENT full retrieval pass (buildSearchTokens(slotValue) -> scoreQueryTokens), and because these words are tagged on very large fractions of the nano_inspiration.json catalog, the single-token path alone strict-matches hundreds to low-thousands of records.",
+      "file": "app/[locale]/(public)/search/page.tsx",
+      "function": "SearchPage (decomposition-slot loop) + scoreQueryTokens + scoreBlob",
+      "line_range": "719-745 (path iteration), 561-671 (scoreQueryTokens/scoreBlob call)",
+      "quantified_evidence": "Token 'design' appears as a decomposition-slot value (or component of one) in 9 of the 68 queries; all 9 are flood cases (100% flood ratio, avg d+g=1876). Token 'poster' appears in 7 queries; 6 are flood cases (86% ratio, avg d+g=1496).",
+      "confirmed_cases": ["Q06","Q09","Q11","Q12","Q15","Q16","Q19","Q25","Q33","Q41","Q42","Q45","Q46","Q47","Q52"],
+      "confidence": "HIGH for the pattern; per-case attribution ranges MEDIUM-HIGH"
+    },
+    {
+      "id": "DECOMPOSITION_TOO_BROAD",
+      "description": "No single decomposition slot value is a bare stopword or a single ultra-generic word, but multiple 2-word slot values (e.g. 'brand design', 'collaboration design', 'photo grid', 'character poster') are each independently broad enough, and the union-by-max-score merge across up to 7 paths compounds their footprints into a >=1000 total match set with no single path being the sole culprit.",
+      "file": "app/[locale]/(public)/search/page.tsx",
+      "function": "SearchPage (path iteration + inspirationById union)",
+      "line_range": "700-745",
+      "confirmed_cases": ["Q10","Q26","Q27","Q28","Q43","Q48"],
+      "confidence": "MEDIUM"
+    },
+    {
+      "id": "MERGE_UNION_FLOODING",
+      "description": "inspirationById is a union-by-max-score merge across the original query plus up to 3 rewrites plus up to 6 decomposition slots (up to 10 paths total, in practice ~6-7 after original-query dedup). There is no per-path result budget and no cap on how many paths may each contribute large, only-partially-overlapping match sets before the final .slice(0, 80) truncation. This is present as a compounding/contributing factor in effectively all 23 cases, though it is a NECESSARY architectural precondition rather than a SUFFICIENT standalone cause -- with only the original query's path, none of these 23 queries floods (mode B, d_only, never exceeds 844 records across all 68 queries).",
+      "file": "app/[locale]/(public)/search/page.tsx",
+      "function": "SearchPage (baseResult/pathResult merge loop)",
+      "line_range": "678-758",
+      "confirmed_cases": ["ALL_23"],
+      "confidence": "HIGH"
+    },
+    {
+      "id": "RANKING_CANNOT_RECOVER",
+      "description": "The multi-hit rank boost (+8% per extra path, capped at +40%) only re-orders an already-flooded pool; it does not remove any record from membership. In the Q39/Q40 vacuous-match cases, every one of the 3209 records has primaryHits+bigramHits=0 for the offending path, so ranking within that pool is effectively arbitrary (stable sort over near-tied zero scores) -- the top 80 records ultimately rendered to the user are not meaningfully relevance-ordered.",
+      "file": "app/[locale]/(public)/search/page.tsx",
+      "function": "SearchPage (final sort + .slice(0,80))",
+      "line_range": "818-822",
+      "confirmed_cases": ["Q39","Q40","and most of the other 21 by extension -- ranking is post-hoc and cannot substitute for a membership-level guard"],
+      "confidence": "MEDIUM"
+    }
+  ],
+  "root_cause_distribution": {
+    "primary_cause_counts": {
+      "EMPTY_PRIMARY_VACUOUS_MATCH": 2,
+      "GENERIC_STANDALONE_REWRITE": 15,
+      "DECOMPOSITION_TOO_BROAD": 6
+    },
+    "secondary_cause_counts": {
+      "MERGE_UNION_FLOODING": 23,
+      "RANKING_CANNOT_RECOVER": 19,
+      "OR_GROUP_TOO_PERMISSIVE": 1,
+      "GENERIC_STANDALONE_REWRITE_as_secondary": 2
+    },
+    "note": "Q42 is counted under GENERIC_STANDALONE_REWRITE as its Mode-D primary cause, with a documented Mode-C-only EMPTY_PRIMARY_VACUOUS_MATCH occurrence noted as context, not as its Mode-D primary cause."
+  },
+  "candidate_guards": [
+    {
+      "id": "guard_a_low_info_standalone_slot_filter",
+      "name": "Filter low-information standalone decomposition slots",
+      "status": "RECOMMENDED",
+      "target_layer": "decomposition_validation",
+      "cases_addressed": ["Q06","Q09","Q11","Q12","Q15","Q16","Q19","Q25","Q33","Q41","Q42","Q45","Q46","Q47","Q52"],
+      "risks": ["Requires a definition of 'low-information' that is not a hardcoded per-query denylist -- catalog-frequency-based (Guard H) is the safer implementation than a static word list (Guard I)", "Could suppress a genuinely useful single-word rewrite for a rare/specific term if frequency threshold is miscalibrated"],
+      "implementation_notes": "Reject (do not add as an independent path) any decomposition slot whose buildSearchTokens() output, after stopword filtering, is a single token AND that token's document frequency in templateSearchBlob/nanoInspiration exceeds a threshold (see Guard H).",
+      "test_requirements": ["single generic slot alone (e.g. style:'poster') is rejected as standalone path", "same generic word co-occurring with an entity token in a rewrite phrase (e.g. 'K-beauty poster') is NOT rejected", "rare/specific single-word slot (e.g. subject:'Furina') is NOT rejected"]
+    },
+    {
+      "id": "guard_b_rewrite_must_preserve_entity",
+      "name": "Rewrite must preserve at least one original entity/protected-phrase/high-info token",
+      "status": "SUPPORTING",
+      "target_layer": "rewrite_generation",
+      "cases_addressed": ["all 23, as a defense-in-depth measure -- does not by itself stop decomposition-slot flooding since the OVERALL rewrite bundle already preserves entity in 23/23 analyzed cases (subject slot or compound rewrite phrase)"],
+      "risks": ["Low risk -- this is already largely true in practice (PRESERVED_PARTIAL in all 23 analyzed cases at the bundle level); the actual gap is at the PER-PATH level, which Guard C addresses directly"],
+      "implementation_notes": "Validate at the getMultiQueryPaths() parsing stage that at least one of {rewrites[], decomposition.subject} shares a token (post-tokenization) with the original query OR with a matched protected phrase.",
+      "test_requirements": ["rewrite that drops all original tokens is rejected", "rewrite that keeps subject entity passes"]
+    },
+    {
+      "id": "guard_c_slot_entity_binding",
+      "name": "Non-subject decomposition slots must share entity/high-info token with the query or be merged back into the subject path",
+      "status": "RECOMMENDED",
+      "target_layer": "decomposition_validation",
+      "cases_addressed": ["Q10","Q26","Q27","Q28","Q43","Q48","and as defense-in-depth for the GENERIC_STANDALONE_REWRITE set"],
+      "risks": ["Implementation complexity: defining 'shares entity' requires reusing the same tokenization/alias logic as buildSearchTokens, or the check itself could diverge from runtime matching behavior"],
+      "implementation_notes": "This is the most direct fix for the actual architectural gap identified in Section 8/10 of the report: decomposition treats style/scene/output/era/mood as independent retrieval paths with NO entity anchor. Before adding a slot as a standalone path, require it to be concatenated with (or scored jointly against) the subject slot or the original query's own primary tokens, rather than run alone.",
+      "test_requirements": ["style-only slot alone never becomes a standalone full-catalog-adjacent path", "style+subject combined path still returns reasonable narrow results", "valid multi-slot rewrite with entity present in every slot is unaffected"]
+    },
+    {
+      "id": "guard_d_empty_primary_fail_closed",
+      "name": "Empty primary token set must fail closed, not vacuously match everything",
+      "status": "RECOMMENDED",
+      "target_layer": "strict_matching",
+      "cases_addressed": ["Q39", "Q40", "and the Mode-C-only Q42 occurrence"],
+      "risks": ["Very low risk -- an empty primary token array with zero alias groups should never legitimately mean 'match everything'; the current behavior is a code defect with no known intentional use case"],
+      "implementation_notes": "In scoreBlob(), when requiredSlots === 0 (i.e. tokens.primary.length === 0 AND aliasGroups.length === 0), return allPrimary: false explicitly instead of falling through to the vacuous 0 === 0 comparison. This is a single-line, surgical fix to the exact line identified in confirmed_root_causes[0].",
+      "test_requirements": ["empty primary token array with zero alias groups never returns allPrimary:true", "non-empty primary array with all tokens matching still returns allPrimary:true (no regression)", "empty primary array but non-empty aliasGroups that all match still returns allPrimary:true (no regression to the alias-only-match design, e.g. 香薰 case)"]
+    },
+    {
+      "id": "guard_e_single_path_result_budget",
+      "name": "Cap how many records a single low-specificity path may contribute before merge",
+      "status": "DEFERRED",
+      "target_layer": "query_planning",
+      "cases_addressed": ["all 23, as a blunt backstop"],
+      "risks": ["Arbitrary threshold choice is itself a form of hardcoding", "Does not fix the underlying vacuous-match or entity-binding defects, only bounds their blast radius", "Could truncate a legitimately broad category query (e.g. bare 'poster' as the ORIGINAL query, which should return many results)"],
+      "implementation_notes": "Not recommended as a Prompt 2 primary fix because it treats a symptom (path result size) rather than the cause (why the path has no entity anchor or is empty); Guard C directly targets the same cases without needing an arbitrary count threshold.",
+      "test_requirements": ["deferred -- would need calibration against a broader query sample outside this 68-query set before being considered a real fix"]
+    },
+    {
+      "id": "guard_f_result_inflation_rollback",
+      "name": "Roll back a rewrite path when its result count is anomalously large relative to the first-pass count",
+      "status": "DEFERRED",
+      "target_layer": "query_planning",
+      "cases_addressed": ["all 23, as a runtime circuit breaker"],
+      "risks": ["Requires the first-pass (original query) result count as a live baseline for comparison at request time -- feasible in principle since initialThinCount is already computed, but the 'anomalous ratio' threshold is itself a tunable knob that could misfire on legitimately broad-recall queries", "Does not diagnose WHY inflation happened, only reacts to it after the fact"],
+      "implementation_notes": "Could compare pathResult.scored.length against initialThinCount and discard the path if the ratio exceeds e.g. 50x, independent of Guard A/C. Considered a reasonable secondary safety net, not a substitute for Guard A/C/D.",
+      "test_requirements": ["deferred pending Prompt 2 scoping decision"]
+    },
+    {
+      "id": "guard_g_layered_merge_original_priority",
+      "name": "Layered merge: original-query results always rank/display ahead of rewrite-only results",
+      "status": "SUPPORTING",
+      "target_layer": "merge",
+      "cases_addressed": ["all 23, as a UI-facing mitigation"],
+      "risks": ["Does not reduce the underlying matched-set size (still 1000+ records logically matched), only changes what the TOP 80 looks like -- useful in combination with Guard A/C/D, not as a substitute"],
+      "implementation_notes": "The current hasStrict scoping (Stage 6 fix, page.tsx:797-817) already partially does this by scoping hasStrict to baseResult; a stronger layered approach could rank original-query strict hits unconditionally above any rewrite-path hit regardless of score.",
+      "test_requirements": ["deferred pending Prompt 2 scoping decision"]
+    },
+    {
+      "id": "guard_h_catalog_frequency_idf",
+      "name": "Use catalog term frequency (IDF-like) to flag low-information single-word slots at runtime",
+      "status": "RECOMMENDED",
+      "target_layer": "decomposition_validation",
+      "cases_addressed": ["Q06","Q09","Q11","Q12","Q15","Q16","Q19","Q25","Q33","Q41","Q42","Q45","Q46","Q47","Q52"],
+      "risks": ["Requires precomputing or caching per-token document frequency across templateSearchBlob/nanoInspiration, adding a small amount of state/complexity", "Needs to be recomputed if catalog content changes meaningfully (content drift, noted as an existing unquantified limitation in Section 15)"],
+      "implementation_notes": "This is the mechanism Guard A should use in preference to Guard I's static denylist -- avoids hardcoding to English marketing vocabulary and generalizes to future catalog growth.",
+      "test_requirements": ["token appearing in >X% of catalog records is flagged low-information when it is the ENTIRE content of a standalone path", "token appearing in <X% is not flagged even if it matches one of the FOCUS_WORDS list"]
+    },
+    {
+      "id": "guard_i_static_denylist",
+      "name": "Static hardcoded denylist of generic terms (poster/template/design/visual/...)",
+      "status": "NOT_RECOMMENDED",
+      "target_layer": "decomposition_validation",
+      "cases_addressed": ["would address most of the currently-observed 23 cases, by construction"],
+      "risks": ["Hardcodes to the specific 68-query eval set's vocabulary, exactly the failure mode Section 0 of this Prompt was told to avoid ('不针对 68 条 Query 硬编码')", "English-only list does not generalize to the CJK-heavy query mix (Chinese equivalents like '设计'/'海报' would need a parallel list, doubling maintenance)", "New generic terms introduced by future catalog growth or LLM phrasing drift are silently unprotected until manually added"],
+      "implementation_notes": "Rejected as the primary mechanism; Guard H (frequency-based) achieves the same practical effect without the maintenance/generalization risk.",
+      "test_requirements": ["not applicable -- not recommended"]
+    },
+    {
+      "id": "guard_j_second_judge_or_confidence_score",
+      "name": "Add a second LLM confidence/self-check pass on the rewrite output before executing it",
+      "status": "NOT_RECOMMENDED",
+      "target_layer": "rewrite_generation",
+      "cases_addressed": ["would address the same 23 cases indirectly, IF the second judge reliably flagged low-information decomposition slots"],
+      "risks": ["Doubles per-query LLM latency and cost for every thin-result query, not just the flooding ones", "Introduces a second source of non-determinism on top of the first (already demonstrated in this analysis via the Q01/Q39/Q53 Mode-C-vs-Mode-D divergence) -- makes the system harder to reason about, not easier", "A confidence score from the same model family is not a reliable oracle for 'will this produce a vacuous match downstream' -- that is a deterministic property of the matching code, not a semantic judgment the LLM is positioned to make"],
+      "implementation_notes": "Deterministic code-level guards (A/C/D/H) directly address the actual mechanism; an LLM-based confidence check is the wrong layer for a bug that is fully explainable by token-counting arithmetic.",
+      "test_requirements": ["not applicable -- not recommended"]
+    },
+    {
+      "id": "guard_k_top_n_truncation_only",
+      "name": "Only truncate final results to top N (already partially done via .slice(0,80))",
+      "status": "NOT_RECOMMENDED",
+      "target_layer": "ranking",
+      "cases_addressed": ["cosmetically caps the RENDERED count, already in place today and demonstrably insufficient -- Q39/Q40/Q42 already flood UNDER today's .slice(0,80) cap; the harness's final_result_count metric (pre-slice) is what registers 3209, but the actual top-80 rendered to a real user is still built from an unranked/near-tied-at-zero-score pool in the vacuous-match cases, so the top 80 shown to the user are not meaningfully relevant either"],
+      "risks": ["This is exactly the kind of Top-N-truncation-as-fix the Prompt explicitly warns against (Section 14, item 6/13: 'not依赖最终 Top N 截断伪装修复')", "Does not fix the root cause: the underlying matched-set membership is still wrong (all 3209 records considered 'strict' matches), it just hides the size of the mistake from the metric/UI"],
+      "implementation_notes": "Not recommended as a root-cause fix. Already effectively in place at the UI layer and already proven insufficient by this analysis (the harness measures the pre-slice matched-set size specifically because that size is diagnostic of a real matching defect, not just a display concern).",
+      "test_requirements": ["not applicable -- not recommended"]
+    }
+  ],
+  "recommended_guard_set": [
+    "guard_d_empty_primary_fail_closed",
+    "guard_a_low_info_standalone_slot_filter",
+    "guard_h_catalog_frequency_idf",
+    "guard_c_slot_entity_binding"
+  ],
+  "guard_execution_order": [
+    {
+      "step": 1,
+      "guard": "guard_d_empty_primary_fail_closed",
+      "rationale": "Fixes the deterministic, unambiguous, zero-risk-of-regression bug first (empty primary + empty alias groups must never vacuously match). This alone resolves Q39/Q40 and the latent Mode-C Q42 occurrence."
+    },
+    {
+      "step": 2,
+      "guard": "guard_h_catalog_frequency_idf",
+      "rationale": "Computes/caches the per-token catalog document-frequency signal that Guard A needs; must exist before Guard A can use it."
+    },
+    {
+      "step": 3,
+      "guard": "guard_a_low_info_standalone_slot_filter",
+      "rationale": "Uses Guard H's frequency signal to reject standalone single-token decomposition paths that are high-frequency/low-information, addressing the majority (15/23) GENERIC_STANDALONE_REWRITE cases."
+    },
+    {
+      "step": 4,
+      "guard": "guard_c_slot_entity_binding",
+      "rationale": "Addresses the remaining DECOMPOSITION_TOO_BROAD cases (6/23) where no single slot is empty or a bare high-frequency word, but the slot as a whole lacks any entity anchor from the original query."
+    }
+  ],
+  "fallback_behavior": {
+    "on_guard_d_reject": "scoreBlob returns allPrimary:false for that blob on that path; the path itself is not disabled, it simply stops vacuously matching everything and instead matches nothing for that specific path, which is correct (this path had zero real search intent).",
+    "on_guard_a_or_h_reject": "the offending decomposition slot is dropped from flattenPaths() before scoreQueryTokens is called on it; the ORIGINAL query path and any OTHER surviving rewrites/slots still execute normally. The user never sees a difference beyond the removal of the flooding contribution.",
+    "on_guard_c_reject": "the offending slot is either (a) merged into the subject/original-query path instead of running standalone, or (b) dropped entirely, falling back to (a) when a subject slot exists and (b) when it does not.",
+    "overall_fallback_when_all_paths_rejected": "identical to today's existing 'no executable path' behavior in getMultiQueryPaths -- the original query's own baseResult stands alone, same as a Path-B/refusal/empty-decomposition response today. No new failure mode is introduced."
+  },
+  "diagnostic_fields": [
+    "guard_id",
+    "query_id",
+    "rejected_path_text",
+    "rejection_reason (empty_primary | low_info_standalone | no_entity_binding)",
+    "catalog_frequency_at_reject_time",
+    "fallback_action_taken (dropped | merged_into_subject | ran_unmodified)",
+    "path_result_count_before_reject (if computed)",
+    "timestamp"
+  ],
+  "required_tests": [
+    "empty primary token array with zero alias groups never yields allPrimary:true",
+    "generic standalone slot (e.g. style:'poster') alone is rejected as an independent path",
+    "generic term co-occurring with an entity in the same rewrite phrase (e.g. 'K-beauty poster') is NOT rejected",
+    "original entity/protected-phrase preserved through decomposition for a representative CJK query (e.g. 香薰 alias-group case)",
+    "erroneous entity substitution in a rewrite falls back to the original query's own results, not the bad rewrite",
+    "valid, useful generalization path is preserved (e.g. 乔丹鞋-style literal-to-broader-category relaxation pattern documented in lib/searchRewrite.ts's NAMED-ENTITY RELAXATION RULE)",
+    "pure English query still produces expected results with guards active",
+    "mixed CJK+English query still produces expected results with guards active",
+    "Protected Phrase (query_phrase_aliases.ts) matches are unaffected by the new guards",
+    "a legitimate alias expansion (e.g. k-beauty/skincare alias group from Q15) still functions",
+    "CJK tokenizer fallback path (cjk_tokenizer.ts internal bigram fallback) is unaffected",
+    "empty rewrite / Path-B response (rewrites:[], decomposition:{}) behavior is unchanged",
+    "a query whose rewrite is entirely refused/filtered still falls back correctly to the original-query-only result set",
+    "same-query-only rewrite (post compareKey dedup) is unaffected",
+    "a valid multi-slot rewrite where every slot carries the entity is unaffected end-to-end",
+    "cache TTL behavior (7-day success TTL vs 10-minute negative TTL) is not altered by these guards, which run downstream of caching"
+  ],
+  "deferred_options": [
+    "guard_e_single_path_result_budget",
+    "guard_f_result_inflation_rollback",
+    "guard_g_layered_merge_original_priority"
+  ],
+  "not_recommended_options": [
+    "guard_i_static_denylist",
+    "guard_j_second_judge_or_confidence_score",
+    "guard_k_top_n_truncation_only"
+  ],
+  "known_limitations": [
+    "0/68 human_relevance_label filled -- all PASS/PARTIAL/FAIL verdicts referenced in this analysis are LLM-judge (gpt-4o-mini) output, not human-confirmed relevance",
+    "Mode A and Mode C's d=OFF branch is an offline text-reconstruction of the pre-Stage-6 tokenizer (via `git show HEAD`), not a live import of a historically-run module; boundary-condition differences from a true historical run cannot be fully ruled out",
+    "Mode C and Mode D are independent, non-deterministic LLM calls (temperature 0.4) for the same query -- the 23-query D-mode flood set is a snapshot of one run, not a guaranteed-stable set; Q01/Q53/Q42/Q39/Q40 all show C-vs-D divergence in this dataset",
+    "Catalog content drift between the 2026-07-07 baseline collection and the 2026-07-13 Stage 7 harness run is not quantified -- some baseline-vs-D count deltas may partly reflect catalog changes rather than pure code/rewrite effects",
+    "Per-slot individual result counts (i.e. how many records EACH decomposition slot matches in isolation, before the union) are not persisted by the harness -- flooding_slot/flooding_token attribution in the CSV is inferred from decomposition content + code logic + aggregate strict/relaxed counts, not from a directly logged per-path count",
+    "The 'count_increased_but_relevance_decreased' field in hard_queries_68_before_after.csv overlaps with the 23-query flood set at only 7/23, not 22/23 as Prompt 0's 'Next Analysis Priorities' section assumed when framing the question -- this analysis independently recomputed the overlap and found the assumption to be incorrect; the two fields track substantially different (though related) phenomena and should not be conflated",
+    "This analysis diagnoses causes and evaluates candidate guards; it does not implement, test in a running server, or measure the guards' actual effect on the 68-query set -- no claim of relevance improvement is made"
+  ],
+  "target_files": [
+    "app/[locale]/(public)/search/page.tsx"
+  ],
+  "target_functions": [
+    "scoreBlob",
+    "buildSearchTokens",
+    "scoreQueryTokens",
+    "SearchPage (decomposition-slot path iteration, approx. lines 719-745)"
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "report_scope": {
+    "start_date": "2026-07-13",
+    "end_date": "2026-07-14",
+    "included": "Stage 1-7 (7.13) + Prompt 0-7 + 68/12/Remaining Hard Cases comparison (7.14)",
+    "excluded": "Prompt 8 (300+ Easy Query Validation) results -- running in parallel, not read"
+  },
+  "generated_date": "2026-07-14",
+  "task_type": "READ_ONLY_WORK_REPORT_SYNTHESIS",
+  "production_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "production_head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "adhoc_branch": "main",
+  "adhoc_head": "39d8d0a1c6a1c3bd9d31fedfc2d51954cff44f18",
+  "baseline_hash": {
+    "expected": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "recomputed_7_14": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "recomputed_7_13": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "match": true,
+    "note": "7.13 and 7.14 baseline files are byte-identical (same SHA-256), confirming continuity of the authoritative baseline across both days"
+  },
+  "key_metrics": {
+    "7_13_labels": {
+      "PASS": 0,
+      "PARTIAL": 4,
+      "FAIL": 64,
+      "strict": "0.0%",
+      "broad": "5.9%",
+      "weighted": "2.9%"
+    },
+    "7_14_verified_labels": {
+      "PASS": 4,
+      "PARTIAL": 42,
+      "FAIL": 22,
+      "strict": "5.9%",
+      "broad": "67.6%",
+      "weighted": "36.8%"
+    },
+    "d_mode_gte1000": {
+      "before": 23,
+      "after": 2,
+      "reduction_pct": 91.3
+    },
+    "d_mode_full_catalog": {
+      "before": 2,
+      "after": 0
+    },
+    "c_mode_full_catalog": {
+      "before": 1,
+      "after": 0
+    },
+    "zero_result": {
+      "before": 11,
+      "after": 23
+    },
+    "low_result": {
+      "before": 9,
+      "after": 5
+    },
+    "p0_screenshot": {
+      "PASS": 0,
+      "PARTIAL": 5,
+      "FAIL": 7,
+      "comparable": 12,
+      "success_evidence": 0,
+      "partial_improvement_evidence": 4,
+      "limitation_evidence": 8
+    },
+    "remaining_fail_root_cause": {
+      "CATALOG_CONTENT_GAP": 14,
+      "MATCHING_THRESHOLD": 4,
+      "TOKENIZER_PRECISION": 2,
+      "TOKENIZER_RECALL": 1,
+      "WRONG_ENTITY": 1
+    }
+  },
+  "requirement_status_summary": {
+    "COMPLETE": 9,
+    "COMPLETE_WITH_LIMITATIONS": 2,
+    "IN_PROGRESS": 3,
+    "NOT_STARTED": 7,
+    "total": 21
+  },
+  "pending_sections": [
+    "Section 14 (300+ Easy Query Validation) -- placeholder only, IN PROGRESS / PENDING FINAL RESULT",
+    "Section 1 Executive Summary -- 300+ status line will need update",
+    "Section 12/13 -- completion percentages will shift once R13/R12/R19 resolve"
+  ],
+  "input_hashes": [
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/WORK_REPORT_2026-07-13_zh.md",
+      "sha256": "4440571a073dd15095003dc6ab3e6571c792bdb03913e78da20d8cac6ce58d5a",
+      "size": 44629,
+      "mtime": "2026-07-13T04:13:00.679468"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_baseline.csv",
+      "sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+      "size": 120898,
+      "mtime": "2026-07-13T03:46:45.742423"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_refreshed.csv",
+      "sha256": "579d1bfbdc08a8385b8abe3e5e208b9329dd8bbc17ab1db12d8710c237b75f9b",
+      "size": 370209,
+      "mtime": "2026-07-13T03:46:45.728281"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_before_after.csv",
+      "sha256": "fc4cbb9d559dba284c6d7b48d94ad927b0811b64b5f3d54b2fe74841fe6a2278",
+      "size": 365712,
+      "mtime": "2026-07-13T03:46:45.731417"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_ablation.csv",
+      "sha256": "e9a3a21d09ff9a5d62eb26c507b64e0ddd1e4133ba26acd834a1d29ee46f2061",
+      "size": 971062,
+      "mtime": "2026-07-13T03:46:45.741422"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_summary.md",
+      "sha256": "5ca6bbfa5c9621e85333a3c0540757cb60ab6359c733f487b187c133a79eae32",
+      "size": 29814,
+      "mtime": "2026-07-13T03:52:24.958561"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/run_manifest.json",
+      "sha256": "0a0431e2ce92b86e21edf31def7148e0fb7edc65d915ebdf60abba321873b7f3",
+      "size": 9168,
+      "mtime": "2026-07-13T03:49:54.849838"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_baseline_locked_68_2026-07-14.csv",
+      "sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+      "size": 120898,
+      "mtime": "2026-07-14T19:37:01.196375"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_refreshed_dg_guarded_68_2026-07-14.csv",
+      "sha256": "4bc91e427cde00e3e907b6ab0d83ce3d1e25a0ab86768cba89c43f3054dac07f",
+      "size": 355582,
+      "mtime": "2026-07-14T21:37:13.663326"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_before_after_68_2026-07-14.csv",
+      "sha256": "c62ea5241eb21f0da5f562b414200e07b665674ff06ce187292d4e91275417d0",
+      "size": 367547,
+      "mtime": "2026-07-14T21:46:51.961635"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_ablation_abcd_68_2026-07-14.csv",
+      "sha256": "c358ca06ae3b50e5a6eeaddc01e6cba4e0972a959a1b3fe79a45ccbd708c29e9",
+      "size": 1169613,
+      "mtime": "2026-07-14T21:37:13.657677"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_manual_review_68_2026-07-14.csv",
+      "sha256": "2f3205c665b27b3e7674fd01151b109145f287dc61ab62c3a272a7197bd69fd2",
+      "size": 68120,
+      "mtime": "2026-07-14T21:47:29.162116"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/STAGE7_RERUN_SUMMARY_2026-07-14_zh.md",
+      "sha256": "0d647c997e6f564ac271c8bef9036ae6b1884b7368b366ea8ad61855a70d76a4",
+      "size": 14135,
+      "mtime": "2026-07-14T21:50:43.180749"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/stage7_rerun_manifest_2026-07-14.json",
+      "sha256": "fb91dde487641e0ae6c2fc6fa2851113af93d2a35e488556558f23b5d043b78b",
+      "size": 17686,
+      "mtime": "2026-07-14T21:49:22.183136"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/STAGE7_FINAL_MANUAL_SPOT_CHECK_2026-07-14_zh.md",
+      "sha256": "d9edce5146a629949bb03973c3fa0f996284b4128aa6f1ea14cfc8fb47b614f4",
+      "size": 27354,
+      "mtime": "2026-07-14T22:15:33.175536"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/stage7_final_manual_labels_68_2026-07-14.csv",
+      "sha256": "557e4a8677e2153c442ca29cbf7b01a0a4af2d19943ebdee3d85e04ab87ccf5b",
+      "size": 26353,
+      "mtime": "2026-07-14T22:12:20.747411"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/stage7_remaining_failures_2026-07-14.csv",
+      "sha256": "b6c10a2e3d079571b681a4ebc90cebdd190f6bcaaa4dd9f1df324640d1cb2b7b",
+      "size": 11200,
+      "mtime": "2026-07-14T22:12:20.748693"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/p0-12-before-after/p0_12_before_after_2026-07-14.csv",
+      "sha256": "f39ecd2ebce2c5272ae85d1534bdaf603cf76d8f024c5b879a7061273b16e0db",
+      "size": 23881,
+      "mtime": "2026-07-14T23:45:04.371323"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/p0-12-before-after/P0_12_SCREENSHOT_VALIDATION_2026-07-14_zh.md",
+      "sha256": "35e269ca276e40eda03f91c50d0b77cceaf42b3d513b1102bf7a90f0fd6e786e",
+      "size": 10769,
+      "mtime": "2026-07-14T23:47:12.765074"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/p0-12-before-after/P0_SCREENSHOT_INDEX_2026-07-14.md",
+      "sha256": "45ea313bc04d8a649f278f468e0d37e257512083f6f6e1f1371110788682c9e5",
+      "size": 6173,
+      "mtime": "2026-07-14T23:46:09.211029"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/p0-12-before-after/p0_12_screenshot_manifest_2026-07-14.json",
+      "sha256": "0b4904af191dfeddafe17b780d7fdb40d57ea6bec5f6a627f0b3c1f24fb2c161",
+      "size": 13349,
+      "mtime": "2026-07-14T23:46:09.311086"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/remaining_hard_cases_v2_2026-07-14.csv",
+      "sha256": "f91a653ee7bff61626c54375b501652a185de04ab4b5df10723a6f5586e3577b",
+      "size": 131617,
+      "mtime": "2026-07-15T00:26:39.326674"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/remaining_verified_failures_22_v2_2026-07-14.csv",
+      "sha256": "761ae886b3ae8a147bb6353bdb5319d528780b68e34069096d70d837e66e025d",
+      "size": 9327,
+      "mtime": "2026-07-15T00:26:39.327930"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/p0_12_root_cause_owner_priority_v2_2026-07-14.csv",
+      "sha256": "47e9597561dadbbc298c2ca9c74957d20b542420b3af0e5e82cee43d84e38b20",
+      "size": 6587,
+      "mtime": "2026-07-15T00:26:39.328188"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/remaining_hard_cases_owner_handoff_v2_2026-07-14.csv",
+      "sha256": "589914327d6e9b04ab47eed06398af7d6685e24c1a64d7974784e5a00c008a53",
+      "size": 51858,
+      "mtime": "2026-07-15T00:26:39.328991"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/remaining_hard_cases_repair_candidates_v2_2026-07-14.csv",
+      "sha256": "744616d6a9cd4fee5e6fc8febfc3bd78e1f3afa8d3809240b8ffbba35fd7f687",
+      "size": 10157,
+      "mtime": "2026-07-15T00:26:39.329702"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/REMAINING_HARD_CASES_SUMMARY_v2_2026-07-14_zh.md",
+      "sha256": "85954d62823a79d5535447b75e91bf8bdf3ecdd0e1835d5b9e018139a10fa6cd",
+      "size": 15972,
+      "mtime": "2026-07-15T00:29:42.650121"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/remaining-hard-cases/remaining_hard_cases_manifest_v2_2026-07-14.json",
+      "sha256": "cb82a2ac38a48f4cc0780a9ed8d3e9f3a0f4c4b1505cf878dc731cc8dfb1207e",
+      "size": 6245,
+      "mtime": "2026-07-15T00:29:50.815979"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/hard_queries_68_clear_before_after_comparison_2026-07-14.csv",
+      "sha256": "d685f12829d04d839642e8c0c6f5aa0a8e91fcaeafab08af66c66731b78368b2",
+      "size": 35435,
+      "mtime": "2026-07-15T01:40:12.683335"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/p0_12_clear_before_after_comparison_2026-07-14.csv",
+      "sha256": "0ef4b88dc54940768788b534a747f2430cab7a89bbcff7a8e1fddac43210f0fa",
+      "size": 7461,
+      "mtime": "2026-07-15T01:40:42.141683"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/search_optimization_before_after_metrics_2026-07-14.csv",
+      "sha256": "238106c9e1baa9d726ca2bdc8ae567e306accf8ce4a6430f20144c8c8616f1d4",
+      "size": 5869,
+      "mtime": "2026-07-15T01:41:18.455874"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/SEARCH_OPTIMIZATION_BEFORE_AFTER_COMPARISON_2026-07-14_zh.md",
+      "sha256": "b690906583630c47a9b640844f0b9006e4fee7ea4529e23c750f19e632698d84",
+      "size": 30813,
+      "mtime": "2026-07-15T01:45:45.186954"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/SEARCH_OPTIMIZATION_ONE_PAGE_SUMMARY_2026-07-14_zh.md",
+      "sha256": "4b8352c0e6dde445aecd41c22d3b09a3fd83862f98eb0bb067fa7c69ec5667c1",
+      "size": 2578,
+      "mtime": "2026-07-15T01:46:03.057260"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/before-after-data-comparison/before_after_comparison_manifest_2026-07-14.json",
+      "sha256": "3e60e0a453cbb77bb829efb72af9790ee035314c2b32095061b57ac1b90fcce0",
+      "size": 16054,
+      "mtime": "2026-07-15T01:46:47.567190"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/STAGE7_FLOOD_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+      "sha256": "b120eaec5c22753ef0ce10f2c0bcc67a801a9c5206be8113801bb1148768a63c",
+      "size": 31253,
+      "mtime": "2026-07-14T12:53:00.853838"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/STAGE7_REWRITE_ARRAY_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+      "sha256": "ab25ed5e4a3982da808f03b70505d214938c72238d36eb04e5c7c892b605bb17",
+      "size": 19375,
+      "mtime": "2026-07-14T14:22:17.563718"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/STAGE7_PROMPT2C_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+      "sha256": "cdfed84388ba1b7e68b8d3a746d5f684123f0e0dceb09584d529d0cb93825dae",
+      "size": 16941,
+      "mtime": "2026-07-14T15:56:31.317415"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/STAGE7_PROMPT2D_FINAL_SUMMARY_2026-07-14_zh.md",
+      "sha256": "cad6472e364075b7aff2b9192a8ddc133ddf118943ebdacfb770486f19ef275a",
+      "size": 11246,
+      "mtime": "2026-07-14T18:14:07.370689"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun/STAGE7_PROMPT4_BLOCKED_2026-07-14_zh.md",
+      "sha256": "fec77f8eeb6f1e208cfb52cc0b9e3385c80e6e3c386c2cabb52e8cf1bf96c246",
+      "size": 8705,
+      "mtime": "2026-07-14T18:48:44.131344"
+    },
+    {
+      "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/prompt4a/STAGE7_PROMPT4A_MODE_CONTRACT_SUMMARY_2026-07-14_zh.md",
+      "sha256": "841b3fbb8cf4537c7c87d7ce3365c4e47511f19620e8094947c490a7c153eac6",
+      "size": 7420,
+      "mtime": "2026-07-14T19:14:26.824117"
+    }
+  ],
+  "limitations": [
+    "300+ Easy Query Validation (Prompt 8) running in parallel; not read; cannot rule out systemic regression on common queries.",
+    "Taxonomy audit (1,118 candidates), Taxonomy Dry-run, Topic Page Flag verification, Taxonomy import: all NOT_STARTED.",
+    "Content/Catalog gap handoff (42-43 cases) not yet actioned.",
+    "No formal master 'project requirements' document was found in the repository; the 21-item requirement list in CURIFY_SEARCH_RELEVANCE_REQUIREMENT_STATUS_2026-07-14.csv was derived from this task's own prompt text (Section 十五) cross-referenced against documented evidence across 7.9-7.14, not a single canonical source file.",
+    "7.13 Mode A/C ablation data (hard_queries_68_refreshed/before_after/ablation.csv) is methodologically superseded (git-show reconstruction, not same-codebase runtime toggle) -- flagged INVALID_FOR_FINAL_CONCLUSION in File Guide Section 18.6; only 7.13's Mode D labels (0/4/64) are used as the Before baseline since D mode itself is a legitimate current-production-code path.",
+    "PR/merge status not re-verified beyond git branch/HEAD checks (no new git merge-base check run in this task; relies on 7.13 report's prior verification)."
+  ],
+  "prompt8_status": {
+    "name": "300+ Easy Query Validation",
+    "isolation_confirmed": true,
+    "checkpoint_read": false,
+    "outputs_read": false,
+    "processes_touched": false,
+    "status_in_report": "IN PROGRESS / PENDING FINAL RESULT"
+  },
+  "final_conclusion": "WORK_REPORT_COMPLETE_PENDING_EASY_QUERY_UPDATE"
+}

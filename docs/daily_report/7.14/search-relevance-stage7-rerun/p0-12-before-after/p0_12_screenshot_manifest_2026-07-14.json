@@ -1,0 +1,139 @@
+{
+  "project": "Curify Search Relevance Optimization",
+  "stage": "Stage 8 — Fixed 12 P0 Before/After Screenshot Validation (Prompt 6)",
+  "capture_date": "2026-07-14",
+  "report_date": "2026-07-14",
+  "production_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "production_head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_status_dirty": true,
+  "production_status_note": "Working tree carries pre-existing uncommitted Stage 2/5/6/7 feature-branch work (unrelated to this stage); confirmed byte-identical before and after this stage's execution.",
+  "data_version": "catalog_size=3209 (public/data/nano_inspiration.json, per stage7_rerun_manifest_2026-07-14.json)",
+  "browser": "Chromium (Playwright) headless",
+  "viewport": "1440x900",
+  "device_scale_factor": 1,
+  "locale": "en-US (NEXT_LOCALE=en, default locale, matches Before screenshots' English UI toggle)",
+  "capture_environment": "Local Next.js dev server (localhost:3417) running the current, unmodified production workspace (NEXT_PUBLIC_ENV=production in .env.local, connects to real production database/APIs)",
+  "before_environment": "Playwright headless Chromium vs live https://www.curify-ai.com (production), captured 2026-07-07, English locale, 1440px viewport (per docs/daily_report/7.7 source)",
+  "environment_differences": [
+    "Before was captured against the live production URL; After was captured against a local dev server running the identical current production code (branch/HEAD unchanged) -- functionally equivalent but not the same physical request path.",
+    "Local dev server shows a small red numbered issue-count badge (Next.js dev-mode overlay, e.g. '1 Issue'/'3 Issues') in the bottom-left corner that does not appear in the real production site; this is a dev-tooling artifact, not a product regression or sensitive data.",
+    "Before screenshots have no separate 'top region' crop (single full-page capture only, per the 7.7 collection convention); After screenshots include both a full-page and a viewport-height top-region capture per this stage's requirement.",
+    "C/D-mode rewrite calls are live, independent LLM calls each time -- the exact result count/ordering on this live capture may differ slightly from the Stage 7 harness's separately-recorded run for the same query (LLM non-determinism), though both exercise the same production code path."
+  ],
+  "p0_count": 12,
+  "before_valid_count": 12,
+  "after_full_count": 12,
+  "after_top_count": 12,
+  "pass_count": 0,
+  "partial_count": 5,
+  "fail_count": 7,
+  "not_comparable_count": 0,
+  "missing_before_count": 0,
+  "missing_after_count": 0,
+  "project_report_usage": {
+    "P0_01": "LIMITATION_EVIDENCE",
+    "P0_02": "LIMITATION_EVIDENCE",
+    "P0_03": "LIMITATION_EVIDENCE",
+    "P0_04": "LIMITATION_EVIDENCE",
+    "P0_05": "PARTIAL_EVIDENCE",
+    "P0_06": "PARTIAL_EVIDENCE",
+    "P0_07": "LIMITATION_EVIDENCE",
+    "P0_08": "LIMITATION_EVIDENCE",
+    "P0_09": "PARTIAL_EVIDENCE",
+    "P0_10": "LIMITATION_EVIDENCE",
+    "P0_11": "LIMITATION_EVIDENCE",
+    "P0_12": "LIMITATION_EVIDENCE"
+  },
+  "files": {
+    "csv": "p0_12_before_after_2026-07-14.csv",
+    "validation_report": "P0_12_SCREENSHOT_VALIDATION_2026-07-14_zh.md",
+    "index": "P0_SCREENSHOT_INDEX_2026-07-14.md",
+    "before_screenshots_dir": "screenshots/p0-before (symlinks to original docs/daily_report/7.7 files, originals unmodified)",
+    "after_screenshots_dir": "screenshots/p0-after (newly captured 2026-07-14)"
+  },
+  "hashes": {
+    "after_screenshots": {
+      "screenshots/p0-after/P0_01_nct_dream_photocard_template_after_full_2026-07-14.png": "8bbd8267b1d356a24317f0439718c031dec605c10bce599c2d7a91458a05da5e",
+      "screenshots/p0-after/P0_01_nct_dream_photocard_template_after_top_2026-07-14.png": "0f9e9fbb784bef50f0a94a5b699d8add1ca7d7da4683e3f86ac32eafa18d3987",
+      "screenshots/p0-after/P0_02_maker_space_label_set_printable_after_full_2026-07-14.png": "837d9e07b55cac771c3fc439fbbf7ccb2e9794b059376df01711d826f13e9f8e",
+      "screenshots/p0-after/P0_02_maker_space_label_set_printable_after_top_2026-07-14.png": "849fb37624fd43f9a525451e136b45714b4e79ecd3162490e67d228d1cf1573d",
+      "screenshots/p0-after/P0_03_y2k_chrome_skincare_launch_poster_after_full_2026-07-14.png": "555964df570cb850fdc4f46370d258cae1da4b29047fdb3b9fe8b558f4b75e57",
+      "screenshots/p0-after/P0_03_y2k_chrome_skincare_launch_poster_after_top_2026-07-14.png": "534084290820ba5afcf8d752e339d757c6e16522e71c42ce0ed5491ddc3c20cd",
+      "screenshots/p0-after/P0_04_k_beauty_glass_skin_brand_launch_visual_after_full_2026-07-14.png": "d3a82eb51a40356b4bc080ef390a7d9380bd48a3b3b73f542cc1389b417b0e8a",
+      "screenshots/p0-after/P0_04_k_beauty_glass_skin_brand_launch_visual_after_top_2026-07-14.png": "4f5c9dc8dd5fedd5d641f319be6e0db9af72e381b9aad7fd0d5c52f53b705412",
+      "screenshots/p0-after/P0_05_xiaohongshu_aromatherapy_product_teaser_image_after_full_2026-07-14.png": "6444eace8ede96df6a240924b30d65190978cf0d6ca2b4b96d44ca7d552e7e8d",
+      "screenshots/p0-after/P0_05_xiaohongshu_aromatherapy_product_teaser_image_after_top_2026-07-14.png": "18a4e3936922b471120fd2c66455f3b8e07576521b37f2239f5bdbf7b6243bbc",
+      "screenshots/p0-after/P0_06_low_saturation_chinese_style_tea_packaging_design_after_full_2026-07-14.png": "09a9d0bd6d8c5f2b4d78ba11afa6a99f479c1c29fb6a267c6f0bde3df6ef7608",
+      "screenshots/p0-after/P0_06_low_saturation_chinese_style_tea_packaging_design_after_top_2026-07-14.png": "089a7c0776b30ce1782d57bba80625af40b5f6c87e3aa6cd3530a458752a60d2",
+      "screenshots/p0-after/P0_07_zones_of_regulation_poster_classroom_after_full_2026-07-14.png": "3700a3e7f72298a962b7054372abd935609ea17a8156616d82d91a9b431c6fe0",
+      "screenshots/p0-after/P0_07_zones_of_regulation_poster_classroom_after_top_2026-07-14.png": "2ab5bcf3a5f0a381ed609ab2d7bcf837e0322d757f6826bff37a9c565479d8e2",
+      "screenshots/p0-after/P0_08_coding_unplugged_activity_cards_after_full_2026-07-14.png": "d171ecd5d1a5e2a1646f6f72231f7bbac3c543a6d07858b52ebfcd5166e3d81c",
+      "screenshots/p0-after/P0_08_coding_unplugged_activity_cards_after_top_2026-07-14.png": "a6ab4b1012ee70a68f7baefdd222d8f47063051f1518f4105da44dfeec7e6c00",
+      "screenshots/p0-after/P0_09_genshin_impact_furina_fanart_wallpaper_4k_after_full_2026-07-14.png": "8505b973c6ed94cb02e8fd0ac959a1537f362ff4af56671ad42e29487fda0b12",
+      "screenshots/p0-after/P0_09_genshin_impact_furina_fanart_wallpaper_4k_after_top_2026-07-14.png": "7f2f70356e6b66a66e867083c0432b16512f3cee3a55b4f42916809f3478d1c1",
+      "screenshots/p0-after/P0_10_amazon_ebc_enhanced_brand_content_layout_after_full_2026-07-14.png": "5ed365852f9f0150d2e35d15cc698a970ac3a1bab4ec0cc82c642e904b1fffe4",
+      "screenshots/p0-after/P0_10_amazon_ebc_enhanced_brand_content_layout_after_top_2026-07-14.png": "17f504dd56bd4c2c082d5fc9528e95661275179f4f90a1f7b3daeee013665b3e",
+      "screenshots/p0-after/P0_11_iep_accommodations_checklist_visual_after_full_2026-07-14.png": "e316a71ad7c4b69ae04f717695c5b32fde274464071f035c534772f0abc1b5cc",
+      "screenshots/p0-after/P0_11_iep_accommodations_checklist_visual_after_top_2026-07-14.png": "7a91e2ae2212499a706a772446258d83dfc4267e1a574c0e5ae4c9fb91475fa0",
+      "screenshots/p0-after/P0_12_guangyu_yezhilian_card_design_reference_after_full_2026-07-14.png": "3b024eb5f7b45f3f6c2fc3b0677e5a0eddb0d021aead39e72597d1f7194a4ed3",
+      "screenshots/p0-after/P0_12_guangyu_yezhilian_card_design_reference_after_top_2026-07-14.png": "4ac99de5fb83172bc1670b51f54645b0fca2251fcd56ef609275dc8f03ae20ab"
+    },
+    "before_screenshots_symlinks": {
+      "screenshots/p0-before/P0_01_nct_dream_photocard_template_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/002_cultural_nct_dream_photocard_template.png",
+        "target_sha256": "fb236ca9bceda8b96e2451a58e1867cb585d13fb23be814966bbbc20dfc8e374"
+      },
+      "screenshots/p0-before/P0_02_maker_space_label_set_printable_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/064_education_maker_space_label_set_printable.png",
+        "target_sha256": "67b2c2737dc0711176389607c8493739809b601ddaf5d609167b964f17ab29f1"
+      },
+      "screenshots/p0-before/P0_03_y2k_chrome_skincare_launch_poster_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/016_brand_y2k_chrome_skincare_launch_poster.png",
+        "target_sha256": "91a2acb6de6d97998261da76115834fa285483b0d7508acaf6b5ee2193f5a82c"
+      },
+      "screenshots/p0-before/P0_04_k_beauty_glass_skin_brand_launch_visual_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/015_brand_k_beauty_glass_skin_brand_launch_visual.png",
+        "target_sha256": "97f4795ecd8962ec8950170141af52a1c7c10cf8417ced0b6c6fad5a5ec0c17a"
+      },
+      "screenshots/p0-before/P0_05_xiaohongshu_aromatherapy_product_teaser_image_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/046_marketing_.png",
+        "target_sha256": "2bb5211c80aae0b64928eaf95e4472f3f83000289e86ff9c3ef3c2c3436e6d30"
+      },
+      "screenshots/p0-before/P0_06_low_saturation_chinese_style_tea_packaging_design_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/009_cultural_.png",
+        "target_sha256": "b3926991f1e076985b8003d1b397ddc41a955e3c93f24dcc1a1817df694fa811"
+      },
+      "screenshots/p0-before/P0_07_zones_of_regulation_poster_classroom_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/068_education_zones_of_regulation_poster_classroom.png",
+        "target_sha256": "6718b7cd22c895719cd8c35be5dce3d133dbf6f82c3e789aa99504219bb7f5b0"
+      },
+      "screenshots/p0-before/P0_08_coding_unplugged_activity_cards_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/060_education_coding_unplugged_activity_cards.png",
+        "target_sha256": "ccf0fc33f63a7998252be0ec86a24583f9571a93f047384c158605f1176bbdc3"
+      },
+      "screenshots/p0-before/P0_09_genshin_impact_furina_fanart_wallpaper_4k_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/006_cultural_genshin_impact_furina_fanart_wallpaper_4k.png",
+        "target_sha256": "aa42a62e4d27c7db80c9973b4de10a465689db3491f67864efe166392a6db73b"
+      },
+      "screenshots/p0-before/P0_10_amazon_ebc_enhanced_brand_content_layout_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/034_marketing_amazon_ebc_enhanced_brand_content_layout.png",
+        "target_sha256": "293a94f203e9023b8ed20b8445e8f70c6aecb4ee99e4af622f4f122af090c26b"
+      },
+      "screenshots/p0-before/P0_11_iep_accommodations_checklist_visual_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/053_education_iep_accommodations_checklist_visual.png",
+        "target_sha256": "c825948d14c970c4f52fb29ccee72244c1cff65463065aeca937ca9c5de0570f"
+      },
+      "screenshots/p0-before/P0_12_guangyu_yezhilian_card_design_reference_before_2026-07-07.png": {
+        "symlink_target": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/curify_search_screenshots_2026-07-07/010_cultural_.png",
+        "target_sha256": "9fb1925fffe403a30ee6cea873762b3e0b98d989b637e3c6a97125e6bca5ef4c"
+      }
+    }
+  },
+  "limitations": [
+    "LLM_NONDETERMINISM: each C/D rewrite call is a fresh, independent LLM call; live screenshot results may not byte-match the Stage 7 harness's recorded CSV counts for the same query even though both use identical production code.",
+    "SCREENSHOT_COMPARABILITY: Before was captured against live production (2026-07-07); After was captured against a local dev server running the identical current codebase -- not a byte-identical request path, though functionally equivalent (same branch/HEAD, same catalog).",
+    "DEV_OVERLAY_ARTIFACT: local dev-mode issue-count badge visible in After screenshots' bottom-left corner is not present in real production and should be cropped or ignored when using these images externally.",
+    "CJK_SLUG_LIMITATION: 3 of 12 Before screenshot filenames (P0_05, P0_06, P0_12 source files) have empty auto-generated slugs due to non-ASCII query text; content was independently verified by opening each image and visually confirming the exact query text matches.",
+    "NO_TOP_CROP_FOR_BEFORE: Before screenshots are single full-page captures only; no separate 'top results' crop exists from the original 7.7 collection, recorded as NOT_AVAILABLE rather than fabricated."
+  ]
+}

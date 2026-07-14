@@ -1,0 +1,83 @@
+{
+  "project": "visual-search-adhoc / curify-frontend search relevance",
+  "stage": "Prompt 8 - 300+ Easy Query Validation (frozen release candidate)",
+  "run_date": "2026-07-14",
+  "candidate_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "candidate_head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "candidate_status_hash": "ce60d78b5ceccbdfcd9c982a425a23da",
+  "candidate_file_hashes": {
+    "lib/searchTokens.ts": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4",
+    "lib/searchRewrite.ts": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+    "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+    "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+    "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+    "app/[locale]/(public)/search/page.tsx": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "package.json": "1233845e257e0f900a256c1b2b25a3d36cfe180937b8d05c448b0fb41af6b73f",
+    "package-lock.json": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+    "lib/topic_resolver.ts": "180bb8cc4c419abb5d75d013505fe14e1fe30147c9840b5d617cd25865981b0f"
+  },
+  "catalog_version": {
+    "catalog_size": 3209,
+    "hashes": {
+      "public/data/nano_inspiration.json": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+      "public/data/nano_templates.json": "8a11ad737c5fac4db0f1dff6400c102471b4dfabc282dc2d641c50894c61d511"
+    }
+  },
+  "model": "gpt-4o-mini",
+  "temperature": 0.4,
+  "runtime_flags": {
+    "d_enabled": true,
+    "g_enabled": true,
+    "guard_enabled": true,
+    "mode": "D",
+    "low_result_threshold": 5,
+    "low_result_threshold_source": "app/[locale]/(public)/search/page.tsx:47 (LOW_RESULT_THRESHOLD = 5), cross-verified against scripts/curify-search-stage7-full-rerun-v2/engine.cjs"
+  },
+  "input_source": "docs/daily_report/7.7/05_simple_head_term_seed_bank_2026-07-07.csv (328 rows, project's own Stage 1 inventory recommended candidate)",
+  "input_hash": "393da01404746614a81ef5e2096cbf632cc2c851a711f132bec224947bfcf5b0",
+  "raw_count": 328,
+  "clean_count": 328,
+  "successful_runs": 328,
+  "errors": 0,
+  "timeouts": 0,
+  "missing": 0,
+  "duplicates": 0,
+  "human_reviewed_count": 202,
+  "human_pass": 13,
+  "human_partial": 106,
+  "human_fail": 74,
+  "human_not_provable": 9,
+  "gte_1000_count": 11,
+  "full_catalog_count": 0,
+  "systematic_regression_gate": "SYSTEMATIC_REGRESSION",
+  "execution_gate": "EASY_QUERY_RUN_COMPLETE",
+  "next_stage_decision": "BLOCK_RELEASE_CANDIDATE",
+  "limitations": [
+    "No historical baseline exists for these 328 exact queries (confirmed never-executed by docs/daily_report/7.11/.../TEST_DATA_INVENTORY_2026-07-11.md); regression assessment is behavior-based on current-state evidence, not historical before/after comparison.",
+    "Input dataset (05_simple_head_term_seed_bank) consists of bare single-word/short-phrase head terms, not natural multi-word user queries; this is a legitimate 'easy/common vocabulary' interpretation but is a harder case for a template-catalog matching system than richer natural-language queries would be -- this nuance is discussed in the report and should inform how the findings are weighted.",
+    "202/328 (61.6%) queries received direct human-equivalent relevance review (all zero-result, low-result, rewrite-triggered, >=1000, plus 30 random + 10 no-rewrite-normal controls, per Section 17's full-coverage-above-50% rule); the remaining 126 are no-rewrite queries with healthy (>=5, non-flooding) result counts not individually reviewed.",
+    "Mixed-language subset (contains_mixed_language) has only 2 members in this dataset (both false positives from single-character Latin substrings inside a CJK term, e.g. 'Z世代'), too small to draw a reliable mixed-language conclusion -- flagged rather than over-interpreted.",
+    "Wrong-entity and tokenizer-language-asymmetry findings (E046/E047 'Chris Wood' surname collision; zh/en festival-term asymmetry) are pattern observations from this run, not exhaustively re-verified against catalog content the way Prompt 7's Hard Query root-cause work was."
+  ],
+  "output_files": [
+    "easy_query_input_inventory_2026-07-14.csv",
+    "easy_queries_cleaned_300_plus_2026-07-14.csv",
+    "easy_query_validation_results_2026-07-14.csv",
+    "easy_query_validation_summary_2026-07-14.csv",
+    "easy_query_manual_spot_check_2026-07-14.csv",
+    "easy_query_anomalies_2026-07-14.csv",
+    "EASY_QUERY_VALIDATION_REPORT_2026-07-14_zh.md",
+    "easy_query_validation_manifest_2026-07-14.json",
+    "easy_query_validation_checkpoint_2026-07-14.jsonl"
+  ],
+  "output_hashes": {
+    "easy_query_input_inventory_2026-07-14.csv": "f7ba8a9e810c77f7fab21dd3a24510654020edeaf6ea480da37b4b2bac22fb12",
+    "easy_queries_cleaned_300_plus_2026-07-14.csv": "682ed08a97f69ff39317c923ac859fe2f085ab8e8d7b9dc7b1a0f31fa0b32f3e",
+    "easy_query_validation_results_2026-07-14.csv": "1b13702d875a97110740d19a763aa363a2aba033922b10d4445ffa9f36ece1fe",
+    "easy_query_validation_summary_2026-07-14.csv": "14ffa8a3969b0cf6fca4372d69b3991ec2309111db3172cce2374ab5be755751",
+    "easy_query_manual_spot_check_2026-07-14.csv": "48790ff03a9ccd183dbbced187c041f140a3f2881d97e2ad7800c15299b0a818",
+    "easy_query_anomalies_2026-07-14.csv": "68b3f7b3bdf5353e9d9b16dea77b772e33ac18e242af35132e33489701caee26",
+    "EASY_QUERY_VALIDATION_REPORT_2026-07-14_zh.md": "9683a47ebe8fc602fc78d6c429bf01a332848be5cf6d712693be37fef7019d26",
+    "easy_query_validation_checkpoint_2026-07-14.jsonl": "e5319abe636b60ec12d2278efb22fc81522f936544fe84c51da5811746e5907f"
+  }
+}

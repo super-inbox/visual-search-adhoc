@@ -1,0 +1,43 @@
+{
+  "_comment": "Stage 7R Prompt 4A Mode Contract Smoke Test — fixed, deterministic rewrite fixtures for Mode C/D. Every fixture is copied VERBATIM (not invented) from a real, already-saved Prompt 2B/2C/2D CSV (raw_rewrite/decomposition fields), never a real LLM call in this smoke test. Source file + query_id cited per fixture for auditability.",
+  "FIX_XHS_INCENSE": {
+    "source": "prompt2c/stage7_guard_live_results_prompt2c_2026-07-14.csv, live_run_id L16-1, query_id Q44 (小红书探店笔记封面)",
+    "rewrites": ["Xiaohongshu store visit cover", "store review notebook cover", "shopping diary cover"],
+    "decomposition": { "subject": "store visit", "output": "cover" }
+  },
+  "FIX_POUROVER": {
+    "source": "prompt2c/stage7_guard_live_results_prompt2c_2026-07-14.csv, live_run_id L14-1, query_id Q30 (手冲咖啡工作室视觉手册)",
+    "rewrites": ["pour-over coffee studio guide", "coffee brewing visual manual", "handcrafted coffee workshop poster"],
+    "decomposition": { "subject": "pour-over coffee", "scene": "studio", "output": "visual manual" }
+  },
+  "FIX_LUXURY": {
+    "source": "prompt2c/stage7_guard_live_results_prompt2c_2026-07-14.csv, live_run_id L15-1, query_id Q21 (二手奢侈品鉴定品牌视觉) -- real production output for this exact query family was an empty rewrite (Path B decision, no LLM candidates); reused verbatim to exercise the genuine no-valid-rewrite-path branch",
+    "rewrites": [],
+    "decomposition": {}
+  },
+  "FIX_BYDSEAL": {
+    "source": "prompt2d/stage7_guard_live_results_prompt2d_2026-07-14.csv, live_run_id L12-1, query_id NA-BYDSEAL (比亚迪海豹)",
+    "rewrites": ["BYD Seagull car poster", "BYD Seagull vehicle profile", "Chinese electric car infographic"],
+    "decomposition": { "subject": "BYD Seagull", "output": "poster" }
+  },
+  "FIX_JORDAN": {
+    "source": "prompt2d/stage7_guard_live_results_prompt2d_2026-07-14.csv, live_run_id L11-1, query_id NA-JORDAN (乔丹鞋)",
+    "rewrites": ["Jordan sneaker design", "Air Jordan collection", "basketball shoe styles"],
+    "decomposition": { "subject": "Jordan shoes", "style": "sneaker", "output": "fashion guide" }
+  },
+  "FIX_WHITEBOX": {
+    "source": "prompt2d/stage7_guard_live_results_prompt2d_2026-07-14.csv, live_run_id L13-1, query_id NA-WHITEBOX (白箱)",
+    "rewrites": ["White Box anime", "Shirobako series", "anime production themes"],
+    "decomposition": { "subject": "white box", "style": "anime", "output": "character poster" }
+  },
+  "FIX_GENSHIN": {
+    "source": "prompt2d/stage7_guard_live_results_prompt2d_2026-07-14.csv, live_run_id L08-1, query_id Q06 (genshin impact Furina fanart wallpaper 4k)",
+    "rewrites": ["Furina Genshin Impact fanart", "Genshin Impact character wallpaper", "Furina 4k illustration"],
+    "decomposition": { "subject": "Furina", "style": "fanart", "output": "wallpaper" }
+  },
+  "FIX_ENGLISH": {
+    "source": "prompt2b/stage7_guard_replay_results_prompt2b_2026-07-14.csv, query_id Q19 (heritage brand rebrand moodboard)",
+    "rewrites": ["heritage brand mood board", "rebranding design concepts", "brand identity moodboard"],
+    "decomposition": { "subject": "heritage brand", "style": "moodboard", "output": "design concept" }
+  }
+}

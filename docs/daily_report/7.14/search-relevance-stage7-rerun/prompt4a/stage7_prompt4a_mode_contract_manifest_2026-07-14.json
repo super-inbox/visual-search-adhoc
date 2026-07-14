@@ -1,0 +1,89 @@
+{
+  "version": "2026-07-14",
+  "task": "Stage 7R Prompt 4A d Runtime Toggle",
+  "production": {
+    "repo": "/Users/baobaoli/Desktop/curify-frontend",
+    "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+    "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+    "dirty": true,
+    "source_hashes_before": {
+      "app/[locale]/(public)/search/page.tsx": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+      "lib/searchRewrite.ts": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+      "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+      "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+      "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+      "public/data/nano_inspiration.json": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906"
+    },
+    "source_hashes_after": {
+      "app/[locale]/(public)/search/page.tsx": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+      "lib/searchTokens.ts": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4",
+      "lib/searchRewrite.ts": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+      "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+      "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+      "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+      "public/data/nano_inspiration.json": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906"
+    },
+    "unchanged_hashes_confirmed": ["lib/searchRewrite.ts", "lib/query_phrase_aliases.ts", "lib/cjk_tokenizer.ts", "lib/zh_normalize.ts", "public/data/nano_inspiration.json"],
+    "changed_hashes_expected": ["app/[locale]/(public)/search/page.tsx (import wiring only, default behavior unchanged, see Section 7 of the implementation report)", "lib/searchTokens.ts (new file)"]
+  },
+  "d_contract": {
+    "source_documents": [
+      "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/run_manifest.json",
+      "/Users/baobaoli/Desktop/visual-search-adhoc/scripts/curify-search-collect-stage7/run_mode.cjs (lines 188-257, existing on-disk artifact, read-only, no git show)",
+      "/Users/baobaoli/Desktop/curify-frontend/lib/query_phrase_aliases.ts",
+      "/Users/baobaoli/Desktop/curify-frontend/lib/cjk_tokenizer.ts",
+      "/Users/baobaoli/Desktop/curify-frontend/app/[locale]/(public)/search/page.tsx (pre-Prompt-4A working tree text)"
+    ],
+    "d_on_features": [
+      "segmentCJKToken (jieba dictionary CJK tokenizer + longest-match non-overlapping Protected Phrase span extraction)",
+      "applyPhraseAliasRulesExcluding (Phrase Alias rules with CJK_ATOMIC_PHRASES exclusion to avoid double-counting)"
+    ],
+    "d_off_features_disabled": [
+      "segmentCJKToken (no jieba dictionary CJK segmentation)",
+      "CJK_ATOMIC_PHRASES exclusion (applyPhraseAliasRules, the unexcluded base rule set, used instead)"
+    ],
+    "d_off_features_retained": [
+      "whitespace/structural-punctuation split (never gated by d)",
+      "stopword filtering (never gated by d)",
+      "English plural stemming (never gated by d)",
+      "applyPhraseAliasRules base Protected Phrase/Alias matching (real, exported, tested production function, not a duplicate)",
+      "new minimal CJK bigram fallback for a single un-split multi-char CJK token (Prompt 4A addition, not a copy of the historical tokenizer)"
+    ],
+    "explicitly_out_of_scope": [
+      "scoreBlob/scoreQueryTokens (Merge/Ranking, relaxed ceil(n/2) threshold) -- unchanged, single implementation across all 4 modes, per Prompt 4A's prohibition on modifying Ranking/Merge"
+    ],
+    "default_enabled": true
+  },
+  "mode_contract": {
+    "A": { "dEnabled": false, "gEnabled": false },
+    "B": { "dEnabled": true, "gEnabled": false },
+    "C": { "dEnabled": false, "gEnabled": true },
+    "D": { "dEnabled": true, "gEnabled": true }
+  },
+  "query_set_file": "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt4a/mode_contract_query_set_2026-07-14.csv",
+  "query_set_sha256": "defa8e7a7482b6aed2e72350b5715b0f867bd6c7ea7a5bfac3ab81feb2e1b42a",
+  "query_count": 8,
+  "expected_runs": 32,
+  "actual_runs": 32,
+  "real_llm_calls": 0,
+  "deterministic_rewrite_fixture": true,
+  "rewrite_fixture_source": "scripts/curify-search-stage7-mode-contract/rewrite_fixtures.json -- every fixture copied verbatim from a real, already-saved Prompt 2B/2C/2D CSV row (raw_rewrite/decomposition fields), source cited per fixture",
+  "default_behavior_fixture_count": 14,
+  "default_behavior_regressions": 0,
+  "mode_contract_failures": 0,
+  "missing_runs": 0,
+  "duplicate_runs": 0,
+  "tests": {
+    "searchTokens_test_ts": "19/19 passed",
+    "full_unit_suite": "375/375 passed",
+    "typescript_noEmit": "PASS (0 errors)"
+  },
+  "typecheck": { "command": "npx tsc --noEmit", "result": "PASS", "errors": 0 },
+  "build": { "command": "npm run build", "result": "PASS", "exit_code": 0 },
+  "limitations": [
+    "The `d` toggle scope was deliberately narrowed to tokenization only (buildSearchTokens); the original 7.13 ablation also swapped the scoring function (scoreBlobOLD vs scoreBlobNEW, adding relaxedOk), but Prompt 4A explicitly forbids modifying Ranking/Merge, so scoreBlob remains a single, unchanged implementation across all 4 modes this stage. Documented explicitly, not hidden.",
+    "d=OFF's CJK bigram fallback is new code (not a copy of the historical tokenizer), so its exact numeric output may differ in edge cases from what a literal pre-Stage-6 reconstruction would have produced, though the intent (legitimate non-empty base tokenization for un-split CJK strings) is the same.",
+    "This stage's Mode Contract Smoke Test uses only 8 fixed queries and fixed (non-LLM) rewrite fixtures -- it proves the four modes are WIRED correctly, not that a full 68-query real-LLM ablation would produce any particular numeric result. That is Prompt 4's job, to be re-attempted after this blocker's resolution."
+  ],
+  "readiness": "READY_FOR_MODE_CONTRACT_SMOKE"
+}

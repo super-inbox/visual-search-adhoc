@@ -1,0 +1,16 @@
+{
+  "total": 26,
+  "blocked": 0,
+  "pass": 5,
+  "partial": 21,
+  "fail": 0,
+  "old_prompt2c_ge1000": 3,
+  "new_prompt2d_ge1000": 1,
+  "old_prompt2c_full_catalog": 0,
+  "new_prompt2d_full_catalog": 0,
+  "d23_stage7_historical_ge1000": 23,
+  "d23_new_prompt2d_ge1000_vs_stage7_historical": 1,
+  "piggyback_guard_triggered_count": 20,
+  "regressions": [],
+  "gate_failure": null
+}

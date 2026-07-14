@@ -1,0 +1,128 @@
+{
+  "version": "2026-07-14",
+  "task": "Stage 7R Prompt 4 Full 68 A/B/C/D Rerun",
+  "gate_precondition": {
+    "prompt2d_status": "READY_FOR_FULL_68",
+    "prompt2d_report": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/STAGE7_PROMPT2D_FINAL_SUMMARY_2026-07-14_zh.md",
+    "verified": true,
+    "verification_method": "grep for READY_FOR_FULL_68 in the report text, plus direct grep of lib/searchRewrite.ts and lib/__tests__/searchRewrite.test.ts confirming anchorBasisForDownstream (13 occurrences), bindTarget (4 occurrences), evaluateRewriteCandidate signature, and the Prompt 2D piggyback test describe block are all present in the current working tree"
+  },
+  "production": {
+    "repo": "/Users/baobaoli/Desktop/curify-frontend",
+    "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+    "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+    "head_message": "improve Chinese phrase protection in search",
+    "dirty": true,
+    "status_short": [
+      "M app/[locale]/(public)/blog/[slug]/components/GenericBlogContent.tsx",
+      "M app/[locale]/(public)/blog/[slug]/page.tsx",
+      "M app/[locale]/(public)/search/page.tsx",
+      "M lib/__tests__/search_metadata_scenarios.test.ts",
+      "M lib/query_phrase_aliases.ts",
+      "M lib/searchRewrite.ts",
+      "M lib/zh_normalize.ts",
+      "M messages/de/blog.json", "M messages/en/blog.json", "M messages/es/blog.json",
+      "M messages/fr/blog.json", "M messages/hi/blog.json", "M messages/ja/blog.json",
+      "M messages/ko/blog.json", "M messages/ru/blog.json", "M messages/tr/blog.json", "M messages/zh/blog.json",
+      "M next.config.ts", "M package-lock.json", "M package.json", "M scripts/eval_search.cjs",
+      "?? lib/__tests__/searchRewrite.test.ts", "?? lib/__tests__/stage6_dictionary_hybrid.test.ts", "?? lib/cjk_tokenizer.ts"
+    ],
+    "diff_stat_summary": "21 files changed, 1885 insertions(+), 125 deletions(-)",
+    "source_hashes": {
+      "lib/searchRewrite.ts": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+      "app/[locale]/(public)/search/page.tsx": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+      "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+      "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+      "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+      "lib/__tests__/searchRewrite.test.ts": "8369811eeff1c8180eb399b0d4d0889bfd97961bfbe7056125bb78bbc54655ce",
+      "package.json": "1233845e257e0f900a256c1b2b25a3d36cfe180937b8d05c448b0fb41af6b73f",
+      "package-lock.json": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+      "public/data/nano_inspiration.json": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906"
+    }
+  },
+  "runtime": {
+    "node_version": "v26.3.0",
+    "npm_version": "11.16.0",
+    "os": "Darwin",
+    "architecture": "arm64",
+    "started_at": "2026-07-14T10:15:00Z",
+    "completed_at": "2026-07-14T10:40:00Z",
+    "duration_ms": null
+  },
+  "inputs": {
+    "query_file": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.7/gold_query_test_set_2026-07-07.csv",
+    "query_sha256": "00bd2cff0f1dee8168c366020198ed592d0f9654786ff417aa00a19ba4c7ae68",
+    "query_count": 68,
+    "query_ids_verified_unique": true,
+    "query_ids_derived_from": "row order, Q01-Q68, verified 1:1 text match against hard_queries_68_baseline.csv's query_id/query columns (0 mismatches across 68 rows)",
+    "baseline_file": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/hard_queries_68_baseline.csv",
+    "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "baseline_sha256_matches_task_provided_value": true,
+    "catalog_file": "public/data/nano_inspiration.json",
+    "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+    "catalog_size": 3209
+  },
+  "model": {
+    "provider": "openai",
+    "name": "gpt-4o-mini",
+    "temperature": "NOT_QUERIED_RUN_ABORTED_BEFORE_LLM_USE",
+    "max_tokens": "NOT_QUERIED_RUN_ABORTED_BEFORE_LLM_USE",
+    "timeout_ms": 8000
+  },
+  "environment_presence": {
+    "OPENAI_API_KEY": "NOT_CHECKED_RUN_ABORTED_BEFORE_LLM_USE"
+  },
+  "cache_strategy": "NOT_APPLICABLE_RUN_ABORTED_BEFORE_EXECUTION",
+  "retry_policy": "NOT_APPLICABLE_RUN_ABORTED_BEFORE_EXECUTION",
+  "mode_contract": {
+    "A": { "d_enabled": false, "g_enabled": false, "constructible_with_current_code_only": false, "reason": "requires pre-Stage-6 tokenizer; current buildSearchTokens has no d=OFF path and no runtime flag" },
+    "B": { "d_enabled": true, "g_enabled": false, "constructible_with_current_code_only": true, "reason": "current tokenizer is always d=ON; simply skip the LLM rewrite call" },
+    "C": { "d_enabled": false, "g_enabled": true, "constructible_with_current_code_only": false, "reason": "same blocker as Mode A -- requires pre-Stage-6 tokenizer" },
+    "D": { "d_enabled": true, "g_enabled": true, "constructible_with_current_code_only": true, "reason": "current full production path, no reconstruction needed" }
+  },
+  "mode_contract_conflict": {
+    "summary": "Section 8.1 forbids reconstructing d=OFF via `git show HEAD:<file>` (the technique Stage 7 / 7.13 used) and forbids manually stripping tokens to simulate d=OFF. Current production code (app/[locale]/(public)/search/page.tsx buildSearchTokens) has exactly one unconditional tokenizer implementation with no feature flag, env var, or alternate legacy path to disable Stage 6 dictionary features. Modes A and C therefore cannot be constructed from real, current, unmodified production code under this stage's own rules.",
+    "evidence_commands": [
+      "grep -n \"process.env\\.\" \"app/[locale]/(public)/search/page.tsx\"  -> no matches",
+      "grep -rn \"legacyToken|basicToken|simpleToken|d_enabled|D_ENABLED|ENABLE_DICTIONARY|DISABLE_DICTIONARY|featureFlag|FEATURE_FLAG\" ...  -> no matches",
+      "grep -n \"function buildSearchTokens\" \"app/[locale]/(public)/search/page.tsx\"  -> single implementation at line 151, unconditionally calls segmentCJKToken/applyPhraseAliasRulesExcluding"
+    ],
+    "prior_stage_reference": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/run_manifest.json (run_modes field) and scripts/curify-search-collect-stage7/run_mode.cjs (line 11, line 189) confirm 7.13's Mode A/C used git show HEAD:page.tsx reconstruction -- the exact technique this stage forbids.",
+    "user_decision": "Asked user via structured question with 3 options (stop now / permit narrow git-show exception for d dimension only / run only Mode B+D). User selected: Stop now.",
+    "resolution": "BLOCKED_INVALID_ABLATION_MODE"
+  },
+  "expected_runs": 272,
+  "actual_runs": 0,
+  "successful_runs": 0,
+  "error_runs": 0,
+  "timeout_runs": 0,
+  "missing_runs": 272,
+  "duplicate_runs": 0,
+  "human_review_count": 0,
+  "judge_human_disagreement_count": 0,
+  "pre_registered_targets": {
+    "source": "not evaluated -- run aborted before the ablation would have been executable; see prior smoke-test gates already on record: Full-catalog=0, Human FAIL<=20%, D-group flood improvement rate>=80% (from Prompt 0-2D smoke gates)",
+    "full_68_numeric_target_found": "NOT_APPLICABLE_RUN_ABORTED_BEFORE_THIS_CHECK"
+  },
+  "comparison_limitations": [
+    "This run did not execute any of the 272 mode runs; no comparison with 2026-07-13 Stage 7 results was performed.",
+    "Mode Contract could not be frozen because Modes A and C are not constructible from current, unmodified production code without violating this stage's explicit prohibitions on git-history reconstruction and manual token/rewrite stripping."
+  ],
+  "commands": [
+    "grep -n \"READY_FOR_FULL_68|READY_WITH_LIMITATIONS\" prompt2d/STAGE7_PROMPT2D_FINAL_SUMMARY_2026-07-14_zh.md",
+    "grep -c \"anchorBasisForDownstream\" lib/searchRewrite.ts",
+    "grep -c \"bindTarget\" lib/searchRewrite.ts",
+    "grep -n \"function evaluateRewriteCandidate\" lib/searchRewrite.ts",
+    "git status --short / git diff --stat / git rev-parse HEAD / git branch --show-current (both repos, read-only)",
+    "shasum -a 256 on all required production/query/baseline/catalog files",
+    "grep -n \"process.env\\.\" \"app/[locale]/(public)/search/page.tsx\" lib/searchRewrite.ts",
+    "grep -rn \"legacyToken|basicToken|simpleToken|d_enabled|...\" (feature-flag search, no matches)",
+    "cat /Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.13/search-optimization-stage-7/run_manifest.json",
+    "grep -n \"git show|HEAD:\" scripts/curify-search-collect-stage7/*.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun/STAGE7_PROMPT4_BLOCKED_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun/stage7_rerun_manifest_2026-07-14.json"
+  ],
+  "stage7_gate": "BLOCKED"
+}

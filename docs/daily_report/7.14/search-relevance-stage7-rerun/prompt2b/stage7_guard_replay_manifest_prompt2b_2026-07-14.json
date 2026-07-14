@@ -1,0 +1,121 @@
+{
+  "version": "2026-07-14-prompt2b",
+  "stage": "Stage 7R Prompt 2B",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "production_dirty_note": "Working tree was already dirty at session start (Prompt 2 implementation not yet committed) and remains dirty after Prompt 2B's own edits to the same files, plus pre-existing unrelated Blog/i18n changes noted in Prompt 3's manifest — none of those pre-existing files were touched by Prompt 2B.",
+  "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_since_prompt3": true,
+  "page_tsx_sha256_before_prompt2b": "4853831915b56881fba3b92c8c299f4b1207b24414a620565af47910f8d87abe",
+  "page_tsx_sha256_after_prompt2b": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+  "page_tsx_change_summary": "One log line changed: hardcoded errorType=UNBOUND_NON_SUBJECT_SLOT -> errorType=${r.reason}, so Guard R's new rejection reasons are logged truthfully. No other page.tsx logic touched.",
+  "search_rewrite_ts_sha256_before_prompt2b": "52c5a066628e0295323fc7c4b026106e199512acd6b03df8247da2254936209e",
+  "search_rewrite_ts_sha256_after_prompt2b": "bf2160d5f0f0300b4be4947a19b2f34ef63063fc1b3f2e742ebff571e3d24ec5",
+  "test_file_modified": "lib/__tests__/searchRewrite.test.ts",
+  "files_modified_by_prompt2b": [
+    "lib/searchRewrite.ts",
+    "app/[locale]/(public)/search/page.tsx",
+    "lib/__tests__/searchRewrite.test.ts"
+  ],
+  "files_modified_outside_declared_scope": [],
+  "smoke_query_set_sha256": "70603639371595c71d9519e074ef0bbaaeab89811b50e895c86c6f7baf068970",
+  "smoke_query_set_sha256_matches_prompt3_manifest": true,
+  "smoke_query_set_reused_unmodified": true,
+  "replay_query_count": 26,
+  "replay_run_count": 26,
+  "replay_run_count_blocked": 0,
+  "d23_flood_set_count": 23,
+  "live_run_count": 0,
+  "live_not_run_reason": "Prompt 2B explicitly forbids Live Smoke / LLM calls this stage; Phase B remains scoped to Prompt 3.",
+  "llm_model": "gpt-4o-mini (per lib/searchRewrite.ts MODEL constant) -- NOT invoked this run",
+  "environment_presence": {
+    "OPENAI_API_KEY": "MISSING",
+    "OPENAI_API_KEY_required_this_stage": "NOT_REQUIRED (Replay injects saved rewrite/decomposition JSON directly, no LLM call)",
+    "node_version": "v26.3.0",
+    "npm_version": "11.16.0"
+  },
+  "cache_strategy": "NOT_APPLICABLE -- Replay never calls getMultiQueryPaths/the LLM (raw rewrite/decomposition JSON is injected directly via multiPathsOverride), so lib/searchRewrite.ts's in-memory MULTI_CACHE is never populated or consulted during Replay.",
+  "harness_audit": {
+    "harness_directory": "scripts/curify-search-stage7-guard-smoke/",
+    "guard2_flattenPathsWithDiagnostics_source": "genuinely imported via esbuild bundle of the real, current lib/searchRewrite.ts (build_bundle.cjs) -- confirmed by reading build_bundle.cjs and engine.cjs before this stage began",
+    "guard1_scoring_source": "verbatim transcription of page.tsx's page-local buildSearchTokens/scoreBlob/hasExecutableConstraint (page.tsx is a Next.js Server Component and cannot be require()'d), protected by scoring.cjs's verifyAgainstLiveSource() drift detector -- same disclosed compromise as the pre-existing scripts/curify-search-collect-stage7/run_mode.cjs harness",
+    "harness_logic_copied_to_bypass_import": false,
+    "harness_modified_this_stage": true,
+    "harness_modification_description": "One line in scoring.cjs's drift-detector pattern list updated: the check for page.tsx's rejected-slot log line was changed from the literal substring 'errorType=UNBOUND_NON_SUBJECT_SLOT' to 'errorType=${r.reason}', because Prompt 2B's own page.tsx change (see page_tsx_change_summary) legitimately removed the old literal substring. This is a hand-verified sync of the drift detector's expected pattern to a disclosed, intentional production change -- not a loosening of what it checks or a fix to hide a real mismatch.",
+    "bundle_rebuilt_this_stage": true,
+    "bundle_rebuild_command": "node build_bundle.cjs",
+    "bundle_source_hashes_recorded": "scripts/curify-search-stage7-guard-smoke/_bundle_source_hashes.json"
+  },
+  "bundle_source_hashes_at_replay_time": {
+    "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+    "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+    "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+    "lib/searchRewrite.ts": "bf2160d5f0f0300b4be4947a19b2f34ef63063fc1b3f2e742ebff571e3d24ec5",
+    "lib/topic_resolver.ts": "180bb8cc4c419abb5d75d013505fe14e1fe30147c9840b5d617cd25865981b0f"
+  },
+  "drift_check_at_replay_time": {
+    "checked_substrings": 8,
+    "missing": 0,
+    "page_tsx_sha256_at_check_time": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc"
+  },
+  "test_results": {
+    "searchRewrite_test_ts": "99/99 passed (60 pre-existing + 39 new Guard R tests)",
+    "full_unit_suite": "295/295 passed (up from 260/260 at end of Prompt 2)",
+    "typescript_noEmit": "PASS (0 errors)",
+    "production_build": "PASS (exit 0; pre-existing MISSING_MESSAGE i18n warnings for blog.* keys in the 'hi' locale are unrelated to search and predate this stage)",
+    "lint": "BLOCKED_PRE_EXISTING_CONFIG_ISSUE -- ESLint 9 flat-config vs typescript-eslint's config() helper incompatibility (next/core-web-vitals extends array), present before Prompt 2B and not a search-code issue; not fixed per instructions to not repair unrelated config problems"
+  },
+  "replay_summary": {
+    "total_runs": 26,
+    "pass": 6,
+    "partial": 18,
+    "fail": 2,
+    "blocked": 0,
+    "old_prompt3_full_catalog": 0,
+    "new_prompt2b_full_catalog": 0,
+    "d23_old_ge1000_vs_stage7_historical": 5,
+    "d23_new_ge1000_vs_stage7_historical": 4,
+    "d23_resolved_count": 19,
+    "d23_resolved_pct": 82.6,
+    "d23_gate_threshold_pct": 80,
+    "d23_still_ge1000": ["Q10", "Q47", "Q48", "Q12"],
+    "regressions_count": 0,
+    "rewrite_anchor_guard_triggered_count": 12,
+    "gate_failure": null
+  },
+  "started_at": "2026-07-14T06:00:00Z",
+  "completed_at": "2026-07-14T06:30:00Z",
+  "commands": [
+    "npx tsc --noEmit",
+    "npx vitest run --config vitest.unit.config.ts",
+    "npm run build",
+    "node scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "node scripts/curify-search-stage7-guard-smoke/replay_prompt2b.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/STAGE7_REWRITE_ARRAY_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/stage7_rewrite_array_guard_test_results_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/stage7_guard_replay_results_prompt2b_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/stage7_guard_replay_human_review_prompt2b_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/stage7_guard_replay_manifest_prompt2b_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/STAGE7_PROMPT2B_REPLAY_SUMMARY_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2b/_replay_prompt2b_summary.json",
+    "scripts/curify-search-stage7-guard-smoke/replay_prompt2b.cjs"
+  ],
+  "limitations": [
+    "Live Smoke (Phase B) not run this stage -- forbidden by Prompt 2B, remains scoped to a future Prompt 3 re-run",
+    "Full 68-query gold set not re-run -- forbidden by Prompt 2B",
+    "OPENAI_API_KEY not present in this shell session; not required for Replay (no LLM call), but means Live readiness for a future stage cannot be verified from this environment",
+    "Human/structured review covered 13 of 26 replay rows in depth (all Section-18-mandated required cases: Q39 D/C, Q40 D/C, Q42 D/C, Q06/Q10/Q12/Q47/Q48, plus 2 supplementary genuine-PASS controls); the remaining 13 rows carry only the automated heuristic verdict, marked reviewer_type=NOT_REVIEWED in spirit (human_label column simply absent for those rows in the human-review CSV)",
+    "The automated heuristic verdict disagreed with manual review in 2 of 13 reviewed cases (Q40 D and Q40 C: auto-labeled PASS purely on low result count, but top-10 content is topically wrong -- a pre-existing 'post'/'post office' homograph collision in the 7.13-recorded decomposition.subject text, not introduced by Guard R)",
+    "Q47/Q48: Guard R measurably triggered (bound 1 rewrite candidate each) but produced negligible-to-zero count change, because the dominant flood contributors in those two cases are the decomposition subject phrase itself plus already-anchored rewrite candidates, both outside Guard R's declared scope",
+    "Q10/Q12: Guard R correctly left all rewrite candidates unbound/unrejected per its own rules (subject-token overlap for Q10, cross-script CJK->EN protection for Q12) -- their persistent flood is root-caused to decomposition-subject genericness (Q10) and to the deliberate CJK<->English translation protection tradeoff (Q12), both explicitly out of Prompt 2B's scope",
+    "Reviewer type is CLAUDE_STRUCTURED_REVIEW (metadata/title/tag/category based), not a real end-user visual/relevance audit",
+    "Catalog content drift since 2026-07-07/07-13/07-14 remains unquantified (inherited limitation)",
+    "Cache TTL behavior for Guard R is verified only via unit tests (5 new getMultiQueryPaths cache tests), not observed under Replay (Replay never calls getMultiQueryPaths)"
+  ]
+}

@@ -1,0 +1,329 @@
+easy_id,query,source_file,source_row,language,query_type,contains_proper_noun,contains_number_or_model,contains_mixed_language,duplicate_status,overlaps_hard_68,overlaps_p0_12,easy_confidence,notes
+E001,鲜花,05_simple_head_term_seed_bank_2026-07-07.csv,2,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E002,flower,05_simple_head_term_seed_bank_2026-07-07.csv,3,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E003,猫,05_simple_head_term_seed_bank_2026-07-07.csv,4,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E004,cat,05_simple_head_term_seed_bank_2026-07-07.csv,5,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E005,狗,05_simple_head_term_seed_bank_2026-07-07.csv,6,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E006,书,05_simple_head_term_seed_bank_2026-07-07.csv,7,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E007,book,05_simple_head_term_seed_bank_2026-07-07.csv,8,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E008,咖啡杯,05_simple_head_term_seed_bank_2026-07-07.csv,9,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E009,蜡烛,05_simple_head_term_seed_bank_2026-07-07.csv,10,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E010,candle,05_simple_head_term_seed_bank_2026-07-07.csv,11,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E011,相机,05_simple_head_term_seed_bank_2026-07-07.csv,12,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E012,眼镜,05_simple_head_term_seed_bank_2026-07-07.csv,13,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E013,背包,05_simple_head_term_seed_bank_2026-07-07.csv,14,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E014,雨伞,05_simple_head_term_seed_bank_2026-07-07.csv,15,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E015,自行车,05_simple_head_term_seed_bank_2026-07-07.csv,16,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E016,钢笔,05_simple_head_term_seed_bank_2026-07-07.csv,17,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E017,地球仪,05_simple_head_term_seed_bank_2026-07-07.csv,18,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E018,台灯,05_simple_head_term_seed_bank_2026-07-07.csv,19,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E019,镜子,05_simple_head_term_seed_bank_2026-07-07.csv,20,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E020,花瓶,05_simple_head_term_seed_bank_2026-07-07.csv,21,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E021,手机,05_simple_head_term_seed_bank_2026-07-07.csv,22,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E022,耳机,05_simple_head_term_seed_bank_2026-07-07.csv,23,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E023,key,05_simple_head_term_seed_bank_2026-07-07.csv,24,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E024,相框,05_simple_head_term_seed_bank_2026-07-07.csv,25,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E025,沙发,05_simple_head_term_seed_bank_2026-07-07.csv,26,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E026,帽子,05_simple_head_term_seed_bank_2026-07-07.csv,27,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E027,围巾,05_simple_head_term_seed_bank_2026-07-07.csv,28,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E028,handbag,05_simple_head_term_seed_bank_2026-07-07.csv,29,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E029,teddy bear,05_simple_head_term_seed_bank_2026-07-07.csv,30,en,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E030,风筝,05_simple_head_term_seed_bank_2026-07-07.csv,31,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E031,气球,05_simple_head_term_seed_bank_2026-07-07.csv,32,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E032,蝴蝶,05_simple_head_term_seed_bank_2026-07-07.csv,33,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E033,羽毛,05_simple_head_term_seed_bank_2026-07-07.csv,34,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E034,贝壳,05_simple_head_term_seed_bank_2026-07-07.csv,35,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E035,石头,05_simple_head_term_seed_bank_2026-07-07.csv,36,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E036,树叶,05_simple_head_term_seed_bank_2026-07-07.csv,37,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E037,云朵,05_simple_head_term_seed_bank_2026-07-07.csv,38,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E038,星星,05_simple_head_term_seed_bank_2026-07-07.csv,39,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E039,月亮,05_simple_head_term_seed_bank_2026-07-07.csv,40,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E040,太阳,05_simple_head_term_seed_bank_2026-07-07.csv,41,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E041,彩虹,05_simple_head_term_seed_bank_2026-07-07.csv,42,zh,object,False,False,False,UNIQUE,False,False,HIGH,基础对象词，可与材质/风格/场景组合成长尾query
+E042,金属,05_simple_head_term_seed_bank_2026-07-07.csv,43,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E043,metal,05_simple_head_term_seed_bank_2026-07-07.csv,44,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E044,玻璃,05_simple_head_term_seed_bank_2026-07-07.csv,45,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E045,glass,05_simple_head_term_seed_bank_2026-07-07.csv,46,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E046,木头,05_simple_head_term_seed_bank_2026-07-07.csv,47,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E047,wood,05_simple_head_term_seed_bank_2026-07-07.csv,48,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E048,陶瓷,05_simple_head_term_seed_bank_2026-07-07.csv,49,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E049,皮革,05_simple_head_term_seed_bank_2026-07-07.csv,50,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E050,布料,05_simple_head_term_seed_bank_2026-07-07.csv,51,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E051,纸,05_simple_head_term_seed_bank_2026-07-07.csv,52,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E052,paper,05_simple_head_term_seed_bank_2026-07-07.csv,53,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E053,竹子,05_simple_head_term_seed_bank_2026-07-07.csv,54,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E054,bamboo,05_simple_head_term_seed_bank_2026-07-07.csv,55,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E055,石材,05_simple_head_term_seed_bank_2026-07-07.csv,56,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E056,塑料,05_simple_head_term_seed_bank_2026-07-07.csv,57,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E057,丝绸,05_simple_head_term_seed_bank_2026-07-07.csv,58,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E058,羊毛,05_simple_head_term_seed_bank_2026-07-07.csv,59,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E059,大理石,05_simple_head_term_seed_bank_2026-07-07.csv,60,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E060,marble,05_simple_head_term_seed_bank_2026-07-07.csv,61,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E061,黄铜,05_simple_head_term_seed_bank_2026-07-07.csv,62,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E062,藤编,05_simple_head_term_seed_bank_2026-07-07.csv,63,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E063,混凝土,05_simple_head_term_seed_bank_2026-07-07.csv,64,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E064,亚克力,05_simple_head_term_seed_bank_2026-07-07.csv,65,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E065,珍珠,05_simple_head_term_seed_bank_2026-07-07.csv,66,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E066,水晶,05_simple_head_term_seed_bank_2026-07-07.csv,67,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E067,棉麻,05_simple_head_term_seed_bank_2026-07-07.csv,68,zh,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E068,cork,05_simple_head_term_seed_bank_2026-07-07.csv,69,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E069,denim,05_simple_head_term_seed_bank_2026-07-07.csv,70,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E070,velvet,05_simple_head_term_seed_bank_2026-07-07.csv,71,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E071,terrazzo,05_simple_head_term_seed_bank_2026-07-07.csv,72,en,material,False,False,False,UNIQUE,False,False,HIGH,材质/质感词，常作为风格修饰词与产品/包装组合
+E072,极简,05_simple_head_term_seed_bank_2026-07-07.csv,73,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E073,minimalist,05_simple_head_term_seed_bank_2026-07-07.csv,74,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E074,复古,05_simple_head_term_seed_bank_2026-07-07.csv,75,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E075,vintage,05_simple_head_term_seed_bank_2026-07-07.csv,76,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E076,国风,05_simple_head_term_seed_bank_2026-07-07.csv,77,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E077,日系,05_simple_head_term_seed_bank_2026-07-07.csv,78,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E078,北欧,05_simple_head_term_seed_bank_2026-07-07.csv,79,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E079,Scandinavian,05_simple_head_term_seed_bank_2026-07-07.csv,80,en,style,True,False,False,UNIQUE,False,False,MEDIUM,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E080,波西米亚,05_simple_head_term_seed_bank_2026-07-07.csv,81,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E081,bohemian,05_simple_head_term_seed_bank_2026-07-07.csv,82,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E082,工业风,05_simple_head_term_seed_bank_2026-07-07.csv,83,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E083,industrial,05_simple_head_term_seed_bank_2026-07-07.csv,84,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E084,田园,05_simple_head_term_seed_bank_2026-07-07.csv,85,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E085,未来感,05_simple_head_term_seed_bank_2026-07-07.csv,86,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E086,赛博朋克,05_simple_head_term_seed_bank_2026-07-07.csv,87,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E087,cyberpunk,05_simple_head_term_seed_bank_2026-07-07.csv,88,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E088,水彩,05_simple_head_term_seed_bank_2026-07-07.csv,89,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E089,watercolor,05_simple_head_term_seed_bank_2026-07-07.csv,90,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E090,手绘,05_simple_head_term_seed_bank_2026-07-07.csv,91,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E091,hand-drawn,05_simple_head_term_seed_bank_2026-07-07.csv,92,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E092,扁平化,05_simple_head_term_seed_bank_2026-07-07.csv,93,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E093,涂鸦,05_simple_head_term_seed_bank_2026-07-07.csv,94,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E094,卡通,05_simple_head_term_seed_bank_2026-07-07.csv,95,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E095,写实,05_simple_head_term_seed_bank_2026-07-07.csv,96,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E096,极繁,05_simple_head_term_seed_bank_2026-07-07.csv,97,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E097,侘寂,05_simple_head_term_seed_bank_2026-07-07.csv,98,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E098,wabi-sabi,05_simple_head_term_seed_bank_2026-07-07.csv,99,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E099,法式,05_simple_head_term_seed_bank_2026-07-07.csv,100,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E100,美式,05_simple_head_term_seed_bank_2026-07-07.csv,101,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E101,韩系,05_simple_head_term_seed_bank_2026-07-07.csv,102,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E102,中古,05_simple_head_term_seed_bank_2026-07-07.csv,103,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E103,童趣,05_simple_head_term_seed_bank_2026-07-07.csv,104,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E104,奢华,05_simple_head_term_seed_bank_2026-07-07.csv,105,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E105,清新,05_simple_head_term_seed_bank_2026-07-07.csv,106,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E106,暗黑,05_simple_head_term_seed_bank_2026-07-07.csv,107,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E107,梦幻,05_simple_head_term_seed_bank_2026-07-07.csv,108,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E108,街头,05_simple_head_term_seed_bank_2026-07-07.csv,109,zh,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E109,cottagecore,05_simple_head_term_seed_bank_2026-07-07.csv,110,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E110,dark academia,05_simple_head_term_seed_bank_2026-07-07.csv,111,en,style,False,False,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E111,Y2K,05_simple_head_term_seed_bank_2026-07-07.csv,112,en,style,False,True,False,UNIQUE,False,False,HIGH,风格词，几乎可与任何品类/场景组合，是最高扩展潜力的一类head term
+E112,教室,05_simple_head_term_seed_bank_2026-07-07.csv,113,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E113,classroom,05_simple_head_term_seed_bank_2026-07-07.csv,114,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E114,咖啡馆,05_simple_head_term_seed_bank_2026-07-07.csv,115,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E115,cafe,05_simple_head_term_seed_bank_2026-07-07.csv,116,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E116,婚礼,05_simple_head_term_seed_bank_2026-07-07.csv,117,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E117,wedding,05_simple_head_term_seed_bank_2026-07-07.csv,118,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E118,生日派对,05_simple_head_term_seed_bank_2026-07-07.csv,119,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E119,办公室,05_simple_head_term_seed_bank_2026-07-07.csv,120,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E120,厨房,05_simple_head_term_seed_bank_2026-07-07.csv,121,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E121,卧室,05_simple_head_term_seed_bank_2026-07-07.csv,122,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E122,花园,05_simple_head_term_seed_bank_2026-07-07.csv,123,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E123,海滩,05_simple_head_term_seed_bank_2026-07-07.csv,124,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E124,beach,05_simple_head_term_seed_bank_2026-07-07.csv,125,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E125,山间,05_simple_head_term_seed_bank_2026-07-07.csv,126,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E126,森林,05_simple_head_term_seed_bank_2026-07-07.csv,127,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E127,图书馆,05_simple_head_term_seed_bank_2026-07-07.csv,128,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E128,市集,05_simple_head_term_seed_bank_2026-07-07.csv,129,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E129,展览,05_simple_head_term_seed_bank_2026-07-07.csv,130,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E130,演唱会,05_simple_head_term_seed_bank_2026-07-07.csv,131,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E131,concert,05_simple_head_term_seed_bank_2026-07-07.csv,132,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E132,游乐园,05_simple_head_term_seed_bank_2026-07-07.csv,133,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E133,餐厅,05_simple_head_term_seed_bank_2026-07-07.csv,134,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E134,restaurant,05_simple_head_term_seed_bank_2026-07-07.csv,135,en,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E135,健身房,05_simple_head_term_seed_bank_2026-07-07.csv,136,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E136,机场,05_simple_head_term_seed_bank_2026-07-07.csv,137,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E137,校园,05_simple_head_term_seed_bank_2026-07-07.csv,138,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E138,农场,05_simple_head_term_seed_bank_2026-07-07.csv,139,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E139,夜市,05_simple_head_term_seed_bank_2026-07-07.csv,140,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E140,阳台,05_simple_head_term_seed_bank_2026-07-07.csv,141,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E141,书房,05_simple_head_term_seed_bank_2026-07-07.csv,142,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E142,温室,05_simple_head_term_seed_bank_2026-07-07.csv,143,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E143,便利店,05_simple_head_term_seed_bank_2026-07-07.csv,144,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E144,茶馆,05_simple_head_term_seed_bank_2026-07-07.csv,145,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E145,寺庙,05_simple_head_term_seed_bank_2026-07-07.csv,146,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E146,湖畔,05_simple_head_term_seed_bank_2026-07-07.csv,147,zh,scene,False,False,False,UNIQUE,False,False,HIGH,场景词，常与行业/风格/物料组合成具体品牌或营销query
+E147,咖啡,05_simple_head_term_seed_bank_2026-07-07.csv,148,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E148,coffee,05_simple_head_term_seed_bank_2026-07-07.csv,149,en,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E149,烘焙,05_simple_head_term_seed_bank_2026-07-07.csv,150,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E150,美妆,05_simple_head_term_seed_bank_2026-07-07.csv,151,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E151,珠宝,05_simple_head_term_seed_bank_2026-07-07.csv,152,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E152,服装,05_simple_head_term_seed_bank_2026-07-07.csv,153,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E153,宠物,05_simple_head_term_seed_bank_2026-07-07.csv,154,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E154,母婴,05_simple_head_term_seed_bank_2026-07-07.csv,155,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E155,健身,05_simple_head_term_seed_bank_2026-07-07.csv,156,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E156,房地产,05_simple_head_term_seed_bank_2026-07-07.csv,157,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E157,汽车,05_simple_head_term_seed_bank_2026-07-07.csv,158,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E158,酒店,05_simple_head_term_seed_bank_2026-07-07.csv,159,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E159,hospitality,05_simple_head_term_seed_bank_2026-07-07.csv,160,en,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E160,婚庆,05_simple_head_term_seed_bank_2026-07-07.csv,161,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E161,教育培训,05_simple_head_term_seed_bank_2026-07-07.csv,162,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E162,医疗健康,05_simple_head_term_seed_bank_2026-07-07.csv,163,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E163,金融,05_simple_head_term_seed_bank_2026-07-07.csv,164,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E164,旅游,05_simple_head_term_seed_bank_2026-07-07.csv,165,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E165,travel,05_simple_head_term_seed_bank_2026-07-07.csv,166,en,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E166,餐饮,05_simple_head_term_seed_bank_2026-07-07.csv,167,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E167,家居,05_simple_head_term_seed_bank_2026-07-07.csv,168,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E168,3C数码,05_simple_head_term_seed_bank_2026-07-07.csv,169,zh,industry,False,True,True,UNIQUE,False,False,MEDIUM,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E169,游戏,05_simple_head_term_seed_bank_2026-07-07.csv,170,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E170,gaming,05_simple_head_term_seed_bank_2026-07-07.csv,171,en,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E171,出版,05_simple_head_term_seed_bank_2026-07-07.csv,172,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E172,农业,05_simple_head_term_seed_bank_2026-07-07.csv,173,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E173,花艺,05_simple_head_term_seed_bank_2026-07-07.csv,174,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E174,摄影,05_simple_head_term_seed_bank_2026-07-07.csv,175,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E175,二手交易,05_simple_head_term_seed_bank_2026-07-07.csv,176,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E176,物流,05_simple_head_term_seed_bank_2026-07-07.csv,177,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E177,美发美甲,05_simple_head_term_seed_bank_2026-07-07.csv,178,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E178,瑜伽,05_simple_head_term_seed_bank_2026-07-07.csv,179,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E179,潮玩,05_simple_head_term_seed_bank_2026-07-07.csv,180,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E180,茶饮,05_simple_head_term_seed_bank_2026-07-07.csv,181,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E181,香氛,05_simple_head_term_seed_bank_2026-07-07.csv,182,zh,industry,False,False,False,UNIQUE,False,False,HIGH,行业词，天然承接品牌/营销/文创三大场景的组合扩展
+E182,海报,05_simple_head_term_seed_bank_2026-07-07.csv,183,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E183,poster,05_simple_head_term_seed_bank_2026-07-07.csv,184,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E184,贴纸,05_simple_head_term_seed_bank_2026-07-07.csv,185,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E185,sticker,05_simple_head_term_seed_bank_2026-07-07.csv,186,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E186,名片,05_simple_head_term_seed_bank_2026-07-07.csv,187,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E187,信封,05_simple_head_term_seed_bank_2026-07-07.csv,188,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E188,明信片,05_simple_head_term_seed_bank_2026-07-07.csv,189,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E189,请柬,05_simple_head_term_seed_bank_2026-07-07.csv,190,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E190,菜单,05_simple_head_term_seed_bank_2026-07-07.csv,191,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E191,menu,05_simple_head_term_seed_bank_2026-07-07.csv,192,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E192,包装盒,05_simple_head_term_seed_bank_2026-07-07.csv,193,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E193,packaging,05_simple_head_term_seed_bank_2026-07-07.csv,194,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E194,手提袋,05_simple_head_term_seed_bank_2026-07-07.csv,195,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E195,标签,05_simple_head_term_seed_bank_2026-07-07.csv,196,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E196,台历,05_simple_head_term_seed_bank_2026-07-07.csv,197,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E197,书签,05_simple_head_term_seed_bank_2026-07-07.csv,198,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E198,徽章,05_simple_head_term_seed_bank_2026-07-07.csv,199,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E199,badge,05_simple_head_term_seed_bank_2026-07-07.csv,200,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E200,横幅,05_simple_head_term_seed_bank_2026-07-07.csv,201,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E201,banner,05_simple_head_term_seed_bank_2026-07-07.csv,202,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E202,展架,05_simple_head_term_seed_bank_2026-07-07.csv,203,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E203,折页,05_simple_head_term_seed_bank_2026-07-07.csv,204,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E204,画册,05_simple_head_term_seed_bank_2026-07-07.csv,205,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E205,卡片,05_simple_head_term_seed_bank_2026-07-07.csv,206,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E206,card,05_simple_head_term_seed_bank_2026-07-07.csv,207,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E207,头像,05_simple_head_term_seed_bank_2026-07-07.csv,208,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E208,avatar,05_simple_head_term_seed_bank_2026-07-07.csv,209,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E209,壁纸,05_simple_head_term_seed_bank_2026-07-07.csv,210,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E210,wallpaper,05_simple_head_term_seed_bank_2026-07-07.csv,211,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E211,表情包,05_simple_head_term_seed_bank_2026-07-07.csv,212,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E212,手账,05_simple_head_term_seed_bank_2026-07-07.csv,213,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E213,planner,05_simple_head_term_seed_bank_2026-07-07.csv,214,en,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E214,抱枕,05_simple_head_term_seed_bank_2026-07-07.csv,215,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E215,帆布袋,05_simple_head_term_seed_bank_2026-07-07.csv,216,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E216,马克杯,05_simple_head_term_seed_bank_2026-07-07.csv,217,zh,format,False,False,False,UNIQUE,False,False,HIGH,内容/物料形态词，决定最终产出的载体，是组合query中最常见的收尾词
+E217,儿童,05_simple_head_term_seed_bank_2026-07-07.csv,218,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E218,children,05_simple_head_term_seed_bank_2026-07-07.csv,219,en,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E219,青少年,05_simple_head_term_seed_bank_2026-07-07.csv,220,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E220,婴儿,05_simple_head_term_seed_bank_2026-07-07.csv,221,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E221,学生,05_simple_head_term_seed_bank_2026-07-07.csv,222,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E222,student,05_simple_head_term_seed_bank_2026-07-07.csv,223,en,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E223,上班族,05_simple_head_term_seed_bank_2026-07-07.csv,224,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E224,老年人,05_simple_head_term_seed_bank_2026-07-07.csv,225,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E225,新手妈妈,05_simple_head_term_seed_bank_2026-07-07.csv,226,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E226,宠物主人,05_simple_head_term_seed_bank_2026-07-07.csv,227,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E227,大学生,05_simple_head_term_seed_bank_2026-07-07.csv,228,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E228,自由职业者,05_simple_head_term_seed_bank_2026-07-07.csv,229,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E229,教师,05_simple_head_term_seed_bank_2026-07-07.csv,230,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E230,teacher,05_simple_head_term_seed_bank_2026-07-07.csv,231,en,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E231,医生,05_simple_head_term_seed_bank_2026-07-07.csv,232,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E232,健身爱好者,05_simple_head_term_seed_bank_2026-07-07.csv,233,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E233,旅行者,05_simple_head_term_seed_bank_2026-07-07.csv,234,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E234,手工艺人,05_simple_head_term_seed_bank_2026-07-07.csv,235,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E235,收藏家,05_simple_head_term_seed_bank_2026-07-07.csv,236,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E236,Z世代,05_simple_head_term_seed_bank_2026-07-07.csv,237,zh,audience,False,False,True,UNIQUE,False,False,MEDIUM,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E237,Gen Z,05_simple_head_term_seed_bank_2026-07-07.csv,238,en,audience,True,False,False,UNIQUE,False,False,MEDIUM,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E238,二次元爱好者,05_simple_head_term_seed_bank_2026-07-07.csv,239,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E239,素食者,05_simple_head_term_seed_bank_2026-07-07.csv,240,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E240,新婚夫妇,05_simple_head_term_seed_bank_2026-07-07.csv,241,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E241,数字游民,05_simple_head_term_seed_bank_2026-07-07.csv,242,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E242,家庭主妇,05_simple_head_term_seed_bank_2026-07-07.csv,243,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E243,创业者,05_simple_head_term_seed_bank_2026-07-07.csv,244,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E244,留学生,05_simple_head_term_seed_bank_2026-07-07.csv,245,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E245,宝妈,05_simple_head_term_seed_bank_2026-07-07.csv,246,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E246,猫奴,05_simple_head_term_seed_bank_2026-07-07.csv,247,zh,audience,False,False,False,UNIQUE,False,False,HIGH,受众/人群词，限定内容的目标使用者，常与场景/内容形态组合
+E247,春节,05_simple_head_term_seed_bank_2026-07-07.csv,248,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E248,中秋节,05_simple_head_term_seed_bank_2026-07-07.csv,249,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E249,端午节,05_simple_head_term_seed_bank_2026-07-07.csv,250,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E250,圣诞节,05_simple_head_term_seed_bank_2026-07-07.csv,251,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E251,christmas,05_simple_head_term_seed_bank_2026-07-07.csv,252,en,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E252,万圣节,05_simple_head_term_seed_bank_2026-07-07.csv,253,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E253,halloween,05_simple_head_term_seed_bank_2026-07-07.csv,254,en,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E254,情人节,05_simple_head_term_seed_bank_2026-07-07.csv,255,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E255,母亲节,05_simple_head_term_seed_bank_2026-07-07.csv,256,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E256,父亲节,05_simple_head_term_seed_bank_2026-07-07.csv,257,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E257,感恩节,05_simple_head_term_seed_bank_2026-07-07.csv,258,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E258,thanksgiving,05_simple_head_term_seed_bank_2026-07-07.csv,259,en,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E259,复活节,05_simple_head_term_seed_bank_2026-07-07.csv,260,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E260,元宵节,05_simple_head_term_seed_bank_2026-07-07.csv,261,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E261,七夕,05_simple_head_term_seed_bank_2026-07-07.csv,262,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E262,儿童节,05_simple_head_term_seed_bank_2026-07-07.csv,263,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E263,教师节,05_simple_head_term_seed_bank_2026-07-07.csv,264,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E264,国庆节,05_simple_head_term_seed_bank_2026-07-07.csv,265,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E265,双十一,05_simple_head_term_seed_bank_2026-07-07.csv,266,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E266,black friday,05_simple_head_term_seed_bank_2026-07-07.csv,267,en,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E267,新年,05_simple_head_term_seed_bank_2026-07-07.csv,268,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E268,光棍节,05_simple_head_term_seed_bank_2026-07-07.csv,269,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E269,冬至,05_simple_head_term_seed_bank_2026-07-07.csv,270,zh,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E270,光明节,05_simple_head_term_seed_bank_2026-07-07.csv,271,en,festival,False,False,False,UNIQUE,False,False,HIGH,节日词，强时效性，常驱动季节性营销/文创内容需求
+E271,香水,05_simple_head_term_seed_bank_2026-07-07.csv,272,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E272,perfume,05_simple_head_term_seed_bank_2026-07-07.csv,273,en,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E273,茶叶,05_simple_head_term_seed_bank_2026-07-07.csv,274,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E274,咖啡豆,05_simple_head_term_seed_bank_2026-07-07.csv,275,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E275,巧克力,05_simple_head_term_seed_bank_2026-07-07.csv,276,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E276,护肤品,05_simple_head_term_seed_bank_2026-07-07.csv,277,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E277,skincare,05_simple_head_term_seed_bank_2026-07-07.csv,278,en,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E278,口红,05_simple_head_term_seed_bank_2026-07-07.csv,279,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E279,首饰,05_simple_head_term_seed_bank_2026-07-07.csv,280,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E280,手表,05_simple_head_term_seed_bank_2026-07-07.csv,281,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E281,包包,05_simple_head_term_seed_bank_2026-07-07.csv,282,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E282,鞋子,05_simple_head_term_seed_bank_2026-07-07.csv,283,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E283,童装,05_simple_head_term_seed_bank_2026-07-07.csv,284,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E284,家纺,05_simple_head_term_seed_bank_2026-07-07.csv,285,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E285,厨具,05_simple_head_term_seed_bank_2026-07-07.csv,286,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E286,文具用品,05_simple_head_term_seed_bank_2026-07-07.csv,287,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E287,玩具,05_simple_head_term_seed_bank_2026-07-07.csv,288,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E288,toys,05_simple_head_term_seed_bank_2026-07-07.csv,289,en,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E289,宠物用品,05_simple_head_term_seed_bank_2026-07-07.csv,290,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E290,保健品,05_simple_head_term_seed_bank_2026-07-07.csv,291,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E291,酒类,05_simple_head_term_seed_bank_2026-07-07.csv,292,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E292,零食,05_simple_head_term_seed_bank_2026-07-07.csv,293,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E293,乳制品,05_simple_head_term_seed_bank_2026-07-07.csv,294,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E294,调味品,05_simple_head_term_seed_bank_2026-07-07.csv,295,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E295,花束,05_simple_head_term_seed_bank_2026-07-07.csv,296,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E296,盆栽,05_simple_head_term_seed_bank_2026-07-07.csv,297,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E297,香薰机,05_simple_head_term_seed_bank_2026-07-07.csv,298,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E298,沙发家具,05_simple_head_term_seed_bank_2026-07-07.csv,299,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E299,灯具,05_simple_head_term_seed_bank_2026-07-07.csv,300,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E300,地毯,05_simple_head_term_seed_bank_2026-07-07.csv,301,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E301,窗帘,05_simple_head_term_seed_bank_2026-07-07.csv,302,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E302,化妆刷,05_simple_head_term_seed_bank_2026-07-07.csv,303,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E303,护发产品,05_simple_head_term_seed_bank_2026-07-07.csv,304,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E304,婴儿用品,05_simple_head_term_seed_bank_2026-07-07.csv,305,zh,product_category,False,False,False,UNIQUE,False,False,HIGH,具体商品品类词，是电商/品牌场景组合query的核心主体词
+E305,学习,05_simple_head_term_seed_bank_2026-07-07.csv,306,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E306,庆祝,05_simple_head_term_seed_bank_2026-07-07.csv,307,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E307,送礼,05_simple_head_term_seed_bank_2026-07-07.csv,308,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E308,装饰,05_simple_head_term_seed_bank_2026-07-07.csv,309,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E309,收纳,05_simple_head_term_seed_bank_2026-07-07.csv,310,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E310,打卡,05_simple_head_term_seed_bank_2026-07-07.csv,311,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E311,分享,05_simple_head_term_seed_bank_2026-07-07.csv,312,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E312,种草,05_simple_head_term_seed_bank_2026-07-07.csv,313,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E313,促销,05_simple_head_term_seed_bank_2026-07-07.csv,314,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E314,招募,05_simple_head_term_seed_bank_2026-07-07.csv,315,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E315,招聘,05_simple_head_term_seed_bank_2026-07-07.csv,316,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E316,开业,05_simple_head_term_seed_bank_2026-07-07.csv,317,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E317,打折,05_simple_head_term_seed_bank_2026-07-07.csv,318,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E318,预售,05_simple_head_term_seed_bank_2026-07-07.csv,319,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E319,众筹,05_simple_head_term_seed_bank_2026-07-07.csv,320,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E320,直播,05_simple_head_term_seed_bank_2026-07-07.csv,321,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E321,拍照,05_simple_head_term_seed_bank_2026-07-07.csv,322,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E322,手工制作,05_simple_head_term_seed_bank_2026-07-07.csv,323,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E323,旅行,05_simple_head_term_seed_bank_2026-07-07.csv,324,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E324,撸铁,05_simple_head_term_seed_bank_2026-07-07.csv,325,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E325,冥想,05_simple_head_term_seed_bank_2026-07-07.csv,326,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E326,阅读,05_simple_head_term_seed_bank_2026-07-07.csv,327,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E327,烹饪,05_simple_head_term_seed_bank_2026-07-07.csv,328,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展
+E328,野餐,05_simple_head_term_seed_bank_2026-07-07.csv,329,zh,action,False,False,False,UNIQUE,False,False,HIGH,动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展

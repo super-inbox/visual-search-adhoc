@@ -1,0 +1,77 @@
+{
+  "version": "2026-07-14-prompt2c-live",
+  "stage": "Stage 7R Prompt 2C — Limited Live Retest",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "query_set_sha256": "d328df4b9cc4d298314ee439c6da06a382f5b3e962194f4f9fba2c14658f025c",
+  "query_set_sha256_matches_prompt3b_manifest": true,
+  "query_set_reused_unmodified_from_prompt3b": true,
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_since_prompt3b": true,
+  "production_source_hashes": {
+    "lib/searchRewrite.ts": "aeb453b4a0ad0b558880574a8335b9a96b527c5ce22198952c15d8d5afb65ef5",
+    "app/[locale]/(public)/search/page.tsx": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc"
+  },
+  "bundle_rebuilt_this_stage": true,
+  "bundle_rebuild_command": "node build_bundle.cjs",
+  "node_version": "v26.3.0",
+  "npm_version": "11.16.0",
+  "llm_provider": "OpenAI",
+  "llm_model": "gpt-4o-mini",
+  "environment_presence": {
+    "OPENAI_API_KEY": "PRESENT (curify-frontend/.env.local, loaded via node --env-file, never printed)"
+  },
+  "cache_strategy": "PROCESS_ISOLATED — each Live Run executed as a separate `node live.cjs` invocation (same script and strategy as Prompt 3B), guaranteeing a fresh, empty in-memory MULTI_CACHE per run. No Query text altered, no global/production cache touched.",
+  "live_unique_query_count": 20,
+  "live_run_count": 23,
+  "successful_run_count": 23,
+  "error_count": 0,
+  "timeout_count": 0,
+  "results_summary": {
+    "full_catalog_count": 0,
+    "thousand_plus_count": 3,
+    "thousand_plus_queries": ["Q10", "Q12", "Q06"],
+    "zero_result_count": 5,
+    "weak_numeric_guard_triggered_count": 0,
+    "subject_guard_triggered_count": 15,
+    "cross_language_guard_triggered_count": 0,
+    "human_pass": 3,
+    "human_partial": 13,
+    "human_fail": 7,
+    "human_blocked": 0,
+    "human_fail_pct_of_successful_runs": 30.4,
+    "human_fail_pct_threshold": 20
+  },
+  "comparison_to_prompt3b_live_not_strict_ab": {
+    "note": "LLM non-determinism, not a controlled A/B — see report Section 13",
+    "prompt3b_thousand_plus": 4,
+    "prompt2c_thousand_plus": 3,
+    "prompt3b_human_fail_pct": 47.8,
+    "prompt2c_human_fail_pct": 30.4
+  },
+  "started_at": "2026-07-14T08:15:00Z",
+  "completed_at": "2026-07-14T08:45:00Z",
+  "commands": [
+    "node scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "node --env-file=<curify-frontend>/.env.local live.cjs --live-run-id ... --query ... --run-number ... --out ... (x23, one process per Live Run, reusing Prompt 3B's live.cjs unmodified)"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_live_results_prompt2c_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_live_human_review_prompt2c_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_live_manifest_prompt2c_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/STAGE7_PROMPT2C_LIMITED_LIVE_RETEST_2026-07-14_zh.md"
+  ],
+  "limitations": [
+    "IMPORTANT: a new 'piggyback' gap was confirmed live (not just in Replay): rewrite candidates that already share a token with the UNBOUND portion of a subject's anchor set (e.g. candidate containing 'cover' when subject is 'Xiaohongshu cover') bypass Guard S's protective binding via Option A, letting the same known collisions (Q42's 'cover', Q10's 'light'/'night') persist",
+    "Q06's specific Guard N fix IS verified working live (the '4k'-only candidate was correctly bound this run), but the overall count did not improve because the OTHER (already-Furina-anchored) candidates satisfy the relaxed-match threshold via 'genshin'+'impact' alone — a Ranking/Matching structural issue distinct from, but related to, the piggyback gap",
+    "Human FAIL rate 30.4% (7/23), improved from Prompt 3B's 47.8% but still above the 20% quality threshold for READY_FOR_FULL_68",
+    "LLM non-determinism: Q40 both runs got Path-B declines this session (0 results, no rewrite offered at all), so the 'post office' collision could not be re-observed live this session (it IS re-confirmed via the fixed-input Replay)",
+    "Live is current-behavior evidence, not a strict A/B vs Prompt 3B (LLM output, catalog state, and non-determinism all differ run to run)",
+    "Human review is CLAUDE_STRUCTURED_REVIEW, not a real user visual audit",
+    "Catalog unchanged since Prompt 3B (hash verified) — no content drift this session"
+  ]
+}

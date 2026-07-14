@@ -1,0 +1,83 @@
+{
+  "version": "2026-07-14",
+  "target_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "modified_files": [
+    "app/[locale]/(public)/search/page.tsx",
+    "lib/searchRewrite.ts",
+    "lib/__tests__/searchRewrite.test.ts",
+    "lib/__tests__/stage6_dictionary_hybrid.test.ts"
+  ],
+  "new_files": [],
+  "guard_tests": {
+    "guard1_empty_tokens_fail_closed": {
+      "file": "lib/__tests__/stage6_dictionary_hybrid.test.ts",
+      "describe": "Guard 1 (Stage 7R Prompt 2): empty executable tokens fail closed",
+      "count": 14,
+      "passed": 14,
+      "failed": 0
+    },
+    "guard2_subject_bound_decomposition": {
+      "file": "lib/__tests__/searchRewrite.test.ts",
+      "describe": "Guard 2 (Stage 7R Prompt 2): subject-bound decomposition paths",
+      "count": 14,
+      "passed": 14,
+      "failed": 0
+    },
+    "guard3_cache_regression": {
+      "file": "lib/__tests__/searchRewrite.test.ts",
+      "tests": ["9b. no-subject decomposition -> negative cache", "9c. subject-present decomposition -> success cache"],
+      "count": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "updated_existing_assertion": {
+      "file": "lib/__tests__/searchRewrite.test.ts",
+      "test": "never includes the original query itself in the flattened extra-paths list",
+      "change": "bare 'brand' path expectation replaced with subject-bound '<subject> brand' expectation",
+      "passed": true
+    }
+  },
+  "related_tests": {
+    "lib/__tests__/searchRewrite.test.ts": { "passed": 64, "failed": 0 },
+    "lib/__tests__/stage6_dictionary_hybrid.test.ts": { "passed": 61, "failed": 0 },
+    "lib/__tests__/search_metadata_scenarios.test.ts": { "passed": 65, "failed": 0, "note": "unmodified file, run as regression check only" }
+  },
+  "full_tests": {
+    "command": "npx vitest run --config vitest.unit.config.ts",
+    "test_files_passed": 7,
+    "test_files_failed": 0,
+    "tests_passed": 260,
+    "tests_failed": 0
+  },
+  "typecheck": {
+    "command": "npx tsc --noEmit",
+    "exit_code": 0,
+    "errors": 0,
+    "result": "PASS"
+  },
+  "build": {
+    "command": "npx next build",
+    "exit_code": 0,
+    "result": "PASS",
+    "unrelated_pre_existing_warnings": [
+      "MISSING_MESSAGE: blog.contentTaggingSystem.threeLayerApproach.layer3.criteria.searchIntent (en) -- pre-existing Blog i18n gap, no Blog file touched this stage"
+    ]
+  },
+  "lint": {
+    "command": "npx next lint",
+    "exit_code": 1,
+    "result": "FAIL_PRE_EXISTING_CONFIG_ISSUE",
+    "detail": "tseslint.config() reports the 'next/core-web-vitals' extends array is incompatible with typescript-eslint's flat-config loader. Fails at config-load time, before any file-level rule runs. eslint.config.js and package.json were not touched this stage; not attributable to this stage's changes.",
+    "attributable_to_this_stage": false
+  },
+  "known_failures": [
+    {
+      "area": "lint",
+      "description": "next lint fails at ESLint flat-config load time due to a pre-existing typescript-eslint / next/core-web-vitals incompatibility in eslint.config.js",
+      "pre_existing": true,
+      "introduced_by_this_stage": false
+    }
+  ],
+  "readiness": "READY_WITH_LIMITATIONS"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "external-screenshot-p0-12",
+  "private": true,
+  "type": "module",
+  "description": "Ad-hoc Playwright collector for the 12 P0 visual-review cases (docs/daily_report/7.9). Not part of curify-frontend production code. Reuses the same approach as scripts/curify-search-collect and scripts/bing-image-eval etc, but targets a small custom 12-query list instead of the fixed 58-query eval set, and writes into docs/daily_report/7.9/competitor_screenshots/ instead of docs/external-signal-pilot/.",
+  "dependencies": {
+    "playwright": "^1.61.1"
+  }
+}

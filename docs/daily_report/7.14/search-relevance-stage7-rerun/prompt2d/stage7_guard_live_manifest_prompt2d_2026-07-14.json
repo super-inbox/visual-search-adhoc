@@ -1,0 +1,83 @@
+{
+  "version": "2026-07-14-prompt2d",
+  "stage": "Stage 7R Prompt 2D — Limited Live Retest (Anchor Piggyback fix)",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "live_query_set_sha256": "d328df4b9cc4d298314ee439c6da06a382f5b3e962194f4f9fba2c14658f025c",
+  "live_query_set_sha256_matches_prompt3b_prompt2c_manifest": true,
+  "search_rewrite_ts_sha256": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+  "page_tsx_sha256": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+  "page_tsx_unchanged_this_stage": true,
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_this_stage": true,
+  "bundle_rebuilt_this_stage": true,
+  "drift_check": { "checked_substrings": 8, "missing": 0 },
+  "cache_strategy": "PROCESS_ISOLATED_FRESH_CACHE_PER_RUN (one node child process per live run, live.cjs reused unmodified)",
+  "harness_orchestrator": "scripts/curify-search-stage7-guard-smoke/run_live_prompt2d.cjs (new; spawns live.cjs unmodified per run, compiles CSV in the same column schema as Prompt 2C's live results)",
+  "unique_queries": 20,
+  "total_runs": 23,
+  "q39_q40_q42_run_twice": true,
+  "execution_notes": [
+    "First execution attempt (18:0x window) hit a sustained real OpenAI API slowdown: production's own OpenAI client timeout (lib/searchRewrite.ts TIMEOUT_MS=8000, SDK default retries) combined to produce ~24-25s worst-case exhaustion; 14 of 23 runs (L05-L18) hit this on the first pass.",
+    "Runs were re-attempted (reusing the 9 already-successful results, never re-spending API calls on runs that already succeeded) with up to 3 fresh attempts per still-failing run in a second pass; 2 more (L05, L06) succeeded, 12 (L07-L18) still failed all 3 attempts in that pass.",
+    "A third, full re-run (reusing all 11 already-successful results) succeeded on all remaining 12 runs on the first attempt each -- confirming the earlier failures were a genuine transient OpenAI-side degradation window, not a harness or production code defect. No harness timeout values or production code were modified to achieve this; only time/retries were needed.",
+    "Final compiled CSV (stage7_guard_live_results_prompt2d_2026-07-14.csv) reflects the fully successful run: 23/23 runs completed with real LLM output, 0 errors, 0 timeouts."
+  ],
+  "test_results": {
+    "searchRewrite_test_ts": "160/160 passed",
+    "full_unit_suite": "356/356 passed",
+    "typescript_noEmit": "PASS (0 errors)",
+    "production_build": "PASS (exit 0)",
+    "lint": "BLOCKED_PRE_EXISTING_CONFIG_ISSUE (same as Prompt 2B/2C, not fixed per instructions)"
+  },
+  "live_summary": {
+    "total_runs": 23,
+    "errors": 0,
+    "timeouts": 0,
+    "full_catalog": 0,
+    "thousand_plus": 1,
+    "thousand_plus_queries": ["Q12"],
+    "piggyback_guard_triggered_count": 17,
+    "subject_guard_triggered_count": 17,
+    "human_pass": 4,
+    "human_partial": 16,
+    "human_fail": 3,
+    "human_fail_pct": 13.04,
+    "human_fail_gate_threshold_pct": 20,
+    "human_fail_gate_result": "PASS (13.04% <= 20%)",
+    "human_fail_detail": [
+      { "live_run_id": "L03-1", "query_id": "Q42", "final_result_count": 464, "reason": "generic-word 'cover' catalog-content collision, confirmed correctly bound, out of scope" },
+      { "live_run_id": "L03-2", "query_id": "Q42", "final_result_count": 464, "reason": "same as L03-1, stable across both runs" },
+      { "live_run_id": "L05-1", "query_id": "Q12", "final_result_count": 1598, "reason": "relaxed-match-threshold structural limitation, no subject in decomposition, confirmed unaffected by this stage's fix by design, out of scope" }
+    ],
+    "notable_live_confirmations": [
+      { "live_run_id": "L08-1", "query_id": "Q06", "before_prompt2c_live": 1567, "after_prompt2d_live": 12, "note": "flood -> genuinely on-topic PASS, strongest live evidence the fix generalizes beyond the fixed Replay dataset" },
+      { "live_run_id": "L04-1", "query_id": "Q10", "before_prompt2c_live": 1642, "after_prompt2d_live": 330, "note": "no longer >=1000" },
+      { "live_run_id": "L17-1", "query_id": "Q41", "before_prompt2c_live": 450, "after_prompt2d_live": 23, "note": "top-1 now genuinely on-topic ('learn before and after')" }
+    ],
+    "before_after_reminder": "NOT a strict A/B -- LLM output and (confirmed unchanged) catalog state may differ between Prompt 2C's and this stage's Live runs; treat as two independent real-world observations, not causally attributable to the code change alone (unlike Replay, which IS a strict A/B)."
+  },
+  "files_modified_outside_declared_scope": [],
+  "started_at": "2026-07-14T09:10:00Z",
+  "completed_at": "2026-07-14T10:05:00Z",
+  "commands": [
+    "node scripts/curify-search-stage7-guard-smoke/run_live_prompt2d.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_live_results_prompt2d_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_live_human_review_prompt2d_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_live_manifest_prompt2d_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/STAGE7_PROMPT2D_LIMITED_LIVE_RETEST_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/_live_prompt2d_summary.json",
+    "scripts/curify-search-stage7-guard-smoke/run_live_prompt2d.cjs"
+  ],
+  "gate_conclusion": "READY_FOR_FULL_68 (does NOT auto-trigger running it)",
+  "limitations": [
+    "Q42's 'cover' generic-word content collision persists under real LLM output (2 runs, stable), confirmed to be a content/Taxonomy issue rather than a Guard bypass -- out of this stage's declared scope.",
+    "Q12 remains >=1000 under real LLM output too, confirming (independently of Replay) that this case's root cause is unrelated to the piggyback mechanism and is a Ranking/Matching structural limitation.",
+    "Live is inherently non-deterministic (different LLM sample than Prompt 2C's run) so count deltas cannot be attributed purely to the code change the way Replay's deltas can -- but the DIRECTION and MAGNITUDE of change for the piggyback-affected cases (Q06, Q10, Q41 all moving well clear of prior flood/FAIL levels) is consistent with and corroborates the Replay findings.",
+    "One execution required 3 sequential batch attempts due to a real, external OpenAI API slowdown window unrelated to this stage's code changes; documented in execution_notes for full transparency."
+  ]
+}

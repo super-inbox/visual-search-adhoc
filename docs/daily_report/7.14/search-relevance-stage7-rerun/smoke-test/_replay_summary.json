@@ -1,0 +1,12 @@
+{
+  "total": 26,
+  "blocked": 0,
+  "pass": 5,
+  "partial": 17,
+  "fail": 4,
+  "old_ge1000": 24,
+  "new_ge1000": 5,
+  "old_full_catalog": 3,
+  "new_full_catalog": 0,
+  "gate_failure": null
+}

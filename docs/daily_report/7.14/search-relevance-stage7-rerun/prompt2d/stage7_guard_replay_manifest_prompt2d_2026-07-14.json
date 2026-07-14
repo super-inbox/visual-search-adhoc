@@ -1,0 +1,127 @@
+{
+  "version": "2026-07-14-prompt2d",
+  "stage": "Stage 7R Prompt 2D — Deterministic Replay (Anchor Piggyback fix)",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "smoke_query_set_sha256": "70603639371595c71d9519e074ef0bbaaeab89811b50e895c86c6f7baf068970",
+  "smoke_query_set_sha256_matches_prompt2b_prompt2c_manifest": true,
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_since_prompt2c": true,
+  "page_tsx_sha256": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+  "page_tsx_unchanged_since_prompt2c": true,
+  "search_rewrite_ts_sha256_before_prompt2d": "aeb453b4a0ad0b558880574a8335b9a96b527c5ce22198952c15d8d5afb65ef5",
+  "search_rewrite_ts_sha256_after_prompt2d": "a54aaf9e67aa65ddab77f1233dbaabc9a85efe61123bf9f150bc4418e0833d45",
+  "test_file_modified": "lib/__tests__/searchRewrite.test.ts",
+  "files_modified_by_prompt2d": ["lib/searchRewrite.ts", "lib/__tests__/searchRewrite.test.ts"],
+  "files_modified_outside_declared_scope": [],
+  "page_tsx_modified_this_stage": false,
+  "bundle_rebuilt_this_stage": true,
+  "bundle_rebuild_command": "node build_bundle.cjs",
+  "bundle_rebuild_time": "2026-07-14T08:58:57.630Z",
+  "drift_check": {
+    "checked_substrings": 8,
+    "missing": 0,
+    "page_tsx_sha256_at_check_time": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc"
+  },
+  "code_changes_summary": [
+    "SubjectCandidateEvaluation: new field anchorBasisForDownstream (narrow, provenance-aware comparison basis for downstream rewrite-candidate evaluation)",
+    "flattenPathsWithDiagnostics: passes anchorBasisForDownstream (not the full effectiveSubject) as the `subject` (Option A comparison) argument to evaluateRewriteCandidate, and separately passes the full effectiveSubject as the new `bindTarget` argument",
+    "flattenPathsWithDiagnostics: new modifier native-constraint check in the decomposition loop (rejects empty/stopword-only or weak-numeric-only modifiers before binding)",
+    "evaluateRewriteCandidate: new optional 4th parameter bindTarget (defaults to `subject`); Option D binding now prefixes the executed query with bindTarget instead of subject, correcting an unintended relaxed-match-threshold token-count side effect discovered via this stage's own first-pass Replay"
+  ],
+  "not_modified": [
+    "evaluateRewriteCandidate/evaluateSubjectCandidate Option A/B/C/E decision logic itself",
+    "Guard 1 (app/[locale]/(public)/search/page.tsx)",
+    "Merge/Ranking (multi-path union weighting)",
+    "relaxed matching threshold formula (ceil(n/2))",
+    "Tokenizer (jieba dictionary)",
+    "Protected Phrase list",
+    "Alias data",
+    "Taxonomy",
+    "catalog content"
+  ],
+  "test_results": {
+    "searchRewrite_test_ts": "160/160 passed (139 pre-existing/updated + 21 new Prompt 2D piggyback tests)",
+    "full_unit_suite": "356/356 passed (unchanged total from initial Prompt 2D pass; 5 assertions in searchRewrite.test.ts were corrected mid-stage to reflect the bindTarget refinement's fuller bound-text strings, verified via a scratch-test dump of actual production output before hardcoding)",
+    "typescript_noEmit": "PASS (0 errors)",
+    "production_build": "PASS (exit 0; pre-existing MISSING_MESSAGE/INVALID_MESSAGE blog i18n errors unrelated to search, predate this stage)",
+    "lint": "BLOCKED_PRE_EXISTING_CONFIG_ISSUE (same ESLint 9 flat-config 'next/core-web-vitals extends' issue as Prompt 2B/2C, not fixed per instructions -- run once only)"
+  },
+  "replay_summary": {
+    "total_runs": 26,
+    "pass": 5,
+    "partial": 21,
+    "fail": 0,
+    "blocked": 0,
+    "old_prompt2c_full_catalog": 0,
+    "new_prompt2d_full_catalog": 0,
+    "d23_stage7_historical_ge1000": 23,
+    "d23_new_prompt2d_ge1000_vs_stage7_historical": 1,
+    "d23_still_ge1000": ["Q12"],
+    "d23_gate_max_allowed_ge1000": 4,
+    "d23_gate_result": "PASS (1 of 23 still >=1000, well under the max-4 threshold)",
+    "regressions_count": 0,
+    "regressions_detail": [],
+    "piggyback_guard_triggered_count": 20,
+    "synthetic_anchor_falsely_counted_as_native_count": 0,
+    "gate_failure": null,
+    "notable_direct_fix_confirmations": [
+      { "query_id": "Q10", "mode": "D", "old_prompt2c": 1715, "new_prompt2d": 740, "note": "first time under the 1000 threshold across Prompt 2B/2C/2D Replay" },
+      { "query_id": "Q40", "mode": "D", "old_prompt2c": 3, "new_prompt2d": 0, "note": "piggyback candidates now correctly bound to full effectiveSubject" },
+      { "query_id": "Q40", "mode": "C", "old_prompt2c": 3, "new_prompt2d": 0, "note": "same mechanism as Q40 D" },
+      { "query_id": "Q48", "mode": "D", "old_prompt2c": 1155, "new_prompt2d": 17, "note": "-98.5%, moved from flood territory to normal range" },
+      { "query_id": "Q42", "mode": "C", "old_prompt2c": 3, "new_prompt2d": 3, "note": "count unchanged but candidates now confirmed properly bound; residual collision is a generic-word/catalog-content issue, not a Guard bypass" }
+    ],
+    "confirmed_unaffected_by_design": [
+      { "query_id": "Q12", "mode": "D", "reason": "no subject in decomposition; ceil(n/2) relaxed-match threshold satisfied by pre-existing generic tokens alone -- Ranking/Matching structural limitation, explicitly deferred" },
+      { "query_id": "Q42", "mode": "D", "reason": "no subject in decomposition; uses pre-existing Option D2 original-anchor bind path, never had the piggyback mechanism" },
+      { "query_id": "Q11", "mode": "D", "reason": "piggyback_guard_triggered=false, count unchanged (889), unaffected control case" },
+      { "query_id": "Q15", "mode": "D", "reason": "piggyback_guard_triggered=false, count unchanged (177), unaffected control case" },
+      { "query_id": "Q16", "mode": "D", "reason": "piggyback_guard_triggered=false, count unchanged (735), unaffected control case" },
+      { "query_id": "Q46", "mode": "D", "reason": "piggyback_guard_triggered=false, count unchanged (394), unaffected control case" }
+    ]
+  },
+  "human_review_summary": {
+    "rows_reviewed": 18,
+    "pass": 5,
+    "partial": 11,
+    "fail": 2,
+    "blocked": 0,
+    "fail_detail": [
+      { "query_id": "Q12", "mode": "D", "reason": "unchanged flood, relaxed-match threshold structural issue, out of scope" },
+      { "query_id": "Q41", "mode": "D", "reason": "unchanged, Taxonomy/content discriminative-power limitation for generic '小红书' term, out of scope" }
+    ]
+  },
+  "started_at": "2026-07-14T08:45:00Z",
+  "completed_at": "2026-07-14T09:15:00Z",
+  "commands": [
+    "npx vitest run --config vitest.unit.config.ts lib/__tests__/searchRewrite.test.ts",
+    "npx vitest run --config vitest.unit.config.ts",
+    "npx tsc --noEmit",
+    "npm run build",
+    "npm run lint",
+    "node scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "node scripts/curify-search-stage7-guard-smoke/replay_prompt2d.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/STAGE7_PROMPT2D_PIGGYBACK_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_replay_results_prompt2d_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_replay_human_review_prompt2d_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/stage7_guard_replay_manifest_prompt2d_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/STAGE7_PROMPT2D_REPLAY_SUMMARY_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2d/_replay_prompt2d_summary.json",
+    "scripts/curify-search-stage7-guard-smoke/replay_prompt2d.cjs"
+  ],
+  "gate_conclusion": "READY_FOR_LIVE_RETEST",
+  "limitations": [
+    "Replay is a fixed-input causal test using 7.13-recorded LLM rewrite candidates; it does not re-sample new LLM outputs, so it cannot detect whether the piggyback fix generalizes to wordings not present in the 7.13 dataset -- this is precisely why a Limited Live Retest is required next.",
+    "Q10's residual 740-count and irrelevant top-1 result ('la land' movie poster) is explained by generic 'night'-tag catalog overlap on the now-safely-bound phrase, a relaxed-match-threshold/catalog-breadth issue, not a re-emergence of piggyback.",
+    "Q42 C's count is unchanged (3) despite confirmed correct binding -- the residual collision is with an unrelated catalog item whose title/tag contains the bare English word 'cover', a content-collision issue out of this stage's declared scope.",
+    "Q47's count is unchanged (485) despite confirmed correct binding of all 3 candidates to the fuller subject text -- likely a Merge/Ranking multi-path weighting effect, out of this stage's declared scope.",
+    "Q41's count is unchanged (89) -- subject 'Xiaohongshu' binds redundantly to itself ('小红书 Xiaohongshu'), never had the piggyback vulnerability; root cause is Taxonomy/content discriminative-power for an overly generic platform term, out of scope.",
+    "Q12's count is byte-identical (1694) -- confirmed unaffected by this stage's fix by design (no subject in decomposition); root cause is the ceil(n/2) relaxed-match threshold, explicitly forbidden to modify this stage."
+  ]
+}

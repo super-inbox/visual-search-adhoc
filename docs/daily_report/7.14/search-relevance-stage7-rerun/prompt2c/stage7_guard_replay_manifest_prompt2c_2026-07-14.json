@@ -1,0 +1,83 @@
+{
+  "version": "2026-07-14-prompt2c",
+  "stage": "Stage 7R Prompt 2C — Deterministic Replay",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "smoke_query_set_sha256": "70603639371595c71d9519e074ef0bbaaeab89811b50e895c86c6f7baf068970",
+  "smoke_query_set_sha256_matches_prompt2b_manifest": true,
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_since_prompt2b": true,
+  "page_tsx_sha256": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+  "page_tsx_unchanged_since_prompt2b": true,
+  "search_rewrite_ts_sha256_before_prompt2c": "bf2160d5f0f0300b4be4947a19b2f34ef63063fc1b3f2e742ebff571e3d24ec5",
+  "search_rewrite_ts_sha256_after_prompt2c": "aeb453b4a0ad0b558880574a8335b9a96b527c5ce22198952c15d8d5afb65ef5",
+  "test_file_modified": "lib/__tests__/searchRewrite.test.ts",
+  "files_modified_by_prompt2c": ["lib/searchRewrite.ts", "lib/__tests__/searchRewrite.test.ts"],
+  "files_modified_outside_declared_scope": [],
+  "page_tsx_modified_this_stage": false,
+  "bundle_rebuilt_this_stage": true,
+  "bundle_rebuild_command": "node build_bundle.cjs",
+  "bundle_rebuild_time": "2026-07-14T07:56:43.715Z",
+  "drift_check": { "checked_substrings": 8, "missing": 0, "page_tsx_sha256_at_check_time": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc" },
+  "test_results": {
+    "searchRewrite_test_ts": "139/139 passed (99 pre-existing + 40 new Guard N/S/cross-language tests)",
+    "full_unit_suite": "335/335 passed (up from 295/295 at end of Prompt 2B)",
+    "typescript_noEmit": "PASS (0 errors)",
+    "production_build": "PASS (exit 0; pre-existing INVALID_MESSAGE i18n errors in blog/[slug]/page.js are unrelated to search and predate this stage)",
+    "lint": "BLOCKED_PRE_EXISTING_CONFIG_ISSUE (same ESLint 9 flat-config issue as Prompt 2B, not fixed per instructions)"
+  },
+  "replay_summary": {
+    "total_runs": 26,
+    "pass": 4,
+    "partial": 21,
+    "fail": 1,
+    "blocked": 0,
+    "old_prompt2b_full_catalog": 0,
+    "new_prompt2c_full_catalog": 0,
+    "d23_stage7_historical_ge1000": 23,
+    "d23_new_prompt2c_ge1000_vs_stage7_historical": 3,
+    "d23_resolved_count": 20,
+    "d23_resolved_pct": 87.0,
+    "d23_gate_threshold_pct": 80,
+    "d23_still_ge1000": ["Q10", "Q12", "Q48"],
+    "regressions_count": 2,
+    "regressions_detail": [
+      { "query_id": "Q27", "mode": "D", "old_prompt2b": 99, "new_prompt2c": 117, "cause": "Guard S bound previously-untrusted subject to a CJK anchor, small non-flooding relaxed-match side effect" },
+      { "query_id": "Q28", "mode": "D", "old_prompt2b": 58, "new_prompt2c": 76, "cause": "same mechanism as Q27" }
+    ],
+    "weak_numeric_guard_triggered_count": 0,
+    "subject_guard_triggered_count": 22,
+    "cross_language_guard_triggered_count": 0,
+    "gate_failure": null
+  },
+  "started_at": "2026-07-14T07:50:00Z",
+  "completed_at": "2026-07-14T08:10:00Z",
+  "commands": [
+    "npx tsc --noEmit",
+    "npx vitest run --config vitest.unit.config.ts",
+    "npm run build",
+    "node scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "node scripts/curify-search-stage7-guard-smoke/replay_prompt2c.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/STAGE7_PROMPT2C_GUARD_IMPLEMENTATION_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_replay_results_prompt2c_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_replay_human_review_prompt2c_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/stage7_guard_replay_manifest_prompt2c_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/STAGE7_PROMPT2C_REPLAY_SUMMARY_2026-07-14_zh.md",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/prompt2c/_replay_prompt2c_summary.json",
+    "scripts/curify-search-stage7-guard-smoke/replay_prompt2c.cjs"
+  ],
+  "limitations": [
+    "2 small, non-flooding regressions found (Q27 99->117, Q28 58->76) -- both explained by a well-understood relaxed-match-threshold side effect of Guard S's new binding, not a logic defect; both remain far below the 1000 flood threshold",
+    "Newly-identified residual gap: rewrite candidates that already share tokens with the UNBOUND portion of a subject's anchor set (e.g. 'Xiaohongshu post template' sharing 'xiaohongshu'/'post' with subject 'Xiaohongshu post') bypass Guard S's protective binding and can still reproduce known collisions (Q40's 'post office', Q10's 'light'/'night') -- recorded as Deferred, not fixed this stage",
+    "Q12 count is byte-identical before/after (1694) because the relaxed-match threshold (ceil(n/2)) for the now-4-token bound phrase is still satisfied by the original 2 generic tokens alone -- a Ranking/Matching structural limitation, out of this stage's scope",
+    "Q48's anchor bind ('抖' instead of '抖音') is weakened by jieba's context-dependent segmentation of an out-of-dictionary platform name -- a tokenizer/dictionary limitation, not a Guard logic defect",
+    "Q39/Q42 D's 0-result outcomes reflect a pre-existing content gap (original first-pass was already 0) that Guard now avoids polluting with irrelevant results, rather than a new over-filtering regression -- but is nonetheless a 0-result UX outcome worth flagging",
+    "Replay is still a fixed-input causal test (7.13-recorded rewrites); Q06's Guard N fix specifically is validated by dedicated unit tests, not re-demonstrated by this fixed replay input (the 7.13-recorded Q06 rewrite never contained the '4k'-only candidate that Live exposed)"
+  ]
+}

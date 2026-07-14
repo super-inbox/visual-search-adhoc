@@ -1,0 +1,88 @@
+{
+  "version": "2026-07-14-prompt3b",
+  "stage": "Stage 7R Prompt 3B — Limited Live Smoke Test",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "production_dirty_note": "Working tree dirty since Prompt 2/2B (not yet committed); unchanged by this stage. Verified byte-identical git status/diff and file hashes before and after.",
+  "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "query_set_sha256": "d328df4b9cc4d298314ee439c6da06a382f5b3e962194f4f9fba2c14658f025c",
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "catalog_unchanged_since_prompt2b": true,
+  "production_source_hashes": {
+    "lib/searchRewrite.ts": "bf2160d5f0f0300b4be4947a19b2f34ef63063fc1b3f2e742ebff571e3d24ec5",
+    "app/[locale]/(public)/search/page.tsx": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc",
+    "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+    "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+    "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+    "lib/topic_resolver.ts": "180bb8cc4c419abb5d75d013505fe14e1fe30147c9840b5d617cd25865981b0f"
+  },
+  "production_source_hashes_unchanged_since_prompt2b": true,
+  "bundle_rebuilt_this_stage": true,
+  "bundle_rebuild_command": "node build_bundle.cjs",
+  "bundle_rebuild_time": "2026-07-14T06:44:32.210Z",
+  "drift_check": {
+    "checked_substrings": 8,
+    "missing": 0,
+    "page_tsx_sha256_at_check_time": "4cb4775f6e06bb5aa7590fa60a13601ed38ce97d6ef696ff18ab15fa6591b8cc"
+  },
+  "node_version": "v26.3.0",
+  "npm_version": "11.16.0",
+  "llm_provider": "OpenAI",
+  "llm_model": "gpt-4o-mini",
+  "environment_presence": {
+    "OPENAI_API_KEY": "PRESENT (in curify-frontend/.env.local, loaded into the harness process via `node --env-file=.env.local`; not exported in the interactive shell; never printed)",
+    "OPENAI_API_KEY_source": ".env.local (the same file Next.js itself loads at runtime; not modified, only read and passed to a Node child process)"
+  },
+  "cache_strategy": "PROCESS_ISOLATED — each Live Run was executed as a SEPARATE `node live.cjs` invocation, so lib/searchRewrite.ts's in-memory, process-local MULTI_CACHE Map was fresh and empty for every single run, including both runs of Q39/Q40/Q42. This guarantees the two runs of each core case are genuine, independent LLM calls, never silently cache-served -- the same isolation a real Vercel serverless invocation gets in production (per the CACHE/MULTI_CACHE comment in lib/searchRewrite.ts itself). No Query text was altered, no global/production cache was touched or cleared.",
+  "live_unique_query_count": 20,
+  "live_run_count": 23,
+  "successful_run_count": 23,
+  "error_count": 0,
+  "timeout_count": 0,
+  "llm_called_count": 21,
+  "rewrite_triggered_count": 21,
+  "full_catalog_count": 0,
+  "thousand_plus_count": 4,
+  "zero_result_count": 2,
+  "empty_token_guard_triggered_count": 0,
+  "subject_binding_triggered_count": 15,
+  "rewrite_anchor_guard_triggered_count": 11,
+  "no_valid_rewrite_path_count": 3,
+  "human_review": {
+    "total_reviewed": 23,
+    "pass": 3,
+    "partial": 9,
+    "fail": 11,
+    "blocked": 0,
+    "fail_pct_of_successful_runs": 47.8,
+    "fail_pct_threshold_for_ready_for_full_68": 20
+  },
+  "started_at": "2026-07-14T06:45:00Z",
+  "completed_at": "2026-07-14T07:15:00Z",
+  "commands": [
+    "node --env-file=<curify-frontend>/.env.local -e \"console.log(process.env.OPENAI_API_KEY ? 'PRESENT' : 'MISSING')\"",
+    "node build_bundle.cjs",
+    "node --env-file=<curify-frontend>/.env.local live.cjs --live-run-id ... --query ... --run-number ... --out ...  (x23, one process per Live Run)"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/live-smoke/live_smoke_query_set_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/live-smoke/stage7_guard_live_results_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/live-smoke/stage7_guard_live_human_review_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/live-smoke/stage7_guard_live_manifest_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/live-smoke/STAGE7_LIMITED_LIVE_SMOKE_TEST_2026-07-14_zh.md",
+    "scripts/curify-search-stage7-guard-smoke/live.cjs"
+  ],
+  "limitations": [
+    "LLM non-determinism: Q39/Q40/Q42's two runs sometimes produced identical output (Q40 and Q42 both runs were byte-identical LLM responses despite verified separate-process/fresh-cache execution -- plausible genuine determinism at temperature=0.4 for these specific queries, not claimed as independent evidence of variation for those two cases). Q39 and Q48 DID show genuine variation across runs/vs-Replay.",
+    "Catalog content drift since 2026-07-07/07-13/07-14 remains unquantified.",
+    "Human review is CLAUDE_STRUCTURED_REVIEW (metadata/title/tag/category based), not a real end-user visual/UX audit; needs_user_visual_review=true on every row.",
+    "Guard 1's scoreBlob/buildSearchTokens are a verbatim, drift-checked TRANSCRIPTION of page.tsx (which cannot be require()'d as a Next.js Server Component), not a direct import -- same disclosed limitation carried from Prompt 3/2B.",
+    "Only 20 unique queries / 23 runs -- not the full 68-query gold set; findings (especially the decomposition-subject-genericness pattern recurring in Q10/Q40/Q41/Q44) may generalize to additional untested queries in the full 68, unquantified.",
+    "No screenshots taken (explicitly forbidden this stage).",
+    "A new Guard R gap was discovered (Q06/L08: digit-bearing tokens like '4k' treated as independent anchors under Guard R2 Option C, too permissively) -- NOT fixed this stage per the read-only production rule; recorded as evidence only.",
+    "The dominant FAIL root cause (decomposition subject genericness, e.g. 'Light and Night'->light+night, 'Xiaohongshu post'->graphic note, 小红书对比图's subject reducing to bare 'Xiaohongshu') is a Prompt-2-era Guard-2 scope issue, not something Prompt 2B's rewrites[] Guard R was designed to fix -- confirmed via Live evidence to be MORE pervasive than Prompt 2B Replay's fixed-input sample suggested (Replay's D23 set only surfaced this pattern via Q10; Live surfaced it independently in Q40, Q41, and Q44 as well, none of which were part of the original 23 D-flood cases)."
+  ]
+}

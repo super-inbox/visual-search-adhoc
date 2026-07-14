@@ -1,0 +1,15 @@
+{
+  "total": 32,
+  "expected": 32,
+  "by_mode": {
+    "A": 8,
+    "B": 8,
+    "C": 8,
+    "D": 8
+  },
+  "missing": 0,
+  "duplicates": 0,
+  "real_llm_calls": 0,
+  "mode_contract_failures": 0,
+  "failure_run_ids": []
+}

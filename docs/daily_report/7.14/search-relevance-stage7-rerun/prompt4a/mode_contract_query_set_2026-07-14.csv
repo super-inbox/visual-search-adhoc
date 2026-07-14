@@ -1,0 +1,9 @@
+query_order,query,d_affected_expected,rewrite_fixture_id
+1,小红书香薰产品,true,FIX_XHS_INCENSE
+2,手冲咖啡品牌视觉,true,FIX_POUROVER
+3,二手奢侈品,false,FIX_LUXURY
+4,比亚迪海豹,true,FIX_BYDSEAL
+5,乔丹鞋,true,FIX_JORDAN
+6,白箱,true,FIX_WHITEBOX
+7,Genshin Impact fanart 4k,false,FIX_GENSHIN
+8,English brand identity poster,false,FIX_ENGLISH

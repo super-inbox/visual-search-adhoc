@@ -1,0 +1,62 @@
+{
+  "version": "2026-07-14",
+  "branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "head": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "production_dirty": true,
+  "baseline_sha256": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+  "package_lock_sha256": "b75bd1c7113dea2eb2194a5841f05247665d1820c664f48f5929c55648f5ed59",
+  "catalog_sha256": "f7dacc56a847f6b9c1a93a714e79b4864c3babdfb06402223abbe733dfb9d906",
+  "catalog_size": 3209,
+  "page_tsx_sha256": "4853831915b56881fba3b92c8c299f4b1207b24414a620565af47910f8d87abe",
+  "search_rewrite_ts_sha256": "52c5a066628e0295323fc7c4b026106e199512acd6b03df8247da2254936209e",
+  "smoke_query_set_sha256": "70603639371595c71d9519e074ef0bbaaeab89811b50e895c86c6f7baf068970",
+  "replay_query_count": 23,
+  "replay_run_count": 26,
+  "live_unique_query_count": 22,
+  "live_run_count": 0,
+  "live_run_count_planned": 25,
+  "live_not_run_reason": "Prompt 3 Step 6 gate: Deterministic Replay found 5 of 23 D-mode flood cases still >=1000 (exceeds the 4-case/80% recommended threshold). Per the explicit instruction '只有 Replay 达到 Gate，才运行 Live', Live Smoke was deliberately not executed. See STAGE7_GUARD_SMOKE_TEST_2026-07-14_zh.md Section 8/9 for full reasoning. No LLM calls were made for Phase B.",
+  "llm_model": "gpt-4o-mini (per lib/searchRewrite.ts MODEL constant) -- NOT invoked this run (Live phase gated off)",
+  "environment_presence": {
+    "OPENAI_API_KEY": "PRESENT",
+    "node_version": "v26.3.0",
+    "npm_version": "11.16.0"
+  },
+  "cache_strategy": "NOT_APPLICABLE -- Phase A (Replay) never calls getMultiQueryPaths/the LLM at all (raw rewrite/decomposition JSON is injected directly via multiPathsOverride), so lib/searchRewrite.ts's in-memory MULTI_CACHE is never populated or consulted during Replay. Phase B (Live) was not run this session.",
+  "drift_check": {
+    "checked_substrings": 8,
+    "missing": 0,
+    "page_tsx_sha256_at_check_time": "4853831915b56881fba3b92c8c299f4b1207b24414a620565af47910f8d87abe",
+    "method": "scripts/curify-search-stage7-guard-smoke/scoring.cjs verifyAgainstLiveSource() reads the live page.tsx file and asserts 8 critical substrings (Guard 1/2/3 fixes) are present before any replay run executes"
+  },
+  "started_at": "2026-07-14T05:00:00Z",
+  "completed_at": "2026-07-14T05:33:06Z",
+  "commands": [
+    "node scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "node scripts/curify-search-stage7-guard-smoke/replay.cjs"
+  ],
+  "output_files": [
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/smoke_test_query_set_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/stage7_guard_replay_results_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/stage7_guard_live_smoke_results_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/stage7_guard_smoke_human_review_2026-07-14.csv",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/stage7_guard_smoke_manifest_2026-07-14.json",
+    "docs/daily_report/7.14/search-relevance-stage7-rerun/smoke-test/STAGE7_GUARD_SMOKE_TEST_2026-07-14_zh.md",
+    "scripts/curify-search-stage7-guard-smoke/build_bundle.cjs",
+    "scripts/curify-search-stage7-guard-smoke/scoring.cjs",
+    "scripts/curify-search-stage7-guard-smoke/engine.cjs",
+    "scripts/curify-search-stage7-guard-smoke/replay.cjs",
+    "scripts/curify-search-stage7-guard-smoke/csv_utils.cjs",
+    "scripts/curify-search-stage7-guard-smoke/README.md"
+  ],
+  "limitations": [
+    "Live Smoke (Phase B) was not executed this session -- gated off by the Replay threshold shortfall per Step 6; all 25 planned live runs recorded as BLOCKED with explicit reasoning, no fabricated results",
+    "Replay Mode-C rows for Q39/Q40/Q42 compare a pre-Stage-6-tokenizer historical count (old_result_count) against a current-tokenizer-plus-Guard result (new_result_count) -- this is not a controlled same-tokenizer A/B; it answers 'does the current pipeline handle this known-dangerous historical rewrite text safely', not 'what changed due to the Guards alone in isolation'",
+    "Human/structured review covered 15 of 26 replay rows in depth (all Section-10-mandated required cases); the remaining 11 rows carry the automated heuristic verdict only, explicitly marked reviewer_type=NOT_REVIEWED",
+    "Automated heuristic verdicts were found to disagree with manual structured review in 3 of 15 reviewed cases (Q06 FAIL->PARTIAL, Q16 PASS->PARTIAL, Q52 PASS->PARTIAL) -- the CSV keeps both values visible (notes field) rather than silently overwriting",
+    "Reviewer type is CLAUDE_STRUCTURED_REVIEW (metadata/title/tag/category based), not a real end-user visual/relevance audit",
+    "LLM non-determinism was not directly observed this session since no live LLM calls were made; Prompt 1's prior findings (Q01/Q39/Q42/Q53 Mode C vs D divergence) remain the only direct evidence of it",
+    "Catalog content drift since 2026-07-07/07-13 remains unquantified (inherited limitation from Prompt 0/1)",
+    "0/68 human_relevance_label remains unfilled in the authoritative 68-query set (inherited limitation)"
+  ]
+}

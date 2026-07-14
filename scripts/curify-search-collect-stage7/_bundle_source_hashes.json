@@ -1,0 +1,10 @@
+{
+  "builtAt": "2026-07-12T19:29:59.507Z",
+  "sourceFiles": {
+    "lib/zh_normalize.ts": "a8c42f055bb01079fb35b89e2647d2f47f496708f1c74263d89340217071df34",
+    "lib/query_phrase_aliases.ts": "eb99cac68bbde0e7328372ce24e0bae15b8cafe01d9749a4a62a30cc6fc1e971",
+    "lib/cjk_tokenizer.ts": "6a63764754e8add7b84ebcdb6ceb3ad159a4ed90b710219f3de7314a9b1dc6b6",
+    "lib/searchRewrite.ts": "24fe7493f44e7028887ed3301a01fa139218e30002c777a960d3a0669746e962",
+    "lib/topic_resolver.ts": "180bb8cc4c419abb5d75d013505fe14e1fe30147c9840b5d617cd25865981b0f"
+  }
+}

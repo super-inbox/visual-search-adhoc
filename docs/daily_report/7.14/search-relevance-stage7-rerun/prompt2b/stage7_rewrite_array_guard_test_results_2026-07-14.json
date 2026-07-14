@@ -1,0 +1,62 @@
+{
+  "stage": "Stage 7R Prompt 2B",
+  "test_command_primary": "npx vitest run --config vitest.unit.config.ts lib/__tests__/searchRewrite.test.ts",
+  "test_command_full_suite": "npx vitest run --config vitest.unit.config.ts",
+  "searchRewrite_test_ts": {
+    "total": 99,
+    "passed": 99,
+    "failed": 0,
+    "pre_existing_tests": 60,
+    "new_guard_r_tests": 39,
+    "new_describe_blocks": [
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[]",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard R1 — empty executable tokens fail closed",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard R2 — unanchored candidates (no subject, same-language, zero shared/independent anchor)",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard R2 — an unanchored candidate is bound, not rejected, when a subject exists (Option D)",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard R2 — cross-script rewrites with no subject are accepted, protecting the CJK<->English translation mechanism",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard R2 — anchor-sharing accept paths (Options A/B/C)",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > reasonable broadening is preserved (not treated as unanchored)",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > unreasonable entity drift is at least bound (never left to run ungrounded) when a subject exists",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Guard 2 decomposition regression (Prompt 2, unchanged by this stage)",
+      "Guard R (Stage 7R Prompt 2B): anchor validation for free-text rewrites[] > Alias / CJK / Protected Phrase regression (rewrites[] path)",
+      "Guard R + getMultiQueryPaths cache TTL (Stage 7R Prompt 2B)"
+    ],
+    "fixtures_from_real_5_flood_cases": {
+      "Q06_shaped": "Genshin Impact Furina fanart wallpaper -- 'a rewrite that drops the query's own subject in favor of the franchise/category is bound to the subject'",
+      "Q10_shaped": "光与夜之恋/Light and Night -- Option B CJK Protected-Phrase equivalence test",
+      "Q12_shaped": "松弛感生活方式插画 -- cross-script accept-unchanged test",
+      "Q47_shaped": "抖音小黄车商品卡片设计 -- bound-to-subject test",
+      "no_query_id_hardcoding": true,
+      "note": "Fixtures reuse the real original query / rewrites / decomposition text recorded for these queries in 7.13's ablation data, but the tests assert on MECHANISM (accepted/bound/rejected + resulting executed text), not on Query IDs or a special-cased list -- no production code branches on query identity."
+    }
+  },
+  "stage6_dictionary_hybrid_test_ts": { "total": 61, "passed": 61, "failed": 0, "changed_by_prompt2b": false },
+  "search_metadata_scenarios_test_ts": { "total": 65, "passed": 65, "failed": 0, "changed_by_prompt2b": false },
+  "thin_recall_queries_test_ts": { "total": 28, "passed": 28, "failed": 0, "changed_by_prompt2b": false },
+  "full_unit_suite": {
+    "total": 295,
+    "passed": 295,
+    "failed": 0,
+    "prompt2_baseline": 260,
+    "delta": 35
+  },
+  "typescript": { "command": "npx tsc --noEmit", "result": "PASS", "errors": 0 },
+  "production_build": {
+    "command": "npm run build",
+    "exit_code": 0,
+    "result": "PASS",
+    "unrelated_warnings": "MISSING_MESSAGE errors for blog.* i18n keys in the 'hi' locale -- pre-existing, unrelated to search, not touched by this stage"
+  },
+  "lint": {
+    "command": "npx eslint lib/searchRewrite.ts \"app/[locale]/(public)/search/page.tsx\" lib/__tests__/searchRewrite.test.ts",
+    "result": "BLOCKED_PRE_EXISTING_CONFIG_ISSUE",
+    "detail": "ESLint 9's flat-config loader rejects the repo's eslint.config.js (uses tseslint.config() with an 'extends: [\"next/core-web-vitals\"]' array, which typescript-eslint's config() helper does not support). This is a pre-existing repo-wide config problem, not introduced by or specific to Prompt 2B's changes. Per instructions, not fixed (out of scope: 'Lint 可运行一次，但不要修复已有配置问题')."
+  },
+  "guards_verified_regression_free": {
+    "guard1_empty_tokens_fail_closed": "PASS (existing Guard 2 decomposition tests + new Guard R1 tests both green)",
+    "guard2_subject_bound_decomposition": "PASS (all pre-existing 'Guard 2' describe-block tests green, unmodified)",
+    "guard3_structured_diagnostics": "PASS (rejected[] shape widened, all consuming tests updated and green)",
+    "guard4_safe_fallback": "PASS (original-query preservation test green; engine.cjs's baseResult is always populated before any rewrite path is considered)",
+    "guard5_cache_ttl_by_executable_path": "PASS (5 new Guard R + getMultiQueryPaths cache tests green, exercising negative/success TTL classification through Guard R's new accept/bind/reject paths)"
+  }
+}

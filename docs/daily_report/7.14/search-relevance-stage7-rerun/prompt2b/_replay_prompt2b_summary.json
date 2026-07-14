@@ -1,0 +1,15 @@
+{
+  "total": 26,
+  "blocked": 0,
+  "pass": 6,
+  "partial": 18,
+  "fail": 2,
+  "old_prompt3_ge1000": 5,
+  "new_prompt2b_ge1000": 4,
+  "old_prompt3_full_catalog": 0,
+  "new_prompt2b_full_catalog": 0,
+  "d23_old_ge1000": 5,
+  "d23_new_ge1000": 4,
+  "rewrite_anchor_guard_triggered_count": 12,
+  "gate_failure": null
+}
