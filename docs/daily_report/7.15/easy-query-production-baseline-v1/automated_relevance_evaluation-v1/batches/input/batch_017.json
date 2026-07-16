@@ -1,0 +1,919 @@
+[
+  {
+    "query_index": 321,
+    "source_row_number": "322",
+    "query_id": "E321",
+    "original_query": "拍照",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 29,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "photo portrait, photography tips, portrait retouching",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “拍照”. Also showing results for: photo portrait, photography tips, portrait retouching",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/321_E321_query.png",
+    "raw_response_path": "raw/321_E321.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en 1",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/portrait-retouching-blueprint/template-portrait-retouching-blueprint-en%201",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-portrait-retouching-blueprint-en%201-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "en%201"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "en 2",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/portrait-retouching-blueprint/template-portrait-retouching-blueprint-en%202",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-portrait-retouching-blueprint-en%202-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "en%202"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "en 3",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/portrait-retouching-blueprint/template-portrait-retouching-blueprint-en%203",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-portrait-retouching-blueprint-en%203-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "en%203"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "long hair women",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hairstyle-color-recommendation/template-hairstyle-color-recommendation-long-hair-women",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hairstyle-color-recommendation-long-hair-women-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hairstyle",
+          "color",
+          "recommendation",
+          "hairstyle",
+          "color",
+          "recommendation",
+          "long",
+          "hair",
+          "women"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "oval face men",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hairstyle-color-recommendation/template-hairstyle-color-recommendation-oval-face-men",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hairstyle-color-recommendation-oval-face-men-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hairstyle",
+          "color",
+          "recommendation",
+          "hairstyle",
+          "color",
+          "recommendation",
+          "oval",
+          "face",
+          "men"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 322,
+    "source_row_number": "323",
+    "query_id": "E322",
+    "original_query": "手工制作",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 28,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/322_E322_query.png",
+    "raw_response_path": "raw/322_E322.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "cricut svg upload guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/crafting-step-by-step-tutorial-infographic/template-crafting-step-by-step-tutorial-infographic-cricut-svg-upload-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-crafting-step-by-step-tutorial-infographic-cricut-svg-upload-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "crafting",
+          "step",
+          "by",
+          "step",
+          "tutorial",
+          "infographic",
+          "crafting",
+          "step",
+          "by",
+          "step",
+          "tutorial",
+          "infographic",
+          "cricut",
+          "svg",
+          "upload",
+          "guide"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "BAKING, subtitle MADE WITH LOVE, baking kitchen tools & pastry dessert clipart",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vintage-watercolor-hobby-sticker-sheet/template-vintage-watercolor-hobby-sticker-sheet-baking",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vintage-watercolor-hobby-sticker-sheet-baking-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vintage",
+          "watercolor",
+          "hobby",
+          "sticker",
+          "sheet",
+          "vintage",
+          "watercolor",
+          "hobby",
+          "sticker",
+          "sheet",
+          "baking"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "paper cutting",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/intangible-heritage/template-intangible-heritage-paper-cutting",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-intangible-heritage-zh-paper-cutting-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "intangible",
+          "heritage",
+          "intangible",
+          "heritage",
+          "paper",
+          "cutting"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "xian roujiamo",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-xian-roujiamo",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-xian-roujiamo-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "xian",
+          "roujiamo"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "taco",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-taco",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-en-taco-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "taco"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 323,
+    "source_row_number": "324",
+    "query_id": "E323",
+    "original_query": "旅行",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 33,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/323_E323_query.png",
+    "raw_response_path": "raw/323_E323.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "beijing",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/travel/template-travel-beijing",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "travel",
+          "travel",
+          "beijing"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "sanya",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/travel/template-travel-sanya",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-sanya-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "travel",
+          "travel",
+          "sanya"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "xian",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/travel/template-travel-xian",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-xian-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "travel",
+          "travel",
+          "xian"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "netherlands 01",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/series-travel/template-series-travel-netherlands-01",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-travel-netherlands-01-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "series",
+          "travel",
+          "series",
+          "travel",
+          "netherlands"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "netherlands 02",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/series-travel/template-series-travel-netherlands-02",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-travel-netherlands-02-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "series",
+          "travel",
+          "series",
+          "travel",
+          "netherlands"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 324,
+    "source_row_number": "325",
+    "query_id": "E324",
+    "original_query": "撸铁",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 33,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "fitness workout, strength training, weightlifting routine",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “撸铁”. Also showing results for: fitness workout, strength training, weightlifting routine",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/324_E324_query.png",
+    "raw_response_path": "raw/324_E324.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "male accelerated 4kg",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/fat-loss-plan/template-fat-loss-plan-male-accelerated-4kg",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-fat-loss-plan-male-accelerated-4kg-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "fat",
+          "loss",
+          "plan",
+          "fat",
+          "loss",
+          "plan",
+          "male",
+          "accelerated",
+          "4kg"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "gym",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/warmup-routine/template-warmup-routine-gym",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-warmup-routine-gym-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "warmup",
+          "routine",
+          "warmup",
+          "routine",
+          "gym"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "home workout plan",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/men-lifestyle-step-guide-infographic-poster/template-men-lifestyle-step-guide-infographic-poster-home-workout-plan",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-men-lifestyle-step-guide-infographic-poster-home-workout-plan-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "men",
+          "lifestyle",
+          "step",
+          "guide",
+          "infographic",
+          "poster",
+          "men",
+          "lifestyle",
+          "step",
+          "guide",
+          "infographic",
+          "poster",
+          "home",
+          "workout",
+          "plan"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "arm day",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/training-muscle-equipment/template-training-muscle-equipment-arm-day",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-training-muscle-equipment-arm-day-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "training",
+          "muscle",
+          "equipment",
+          "training",
+          "muscle",
+          "equipment",
+          "arm",
+          "day"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "training types",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/education-card/template-education-card-training-types",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-education-card-training-types-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "education",
+          "card",
+          "education",
+          "card",
+          "training",
+          "types"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 325,
+    "source_row_number": "326",
+    "query_id": "E325",
+    "original_query": "冥想",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "meditation practices, mindfulness techniques, relaxation methods",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “冥想”. Also showing results for: meditation practices, mindfulness techniques, relaxation methods",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/325_E325_query.png",
+    "raw_response_path": "raw/325_E325.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "yoga practice basics",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-yoga-practice-basics",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-yoga-practice-basics-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "info",
+          "card",
+          "lifestyle",
+          "info",
+          "card",
+          "yoga",
+          "practice",
+          "basics"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "yoga guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/education-card/template-education-card-yoga-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-education-card-yoga-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "education",
+          "card",
+          "education",
+          "card",
+          "yoga",
+          "guide"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "morning routine",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-morning-routine",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-morning-routine-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "info",
+          "card",
+          "lifestyle",
+          "info",
+          "card",
+          "morning",
+          "routine"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "honeysuckle",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/herbal/template-herbal-honeysuckle",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-herbal-zh-honeysuckle-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "herbal",
+          "herbal",
+          "honeysuckle"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "atractylodes macrocephala",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/herbal/template-herbal-atractylodes-macrocephala",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-herbal-zh-atractylodes-macrocephala-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "herbal",
+          "herbal",
+          "atractylodes",
+          "macrocephala"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 326,
+    "source_row_number": "327",
+    "query_id": "E326",
+    "original_query": "阅读",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 29,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/326_E326_query.png",
+    "raw_response_path": "raw/326_E326.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Indian Manned Space 3",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hotspot-card/template-hotspot-card-Indian-Manned-Space-3",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hotspot-card-zh-Indian-Manned-Space-3-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hotspot",
+          "card",
+          "hotspot",
+          "card",
+          "Indian",
+          "Manned",
+          "Space"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Indian anned Space 1",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hotspot-card/template-hotspot-card-Indian-anned-Space-1",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hotspot-card-zh-Indian-anned-Space-1-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hotspot",
+          "card",
+          "hotspot",
+          "card",
+          "Indian",
+          "anned",
+          "Space"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "asset hedge",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hotspot-card/template-hotspot-card-asset-hedge",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hotspot-card-zh-asset-hedge-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hotspot",
+          "card",
+          "hotspot",
+          "card",
+          "asset",
+          "hedge"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "am",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/CVC-english-word-coloring-flower-card/template-CVC-english-word-coloring-flower-card-am",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-CVC-english-word-coloring-flower-card-am-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "CVC",
+          "english",
+          "word",
+          "coloring",
+          "flower",
+          "card",
+          "CVC",
+          "english",
+          "word",
+          "coloring",
+          "flower",
+          "card",
+          "am"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "ap",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/CVC-english-word-coloring-flower-card/template-CVC-english-word-coloring-flower-card-ap",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-CVC-english-word-coloring-flower-card-ap-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "CVC",
+          "english",
+          "word",
+          "coloring",
+          "flower",
+          "card",
+          "CVC",
+          "english",
+          "word",
+          "coloring",
+          "flower",
+          "card",
+          "ap"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 327,
+    "source_row_number": "328",
+    "query_id": "E327",
+    "original_query": "烹饪",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 29,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/327_E327_query.png",
+    "raw_response_path": "raw/327_E327.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "bak kut teh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-bak-kut-teh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-bak-kut-teh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "bak",
+          "kut",
+          "teh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "guilin rice noodles",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-guilin-rice-noodles",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-guilin-rice-noodles-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "guilin",
+          "rice",
+          "noodles"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "italian pasta",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-italian-pasta",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-italian-pasta-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "italian",
+          "pasta"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "cheesy bacon burger bites",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/premium-recipe-card-infographic/template-premium-recipe-card-infographic-cheesy-bacon-burger-bites",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-premium-recipe-card-infographic-cheesy-bacon-burger-bites-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "premium",
+          "recipe",
+          "card",
+          "infographic",
+          "premium",
+          "recipe",
+          "card",
+          "infographic",
+          "cheesy",
+          "bacon",
+          "burger",
+          "bites"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "chocolate lava cake",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/premium-recipe-card-infographic/template-premium-recipe-card-infographic-chocolate-lava-cake",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-premium-recipe-card-infographic-chocolate-lava-cake-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "premium",
+          "recipe",
+          "card",
+          "infographic",
+          "premium",
+          "recipe",
+          "card",
+          "infographic",
+          "chocolate",
+          "lava",
+          "cake"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 328,
+    "source_row_number": "329",
+    "query_id": "E328",
+    "original_query": "野餐",
+    "detected_language": "zh",
+    "category": "action",
+    "query_type_input": "action",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "动作/行为词，描述用户想做什么，常驱动营销/教育类内容的组合扩展",
+    "result_count_observed": 10,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/328_E328_query.png",
+    "raw_response_path": "raw/328_E328.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "park",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-park",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-park-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "park"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "the park",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/english-dialogue-scene/template-english-dialogue-scene-at-the-park",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-dialogue-scene-at-the-park-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "english",
+          "dialogue",
+          "scene",
+          "english",
+          "dialogue",
+          "scene",
+          "at",
+          "the",
+          "park"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "spring meadow",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-photo-grid/template-lifestyle-photo-grid-spring-meadow",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-photo-grid-spring-meadow-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "photo",
+          "grid",
+          "lifestyle",
+          "photo",
+          "grid",
+          "spring",
+          "meadow"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "spring picnic",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/watercolor-theme-collage-illustration/template-watercolor-theme-collage-illustration-spring-picnic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-theme-collage-illustration-spring-picnic-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "watercolor",
+          "theme",
+          "collage",
+          "illustration",
+          "watercolor",
+          "theme",
+          "collage",
+          "illustration",
+          "spring",
+          "picnic"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "en-ja",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-english-japanese-park",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-english-japanese-park-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "english",
+          "japanese",
+          "park"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  }
+]

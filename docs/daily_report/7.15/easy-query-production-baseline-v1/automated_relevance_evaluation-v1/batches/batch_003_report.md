@@ -1,0 +1,26 @@
+# batch_003 report
+
+Queries: 20
+
+Label distribution: {'FAIL': 12, 'PASS': 4, 'PARTIAL': 4}
+
+- **E042** `金属` -> FAIL (score=0, conf=HIGH, drift=NONE) — [from Calibration Set] No rewrite triggered; results are NBA/Breaking Bad MBTI personality cards, zero connection to 'metal' material.
+- **E056** `塑料` -> FAIL (score=0, conf=LOW, drift=NONE) — [from Calibration Set] Zero result, confirmed true empty state via screenshot (no rendering glitch).
+- **E041** `彩虹` -> PASS (score=80, conf=MEDIUM, drift=NONE) — No rewrite. Three direct 'rainbow' hits (popular-science card, education card, rainbow vocab); general colors/shapes-colors vocab cards are color-adjacent.
+- **E043** `metal` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — Low-result(4), no rewrite. Same Breaking Bad MBTI series as the Chinese '金属' query - zero metal-material content.
+- **E044** `玻璃` -> FAIL (score=0, conf=MEDIUM, drift=SEVERE) — Rewrite explicitly said 'glass art, glass design, glassware' but results are Journey-to-the-West/Crayon Shin-chan character cards and a heritage-craft card; rank1's 'glass-and-stone' phrase is an incidental mention inside a corporate-layoff news graphic, not glass content.
+- **E045** `glass` -> PARTIAL (score=45, conf=MEDIUM, drift=NONE) — Low-result(4), no rewrite. Cocktail-recipe posters plausibly depict glassware as the serving vessel, but the poster's actual subject is the drink/spirit, not glass as a material.
+- **E046** `木头` -> FAIL (score=0, conf=MEDIUM, drift=SEVERE) — Low-result(4). Rewrite said 'wooden crafts, wooden decor, wooden furniture' but rank1 is a false match on footballer surname 'Chris Wood'; only the Three-Little-Pigs fairy tale (straw/wood/brick houses) is topically adjacent; ranks3-4 are generic mislabeled template tiles.
+- **E047** `wood` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — Low-result(4), no rewrite. Identical result set to '木头': a footballer-surname false match plus a fairy tale and generic template tiles - no wood-material content.
+- **E048** `陶瓷` -> PARTIAL (score=45, conf=MEDIUM, drift=NONE) — Low-result(4), no rewrite. 'IP creative cultural goods mockup set' plausibly includes ceramic figurine/mug mockups among the cultural merchandise shown, but no title explicitly confirms ceramic material.
+- **E049** `皮革` -> FAIL (score=0, conf=MEDIUM, drift=MODERATE) — Rewrite said 'leather design, leather fashion, leather goods'; the same generic 'cultural goods mockup' series (mascots, not confirmed leather items), a textile costume badge, a character portrait, and an unrelated portrait-retouching guide - no confirmed leather content.
+- **E050** `布料` -> PARTIAL (score=3, conf=MEDIUM, drift=MODERATE) — Rewrite said 'fabric design, textile patterns, material samples'; ranks3-4 are literally titled 'Material Specification'/'Material Design Spec' brand moodboards (plausible fabric/texture swatches), but rank1 (word-comparison poster), rank2 (football MBTI card), and rank5 (character portrait) are unrelated.
+- **E051** `纸` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — No rewrite. Results are architecture landmark cards and 'what-if history' cards - zero paper-material content for '纸'.
+- **E052** `paper` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — No rewrite. Same failure pattern as '纸': 'what-if history' cards and dog-breed cards, zero paper content - a consistent zh/en retrieval gap for this material.
+- **E053** `竹子` -> PASS (score=75, conf=MEDIUM, drift=MINOR) — Rewrite matched well: two Vietnam-handicraft cards and a Chikawa calendar card explicitly say 'bamboo' in the title; giant-panda cards are bamboo-adjacent (pandas are iconically shown eating bamboo) but panda is the primary subject.
+- **E054** `bamboo` -> PASS (score=58, conf=MEDIUM, drift=NONE) — No rewrite. Two Vietnam-handicraft cards are direct bamboo matches; giant-panda cards are bamboo-adjacent; a 'brass instrument village' card is a wrong-material false match within the same handicraft series.
+- **E055** `石材` -> PARTIAL (score=0, conf=MEDIUM, drift=SEVERE) — Rewrite said 'stone material, rock texture, granite design' but production repeatedly matched wrong senses of 'stone'/'rock': a movie titled 'Crazy Stone', an incidental 'glass-and-stone' phrase in a corporate-news graphic, and a music-genre 'rock star' card; only the two 'Material Specification' brand-moodboard cards are plausibly texture-relevant.
+- **E057** `丝绸` -> PASS (score=60, conf=MEDIUM, drift=NONE) — No rewrite. 'Thai silk sari' is a direct hit; Dunhuang (Silk Road hub) and Tang-Arab (Silk Road trade era) cards are historically silk-adjacent; the Uzbek 'atlas robe' references a genuine traditional silk-blend ikat fabric.
+- **E058** `羊毛` -> FAIL (score=0, conf=MEDIUM, drift=SEVERE) — Low-result(3). Rewrite said 'wool fabric, wool yarn, sheep wool' but matched only on the word 'sheep' via an ancient bronze ritual vessel ('four sheep square zun') - wrong material (bronze, not wool) despite the shared animal.
+- **E059** `大理石` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — No rewrite. Results are pet-food-safety cards (cat/duck/guinea pig) and 'old money aesthetic' regional-name cards - zero marble-material content.
+- **E060** `marble` -> FAIL (score=0, conf=MEDIUM, drift=NONE) — No rewrite. Identical result set to '大理石' - pet-food-safety and old-money-aesthetic cards, zero marble content; a consistent zh/en failure pair.

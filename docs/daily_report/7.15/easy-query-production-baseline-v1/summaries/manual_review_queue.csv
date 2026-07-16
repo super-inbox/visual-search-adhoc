@@ -1,0 +1,177 @@
+priority,query_index,query_id,original_query,category,final_status,result_count_observed,query_broadened,broadened_query,reason
+P0,56,E056,塑料,material,ZERO_RESULT,0,False,,zero_result
+P0,63,E063,混凝土,material,ZERO_RESULT,0,False,,zero_result
+P0,68,E068,cork,material,ZERO_RESULT,0,False,,zero_result
+P0,70,E070,velvet,material,ZERO_RESULT,0,False,,zero_result
+P0,92,E092,扁平化,style,ZERO_RESULT,0,False,,zero_result
+P0,102,E102,中古,style,ZERO_RESULT,0,False,,zero_result
+P0,156,E156,房地产,industry,ZERO_RESULT,0,False,,zero_result
+P0,168,E168,3C数码,industry,ZERO_RESULT,0,False,,zero_result
+P0,175,E175,二手交易,industry,ZERO_RESULT,0,False,,zero_result
+P0,202,E202,展架,format,ZERO_RESULT,0,False,,zero_result
+P0,290,E290,保健品,product_category,ZERO_RESULT,0,False,,zero_result
+P0,318,E318,预售,action,ZERO_RESULT,0,False,,zero_result
+P1,1,E001,鲜花,object,SUCCESS,7,True,"bouquet, flower arrangement, cherry blossom",query_broadened_by_production
+P1,8,E008,咖啡杯,object,LOW_RESULT,2,True,"coffee mug, coffee cup design, ceramic coffee cup",low_result
+P1,9,E009,蜡烛,object,LOW_RESULT,4,False,,low_result
+P1,10,E010,candle,object,LOW_RESULT,2,True,"scented candle, aromatherapy candle, decorative candle",low_result
+P1,12,E012,眼镜,object,LOW_RESULT,4,False,,low_result
+P1,13,E013,背包,object,LOW_RESULT,2,True,"backpack design, travel backpack, backpack accessories",low_result
+P1,14,E014,雨伞,object,LOW_RESULT,2,True,"umbrella design, rainy day accessories, weather protection gear",low_result
+P1,16,E016,钢笔,object,LOW_RESULT,4,False,,low_result
+P1,17,E017,地球仪,object,SUCCESS,36,True,"globe map, world globe, geographic globe",query_broadened_by_production
+P1,18,E018,台灯,object,SUCCESS,36,True,"table lamp design, home decor lighting, interior mood lighting",query_broadened_by_production
+P1,19,E019,镜子,object,SUCCESS,36,True,"mirror design, decorative mirror, vanity mirror",query_broadened_by_production
+P1,20,E020,花瓶,object,LOW_RESULT,2,True,"vase design, ceramic vase, flower vase",low_result
+P1,22,E022,耳机,object,LOW_RESULT,4,True,"headphones, earphone design, audio accessories",low_result
+P1,24,E024,相框,object,SUCCESS,31,True,"picture frame, photo frame design, decorative frame",query_broadened_by_production
+P1,27,E027,围巾,object,SUCCESS,5,True,"scarf design, fashion scarf, winter accessories",query_broadened_by_production
+P1,28,E028,handbag,object,SUCCESS,36,True,"fashion handbag design, handbag collection, stylish purse",query_broadened_by_production
+P1,29,E029,teddy bear,object,SUCCESS,36,True,"teddy bear illustration, cute teddy bear design, teddy bear character",query_broadened_by_production
+P1,30,E030,风筝,object,SUCCESS,36,True,"kites, kite designs, kite festival",query_broadened_by_production
+P1,31,E031,气球,object,SUCCESS,22,True,"balloon decoration, party balloons, colorful balloons",query_broadened_by_production
+P1,34,E034,贝壳,object,SUCCESS,32,True,"seashells, shell collection, marine shells",query_broadened_by_production
+P1,35,E035,石头,object,SUCCESS,9,True,"rock illustration, stone art, geological poster",query_broadened_by_production
+P1,36,E036,树叶,object,SUCCESS,25,True,"leaf illustrations, botanical art, tree foliage",query_broadened_by_production
+P1,37,E037,云朵,object,SUCCESS,36,True,"cloud illustrations, watercolor clouds, aesthetic cloud art",query_broadened_by_production
+P1,39,E039,月亮,object,SUCCESS,36,True,"moon illustration, lunar aesthetic, night sky poster",query_broadened_by_production
+P1,43,E043,metal,material,LOW_RESULT,4,False,,low_result
+P1,44,E044,玻璃,material,SUCCESS,34,True,"glass art, glass design, glassware",query_broadened_by_production
+P1,45,E045,glass,material,LOW_RESULT,4,False,,low_result
+P1,46,E046,木头,material,LOW_RESULT,4,True,"wooden crafts, wooden decor, wooden furniture",low_result
+P1,47,E047,wood,material,LOW_RESULT,4,False,,low_result
+P1,48,E048,陶瓷,material,LOW_RESULT,4,False,,low_result
+P1,49,E049,皮革,material,SUCCESS,36,True,"leather design, leather fashion, leather goods",query_broadened_by_production
+P1,50,E050,布料,material,SUCCESS,36,True,"fabric design, textile patterns, material samples",query_broadened_by_production
+P1,53,E053,竹子,material,SUCCESS,9,True,"bamboo illustration, bamboo plant design, bamboo decor",query_broadened_by_production
+P1,55,E055,石材,material,SUCCESS,36,True,"stone material, rock texture, granite design",query_broadened_by_production
+P1,58,E058,羊毛,material,LOW_RESULT,3,True,"wool fabric, wool yarn, sheep wool",low_result
+P1,61,E061,黄铜,material,SUCCESS,5,True,"brass artifact, brass decoration, brass object",query_broadened_by_production
+P1,62,E062,藤编,material,SUCCESS,27,True,"woven crafts, rattan weaving, handmade baskets",query_broadened_by_production
+P1,64,E064,亚克力,material,LOW_RESULT,4,False,,low_result
+P1,65,E065,珍珠,material,SUCCESS,10,True,"pearl jewelry, pearl design, pearl accessories",query_broadened_by_production
+P1,66,E066,水晶,material,SUCCESS,36,True,"crystal decor, crystal jewelry, crystal art",query_broadened_by_production
+P1,67,E067,棉麻,material,SUCCESS,8,True,"linen cotton fabric, cotton linen blend, textile materials",query_broadened_by_production
+P1,69,E069,denim,material,SUCCESS,36,True,"denim fashion, denim style infographic, denim clothing guide",query_broadened_by_production
+P1,71,E071,terrazzo,material,SUCCESS,36,True,"terrazzo design, terrazzo patterns, terrazzo home decor",query_broadened_by_production
+P1,77,E077,日系,style,SUCCESS,36,True,"Japanese style, Japan aesthetic, Japanese design",query_broadened_by_production
+P1,78,E078,北欧,style,SUCCESS,36,True,"Nordic culture infographic, Scandinavian travel poster, Nordic cuisine vocabulary",query_broadened_by_production
+P1,79,E079,Scandinavian,style,SUCCESS,36,True,"Scandinavian culture infographic, Scandinavian design poster, Scandinavian travel guide",query_broadened_by_production
+P1,80,E080,波西米亚,style,LOW_RESULT,4,True,"bohemian style, bohemian lifestyle, bohemian decor",low_result
+P1,81,E081,bohemian,style,LOW_RESULT,2,True,"bohemian lifestyle, bohemian fashion, bohemian decor",low_result
+P1,82,E082,工业风,style,SUCCESS,29,True,"industrial style design, industrial decor templates, industrial aesthetic",query_broadened_by_production
+P1,85,E085,未来感,style,SUCCESS,36,True,"futuristic design, futuristic aesthetic, future-themed visuals",query_broadened_by_production
+P1,86,E086,赛博朋克,style,LOW_RESULT,4,False,,low_result
+P1,87,E087,cyberpunk,style,LOW_RESULT,4,False,,low_result
+P1,96,E096,极繁,style,SUCCESS,35,True,"maximalist design, maximalist style, maximalist aesthetic",query_broadened_by_production
+P1,97,E097,侘寂,style,SUCCESS,36,True,"wabi-sabi aesthetic, wabi-sabi design, wabi-sabi philosophy",query_broadened_by_production
+P1,98,E098,wabi-sabi,style,SUCCESS,36,True,"wabi-sabi aesthetic, wabi-sabi design, wabi-sabi philosophy",query_broadened_by_production
+P1,100,E100,美式,style,LOW_RESULT,1,False,,low_result
+P1,101,E101,韩系,style,SUCCESS,36,True,"Korean style fashion, Korean aesthetic, Korean culture",query_broadened_by_production
+P1,103,E103,童趣,style,SUCCESS,36,True,"childlike fun, playful childhood, whimsical play",query_broadened_by_production
+P1,106,E106,暗黑,style,SUCCESS,10,True,"dark fantasy, dark aesthetic, dark themes",query_broadened_by_production
+P1,109,E109,cottagecore,style,LOW_RESULT,4,False,,low_result
+P1,110,E110,dark academia,style,LOW_RESULT,4,False,,low_result
+P1,118,E118,生日派对,scene,SUCCESS,36,True,"birthday party celebration, birthday party vocabulary, birthday celebration poster",query_broadened_by_production
+P1,125,E125,山间,scene,SUCCESS,36,True,"mountain scenery, mountain landscape, nature in the mountains",query_broadened_by_production
+P1,128,E128,市集,scene,SUCCESS,36,True,"market poster, local market guide, city market infographic",query_broadened_by_production
+P1,130,E130,演唱会,scene,SUCCESS,36,True,"concert poster, live performance infographic, music event design",query_broadened_by_production
+P1,132,E132,游乐园,scene,SUCCESS,17,True,"amusement park poster, theme park travel guide, funfair attractions",query_broadened_by_production
+P1,137,E137,校园,scene,LOW_RESULT,4,False,,low_result
+P1,139,E139,夜市,scene,SUCCESS,36,True,"night market poster, street food culture, night market travel guide",query_broadened_by_production
+P1,140,E140,阳台,scene,SUCCESS,36,True,"balcony decor, outdoor living space, terrace design",query_broadened_by_production
+P1,141,E141,书房,scene,SUCCESS,36,True,"home office decor, study room design, workspace inspiration",query_broadened_by_production
+P1,142,E142,温室,scene,SUCCESS,36,True,"greenhouse design, botanical greenhouse, plant care greenhouse",query_broadened_by_production
+P1,143,E143,便利店,scene,SUCCESS,12,True,"convenience store infographic, convenience store culture, convenience store vocabulary",query_broadened_by_production
+P1,144,E144,茶馆,scene,LOW_RESULT,3,True,"tea house poster, Chinese tea culture, tea shop illustration",low_result
+P1,145,E145,寺庙,scene,LOW_RESULT,4,True,"temple architecture, Buddhist temple, cultural heritage site",low_result
+P1,146,E146,湖畔,scene,SUCCESS,36,True,"lakefront travel poster, watercolor lakeside, scenic lake view",query_broadened_by_production
+P1,154,E154,母婴,industry,SUCCESS,7,True,"mother and baby care, parenting resources, infant care tips",query_broadened_by_production
+P1,161,E161,教育培训,industry,LOW_RESULT,4,False,,low_result
+P1,162,E162,医疗健康,industry,SUCCESS,33,True,"healthcare infographic, medical wellness poster, health and wellness guide",query_broadened_by_production
+P1,173,E173,花艺,industry,SUCCESS,33,True,"floral design, flower arrangement, flower art",query_broadened_by_production
+P1,176,E176,物流,industry,LOW_RESULT,2,False,,low_result
+P1,177,E177,美发美甲,industry,LOW_RESULT,4,True,"hair and nail design, hair styling and manicure, beauty salon services",low_result
+P1,180,E180,茶饮,industry,LOW_RESULT,4,False,,low_result
+P1,181,E181,香氛,industry,SUCCESS,36,True,"aromatherapy products, scented candles, home fragrance",query_broadened_by_production
+P1,187,E187,信封,format,SUCCESS,23,True,"envelope design, stationery template, letter envelope",query_broadened_by_production
+P1,188,E188,明信片,format,LOW_RESULT,4,False,,low_result
+P1,192,E192,包装盒,format,SUCCESS,36,True,"packaging design, box design templates, gift box illustration",query_broadened_by_production
+P1,194,E194,手提袋,format,SUCCESS,36,True,"tote bag design, handbag illustration, shopping bag template",query_broadened_by_production
+P1,196,E196,台历,format,SUCCESS,32,True,"calendar design, desk calendar, monthly planner",query_broadened_by_production
+P1,197,E197,书签,format,SUCCESS,36,True,"bookmark design, literary bookmark, custom bookmarks",query_broadened_by_production
+P1,203,E203,折页,format,SUCCESS,36,True,"brochure design, folded leaflet, pamphlet template",query_broadened_by_production
+P1,208,E208,avatar,format,SUCCESS,24,True,"Avatar movie poster, Avatar character profiles, Avatar world infographic",query_broadened_by_production
+P1,209,E209,壁纸,format,LOW_RESULT,4,False,,low_result
+P1,212,E212,手账,format,SUCCESS,36,True,"bullet journal templates, planner design, scrapbook layout",query_broadened_by_production
+P1,223,E223,上班族,audience,SUCCESS,36,True,"office worker character, corporate lifestyle poster, professional life infographic",query_broadened_by_production
+P1,224,E224,老年人,audience,SUCCESS,36,True,"elderly care templates, senior lifestyle infographic, aging population resources",query_broadened_by_production
+P1,225,E225,新手妈妈,audience,SUCCESS,36,True,"new mom resources, first-time mother guide, parenting tips for beginners",query_broadened_by_production
+P1,227,E227,大学生,audience,SUCCESS,36,True,"college student poster, university life infographic, student lifestyle card",query_broadened_by_production
+P1,228,E228,自由职业者,audience,SUCCESS,36,True,"freelancer poster, freelance lifestyle infographic, freelancer character card",query_broadened_by_production
+P1,230,E230,teacher,audience,SUCCESS,36,True,"teacher vocabulary, education infographic, classroom poster",query_broadened_by_production
+P1,232,E232,健身爱好者,audience,SUCCESS,36,True,"fitness enthusiast poster, workout lifestyle infographic, fitness motivation card",query_broadened_by_production
+P1,238,E238,二次元爱好者,audience,LOW_RESULT,4,False,,low_result
+P1,239,E239,素食者,audience,SUCCESS,36,True,"vegetarian food vocabulary, vegan lifestyle infographic, plant-based diet poster",query_broadened_by_production
+P1,240,E240,新婚夫妇,audience,SUCCESS,36,True,"newlywed couple poster, wedding celebration infographic, marriage vocabulary cards",query_broadened_by_production
+P1,242,E242,家庭主妇,audience,SUCCESS,36,True,"housewife lifestyle, family roles infographic, domestic life poster",query_broadened_by_production
+P1,243,E243,创业者,audience,SUCCESS,8,True,"entrepreneur profile, startup founder infographic, business leader character",query_broadened_by_production
+P1,244,E244,留学生,audience,SUCCESS,36,True,"international student poster, study abroad infographic, foreign student culture",query_broadened_by_production
+P1,245,E245,宝妈,audience,SUCCESS,36,True,"motherhood lifestyle, parenting tips, mom life",query_broadened_by_production
+P1,246,E246,猫奴,audience,LOW_RESULT,4,False,,low_result
+P1,248,E248,中秋节,festival,SUCCESS,36,True,"Mid-Autumn Festival poster, Moon Festival infographic, Chinese cultural celebration",query_broadened_by_production
+P1,249,E249,端午节,festival,SUCCESS,36,True,"Dragon Boat Festival infographic, Duanwu Festival culture poster, 端午节 traditions",query_broadened_by_production
+P1,250,E250,圣诞节,festival,SUCCESS,36,True,"Christmas celebration poster, Christmas vocabulary cards, holiday traditions infographic",query_broadened_by_production
+P1,252,E252,万圣节,festival,SUCCESS,36,True,"Halloween celebration poster, Halloween vocabulary cards, Halloween themed infographic",query_broadened_by_production
+P1,253,E253,halloween,festival,SUCCESS,36,True,"halloween celebration poster, halloween party ideas, halloween decorations infographic",query_broadened_by_production
+P1,255,E255,母亲节,festival,SUCCESS,36,True,"Mother's Day celebration poster, Mother's Day vocabulary, Mother's Day infographic",query_broadened_by_production
+P1,256,E256,父亲节,festival,SUCCESS,36,True,"Father's Day celebration, Father's Day vocabulary, Father's Day poster",query_broadened_by_production
+P1,257,E257,感恩节,festival,SUCCESS,36,True,"Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving traditions infographic",query_broadened_by_production
+P1,258,E258,thanksgiving,festival,SUCCESS,36,True,"Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving food infographic",query_broadened_by_production
+P1,259,E259,复活节,festival,SUCCESS,36,True,"Easter celebration poster, Easter traditions infographic, Easter vocabulary cards",query_broadened_by_production
+P1,260,E260,元宵节,festival,SUCCESS,30,True,"Lantern Festival poster, Yuan Xiao Jie celebration, Chinese Lantern Festival",query_broadened_by_production
+P1,261,E261,七夕,festival,SUCCESS,34,True,"Qixi Festival poster, Chinese Valentine's Day infographic, Qixi cultural celebration",query_broadened_by_production
+P1,262,E262,儿童节,festival,SUCCESS,36,True,"Children's Day celebration, kids festival poster, children's holiday infographic",query_broadened_by_production
+P1,263,E263,教师节,festival,SUCCESS,36,True,"Teacher's Day celebration, Teacher's Day poster, Teacher appreciation infographic",query_broadened_by_production
+P1,264,E264,国庆节,festival,SUCCESS,36,True,"National Day celebration poster, China National Day infographic, Chinese holiday traditions",query_broadened_by_production
+P1,265,E265,双十一,festival,SUCCESS,36,True,"Double Eleven shopping, Singles' Day celebration, China shopping festival",query_broadened_by_production
+P1,266,E266,black friday,festival,SUCCESS,35,True,"Black Friday deals, Black Friday shopping, holiday sales",query_broadened_by_production
+P1,268,E268,光棍节,festival,SUCCESS,36,True,"Singles' Day celebration, 光棍节 cultural poster, Singles' Day infographic",query_broadened_by_production
+P1,269,E269,冬至,festival,SUCCESS,36,True,"winter solstice celebration, winter festival traditions, winter seasonal infographic",query_broadened_by_production
+P1,270,E270,光明节,festival,SUCCESS,36,True,"Diwali festival poster, Festival of Lights infographic, Diwali cultural celebration",query_broadened_by_production
+P1,271,E271,香水,product_category,SUCCESS,36,True,"fragrance design, perfume variety, scented products",query_broadened_by_production
+P1,272,E272,perfume,product_category,SUCCESS,36,True,"scented perfume infographic, fragrance poster, perfume design",query_broadened_by_production
+P1,273,E273,茶叶,product_category,SUCCESS,11,True,"tea leaves, tea varieties, tea culture",query_broadened_by_production
+P1,274,E274,咖啡豆,product_category,SUCCESS,12,True,"coffee beans, coffee varieties, coffee brewing methods",query_broadened_by_production
+P1,275,E275,巧克力,product_category,SUCCESS,8,True,"chocolate dessert, chocolate recipes, chocolate vocabulary",query_broadened_by_production
+P1,277,E277,skincare,product_category,LOW_RESULT,3,False,,low_result
+P1,278,E278,口红,product_category,SUCCESS,36,True,"lipstick designs, cosmetic products, makeup essentials",query_broadened_by_production
+P1,279,E279,首饰,product_category,SUCCESS,12,True,"jewelry design, accessory collection, fashion jewelry",query_broadened_by_production
+P1,281,E281,包包,product_category,SUCCESS,36,True,"handbag design, purse collection, fashion accessories",query_broadened_by_production
+P1,283,E283,童装,product_category,LOW_RESULT,4,True,"children's fashion, kids clothing, children's apparel",low_result
+P1,284,E284,家纺,product_category,SUCCESS,36,True,"home textile design, bedding decor, fabric patterns",query_broadened_by_production
+P1,285,E285,厨具,product_category,SUCCESS,36,True,"kitchen utensils, cooking tools, kitchenware",query_broadened_by_production
+P1,293,E293,乳制品,product_category,SUCCESS,35,True,"dairy products vocabulary, milk and cheese infographic, dairy food guide",query_broadened_by_production
+P1,294,E294,调味品,product_category,SUCCESS,9,True,"spice vocabulary, seasoning infographic, cooking ingredients poster",query_broadened_by_production
+P1,295,E295,花束,product_category,SUCCESS,36,True,"bouquet, flower arrangement, wedding bouquet",query_broadened_by_production
+P1,296,E296,盆栽,product_category,LOW_RESULT,4,False,,low_result
+P1,297,E297,香薰机,product_category,LOW_RESULT,2,True,"aromatherapy diffuser, essential oil diffuser, scented oil machine",low_result
+P1,298,E298,沙发家具,product_category,SUCCESS,36,True,"sofa furniture design, living room furniture, home decor sofa",query_broadened_by_production
+P1,299,E299,灯具,product_category,SUCCESS,36,True,"lighting design, lamp decor, interior lighting",query_broadened_by_production
+P1,300,E300,地毯,product_category,SUCCESS,25,True,"carpet design, rug patterns, home decor carpet",query_broadened_by_production
+P1,301,E301,窗帘,product_category,LOW_RESULT,2,True,"curtain design, window treatment, home decor curtains",low_result
+P1,302,E302,化妆刷,product_category,SUCCESS,36,True,"makeup brush design, cosmetic brush set, beauty tools",query_broadened_by_production
+P1,303,E303,护发产品,product_category,SUCCESS,36,True,"hair care products, hair treatment essentials, hair health items",query_broadened_by_production
+P1,304,E304,婴儿用品,product_category,LOW_RESULT,2,True,"baby products, infant care items, baby essentials",low_result
+P1,310,E310,打卡,action,SUCCESS,36,True,"check-in templates, daily routine tracker, social media check-in",query_broadened_by_production
+P1,312,E312,种草,action,LOW_RESULT,4,False,,low_result
+P1,313,E313,促销,action,LOW_RESULT,4,False,,low_result
+P1,314,E314,招募,action,SUCCESS,36,True,"recruitment poster, hiring infographic, job vacancy announcement",query_broadened_by_production
+P1,315,E315,招聘,action,SUCCESS,35,True,"job recruitment poster, hiring infographic, employment opportunities",query_broadened_by_production
+P1,316,E316,开业,action,SUCCESS,36,True,"business opening poster, grand opening celebration, store launch infographic",query_broadened_by_production
+P1,317,E317,打折,action,SUCCESS,36,True,"discount vocabulary, sale infographic, shopping deals",query_broadened_by_production
+P1,319,E319,众筹,action,LOW_RESULT,4,False,,low_result
+P1,320,E320,直播,action,SUCCESS,11,True,"live streaming templates, live broadcast design, streaming content poster",query_broadened_by_production
+P1,321,E321,拍照,action,SUCCESS,29,True,"photo portrait, photography tips, portrait retouching",query_broadened_by_production
+P1,324,E324,撸铁,action,SUCCESS,33,True,"fitness workout, strength training, weightlifting routine",query_broadened_by_production
+P1,325,E325,冥想,action,SUCCESS,36,True,"meditation practices, mindfulness techniques, relaxation methods",query_broadened_by_production

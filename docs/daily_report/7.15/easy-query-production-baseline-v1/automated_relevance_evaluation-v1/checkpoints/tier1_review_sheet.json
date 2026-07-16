@@ -1,0 +1,3940 @@
+[
+ {
+  "query_index": 20,
+  "query_id": "E020",
+  "original_query": "花瓶",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "vase design, ceramic vase, flower vase",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Ming vase as coffee shop barista",
+    "slug": [
+     "example",
+     "modernized",
+     "artifact",
+     "poster",
+     "modernized",
+     "artifact",
+     "poster",
+     "ming",
+     "vase",
+     "coffee",
+     "barista"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Modernized Artifact Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "modernized",
+     "artifact",
+     "poster"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 22,
+  "query_id": "E022",
+  "original_query": "耳机",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "headphones, earphone design, audio accessories",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "headphones 2",
+    "slug": [
+     "example",
+     "fashion",
+     "ecommerce",
+     "fashion",
+     "ecommerce",
+     "headphones"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "anc wireless earbuds",
+    "slug": [
+     "example",
+     "amazon",
+     "long",
+     "scroll",
+     "product",
+     "infographic",
+     "amazon",
+     "long",
+     "scroll",
+     "product",
+     "infographic",
+     "anc",
+     "wireless",
+     "earbuds"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Amazon Long-Scroll Product Infographic",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "amazon",
+     "long",
+     "scroll",
+     "product",
+     "infographic"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "Amazon Long-Scroll Product Infographic",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "fashion",
+     "ecommerce"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 25,
+  "query_id": "E025",
+  "original_query": "沙发",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "living room",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "living",
+     "room"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "living room",
+    "slug": [
+     "example",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "living",
+     "room"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "living room",
+    "slug": [
+     "example",
+     "room",
+     "vocabulary",
+     "infographic",
+     "room",
+     "vocabulary",
+     "infographic",
+     "living",
+     "room"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "furniture",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "en-ko",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "english",
+     "korean",
+     "living",
+     "room"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 27,
+  "query_id": "E027",
+  "original_query": "围巾",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "scarf design, fashion scarf, winter accessories",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Japan fan look — headband + scarf + casual denim + knee socks",
+    "slug": [
+     "example",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "japan",
+     "scarf"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Japan fan look — Adidas cap + Samurai Blue crop top + black shorts",
+    "slug": [
+     "example",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "japan",
+     "cap"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "scarf",
+    "slug": [
+     "example",
+     "fashion",
+     "ecommerce",
+     "fashion",
+     "ecommerce",
+     "scarf"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "World Cup Fan Outfit Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "wc",
+     "fan",
+     "outfit",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 5,
+    "title": "World Cup Fan Outfit Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "fashion",
+     "ecommerce"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 37,
+  "query_id": "E037",
+  "original_query": "云朵",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "cloud illustrations, watercolor clouds, aesthetic cloud art",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "cloudy",
+    "slug": [
+     "example",
+     "weather",
+     "education",
+     "infographic",
+     "weather",
+     "education",
+     "infographic",
+     "cloudy"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Types of Clouds",
+    "slug": [
+     "example",
+     "education",
+     "education",
+     "weather",
+     "clouds"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "rain",
+    "slug": [
+     "example",
+     "weather",
+     "education",
+     "infographic",
+     "weather",
+     "education",
+     "infographic",
+     "rain"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "clouds",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "storms",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 39,
+  "query_id": "E039",
+  "original_query": "月亮",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "moon illustration, lunar aesthetic, night sky poster",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "moon",
+     "phases",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "marvel moonknight",
+    "slug": [
+     "example",
+     "mbti",
+     "marvel",
+     "mbti",
+     "marvel",
+     "marvel",
+     "moonknight"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "maple bridge night mooring",
+    "slug": [
+     "example",
+     "poetry",
+     "ink",
+     "wash",
+     "illustration",
+     "poetry",
+     "ink",
+     "wash",
+     "illustration",
+     "maple",
+     "bridge",
+     "night",
+     "mooring"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "moon",
+    "slug": [
+     "example",
+     "space",
+     "planet",
+     "fact",
+     "infographic",
+     "space",
+     "planet",
+     "fact",
+     "infographic",
+     "moon"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "constellations",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 53,
+  "query_id": "E053",
+  "original_query": "竹子",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "bamboo illustration, bamboo plant design, bamboo decor",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "july star bamboo",
+    "slug": [
+     "example",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "july",
+     "star",
+     "bamboo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "giant panda",
+    "slug": [
+     "example",
+     "species",
+     "species",
+     "giant",
+     "panda"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "giant panda",
+    "slug": [
+     "example",
+     "species",
+     "science",
+     "species",
+     "science",
+     "giant",
+     "panda"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "bamboo fish trap village",
+    "slug": [
+     "example",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "bamboo",
+     "fish",
+     "trap",
+     "village"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "bamboo lacquer village",
+    "slug": [
+     "example",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "bamboo",
+     "lacquer",
+     "village"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 56,
+  "query_id": "E056",
+  "original_query": "塑料",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 61,
+  "query_id": "E061",
+  "original_query": "黄铜",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "brass artifact, brass decoration, brass object",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "brass musical instrument village",
+    "slug": [
+     "example",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "brass",
+     "musical",
+     "instrument",
+     "village"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "string brass orchestra",
+    "slug": [
+     "example",
+     "vintage",
+     "musical",
+     "instrument",
+     "technical",
+     "illustration",
+     "poster",
+     "vintage",
+     "musical",
+     "instrument",
+     "technical",
+     "illustration",
+     "poster",
+     "string",
+     "brass",
+     "orchestra"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Phạm Pháo铜管乐器手工村落3D写实文创宣传展板",
+    "slug": [
+     "example",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster",
+     "brass",
+     "instrument",
+     "village"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "Vintage Musical Instrument Technical Illustration Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "vintage",
+     "musical",
+     "instrument",
+     "technical",
+     "illustration",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 5,
+    "title": "Vintage Musical Instrument Technical Illustration Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "vietnam",
+     "traditional",
+     "handicraft",
+     "village",
+     "curved",
+     "wave",
+     "art",
+     "poster"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 63,
+  "query_id": "E063",
+  "original_query": "混凝土",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 68,
+  "query_id": "E068",
+  "original_query": "cork",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 69,
+  "query_id": "E069",
+  "original_query": "denim",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "denim fashion, denim style infographic, denim clothing guide",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "jeans",
+    "slug": [
+     "example",
+     "fashion",
+     "ecommerce",
+     "fashion",
+     "ecommerce",
+     "jeans"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Denim through the decades — 1880s workwear / 1950s rock-n-roll / 1970s flares / 1990s baggy / 2000s low-rise / 2020s wide-leg",
+    "slug": [
+     "example",
+     "evolution",
+     "timeline",
+     "infographic",
+     "evolution",
+     "timeline",
+     "infographic",
+     "denim",
+     "decades",
+     "evolution"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "denim chic stella mccartney",
+    "slug": [
+     "example",
+     "vintage",
+     "collage",
+     "fashion",
+     "collection",
+     "poster",
+     "vintage",
+     "collage",
+     "fashion",
+     "collection",
+     "poster",
+     "denim",
+     "chic",
+     "stella",
+     "mccartney"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "casual denim",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "casual",
+     "denim"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "Japan fan look — headband + scarf + casual denim + knee socks",
+    "slug": [
+     "example",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "wc",
+     "fan",
+     "outfit",
+     "poster",
+     "japan",
+     "scarf"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 70,
+  "query_id": "E070",
+  "original_query": "velvet",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 77,
+  "query_id": "E077",
+  "original_query": "日系",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "Japanese style, Japan aesthetic, Japanese design",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "osaka",
+    "slug": [
+     "example",
+     "travel",
+     "travel",
+     "osaka"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "japanese",
+    "slug": [
+     "example",
+     "clothing",
+     "evolution",
+     "poster",
+     "clothing",
+     "evolution",
+     "poster",
+     "japanese"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Fruits",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "english",
+     "japanese",
+     "fruits"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "寿司職人 (Sushi Chef)",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "english",
+     "japanese",
+     "sushi",
+     "chef"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "made in japan",
+    "slug": [
+     "example",
+     "national",
+     "theme",
+     "map",
+     "infographic",
+     "national",
+     "theme",
+     "map",
+     "infographic",
+     "made",
+     "in",
+     "japan"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 80,
+  "query_id": "E080",
+  "original_query": "波西米亚",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "bohemian style, bohemian lifestyle, bohemian decor",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "bohemian wabi sabi bedroom",
+    "slug": [
+     "example",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "bohemian",
+     "wabi",
+     "sabi",
+     "bedroom"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "bohemian",
+    "slug": [
+     "example",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic",
+     "bohemian"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Interior Soft Decoration Guides",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "soft",
+     "decoration",
+     "design",
+     "guide"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "Interior Soft Decoration Guides",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 81,
+  "query_id": "E081",
+  "original_query": "bohemian",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "bohemian lifestyle, bohemian fashion, bohemian decor",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "bohemian",
+    "slug": [
+     "example",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic",
+     "bohemian"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Fashion Infographic",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "fashion",
+     "style",
+     "outfit",
+     "breakdown",
+     "infographic"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 92,
+  "query_id": "E092",
+  "original_query": "扁平化",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 101,
+  "query_id": "E101",
+  "original_query": "韩系",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "Korean style fashion, Korean aesthetic, Korean culture",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "korean hanbok mens",
+    "slug": [
+     "example",
+     "costume",
+     "costume",
+     "korean",
+     "hanbok",
+     "mens"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "korean hanbok choson ot",
+    "slug": [
+     "example",
+     "costume",
+     "costume",
+     "korean",
+     "hanbok",
+     "choson",
+     "ot"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "korean",
+    "slug": [
+     "example",
+     "clothing",
+     "evolution",
+     "poster",
+     "clothing",
+     "evolution",
+     "poster",
+     "korean"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "korean design student male",
+    "slug": [
+     "example",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "korean",
+     "design",
+     "student",
+     "male"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "seoul",
+    "slug": [
+     "example",
+     "travel",
+     "travel",
+     "seoul"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 102,
+  "query_id": "E102",
+  "original_query": "中古",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 116,
+  "query_id": "E116",
+  "original_query": "婚礼",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "han dynasty female wedding",
+    "slug": [
+     "example",
+     "costume",
+     "costume",
+     "han",
+     "dynasty",
+     "female",
+     "wedding"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "han dynasty male wedding",
+    "slug": [
+     "example",
+     "costume",
+     "costume",
+     "han",
+     "dynasty",
+     "male",
+     "wedding"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "tang dynasty female wedding",
+    "slug": [
+     "example",
+     "costume",
+     "costume",
+     "tang",
+     "dynasty",
+     "female",
+     "wedding"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "bridal hairstyle",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "bridal",
+     "hairstyle"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "wedding dress",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "wedding",
+     "dress"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 125,
+  "query_id": "E125",
+  "original_query": "山间",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "mountain scenery, mountain landscape, nature in the mountains",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "mountain walk",
+    "slug": [
+     "example",
+     "poetry",
+     "ink",
+     "wash",
+     "illustration",
+     "poetry",
+     "ink",
+     "wash",
+     "illustration",
+     "mountain",
+     "walk"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "7day snow mountain",
+    "slug": [
+     "example",
+     "travel",
+     "packing",
+     "guide",
+     "infographic",
+     "travel",
+     "packing",
+     "guide",
+     "infographic",
+     "7day",
+     "snow",
+     "mountain"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "mountain flora",
+    "slug": [
+     "example",
+     "vintage",
+     "stamp",
+     "collection",
+     "illustration",
+     "vintage",
+     "stamp",
+     "collection",
+     "illustration",
+     "mountain",
+     "flora"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "mountain trip",
+    "slug": [
+     "example",
+     "watercolor",
+     "travel",
+     "journal",
+     "collage",
+     "watercolor",
+     "travel",
+     "journal",
+     "collage",
+     "mountain",
+     "trip"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "mountain ecosystem",
+    "slug": [
+     "example",
+     "nature",
+     "ecology",
+     "double",
+     "page",
+     "book",
+     "spread",
+     "infographic",
+     "nature",
+     "ecology",
+     "double",
+     "page",
+     "book",
+     "spread",
+     "infographic",
+     "mountain",
+     "ecosystem"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 130,
+  "query_id": "E130",
+  "original_query": "演唱会",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "concert poster, live performance infographic, music event design",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "blackpink in your area",
+    "slug": [
+     "example",
+     "celebrity",
+     "movie",
+     "group",
+     "poster",
+     "celebrity",
+     "movie",
+     "group",
+     "poster",
+     "blackpink",
+     "in",
+     "your",
+     "area"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "musical performance",
+    "slug": [
+     "example",
+     "cartoon",
+     "action",
+     "visual",
+     "guide",
+     "infographic",
+     "cartoon",
+     "action",
+     "visual",
+     "guide",
+     "infographic",
+     "musical",
+     "performance"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Coachella Valley Music and Arts Festival 2026",
+    "slug": [
+     "example",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "coachella"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "coachella 2026 festival",
+    "slug": [
+     "example",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "coachella",
+     "festival"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "mozart",
+    "slug": [
+     "example",
+     "figure",
+     "principles",
+     "infographic",
+     "figure",
+     "principles",
+     "infographic",
+     "mozart"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 132,
+  "query_id": "E132",
+  "original_query": "游乐园",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "amusement park poster, theme park travel guide, funfair attractions",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "family amusement",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "family",
+     "amusement"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "amusement park 7",
+    "slug": [
+     "example",
+     "mbti",
+     "animal",
+     "mbti",
+     "animal",
+     "amusement",
+     "park%207"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "amusement park 5",
+    "slug": [
+     "example",
+     "mbti",
+     "animal",
+     "mbti",
+     "animal",
+     "amusement",
+     "park%205"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "amusement park",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "amusement",
+     "park"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "family waterpark",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "family",
+     "waterpark"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 145,
+  "query_id": "E145",
+  "original_query": "寺庙",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "temple architecture, Buddhist temple, cultural heritage site",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "giant wild goose pagoda",
+    "slug": [
+     "example",
+     "architecture",
+     "architecture",
+     "giant",
+     "wild",
+     "goose",
+     "pagoda"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "thailand",
+    "slug": [
+     "example",
+     "whimsical",
+     "travel",
+     "map",
+     "whimsical",
+     "travel",
+     "map",
+     "thailand"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Travel Map",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "whimsical",
+     "travel",
+     "map"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "Travel Map",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "architecture"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 151,
+  "query_id": "E151",
+  "original_query": "珠宝",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "bai",
+    "slug": [
+     "example",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "bai"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "buyi",
+    "slug": [
+     "example",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "buyi"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "miao",
+    "slug": [
+     "example",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "ethnic",
+     "costume",
+     "deconstruction",
+     "board",
+     "miao"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "belts for body type",
+    "slug": [
+     "example",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "belts",
+     "for",
+     "body",
+     "type"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "earrings for face shape",
+    "slug": [
+     "example",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "earrings",
+     "for",
+     "face",
+     "shape"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 154,
+  "query_id": "E154",
+  "original_query": "母婴",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "mother and baby care, parenting resources, infant care tips",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "parenting families",
+    "slug": [
+     "example",
+     "relationship",
+     "advice",
+     "infographic",
+     "relationship",
+     "advice",
+     "infographic",
+     "parenting",
+     "families"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "parenting",
+    "slug": [
+     "example",
+     "life",
+     "journey",
+     "curve",
+     "infographic",
+     "life",
+     "journey",
+     "curve",
+     "infographic",
+     "parenting"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Home & Lifestyle Guides",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "home",
+     "lifestyle",
+     "guide",
+     "infographic"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "Home & Lifestyle Guides",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "dual",
+     "character",
+     "comparison",
+     "infographic"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 5,
+    "title": "Home & Lifestyle Guides",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "relationship",
+     "advice",
+     "infographic"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 156,
+  "query_id": "E156",
+  "original_query": "房地产",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 162,
+  "query_id": "E162",
+  "original_query": "医疗健康",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "healthcare infographic, medical wellness poster, health and wellness guide",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Healthcare Technology",
+    "slug": [
+     "example",
+     "educational",
+     "career",
+     "field",
+     "infographic",
+     "educational",
+     "career",
+     "field",
+     "infographic",
+     "healthcare",
+     "technology"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "doctor hospital",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "doctor",
+     "hospital"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "the hospital",
+    "slug": [
+     "example",
+     "english",
+     "dialogue",
+     "scene",
+     "english",
+     "dialogue",
+     "scene",
+     "at",
+     "the",
+     "hospital"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "doctor",
+     "visit",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "en-ja",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "english",
+     "japanese",
+     "hospital"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 168,
+  "query_id": "E168",
+  "original_query": "3C数码",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 175,
+  "query_id": "E175",
+  "original_query": "二手交易",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 183,
+  "query_id": "E183",
+  "original_query": "poster",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "World Cup Knockout Matchup Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "wc",
+     "knockout",
+     "matchup",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 2,
+    "title": "World Cup Knockout Matchup Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "product",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 3,
+    "title": "World Cup Knockout Matchup Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "musical",
+     "score",
+     "illustrated",
+     "art",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "World Cup Knockout Matchup Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "kpop",
+     "idol",
+     "profile",
+     "vintage",
+     "passport",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 5,
+    "title": "World Cup Knockout Matchup Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "vintage",
+     "collage",
+     "fashion",
+     "collection",
+     "poster"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 187,
+  "query_id": "E187",
+  "original_query": "信封",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "envelope design, stationery template, letter envelope",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Koi Fish Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "koi",
+     "fish",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Cat-themed Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "cat",
+     "themed",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Dragon Year Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "dragon",
+     "year",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "post office",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "post",
+     "office"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "Stationery",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "english",
+     "japanese",
+     "stationery"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 196,
+  "query_id": "E196",
+  "original_query": "台历",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "calendar design, desk calendar, monthly planner",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "december christmas dinner",
+    "slug": [
+     "example",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "december",
+     "christmas",
+     "dinner"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "july star bamboo",
+    "slug": [
+     "example",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "july",
+     "star",
+     "bamboo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "june rain flower puddle",
+    "slug": [
+     "example",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "june",
+     "rain",
+     "flower",
+     "puddle"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "fifa world cup 2026 opening ceremony",
+    "slug": [
+     "example",
+     "universal",
+     "event",
+     "split",
+     "schedule",
+     "flyer",
+     "poster",
+     "universal",
+     "event",
+     "split",
+     "schedule",
+     "flyer",
+     "poster",
+     "fifa",
+     "world",
+     "cup",
+     "opening",
+     "ceremony"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "Local Festival Schedule",
+    "slug": [
+     "example",
+     "annual",
+     "event",
+     "calendar",
+     "infographic",
+     "annual",
+     "event",
+     "calendar",
+     "infographic",
+     "local",
+     "festival",
+     "schedule"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 202,
+  "query_id": "E202",
+  "original_query": "展架",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 226,
+  "query_id": "E226",
+  "original_query": "宠物主人",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "british shorthair 5mo",
+    "slug": [
+     "example",
+     "pet",
+     "care",
+     "guide",
+     "pet",
+     "care",
+     "guide",
+     "british",
+     "shorthair",
+     "5mo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "budgerigar 1yo",
+    "slug": [
+     "example",
+     "pet",
+     "care",
+     "guide",
+     "pet",
+     "care",
+     "guide",
+     "budgerigar",
+     "1yo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "corgi puppy 2mo",
+    "slug": [
+     "example",
+     "pet",
+     "care",
+     "guide",
+     "pet",
+     "care",
+     "guide",
+     "corgi",
+     "puppy",
+     "2mo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "cat",
+    "slug": [
+     "example",
+     "pet",
+     "safe",
+     "human",
+     "food",
+     "infographic",
+     "pet",
+     "safe",
+     "human",
+     "food",
+     "infographic",
+     "cat"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "duck",
+    "slug": [
+     "example",
+     "pet",
+     "safe",
+     "human",
+     "food",
+     "infographic",
+     "pet",
+     "safe",
+     "human",
+     "food",
+     "infographic",
+     "duck"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 227,
+  "query_id": "E227",
+  "original_query": "大学生",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "college student poster, university life infographic, student lifestyle card",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "female college student",
+    "slug": [
+     "example",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "female",
+     "college",
+     "student"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "korean design student male",
+    "slug": [
+     "example",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "korean",
+     "design",
+     "student",
+     "male"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "communication design female student",
+    "slug": [
+     "example",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "person",
+     "self",
+     "portrait",
+     "infographic",
+     "poster",
+     "communication",
+     "design",
+     "female",
+     "student"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "student alpaca",
+    "slug": [
+     "example",
+     "ip",
+     "emoji",
+     "sticker",
+     "sheet",
+     "poster",
+     "ip",
+     "emoji",
+     "sticker",
+     "sheet",
+     "poster",
+     "student",
+     "alpaca"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "neapolitan pizza",
+    "slug": [
+     "example",
+     "food",
+     "food",
+     "neapolitan",
+     "pizza"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 232,
+  "query_id": "E232",
+  "original_query": "健身爱好者",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "fitness enthusiast poster, workout lifestyle infographic, fitness motivation card",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "female standard 1.5kg",
+    "slug": [
+     "example",
+     "fat",
+     "loss",
+     "plan",
+     "fat",
+     "loss",
+     "plan",
+     "female",
+     "standard",
+     "1.5kg"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "male accelerated 4kg",
+    "slug": [
+     "example",
+     "fat",
+     "loss",
+     "plan",
+     "fat",
+     "loss",
+     "plan",
+     "male",
+     "accelerated",
+     "4kg"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "male extreme 6kg",
+    "slug": [
+     "example",
+     "fat",
+     "loss",
+     "plan",
+     "fat",
+     "loss",
+     "plan",
+     "male",
+     "extreme",
+     "6kg"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "home workout plan",
+    "slug": [
+     "example",
+     "men",
+     "lifestyle",
+     "step",
+     "guide",
+     "infographic",
+     "poster",
+     "men",
+     "lifestyle",
+     "step",
+     "guide",
+     "infographic",
+     "poster",
+     "home",
+     "workout",
+     "plan"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "gym",
+    "slug": [
+     "example",
+     "warmup",
+     "routine",
+     "warmup",
+     "routine",
+     "gym"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 243,
+  "query_id": "E243",
+  "original_query": "创业者",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "entrepreneur profile, startup founder infographic, business leader character",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "One-Person Companies: Then vs Now",
+    "slug": [
+     "example",
+     "then",
+     "vs",
+     "now",
+     "comparison",
+     "infographic",
+     "then",
+     "vs",
+     "now",
+     "comparison",
+     "infographic",
+     "one",
+     "person",
+     "companies"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "operator",
+    "slug": [
+     "example",
+     "mbti",
+     "siliconvalley",
+     "mbti",
+     "siliconvalley",
+     "operator"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "founders en sam",
+    "slug": [
+     "example",
+     "mbti",
+     "siliconvalley",
+     "mbti",
+     "generic",
+     "ai",
+     "founders",
+     "sam"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "hacker",
+    "slug": [
+     "example",
+     "mbti",
+     "siliconvalley",
+     "mbti",
+     "siliconvalley",
+     "hacker"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "employee vs entrepreneur",
+    "slug": [
+     "example",
+     "finance",
+     "comparison",
+     "infographic",
+     "finance",
+     "comparison",
+     "infographic",
+     "employee",
+     "vs",
+     "entrepreneur"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 245,
+  "query_id": "E245",
+  "original_query": "宝妈",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "motherhood lifestyle, parenting tips, mom life",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "parenting families",
+    "slug": [
+     "example",
+     "relationship",
+     "advice",
+     "infographic",
+     "relationship",
+     "advice",
+     "infographic",
+     "parenting",
+     "families"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "dad vs mom",
+    "slug": [
+     "example",
+     "dual",
+     "character",
+     "comparison",
+     "infographic",
+     "dual",
+     "character",
+     "comparison",
+     "infographic",
+     "dad",
+     "vs",
+     "mom"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "corgi puppy 2mo",
+    "slug": [
+     "example",
+     "pet",
+     "care",
+     "guide",
+     "pet",
+     "care",
+     "guide",
+     "corgi",
+     "puppy",
+     "2mo"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "gardening guide",
+    "slug": [
+     "example",
+     "home",
+     "lifestyle",
+     "guide",
+     "infographic",
+     "home",
+     "lifestyle",
+     "guide",
+     "infographic",
+     "gardening",
+     "guide"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "en-es",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "english",
+     "spanish",
+     "park"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 250,
+  "query_id": "E250",
+  "original_query": "圣诞节",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "Christmas celebration poster, Christmas vocabulary cards, holiday traditions infographic",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "en-zh",
+    "slug": [
+     "example",
+     "vocabulary",
+     "vocabulary",
+     "christmas",
+     "en",
+     "zh"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "santa claus christmas",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "santa",
+     "claus",
+     "christmas"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "christmas party event",
+    "slug": [
+     "example",
+     "brand",
+     "vi",
+     "full",
+     "visual",
+     "pack",
+     "mockup",
+     "brand",
+     "vi",
+     "full",
+     "visual",
+     "pack",
+     "mockup",
+     "christmas",
+     "party",
+     "event"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "december christmas dinner",
+    "slug": [
+     "example",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "chikawa",
+     "monthly",
+     "calendar",
+     "vertical",
+     "poster",
+     "december",
+     "christmas",
+     "dinner"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "jingle bells christmas cartoon",
+    "slug": [
+     "example",
+     "musical",
+     "score",
+     "illustrated",
+     "art",
+     "poster",
+     "musical",
+     "score",
+     "illustrated",
+     "art",
+     "poster",
+     "jingle",
+     "bells",
+     "christmas",
+     "cartoon"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 267,
+  "query_id": "E267",
+  "original_query": "新年",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Cat-themed Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "cat",
+     "themed",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Dragon Year Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "dragon",
+     "year",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Floral Blessing Red Envelopes",
+    "slug": [
+     "example",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "lunar",
+     "new",
+     "year",
+     "red",
+     "envelope",
+     "set",
+     "floral",
+     "blessing",
+     "red",
+     "envelopes"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "lichun",
+    "slug": [
+     "example",
+     "solar",
+     "term",
+     "solar",
+     "term",
+     "lichun"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "new year 1",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "new",
+     "year%201"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 269,
+  "query_id": "E269",
+  "original_query": "冬至",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "winter solstice celebration, winter festival traditions, winter seasonal infographic",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "dongzhi",
+    "slug": [
+     "example",
+     "solar",
+     "term",
+     "solar",
+     "term",
+     "dongzhi"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "santa claus christmas",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "santa",
+     "claus",
+     "christmas"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "daxue",
+    "slug": [
+     "example",
+     "solar",
+     "term",
+     "solar",
+     "term",
+     "daxue"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "guyu",
+    "slug": [
+     "example",
+     "solar",
+     "term",
+     "solar",
+     "term",
+     "guyu"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "Milano Cortina 2026 — Winter Olympic Games",
+    "slug": [
+     "example",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "international",
+     "event",
+     "promotional",
+     "poster",
+     "milano",
+     "cortina",
+     "winter",
+     "olympics"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 273,
+  "query_id": "E273",
+  "original_query": "茶叶",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "tea leaves, tea varieties, tea culture",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "tea basics",
+    "slug": [
+     "example",
+     "lifestyle",
+     "info",
+     "card",
+     "lifestyle",
+     "info",
+     "card",
+     "tea",
+     "basics"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "matcha powder",
+    "slug": [
+     "example",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "matcha",
+     "powder"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "japanese tea ceremony",
+    "slug": [
+     "example",
+     "cultural",
+     "travel",
+     "journey",
+     "infographic",
+     "cultural",
+     "travel",
+     "journey",
+     "infographic",
+     "japanese",
+     "tea",
+     "ceremony"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "panda tea master",
+    "slug": [
+     "example",
+     "ip",
+     "creative",
+     "cultural",
+     "goods",
+     "mockup",
+     "set",
+     "ip",
+     "creative",
+     "cultural",
+     "goods",
+     "mockup",
+     "set",
+     "panda",
+     "tea",
+     "master"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "bubble tea shop",
+    "slug": [
+     "example",
+     "brand",
+     "vi",
+     "full",
+     "visual",
+     "pack",
+     "mockup",
+     "brand",
+     "vi",
+     "full",
+     "visual",
+     "pack",
+     "mockup",
+     "bubble",
+     "tea",
+     "shop"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 274,
+  "query_id": "E274",
+  "original_query": "咖啡豆",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "coffee beans, coffee varieties, coffee brewing methods",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "coffee brewing guide",
+    "slug": [
+     "example",
+     "lifestyle",
+     "info",
+     "card",
+     "lifestyle",
+     "info",
+     "card",
+     "coffee",
+     "brewing",
+     "guide"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "coffee bean anatomy",
+    "slug": [
+     "example",
+     "anatomy",
+     "cut",
+     "guide",
+     "anatomy",
+     "cut",
+     "guide",
+     "coffee",
+     "bean",
+     "anatomy"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "espresso coffee beans",
+    "slug": [
+     "example",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "espresso",
+     "coffee",
+     "beans"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "arabica coffee beans",
+    "slug": [
+     "example",
+     "eco",
+     "farm",
+     "food",
+     "uniform",
+     "product",
+     "label",
+     "eco",
+     "farm",
+     "food",
+     "uniform",
+     "product",
+     "label",
+     "arabica",
+     "coffee",
+     "beans"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "coffee brewing",
+    "slug": [
+     "example",
+     "vintage",
+     "ultimate",
+     "guide",
+     "infographic",
+     "vintage",
+     "ultimate",
+     "guide",
+     "infographic",
+     "coffee",
+     "brewing"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 275,
+  "query_id": "E275",
+  "original_query": "巧克力",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "chocolate dessert, chocolate recipes, chocolate vocabulary",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "chocolate lava cake",
+    "slug": [
+     "example",
+     "premium",
+     "recipe",
+     "card",
+     "infographic",
+     "premium",
+     "recipe",
+     "card",
+     "infographic",
+     "chocolate",
+     "lava",
+     "cake"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Double Chocolate Cookies",
+    "slug": [
+     "example",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "double",
+     "chocolate",
+     "cookies"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "chocolate",
+    "slug": [
+     "example",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "chocolate"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "choco chip cookies",
+    "slug": [
+     "example",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "food",
+     "product",
+     "packaging",
+     "design",
+     "choco",
+     "chip",
+     "cookies"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "swiss",
+    "slug": [
+     "example",
+     "cuisine",
+     "food",
+     "vocab",
+     "poster",
+     "cuisine",
+     "food",
+     "vocab",
+     "poster",
+     "swiss"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 279,
+  "query_id": "E279",
+  "original_query": "首饰",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "jewelry design, accessory collection, fashion jewelry",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "diamond jewelry",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "diamond",
+     "jewelry"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "emerald jewelry",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "emerald",
+     "jewelry"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "ring",
+    "slug": [
+     "example",
+     "fashion",
+     "ecommerce",
+     "fashion",
+     "ecommerce",
+     "ring"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "earrings for face shape",
+    "slug": [
+     "example",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "fashion",
+     "shape",
+     "guide",
+     "infographic",
+     "earrings",
+     "for",
+     "face",
+     "shape"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "Jewelry Look",
+    "slug": [
+     "example",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "fashion",
+     "before",
+     "after",
+     "outfit",
+     "annotation",
+     "card",
+     "jewelry",
+     "look"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 283,
+  "query_id": "E283",
+  "original_query": "童装",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "children's fashion, kids clothing, children's apparel",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "clothing",
+    "slug": [
+     "example",
+     "kids",
+     "vocabulary",
+     "poster",
+     "kids",
+     "vocabulary",
+     "poster",
+     "clothing"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Buying Clothes at a Boutique",
+    "slug": [
+     "example",
+     "english",
+     "dialogue",
+     "scene",
+     "english",
+     "dialogue",
+     "scene",
+     "english",
+     "french",
+     "buying",
+     "clothes",
+     "at",
+     "a",
+     "boutique"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Kids Educational Vocabulary Posters",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "kids",
+     "vocabulary",
+     "poster"
+    ],
+    "metadata": "template"
+   },
+   {
+    "rank": 4,
+    "title": "Kids Educational Vocabulary Posters",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "english",
+     "dialogue",
+     "scene"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 290,
+  "query_id": "E290",
+  "original_query": "保健品",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 297,
+  "query_id": "E297",
+  "original_query": "香薰机",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "aromatherapy diffuser, essential oil diffuser, scented oil machine",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "Aromatherapy Diffuser",
+    "slug": [
+     "example",
+     "product",
+     "poster",
+     "product",
+     "poster",
+     "aromatherapy",
+     "diffuser"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Cozy Product Poster",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "product",
+     "poster"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 298,
+  "query_id": "E298",
+  "original_query": "沙发家具",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "sofa furniture design, living room furniture, home decor sofa",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "bohemian wabi sabi bedroom",
+    "slug": [
+     "example",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "bohemian",
+     "wabi",
+     "sabi",
+     "bedroom"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Interior Design Styles",
+    "slug": [
+     "example",
+     "professional",
+     "category",
+     "guide",
+     "infographic",
+     "professional",
+     "category",
+     "guide",
+     "infographic",
+     "interior",
+     "design",
+     "styles"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "Living Room",
+    "slug": [
+     "example",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "soft",
+     "decoration",
+     "design",
+     "guide",
+     "living",
+     "room",
+     "modern",
+     "biophilic"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "dining bar",
+    "slug": [
+     "example",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "dining",
+     "bar"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "living room",
+    "slug": [
+     "example",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "interior",
+     "design",
+     "mood",
+     "board",
+     "generator",
+     "living",
+     "room"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 304,
+  "query_id": "E304",
+  "original_query": "婴儿用品",
+  "zero_result": false,
+  "low_result": true,
+  "rewrite_observed": true,
+  "broadened_query": "baby products, infant care items, baby essentials",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "baby products",
+    "slug": [
+     "example",
+     "daily",
+     "essentials",
+     "learning",
+     "card",
+     "daily",
+     "essentials",
+     "learning",
+     "card",
+     "baby",
+     "products"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "Kids Learning & Educational Cards",
+    "slug": [
+     "https:",
+     "www.curify",
+     "ai.com",
+     "nano",
+     "daily",
+     "essentials",
+     "learning",
+     "card"
+    ],
+    "metadata": "template"
+   }
+  ]
+ },
+ {
+  "query_index": 317,
+  "query_id": "E317",
+  "original_query": "打折",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "discount vocabulary, sale infographic, shopping deals",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "summer beach sale",
+    "slug": [
+     "example",
+     "product",
+     "theme",
+     "promotional",
+     "poster",
+     "product",
+     "theme",
+     "promotional",
+     "poster",
+     "summer",
+     "beach",
+     "sale"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "tech gadget sale",
+    "slug": [
+     "example",
+     "product",
+     "theme",
+     "promotional",
+     "poster",
+     "product",
+     "theme",
+     "promotional",
+     "poster",
+     "tech",
+     "gadget",
+     "sale"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "supermarket",
+    "slug": [
+     "example",
+     "word",
+     "scene",
+     "word",
+     "scene",
+     "supermarket"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "supermarket 2",
+    "slug": [
+     "example",
+     "mbti",
+     "animal",
+     "mbti",
+     "animal",
+     "supermarket%202"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "supermarket 3",
+    "slug": [
+     "example",
+     "mbti",
+     "animal",
+     "mbti",
+     "animal",
+     "supermarket%203"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ },
+ {
+  "query_index": 318,
+  "query_id": "E318",
+  "original_query": "预售",
+  "zero_result": true,
+  "low_result": false,
+  "rewrite_observed": false,
+  "broadened_query": "",
+  "top_results": []
+ },
+ {
+  "query_index": 324,
+  "query_id": "E324",
+  "original_query": "撸铁",
+  "zero_result": false,
+  "low_result": false,
+  "rewrite_observed": true,
+  "broadened_query": "fitness workout, strength training, weightlifting routine",
+  "top_results": [
+   {
+    "rank": 1,
+    "title": "male accelerated 4kg",
+    "slug": [
+     "example",
+     "fat",
+     "loss",
+     "plan",
+     "fat",
+     "loss",
+     "plan",
+     "male",
+     "accelerated",
+     "4kg"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 2,
+    "title": "gym",
+    "slug": [
+     "example",
+     "warmup",
+     "routine",
+     "warmup",
+     "routine",
+     "gym"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 3,
+    "title": "home workout plan",
+    "slug": [
+     "example",
+     "men",
+     "lifestyle",
+     "step",
+     "guide",
+     "infographic",
+     "poster",
+     "men",
+     "lifestyle",
+     "step",
+     "guide",
+     "infographic",
+     "poster",
+     "home",
+     "workout",
+     "plan"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 4,
+    "title": "arm day",
+    "slug": [
+     "example",
+     "training",
+     "muscle",
+     "equipment",
+     "training",
+     "muscle",
+     "equipment",
+     "arm",
+     "day"
+    ],
+    "metadata": "inspiration"
+   },
+   {
+    "rank": 5,
+    "title": "training types",
+    "slug": [
+     "example",
+     "education",
+     "card",
+     "education",
+     "card",
+     "training",
+     "types"
+    ],
+    "metadata": "inspiration"
+   }
+  ]
+ }
+]

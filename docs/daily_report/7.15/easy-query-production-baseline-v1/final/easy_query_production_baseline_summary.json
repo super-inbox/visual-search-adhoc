@@ -1,0 +1,237 @@
+{
+  "authoritative_query_count": 328,
+  "actual_completed_count": 328,
+  "successful_search_count": 328,
+  "zero_result_count": 12,
+  "zero_result_pct": 3.66,
+  "low_result_count": 43,
+  "low_result_pct": 13.11,
+  "result_count_buckets": {
+    "0": 12,
+    "1": 1,
+    "2-5": 44,
+    "6-10": 42,
+    "11-20": 53,
+    "20+": 176,
+    "unavailable": 0
+  },
+  "missing_record_count": 0,
+  "query_broadened_count": 138,
+  "rewrite_observed_count": 138,
+  "spelling_correction_observed_count": 0,
+  "network_error_count": 0,
+  "timeout_count": 0,
+  "rate_limited_count": 0,
+  "captcha_count": 0,
+  "parse_error_count": 0,
+  "login_required_count": 0,
+  "avg_duration_ms": 3884.9,
+  "median_duration_ms": 3301.5,
+  "p90_duration_ms": 5403.7,
+  "p95_duration_ms": 5920.0,
+  "slowest_20_queries": [
+    {
+      "query_index": 139,
+      "query_id": "E139",
+      "original_query": "夜市",
+      "duration_ms": 11627
+    },
+    {
+      "query_index": 132,
+      "query_id": "E132",
+      "original_query": "游乐园",
+      "duration_ms": 9899
+    },
+    {
+      "query_index": 168,
+      "query_id": "E168",
+      "original_query": "3C数码",
+      "duration_ms": 9617
+    },
+    {
+      "query_index": 141,
+      "query_id": "E141",
+      "original_query": "书房",
+      "duration_ms": 9192
+    },
+    {
+      "query_index": 140,
+      "query_id": "E140",
+      "original_query": "阳台",
+      "duration_ms": 8821
+    },
+    {
+      "query_index": 79,
+      "query_id": "E079",
+      "original_query": "Scandinavian",
+      "duration_ms": 8221
+    },
+    {
+      "query_index": 97,
+      "query_id": "E097",
+      "original_query": "侘寂",
+      "duration_ms": 7486
+    },
+    {
+      "query_index": 228,
+      "query_id": "E228",
+      "original_query": "自由职业者",
+      "duration_ms": 6876
+    },
+    {
+      "query_index": 274,
+      "query_id": "E274",
+      "original_query": "咖啡豆",
+      "duration_ms": 6800
+    },
+    {
+      "query_index": 273,
+      "query_id": "E273",
+      "original_query": "茶叶",
+      "duration_ms": 6709
+    },
+    {
+      "query_index": 208,
+      "query_id": "E208",
+      "original_query": "avatar",
+      "duration_ms": 6649
+    },
+    {
+      "query_index": 125,
+      "query_id": "E125",
+      "original_query": "山间",
+      "duration_ms": 6560
+    },
+    {
+      "query_index": 283,
+      "query_id": "E283",
+      "original_query": "童装",
+      "duration_ms": 6415
+    },
+    {
+      "query_index": 78,
+      "query_id": "E078",
+      "original_query": "北欧",
+      "duration_ms": 6257
+    },
+    {
+      "query_index": 255,
+      "query_id": "E255",
+      "original_query": "母亲节",
+      "duration_ms": 6062
+    },
+    {
+      "query_index": 192,
+      "query_id": "E192",
+      "original_query": "包装盒",
+      "duration_ms": 5998
+    },
+    {
+      "query_index": 103,
+      "query_id": "E103",
+      "original_query": "童趣",
+      "duration_ms": 5934
+    },
+    {
+      "query_index": 71,
+      "query_id": "E071",
+      "original_query": "terrazzo",
+      "duration_ms": 5894
+    },
+    {
+      "query_index": 142,
+      "query_id": "E142",
+      "original_query": "温室",
+      "duration_ms": 5821
+    },
+    {
+      "query_index": 118,
+      "query_id": "E118",
+      "original_query": "生日派对",
+      "duration_ms": 5809
+    }
+  ],
+  "status_counts": {
+    "SUCCESS": 273,
+    "LOW_RESULT": 43,
+    "ZERO_RESULT": 12
+  },
+  "by_category": {
+    "object": {
+      "count": 41,
+      "zero": 0,
+      "low": 9,
+      "error": 0,
+      "broadened": 21
+    },
+    "material": {
+      "count": 30,
+      "zero": 4,
+      "low": 7,
+      "error": 0,
+      "broadened": 14
+    },
+    "style": {
+      "count": 40,
+      "zero": 2,
+      "low": 7,
+      "error": 0,
+      "broadened": 13
+    },
+    "scene": {
+      "count": 35,
+      "zero": 0,
+      "low": 3,
+      "error": 0,
+      "broadened": 13
+    },
+    "industry": {
+      "count": 35,
+      "zero": 3,
+      "low": 4,
+      "error": 0,
+      "broadened": 5
+    },
+    "format": {
+      "count": 35,
+      "zero": 1,
+      "low": 2,
+      "error": 0,
+      "broadened": 8
+    },
+    "audience": {
+      "count": 30,
+      "zero": 0,
+      "low": 2,
+      "error": 0,
+      "broadened": 13
+    },
+    "festival": {
+      "count": 24,
+      "zero": 0,
+      "low": 0,
+      "error": 0,
+      "broadened": 20
+    },
+    "product_category": {
+      "count": 34,
+      "zero": 1,
+      "low": 6,
+      "error": 0,
+      "broadened": 22
+    },
+    "action": {
+      "count": 24,
+      "zero": 1,
+      "low": 3,
+      "error": 0,
+      "broadened": 9
+    }
+  },
+  "duplicate_query_result_consistency": {
+    "distinct_queries_appearing_more_than_once": 0,
+    "inconsistent_result_count_across_duplicates": 0,
+    "detail": {}
+  },
+  "missing_records": []
+}

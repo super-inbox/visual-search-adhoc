@@ -1,0 +1,2018 @@
+[
+  {
+    "query_index": 161,
+    "source_row_number": "162",
+    "query_id": "E161",
+    "original_query": "教育培训",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 4,
+    "zero_result": false,
+    "low_result": true,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "LOW_RESULT",
+    "screenshot_path": "screenshots/161_E161_query.png",
+    "raw_response_path": "raw/161_E161.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Coffee Brewing Guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-coffee-brewing-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-coffee-brewing-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "coffee",
+          "brewing",
+          "guide"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Interior Design Styles",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-interior-design-styles",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-interior-design-styles-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "interior",
+          "design",
+          "styles"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "Plant Care Guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/professional-category-guide-infographic/template-professional-category-guide-infographic-plant-care-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-plant-care-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "professional",
+          "category",
+          "guide",
+          "infographic",
+          "plant",
+          "care",
+          "guide"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Professional Category Guide",
+        "url": "https://www.curify-ai.com/nano-template/professional-category-guide-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-professional-category-guide-infographic-coffee-brewing-guide-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "professional",
+          "category",
+          "guide",
+          "infographic"
+        ]
+      }
+    ],
+    "visible_result_count": 4
+  },
+  {
+    "query_index": 162,
+    "source_row_number": "163",
+    "query_id": "E162",
+    "original_query": "医疗健康",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 33,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "healthcare infographic, medical wellness poster, health and wellness guide",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “医疗健康”. Also showing results for: healthcare infographic, medical wellness poster, health and wellness guide",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/162_E162_query.png",
+    "raw_response_path": "raw/162_E162.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Healthcare Technology",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/educational-career-field-infographic/template-educational-career-field-infographic-healthcare-technology",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-educational-career-field-infographic-healthcare-technology-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "educational",
+          "career",
+          "field",
+          "infographic",
+          "educational",
+          "career",
+          "field",
+          "infographic",
+          "healthcare",
+          "technology"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "doctor hospital",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-doctor-hospital",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-doctor-hospital-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "doctor",
+          "hospital"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "the hospital",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/english-dialogue-scene/template-english-dialogue-scene-at-the-hospital",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-dialogue-scene-at-the-hospital-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "english",
+          "dialogue",
+          "scene",
+          "english",
+          "dialogue",
+          "scene",
+          "at",
+          "the",
+          "hospital"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-doctor-visit-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-doctor-visit-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "doctor",
+          "visit",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "en-ja",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-english-japanese-hospital",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-english-japanese-hospital-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "english",
+          "japanese",
+          "hospital"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 163,
+    "source_row_number": "164",
+    "query_id": "E163",
+    "original_query": "金融",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 8,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/163_E163_query.png",
+    "raw_response_path": "raw/163_E163.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Meta lays off 8,000 workers and pivots with $115M America's Workforce Academy — crowd of office workers walking out of glass-and-stone Meta headquarters carrying cardboard 'PERSONAL ITEMS' boxes, prominent 'meta' wordmark + infinity-loop logo on the building, Meta blue #1877F2 as the single accent color on the logo signage only",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/corporate-news-editorial-hero/template-corporate-news-editorial-hero-meta-layoff-2026-pivot-trades",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-corporate-news-editorial-hero-meta-layoff-2026-pivot-trades-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "corporate",
+          "news",
+          "editorial",
+          "hero",
+          "corporate",
+          "news",
+          "editorial",
+          "hero",
+          "meta",
+          "layoff",
+          "pivot",
+          "trades"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "currency forms",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/evolution/template-evolution-currency-forms",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-evolution-zh-currency-forms-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "evolution",
+          "evolution",
+          "currency",
+          "forms"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "investor",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-siliconvalley/template-mbti-siliconvalley-investor",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-siliconvalley-investor-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "siliconvalley",
+          "mbti",
+          "siliconvalley",
+          "investor"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "bank",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/english-dialogue-scene/template-english-dialogue-scene-bank",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-dialogue-scene-bank-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "english",
+          "dialogue",
+          "scene",
+          "english",
+          "dialogue",
+          "scene",
+          "bank"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "Corporate News Editorial Hero",
+        "url": "https://www.curify-ai.com/nano-template/corporate-news-editorial-hero",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-corporate-news-editorial-hero-meta-layoff-2026-pivot-trades-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "corporate",
+          "news",
+          "editorial",
+          "hero"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 164,
+    "source_row_number": "165",
+    "query_id": "E164",
+    "original_query": "旅游",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/164_E164_query.png",
+    "raw_response_path": "raw/164_E164.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "beijing",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/travel/template-travel-beijing",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "travel",
+          "travel",
+          "beijing"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "beijing",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/weather/template-weather-beijing",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-weather-zh-beijing-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "weather",
+          "weather",
+          "beijing"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "nanjing",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/weather/template-weather-nanjing",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-weather-zh-nanjing-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "weather",
+          "weather",
+          "nanjing"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "wuhan",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/weather/template-weather-wuhan",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-weather-zh-wuhan-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "weather",
+          "weather",
+          "wuhan"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "sanya",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/travel/template-travel-sanya",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-sanya-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "travel",
+          "travel",
+          "sanya"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 165,
+    "source_row_number": "166",
+    "query_id": "E165",
+    "original_query": "travel",
+    "detected_language": "en",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 18,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/165_E165_travel.png",
+    "raw_response_path": "raw/165_E165.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Travel Planning Map",
+        "url": "https://www.curify-ai.com/nano-template/travel",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "travel"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Travel Planning Map",
+        "url": "https://www.curify-ai.com/nano-template/cultural-travel-journey-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "cultural",
+          "travel",
+          "journey",
+          "infographic"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "Travel Planning Map",
+        "url": "https://www.curify-ai.com/nano-template/country-souvenirs-watercolor",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "country",
+          "souvenirs",
+          "watercolor"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Travel Planning Map",
+        "url": "https://www.curify-ai.com/nano-template/country-dos-and-donts-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "country",
+          "dos",
+          "and",
+          "donts",
+          "infographic"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "Travel Planning Map",
+        "url": "https://www.curify-ai.com/nano-template/best-cities-travel-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-travel-zh-beijing-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "best",
+          "cities",
+          "travel",
+          "infographic"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 166,
+    "source_row_number": "167",
+    "query_id": "E166",
+    "original_query": "餐饮",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 28,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/166_E166_query.png",
+    "raw_response_path": "raw/166_E166.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "buddha jumps over the wall",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-buddha-jumps-over-the-wall",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-buddha-jumps-over-the-wall-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "buddha",
+          "jumps",
+          "over",
+          "the",
+          "wall"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "four joy meatballs",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-four-joy-meatballs",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-four-joy-meatballs-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "four",
+          "joy",
+          "meatballs"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "kung pao chicken",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-kung-pao-chicken",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-kung-pao-chicken-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "kung",
+          "pao",
+          "chicken"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "bak kut teh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-bak-kut-teh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-bak-kut-teh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "bak",
+          "kut",
+          "teh"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "guilin rice noodles",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-guilin-rice-noodles",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-zh-guilin-rice-noodles-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "guilin",
+          "rice",
+          "noodles"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 167,
+    "source_row_number": "168",
+    "query_id": "E167",
+    "original_query": "家居",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 35,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/167_E167_query.png",
+    "raw_response_path": "raw/167_E167.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "closet",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/home-organization-before-after/template-home-organization-before-after-closet",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-home-organization-before-after-closet-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "closet"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "desk",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/home-organization-before-after/template-home-organization-before-after-desk",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-home-organization-before-after-desk-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "desk"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "kitchen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/home-organization-before-after/template-home-organization-before-after-kitchen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-home-organization-before-after-kitchen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "home",
+          "organization",
+          "before",
+          "after",
+          "kitchen"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "biophilic living room",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/soft-decoration-design-guide/template-soft-decoration-design-guide-biophilic-living-room",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-soft-decoration-design-guide-biophilic-living-room-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "soft",
+          "decoration",
+          "design",
+          "guide",
+          "soft",
+          "decoration",
+          "design",
+          "guide",
+          "biophilic",
+          "living",
+          "room"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "bohemian wabi sabi bedroom",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/soft-decoration-design-guide/template-soft-decoration-design-guide-bohemian-wabi-sabi-bedroom",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-soft-decoration-design-guide-bohemian-wabi-sabi-bedroom-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "soft",
+          "decoration",
+          "design",
+          "guide",
+          "soft",
+          "decoration",
+          "design",
+          "guide",
+          "bohemian",
+          "wabi",
+          "sabi",
+          "bedroom"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 168,
+    "source_row_number": "169",
+    "query_id": "E168",
+    "original_query": "3C数码",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "True",
+    "contains_mixed_language": "True",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "MEDIUM",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 0,
+    "zero_result": true,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "ZERO_RESULT",
+    "screenshot_path": "screenshots/168_E168_3c.png",
+    "raw_response_path": "raw/168_E168.json",
+    "top_results": [],
+    "visible_result_count": 0
+  },
+  {
+    "query_index": 169,
+    "source_row_number": "170",
+    "query_id": "E169",
+    "original_query": "游戏",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 25,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/169_E169_query.png",
+    "raw_response_path": "raw/169_E169.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "sha wujing",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/character-analysis/template-character-analysis-sha-wujing",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-character-analysis-zh-sha-wujing-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "character",
+          "analysis",
+          "character",
+          "analysis",
+          "sha",
+          "wujing"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "sun wukong",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/character-analysis/template-character-analysis-sun-wukong",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-character-analysis-zh-sun-wukong-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "character",
+          "analysis",
+          "character",
+          "analysis",
+          "sun",
+          "wukong"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "tang seng",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/character-analysis/template-character-analysis-tang-seng",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-character-analysis-zh-tang-seng-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "character",
+          "analysis",
+          "character",
+          "analysis",
+          "tang",
+          "seng"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "crayon shinchan shinnosuke nohara",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/character/template-character-crayon-shinchan-shinnosuke-nohara",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-character-zh-crayon-shinchan-shinnosuke-nohara-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "character",
+          "character",
+          "crayon",
+          "shinchan",
+          "shinnosuke",
+          "nohara"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "detective conan shinichi kudo",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/character/template-character-detective-conan-shinichi-kudo",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-character-zh-detective-conan-shinichi-kudo-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "character",
+          "character",
+          "detective",
+          "conan",
+          "shinichi",
+          "kudo"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 170,
+    "source_row_number": "171",
+    "query_id": "E170",
+    "original_query": "gaming",
+    "detected_language": "en",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 14,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/170_E170_gaming.png",
+    "raw_response_path": "raw/170_E170.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "hanxin baiqi.jpg 1",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/battle/template-battle-hanxin-baiqi.jpg%201",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-battle-zh-hanxin-baiqi.jpg%201-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "battle",
+          "battle",
+          "hanxin",
+          "baiqi.jpg%201"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "hanxin baiqi.jpg 2",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/battle/template-battle-hanxin-baiqi.jpg%202",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-battle-zh-hanxin-baiqi.jpg%202-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "battle",
+          "battle",
+          "hanxin",
+          "baiqi.jpg%202"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "sunwu wuqi",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/battle/template-battle-sunwu-wuqi",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-battle-zh-sunwu-wuqi-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "battle",
+          "battle",
+          "sunwu",
+          "wuqi"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "gaara",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-naruto/template-mbti-naruto-gaara",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-naruto-gaara-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "naruto",
+          "mbti",
+          "naruto",
+          "gaara"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "hinata",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-naruto/template-mbti-naruto-hinata",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-naruto-hinata-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "naruto",
+          "mbti",
+          "naruto",
+          "hinata"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 171,
+    "source_row_number": "172",
+    "query_id": "E171",
+    "original_query": "出版",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/171_E171_query.png",
+    "raw_response_path": "raw/171_E171.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "bai",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/ethnic-costume-deconstruction-board/template-ethnic-costume-deconstruction-board-bai",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-ethnic-costume-deconstruction-board-bai-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "bai"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "buyi",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/ethnic-costume-deconstruction-board/template-ethnic-costume-deconstruction-board-buyi",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-ethnic-costume-deconstruction-board-buyi-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "buyi"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "miao",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/ethnic-costume-deconstruction-board/template-ethnic-costume-deconstruction-board-miao",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-ethnic-costume-deconstruction-board-miao-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "ethnic",
+          "costume",
+          "deconstruction",
+          "board",
+          "miao"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "ghibli vs mappa",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/animation-studio-comparison-infographic/template-animation-studio-comparison-infographic-ghibli-vs-mappa",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-animation-studio-comparison-infographic-ghibli-vs-mappa-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "animation",
+          "studio",
+          "comparison",
+          "infographic",
+          "animation",
+          "studio",
+          "comparison",
+          "infographic",
+          "ghibli",
+          "vs",
+          "mappa"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "kyotoani vs ufotable 1",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/animation-studio-comparison-infographic/template-animation-studio-comparison-infographic-kyotoani-vs-ufotable-1",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-animation-studio-comparison-infographic-kyotoani-vs-ufotable-1-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "animation",
+          "studio",
+          "comparison",
+          "infographic",
+          "animation",
+          "studio",
+          "comparison",
+          "infographic",
+          "kyotoani",
+          "vs",
+          "ufotable"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 172,
+    "source_row_number": "173",
+    "query_id": "E172",
+    "original_query": "农业",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 9,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/172_E172_query.png",
+    "raw_response_path": "raw/172_E172.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "bell peppers",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/gardening-how-to-infographic/template-gardening-how-to-infographic-bell-peppers",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-gardening-how-to-infographic-bell-peppers-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "bell",
+          "peppers"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "carrots",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/gardening-how-to-infographic/template-gardening-how-to-infographic-carrots",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-gardening-how-to-infographic-carrots-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "carrots"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "lettuce",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/gardening-how-to-infographic/template-gardening-how-to-infographic-lettuce",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-gardening-how-to-infographic-lettuce-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "gardening",
+          "how",
+          "to",
+          "infographic",
+          "lettuce"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "farmer farm",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-farmer-farm",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-farmer-farm-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "farmer",
+          "farm"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "guyu",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-guyu",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-guyu-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "guyu"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 173,
+    "source_row_number": "174",
+    "query_id": "E173",
+    "original_query": "花艺",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 33,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "floral design, flower arrangement, flower art",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “花艺”. Also showing results for: floral design, flower arrangement, flower art",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/173_E173_query.png",
+    "raw_response_path": "raw/173_E173.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "butterfly",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-butterfly",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-butterfly-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "butterfly"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "lemon",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-lemon",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-lemon-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "lemon"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "mushrooms",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/watercolor-painting-tutorial-guide/template-watercolor-painting-tutorial-guide-mushrooms",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-watercolor-painting-tutorial-guide-mushrooms-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "watercolor",
+          "painting",
+          "tutorial",
+          "guide",
+          "mushrooms"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "animals pinyin",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/multilingual-vocabulary-poster-watercolor/template-multilingual-vocabulary-poster-watercolor-animals-pinyin",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-multilingual-vocabulary-poster-watercolor-animals-pinyin-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "multilingual",
+          "vocabulary",
+          "poster",
+          "watercolor",
+          "multilingual",
+          "vocabulary",
+          "poster",
+          "watercolor",
+          "animals",
+          "pinyin"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "fruits pinyin",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/multilingual-vocabulary-poster-watercolor/template-multilingual-vocabulary-poster-watercolor-fruits-pinyin",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-multilingual-vocabulary-poster-watercolor-fruits-pinyin-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "multilingual",
+          "vocabulary",
+          "poster",
+          "watercolor",
+          "multilingual",
+          "vocabulary",
+          "poster",
+          "watercolor",
+          "fruits",
+          "pinyin"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 174,
+    "source_row_number": "175",
+    "query_id": "E174",
+    "original_query": "摄影",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/174_E174_query.png",
+    "raw_response_path": "raw/174_E174.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "buddha jumps over the wall",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-buddha-jumps-over-the-wall",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-buddha-jumps-over-the-wall-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "buddha",
+          "jumps",
+          "over",
+          "the",
+          "wall"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "four joy meatballs",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-four-joy-meatballs",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-four-joy-meatballs-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "four",
+          "joy",
+          "meatballs"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "kung pao chicken",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-kung-pao-chicken",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-kung-pao-chicken-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "kung",
+          "pao",
+          "chicken"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "en 1",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/portrait-retouching-blueprint/template-portrait-retouching-blueprint-en%201",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-portrait-retouching-blueprint-en%201-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "en%201"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "en 2",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/portrait-retouching-blueprint/template-portrait-retouching-blueprint-en%202",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-portrait-retouching-blueprint-en%202-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "portrait",
+          "retouching",
+          "blueprint",
+          "en%202"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 175,
+    "source_row_number": "176",
+    "query_id": "E175",
+    "original_query": "二手交易",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 0,
+    "zero_result": true,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "ZERO_RESULT",
+    "screenshot_path": "screenshots/175_E175_query.png",
+    "raw_response_path": "raw/175_E175.json",
+    "top_results": [],
+    "visible_result_count": 0
+  },
+  {
+    "query_index": 176,
+    "source_row_number": "177",
+    "query_id": "E176",
+    "original_query": "物流",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 2,
+    "zero_result": false,
+    "low_result": true,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "LOW_RESULT",
+    "screenshot_path": "screenshots/176_E176_query.png",
+    "raw_response_path": "raw/176_E176.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "courier logistics",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-courier-logistics",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-courier-logistics-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "courier",
+          "logistics"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Scene Word Learning Graphic",
+        "url": "https://www.curify-ai.com/nano-template/word-scene",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-courier-logistics-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "word",
+          "scene"
+        ]
+      }
+    ],
+    "visible_result_count": 2
+  },
+  {
+    "query_index": 177,
+    "source_row_number": "178",
+    "query_id": "E177",
+    "original_query": "美发美甲",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 4,
+    "zero_result": false,
+    "low_result": true,
+    "query_broadened": true,
+    "broadened_query": "hair and nail design, hair styling and manicure, beauty salon services",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “美发美甲”. Also showing results for: hair and nail design, hair styling and manicure, beauty salon services",
+    "final_status": "LOW_RESULT",
+    "screenshot_path": "screenshots/177_E177_query.png",
+    "raw_response_path": "raw/177_E177.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "Ordering at a Café",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/english-dialogue-scene/template-english-dialogue-scene-english-french-ordering-at-a-caf",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-english-dialogue-scene-english-french-ordering-at-a-caf-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "english",
+          "dialogue",
+          "scene",
+          "english",
+          "dialogue",
+          "scene",
+          "english",
+          "french",
+          "ordering",
+          "at",
+          "a",
+          "caf"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Hairstyle Recommendation Infographic",
+        "url": "https://www.curify-ai.com/nano-template/hairstyle-color-recommendation",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hairstyle-color-recommendation-long-hair-women-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "hairstyle",
+          "color",
+          "recommendation"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "Hairstyle Recommendation Infographic",
+        "url": "https://www.curify-ai.com/nano-template/hairstyle-guide-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hairstyle-color-recommendation-long-hair-women-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "hairstyle",
+          "guide",
+          "infographic"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Hairstyle Recommendation Infographic",
+        "url": "https://www.curify-ai.com/nano-template/english-dialogue-scene",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hairstyle-color-recommendation-long-hair-women-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "english",
+          "dialogue",
+          "scene"
+        ]
+      }
+    ],
+    "visible_result_count": 4
+  },
+  {
+    "query_index": 178,
+    "source_row_number": "179",
+    "query_id": "E178",
+    "original_query": "瑜伽",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 20,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/178_E178_query.png",
+    "raw_response_path": "raw/178_E178.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "back pain yoga",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/pain-relief-infographic/template-pain-relief-infographic-back-pain-yoga",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pain-relief-infographic-back-pain-yoga-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "pain",
+          "relief",
+          "infographic",
+          "pain",
+          "relief",
+          "infographic",
+          "back",
+          "pain",
+          "yoga"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "knee pain yoga",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/pain-relief-infographic/template-pain-relief-infographic-knee-pain-yoga",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pain-relief-infographic-knee-pain-yoga-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "pain",
+          "relief",
+          "infographic",
+          "pain",
+          "relief",
+          "infographic",
+          "knee",
+          "pain",
+          "yoga"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "lower back pain yoga",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/pain-relief-infographic/template-pain-relief-infographic-lower-back-pain-yoga",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pain-relief-infographic-lower-back-pain-yoga-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "pain",
+          "relief",
+          "infographic",
+          "pain",
+          "relief",
+          "infographic",
+          "lower",
+          "back",
+          "pain",
+          "yoga"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "coffee brewing guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-coffee-brewing-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-coffee-brewing-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "info",
+          "card",
+          "lifestyle",
+          "info",
+          "card",
+          "coffee",
+          "brewing",
+          "guide"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "dog care essentials",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-info-card/template-lifestyle-info-card-dog-care-essentials",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-info-card-dog-care-essentials-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "info",
+          "card",
+          "lifestyle",
+          "info",
+          "card",
+          "dog",
+          "care",
+          "essentials"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 179,
+    "source_row_number": "180",
+    "query_id": "E179",
+    "original_query": "潮玩",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 19,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/179_E179_query.png",
+    "raw_response_path": "raw/179_E179.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "brunch",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food-photo-doodle-sticker-overlay/template-food-photo-doodle-sticker-overlay-brunch",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-photo-doodle-sticker-overlay-brunch-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "brunch"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "coffee pasta",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food-photo-doodle-sticker-overlay/template-food-photo-doodle-sticker-overlay-coffee-pasta",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-photo-doodle-sticker-overlay-coffee-pasta-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "coffee",
+          "pasta"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "korean",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food-photo-doodle-sticker-overlay/template-food-photo-doodle-sticker-overlay-korean",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-photo-doodle-sticker-overlay-korean-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "food",
+          "photo",
+          "doodle",
+          "sticker",
+          "overlay",
+          "korean"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Brazil National Team",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/world-cup-team-sticker-poster/template-world-cup-team-sticker-poster-brazil",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-world-cup-team-sticker-poster-brazil-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "world",
+          "cup",
+          "team",
+          "sticker",
+          "poster",
+          "world",
+          "cup",
+          "team",
+          "sticker",
+          "poster",
+          "brazil"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "Argentina National Team",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/world-cup-team-sticker-poster/template-world-cup-team-sticker-poster-argentina",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-world-cup-team-sticker-poster-argentina-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "world",
+          "cup",
+          "team",
+          "sticker",
+          "poster",
+          "world",
+          "cup",
+          "team",
+          "sticker",
+          "poster",
+          "argentina"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 180,
+    "source_row_number": "181",
+    "query_id": "E180",
+    "original_query": "茶饮",
+    "detected_language": "zh",
+    "category": "industry",
+    "query_type_input": "industry",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "行业词，天然承接品牌/营销/文创三大场景的组合扩展",
+    "result_count_observed": 4,
+    "zero_result": false,
+    "low_result": true,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "LOW_RESULT",
+    "screenshot_path": "screenshots/180_E180_query.png",
+    "raw_response_path": "raw/180_E180.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "daxue",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-daxue",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-daxue-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "daxue"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "dongzhi",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-dongzhi",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-dongzhi-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "dongzhi"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Twenty-Four Solar Terms Category",
+        "url": "https://www.curify-ai.com/nano-template/solar-term",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "solar",
+          "term"
+        ]
+      }
+    ],
+    "visible_result_count": 4
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "name": "easy-query-production-baseline-collector",
+  "private": true,
+  "type": "module",
+  "description": "Isolated, adapted copy of curify-search-collect's Playwright collector, for the 2026-07-15 production pre-optimization 300+ Easy Query baseline. Not part of curify-frontend production code.",
+  "dependencies": {
+    "csv-parse": "^7.0.1",
+    "csv-stringify": "^6.8.1",
+    "playwright": "^1.61.1"
+  }
+}

@@ -1,0 +1,38 @@
+# CALIBRATION_REPORT.md
+
+## Calibration set construction
+
+30 queries selected deterministically from the 328 (`scripts/03_select_calibration.py`, selection log in `checkpoints/calibration_set_selection.json`), covering: all 10 `query_type` categories (≥1 each), 3 zero-result queries, 4 low-result queries, ≥5 rewrite/broadened queries, ≥5 non-rewritten queries, 4 short/ambiguous single-token queries, and both languages present in the corpus (25 zh / 5 en, roughly matching the 267:61 corpus ratio). Selection criteria were applied mechanically from objective input features (category, language, zero/low-result flags, rewrite flag, token length) before any outcome was known — no query was cherry-picked because it looked easy or hard to judge.
+
+## Evidence used
+
+All 30 calibration queries were evaluated with **both** text evidence (title/URL-slug/metadata/rewrite banner) **and** direct screenshot viewing (the actual PNG opened and read via the Read tool, not inferred) — see `MODEL_AND_METHOD.md` for the full evidence-priority policy. This calibration set is the only part of the 328-query run where every query got a screenshot check; the bulk 328-query pass uses text evidence as the primary source, supplemented by screenshots for zero-result queries and the second-pass review population (see `checkpoints/calibration_packets_part*.json` for the exact packets read, and the inline observations recorded during this run).
+
+## Pre-calibration rubric fix (rubric-v1 → v1.1)
+
+While manually reasoning through the first ~15 calibration queries (before running the formal scorer), a defect surfaced in the draft mechanical bands (rubric-v1, §3 as originally drafted): `relevant_rate < 0.20` was written as an unconditional FAIL trigger. Several real queries (E008 咖啡杯, E010 candle, E017 地球仪) had **zero** fully-RELEVANT results but **100% PARTIALLY_RELEVANT** results (zero IRRELEVANT) — thin, but not wrong. The v1 wording would have forced these to FAIL, which does not match the qualitative reality (nothing returned was off-topic, it was just weakly specific). This was fixed **before** running the scored Calibration Pass A/B (not as a reactive iteration after seeing a bad agreement number): the `relevant_rate<0.20` standalone FAIL trigger was removed; FAIL is now triggered only by `zero_result`, `irrelevant_rate > 0.60`, or `semantic_drift=SEVERE` combined with `original_intent_preserved=NO`. The PASS condition's `rel_plus_partial_rate >= 0.80` clause was symmetrically tightened to also require `relevant_rate >= 0.20`, so an all-PARTIALLY_RELEVANT set cannot mechanically PASS either. Full wording is in `RELEVANCE_RUBRIC.md` §3-4 (marked rubric-v1.1). This is the only rubric revision made; the scoring *formula* (§4 rank weights, deductions) was never altered.
+
+## Calibration Pass A vs Pass B results
+
+Both passes were run against the locked rubric-v1.1 by the same evaluator (Claude Code) in two separate reasoning passes: Pass A was the first full read of each query's evidence; Pass B was a second, independent re-derivation performed without copying Pass A's recorded labels, focused especially on re-checking the subjective/boundary result-level calls (style-match queries, borderline PARTIALLY_RELEVANT vs IRRELEVANT calls).
+
+- **Query-level label agreement: 30/30 = 100%** (threshold for acceptance was 85%; no further rubric iteration was required).
+- **Average absolute relevance_score difference between passes: 1.53 points** (median 0, driven almost entirely by two queries).
+- Two queries showed real result-level disagreement that did **not** flip the final label:
+  - **E072 极简** (style query): Pass A read the home-organization before/after cards as fully RELEVANT (clean "after" state); Pass B, on reconsideration, downgraded them to PARTIALLY_RELEVANT because the same thumbnail also shows a cluttered "before" half. Scores: 88 vs 62 (Δ26) — both PASS. This is flagged as the calibration's largest genuine subjectivity source and is why **style/format-type queries evaluated from a single static thumbnail get a confidence cap of MEDIUM even when judgeable_result_count≥3** (see `RELEVANCE_RUBRIC.md` §5 note added after this finding).
+  - **E154 母婴**: Pass A leaned on the mechanical PASS bands (2 direct + 2 partial + 1 irrelevant clears the `rel_plus_partial≥0.80` PASS clause); Pass B's holistic re-read weighted more heavily that 3 of 5 visible results are generic template-category browse tiles rather than specific matched content, and initially wanted PARTIAL. Adjudication: label stays **PASS** (the rubric's evaluation object is "results actually returned," including template tiles, and they were judged on their own merit, not excluded) but `needs_manual_review=true` is set and confidence capped at MEDIUM to flag the composition concern for a human reviewer.
+  - E027 围巾 and E008 咖啡杯 also had minor result-level re-reads (E027 rank2 cap-vs-scarf call; E008's thinness questioned) that did not change the label.
+
+Per task spec §9, `needs_manual_review` is also set whenever `judgeable_result_count < 3` (all low-result and zero-result calibration queries) or the two-pass score delta ≥15 points. **7 of 30** calibration queries are flagged this way; see `calibration_results.csv`.
+
+## Discovered structural findings that shaped the bulk-328 methodology
+
+1. **`metadata="template"` results have an unreliable `result_title` field.** The collector appears to repeat the *first* template tile's title across all subsequent `template`-metadata entries in the same visible batch (confirmed by cross-checking `raw/*.json` against screenshots for E001, E007, E154 — e.g. E007's 5 "Templates" tiles all show `title="Phonics Learning Poster"` while their URLs correctly differ). **Fix applied for all 328: `metadata="template"` results are judged from `url_slug_terms`, never from `result_title`.**
+2. **`metadata="inspiration"` results (the "Examples" gallery) are the genuine search hits; `metadata="template"` results are template-category browse tiles** shown further down the same page (the "Templates" section) — lower specificity, more like navigation than a matched result, but still visible to the user and still judged (not excluded) per the rubric's evaluation object.
+3. **Style/format-type queries (`海报`, `极简`) validate on visual design language, not subject-matter keyword overlap.** Text-only evidence would likely have misjudged both as random/FAIL; the screenshot confirmed `海报` is a clean PASS (every result is genuinely poster-formatted, subjects vary because "poster" doesn't constrain subject) and `极简` is a PASS-with-caveats (genuine minimalist visual language present, but with real image-composition subjectivity, see E072 above).
+4. **Severe, unambiguous FAILs occur with no rewrite at all** (E042 金属→NBA/Breaking Bad MBTI cards, E003 猫→zero cats, E019 镜子→Chinese heritage/solar-term posters despite a mirror-specific rewrite). Rewrite is therefore not a reliable predictor of relevance outcome in either direction, consistent with task spec's prohibition on assuming rewrite⇒fail or no-rewrite⇒pass.
+5. **A recurring "noise" template category** (`dual-character-comparison-infographic`, e.g. "dad vs mom", "Introvert vs Extrovert Weekend") appears as an IRRELEVANT top-3 result across multiple unrelated animal/object queries (猫, cat, 狗, 书 all pulled it). This looks like a systemic over-matching pattern in production's non-rewrite retrieval path, worth flagging to the product team independent of any single query's score.
+
+## Conclusion
+
+Calibration is **stable**: rubric-v1.1 is locked, no further iteration performed. Proceeding to the full 328-query first pass using this rubric and the evidence-priority policy in `MODEL_AND_METHOD.md`.

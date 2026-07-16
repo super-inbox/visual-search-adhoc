@@ -1,0 +1,104 @@
+[
+  {
+    "batch_id": "batch_001",
+    "query_index_start": 1,
+    "query_index_end": 20,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_002",
+    "query_index_start": 21,
+    "query_index_end": 40,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_003",
+    "query_index_start": 41,
+    "query_index_end": 60,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_004",
+    "query_index_start": 61,
+    "query_index_end": 80,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_005",
+    "query_index_start": 81,
+    "query_index_end": 100,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_006",
+    "query_index_start": 101,
+    "query_index_end": 120,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_007",
+    "query_index_start": 121,
+    "query_index_end": 140,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_008",
+    "query_index_start": 141,
+    "query_index_end": 160,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_009",
+    "query_index_start": 161,
+    "query_index_end": 180,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_010",
+    "query_index_start": 181,
+    "query_index_end": 200,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_011",
+    "query_index_start": 201,
+    "query_index_end": 220,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_012",
+    "query_index_start": 221,
+    "query_index_end": 240,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_013",
+    "query_index_start": 241,
+    "query_index_end": 260,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_014",
+    "query_index_start": 261,
+    "query_index_end": 280,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_015",
+    "query_index_start": 281,
+    "query_index_end": 300,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_016",
+    "query_index_start": 301,
+    "query_index_end": 320,
+    "count": 20
+  },
+  {
+    "batch_id": "batch_017",
+    "query_index_start": 321,
+    "query_index_end": 328,
+    "count": 8
+  }
+]

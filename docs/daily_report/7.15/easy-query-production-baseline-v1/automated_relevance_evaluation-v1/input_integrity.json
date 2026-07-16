@@ -1,0 +1,33 @@
+{
+  "authoritative_query_count": 328,
+  "full_results_csv_row_count": 328,
+  "full_results_jsonl_object_count": 328,
+  "query_index_unique_count": 328,
+  "query_index_contiguous_1_328": true,
+  "order_mismatch_count": 0,
+  "original_query_text_mismatch_count": 0,
+  "queries_with_zero_top_results_rows": 12,
+  "queries_with_zero_top_results_rows_unexplained_by_zero_result_flag": [],
+  "raw_json_file_count": 328,
+  "screenshot_png_file_count": 328,
+  "missing_screenshot_ref_count": 0,
+  "missing_raw_ref_count": 0,
+  "rewrite_csv_row_count": 138,
+  "broaden_csv_row_count": 138,
+  "zero_result_csv_row_count": 12,
+  "low_result_csv_row_count": 43,
+  "empty_query_count": 0,
+  "duplicate_query_text_count": 0,
+  "suspicious_screenshot_count": 0,
+  "corrupt_raw_json_count": 0,
+  "missing_top_results_for_nonzero_result_count": 0,
+  "top_results_exceeds_observed_count_count": 0,
+  "query_input_sha256": "682ed08a97f69ff39317c923ac859fe2f085ab8e8d7b9dc7b1a0f31fa0b32f3e",
+  "query_input_sha256_matches_run_manifest": true,
+  "total_issues": 0,
+  "issues": [],
+  "notes": [
+    "Queries with zero visible Top Results rows: 12 (of which zero_result=true accounts for 12)",
+    "No duplicate query text found in query_input (consistent with RUN_MANIFEST duplicate_query_count_in_input=0)."
+  ]
+}

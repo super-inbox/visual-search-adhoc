@@ -1,0 +1,176 @@
+{
+  "run_id": "curify-easy-query-automated-relevance-eval-2026-07-15-16",
+  "generated_at": "2026-07-16T07:29:40Z",
+  "files": [
+    {
+      "relative_path": "final/automated_relevance_query_level_results.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_query_level_results.csv",
+      "file_type": "csv",
+      "byte_size": 193656,
+      "row_count": 328,
+      "sha256": "d8a77b1e1b6f3d06ea80ca3fae0f6d4f71a246cbf21c87f67fd9fe9d1fe04aaf",
+      "purpose": "Full 328-row query-level relevance results (final, second-pass adjudicated)",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_query_level_results.jsonl",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_query_level_results.jsonl",
+      "file_type": "jsonl",
+      "byte_size": 494049,
+      "row_count": 328,
+      "sha256": "e8fbb2143602160aaff460238088ae0f14f5a4a76250f7d1018e87664a458f7a",
+      "purpose": "Same as above, JSONL",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_result_level_results.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_result_level_results.csv",
+      "file_type": "csv",
+      "byte_size": 541687,
+      "row_count": 1511,
+      "sha256": "d9b52e4e5d4532560982aa256d7d5e2d1aac8bdf8fd6f119c74cf5b1c81313f3",
+      "purpose": "Per-visible-Top-Result relevance labels (long table)",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_result_level_results.jsonl",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_result_level_results.jsonl",
+      "file_type": "jsonl",
+      "byte_size": 893532,
+      "row_count": 1511,
+      "sha256": "2a13fdd2f036bdf8f90828b0c24a759fd55a6ecde88ab50977c3d9eabbde576f",
+      "purpose": "Same as above, JSONL",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_summary.json",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_summary.json",
+      "file_type": "json",
+      "byte_size": 8803,
+      "row_count": null,
+      "sha256": "20d5986736273c8d05fd4a30ea66e754bbb3da7e27a3ab357a29a3a68f72e3e8",
+      "purpose": "Full aggregate statistics",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_summary.md",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_summary.md",
+      "file_type": "md",
+      "byte_size": 733,
+      "row_count": null,
+      "sha256": "e1dfbe8c3dfba084a25bc7618b60d89777ebd835f06ef418ba90feedfcab3621",
+      "purpose": "Human-readable summary",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_run_log.md",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_run_log.md",
+      "file_type": "md",
+      "byte_size": 4864,
+      "row_count": null,
+      "sha256": "dedd24b59abbce6099d1c323db24dbb4c6c45bb22d395f1f8e8fc1e80f21e18c",
+      "purpose": "Pipeline timeline and explicit not-done actions",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/CURIFY_EASY_QUERY_AUTOMATED_RELEVANCE_REPORT_2026-07-15_zh.md",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/CURIFY_EASY_QUERY_AUTOMATED_RELEVANCE_REPORT_2026-07-15_zh.md",
+      "file_type": "md",
+      "byte_size": 13442,
+      "row_count": null,
+      "sha256": "eec1f17e06fb6ad42374bfe56026314570de145dc04bee7062861a8f6c889882",
+      "purpose": "Formal Chinese report",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_pass_queries.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_pass_queries.csv",
+      "file_type": "csv",
+      "byte_size": 52830,
+      "row_count": 93,
+      "sha256": "8694ba832ab4fec5e930306631aa731a08a71bd181015fd53c244718af666698",
+      "purpose": "Subset: query_relevance_label=PASS",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_partial_queries.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_partial_queries.csv",
+      "file_type": "csv",
+      "byte_size": 66642,
+      "row_count": 106,
+      "sha256": "d9d95193ebfc5d360d86d78b701013b41196ee07d860907ff5a242baec9ee956",
+      "purpose": "Subset: query_relevance_label=PARTIAL",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_fail_queries.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_fail_queries.csv",
+      "file_type": "csv",
+      "byte_size": 75534,
+      "row_count": 129,
+      "sha256": "fd72a5b0c7e90fec622c4f9fa825990aa849d5766868eda76c6b36dcc59c1b79",
+      "purpose": "Subset: query_relevance_label=FAIL",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_unjudgable_queries.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_unjudgable_queries.csv",
+      "file_type": "csv",
+      "byte_size": 675,
+      "row_count": 0,
+      "sha256": "cdfe43b7ef464dc0be37a653d5e7ac9ab21586a7b9c563af779a4a951173f2f6",
+      "purpose": "Subset: query_relevance_label=UNJUDGABLE (empty w/ header -- none occurred)",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_low_confidence_queries.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_low_confidence_queries.csv",
+      "file_type": "csv",
+      "byte_size": 7507,
+      "row_count": 16,
+      "sha256": "ad5b9deb9ece6fd53c63788692eb5642cdf0c4833131c033b4f90ecffffe660d",
+      "purpose": "Subset: relevance_confidence=LOW",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_semantic_drift_cases.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_semantic_drift_cases.csv",
+      "file_type": "csv",
+      "byte_size": 64619,
+      "row_count": 93,
+      "sha256": "1b00afa1a5bf2962dccac462201119c7260813c57e16d9c50b72fb4cdd0187df",
+      "purpose": "Subset: semantic_drift in (MODERATE, SEVERE)",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_rewrite_cases.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_rewrite_cases.csv",
+      "file_type": "csv",
+      "byte_size": 92500,
+      "row_count": 138,
+      "sha256": "c7595b427325e82b14741eb3605ef1dcfd11813174b5878abf5bf702b31292c3",
+      "purpose": "Subset: rewrite_observed=True",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_manual_review_queue.csv",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_manual_review_queue.csv",
+      "file_type": "csv",
+      "byte_size": 59366,
+      "row_count": 201,
+      "sha256": "f435e1740d6dc5edaa672b23d5a74e24fdbafb1b61abbd1aa8dd6d916aef92aa",
+      "purpose": "P0/P1/P2 prioritized human review queue",
+      "generated_at": "2026-07-16T07:29:40Z"
+    },
+    {
+      "relative_path": "final/automated_relevance_integrity_report.md",
+      "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.15/easy-query-production-baseline-v1/automated_relevance_evaluation-v1/final/automated_relevance_integrity_report.md",
+      "file_type": "md",
+      "byte_size": 1436,
+      "row_count": null,
+      "sha256": "cec2e09e08d67ff877f3b3506e9dd93e99fae9cff14c5bd2cc657762c97c7512",
+      "purpose": "This integrity report",
+      "generated_at": "2026-07-16T07:29:40Z"
+    }
+  ]
+}

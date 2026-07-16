@@ -1,0 +1,2383 @@
+[
+  {
+    "query_index": 241,
+    "source_row_number": "242",
+    "query_id": "E241",
+    "original_query": "数字游民",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 12,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/241_E241_query.png",
+    "raw_response_path": "raw/241_E241.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "netherlands 01",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/series-travel/template-series-travel-netherlands-01",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-travel-netherlands-01-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "series",
+          "travel",
+          "series",
+          "travel",
+          "netherlands"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "netherlands 02",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/series-travel/template-series-travel-netherlands-02",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-travel-netherlands-02-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "series",
+          "travel",
+          "series",
+          "travel",
+          "netherlands"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "netherlands 03",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/series-travel/template-series-travel-netherlands-03",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-series-travel-netherlands-03-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "series",
+          "travel",
+          "series",
+          "travel",
+          "netherlands"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "france",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/country-top10-travel-destinations/template-country-top10-travel-destinations-france",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-country-top10-travel-destinations-france-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "country",
+          "top10",
+          "travel",
+          "destinations",
+          "country",
+          "top10",
+          "travel",
+          "destinations",
+          "france"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "india",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/country-top10-travel-destinations/template-country-top10-travel-destinations-india",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-country-top10-travel-destinations-india-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "country",
+          "top10",
+          "travel",
+          "destinations",
+          "country",
+          "top10",
+          "travel",
+          "destinations",
+          "india"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 242,
+    "source_row_number": "243",
+    "query_id": "E242",
+    "original_query": "家庭主妇",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "housewife lifestyle, family roles infographic, domestic life poster",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “家庭主妇”. Also showing results for: housewife lifestyle, family roles infographic, domestic life poster",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/242_E242_query.png",
+    "raw_response_path": "raw/242_E242.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "neapolitan pizza",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food/template-food-neapolitan-pizza",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-en-neapolitan-pizza-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "food",
+          "neapolitan",
+          "pizza"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "egg sandwich",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/varieties-food-poster/template-varieties-food-poster-egg-sandwich",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-varieties-food-poster-egg-sandwich-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "varieties",
+          "food",
+          "poster",
+          "varieties",
+          "food",
+          "poster",
+          "egg",
+          "sandwich"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "mille crepe cake",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/varieties-food-poster/template-varieties-food-poster-mille-crepe-cake",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-varieties-food-poster-mille-crepe-cake-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "varieties",
+          "food",
+          "poster",
+          "varieties",
+          "food",
+          "poster",
+          "mille",
+          "crepe",
+          "cake"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "pasta",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/varieties-food-poster/template-varieties-food-poster-pasta",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-varieties-food-poster-pasta-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "varieties",
+          "food",
+          "poster",
+          "varieties",
+          "food",
+          "poster",
+          "pasta"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "korea",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cuisine-food-vocab-poster/template-cuisine-food-vocab-poster-korea",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cuisine-food-vocab-poster-korea-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cuisine",
+          "food",
+          "vocab",
+          "poster",
+          "cuisine",
+          "food",
+          "vocab",
+          "poster",
+          "korea"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 243,
+    "source_row_number": "244",
+    "query_id": "E243",
+    "original_query": "创业者",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 8,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "entrepreneur profile, startup founder infographic, business leader character",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “创业者”. Also showing results for: entrepreneur profile, startup founder infographic, business leader character",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/243_E243_query.png",
+    "raw_response_path": "raw/243_E243.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "One-Person Companies: Then vs Now",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/then-vs-now-comparison-infographic/template-then-vs-now-comparison-infographic-one-person-companies",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-then-vs-now-comparison-infographic-one-person-companies-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "then",
+          "vs",
+          "now",
+          "comparison",
+          "infographic",
+          "then",
+          "vs",
+          "now",
+          "comparison",
+          "infographic",
+          "one",
+          "person",
+          "companies"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "operator",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-siliconvalley/template-mbti-siliconvalley-operator",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-siliconvalley-operator-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "siliconvalley",
+          "mbti",
+          "siliconvalley",
+          "operator"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "founders en sam",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-siliconvalley/template-mbti-generic-ai-founders-sam",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-generic-ai-founders-en-sam-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "siliconvalley",
+          "mbti",
+          "generic",
+          "ai",
+          "founders",
+          "sam"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "hacker",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-siliconvalley/template-mbti-siliconvalley-hacker",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-siliconvalley-hacker-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "siliconvalley",
+          "mbti",
+          "siliconvalley",
+          "hacker"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "employee vs entrepreneur",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/finance-comparison-infographic/template-finance-comparison-infographic-employee-vs-entrepreneur",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-finance-comparison-infographic-employee-vs-entrepreneur-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "finance",
+          "comparison",
+          "infographic",
+          "finance",
+          "comparison",
+          "infographic",
+          "employee",
+          "vs",
+          "entrepreneur"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 244,
+    "source_row_number": "245",
+    "query_id": "E244",
+    "original_query": "留学生",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "international student poster, study abroad infographic, foreign student culture",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “留学生”. Also showing results for: international student poster, study abroad infographic, foreign student culture",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/244_E244_query.png",
+    "raw_response_path": "raw/244_E244.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "beauty skincare",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/east-asian-culture-comparison-infographic/template-east-asian-culture-comparison-infographic-beauty-skincare",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-east-asian-culture-comparison-infographic-beauty-skincare-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "beauty",
+          "skincare"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "education values",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/east-asian-culture-comparison-infographic/template-east-asian-culture-comparison-infographic-education-values",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-east-asian-culture-comparison-infographic-education-values-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "education",
+          "values"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "communication",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/east-asian-culture-comparison-infographic/template-east-asian-culture-comparison-infographic-communication",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-east-asian-culture-comparison-infographic-communication-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "communication"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "chengdu",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/city-mbti/template-city-mbti-chengdu",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-city-mbti-chengdu-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "city",
+          "mbti",
+          "city",
+          "mbti",
+          "chengdu"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "china",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/national-culture-history-infographic/template-national-culture-history-infographic-china",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-national-culture-history-infographic-china-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "national",
+          "culture",
+          "history",
+          "infographic",
+          "national",
+          "culture",
+          "history",
+          "infographic",
+          "china"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 245,
+    "source_row_number": "246",
+    "query_id": "E245",
+    "original_query": "宝妈",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "motherhood lifestyle, parenting tips, mom life",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “宝妈”. Also showing results for: motherhood lifestyle, parenting tips, mom life",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/245_E245_query.png",
+    "raw_response_path": "raw/245_E245.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "parenting families",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/relationship-advice-infographic/template-relationship-advice-infographic-parenting-families",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-relationship-advice-infographic-parenting-families-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "relationship",
+          "advice",
+          "infographic",
+          "relationship",
+          "advice",
+          "infographic",
+          "parenting",
+          "families"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "dad vs mom",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/dual-character-comparison-infographic/template-dual-character-comparison-infographic-dad-vs-mom",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-dual-character-comparison-infographic-dad-vs-mom-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dad",
+          "vs",
+          "mom"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "corgi puppy 2mo",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/pet-care-guide/template-pet-care-guide-corgi-puppy-2mo",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-pet-care-guide-corgi-puppy-2mo-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "pet",
+          "care",
+          "guide",
+          "pet",
+          "care",
+          "guide",
+          "corgi",
+          "puppy",
+          "2mo"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "gardening guide",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/home-lifestyle-guide-infographic/template-home-lifestyle-guide-infographic-gardening-guide",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-home-lifestyle-guide-infographic-gardening-guide-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "home",
+          "lifestyle",
+          "guide",
+          "infographic",
+          "home",
+          "lifestyle",
+          "guide",
+          "infographic",
+          "gardening",
+          "guide"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "en-es",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-english-spanish-park",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-english-spanish-park-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "english",
+          "spanish",
+          "park"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 246,
+    "source_row_number": "247",
+    "query_id": "E246",
+    "original_query": "猫奴",
+    "detected_language": "zh",
+    "category": "audience",
+    "query_type_input": "audience",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "受众/人群词，限定内容的目标使用者，常与场景/内容形态组合",
+    "result_count_observed": 4,
+    "zero_result": false,
+    "low_result": true,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "LOW_RESULT",
+    "screenshot_path": "screenshots/246_E246_query.png",
+    "raw_response_path": "raw/246_E246.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "dad vs mom",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/dual-character-comparison-infographic/template-dual-character-comparison-infographic-dad-vs-mom",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-dual-character-comparison-infographic-dad-vs-mom-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dad",
+          "vs",
+          "mom"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Introvert vs Extrovert Weekend",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/dual-character-comparison-infographic/template-dual-character-comparison-infographic-introvert-vs-extrovert-weekend",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-dual-character-comparison-infographic-introvert-vs-extrovert-weekend-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "introvert",
+          "vs",
+          "extrovert",
+          "weekend"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "Early Bird vs Night Owl Habits",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/dual-character-comparison-infographic/template-dual-character-comparison-infographic-early-bird-vs-night-owl-habits",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-dual-character-comparison-infographic-early-bird-vs-night-owl-habits-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "dual",
+          "character",
+          "comparison",
+          "infographic",
+          "early",
+          "bird",
+          "vs",
+          "night",
+          "owl",
+          "habits"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "Dual Character Comparison Infographic",
+        "url": "https://www.curify-ai.com/nano-template/dual-character-comparison-infographic",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-dual-character-comparison-infographic-dad-vs-mom-prev.jpg",
+        "metadata": "template",
+        "url_slug_terms": [
+          "https:",
+          "www.curify",
+          "ai.com",
+          "nano",
+          "dual",
+          "character",
+          "comparison",
+          "infographic"
+        ]
+      }
+    ],
+    "visible_result_count": 4
+  },
+  {
+    "query_index": 247,
+    "source_row_number": "248",
+    "query_id": "E247",
+    "original_query": "春节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 24,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/247_E247_query.png",
+    "raw_response_path": "raw/247_E247.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "buddha jumps over the wall",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-buddha-jumps-over-the-wall",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-buddha-jumps-over-the-wall-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "buddha",
+          "jumps",
+          "over",
+          "the",
+          "wall"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "four joy meatballs",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-four-joy-meatballs",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-four-joy-meatballs-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "four",
+          "joy",
+          "meatballs"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "kung pao chicken",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/recipe/template-recipe-kung-pao-chicken",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-recipe-zh-kung-pao-chicken-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "recipe",
+          "recipe",
+          "kung",
+          "pao",
+          "chicken"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "ESTJ vs INTP high speed rail",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-contrast/template-mbti-spring-festival--ESTJ-vs-INTP-high-speed-rail",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-spring-festival-zh--ESTJ-vs-INTP-high-speed-rail-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "contrast",
+          "mbti",
+          "spring",
+          "festival",
+          "ESTJ",
+          "vs",
+          "INTP",
+          "high",
+          "speed",
+          "rail"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "INFJ vs ESFJ high speed rail.JPG",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-contrast/template-mbti-spring-festival-INFJ-vs-ESFJ-high-speed-rail.JPG",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-spring-festival-zh-INFJ-vs-ESFJ-high-speed-rail.JPG-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "contrast",
+          "mbti",
+          "spring",
+          "festival",
+          "INFJ",
+          "vs",
+          "ESFJ",
+          "high",
+          "speed",
+          "rail.JPG"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 248,
+    "source_row_number": "249",
+    "query_id": "E248",
+    "original_query": "中秋节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Mid-Autumn Festival poster, Moon Festival infographic, Chinese cultural celebration",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “中秋节”. Also showing results for: Mid-Autumn Festival poster, Moon Festival infographic, Chinese cultural celebration",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/248_E248_query.png",
+    "raw_response_path": "raw/248_E248.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-mid-autumn-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-mid-autumn-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "mid",
+          "autumn",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "songkran festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-songkran-festival",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-songkran-festival-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "songkran",
+          "festival"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "gawai",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-gawai",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-gawai-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "gawai"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 249,
+    "source_row_number": "250",
+    "query_id": "E249",
+    "original_query": "端午节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Dragon Boat Festival infographic, Duanwu Festival culture poster, 端午节 traditions",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “端午节”. Also showing results for: Dragon Boat Festival infographic, Duanwu Festival culture poster, 端午节 traditions",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/249_E249_query.png",
+    "raw_response_path": "raw/249_E249.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "dragon boat festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-dragon-boat-festival",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-dragon-boat-festival-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "dragon",
+          "boat",
+          "festival"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "Dragon Boat Festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/regional-alcoholic-drinks-infographic/template-regional-alcoholic-drinks-infographic-dragon-boat-festival",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-regional-alcoholic-drinks-infographic-dragon-boat-festival-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "regional",
+          "alcoholic",
+          "drinks",
+          "infographic",
+          "regional",
+          "alcoholic",
+          "drinks",
+          "infographic",
+          "dragon",
+          "boat",
+          "festival"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "Zongzi Making for Dragon Boat Festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/food-recipe-tip-infographic/template-food-recipe-tip-infographic-zongzi-dragon-boat",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-food-recipe-tip-infographic-zongzi-dragon-boat-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "food",
+          "recipe",
+          "tip",
+          "infographic",
+          "food",
+          "recipe",
+          "tip",
+          "infographic",
+          "zongzi",
+          "dragon",
+          "boat"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "wedding traditions",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/east-asian-culture-comparison-infographic/template-east-asian-culture-comparison-infographic-wedding-traditions",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-east-asian-culture-comparison-infographic-wedding-traditions-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "east",
+          "asian",
+          "culture",
+          "comparison",
+          "infographic",
+          "wedding",
+          "traditions"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 250,
+    "source_row_number": "251",
+    "query_id": "E250",
+    "original_query": "圣诞节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Christmas celebration poster, Christmas vocabulary cards, holiday traditions infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “圣诞节”. Also showing results for: Christmas celebration poster, Christmas vocabulary cards, holiday traditions infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/250_E250_query.png",
+    "raw_response_path": "raw/250_E250.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-christmas-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-christmas-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "christmas",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "christmas party event",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/brand-vi-full-visual-pack-mockup/template-brand-vi-full-visual-pack-mockup-christmas-party-event",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-brand-vi-full-visual-pack-mockup-christmas-party-event-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "brand",
+          "vi",
+          "full",
+          "visual",
+          "pack",
+          "mockup",
+          "brand",
+          "vi",
+          "full",
+          "visual",
+          "pack",
+          "mockup",
+          "christmas",
+          "party",
+          "event"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "december christmas dinner",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/chikawa-monthly-calendar-vertical-poster/template-chikawa-monthly-calendar-vertical-poster-december-christmas-dinner",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-chikawa-monthly-calendar-vertical-poster-december-christmas-dinner-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "chikawa",
+          "monthly",
+          "calendar",
+          "vertical",
+          "poster",
+          "chikawa",
+          "monthly",
+          "calendar",
+          "vertical",
+          "poster",
+          "december",
+          "christmas",
+          "dinner"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "jingle bells christmas cartoon",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/musical-score-illustrated-art-poster/template-musical-score-illustrated-art-poster-jingle-bells-christmas-cartoon",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-musical-score-illustrated-art-poster-jingle-bells-christmas-cartoon-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "musical",
+          "score",
+          "illustrated",
+          "art",
+          "poster",
+          "musical",
+          "score",
+          "illustrated",
+          "art",
+          "poster",
+          "jingle",
+          "bells",
+          "christmas",
+          "cartoon"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 251,
+    "source_row_number": "252",
+    "query_id": "E251",
+    "original_query": "christmas",
+    "detected_language": "en",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 12,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/251_E251_christmas.png",
+    "raw_response_path": "raw/251_E251.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-christmas-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-christmas-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "christmas",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "christmas party event",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/brand-vi-full-visual-pack-mockup/template-brand-vi-full-visual-pack-mockup-christmas-party-event",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-brand-vi-full-visual-pack-mockup-christmas-party-event-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "brand",
+          "vi",
+          "full",
+          "visual",
+          "pack",
+          "mockup",
+          "brand",
+          "vi",
+          "full",
+          "visual",
+          "pack",
+          "mockup",
+          "christmas",
+          "party",
+          "event"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "december christmas dinner",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/chikawa-monthly-calendar-vertical-poster/template-chikawa-monthly-calendar-vertical-poster-december-christmas-dinner",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-chikawa-monthly-calendar-vertical-poster-december-christmas-dinner-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "chikawa",
+          "monthly",
+          "calendar",
+          "vertical",
+          "poster",
+          "chikawa",
+          "monthly",
+          "calendar",
+          "vertical",
+          "poster",
+          "december",
+          "christmas",
+          "dinner"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "jingle bells christmas cartoon",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/musical-score-illustrated-art-poster/template-musical-score-illustrated-art-poster-jingle-bells-christmas-cartoon",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-musical-score-illustrated-art-poster-jingle-bells-christmas-cartoon-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "musical",
+          "score",
+          "illustrated",
+          "art",
+          "poster",
+          "musical",
+          "score",
+          "illustrated",
+          "art",
+          "poster",
+          "jingle",
+          "bells",
+          "christmas",
+          "cartoon"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 252,
+    "source_row_number": "253",
+    "query_id": "E252",
+    "original_query": "万圣节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Halloween celebration poster, Halloween vocabulary cards, Halloween themed infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “万圣节”. Also showing results for: Halloween celebration poster, Halloween vocabulary cards, Halloween themed infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/252_E252_query.png",
+    "raw_response_path": "raw/252_E252.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-halloween-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-halloween-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "halloween",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "blessing dragon",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/ip-creative-cultural-goods-mockup-set/template-ip-creative-cultural-goods-mockup-set-blessing-dragon",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-ip-creative-cultural-goods-mockup-set-blessing-dragon-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "ip",
+          "creative",
+          "cultural",
+          "goods",
+          "mockup",
+          "set",
+          "ip",
+          "creative",
+          "cultural",
+          "goods",
+          "mockup",
+          "set",
+          "blessing",
+          "dragon"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 253,
+    "source_row_number": "254",
+    "query_id": "E253",
+    "original_query": "halloween",
+    "detected_language": "en",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "halloween celebration poster, halloween party ideas, halloween decorations infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “halloween”. Also showing results for: halloween celebration poster, halloween party ideas, halloween decorations infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/253_E253_halloween.png",
+    "raw_response_path": "raw/253_E253.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-halloween-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-halloween-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "halloween",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 254,
+    "source_row_number": "255",
+    "query_id": "E254",
+    "original_query": "情人节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 10,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": false,
+    "broadened_query": "",
+    "rewrite_observed": false,
+    "raw_rewrite_visible": "",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/254_E254_query.png",
+    "raw_response_path": "raw/254_E254.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "entj",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-in-love-infographic/template-mbti-in-love-infographic-entj",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-in-love-infographic-entj-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "entj"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "entp",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-in-love-infographic/template-mbti-in-love-infographic-entp",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-in-love-infographic-entp-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "entp"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "infj",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-in-love-infographic/template-mbti-in-love-infographic-infj",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-in-love-infographic-infj-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "mbti",
+          "in",
+          "love",
+          "infographic",
+          "infj"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "蒙奇·D·路飞红色丝带礼物主题极简插画海报",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/one-piece-valentine-flat-magazine-character-card-poster/template-one-piece-valentine-flat-magazine-character-card-poster-luffy",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-one-piece-valentine-flat-magazine-character-card-poster-luffy-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "one",
+          "piece",
+          "valentine",
+          "flat",
+          "magazine",
+          "character",
+          "card",
+          "poster",
+          "one",
+          "piece",
+          "valentine",
+          "flat",
+          "magazine",
+          "character",
+          "card",
+          "poster",
+          "luffy"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "nami",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/one-piece-valentine-flat-magazine-character-card-poster/template-one-piece-valentine-flat-magazine-character-card-poster-nami",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-one-piece-valentine-flat-magazine-character-card-poster-nami-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "one",
+          "piece",
+          "valentine",
+          "flat",
+          "magazine",
+          "character",
+          "card",
+          "poster",
+          "one",
+          "piece",
+          "valentine",
+          "flat",
+          "magazine",
+          "character",
+          "card",
+          "poster",
+          "nami"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 255,
+    "source_row_number": "256",
+    "query_id": "E255",
+    "original_query": "母亲节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Mother's Day celebration poster, Mother's Day vocabulary, Mother's Day infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “母亲节”. Also showing results for: Mother's Day celebration poster, Mother's Day vocabulary, Mother's Day infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/255_E255_query.png",
+    "raw_response_path": "raw/255_E255.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "day of the dead",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-day-of-the-dead",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-day-of-the-dead-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "day",
+          "of",
+          "the",
+          "dead"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 256,
+    "source_row_number": "257",
+    "query_id": "E256",
+    "original_query": "父亲节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Father's Day celebration, Father's Day vocabulary, Father's Day poster",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “父亲节”. Also showing results for: Father's Day celebration, Father's Day vocabulary, Father's Day poster",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/256_E256_query.png",
+    "raw_response_path": "raw/256_E256.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "day of the dead",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-day-of-the-dead",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-day-of-the-dead-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "day",
+          "of",
+          "the",
+          "dead"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "wedding day ceremony",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/lifestyle-photo-grid/template-lifestyle-photo-grid-wedding-day-ceremony",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-lifestyle-photo-grid-wedding-day-ceremony-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "lifestyle",
+          "photo",
+          "grid",
+          "lifestyle",
+          "photo",
+          "grid",
+          "wedding",
+          "day",
+          "ceremony"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "sick day",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/self-care-illustration-poster/template-self-care-illustration-poster-sick-day",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-self-care-illustration-poster-sick-day-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "self",
+          "care",
+          "illustration",
+          "poster",
+          "self",
+          "care",
+          "illustration",
+          "poster",
+          "sick",
+          "day"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "HSK1 在学校的一天 A Day at School reading worksheet",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hsk-bilingual-reading-text-lesson-poster/template-hsk-bilingual-reading-text-lesson-poster-hsk1-day-at-school",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hsk-bilingual-reading-text-lesson-poster-hsk1-day-at-school-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hsk",
+          "bilingual",
+          "reading",
+          "text",
+          "lesson",
+          "poster",
+          "hsk",
+          "bilingual",
+          "reading",
+          "text",
+          "lesson",
+          "poster",
+          "hsk1",
+          "day",
+          "at",
+          "school"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "hsk1 a day at school",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/hsk-bilingual-reading-text-lesson-poster/template-hsk-bilingual-reading-text-lesson-poster-hsk1-a-day-at-school",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-hsk-bilingual-reading-text-lesson-poster-hsk1-a-day-at-school-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "hsk",
+          "bilingual",
+          "reading",
+          "text",
+          "lesson",
+          "poster",
+          "hsk",
+          "bilingual",
+          "reading",
+          "text",
+          "lesson",
+          "poster",
+          "hsk1",
+          "a",
+          "day",
+          "at",
+          "school"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 257,
+    "source_row_number": "258",
+    "query_id": "E257",
+    "original_query": "感恩节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving traditions infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “感恩节”. Also showing results for: Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving traditions infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/257_E257_query.png",
+    "raw_response_path": "raw/257_E257.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-thanksgiving-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-thanksgiving-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "thanksgiving",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 258,
+    "source_row_number": "259",
+    "query_id": "E258",
+    "original_query": "thanksgiving",
+    "detected_language": "en",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving food infographic",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “thanksgiving”. Also showing results for: Thanksgiving celebration poster, Thanksgiving vocabulary cards, Thanksgiving food infographic",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/258_E258_thanksgiving.png",
+    "raw_response_path": "raw/258_E258.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-thanksgiving-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-thanksgiving-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "thanksgiving",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "chinese traditional foods",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/theme-overview-poster/template-theme-overview-poster-chinese-traditional-foods",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-theme-overview-poster-chinese-traditional-foods-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "theme",
+          "overview",
+          "poster",
+          "theme",
+          "overview",
+          "poster",
+          "chinese",
+          "traditional",
+          "foods"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "mille crepe cake",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/varieties-food-poster/template-varieties-food-poster-mille-crepe-cake",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-varieties-food-poster-mille-crepe-cake-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "varieties",
+          "food",
+          "poster",
+          "varieties",
+          "food",
+          "poster",
+          "mille",
+          "crepe",
+          "cake"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "vietnam",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cuisine-food-vocab-poster/template-cuisine-food-vocab-poster-vietnam",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cuisine-food-vocab-poster-vietnam-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cuisine",
+          "food",
+          "vocab",
+          "poster",
+          "cuisine",
+          "food",
+          "vocab",
+          "poster",
+          "vietnam"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 259,
+    "source_row_number": "260",
+    "query_id": "E259",
+    "original_query": "复活节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 36,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Easter celebration poster, Easter traditions infographic, Easter vocabulary cards",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “复活节”. Also showing results for: Easter celebration poster, Easter traditions infographic, Easter vocabulary cards",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/259_E259_query.png",
+    "raw_response_path": "raw/259_E259.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "en-zh",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/vocabulary/template-vocabulary-easter-en-zh",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-vocabulary-easter-en-zh-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "vocabulary",
+          "vocabulary",
+          "easter",
+          "en",
+          "zh"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "chunfen",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/solar-term/template-solar-term-chunfen",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-solar-term-zh-chunfen-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "solar",
+          "term",
+          "solar",
+          "term",
+          "chunfen"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  },
+  {
+    "query_index": 260,
+    "source_row_number": "261",
+    "query_id": "E260",
+    "original_query": "元宵节",
+    "detected_language": "zh",
+    "category": "festival",
+    "query_type_input": "festival",
+    "contains_proper_noun": "False",
+    "contains_number_or_model": "False",
+    "contains_mixed_language": "False",
+    "duplicate_status": "UNIQUE",
+    "easy_confidence": "HIGH",
+    "input_notes": "节日词，强时效性，常驱动季节性营销/文创内容需求",
+    "result_count_observed": 30,
+    "zero_result": false,
+    "low_result": false,
+    "query_broadened": true,
+    "broadened_query": "Lantern Festival poster, Yuan Xiao Jie celebration, Chinese Lantern Festival",
+    "rewrite_observed": true,
+    "raw_rewrite_visible": "Few results for “元宵节”. Also showing results for: Lantern Festival poster, Yuan Xiao Jie celebration, Chinese Lantern Festival",
+    "final_status": "SUCCESS",
+    "screenshot_path": "screenshots/260_E260_query.png",
+    "raw_response_path": "raw/260_E260.json",
+    "top_results": [
+      {
+        "rank": 1,
+        "title": "lantern festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-lantern-festival",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-lantern-festival-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "lantern",
+          "festival"
+        ]
+      },
+      {
+        "rank": 2,
+        "title": "santa claus christmas",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/word-scene/template-word-scene-santa-claus-christmas",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-word-scene-zh-santa-claus-christmas-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "word",
+          "scene",
+          "word",
+          "scene",
+          "santa",
+          "claus",
+          "christmas"
+        ]
+      },
+      {
+        "rank": 3,
+        "title": "amusement park 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-amusement-park%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-amusement-park%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "amusement",
+          "park%205"
+        ]
+      },
+      {
+        "rank": 4,
+        "title": "spring festival 5",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/mbti-animal/template-mbti-animal-spring-festival%205",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-mbti-animal-zh-spring-festival%205-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "mbti",
+          "animal",
+          "mbti",
+          "animal",
+          "spring",
+          "festival%205"
+        ]
+      },
+      {
+        "rank": 5,
+        "title": "songkran festival",
+        "url": "https://www.curify-ai.com/en/carousel/template-example/cultural-festival-poster/template-cultural-festival-poster-songkran-festival",
+        "image_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-cultural-festival-poster-songkran-festival-prev.jpg",
+        "metadata": "inspiration",
+        "url_slug_terms": [
+          "example",
+          "cultural",
+          "festival",
+          "poster",
+          "cultural",
+          "festival",
+          "poster",
+          "songkran",
+          "festival"
+        ]
+      }
+    ],
+    "visible_result_count": 5
+  }
+]

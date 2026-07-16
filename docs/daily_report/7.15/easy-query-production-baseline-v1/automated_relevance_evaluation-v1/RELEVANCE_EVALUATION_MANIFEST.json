@@ -1,0 +1,33 @@
+{
+  "run_id": "curify-easy-query-automated-relevance-eval-2026-07-15-16",
+  "task": "AUTOMATED_RELEVANCE_EVALUATION_FOR_ALL_328_EASY_QUERIES",
+  "baseline_root": "docs/daily_report/7.15/easy-query-production-baseline-v1",
+  "baseline_production_site": "https://www.curify-ai.com",
+  "baseline_production_commit": "72b55b667bb5173cab87fcec377198064dc3ac28",
+  "output_directory": "automated_relevance_evaluation-v1",
+  "output_directory_selection": "first available slot (did not exist prior to this run)",
+  "generated_at": "2026-07-16T07:31:00Z",
+  "rubric_version": "rubric-v1.1",
+  "rubric_file": "RELEVANCE_RUBRIC.md",
+  "evaluator_first_pass": "claude-code-sonnet-5-rubric-v1.1",
+  "evaluator_second_pass": "claude-code-sonnet-5-rubric-v1.1-secondpass",
+  "evaluation_method_summary": "TEXT_PLUS_VISUAL for calibration set (30), all zero-result queries (12), and disclosed spot audits; TEXT_EVIDENCE_ONLY for the bulk of the 328-query first pass and the tier1/tier3 second-pass re-derivations (no new screenshots opened in the second pass)",
+  "pipeline_phases": [
+    {"phase": 1, "name": "input_audit", "output": ["INPUT_AUDIT.md", "input_integrity.json"], "status": "complete"},
+    {"phase": 2, "name": "rubric_lock", "output": ["RELEVANCE_RUBRIC.md"], "status": "complete"},
+    {"phase": 3, "name": "evidence_packets", "output": ["evidence/query_packets.json"], "status": "complete"},
+    {"phase": 4, "name": "calibration_30", "output": ["CALIBRATION_REPORT.md", "calibration_results.csv"], "status": "complete", "label_agreement_rate": 1.0},
+    {"phase": 5, "name": "first_pass_328", "output": ["batches/batch_001..017", "checkpoints/master_query_level_first_pass.csv", "checkpoints/master_result_level_first_pass.jsonl"], "status": "complete", "queries_completed": 328},
+    {"phase": 6, "name": "second_pass_population_selection", "output": ["checkpoints/second_pass_population.json", "checkpoints/tier1_review_sheet.json"], "status": "complete", "tier1_count": 54, "tier2_count": 219},
+    {"phase": 7, "name": "second_pass_execution", "output": ["review/second_pass_review.csv", "review/disagreement_cases.csv", "review/random_pass_audit.csv", "review/adjudication_report.md", "logs/consistency_audit.json"], "status": "complete", "tier1_reviewed": 54, "tier3_reviewed": 10, "tier2_mechanical_audit_count": 328, "label_flips": 4},
+    {"phase": 8, "name": "final_dataset_build", "output": ["checkpoints/master_query_level_final.csv", "checkpoints/master_result_level_final.jsonl"], "status": "complete"},
+    {"phase": 9, "name": "final_deliverables", "output": ["final/*.csv", "final/*.jsonl", "final/*.json", "final/*.md"], "status": "complete", "file_count": 15},
+    {"phase": 10, "name": "reports_and_safety", "output": ["README.md", "final/CURIFY_EASY_QUERY_AUTOMATED_RELEVANCE_REPORT_2026-07-15_zh.md", "WORKTREE_SAFETY_REPORT.md", "../AUTOMATED_RELEVANCE_EVALUATION_ADDED.md"], "status": "complete"}
+  ],
+  "final_label_distribution": {"PASS": 93, "PARTIAL": 106, "FAIL": 129, "UNJUDGABLE": 0},
+  "final_status": "FULL_AUTOMATED_RELEVANCE_EVALUATION_COMPLETE",
+  "no_reaccess_of_production": true,
+  "no_production_code_modified": true,
+  "no_baseline_overwrite": true,
+  "no_commit_or_push": true
+}

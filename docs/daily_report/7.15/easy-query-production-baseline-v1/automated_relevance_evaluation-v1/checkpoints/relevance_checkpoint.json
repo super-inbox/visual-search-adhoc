@@ -1,0 +1,22 @@
+{
+  "total_queries": 328,
+  "completed_queries": 328,
+  "last_completed_query_index": 328,
+  "completed_batch_ids": ["batch_001", "batch_002", "batch_003", "batch_004", "batch_005", "batch_006", "batch_007", "batch_008", "batch_009", "batch_010", "batch_011", "batch_012", "batch_013", "batch_014", "batch_015", "batch_016", "batch_017"],
+  "failed_batch_ids": [],
+  "calibration_complete": true,
+  "first_pass_complete": true,
+  "second_pass_complete": true,
+  "second_pass_tier1_reviewed": 54,
+  "second_pass_tier3_reviewed": 10,
+  "second_pass_tier2_mechanical_audit_count": 328,
+  "second_pass_label_flips": 4,
+  "deliverables_complete": true,
+  "final_status": "FULL_AUTOMATED_RELEVANCE_EVALUATION_COMPLETE",
+  "unjudgable_count": 0,
+  "evaluation_start_time": "2026-07-16T13:44:00Z",
+  "last_update_time": "2026-07-16T07:32:00Z",
+  "rubric_version": "rubric-v1.1",
+  "evaluator_version": "claude-code-sonnet-5-rubric-v1.1",
+  "evaluator_version_second_pass": "claude-code-sonnet-5-rubric-v1.1-secondpass"
+}

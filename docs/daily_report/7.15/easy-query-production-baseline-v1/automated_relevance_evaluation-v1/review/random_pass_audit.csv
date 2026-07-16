@@ -1,0 +1,11 @@
+query_index,query_id,original_query,first_pass_label,first_pass_score,audit_outcome
+41,E041,彩虹,PASS,80,confirmed
+99,E099,法式,PASS,90,confirmed
+126,E126,森林,PASS,100,confirmed
+153,E153,宠物,PASS,100,confirmed
+172,E172,农业,PASS,95,confirmed
+205,E205,卡片,PASS,100,confirmed
+233,E233,旅行者,PASS,100,LABEL FLIP -> see OVERRIDES
+247,E247,春节,PASS,62,confirmed
+296,E296,盆栽,PASS,100,confirmed
+328,E328,野餐,PASS,58,confirmed

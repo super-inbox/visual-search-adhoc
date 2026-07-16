@@ -1,0 +1,13 @@
+query_index,original_query,category,query_relevance_label,relevance_score,primary_failure_reason,needs_manual_review
+56,塑料,material,FAIL,0,ZERO_RESULT,True
+63,混凝土,material,FAIL,0,ZERO_RESULT,True
+68,cork,material,FAIL,0,ZERO_RESULT,True
+70,velvet,material,FAIL,0,ZERO_RESULT,True
+92,扁平化,style,FAIL,0,ZERO_RESULT,True
+102,中古,style,FAIL,0,ZERO_RESULT,True
+156,房地产,industry,FAIL,0,ZERO_RESULT,True
+168,3C数码,industry,FAIL,0,ZERO_RESULT,True
+175,二手交易,industry,FAIL,0,ZERO_RESULT,True
+202,展架,format,FAIL,0,ZERO_RESULT,True
+290,保健品,product_category,FAIL,0,ZERO_RESULT,True
+318,预售,action,FAIL,0,ZERO_RESULT,True
