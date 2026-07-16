@@ -1,0 +1,123 @@
+{
+  "query_id": "V191",
+  "query": "折扣传单",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:20:46.919Z",
+  "completed_at": "2026-07-16T15:20:52.978Z",
+  "duration_ms": 6058,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "折扣",
+        "传单"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "discount flyer",
+        "promotional leaflet",
+        "sale advertisement"
+      ],
+      "decomposition": {
+        "output": "leaflet"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "折扣 discount flyer",
+        "slotKey": "rewrite",
+        "slotValue": "discount flyer",
+        "subjectBound": true
+      },
+      {
+        "text": "折扣 promotional leaflet",
+        "slotKey": "rewrite",
+        "slotValue": "promotional leaflet",
+        "subjectBound": true
+      },
+      {
+        "text": "折扣 sale advertisement",
+        "slotKey": "rewrite",
+        "slotValue": "sale advertisement",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "leaflet",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 1,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-english-dialogue-scene-supermarket",
+        "title": "supermarket",
+        "template_id": "template-english-dialogue-scene",
+        "tags": [
+          "bilingual",
+          "dialogue",
+          "illustration",
+          "kawaii",
+          "kids-learning",
+          "language",
+          "language-english",
+          "supermarket",
+          "intermediate",
+          "flashcards",
+          "food",
+          "shopping",
+          "urban",
+          "cozy",
+          "playful",
+          "infographic",
+          "vocabulary",
+          "daily-life-grid",
+          "cartoon",
+          "whimsical",
+          "learning",
+          "vibrant",
+          "modern",
+          "product",
+          "lifestyle",
+          "composition",
+          "cultural-fusion"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

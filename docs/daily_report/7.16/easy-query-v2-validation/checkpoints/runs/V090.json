@@ -1,0 +1,86 @@
+{
+  "query_id": "V090",
+  "query": "bottle",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:29:51.608Z",
+  "completed_at": "2026-07-16T14:29:55.173Z",
+  "duration_ms": 3565,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "bottle"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "glass bottle",
+        "water bottle",
+        "bottle design"
+      ],
+      "decomposition": {}
+    },
+    "candidatePaths": [
+      {
+        "text": "glass bottle",
+        "slotKey": "rewrite",
+        "slotValue": "glass bottle",
+        "subjectBound": false
+      },
+      {
+        "text": "water bottle",
+        "slotKey": "rewrite",
+        "slotValue": "water bottle",
+        "subjectBound": false
+      },
+      {
+        "text": "bottle design",
+        "slotKey": "rewrite",
+        "slotValue": "bottle design",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 1,
+    "postMergeCount": 1602,
+    "dedupCount": 1602,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-smart-hydration-water-bottle",
+        "title": "smart hydration water bottle",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 2.48,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

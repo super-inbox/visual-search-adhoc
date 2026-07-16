@@ -1,0 +1,85 @@
+{
+  "query_id": "V233",
+  "query": "展会展架",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:41:58.052Z",
+  "completed_at": "2026-07-16T15:42:01.443Z",
+  "duration_ms": 3390,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "展会",
+        "展架"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "exhibition display stand",
+        "trade show booth",
+        "exhibit structure"
+      ],
+      "decomposition": {
+        "subject": "exhibition stand"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "展会 exhibition stand exhibition display stand",
+        "slotKey": "rewrite",
+        "slotValue": "exhibition display stand",
+        "subjectBound": true
+      },
+      {
+        "text": "展会 exhibition stand trade show booth",
+        "slotKey": "rewrite",
+        "slotValue": "trade show booth",
+        "subjectBound": true
+      },
+      {
+        "text": "展会 exhibition stand exhibit structure",
+        "slotKey": "rewrite",
+        "slotValue": "exhibit structure",
+        "subjectBound": true
+      },
+      {
+        "text": "展会 exhibition stand",
+        "slotKey": "subject",
+        "slotValue": "exhibition stand",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

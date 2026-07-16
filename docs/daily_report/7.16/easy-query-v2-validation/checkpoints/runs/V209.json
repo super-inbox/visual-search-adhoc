@@ -1,0 +1,110 @@
+{
+  "query_id": "V209",
+  "query": "产品详情图",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:29:51.590Z",
+  "completed_at": "2026-07-16T15:29:51.714Z",
+  "duration_ms": 123,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "产品",
+        "详情",
+        "图"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 7,
+    "rewriteTriggered": false,
+    "rewriteProviderCalled": false,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [],
+      "decomposition": {}
+    },
+    "candidatePaths": [],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 0,
+    "usedPathsCount": 1,
+    "preMergeCount": 31,
+    "postMergeCount": 31,
+    "dedupCount": 31,
+    "finalResultCount": 6,
+    "strictCount": 6,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-amoled-gps-smartwatch",
+        "title": "amoled gps smartwatch",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-anc-wireless-earbuds",
+        "title": "anc wireless earbuds",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-ems-neck-massager",
+        "title": "ems neck massager",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 4,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-portable-espresso-coffee-maker",
+        "title": "portable espresso coffee maker",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 5,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-portable-mini-cooling-fan",
+        "title": "portable mini cooling fan",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 6,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-smart-hydration-water-bottle",
+        "title": "smart hydration water bottle",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "query_id": "V296",
+  "query": "abacus",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:13:44.351Z",
+  "completed_at": "2026-07-16T16:13:47.668Z",
+  "duration_ms": 3317,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "abacus"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "abacus educational tool",
+        "ancient counting device",
+        "math learning abacus"
+      ],
+      "decomposition": {
+        "output": "educational tool"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "abacus educational tool",
+        "slotKey": "rewrite",
+        "slotValue": "abacus educational tool",
+        "subjectBound": false
+      },
+      {
+        "text": "math learning abacus",
+        "slotKey": "rewrite",
+        "slotValue": "math learning abacus",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "rewrite",
+          "slotValue": "ancient counting device",
+          "reason": "UNANCHORED_REWRITE_CANDIDATE"
+        },
+        {
+          "slotKey": "output",
+          "slotValue": "educational tool",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 2,
+    "usedPathsCount": 3,
+    "preMergeCount": 0,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-vocabulary-english-korean-numbers-and-counting",
+        "title": "en-ko",
+        "template_id": "template-vocabulary",
+        "tags": [
+          "english-korean",
+          "intermediate",
+          "kawaii",
+          "language",
+          "numbers-and-counting",
+          "vocabulary",
+          "illustration",
+          "art-prints",
+          "flashcards",
+          "playful",
+          "whimsical",
+          "learning",
+          "character",
+          "design",
+          "infographic",
+          "modern",
+          "stylish",
+          "soft",
+          "soft-light",
+          "digital-canvas",
+          "watercolor",
+          "serene",
+          "cozy",
+          "y2k"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

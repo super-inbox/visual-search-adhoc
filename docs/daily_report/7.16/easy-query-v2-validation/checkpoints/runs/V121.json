@@ -1,0 +1,121 @@
+{
+  "query_id": "V121",
+  "query": "购物袋",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:45:28.966Z",
+  "completed_at": "2026-07-16T14:45:40.509Z",
+  "duration_ms": 11542,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "购物袋"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "shopping bag design",
+        "eco-friendly tote",
+        "grocery bag illustration"
+      ],
+      "decomposition": {
+        "subject": "shopping bag"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "购物袋 shopping bag shopping bag design",
+        "slotKey": "rewrite",
+        "slotValue": "shopping bag design",
+        "subjectBound": true
+      },
+      {
+        "text": "购物袋 shopping bag eco-friendly tote",
+        "slotKey": "rewrite",
+        "slotValue": "eco-friendly tote",
+        "subjectBound": true
+      },
+      {
+        "text": "购物袋 shopping bag grocery bag illustration",
+        "slotKey": "rewrite",
+        "slotValue": "grocery bag illustration",
+        "subjectBound": true
+      },
+      {
+        "text": "购物袋 shopping bag",
+        "slotKey": "subject",
+        "slotValue": "shopping bag",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 1,
+    "postMergeCount": 85,
+    "dedupCount": 85,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-fashion-ecommerce-bag",
+        "title": "bag",
+        "template_id": "template-fashion-ecommerce",
+        "tags": [
+          "ecommerce",
+          "fashion",
+          "mockups",
+          "product",
+          "promotional-poster",
+          "design",
+          "portrait",
+          "infographic",
+          "illustration",
+          "modern",
+          "stylish",
+          "vibrant",
+          "luxurious",
+          "high-fashion",
+          "shopping",
+          "lifestyle",
+          "daily-life-grid",
+          "social-media-posts",
+          "bold",
+          "dynamic",
+          "artistic",
+          "minimalist",
+          "luxury-packaging",
+          "digital-canvas",
+          "branding",
+          "product-lineup"
+        ],
+        "score": 5.28,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

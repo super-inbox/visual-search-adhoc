@@ -1,0 +1,147 @@
+{
+  "query_id": "V157",
+  "query": "信封",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:03:38.286Z",
+  "completed_at": "2026-07-16T15:03:40.811Z",
+  "duration_ms": 2525,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "信封"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 2,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "envelope design",
+        "stationery envelope",
+        "letter envelope"
+      ],
+      "decomposition": {
+        "subject": "envelope"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "信封 envelope envelope design",
+        "slotKey": "rewrite",
+        "slotValue": "envelope design",
+        "subjectBound": true
+      },
+      {
+        "text": "信封 envelope stationery envelope",
+        "slotKey": "rewrite",
+        "slotValue": "stationery envelope",
+        "subjectBound": true
+      },
+      {
+        "text": "信封 envelope letter envelope",
+        "slotKey": "rewrite",
+        "slotValue": "letter envelope",
+        "subjectBound": true
+      },
+      {
+        "text": "信封 envelope",
+        "slotKey": "subject",
+        "slotValue": "envelope",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 2,
+    "postMergeCount": 9,
+    "dedupCount": 9,
+    "finalResultCount": 2,
+    "strictCount": 2,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-lunar-new-year-red-envelope-set-koi-fish-red-envelopes",
+        "title": "Koi Fish Red Envelopes",
+        "template_id": "template-lunar-new-year-red-envelope-set",
+        "tags": [
+          "celebration",
+          "cultural-festivals",
+          "culture",
+          "design",
+          "art-prints",
+          "posters",
+          "illustration",
+          "festive",
+          "lunar-new-year",
+          "vibrant",
+          "watercolor",
+          "whimsical",
+          "serene",
+          "warm",
+          "playful",
+          "modern",
+          "seasonal",
+          "family"
+        ],
+        "score": 3.96,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-word-scene-post-office",
+        "title": "post office",
+        "template_id": "template-word-scene",
+        "tags": [
+          "bilingual",
+          "cartoon",
+          "comic",
+          "intermediate",
+          "kids-learning",
+          "language",
+          "language-english",
+          "vocabulary",
+          "learning",
+          "infographic",
+          "illustration",
+          "dialogue",
+          "flashcards",
+          "urban",
+          "playful",
+          "dynamic",
+          "modern",
+          "cozy",
+          "whimsical",
+          "soft-light",
+          "soft",
+          "story",
+          "cultural-fusion",
+          "daily-life-grid"
+        ],
+        "score": 1.08,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

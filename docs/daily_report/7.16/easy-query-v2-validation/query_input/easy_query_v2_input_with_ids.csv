@@ -1,0 +1,327 @@
+easy_id,query,language,scenario,category
+V001,玩具,zh,creative_merch,toy
+V002,toy,en,creative_merch,toy
+V003,手办,zh,creative_merch,figure
+V004,figure,en,creative_merch,figure
+V005,毛绒玩具,zh,creative_merch,plush
+V006,plush,en,creative_merch,plush
+V007,娃娃,zh,creative_merch,doll
+V008,doll,en,creative_merch,doll
+V009,吉祥物,zh,creative_merch,mascot
+V010,mascot,en,creative_merch,mascot
+V011,卡通形象,zh,creative_merch,character
+V012,character,en,creative_merch,character
+V013,贴纸,zh,creative_merch,sticker
+V014,sticker,en,creative_merch,sticker
+V015,钥匙扣,zh,creative_merch,keychain
+V016,keychain,en,creative_merch,keychain
+V017,收藏品,zh,creative_merch,collectible
+V018,collectible,en,creative_merch,collectible
+V019,盲盒,zh,creative_merch,blind_box
+V020,blind box,en,creative_merch,blind_box
+V021,动作人偶,zh,creative_merch,figure
+V022,action figure,en,creative_merch,figure
+V023,泰迪熊,zh,creative_merch,plush
+V024,teddy bear,en,creative_merch,plush
+V025,扭蛋,zh,creative_merch,blind_box
+V026,capsule toy,en,creative_merch,blind_box
+V027,卡牌,zh,creative_merch,collectible
+V028,trading card,en,creative_merch,collectible
+V029,模型,zh,creative_merch,collectible
+V030,model kit,en,creative_merch,collectible
+V031,雕像,zh,creative_merch,collectible
+V032,statue,en,creative_merch,collectible
+V033,帆布袋,zh,creative_merch,merch_item
+V034,tote bag,en,creative_merch,merch_item
+V035,手机壳,zh,creative_merch,merch_item
+V036,phone case,en,creative_merch,merch_item
+V037,徽章,zh,creative_merch,merch_item
+V038,badge,en,creative_merch,merch_item
+V039,胸针,zh,creative_merch,merch_item
+V040,enamel pin,en,creative_merch,merch_item
+V041,冰箱贴,zh,creative_merch,merch_item
+V042,magnet,en,creative_merch,merch_item
+V043,挂绳,zh,creative_merch,merch_item
+V044,lanyard,en,creative_merch,merch_item
+V045,迷你手办,zh,creative_merch,figure
+V046,mini figure,en,creative_merch,figure
+V047,潮流公仔,zh,creative_merch,collectible
+V048,vinyl toy,en,creative_merch,collectible
+V049,潮流手办,zh,creative_merch,figure
+V050,pop figure,en,creative_merch,figure
+V051,惊喜盒子,zh,creative_merch,blind_box
+V052,mystery box,en,creative_merch,blind_box
+V053,挂件,zh,creative_merch,merch_item
+V054,charm,en,creative_merch,merch_item
+V055,马克杯,zh,creative_merch,merch_item
+V056,collectible mug,en,creative_merch,merch_item
+V057,抱枕,zh,creative_merch,merch_item
+V058,plush pillow,en,creative_merch,merch_item
+V059,拼图,zh,creative_merch,collectible
+V060,puzzle,en,creative_merch,collectible
+V061,积木,zh,creative_merch,collectible
+V062,building blocks,en,creative_merch,collectible
+V063,公仔盒,zh,creative_merch,merch_item
+V064,sticker pack,en,creative_merch,merch_item
+V065,文创手办,zh,creative_merch,figure
+V066,cultural relic figure,en,creative_merch,figure
+V067,博物馆文创,zh,creative_merch,merch_item
+V068,museum souvenir,en,creative_merch,merch_item
+V069,国潮公仔,zh,creative_merch,figure
+V070,IP figure,en,creative_merch,figure
+V071,动漫周边,zh,creative_merch,merch_item
+V072,anime merch,en,creative_merch,merch_item
+V073,明信片套装,zh,creative_merch,merch_item
+V074,postcard set,en,creative_merch,merch_item
+V075,艺术微喷,zh,creative_merch,collectible
+V076,art print,en,creative_merch,collectible
+V077,摇头公仔,zh,creative_merch,collectible
+V078,bobblehead,en,creative_merch,collectible
+V079,场景模型,zh,creative_merch,collectible
+V080,diorama,en,creative_merch,collectible
+V081,角色卡通贴纸,zh,creative_merch,sticker
+V082,character sticker pack,en,creative_merch,sticker
+V083,标志,zh,brand_business,logo
+V084,logo,en,brand_business,logo
+V085,包装,zh,brand_business,package
+V086,package,en,brand_business,package
+V087,标签,zh,brand_business,label
+V088,label,en,brand_business,label
+V089,瓶子,zh,brand_business,bottle
+V090,bottle,en,brand_business,bottle
+V091,菜单,zh,brand_business,menu
+V092,menu,en,brand_business,menu
+V093,名片,zh,brand_business,business_card
+V094,business card,en,brand_business,business_card
+V095,产品盒,zh,brand_business,product_box
+V096,product box,en,brand_business,product_box
+V097,咖啡包装,zh,brand_business,package
+V098,coffee package,en,brand_business,package
+V099,餐厅菜单,zh,brand_business,menu
+V100,restaurant menu,en,brand_business,menu
+V101,香水瓶,zh,brand_business,bottle
+V102,perfume bottle,en,brand_business,bottle
+V103,香水盒,zh,brand_business,product_box
+V104,perfume box,en,brand_business,product_box
+V105,茶叶包装,zh,brand_business,package
+V106,tea package,en,brand_business,package
+V107,咖啡豆包装,zh,brand_business,package
+V108,coffee bean package,en,brand_business,package
+V109,巧克力礼盒,zh,brand_business,product_box
+V110,chocolate box,en,brand_business,product_box
+V111,护肤品包装,zh,brand_business,package
+V112,skincare package,en,brand_business,package
+V113,化妆品包装,zh,brand_business,package
+V114,cosmetic package,en,brand_business,package
+V115,酒标,zh,brand_business,label
+V116,wine label,en,brand_business,label
+V117,零食包装,zh,brand_business,package
+V118,snack package,en,brand_business,package
+V119,礼品盒,zh,brand_business,product_box
+V120,gift box,en,brand_business,product_box
+V121,购物袋,zh,brand_business,merch_item
+V122,shopping bag,en,brand_business,merch_item
+V123,产品标签,zh,brand_business,label
+V124,product label,en,brand_business,label
+V125,烘焙包装,zh,brand_business,package
+V126,bakery package,en,brand_business,package
+V127,咖啡馆菜单,zh,brand_business,menu
+V128,cafe menu,en,brand_business,menu
+V129,店招,zh,brand_business,signage
+V130,shop sign,en,brand_business,signage
+V131,门店招牌,zh,brand_business,signage
+V132,storefront sign,en,brand_business,signage
+V133,产品吊牌,zh,brand_business,label
+V134,product tag,en,brand_business,label
+V135,价格标签,zh,brand_business,label
+V136,price tag,en,brand_business,label
+V137,服装吊牌,zh,brand_business,label
+V138,clothing tag,en,brand_business,label
+V139,首饰盒,zh,brand_business,product_box
+V140,jewelry box,en,brand_business,product_box
+V141,蜡烛标签,zh,brand_business,label
+V142,candle label,en,brand_business,label
+V143,香皂包装,zh,brand_business,package
+V144,soap package,en,brand_business,package
+V145,茶叶罐,zh,brand_business,product_box
+V146,tea box,en,brand_business,product_box
+V147,咖啡杯,zh,brand_business,cup
+V148,coffee cup,en,brand_business,cup
+V149,咖啡杯套,zh,brand_business,cup
+V150,coffee cup sleeve,en,brand_business,cup
+V151,外卖餐盒,zh,brand_business,product_box
+V152,takeout box,en,brand_business,product_box
+V153,饮料瓶,zh,brand_business,bottle
+V154,drink bottle,en,brand_business,bottle
+V155,水瓶标签,zh,brand_business,label
+V156,water bottle label,en,brand_business,label
+V157,信封,zh,brand_business,stationery
+V158,envelope,en,brand_business,stationery
+V159,手提袋,zh,brand_business,merch_item
+V160,paper bag,en,brand_business,merch_item
+V161,蛋糕盒,zh,brand_business,product_box
+V162,cake box,en,brand_business,product_box
+V163,月饼礼盒,zh,brand_business,product_box
+V164,mooncake gift box,en,brand_business,product_box
+V165,横幅,zh,marketing_ecommerce,banner
+V166,banner,en,marketing_ecommerce,banner
+V167,传单,zh,marketing_ecommerce,flyer
+V168,flyer,en,marketing_ecommerce,flyer
+V169,画册,zh,marketing_ecommerce,catalog
+V170,catalog,en,marketing_ecommerce,catalog
+V171,促销横幅,zh,marketing_ecommerce,banner
+V172,sale banner,en,marketing_ecommerce,banner
+V173,产品图,zh,marketing_ecommerce,product_photo
+V174,product photo,en,marketing_ecommerce,product_photo
+V175,促销活动,zh,marketing_ecommerce,promotion
+V176,promotion,en,marketing_ecommerce,promotion
+V177,广告,zh,marketing_ecommerce,advertisement
+V178,advertisement,en,marketing_ecommerce,advertisement
+V179,社交媒体帖子,zh,marketing_ecommerce,social_post
+V180,social media post,en,marketing_ecommerce,social_post
+V181,产品展示,zh,marketing_ecommerce,product_display
+V182,product display,en,marketing_ecommerce,product_display
+V183,餐厅传单,zh,marketing_ecommerce,flyer
+V184,restaurant flyer,en,marketing_ecommerce,flyer
+V185,电影海报,zh,marketing_ecommerce,poster_specific
+V186,movie poster,en,marketing_ecommerce,poster_specific
+V187,产品横幅,zh,marketing_ecommerce,banner
+V188,product banner,en,marketing_ecommerce,banner
+V189,促销海报,zh,marketing_ecommerce,poster_specific
+V190,sale poster,en,marketing_ecommerce,poster_specific
+V191,折扣传单,zh,marketing_ecommerce,flyer
+V192,discount flyer,en,marketing_ecommerce,flyer
+V193,电商横幅,zh,marketing_ecommerce,banner
+V194,ecommerce banner,en,marketing_ecommerce,banner
+V195,产品画册,zh,marketing_ecommerce,catalog
+V196,product catalog,en,marketing_ecommerce,catalog
+V197,活动传单,zh,marketing_ecommerce,flyer
+V198,event flyer,en,marketing_ecommerce,flyer
+V199,开业横幅,zh,marketing_ecommerce,banner
+V200,grand opening banner,en,marketing_ecommerce,banner
+V201,节日促销横幅,zh,marketing_ecommerce,banner
+V202,holiday sale banner,en,marketing_ecommerce,banner
+V203,新品横幅,zh,marketing_ecommerce,banner
+V204,new arrival banner,en,marketing_ecommerce,banner
+V205,限时促销海报,zh,marketing_ecommerce,poster_specific
+V206,flash sale poster,en,marketing_ecommerce,poster_specific
+V207,清仓促销横幅,zh,marketing_ecommerce,banner
+V208,clearance sale banner,en,marketing_ecommerce,banner
+V209,产品详情图,zh,marketing_ecommerce,product_photo
+V210,product listing image,en,marketing_ecommerce,product_photo
+V211,网店横幅,zh,marketing_ecommerce,banner
+V212,online store banner,en,marketing_ecommerce,banner
+V213,社交媒体广告,zh,marketing_ecommerce,advertisement
+V214,social media ad,en,marketing_ecommerce,advertisement
+V215,种草帖,zh,marketing_ecommerce,social_post
+V216,influencer post,en,marketing_ecommerce,social_post
+V217,开箱照,zh,marketing_ecommerce,product_photo
+V218,unboxing photo,en,marketing_ecommerce,product_photo
+V219,前后对比图,zh,marketing_ecommerce,product_photo
+V220,before after comparison,en,marketing_ecommerce,product_photo
+V221,优惠券,zh,marketing_ecommerce,coupon
+V222,discount coupon,en,marketing_ecommerce,coupon
+V223,会员卡,zh,marketing_ecommerce,membership_card
+V224,membership card,en,marketing_ecommerce,membership_card
+V225,积分卡,zh,marketing_ecommerce,membership_card
+V226,loyalty card,en,marketing_ecommerce,membership_card
+V227,礼品卡,zh,marketing_ecommerce,membership_card
+V228,gift card,en,marketing_ecommerce,membership_card
+V229,门店横幅,zh,marketing_ecommerce,banner
+V230,storefront banner,en,marketing_ecommerce,banner
+V231,橱窗展示,zh,marketing_ecommerce,product_display
+V232,window display,en,marketing_ecommerce,product_display
+V233,展会展架,zh,marketing_ecommerce,banner
+V234,trade show banner,en,marketing_ecommerce,banner
+V235,展览传单,zh,marketing_ecommerce,flyer
+V236,exhibition flyer,en,marketing_ecommerce,flyer
+V237,新品发布海报,zh,marketing_ecommerce,poster_specific
+V238,product launch poster,en,marketing_ecommerce,poster_specific
+V239,季节促销横幅,zh,marketing_ecommerce,banner
+V240,seasonal sale banner,en,marketing_ecommerce,banner
+V241,黑五促销横幅,zh,marketing_ecommerce,banner
+V242,black friday banner,en,marketing_ecommerce,banner
+V243,双十一促销海报,zh,marketing_ecommerce,poster_specific
+V244,singles day sale poster,en,marketing_ecommerce,poster_specific
+V245,直播预告横幅,zh,marketing_ecommerce,banner
+V246,livestream promo banner,en,marketing_ecommerce,banner
+V247,识字卡,zh,education,flashcard
+V248,flashcard,en,education,flashcard
+V249,练习册,zh,education,worksheet
+V250,worksheet,en,education,worksheet
+V251,字母卡,zh,education,flashcard
+V252,alphabet card,en,education,flashcard
+V253,地图,zh,education,map
+V254,map,en,education,map
+V255,图解,zh,education,diagram
+V256,diagram,en,education,diagram
+V257,日历,zh,education,calendar
+V258,calendar,en,education,calendar
+V259,证书,zh,education,certificate
+V260,certificate,en,education,certificate
+V261,科学海报,zh,education,poster_specific
+V262,science poster,en,education,poster_specific
+V263,课堂装饰海报,zh,education,poster_specific
+V264,classroom poster,en,education,poster_specific
+V265,教科书,zh,education,textbook
+V266,textbook,en,education,textbook
+V267,地球仪,zh,education,globe
+V268,globe,en,education,globe
+V269,图表,zh,education,chart
+V270,chart,en,education,chart
+V271,课程表,zh,education,chart
+V272,timetable,en,education,chart
+V273,数字表,zh,education,chart
+V274,number chart,en,education,chart
+V275,元素周期表,zh,education,chart
+V276,periodic table,en,education,chart
+V277,世界地图,zh,education,map
+V278,world map,en,education,map
+V279,拼读卡,zh,education,flashcard
+V280,phonics card,en,education,flashcard
+V281,试卷,zh,education,worksheet
+V282,exam paper,en,education,worksheet
+V283,成绩单,zh,education,certificate
+V284,report card,en,education,certificate
+V285,笔袋,zh,education,stationery
+V286,pencil case,en,education,stationery
+V287,黑板,zh,education,classroom_material
+V288,chalkboard,en,education,classroom_material
+V289,白板,zh,education,classroom_material
+V290,whiteboard,en,education,classroom_material
+V291,显微镜,zh,education,classroom_material
+V292,microscope,en,education,classroom_material
+V293,书签,zh,education,stationery
+V294,bookmark,en,education,stationery
+V295,算盘,zh,education,classroom_material
+V296,abacus,en,education,classroom_material
+V297,练习本,zh,education,worksheet
+V298,workbook,en,education,worksheet
+V299,单词卡,zh,education,flashcard
+V300,vocabulary card,en,education,flashcard
+V301,拼写卡,zh,education,flashcard
+V302,spelling card,en,education,flashcard
+V303,数学练习册,zh,education,worksheet
+V304,math worksheet,en,education,worksheet
+V305,阅读练习册,zh,education,worksheet
+V306,reading worksheet,en,education,worksheet
+V307,科学图解,zh,education,diagram
+V308,science diagram,en,education,diagram
+V309,人体图解,zh,education,chart
+V310,anatomy chart,en,education,chart
+V311,动物识字卡,zh,education,flashcard
+V312,animal flashcard,en,education,flashcard
+V313,字母海报,zh,education,poster_specific
+V314,alphabet poster,en,education,poster_specific
+V315,荣誉证书,zh,education,certificate
+V316,achievement certificate,en,education,certificate
+V317,毕业证,zh,education,certificate
+V318,diploma,en,education,certificate
+V319,校历,zh,education,calendar
+V320,school calendar,en,education,calendar
+V321,教室装饰,zh,education,classroom_material
+V322,classroom decoration,en,education,classroom_material
+V323,学习图表,zh,education,chart
+V324,learning chart,en,education,chart
+V325,贴纸奖励表,zh,education,chart
+V326,reward chart,en,education,chart

@@ -1,0 +1,156 @@
+{
+  "query_id": "V059",
+  "query": "拼图",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:14:14.186Z",
+  "completed_at": "2026-07-16T14:14:17.456Z",
+  "duration_ms": 3269,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "拼图"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 3,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "puzzle design",
+        "jigsaw templates",
+        "puzzle illustrations"
+      ],
+      "decomposition": {
+        "subject": "puzzle"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "拼图 puzzle puzzle design",
+        "slotKey": "rewrite",
+        "slotValue": "puzzle design",
+        "subjectBound": true
+      },
+      {
+        "text": "拼图 puzzle jigsaw templates",
+        "slotKey": "rewrite",
+        "slotValue": "jigsaw templates",
+        "subjectBound": true
+      },
+      {
+        "text": "拼图 puzzle puzzle illustrations",
+        "slotKey": "rewrite",
+        "slotValue": "puzzle illustrations",
+        "subjectBound": true
+      },
+      {
+        "text": "拼图 puzzle",
+        "slotKey": "subject",
+        "slotValue": "puzzle",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 2,
+    "postMergeCount": 2,
+    "dedupCount": 2,
+    "finalResultCount": 2,
+    "strictCount": 2,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-museum-gift-themed-merchandise-collection-display-van-gogh-mfa-boston",
+        "title": "van gogh mfa boston",
+        "template_id": "template-museum-gift-themed-merchandise-collection-display",
+        "tags": [
+          "design",
+          "merch",
+          "posters",
+          "art-prints",
+          "mockups",
+          "vintage",
+          "interior",
+          "modern",
+          "wall-art",
+          "artistic",
+          "cultural-fusion",
+          "illustration",
+          "iconic",
+          "portrait"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-museum-gift-themed-merchandise-collection-display-van-gogh-mystery-box",
+        "title": "van gogh mystery box",
+        "template_id": "template-museum-gift-themed-merchandise-collection-display",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "posters",
+          "art-prints",
+          "wall-art",
+          "character",
+          "artistic",
+          "vintage",
+          "whimsical",
+          "interior",
+          "modern",
+          "playful",
+          "illustration",
+          "gift-packaging",
+          "stylish",
+          "cultural-fusion",
+          "celebration",
+          "narrative-comic",
+          "story",
+          "trending",
+          "showcase",
+          "vibrant",
+          "dynamic",
+          "cozy",
+          "serene",
+          "intimate",
+          "introspective",
+          "luxurious",
+          "elegant",
+          "photorealistic",
+          "watercolor",
+          "ink",
+          "soft-light",
+          "dramatic-lighting",
+          "mood-board",
+          "seasonal"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

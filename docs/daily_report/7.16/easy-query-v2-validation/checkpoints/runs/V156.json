@@ -1,0 +1,280 @@
+{
+  "query_id": "V156",
+  "query": "water bottle label",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:03:08.068Z",
+  "completed_at": "2026-07-16T15:03:11.258Z",
+  "duration_ms": 3189,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "water",
+        "bottle",
+        "label"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "water bottle design",
+        "bottle label template",
+        "custom water bottle label"
+      ],
+      "decomposition": {
+        "subject": "water bottle",
+        "output": "label"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "water bottle design",
+        "slotKey": "rewrite",
+        "slotValue": "water bottle design",
+        "subjectBound": false
+      },
+      {
+        "text": "bottle label template",
+        "slotKey": "rewrite",
+        "slotValue": "bottle label template",
+        "subjectBound": false
+      },
+      {
+        "text": "custom water bottle label",
+        "slotKey": "rewrite",
+        "slotValue": "custom water bottle label",
+        "subjectBound": false
+      },
+      {
+        "text": "water bottle",
+        "slotKey": "subject",
+        "slotValue": "water bottle",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 1,
+    "postMergeCount": 12,
+    "dedupCount": 12,
+    "finalResultCount": 12,
+    "strictCount": 1,
+    "relaxedCount": 11,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-smart-hydration-water-bottle",
+        "title": "smart hydration water bottle",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 3.96,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-word-scene-family-waterpark",
+        "title": "family waterpark",
+        "template_id": "template-word-scene",
+        "tags": [
+          "bilingual",
+          "family",
+          "language-english",
+          "vocabulary",
+          "language",
+          "learning",
+          "intermediate",
+          "infographic",
+          "flashcards",
+          "illustration",
+          "english-chinese",
+          "playful",
+          "summer",
+          "dynamic",
+          "cartoon",
+          "design",
+          "modern",
+          "stylish",
+          "whimsical",
+          "joyful",
+          "cozy",
+          "vibrant",
+          "lifestyle",
+          "culture",
+          "travel",
+          "adventure"
+        ],
+        "score": 2.16,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-product-poster-label-printer",
+        "title": "label printer",
+        "template_id": "template-product-poster",
+        "tags": [
+          "posters",
+          "product",
+          "showcase",
+          "interior",
+          "art-prints",
+          "modern",
+          "minimalist",
+          "photorealistic",
+          "digital-canvas",
+          "design",
+          "branding",
+          "promotional-poster",
+          "vibrant",
+          "home-office-setup",
+          "office",
+          "technology",
+          "lifestyle",
+          "stylish",
+          "utility-1940s",
+          "stationery-and-supplies",
+          "productivity"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 4,
+        "result_id": "template-vintage-fruit-market-label-poster-lemon",
+        "title": "lemon",
+        "template_id": "template-vintage-fruit-market-label-poster",
+        "tags": [
+          "food",
+          "vintage",
+          "posters",
+          "wall-art",
+          "art-prints",
+          "design",
+          "watercolor",
+          "illustration",
+          "kawaii",
+          "cozy",
+          "serene",
+          "nostalgic",
+          "summer",
+          "nature",
+          "botanical",
+          "vibrant",
+          "playful",
+          "stylish",
+          "minimalist",
+          "interior",
+          "seasonal",
+          "cuisine",
+          "fruits",
+          "natural-beauty",
+          "daily-life-grid",
+          "composition"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 5,
+        "result_id": "template-vintage-fruit-market-label-poster-orange",
+        "title": "orange",
+        "template_id": "template-vintage-fruit-market-label-poster",
+        "tags": [
+          "food",
+          "vintage",
+          "posters",
+          "wall-art",
+          "art-prints",
+          "design",
+          "illustration",
+          "watercolor",
+          "kawaii",
+          "cozy",
+          "serene",
+          "nostalgic",
+          "summer",
+          "natural-light",
+          "botanical",
+          "stylish",
+          "playful",
+          "vibrant",
+          "warm",
+          "minimalist",
+          "composition",
+          "seasonal",
+          "cuisine",
+          "daily-life-grid",
+          "lifestyle"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 6,
+        "result_id": "template-eco-farm-food-uniform-product-label-arabica-coffee-beans",
+        "title": "arabica coffee beans",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 7,
+        "result_id": "template-eco-farm-food-uniform-product-label-artisan-aged-cheese",
+        "title": "artisan aged cheese",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 8,
+        "result_id": "template-eco-farm-food-uniform-product-label-extra-virgin-olive-oil",
+        "title": "extra virgin olive oil",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 9,
+        "result_id": "template-eco-farm-food-uniform-product-label-raw-natural-honey",
+        "title": "raw natural honey",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 10,
+        "result_id": "template-eco-farm-food-uniform-product-label-sourdough-bread",
+        "title": "sourdough bread",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "query_id": "V061",
+  "query": "积木",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:15:14.647Z",
+  "completed_at": "2026-07-16T14:15:19.933Z",
+  "duration_ms": 5286,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "积木"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "building blocks",
+        "toy bricks",
+        "construction set"
+      ],
+      "decomposition": {}
+    },
+    "candidatePaths": [
+      {
+        "text": "积木 building blocks",
+        "slotKey": "rewrite",
+        "slotValue": "building blocks",
+        "subjectBound": true
+      },
+      {
+        "text": "积木 toy bricks",
+        "slotKey": "rewrite",
+        "slotValue": "toy bricks",
+        "subjectBound": true
+      },
+      {
+        "text": "积木 construction set",
+        "slotKey": "rewrite",
+        "slotValue": "construction set",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

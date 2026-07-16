@@ -1,0 +1,141 @@
+{
+  "audit_name": "Hybrid Search Technical Audit and Experiment Design",
+  "audit_date": "2026-07-17",
+  "audit_type": "read-only technical audit and experiment design (no implementation)",
+  "repository": {
+    "path": "/Users/baobaoli/Desktop/curify-frontend-hybrid-audit",
+    "remote": "https://github.com/super-inbox/curify-frontend.git",
+    "branch": "main",
+    "commit": "5a59c4beba7856136396d8d0d249d5355c85322f",
+    "commit_message": "Merge pull request #530 from super-inbox/jwang/vercel",
+    "shallow_clone": true,
+    "working_tree_status_before": "clean",
+    "working_tree_status_after": "clean",
+    "modified_during_audit": false
+  },
+  "output_directory": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.17/hybrid-search-technical-audit/",
+  "prior_report_directory_overwritten": false,
+  "safety_confirmations": {
+    "source_files_modified": false,
+    "dependencies_installed": false,
+    "servers_started": false,
+    "external_apis_called": false,
+    "openai_requests_made": false,
+    "google_requests_made": false,
+    "html_scraping_performed": false,
+    "env_files_read_or_copied": false,
+    "commits_made": false,
+    "pushes_made": false,
+    "deployments_made": false,
+    "concurrent_benchmark_session_touched": false
+  },
+  "deliverables": [
+    {
+      "id": 1,
+      "file": "HYBRID_SEARCH_CURRENT_ARCHITECTURE.md",
+      "sha256": "e6f33bafc217ec6874330062814d3377316cfa23fbed26805da30f8d77e9922b"
+    },
+    {
+      "id": 2,
+      "file": "HYBRID_SEARCH_CODE_ENTRYPOINTS.csv",
+      "sha256": "65cf1474d8d6dcb3fc11512f60fbd11f7e8bda3ba5f11af2d03f1f73df476522",
+      "rows": 33,
+      "columns": 8,
+      "csv_parse_validated": true
+    },
+    {
+      "id": 3,
+      "file": "HYBRID_SEARCH_CALL_GRAPH.md",
+      "sha256": "88fd0c520a9228c377b49b74d5d315ceeace8d34666682cb818adf8d5be82193"
+    },
+    {
+      "id": 4,
+      "file": "HYBRID_SEARCH_INTERNAL_RESULT_CONTRACT.md",
+      "sha256": "e113d4bbfe4edd65a2fb5d994449c1390f9ef4b67506da07bf0f23e37b8bbdd4"
+    },
+    {
+      "id": 5,
+      "file": "HYBRID_SEARCH_EXTERNAL_RESULT_CONTRACT.md",
+      "sha256": "cedc87cbe80d9c1a9e397fd132b7f355762d4457823d2c25519b550277880295"
+    },
+    {
+      "id": 6,
+      "file": "EXTERNAL_IMAGE_PROVIDER_OPTIONS.md",
+      "sha256": "b710f25a0fba6e5882c9834ec6d6a13a573b8a0db713745c02248dbb0dbc912b"
+    },
+    {
+      "id": 7,
+      "file": "HYBRID_SEARCH_TRIGGER_EXPERIMENT.md",
+      "sha256": "c42278bc847343e3eb287e3116c4c5cba4c4387abf9ab5ed36dd14ba22548636"
+    },
+    {
+      "id": 8,
+      "file": "HYBRID_SEARCH_MODE_MATRIX.md",
+      "sha256": "ff8f7af4468029de16ea15ffa7c91b84dd0d778c03a6fa7c387372c75a4c8438"
+    },
+    {
+      "id": 9,
+      "file": "HYBRID_SEARCH_MERGE_AND_RANKING_SPEC.md",
+      "sha256": "9bbe76c7166d04ffe05dcf901cb6cec3e4a57a78004a0544dec5da91e98aa8f3"
+    },
+    {
+      "id": 10,
+      "file": "HYBRID_SEARCH_FAILURE_CACHE_COST_SPEC.md",
+      "sha256": "61d1e8d08abf55b9af6a68ebfe520f821f239ffc4ee335e3ed4d56b0dc78fa1f"
+    },
+    {
+      "id": 11,
+      "file": "HYBRID_SEARCH_CORE80_EXPERIMENT_PLAN.md",
+      "sha256": "6e8c891f286e4853196a149812836c394ed726342afebbc53fb351c589574da2"
+    },
+    {
+      "id": 12,
+      "file": "HYBRID_SEARCH_INSTRUMENTATION_PLAN.md",
+      "sha256": "dcd69dfd9c1116a013a56325c3c5d5635810708758e5a55ce3b30d89ae9cb22c"
+    },
+    {
+      "id": 13,
+      "file": "HYBRID_SEARCH_ONLINE_METRICS_AND_AB_TEST.md",
+      "sha256": "3078aac3073e3db7d639015b6ac4836c20899394aa4ab914b10f22fea106cb39"
+    },
+    {
+      "id": 14,
+      "file": "HYBRID_SEARCH_SAFE_ROLLOUT_PLAN.md",
+      "sha256": "dd6f71bbc0ba273ad9c390348855efde567e310ab1e2d7170b35b0fa4ca39c4b"
+    },
+    {
+      "id": 15,
+      "file": "HYBRID_SEARCH_RISK_REGISTER.csv",
+      "sha256": "adc80f5df05e518353742b405d429ee90a426ab7111358009d56e7f0883ebba9",
+      "rows": 23,
+      "columns": 9,
+      "csv_parse_validated": true
+    },
+    {
+      "id": 16,
+      "file": "HYBRID_SEARCH_EXECUTIVE_SUMMARY_ZH.md",
+      "sha256": "cd04c4af3191bb82e676bd71b6401d43f767c31444d87d1318ecb5c91cba9ab4"
+    },
+    {
+      "id": 17,
+      "file": "AUDIT_MANIFEST.json",
+      "sha256": "self-referential — hash not computable prior to this file's own creation; verify at read time via `shasum -a 256 AUDIT_MANIFEST.json`"
+    },
+    {
+      "id": 18,
+      "file": "FINAL_AUDIT_LOG.md",
+      "sha256": "9ba5c5bf5585a6b826a15d6c4ec34a77407822f238a1567eb627dd304a8b11d0"
+    }
+  ],
+  "key_prior_art_discovered": {
+    "file": "docs/eval-framework-visual-search-benchmark-2026-06-14.md",
+    "section": "Extension C — Hybrid Google results",
+    "lines": "220-260",
+    "status": "strategic design proposal, filed 2026-06-27, NOT implemented, scoped for weeks 7-8 of an 8-week plan, explicitly post-WC / not P0"
+  },
+  "critical_gap_identified": {
+    "description": "No search_id field exists anywhere in the codebase (verified by exhaustive grep of all .ts/.tsx files)",
+    "impact": "Search-to-Click-to-Generate attribution is not currently possible via a reliable join; only a lossy (session_id, query text, time window) heuristic join is possible today",
+    "recommendation": "Treat search_id creation and end-to-end threading as a P0 prerequisite independent of whether the external-search leg ships"
+  }
+}

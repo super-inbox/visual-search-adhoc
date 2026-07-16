@@ -1,0 +1,138 @@
+{
+  "query_id": "V286",
+  "query": "pencil case",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:08:41.712Z",
+  "completed_at": "2026-07-16T16:08:45.041Z",
+  "duration_ms": 3328,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "pencil",
+        "case"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "pencil case design",
+        "stationery organizer",
+        "school supply pouch"
+      ],
+      "decomposition": {}
+    },
+    "candidatePaths": [
+      {
+        "text": "pencil case design",
+        "slotKey": "rewrite",
+        "slotValue": "pencil case design",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "rewrite",
+          "slotValue": "stationery organizer",
+          "reason": "UNANCHORED_REWRITE_CANDIDATE"
+        },
+        {
+          "slotKey": "rewrite",
+          "slotValue": "school supply pouch",
+          "reason": "UNANCHORED_REWRITE_CANDIDATE"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 1,
+    "usedPathsCount": 2,
+    "preMergeCount": 2,
+    "postMergeCount": 2,
+    "dedupCount": 2,
+    "finalResultCount": 2,
+    "strictCount": 0,
+    "relaxedCount": 2,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-series-infographic-microsoft-ai-dilemma-07-case-google-gemini",
+        "title": "microsoft ai dilemma 07 case google gemini",
+        "template_id": "template-series-infographic",
+        "tags": [
+          "cartoon",
+          "flat-lay",
+          "illustration",
+          "learning",
+          "technology",
+          "trending",
+          "infographic",
+          "modern",
+          "dynamic",
+          "playful",
+          "vibrant",
+          "digital-canvas",
+          "concept-sketch",
+          "bold",
+          "intellectual",
+          "information-card",
+          "design",
+          "groups",
+          "narrative-comic",
+          "step-by-step-tutorial",
+          "professional",
+          "mind-maps",
+          "story",
+          "character"
+        ],
+        "score": 2.16,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-series-infographic-microsoft-ai-dilemma-07-case-google-gemini-en",
+        "title": "microsoft ai dilemma 07 case google gemini en",
+        "template_id": "template-series-infographic",
+        "tags": [
+          "ai",
+          "infographic",
+          "learning",
+          "technology",
+          "modern",
+          "trending",
+          "groups",
+          "digital-canvas",
+          "illustration",
+          "professional",
+          "dynamic",
+          "concept-sketch",
+          "minimalist",
+          "step-by-step-tutorial",
+          "story",
+          "insight",
+          "design"
+        ],
+        "score": 2.16,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

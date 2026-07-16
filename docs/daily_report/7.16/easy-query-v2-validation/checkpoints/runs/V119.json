@@ -1,0 +1,128 @@
+{
+  "query_id": "V119",
+  "query": "礼品盒",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:44:28.463Z",
+  "completed_at": "2026-07-16T14:44:35.329Z",
+  "duration_ms": 6865,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "礼品盒"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "gift box design",
+        "packaging ideas",
+        "present wrapping"
+      ],
+      "decomposition": {
+        "subject": "gift box",
+        "output": "design"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "礼品盒 gift box gift box design",
+        "slotKey": "rewrite",
+        "slotValue": "gift box design",
+        "subjectBound": true
+      },
+      {
+        "text": "礼品盒 gift box packaging ideas",
+        "slotKey": "rewrite",
+        "slotValue": "packaging ideas",
+        "subjectBound": true
+      },
+      {
+        "text": "礼品盒 gift box present wrapping",
+        "slotKey": "rewrite",
+        "slotValue": "present wrapping",
+        "subjectBound": true
+      },
+      {
+        "text": "礼品盒 gift box",
+        "slotKey": "subject",
+        "slotValue": "gift box",
+        "subjectBound": true
+      },
+      {
+        "text": "礼品盒 gift box design",
+        "slotKey": "output",
+        "slotValue": "design",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 1,
+    "postMergeCount": 48,
+    "dedupCount": 48,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-ip-gift-box-stationery-set-mockup-busan-boogi-duck",
+        "title": "busan boogi duck",
+        "template_id": "template-ip-gift-box-stationery-set-mockup",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "character",
+          "mascots",
+          "stickers",
+          "illustration",
+          "playful",
+          "whimsical",
+          "kawaii",
+          "vibrant",
+          "urban",
+          "product",
+          "gift-packaging",
+          "dynamic",
+          "cartoon",
+          "anime",
+          "artistic",
+          "modern",
+          "stylish",
+          "joyful",
+          "cozy",
+          "soft",
+          "illustration",
+          "promotional-poster",
+          "lifestyle"
+        ],
+        "score": 5.6,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

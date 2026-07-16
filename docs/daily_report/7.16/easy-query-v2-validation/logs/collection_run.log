@@ -1,0 +1,1001 @@
+[run_full_easy] 326 easy queries loaded from /Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.16/easy-query-v2-validation/query_input/easy_query_v2_input_with_ids.csv
+[run_full_easy] 1/326 launching V001 query="玩具" (attempt 1/2)
+[run_one_mode] V001 mode=D query="玩具" rewriteTriggered=false final=15 durationMs=114 error=no
+[run_full_easy] 1/326 DONE V001 final=15 error=no
+[run_full_easy] 2/326 launching V002 query="toy" (attempt 1/2)
+[run_one_mode] V002 mode=D query="toy" rewriteTriggered=false final=11 durationMs=59 error=no
+[run_full_easy] 2/326 DONE V002 final=11 error=no
+[run_full_easy] 3/326 launching V003 query="手办" (attempt 1/2)
+[run_one_mode] V003 mode=D query="手办" rewriteTriggered=true final=8 durationMs=6025 error=no
+[run_full_easy] 3/326 DONE V003 final=8 error=no
+[run_full_easy] 4/326 launching V004 query="figure" (attempt 1/2)
+[run_one_mode] V004 mode=D query="figure" rewriteTriggered=false final=148 durationMs=60 error=no
+[run_full_easy] 4/326 DONE V004 final=148 error=no
+[run_full_easy] 5/326 launching V005 query="毛绒玩具" (attempt 1/2)
+[run_one_mode] V005 mode=D query="毛绒玩具" rewriteTriggered=true final=0 durationMs=4240 error=no
+[run_full_easy] 5/326 DONE V005 final=0 error=no
+[run_full_easy] 6/326 launching V006 query="plush" (attempt 1/2)
+[run_one_mode] V006 mode=D query="plush" rewriteTriggered=true final=3 durationMs=4914 error=no
+[run_full_easy] 6/326 DONE V006 final=3 error=no
+[run_full_easy] 7/326 launching V007 query="娃娃" (attempt 1/2)
+[run_one_mode] V007 mode=D query="娃娃" rewriteTriggered=true final=1 durationMs=2484 error=no
+[run_full_easy] 7/326 DONE V007 final=1 error=no
+[run_full_easy] 8/326 launching V008 query="doll" (attempt 1/2)
+[run_one_mode] V008 mode=D query="doll" rewriteTriggered=false final=4 durationMs=59 error=no
+[run_full_easy] 8/326 DONE V008 final=4 error=no
+[run_full_easy] 9/326 launching V009 query="吉祥物" (attempt 1/2)
+[run_one_mode] V009 mode=D query="吉祥物" rewriteTriggered=false final=34 durationMs=110 error=no
+[run_full_easy] 9/326 DONE V009 final=34 error=no
+[run_full_easy] 10/326 launching V010 query="mascot" (attempt 1/2)
+[run_one_mode] V010 mode=D query="mascot" rewriteTriggered=false final=42 durationMs=60 error=no
+[run_full_easy] 10/326 DONE V010 final=42 error=no
+[run_full_easy] 11/326 launching V011 query="卡通形象" (attempt 1/2)
+[run_one_mode] V011 mode=D query="卡通形象" rewriteTriggered=false final=9 durationMs=112 error=no
+[run_full_easy] 11/326 DONE V011 final=9 error=no
+[run_full_easy] 12/326 launching V012 query="character" (attempt 1/2)
+[run_one_mode] V012 mode=D query="character" rewriteTriggered=false final=1794 durationMs=55 error=no
+[run_full_easy] 12/326 DONE V012 final=1794 error=no
+[run_full_easy] 13/326 launching V013 query="贴纸" (attempt 1/2)
+[run_one_mode] V013 mode=D query="贴纸" rewriteTriggered=false final=67 durationMs=119 error=no
+[run_full_easy] 13/326 DONE V013 final=67 error=no
+[run_full_easy] 14/326 launching V014 query="sticker" (attempt 1/2)
+[run_one_mode] V014 mode=D query="sticker" rewriteTriggered=false final=65 durationMs=61 error=no
+[run_full_easy] 14/326 DONE V014 final=65 error=no
+[run_full_easy] 15/326 launching V015 query="钥匙扣" (attempt 1/2)
+[run_one_mode] V015 mode=D query="钥匙扣" rewriteTriggered=false final=16 durationMs=113 error=no
+[run_full_easy] 15/326 DONE V015 final=16 error=no
+[run_full_easy] 16/326 launching V016 query="keychain" (attempt 1/2)
+[run_one_mode] V016 mode=D query="keychain" rewriteTriggered=false final=16 durationMs=60 error=no
+[run_full_easy] 16/326 DONE V016 final=16 error=no
+[run_full_easy] 17/326 launching V017 query="收藏品" (attempt 1/2)
+[run_one_mode] V017 mode=D query="收藏品" rewriteTriggered=false final=16 durationMs=113 error=no
+[run_full_easy] 17/326 DONE V017 final=16 error=no
+[run_full_easy] 18/326 launching V018 query="collectible" (attempt 1/2)
+[run_one_mode] V018 mode=D query="collectible" rewriteTriggered=false final=207 durationMs=59 error=no
+[run_full_easy] 18/326 DONE V018 final=207 error=no
+[run_full_easy] 19/326 launching V019 query="盲盒" (attempt 1/2)
+[run_one_mode] V019 mode=D query="盲盒" rewriteTriggered=true final=0 durationMs=4679 error=no
+[run_full_easy] 19/326 DONE V019 final=0 error=no
+[run_full_easy] 20/326 launching V020 query="blind box" (attempt 1/2)
+[run_one_mode] V020 mode=D query="blind box" rewriteTriggered=true final=35 durationMs=3356 error=no
+[run_full_easy] 20/326 DONE V020 final=35 error=no
+[run_full_easy] 21/326 launching V021 query="动作人偶" (attempt 1/2)
+[run_one_mode] V021 mode=D query="动作人偶" rewriteTriggered=true final=93 durationMs=2945 error=no
+[run_full_easy] 21/326 DONE V021 final=93 error=no
+[run_full_easy] 22/326 launching V022 query="action figure" (attempt 1/2)
+[run_one_mode] V022 mode=D query="action figure" rewriteTriggered=false final=5 durationMs=64 error=no
+[run_full_easy] 22/326 DONE V022 final=5 error=no
+[run_full_easy] 23/326 launching V023 query="泰迪熊" (attempt 1/2)
+[run_one_mode] V023 mode=D query="泰迪熊" rewriteTriggered=true final=3 durationMs=7018 error=no
+[run_full_easy] 23/326 DONE V023 final=3 error=no
+[run_full_easy] 24/326 launching V024 query="teddy bear" (attempt 1/2)
+[run_one_mode] V024 mode=D query="teddy bear" rewriteTriggered=true final=3 durationMs=3597 error=no
+[run_full_easy] 24/326 DONE V024 final=3 error=no
+[run_full_easy] 25/326 launching V025 query="扭蛋" (attempt 1/2)
+[run_one_mode] V025 mode=D query="扭蛋" rewriteTriggered=true final=44 durationMs=2825 error=no
+[run_full_easy] 25/326 DONE V025 final=44 error=no
+[run_full_easy] 26/326 launching V026 query="capsule toy" (attempt 1/2)
+[run_one_mode] V026 mode=D query="capsule toy" rewriteTriggered=true final=1 durationMs=5045 error=no
+[run_full_easy] 26/326 DONE V026 final=1 error=no
+[run_full_easy] 27/326 launching V027 query="卡牌" (attempt 1/2)
+[run_one_mode] V027 mode=D query="卡牌" rewriteTriggered=true final=1 durationMs=3730 error=no
+[run_full_easy] 27/326 DONE V027 final=1 error=no
+[run_full_easy] 28/326 launching V028 query="trading card" (attempt 1/2)
+[run_one_mode] V028 mode=D query="trading card" rewriteTriggered=false final=32 durationMs=63 error=no
+[run_full_easy] 28/326 DONE V028 final=32 error=no
+[run_full_easy] 29/326 launching V029 query="模型" (attempt 1/2)
+[run_one_mode] V029 mode=D query="模型" rewriteTriggered=false final=50 durationMs=110 error=no
+[run_full_easy] 29/326 DONE V029 final=50 error=no
+[run_full_easy] 30/326 launching V030 query="model kit" (attempt 1/2)
+[run_one_mode] V030 mode=D query="model kit" rewriteTriggered=true final=10 durationMs=3825 error=no
+[run_full_easy] 30/326 DONE V030 final=10 error=no
+[run_full_easy] 31/326 launching V031 query="雕像" (attempt 1/2)
+[run_one_mode] V031 mode=D query="雕像" rewriteTriggered=false final=5 durationMs=121 error=no
+[run_full_easy] 31/326 DONE V031 final=5 error=no
+[run_full_easy] 32/326 launching V032 query="statue" (attempt 1/2)
+[run_one_mode] V032 mode=D query="statue" rewriteTriggered=true final=2748 durationMs=3687 error=no
+[run_full_easy] 32/326 DONE V032 final=2748 error=no
+[run_full_easy] 33/326 launching V033 query="帆布袋" (attempt 1/2)
+[run_one_mode] V033 mode=D query="帆布袋" rewriteTriggered=false final=30 durationMs=110 error=no
+[run_full_easy] 33/326 DONE V033 final=30 error=no
+[run_full_easy] 34/326 launching V034 query="tote bag" (attempt 1/2)
+[run_one_mode] V034 mode=D query="tote bag" rewriteTriggered=false final=39 durationMs=64 error=no
+[run_full_easy] 34/326 DONE V034 final=39 error=no
+[run_full_easy] 35/326 launching V035 query="手机壳" (attempt 1/2)
+[run_one_mode] V035 mode=D query="手机壳" rewriteTriggered=false final=10 durationMs=124 error=no
+[run_full_easy] 35/326 DONE V035 final=10 error=no
+[run_full_easy] 36/326 launching V036 query="phone case" (attempt 1/2)
+[run_one_mode] V036 mode=D query="phone case" rewriteTriggered=false final=14 durationMs=62 error=no
+[run_full_easy] 36/326 DONE V036 final=14 error=no
+[run_full_easy] 37/326 launching V037 query="徽章" (attempt 1/2)
+[run_one_mode] V037 mode=D query="徽章" rewriteTriggered=false final=32 durationMs=109 error=no
+[run_full_easy] 37/326 DONE V037 final=32 error=no
+[run_full_easy] 38/326 launching V038 query="badge" (attempt 1/2)
+[run_one_mode] V038 mode=D query="badge" rewriteTriggered=false final=29 durationMs=59 error=no
+[run_full_easy] 38/326 DONE V038 final=29 error=no
+[run_full_easy] 39/326 launching V039 query="胸针" (attempt 1/2)
+[run_one_mode] V039 mode=D query="胸针" rewriteTriggered=true final=6 durationMs=6715 error=no
+[run_full_easy] 39/326 DONE V039 final=6 error=no
+[run_full_easy] 40/326 launching V040 query="enamel pin" (attempt 1/2)
+[run_one_mode] V040 mode=D query="enamel pin" rewriteTriggered=true final=0 durationMs=2785 error=no
+[run_full_easy] 40/326 DONE V040 final=0 error=no
+[run_full_easy] 41/326 launching V041 query="冰箱贴" (attempt 1/2)
+[run_one_mode] V041 mode=D query="冰箱贴" rewriteTriggered=true final=2 durationMs=4479 error=no
+[run_full_easy] 41/326 DONE V041 final=2 error=no
+[run_full_easy] 42/326 launching V042 query="magnet" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="magnet" finish=stop rawCandidateCount=0
+[run_one_mode] V042 mode=D query="magnet" rewriteTriggered=true final=2 durationMs=2953 error=no
+[run_full_easy] 42/326 DONE V042 final=2 error=no
+[run_full_easy] 43/326 launching V043 query="挂绳" (attempt 1/2)
+[run_one_mode] V043 mode=D query="挂绳" rewriteTriggered=false final=10 durationMs=111 error=no
+[run_full_easy] 43/326 DONE V043 final=10 error=no
+[run_full_easy] 44/326 launching V044 query="lanyard" (attempt 1/2)
+[run_one_mode] V044 mode=D query="lanyard" rewriteTriggered=false final=10 durationMs=60 error=no
+[run_full_easy] 44/326 DONE V044 final=10 error=no
+[run_full_easy] 45/326 launching V045 query="迷你手办" (attempt 1/2)
+[run_one_mode] V045 mode=D query="迷你手办" rewriteTriggered=true final=11 durationMs=4456 error=no
+[run_full_easy] 45/326 DONE V045 final=11 error=no
+[run_full_easy] 46/326 launching V046 query="mini figure" (attempt 1/2)
+[run_one_mode] V046 mode=D query="mini figure" rewriteTriggered=true final=123 durationMs=12009 error=no
+[run_full_easy] 46/326 DONE V046 final=123 error=no
+[run_full_easy] 47/326 launching V047 query="潮流公仔" (attempt 1/2)
+[run_one_mode] V047 mode=D query="潮流公仔" rewriteTriggered=true final=11 durationMs=21584 error=no
+[run_full_easy] 47/326 DONE V047 final=11 error=no
+[run_full_easy] 48/326 launching V048 query="vinyl toy" (attempt 1/2)
+[run_one_mode] V048 mode=D query="vinyl toy" rewriteTriggered=true final=2 durationMs=2916 error=no
+[run_full_easy] 48/326 DONE V048 final=2 error=no
+[run_full_easy] 49/326 launching V049 query="潮流手办" (attempt 1/2)
+[run_one_mode] V049 mode=D query="潮流手办" rewriteTriggered=true final=11 durationMs=3264 error=no
+[run_full_easy] 49/326 DONE V049 final=11 error=no
+[run_full_easy] 50/326 launching V050 query="pop figure" (attempt 1/2)
+[run_one_mode] V050 mode=D query="pop figure" rewriteTriggered=false final=5 durationMs=62 error=no
+[run_full_easy] 50/326 DONE V050 final=5 error=no
+[run_full_easy] 51/326 launching V051 query="惊喜盒子" (attempt 1/2)
+[run_one_mode] V051 mode=D query="惊喜盒子" rewriteTriggered=true final=32 durationMs=5867 error=no
+[run_full_easy] 51/326 DONE V051 final=32 error=no
+[run_full_easy] 52/326 launching V052 query="mystery box" (attempt 1/2)
+[run_one_mode] V052 mode=D query="mystery box" rewriteTriggered=true final=1 durationMs=2943 error=no
+[run_full_easy] 52/326 DONE V052 final=1 error=no
+[run_full_easy] 53/326 launching V053 query="挂件" (attempt 1/2)
+[run_one_mode] V053 mode=D query="挂件" rewriteTriggered=true final=3 durationMs=2478 error=no
+[run_full_easy] 53/326 DONE V053 final=3 error=no
+[run_full_easy] 54/326 launching V054 query="charm" (attempt 1/2)
+[run_one_mode] V054 mode=D query="charm" rewriteTriggered=false final=5 durationMs=61 error=no
+[run_full_easy] 54/326 DONE V054 final=5 error=no
+[run_full_easy] 55/326 launching V055 query="马克杯" (attempt 1/2)
+[run_one_mode] V055 mode=D query="马克杯" rewriteTriggered=false final=33 durationMs=111 error=no
+[run_full_easy] 55/326 DONE V055 final=33 error=no
+[run_full_easy] 56/326 launching V056 query="collectible mug" (attempt 1/2)
+[run_one_mode] V056 mode=D query="collectible mug" rewriteTriggered=true final=36 durationMs=3696 error=no
+[run_full_easy] 56/326 DONE V056 final=36 error=no
+[run_full_easy] 57/326 launching V057 query="抱枕" (attempt 1/2)
+[run_one_mode] V057 mode=D query="抱枕" rewriteTriggered=false final=12 durationMs=113 error=no
+[run_full_easy] 57/326 DONE V057 final=12 error=no
+[run_full_easy] 58/326 launching V058 query="plush pillow" (attempt 1/2)
+[run_one_mode] V058 mode=D query="plush pillow" rewriteTriggered=true final=819 durationMs=3999 error=no
+[run_full_easy] 58/326 DONE V058 final=819 error=no
+[run_full_easy] 59/326 launching V059 query="拼图" (attempt 1/2)
+[run_one_mode] V059 mode=D query="拼图" rewriteTriggered=true final=2 durationMs=3269 error=no
+[run_full_easy] 59/326 DONE V059 final=2 error=no
+[run_full_easy] 60/326 launching V060 query="puzzle" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="puzzle" finish=stop rawCandidateCount=0
+[run_one_mode] V060 mode=D query="puzzle" rewriteTriggered=true final=0 durationMs=6515 error=no
+[run_full_easy] 60/326 DONE V060 final=0 error=no
+[run_full_easy] 61/326 launching V061 query="积木" (attempt 1/2)
+[run_one_mode] V061 mode=D query="积木" rewriteTriggered=true final=0 durationMs=5286 error=no
+[run_full_easy] 61/326 DONE V061 final=0 error=no
+[run_full_easy] 62/326 launching V062 query="building blocks" (attempt 1/2)
+[run_one_mode] V062 mode=D query="building blocks" rewriteTriggered=false final=6 durationMs=64 error=no
+[run_full_easy] 62/326 DONE V062 final=6 error=no
+[run_full_easy] 63/326 launching V063 query="公仔盒" (attempt 1/2)
+[run_one_mode] V063 mode=D query="公仔盒" rewriteTriggered=true final=31 durationMs=4504 error=no
+[run_full_easy] 63/326 DONE V063 final=31 error=no
+[run_full_easy] 64/326 launching V064 query="sticker pack" (attempt 1/2)
+[run_one_mode] V064 mode=D query="sticker pack" rewriteTriggered=false final=19 durationMs=63 error=no
+[run_full_easy] 64/326 DONE V064 final=19 error=no
+[run_full_easy] 65/326 launching V065 query="文创手办" (attempt 1/2)
+[run_one_mode] V065 mode=D query="文创手办" rewriteTriggered=true final=89 durationMs=4333 error=no
+[run_full_easy] 65/326 DONE V065 final=89 error=no
+[run_full_easy] 66/326 launching V066 query="cultural relic figure" (attempt 1/2)
+[run_one_mode] V066 mode=D query="cultural relic figure" rewriteTriggered=true final=805 durationMs=3161 error=no
+[run_full_easy] 66/326 DONE V066 final=805 error=no
+[run_full_easy] 67/326 launching V067 query="博物馆文创" (attempt 1/2)
+[run_one_mode] V067 mode=D query="博物馆文创" rewriteTriggered=false final=24 durationMs=112 error=no
+[run_full_easy] 67/326 DONE V067 final=24 error=no
+[run_full_easy] 68/326 launching V068 query="museum souvenir" (attempt 1/2)
+[run_one_mode] V068 mode=D query="museum souvenir" rewriteTriggered=true final=3 durationMs=4934 error=no
+[run_full_easy] 68/326 DONE V068 final=3 error=no
+[run_full_easy] 69/326 launching V069 query="国潮公仔" (attempt 1/2)
+[run_one_mode] V069 mode=D query="国潮公仔" rewriteTriggered=true final=0 durationMs=5252 error=no
+[run_full_easy] 69/326 DONE V069 final=0 error=no
+[run_full_easy] 70/326 launching V070 query="IP figure" (attempt 1/2)
+[run_one_mode] V070 mode=D query="IP figure" rewriteTriggered=false final=11 durationMs=65 error=no
+[run_full_easy] 70/326 DONE V070 final=11 error=no
+[run_full_easy] 71/326 launching V071 query="动漫周边" (attempt 1/2)
+[run_one_mode] V071 mode=D query="动漫周边" rewriteTriggered=false final=13 durationMs=112 error=no
+[run_full_easy] 71/326 DONE V071 final=13 error=no
+[run_full_easy] 72/326 launching V072 query="anime merch" (attempt 1/2)
+[run_one_mode] V072 mode=D query="anime merch" rewriteTriggered=false final=14 durationMs=65 error=no
+[run_full_easy] 72/326 DONE V072 final=14 error=no
+[run_full_easy] 73/326 launching V073 query="明信片套装" (attempt 1/2)
+[run_one_mode] V073 mode=D query="明信片套装" rewriteTriggered=true final=2 durationMs=4122 error=no
+[run_full_easy] 73/326 DONE V073 final=2 error=no
+[run_full_easy] 74/326 launching V074 query="postcard set" (attempt 1/2)
+[run_one_mode] V074 mode=D query="postcard set" rewriteTriggered=true final=62 durationMs=3012 error=no
+[run_full_easy] 74/326 DONE V074 final=62 error=no
+[run_full_easy] 75/326 launching V075 query="艺术微喷" (attempt 1/2)
+[run_one_mode] V075 mode=D query="艺术微喷" rewriteTriggered=true final=2762 durationMs=4161 error=no
+[run_full_easy] 75/326 DONE V075 final=2762 error=no
+[run_full_easy] 76/326 launching V076 query="art print" (attempt 1/2)
+[run_one_mode] V076 mode=D query="art print" rewriteTriggered=false final=193 durationMs=71 error=no
+[run_full_easy] 76/326 DONE V076 final=193 error=no
+[run_full_easy] 77/326 launching V077 query="摇头公仔" (attempt 1/2)
+[run_one_mode] V077 mode=D query="摇头公仔" rewriteTriggered=true final=0 durationMs=7658 error=no
+[run_full_easy] 77/326 DONE V077 final=0 error=no
+[run_full_easy] 78/326 launching V078 query="bobblehead" (attempt 1/2)
+[run_one_mode] V078 mode=D query="bobblehead" rewriteTriggered=true final=1777 durationMs=3995 error=no
+[run_full_easy] 78/326 DONE V078 final=1777 error=no
+[run_full_easy] 79/326 launching V079 query="场景模型" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="场景模型" finish=stop rawCandidateCount=0
+[run_one_mode] V079 mode=D query="场景模型" rewriteTriggered=true final=137 durationMs=3548 error=no
+[run_full_easy] 79/326 DONE V079 final=137 error=no
+[run_full_easy] 80/326 launching V080 query="diorama" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="diorama" finish=stop rawCandidateCount=0
+[run_one_mode] V080 mode=D query="diorama" rewriteTriggered=true final=0 durationMs=4085 error=no
+[run_full_easy] 80/326 DONE V080 final=0 error=no
+[run_full_easy] 81/326 launching V081 query="角色卡通贴纸" (attempt 1/2)
+[run_one_mode] V081 mode=D query="角色卡通贴纸" rewriteTriggered=false final=19 durationMs=114 error=no
+[run_full_easy] 81/326 DONE V081 final=19 error=no
+[run_full_easy] 82/326 launching V082 query="character sticker pack" (attempt 1/2)
+[run_one_mode] V082 mode=D query="character sticker pack" rewriteTriggered=false final=17 durationMs=64 error=no
+[run_full_easy] 82/326 DONE V082 final=17 error=no
+[run_full_easy] 83/326 launching V083 query="标志" (attempt 1/2)
+[run_one_mode] V083 mode=D query="标志" rewriteTriggered=false final=481 durationMs=107 error=no
+[run_full_easy] 83/326 DONE V083 final=481 error=no
+[run_full_easy] 84/326 launching V084 query="logo" (attempt 1/2)
+[run_one_mode] V084 mode=D query="logo" rewriteTriggered=false final=53 durationMs=60 error=no
+[run_full_easy] 84/326 DONE V084 final=53 error=no
+[run_full_easy] 85/326 launching V085 query="包装" (attempt 1/2)
+[run_one_mode] V085 mode=D query="包装" rewriteTriggered=false final=113 durationMs=117 error=no
+[run_full_easy] 85/326 DONE V085 final=113 error=no
+[run_full_easy] 86/326 launching V086 query="package" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="package" finish=stop rawCandidateCount=0
+[run_one_mode] V086 mode=D query="package" rewriteTriggered=true final=3 durationMs=13161 error=no
+[run_full_easy] 86/326 DONE V086 final=3 error=no
+[run_full_easy] 87/326 launching V087 query="标签" (attempt 1/2)
+[run_one_mode] V087 mode=D query="标签" rewriteTriggered=false final=445 durationMs=105 error=no
+[run_full_easy] 87/326 DONE V087 final=445 error=no
+[run_full_easy] 88/326 launching V088 query="label" (attempt 1/2)
+[run_one_mode] V088 mode=D query="label" rewriteTriggered=false final=138 durationMs=58 error=no
+[run_full_easy] 88/326 DONE V088 final=138 error=no
+[run_full_easy] 89/326 launching V089 query="瓶子" (attempt 1/2)
+[run_one_mode] V089 mode=D query="瓶子" rewriteTriggered=false final=12 durationMs=110 error=no
+[run_full_easy] 89/326 DONE V089 final=12 error=no
+[run_full_easy] 90/326 launching V090 query="bottle" (attempt 1/2)
+[run_one_mode] V090 mode=D query="bottle" rewriteTriggered=true final=1 durationMs=3565 error=no
+[run_full_easy] 90/326 DONE V090 final=1 error=no
+[run_full_easy] 91/326 launching V091 query="菜单" (attempt 1/2)
+[run_one_mode] V091 mode=D query="菜单" rewriteTriggered=false final=48 durationMs=110 error=no
+[run_full_easy] 91/326 DONE V091 final=48 error=no
+[run_full_easy] 92/326 launching V092 query="menu" (attempt 1/2)
+[run_one_mode] V092 mode=D query="menu" rewriteTriggered=false final=28 durationMs=62 error=no
+[run_full_easy] 92/326 DONE V092 final=28 error=no
+[run_full_easy] 93/326 launching V093 query="名片" (attempt 1/2)
+[run_one_mode] V093 mode=D query="名片" rewriteTriggered=false final=6 durationMs=113 error=no
+[run_full_easy] 93/326 DONE V093 final=6 error=no
+[run_full_easy] 94/326 launching V094 query="business card" (attempt 1/2)
+[run_one_mode] V094 mode=D query="business card" rewriteTriggered=false final=89 durationMs=64 error=no
+[run_full_easy] 94/326 DONE V094 final=89 error=no
+[run_full_easy] 95/326 launching V095 query="产品盒" (attempt 1/2)
+[run_one_mode] V095 mode=D query="产品盒" rewriteTriggered=false final=16 durationMs=112 error=no
+[run_full_easy] 95/326 DONE V095 final=16 error=no
+[run_full_easy] 96/326 launching V096 query="product box" (attempt 1/2)
+[run_one_mode] V096 mode=D query="product box" rewriteTriggered=false final=28 durationMs=58 error=no
+[run_full_easy] 96/326 DONE V096 final=28 error=no
+[run_full_easy] 97/326 launching V097 query="咖啡包装" (attempt 1/2)
+[run_one_mode] V097 mode=D query="咖啡包装" rewriteTriggered=true final=12 durationMs=8712 error=no
+[run_full_easy] 97/326 DONE V097 final=12 error=no
+[run_full_easy] 98/326 launching V098 query="coffee package" (attempt 1/2)
+[run_one_mode] V098 mode=D query="coffee package" rewriteTriggered=true final=176 durationMs=7129 error=no
+[run_full_easy] 98/326 DONE V098 final=176 error=no
+[run_full_easy] 99/326 launching V099 query="餐厅菜单" (attempt 1/2)
+[run_one_mode] V099 mode=D query="餐厅菜单" rewriteTriggered=false final=38 durationMs=111 error=no
+[run_full_easy] 99/326 DONE V099 final=38 error=no
+[run_full_easy] 100/326 launching V100 query="restaurant menu" (attempt 1/2)
+[run_one_mode] V100 mode=D query="restaurant menu" rewriteTriggered=false final=25 durationMs=61 error=no
+[run_full_easy] 100/326 DONE V100 final=25 error=no
+[run_full_easy] 101/326 launching V101 query="香水瓶" (attempt 1/2)
+[run_one_mode] V101 mode=D query="香水瓶" rewriteTriggered=true final=1 durationMs=3916 error=no
+[run_full_easy] 101/326 DONE V101 final=1 error=no
+[run_full_easy] 102/326 launching V102 query="perfume bottle" (attempt 1/2)
+[run_one_mode] V102 mode=D query="perfume bottle" rewriteTriggered=true final=1 durationMs=3058 error=no
+[run_full_easy] 102/326 DONE V102 final=1 error=no
+[run_full_easy] 103/326 launching V103 query="香水盒" (attempt 1/2)
+[run_one_mode] V103 mode=D query="香水盒" rewriteTriggered=true final=33 durationMs=8433 error=no
+[run_full_easy] 103/326 DONE V103 final=33 error=no
+[run_full_easy] 104/326 launching V104 query="perfume box" (attempt 1/2)
+[run_one_mode] V104 mode=D query="perfume box" rewriteTriggered=true final=39 durationMs=4613 error=no
+[run_full_easy] 104/326 DONE V104 final=39 error=no
+[run_full_easy] 105/326 launching V105 query="茶叶包装" (attempt 1/2)
+[run_one_mode] V105 mode=D query="茶叶包装" rewriteTriggered=true final=1 durationMs=3017 error=no
+[run_full_easy] 105/326 DONE V105 final=1 error=no
+[run_full_easy] 106/326 launching V106 query="tea package" (attempt 1/2)
+[run_one_mode] V106 mode=D query="tea package" rewriteTriggered=true final=174 durationMs=4624 error=no
+[run_full_easy] 106/326 DONE V106 final=174 error=no
+[run_full_easy] 107/326 launching V107 query="咖啡豆包装" (attempt 1/2)
+[run_one_mode] V107 mode=D query="咖啡豆包装" rewriteTriggered=true final=2 durationMs=3272 error=no
+[run_full_easy] 107/326 DONE V107 final=2 error=no
+[run_full_easy] 108/326 launching V108 query="coffee bean package" (attempt 1/2)
+[run_one_mode] V108 mode=D query="coffee bean package" rewriteTriggered=true final=178 durationMs=4763 error=no
+[run_full_easy] 108/326 DONE V108 final=178 error=no
+[run_full_easy] 109/326 launching V109 query="巧克力礼盒" (attempt 1/2)
+[run_one_mode] V109 mode=D query="巧克力礼盒" rewriteTriggered=true final=164 durationMs=3490 error=no
+[run_full_easy] 109/326 DONE V109 final=164 error=no
+[run_full_easy] 110/326 launching V110 query="chocolate box" (attempt 1/2)
+[run_one_mode] V110 mode=D query="chocolate box" rewriteTriggered=true final=166 durationMs=3073 error=no
+[run_full_easy] 110/326 DONE V110 final=166 error=no
+[run_full_easy] 111/326 launching V111 query="护肤品包装" (attempt 1/2)
+[run_one_mode] V111 mode=D query="护肤品包装" rewriteTriggered=true final=118 durationMs=5459 error=no
+[run_full_easy] 111/326 DONE V111 final=118 error=no
+[run_full_easy] 112/326 launching V112 query="skincare package" (attempt 1/2)
+[run_one_mode] V112 mode=D query="skincare package" rewriteTriggered=true final=5 durationMs=3470 error=no
+[run_full_easy] 112/326 DONE V112 final=5 error=no
+[run_full_easy] 113/326 launching V113 query="化妆品包装" (attempt 1/2)
+[run_one_mode] V113 mode=D query="化妆品包装" rewriteTriggered=true final=168 durationMs=10296 error=no
+[run_full_easy] 113/326 DONE V113 final=168 error=no
+[run_full_easy] 114/326 launching V114 query="cosmetic package" (attempt 1/2)
+[run_one_mode] V114 mode=D query="cosmetic package" rewriteTriggered=true final=180 durationMs=3294 error=no
+[run_full_easy] 114/326 DONE V114 final=180 error=no
+[run_full_easy] 115/326 launching V115 query="酒标" (attempt 1/2)
+[run_one_mode] V115 mode=D query="酒标" rewriteTriggered=true final=20 durationMs=6331 error=no
+[run_full_easy] 115/326 DONE V115 final=20 error=no
+[run_full_easy] 116/326 launching V116 query="wine label" (attempt 1/2)
+[run_one_mode] V116 mode=D query="wine label" rewriteTriggered=true final=286 durationMs=2727 error=no
+[run_full_easy] 116/326 DONE V116 final=286 error=no
+[run_full_easy] 117/326 launching V117 query="零食包装" (attempt 1/2)
+[run_one_mode] V117 mode=D query="零食包装" rewriteTriggered=true final=1 durationMs=3417 error=no
+[run_full_easy] 117/326 DONE V117 final=1 error=no
+[run_full_easy] 118/326 launching V118 query="snack package" (attempt 1/2)
+[run_one_mode] V118 mode=D query="snack package" rewriteTriggered=true final=207 durationMs=4577 error=no
+[run_full_easy] 118/326 DONE V118 final=207 error=no
+[run_full_easy] 119/326 launching V119 query="礼品盒" (attempt 1/2)
+[run_one_mode] V119 mode=D query="礼品盒" rewriteTriggered=true final=1 durationMs=6865 error=no
+[run_full_easy] 119/326 DONE V119 final=1 error=no
+[run_full_easy] 120/326 launching V120 query="gift box" (attempt 1/2)
+[run_one_mode] V120 mode=D query="gift box" rewriteTriggered=false final=40 durationMs=66 error=no
+[run_full_easy] 120/326 DONE V120 final=40 error=no
+[run_full_easy] 121/326 launching V121 query="购物袋" (attempt 1/2)
+[run_one_mode] V121 mode=D query="购物袋" rewriteTriggered=true final=1 durationMs=11542 error=no
+[run_full_easy] 121/326 DONE V121 final=1 error=no
+[run_full_easy] 122/326 launching V122 query="shopping bag" (attempt 1/2)
+[run_one_mode] V122 mode=D query="shopping bag" rewriteTriggered=false final=10 durationMs=63 error=no
+[run_full_easy] 122/326 DONE V122 final=10 error=no
+[run_full_easy] 123/326 launching V123 query="产品标签" (attempt 1/2)
+[run_one_mode] V123 mode=D query="产品标签" rewriteTriggered=false final=77 durationMs=112 error=no
+[run_full_easy] 123/326 DONE V123 final=77 error=no
+[run_full_easy] 124/326 launching V124 query="product label" (attempt 1/2)
+[run_one_mode] V124 mode=D query="product label" rewriteTriggered=false final=41 durationMs=68 error=no
+[run_full_easy] 124/326 DONE V124 final=41 error=no
+[run_full_easy] 125/326 launching V125 query="烘焙包装" (attempt 1/2)
+[run_one_mode] V125 mode=D query="烘焙包装" rewriteTriggered=true final=0 durationMs=3649 error=no
+[run_full_easy] 125/326 DONE V125 final=0 error=no
+[run_full_easy] 126/326 launching V126 query="bakery package" (attempt 1/2)
+[run_one_mode] V126 mode=D query="bakery package" rewriteTriggered=true final=297 durationMs=3316 error=no
+[run_full_easy] 126/326 DONE V126 final=297 error=no
+[run_full_easy] 127/326 launching V127 query="咖啡馆菜单" (attempt 1/2)
+[run_one_mode] V127 mode=D query="咖啡馆菜单" rewriteTriggered=true final=0 durationMs=3539 error=no
+[run_full_easy] 127/326 DONE V127 final=0 error=no
+[run_full_easy] 128/326 launching V128 query="cafe menu" (attempt 1/2)
+[run_one_mode] V128 mode=D query="cafe menu" rewriteTriggered=true final=2863 durationMs=4151 error=no
+[run_full_easy] 128/326 DONE V128 final=2863 error=no
+[run_full_easy] 129/326 launching V129 query="店招" (attempt 1/2)
+[run_one_mode] V129 mode=D query="店招" rewriteTriggered=true final=4 durationMs=3846 error=no
+[run_full_easy] 129/326 DONE V129 final=4 error=no
+[run_full_easy] 130/326 launching V130 query="shop sign" (attempt 1/2)
+[run_one_mode] V130 mode=D query="shop sign" rewriteTriggered=false final=8 durationMs=64 error=no
+[run_full_easy] 130/326 DONE V130 final=8 error=no
+[run_full_easy] 131/326 launching V131 query="门店招牌" (attempt 1/2)
+[run_one_mode] V131 mode=D query="门店招牌" rewriteTriggered=true final=124 durationMs=3483 error=no
+[run_full_easy] 131/326 DONE V131 final=124 error=no
+[run_full_easy] 132/326 launching V132 query="storefront sign" (attempt 1/2)
+[run_one_mode] V132 mode=D query="storefront sign" rewriteTriggered=true final=124 durationMs=6465 error=no
+[run_full_easy] 132/326 DONE V132 final=124 error=no
+[run_full_easy] 133/326 launching V133 query="产品吊牌" (attempt 1/2)
+[run_one_mode] V133 mode=D query="产品吊牌" rewriteTriggered=false final=10 durationMs=113 error=no
+[run_full_easy] 133/326 DONE V133 final=10 error=no
+[run_full_easy] 134/326 launching V134 query="product tag" (attempt 1/2)
+[run_one_mode] V134 mode=D query="product tag" rewriteTriggered=true final=275 durationMs=4308 error=no
+[run_full_easy] 134/326 DONE V134 final=275 error=no
+[run_full_easy] 135/326 launching V135 query="价格标签" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="价格标签" finish=stop rawCandidateCount=0
+[run_one_mode] V135 mode=D query="价格标签" rewriteTriggered=true final=9 durationMs=3729 error=no
+[run_full_easy] 135/326 DONE V135 final=9 error=no
+[run_full_easy] 136/326 launching V136 query="price tag" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="price tag" finish=stop rawCandidateCount=0
+[run_one_mode] V136 mode=D query="price tag" rewriteTriggered=true final=0 durationMs=2426 error=no
+[run_full_easy] 136/326 DONE V136 final=0 error=no
+[run_full_easy] 137/326 launching V137 query="服装吊牌" (attempt 1/2)
+[run_one_mode] V137 mode=D query="服装吊牌" rewriteTriggered=true final=145 durationMs=2547 error=no
+[run_full_easy] 137/326 DONE V137 final=145 error=no
+[run_full_easy] 138/326 launching V138 query="clothing tag" (attempt 1/2)
+[run_one_mode] V138 mode=D query="clothing tag" rewriteTriggered=true final=312 durationMs=3785 error=no
+[run_full_easy] 138/326 DONE V138 final=312 error=no
+[run_full_easy] 139/326 launching V139 query="首饰盒" (attempt 1/2)
+[run_one_mode] V139 mode=D query="首饰盒" rewriteTriggered=true final=38 durationMs=4285 error=no
+[run_full_easy] 139/326 DONE V139 final=38 error=no
+[run_full_easy] 140/326 launching V140 query="jewelry box" (attempt 1/2)
+[run_one_mode] V140 mode=D query="jewelry box" rewriteTriggered=true final=40 durationMs=5175 error=no
+[run_full_easy] 140/326 DONE V140 final=40 error=no
+[run_full_easy] 141/326 launching V141 query="蜡烛标签" (attempt 1/2)
+[run_one_mode] V141 mode=D query="蜡烛标签" rewriteTriggered=false final=9 durationMs=115 error=no
+[run_full_easy] 141/326 DONE V141 final=9 error=no
+[run_full_easy] 142/326 launching V142 query="candle label" (attempt 1/2)
+[run_one_mode] V142 mode=D query="candle label" rewriteTriggered=true final=167 durationMs=3874 error=no
+[run_full_easy] 142/326 DONE V142 final=167 error=no
+[run_full_easy] 143/326 launching V143 query="香皂包装" (attempt 1/2)
+[run_one_mode] V143 mode=D query="香皂包装" rewriteTriggered=true final=163 durationMs=3131 error=no
+[run_full_easy] 143/326 DONE V143 final=163 error=no
+[run_full_easy] 144/326 launching V144 query="soap package" (attempt 1/2)
+[run_one_mode] V144 mode=D query="soap package" rewriteTriggered=true final=282 durationMs=3638 error=no
+[run_full_easy] 144/326 DONE V144 final=282 error=no
+[run_full_easy] 145/326 launching V145 query="茶叶罐" (attempt 1/2)
+[run_one_mode] V145 mode=D query="茶叶罐" rewriteTriggered=true final=0 durationMs=3678 error=no
+[run_full_easy] 145/326 DONE V145 final=0 error=no
+[run_full_easy] 146/326 launching V146 query="tea box" (attempt 1/2)
+[run_one_mode] V146 mode=D query="tea box" rewriteTriggered=true final=3 durationMs=4208 error=no
+[run_full_easy] 146/326 DONE V146 final=3 error=no
+[run_full_easy] 147/326 launching V147 query="咖啡杯" (attempt 1/2)
+[run_one_mode] V147 mode=D query="咖啡杯" rewriteTriggered=true final=182 durationMs=3712 error=no
+[run_full_easy] 147/326 DONE V147 final=182 error=no
+[run_full_easy] 148/326 launching V148 query="coffee cup" (attempt 1/2)
+[run_one_mode] V148 mode=D query="coffee cup" rewriteTriggered=true final=308 durationMs=3265 error=no
+[run_full_easy] 148/326 DONE V148 final=308 error=no
+[run_full_easy] 149/326 launching V149 query="咖啡杯套" (attempt 1/2)
+[run_one_mode] V149 mode=D query="咖啡杯套" rewriteTriggered=true final=190 durationMs=4439 error=no
+[run_full_easy] 149/326 DONE V149 final=190 error=no
+[run_full_easy] 150/326 launching V150 query="coffee cup sleeve" (attempt 1/2)
+[run_one_mode] V150 mode=D query="coffee cup sleeve" rewriteTriggered=true final=291 durationMs=5340 error=no
+[run_full_easy] 150/326 DONE V150 final=291 error=no
+[run_full_easy] 151/326 launching V151 query="外卖餐盒" (attempt 1/2)
+[run_one_mode] V151 mode=D query="外卖餐盒" rewriteTriggered=true final=33 durationMs=3821 error=no
+[run_full_easy] 151/326 DONE V151 final=33 error=no
+[run_full_easy] 152/326 launching V152 query="takeout box" (attempt 1/2)
+[run_one_mode] V152 mode=D query="takeout box" rewriteTriggered=true final=165 durationMs=4140 error=no
+[run_full_easy] 152/326 DONE V152 final=165 error=no
+[run_full_easy] 153/326 launching V153 query="饮料瓶" (attempt 1/2)
+[run_one_mode] V153 mode=D query="饮料瓶" rewriteTriggered=true final=0 durationMs=3481 error=no
+[run_full_easy] 153/326 DONE V153 final=0 error=no
+[run_full_easy] 154/326 launching V154 query="drink bottle" (attempt 1/2)
+[run_one_mode] V154 mode=D query="drink bottle" rewriteTriggered=true final=3134 durationMs=3816 error=no
+[run_full_easy] 154/326 DONE V154 final=3134 error=no
+[run_full_easy] 155/326 launching V155 query="水瓶标签" (attempt 1/2)
+[run_one_mode] V155 mode=D query="水瓶标签" rewriteTriggered=true final=9 durationMs=5906 error=no
+[run_full_easy] 155/326 DONE V155 final=9 error=no
+[run_full_easy] 156/326 launching V156 query="water bottle label" (attempt 1/2)
+[run_one_mode] V156 mode=D query="water bottle label" rewriteTriggered=true final=12 durationMs=3189 error=no
+[run_full_easy] 156/326 DONE V156 final=12 error=no
+[run_full_easy] 157/326 launching V157 query="信封" (attempt 1/2)
+[run_one_mode] V157 mode=D query="信封" rewriteTriggered=true final=2 durationMs=2525 error=no
+[run_full_easy] 157/326 DONE V157 final=2 error=no
+[run_full_easy] 158/326 launching V158 query="envelope" (attempt 1/2)
+[run_one_mode] V158 mode=D query="envelope" rewriteTriggered=false final=8 durationMs=62 error=no
+[run_full_easy] 158/326 DONE V158 final=8 error=no
+[run_full_easy] 159/326 launching V159 query="手提袋" (attempt 1/2)
+[run_one_mode] V159 mode=D query="手提袋" rewriteTriggered=true final=30 durationMs=3890 error=no
+[run_full_easy] 159/326 DONE V159 final=30 error=no
+[run_full_easy] 160/326 launching V160 query="paper bag" (attempt 1/2)
+[run_one_mode] V160 mode=D query="paper bag" rewriteTriggered=true final=83 durationMs=2842 error=no
+[run_full_easy] 160/326 DONE V160 final=83 error=no
+[run_full_easy] 161/326 launching V161 query="蛋糕盒" (attempt 1/2)
+[run_one_mode] V161 mode=D query="蛋糕盒" rewriteTriggered=true final=34 durationMs=3493 error=no
+[run_full_easy] 161/326 DONE V161 final=34 error=no
+[run_full_easy] 162/326 launching V162 query="cake box" (attempt 1/2)
+[run_one_mode] V162 mode=D query="cake box" rewriteTriggered=true final=280 durationMs=2797 error=no
+[run_full_easy] 162/326 DONE V162 final=280 error=no
+[run_full_easy] 163/326 launching V163 query="月饼礼盒" (attempt 1/2)
+[run_one_mode] V163 mode=D query="月饼礼盒" rewriteTriggered=true final=33 durationMs=5798 error=no
+[run_full_easy] 163/326 DONE V163 final=33 error=no
+[run_full_easy] 164/326 launching V164 query="mooncake gift box" (attempt 1/2)
+[run_one_mode] V164 mode=D query="mooncake gift box" rewriteTriggered=true final=176 durationMs=5148 error=no
+[run_full_easy] 164/326 DONE V164 final=176 error=no
+[run_full_easy] 165/326 launching V165 query="横幅" (attempt 1/2)
+[run_one_mode] V165 mode=D query="横幅" rewriteTriggered=false final=126 durationMs=109 error=no
+[run_full_easy] 165/326 DONE V165 final=126 error=no
+[run_full_easy] 166/326 launching V166 query="banner" (attempt 1/2)
+[run_one_mode] V166 mode=D query="banner" rewriteTriggered=false final=229 durationMs=62 error=no
+[run_full_easy] 166/326 DONE V166 final=229 error=no
+[run_full_easy] 167/326 launching V167 query="传单" (attempt 1/2)
+[run_one_mode] V167 mode=D query="传单" rewriteTriggered=true final=425 durationMs=3232 error=no
+[run_full_easy] 167/326 DONE V167 final=425 error=no
+[run_full_easy] 168/326 launching V168 query="flyer" (attempt 1/2)
+[run_one_mode] V168 mode=D query="flyer" rewriteTriggered=false final=5 durationMs=62 error=no
+[run_full_easy] 168/326 DONE V168 final=5 error=no
+[run_full_easy] 169/326 launching V169 query="画册" (attempt 1/2)
+[run_one_mode] V169 mode=D query="画册" rewriteTriggered=false final=6 durationMs=111 error=no
+[run_full_easy] 169/326 DONE V169 final=6 error=no
+[run_full_easy] 170/326 launching V170 query="catalog" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="catalog" finish=stop rawCandidateCount=0
+[run_one_mode] V170 mode=D query="catalog" rewriteTriggered=true final=2 durationMs=3907 error=no
+[run_full_easy] 170/326 DONE V170 final=2 error=no
+[run_full_easy] 171/326 launching V171 query="促销横幅" (attempt 1/2)
+[run_one_mode] V171 mode=D query="促销横幅" rewriteTriggered=false final=7 durationMs=109 error=no
+[run_full_easy] 171/326 DONE V171 final=7 error=no
+[run_full_easy] 172/326 launching V172 query="sale banner" (attempt 1/2)
+[run_one_mode] V172 mode=D query="sale banner" rewriteTriggered=true final=52 durationMs=5589 error=no
+[run_full_easy] 172/326 DONE V172 final=52 error=no
+[run_full_easy] 173/326 launching V173 query="产品图" (attempt 1/2)
+[run_one_mode] V173 mode=D query="产品图" rewriteTriggered=false final=204 durationMs=108 error=no
+[run_full_easy] 173/326 DONE V173 final=204 error=no
+[run_full_easy] 174/326 launching V174 query="product photo" (attempt 1/2)
+[run_one_mode] V174 mode=D query="product photo" rewriteTriggered=false final=33 durationMs=63 error=no
+[run_full_easy] 174/326 DONE V174 final=33 error=no
+[run_full_easy] 175/326 launching V175 query="促销活动" (attempt 1/2)
+[run_one_mode] V175 mode=D query="促销活动" rewriteTriggered=false final=7 durationMs=115 error=no
+[run_full_easy] 175/326 DONE V175 final=7 error=no
+[run_full_easy] 176/326 launching V176 query="promotion" (attempt 1/2)
+[run_one_mode] V176 mode=D query="promotion" rewriteTriggered=false final=34 durationMs=60 error=no
+[run_full_easy] 176/326 DONE V176 final=34 error=no
+[run_full_easy] 177/326 launching V177 query="广告" (attempt 1/2)
+[run_one_mode] V177 mode=D query="广告" rewriteTriggered=false final=12 durationMs=117 error=no
+[run_full_easy] 177/326 DONE V177 final=12 error=no
+[run_full_easy] 178/326 launching V178 query="advertisement" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="advertisement" finish=stop rawCandidateCount=0
+[run_one_mode] V178 mode=D query="advertisement" rewriteTriggered=true final=0 durationMs=4224 error=no
+[run_full_easy] 178/326 DONE V178 final=0 error=no
+[run_full_easy] 179/326 launching V179 query="社交媒体帖子" (attempt 1/2)
+[run_one_mode] V179 mode=D query="社交媒体帖子" rewriteTriggered=false final=14 durationMs=110 error=no
+[run_full_easy] 179/326 DONE V179 final=14 error=no
+[run_full_easy] 180/326 launching V180 query="social media post" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="social media post" finish=stop rawCandidateCount=0
+[run_one_mode] V180 mode=D query="social media post" rewriteTriggered=true final=464 durationMs=3127 error=no
+[run_full_easy] 180/326 DONE V180 final=464 error=no
+[run_full_easy] 181/326 launching V181 query="产品展示" (attempt 1/2)
+[run_one_mode] V181 mode=D query="产品展示" rewriteTriggered=false final=133 durationMs=109 error=no
+[run_full_easy] 181/326 DONE V181 final=133 error=no
+[run_full_easy] 182/326 launching V182 query="product display" (attempt 1/2)
+[run_one_mode] V182 mode=D query="product display" rewriteTriggered=false final=50 durationMs=61 error=no
+[run_full_easy] 182/326 DONE V182 final=50 error=no
+[run_full_easy] 183/326 launching V183 query="餐厅传单" (attempt 1/2)
+[run_one_mode] V183 mode=D query="餐厅传单" rewriteTriggered=true final=35 durationMs=3627 error=no
+[run_full_easy] 183/326 DONE V183 final=35 error=no
+[run_full_easy] 184/326 launching V184 query="restaurant flyer" (attempt 1/2)
+[run_one_mode] V184 mode=D query="restaurant flyer" rewriteTriggered=true final=612 durationMs=3351 error=no
+[run_full_easy] 184/326 DONE V184 final=612 error=no
+[run_full_easy] 185/326 launching V185 query="电影海报" (attempt 1/2)
+[run_one_mode] V185 mode=D query="电影海报" rewriteTriggered=false final=117 durationMs=109 error=no
+[run_full_easy] 185/326 DONE V185 final=117 error=no
+[run_full_easy] 186/326 launching V186 query="movie poster" (attempt 1/2)
+[run_one_mode] V186 mode=D query="movie poster" rewriteTriggered=false final=124 durationMs=63 error=no
+[run_full_easy] 186/326 DONE V186 final=124 error=no
+[run_full_easy] 187/326 launching V187 query="产品横幅" (attempt 1/2)
+[run_one_mode] V187 mode=D query="产品横幅" rewriteTriggered=false final=55 durationMs=112 error=no
+[run_full_easy] 187/326 DONE V187 final=55 error=no
+[run_full_easy] 188/326 launching V188 query="product banner" (attempt 1/2)
+[run_one_mode] V188 mode=D query="product banner" rewriteTriggered=false final=36 durationMs=64 error=no
+[run_full_easy] 188/326 DONE V188 final=36 error=no
+[run_full_easy] 189/326 launching V189 query="促销海报" (attempt 1/2)
+[run_one_mode] V189 mode=D query="促销海报" rewriteTriggered=false final=7 durationMs=110 error=no
+[run_full_easy] 189/326 DONE V189 final=7 error=no
+[run_full_easy] 190/326 launching V190 query="sale poster" (attempt 1/2)
+[run_one_mode] V190 mode=D query="sale poster" rewriteTriggered=false final=7 durationMs=69 error=no
+[run_full_easy] 190/326 DONE V190 final=7 error=no
+[run_full_easy] 191/326 launching V191 query="折扣传单" (attempt 1/2)
+[run_one_mode] V191 mode=D query="折扣传单" rewriteTriggered=true final=1 durationMs=6058 error=no
+[run_full_easy] 191/326 DONE V191 final=1 error=no
+[run_full_easy] 192/326 launching V192 query="discount flyer" (attempt 1/2)
+[run_one_mode] V192 mode=D query="discount flyer" rewriteTriggered=true final=428 durationMs=2912 error=no
+[run_full_easy] 192/326 DONE V192 final=428 error=no
+[run_full_easy] 193/326 launching V193 query="电商横幅" (attempt 1/2)
+[run_one_mode] V193 mode=D query="电商横幅" rewriteTriggered=false final=16 durationMs=115 error=no
+[run_full_easy] 193/326 DONE V193 final=16 error=no
+[run_full_easy] 194/326 launching V194 query="ecommerce banner" (attempt 1/2)
+[run_one_mode] V194 mode=D query="ecommerce banner" rewriteTriggered=false final=10 durationMs=63 error=no
+[run_full_easy] 194/326 DONE V194 final=10 error=no
+[run_full_easy] 195/326 launching V195 query="产品画册" (attempt 1/2)
+[run_one_mode] V195 mode=D query="产品画册" rewriteTriggered=true final=202 durationMs=5441 error=no
+[run_full_easy] 195/326 DONE V195 final=202 error=no
+[run_full_easy] 196/326 launching V196 query="product catalog" (attempt 1/2)
+[run_one_mode] V196 mode=D query="product catalog" rewriteTriggered=true final=189 durationMs=3384 error=no
+[run_full_easy] 196/326 DONE V196 final=189 error=no
+[run_full_easy] 197/326 launching V197 query="活动传单" (attempt 1/2)
+[run_one_mode] V197 mode=D query="活动传单" rewriteTriggered=true final=254 durationMs=3909 error=no
+[run_full_easy] 197/326 DONE V197 final=254 error=no
+[run_full_easy] 198/326 launching V198 query="event flyer" (attempt 1/2)
+[run_one_mode] V198 mode=D query="event flyer" rewriteTriggered=false final=5 durationMs=62 error=no
+[run_full_easy] 198/326 DONE V198 final=5 error=no
+[run_full_easy] 199/326 launching V199 query="开业横幅" (attempt 1/2)
+[run_one_mode] V199 mode=D query="开业横幅" rewriteTriggered=true final=106 durationMs=3508 error=no
+[run_full_easy] 199/326 DONE V199 final=106 error=no
+[run_full_easy] 200/326 launching V200 query="grand opening banner" (attempt 1/2)
+[run_one_mode] V200 mode=D query="grand opening banner" rewriteTriggered=true final=219 durationMs=4389 error=no
+[run_full_easy] 200/326 DONE V200 final=219 error=no
+[run_full_easy] 201/326 launching V201 query="节日促销横幅" (attempt 1/2)
+[run_one_mode] V201 mode=D query="节日促销横幅" rewriteTriggered=true final=16 durationMs=4125 error=no
+[run_full_easy] 201/326 DONE V201 final=16 error=no
+[run_full_easy] 202/326 launching V202 query="holiday sale banner" (attempt 1/2)
+[run_one_mode] V202 mode=D query="holiday sale banner" rewriteTriggered=true final=32 durationMs=3818 error=no
+[run_full_easy] 202/326 DONE V202 final=32 error=no
+[run_full_easy] 203/326 launching V203 query="新品横幅" (attempt 1/2)
+[run_one_mode] V203 mode=D query="新品横幅" rewriteTriggered=true final=136 durationMs=2669 error=no
+[run_full_easy] 203/326 DONE V203 final=136 error=no
+[run_full_easy] 204/326 launching V204 query="new arrival banner" (attempt 1/2)
+[run_one_mode] V204 mode=D query="new arrival banner" rewriteTriggered=true final=33 durationMs=2959 error=no
+[run_full_easy] 204/326 DONE V204 final=33 error=no
+[run_full_easy] 205/326 launching V205 query="限时促销海报" (attempt 1/2)
+[run_one_mode] V205 mode=D query="限时促销海报" rewriteTriggered=true final=448 durationMs=3749 error=no
+[run_full_easy] 205/326 DONE V205 final=448 error=no
+[run_full_easy] 206/326 launching V206 query="flash sale poster" (attempt 1/2)
+[run_one_mode] V206 mode=D query="flash sale poster" rewriteTriggered=true final=132 durationMs=3157 error=no
+[run_full_easy] 206/326 DONE V206 final=132 error=no
+[run_full_easy] 207/326 launching V207 query="清仓促销横幅" (attempt 1/2)
+[run_one_mode] V207 mode=D query="清仓促销横幅" rewriteTriggered=true final=38 durationMs=10577 error=no
+[run_full_easy] 207/326 DONE V207 final=38 error=no
+[run_full_easy] 208/326 launching V208 query="clearance sale banner" (attempt 1/2)
+[run_one_mode] V208 mode=D query="clearance sale banner" rewriteTriggered=true final=3 durationMs=3879 error=no
+[run_full_easy] 208/326 DONE V208 final=3 error=no
+[run_full_easy] 209/326 launching V209 query="产品详情图" (attempt 1/2)
+[run_one_mode] V209 mode=D query="产品详情图" rewriteTriggered=false final=6 durationMs=123 error=no
+[run_full_easy] 209/326 DONE V209 final=6 error=no
+[run_full_easy] 210/326 launching V210 query="product listing image" (attempt 1/2)
+[run_one_mode] V210 mode=D query="product listing image" rewriteTriggered=true final=376 durationMs=2987 error=no
+[run_full_easy] 210/326 DONE V210 final=376 error=no
+[run_full_easy] 211/326 launching V211 query="网店横幅" (attempt 1/2)
+[run_one_mode] V211 mode=D query="网店横幅" rewriteTriggered=true final=8 durationMs=6005 error=no
+[run_full_easy] 211/326 DONE V211 final=8 error=no
+[run_full_easy] 212/326 launching V212 query="online store banner" (attempt 1/2)
+[run_one_mode] V212 mode=D query="online store banner" rewriteTriggered=true final=148 durationMs=4805 error=no
+[run_full_easy] 212/326 DONE V212 final=148 error=no
+[run_full_easy] 213/326 launching V213 query="社交媒体广告" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="社交媒体广告" finish=stop rawCandidateCount=0
+[run_one_mode] V213 mode=D query="社交媒体广告" rewriteTriggered=true final=91 durationMs=3214 error=no
+[run_full_easy] 213/326 DONE V213 final=91 error=no
+[run_full_easy] 214/326 launching V214 query="social media ad" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="social media ad" finish=stop rawCandidateCount=0
+[run_one_mode] V214 mode=D query="social media ad" rewriteTriggered=true final=464 durationMs=3957 error=no
+[run_full_easy] 214/326 DONE V214 final=464 error=no
+[run_full_easy] 215/326 launching V215 query="种草帖" (attempt 1/2)
+[run_one_mode] V215 mode=D query="种草帖" rewriteTriggered=true final=191 durationMs=2916 error=no
+[run_full_easy] 215/326 DONE V215 final=191 error=no
+[run_full_easy] 216/326 launching V216 query="influencer post" (attempt 1/2)
+[run_one_mode] V216 mode=D query="influencer post" rewriteTriggered=true final=1844 durationMs=6980 error=no
+[run_full_easy] 216/326 DONE V216 final=1844 error=no
+[run_full_easy] 217/326 launching V217 query="开箱照" (attempt 1/2)
+[run_one_mode] V217 mode=D query="开箱照" rewriteTriggered=true final=379 durationMs=7626 error=no
+[run_full_easy] 217/326 DONE V217 final=379 error=no
+[run_full_easy] 218/326 launching V218 query="unboxing photo" (attempt 1/2)
+[run_one_mode] V218 mode=D query="unboxing photo" rewriteTriggered=true final=1284 durationMs=3458 error=no
+[run_full_easy] 218/326 DONE V218 final=1284 error=no
+[run_full_easy] 219/326 launching V219 query="前后对比图" (attempt 1/2)
+[run_one_mode] V219 mode=D query="前后对比图" rewriteTriggered=false final=22 durationMs=121 error=no
+[run_full_easy] 219/326 DONE V219 final=22 error=no
+[run_full_easy] 220/326 launching V220 query="before after comparison" (attempt 1/2)
+[run_one_mode] V220 mode=D query="before after comparison" rewriteTriggered=false final=36 durationMs=67 error=no
+[run_full_easy] 220/326 DONE V220 final=36 error=no
+[run_full_easy] 221/326 launching V221 query="优惠券" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="优惠券" finish=stop rawCandidateCount=0
+[run_one_mode] V221 mode=D query="优惠券" rewriteTriggered=true final=0 durationMs=11886 error=no
+[run_full_easy] 221/326 DONE V221 final=0 error=no
+[run_full_easy] 222/326 launching V222 query="discount coupon" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="discount coupon" finish=stop rawCandidateCount=0
+[run_one_mode] V222 mode=D query="discount coupon" rewriteTriggered=true final=0 durationMs=5074 error=no
+[run_full_easy] 222/326 DONE V222 final=0 error=no
+[run_full_easy] 223/326 launching V223 query="会员卡" (attempt 1/2)
+[run_one_mode] V223 mode=D query="会员卡" rewriteTriggered=true final=325 durationMs=3320 error=no
+[run_full_easy] 223/326 DONE V223 final=325 error=no
+[run_full_easy] 224/326 launching V224 query="membership card" (attempt 1/2)
+[run_one_mode] V224 mode=D query="membership card" rewriteTriggered=true final=838 durationMs=3577 error=no
+[run_full_easy] 224/326 DONE V224 final=838 error=no
+[run_full_easy] 225/326 launching V225 query="积分卡" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="积分卡" finish=stop rawCandidateCount=0
+[run_one_mode] V225 mode=D query="积分卡" rewriteTriggered=true final=526 durationMs=3798 error=no
+[run_full_easy] 225/326 DONE V225 final=526 error=no
+[run_full_easy] 226/326 launching V226 query="loyalty card" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="loyalty card" finish=stop rawCandidateCount=0
+[run_one_mode] V226 mode=D query="loyalty card" rewriteTriggered=true final=838 durationMs=2815 error=no
+[run_full_easy] 226/326 DONE V226 final=838 error=no
+[run_full_easy] 227/326 launching V227 query="礼品卡" (attempt 1/2)
+[run_one_mode] V227 mode=D query="礼品卡" rewriteTriggered=false final=7 durationMs=123 error=no
+[run_full_easy] 227/326 DONE V227 final=7 error=no
+[run_full_easy] 228/326 launching V228 query="gift card" (attempt 1/2)
+[run_one_mode] V228 mode=D query="gift card" rewriteTriggered=false final=16 durationMs=66 error=no
+[run_full_easy] 228/326 DONE V228 final=16 error=no
+[run_full_easy] 229/326 launching V229 query="门店横幅" (attempt 1/2)
+[run_one_mode] V229 mode=D query="门店横幅" rewriteTriggered=true final=79 durationMs=4009 error=no
+[run_full_easy] 229/326 DONE V229 final=79 error=no
+[run_full_easy] 230/326 launching V230 query="storefront banner" (attempt 1/2)
+[run_one_mode] V230 mode=D query="storefront banner" rewriteTriggered=true final=4 durationMs=3273 error=no
+[run_full_easy] 230/326 DONE V230 final=4 error=no
+[run_full_easy] 231/326 launching V231 query="橱窗展示" (attempt 1/2)
+[run_one_mode] V231 mode=D query="橱窗展示" rewriteTriggered=true final=83 durationMs=5200 error=no
+[run_full_easy] 231/326 DONE V231 final=83 error=no
+[run_full_easy] 232/326 launching V232 query="window display" (attempt 1/2)
+[run_one_mode] V232 mode=D query="window display" rewriteTriggered=true final=15 durationMs=2762 error=no
+[run_full_easy] 232/326 DONE V232 final=15 error=no
+[run_full_easy] 233/326 launching V233 query="展会展架" (attempt 1/2)
+[run_one_mode] V233 mode=D query="展会展架" rewriteTriggered=true final=0 durationMs=3390 error=no
+[run_full_easy] 233/326 DONE V233 final=0 error=no
+[run_full_easy] 234/326 launching V234 query="trade show banner" (attempt 1/2)
+[run_one_mode] V234 mode=D query="trade show banner" rewriteTriggered=true final=85 durationMs=3949 error=no
+[run_full_easy] 234/326 DONE V234 final=85 error=no
+[run_full_easy] 235/326 launching V235 query="展览传单" (attempt 1/2)
+[run_one_mode] V235 mode=D query="展览传单" rewriteTriggered=true final=1 durationMs=4243 error=no
+[run_full_easy] 235/326 DONE V235 final=1 error=no
+[run_full_easy] 236/326 launching V236 query="exhibition flyer" (attempt 1/2)
+[run_one_mode] V236 mode=D query="exhibition flyer" rewriteTriggered=true final=1029 durationMs=3044 error=no
+[run_full_easy] 236/326 DONE V236 final=1029 error=no
+[run_full_easy] 237/326 launching V237 query="新品发布海报" (attempt 1/2)
+[run_one_mode] V237 mode=D query="新品发布海报" rewriteTriggered=true final=131 durationMs=4852 error=no
+[run_full_easy] 237/326 DONE V237 final=131 error=no
+[run_full_easy] 238/326 launching V238 query="product launch poster" (attempt 1/2)
+[run_one_mode] V238 mode=D query="product launch poster" rewriteTriggered=true final=1019 durationMs=3887 error=no
+[run_full_easy] 238/326 DONE V238 final=1019 error=no
+[run_full_easy] 239/326 launching V239 query="季节促销横幅" (attempt 1/2)
+[run_one_mode] V239 mode=D query="季节促销横幅" rewriteTriggered=false final=7 durationMs=121 error=no
+[run_full_easy] 239/326 DONE V239 final=7 error=no
+[run_full_easy] 240/326 launching V240 query="seasonal sale banner" (attempt 1/2)
+[run_one_mode] V240 mode=D query="seasonal sale banner" rewriteTriggered=true final=1 durationMs=3230 error=no
+[run_full_easy] 240/326 DONE V240 final=1 error=no
+[run_full_easy] 241/326 launching V241 query="黑五促销横幅" (attempt 1/2)
+[run_one_mode] V241 mode=D query="黑五促销横幅" rewriteTriggered=true final=52 durationMs=8256 error=no
+[run_full_easy] 241/326 DONE V241 final=52 error=no
+[run_full_easy] 242/326 launching V242 query="black friday banner" (attempt 1/2)
+[run_one_mode] V242 mode=D query="black friday banner" rewriteTriggered=true final=166 durationMs=3707 error=no
+[run_full_easy] 242/326 DONE V242 final=166 error=no
+[run_full_easy] 243/326 launching V243 query="双十一促销海报" (attempt 1/2)
+[run_one_mode] V243 mode=D query="双十一促销海报" rewriteTriggered=true final=13 durationMs=8530 error=no
+[run_full_easy] 243/326 DONE V243 final=13 error=no
+[run_full_easy] 244/326 launching V244 query="singles day sale poster" (attempt 1/2)
+[run_one_mode] V244 mode=D query="singles day sale poster" rewriteTriggered=true final=187 durationMs=5767 error=no
+[run_full_easy] 244/326 DONE V244 final=187 error=no
+[run_full_easy] 245/326 launching V245 query="直播预告横幅" (attempt 1/2)
+[run_one_mode] V245 mode=D query="直播预告横幅" rewriteTriggered=true final=0 durationMs=4014 error=no
+[run_full_easy] 245/326 DONE V245 final=0 error=no
+[run_full_easy] 246/326 launching V246 query="livestream promo banner" (attempt 1/2)
+[run_one_mode] V246 mode=D query="livestream promo banner" rewriteTriggered=true final=492 durationMs=5398 error=no
+[run_full_easy] 246/326 DONE V246 final=492 error=no
+[run_full_easy] 247/326 launching V247 query="识字卡" (attempt 1/2)
+[run_one_mode] V247 mode=D query="识字卡" rewriteTriggered=false final=50 durationMs=121 error=no
+[run_full_easy] 247/326 DONE V247 final=50 error=no
+[run_full_easy] 248/326 launching V248 query="flashcard" (attempt 1/2)
+[run_one_mode] V248 mode=D query="flashcard" rewriteTriggered=false final=31 durationMs=61 error=no
+[run_full_easy] 248/326 DONE V248 final=31 error=no
+[run_full_easy] 249/326 launching V249 query="练习册" (attempt 1/2)
+[run_one_mode] V249 mode=D query="练习册" rewriteTriggered=true final=9 durationMs=4475 error=no
+[run_full_easy] 249/326 DONE V249 final=9 error=no
+[run_full_easy] 250/326 launching V250 query="worksheet" (attempt 1/2)
+[run_one_mode] V250 mode=D query="worksheet" rewriteTriggered=false final=29 durationMs=63 error=no
+[run_full_easy] 250/326 DONE V250 final=29 error=no
+[run_full_easy] 251/326 launching V251 query="字母卡" (attempt 1/2)
+[run_one_mode] V251 mode=D query="字母卡" rewriteTriggered=false final=50 durationMs=115 error=no
+[run_full_easy] 251/326 DONE V251 final=50 error=no
+[run_full_easy] 252/326 launching V252 query="alphabet card" (attempt 1/2)
+[run_one_mode] V252 mode=D query="alphabet card" rewriteTriggered=true final=1417 durationMs=11307 error=no
+[run_full_easy] 252/326 DONE V252 final=1417 error=no
+[run_full_easy] 253/326 launching V253 query="地图" (attempt 1/2)
+[run_one_mode] V253 mode=D query="地图" rewriteTriggered=false final=308 durationMs=106 error=no
+[run_full_easy] 253/326 DONE V253 final=308 error=no
+[run_full_easy] 254/326 launching V254 query="map" (attempt 1/2)
+[run_one_mode] V254 mode=D query="map" rewriteTriggered=false final=524 durationMs=54 error=no
+[run_full_easy] 254/326 DONE V254 final=524 error=no
+[run_full_easy] 255/326 launching V255 query="图解" (attempt 1/2)
+[run_one_mode] V255 mode=D query="图解" rewriteTriggered=false final=89 durationMs=112 error=no
+[run_full_easy] 255/326 DONE V255 final=89 error=no
+[run_full_easy] 256/326 launching V256 query="diagram" (attempt 1/2)
+[run_one_mode] V256 mode=D query="diagram" rewriteTriggered=false final=284 durationMs=58 error=no
+[run_full_easy] 256/326 DONE V256 final=284 error=no
+[run_full_easy] 257/326 launching V257 query="日历" (attempt 1/2)
+[run_one_mode] V257 mode=D query="日历" rewriteTriggered=false final=17 durationMs=114 error=no
+[run_full_easy] 257/326 DONE V257 final=17 error=no
+[run_full_easy] 258/326 launching V258 query="calendar" (attempt 1/2)
+[run_one_mode] V258 mode=D query="calendar" rewriteTriggered=false final=28 durationMs=67 error=no
+[run_full_easy] 258/326 DONE V258 final=28 error=no
+[run_full_easy] 259/326 launching V259 query="证书" (attempt 1/2)
+[run_one_mode] V259 mode=D query="证书" rewriteTriggered=true final=0 durationMs=3485 error=no
+[run_full_easy] 259/326 DONE V259 final=0 error=no
+[run_full_easy] 260/326 launching V260 query="certificate" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="certificate" finish=stop rawCandidateCount=0
+[run_one_mode] V260 mode=D query="certificate" rewriteTriggered=true final=0 durationMs=2826 error=no
+[run_full_easy] 260/326 DONE V260 final=0 error=no
+[run_full_easy] 261/326 launching V261 query="科学海报" (attempt 1/2)
+[run_one_mode] V261 mode=D query="科学海报" rewriteTriggered=false final=132 durationMs=117 error=no
+[run_full_easy] 261/326 DONE V261 final=132 error=no
+[run_full_easy] 262/326 launching V262 query="science poster" (attempt 1/2)
+[run_one_mode] V262 mode=D query="science poster" rewriteTriggered=false final=325 durationMs=60 error=no
+[run_full_easy] 262/326 DONE V262 final=325 error=no
+[run_full_easy] 263/326 launching V263 query="课堂装饰海报" (attempt 1/2)
+[run_one_mode] V263 mode=D query="课堂装饰海报" rewriteTriggered=false final=33 durationMs=118 error=no
+[run_full_easy] 263/326 DONE V263 final=33 error=no
+[run_full_easy] 264/326 launching V264 query="classroom poster" (attempt 1/2)
+[run_one_mode] V264 mode=D query="classroom poster" rewriteTriggered=false final=157 durationMs=64 error=no
+[run_full_easy] 264/326 DONE V264 final=157 error=no
+[run_full_easy] 265/326 launching V265 query="教科书" (attempt 1/2)
+[run_one_mode] V265 mode=D query="教科书" rewriteTriggered=false final=6 durationMs=116 error=no
+[run_full_easy] 265/326 DONE V265 final=6 error=no
+[run_full_easy] 266/326 launching V266 query="textbook" (attempt 1/2)
+[run_one_mode] V266 mode=D query="textbook" rewriteTriggered=false final=11 durationMs=61 error=no
+[run_full_easy] 266/326 DONE V266 final=11 error=no
+[run_full_easy] 267/326 launching V267 query="地球仪" (attempt 1/2)
+[run_one_mode] V267 mode=D query="地球仪" rewriteTriggered=true final=0 durationMs=4021 error=no
+[run_full_easy] 267/326 DONE V267 final=0 error=no
+[run_full_easy] 268/326 launching V268 query="globe" (attempt 1/2)
+[run_one_mode] V268 mode=D query="globe" rewriteTriggered=true final=3205 durationMs=2750 error=no
+[run_full_easy] 268/326 DONE V268 final=3205 error=no
+[run_full_easy] 269/326 launching V269 query="图表" (attempt 1/2)
+[run_one_mode] V269 mode=D query="图表" rewriteTriggered=false final=180 durationMs=117 error=no
+[run_full_easy] 269/326 DONE V269 final=180 error=no
+[run_full_easy] 270/326 launching V270 query="chart" (attempt 1/2)
+[run_one_mode] V270 mode=D query="chart" rewriteTriggered=false final=65 durationMs=62 error=no
+[run_full_easy] 270/326 DONE V270 final=65 error=no
+[run_full_easy] 271/326 launching V271 query="课程表" (attempt 1/2)
+[run_one_mode] V271 mode=D query="课程表" rewriteTriggered=true final=0 durationMs=3638 error=no
+[run_full_easy] 271/326 DONE V271 final=0 error=no
+[run_full_easy] 272/326 launching V272 query="timetable" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="timetable" finish=stop rawCandidateCount=0
+[run_one_mode] V272 mode=D query="timetable" rewriteTriggered=true final=1 durationMs=2849 error=no
+[run_full_easy] 272/326 DONE V272 final=1 error=no
+[run_full_easy] 273/326 launching V273 query="数字表" (attempt 1/2)
+[run_one_mode] V273 mode=D query="数字表" rewriteTriggered=false final=7 durationMs=115 error=no
+[run_full_easy] 273/326 DONE V273 final=7 error=no
+[run_full_easy] 274/326 launching V274 query="number chart" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="number chart" finish=stop rawCandidateCount=0
+[run_one_mode] V274 mode=D query="number chart" rewriteTriggered=true final=29 durationMs=4003 error=no
+[run_full_easy] 274/326 DONE V274 final=29 error=no
+[run_full_easy] 275/326 launching V275 query="元素周期表" (attempt 1/2)
+[run_one_mode] V275 mode=D query="元素周期表" rewriteTriggered=false final=25 durationMs=120 error=no
+[run_full_easy] 275/326 DONE V275 final=25 error=no
+[run_full_easy] 276/326 launching V276 query="periodic table" (attempt 1/2)
+[run_one_mode] V276 mode=D query="periodic table" rewriteTriggered=false final=25 durationMs=65 error=no
+[run_full_easy] 276/326 DONE V276 final=25 error=no
+[run_full_easy] 277/326 launching V277 query="世界地图" (attempt 1/2)
+[run_one_mode] V277 mode=D query="世界地图" rewriteTriggered=false final=11 durationMs=116 error=no
+[run_full_easy] 277/326 DONE V277 final=11 error=no
+[run_full_easy] 278/326 launching V278 query="world map" (attempt 1/2)
+[run_one_mode] V278 mode=D query="world map" rewriteTriggered=false final=39 durationMs=73 error=no
+[run_full_easy] 278/326 DONE V278 final=39 error=no
+[run_full_easy] 279/326 launching V279 query="拼读卡" (attempt 1/2)
+[run_one_mode] V279 mode=D query="拼读卡" rewriteTriggered=false final=56 durationMs=124 error=no
+[run_full_easy] 279/326 DONE V279 final=56 error=no
+[run_full_easy] 280/326 launching V280 query="phonics card" (attempt 1/2)
+[run_one_mode] V280 mode=D query="phonics card" rewriteTriggered=false final=7 durationMs=81 error=no
+[run_full_easy] 280/326 DONE V280 final=7 error=no
+[run_full_easy] 281/326 launching V281 query="试卷" (attempt 1/2)
+[run_one_mode] V281 mode=D query="试卷" rewriteTriggered=true final=0 durationMs=7223 error=no
+[run_full_easy] 281/326 DONE V281 final=0 error=no
+[run_full_easy] 282/326 launching V282 query="exam paper" (attempt 1/2)
+[run_one_mode] V282 mode=D query="exam paper" rewriteTriggered=true final=74 durationMs=3152 error=no
+[run_full_easy] 282/326 DONE V282 final=74 error=no
+[run_full_easy] 283/326 launching V283 query="成绩单" (attempt 1/2)
+[run_one_mode] V283 mode=D query="成绩单" rewriteTriggered=true final=0 durationMs=5651 error=no
+[run_full_easy] 283/326 DONE V283 final=0 error=no
+[run_full_easy] 284/326 launching V284 query="report card" (attempt 1/2)
+[run_one_mode] V284 mode=D query="report card" rewriteTriggered=false final=76 durationMs=68 error=no
+[run_full_easy] 284/326 DONE V284 final=76 error=no
+[run_full_easy] 285/326 launching V285 query="笔袋" (attempt 1/2)
+[run_one_mode] V285 mode=D query="笔袋" rewriteTriggered=true final=0 durationMs=4220 error=no
+[run_full_easy] 285/326 DONE V285 final=0 error=no
+[run_full_easy] 286/326 launching V286 query="pencil case" (attempt 1/2)
+[run_one_mode] V286 mode=D query="pencil case" rewriteTriggered=true final=2 durationMs=3328 error=no
+[run_full_easy] 286/326 DONE V286 final=2 error=no
+[run_full_easy] 287/326 launching V287 query="黑板" (attempt 1/2)
+[run_one_mode] V287 mode=D query="黑板" rewriteTriggered=false final=80 durationMs=120 error=no
+[run_full_easy] 287/326 DONE V287 final=80 error=no
+[run_full_easy] 288/326 launching V288 query="chalkboard" (attempt 1/2)
+[run_one_mode] V288 mode=D query="chalkboard" rewriteTriggered=false final=76 durationMs=61 error=no
+[run_full_easy] 288/326 DONE V288 final=76 error=no
+[run_full_easy] 289/326 launching V289 query="白板" (attempt 1/2)
+[run_one_mode] V289 mode=D query="白板" rewriteTriggered=true final=0 durationMs=4494 error=no
+[run_full_easy] 289/326 DONE V289 final=0 error=no
+[run_full_easy] 290/326 launching V290 query="whiteboard" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="whiteboard" finish=stop rawCandidateCount=0
+[run_one_mode] V290 mode=D query="whiteboard" rewriteTriggered=true final=0 durationMs=3213 error=no
+[run_full_easy] 290/326 DONE V290 final=0 error=no
+[run_full_easy] 291/326 launching V291 query="显微镜" (attempt 1/2)
+[run_one_mode] V291 mode=D query="显微镜" rewriteTriggered=true final=27 durationMs=3786 error=no
+[run_full_easy] 291/326 DONE V291 final=27 error=no
+[run_full_easy] 292/326 launching V292 query="microscope" (attempt 1/2)
+[searchRewrite.multi] errorType=empty_output query="microscope" finish=stop rawCandidateCount=0
+[run_one_mode] V292 mode=D query="microscope" rewriteTriggered=true final=0 durationMs=4182 error=no
+[run_full_easy] 292/326 DONE V292 final=0 error=no
+[run_full_easy] 293/326 launching V293 query="书签" (attempt 1/2)
+[run_one_mode] V293 mode=D query="书签" rewriteTriggered=true final=0 durationMs=4368 error=no
+[run_full_easy] 293/326 DONE V293 final=0 error=no
+[run_full_easy] 294/326 launching V294 query="bookmark" (attempt 1/2)
+[run_one_mode] V294 mode=D query="bookmark" rewriteTriggered=true final=1672 durationMs=3696 error=no
+[run_full_easy] 294/326 DONE V294 final=1672 error=no
+[run_full_easy] 295/326 launching V295 query="算盘" (attempt 1/2)
+[run_one_mode] V295 mode=D query="算盘" rewriteTriggered=true final=366 durationMs=2934 error=no
+[run_full_easy] 295/326 DONE V295 final=366 error=no
+[run_full_easy] 296/326 launching V296 query="abacus" (attempt 1/2)
+[run_one_mode] V296 mode=D query="abacus" rewriteTriggered=true final=1 durationMs=3317 error=no
+[run_full_easy] 296/326 DONE V296 final=1 error=no
+[run_full_easy] 297/326 launching V297 query="练习本" (attempt 1/2)
+[run_one_mode] V297 mode=D query="练习本" rewriteTriggered=true final=6 durationMs=6404 error=no
+[run_full_easy] 297/326 DONE V297 final=6 error=no
+[run_full_easy] 298/326 launching V298 query="workbook" (attempt 1/2)
+[run_one_mode] V298 mode=D query="workbook" rewriteTriggered=true final=0 durationMs=4177 error=no
+[run_full_easy] 298/326 DONE V298 final=0 error=no
+[run_full_easy] 299/326 launching V299 query="单词卡" (attempt 1/2)
+[run_one_mode] V299 mode=D query="单词卡" rewriteTriggered=false final=388 durationMs=124 error=no
+[run_full_easy] 299/326 DONE V299 final=388 error=no
+[run_full_easy] 300/326 launching V300 query="vocabulary card" (attempt 1/2)
+[run_one_mode] V300 mode=D query="vocabulary card" rewriteTriggered=false final=374 durationMs=62 error=no
+[run_full_easy] 300/326 DONE V300 final=374 error=no
+[run_full_easy] 301/326 launching V301 query="拼写卡" (attempt 1/2)
+[run_one_mode] V301 mode=D query="拼写卡" rewriteTriggered=false final=5 durationMs=115 error=no
+[run_full_easy] 301/326 DONE V301 final=5 error=no
+[run_full_easy] 302/326 launching V302 query="spelling card" (attempt 1/2)
+[run_one_mode] V302 mode=D query="spelling card" rewriteTriggered=true final=1652 durationMs=3746 error=no
+[run_full_easy] 302/326 DONE V302 final=1652 error=no
+[run_full_easy] 303/326 launching V303 query="数学练习册" (attempt 1/2)
+[run_one_mode] V303 mode=D query="数学练习册" rewriteTriggered=true final=6 durationMs=3478 error=no
+[run_full_easy] 303/326 DONE V303 final=6 error=no
+[run_full_easy] 304/326 launching V304 query="math worksheet" (attempt 1/2)
+[run_one_mode] V304 mode=D query="math worksheet" rewriteTriggered=true final=22 durationMs=5275 error=no
+[run_full_easy] 304/326 DONE V304 final=22 error=no
+[run_full_easy] 305/326 launching V305 query="阅读练习册" (attempt 1/2)
+[run_one_mode] V305 mode=D query="阅读练习册" rewriteTriggered=true final=19 durationMs=3123 error=no
+[run_full_easy] 305/326 DONE V305 final=19 error=no
+[run_full_easy] 306/326 launching V306 query="reading worksheet" (attempt 1/2)
+[run_one_mode] V306 mode=D query="reading worksheet" rewriteTriggered=false final=6 durationMs=75 error=no
+[run_full_easy] 306/326 DONE V306 final=6 error=no
+[run_full_easy] 307/326 launching V307 query="科学图解" (attempt 1/2)
+[run_one_mode] V307 mode=D query="科学图解" rewriteTriggered=false final=7 durationMs=114 error=no
+[run_full_easy] 307/326 DONE V307 final=7 error=no
+[run_full_easy] 308/326 launching V308 query="science diagram" (attempt 1/2)
+[run_one_mode] V308 mode=D query="science diagram" rewriteTriggered=false final=82 durationMs=61 error=no
+[run_full_easy] 308/326 DONE V308 final=82 error=no
+[run_full_easy] 309/326 launching V309 query="人体图解" (attempt 1/2)
+[run_one_mode] V309 mode=D query="人体图解" rewriteTriggered=true final=3 durationMs=3767 error=no
+[run_full_easy] 309/326 DONE V309 final=3 error=no
+[run_full_easy] 310/326 launching V310 query="anatomy chart" (attempt 1/2)
+[run_one_mode] V310 mode=D query="anatomy chart" rewriteTriggered=false final=14 durationMs=62 error=no
+[run_full_easy] 310/326 DONE V310 final=14 error=no
+[run_full_easy] 311/326 launching V311 query="动物识字卡" (attempt 1/2)
+[run_one_mode] V311 mode=D query="动物识字卡" rewriteTriggered=true final=333 durationMs=3030 error=no
+[run_full_easy] 311/326 DONE V311 final=333 error=no
+[run_full_easy] 312/326 launching V312 query="animal flashcard" (attempt 1/2)
+[run_one_mode] V312 mode=D query="animal flashcard" rewriteTriggered=false final=6 durationMs=66 error=no
+[run_full_easy] 312/326 DONE V312 final=6 error=no
+[run_full_easy] 313/326 launching V313 query="字母海报" (attempt 1/2)
+[run_one_mode] V313 mode=D query="字母海报" rewriteTriggered=false final=54 durationMs=125 error=no
+[run_full_easy] 313/326 DONE V313 final=54 error=no
+[run_full_easy] 314/326 launching V314 query="alphabet poster" (attempt 1/2)
+[run_one_mode] V314 mode=D query="alphabet poster" rewriteTriggered=true final=3034 durationMs=6969 error=no
+[run_full_easy] 314/326 DONE V314 final=3034 error=no
+[run_full_easy] 315/326 launching V315 query="荣誉证书" (attempt 1/2)
+[run_one_mode] V315 mode=D query="荣誉证书" rewriteTriggered=true final=0 durationMs=3806 error=no
+[run_full_easy] 315/326 DONE V315 final=0 error=no
+[run_full_easy] 316/326 launching V316 query="achievement certificate" (attempt 1/2)
+[run_one_mode] V316 mode=D query="achievement certificate" rewriteTriggered=true final=0 durationMs=4464 error=no
+[run_full_easy] 316/326 DONE V316 final=0 error=no
+[run_full_easy] 317/326 launching V317 query="毕业证" (attempt 1/2)
+[run_one_mode] V317 mode=D query="毕业证" rewriteTriggered=true final=0 durationMs=3899 error=no
+[run_full_easy] 317/326 DONE V317 final=0 error=no
+[run_full_easy] 318/326 launching V318 query="diploma" (attempt 1/2)
+[run_one_mode] V318 mode=D query="diploma" rewriteTriggered=true final=1 durationMs=2454 error=no
+[run_full_easy] 318/326 DONE V318 final=1 error=no
+[run_full_easy] 319/326 launching V319 query="校历" (attempt 1/2)
+[run_one_mode] V319 mode=D query="校历" rewriteTriggered=true final=0 durationMs=3509 error=no
+[run_full_easy] 319/326 DONE V319 final=0 error=no
+[run_full_easy] 320/326 launching V320 query="school calendar" (attempt 1/2)
+[run_one_mode] V320 mode=D query="school calendar" rewriteTriggered=false final=4 durationMs=66 error=no
+[run_full_easy] 320/326 DONE V320 final=4 error=no
+[run_full_easy] 321/326 launching V321 query="教室装饰" (attempt 1/2)
+[run_one_mode] V321 mode=D query="教室装饰" rewriteTriggered=false final=7 durationMs=123 error=no
+[run_full_easy] 321/326 DONE V321 final=7 error=no
+[run_full_easy] 322/326 launching V322 query="classroom decoration" (attempt 1/2)
+[run_one_mode] V322 mode=D query="classroom decoration" rewriteTriggered=true final=2217 durationMs=3478 error=no
+[run_full_easy] 322/326 DONE V322 final=2217 error=no
+[run_full_easy] 323/326 launching V323 query="学习图表" (attempt 1/2)
+[run_one_mode] V323 mode=D query="学习图表" rewriteTriggered=false final=27 durationMs=124 error=no
+[run_full_easy] 323/326 DONE V323 final=27 error=no
+[run_full_easy] 324/326 launching V324 query="learning chart" (attempt 1/2)
+[run_one_mode] V324 mode=D query="learning chart" rewriteTriggered=false final=34 durationMs=65 error=no
+[run_full_easy] 324/326 DONE V324 final=34 error=no
+[run_full_easy] 325/326 launching V325 query="贴纸奖励表" (attempt 1/2)
+[run_one_mode] V325 mode=D query="贴纸奖励表" rewriteTriggered=true final=41 durationMs=3902 error=no
+[run_full_easy] 325/326 DONE V325 final=41 error=no
+[run_full_easy] 326/326 launching V326 query="reward chart" (attempt 1/2)
+[run_one_mode] V326 mode=D query="reward chart" rewriteTriggered=true final=45 durationMs=4477 error=no
+[run_full_easy] 326/326 DONE V326 final=45 error=no
+[run_full_easy] all 326 runs complete. JSON checkpoints in /Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.16/easy-query-v2-validation/checkpoints/runs

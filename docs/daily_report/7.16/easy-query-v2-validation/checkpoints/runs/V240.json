@@ -1,0 +1,126 @@
+{
+  "query_id": "V240",
+  "query": "seasonal sale banner",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:45:29.918Z",
+  "completed_at": "2026-07-16T15:45:33.149Z",
+  "duration_ms": 3230,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "seasonal",
+        "sale",
+        "banner"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "seasonal promotion poster",
+        "holiday sale banner",
+        "seasonal discount graphic"
+      ],
+      "decomposition": {
+        "output": "banner"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "seasonal promotion poster",
+        "slotKey": "rewrite",
+        "slotValue": "seasonal promotion poster",
+        "subjectBound": false
+      },
+      {
+        "text": "holiday sale banner",
+        "slotKey": "rewrite",
+        "slotValue": "holiday sale banner",
+        "subjectBound": false
+      },
+      {
+        "text": "seasonal discount graphic",
+        "slotKey": "rewrite",
+        "slotValue": "seasonal discount graphic",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "banner",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 29,
+    "postMergeCount": 244,
+    "dedupCount": 244,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-product-theme-promotional-poster-summer-beach-sale",
+        "title": "summer beach sale",
+        "template_id": "template-product-theme-promotional-poster",
+        "tags": [
+          "product",
+          "promotional-poster",
+          "summer",
+          "trending",
+          "beach-and-seashore",
+          "lifestyle",
+          "design",
+          "art-prints",
+          "wall-art",
+          "vibrant",
+          "casual",
+          "seasonal",
+          "playful",
+          "modern",
+          "stylish",
+          "infographic",
+          "illustration",
+          "photorealistic",
+          "warm",
+          "cozy",
+          "dynamic",
+          "celebration",
+          "shopping",
+          "fashion",
+          "relaxed",
+          "whimsical",
+          "family",
+          "friends",
+          "food-and-drink"
+        ],
+        "score": 3.4799999999999995,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

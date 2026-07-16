@@ -1,0 +1,132 @@
+{
+  "query_id": "V235",
+  "query": "展览传单",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:42:58.598Z",
+  "completed_at": "2026-07-16T15:43:02.842Z",
+  "duration_ms": 4243,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "展览",
+        "传单"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "exhibition flyer",
+        "art show pamphlet",
+        "gallery event brochure"
+      ],
+      "decomposition": {
+        "subject": "exhibition",
+        "output": "flyer"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "展览 exhibition exhibition flyer",
+        "slotKey": "rewrite",
+        "slotValue": "exhibition flyer",
+        "subjectBound": true
+      },
+      {
+        "text": "展览 exhibition art show pamphlet",
+        "slotKey": "rewrite",
+        "slotValue": "art show pamphlet",
+        "subjectBound": true
+      },
+      {
+        "text": "展览 exhibition gallery event brochure",
+        "slotKey": "rewrite",
+        "slotValue": "gallery event brochure",
+        "subjectBound": true
+      },
+      {
+        "text": "展览 exhibition",
+        "slotKey": "subject",
+        "slotValue": "exhibition",
+        "subjectBound": true
+      },
+      {
+        "text": "展览 exhibition flyer",
+        "slotKey": "output",
+        "slotValue": "flyer",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 1,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-word-scene-english-french-at-the-museum",
+        "title": "At the Museum",
+        "template_id": "template-word-scene",
+        "tags": [
+          "english-french",
+          "intermediate",
+          "language",
+          "learning",
+          "vocabulary",
+          "illustration",
+          "infographic",
+          "flashcards",
+          "artistic",
+          "modern",
+          "art-prints",
+          "character",
+          "dynamic",
+          "playful",
+          "intellectual",
+          "introspective",
+          "serene",
+          "stylish",
+          "urban",
+          "narrative-comic",
+          "story",
+          "design",
+          "composition",
+          "whimsical",
+          "cozy",
+          "vintage",
+          "soft-light",
+          "dramatic-lighting",
+          "warm"
+        ],
+        "score": 1.08,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

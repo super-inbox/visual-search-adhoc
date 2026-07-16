@@ -1,0 +1,128 @@
+{
+  "query_id": "V117",
+  "query": "零食包装",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:43:28.004Z",
+  "completed_at": "2026-07-16T14:43:31.421Z",
+  "duration_ms": 3417,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "零食",
+        "包装"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "snack packaging design",
+        "snack wrapper",
+        "food packaging template"
+      ],
+      "decomposition": {
+        "subject": "snack packaging",
+        "output": "design"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "零食 snack packaging snack packaging design",
+        "slotKey": "rewrite",
+        "slotValue": "snack packaging design",
+        "subjectBound": true
+      },
+      {
+        "text": "零食 snack packaging snack wrapper",
+        "slotKey": "rewrite",
+        "slotValue": "snack wrapper",
+        "subjectBound": true
+      },
+      {
+        "text": "零食 snack packaging food packaging template",
+        "slotKey": "rewrite",
+        "slotValue": "food packaging template",
+        "subjectBound": true
+      },
+      {
+        "text": "零食 snack packaging",
+        "slotKey": "subject",
+        "slotValue": "snack packaging",
+        "subjectBound": true
+      },
+      {
+        "text": "零食 snack packaging design",
+        "slotKey": "output",
+        "slotValue": "design",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 85,
+    "postMergeCount": 277,
+    "dedupCount": 277,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-evolution-timeline-infographic-evolution-of-snacks",
+        "title": "Evolution of Snacks",
+        "template_id": "template-evolution-timeline-infographic",
+        "tags": [
+          "food",
+          "history",
+          "infographic",
+          "learning",
+          "snacks",
+          "art-prints",
+          "posters",
+          "evolution",
+          "modern",
+          "nostalgic",
+          "cuisine",
+          "daily-life-grid",
+          "illustration",
+          "vintage",
+          "whimsical",
+          "playful",
+          "dynamic",
+          "cultural-fusion",
+          "food-and-drink",
+          "food-packaging",
+          "healthy-habits",
+          "seasonal",
+          "trending",
+          "casual",
+          "stylish"
+        ],
+        "score": 5.6,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

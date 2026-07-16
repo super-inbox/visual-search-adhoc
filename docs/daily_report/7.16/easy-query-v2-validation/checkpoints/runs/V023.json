@@ -1,0 +1,190 @@
+{
+  "query_id": "V023",
+  "query": "泰迪熊",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T13:56:05.703Z",
+  "completed_at": "2026-07-16T13:56:12.722Z",
+  "duration_ms": 7018,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "泰迪熊"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "teddy bear illustration",
+        "teddy bear design",
+        "cute teddy bear"
+      ],
+      "decomposition": {
+        "subject": "teddy bear"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "泰迪熊 teddy bear teddy bear illustration",
+        "slotKey": "rewrite",
+        "slotValue": "teddy bear illustration",
+        "subjectBound": true
+      },
+      {
+        "text": "泰迪熊 teddy bear teddy bear design",
+        "slotKey": "rewrite",
+        "slotValue": "teddy bear design",
+        "subjectBound": true
+      },
+      {
+        "text": "泰迪熊 teddy bear cute teddy bear",
+        "slotKey": "rewrite",
+        "slotValue": "cute teddy bear",
+        "subjectBound": true
+      },
+      {
+        "text": "泰迪熊 teddy bear",
+        "slotKey": "subject",
+        "slotValue": "teddy bear",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 0,
+    "postMergeCount": 3,
+    "dedupCount": 3,
+    "finalResultCount": 3,
+    "strictCount": 0,
+    "relaxedCount": 3,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-ip-character-design-specification-sheet-bear",
+        "title": "bear",
+        "template_id": "template-ip-character-design-specification-sheet",
+        "tags": [
+          "character",
+          "design",
+          "anatomy",
+          "infographic",
+          "cartoon",
+          "playful",
+          "whimsical",
+          "animals",
+          "animal",
+          "illustration",
+          "modern",
+          "vibrant",
+          "stylish",
+          "merch",
+          "product",
+          "concept-sketch",
+          "bold",
+          "dynamic",
+          "character-ip",
+          "artistic",
+          "3d",
+          "nature",
+          "cozy",
+          "warm",
+          "soft",
+          "illustration"
+        ],
+        "score": 2.16,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-dog-breed-teddy",
+        "title": "teddy",
+        "template_id": "template-dog-breed",
+        "tags": [
+          "dog",
+          "illustration",
+          "infographic",
+          "kids-learning",
+          "vintage",
+          "animal",
+          "cartoon",
+          "character",
+          "family",
+          "pets-at-home",
+          "dog-breeds",
+          "playful",
+          "whimsical",
+          "learning",
+          "pet-nutrition-guide",
+          "stylish",
+          "modern",
+          "vintage-retro",
+          "nature",
+          "cozy",
+          "warm"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-dog-breed-retro-infographic-poodle-teddy",
+        "title": "poodle teddy",
+        "template_id": "template-dog-breed-retro-infographic",
+        "tags": [
+          "animal",
+          "dog",
+          "illustration",
+          "kids-learning",
+          "vintage",
+          "infographic",
+          "information-card",
+          "anatomy",
+          "learning",
+          "science",
+          "wall-art",
+          "character",
+          "pets-at-home",
+          "family",
+          "carefree",
+          "playful",
+          "whimsical",
+          "cozy",
+          "artistic",
+          "stylish",
+          "modern",
+          "minimalist",
+          "dynamic",
+          "bold",
+          "soft",
+          "natural-light",
+          "nature",
+          "animals"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

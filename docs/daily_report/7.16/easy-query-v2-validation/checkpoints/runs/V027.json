@@ -1,0 +1,131 @@
+{
+  "query_id": "V027",
+  "query": "卡牌",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T13:58:06.677Z",
+  "completed_at": "2026-07-16T13:58:10.408Z",
+  "duration_ms": 3730,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "卡牌"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 2,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "card game templates",
+        "playing card designs",
+        "character card templates"
+      ],
+      "decomposition": {
+        "subject": "cards",
+        "output": "game template"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "卡牌 cards card game templates",
+        "slotKey": "rewrite",
+        "slotValue": "card game templates",
+        "subjectBound": true
+      },
+      {
+        "text": "卡牌 cards playing card designs",
+        "slotKey": "rewrite",
+        "slotValue": "playing card designs",
+        "subjectBound": true
+      },
+      {
+        "text": "卡牌 cards character card templates",
+        "slotKey": "rewrite",
+        "slotValue": "character card templates",
+        "subjectBound": true
+      },
+      {
+        "text": "卡牌 cards",
+        "slotKey": "subject",
+        "slotValue": "cards",
+        "subjectBound": true
+      },
+      {
+        "text": "卡牌 cards game template",
+        "slotKey": "output",
+        "slotValue": "game template",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 2,
+    "postMergeCount": 13,
+    "dedupCount": 13,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-mbti-marvel-Gambit",
+        "title": "Gambit",
+        "template_id": "template-mbti-marvel",
+        "tags": [
+          "adventure",
+          "character",
+          "marvel",
+          "mbti",
+          "quiz",
+          "superhero",
+          "illustration",
+          "infographic",
+          "art-prints",
+          "isometric",
+          "dynamic",
+          "playful",
+          "whimsical",
+          "vibrant",
+          "comic",
+          "film",
+          "narrative-comic",
+          "modern",
+          "stylish",
+          "bold",
+          "energetic",
+          "joyful",
+          "fantasy",
+          "character-ip",
+          "learning",
+          "design",
+          "lifestyle",
+          "wall-art",
+          "promotional-poster"
+        ],
+        "score": 1.08,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

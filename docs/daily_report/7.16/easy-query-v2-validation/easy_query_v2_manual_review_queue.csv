@@ -1,0 +1,245 @@
+priority,easy_id,query,scenario,category,label,relevance_score,result_count,semantic_drift,intent_preserved,reason
+P0,V154,drink bottle,brand_business,bottle,FAIL,15,3134,MODERATE,PARTIALLY,"'smart hydration water bottle' is a direct hit, but is outweighed by a waterpark word-scene card and 3 unrelated Chinese recipe cards (irrelevant_rate=0.80)."
+P0,V167,传单,marketing_ecommerce,flyer,FAIL,15,425,MODERATE,PARTIALLY,'fifa world cup 2026 opening ceremony' (explicit flyer-poster template) is direct; architecture/weather/word-scene/cultural-relic cards are unrelated.
+P0,V168,flyer,marketing_ecommerce,flyer,FAIL,15,5,MODERATE,PARTIALLY,Same flyer-poster template hit is direct; 4 ballroom-dance-step tutorial cards are wrong format entirely.
+P0,V198,event flyer,marketing_ecommerce,flyer,FAIL,15,5,MODERATE,PARTIALLY,The explicit flyer-poster template is direct; 4 unrelated ballroom-dance-tutorial cards dominate (irrelevant_rate=0.80).
+P0,V205,限时促销海报,marketing_ecommerce,poster_specific,FAIL,15,448,MODERATE,PARTIALLY,'tech gadget sale' promotional-poster is direct; 4 unrelated history/culture-infographic cards dominate (irrelevant_rate=0.80).
+P0,V282,exam paper,education,worksheet,FAIL,15,74,MODERATE,PARTIALLY,'ielts synonym vocab' (exam-vocabulary template) is direct; 4 unrelated intangible-heritage cultural cards dominate (irrelevant_rate=0.80).
+P0,V143,香皂包装,brand_business,package,FAIL,10,163,NONE,PARTIALLY,A cultural-fusion 'soap dish' mockup is weakly on-topic; 4 fashion-ecommerce cards (eyemask/instrument/pendant/ring) are wrong products entirely.
+P0,V161,蛋糕盒,brand_business,product_box,FAIL,10,34,NONE,PARTIALLY,A lava-cake recipe card is cake-adjacent; 4 unrelated food-sticker-overlay cards fill the rest.
+P0,V163,月饼礼盒,brand_business,product_box,FAIL,10,33,NONE,PARTIALLY,A mid-autumn-festival vocab card is weakly culture-adjacent; 4 unrelated food-sticker cards fill the rest.
+P0,V164,mooncake gift box,brand_business,product_box,FAIL,10,176,NONE,PARTIALLY,A festival-merch dragon mockup is weakly on-topic; 4 unrelated World Cup team sticker-poster cards fill the rest.
+P0,V020,blind box,creative_merch,blind_box,FAIL,5,35,MODERATE,NO,"Only 'van gogh mystery box' (museum merch, mystery-box concept) is direct; 4 unrelated food-sticker cards fill the rest."
+P0,V032,statue,creative_merch,collectible,FAIL,5,2748,MODERATE,NO,Only 'Statue of Liberty' is direct; 4 unrelated Journey-to-West character cards fill the rest.
+P0,V003,手办,creative_merch,figure,FAIL,0,8,MODERATE,NO,"All 5 are manga-artist biography cards (Toriyama, Oda, Shinkai, Kishimoto, Takahashi) -- author profiles, not collectible figures, despite a reasonable rewrite."
+P0,V005,毛绒玩具,creative_merch,plush,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V006,plush,creative_merch,plush,FAIL,0,3,MODERATE,NO,An idiom-learning card and a homograph poster are unrelated; 'Woody & Buzz Toy Story' is toy-adjacent (Toy Story merchandise is commonly plush) but not plush-specific.
+P0,V009,吉祥物,creative_merch,mascot,FAIL,0,34,NONE,NO,All 5 are organ-health food-guide infographics (brain/heart/liver/lungs/stomach) -- zero mascot content.
+P0,V013,贴纸,creative_merch,sticker,FAIL,0,67,NONE,NO,Same kawaii character-persona-card series identified in the prior Run B evaluation for this exact query -- no sticker-format signal.
+P0,V018,collectible,creative_merch,collectible,FAIL,0,207,NONE,NO,All 5 are herbal/TCM information cards -- zero collectible content.
+P0,V019,盲盒,creative_merch,blind_box,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V022,action figure,creative_merch,figure,FAIL,0,5,NONE,NO,4 stick-figure vocab cards are the same word-collision issue; only 'Bruce Lee' is weakly relevant.
+P0,V023,泰迪熊,creative_merch,plush,FAIL,0,3,MODERATE,NO,"Generic 'bear' character card is teddy-bear-adjacent; 'teddy'/'poodle teddy' are a dog-breed guide (wrong entity -- a real dog, not a plush toy)."
+P0,V024,teddy bear,creative_merch,plush,FAIL,0,3,MODERATE,NO,Identical wrong-entity composition for the English term.
+P0,V025,扭蛋,creative_merch,blind_box,FAIL,0,44,MODERATE,NO,All 5 are Journey-to-West book-series cards -- zero capsule-toy content.
+P0,V030,model kit,creative_merch,collectible,FAIL,0,10,MODERATE,NO,"Only a city-miniature card (Lyon) is model-adjacent; an AI strategy infographic, a systems-architecture diagram, and 2 World Cup fan-outfit posters are unrelated."
+P0,V031,雕像,creative_merch,collectible,FAIL,0,5,NONE,NO,All 5 are animation-studio comparison infographics (Ghibli vs Mappa etc.) -- zero statue content.
+P0,V037,徽章,creative_merch,merch_item,FAIL,0,32,NONE,NO,All 5 are 'historical figure vs' comparison infographics -- zero badge content.
+P0,V038,badge,creative_merch,merch_item,FAIL,0,29,NONE,NO,Identical historical-figure comparison cards for the English term.
+P0,V040,enamel pin,creative_merch,merch_item,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V045,迷你手办,creative_merch,figure,FAIL,0,11,MODERATE,NO,"All 5 are 'city miniature' landmark cards (Shanghai/Tokyo/Sydney/Rome/Barcelona) -- word collision on 'miniature', wrong entity (cities not character figures)."
+P0,V046,mini figure,creative_merch,figure,FAIL,0,123,MODERATE,NO,Only 'Bruce Lee' biography is weakly figure-adjacent; 4 unrelated 'what-if-history' comparison cards fill the rest.
+P0,V047,潮流公仔,creative_merch,collectible,FAIL,0,11,MODERATE,NO,"All 5 are fashion-ecommerce/outfit cards (tie/bag/denim/streetwear/vintage fashion) -- wrong category entirely, zero figure/toy content."
+P0,V049,潮流手办,creative_merch,figure,FAIL,0,11,MODERATE,NO,Identical fashion-ecommerce results as V047 -- wrong category.
+P0,V051,惊喜盒子,creative_merch,blind_box,FAIL,0,32,MODERATE,NO,All 5 are unrelated food-sticker-overlay cards.
+P0,V054,charm,creative_merch,merch_item,FAIL,0,5,MODERATE,NO,"All 5 are anime wallpaper posters -- word collision ('charming' character vs literal jewelry charm), zero charm/pendant content."
+P0,V058,plush pillow,creative_merch,merch_item,FAIL,0,819,MODERATE,NO,"A paper-cutting heritage card, 3 solar-term cards, and a guofeng-scroll card -- completely unrelated cultural content, zero pillow content."
+P0,V060,puzzle,creative_merch,collectible,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V061,积木,creative_merch,collectible,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V062,building blocks,creative_merch,collectible,FAIL,0,6,NONE,NO,All 5 are 'theme color palette card' design references (beach/ocean/flamingo/fish/resort) -- zero building-block content.
+P0,V063,公仔盒,creative_merch,merch_item,FAIL,0,31,MODERATE,NO,Only 'van gogh mystery box' is box-merch-adjacent; 4 unrelated food-sticker cards fill the rest.
+P0,V065,文创手办,creative_merch,figure,FAIL,0,89,MODERATE,NO,All 5 are unrelated food-sticker-overlay cards.
+P0,V069,国潮公仔,creative_merch,figure,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V074,postcard set,creative_merch,merch_item,FAIL,0,62,MODERATE,NO,"Only 'deer travel journal' is postcard/travel-adjacent; 4 unrelated brand-VI-mockup cards (camping, Christmas, bakery, bubble tea) fill the rest."
+P0,V077,摇头公仔,creative_merch,collectible,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V080,diorama,creative_merch,collectible,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V081,角色卡通贴纸,creative_merch,sticker,FAIL,0,19,NONE,NO,Same kawaii character-persona-card series as V013 -- no sticker-format signal despite explicit sticker request.
+P0,V083,标志,brand_business,logo,FAIL,0,481,MODERATE,NO,"All 5 are city weather/architecture illustration cards -- word collision (标志 read as 'landmark' sense, not 'brand logo' sense), zero logo content."
+P0,V084,logo,brand_business,logo,FAIL,0,53,NONE,NO,"All 5 are animation-studio comparison infographics -- completely unrelated, zero logo content."
+P0,V085,包装,brand_business,package,FAIL,0,113,NONE,NO,"All 5 are character 'battle' comparison cards -- completely unrelated, zero packaging content."
+P0,V086,package,brand_business,package,FAIL,0,3,MODERATE,NO,"All 3 are 'ISTJ vs ENFP package' MBTI-contrast cards -- word collision (personality 'package' concept, not product packaging)."
+P0,V087,标签,brand_business,label,FAIL,0,445,NONE,NO,"All 5 are herbal/TCM information cards -- unrelated, matches the identical finding from the prior Run B evaluation for this exact template."
+P0,V088,label,brand_business,label,FAIL,0,138,NONE,NO,"All 5 are 'city MBTI' personality-quiz cards -- completely unrelated, zero label content."
+P0,V093,名片,brand_business,business_card,FAIL,0,6,NONE,NO,Same kawaii character-profile-card series -- no business-card-format signal.
+P0,V094,business card,brand_business,business_card,FAIL,0,89,NONE,NO,"All 5 are 'Microsoft AI Dilemma' comic-strip cards -- completely unrelated, zero business-card content."
+P0,V099,餐厅菜单,brand_business,menu,FAIL,0,38,NONE,NO,"All 5 are meat-cut anatomy-diagram cards -- wrong format entirely, zero restaurant-menu content."
+P0,V103,香水盒,brand_business,product_box,FAIL,0,33,MODERATE,NO,All 5 are unrelated food-sticker-overlay cards.
+P0,V104,perfume box,brand_business,product_box,FAIL,0,39,MODERATE,NO,"A bedroom-decor card, a posture-comparison card (word collision on 'box'), and 3 unrelated food-sticker cards."
+P0,V122,shopping bag,brand_business,merch_item,FAIL,0,10,NONE,NO,"All 5 are 'brand identity moodboard visual system poster' cards (coffee shop/bakery/grocery/bookstore/pet store brands) -- wrong specific object, no shopping bag depicted."
+P0,V125,烘焙包装,brand_business,package,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V127,咖啡馆菜单,brand_business,menu,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V132,storefront sign,brand_business,signage,FAIL,0,124,MODERATE,NO,"An ASL-tutorial card (word collision), a Meta-layoffs corporate-news card, and 3 unrelated fashion-ecommerce cards -- zero storefront-sign content."
+P0,V136,price tag,brand_business,label,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V141,蜡烛标签,brand_business,label,FAIL,0,9,NONE,NO,"5 generic 'product poster' cards (diffuser/speaker/coffee-maker/lamp/label-printer) -- no candle, no label content."
+P0,V145,茶叶罐,brand_business,product_box,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V147,咖啡杯,brand_business,cup,FAIL,0,182,MODERATE,NO,"A coffee-pasta sticker card is weakly coffee-adjacent; 4 World Cup team sticker-poster cards are a word collision on 'cup' (World Cup, not coffee cup)."
+P0,V153,饮料瓶,brand_business,bottle,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V159,手提袋,brand_business,merch_item,FAIL,0,30,NONE,NO,5 food-doodle-sticker cards -- no bag object depicted.
+P0,V165,横幅,marketing_ecommerce,banner,FAIL,0,126,NONE,NO,"5 'lifestyle watercolor infographic' wellness cards (habits/mindfulness/morning routine/productivity/self-care) -- wrong format entirely, no banner content."
+P0,V166,banner,marketing_ecommerce,banner,FAIL,0,229,NONE,NO,Identical wellness-infographic results for the English term.
+P0,V169,画册,marketing_ecommerce,catalog,FAIL,0,6,NONE,NO,"5 fashion-outfit-variation lookbook cards -- wrong format, not a catalog/album layout."
+P0,V173,产品图,marketing_ecommerce,product_photo,FAIL,0,204,NONE,NO,5 unrelated hot-event-analysis / AI-dilemma-comic infographic cards -- no product photo content.
+P0,V176,promotion,marketing_ecommerce,promotion,FAIL,0,34,NONE,NO,"All 5 are 'Journey to the West' book-series cards -- completely unrelated, no promotional content."
+P0,V178,advertisement,marketing_ecommerce,advertisement,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V179,社交媒体帖子,marketing_ecommerce,social_post,FAIL,0,14,NONE,NO,"All 5 are 'MBTI Naruto' anime character cards -- no social-media-post format, unrelated content."
+P0,V180,social media post,marketing_ecommerce,social_post,FAIL,0,464,NONE,NO,A 'chinese social changes' card is a word collision on 'social'; 4 'Journey to the West' book-series cards are unrelated.
+P0,V181,产品展示,marketing_ecommerce,product_display,FAIL,0,133,NONE,NO,5 'evolution' history-infographic cards (industrial revolution/art/social changes/currency/transportation) -- no product-display format.
+P0,V187,产品横幅,marketing_ecommerce,banner,FAIL,0,55,NONE,NO,5 unrelated 'travel packing guide infographic' cards -- no product/banner content.
+P0,V188,product banner,marketing_ecommerce,banner,FAIL,0,36,NONE,NO,Identical travel-packing-guide results for the English term.
+P0,V193,电商横幅,marketing_ecommerce,banner,FAIL,0,16,NONE,NO,All 5 are 'red envelope set' festival cards -- unrelated to ecommerce banners.
+P0,V200,grand opening banner,marketing_ecommerce,banner,FAIL,0,219,MODERATE,PARTIALLY,3 Canada squad photos and a manga-artist card are unrelated; the flyer-poster template is event-format-adjacent but wrong subject (irrelevant_rate=0.80).
+P0,V213,社交媒体广告,marketing_ecommerce,advertisement,FAIL,0,91,NONE,NO,5 unrelated word-scene/MBTI-animal cards (party/amusement-park/cafe/plane) -- no social-media-ad content.
+P0,V214,social media ad,marketing_ecommerce,advertisement,FAIL,0,464,NONE,NO,Same 'social changes'/'Journey to the West' composition as V180 -- unrelated.
+P0,V217,开箱照,marketing_ecommerce,product_photo,FAIL,0,379,NONE,NO,All 5 are 'portrait retouching blueprint' before-after cards -- unrelated to unboxing.
+P0,V218,unboxing photo,marketing_ecommerce,product_photo,FAIL,0,1284,NONE,NO,A Colombia World Cup squad photo and 4 portrait-retouching-blueprint cards -- unrelated to unboxing.
+P0,V221,优惠券,marketing_ecommerce,coupon,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V222,discount coupon,marketing_ecommerce,coupon,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V223,会员卡,marketing_ecommerce,membership_card,FAIL,0,325,NONE,NO,"5 unrelated cards (cartoon character, hot-event-analysis, intangible-heritage) -- no membership-card format."
+P0,V224,membership card,marketing_ecommerce,membership_card,FAIL,0,838,NONE,NO,5 unrelated hot-event-analysis / intangible-heritage / weather cards.
+P0,V225,积分卡,marketing_ecommerce,membership_card,FAIL,0,526,NONE,NO,"5 unrelated 'education-card' / 'species-science' cards (DNA helix, plate tectonics, egret, ginkgo, baiji) -- word collision on template naming 'card', content unrelated."
+P0,V226,loyalty card,marketing_ecommerce,membership_card,FAIL,0,838,NONE,NO,5 unrelated cartoon-character / education-card / herbal cards.
+P0,V227,礼品卡,marketing_ecommerce,membership_card,FAIL,0,7,NONE,NO,5 unrelated 'science myth-bust infographic' cards.
+P0,V228,gift card,marketing_ecommerce,membership_card,FAIL,0,16,NONE,NO,2 sports-equipment flashcard cards (word collision on 'card') and 3 classical-painting-analysis cards -- all unrelated to gift cards.
+P0,V231,橱窗展示,marketing_ecommerce,product_display,FAIL,0,83,MODERATE,PARTIALLY,4 celebrity-meme-merchandise-collection-poster cards (Tate/Ronaldo/Musk/Haaland) are unrelated; an 'At the Museum' word-scene card is display-context-adjacent (weak).
+P0,V233,展会展架,marketing_ecommerce,banner,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V234,trade show banner,marketing_ecommerce,banner,FAIL,0,85,NONE,NO,'The Truman Show' and 'show villains' are word collisions on 'show'; 3 AI-outfit-try-on cards are unrelated fashion content.
+P0,V242,black friday banner,marketing_ecommerce,banner,FAIL,0,166,NONE,NO,'marvel blackwidow.jp' is a word collision on 'black'; 4 unrelated fashion/outfit cards fill the rest.
+P0,V245,直播预告横幅,marketing_ecommerce,banner,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V255,图解,education,diagram,FAIL,0,89,NONE,NO,4 Chinese recipe cards and a solar-term card -- no diagram/illustrated-guide format.
+P0,V257,日历,education,calendar,FAIL,0,17,MODERATE,PARTIALLY,"4 international-event-promotional-poster cards (World Cup/Olympics/Asian Games/Coachella) are a word-sense mismatch (event calendar, not a calendar object); the explicit 'annual event calendar infographic' card is direct."
+P0,V258,calendar,education,calendar,FAIL,0,28,MODERATE,PARTIALLY,Identical composition for the English term.
+P0,V259,证书,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V260,certificate,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V267,地球仪,education,globe,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V268,globe,education,globe,FAIL,0,3205,NONE,NO,"A solar-term card, a pizza card, and 3 unrelated 'leader' MBTI-generic character cards -- no globe content."
+P0,V270,chart,education,chart,FAIL,0,65,NONE,NO,4 'Journey to the West' character-analysis cards and an architecture card -- no chart format.
+P0,V271,课程表,education,chart,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V273,数字表,education,chart,FAIL,0,7,NONE,NO,"5 'fashion-inspired gown design sheet' cards -- a word-sense mismatch (表=chart vs. fashion 'sheet'), unrelated content."
+P0,V274,number chart,education,chart,FAIL,0,29,NONE,NO,"5 'pop-culture matching chart' cards (Ghibli/Harry Potter/Pokemon zodiac) -- word collision on 'chart' template naming, content is character-matching not numbers."
+P0,V275,元素周期表,education,chart,FAIL,0,25,NONE,NO,All 5 are 'MBTI Breaking Bad' character cards -- completely unrelated.
+P0,V276,periodic table,education,chart,FAIL,0,25,NONE,NO,Identical composition for the English term.
+P0,V281,试卷,education,worksheet,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V283,成绩单,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V284,report card,education,certificate,FAIL,0,76,NONE,NO,"5 'education-card' science-topic cards (DNA helix/plate tectonics/resource capacity/electromagnetic induction/energy conservation) -- word collision on generic 'card' template naming, no report-card/grade content."
+P0,V285,笔袋,education,stationery,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V286,pencil case,education,stationery,FAIL,0,2,NONE,NO,"2 results. 'Microsoft AI dilemma...case Google Gemini' cards -- word collision on 'case' (AI use-case, not pencil case)."
+P0,V287,黑板,education,classroom_material,FAIL,0,80,NONE,NO,Same generic 'education-card' science-topic composition as V284 -- no blackboard depicted.
+P0,V288,chalkboard,education,classroom_material,FAIL,0,76,NONE,NO,Identical composition for 'chalkboard'.
+P0,V289,白板,education,classroom_material,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V290,whiteboard,education,classroom_material,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V291,显微镜,education,classroom_material,FAIL,0,27,NONE,NO,"5 unrelated cards (city weather, pizza, TCM herbs, sci-fi book grid) -- no microscope content."
+P0,V292,microscope,education,classroom_material,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V293,书签,education,stationery,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V295,算盘,education,classroom_material,FAIL,0,366,NONE,NO,"5 unrelated cards (character-analysis, intangible-heritage, architecture) -- no abacus content."
+P0,V298,workbook,education,worksheet,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V304,math worksheet,education,worksheet,FAIL,0,22,NONE,NO,5 general-vocabulary cards (animals/desserts/colors/family/food) -- worksheet format matched but zero math content.
+P0,V310,anatomy chart,education,chart,FAIL,0,14,NONE,NO,"4 architecture-infographic cards (word collision on 'anatomy' tag, content is buildings) and a constellation card -- no body-anatomy content."
+P0,V314,alphabet poster,education,poster_specific,FAIL,0,3034,MODERATE,PARTIALLY,A chemistry cheat-sheet poster is educational-poster-format-adjacent; architecture/Christmas/cultural-relic/solar-term cards are unrelated (irrelevant_rate=0.80).
+P0,V315,荣誉证书,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V316,achievement certificate,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V317,毕业证,education,certificate,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V319,校历,education,calendar,FAIL,0,0,NONE,UNKNOWN,ZERO_RESULT: no results returned by the search pipeline.
+P0,V324,learning chart,education,chart,FAIL,0,34,MODERATE,PARTIALLY,4 architecture-infographic cards are off-topic despite a 'learning' tag; 'action words' (verb-opposite-infographic) is the one direct learning-chart hit.
+P0,V325,贴纸奖励表,education,chart,FAIL,0,41,NONE,NO,"All 5 are 'food photo doodle sticker overlay' cards -- word collision on 贴纸/sticker (food stickers, not reward-chart stickers)."
+P0,V326,reward chart,education,chart,FAIL,0,45,NONE,NO,All 5 are 'brand identity moodboard visual system poster' cards -- completely unrelated to a reward chart.
+P1,V192,discount flyer,marketing_ecommerce,flyer,PARTIAL,45,428,MODERATE,PARTIALLY,The flyer-poster template matches format but wrong subject; 2 sale-promotional-poster cards are direct discount-content hits; 2 city/landmark cards are unrelated.
+P1,V206,flash sale poster,marketing_ecommerce,poster_specific,PARTIAL,40,132,MODERATE,PARTIALLY,2 explicit sale-promotional-poster cards are direct; 3 world-landmark vintage-info-poster cards (colosseum/eiffel/great wall) are unrelated.
+P1,V243,双十一促销海报,marketing_ecommerce,poster_specific,PARTIAL,40,13,MODERATE,PARTIALLY,"2 sale-promotional-poster cards are direct; 3 Chinese-character-learning-poster cards are a word collision on 'poster' (learning poster, not sale poster)."
+P1,V244,singles day sale poster,marketing_ecommerce,poster_specific,PARTIAL,40,187,MODERATE,PARTIALLY,2 sale-promotional-poster cards are direct; 3 world-landmark vintage-info-poster cards are unrelated.
+P1,V262,science poster,education,poster_specific,PARTIAL,40,325,MODERATE,PARTIALLY,2 herbal-science cards are direct; 3 city-weather-illustration cards are unrelated.
+P1,V007,娃娃,creative_merch,doll,PARTIAL,35,1,MODERATE,PARTIALLY,"Single result 'Woody & Buzz Toy Story' -- toy-story characters (dolls/action figures), doll-adjacent."
+P1,V026,capsule toy,creative_merch,blind_box,PARTIAL,35,1,MODERATE,PARTIALLY,Single result 'Woody & Buzz Toy Story' -- toy-adjacent but not capsule-toy-specific.
+P1,V048,vinyl toy,creative_merch,collectible,PARTIAL,35,2,MODERATE,PARTIALLY,"'van gogh mystery box' and 'Woody & Buzz Toy Story' are collectible/toy-adjacent, not vinyl-toy-specific."
+P1,V059,拼图,creative_merch,collectible,PARTIAL,35,2,MODERATE,PARTIALLY,"2 museum-gift-merchandise cards -- puzzle-plausible (museum shops sell jigsaw puzzles), not confirmed."
+P1,V073,明信片套装,creative_merch,merch_item,PARTIAL,35,2,MODERATE,PARTIALLY,"2 IP gift-box stationery-set mockups -- postcard-adjacent, not postcard-specific."
+P1,V078,bobblehead,creative_merch,collectible,PARTIAL,35,1777,MODERATE,PARTIALLY,2 whimsical character-figurine cards and 3 MBTI persona cards -- character/figurine-adjacent but not bobblehead-specific; 1777-result flooding case.
+P1,V101,香水瓶,brand_business,bottle,PARTIAL,35,1,MODERATE,PARTIALLY,Single result 'smart hydration water bottle' -- a literal bottle but wrong bottle type (water not perfume).
+P1,V102,perfume bottle,brand_business,bottle,PARTIAL,35,1,MODERATE,PARTIALLY,Identical wrong-bottle-type result for the English term.
+P1,V117,零食包装,brand_business,package,PARTIAL,35,1,MODERATE,PARTIALLY,Single result 'Evolution of Snacks' -- snack-subject but not packaging-format.
+P1,V191,折扣传单,marketing_ecommerce,flyer,PARTIAL,35,1,MODERATE,PARTIALLY,"Single result 'supermarket' dialogue scene -- shopping-context-adjacent, no flyer depicted."
+P1,V235,展览传单,marketing_ecommerce,flyer,PARTIAL,35,1,MODERATE,PARTIALLY,"Single result 'At the Museum' word-scene -- exhibition-context-adjacent, no flyer depicted."
+P1,V296,abacus,education,classroom_material,PARTIAL,35,1,MODERATE,PARTIALLY,"Single result 'en-ko' vocabulary card with a numbers-and-counting tag -- numbers-adjacent, no abacus depicted."
+P1,V318,diploma,education,certificate,PARTIAL,35,1,MODERATE,PARTIALLY,"Single result 'graduation alpaca' character-sprite sheet -- graduation-theme-adjacent, not a diploma document."
+P1,V118,snack package,brand_business,package,PARTIAL,30,207,MODERATE,PARTIALLY,'choco chip cookies' packaging-design is direct; a summer-snack promo poster and an evolution-of-snacks card are on-topic; 2 vocab-flashcards are unrelated.
+P1,V155,水瓶标签,brand_business,label,PARTIAL,27,9,MODERATE,PARTIALLY,Water-bottle infographic is direct; an 'aquarius' constellation card (word collision) and a logistics card are unrelated; 2 object-labeling cards are label-format-adjacent but wrong product.
+P1,V160,paper bag,brand_business,merch_item,PARTIAL,27,83,MODERATE,PARTIALLY,Generic 'bag' ecommerce card is direct; an IP merch-collection card is bag-plausible but unconfirmed; 3 food-sticker cards are unrelated.
+P1,V202,holiday sale banner,marketing_ecommerce,banner,PARTIAL,25,32,MODERATE,PARTIALLY,'summer beach sale' promotional-poster is direct; a 'roman holiday' movie poster is a word collision on 'holiday'; a Christmas-party brand mockup is weakly on-topic; 2 unrelated character/celebrity cards fill the rest.
+P1,V201,节日促销横幅,marketing_ecommerce,banner,PARTIAL,23,16,MODERATE,PARTIALLY,A Christmas word-scene and 3 cultural-festival-poster cards (Day of the Dead/Diwali/Duanwu) are festival-adjacent; a 'music festival' MBTI card is a word collision on 'festival'.
+P1,V079,场景模型,creative_merch,collectible,PARTIAL,20,137,MODERATE,PARTIALLY,"A DNA-helix education card is unrelated; 4 'word scene' bilingual vocab cards are scene-adjacent (literal 'scene' depictions) but for language learning, not diorama models."
+P1,V241,黑五促销横幅,marketing_ecommerce,banner,PARTIAL,20,52,MODERATE,PARTIALLY,'marvel blackwidow.jp' is a word collision on 'black'; 2 sale-promotional-poster cards are direct; 2 unrelated MBTI-marvel cards fill the rest.
+P1,V075,艺术微喷,creative_merch,collectible,PARTIAL,15,2762,MODERATE,PARTIALLY,2 character-analysis cards are unrelated; 2 intangible-heritage cards and an art-evolution card are traditional-art/print-adjacent.
+P1,V033,帆布袋,creative_merch,merch_item,PARTIAL,13,30,MODERATE,PARTIALLY,2 museum-gift-merchandise cards are tote-bag-plausible; 3 unrelated food-sticker cards fill the rest.
+P1,V034,tote bag,creative_merch,merch_item,PARTIAL,13,39,MODERATE,PARTIALLY,2 character-merch posters are tote-bag-adjacent; 3 brand-identity-moodboard cards (unrelated businesses) fill the rest.
+P1,V112,skincare package,brand_business,package,PARTIAL,13,5,MODERATE,PARTIALLY,Skincare-routine and beauty-skincare-comparison cards are on-topic; 3 'ISTJ vs ENFP package' MBTI cards are a word collision on 'package'.
+P1,V253,地图,education,map,PARTIAL,12,308,MODERATE,PARTIALLY,"3 travel-itinerary cards are map-adjacent; 2 word-scene dialogue cards (child park, zootopia) show no map content."
+P1,V254,map,education,map,PARTIAL,12,524,MODERATE,PARTIALLY,Identical composition for the English term.
+P1,V116,wine label,brand_business,label,PARTIAL,10,286,MODERATE,PARTIALLY,'White Wine' is direct; a label-printer card is format-adjacent; 3 generic bilingual vocab cards are unrelated.
+P1,V172,sale banner,marketing_ecommerce,banner,PARTIAL,10,52,MODERATE,PARTIALLY,"3 Marvel MBTI character cards are unrelated; 2 promotional-poster cards (baby care brand, spring beauty festival) are direct sale-banner-format hits."
+P1,V021,动作人偶,creative_merch,figure,PARTIAL,5,93,MODERATE,PARTIALLY,'Bruce Lee' biography and 'blockbuster action legends' are weakly action-figure-adjacent; 3 'body movement verbs' stick-figure vocab cards are a wrong-entity word collision on 'figure'.
+P1,V149,咖啡杯套,brand_business,cup,PARTIAL,3,190,MODERATE,PARTIALLY,"Stadium/social-change/landmark-map cards are unrelated; 2 coffee-subject cards are weakly on-topic, no sleeve object confirmed."
+P1,V246,livestream promo banner,marketing_ecommerce,banner,PARTIAL,0,492,MODERATE,PARTIALLY,3 Marvel/MBTI cards are unrelated; 2 promotional-poster cards are livestream-promo-adjacent.
+P1,V256,diagram,education,diagram,PARTIAL,0,284,MODERATE,PARTIALLY,A cartoon-character card and 2 herbal cards are unrelated; 2 hot-event-analysis infographic cards are diagram-format-adjacent.
+P1,V294,bookmark,education,stationery,PARTIAL,0,1672,MODERATE,PARTIALLY,3 fashion-ecommerce product cards (socks/watch/shoes) are wrong products; 2 library-context cards are weakly bookmark-adjacent.
+P2,V126,bakery package,brand_business,package,PARTIAL,70,297,NONE,PARTIALLY,"3 bakery-brand cards (mika cat bakery, Golden Crust VI, temp bakery) are direct; 2 unrelated fashion-ecommerce cards fill the rest. Mechanically blocked from PASS by irrelevant_rate=0.40>0.20."
+P2,V208,clearance sale banner,marketing_ecommerce,banner,PARTIAL,70,3,MINOR,YES,3 results. 2 sale-promotional-poster cards are direct; a manga-artist infographic card is unrelated.
+P2,V110,chocolate box,brand_business,product_box,PARTIAL,57,166,NONE,PARTIALLY,2 explicit chocolate packaging-design cards are direct; a lava-cake recipe is adjacent; 2 unrelated food-sticker cards fill the rest.
+P2,V064,sticker pack,creative_merch,merch_item,PARTIAL,47,19,MINOR,PARTIALLY,"3 results (character-sprite-emoji-sheet x2, original-character-sticker-pack) are direct; 2 sports-equipment product-showcase cards are unrelated. Mechanically blocked from PASS by irrelevant_rate=0.40>0.20."
+P2,V001,玩具,creative_merch,toy,PARTIAL,45,15,NONE,PARTIALLY,"All 5 are 'nostalgic first item' posters (camera/computer/console/music player/TV) -- childhood-nostalgia-adjacent electronics, not literal toys."
+P2,V002,toy,creative_merch,toy,PARTIAL,45,11,NONE,PARTIALLY,Identical nostalgic-item results for the English term.
+P2,V004,figure,creative_merch,figure,PARTIAL,45,148,NONE,PARTIALLY,"All 5 are titled 'chinese figure X' (guofeng-scroll illustrated mythological figures) -- a legitimate 'figure' word-sense (illustrated character), but not the intended collectible-merch product sense."
+P2,V008,doll,creative_merch,doll,PARTIAL,45,4,NONE,PARTIALLY,"All 4 are cultural-IP merch mockup sets -- character mascot merchandise, doll-adjacent but not doll-specific."
+P2,V015,钥匙扣,creative_merch,keychain,PARTIAL,45,16,NONE,PARTIALLY,"All 5 are cultural-IP merch mockups -- keychain-plausible merch category, not confirmed keychain-specific."
+P2,V016,keychain,creative_merch,keychain,PARTIAL,45,16,NONE,PARTIALLY,Identical merch-mockup results for the English term.
+P2,V017,收藏品,creative_merch,collectible,PARTIAL,45,16,NONE,PARTIALLY,"All 5 are pro-athlete stat infographics -- sports-trading-card-like format, a reasonable collectible adjacency."
+P2,V035,手机壳,creative_merch,merch_item,PARTIAL,45,10,NONE,PARTIALLY,"All 5 are cultural-IP merch mockups -- phone-case-plausible, not confirmed."
+P2,V036,phone case,creative_merch,merch_item,PARTIAL,45,14,NONE,PARTIALLY,Identical merch-mockup results for the English term.
+P2,V039,胸针,creative_merch,merch_item,PARTIAL,45,6,NONE,PARTIALLY,All 5 are jewelry-category cards (rings/earrings/pendant) -- jewelry-adjacent but no brooch specifically confirmed.
+P2,V043,挂绳,creative_merch,merch_item,PARTIAL,45,10,NONE,PARTIALLY,"All 5 are cultural-IP merch mockups -- lanyard-plausible, not confirmed."
+P2,V044,lanyard,creative_merch,merch_item,PARTIAL,45,10,NONE,PARTIALLY,Identical merch-mockup results for the English term.
+P2,V050,pop figure,creative_merch,figure,PARTIAL,45,5,NONE,PARTIALLY,"4 celebrity-meme-sticker-merchandise posters and a biography card -- merch/sticker collections of real people, pop-figure-adjacent but not literal collectible figures."
+P2,V055,马克杯,creative_merch,merch_item,PARTIAL,45,33,NONE,PARTIALLY,"Cultural-IP merch mockups -- mug-plausible, not confirmed."
+P2,V056,collectible mug,creative_merch,merch_item,PARTIAL,45,36,NONE,PARTIALLY,"3 IP-goods-mockup cards and 2 cat-character emoji-sheet cards -- character merch, mug-plausible."
+P2,V057,抱枕,creative_merch,merch_item,PARTIAL,45,12,NONE,PARTIALLY,"Cultural-IP merch mockups -- pillow-plausible, not confirmed."
+P2,V067,博物馆文创,creative_merch,merch_item,PARTIAL,45,24,NONE,PARTIALLY,"All 5 are cultural-relic educational infographics (Dunhuang, terracotta warriors, etc.) -- relic-themed but educational content, not confirmed as sellable museum-shop merchandise."
+P2,V070,IP figure,creative_merch,figure,PARTIAL,45,11,NONE,PARTIALLY,Same 'chinese figure' guofeng-scroll illustrated-mythological-figure results as V004 -- a legitimate but different sense of 'figure'.
+P2,V071,动漫周边,creative_merch,merch_item,PARTIAL,45,13,NONE,PARTIALLY,"All 5 are anime wallpaper posters -- IP-derivative content, but wallpaper rather than physical merch."
+P2,V076,art print,creative_merch,collectible,PARTIAL,45,193,NONE,PARTIALLY,"All 5 are 'world landmark vintage info poster' cards -- vintage-illustrated-poster format genuinely resembles an art print, subject (landmarks) is incidental."
+P2,V089,瓶子,brand_business,bottle,PARTIAL,45,12,NONE,PARTIALLY,"All 5 are regional-alcoholic-drinks infographics (French/Japanese/Korean...) -- drinks come in bottles, but no bottle object specifically confirmed as the visual focus."
+P2,V091,菜单,brand_business,menu,PARTIAL,45,48,NONE,PARTIALLY,"All 5 are Chinese recipe/dish cards -- menu-content-adjacent (dishes that would appear on a menu), same logic as the prior 餐饮/restaurant reasoning."
+P2,V092,menu,brand_business,menu,PARTIAL,45,28,NONE,PARTIALLY,Identical recipe-card results for the English term.
+P2,V095,产品盒,brand_business,product_box,PARTIAL,45,16,NONE,PARTIALLY,"Cultural-IP merch mockups -- box-plausible, not confirmed."
+P2,V096,product box,brand_business,product_box,PARTIAL,45,28,NONE,PARTIALLY,Identical merch-mockup results for the English term.
+P2,V100,restaurant menu,brand_business,menu,PARTIAL,45,25,NONE,PARTIALLY,Same recipe-card composition as V091.
+P2,V111,护肤品包装,brand_business,package,PARTIAL,45,118,NONE,PARTIALLY,"5 beauty/skincare cards (products, comparison-infographic with cosmetic-packaging tag, routine guide, baby-care brand, eyemask) -- on-topic but no result confirms skincare-specific packaging as the visual focus."
+P2,V120,gift box,brand_business,product_box,PARTIAL,45,40,NONE,PARTIALLY,"Cultural-IP merch mockups -- gift-box-plausible, not as directly confirmed as V119."
+P2,V128,cafe menu,brand_business,menu,PARTIAL,45,2863,NONE,PARTIALLY,"2863-result flooding case. Cafe-ordering dialogue scenes, a cafe-themed artifact poster, a cafe brand-identity card, and a travel-infographic -- cafe-adjacent but no literal menu depiction confirmed."
+P2,V130,shop sign,brand_business,signage,PARTIAL,45,8,NONE,PARTIALLY,"5 brand-identity-moodboard cards -- brand-asset-adjacent, not literal storefront signage."
+P2,V133,产品吊牌,brand_business,label,PARTIAL,45,10,NONE,PARTIALLY,"5 brand-VI-full-visual-pack-mockup cards -- brand-asset-adjacent, tag not specifically confirmed."
+P2,V137,服装吊牌,brand_business,label,PARTIAL,45,145,NONE,PARTIALLY,4 dynasty-costume cards and a jeans-ecommerce card -- clothing-subject but no tag/label object confirmed.
+P2,V138,clothing tag,brand_business,label,PARTIAL,45,312,NONE,PARTIALLY,Similar costume/fashion composition as V137 for the English term.
+P2,V140,jewelry box,brand_business,product_box,PARTIAL,45,40,NONE,PARTIALLY,Jewelry/pendant-design cards are on-topic but no box object confirmed.
+P2,V142,candle label,brand_business,label,PARTIAL,45,167,NONE,PARTIALLY,"A label-printer card and 4 explicit eco-farm product-label cards -- label-format matches but wrong product category (food, not candle)."
+P2,V148,coffee cup,brand_business,cup,PARTIAL,45,308,NONE,PARTIALLY,5 coffee-subject cards (doodle/vocab/equipment-labeling/history/brewing-guide) -- on-topic but no literal cup object confirmed.
+P2,V150,coffee cup sleeve,brand_business,cup,PARTIAL,45,291,NONE,PARTIALLY,5 coffee-subject cards -- on-topic but no cup-sleeve object confirmed.
+P2,V151,外卖餐盒,brand_business,product_box,PARTIAL,45,33,NONE,PARTIALLY,5 food-doodle-sticker cards (brunch/pasta/korean/thai/western) -- food-subject but no takeout container depicted.
+P2,V152,takeout box,brand_business,product_box,PARTIAL,45,165,NONE,PARTIALLY,Identical food-sticker composition for the English term.
+P2,V174,product photo,marketing_ecommerce,product_photo,PARTIAL,45,33,NONE,PARTIALLY,"5 'gardening how-to infographic' cards (bell peppers/carrots/lettuce/pineapple/strawberries) -- real product/food photos but wrong context (gardening guide, not ecommerce product photo)."
+P2,V177,广告,marketing_ecommerce,advertisement,PARTIAL,45,12,NONE,PARTIALLY,5 generic 'product poster' showcase cards -- product-showcase-adjacent but ad-format not confirmed.
+P2,V183,餐厅传单,marketing_ecommerce,flyer,PARTIAL,45,35,NONE,PARTIALLY,"5 restaurant/cafe-adjacent cards (sauce packaging, brand mockup, ordering dialogue, coffee cards) -- topic-adjacent, no flyer format confirmed."
+P2,V184,restaurant flyer,marketing_ecommerce,flyer,PARTIAL,45,612,NONE,PARTIALLY,"5 restaurant-ordering-dialogue and food-packaging cards -- restaurant-topic-adjacent, no flyer format confirmed."
+P2,V215,种草帖,marketing_ecommerce,social_post,PARTIAL,45,191,NONE,PARTIALLY,"5 fashion-ecommerce product-mockup cards -- product-showcase-adjacent, recommendation-post format not confirmed."
+P2,V216,influencer post,marketing_ecommerce,social_post,PARTIAL,45,1844,NONE,PARTIALLY,Identical fashion-ecommerce composition for 'influencer post'.
+P2,V229,门店横幅,marketing_ecommerce,banner,PARTIAL,45,79,NONE,PARTIALLY,"5 shop/pet-brand-identity and team-banner cards -- brand/banner-format-adjacent, storefront not confirmed."
+P2,V230,storefront banner,marketing_ecommerce,banner,PARTIAL,45,4,NONE,PARTIALLY,"4 results. Explicit promotional-poster cards -- promo-banner-format-adjacent, storefront not confirmed."
+P2,V236,exhibition flyer,marketing_ecommerce,flyer,PARTIAL,45,1029,NONE,PARTIALLY,"The flyer-poster template matches format but wrong subject; 4 world-landmark vintage-info-poster cards are exhibition/travel-adjacent, weak."
+P2,V252,alphabet card,education,flashcard,PARTIAL,45,1417,NONE,PARTIALLY,5 general vocabulary/learning-card templates -- card-format matches but none show letters/alphabet specifically.
+P2,V265,教科书,education,textbook,PARTIAL,45,6,NONE,PARTIALLY,"5 historical-figure educational portrait cards -- textbook-content-adjacent, not a literal textbook page/cover."
+P2,V266,textbook,education,textbook,PARTIAL,45,11,NONE,PARTIALLY,Identical composition for the English term.
+P2,V297,练习本,education,worksheet,PARTIAL,45,6,NONE,PARTIALLY,"5 IP-merch-mockup-set / gift-box-stationery-set cards -- generic merch mockups, notebook not specifically confirmed."
+P2,V303,数学练习册,education,worksheet,PARTIAL,45,6,NONE,PARTIALLY,5 numbers/counting-tagged vocabulary cards -- math-adjacent but not confirmed workbook format.
+P2,V306,reading worksheet,education,worksheet,PARTIAL,45,6,NONE,PARTIALLY,5 'kids theme fill-in-worksheet' cards -- worksheet-format matches but no reading-specific content confirmed.
+P2,V311,动物识字卡,education,flashcard,PARTIAL,45,333,NONE,PARTIALLY,"5 species-science info-cards (egret/ginkgo/baiji/panda/tiger) -- animal-topic matches but format is species-info-card, not confirmed literacy-flashcard."
+P2,V162,cake box,brand_business,product_box,PARTIAL,40,280,NONE,PARTIALLY,"Cake-labeling, lava-cake recipe, cake-varieties, and baking-guide cards are cake-topic-adjacent; a generic brunch-sticker card is unrelated."
+P2,V113,化妆品包装,brand_business,package,PARTIAL,37,168,NONE,PARTIALLY,"4 beauty/cosmetic-adjacent cards (baby-care brand, beauty products, skincare routine, matcha packaging) are on-topic but not cosmetic-specific; a hairdryer ecommerce card is unrelated."
+P2,V131,门店招牌,brand_business,signage,PARTIAL,33,124,NONE,PARTIALLY,3 'PAW PARADISE' brand-identity cards are signage-adjacent; a generic vocab card and an ASL-tutorial card are unrelated.
+P2,V135,价格标签,brand_business,label,PARTIAL,33,9,NONE,PARTIALLY,"A shopping dialogue scene and 3 object-structure-labeling cards are price-tag-adjacent (generic labeling, not price-specific); a logistics word-scene is unrelated."
+P2,V139,首饰盒,brand_business,product_box,PARTIAL,33,38,NONE,PARTIALLY,3 jewelry-category cards are on-topic but no box confirmed; 2 unrelated food-sticker cards fill the rest.
+P2,V269,图表,education,chart,PARTIAL,33,180,NONE,PARTIALLY,3 species-infographic cards (baiji/panda/tiger) are chart-format-adjacent; 2 city-miniature cards show no chart content.
+P2,V114,cosmetic package,brand_business,package,PARTIAL,30,180,NONE,PARTIALLY,"Same composition as V113 for the English term; a hairdryer card is unrelated, 4 beauty-adjacent cards remain."
+P2,V195,产品画册,marketing_ecommerce,catalog,PARTIAL,30,202,NONE,PARTIALLY,"A 'product thinker' MBTI meme card is a word collision on 'product'; 4 fashion-ecommerce mockup cards are product-showcase-adjacent, catalog-plausible."
+P2,V232,window display,marketing_ecommerce,product_display,PARTIAL,30,15,NONE,PARTIALLY,"A generic vocab card is unrelated; shop-brand and product-poster cards are display-context-adjacent, window-display not confirmed."
+P2,V302,spelling card,education,flashcard,PARTIAL,30,1652,NONE,PARTIALLY,A 'sushi' character card is unrelated; 4 bilingual word-scene cards are vocab-adjacent but not spelling-card format.
+P2,V144,soap package,brand_business,package,PARTIAL,23,282,NONE,PARTIALLY,Soap-dish mockup and a label-printer card are weakly on-topic; 3 unrelated food-sticker-overlay cards fill the rest.
+P2,V129,店招,brand_business,signage,PARTIAL,14,4,NONE,PARTIALLY,4 results. A generic vocab card and an ASL-tutorial card (word collision on 'sign') are unrelated; 2 shop-brand-identity cards are signage-adjacent.
+P2,V011,卡通形象,creative_merch,character,PARTIAL,7,9,NONE,PARTIALLY,3 health-infographic cards are unrelated; an anthropomorphic-animal card and a Marvel-villain MBTI card are character-adjacent but weak.
+P2,V199,开业横幅,marketing_ecommerce,banner,PARTIAL,7,106,NONE,PARTIALLY,3 Canada World Cup squad photos are unrelated; 2 promotional-poster cards are opening-promo-adjacent.

@@ -1,0 +1,57 @@
+entity,field,status,file_path,function_or_query_or_event,evidence_note
+A. Search event,event_timestamp,PRESENT,curify_background/app/models/interactions.py,UserInteraction.created_at,Standard timestamp column on user_interactions
+A. Search event,event_name_or_type,PRESENT,curify_background/app/models/interactions.py,ActionType enum (SEARCH/SEARCH_NORESULT/SEARCH_LOWRESULT),Search identified purely via action_type value
+A. Search event,search_id,MISSING,curify_background/app/models/interactions.py,N/A,"No persisted search_id column anywhere; one analyst script aliases the row's own UUID as search_id inside a single query's GROUP BY only (dev/jayw/admin_analysis/search_cycle5_pull.py) - not a passed-through identifier"
+A. Search event,session_id,PRESENT,curify_background/app/models/interactions.py,UserInteraction.session_id,"Nullable string column; several queries filter WHERE session_id IS NOT NULL because not always present"
+A. Search event,user_id,PRESENT,curify_background/app/models/interactions.py,UserInteraction.user_id,Nullable int FK to users table; null implies anonymous
+A. Search event,anonymous_id,MISSING,curify_background/app/models/interactions.py,N/A,"No separate anonymous_id/device_id column; session_id serves this role by convention (client-generated) but is not a dedicated identity concept"
+A. Search event,query,PRESENT (as content_id),curify_background/app/models/interactions.py,UserInteraction.content_id,Generic string column reused across all content types; holds raw query text for search rows plus encoded suffixes
+A. Search event,normalized_query,MISSING (as a persisted column) / DERIVABLE at query time only,curify_background/app/crud/admin.py,LOWER(TRIM(content_id)) in _section_search_queries,Normalization done ad hoc in SQL at query time via LOWER/TRIM; not stored as its own column; does not strip the |within=/|n=/|rw=/|paths= suffixes so distinct-query counts can fragment
+A. Search event,language,MISSING,curify_background/app/models/interactions.py,N/A,No language column on user_interactions
+A. Search event,scenario_or_category,MISSING,curify_background/app/models/interactions.py,N/A,No category/scenario column
+A. Search event,search_mode,MISSING,curify_background/app/models/interactions.py,N/A,No search_mode column (relevant for future Hybrid Search internal/external distinction)
+A. Search event,result_count,MISSING as numeric column / DERIVABLE for low-result only,curify_background/app/models/interactions.py,content_id suffix pattern |n=<count>,"Only encoded as a string suffix on SEARCH_LOWRESULT rows per curify-frontend evidence [SECONDARY]; not present for SEARCH or SEARCH_NORESULT rows"
+A. Search event,initial_internal_result_count,MISSING,curify_background/app/models/interactions.py,N/A,No distinction between internal/external result counts exists (no external results exist yet)
+A. Search event,zero_result,PRESENT (as event type),curify_background/app/models/interactions.py,ActionType.SEARCH_NORESULT,First-class enum value added via curify_background/scripts/migrate_action_type_add_search_noresult.py
+A. Search event,low_result,PRESENT (as event type),curify_background/app/models/interactions.py,ActionType.SEARCH_LOWRESULT,First-class enum value added via curify_background/scripts/migrate_action_type_add_search_lowresult.py
+A. Search event,rewrite_triggered,MISSING (as persisted column) / possibly encoded in content_id,curify_background/app/models/interactions.py,content_id suffix |rw=1 [SECONDARY - curify-frontend],"Not a queryable column; only a string suffix per secondary evidence, unverified within curify-studio itself"
+A. Search event,rewritten_query,MISSING,curify_background/app/models/interactions.py,N/A,No rewritten query text stored anywhere in curify-studio
+A. Search event,external_triggered,MISSING,curify_background/app/models/interactions.py,N/A,No external-provider trigger flag; no external search integration exists yet in this backend
+B. Search result impression,any impression event,MISSING,N/A,N/A,No impression/view event exists for individual result cards being rendered/visible; only VIEW action_type exists generically but is not documented as tied to per-result impressions in any admin.py query
+B. Search result impression,search_id,MISSING,N/A,N/A,N/A - no impression event to carry it
+B. Search result impression,result_id,MISSING,N/A,N/A,No result_id concept exists
+B. Search result impression,result_source,MISSING,N/A,N/A,No internal/external source distinction exists
+B. Search result impression,result_rank,MISSING,N/A,N/A,No position/rank tracking anywhere in schema
+B. Search result impression,visible_on_first_screen,MISSING,N/A,N/A,Not tracked
+C. Search result click,event_timestamp,PRESENT,curify_background/app/models/interactions.py,UserInteraction.created_at,Same table as search events
+C. Search result click,event_name_or_type,PRESENT,curify_background/app/models/interactions.py,ActionType.CLICK / VIDEO_CLICK / VIDEO_PLAY,"Click identified via action_type plus current_page_route='/search' filter in queries, not a dedicated click-on-search-result event type"
+C. Search result click,search_id,MISSING,curify_background/app/models/interactions.py,N/A,No FK/shared key to the search event that produced the click; attribution is a 5-minute time-window heuristic on (user_id/session_id) in curify_background/app/crud/admin.py::_section_search_queries
+C. Search result click,session_id,PRESENT,curify_background/app/models/interactions.py,UserInteraction.session_id,Same column as search events - used as the join key
+C. Search result click,user_id,PRESENT,curify_background/app/models/interactions.py,UserInteraction.user_id,Same column as search events
+C. Search result click,result_id,PARTIAL (as content_id),curify_background/app/models/interactions.py,UserInteraction.content_id on the click row,"content_id holds the clicked item's identifier (e.g. template id) but is not linked to a specific search's result set/impression"
+C. Search result click,result_source,MISSING,curify_background/app/models/interactions.py,N/A,No internal/external distinction exists
+C. Search result click,result_rank,MISSING,curify_background/app/models/interactions.py,N/A,Not tracked anywhere
+C. Search result click,destination_url,PARTIAL,curify_background/app/models/interactions.py,UserInteraction.current_page_url / current_page_route,Records the page the click occurred on, not necessarily a distinct destination_url for the clicked item itself
+C. Search result click,destination_domain,MISSING,curify_background/app/models/interactions.py,N/A,No destination domain field (relevant for future external Hybrid Search click tracking)
+D. Generate intent/click,event_timestamp,PRESENT,curify_background/app/models/interactions.py,UserInteraction.created_at,GENERATE is one action_type value logged via the same generic /interactions/track endpoint
+D. Generate intent/click,event_name_or_type,PRESENT,curify_background/app/models/interactions.py,ActionType.GENERATE,Click-log event only; not linked to the actual generation pipeline call
+D. Generate intent/click,search_id,MISSING,curify_background/app/models/interactions.py,N/A,No linkage field exists
+D. Generate intent/click,session_id,PRESENT,curify_background/app/models/interactions.py,UserInteraction.session_id,Present on the click-log row itself but not shared with the Project (generation) table
+D. Generate intent/click,template_id,PARTIAL (as content_id),curify_background/app/models/interactions.py,UserInteraction.content_id,Encoded in the generic content_id string when action_type=GENERATE
+D. Generate intent/click,inspiration_id,MISSING,curify_background/app/models/interactions.py,N/A,No dedicated column; would be encoded in content_id if tracked at all
+E. Generation started,event_timestamp,PRESENT,curify_background/app/models/project.py,Project.created_at / started_at,Project row created by /nano-templates/generate and /nano-freeform/generate
+E. Generation started,generation_id,PARTIAL (as project_id),curify_background/app/models/project.py,Project.project_id,Project doubles as the generation record for both video-dubbing and nano image-generation jobs; no separate generations table
+E. Generation started,search_id,MISSING,curify_background/app/models/project.py,N/A,"Not accepted or stored by /nano-templates/generate (curify_background/app/routers/nano_templates.py) or /nano-freeform/generate (curify_background/app/routers/nano_freeform.py)"
+E. Generation started,session_id,MISSING,curify_background/app/models/project.py,N/A,"Project table has no session_id column at all - anonymous generations cannot be linked to any prior anonymous search/click event, a structural gap"
+E. Generation started,template_id,PARTIAL,curify_background/app/models/project.py,Project.job_settings_raw (JSON) / runtime_config (JSON),Not a first-class column; embedded in untyped JSON blobs per job_type
+E. Generation started,source_result_id,MISSING,curify_background/app/models/project.py,N/A,No column links a Project to the specific search-result click that led to it
+F. Generation success,generation_status,PRESENT,curify_background/app/models/project.py,Project.status (ProjectStatus enum incl. COMPLETED/APPROVED),First-class enum column
+F. Generation success,generation_success,DERIVABLE,curify_background/app/models/project.py,"WHERE status='COMPLETED' (or 'APPROVED')",Derivable directly from Project.status without any search linkage
+G. Generation failure,generation_failure,PRESENT,curify_background/app/models/project.py,"Project.status='FAILED'; runtime_config.failure_code / failure_reason (nano_freeform_pipeline.py)",Failure status plus optional structured failure metadata in the untyped runtime_config JSON
+G. Generation failure,error_type,PARTIAL,curify_background/app/pipelines/nano_freeform_pipeline.py,runtime_config.failure_code / failure_reason,Present only for the nano-freeform pipeline as untyped JSON fields, not a queryable typed column
+H. Project/template creation,project_id,PRESENT,curify_background/app/models/project.py,Project.project_id (string PK),First-class primary key
+H. Project/template creation,template_id,PARTIAL,curify_background/app/models/project.py,job_settings_raw / runtime_config JSON,Not a first-class column
+H. Project/template creation,source_prompt_id (gallery-remix origin),PRESENT (narrow scope),curify_background/app/pipelines/nano_freeform_pipeline.py,FreeformGenerateRequest.source_prompt_id -> stored in Project.runtime_config/description,"Documented in code as enabling future remix->conversion funnels by source prompt, but covers gallery remix only, never search"
+I. User identity,user_id,PRESENT,curify_background/app/models/user.py,User.user_id (int PK),Custom home-grown auth (JWT via python-jose) - NOT Supabase Auth/GoTrue UUIDs
+I. User identity,email,PRESENT (sensitive - handle with care),curify_background/app/models/user.py,User.email,Not to be exposed in any audit output - noted for completeness of schema only
+J. Session identity,session_id,PRESENT (event-log side only),curify_background/app/models/interactions.py,UserInteraction.session_id,"Client-generated (per curify-frontend [SECONDARY] evidence: sessionStorage key _curify_session_id); no server-side sessions table exists; NOT present on Project (generation) table - this asymmetry is the key structural gap preventing anonymous Search->Generate attribution"

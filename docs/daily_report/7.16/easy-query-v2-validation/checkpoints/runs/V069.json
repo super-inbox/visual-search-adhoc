@@ -1,0 +1,99 @@
+{
+  "query_id": "V069",
+  "query": "国潮公仔",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:19:16.616Z",
+  "completed_at": "2026-07-16T14:19:21.869Z",
+  "duration_ms": 5252,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "国潮",
+        "公仔"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "Guochao figurines",
+        "Chinese trendy collectibles",
+        "national tide dolls"
+      ],
+      "decomposition": {
+        "subject": "figurines",
+        "style": "guochao",
+        "output": "collectible"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "国潮 figurines Guochao figurines",
+        "slotKey": "rewrite",
+        "slotValue": "Guochao figurines",
+        "subjectBound": true
+      },
+      {
+        "text": "国潮 figurines Chinese trendy collectibles",
+        "slotKey": "rewrite",
+        "slotValue": "Chinese trendy collectibles",
+        "subjectBound": true
+      },
+      {
+        "text": "国潮 figurines national tide dolls",
+        "slotKey": "rewrite",
+        "slotValue": "national tide dolls",
+        "subjectBound": true
+      },
+      {
+        "text": "国潮 figurines",
+        "slotKey": "subject",
+        "slotValue": "figurines",
+        "subjectBound": true
+      },
+      {
+        "text": "国潮 figurines guochao",
+        "slotKey": "style",
+        "slotValue": "guochao",
+        "subjectBound": true
+      },
+      {
+        "text": "国潮 figurines collectible",
+        "slotKey": "output",
+        "slotValue": "collectible",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 6,
+    "usedPathsCount": 7,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

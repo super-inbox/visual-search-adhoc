@@ -1,0 +1,116 @@
+{
+  "query_id": "V318",
+  "query": "diploma",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:24:50.085Z",
+  "completed_at": "2026-07-16T16:24:52.540Z",
+  "duration_ms": 2454,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "diploma"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "diploma certificate design",
+        "graduation diploma template",
+        "academic diploma layout"
+      ],
+      "decomposition": {
+        "output": "certificate"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "diploma certificate design",
+        "slotKey": "rewrite",
+        "slotValue": "diploma certificate design",
+        "subjectBound": false
+      },
+      {
+        "text": "graduation diploma template",
+        "slotKey": "rewrite",
+        "slotValue": "graduation diploma template",
+        "subjectBound": false
+      },
+      {
+        "text": "academic diploma layout",
+        "slotKey": "rewrite",
+        "slotValue": "academic diploma layout",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "certificate",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 0,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-ip-character-sprite-emoji-sheet-graduation-alpaca",
+        "title": "graduation alpaca",
+        "template_id": "template-ip-character-sprite-emoji-sheet",
+        "tags": [
+          "character",
+          "design",
+          "merch",
+          "illustration",
+          "playful",
+          "whimsical",
+          "cartoon",
+          "animals",
+          "vibrant",
+          "soft",
+          "cozy",
+          "celebration",
+          "school",
+          "character-ip",
+          "kawaii",
+          "dynamic",
+          "artistic",
+          "modern",
+          "digital-canvas",
+          "infographic",
+          "daily-life-grid"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "query_id": "V026",
+  "query": "capsule toy",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T13:57:36.477Z",
+  "completed_at": "2026-07-16T13:57:41.523Z",
+  "duration_ms": 5045,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "capsule",
+        "toy"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "capsule toy design",
+        "gacha toy collection",
+        "capsule toy illustrations"
+      ],
+      "decomposition": {
+        "output": "illustration"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "capsule toy design",
+        "slotKey": "rewrite",
+        "slotValue": "capsule toy design",
+        "subjectBound": false
+      },
+      {
+        "text": "gacha toy collection",
+        "slotKey": "rewrite",
+        "slotValue": "gacha toy collection",
+        "subjectBound": false
+      },
+      {
+        "text": "capsule toy illustrations",
+        "slotKey": "rewrite",
+        "slotValue": "capsule toy illustrations",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "illustration",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 1,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+        "title": "woody buzz toy story",
+        "template_id": "template-disney-dual-character-intro-book-spread",
+        "tags": [
+          "character",
+          "disney",
+          "film",
+          "illustration",
+          "art-prints",
+          "posters",
+          "playful",
+          "whimsical",
+          "cartoon",
+          "vibrant",
+          "dynamic",
+          "story",
+          "groups",
+          "narrative-comic",
+          "character-ip",
+          "cozy",
+          "joyful",
+          "modern",
+          "family",
+          "fantasy",
+          "adventure",
+          "iconic",
+          "stylish",
+          "warm",
+          "soft"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

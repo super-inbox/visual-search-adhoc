@@ -1,0 +1,99 @@
+{
+  "query_id": "V127",
+  "query": "咖啡馆菜单",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:48:30.502Z",
+  "completed_at": "2026-07-16T14:48:34.042Z",
+  "duration_ms": 3539,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "咖啡馆",
+        "菜单"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "cafe menu design",
+        "coffee shop menu",
+        "cafe food and drink list"
+      ],
+      "decomposition": {
+        "subject": "cafe menu",
+        "scene": "coffee shop",
+        "output": "menu"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "咖啡馆 cafe menu cafe menu design",
+        "slotKey": "rewrite",
+        "slotValue": "cafe menu design",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡馆 cafe menu coffee shop menu",
+        "slotKey": "rewrite",
+        "slotValue": "coffee shop menu",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡馆 cafe menu cafe food and drink list",
+        "slotKey": "rewrite",
+        "slotValue": "cafe food and drink list",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡馆 cafe menu",
+        "slotKey": "subject",
+        "slotValue": "cafe menu",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡馆 cafe menu coffee shop",
+        "slotKey": "scene",
+        "slotValue": "coffee shop",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡馆 cafe menu menu",
+        "slotKey": "output",
+        "slotValue": "menu",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 6,
+    "usedPathsCount": 7,
+    "preMergeCount": 20,
+    "postMergeCount": 26,
+    "dedupCount": 26,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": []
+  }
+}

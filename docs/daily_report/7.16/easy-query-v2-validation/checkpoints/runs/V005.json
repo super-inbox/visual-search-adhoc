@@ -1,0 +1,84 @@
+{
+  "query_id": "V005",
+  "query": "毛绒玩具",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T13:47:01.337Z",
+  "completed_at": "2026-07-16T13:47:05.578Z",
+  "duration_ms": 4240,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "毛绒玩具"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "plush toy designs",
+        "stuffed animal illustrations",
+        "plushie character templates"
+      ],
+      "decomposition": {
+        "subject": "plush toy"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "毛绒玩具 plush toy plush toy designs",
+        "slotKey": "rewrite",
+        "slotValue": "plush toy designs",
+        "subjectBound": true
+      },
+      {
+        "text": "毛绒玩具 plush toy stuffed animal illustrations",
+        "slotKey": "rewrite",
+        "slotValue": "stuffed animal illustrations",
+        "subjectBound": true
+      },
+      {
+        "text": "毛绒玩具 plush toy plushie character templates",
+        "slotKey": "rewrite",
+        "slotValue": "plushie character templates",
+        "subjectBound": true
+      },
+      {
+        "text": "毛绒玩具 plush toy",
+        "slotKey": "subject",
+        "slotValue": "plush toy",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

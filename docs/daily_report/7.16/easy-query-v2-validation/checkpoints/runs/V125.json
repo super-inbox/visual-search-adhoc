@@ -1,0 +1,85 @@
+{
+  "query_id": "V125",
+  "query": "烘焙包装",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:47:29.970Z",
+  "completed_at": "2026-07-16T14:47:33.620Z",
+  "duration_ms": 3649,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "烘焙",
+        "包装"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "baking packaging design",
+        "baked goods packaging",
+        "pastry packaging ideas"
+      ],
+      "decomposition": {
+        "subject": "baking packaging"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "烘焙 baking packaging baking packaging design",
+        "slotKey": "rewrite",
+        "slotValue": "baking packaging design",
+        "subjectBound": true
+      },
+      {
+        "text": "烘焙 baking packaging baked goods packaging",
+        "slotKey": "rewrite",
+        "slotValue": "baked goods packaging",
+        "subjectBound": true
+      },
+      {
+        "text": "烘焙 baking packaging pastry packaging ideas",
+        "slotKey": "rewrite",
+        "slotValue": "pastry packaging ideas",
+        "subjectBound": true
+      },
+      {
+        "text": "烘焙 baking packaging",
+        "slotKey": "subject",
+        "slotValue": "baking packaging",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 88,
+    "postMergeCount": 172,
+    "dedupCount": 172,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": []
+  }
+}

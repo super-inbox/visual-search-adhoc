@@ -1,0 +1,105 @@
+{
+  "audit_name": "search-click-generate-data-audit",
+  "audit_date": "2026-07-17",
+  "audited_repository": {
+    "path": "/Users/baobaoli/Desktop/curify-studio",
+    "remote": "https://github.com/super-inbox/curify-studio.git",
+    "branch": "main",
+    "commit": "7b3fa5b40b03da3056536257ead2200dab031247",
+    "commit_message": "Merge origin/jwang/rong-doc-sync into main",
+    "commit_date": "2026-07-16T16:30:52+08:00",
+    "shallow_clone": true,
+    "working_tree_status_before_audit": "clean",
+    "working_tree_status_after_audit": "clean",
+    "note": "curify-studio is a backend/ops monorepo (FastAPI backend curify_background/, static admin_portal/, dev analyst scripts). The actual product frontend (search UI, click handlers, tracking wrapper) lives in a separate sibling repository, curify-frontend, which is NOT part of this audited repository. A limited number of findings cite that sibling repo and are explicitly marked [SECONDARY] throughout the outputs."
+  },
+  "secondary_evidence_source": {
+    "path": "/Users/baobaoli/Desktop/curify-frontend",
+    "scope_note": "Read-only, out-of-scope reference only, cited for essential interpretive context (e.g. frontend conditions under which a SEARCH event fires). Not the primary audited repository. Distinct from and not interacted with: /Users/baobaoli/Desktop/curify-frontend-hybrid-audit (a separate, isolated session's working tree, which this audit did not touch)."
+  },
+  "method": "strict read-only static inspection (find/grep/read only); no code executed, no server started, no SQL executed, no live database connection, no files modified in any repository",
+  "research_agents_used": 4,
+  "research_agent_topics": [
+    "search-related code and events",
+    "admin dashboard directories, SQL files, query-builder modules, reporting/cron jobs",
+    "click and generation event tracking, generation pipeline entrypoints",
+    "database schema (all tables/models), identity/session model, dependencies"
+  ],
+  "key_findings_summary": {
+    "search_data_storage": "Single generic event table user_interactions (curify_background/app/models/interactions.py); no dedicated search_logs/search_history table",
+    "admin_dashboard": "admin_portal/ (static Vite/Tailwind/Chart.js) calling GET /admin/interaction-analytics backed by curify_background/app/crud/admin.py",
+    "attribution_level_search_to_click": "LEVEL 3 - approximate (COALESCE(user_id,session_id) + 5-minute time window heuristic)",
+    "attribution_level_click_to_generate": "LEVEL 4 - not reliably attributable (no shared key, no time-window join implemented at all)",
+    "search_to_generate_direct": "LEVEL 4 - only a population-level weekly cohort correlation exists (surface_cohorts)",
+    "critical_structural_gap": "project table (the generation record) has no session_id column, so anonymous generations cannot be linked to any prior anonymous search/click activity",
+    "search_event_undercounting": "[SECONDARY] Healthy, un-narrowed searches with >=5 results never fire any tracked event per curify-frontend evidence, biasing zero-/low-result rate and CTR denominators",
+    "no_external_analytics_tool": "No PostHog/Mixpanel/Amplitude/Segment/ClickHouse/BigQuery used anywhere; all analytics is first-party SQL against Supabase-hosted Postgres",
+    "no_scheduled_reporting": "No cron/pg_cron job computes or refreshes funnel metrics; one materialized view (bot_free_30d) exists but is currently dead code",
+    "security_note_out_of_scope_but_flagged": "curify_background/scripts/migrate_content_type_enum.py contains a hardcoded fallback production Supabase Postgres connection string with an embedded password; value not reproduced in any audit output"
+  },
+  "output_files": [
+    {
+      "file": "SEARCH_CLICK_GENERATE_DATA_AUDIT.md",
+      "sha256": "3128457c3c988eb28777880d29f225ac43578dd2c6b2fec9952f73d874d27df5"
+    },
+    {
+      "file": "SEARCH_ADMIN_DASHBOARD_INVENTORY.csv",
+      "sha256": "056e6380a37227bfffc5b05611335bb3154d21f0d8f76d4a9da0af867a85a96a"
+    },
+    {
+      "file": "SEARCH_SQL_QUERY_INVENTORY.csv",
+      "sha256": "2815439f09b3c1293a2f8a8d2109d5439463e664b9121dce268b67c382500c26"
+    },
+    {
+      "file": "SEARCH_EVENT_FIELD_MAP.csv",
+      "sha256": "7b8b0be61b805eb9c1e64e307fd1503993829f40f19c66f40a59195c9499c227"
+    },
+    {
+      "file": "SEARCH_ATTRIBUTION_FEASIBILITY.md",
+      "sha256": "60874a6a6366ed032c1cf2d77c26244267f59b4cd3a90595de0b660a88929647"
+    },
+    {
+      "file": "SEARCH_FUNNEL_METRIC_DEFINITIONS.md",
+      "sha256": "d81d02e39058e94c6a41aac389951167d614e35026b07e4b40e2ef8fbcc80e2a"
+    },
+    {
+      "file": "SEARCH_DASHBOARD_CAPABILITY_MATRIX.csv",
+      "sha256": "bfbe85417e9f8eaa2c64aba9f7d8e134d170d3376c15d11f14b3aadb5c257754"
+    },
+    {
+      "file": "SEARCH_TRACKING_GAPS.md",
+      "sha256": "77a7950b57bc0f4763ffa88679258ce2afafbc004f99d66361eea1b2e8c4cf67"
+    },
+    {
+      "file": "HYBRID_SEARCH_INSTRUMENTATION_REQUIREMENTS.md",
+      "sha256": "91af3f8935885f6718aae2cbd2a2c214142e312c1520e7b2804dcdfe77d3bf1d"
+    },
+    {
+      "file": "SEARCH_QUERY_PRIVACY_RISK_NOTES.md",
+      "sha256": "8cab50a4fb2aa819fd558f530d9f17e3b7977e9374adcb7c08bc205ba33da2b8"
+    },
+    {
+      "file": "SAFE_READ_ONLY_SQL_TEMPLATES.sql",
+      "sha256": "7fe78d92303df1dd99e1a752800a610674911228d308cd7ebe99eec70ab02efe"
+    },
+    {
+      "file": "SEARCH_CLICK_GENERATE_EXECUTIVE_SUMMARY_ZH.md",
+      "sha256": "62807c298e0554f38cb18a837fb5e21ce4f633e06642be85dea39320f94557c3"
+    },
+    {
+      "file": "AUDIT_MANIFEST.json",
+      "sha256": "COMPUTED_AFTER_WRITE_SEE_FINAL_AUDIT_LOG"
+    },
+    {
+      "file": "FINAL_AUDIT_LOG.md",
+      "sha256": "COMPUTED_AFTER_WRITE_SEE_FINAL_AUDIT_LOG"
+    }
+  ],
+  "final_status": "COMPLETE_WITH_LIMITATIONS",
+  "limitations": [
+    "No queries were executed; exact row counts, current CTR/success-rate values, and true search-volume undercount magnitude are not reported, only structural computability",
+    "Several findings are cited from the sibling curify-frontend repository, out of the nominal audit scope, and are clearly marked [SECONDARY] throughout",
+    "This audit covers only the current main HEAD of a shallow clone; other branches/commits were not inspected",
+    "Live production schema was not verified to exactly match the SQLModel class definitions read from source"
+  ]
+}

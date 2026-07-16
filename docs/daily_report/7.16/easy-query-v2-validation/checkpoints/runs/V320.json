@@ -1,0 +1,154 @@
+{
+  "query_id": "V320",
+  "query": "school calendar",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:25:50.558Z",
+  "completed_at": "2026-07-16T16:25:50.625Z",
+  "duration_ms": 66,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "school",
+        "calendar"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 5,
+    "rewriteTriggered": false,
+    "rewriteProviderCalled": false,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [],
+      "decomposition": {}
+    },
+    "candidatePaths": [],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 0,
+    "usedPathsCount": 1,
+    "preMergeCount": 122,
+    "postMergeCount": 122,
+    "dedupCount": 122,
+    "finalResultCount": 4,
+    "strictCount": 4,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-annual-event-calendar-infographic-rv-resort",
+        "title": "resort",
+        "template_id": "template-annual-event-calendar-infographic",
+        "tags": [
+          "information-card",
+          "learning",
+          "posters"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-annual-event-calendar-infographic-local-festival-schedule",
+        "title": "Local Festival Schedule",
+        "template_id": "template-annual-event-calendar-infographic",
+        "tags": [
+          "cultural-festivals",
+          "information-card",
+          "learning",
+          "posters",
+          "art-prints",
+          "infographic",
+          "festive",
+          "celebration",
+          "seasonal",
+          "vibrant",
+          "dynamic",
+          "illustration",
+          "whimsical",
+          "modern",
+          "design",
+          "family",
+          "culture",
+          "joyful",
+          "promotional-poster"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-annual-event-calendar-infographic-community-center-annual-events",
+        "title": "Community Center Annual Events",
+        "template_id": "template-annual-event-calendar-infographic",
+        "tags": [
+          "information-card",
+          "learning",
+          "posters",
+          "infographic",
+          "art-prints",
+          "wall-art",
+          "design",
+          "modern",
+          "vibrant",
+          "playful",
+          "illustration",
+          "seasonal",
+          "family",
+          "celebration",
+          "festive"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 4,
+        "result_id": "template-annual-event-calendar-infographic-2025-rv-resort-events",
+        "title": "2025 RV Resort Events",
+        "template_id": "template-annual-event-calendar-infographic",
+        "tags": [
+          "information-card",
+          "learning",
+          "infographic",
+          "art-prints",
+          "wall-art",
+          "travel",
+          "lifestyle",
+          "seasonal",
+          "vintage",
+          "modern",
+          "cozy",
+          "whimsical",
+          "family",
+          "nature",
+          "road-signs",
+          "festive",
+          "summer",
+          "autumn",
+          "spring",
+          "winter",
+          "design",
+          "cultural-festivals"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

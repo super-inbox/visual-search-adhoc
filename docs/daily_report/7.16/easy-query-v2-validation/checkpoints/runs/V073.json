@@ -1,0 +1,165 @@
+{
+  "query_id": "V073",
+  "query": "明信片套装",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:21:17.623Z",
+  "completed_at": "2026-07-16T14:21:21.746Z",
+  "duration_ms": 4122,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "明信片",
+        "套装"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "postcard set",
+        "postcard collection",
+        "greeting card pack"
+      ],
+      "decomposition": {
+        "subject": "postcards",
+        "output": "set"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "明信片 postcards postcard set",
+        "slotKey": "rewrite",
+        "slotValue": "postcard set",
+        "subjectBound": true
+      },
+      {
+        "text": "明信片 postcards postcard collection",
+        "slotKey": "rewrite",
+        "slotValue": "postcard collection",
+        "subjectBound": true
+      },
+      {
+        "text": "明信片 postcards greeting card pack",
+        "slotKey": "rewrite",
+        "slotValue": "greeting card pack",
+        "subjectBound": true
+      },
+      {
+        "text": "明信片 postcards",
+        "slotKey": "subject",
+        "slotValue": "postcards",
+        "subjectBound": true
+      },
+      {
+        "text": "明信片 postcards set",
+        "slotKey": "output",
+        "slotValue": "set",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 2,
+    "postMergeCount": 2,
+    "dedupCount": 2,
+    "finalResultCount": 2,
+    "strictCount": 0,
+    "relaxedCount": 2,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-ip-gift-box-stationery-set-mockup-busan-boogi-duck",
+        "title": "busan boogi duck",
+        "template_id": "template-ip-gift-box-stationery-set-mockup",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "character",
+          "mascots",
+          "stickers",
+          "illustration",
+          "playful",
+          "whimsical",
+          "kawaii",
+          "vibrant",
+          "urban",
+          "product",
+          "gift-packaging",
+          "dynamic",
+          "cartoon",
+          "anime",
+          "artistic",
+          "modern",
+          "stylish",
+          "joyful",
+          "cozy",
+          "soft",
+          "illustration",
+          "promotional-poster",
+          "lifestyle"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-ip-gift-box-stationery-set-mockup-boogi-alpaca",
+        "title": "boogi alpaca",
+        "template_id": "template-ip-gift-box-stationery-set-mockup",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "character",
+          "mascots",
+          "illustration",
+          "cartoon",
+          "playful",
+          "whimsical",
+          "vibrant",
+          "soft",
+          "cozy",
+          "modern",
+          "digital-canvas",
+          "product",
+          "gift-packaging",
+          "lifestyle",
+          "artistic",
+          "stylish",
+          "character-ip",
+          "branding",
+          "promotional-poster",
+          "stickers",
+          "dynamic",
+          "joyful",
+          "y2k"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "query_id": "V107",
+  "query": "咖啡豆包装",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:38:25.584Z",
+  "completed_at": "2026-07-16T14:38:28.857Z",
+  "duration_ms": 3272,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "咖啡豆",
+        "包装"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "coffee bean packaging design",
+        "coffee packaging ideas",
+        "coffee product labels"
+      ],
+      "decomposition": {
+        "subject": "coffee beans",
+        "output": "packaging"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "咖啡豆 coffee beans coffee bean packaging design",
+        "slotKey": "rewrite",
+        "slotValue": "coffee bean packaging design",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡豆 coffee beans coffee packaging ideas",
+        "slotKey": "rewrite",
+        "slotValue": "coffee packaging ideas",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡豆 coffee beans coffee product labels",
+        "slotKey": "rewrite",
+        "slotValue": "coffee product labels",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡豆 coffee beans",
+        "slotKey": "subject",
+        "slotValue": "coffee beans",
+        "subjectBound": true
+      },
+      {
+        "text": "咖啡豆 coffee beans packaging",
+        "slotKey": "output",
+        "slotValue": "packaging",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 83,
+    "postMergeCount": 93,
+    "dedupCount": 93,
+    "finalResultCount": 2,
+    "strictCount": 2,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-food-product-packaging-design-espresso-coffee-beans",
+        "title": "espresso coffee beans",
+        "template_id": "template-food-product-packaging-design",
+        "tags": [
+          "food",
+          "packaging",
+          "product",
+          "design",
+          "mockups",
+          "posters",
+          "beverage-packaging",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "luxurious",
+          "elegant",
+          "artistic",
+          "photorealistic",
+          "illustration",
+          "dynamic",
+          "stylish",
+          "promotional-poster",
+          "daily-life-grid",
+          "cafe",
+          "branding",
+          "luxury-packaging",
+          "infographic",
+          "product-lineup"
+        ],
+        "score": 5.6,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-eco-farm-food-uniform-product-label-arabica-coffee-beans",
+        "title": "arabica coffee beans",
+        "template_id": "template-eco-farm-food-uniform-product-label",
+        "tags": [],
+        "score": 5.6,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

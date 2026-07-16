@@ -1,0 +1,77 @@
+{
+  "query_id": "V040",
+  "query": "enamel pin",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:04:39.828Z",
+  "completed_at": "2026-07-16T14:04:42.614Z",
+  "duration_ms": 2785,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "enamel",
+        "pin"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "enamel pin design",
+        "enamel pin collection",
+        "enamel pin illustrations"
+      ],
+      "decomposition": {}
+    },
+    "candidatePaths": [
+      {
+        "text": "enamel pin design",
+        "slotKey": "rewrite",
+        "slotValue": "enamel pin design",
+        "subjectBound": false
+      },
+      {
+        "text": "enamel pin collection",
+        "slotKey": "rewrite",
+        "slotValue": "enamel pin collection",
+        "subjectBound": false
+      },
+      {
+        "text": "enamel pin illustrations",
+        "slotKey": "rewrite",
+        "slotValue": "enamel pin illustrations",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "query_id": "V309",
+  "query": "人体图解",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:20:17.599Z",
+  "completed_at": "2026-07-16T16:20:21.367Z",
+  "duration_ms": 3767,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "人体",
+        "图解"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "human anatomy infographic",
+        "body diagram poster",
+        "anatomy educational chart"
+      ],
+      "decomposition": {
+        "subject": "human body",
+        "output": "infographic"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "人体 human body human anatomy infographic",
+        "slotKey": "rewrite",
+        "slotValue": "human anatomy infographic",
+        "subjectBound": true
+      },
+      {
+        "text": "人体 human body body diagram poster",
+        "slotKey": "rewrite",
+        "slotValue": "body diagram poster",
+        "subjectBound": true
+      },
+      {
+        "text": "人体 human body anatomy educational chart",
+        "slotKey": "rewrite",
+        "slotValue": "anatomy educational chart",
+        "subjectBound": true
+      },
+      {
+        "text": "人体 human body",
+        "slotKey": "subject",
+        "slotValue": "human body",
+        "subjectBound": true
+      },
+      {
+        "text": "人体 human body infographic",
+        "slotKey": "output",
+        "slotValue": "infographic",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 35,
+    "postMergeCount": 111,
+    "dedupCount": 111,
+    "finalResultCount": 3,
+    "strictCount": 3,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-bilingual-object-structure-labeling-human-body",
+        "title": "human body",
+        "template_id": "template-bilingual-object-structure-labeling",
+        "tags": [
+          "beginner",
+          "bilingual",
+          "illustration",
+          "infographic",
+          "kids-learning",
+          "language",
+          "object-labeling",
+          "photorealistic",
+          "anatomy",
+          "art-prints",
+          "character",
+          "learning",
+          "body-parts",
+          "emotions",
+          "intellectual",
+          "introspective",
+          "calm",
+          "serene",
+          "cozy",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "warm",
+          "dynamic",
+          "study-sheets",
+          "wall-art",
+          "composition"
+        ],
+        "score": 7,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-education-card-human-body",
+        "title": "human body",
+        "template_id": "template-education-card",
+        "tags": [
+          "body",
+          "cartoon",
+          "information-card",
+          "learning",
+          "science",
+          "illustration",
+          "anatomy",
+          "infographic",
+          "playful",
+          "whimsical",
+          "health",
+          "concept-sketch",
+          "dynamic",
+          "vibrant",
+          "body-parts"
+        ],
+        "score": 7,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-educational-flashcard-ontology-mindmap-infographic-human-body-bilingual-science-mindmap",
+        "title": "human body bilingual science mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "tags": [
+          "learning",
+          "science",
+          "mind-maps",
+          "information-card",
+          "bilingual",
+          "anatomy",
+          "illustration",
+          "infographic",
+          "art-prints",
+          "health",
+          "body-parts",
+          "emotions",
+          "intellectual",
+          "calm",
+          "serene",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "dynamic",
+          "concept-sketch",
+          "study-sheets"
+        ],
+        "score": 7,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

@@ -1,0 +1,283 @@
+{
+  "query_id": "V287",
+  "query": "黑板",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:09:11.942Z",
+  "completed_at": "2026-07-16T16:09:12.063Z",
+  "duration_ms": 120,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "黑板"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 82,
+    "rewriteTriggered": false,
+    "rewriteProviderCalled": false,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [],
+      "decomposition": {}
+    },
+    "candidatePaths": [],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 0,
+    "usedPathsCount": 1,
+    "preMergeCount": 80,
+    "postMergeCount": 80,
+    "dedupCount": 80,
+    "finalResultCount": 80,
+    "strictCount": 80,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-education-dna-double-helix",
+        "title": "dna double helix",
+        "template_id": "template-education-card",
+        "tags": [
+          "illustration",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science",
+          "infographic",
+          "cartoon",
+          "playful",
+          "modern",
+          "dynamic"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-education-plate-tectonics",
+        "title": "plate tectonics",
+        "template_id": "template-education-card",
+        "tags": [
+          "cartoon",
+          "infographic",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science",
+          "illustration",
+          "dynamic",
+          "concept-sketch"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-education-card-resource-environmental-carrying-capacity",
+        "title": "resource environmental carrying capacity",
+        "template_id": "template-education-card",
+        "tags": [
+          "infographic",
+          "kids-learning",
+          "learning",
+          "nature",
+          "science",
+          "sustainability",
+          "illustration",
+          "cartoon",
+          "information-card"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 4,
+        "result_id": "template-education-electromagnetic-induction",
+        "title": "electromagnetic induction",
+        "template_id": "template-education-card",
+        "tags": [
+          "illustration",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 5,
+        "result_id": "template-education-conservation-of-energy",
+        "title": "conservation of energy",
+        "template_id": "template-education-card",
+        "tags": [
+          "cartoon",
+          "infographic",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "nature",
+          "science",
+          "animals",
+          "illustration",
+          "playful",
+          "whimsical",
+          "concept-sketch",
+          "dynamic",
+          "character",
+          "vocabulary"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 6,
+        "result_id": "template-education-newtons-laws",
+        "title": "newtons laws",
+        "template_id": "template-education-card",
+        "tags": [
+          "cartoon",
+          "illustration",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science",
+          "infographic",
+          "character",
+          "playful",
+          "concept-sketch",
+          "dynamic",
+          "vibrant",
+          "y2k",
+          "modern",
+          "whimsical"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 7,
+        "result_id": "template-education-card-lark-ai-summary",
+        "title": "lark ai summary",
+        "template_id": "template-education-card",
+        "tags": [
+          "ai",
+          "business",
+          "cartoon",
+          "information-card",
+          "learning",
+          "professional",
+          "illustration",
+          "infographic",
+          "modern",
+          "dynamic",
+          "intellectual",
+          "playful",
+          "vibrant",
+          "digital-canvas",
+          "concept-sketch",
+          "story",
+          "narrative-comic",
+          "technology",
+          "design",
+          "trending",
+          "insight",
+          "guides",
+          "showcase",
+          "stylish",
+          "step-by-step-tutorial"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 8,
+        "result_id": "template-education-card-feishu-ai-summary",
+        "title": "feishu ai summary",
+        "template_id": "template-education-card",
+        "tags": [
+          "ai",
+          "illustration",
+          "infographic",
+          "learning",
+          "cartoon",
+          "information-card",
+          "modern",
+          "dynamic",
+          "technology",
+          "professional",
+          "concept-sketch",
+          "vibrant",
+          "playful",
+          "intellectual",
+          "digital-canvas",
+          "detail-image",
+          "bold",
+          "energetic",
+          "whimsical",
+          "narrative-comic",
+          "step-by-step-tutorial"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 9,
+        "result_id": "template-education-card-climate-action",
+        "title": "climate action",
+        "template_id": "template-education-card",
+        "tags": [
+          "infographic",
+          "kids-learning",
+          "learning",
+          "nature",
+          "science",
+          "illustration",
+          "cartoon",
+          "sustainability",
+          "cozy",
+          "whimsical",
+          "playful",
+          "vibrant",
+          "modern"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 10,
+        "result_id": "template-education-card-conservation-redline",
+        "title": "conservation redline",
+        "template_id": "template-education-card",
+        "tags": [
+          "infographic",
+          "learning",
+          "nature",
+          "science",
+          "sustainability",
+          "cartoon",
+          "illustration"
+        ],
+        "score": 100,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

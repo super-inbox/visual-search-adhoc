@@ -1,0 +1,94 @@
+{
+  "query_id": "V101",
+  "query": "香水瓶",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:35:24.151Z",
+  "completed_at": "2026-07-16T14:35:28.067Z",
+  "duration_ms": 3916,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "香水瓶"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "perfume bottle design",
+        "fragrance bottle illustration",
+        "scented bottle art"
+      ],
+      "decomposition": {
+        "subject": "perfume bottle"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "香水瓶 perfume bottle perfume bottle design",
+        "slotKey": "rewrite",
+        "slotValue": "perfume bottle design",
+        "subjectBound": true
+      },
+      {
+        "text": "香水瓶 perfume bottle fragrance bottle illustration",
+        "slotKey": "rewrite",
+        "slotValue": "fragrance bottle illustration",
+        "subjectBound": true
+      },
+      {
+        "text": "香水瓶 perfume bottle scented bottle art",
+        "slotKey": "rewrite",
+        "slotValue": "scented bottle art",
+        "subjectBound": true
+      },
+      {
+        "text": "香水瓶 perfume bottle",
+        "slotKey": "subject",
+        "slotValue": "perfume bottle",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 0,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-smart-hydration-water-bottle",
+        "title": "smart hydration water bottle",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

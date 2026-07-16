@@ -1,0 +1,92 @@
+{
+  "query_id": "V077",
+  "query": "摇头公仔",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:23:18.588Z",
+  "completed_at": "2026-07-16T14:23:26.247Z",
+  "duration_ms": 7658,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "摇头",
+        "公仔"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "bobblehead figure",
+        "shaking head doll",
+        "collectible figurine"
+      ],
+      "decomposition": {
+        "subject": "bobblehead",
+        "output": "figurine"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "摇头 bobblehead bobblehead figure",
+        "slotKey": "rewrite",
+        "slotValue": "bobblehead figure",
+        "subjectBound": true
+      },
+      {
+        "text": "摇头 bobblehead shaking head doll",
+        "slotKey": "rewrite",
+        "slotValue": "shaking head doll",
+        "subjectBound": true
+      },
+      {
+        "text": "摇头 bobblehead collectible figurine",
+        "slotKey": "rewrite",
+        "slotValue": "collectible figurine",
+        "subjectBound": true
+      },
+      {
+        "text": "摇头 bobblehead",
+        "slotKey": "subject",
+        "slotValue": "bobblehead",
+        "subjectBound": true
+      },
+      {
+        "text": "摇头 bobblehead figurine",
+        "slotKey": "output",
+        "slotValue": "figurine",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

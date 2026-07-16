@@ -1,0 +1,327 @@
+query,language,scenario,category,reason
+玩具,zh,creative_merch,toy,任务 Creative/Merch 场景正面示例词，具体实物
+toy,en,creative_merch,toy,任务 Creative/Merch 场景正面示例词，具体实物
+手办,zh,creative_merch,figure,任务 Creative/Merch 场景正面示例词，具体实物
+figure,en,creative_merch,figure,任务 Creative/Merch 场景正面示例词，具体实物
+毛绒玩具,zh,creative_merch,plush,任务 Creative/Merch 场景正面示例词，具体实物
+plush,en,creative_merch,plush,任务 Creative/Merch 场景正面示例词，具体实物
+娃娃,zh,creative_merch,doll,任务 Creative/Merch 场景正面示例词，具体实物
+doll,en,creative_merch,doll,任务 Creative/Merch 场景正面示例词，具体实物
+吉祥物,zh,creative_merch,mascot,任务 Creative/Merch 场景正面示例词，具体实物
+mascot,en,creative_merch,mascot,任务 Creative/Merch 场景正面示例词，具体实物
+卡通形象,zh,creative_merch,character,任务 Creative/Merch 场景正面示例词，具体实物
+character,en,creative_merch,character,任务 Creative/Merch 场景正面示例词，具体实物
+贴纸,zh,creative_merch,sticker,任务 Creative/Merch 场景正面示例词，具体实物
+sticker,en,creative_merch,sticker,任务 Creative/Merch 场景正面示例词，具体实物
+钥匙扣,zh,creative_merch,keychain,任务 Creative/Merch 场景正面示例词，具体实物
+keychain,en,creative_merch,keychain,任务 Creative/Merch 场景正面示例词，具体实物
+收藏品,zh,creative_merch,collectible,任务 Creative/Merch 场景正面示例词，具体实物
+collectible,en,creative_merch,collectible,任务 Creative/Merch 场景正面示例词，具体实物
+盲盒,zh,creative_merch,blind_box,任务 Creative/Merch 场景正面示例词，具体实物
+blind box,en,creative_merch,blind_box,任务 Creative/Merch 场景正面示例词，具体实物
+动作人偶,zh,creative_merch,figure,具体收藏玩具实物，视觉目标清晰
+action figure,en,creative_merch,figure,具体收藏玩具实物，视觉目标清晰
+泰迪熊,zh,creative_merch,plush,具体玩偶实物，视觉目标清晰
+teddy bear,en,creative_merch,plush,具体玩偶实物，视觉目标清晰
+扭蛋,zh,creative_merch,blind_box,具体收藏玩具实物，视觉目标清晰，盲盒/扭蛋同类机制
+capsule toy,en,creative_merch,blind_box,具体收藏玩具实物，视觉目标清晰，盲盒/扭蛋同类机制
+卡牌,zh,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+trading card,en,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+模型,zh,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+model kit,en,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+雕像,zh,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+statue,en,creative_merch,collectible,具体收藏品实物，视觉目标清晰
+帆布袋,zh,creative_merch,merch_item,具体品牌周边实物，视觉目标清晰
+tote bag,en,creative_merch,merch_item,具体品牌周边实物，视觉目标清晰
+手机壳,zh,creative_merch,merch_item,具体品牌周边实物，视觉目标清晰
+phone case,en,creative_merch,merch_item,具体品牌周边实物，视觉目标清晰
+徽章,zh,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+badge,en,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+胸针,zh,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+enamel pin,en,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+冰箱贴,zh,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+magnet,en,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+挂绳,zh,creative_merch,merch_item,具体周边实物，视觉目标清晰
+lanyard,en,creative_merch,merch_item,具体周边实物，视觉目标清晰
+迷你手办,zh,creative_merch,figure,具体收藏玩具实物，视觉目标清晰
+mini figure,en,creative_merch,figure,具体收藏玩具实物，视觉目标清晰
+潮流公仔,zh,creative_merch,collectible,具体潮玩收藏品实物，视觉目标清晰
+vinyl toy,en,creative_merch,collectible,具体潮玩收藏品实物，视觉目标清晰
+潮流手办,zh,creative_merch,figure,具体潮玩收藏品实物，视觉目标清晰
+pop figure,en,creative_merch,figure,具体潮玩收藏品实物，视觉目标清晰
+惊喜盒子,zh,creative_merch,blind_box,具体收藏玩具购买形式实物，视觉目标清晰
+mystery box,en,creative_merch,blind_box,具体收藏玩具购买形式实物，视觉目标清晰
+挂件,zh,creative_merch,merch_item,具体周边实物，视觉目标清晰
+charm,en,creative_merch,merch_item,具体周边实物，视觉目标清晰
+马克杯,zh,creative_merch,merch_item,具体品牌/IP 周边实物，视觉目标清晰
+collectible mug,en,creative_merch,merch_item,具体品牌/IP 周边实物，视觉目标清晰
+抱枕,zh,creative_merch,merch_item,具体IP周边实物，视觉目标清晰
+plush pillow,en,creative_merch,merch_item,具体IP周边实物，视觉目标清晰
+拼图,zh,creative_merch,collectible,具体收藏/益智类实物，视觉目标清晰
+puzzle,en,creative_merch,collectible,具体收藏/益智类实物，视觉目标清晰
+积木,zh,creative_merch,collectible,具体收藏/拼砌类实物，视觉目标清晰
+building blocks,en,creative_merch,collectible,具体收藏/拼砌类实物，视觉目标清晰
+公仔盒,zh,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+sticker pack,en,creative_merch,merch_item,具体收藏周边实物，视觉目标清晰
+文创手办,zh,creative_merch,figure,文创/文博类周边实物，覆盖 Creative/Cultural 需求
+cultural relic figure,en,creative_merch,figure,文创/文博类周边实物，覆盖 Creative/Cultural 需求
+博物馆文创,zh,creative_merch,merch_item,文博文创类周边实物，覆盖 Cultural/Merch 需求
+museum souvenir,en,creative_merch,merch_item,文博文创类周边实物，覆盖 Cultural/Merch 需求
+国潮公仔,zh,creative_merch,figure,国风/国潮IP周边实物，覆盖 Creative/Cultural 需求
+IP figure,en,creative_merch,figure,国风/国潮IP周边实物，覆盖 Creative/Cultural 需求
+动漫周边,zh,creative_merch,merch_item,二次元周边实物，覆盖 Creative/Merch 需求
+anime merch,en,creative_merch,merch_item,二次元周边实物，覆盖 Creative/Merch 需求
+明信片套装,zh,creative_merch,merch_item,文创周边实物，覆盖 Creative/Cultural 需求
+postcard set,en,creative_merch,merch_item,文创周边实物，覆盖 Creative/Cultural 需求
+艺术微喷,zh,creative_merch,collectible,艺术衍生品实物，覆盖 Creative/Merch 需求
+art print,en,creative_merch,collectible,艺术衍生品实物，覆盖 Creative/Merch 需求
+摇头公仔,zh,creative_merch,collectible,具体收藏玩具实物，视觉目标清晰
+bobblehead,en,creative_merch,collectible,具体收藏玩具实物，视觉目标清晰
+场景模型,zh,creative_merch,collectible,具体收藏模型实物，视觉目标清晰
+diorama,en,creative_merch,collectible,具体收藏模型实物，视觉目标清晰
+角色卡通贴纸,zh,creative_merch,sticker,IP角色贴纸周边实物，视觉目标清晰
+character sticker pack,en,creative_merch,sticker,IP角色贴纸周边实物，视觉目标清晰
+标志,zh,brand_business,logo,任务 Brand/Business 场景正面示例词
+logo,en,brand_business,logo,任务 Brand/Business 场景正面示例词
+包装,zh,brand_business,package,任务 Brand/Business 场景正面示例词
+package,en,brand_business,package,任务 Brand/Business 场景正面示例词
+标签,zh,brand_business,label,任务 Brand/Business 场景正面示例词
+label,en,brand_business,label,任务 Brand/Business 场景正面示例词
+瓶子,zh,brand_business,bottle,任务 Brand/Business 场景正面示例词
+bottle,en,brand_business,bottle,任务 Brand/Business 场景正面示例词
+菜单,zh,brand_business,menu,任务 Brand/Business 场景正面示例词
+menu,en,brand_business,menu,任务 Brand/Business 场景正面示例词
+名片,zh,brand_business,business_card,任务 Brand/Business 场景正面示例词
+business card,en,brand_business,business_card,任务 Brand/Business 场景正面示例词
+产品盒,zh,brand_business,product_box,任务 Brand/Business 场景正面示例词
+product box,en,brand_business,product_box,任务 Brand/Business 场景正面示例词
+咖啡包装,zh,brand_business,package,任务 Brand/Business 场景正面示例词
+coffee package,en,brand_business,package,任务 Brand/Business 场景正面示例词
+餐厅菜单,zh,brand_business,menu,任务 Brand/Business 场景正面示例词
+restaurant menu,en,brand_business,menu,任务 Brand/Business 场景正面示例词
+香水瓶,zh,brand_business,bottle,具体品牌资产实物，视觉目标清晰
+perfume bottle,en,brand_business,bottle,具体品牌资产实物，视觉目标清晰
+香水盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+perfume box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+茶叶包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+tea package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+咖啡豆包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+coffee bean package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+巧克力礼盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+chocolate box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+护肤品包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+skincare package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+化妆品包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+cosmetic package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+酒标,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+wine label,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+零食包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+snack package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+礼品盒,zh,brand_business,product_box,任务在歧义词说明中明确列出的正面示例（gift box）
+gift box,en,brand_business,product_box,任务在歧义词说明中明确列出的正面示例（gift box）
+购物袋,zh,brand_business,merch_item,具体品牌周边实物，视觉目标清晰
+shopping bag,en,brand_business,merch_item,具体品牌周边实物，视觉目标清晰
+产品标签,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+product label,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+烘焙包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+bakery package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+咖啡馆菜单,zh,brand_business,menu,具体品牌资产实物，视觉目标清晰
+cafe menu,en,brand_business,menu,具体品牌资产实物，视觉目标清晰
+店招,zh,brand_business,signage,具体品牌资产实物，视觉目标清晰
+shop sign,en,brand_business,signage,具体品牌资产实物，视觉目标清晰
+门店招牌,zh,brand_business,signage,具体品牌资产实物，视觉目标清晰
+storefront sign,en,brand_business,signage,具体品牌资产实物，视觉目标清晰
+产品吊牌,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+product tag,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+价格标签,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+price tag,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+服装吊牌,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+clothing tag,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+首饰盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+jewelry box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+蜡烛标签,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+candle label,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+香皂包装,zh,brand_business,package,具体品牌资产实物，视觉目标清晰
+soap package,en,brand_business,package,具体品牌资产实物，视觉目标清晰
+茶叶罐,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+tea box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+咖啡杯,zh,brand_business,cup,任务在核心原则中明确列出的正面示例（coffee cup）
+coffee cup,en,brand_business,cup,任务在核心原则中明确列出的正面示例（coffee cup）
+咖啡杯套,zh,brand_business,cup,具体品牌周边实物，视觉目标清晰
+coffee cup sleeve,en,brand_business,cup,具体品牌周边实物，视觉目标清晰
+外卖餐盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+takeout box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+饮料瓶,zh,brand_business,bottle,具体品牌资产实物，视觉目标清晰
+drink bottle,en,brand_business,bottle,具体品牌资产实物，视觉目标清晰
+水瓶标签,zh,brand_business,label,具体品牌资产实物，视觉目标清晰
+water bottle label,en,brand_business,label,具体品牌资产实物，视觉目标清晰
+信封,zh,brand_business,stationery,具体品牌物料实物，视觉目标清晰
+envelope,en,brand_business,stationery,具体品牌物料实物，视觉目标清晰
+手提袋,zh,brand_business,merch_item,具体品牌周边实物，视觉目标清晰
+paper bag,en,brand_business,merch_item,具体品牌周边实物，视觉目标清晰
+蛋糕盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+cake box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+月饼礼盒,zh,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+mooncake gift box,en,brand_business,product_box,具体品牌资产实物，视觉目标清晰
+横幅,zh,marketing_ecommerce,banner,任务 Marketing/Ecommerce 场景正面示例词
+banner,en,marketing_ecommerce,banner,任务 Marketing/Ecommerce 场景正面示例词
+传单,zh,marketing_ecommerce,flyer,任务 Marketing/Ecommerce 场景正面示例词
+flyer,en,marketing_ecommerce,flyer,任务 Marketing/Ecommerce 场景正面示例词
+画册,zh,marketing_ecommerce,catalog,任务 Marketing/Ecommerce 场景正面示例词
+catalog,en,marketing_ecommerce,catalog,任务 Marketing/Ecommerce 场景正面示例词
+促销横幅,zh,marketing_ecommerce,banner,任务 Marketing/Ecommerce 场景正面示例词
+sale banner,en,marketing_ecommerce,banner,任务 Marketing/Ecommerce 场景正面示例词
+产品图,zh,marketing_ecommerce,product_photo,任务 Marketing/Ecommerce 场景正面示例词
+product photo,en,marketing_ecommerce,product_photo,任务 Marketing/Ecommerce 场景正面示例词
+促销活动,zh,marketing_ecommerce,promotion,任务 Marketing/Ecommerce 场景正面示例词
+promotion,en,marketing_ecommerce,promotion,任务 Marketing/Ecommerce 场景正面示例词
+广告,zh,marketing_ecommerce,advertisement,任务 Marketing/Ecommerce 场景正面示例词
+advertisement,en,marketing_ecommerce,advertisement,任务 Marketing/Ecommerce 场景正面示例词
+社交媒体帖子,zh,marketing_ecommerce,social_post,任务 Marketing/Ecommerce 场景正面示例词
+social media post,en,marketing_ecommerce,social_post,任务 Marketing/Ecommerce 场景正面示例词
+产品展示,zh,marketing_ecommerce,product_display,任务 Marketing/Ecommerce 场景正面示例词
+product display,en,marketing_ecommerce,product_display,任务 Marketing/Ecommerce 场景正面示例词
+餐厅传单,zh,marketing_ecommerce,flyer,任务在核心原则中明确列出的正面示例（restaurant flyer）
+restaurant flyer,en,marketing_ecommerce,flyer,任务在核心原则中明确列出的正面示例（restaurant flyer）
+电影海报,zh,marketing_ecommerce,poster_specific,任务在核心原则中明确列出的正面示例（movie poster）
+movie poster,en,marketing_ecommerce,poster_specific,任务在核心原则中明确列出的正面示例（movie poster）
+产品横幅,zh,marketing_ecommerce,banner,任务在核心原则中明确列出的正面示例（product banner）
+product banner,en,marketing_ecommerce,banner,任务在核心原则中明确列出的正面示例（product banner）
+促销海报,zh,marketing_ecommerce,poster_specific,任务在核心原则中明确列出的正面示例（sale poster）
+sale poster,en,marketing_ecommerce,poster_specific,任务在核心原则中明确列出的正面示例（sale poster）
+折扣传单,zh,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+discount flyer,en,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+电商横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+ecommerce banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+产品画册,zh,marketing_ecommerce,catalog,具体营销物料，视觉目标清晰
+product catalog,en,marketing_ecommerce,catalog,具体营销物料，视觉目标清晰
+活动传单,zh,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+event flyer,en,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+开业横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+grand opening banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+节日促销横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+holiday sale banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+新品横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+new arrival banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+限时促销海报,zh,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+flash sale poster,en,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+清仓促销横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+clearance sale banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+产品详情图,zh,marketing_ecommerce,product_photo,具体电商物料，视觉目标清晰
+product listing image,en,marketing_ecommerce,product_photo,具体电商物料，视觉目标清晰
+网店横幅,zh,marketing_ecommerce,banner,具体电商物料，视觉目标清晰
+online store banner,en,marketing_ecommerce,banner,具体电商物料，视觉目标清晰
+社交媒体广告,zh,marketing_ecommerce,advertisement,具体营销物料，视觉目标清晰
+social media ad,en,marketing_ecommerce,advertisement,具体营销物料，视觉目标清晰
+种草帖,zh,marketing_ecommerce,social_post,具体营销内容，视觉目标清晰
+influencer post,en,marketing_ecommerce,social_post,具体营销内容，视觉目标清晰
+开箱照,zh,marketing_ecommerce,product_photo,具体电商内容，视觉目标清晰
+unboxing photo,en,marketing_ecommerce,product_photo,具体电商内容，视觉目标清晰
+前后对比图,zh,marketing_ecommerce,product_photo,具体营销内容，视觉目标清晰
+before after comparison,en,marketing_ecommerce,product_photo,具体营销内容，视觉目标清晰
+优惠券,zh,marketing_ecommerce,coupon,具体营销物料，视觉目标清晰
+discount coupon,en,marketing_ecommerce,coupon,具体营销物料，视觉目标清晰
+会员卡,zh,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+membership card,en,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+积分卡,zh,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+loyalty card,en,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+礼品卡,zh,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+gift card,en,marketing_ecommerce,membership_card,具体营销物料，视觉目标清晰，有清晰上下文
+门店横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+storefront banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+橱窗展示,zh,marketing_ecommerce,product_display,具体营销物料，视觉目标清晰
+window display,en,marketing_ecommerce,product_display,具体营销物料，视觉目标清晰
+展会展架,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+trade show banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+展览传单,zh,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+exhibition flyer,en,marketing_ecommerce,flyer,具体营销物料，视觉目标清晰
+新品发布海报,zh,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+product launch poster,en,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+季节促销横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+seasonal sale banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+黑五促销横幅,zh,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+black friday banner,en,marketing_ecommerce,banner,具体营销物料，视觉目标清晰
+双十一促销海报,zh,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+singles day sale poster,en,marketing_ecommerce,poster_specific,具体营销物料，视觉目标清晰
+直播预告横幅,zh,marketing_ecommerce,banner,具体电商营销物料，视觉目标清晰
+livestream promo banner,en,marketing_ecommerce,banner,具体电商营销物料，视觉目标清晰
+识字卡,zh,education,flashcard,任务 Education 场景正面示例词
+flashcard,en,education,flashcard,任务 Education 场景正面示例词
+练习册,zh,education,worksheet,任务 Education 场景正面示例词
+worksheet,en,education,worksheet,任务 Education 场景正面示例词
+字母卡,zh,education,flashcard,任务 Education 场景正面示例词
+alphabet card,en,education,flashcard,任务 Education 场景正面示例词
+地图,zh,education,map,任务 Education 场景正面示例词
+map,en,education,map,任务 Education 场景正面示例词
+图解,zh,education,diagram,任务 Education 场景正面示例词
+diagram,en,education,diagram,任务 Education 场景正面示例词
+日历,zh,education,calendar,任务 Education 场景正面示例词
+calendar,en,education,calendar,任务 Education 场景正面示例词
+证书,zh,education,certificate,任务 Education 场景正面示例词
+certificate,en,education,certificate,任务 Education 场景正面示例词
+科学海报,zh,education,poster_specific,任务 Education 场景正面示例词
+science poster,en,education,poster_specific,任务 Education 场景正面示例词
+课堂装饰海报,zh,education,poster_specific,任务提及的 classroom material，替换为更具体的 classroom poster 组合表达
+classroom poster,en,education,poster_specific,任务提及的 classroom material，替换为更具体的 classroom poster 组合表达
+教科书,zh,education,textbook,具体学习物料实物，视觉目标清晰
+textbook,en,education,textbook,具体学习物料实物，视觉目标清晰
+地球仪,zh,education,globe,具体学习物料实物，视觉目标清晰
+globe,en,education,globe,具体学习物料实物，视觉目标清晰
+图表,zh,education,chart,具体学习物料实物，视觉目标清晰
+chart,en,education,chart,具体学习物料实物，视觉目标清晰
+课程表,zh,education,chart,具体学习物料实物，视觉目标清晰
+timetable,en,education,chart,具体学习物料实物，视觉目标清晰
+数字表,zh,education,chart,具体学习物料实物，视觉目标清晰
+number chart,en,education,chart,具体学习物料实物，视觉目标清晰
+元素周期表,zh,education,chart,具体学习物料实物，视觉目标清晰
+periodic table,en,education,chart,具体学习物料实物，视觉目标清晰
+世界地图,zh,education,map,具体学习物料实物，视觉目标清晰
+world map,en,education,map,具体学习物料实物，视觉目标清晰
+拼读卡,zh,education,flashcard,具体学习物料实物，视觉目标清晰
+phonics card,en,education,flashcard,具体学习物料实物，视觉目标清晰
+试卷,zh,education,worksheet,具体学习物料实物，视觉目标清晰
+exam paper,en,education,worksheet,具体学习物料实物，视觉目标清晰
+成绩单,zh,education,certificate,具体学习物料实物，有清晰上下文的合成词
+report card,en,education,certificate,具体学习物料实物，有清晰上下文的合成词
+笔袋,zh,education,stationery,具体文具实物，视觉目标清晰
+pencil case,en,education,stationery,具体文具实物，视觉目标清晰
+黑板,zh,education,classroom_material,具体教室实物，视觉目标清晰
+chalkboard,en,education,classroom_material,具体教室实物，视觉目标清晰
+白板,zh,education,classroom_material,具体教室实物，视觉目标清晰
+whiteboard,en,education,classroom_material,具体教室实物，视觉目标清晰
+显微镜,zh,education,classroom_material,具体教室实物，视觉目标清晰
+microscope,en,education,classroom_material,具体教室实物，视觉目标清晰
+书签,zh,education,stationery,具体文具实物，视觉目标清晰
+bookmark,en,education,stationery,具体文具实物，视觉目标清晰
+算盘,zh,education,classroom_material,具体教具实物，视觉目标清晰
+abacus,en,education,classroom_material,具体教具实物，视觉目标清晰
+练习本,zh,education,worksheet,具体学习物料实物，视觉目标清晰
+workbook,en,education,worksheet,具体学习物料实物，视觉目标清晰
+单词卡,zh,education,flashcard,具体学习物料实物，视觉目标清晰
+vocabulary card,en,education,flashcard,具体学习物料实物，视觉目标清晰
+拼写卡,zh,education,flashcard,具体学习物料实物，视觉目标清晰
+spelling card,en,education,flashcard,具体学习物料实物，视觉目标清晰
+数学练习册,zh,education,worksheet,具体学习物料实物，视觉目标清晰
+math worksheet,en,education,worksheet,具体学习物料实物，视觉目标清晰
+阅读练习册,zh,education,worksheet,具体学习物料实物，视觉目标清晰
+reading worksheet,en,education,worksheet,具体学习物料实物，视觉目标清晰
+科学图解,zh,education,diagram,具体学习物料实物，视觉目标清晰
+science diagram,en,education,diagram,具体学习物料实物，视觉目标清晰
+人体图解,zh,education,chart,具体学习物料实物，视觉目标清晰
+anatomy chart,en,education,chart,具体学习物料实物，视觉目标清晰
+动物识字卡,zh,education,flashcard,具体学习物料实物，视觉目标清晰
+animal flashcard,en,education,flashcard,具体学习物料实物，视觉目标清晰
+字母海报,zh,education,poster_specific,具体学习物料实物，视觉目标清晰
+alphabet poster,en,education,poster_specific,具体学习物料实物，视觉目标清晰
+荣誉证书,zh,education,certificate,具体学习物料实物，视觉目标清晰
+achievement certificate,en,education,certificate,具体学习物料实物，视觉目标清晰
+毕业证,zh,education,certificate,具体学习物料实物，视觉目标清晰
+diploma,en,education,certificate,具体学习物料实物，视觉目标清晰
+校历,zh,education,calendar,具体学习物料实物，视觉目标清晰
+school calendar,en,education,calendar,具体学习物料实物，视觉目标清晰
+教室装饰,zh,education,classroom_material,具体教室物料实物，视觉目标清晰
+classroom decoration,en,education,classroom_material,具体教室物料实物，视觉目标清晰
+学习图表,zh,education,chart,具体学习物料实物，视觉目标清晰
+learning chart,en,education,chart,具体学习物料实物，视觉目标清晰
+贴纸奖励表,zh,education,chart,具体学习物料实物，视觉目标清晰
+reward chart,en,education,chart,具体学习物料实物，视觉目标清晰

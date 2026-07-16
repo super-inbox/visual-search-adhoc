@@ -1,0 +1,167 @@
+{
+  "query_id": "V041",
+  "query": "冰箱贴",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:05:10.031Z",
+  "completed_at": "2026-07-16T14:05:14.510Z",
+  "duration_ms": 4479,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "冰箱",
+        "贴"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 3,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "fridge magnet designs",
+        "kitchen decor magnets",
+        "magnetic kitchen art"
+      ],
+      "decomposition": {
+        "subject": "fridge magnet",
+        "scene": "kitchen",
+        "output": "decor"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "冰箱 fridge magnet fridge magnet designs",
+        "slotKey": "rewrite",
+        "slotValue": "fridge magnet designs",
+        "subjectBound": true
+      },
+      {
+        "text": "冰箱 fridge magnet kitchen decor magnets",
+        "slotKey": "rewrite",
+        "slotValue": "kitchen decor magnets",
+        "subjectBound": true
+      },
+      {
+        "text": "冰箱 fridge magnet magnetic kitchen art",
+        "slotKey": "rewrite",
+        "slotValue": "magnetic kitchen art",
+        "subjectBound": true
+      },
+      {
+        "text": "冰箱 fridge magnet",
+        "slotKey": "subject",
+        "slotValue": "fridge magnet",
+        "subjectBound": true
+      },
+      {
+        "text": "冰箱 fridge magnet kitchen",
+        "slotKey": "scene",
+        "slotValue": "kitchen",
+        "subjectBound": true
+      },
+      {
+        "text": "冰箱 fridge magnet decor",
+        "slotKey": "output",
+        "slotValue": "decor",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 6,
+    "usedPathsCount": 7,
+    "preMergeCount": 93,
+    "postMergeCount": 93,
+    "dedupCount": 93,
+    "finalResultCount": 2,
+    "strictCount": 2,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-city-landmark-fridge-magnet-collection-nanjing-landmarks",
+        "title": "nanjing landmarks",
+        "template_id": "template-city-landmark-fridge-magnet-collection",
+        "tags": [
+          "city",
+          "merch",
+          "mockups",
+          "travel",
+          "posters",
+          "stickers",
+          "illustration",
+          "urban",
+          "architecture",
+          "design",
+          "cultural-fusion",
+          "vintage",
+          "modern",
+          "artistic",
+          "photorealistic",
+          "watercolor",
+          "whimsical",
+          "playful",
+          "vibrant",
+          "dynamic",
+          "detail-image",
+          "daily-life-grid"
+        ],
+        "score": 132,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-city-landmark-fridge-magnet-collection-yangzhou-landmarks",
+        "title": "yangzhou landmarks",
+        "template_id": "template-city-landmark-fridge-magnet-collection",
+        "tags": [
+          "city",
+          "merch",
+          "mockups",
+          "travel",
+          "posters",
+          "stickers",
+          "illustration",
+          "architecture",
+          "culture",
+          "design",
+          "urban",
+          "artistic",
+          "vibrant",
+          "modern",
+          "photorealistic",
+          "watercolor",
+          "whimsical",
+          "playful",
+          "infographic",
+          "daily-life-grid",
+          "dynamic",
+          "lifestyle",
+          "cultural-fusion",
+          "nostalgic",
+          "vintage"
+        ],
+        "score": 132,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

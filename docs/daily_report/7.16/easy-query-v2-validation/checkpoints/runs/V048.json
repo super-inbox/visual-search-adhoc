@@ -1,0 +1,168 @@
+{
+  "query_id": "V048",
+  "query": "vinyl toy",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:08:41.659Z",
+  "completed_at": "2026-07-16T14:08:44.575Z",
+  "duration_ms": 2916,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "vinyl",
+        "toy"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "vinyl toy design",
+        "vinyl figure collection",
+        "vinyl collectible art"
+      ],
+      "decomposition": {
+        "output": "collectible"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "vinyl toy design",
+        "slotKey": "rewrite",
+        "slotValue": "vinyl toy design",
+        "subjectBound": false
+      },
+      {
+        "text": "vinyl figure collection",
+        "slotKey": "rewrite",
+        "slotValue": "vinyl figure collection",
+        "subjectBound": false
+      },
+      {
+        "text": "vinyl collectible art",
+        "slotKey": "rewrite",
+        "slotValue": "vinyl collectible art",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "collectible",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 1,
+    "postMergeCount": 2,
+    "dedupCount": 2,
+    "finalResultCount": 2,
+    "strictCount": 0,
+    "relaxedCount": 2,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-museum-gift-themed-merchandise-collection-display-van-gogh-mystery-box",
+        "title": "van gogh mystery box",
+        "template_id": "template-museum-gift-themed-merchandise-collection-display",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "posters",
+          "art-prints",
+          "wall-art",
+          "character",
+          "artistic",
+          "vintage",
+          "whimsical",
+          "interior",
+          "modern",
+          "playful",
+          "illustration",
+          "gift-packaging",
+          "stylish",
+          "cultural-fusion",
+          "celebration",
+          "narrative-comic",
+          "story",
+          "trending",
+          "showcase",
+          "vibrant",
+          "dynamic",
+          "cozy",
+          "serene",
+          "intimate",
+          "introspective",
+          "luxurious",
+          "elegant",
+          "photorealistic",
+          "watercolor",
+          "ink",
+          "soft-light",
+          "dramatic-lighting",
+          "mood-board",
+          "seasonal"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-disney-dual-character-intro-book-spread-woody-buzz-toy-story",
+        "title": "woody buzz toy story",
+        "template_id": "template-disney-dual-character-intro-book-spread",
+        "tags": [
+          "character",
+          "disney",
+          "film",
+          "illustration",
+          "art-prints",
+          "posters",
+          "playful",
+          "whimsical",
+          "cartoon",
+          "vibrant",
+          "dynamic",
+          "story",
+          "groups",
+          "narrative-comic",
+          "character-ip",
+          "cozy",
+          "joyful",
+          "modern",
+          "family",
+          "fantasy",
+          "adventure",
+          "iconic",
+          "stylish",
+          "warm",
+          "soft"
+        ],
+        "score": 1,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "query_id": "V039",
+  "query": "胸针",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:04:09.558Z",
+  "completed_at": "2026-07-16T14:04:16.274Z",
+  "duration_ms": 6715,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "胸针"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "brooch design",
+        "jewelry brooch",
+        "fashion brooch"
+      ],
+      "decomposition": {
+        "subject": "brooch",
+        "output": "jewelry design"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "胸针 brooch brooch design",
+        "slotKey": "rewrite",
+        "slotValue": "brooch design",
+        "subjectBound": true
+      },
+      {
+        "text": "胸针 brooch jewelry brooch",
+        "slotKey": "rewrite",
+        "slotValue": "jewelry brooch",
+        "subjectBound": true
+      },
+      {
+        "text": "胸针 brooch fashion brooch",
+        "slotKey": "rewrite",
+        "slotValue": "fashion brooch",
+        "subjectBound": true
+      },
+      {
+        "text": "胸针 brooch",
+        "slotKey": "subject",
+        "slotValue": "brooch",
+        "subjectBound": true
+      },
+      {
+        "text": "胸针 brooch jewelry design",
+        "slotKey": "output",
+        "slotValue": "jewelry design",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 0,
+    "postMergeCount": 6,
+    "dedupCount": 6,
+    "finalResultCount": 6,
+    "strictCount": 0,
+    "relaxedCount": 6,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-fashion-before-after-outfit-annotation-card-diamond-jewelry",
+        "title": "diamond jewelry",
+        "template_id": "template-fashion-before-after-outfit-annotation-card",
+        "tags": [
+          "before-and-after",
+          "comparison",
+          "elegant",
+          "fashion",
+          "portrait",
+          "lifestyle",
+          "anatomy",
+          "infographic",
+          "stylish",
+          "modern",
+          "luxurious",
+          "vibrant",
+          "warm",
+          "whimsical",
+          "cozy",
+          "chic",
+          "dramatic",
+          "playful",
+          "artistic",
+          "photorealistic",
+          "illustration",
+          "dynamic",
+          "detail-image",
+          "soft-light",
+          "high-fashion",
+          "celebration",
+          "product",
+          "design",
+          "showcase"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-fashion-before-after-outfit-annotation-card-emerald-jewelry",
+        "title": "emerald jewelry",
+        "template_id": "template-fashion-before-after-outfit-annotation-card",
+        "tags": [
+          "before-and-after",
+          "comparison",
+          "elegant",
+          "fashion",
+          "portrait",
+          "lifestyle",
+          "anatomy",
+          "infographic",
+          "modern",
+          "stylish",
+          "vibrant",
+          "luxurious",
+          "chic",
+          "playful",
+          "dynamic",
+          "artistic",
+          "photorealistic",
+          "soft",
+          "warm",
+          "whimsical",
+          "cozy",
+          "dramatic",
+          "serene",
+          "minimalist",
+          "illustration",
+          "vintage",
+          "high-fashion",
+          "design"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-fashion-shape-guide-infographic-earrings-for-face-shape",
+        "title": "earrings for face shape",
+        "template_id": "template-fashion-shape-guide-infographic",
+        "tags": [
+          "fashion",
+          "guides",
+          "lifestyle",
+          "portrait",
+          "product",
+          "infographic",
+          "art-prints",
+          "modern",
+          "stylish",
+          "elegant",
+          "chic",
+          "playful",
+          "vibrant",
+          "warm",
+          "cozy",
+          "serene",
+          "minimalist",
+          "illustration",
+          "wall-art",
+          "design",
+          "beauty",
+          "body",
+          "step-by-step-tutorial",
+          "daily-life-grid"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 4,
+        "result_id": "template-fashion-before-after-outfit-annotation-card-jewelry-look",
+        "title": "Jewelry Look",
+        "template_id": "template-fashion-before-after-outfit-annotation-card",
+        "tags": [
+          "fashion",
+          "lifestyle",
+          "comparison",
+          "infographic",
+          "anatomy",
+          "character",
+          "design",
+          "modern",
+          "stylish",
+          "elegant",
+          "playful",
+          "vibrant",
+          "warm",
+          "cozy",
+          "chic",
+          "artistic",
+          "illustration",
+          "photorealistic",
+          "dynamic",
+          "bold",
+          "detail-image",
+          "daily-life-grid",
+          "casual",
+          "celebration",
+          "whimsical",
+          "soft-light"
+        ],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 5,
+        "result_id": "template-luxury-vintage-gem-necklace-design-sheet-angel-fountain-cherub-aquamarine-pendant",
+        "title": "angel fountain cherub aquamarine pendant",
+        "template_id": "template-luxury-vintage-gem-necklace-design-sheet",
+        "tags": [],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      },
+      {
+        "rank": 6,
+        "result_id": "template-luxury-vintage-gem-necklace-design-sheet-lotus-pond-mother-of-pearl-aqua-gem-pendant",
+        "title": "lotus pond mother of pearl aqua gem pendant",
+        "template_id": "template-luxury-vintage-gem-necklace-design-sheet",
+        "tags": [],
+        "score": 2,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

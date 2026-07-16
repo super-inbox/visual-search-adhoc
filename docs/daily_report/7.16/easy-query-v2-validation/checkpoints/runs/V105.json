@@ -1,0 +1,131 @@
+{
+  "query_id": "V105",
+  "query": "茶叶包装",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:37:25.083Z",
+  "completed_at": "2026-07-16T14:37:28.101Z",
+  "duration_ms": 3017,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "茶叶",
+        "包装"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "tea packaging design",
+        "tea box illustration",
+        "tea leaf packaging"
+      ],
+      "decomposition": {
+        "subject": "tea packaging",
+        "output": "design"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "茶叶 tea packaging tea packaging design",
+        "slotKey": "rewrite",
+        "slotValue": "tea packaging design",
+        "subjectBound": true
+      },
+      {
+        "text": "茶叶 tea packaging tea box illustration",
+        "slotKey": "rewrite",
+        "slotValue": "tea box illustration",
+        "subjectBound": true
+      },
+      {
+        "text": "茶叶 tea packaging tea leaf packaging",
+        "slotKey": "rewrite",
+        "slotValue": "tea leaf packaging",
+        "subjectBound": true
+      },
+      {
+        "text": "茶叶 tea packaging",
+        "slotKey": "subject",
+        "slotValue": "tea packaging",
+        "subjectBound": true
+      },
+      {
+        "text": "茶叶 tea packaging design",
+        "slotKey": "output",
+        "slotValue": "design",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 81,
+    "postMergeCount": 165,
+    "dedupCount": 165,
+    "finalResultCount": 1,
+    "strictCount": 1,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-food-product-packaging-design-matcha-powder",
+        "title": "matcha powder",
+        "template_id": "template-food-product-packaging-design",
+        "tags": [
+          "design",
+          "food",
+          "packaging",
+          "product",
+          "mockups",
+          "infographic",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "elegant",
+          "luxury-packaging",
+          "photorealistic",
+          "artistic",
+          "illustration",
+          "cosmetic-packaging",
+          "natural-light",
+          "healthy-habits",
+          "beverage-packaging",
+          "lifestyle",
+          "promotional-poster",
+          "seasonal",
+          "stylish",
+          "vintage",
+          "whimsical",
+          "kawaii",
+          "dynamic",
+          "studio",
+          "daily-life-grid"
+        ],
+        "score": 5.6,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}

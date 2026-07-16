@@ -1,0 +1,329 @@
+query,decision,scenario,reason
+鲜花,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+flower,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+猫,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+cat,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+狗,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+书,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+book,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+咖啡杯,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+蜡烛,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+candle,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+相机,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+眼镜,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+背包,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+雨伞,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+自行车,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+钢笔,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+地球仪,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+台灯,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+镜子,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+花瓶,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+手机,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+耳机,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+key,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+相框,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+沙发,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+帽子,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+围巾,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+handbag,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+teddy bear,KEEP_AS_REFERENCE,creative_merch,具体玩偶实物，映射 Creative/Merch 场景（plush 类）
+风筝,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+气球,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+蝴蝶,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+羽毛,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+贝壳,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+石头,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+树叶,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+云朵,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+星星,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+月亮,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+太阳,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+彩虹,KEEP_AS_REFERENCE,,"具体、单一的日常/自然物体名词，视觉目标清晰，但不落在本轮四大场景（Creative/Merch, Brand/Business, Marketing/Ecommerce, Education）范围内，作为参考保留，未纳入本版"
+金属,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+metal,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+玻璃,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+glass,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+木头,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+wood,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+陶瓷,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+皮革,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+布料,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+纸,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+paper,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+竹子,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+bamboo,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+石材,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+塑料,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+丝绸,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+羊毛,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+大理石,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+marble,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+黄铜,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+藤编,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+混凝土,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+亚克力,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+珍珠,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+水晶,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+棉麻,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+cork,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+denim,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+velvet,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+terrazzo,REMOVE,,材质/质感修饰词，不是独立可搜索的视觉对象，通常只作为其他名词的修饰语出现
+极简,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+minimalist,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+复古,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+vintage,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+国风,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+日系,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+北欧,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+Scandinavian,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+波西米亚,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+bohemian,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+工业风,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+industrial,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+田园,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+未来感,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+赛博朋克,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+cyberpunk,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+水彩,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+watercolor,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+手绘,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+hand-drawn,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+扁平化,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+涂鸦,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+卡通,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+写实,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+极繁,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+侘寂,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+wabi-sabi,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+法式,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+美式,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+韩系,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+中古,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+童趣,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+奢华,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+清新,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+暗黑,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+梦幻,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+街头,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+cottagecore,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+dark academia,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+Y2K,REMOVE,,抽象风格/美学描述词，无清晰单一视觉目标，属于任务明确要求移除的 abstract style words 类别
+教室,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+classroom,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+咖啡馆,KEEP_AS_REFERENCE,brand_business,具体商业场所，映射 Brand/Business 场景（咖啡馆菜单/招牌等品牌资产的来源场景）
+cafe,KEEP_AS_REFERENCE,brand_business,具体商业场所，映射 Brand/Business 场景
+婚礼,REPLACE,marketing_ecommerce,任务在核心设计原则中明确以 wedding cake 作为正面示例，替换为 wedding cake / wedding invitation 等更具体组合表达
+wedding,REPLACE,marketing_ecommerce,任务在核心设计原则中明确以 wedding cake 作为正面示例，替换为更具体组合表达
+生日派对,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+办公室,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+厨房,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+卧室,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+花园,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+海滩,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+beach,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+山间,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+森林,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+图书馆,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+市集,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+展览,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+演唱会,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+concert,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+游乐园,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+餐厅,REPLACE,brand_business,任务在 Brand/Business 与 Marketing 场景正面示例中均以 restaurant menu / restaurant flyer 形式出现，替换为更具体组合表达
+restaurant,REPLACE,brand_business,任务在 Brand/Business 与 Marketing 场景正面示例中均以 restaurant menu / restaurant flyer 形式出现，替换为更具体组合表达
+健身房,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+机场,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+校园,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+农场,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+夜市,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+阳台,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+书房,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+温室,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+便利店,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+茶馆,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+寺庙,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+湖畔,KEEP_AS_REFERENCE,,场景/地点词，描述空间环境而非单一视觉对象，不落在本轮四大场景范围内，作为参考保留
+咖啡,REPLACE,brand_business,任务在 Brand/Business 场景正面示例中明确列出 coffee package，替换为更具体组合表达
+coffee,REPLACE,brand_business,任务在 Brand/Business 场景正面示例中明确列出 coffee package，替换为更具体组合表达
+烘焙,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+美妆,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+珠宝,KEEP_AS_REFERENCE,,具体商品对象，但品类过于宽泛，不直接归入四大场景，作为参考保留
+服装,KEEP_AS_REFERENCE,,具体商品对象，但品类过于宽泛，不直接归入四大场景，作为参考保留
+宠物,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+母婴,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+健身,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+房地产,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+汽车,KEEP_AS_REFERENCE,,具体商品对象，但不落在本轮四大场景范围内，作为参考保留
+酒店,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+hospitality,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+婚庆,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+教育培训,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+医疗健康,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+金融,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+旅游,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+travel,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+餐饮,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+家居,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+3C数码,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+游戏,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+gaming,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+出版,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+农业,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+花艺,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+摄影,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+二手交易,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+物流,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+美发美甲,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+瑜伽,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+潮玩,KEEP_AS_REFERENCE,creative_merch,精确对应 Creative/Merch 场景核心概念（潮玩/collectible），直接沿用
+茶饮,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+香氛,REMOVE,,抽象行业/产业类别词，非具体视觉对象，用户不会直接搜索该词获取图片
+海报,REPLACE,marketing_ecommerce,任务在 Marketing/Ecommerce 场景明确列为应避免的过于宽泛词（poster），替换为更具体的 movie poster / sale poster 等组合表达
+poster,REPLACE,marketing_ecommerce,任务明确列为应避免的过于宽泛词，替换为更具体的 movie poster / sale poster 等组合表达
+贴纸,KEEP_AS_REFERENCE,creative_merch,任务在 Creative/Merch 场景正面示例中明确列出（sticker），具体实物商品，直接沿用
+sticker,KEEP_AS_REFERENCE,creative_merch,任务在 Creative/Merch 场景正面示例中明确列出，具体实物商品，直接沿用
+名片,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出（business card），直接沿用
+信封,KEEP_AS_REFERENCE,,具体实物，但不属于本轮四大场景核心范围，作为参考保留
+明信片,KEEP_AS_REFERENCE,marketing_ecommerce,具体营销/文创物料实物，映射 Marketing/Ecommerce 场景
+请柬,REPLACE,marketing_ecommerce,裸词场景单一，替换为更具体的 wedding invitation 等组合表达
+菜单,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出（menu / restaurant menu），直接沿用
+menu,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出，直接沿用
+包装盒,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出（product box），直接沿用
+packaging,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出（package），直接沿用
+手提袋,KEEP_AS_REFERENCE,brand_business,具体品牌周边实物（购物袋），映射 Brand/Business 场景
+标签,KEEP_AS_REFERENCE,brand_business,任务在 Brand/Business 场景正面示例中明确列出（label），直接沿用
+台历,KEEP_AS_REFERENCE,education,任务在 Education 场景正面示例中明确列出（calendar），直接沿用
+书签,KEEP_AS_REFERENCE,education,具体文具类实物，视觉目标清晰，映射 Education 场景
+徽章,KEEP_AS_REFERENCE,creative_merch,具体收藏品类实物，映射 Creative/Merch 场景
+badge,KEEP_AS_REFERENCE,creative_merch,具体收藏品类实物，映射 Creative/Merch 场景
+横幅,KEEP_AS_REFERENCE,marketing_ecommerce,任务在 Marketing/Ecommerce 场景正面示例中明确列出（banner），直接沿用
+banner,KEEP_AS_REFERENCE,marketing_ecommerce,任务在 Marketing/Ecommerce 场景正面示例中明确列出，直接沿用
+展架,KEEP_AS_REFERENCE,marketing_ecommerce,具体营销物料实物（展示架），映射 Marketing/Ecommerce 场景
+折页,KEEP_AS_REFERENCE,marketing_ecommerce,具体营销物料实物（折页/传单类），映射 Marketing/Ecommerce 场景，与 flyer 概念相近
+画册,KEEP_AS_REFERENCE,marketing_ecommerce,任务在 Marketing/Ecommerce 场景正面示例中明确列出（catalog），映射保留
+卡片,REPLACE,education,任务明确列为歧义词反面示例（card），替换为有清晰上下文的 flashcard / birthday card / business card 等具体表达
+card,REPLACE,education,任务明确列为歧义词反面示例，替换为有清晰上下文的 flashcard / birthday card / business card 等具体表达
+头像,REMOVE,,数字内容形态词，非实体视觉对象，且高度抽象/多用途，类似任务要求移除的宽泛设计词
+avatar,REMOVE,,数字内容形态词，非实体视觉对象
+壁纸,REMOVE,,数字内容形态词，非实体视觉对象
+wallpaper,REMOVE,,数字内容形态词，非实体视觉对象
+表情包,REMOVE,,数字内容形态词，高度抽象/多用途，非清晰单一视觉对象
+手账,KEEP_AS_REFERENCE,education,具体文具/笔记类实物，映射 Education 场景
+planner,KEEP_AS_REFERENCE,education,具体文具/学习物料实物，映射 Education 场景
+抱枕,KEEP_AS_REFERENCE,creative_merch,具体周边实物（抱枕），映射 Creative/Merch 场景
+帆布袋,KEEP_AS_REFERENCE,creative_merch,具体周边实物（帆布袋），映射 Creative/Merch 场景
+马克杯,KEEP_AS_REFERENCE,creative_merch,具体周边实物（马克杯），映射 Creative/Merch 场景
+儿童,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+children,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+青少年,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+婴儿,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+学生,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+student,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+上班族,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+老年人,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+新手妈妈,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+宠物主人,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+大学生,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+自由职业者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+教师,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+teacher,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+医生,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+健身爱好者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+旅行者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+手工艺人,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+收藏家,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+Z世代,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+Gen Z,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+二次元爱好者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+素食者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+新婚夫妇,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+数字游民,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+家庭主妇,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+创业者,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+留学生,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+宝妈,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+猫奴,REMOVE,,受众/人群词，属于任务明确要求移除的 audience/person words 类别（与 student/teacher/designer/housewife/customer 同类）
+春节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+中秋节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+端午节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+圣诞节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+christmas,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+万圣节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+halloween,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+情人节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+母亲节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+父亲节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+感恩节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+thanksgiving,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+复活节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+元宵节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+七夕,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+儿童节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+教师节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+国庆节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+双十一,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+black friday,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+新年,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+光棍节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+冬至,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+光明节,KEEP_AS_REFERENCE,,节日/时效性场合词，不落在本轮四大场景范围内，作为参考保留
+香水,REPLACE,brand_business,裸品类词场景单一，替换为 perfume bottle / perfume box 等具体品牌资产表达
+perfume,REPLACE,brand_business,裸品类词场景单一，替换为 perfume bottle / perfume box 等具体品牌资产表达
+茶叶,REPLACE,brand_business,裸品类词场景单一，替换为 tea package 等具体品牌资产表达
+咖啡豆,REPLACE,brand_business,裸品类词场景单一，替换为 coffee bean package 等具体品牌资产表达
+巧克力,REPLACE,brand_business,裸品类词场景单一，替换为 chocolate box 等具体品牌资产表达
+护肤品,REPLACE,brand_business,裸品类词场景单一，替换为 skincare package 等具体品牌资产表达
+skincare,REPLACE,brand_business,裸品类词场景单一，替换为 skincare package 等具体品牌资产表达
+口红,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+首饰,KEEP_AS_REFERENCE,creative_merch,具体商品对象，映射 Creative/Merch 场景（饰品类周边）
+手表,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+包包,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+鞋子,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+童装,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+家纺,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+厨具,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+文具用品,REMOVE,,过于宽泛的商品大类词，新版已用 flashcard/notebook 等更具体的 Education 场景词覆盖同类需求
+玩具,KEEP_AS_REFERENCE,creative_merch,任务在 Creative/Merch 场景正面示例中明确列出（toy），直接沿用
+toys,KEEP_AS_REFERENCE,creative_merch,任务在 Creative/Merch 场景正面示例中明确列出（toy），直接沿用
+宠物用品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+保健品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+酒类,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+零食,REPLACE,brand_business,裸品类词场景单一，替换为 snack package 等具体品牌资产表达
+乳制品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+调味品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+花束,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+盆栽,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+香薰机,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+沙发家具,REMOVE,,复合/宽泛商品大类词，非具体单一对象
+灯具,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+地毯,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+窗帘,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+化妆刷,KEEP_AS_REFERENCE,,具体商品对象，不落在本轮四大场景范围内，作为参考保留
+护发产品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+婴儿用品,REMOVE,,过于宽泛的商品大类词，非具体单一对象
+学习,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+庆祝,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+送礼,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+装饰,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+收纳,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+打卡,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+分享,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+种草,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+促销,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+招募,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+招聘,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+开业,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+打折,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+预售,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+众筹,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+直播,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+拍照,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+手工制作,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+旅行,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+撸铁,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+冥想,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+阅读,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+烹饪,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别
+野餐,REMOVE,,动作/行为词（动词性），无单一明确视觉对象主体，属于任务隐含排除的模糊/抽象类别

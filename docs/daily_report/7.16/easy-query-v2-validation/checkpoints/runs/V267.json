@@ -1,0 +1,91 @@
+{
+  "query_id": "V267",
+  "query": "地球仪",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T15:59:06.754Z",
+  "completed_at": "2026-07-16T15:59:10.776Z",
+  "duration_ms": 4021,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "地球仪"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "globe illustration",
+        "world map poster",
+        "educational globe"
+      ],
+      "decomposition": {
+        "subject": "globe",
+        "output": "illustration"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "地球仪 globe globe illustration",
+        "slotKey": "rewrite",
+        "slotValue": "globe illustration",
+        "subjectBound": true
+      },
+      {
+        "text": "地球仪 globe world map poster",
+        "slotKey": "rewrite",
+        "slotValue": "world map poster",
+        "subjectBound": true
+      },
+      {
+        "text": "地球仪 globe educational globe",
+        "slotKey": "rewrite",
+        "slotValue": "educational globe",
+        "subjectBound": true
+      },
+      {
+        "text": "地球仪 globe",
+        "slotKey": "subject",
+        "slotValue": "globe",
+        "subjectBound": true
+      },
+      {
+        "text": "地球仪 globe illustration",
+        "slotKey": "output",
+        "slotValue": "illustration",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 5,
+    "usedPathsCount": 6,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

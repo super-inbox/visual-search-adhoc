@@ -1,0 +1,85 @@
+{
+  "query_id": "V316",
+  "query": "achievement certificate",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:23:49.511Z",
+  "completed_at": "2026-07-16T16:23:53.976Z",
+  "duration_ms": 4464,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "achievement",
+        "certificate"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "certificate of achievement",
+        "award certificate template",
+        "recognition certificate design"
+      ],
+      "decomposition": {
+        "output": "certificate"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "certificate of achievement",
+        "slotKey": "rewrite",
+        "slotValue": "certificate of achievement",
+        "subjectBound": false
+      },
+      {
+        "text": "award certificate template",
+        "slotKey": "rewrite",
+        "slotValue": "award certificate template",
+        "subjectBound": false
+      },
+      {
+        "text": "recognition certificate design",
+        "slotKey": "rewrite",
+        "slotValue": "recognition certificate design",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "certificate",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

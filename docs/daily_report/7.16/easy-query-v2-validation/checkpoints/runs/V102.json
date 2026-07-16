@@ -1,0 +1,87 @@
+{
+  "query_id": "V102",
+  "query": "perfume bottle",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:35:54.401Z",
+  "completed_at": "2026-07-16T14:35:57.460Z",
+  "duration_ms": 3058,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "perfume",
+        "bottle"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "scented perfume bottle",
+        "fragrance bottle design",
+        "decorative perfume container"
+      ],
+      "decomposition": {}
+    },
+    "candidatePaths": [
+      {
+        "text": "scented perfume bottle",
+        "slotKey": "rewrite",
+        "slotValue": "scented perfume bottle",
+        "subjectBound": false
+      },
+      {
+        "text": "fragrance bottle design",
+        "slotKey": "rewrite",
+        "slotValue": "fragrance bottle design",
+        "subjectBound": false
+      },
+      {
+        "text": "decorative perfume container",
+        "slotKey": "rewrite",
+        "slotValue": "decorative perfume container",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 1,
+    "postMergeCount": 1,
+    "dedupCount": 1,
+    "finalResultCount": 1,
+    "strictCount": 0,
+    "relaxedCount": 1,
+    "hasStrict": false,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-amazon-long-scroll-product-infographic-template-smart-hydration-water-bottle",
+        "title": "smart hydration water bottle",
+        "template_id": "template-amazon-long-scroll-product-infographic-template",
+        "tags": [],
+        "score": 2.16,
+        "strict_or_relaxed": "relaxed"
+      }
+    ]
+  }
+}

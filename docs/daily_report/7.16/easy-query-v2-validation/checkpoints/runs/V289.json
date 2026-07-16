@@ -1,0 +1,84 @@
+{
+  "query_id": "V289",
+  "query": "白板",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T16:10:12.450Z",
+  "completed_at": "2026-07-16T16:10:16.944Z",
+  "duration_ms": 4494,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "白板"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 0,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "whiteboard design",
+        "whiteboard illustrations",
+        "whiteboard templates"
+      ],
+      "decomposition": {
+        "subject": "whiteboard"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "白板 whiteboard whiteboard design",
+        "slotKey": "rewrite",
+        "slotValue": "whiteboard design",
+        "subjectBound": true
+      },
+      {
+        "text": "白板 whiteboard whiteboard illustrations",
+        "slotKey": "rewrite",
+        "slotValue": "whiteboard illustrations",
+        "subjectBound": true
+      },
+      {
+        "text": "白板 whiteboard whiteboard templates",
+        "slotKey": "rewrite",
+        "slotValue": "whiteboard templates",
+        "subjectBound": true
+      },
+      {
+        "text": "白板 whiteboard",
+        "slotKey": "subject",
+        "slotValue": "whiteboard",
+        "subjectBound": true
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 4,
+    "usedPathsCount": 5,
+    "preMergeCount": 0,
+    "postMergeCount": 0,
+    "dedupCount": 0,
+    "finalResultCount": 0,
+    "strictCount": 0,
+    "relaxedCount": 0,
+    "hasStrict": false,
+    "top10": []
+  }
+}

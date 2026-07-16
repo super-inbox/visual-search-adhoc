@@ -1,0 +1,213 @@
+{
+  "query_id": "V146",
+  "query": "tea box",
+  "mode": "D",
+  "d_enabled": true,
+  "g_enabled": true,
+  "started_at": "2026-07-16T14:58:05.415Z",
+  "completed_at": "2026-07-16T14:58:09.624Z",
+  "duration_ms": 4208,
+  "drift_check": {
+    "checked": 11,
+    "missing": 0,
+    "pageTsxSha256": "a193728563633789bf1f84c71c1e83f3c9e361dab6770e082798f1de344cff4c",
+    "searchTokensSha256": "38a1fa187d027b03ca1cc56df60f882b98d97324bfe32d43fc841979e0847ba4"
+  },
+  "catalog_size": 3209,
+  "openai_api_key_present": true,
+  "error": null,
+  "timeout": false,
+  "result": {
+    "tokens": {
+      "primary": [
+        "tea",
+        "box"
+      ],
+      "bigrams": [],
+      "aliasGroups": []
+    },
+    "initialThinCount": 1,
+    "rewriteTriggered": true,
+    "rewriteProviderCalled": true,
+    "rewriteError": null,
+    "multi": {
+      "rewrites": [
+        "tea storage box",
+        "tea gift box",
+        "tea packaging design"
+      ],
+      "decomposition": {
+        "output": "packaging"
+      }
+    },
+    "candidatePaths": [
+      {
+        "text": "tea storage box",
+        "slotKey": "rewrite",
+        "slotValue": "tea storage box",
+        "subjectBound": false
+      },
+      {
+        "text": "tea gift box",
+        "slotKey": "rewrite",
+        "slotValue": "tea gift box",
+        "subjectBound": false
+      },
+      {
+        "text": "tea packaging design",
+        "slotKey": "rewrite",
+        "slotValue": "tea packaging design",
+        "subjectBound": false
+      }
+    ],
+    "diagnostics": {
+      "rejectedSlots": [
+        {
+          "slotKey": "output",
+          "slotValue": "packaging",
+          "reason": "UNBOUND_NON_SUBJECT_SLOT"
+        }
+      ],
+      "emptyTokenPaths": [],
+      "noValidRewritePath": false
+    },
+    "executedPathCount": 3,
+    "usedPathsCount": 4,
+    "preMergeCount": 42,
+    "postMergeCount": 170,
+    "dedupCount": 170,
+    "finalResultCount": 3,
+    "strictCount": 3,
+    "relaxedCount": 0,
+    "hasStrict": true,
+    "top10": [
+      {
+        "rank": 1,
+        "result_id": "template-ip-creative-cultural-goods-mockup-set-panda-tea-master",
+        "title": "panda tea master",
+        "template_id": "template-ip-creative-cultural-goods-mockup-set",
+        "tags": [
+          "design",
+          "merch",
+          "mockups",
+          "character",
+          "animal",
+          "art-prints",
+          "illustration",
+          "whimsical",
+          "cozy",
+          "playful",
+          "watercolor",
+          "vintage",
+          "kawaii",
+          "stickers",
+          "lifestyle",
+          "culture",
+          "nature",
+          "interior",
+          "home-office-setup",
+          "food-and-drink",
+          "daily-life-grid",
+          "warm",
+          "serene",
+          "modern",
+          "stylish",
+          "vibrant",
+          "soft-light",
+          "composition",
+          "mood"
+        ],
+        "score": 3.7199999999999998,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 2,
+        "result_id": "template-food-product-packaging-design-matcha-powder",
+        "title": "matcha powder",
+        "template_id": "template-food-product-packaging-design",
+        "tags": [
+          "design",
+          "food",
+          "packaging",
+          "product",
+          "mockups",
+          "infographic",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "elegant",
+          "luxury-packaging",
+          "photorealistic",
+          "artistic",
+          "illustration",
+          "cosmetic-packaging",
+          "natural-light",
+          "healthy-habits",
+          "beverage-packaging",
+          "lifestyle",
+          "promotional-poster",
+          "seasonal",
+          "stylish",
+          "vintage",
+          "whimsical",
+          "kawaii",
+          "dynamic",
+          "studio",
+          "daily-life-grid"
+        ],
+        "score": 3.24,
+        "strict_or_relaxed": "strict"
+      },
+      {
+        "rank": 3,
+        "result_id": "template-brand-vi-full-visual-pack-mockup-bubble-tea-shop",
+        "title": "bubble tea shop",
+        "template_id": "template-brand-vi-full-visual-pack-mockup",
+        "tags": [
+          "cuisine",
+          "design",
+          "food",
+          "merch",
+          "mockups",
+          "stickers",
+          "posters",
+          "illustration",
+          "art-prints",
+          "modern",
+          "playful",
+          "vibrant",
+          "whimsical",
+          "urban",
+          "lifestyle",
+          "casual",
+          "promotional-poster",
+          "infographic",
+          "daily-life-grid",
+          "character",
+          "mascots",
+          "kawaii",
+          "y2k",
+          "y2k-revival",
+          "social-media-posts",
+          "branding",
+          "product-lineup",
+          "vintage",
+          "stylish",
+          "illustration",
+          "artistic",
+          "food-packaging",
+          "food-and-drink",
+          "shopping",
+          "restaurant",
+          "interior",
+          "interior-color-palettes",
+          "outdoor-patio-design",
+          "city",
+          "culture"
+        ],
+        "score": 3.24,
+        "strict_or_relaxed": "strict"
+      }
+    ]
+  }
+}
