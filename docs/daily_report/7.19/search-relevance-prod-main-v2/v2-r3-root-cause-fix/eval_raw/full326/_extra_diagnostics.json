@@ -1,0 +1,68 @@
+{
+  "newly_zero_vs_v0": [
+    {
+      "qid": 59,
+      "query": "puzzle"
+    },
+    {
+      "qid": 211,
+      "query": "online store banner"
+    },
+    {
+      "qid": 220,
+      "query": "\u4f18\u60e0\u5238"
+    },
+    {
+      "qid": 224,
+      "query": "\u79ef\u5206\u5361"
+    },
+    {
+      "qid": 258,
+      "query": "\u8bc1\u4e66"
+    },
+    {
+      "qid": 291,
+      "query": "microscope"
+    },
+    {
+      "qid": 294,
+      "query": "\u7b97\u76d8"
+    },
+    {
+      "qid": 315,
+      "query": "achievement certificate"
+    }
+  ],
+  "newly_zero_vs_r1": [
+    {
+      "qid": 211,
+      "query": "online store banner"
+    },
+    {
+      "qid": 224,
+      "query": "\u79ef\u5206\u5361"
+    },
+    {
+      "qid": 258,
+      "query": "\u8bc1\u4e66"
+    },
+    {
+      "qid": 291,
+      "query": "microscope"
+    },
+    {
+      "qid": 294,
+      "query": "\u7b97\u76d8"
+    },
+    {
+      "qid": 314,
+      "query": "\u8363\u8a89\u8bc1\u4e66"
+    }
+  ],
+  "rewrite_triggered_r1_to_r3": {
+    "n": 171,
+    "improved": 18,
+    "regressed": 14,
+    "unchanged": 139
+  }
+}

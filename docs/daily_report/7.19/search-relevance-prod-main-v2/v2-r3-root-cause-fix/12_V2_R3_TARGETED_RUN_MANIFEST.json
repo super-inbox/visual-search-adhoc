@@ -1,0 +1,106 @@
+{
+  "stage": "V2-R3 minimal fix implementation + targeted evaluation",
+  "date": "2026-07-19",
+  "branch": "baobao/search-relevance-prod-main-v2-r3-root-cause-fix-2026-07-19",
+  "pre_commit_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+  "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r3-2026-07-19",
+  "reference_versions": {
+    "v0": {
+      "sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+      "server_port": 4501,
+      "modified_this_stage": false
+    },
+    "v2_r1_frozen": {
+      "branch": "baobao/search-relevance-prod-main-v2-2026-07-19",
+      "sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+      "server_port": 4502,
+      "modified_this_stage": false
+    },
+    "v2_r2": {
+      "branch": "baobao/search-relevance-prod-main-v2-r2-2026-07-19",
+      "sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r2-2026-07-19",
+      "modified_this_stage": false
+    },
+    "original_curify_frontend": {
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend",
+      "modified_this_stage": false,
+      "note": "pre-existing uncommitted changes on branch baobao/search-relevance-phrase-alias-2026-07-09 present before this stage began, untouched by this stage"
+    },
+    "artifact_backup": {
+      "path": "/Users/baobaoli/Desktop/curify-frontend.zip",
+      "sha256_before": "67b3cf70e0aeeffa6f5b491407c689f21c897dbbd160374d94c9ede0984ef0ff",
+      "sha256_after": "67b3cf70e0aeeffa6f5b491407c689f21c897dbbd160374d94c9ede0984ef0ff",
+      "modified_this_stage": false
+    }
+  },
+  "engineering_checks": {
+    "typescript": { "command": "npx tsc --noEmit -p tsconfig.json", "exit_code": 0, "duration_s": 7.8 },
+    "unit_tests": { "command": "npx vitest run --config vitest.unit.config.ts", "exit_code": 0, "duration_s": 2.76, "files": 8, "tests": 143, "passed": 143, "failed": 0 },
+    "production_build": { "command": "npm run build", "exit_code": 0, "duration_s_wall": 61.6 }
+  },
+  "targeted_evaluation": {
+    "collector_script": "docs/daily_report/7.19/search-relevance-prod-main-v2/scripts/collector.mjs",
+    "judge_script": "docs/daily_report/7.19/search-relevance-prod-main-v2/scripts/judge.mjs",
+    "judge_model": "gpt-4o-mini",
+    "judge_rubric": "rubric-v1.1",
+    "servers": {
+      "v0": "http://localhost:4501 (next start, production build)",
+      "v2r1": "http://localhost:4502 (next start, production build)",
+      "v2r3": "http://localhost:4503 (next start, production build, this stage's code)"
+    },
+    "case_split_source": "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r3-root-cause-fix/03_V2_R3_CASE_SPLIT.csv",
+    "sets_run": ["calibration", "holdout", "previous_improvement_protection", "rewrite_invariant"],
+    "sets_not_run_live": ["functional_protection (structural invariants, verified via unit test suite instead)"],
+    "queries_run": 63,
+    "server_version_pairs_run": 189,
+    "first_pass_failures": 49,
+    "retry_pass_resolved": 46,
+    "remaining_unresolved": 3,
+    "remaining_unresolved_reason": "legitimate NO_JUDGEABLE_RESULTS LLM outcome (terse candidate titles), confirmed by direct raw-content inspection, not a call failure",
+    "query_text_corrections": [
+      { "query_id": "PROT_吉祥物", "from": "吉祥物 (mascot)", "to": "吉祥物", "reason": "English gloss in case-split CSV is a documentation artifact, not the actual query text" },
+      { "query_id": "PROT_贴纸", "from": "贴纸 (sticker)", "to": "贴纸", "reason": "same" },
+      { "query_id": "PROT_咖啡馆菜单", "from": "咖啡馆菜单 (cafe menu)", "to": "咖啡馆菜单", "reason": "same" },
+      { "query_id": "PROT_横幅", "from": "横幅 (banner, generic)", "to": "横幅", "reason": "same" }
+    ],
+    "no_reuse_of_historical_v0_v2r1_scores": true,
+    "reuse_decision_reason": "Full reuse-condition equivalence (query set/SHA/catalog/collection method/judge/rubric/etc.) could not be confirmed for all needed rows (several protection-set queries only had qualitative historical evidence, not a rubric-v1.1 score) -- per charter instruction, all three versions were re-run fresh end-to-end rather than mixing reused and fresh numbers.",
+    "raw_output_directory": "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r3-root-cause-fix/raw_targeted_eval/",
+    "raw_output_files": [
+      "raw_targeted_eval/full_eval_out.json (per-query, per-version collected + judged results, 63 rows)",
+      "raw_targeted_eval/full_eval_run.log",
+      "raw_targeted_eval/retry.log",
+      "raw_targeted_eval/run_targeted_eval.mjs",
+      "raw_targeted_eval/retry_failed.mjs"
+    ]
+  },
+  "gate_result": "V2_R3_TARGETED_FIX_COMPLETE",
+  "full_326_run": false,
+  "old_328_run": false,
+  "hard68_run": false,
+  "p0_12_run": false,
+  "new_llm_calls_added": false,
+  "hybrid_search_added": false,
+  "hyper_research_added": false,
+  "google_image_added": false,
+  "manual_query_blacklist_added": false,
+  "dedicated_strict_relaxed_gate_added": false,
+  "catalog_gap_policy_changed": false,
+  "never_zero_policy_changed": false,
+  "push": false,
+  "pr": false,
+  "merge": false,
+  "deploy": false,
+  "output_files": [
+    "07_V0_R1_R3_TARGETED_COMPARISON.csv",
+    "08_V2_R3_TARGETED_GATE_RESULT.md",
+    "09_V2_R3_CONFIG_LOCK.json",
+    "10_V2_R3_IMPLEMENTATION_SUMMARY.md",
+    "11_V2_R3_ENGINEERING_CHECKS.md",
+    "12_V2_R3_TARGETED_RUN_MANIFEST.json",
+    "RUN_LOG.md"
+  ]
+}

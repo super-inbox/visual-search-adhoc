@@ -1,0 +1,216 @@
+{
+  "reg50_n": 50,
+  "reg50_fixed_r1_to_r3": 17,
+  "reg50_new_regression_r1_to_r3": 1,
+  "reg50_unchanged": 32,
+  "new5_detail": [
+    {
+      "query_id": 97,
+      "query": "coffee package",
+      "l0": "PARTIAL",
+      "l1": "FAIL",
+      "l3": "PARTIAL",
+      "s0": 37.0,
+      "s1": 0.0,
+      "s3": 5.0,
+      "z0": false,
+      "z1": false,
+      "z3": false,
+      "c01": "regressed",
+      "c03": "unchanged",
+      "c13": "improved"
+    },
+    {
+      "query_id": 112,
+      "query": "\u5316\u5986\u54c1\u5305\u88c5",
+      "l0": "PARTIAL",
+      "l1": "FAIL",
+      "l3": "PARTIAL",
+      "s0": 3.0,
+      "s1": 0.0,
+      "s3": 3.0,
+      "z0": false,
+      "z1": false,
+      "z3": false,
+      "c01": "regressed",
+      "c03": "unchanged",
+      "c13": "improved"
+    },
+    {
+      "query_id": 114,
+      "query": "\u9152\u6807",
+      "l0": "PARTIAL",
+      "l1": "FAIL",
+      "l3": "FAIL",
+      "s0": 42.0,
+      "s1": 7.0,
+      "s3": 7.0,
+      "z0": false,
+      "z1": false,
+      "z3": false,
+      "c01": "regressed",
+      "c03": "regressed",
+      "c13": "unchanged"
+    },
+    {
+      "query_id": 116,
+      "query": "\u96f6\u98df\u5305\u88c5",
+      "l0": "PARTIAL",
+      "l1": "FAIL",
+      "l3": "PARTIAL",
+      "s0": 27.0,
+      "s1": 7.0,
+      "s3": 30.0,
+      "z0": false,
+      "z1": false,
+      "z3": false,
+      "c01": "regressed",
+      "c03": "unchanged",
+      "c13": "improved"
+    },
+    {
+      "query_id": 122,
+      "query": "\u4ea7\u54c1\u6807\u7b7e",
+      "l0": "PARTIAL",
+      "l1": "UNJUDGABLE",
+      "l3": "PARTIAL",
+      "s0": 42.0,
+      "s1": null,
+      "s3": 42.0,
+      "z0": false,
+      "z1": false,
+      "z3": false,
+      "c01": "regressed",
+      "c03": "unchanged",
+      "c13": "improved"
+    }
+  ],
+  "flagged_cases": {
+    "coffee cup": [
+      {
+        "query_id": 147,
+        "query": "coffee cup",
+        "l0": "FAIL",
+        "l1": "FAIL",
+        "l3": "FAIL",
+        "s0": 0.0,
+        "s1": 0.0,
+        "s3": 0.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "unchanged",
+        "c03": "unchanged",
+        "c13": "unchanged"
+      }
+    ],
+    "\u8d34\u7eb8": [
+      {
+        "query_id": 12,
+        "query": "\u8d34\u7eb8",
+        "l0": "PARTIAL",
+        "l1": "PASS",
+        "l3": "PASS",
+        "s0": 42.0,
+        "s1": 100.0,
+        "s3": 62.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "improved",
+        "c03": "improved",
+        "c13": "unchanged"
+      }
+    ],
+    "\u5496\u5561\u9986\u83dc\u5355": [
+      {
+        "query_id": 126,
+        "query": "\u5496\u5561\u9986\u83dc\u5355",
+        "l0": "PARTIAL",
+        "l1": "PARTIAL",
+        "l3": "PARTIAL",
+        "s0": 15.0,
+        "s1": 27.0,
+        "s3": 15.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "unchanged",
+        "c03": "unchanged",
+        "c13": "unchanged"
+      }
+    ],
+    "\u5409\u7965\u7269": [
+      {
+        "query_id": 8,
+        "query": "\u5409\u7965\u7269",
+        "l0": "FAIL",
+        "l1": "PASS",
+        "l3": "PASS",
+        "s0": 0.0,
+        "s1": 82.0,
+        "s3": 100.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "improved",
+        "c03": "improved",
+        "c13": "unchanged"
+      }
+    ],
+    "statue": [
+      {
+        "query_id": 31,
+        "query": "statue",
+        "l0": "FAIL",
+        "l1": "PASS",
+        "l3": "FAIL",
+        "s0": 22.0,
+        "s1": 100.0,
+        "s3": 25.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "improved",
+        "c03": "unchanged",
+        "c13": "regressed"
+      }
+    ],
+    "periodic table": [
+      {
+        "query_id": 275,
+        "query": "periodic table",
+        "l0": "FAIL",
+        "l1": "FAIL",
+        "l3": "FAIL",
+        "s0": 0.0,
+        "s1": 0.0,
+        "s3": 0.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "unchanged",
+        "c03": "unchanged",
+        "c13": "unchanged"
+      }
+    ],
+    "globe": [
+      {
+        "query_id": 267,
+        "query": "globe",
+        "l0": "FAIL",
+        "l1": "FAIL",
+        "l3": "FAIL",
+        "s0": 0.0,
+        "s1": 0.0,
+        "s3": 0.0,
+        "z0": false,
+        "z1": false,
+        "z3": false,
+        "c01": "unchanged",
+        "c03": "unchanged",
+        "c13": "unchanged"
+      }
+    ]
+  }
+}

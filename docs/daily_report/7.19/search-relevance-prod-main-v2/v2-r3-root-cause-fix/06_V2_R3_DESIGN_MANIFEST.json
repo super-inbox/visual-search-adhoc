@@ -1,0 +1,140 @@
+{
+  "stage": "V2-R3 root-cause revalidation and minimal-fix design",
+  "date": "2026-07-19",
+  "v2_r3_branch": "baobao/search-relevance-prod-main-v2-r3-root-cause-fix-2026-07-19",
+  "v2_r3_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+  "v2_r3_worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r3-2026-07-19",
+  "reference_versions": {
+    "v0_production_baseline": {
+      "sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+      "modified_this_stage": false
+    },
+    "v2_r1_frozen": {
+      "branch": "baobao/search-relevance-prod-main-v2-r1-frozen-2026-07-19",
+      "sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+      "modified_this_stage": false
+    },
+    "v2_r2_investigation": {
+      "branch": "baobao/search-relevance-prod-main-v2-r2-2026-07-19",
+      "sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r2-2026-07-19",
+      "modified_this_stage": false
+    },
+    "artifact_backup": {
+      "branch": "baobao/search-relevance-v2-r1-r2-artifacts-2026-07-19",
+      "commit": "e42b80246c94e267fc912d66c0c6891a47befa51",
+      "worktree": "/Users/baobaoli/Desktop/visual-search-adhoc-v2-artifacts-2026-07-19",
+      "modified_this_stage": false
+    }
+  },
+  "source_reports": [
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r2-relaxed-gate/01_RELAXED_REGRESSION_ROOT_CAUSE.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r2-relaxed-gate/02_REGRESSED_QUERY_RELAXED_TRACE.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/31_STATISTICAL_COMPARISON.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/32_REGRESSION_AND_IMPROVEMENT_CASEBOOK.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/33_GO_NO_GO_RECOMMENDATION_ZH.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/34_RUN_MANIFEST.json",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/RUN_LOG.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/07_V0_TARGET_CASE_RECONFIRMATION.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/15_BROAD_TEMPLATE_ROOT_CAUSE_ANALYSIS.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/16_BROAD_NOISE_BEFORE_AFTER_SUMMARY.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/01_V0_OLD328_RESULTS.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/02_V2_R1_OLD328_RESULTS.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/03_V0_V2_R1_OLD328_PAIRED.csv",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/04_OLD328_STATISTICAL_COMPARISON.md",
+    "docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/05_V2_R1_STATUS_AFTER_328_ZH.md",
+    "lib/relevanceScorer.ts (curify-frontend-search-v2-2026-07-19 @ 32f6282a)",
+    "lib/relevanceScorerConfig.ts (curify-frontend-search-v2-2026-07-19 @ 32f6282a)",
+    "lib/searchPhraseProtection.ts (curify-frontend-search-v2-2026-07-19 @ 32f6282a)",
+    "lib/__tests__/relevanceScorer.test.ts (curify-frontend-search-v2-2026-07-19 @ 32f6282a)",
+    "app/[locale]/(public)/search/page.tsx (curify-frontend-search-v2-2026-07-19 @ 32f6282a)"
+  ],
+  "root_cause_counts": {
+    "ORIGINAL_TEMPLATE_OVERPROMOTION": 22,
+    "RELAXED_SCORE_TOO_HIGH_SENSE_COLLISION": 18,
+    "CATALOG_GAP_NEVER_ZERO_FLOOR": 5,
+    "WEAK_RELAXED_DILUTION_PARTIAL": 5,
+    "total_regressions": 50,
+    "reclassified_from_v2_r2": 0,
+    "unknown": 0
+  },
+  "calibration_count": 14,
+  "holdout_count": 37,
+  "protection_count": {
+    "previous_improvement_protection": 8,
+    "rewrite_invariant": 4,
+    "functional_protection": 6,
+    "total": 18
+  },
+  "proposed_mechanisms": [
+    {
+      "id": "A",
+      "name": "original_candidate_preservation_ranking_decouple",
+      "addresses_root_cause": "ORIGINAL_TEMPLATE_OVERPROMOTION",
+      "cases_addressed": 22,
+      "files": ["app/[locale]/(public)/search/page.tsx"],
+      "summary": "Score template-promoted sibling inspirations against their OWN title/tags blob (two-tier: own-blob evidence when present, template-level evidence as floor when absent) instead of hardcoding tagsHit=true and deriving titleHit/subjectPresent solely from the template. Retrieval/inclusion unchanged."
+    },
+    {
+      "id": "B",
+      "name": "required_multi_term_coverage_plus_isolated_hit_cap",
+      "addresses_root_cause": "RELAXED_SCORE_TOO_HIGH_SENSE_COLLISION",
+      "cases_addressed": 18,
+      "incidentally_improves": "WEAK_RELAXED_DILUTION_PARTIAL (above-floor subset, 5 cases)",
+      "files": ["lib/relevanceScorer.ts", "lib/relevanceScorerConfig.ts"],
+      "summary": "Add coverageRatio (fraction of query's primary tokens present, not just the longest) gating subjectPresent for multi-token queries; cap the combined whole_token_title+whole_token_tags contribution when a candidate's only evidence is a single isolated whole-token hit with no phrase/coverage corroboration."
+    }
+  ],
+  "excluded_mechanisms": [
+    {
+      "name": "dedicated_relaxed_strict_admission_gate",
+      "reason": "structurally can only touch WEAK_RELAXED_DILUTION_PARTIAL (10% of regressions, and only partially); cannot reach the 45/50 (90%) explained by ORIGINAL_TEMPLATE_OVERPROMOTION (isOriginal, floor-protected by design) and RELAXED_SCORE_TOO_HIGH_SENSE_COLLISION (already scores above any reasonable floor)"
+    },
+    {
+      "name": "binary_hasStrict_gate_reinstatement",
+      "reason": "explicitly prohibited by charter; would re-break V2-R1's confirmed wins (coffee cup, statue, 吉祥物, 贴纸) that came from unifying strict/relaxed into one scored pool"
+    },
+    {
+      "name": "complex_multilayer_admission_gate",
+      "reason": "explicitly prohibited by charter; adds surface area without addressing the 90% of regressions outside the relaxed-admission mechanism's reach"
+    },
+    {
+      "name": "large_manual_wrong_sense_blacklist",
+      "reason": "explicitly prohibited by charter (\"不增加大规模歧义词黑名单\"); coverage/isolation rules in mechanism B are general token-overlap arithmetic, not per-word entries"
+    },
+    {
+      "name": "new_llm_call_for_sense_disambiguation",
+      "reason": "explicitly prohibited by charter (\"不新增LLM请求\")"
+    },
+    {
+      "name": "standalone_category_topic_consistency_term",
+      "reason": "no case in the 50 regressions was diagnosed as requiring it beyond what mechanism B's coverage/isolation rules already explain; adding an unevidenced signal would violate the minimal-fix / no-mechanical-implementation discipline already established in relevanceScorer.ts's own header comment"
+    },
+    {
+      "name": "catalog_gap_code_change_this_round",
+      "reason": "see 04_CATALOG_GAP_POLICY_PROPOSAL.md -- no candidate exists to rank higher for the 5 CATALOG_GAP_NEVER_ZERO_FLOOR cases; not a ranking-solvable problem"
+    }
+  ],
+  "code_modified": false,
+  "tests_run": false,
+  "evaluation_run": false,
+  "full_326_run": false,
+  "old_328_run": false,
+  "hard68_run": false,
+  "p0_12_run": false,
+  "push": false,
+  "pr": false,
+  "merge": false,
+  "deploy": false,
+  "output_files": [
+    "01_V2_R3_ROOT_CAUSE_REVALIDATION.md",
+    "02_V2_R3_REGRESSION_TRACE.csv",
+    "03_V2_R3_CASE_SPLIT.csv",
+    "04_CATALOG_GAP_POLICY_PROPOSAL.md",
+    "05_V2_R3_MINIMAL_FIX_DESIGN.md",
+    "06_V2_R3_DESIGN_MANIFEST.json"
+  ],
+  "design_gate_result": "V2_R3_DESIGN_READY"
+}

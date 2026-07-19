@@ -1,0 +1,327 @@
+query_id,query,language,scenario,category,v0_label,v2r1_label,v2r3_label,v0_score,v2r1_score,v2r3_score,v0_zero,v2r1_zero,v2r3_zero,v0_total,v2r1_total,v2r3_total,v0_to_r1_change,v0_to_r3_change,r1_to_r3_change,v0_to_r1_label_upgrade,v0_to_r1_label_downgrade,v0_to_r3_label_upgrade,v0_to_r3_label_downgrade,r1_to_r3_label_upgrade,r1_to_r3_label_downgrade,in_original_50_regression_set,in_targeted_5_new_regression_set
+0,玩具,zh,creative_merch,toy,FAIL,FAIL,PARTIAL,0.0,2.0,7.0,false,false,false,21,21,21,unchanged,improved,improved,False,False,True,False,True,False,False,False
+1,toy,en,creative_merch,toy,FAIL,PARTIAL,PARTIAL,0.0,30.0,30.0,false,false,false,14,14,14,improved,improved,unchanged,True,False,True,False,False,False,False,False
+2,手办,zh,creative_merch,figure,PARTIAL,FAIL,FAIL,42.0,0.0,0.0,false,false,false,11,10,11,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+3,figure,en,creative_merch,figure,PASS,PARTIAL,PASS,83.0,37.0,55.0,false,false,false,92,95,98,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+4,毛绒玩具,zh,creative_merch,plush,FAIL,FAIL,PARTIAL,0.0,0.0,42.0,false,false,false,31,169,2,unchanged,improved,improved,False,False,True,False,True,False,False,False
+5,plush,en,creative_merch,plush,FAIL,FAIL,FAIL,15.0,65.0,0.0,false,false,false,90,8,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+6,娃娃,zh,creative_merch,doll,PARTIAL,FAIL,FAIL,42.0,0.0,0.0,false,false,false,3,8,10,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+7,doll,en,creative_merch,doll,PARTIAL,FAIL,FAIL,25.0,7.0,7.0,false,false,false,7,7,7,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+8,吉祥物,zh,creative_merch,mascot,FAIL,PASS,PASS,0.0,82.0,100.0,false,false,false,43,43,43,improved,improved,unchanged,True,False,True,False,False,False,False,False
+9,mascot,en,creative_merch,mascot,PASS,PASS,PASS,55.0,100.0,95.0,false,false,false,53,55,55,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+10,卡通形象,zh,creative_merch,character,PARTIAL,PARTIAL,PARTIAL,10.0,10.0,47.0,false,false,false,15,15,15,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+11,character,en,creative_merch,character,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+12,贴纸,zh,creative_merch,sticker,PARTIAL,PASS,PASS,42.0,100.0,62.0,false,false,false,96,97,97,improved,improved,unchanged,True,False,True,False,False,False,False,False
+13,sticker,en,creative_merch,sticker,PARTIAL,PARTIAL,PASS,42.0,42.0,100.0,false,false,false,97,97,97,unchanged,improved,improved,False,False,True,False,True,False,False,False
+14,钥匙扣,zh,creative_merch,keychain,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,19,19,19,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+15,keychain,en,creative_merch,keychain,FAIL,FAIL,FAIL,0.0,0.0,17.0,false,false,false,19,19,19,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+16,收藏品,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,18,18,18,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+17,collectible,en,creative_merch,collectible,FAIL,FAIL,PARTIAL,0.0,0.0,47.0,false,false,false,98,98,99,unchanged,improved,improved,False,False,True,False,True,False,False,False
+18,盲盒,zh,creative_merch,blind_box,PARTIAL,FAIL,FAIL,42.0,0.0,0.0,false,false,false,2,8,8,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+19,blind box,en,creative_merch,blind_box,PARTIAL,FAIL,FAIL,42.0,0.0,0.0,false,false,false,2,43,60,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+20,动作人偶,zh,creative_merch,figure,FAIL,PARTIAL,FAIL,0.0,27.0,0.0,false,false,false,134,162,121,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+21,action figure,en,creative_merch,figure,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,99,99,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+22,泰迪熊,zh,creative_merch,plush,PARTIAL,FAIL,FAIL,39.0,14.0,0.0,false,false,false,7,7,62,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+23,teddy bear,en,creative_merch,plush,PARTIAL,FAIL,FAIL,17.0,0.0,3.0,false,false,false,362,7,84,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+24,扭蛋,zh,creative_merch,blind_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,true,false,46,0,135,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+25,capsule toy,en,creative_merch,blind_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,359,21,2,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+26,卡牌,zh,creative_merch,collectible,PARTIAL,FAIL,FAIL,27.0,0.0,0.0,false,false,false,180,168,168,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+27,trading card,en,creative_merch,collectible,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,34,98,99,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+28,模型,zh,creative_merch,collectible,FAIL,PARTIAL,FAIL,0.0,42.0,0.0,false,false,false,59,59,59,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+29,model kit,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,191,124,97,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+30,雕像,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,6,6,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+31,statue,en,creative_merch,collectible,FAIL,PASS,FAIL,22.0,100.0,25.0,false,false,false,103,2,8,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+32,帆布袋,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,37,37,37,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+33,tote bag,en,creative_merch,merch_item,PARTIAL,FAIL,FAIL,7.0,0.0,0.0,false,false,false,47,49,49,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+34,手机壳,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,11,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+35,phone case,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,16,23,23,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+36,徽章,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,38,38,38,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+37,badge,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,35,35,35,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+38,胸针,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,100,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+39,enamel pin,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,190,86,86,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+40,冰箱贴,zh,creative_merch,merch_item,PARTIAL,PARTIAL,FAIL,0.0,14.0,0.0,false,false,false,125,118,129,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+41,magnet,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,299,3,3,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+42,挂绳,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,11,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+43,lanyard,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,11,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+44,迷你手办,zh,creative_merch,figure,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,25,8,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+45,mini figure,en,creative_merch,figure,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,96,98,100,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+46,潮流公仔,zh,creative_merch,collectible,PARTIAL,PARTIAL,PARTIAL,15.0,20.0,20.0,false,false,false,33,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+47,vinyl toy,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,9.0,0.0,false,false,false,99,17,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+48,潮流手办,zh,creative_merch,figure,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,33,38,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+49,pop figure,en,creative_merch,figure,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,97,97,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+50,惊喜盒子,zh,creative_merch,blind_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,184,162,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+51,mystery box,en,creative_merch,blind_box,PARTIAL,FAIL,FAIL,42.0,7.0,0.0,false,false,false,2,115,45,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+52,挂件,zh,creative_merch,merch_item,PASS,PARTIAL,PARTIAL,87.0,57.0,57.0,false,false,false,6,9,9,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+53,charm,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,6,6,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+54,马克杯,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,40,40,40,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+55,collectible mug,en,creative_merch,merch_item,FAIL,PARTIAL,PARTIAL,0.0,22.0,25.0,false,false,false,122,123,52,improved,improved,unchanged,True,False,True,False,False,False,False,False
+56,抱枕,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,14,14,14,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+57,plush pillow,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,190,85,84,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+58,拼图,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,3,164,157,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+59,puzzle,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,true,true,108,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+60,积木,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,13,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+61,building blocks,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,15,15,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+62,公仔盒,zh,creative_merch,merch_item,PARTIAL,PARTIAL,PARTIAL,12.0,19.0,19.0,false,false,false,105,9,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+63,sticker pack,en,creative_merch,merch_item,PARTIAL,PASS,PASS,24.0,100.0,95.0,false,false,false,31,89,89,improved,improved,unchanged,True,False,True,False,False,False,False,False
+64,文创手办,zh,creative_merch,figure,FAIL,PARTIAL,PARTIAL,0.0,20.0,20.0,false,false,false,96,36,36,improved,improved,unchanged,True,False,True,False,False,False,False,False
+65,cultural relic figure,en,creative_merch,figure,PASS,FAIL,FAIL,65.0,0.0,0.0,false,false,false,32,112,98,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+66,博物馆文创,zh,creative_merch,merch_item,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,27,27,27,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+67,museum souvenir,en,creative_merch,merch_item,PARTIAL,PARTIAL,PARTIAL,30.0,35.0,42.0,false,false,false,289,111,48,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+68,国潮公仔,zh,creative_merch,figure,PARTIAL,PARTIAL,PARTIAL,27.0,29.0,29.0,false,false,false,33,35,35,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+69,IP figure,en,creative_merch,figure,PARTIAL,PARTIAL,FAIL,42.0,42.0,0.0,false,false,false,16,96,96,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+70,动漫周边,zh,creative_merch,merch_item,PASS,PARTIAL,PASS,100.0,42.0,100.0,false,false,false,16,16,16,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+71,anime merch,en,creative_merch,merch_item,PARTIAL,PARTIAL,PARTIAL,47.0,47.0,47.0,false,false,false,19,104,104,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+72,明信片套装,zh,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,53,46,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+73,postcard set,en,creative_merch,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,83,42,42,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+74,艺术微喷,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,371,165,167,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+75,art print,en,creative_merch,collectible,PASS,PASS,PASS,62.0,45.0,45.0,false,false,false,111,113,117,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+76,摇头公仔,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,93,6,94,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+77,bobblehead,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,false,0,0,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+78,场景模型,zh,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,88,133,128,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+79,diorama,en,creative_merch,collectible,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+80,角色卡通贴纸,zh,creative_merch,sticker,PASS,PASS,PASS,100.0,100.0,55.0,false,false,false,35,35,35,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+81,character sticker pack,en,creative_merch,sticker,PASS,PASS,PASS,65.0,77.0,77.0,false,false,false,28,81,81,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+82,标志,zh,brand_business,logo,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,115,115,121,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+83,logo,en,brand_business,logo,FAIL,FAIL,PASS,0.0,0.0,57.0,false,false,false,61,61,61,unchanged,improved,improved,False,False,True,False,True,False,False,False
+84,包装,zh,brand_business,package,FAIL,PASS,PASS,0.0,100.0,100.0,false,false,false,90,96,96,improved,improved,unchanged,True,False,True,False,False,False,False,False
+85,package,en,brand_business,package,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,5,5,5,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+86,标签,zh,brand_business,label,FAIL,FAIL,PARTIAL,0.0,0.0,12.0,false,false,false,119,119,121,unchanged,improved,improved,False,False,True,False,True,False,False,False
+87,label,en,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,99,99,99,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+88,瓶子,zh,brand_business,bottle,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,13,13,13,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+89,bottle,en,brand_business,bottle,PASS,PASS,PASS,72.0,100.0,100.0,false,false,false,4,4,4,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+90,菜单,zh,brand_business,menu,PARTIAL,PARTIAL,PASS,37.0,42.0,77.0,false,false,false,59,59,59,unchanged,improved,improved,False,False,True,False,True,False,False,False
+91,menu,en,brand_business,menu,PARTIAL,FAIL,PARTIAL,42.0,7.0,42.0,false,false,false,34,34,34,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+92,名片,zh,brand_business,business_card,FAIL,FAIL,FAIL,0.0,0.0,7.0,false,false,false,8,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+93,business card,en,brand_business,business_card,FAIL,PARTIAL,PARTIAL,0.0,42.0,30.0,false,false,false,95,115,113,improved,improved,unchanged,True,False,True,False,False,False,False,False
+94,产品盒,zh,brand_business,product_box,FAIL,PARTIAL,PARTIAL,0.0,27.0,27.0,false,false,false,182,147,143,improved,improved,unchanged,True,False,True,False,False,False,False,False
+95,product box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,34,111,110,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+96,咖啡包装,zh,brand_business,package,PASS,PARTIAL,PARTIAL,62.0,12.0,12.0,false,false,false,118,125,125,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+97,coffee package,en,brand_business,package,PARTIAL,FAIL,PARTIAL,37.0,0.0,5.0,false,false,false,190,126,126,regressed,unchanged,improved,False,True,False,False,True,False,True,True
+98,餐厅菜单,zh,brand_business,menu,FAIL,FAIL,FAIL,0.0,7.0,0.0,false,false,false,47,47,47,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+99,restaurant menu,en,brand_business,menu,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,28,69,69,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+100,香水瓶,zh,brand_business,bottle,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,6,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+101,perfume bottle,en,brand_business,bottle,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,190,4,4,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+102,香水盒,zh,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,94,6,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+103,perfume box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,110,43,43,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+104,茶叶包装,zh,brand_business,package,FAIL,FAIL,FAIL,0.0,0.0,12.0,false,false,false,191,175,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+105,tea package,en,brand_business,package,FAIL,FAIL,FAIL,7.0,0.0,0.0,false,false,false,191,97,101,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+106,咖啡豆包装,zh,brand_business,package,PARTIAL,PARTIAL,PARTIAL,37.0,52.0,52.0,false,false,false,113,101,101,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+107,coffee bean package,en,brand_business,package,PARTIAL,FAIL,FAIL,37.0,0.0,19.0,false,false,false,20,14,7,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+108,巧克力礼盒,zh,brand_business,product_box,PARTIAL,PARTIAL,PARTIAL,32.0,35.0,35.0,false,false,false,57,45,45,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+109,chocolate box,en,brand_business,product_box,PARTIAL,PARTIAL,PARTIAL,35.0,35.0,35.0,false,false,false,55,119,119,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+110,护肤品包装,zh,brand_business,package,PARTIAL,PARTIAL,FAIL,17.0,17.0,0.0,false,false,false,98,110,112,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+111,skincare package,en,brand_business,package,PARTIAL,PARTIAL,PARTIAL,32.0,32.0,13.0,false,false,false,108,9,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+112,化妆品包装,zh,brand_business,package,PARTIAL,FAIL,PARTIAL,3.0,0.0,3.0,false,false,false,36,178,35,regressed,unchanged,improved,False,True,False,False,True,False,True,True
+113,cosmetic package,en,brand_business,package,PARTIAL,PARTIAL,FAIL,30.0,20.0,0.0,false,false,false,196,150,181,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+114,酒标,zh,brand_business,label,PARTIAL,FAIL,FAIL,42.0,7.0,7.0,false,false,false,194,154,8,regressed,regressed,unchanged,False,True,False,True,False,False,True,True
+115,wine label,en,brand_business,label,PARTIAL,FAIL,FAIL,30.0,0.0,0.0,false,false,false,194,109,109,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+116,零食包装,zh,brand_business,package,PARTIAL,FAIL,PARTIAL,27.0,7.0,30.0,false,false,false,191,181,15,regressed,unchanged,improved,False,True,False,False,True,False,True,True
+117,snack package,en,brand_business,package,PARTIAL,FAIL,PARTIAL,22.0,0.0,10.0,false,false,false,192,24,94,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+118,礼品盒,zh,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,188,168,38,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+119,gift box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,48,80,80,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+120,购物袋,zh,brand_business,merch_item,FAIL,PARTIAL,PARTIAL,17.0,19.0,19.0,false,false,false,188,5,5,improved,improved,unchanged,True,False,True,False,False,False,False,False
+121,shopping bag,en,brand_business,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,13,104,104,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+122,产品标签,zh,brand_business,label,PARTIAL,UNJUDGABLE,PARTIAL,42.0,,42.0,false,false,false,89,89,89,regressed,unchanged,improved,False,True,False,False,True,False,True,True
+123,product label,en,brand_business,label,PARTIAL,PARTIAL,PARTIAL,42.0,37.0,37.0,false,false,false,47,108,108,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+124,烘焙包装,zh,brand_business,package,FAIL,PARTIAL,FAIL,0.0,35.0,0.0,false,false,false,192,111,88,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+125,bakery package,en,brand_business,package,PARTIAL,FAIL,PARTIAL,34.0,0.0,17.0,false,false,false,8,88,18,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+126,咖啡馆菜单,zh,brand_business,menu,PARTIAL,PARTIAL,PARTIAL,15.0,27.0,15.0,false,false,false,4,22,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+127,cafe menu,en,brand_business,menu,PARTIAL,PARTIAL,PARTIAL,25.0,19.0,19.0,false,false,false,301,113,96,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+128,店招,zh,brand_business,signage,FAIL,PARTIAL,PARTIAL,0.0,15.0,17.0,false,false,false,193,10,11,improved,improved,unchanged,True,False,True,False,False,False,False,False
+129,shop sign,en,brand_business,signage,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,9,26,26,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+130,门店招牌,zh,brand_business,signage,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,187,113,143,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+131,storefront sign,en,brand_business,signage,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,200,12,87,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+132,产品吊牌,zh,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,14,14,14,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+133,product tag,en,brand_business,label,FAIL,PARTIAL,PASS,0.0,30.0,100.0,false,false,false,135,142,143,improved,improved,improved,True,False,True,False,True,False,False,False
+134,价格标签,zh,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+135,price tag,en,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+136,服装吊牌,zh,brand_business,label,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,183,161,168,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+137,clothing tag,en,brand_business,label,PARTIAL,FAIL,PARTIAL,12.0,0.0,12.0,false,false,false,181,51,120,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+138,首饰盒,zh,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,56,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+139,jewelry box,en,brand_business,product_box,UNJUDGABLE,FAIL,FAIL,,0.0,0.0,false,false,false,62,52,52,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+140,蜡烛标签,zh,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,11,11,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+141,candle label,en,brand_business,label,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,29,29,29,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+142,香皂包装,zh,brand_business,package,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,111,106,111,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+143,soap package,en,brand_business,package,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,109,14,14,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+144,茶叶罐,zh,brand_business,product_box,PARTIAL,PARTIAL,FAIL,32.0,32.0,0.0,false,false,false,20,10,10,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+145,tea box,en,brand_business,product_box,PARTIAL,PARTIAL,PARTIAL,15.0,27.0,27.0,false,false,false,111,62,59,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+146,咖啡杯,zh,brand_business,cup,PASS,PASS,PASS,100.0,100.0,100.0,false,false,false,2,2,2,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+147,coffee cup,en,brand_business,cup,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,364,188,188,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+148,咖啡杯套,zh,brand_business,cup,PARTIAL,FAIL,FAIL,42.0,9.0,9.0,false,false,false,2,8,8,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+149,coffee cup sleeve,en,brand_business,cup,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,117,44,32,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+150,外卖餐盒,zh,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,299,14,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+151,takeout box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,112,43,74,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+152,饮料瓶,zh,brand_business,bottle,FAIL,FAIL,FAIL,19.0,19.0,19.0,false,false,false,5,5,5,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+153,drink bottle,en,brand_business,bottle,PASS,PARTIAL,PARTIAL,100.0,32.0,32.0,false,false,false,2,169,111,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+154,水瓶标签,zh,brand_business,label,PARTIAL,PARTIAL,PARTIAL,32.0,12.0,12.0,false,false,false,29,29,29,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+155,water bottle label,en,brand_business,label,PARTIAL,FAIL,PARTIAL,12.0,12.0,42.0,false,false,false,29,24,21,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+156,信封,zh,brand_business,stationery,PASS,PASS,PASS,95.0,75.0,95.0,false,false,false,11,17,11,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+157,envelope,en,brand_business,stationery,PARTIAL,PARTIAL,PARTIAL,67.0,67.0,67.0,false,false,false,9,9,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+158,手提袋,zh,brand_business,merch_item,FAIL,FAIL,FAIL,22.0,7.0,0.0,false,false,false,188,169,36,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+159,paper bag,en,brand_business,merch_item,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,156,96,96,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+160,蛋糕盒,zh,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,96,7,10,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+161,cake box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,54,62,62,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+162,月饼礼盒,zh,brand_business,product_box,FAIL,FAIL,PARTIAL,0.0,0.0,3.0,false,false,false,40,38,90,unchanged,improved,improved,False,False,True,False,True,False,False,False
+163,mooncake gift box,en,brand_business,product_box,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,40,70,40,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+164,横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,101,101,102,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+165,banner,en,marketing_ecommerce,banner,FAIL,UNJUDGABLE,UNJUDGABLE,0.0,,,false,false,false,103,104,114,improved,improved,unchanged,True,False,True,False,False,False,False,False
+166,传单,zh,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+167,flyer,en,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+168,画册,zh,marketing_ecommerce,catalog,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,8,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+169,catalog,en,marketing_ecommerce,catalog,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,3,3,3,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+170,促销横幅,zh,marketing_ecommerce,banner,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,8,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+171,sale banner,en,marketing_ecommerce,banner,PASS,FAIL,PARTIAL,65.0,0.0,27.0,false,false,false,111,114,114,regressed,regressed,improved,False,True,False,True,True,False,True,False
+172,产品图,zh,marketing_ecommerce,product_photo,PARTIAL,PARTIAL,PARTIAL,27.0,20.0,20.0,false,false,false,140,154,153,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+173,product photo,en,marketing_ecommerce,product_photo,FAIL,PASS,PASS,0.0,100.0,100.0,false,false,false,39,93,93,improved,improved,unchanged,True,False,True,False,False,False,False,False
+174,促销活动,zh,marketing_ecommerce,promotion,PARTIAL,PARTIAL,PASS,42.0,42.0,72.0,false,false,false,8,8,8,unchanged,improved,improved,False,False,True,False,True,False,False,False
+175,promotion,en,marketing_ecommerce,promotion,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,37,37,37,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+176,广告,zh,marketing_ecommerce,advertisement,FAIL,PARTIAL,FAIL,0.0,32.0,22.0,false,false,false,21,21,21,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+177,advertisement,en,marketing_ecommerce,advertisement,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,2,2,2,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+178,社交媒体帖子,zh,marketing_ecommerce,social_post,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,125,125,125,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+179,social media post,en,marketing_ecommerce,social_post,FAIL,PARTIAL,FAIL,0.0,20.0,0.0,false,false,false,156,156,155,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+180,产品展示,zh,marketing_ecommerce,product_display,FAIL,PASS,PASS,0.0,100.0,100.0,false,false,false,99,99,103,improved,improved,unchanged,True,False,True,False,False,False,False,False
+181,product display,en,marketing_ecommerce,product_display,PARTIAL,PARTIAL,FAIL,42.0,42.0,0.0,false,false,false,57,109,110,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+182,餐厅传单,zh,marketing_ecommerce,flyer,PASS,PASS,PASS,70.0,77.0,55.0,false,false,false,47,45,45,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+183,restaurant flyer,en,marketing_ecommerce,flyer,PARTIAL,PARTIAL,PARTIAL,27.0,27.0,30.0,false,false,false,47,47,47,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+184,电影海报,zh,marketing_ecommerce,poster_specific,FAIL,FAIL,PASS,0.0,0.0,100.0,false,false,false,90,90,91,unchanged,improved,improved,False,False,True,False,True,False,False,False
+185,movie poster,en,marketing_ecommerce,poster_specific,PASS,PASS,PASS,100.0,100.0,100.0,false,false,false,85,85,99,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+186,产品横幅,zh,marketing_ecommerce,banner,FAIL,PARTIAL,UNJUDGABLE,0.0,42.0,,false,false,false,61,61,61,improved,improved,regressed,True,False,True,False,False,True,False,False
+187,product banner,en,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,44,107,111,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+188,促销海报,zh,marketing_ecommerce,poster_specific,PARTIAL,PASS,PASS,42.0,100.0,65.0,false,false,false,10,10,10,improved,improved,unchanged,True,False,True,False,False,False,False,False
+189,sale poster,en,marketing_ecommerce,poster_specific,PARTIAL,PARTIAL,PASS,22.0,22.0,80.0,false,false,false,8,105,105,unchanged,improved,improved,False,False,True,False,True,False,False,False
+190,折扣传单,zh,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+191,discount flyer,en,marketing_ecommerce,flyer,PARTIAL,FAIL,FAIL,22.0,0.0,0.0,false,false,false,6,3,3,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+192,电商横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,21,21,21,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+193,ecommerce banner,en,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,12,96,96,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+194,产品画册,zh,marketing_ecommerce,catalog,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,139,142,142,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+195,product catalog,en,marketing_ecommerce,catalog,PARTIAL,FAIL,PARTIAL,37.0,0.0,37.0,false,false,false,138,141,141,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+196,活动传单,zh,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,103,104,104,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+197,event flyer,en,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,97,97,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+198,开业横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,113,161,82,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+199,grand opening banner,en,marketing_ecommerce,banner,PARTIAL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,113,34,27,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+200,节日促销横幅,zh,marketing_ecommerce,banner,PARTIAL,PARTIAL,PARTIAL,30.0,8.0,8.0,false,false,false,113,86,86,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+201,holiday sale banner,en,marketing_ecommerce,banner,PARTIAL,PARTIAL,PARTIAL,19.0,23.0,42.0,false,false,false,113,31,25,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+202,新品横幅,zh,marketing_ecommerce,banner,PARTIAL,FAIL,FAIL,37.0,0.0,0.0,false,false,false,115,77,77,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+203,new arrival banner,en,marketing_ecommerce,banner,FAIL,PARTIAL,FAIL,0.0,7.0,0.0,false,false,false,113,32,30,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+204,限时促销海报,zh,marketing_ecommerce,poster_specific,PARTIAL,PASS,PASS,30.0,55.0,55.0,false,false,false,287,171,171,improved,improved,unchanged,True,False,True,False,False,False,False,False
+205,flash sale poster,en,marketing_ecommerce,poster_specific,PARTIAL,PARTIAL,PARTIAL,20.0,15.0,20.0,false,false,false,287,164,143,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+206,清仓促销横幅,zh,marketing_ecommerce,banner,PARTIAL,UNJUDGABLE,FAIL,30.0,,0.0,false,false,false,111,82,82,regressed,regressed,regressed,False,True,False,True,False,True,True,False
+207,clearance sale banner,en,marketing_ecommerce,banner,FAIL,PARTIAL,PARTIAL,0.0,42.0,42.0,false,false,false,114,81,25,improved,improved,unchanged,True,False,True,False,False,False,False,False
+208,产品详情图,zh,marketing_ecommerce,product_photo,FAIL,FAIL,PARTIAL,0.0,22.0,30.0,false,false,false,9,9,9,unchanged,improved,improved,False,False,True,False,True,False,False,False
+209,product listing image,en,marketing_ecommerce,product_photo,PASS,PASS,PASS,67.0,67.0,65.0,false,false,false,129,125,39,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+210,网店横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,UNJUDGABLE,0.0,0.0,,false,false,false,113,84,73,unchanged,improved,improved,False,False,True,False,True,False,False,False
+211,online store banner,en,marketing_ecommerce,banner,PARTIAL,FAIL,FAIL,10.0,0.0,0.0,false,false,true,112,31,0,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+212,社交媒体广告,zh,marketing_ecommerce,advertisement,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,125,125,125,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+213,social media ad,en,marketing_ecommerce,advertisement,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,86,97,97,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+214,种草帖,zh,marketing_ecommerce,social_post,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,158,130,37,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+215,influencer post,en,marketing_ecommerce,social_post,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,160,115,115,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+216,开箱照,zh,marketing_ecommerce,product_photo,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,100,76,76,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+217,unboxing photo,en,marketing_ecommerce,product_photo,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,100,159,101,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+218,前后对比图,zh,marketing_ecommerce,product_photo,PASS,PASS,PASS,100.0,95.0,80.0,false,false,false,36,36,36,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+219,before after comparison,en,marketing_ecommerce,product_photo,PASS,PARTIAL,PASS,95.0,42.0,95.0,false,false,false,42,49,49,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+220,优惠券,zh,marketing_ecommerce,coupon,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,true,true,98,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+221,discount coupon,en,marketing_ecommerce,coupon,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+222,会员卡,zh,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,false,false,0,163,158,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+223,membership card,en,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,195,178,179,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+224,积分卡,zh,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,true,394,163,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+225,loyalty card,en,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,95,101,101,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+226,礼品卡,zh,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,3,3,3,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+227,gift card,en,marketing_ecommerce,membership_card,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,21,112,112,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+228,门店横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,111,90,90,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+229,storefront banner,en,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,113,115,115,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+230,橱窗展示,zh,marketing_ecommerce,product_display,PARTIAL,PARTIAL,FAIL,37.0,42.0,0.0,false,false,false,188,9,172,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+231,window display,en,marketing_ecommerce,product_display,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,30,24,24,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+232,展会展架,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,109,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+233,trade show banner,en,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,112,82,30,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+234,展览传单,zh,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,9,15,15,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+235,exhibition flyer,en,marketing_ecommerce,flyer,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,6,7,5,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+236,新品发布海报,zh,marketing_ecommerce,poster_specific,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,8,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+237,product launch poster,en,marketing_ecommerce,poster_specific,FAIL,FAIL,PARTIAL,0.0,0.0,42.0,false,false,false,16,108,109,unchanged,improved,improved,False,False,True,False,True,False,False,False
+238,季节促销横幅,zh,marketing_ecommerce,banner,PARTIAL,PARTIAL,PARTIAL,32.0,32.0,47.0,false,false,false,8,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+239,seasonal sale banner,en,marketing_ecommerce,banner,PARTIAL,PARTIAL,PARTIAL,25.0,35.0,25.0,false,false,false,113,118,56,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+240,黑五促销横幅,zh,marketing_ecommerce,banner,UNJUDGABLE,FAIL,FAIL,,0.0,0.0,false,false,false,113,67,135,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+241,black friday banner,en,marketing_ecommerce,banner,PARTIAL,FAIL,FAIL,10.0,0.0,0.0,false,false,false,113,26,26,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+242,双十一促销海报,zh,marketing_ecommerce,poster_specific,PARTIAL,FAIL,PARTIAL,37.0,22.0,37.0,false,false,false,292,167,118,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+243,singles day sale poster,en,marketing_ecommerce,poster_specific,FAIL,PARTIAL,PARTIAL,0.0,17.0,17.0,false,false,false,287,89,89,improved,improved,unchanged,True,False,True,False,False,False,False,False
+244,直播预告横幅,zh,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,113,67,67,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+245,livestream promo banner,en,marketing_ecommerce,banner,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,113,31,32,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+246,识字卡,zh,education,flashcard,FAIL,FAIL,FAIL,7.0,7.0,7.0,false,false,false,7,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+247,flashcard,en,education,flashcard,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+248,练习册,zh,education,worksheet,UNJUDGABLE,FAIL,FAIL,,0.0,0.0,false,false,false,5,7,6,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+249,worksheet,en,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,22.0,false,false,false,61,61,61,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+250,字母卡,zh,education,flashcard,FAIL,FAIL,PASS,0.0,22.0,57.0,false,false,false,43,43,26,unchanged,improved,improved,False,False,True,False,True,False,False,False
+251,alphabet card,en,education,flashcard,PARTIAL,PARTIAL,PARTIAL,27.0,27.0,35.0,false,false,false,8,98,98,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+252,地图,zh,education,map,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+253,map,en,education,map,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+254,图解,zh,education,diagram,PASS,PARTIAL,PARTIAL,47.0,42.0,19.0,false,false,false,97,103,103,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+255,diagram,en,education,diagram,PARTIAL,PARTIAL,FAIL,17.0,42.0,0.0,false,false,false,92,92,93,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+256,日历,zh,education,calendar,FAIL,PARTIAL,PASS,0.0,22.0,32.0,false,false,false,20,20,20,improved,improved,improved,True,False,True,False,True,False,False,False
+257,calendar,en,education,calendar,FAIL,PARTIAL,PARTIAL,0.0,22.0,7.0,false,false,false,34,34,34,improved,improved,unchanged,True,False,True,False,False,False,False,False
+258,证书,zh,education,certificate,UNJUDGABLE,UNJUDGABLE,FAIL,,,0.0,false,false,true,96,8,0,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+259,certificate,en,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+260,科学海报,zh,education,poster_specific,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,22.0,false,false,false,90,90,93,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+261,science poster,en,education,poster_specific,PARTIAL,PASS,PARTIAL,20.0,50.0,42.0,false,false,false,103,103,103,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+262,课堂装饰海报,zh,education,poster_specific,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,41,41,41,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+263,classroom poster,en,education,poster_specific,FAIL,PARTIAL,PASS,0.0,42.0,72.0,false,false,false,106,106,111,improved,improved,improved,True,False,True,False,True,False,False,False
+264,教科书,zh,education,textbook,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,7,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+265,textbook,en,education,textbook,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,13,13,13,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+266,地球仪,zh,education,globe,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,54,12,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+267,globe,en,education,globe,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,361,159,165,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+268,图表,zh,education,chart,PARTIAL,FAIL,PARTIAL,30.0,0.0,42.0,false,false,false,91,91,119,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+269,chart,en,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,80,80,80,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+270,课程表,zh,education,chart,PASS,FAIL,PASS,100.0,0.0,100.0,false,false,false,2,167,2,regressed,unchanged,improved,False,True,False,False,True,False,True,False
+271,timetable,en,education,chart,PASS,PASS,PASS,100.0,100.0,100.0,false,false,false,2,2,2,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+272,数字表,zh,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+273,number chart,en,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,35,35,35,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+274,元素周期表,zh,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,27,27,27,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+275,periodic table,en,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,27,33,33,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+276,世界地图,zh,education,map,FAIL,FAIL,PARTIAL,0.0,0.0,42.0,false,false,false,36,36,36,unchanged,improved,improved,False,False,True,False,True,False,False,False
+277,world map,en,education,map,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,46,102,102,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+278,拼读卡,zh,education,flashcard,PASS,FAIL,FAIL,100.0,0.0,22.0,false,false,false,43,76,27,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+279,phonics card,en,education,flashcard,PARTIAL,PARTIAL,PARTIAL,42.0,27.0,27.0,false,false,false,17,101,101,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+280,试卷,zh,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,394,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+281,exam paper,en,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,36,73,72,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+282,成绩单,zh,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,299,157,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+283,report card,en,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,78,98,98,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+284,笔袋,zh,education,stationery,PARTIAL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,19,8,8,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+285,pencil case,en,education,stationery,PARTIAL,FAIL,FAIL,17.0,0.0,0.0,false,false,false,23,3,3,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+286,黑板,zh,education,classroom_material,FAIL,FAIL,PARTIAL,0.0,0.0,37.0,false,false,false,84,84,84,unchanged,improved,improved,False,False,True,False,True,False,False,False
+287,chalkboard,en,education,classroom_material,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,78,78,78,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+288,白板,zh,education,classroom_material,FAIL,FAIL,UNJUDGABLE,0.0,0.0,,false,false,false,106,8,8,unchanged,improved,improved,False,False,True,False,True,False,False,False
+289,whiteboard,en,education,classroom_material,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+290,显微镜,zh,education,classroom_material,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,299,170,169,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+291,microscope,en,education,classroom_material,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,true,298,164,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+292,书签,zh,education,stationery,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,101,8,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+293,bookmark,en,education,stationery,FAIL,UNJUDGABLE,FAIL,0.0,,0.0,false,false,false,193,8,170,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+294,算盘,zh,education,classroom_material,UNJUDGABLE,FAIL,FAIL,,0.0,0.0,false,false,true,94,9,0,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+295,abacus,en,education,classroom_material,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,116,10,10,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+296,练习本,zh,education,worksheet,FAIL,PARTIAL,PARTIAL,0.0,20.0,20.0,false,false,false,10,12,15,improved,improved,unchanged,True,False,True,False,False,False,False,False
+297,workbook,en,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,28,8,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+298,单词卡,zh,education,flashcard,FAIL,FAIL,FAIL,7.0,7.0,0.0,false,false,false,88,97,97,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+299,vocabulary card,en,education,flashcard,FAIL,FAIL,FAIL,0.0,0.0,0.0,true,true,true,0,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+300,拼写卡,zh,education,flashcard,FAIL,FAIL,FAIL,0.0,0.0,7.0,false,false,false,47,43,40,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+301,spelling card,en,education,flashcard,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,59,108,108,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+302,数学练习册,zh,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,6,21,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+303,math worksheet,en,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,29,26,26,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+304,阅读练习册,zh,education,worksheet,PARTIAL,PARTIAL,PARTIAL,27.0,42.0,22.0,false,false,false,89,9,9,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+305,reading worksheet,en,education,worksheet,FAIL,FAIL,FAIL,0.0,0.0,22.0,false,false,false,21,95,95,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+306,科学图解,zh,education,diagram,PASS,PASS,PASS,50.0,50.0,47.0,false,false,false,21,21,21,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+307,science diagram,en,education,diagram,PARTIAL,PARTIAL,FAIL,42.0,42.0,7.0,false,false,false,82,102,102,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+308,人体图解,zh,education,chart,PASS,FAIL,FAIL,78.0,0.0,0.0,false,false,false,299,164,164,regressed,regressed,unchanged,False,True,False,True,False,False,True,False
+309,anatomy chart,en,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,16,95,95,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+310,动物识字卡,zh,education,flashcard,FAIL,PARTIAL,PARTIAL,12.0,32.0,32.0,false,false,false,99,70,74,improved,improved,unchanged,True,False,True,False,False,False,False,False
+311,animal flashcard,en,education,flashcard,FAIL,FAIL,FAIL,12.0,12.0,12.0,false,false,false,8,95,95,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+312,字母海报,zh,education,poster_specific,PARTIAL,PARTIAL,FAIL,42.0,42.0,0.0,false,false,false,56,56,56,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+313,alphabet poster,en,education,poster_specific,FAIL,FAIL,PARTIAL,0.0,0.0,20.0,false,false,false,284,180,173,unchanged,improved,improved,False,False,True,False,True,False,False,False
+314,荣誉证书,zh,education,certificate,FAIL,UNJUDGABLE,FAIL,0.0,,0.0,true,false,true,0,127,0,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+315,achievement certificate,en,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,true,true,394,0,0,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+316,毕业证,zh,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,190,9,6,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+317,diploma,en,education,certificate,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,96,6,8,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+318,校历,zh,education,calendar,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,32,7,7,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+319,school calendar,en,education,calendar,PARTIAL,PARTIAL,PARTIAL,18.0,15.0,15.0,false,false,false,5,111,111,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+320,教室装饰,zh,education,classroom_material,UNJUDGABLE,UNJUDGABLE,FAIL,,,0.0,false,false,false,10,10,10,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+321,classroom decoration,en,education,classroom_material,FAIL,PARTIAL,FAIL,0.0,37.0,0.0,false,false,false,170,181,133,improved,unchanged,regressed,True,False,False,False,False,True,False,False
+322,学习图表,zh,education,chart,PARTIAL,PARTIAL,FAIL,27.0,27.0,0.0,false,false,false,82,82,88,unchanged,regressed,regressed,False,False,False,True,False,True,False,False
+323,learning chart,en,education,chart,PASS,PASS,PASS,47.0,47.0,47.0,false,false,false,45,99,99,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+324,贴纸奖励表,zh,education,chart,PARTIAL,PARTIAL,PARTIAL,42.0,42.0,42.0,false,false,false,75,67,67,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False
+325,reward chart,en,education,chart,FAIL,FAIL,FAIL,0.0,0.0,0.0,false,false,false,290,110,38,unchanged,unchanged,unchanged,False,False,False,False,False,False,False,False

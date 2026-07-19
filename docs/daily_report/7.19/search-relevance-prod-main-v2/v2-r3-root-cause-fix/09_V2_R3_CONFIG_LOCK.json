@@ -1,0 +1,74 @@
+{
+  "stage": "V2-R3 minimal fix implementation + targeted evaluation",
+  "date": "2026-07-19",
+  "branch": "baobao/search-relevance-prod-main-v2-r3-root-cause-fix-2026-07-19",
+  "pre_commit_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+  "post_commit_sha": "a811f06f8838e330e08caa4d3c4952d6ab10554d",
+  "frozen": true,
+  "parameters": {
+    "REQUIRED_TERM_COVERAGE_MIN_RATIO": {
+      "value": 0.5,
+      "file": "lib/relevanceScorerConfig.ts",
+      "meaning": "Minimum fraction of a multi-term query's required terms (primary tokens, or bigrams for an unsegmented CJK compound) that must be found in a candidate's title/tags blob for the query's subject to be considered present (gates missing_subject_penalty / path_agreement). A majority, not all terms.",
+      "adjusted_this_stage": false,
+      "source": "design doc 05_V2_R3_MINIMAL_FIX_DESIGN.md section 5.3 qualitative principle (\"majority, not 100%\"); 0.5 taken directly as the numeric instantiation of that principle and confirmed sufficient against the calibration set on the first attempt -- no iteration was needed."
+    },
+    "ISOLATED_HIT_MAX_COVERAGE_RATIO": {
+      "value": 0.5,
+      "file": "lib/relevanceScorerConfig.ts",
+      "meaning": "Maximum coverage ratio at or below which a candidate's whole-token evidence is considered isolated (single-signal) and has its whole_token contribution capped, unless corroborated by an exact-phrase hit.",
+      "adjusted_this_stage": false,
+      "source": "Same as above -- deliberately kept equal to REQUIRED_TERM_COVERAGE_MIN_RATIO so a candidate at exactly the coverage boundary can still pass the subject-presence gate while remaining capped on raw score (two independent, composable signals; see relevanceScorer.ts scoreRecord comment)."
+    },
+    "ISOLATED_HIT_SCORE_CAP": {
+      "value": 8,
+      "file": "lib/relevanceScorerConfig.ts",
+      "meaning": "Cap on the combined whole_token_title + whole_token_tags contribution when the isolated-hit condition is met (instead of allowing both weights, 18+8=26, to stack).",
+      "adjusted_this_stage": false,
+      "source": "Set equal to the existing whole_token_tags weight (8) -- an isolated single-term hit should score like a medium-confidence tag match, not a strong title match plus a tag match. Taken directly from design doc section 5.2's proposed default and confirmed sufficient against calibration on the first attempt."
+    }
+  },
+  "unchanged_existing_parameters_referenced": {
+    "base_retrieval": 1.0,
+    "exact_phrase": 40,
+    "whole_token_title": 18,
+    "whole_token_tags": 8,
+    "path_agreement_per_hit": 3,
+    "path_agreement_cap": 12,
+    "substring_penalty": -22,
+    "missing_subject_penalty": -15,
+    "family_saturation_threshold": 6,
+    "family_saturation_penalty_per_excess": -6,
+    "family_saturation_penalty_cap": -30,
+    "MIN_SCORE_WHEN_ORIGINAL_NONEMPTY": -5,
+    "MIN_KEPT_WHEN_ORIGINAL_EMPTY": 5,
+    "MIN_SCORE_WHEN_ORIGINAL_EMPTY": -5,
+    "PATH_CANDIDATE_CAP": 40,
+    "TOTAL_CANDIDATE_POOL_CAP": 80
+  },
+  "adjustment_history": [
+    {
+      "round": 0,
+      "action": "Initial values taken directly from design doc's qualitative principles (majority coverage, cap = whole_token_tags weight).",
+      "reason": "Design doc section 5.3 explicitly deferred exact numeric calibration to the implementation stage, against the calibration set only.",
+      "calibration_result_at_this_round": "5/14 calibration cases IMPROVED, 0/14 REGRESSED, 9/14 UNCHANGED (see 07_V0_R1_R3_TARGETED_COMPARISON.csv) -- net positive on first attempt, no further adjustment performed."
+    }
+  ],
+  "adjustment_rounds_performed": 1,
+  "adjustment_rounds_max_allowed_note": "Charter allows a limited number of rounds, calibration-only, no per-query hand-tuning. Exactly one round (the initial design-derived default) was needed and used; no holdout-informed or per-query adjustment was made at any point.",
+  "calibration_set_sha256": "4d1c75d11e29d0712b93a20ac4ac6a6b5b841888858db57841bec594f511f7c5",
+  "holdout_set_sha256": "5e8879d71cf50efdbeee13198c715149784153fc4ea843f55a3d65e238415821",
+  "previous_improvement_protection_set_sha256": "0db8981acad3a5c39b20b6074487637a4c1f42cb862aac92cdca5e8e549885a3",
+  "rewrite_invariant_set_sha256": "a132db5b4eff5ed7655633ce1943b77d5184f64a72c20986facd734ed5f61b03",
+  "functional_protection_set_sha256": "da8606fe837c1b89922502b2daf5a45bd7ada21faaee868473672e983ea5404d",
+  "case_split_file_sha256": "d23b7a36680ebbb961d27660e92067b488e17d04220452b1bb03321329ac558e",
+  "case_split_file_hash_method": "SHA-256 over the newline-joined, sorted 'query_id|query' pairs within each set_name subset (per-set hashes); whole-file hash also recorded separately.",
+  "code_diff_sha256": "039ca9f6c9304b5824cbdb3dc5755f87b571b4386c18cbaaeb86ac86d9eac938",
+  "code_diff_hash_scope": "git diff over exactly the 4 files changed this stage: app/[locale]/(public)/search/page.tsx, lib/relevanceScorer.ts, lib/relevanceScorerConfig.ts, lib/__tests__/relevanceScorer.test.ts (pre-commit working tree diff against pre_commit_sha).",
+  "files_changed": [
+    "app/[locale]/(public)/search/page.tsx",
+    "lib/relevanceScorer.ts",
+    "lib/relevanceScorerConfig.ts",
+    "lib/__tests__/relevanceScorer.test.ts"
+  ]
+}

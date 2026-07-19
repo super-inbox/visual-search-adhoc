@@ -1,0 +1,111 @@
+{
+  "stage": "V2-R3 full Easy326 comparison (V0 vs V2-R1 vs V2-R3), evaluation-only, no tuning",
+  "run_date": "2026-07-19 to 2026-07-20 (session-continuous)",
+  "final_status": "NOT_READY_TO_REPLACE_PRODUCTION",
+  "versions": {
+    "v0": {
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+      "sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+      "state_before": "detached HEAD, clean",
+      "state_after": "detached HEAD, clean, unmodified",
+      "results_source": "REUSED from docs/daily_report/7.19/search-relevance-prod-main-v2/eval_raw/EASY326_V0.csv (2026-07-19 03:31 run) -- not re-collected this stage"
+    },
+    "v2_r1": {
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+      "branch": "baobao/search-relevance-prod-main-v2-2026-07-19",
+      "sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+      "state_before": "clean",
+      "state_after": "clean, unmodified",
+      "results_source": "REUSED from docs/daily_report/7.19/search-relevance-prod-main-v2/eval_raw/EASY326_V2.csv (2026-07-19 03:31 run) -- not re-collected this stage"
+    },
+    "v2_r3": {
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r3-2026-07-19",
+      "branch": "baobao/search-relevance-prod-main-v2-r3-root-cause-fix-2026-07-19",
+      "sha_before_run": "a811f06f8838e330e08caa4d3c4952d6ab10554d",
+      "sha_after_run": "a811f06f8838e330e08caa4d3c4952d6ab10554d",
+      "sha_match": true,
+      "worktree_clean_before_run": true,
+      "worktree_clean_after_run": true,
+      "config_lock_verified": "09_V2_R3_CONFIG_LOCK.json, frozen=true, no parameters adjusted this stage",
+      "targeted_gate_status_verified": "08_V2_R3_TARGETED_GATE_RESULT.md, FINAL_STATUS: V2_R3_TARGETED_FIX_COMPLETE, all 20 conditions PASS",
+      "results_source": "FRESH LIVE RUN this stage -- 326/326 queries, real HTTP + RSC-flight collection against a freshly rebuilt (npm run build, verified build postdates all source edits) `next start` production server on port 4503, real gpt-4o-mini judge calls",
+      "server_port": 4503,
+      "server_stopped_after_run": true,
+      "server_port_confirmed_clear_after_run": true
+    }
+  },
+  "reuse_eligibility_verification": {
+    "rule": "charter section 3: V0/V2-R1 historical results reusable only if SHA, query-file SHA, catalog hash, model, prompts, rubric, collection method, retry/cache, judge version all identical to what is used for V2-R3 this stage",
+    "v0_sha_match": true,
+    "v2_r1_sha_match": true,
+    "query_file": "docs/daily_report/7.16/easy-query-bank-v3/easy_query_bank_v2_2026-07-16.csv",
+    "query_file_sha256": "c5b1368e33ab601884ad91aff21802c64391bee781b6daa2f3ef50e4d54a08c6",
+    "query_file_row_count": 326,
+    "query_file_sha256_reverified_this_stage": true,
+    "catalog_hash_match": {
+      "nano_inspiration_json_sha256": "7ec2983a913f7018ade4e80c90ca692220eee05cb0ba7e79798b58d16776240d",
+      "nano_templates_json_sha256": "017782f0e8d59aa129c0ed0c578074b7c7d2ec0bfc680e4e7909f1b566fae82a",
+      "verified_identical_across": ["v0 worktree", "v2-r1 worktree", "v2-r3 worktree"]
+    },
+    "model": "gpt-4o-mini for rewrite/multi-query/template-matcher AND judge, temperature=0 for judge, unchanged across all three versions and both the morning run and this run",
+    "collection_method": "scripts/collector.mjs (byte-identical to morning run, RSC-flight extraction), reused unmodified; scripts/run_eval_single.mjs written this stage as a single-target wrapper around the SAME collector.mjs/judge.mjs imports (no reimplementation of collection or judging logic)",
+    "judge_prompt_and_rubric": "scripts/judge.mjs SYSTEM_PROMPT (verbatim, byte-identical file) + rubric-v1.1 deterministic scoring, unchanged",
+    "retry_cache_policy": "collector: 1 retry on collection failure (500ms backoff); judge: 1 retry + up to 4 network attempts with exponential backoff inside chatCompletionJSON -- identical to morning run script (byte-identical judge.mjs)",
+    "timeout": "30000ms per collectQuery call (collector.mjs default), unchanged",
+    "conclusion": "All reuse conditions satisfied. V0 and V2-R1 not re-collected this stage; only V2-R3 collected fresh."
+  },
+  "outputs": {
+    "row_counts": { "v0": 326, "v2_r1": 326, "v2_r3": 326 },
+    "label_completeness": "no empty relevance_label in any of the 3 datasets; no duplicate row_index/query_id in any dataset",
+    "technical_errors": { "v0": "not re-verified this stage (reused), 0 reported in source manifest", "v2_r1": "not re-verified this stage (reused), 0 reported in source manifest", "v2_r3": 0 },
+    "files": [
+      "13_V2_R3_EASY326_RESULTS.csv",
+      "14_V0_V2_R1_V2_R3_EASY326_PAIRED.csv",
+      "15_V2_R3_EASY326_STATISTICAL_COMPARISON.md",
+      "16_V2_R3_EASY326_GATE_RESULT.md",
+      "17_V2_R3_EASY326_RUN_MANIFEST.json",
+      "FULL326_RUN_LOG.md",
+      "eval_raw/full326/EASY326_V2R3.csv"
+    ]
+  },
+  "headline_results": {
+    "v0": { "pass": 26, "partial": 94, "fail": 200, "unjudgable": 6, "zero_result": 17, "low_result": 15, "mean_score": 15.8875, "median_score": 0.0 },
+    "v2_r1": { "pass": 24, "partial": 85, "fail": 210, "unjudgable": 7, "zero_result": 19, "low_result": 11, "mean_score": 15.7649, "median_score": 0.0 },
+    "v2_r3": { "pass": 36, "partial": 80, "fail": 206, "unjudgable": 4, "zero_result": 23, "low_result": 13, "mean_score": 17.0497, "median_score": 0.0 },
+    "v0_to_v2r3": { "improved": 44, "regressed": 47, "unchanged": 235 },
+    "v2r1_to_v2r3": { "improved": 39, "regressed": 26, "unchanged": 261 }
+  },
+  "gate_result": {
+    "conditions_total": 15,
+    "conditions_failed": ["#2 FAIL count not more than V0", "#3 zero-result not more than V0", "#4 improved >= regressed vs V0", "#15 clear overall net improvement"],
+    "conditions_mixed": ["#5 clearly better than V2-R1 (relevance labels yes, zero-result count no)"],
+    "verdict": "NOT_READY_TO_REPLACE_PRODUCTION"
+  },
+  "prohibited_actions_taken": {
+    "code_modified": false,
+    "config_modified": false,
+    "09_V2_R3_CONFIG_LOCK_json_modified": false,
+    "tuning_based_on_full326_results": false,
+    "hard68_run": false,
+    "old328_run": false,
+    "p0_12_run": false,
+    "push": false,
+    "pr_created": false,
+    "merge": false,
+    "deploy": false,
+    "v0_worktree_modified": false,
+    "v2_r1_worktree_modified": false,
+    "v2_r3_worktree_modified_beyond_build_artifacts": false,
+    "new_code_commit_created": false
+  },
+  "cleanup_verification": {
+    "v2_r3_server_stopped": true,
+    "port_4503_confirmed_clear": true,
+    "no_zombie_node_processes_remaining": true,
+    "v2_r3_final_sha": "a811f06f8838e330e08caa4d3c4952d6ab10554d",
+    "v2_r3_sha_matches_required": true,
+    "v0_final_sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+    "v2_r1_final_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+    "all_three_worktrees_clean_at_end": true
+  }
+}

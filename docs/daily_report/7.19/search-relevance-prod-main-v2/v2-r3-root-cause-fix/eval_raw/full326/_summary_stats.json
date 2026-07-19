@@ -1,0 +1,185 @@
+{
+  "n": 326,
+  "v0": {
+    "labels": {
+      "PASS": 26,
+      "PARTIAL": 94,
+      "FAIL": 200,
+      "UNJUDGABLE": 6
+    },
+    "score": {
+      "mean": 15.8875,
+      "median": 0.0,
+      "n": 320
+    },
+    "zero": 17,
+    "low": 15
+  },
+  "v2r1": {
+    "labels": {
+      "PASS": 24,
+      "PARTIAL": 85,
+      "FAIL": 210,
+      "UNJUDGABLE": 7
+    },
+    "score": {
+      "mean": 15.764890282131661,
+      "median": 0.0,
+      "n": 319
+    },
+    "zero": 19,
+    "low": 11
+  },
+  "v2r3": {
+    "labels": {
+      "PASS": 36,
+      "PARTIAL": 80,
+      "FAIL": 206,
+      "UNJUDGABLE": 4
+    },
+    "score": {
+      "mean": 17.049689440993788,
+      "median": 0.0,
+      "n": 322
+    },
+    "zero": 23,
+    "low": 13
+  },
+  "pairwise": {
+    "V0_to_V2R1": {
+      "mcnemar": {
+        "b": 12,
+        "c": 10,
+        "chi2": 0.045454545454545456,
+        "p": 0.8311704780853674
+      },
+      "bootstrap": {
+        "n": 315,
+        "mean_diff": 0.05396825396825397,
+        "ci_low": -2.507936507936508,
+        "ci_high": 2.526984126984127
+      },
+      "wilcoxon": {
+        "n": 113,
+        "W": 3184.5,
+        "z": -0.10313439982489335,
+        "p": 0.9178561932259672
+      },
+      "improved": 36,
+      "regressed": 50,
+      "unchanged": 240,
+      "label_dist_a": {
+        "PASS": 26,
+        "PARTIAL": 94,
+        "FAIL": 200,
+        "UNJUDGABLE": 6
+      },
+      "label_dist_b": {
+        "PASS": 24,
+        "PARTIAL": 85,
+        "FAIL": 210,
+        "UNJUDGABLE": 7
+      },
+      "score_stats_a": {
+        "mean": 15.8875,
+        "median": 0.0,
+        "n": 320
+      },
+      "score_stats_b": {
+        "mean": 15.764890282131661,
+        "median": 0.0,
+        "n": 319
+      }
+    },
+    "V0_to_V2R3": {
+      "mcnemar": {
+        "b": 8,
+        "c": 18,
+        "chi2": 3.1153846153846154,
+        "p": 0.07755607623529204
+      },
+      "bootstrap": {
+        "n": 316,
+        "mean_diff": 1.2848101265822784,
+        "ci_low": -1.3291139240506329,
+        "ci_high": 4.037974683544304
+      },
+      "wilcoxon": {
+        "n": 129,
+        "W": 4037.0,
+        "z": -0.36552711683944444,
+        "p": 0.7147180915506282
+      },
+      "improved": 44,
+      "regressed": 47,
+      "unchanged": 235,
+      "label_dist_a": {
+        "PASS": 26,
+        "PARTIAL": 94,
+        "FAIL": 200,
+        "UNJUDGABLE": 6
+      },
+      "label_dist_b": {
+        "PASS": 36,
+        "PARTIAL": 80,
+        "FAIL": 206,
+        "UNJUDGABLE": 4
+      },
+      "score_stats_a": {
+        "mean": 15.8875,
+        "median": 0.0,
+        "n": 320
+      },
+      "score_stats_b": {
+        "mean": 17.049689440993788,
+        "median": 0.0,
+        "n": 322
+      }
+    },
+    "V2R1_to_V2R3": {
+      "mcnemar": {
+        "b": 2,
+        "c": 14,
+        "chi2": 7.5625,
+        "p": 0.0059596374265369345
+      },
+      "bootstrap": {
+        "n": 316,
+        "mean_diff": 1.4588607594936709,
+        "ci_low": -0.4525316455696203,
+        "ci_high": 3.6012658227848102
+      },
+      "wilcoxon": {
+        "n": 100,
+        "W": 2182.5,
+        "z": -1.177626258935197,
+        "p": 0.23894575996261636
+      },
+      "improved": 39,
+      "regressed": 26,
+      "unchanged": 261,
+      "label_dist_a": {
+        "PASS": 24,
+        "PARTIAL": 85,
+        "FAIL": 210,
+        "UNJUDGABLE": 7
+      },
+      "label_dist_b": {
+        "PASS": 36,
+        "PARTIAL": 80,
+        "FAIL": 206,
+        "UNJUDGABLE": 4
+      },
+      "score_stats_a": {
+        "mean": 15.764890282131661,
+        "median": 0.0,
+        "n": 319
+      },
+      "score_stats_b": {
+        "mean": 17.049689440993788,
+        "median": 0.0,
+        "n": 322
+      }
+    }
+  }
+}
