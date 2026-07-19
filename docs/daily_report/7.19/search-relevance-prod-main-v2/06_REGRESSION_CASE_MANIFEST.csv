@@ -1,0 +1,28 @@
+case_category,query,trigger_condition,v0_baseline_captured,capture_method,evidence_file
+llm_rewriter_trigger,烘焙包装,thin query (<5 results),YES,live RSC-payload collection against running V0 next start server,07_V0_TARGET_CASE_RECONFIRMATION.csv
+llm_rewriter_trigger,coffee cup,thin query,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+multi_path_retrieval,coffee cup,thin query -> 5 paths,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+decomposition,black friday banner,thin query -> 6 paths incl decomposition slots,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+strict_result_rich_no_rewrite,mbti marvel,>=5 strict results,YES,same,this session live check (12_SCORER_CALIBRATION_RESULTS.csv SAFE_03)
+strict_result_rich_no_rewrite,periodic table,>=5 strict results,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+strict_result_rich_no_rewrite,吉祥物,>=5 strict results,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+relaxed_supplement_small_precise,warmup routine running checklist,small precise set,YES,same,12_SCORER_CALIBRATION_RESULTS.csv SAFE_04
+l2_hierarchical_content,N/A,N/A,UNKNOWN,repo-wide grep + targeted file reads,02_PRODUCTION_SEARCH_CODE_AUDIT.md (honestly reported, not guessed)
+multi_paragraph_display,N/A,N/A,UNKNOWN,same,02_PRODUCTION_SEARCH_CODE_AUDIT.md
+search_result_click,N/A (shared component),code-level only,PARTIAL (code-diff evidence, not live-clicked),git diff scope confirmation,19_FUNCTIONAL_REGRESSION_RESULTS.csv (time-constraint disclosed)
+generate_remix,N/A (shared component, separate LLM matcher call),code-level only,PARTIAL (code-diff evidence),git diff scope confirmation,19_FUNCTIONAL_REGRESSION_RESULTS.csv
+empty_state,课程表 (pre-fix, near-empty),genuinely thin/CATALOG_GAP query,YES,code read + live collection (2 total results),07_V0_TARGET_CASE_RECONFIRMATION.csv
+loading_state,N/A (component-internal),code-level only,PARTIAL,code read,19_FUNCTIONAL_REGRESSION_RESULTS.csv
+error_timeout_fallback,N/A (code-level, catch blocks),code-level only,YES (code read, safe-empty-fallback confirmed),code read,02_PRODUCTION_SEARCH_CODE_AUDIT.md
+substring_collision,coffee cup,English single-word substring risk,YES,live collection + content inspection,07_V0_TARGET_CASE_RECONFIRMATION.csv
+substring_collision,black friday banner,English single-word substring risk,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+substring_collision,标志,Chinese sense-ambiguity,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+substring_collision,charm,English word-form collision,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+rewrite_flooding,globe,broad single-noun rewrite expansion,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+rewrite_flooding,statue,broad single-noun rewrite expansion,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+broad_noise_template,periodic table,template-level strict promotion via description prose,YES,live collection + content/JSON inspection,07_V0_TARGET_CASE_RECONFIRMATION.csv + 14_BROAD_TEMPLATE_QUERY_RESULT_TRACE.csv
+broad_noise_template,吉祥物,template-level strict promotion via description prose,YES,same,same
+net_negative_historical_v125,烘焙包装,historical V1 zero-result bug re-test,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+net_negative_historical_v127,咖啡馆菜单,historical V1 zero-result bug re-test,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+net_negative_historical_v153,饮料瓶,historical V1 zero-result bug re-test,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv
+net_negative_historical_v271,课程表,historical V1 zero-result bug re-test,YES,same,07_V0_TARGET_CASE_RECONFIRMATION.csv

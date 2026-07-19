@@ -1,0 +1,327 @@
+row_index,query,language,v0_total,v2_total,v0_zero,v2_zero,v0_label,v2_label,v0_score,v2_score,improved,regressed
+0,玩具,zh,21,21,false,false,FAIL,FAIL,0,2,false,false
+1,toy,en,14,14,false,false,FAIL,PARTIAL,0,30,true,false
+2,手办,zh,11,10,false,false,PARTIAL,FAIL,42,0,false,true
+3,figure,en,92,95,false,false,PASS,PARTIAL,83,37,false,true
+4,毛绒玩具,zh,31,169,false,false,FAIL,FAIL,0,0,false,false
+5,plush,en,90,8,false,false,FAIL,FAIL,15,65,false,false
+6,娃娃,zh,3,8,false,false,PARTIAL,FAIL,42,0,false,true
+7,doll,en,7,7,false,false,PARTIAL,FAIL,25,7,false,true
+8,吉祥物,zh,43,43,false,false,FAIL,PASS,0,82,true,false
+9,mascot,en,53,55,false,false,PASS,PASS,55,100,false,false
+10,卡通形象,zh,15,15,false,false,PARTIAL,PARTIAL,10,10,false,false
+11,character,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+12,贴纸,zh,96,97,false,false,PARTIAL,PASS,42,100,true,false
+13,sticker,en,97,97,false,false,PARTIAL,PARTIAL,42,42,false,false
+14,钥匙扣,zh,19,19,false,false,FAIL,FAIL,0,0,false,false
+15,keychain,en,19,19,false,false,FAIL,FAIL,0,0,false,false
+16,收藏品,zh,18,18,false,false,FAIL,FAIL,0,0,false,false
+17,collectible,en,98,98,false,false,FAIL,FAIL,0,0,false,false
+18,盲盒,zh,2,8,false,false,PARTIAL,FAIL,42,0,false,true
+19,blind box,en,2,43,false,false,PARTIAL,FAIL,42,0,false,true
+20,动作人偶,zh,134,162,false,false,FAIL,PARTIAL,0,27,true,false
+21,action figure,en,7,99,false,false,FAIL,FAIL,0,0,false,false
+22,泰迪熊,zh,7,7,false,false,PARTIAL,FAIL,39,14,false,true
+23,teddy bear,en,362,7,false,false,PARTIAL,FAIL,17,0,false,true
+24,扭蛋,zh,46,0,false,true,FAIL,FAIL,0,0,false,false
+25,capsule toy,en,359,21,false,false,FAIL,FAIL,0,0,false,false
+26,卡牌,zh,180,168,false,false,PARTIAL,FAIL,27,0,false,true
+27,trading card,en,34,98,false,false,PARTIAL,PARTIAL,42,42,false,false
+28,模型,zh,59,59,false,false,FAIL,PARTIAL,0,42,true,false
+29,model kit,en,191,124,false,false,FAIL,FAIL,0,0,false,false
+30,雕像,zh,6,6,false,false,FAIL,FAIL,0,0,false,false
+31,statue,en,103,2,false,false,FAIL,PASS,22,100,true,false
+32,帆布袋,zh,37,37,false,false,FAIL,FAIL,0,0,false,false
+33,tote bag,en,47,49,false,false,PARTIAL,FAIL,7,0,false,true
+34,手机壳,zh,11,11,false,false,FAIL,FAIL,0,0,false,false
+35,phone case,en,16,23,false,false,FAIL,FAIL,0,0,false,false
+36,徽章,zh,38,38,false,false,FAIL,FAIL,0,0,false,false
+37,badge,en,35,35,false,false,FAIL,FAIL,0,0,false,false
+38,胸针,zh,100,8,false,false,FAIL,FAIL,0,0,false,false
+39,enamel pin,en,190,86,false,false,FAIL,FAIL,0,0,false,false
+40,冰箱贴,zh,125,118,false,false,PARTIAL,PARTIAL,0,14,false,false
+41,magnet,en,299,3,false,false,FAIL,FAIL,0,0,false,false
+42,挂绳,zh,11,11,false,false,FAIL,FAIL,0,0,false,false
+43,lanyard,en,11,11,false,false,FAIL,FAIL,0,0,false,false
+44,迷你手办,zh,25,8,false,false,PARTIAL,PARTIAL,42,42,false,false
+45,mini figure,en,96,98,false,false,FAIL,FAIL,0,0,false,false
+46,潮流公仔,zh,33,11,false,false,PARTIAL,PARTIAL,15,20,false,false
+47,vinyl toy,en,99,17,false,false,FAIL,FAIL,0,9,false,false
+48,潮流手办,zh,33,38,false,false,FAIL,FAIL,0,0,false,false
+49,pop figure,en,7,97,false,false,FAIL,FAIL,0,0,false,false
+50,惊喜盒子,zh,184,162,false,false,FAIL,FAIL,0,0,false,false
+51,mystery box,en,2,115,false,false,PARTIAL,FAIL,42,7,false,true
+52,挂件,zh,6,9,false,false,PASS,PARTIAL,87,57,false,true
+53,charm,en,6,6,false,false,FAIL,FAIL,0,0,false,false
+54,马克杯,zh,40,40,false,false,FAIL,FAIL,0,0,false,false
+55,collectible mug,en,122,123,false,false,FAIL,PARTIAL,0,22,true,false
+56,抱枕,zh,14,14,false,false,FAIL,FAIL,0,0,false,false
+57,plush pillow,en,190,85,false,false,FAIL,FAIL,0,0,false,false
+58,拼图,zh,3,164,false,false,FAIL,FAIL,0,0,false,false
+59,puzzle,en,108,0,false,true,FAIL,FAIL,0,0,false,false
+60,积木,zh,13,11,false,false,FAIL,FAIL,0,0,false,false
+61,building blocks,en,7,15,false,false,FAIL,FAIL,0,0,false,false
+62,公仔盒,zh,105,9,false,false,PARTIAL,PARTIAL,12,19,false,false
+63,sticker pack,en,31,89,false,false,PARTIAL,PASS,24,100,true,false
+64,文创手办,zh,96,36,false,false,FAIL,PARTIAL,0,20,true,false
+65,cultural relic figure,en,32,112,false,false,PASS,FAIL,65,0,false,true
+66,博物馆文创,zh,27,27,false,false,PARTIAL,PARTIAL,42,42,false,false
+67,museum souvenir,en,289,111,false,false,PARTIAL,PARTIAL,30,35,false,false
+68,国潮公仔,zh,33,35,false,false,PARTIAL,PARTIAL,27,29,false,false
+69,IP figure,en,16,96,false,false,PARTIAL,PARTIAL,42,42,false,false
+70,动漫周边,zh,16,16,false,false,PASS,PARTIAL,100,42,false,true
+71,anime merch,en,19,104,false,false,PARTIAL,PARTIAL,47,47,false,false
+72,明信片套装,zh,53,46,false,false,FAIL,FAIL,0,0,false,false
+73,postcard set,en,83,42,false,false,FAIL,FAIL,0,0,false,false
+74,艺术微喷,zh,371,165,false,false,FAIL,FAIL,0,0,false,false
+75,art print,en,111,113,false,false,PASS,PASS,62,45,false,false
+76,摇头公仔,zh,93,6,false,false,FAIL,FAIL,0,0,false,false
+77,bobblehead,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+78,场景模型,zh,88,133,false,false,FAIL,FAIL,0,0,false,false
+79,diorama,en,7,7,false,false,FAIL,FAIL,0,0,false,false
+80,角色卡通贴纸,zh,35,35,false,false,PASS,PASS,100,100,false,false
+81,character sticker pack,en,28,81,false,false,PASS,PASS,65,77,false,false
+82,标志,zh,115,115,false,false,FAIL,FAIL,0,0,false,false
+83,logo,en,61,61,false,false,FAIL,FAIL,0,0,false,false
+84,包装,zh,90,96,false,false,FAIL,PASS,0,100,true,false
+85,package,en,5,5,false,false,PARTIAL,PARTIAL,42,42,false,false
+86,标签,zh,119,119,false,false,FAIL,FAIL,0,0,false,false
+87,label,en,99,99,false,false,FAIL,FAIL,0,0,false,false
+88,瓶子,zh,13,13,false,false,FAIL,FAIL,0,0,false,false
+89,bottle,en,4,4,false,false,PASS,PASS,72,100,false,false
+90,菜单,zh,59,59,false,false,PARTIAL,PARTIAL,37,42,false,false
+91,menu,en,34,34,false,false,PARTIAL,FAIL,42,7,false,true
+92,名片,zh,8,8,false,false,FAIL,FAIL,0,0,false,false
+93,business card,en,95,115,false,false,FAIL,PARTIAL,0,42,true,false
+94,产品盒,zh,182,147,false,false,FAIL,PARTIAL,0,27,true,false
+95,product box,en,34,111,false,false,FAIL,FAIL,0,0,false,false
+96,咖啡包装,zh,118,125,false,false,PASS,PARTIAL,62,12,false,true
+97,coffee package,en,190,126,false,false,PARTIAL,FAIL,37,0,false,true
+98,餐厅菜单,zh,47,47,false,false,FAIL,FAIL,0,7,false,false
+99,restaurant menu,en,28,69,false,false,PARTIAL,PARTIAL,42,42,false,false
+100,香水瓶,zh,6,8,false,false,FAIL,FAIL,0,0,false,false
+101,perfume bottle,en,190,4,false,false,FAIL,FAIL,0,0,false,false
+102,香水盒,zh,94,6,false,false,FAIL,FAIL,0,0,false,false
+103,perfume box,en,110,43,false,false,FAIL,FAIL,0,0,false,false
+104,茶叶包装,zh,191,175,false,false,FAIL,FAIL,0,0,false,false
+105,tea package,en,191,97,false,false,FAIL,FAIL,7,0,false,false
+106,咖啡豆包装,zh,113,101,false,false,PARTIAL,PARTIAL,37,52,false,false
+107,coffee bean package,en,20,14,false,false,PARTIAL,FAIL,37,0,false,true
+108,巧克力礼盒,zh,57,45,false,false,PARTIAL,PARTIAL,32,35,false,false
+109,chocolate box,en,55,119,false,false,PARTIAL,PARTIAL,35,35,false,false
+110,护肤品包装,zh,98,110,false,false,PARTIAL,PARTIAL,17,17,false,false
+111,skincare package,en,108,9,false,false,PARTIAL,PARTIAL,32,32,false,false
+112,化妆品包装,zh,36,178,false,false,PARTIAL,FAIL,3,0,false,true
+113,cosmetic package,en,196,150,false,false,PARTIAL,PARTIAL,30,20,false,false
+114,酒标,zh,194,154,false,false,PARTIAL,FAIL,42,7,false,true
+115,wine label,en,194,109,false,false,PARTIAL,FAIL,30,0,false,true
+116,零食包装,zh,191,181,false,false,PARTIAL,FAIL,27,7,false,true
+117,snack package,en,192,24,false,false,PARTIAL,FAIL,22,0,false,true
+118,礼品盒,zh,188,168,false,false,FAIL,FAIL,0,0,false,false
+119,gift box,en,48,80,false,false,FAIL,FAIL,0,0,false,false
+120,购物袋,zh,188,5,false,false,FAIL,PARTIAL,17,19,true,false
+121,shopping bag,en,13,104,false,false,FAIL,FAIL,0,0,false,false
+122,产品标签,zh,89,89,false,false,PARTIAL,UNJUDGABLE,42,,false,true
+123,product label,en,47,108,false,false,PARTIAL,PARTIAL,42,37,false,false
+124,烘焙包装,zh,192,111,false,false,FAIL,PARTIAL,0,35,true,false
+125,bakery package,en,8,88,false,false,PARTIAL,FAIL,34,0,false,true
+126,咖啡馆菜单,zh,4,22,false,false,PARTIAL,PARTIAL,15,27,false,false
+127,cafe menu,en,301,113,false,false,PARTIAL,PARTIAL,25,19,false,false
+128,店招,zh,193,10,false,false,FAIL,PARTIAL,0,15,true,false
+129,shop sign,en,9,26,false,false,PARTIAL,PARTIAL,42,42,false,false
+130,门店招牌,zh,187,113,false,false,FAIL,FAIL,0,0,false,false
+131,storefront sign,en,200,12,false,false,FAIL,FAIL,0,0,false,false
+132,产品吊牌,zh,14,14,false,false,FAIL,FAIL,0,0,false,false
+133,product tag,en,135,142,false,false,FAIL,PARTIAL,0,30,true,false
+134,价格标签,zh,0,0,true,true,FAIL,FAIL,0,0,false,false
+135,price tag,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+136,服装吊牌,zh,183,161,false,false,PARTIAL,PARTIAL,42,42,false,false
+137,clothing tag,en,181,51,false,false,PARTIAL,FAIL,12,0,false,true
+138,首饰盒,zh,56,8,false,false,FAIL,FAIL,0,0,false,false
+139,jewelry box,en,62,52,false,false,UNJUDGABLE,FAIL,,0,false,true
+140,蜡烛标签,zh,11,11,false,false,FAIL,FAIL,0,0,false,false
+141,candle label,en,29,29,false,false,FAIL,FAIL,0,0,false,false
+142,香皂包装,zh,111,106,false,false,FAIL,FAIL,0,0,false,false
+143,soap package,en,109,14,false,false,FAIL,FAIL,0,0,false,false
+144,茶叶罐,zh,20,10,false,false,PARTIAL,PARTIAL,32,32,false,false
+145,tea box,en,111,62,false,false,PARTIAL,PARTIAL,15,27,false,false
+146,咖啡杯,zh,2,2,false,false,PASS,PASS,100,100,false,false
+147,coffee cup,en,364,188,false,false,FAIL,FAIL,0,0,false,false
+148,咖啡杯套,zh,2,8,false,false,PARTIAL,FAIL,42,9,false,true
+149,coffee cup sleeve,en,117,44,false,false,FAIL,FAIL,0,0,false,false
+150,外卖餐盒,zh,299,14,false,false,FAIL,FAIL,0,0,false,false
+151,takeout box,en,112,43,false,false,FAIL,FAIL,0,0,false,false
+152,饮料瓶,zh,5,5,false,false,FAIL,FAIL,19,19,false,false
+153,drink bottle,en,2,169,false,false,PASS,PARTIAL,100,32,false,true
+154,水瓶标签,zh,29,29,false,false,PARTIAL,PARTIAL,32,12,false,false
+155,water bottle label,en,29,24,false,false,PARTIAL,FAIL,12,12,false,true
+156,信封,zh,11,17,false,false,PASS,PASS,95,75,false,false
+157,envelope,en,9,9,false,false,PARTIAL,PARTIAL,67,67,false,false
+158,手提袋,zh,188,169,false,false,FAIL,FAIL,22,7,false,false
+159,paper bag,en,156,96,false,false,FAIL,FAIL,0,0,false,false
+160,蛋糕盒,zh,96,7,false,false,FAIL,FAIL,0,0,false,false
+161,cake box,en,54,62,false,false,FAIL,FAIL,0,0,false,false
+162,月饼礼盒,zh,40,38,false,false,FAIL,FAIL,0,0,false,false
+163,mooncake gift box,en,40,70,false,false,FAIL,FAIL,0,0,false,false
+164,横幅,zh,101,101,false,false,FAIL,FAIL,0,0,false,false
+165,banner,en,103,104,false,false,FAIL,UNJUDGABLE,0,,true,false
+166,传单,zh,0,0,true,true,FAIL,FAIL,0,0,false,false
+167,flyer,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+168,画册,zh,8,8,false,false,FAIL,FAIL,0,0,false,false
+169,catalog,en,3,3,false,false,FAIL,FAIL,0,0,false,false
+170,促销横幅,zh,8,8,false,false,PARTIAL,PARTIAL,42,42,false,false
+171,sale banner,en,111,114,false,false,PASS,FAIL,65,0,false,true
+172,产品图,zh,140,154,false,false,PARTIAL,PARTIAL,27,20,false,false
+173,product photo,en,39,93,false,false,FAIL,PASS,0,100,true,false
+174,促销活动,zh,8,8,false,false,PARTIAL,PARTIAL,42,42,false,false
+175,promotion,en,37,37,false,false,FAIL,FAIL,0,0,false,false
+176,广告,zh,21,21,false,false,FAIL,PARTIAL,0,32,true,false
+177,advertisement,en,2,2,false,false,PARTIAL,PARTIAL,42,42,false,false
+178,社交媒体帖子,zh,125,125,false,false,FAIL,FAIL,0,0,false,false
+179,social media post,en,156,156,false,false,FAIL,PARTIAL,0,20,true,false
+180,产品展示,zh,99,99,false,false,FAIL,PASS,0,100,true,false
+181,product display,en,57,109,false,false,PARTIAL,PARTIAL,42,42,false,false
+182,餐厅传单,zh,47,45,false,false,PASS,PASS,70,77,false,false
+183,restaurant flyer,en,47,47,false,false,PARTIAL,PARTIAL,27,27,false,false
+184,电影海报,zh,90,90,false,false,FAIL,FAIL,0,0,false,false
+185,movie poster,en,85,85,false,false,PASS,PASS,100,100,false,false
+186,产品横幅,zh,61,61,false,false,FAIL,PARTIAL,0,42,true,false
+187,product banner,en,44,107,false,false,FAIL,FAIL,0,0,false,false
+188,促销海报,zh,10,10,false,false,PARTIAL,PASS,42,100,true,false
+189,sale poster,en,8,105,false,false,PARTIAL,PARTIAL,22,22,false,false
+190,折扣传单,zh,0,0,true,true,FAIL,FAIL,0,0,false,false
+191,discount flyer,en,6,3,false,false,PARTIAL,FAIL,22,0,false,true
+192,电商横幅,zh,21,21,false,false,FAIL,FAIL,0,0,false,false
+193,ecommerce banner,en,12,96,false,false,FAIL,FAIL,0,0,false,false
+194,产品画册,zh,139,142,false,false,FAIL,FAIL,0,0,false,false
+195,product catalog,en,138,141,false,false,PARTIAL,FAIL,37,0,false,true
+196,活动传单,zh,103,104,false,false,FAIL,FAIL,0,0,false,false
+197,event flyer,en,7,97,false,false,FAIL,FAIL,0,0,false,false
+198,开业横幅,zh,113,161,false,false,FAIL,FAIL,0,0,false,false
+199,grand opening banner,en,113,34,false,false,PARTIAL,FAIL,0,0,false,true
+200,节日促销横幅,zh,113,86,false,false,PARTIAL,PARTIAL,30,8,false,false
+201,holiday sale banner,en,113,31,false,false,PARTIAL,PARTIAL,19,23,false,false
+202,新品横幅,zh,115,77,false,false,PARTIAL,FAIL,37,0,false,true
+203,new arrival banner,en,113,32,false,false,FAIL,PARTIAL,0,7,true,false
+204,限时促销海报,zh,287,171,false,false,PARTIAL,PASS,30,55,true,false
+205,flash sale poster,en,287,164,false,false,PARTIAL,PARTIAL,20,15,false,false
+206,清仓促销横幅,zh,111,82,false,false,PARTIAL,UNJUDGABLE,30,,false,true
+207,clearance sale banner,en,114,81,false,false,FAIL,PARTIAL,0,42,true,false
+208,产品详情图,zh,9,9,false,false,FAIL,FAIL,0,22,false,false
+209,product listing image,en,129,125,false,false,PASS,PASS,67,67,false,false
+210,网店横幅,zh,113,84,false,false,FAIL,FAIL,0,0,false,false
+211,online store banner,en,112,31,false,false,PARTIAL,FAIL,10,0,false,true
+212,社交媒体广告,zh,125,125,false,false,FAIL,FAIL,0,0,false,false
+213,social media ad,en,86,97,false,false,FAIL,FAIL,0,0,false,false
+214,种草帖,zh,158,130,false,false,FAIL,FAIL,0,0,false,false
+215,influencer post,en,160,115,false,false,FAIL,FAIL,0,0,false,false
+216,开箱照,zh,100,76,false,false,FAIL,FAIL,0,0,false,false
+217,unboxing photo,en,100,159,false,false,FAIL,FAIL,0,0,false,false
+218,前后对比图,zh,36,36,false,false,PASS,PASS,100,95,false,false
+219,before after comparison,en,42,49,false,false,PASS,PARTIAL,95,42,false,true
+220,优惠券,zh,98,0,false,true,FAIL,FAIL,0,0,false,false
+221,discount coupon,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+222,会员卡,zh,0,163,true,false,FAIL,FAIL,0,0,false,false
+223,membership card,en,195,178,false,false,FAIL,FAIL,0,0,false,false
+224,积分卡,zh,394,163,false,false,FAIL,FAIL,0,0,false,false
+225,loyalty card,en,95,101,false,false,FAIL,FAIL,0,0,false,false
+226,礼品卡,zh,3,3,false,false,FAIL,FAIL,0,0,false,false
+227,gift card,en,21,112,false,false,FAIL,FAIL,0,0,false,false
+228,门店横幅,zh,111,90,false,false,FAIL,FAIL,0,0,false,false
+229,storefront banner,en,113,115,false,false,FAIL,FAIL,0,0,false,false
+230,橱窗展示,zh,188,9,false,false,PARTIAL,PARTIAL,37,42,false,false
+231,window display,en,30,24,false,false,FAIL,FAIL,0,0,false,false
+232,展会展架,zh,109,7,false,false,FAIL,FAIL,0,0,false,false
+233,trade show banner,en,112,82,false,false,FAIL,FAIL,0,0,false,false
+234,展览传单,zh,9,15,false,false,FAIL,FAIL,0,0,false,false
+235,exhibition flyer,en,6,7,false,false,FAIL,FAIL,0,0,false,false
+236,新品发布海报,zh,8,8,false,false,PARTIAL,PARTIAL,42,42,false,false
+237,product launch poster,en,16,108,false,false,FAIL,FAIL,0,0,false,false
+238,季节促销横幅,zh,8,8,false,false,PARTIAL,PARTIAL,32,32,false,false
+239,seasonal sale banner,en,113,118,false,false,PARTIAL,PARTIAL,25,35,false,false
+240,黑五促销横幅,zh,113,67,false,false,UNJUDGABLE,FAIL,,0,false,true
+241,black friday banner,en,113,26,false,false,PARTIAL,FAIL,10,0,false,true
+242,双十一促销海报,zh,292,167,false,false,PARTIAL,FAIL,37,22,false,true
+243,singles day sale poster,en,287,89,false,false,FAIL,PARTIAL,0,17,true,false
+244,直播预告横幅,zh,113,67,false,false,FAIL,FAIL,0,0,false,false
+245,livestream promo banner,en,113,31,false,false,FAIL,FAIL,0,0,false,false
+246,识字卡,zh,7,7,false,false,FAIL,FAIL,7,7,false,false
+247,flashcard,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+248,练习册,zh,5,7,false,false,UNJUDGABLE,FAIL,,0,false,true
+249,worksheet,en,61,61,false,false,FAIL,FAIL,0,0,false,false
+250,字母卡,zh,43,43,false,false,FAIL,FAIL,0,22,false,false
+251,alphabet card,en,8,98,false,false,PARTIAL,PARTIAL,27,27,false,false
+252,地图,zh,0,0,true,true,FAIL,FAIL,0,0,false,false
+253,map,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+254,图解,zh,97,103,false,false,PASS,PARTIAL,47,42,false,true
+255,diagram,en,92,92,false,false,PARTIAL,PARTIAL,17,42,false,false
+256,日历,zh,20,20,false,false,FAIL,PARTIAL,0,22,true,false
+257,calendar,en,34,34,false,false,FAIL,PARTIAL,0,22,true,false
+258,证书,zh,96,8,false,false,UNJUDGABLE,UNJUDGABLE,,,false,false
+259,certificate,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+260,科学海报,zh,90,90,false,false,PARTIAL,PARTIAL,42,42,false,false
+261,science poster,en,103,103,false,false,PARTIAL,PASS,20,50,true,false
+262,课堂装饰海报,zh,41,41,false,false,FAIL,FAIL,0,0,false,false
+263,classroom poster,en,106,106,false,false,FAIL,PARTIAL,0,42,true,false
+264,教科书,zh,7,7,false,false,FAIL,FAIL,0,0,false,false
+265,textbook,en,13,13,false,false,FAIL,FAIL,0,0,false,false
+266,地球仪,zh,54,12,false,false,FAIL,FAIL,0,0,false,false
+267,globe,en,361,159,false,false,FAIL,FAIL,0,0,false,false
+268,图表,zh,91,91,false,false,PARTIAL,FAIL,30,0,false,true
+269,chart,en,80,80,false,false,FAIL,FAIL,0,0,false,false
+270,课程表,zh,2,167,false,false,PASS,FAIL,100,0,false,true
+271,timetable,en,2,2,false,false,PASS,PASS,100,100,false,false
+272,数字表,zh,0,0,true,true,FAIL,FAIL,0,0,false,false
+273,number chart,en,35,35,false,false,FAIL,FAIL,0,0,false,false
+274,元素周期表,zh,27,27,false,false,FAIL,FAIL,0,0,false,false
+275,periodic table,en,27,33,false,false,FAIL,FAIL,0,0,false,false
+276,世界地图,zh,36,36,false,false,FAIL,FAIL,0,0,false,false
+277,world map,en,46,102,false,false,PARTIAL,PARTIAL,42,42,false,false
+278,拼读卡,zh,43,76,false,false,PASS,FAIL,100,0,false,true
+279,phonics card,en,17,101,false,false,PARTIAL,PARTIAL,42,27,false,false
+280,试卷,zh,394,7,false,false,FAIL,FAIL,0,0,false,false
+281,exam paper,en,36,73,false,false,FAIL,FAIL,0,0,false,false
+282,成绩单,zh,299,157,false,false,FAIL,FAIL,0,0,false,false
+283,report card,en,78,98,false,false,FAIL,FAIL,0,0,false,false
+284,笔袋,zh,19,8,false,false,PARTIAL,FAIL,0,0,false,true
+285,pencil case,en,23,3,false,false,PARTIAL,FAIL,17,0,false,true
+286,黑板,zh,84,84,false,false,FAIL,FAIL,0,0,false,false
+287,chalkboard,en,78,78,false,false,FAIL,FAIL,0,0,false,false
+288,白板,zh,106,8,false,false,FAIL,FAIL,0,0,false,false
+289,whiteboard,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+290,显微镜,zh,299,170,false,false,FAIL,FAIL,0,0,false,false
+291,microscope,en,298,164,false,false,FAIL,FAIL,0,0,false,false
+292,书签,zh,101,8,false,false,FAIL,FAIL,0,0,false,false
+293,bookmark,en,193,8,false,false,FAIL,UNJUDGABLE,0,,true,false
+294,算盘,zh,94,9,false,false,UNJUDGABLE,FAIL,,0,false,true
+295,abacus,en,116,10,false,false,FAIL,FAIL,0,0,false,false
+296,练习本,zh,10,12,false,false,FAIL,PARTIAL,0,20,true,false
+297,workbook,en,28,8,false,false,FAIL,FAIL,0,0,false,false
+298,单词卡,zh,88,97,false,false,FAIL,FAIL,7,7,false,false
+299,vocabulary card,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+300,拼写卡,zh,47,43,false,false,FAIL,FAIL,0,0,false,false
+301,spelling card,en,59,108,false,false,FAIL,FAIL,0,0,false,false
+302,数学练习册,zh,6,21,false,false,FAIL,FAIL,0,0,false,false
+303,math worksheet,en,29,26,false,false,FAIL,FAIL,0,0,false,false
+304,阅读练习册,zh,89,9,false,false,PARTIAL,PARTIAL,27,42,false,false
+305,reading worksheet,en,21,95,false,false,FAIL,FAIL,0,0,false,false
+306,科学图解,zh,21,21,false,false,PASS,PASS,50,50,false,false
+307,science diagram,en,82,102,false,false,PARTIAL,PARTIAL,42,42,false,false
+308,人体图解,zh,299,164,false,false,PASS,FAIL,78,0,false,true
+309,anatomy chart,en,16,95,false,false,FAIL,FAIL,0,0,false,false
+310,动物识字卡,zh,99,70,false,false,FAIL,PARTIAL,12,32,true,false
+311,animal flashcard,en,8,95,false,false,FAIL,FAIL,12,12,false,false
+312,字母海报,zh,56,56,false,false,PARTIAL,PARTIAL,42,42,false,false
+313,alphabet poster,en,284,180,false,false,FAIL,FAIL,0,0,false,false
+314,荣誉证书,zh,0,127,true,false,FAIL,UNJUDGABLE,0,,true,false
+315,achievement certificate,en,394,0,false,true,FAIL,FAIL,0,0,false,false
+316,毕业证,zh,190,9,false,false,FAIL,FAIL,0,0,false,false
+317,diploma,en,96,6,false,false,FAIL,FAIL,0,0,false,false
+318,校历,zh,32,7,false,false,FAIL,FAIL,0,0,false,false
+319,school calendar,en,5,111,false,false,PARTIAL,PARTIAL,18,15,false,false
+320,教室装饰,zh,10,10,false,false,UNJUDGABLE,UNJUDGABLE,,,false,false
+321,classroom decoration,en,170,181,false,false,FAIL,PARTIAL,0,37,true,false
+322,学习图表,zh,82,82,false,false,PARTIAL,PARTIAL,27,27,false,false
+323,learning chart,en,45,99,false,false,PASS,PASS,47,47,false,false
+324,贴纸奖励表,zh,75,67,false,false,PARTIAL,PARTIAL,42,42,false,false
+325,reward chart,en,290,110,false,false,FAIL,FAIL,0,0,false,false

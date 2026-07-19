@@ -1,0 +1,24 @@
+row_index,query,language,v0_total,v2_total,v0_zero,v2_zero,v0_label,v2_label,v0_score,v2_score,improved,regressed
+0,烘焙包装,zh,192,111,false,false,FAIL,PARTIAL,0,35,true,false
+1,咖啡馆菜单,zh,4,22,false,false,PARTIAL,PASS,15,62,true,false
+2,饮料瓶,zh,5,5,false,false,FAIL,FAIL,19,19,false,false
+3,课程表,zh,2,167,false,false,PASS,FAIL,100,0,false,true
+4,coffee cup,en,364,188,false,false,FAIL,PARTIAL,0,12,true,false
+5,咖啡杯,zh,2,2,false,false,PASS,PASS,100,100,false,false
+6,black friday banner,en,113,26,false,false,PARTIAL,FAIL,3,0,false,true
+7,charm,en,6,6,false,false,FAIL,FAIL,0,0,false,false
+8,标志,zh,115,115,false,false,FAIL,FAIL,0,0,false,false
+9,迷你手办,zh,25,8,false,false,PARTIAL,PARTIAL,42,42,false,false
+10,periodic table,en,27,33,false,false,FAIL,FAIL,0,0,false,false
+11,元素周期表,zh,27,27,false,false,FAIL,FAIL,0,0,false,false
+12,globe,en,361,159,false,false,FAIL,FAIL,0,0,false,false
+13,statue,en,103,2,false,false,FAIL,PASS,22,100,true,false
+14,plush pillow,en,190,85,false,false,FAIL,FAIL,0,0,false,false
+15,drink bottle,en,2,169,false,false,PASS,PARTIAL,100,32,false,true
+16,bobblehead,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+17,吉祥物,zh,43,43,false,false,FAIL,PASS,0,82,true,false
+18,元素周期表,zh,27,27,false,false,FAIL,FAIL,0,0,false,false
+19,periodic table,en,27,33,false,false,FAIL,FAIL,0,0,false,false
+20,贴纸,zh,96,97,false,false,FAIL,PASS,0,100,true,false
+21,logo,en,61,61,false,false,FAIL,FAIL,0,0,false,false
+22,横幅,zh,101,101,false,false,FAIL,FAIL,0,0,false,false

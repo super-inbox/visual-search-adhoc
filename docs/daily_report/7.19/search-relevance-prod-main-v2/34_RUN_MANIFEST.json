@@ -1,0 +1,99 @@
+{
+  "run_date": "2026-07-19",
+  "final_status": "NOT_READY_TO_REPLACE_PRODUCTION",
+  "v0": {
+    "worktree": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+    "sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+    "state": "detached HEAD, read-only, never modified"
+  },
+  "v2": {
+    "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+    "branch": "baobao/search-relevance-prod-main-v2-2026-07-19",
+    "initial_sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+    "final_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+    "local_commits": [
+      "c5d77149 feat(search): unified explainable relevance scorer (directions 1, 2, 4, 5, 6, 9)",
+      "32f6282a fix(search): reduce broad template ranking noise via title/category field-split scoring (direction 7)"
+    ],
+    "files_changed_total": 5,
+    "files_changed_list": [
+      "app/[locale]/(public)/search/page.tsx (modified)",
+      "lib/relevanceScorer.ts (new)",
+      "lib/relevanceScorerConfig.ts (new)",
+      "lib/searchPhraseProtection.ts (new)",
+      "lib/__tests__/relevanceScorer.test.ts (new)"
+    ]
+  },
+  "scorer_config_version": "v1.0.0-2026-07-19",
+  "scorer_config_lock_file": "13_SCORER_CONFIG_LOCK.json",
+  "model_used": {
+    "app_rewriter_and_matcher": "gpt-4o-mini (unchanged from V0)",
+    "evaluation_judge": "gpt-4o-mini"
+  },
+  "collection_method": "identical for V0 and V2: real HTTP requests to real `next start` production builds (ports 4501/4502), RSC flight-payload extraction of actual server-computed <SearchResultsClient> props (scripts/collector.mjs) -- not a mirror/reimplementation of the search logic",
+  "judge_method": "rubric-v1.1 (RELEVANCE_RUBRIC.md), LLM per-result semantic labels (gpt-4o-mini) + deterministic scoring formula computed in code (scripts/judge.mjs), NOT delegated to the LLM for arithmetic. Evidence basis: title/tags/topics text, not screenshots (same disclosed limitation as prior full-328 runs in this project)",
+  "evaluation_completion": {
+    "hard_68_query_regression_set": { "status": "COMPLETE", "n_completed": 68, "n_total": 68, "technical_failures_remaining": 0 },
+    "p0_12_page_cases": { "status": "COMPLETE", "n_completed": 12, "n_total": 12, "note": "textual/data-level evaluation via same collector method; full Playwright browser click/Generate/Remix simulation NOT run due to time constraints, disclosed in 19_FUNCTIONAL_REGRESSION_RESULTS.csv" },
+    "targeted_regression_cases": { "status": "COMPLETE", "n_completed": 23, "n_total": 23, "note": "re-run once with fresh symmetric server caches for data integrity" },
+    "easy_326_benchmark_v2": { "status": "COMPLETE", "n_completed": 326, "n_total": 326, "technical_failures_remaining": 0, "legitimate_unjudgable": 11 },
+    "old_328_seed_library": { "status": "NOT_ATTEMPTED", "n_completed": 0, "n_total": 328, "reason": "time constraint; prioritized per explicit task instruction to complete Hard68+P0+Targeted+Easy326 first as the 'core regression evaluation', with Old328 as time-permitting supplementary verification. Honestly reported as not run, not fabricated." }
+  },
+  "total_real_query_evaluations": {
+    "unique_queries_evaluated": 429,
+    "version_pairs": 858,
+    "real_llm_judge_calls": "858 (one per query per version, gpt-4o-mini)",
+    "real_app_rewrite_calls": "variable, organically triggered by the app's own thin-query gate during collection, real gpt-4o-mini calls each time"
+  },
+  "key_results_summary": {
+    "easy_326_v0_pass_rate": 0.0798,
+    "easy_326_v2_pass_rate": 0.0736,
+    "easy_326_v0_fail_rate": 0.6135,
+    "easy_326_v2_fail_rate": 0.6442,
+    "easy_326_v0_zero_rate": 0.0521,
+    "easy_326_v2_zero_rate": 0.0583,
+    "easy_326_improved_queries": 36,
+    "easy_326_regressed_queries": 50,
+    "targeted_23_v0_pass_rate": 0.1304,
+    "targeted_23_v2_pass_rate": 0.2174,
+    "hard_68_v0_zero_rate": 0.2059,
+    "hard_68_v2_zero_rate": 0.1765
+  },
+  "confirmed_evidenced_fixes": [
+    "coffee cup: World Cup poster substring collision demoted out of top-5 (rank ~1-3 -> rank 8+)",
+    "black friday banner: Marvel Black Widow MBTI card demoted from rank 1; template-rail flooding 113->26 total results",
+    "吉祥物 (mascot): organ-health-infographic noise replaced by genuine brand-mascot content (Coca-Cola/Spotify/Lego)",
+    "贴纸 (sticker): kawaii-character-card noise replaced by genuine sticker-overlay product content",
+    "coffee cup template-rail flooding: 284/335 templates matched -> ~100-106/335"
+  ],
+  "diagnosed_regression_root_cause": "removing the binary hasStrict gate (Direction 3) correctly let previously-excluded relevant relaxed results through, but also let weaker relaxed candidates dilute the top-5 for simple literal-noun queries that previously had a clean strict-only result set (手办/figure, 娃娃/doll, 盲盒/blind box, 泰迪熊/teddy bear, 卡牌/trading card, etc.) -- documented in 32_REGRESSION_AND_IMPROVEMENT_CASEBOOK.csv and 31_STATISTICAL_COMPARISON.md",
+  "git_actions": {
+    "production_code_modified": "V2 worktree only, 5 files, 2 commits",
+    "v0_modified": false,
+    "original_repo_modified": false,
+    "push_performed": false,
+    "pr_created": false,
+    "merge_performed": false,
+    "deployment_performed": false
+  },
+  "reports_output_root": "docs/daily_report/7.19/search-relevance-prod-main-v2/",
+  "report_files": [
+    "00_PRODUCTION_BASELINE_MANIFEST.json", "01_WORKTREE_AND_BRANCH_SETUP.md",
+    "02_PRODUCTION_SEARCH_CODE_AUDIT.md", "03_PRODUCTION_SEARCH_CALL_GRAPH.md",
+    "04_EXISTING_FEATURE_REGRESSION_TARGETS.md", "05_PRODUCTION_BEHAVIOR_BASELINE.md",
+    "06_REGRESSION_CASE_MANIFEST.csv", "07_V0_TARGET_CASE_RECONFIRMATION.csv",
+    "08_RELEVANCE_SCORER_DESIGN.md", "09_SCORE_FEATURE_AUDIT.csv",
+    "10_ISSUE_3_4_5_SCORING_MAPPING.md", "11_SCORER_CALIBRATION_SET.csv",
+    "12_SCORER_CALIBRATION_RESULTS.csv", "13_SCORER_CONFIG_LOCK.json",
+    "14_BROAD_TEMPLATE_QUERY_RESULT_TRACE.csv", "15_BROAD_TEMPLATE_ROOT_CAUSE_ANALYSIS.md",
+    "16_BROAD_NOISE_BEFORE_AFTER_SUMMARY.csv", "18_BUILD_AND_TEST_LOG.md",
+    "19_FUNCTIONAL_REGRESSION_RESULTS.csv", "31_STATISTICAL_COMPARISON.md",
+    "32_REGRESSION_AND_IMPROVEMENT_CASEBOOK.csv", "33_GO_NO_GO_RECOMMENDATION_ZH.md",
+    "34_RUN_MANIFEST.json", "RUN_LOG.md",
+    "eval_raw/HARD68_V0.csv", "eval_raw/HARD68_V2.csv", "eval_raw/HARD68_PAIRED.csv",
+    "eval_raw/TARGETED_V0.csv", "eval_raw/TARGETED_V2.csv", "eval_raw/TARGETED_PAIRED.csv",
+    "eval_raw/P0_12_V0.csv", "eval_raw/P0_12_V2.csv", "eval_raw/P0_12_PAIRED.csv",
+    "eval_raw/EASY326_V0.csv", "eval_raw/EASY326_V2.csv", "eval_raw/EASY326_PAIRED.csv"
+  ],
+  "note_on_file_numbering": "Files 17 (soft penalty config) and 20-30 (per the spec's original V0/V2/PAIRED naming for each of 4 datasets) were superseded by the eval_raw/ naming convention used during actual execution (HARD68/TARGETED/P0_12/EASY326 instead of numbered 20-29) -- content and completeness match the spec's intent, file names differ for practical scripting reasons. File 17 was not created because Stage 10 concluded NO_MANUAL_PENALTY_REQUIRED (documented in 15_BROAD_TEMPLATE_ROOT_CAUSE_ANALYSIS.md) -- no soft-penalty config was needed."
+}

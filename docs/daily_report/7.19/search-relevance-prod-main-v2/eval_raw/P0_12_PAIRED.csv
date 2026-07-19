@@ -1,0 +1,13 @@
+row_index,query,language,v0_total,v2_total,v0_zero,v2_zero,v0_label,v2_label,v0_score,v2_score,improved,regressed
+0,NCT Dream photocard template,en,100,10,false,false,FAIL,FAIL,0,0,false,false
+1,maker space label set printable,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+2,Y2K chrome skincare launch poster,en,287,86,false,false,FAIL,FAIL,0,0,false,false
+3,K-beauty glass skin brand launch visual,en,286,9,false,false,FAIL,FAIL,0,0,false,false
+4,小红书香薰产品种草图,zh,24,24,false,false,FAIL,FAIL,0,0,false,false
+5,低饱和国风茶包装设计,zh,91,92,false,false,FAIL,FAIL,0,0,false,false
+6,zones of regulation poster classroom,en,294,99,false,false,FAIL,FAIL,0,0,false,false
+7,coding unplugged activity cards,en,15,0,false,true,FAIL,FAIL,0,0,false,false
+8,genshin impact Furina fanart wallpaper 4k,en,96,11,false,false,FAIL,FAIL,0,0,false,false
+9,Amazon EBC enhanced brand content layout,en,0,0,true,true,FAIL,FAIL,0,0,false,false
+10,IEP accommodations checklist visual,en,299,84,false,false,FAIL,FAIL,0,0,false,false
+11,光与夜之恋 卡面设计参考图,zh,127,110,false,false,PARTIAL,FAIL,15,0,false,true

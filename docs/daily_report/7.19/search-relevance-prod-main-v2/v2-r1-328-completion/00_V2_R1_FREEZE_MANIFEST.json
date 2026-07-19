@@ -1,0 +1,98 @@
+{
+  "task_scope": "Freeze V2-R1, backfill old-328 Easy Query evaluation, produce supplementary report only. No code changes, no V2-R2, no Strict/Relaxed fixes.",
+  "run_date": "2026-07-19",
+  "v0": {
+    "worktree": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+    "sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+    "state_before_run": "detached HEAD, clean, unmodified",
+    "state_after_run": "detached HEAD, clean, unmodified",
+    "verified_clean": true
+  },
+  "v2_r1": {
+    "original_branch": "baobao/search-relevance-prod-main-v2-2026-07-19",
+    "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+    "head_sha_full": "32f6282a240edfa87edae5a0ba5308aecf462466",
+    "head_sha_short": "32f6282a",
+    "expected_short_sha": "32f6282a",
+    "sha_match": true,
+    "branch_verified": "baobao/search-relevance-prod-main-v2-2026-07-19",
+    "branch_match": true,
+    "worktree_clean_before_run": true,
+    "worktree_clean_after_run": true,
+    "recent_log": [
+      "32f6282a fix(search): reduce broad template ranking noise via title/category field-split scoring (direction 7)",
+      "c5d77149 feat(search): unified explainable relevance scorer (directions 1, 2, 4, 5, 6, 9)",
+      "05e5f2d3 Merge pull request #532 from super-inbox/jwang/vercel"
+    ]
+  },
+  "freeze_action": {
+    "frozen_branch_name": "baobao/search-relevance-prod-main-v2-r1-frozen-2026-07-19",
+    "frozen_branch_sha": "32f6282a240edfa87edae5a0ba5308aecf462466",
+    "created_from": "32f6282a240edfa87edae5a0ba5308aecf462466 (current V2-R1 HEAD at task start)",
+    "pre_existing": false,
+    "checked_out": false,
+    "note": "Created with `git branch <name> <sha>` only, no checkout performed. Worktree remained on baobao/search-relevance-prod-main-v2-2026-07-19 throughout, whose HEAD is identical to the frozen branch's target SHA, so evaluation ran against exactly the frozen code."
+  },
+  "config_reuse": {
+    "source_config_lock_file": "docs/daily_report/7.19/search-relevance-prod-main-v2/13_SCORER_CONFIG_LOCK.json",
+    "scorer_config_version": "v1.0.0-2026-07-19",
+    "scorer_weights_modified": false,
+    "collection_method": "identical to prior 326-query run: real HTTP requests to real `next start` production builds (V0 port 4501, V2 port 4502), RSC flight-payload extraction via scripts/collector.mjs, same script file, unmodified since prior run",
+    "judge_method": "identical to prior run: scripts/judge.mjs, rubric-v1.1, gpt-4o-mini, temperature=0, deterministic scoring formula computed in code (RANK_WEIGHTS=[0.30,0.25,0.20,0.15,0.10]), same system prompt text, unmodified since prior run",
+    "llm_model": {
+      "app_rewriter_and_matcher": "gpt-4o-mini (unchanged from V0/prior run)",
+      "evaluation_judge": "gpt-4o-mini (unchanged from prior run)"
+    },
+    "rewrite_prompt": "unchanged (production app code, not touched by this task; identical V0/V2 rewrite path except for the scorer integration already frozen in V2-R1)",
+    "judge_prompt": "unchanged, verbatim SYSTEM_PROMPT string in scripts/judge.mjs (see file, not reproduced here to avoid drift)",
+    "rubric": "rubric-v1.1 (RELEVANCE_RUBRIC.md), same PASS/PARTIAL/FAIL/UNJUDGABLE decision logic and score deductions as prior run",
+    "low_result_threshold": "< 5 total results (0 < total < 5), same boolean definition as scripts/run_eval.mjs / scripts/stats.mjs used in the prior 326 run",
+    "timeout": "30000ms per collectQuery call (scripts/collector.mjs default), unchanged",
+    "retry": "1 retry on collection failure (500ms backoff) + up to 4 attempts with exponential backoff on judge LLM call (scripts/judge.mjs), unchanged",
+    "cache_policy": "both V0 and V2 servers freshly started immediately before this run (no reuse of a long-running server with warm in-memory rewrite cache from a prior session), matching the 'symmetric cache state' practice documented in the prior run's 31_STATISTICAL_COMPARISON.md",
+    "scripts_used": [
+      "scripts/collector.mjs (byte-identical, not modified for this run)",
+      "scripts/judge.mjs (byte-identical, not modified for this run)",
+      "scripts/run_eval.mjs (byte-identical, not modified for this run)",
+      "scripts/stats.mjs (byte-identical, not modified for this run)"
+    ],
+    "config_reproducible": true
+  },
+  "query_input": {
+    "file": "docs/daily_report/7.15/easy-query-production-baseline-v1/query_input/easy_queries_cleaned_300_plus_2026-07-14.csv",
+    "sha256": "682ed08a97f69ff39317c923ac859fe2f085ab8e8d7b9dc7b1a0f31fa0b32f3e",
+    "row_count": 328,
+    "columns_used": { "query_col": "query", "language_col": "language" }
+  },
+  "execution": {
+    "v0_server_port": 4501,
+    "v2_server_port": 4502,
+    "server_command": "npx next start -p <port>, run from each worktree's existing production build (.next), same build artifacts already present from the prior 326-query session",
+    "concurrency": 6,
+    "queries_completed": 328,
+    "queries_total": 328,
+    "technical_collection_failures": 0,
+    "error_rows": 0,
+    "unjudgable_v0": 11,
+    "unjudgable_v2": 11,
+    "run_log_raw": "/tmp/old328_run.log (captured; final line: '[run_eval] DONE 328/328')"
+  },
+  "output_files_not_overwritten": [
+    "No file under docs/daily_report/7.19/search-relevance-prod-main-v2/ (root, prior 326-query report) was modified or overwritten.",
+    "All new outputs written under docs/daily_report/7.19/search-relevance-prod-main-v2/v2-r1-328-completion/ only."
+  ],
+  "prohibited_actions_taken": {
+    "v0_code_modified": false,
+    "v2_r1_code_modified": false,
+    "v2_r2_created": false,
+    "strict_relaxed_fix_started": false,
+    "amend": false,
+    "reset": false,
+    "rebase": false,
+    "squash": false,
+    "push": false,
+    "pr_created": false,
+    "merge": false,
+    "deploy": false
+  }
+}

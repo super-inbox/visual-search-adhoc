@@ -1,0 +1,24 @@
+id,query,language,group
+V125,烘焙包装,zh,net_negative
+V127,咖啡馆菜单,zh,net_negative
+V153,饮料瓶,zh,net_negative
+V271,课程表,zh,net_negative
+SUB_01,coffee cup,en,substring_ambiguity
+SUB_02,咖啡杯,zh,substring_ambiguity
+SUB_03,black friday banner,en,substring_ambiguity
+SUB_04,charm,en,substring_ambiguity
+SUB_05,标志,zh,substring_ambiguity
+SUB_06,迷你手办,zh,substring_ambiguity
+SUB_07,periodic table,en,substring_ambiguity
+SUB_08,元素周期表,zh,substring_ambiguity
+FLOOD_01,globe,en,rewrite_flooding
+FLOOD_02,statue,en,rewrite_flooding
+FLOOD_03,plush pillow,en,rewrite_flooding
+FLOOD_04,drink bottle,en,rewrite_flooding
+FLOOD_05,bobblehead,en,rewrite_flooding
+NOISE_01,吉祥物,zh,broad_noise
+NOISE_02,元素周期表,zh,broad_noise
+NOISE_03,periodic table,en,broad_noise
+NOISE_04,贴纸,zh,broad_noise
+NOISE_05,logo,en,broad_noise
+NOISE_06,横幅,zh,broad_noise

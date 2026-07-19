@@ -1,0 +1,69 @@
+row_index,query,language,v0_total,v2_total,v0_zero,v2_zero,v0_label,v2_label,v0_score,v2_score,improved,regressed
+0,Love and Deepspace card pack design,,4,42,false,false,FAIL,PASS,0,62,true,false
+1,NCT Dream photocard template,,100,10,false,false,FAIL,FAIL,0,0,false,false
+2,blind box toy character sticker sheet,,48,101,false,false,FAIL,FAIL,0,0,false,false
+3,dreamcore aesthetic moodboard,,27,11,false,false,FAIL,FAIL,0,0,false,false
+4,dress to impress historical royalty outfit inspo,,115,88,false,false,PASS,PASS,100,100,false,false
+5,genshin impact Furina fanart wallpaper 4k,,50,11,false,false,PARTIAL,FAIL,20,0,false,true
+6,meme格式国风梗图模板,,19,35,false,false,FAIL,FAIL,0,0,false,false
+7,weirdcore aesthetic sticker design,,75,108,false,false,FAIL,FAIL,0,0,false,false
+8,低饱和国风茶包装设计,,91,92,false,false,FAIL,FAIL,0,0,false,false
+9,光与夜之恋 卡面设计参考图,,363,14,false,false,FAIL,FAIL,0,0,false,false
+10,故障艺术风格海报,,117,117,false,false,FAIL,FAIL,0,0,false,false
+11,松弛感生活方式插画,,103,103,false,false,FAIL,FAIL,0,0,false,false
+12,汉服马面裙叠穿灵感图,,100,9,false,false,PARTIAL,PARTIAL,37,14,false,false
+13,谷圈应援色贴纸设计,,34,34,false,false,FAIL,FAIL,0,0,false,false
+14,K-beauty glass skin brand launch visual,,306,84,false,false,FAIL,FAIL,0,0,false,false
+15,Y2K chrome skincare launch poster,,288,86,false,false,FAIL,FAIL,0,0,false,false
+16,adaptogen wellness brand identity,,19,19,false,false,FAIL,FAIL,0,0,false,false
+17,clean girl aesthetic skincare packaging mockup,,90,21,false,false,FAIL,FAIL,0,0,false,false
+18,heritage brand rebrand moodboard,,30,36,false,false,PARTIAL,PARTIAL,42,42,false,false
+19,probiotic skincare brand visual system,,9,9,false,false,FAIL,FAIL,0,0,false,false
+20,二手奢侈品鉴定品牌视觉,,24,24,false,false,FAIL,FAIL,0,0,false,false
+21,健身教练私教工作室品牌,,75,75,false,false,PARTIAL,FAIL,42,0,false,true
+22,儿童安全座椅品牌视觉,,38,38,false,false,FAIL,FAIL,0,0,false,false
+23,功能性咖啡品牌包装,,105,111,false,false,PASS,PARTIAL,37,35,false,true
+24,博物馆文创联名产品设计,,103,103,false,false,FAIL,FAIL,0,0,false,false
+25,国货美妆联名限定包装,,111,74,false,false,FAIL,PARTIAL,0,20,true,false
+26,宠物摄影工作室品牌设计,,96,96,false,false,FAIL,FAIL,0,0,false,false
+27,宠物殡葬服务品牌视觉设计,,98,98,false,false,FAIL,FAIL,0,0,false,false
+28,家用医疗器械品牌设计,,41,41,false,false,FAIL,FAIL,0,0,false,false
+29,手冲咖啡工作室视觉手册,,13,13,false,false,FAIL,FAIL,0,0,false,false
+30,手工皂工作室品牌视觉,,59,59,false,false,FAIL,FAIL,0,0,false,false
+31,知识付费博主课程品牌,,29,29,false,false,FAIL,UNJUDGABLE,0,,true,false
+32,美妆博主个人IP视觉设计,,94,94,false,false,PARTIAL,FAIL,42,0,false,true
+33,Amazon EBC enhanced brand content layout,,0,0,true,true,FAIL,FAIL,0,0,false,false
+34,Amazon Vine review request insert card,,0,0,true,true,FAIL,FAIL,0,0,false,false
+35,Amazon brand story module design,,2,2,false,false,FAIL,FAIL,0,0,false,false
+36,TikTok GRWM product placement mockup,,0,0,true,true,FAIL,FAIL,0,0,false,false
+37,亚马逊A+页面模块设计,,0,0,true,true,FAIL,FAIL,0,0,false,false
+38,亚马逊评论截图水印素材,,2,7,false,false,FAIL,FAIL,0,0,false,false
+39,小红书图文笔记模板 数字标题,,26,82,false,false,FAIL,FAIL,0,0,false,false
+40,小红书对比图 use前后,,102,16,false,false,PASS,PASS,100,95,false,false
+41,小红书封面模板 白底大字,,403,114,false,false,FAIL,FAIL,0,0,false,false
+42,小红书探店打卡九宫格,,56,16,false,false,FAIL,FAIL,0,0,false,false
+43,小红书探店笔记封面,,40,40,false,false,FAIL,FAIL,0,0,false,false
+44,小红书爆款封面 emoji风,,39,13,false,false,FAIL,FAIL,0,0,false,false
+45,小红书香薰产品种草图,,24,24,false,false,FAIL,FAIL,0,0,false,false
+46,抖音小黄车商品卡片设计,,11,11,false,false,FAIL,FAIL,0,0,false,false
+47,抖音带货主播人设海报,,294,176,false,false,FAIL,PARTIAL,0,12,true,false
+48,社群接龙团购价目表,,0,0,true,true,FAIL,FAIL,0,0,false,false
+49,私域用户运营SOP流程图,,0,0,true,true,FAIL,FAIL,0,0,false,false
+50,私域裂变任务宝海报,,0,0,true,true,FAIL,FAIL,0,0,false,false
+51,Gen Alpha slang classroom poster,,293,135,false,false,FAIL,FAIL,0,0,false,false
+52,IEP accommodations checklist visual,,299,90,false,false,FAIL,FAIL,0,0,false,false
+53,Montessori butterfly life cycle 3 part cards,,13,17,false,false,PARTIAL,PARTIAL,19,22,false,false
+54,RTI intervention tracker template,,0,0,true,true,FAIL,FAIL,0,0,false,false
+55,STEM challenge card printable,,30,13,false,false,FAIL,PARTIAL,0,27,true,false
+56,WIDA can-do descriptors chart,,0,0,true,true,FAIL,FAIL,0,0,false,false
+57,behavior clip chart classroom,,295,55,false,false,FAIL,FAIL,0,0,false,false
+58,charlotte mason copywork printable,,0,0,true,true,FAIL,FAIL,0,0,false,false
+59,coding unplugged activity cards,,0,9,true,false,FAIL,FAIL,0,0,false,false
+60,decodable readers CVC words printable,,0,20,true,false,FAIL,FAIL,0,0,false,false
+61,first then board autism,,0,0,true,true,FAIL,FAIL,0,0,false,false
+62,loop schedule homeschool printable,,30,20,false,false,FAIL,FAIL,0,0,false,false
+63,maker space label set printable,,0,0,true,true,FAIL,FAIL,0,0,false,false
+64,newcomer welcome kit printable,,30,23,false,false,FAIL,FAIL,0,0,false,false
+65,sub tub emergency lesson plan folder cover,,107,37,false,false,FAIL,FAIL,0,0,false,false
+66,visual schedule strips autism classroom,,110,77,false,false,PARTIAL,FAIL,27,0,false,true
+67,zones of regulation poster classroom,,294,99,false,false,FAIL,FAIL,0,0,false,false

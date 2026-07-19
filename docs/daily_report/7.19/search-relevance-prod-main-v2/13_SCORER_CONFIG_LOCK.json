@@ -1,0 +1,58 @@
+{
+  "config_version": "v1.0.0-2026-07-19",
+  "config_source_file": "lib/relevanceScorerConfig.ts",
+  "frozen_at": "2026-07-19T02:45:00Z",
+  "calibration_set_file": "docs/daily_report/7.19/search-relevance-prod-main-v2/11_SCORER_CALIBRATION_SET.csv",
+  "calibration_set_case_count": 26,
+  "calibration_results_file": "docs/daily_report/7.19/search-relevance-prod-main-v2/12_SCORER_CALIBRATION_RESULTS.csv",
+  "weights": {
+    "base_retrieval": 1.0,
+    "exact_phrase": 40,
+    "whole_token_title": 18,
+    "whole_token_tags": 8,
+    "path_agreement_per_hit": 3,
+    "path_agreement_cap": 12,
+    "substring_penalty": -22,
+    "missing_subject_penalty": -15,
+    "family_saturation_threshold": 6,
+    "family_saturation_penalty_per_excess": -6,
+    "family_saturation_penalty_cap": -30,
+    "min_score_when_original_nonempty": -5,
+    "min_score_when_original_empty": -5,
+    "min_kept_when_original_empty": 5,
+    "path_candidate_cap": 40,
+    "total_candidate_pool_cap": 80
+  },
+  "adjustment_log": [
+    {
+      "sequence": 1,
+      "change": "path_agreement now requires fields.subjectPresent === true; previously credited regardless of subject relevance",
+      "triggering_case": "SUB_03 black friday banner -- a Marvel Black Widow MBTI card matched by 5 rewrite/decomposition paths (mostly via a generic 'hero-banner' tag) earned +12 path_agreement, fully offsetting the -15 missing_subject_penalty and remaining ranked #1",
+      "evidence": "live server trace during implementation testing, 2026-07-19 (SEARCH_DEBUG_TRACE temporary instrumentation, removed before commit)"
+    },
+    {
+      "sequence": 2,
+      "change": "protected-phrase subjectPresent now accepts either the literal phrase OR the phrase's anchorToken (a curated, low-collision word), instead of requiring the literal phrase",
+      "triggering_case": "SUB_01 coffee cup -- requiring the literal 'coffee cup' phrase incorrectly penalized genuinely relevant near-matches (e.g. a 'coffee drinks' vocabulary card that contains 'coffee' but not the 2-word phrase), which regressed the top-5 to unrelated content once combined with the empty-originalIds never-zero fallback",
+      "evidence": "live server trace during implementation testing, 2026-07-19"
+    },
+    {
+      "sequence": 3,
+      "change": "the generic (non-protected-phrase) subject-token heuristic now uses the ORIGINAL query's tokens, not each retrieval path's own (possibly much narrower) tokens",
+      "triggering_case": "FLOOD_03 plush pillow -- a narrow decomposition slot could self-satisfy subject presence for itself, letting unrelated content (Chinese solar-term / paper-cutting records) leak subjectPresent=true into the OR-merged field state for records the user's actual query never meaningfully matched",
+      "evidence": "live server trace during implementation testing, 2026-07-19"
+    },
+    {
+      "sequence": 4,
+      "change": "selectFinalCandidates gained a real quality floor (MIN_SCORE_WHEN_ORIGINAL_EMPTY, MIN_KEPT_WHEN_ORIGINAL_EMPTY) for the originalIds-empty case, replacing the initial 'keep everything unfiltered' behavior",
+      "triggering_case": "general design correctness -- an unfiltered originalIds-empty path had no quality control at all, contradicting Direction 3's 'Relaxed受最低质量和数量约束，不允许flooding' requirement; the never-zero minimum-keep guarantee preserves the Direction 1 / zero-result-rate gate",
+      "evidence": "design review during implementation, 2026-07-19"
+    }
+  ],
+  "explicit_prohibition_honored": "weights were NOT adjusted after viewing the full 326/68/328 query benchmark results -- all four adjustments above occurred during calibration-set-only testing (26 cases), before Stage 12's full-scale evaluation was run. No further weight changes are permitted after this lock without re-opening calibration on the fixed calibration set only, per task instructions.",
+  "known_unresolved_gaps_at_freeze_time": [
+    "SUB_04 charm: 'charming' aesthetic-tag collision unresolved (no rewrite trigger, so scorer changes to the rewrite-merge path don't apply; the underlying ambiguity is a template-tagging issue, not addressed by this scorer)",
+    "SUB_05 标志: landmark-sense dominance over logo-sense unresolved (likely CATALOG_GAP -- catalog may have no dedicated 'logo design' template family at all)",
+    "FLOOD_03/04/05 plush pillow / drink bottle / bobblehead: generic (non-protected-phrase) subject heuristic still admits some off-topic results at rank 3-5 for queries with thin/no direct catalog coverage; documented as a known limitation, not silently hidden"
+  ]
+}

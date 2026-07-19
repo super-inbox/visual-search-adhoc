@@ -1,0 +1,28 @@
+case_id,query,category,expected_behavior,evidence_source
+V125,烘焙包装,net_negative_historical,non-zero after rewrite (was already true on V0),07_V0_TARGET_CASE_RECONFIRMATION.csv
+V127,咖啡馆菜单,net_negative_historical,non-zero after rewrite (was already true on V0),07_V0_TARGET_CASE_RECONFIRMATION.csv
+V153,饮料瓶,net_negative_historical,non-zero after rewrite (was already true on V0),07_V0_TARGET_CASE_RECONFIRMATION.csv
+V271,课程表,net_negative_historical,non-zero after rewrite (was already true on V0; thin/borderline),07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_01,coffee cup,substring_collision,World Cup posters demoted out of top 5,07_V0_TARGET_CASE_RECONFIRMATION.csv (confirmed live)
+SUB_02,咖啡杯,substring_collision,no regression vs V0 (thin CATALOG_GAP case, not a collision fix target),07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_03,black friday banner,substring_collision,Marvel Black Widow card demoted from rank 0,07_V0_TARGET_CASE_RECONFIRMATION.csv (confirmed live)
+SUB_04,charm,word_form_collision,no regression vs V0 (no rewrite trigger; unresolved by current scope, documented),07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_05,标志,sense_collision,no regression vs V0 (likely CATALOG_GAP for 'logo' sense; landmark sense dominates both V0/V2),07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_06,迷你手办,modifier_over_subject,no regression vs V0,07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_07,periodic table,broad_noise,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+SUB_08,元素周期表,broad_noise,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+FLOOD_01,globe,rewrite_flooding,template rail bounded (79 vs uncapped potential),07_V0_TARGET_CASE_RECONFIRMATION.csv
+FLOOD_02,statue,rewrite_flooding,template rail bounded,07_V0_TARGET_CASE_RECONFIRMATION.csv
+FLOOD_03,plush pillow,rewrite_flooding / catalog_gap,scorer correctly flags all candidates low-quality; never-zero floor still surfaces some (documented limitation),07_V0_TARGET_CASE_RECONFIRMATION.csv
+FLOOD_04,drink bottle,rewrite_flooding,top-1 result genuinely relevant (smart hydration water bottle); residual noise documented,07_V0_TARGET_CASE_RECONFIRMATION.csv
+FLOOD_05,bobblehead,rewrite_flooding,residual noise documented (figurine-adjacent but not bobblehead-specific),07_V0_TARGET_CASE_RECONFIRMATION.csv
+NOISE_01,吉祥物,broad_noise_template,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+NOISE_04,贴纸,broad_noise_template,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+NOISE_05,logo,broad_noise_template,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+NOISE_06,横幅,broad_noise_template,deferred to Stage 10 trace,07_V0_TARGET_CASE_RECONFIRMATION.csv
+SAFE_01,watercolor flowers,safety_normal_precise_en,top-3 unchanged vs V0 (no regression on a rich, non-thin English query),this session live check
+SAFE_02,证件照,safety_normal_precise_zh,top-3 identical vs V0 (no regression on a precise Chinese query),this session live check
+SAFE_03,mbti marvel,safety_already_high_quality_strict,top-3 order identical vs V0 (broad-recall template-promoted case unaffected),this session live check
+SAFE_04,warmup routine running checklist,safety_small_precise,top-3 identical vs V0 (small precise result set preserved),this session live check
+SAFE_05,paper cutting,safety_normal_precise_en,top-3 stable (minor beneficial reorder: exact-title match now ranks 1st instead of 2nd),this session live check
+SAFE_06,samurai,safety_normal_precise_en,top-3 identical vs V0,this session live check

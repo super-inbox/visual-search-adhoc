@@ -1,0 +1,135 @@
+{
+  "run_date": "2026-07-19",
+  "production_repo": "/Users/baobaoli/Desktop/curify-frontend",
+  "docs_repo": "/Users/baobaoli/Desktop/visual-search-adhoc",
+  "v0_code_baseline_sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+  "live_deploy_sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+  "live_deploy_verification": "VERIFIED_VIA_GITHUB_DEPLOYMENT_API",
+  "live_deploy_environment_url": "https://curify-frontend-3n8q4g816-jays-projects-8c5687b5.vercel.app",
+  "live_deploy_created_at": "2026-07-18T16:35:00Z",
+  "origin_main_sha": "05e5f2d332778ac52c712dd2429f4a8f4e7c3673",
+  "local_main_sha": "c550856e07c2c7058f955799beb9738e7a9b4f0a",
+  "local_main_deprecated_note": "local main is 77 commits behind origin/main; not used for any baseline decision",
+  "old_candidate_branch": "baobao/search-relevance-phrase-alias-2026-07-09",
+  "old_candidate_sha": "c062e618bce4044bedf718aadf59ff69f0999344",
+  "old_candidate_uncommitted_file_count": 26,
+  "v0_worktree_path": "/Users/baobaoli/Desktop/curify-frontend-v0-baseline-2026-07-19",
+  "v2_worktree_path": "/Users/baobaoli/Desktop/curify-frontend-search-v2-2026-07-19",
+  "v2_branch_name": "baobao/search-relevance-prod-main-v2-2026-07-19",
+  "node_version": "v26.3.0",
+  "package_manager": "npm (package-lock.json present, npm 11.16.0)",
+  "catalog_source": {
+    "type": "static build-time JSON files (no database)",
+    "inspiration_file": "public/data/nano_inspiration.json",
+    "inspiration_record_count": 3403,
+    "inspiration_file_bytes": 5015679,
+    "inspiration_sha256": "7ec2983a913f7018ade4e80c90ca692220eee05cb0ba7e79798b58d16776240d",
+    "template_file": "public/data/nano_templates.json",
+    "template_record_count": 335,
+    "template_file_bytes": 1104275,
+    "template_sha256": "017782f0e8d59aa129c0ed0c578074b7c7d2ec0bfc680e4e7909f1b566fae82a",
+    "auxiliary_catalog_files": [
+      "lib/taxonomy.json (141621 bytes, backs TIER3_TOPIC_MAPPED suggestions)",
+      "lib/generated/nanobanana_prompts_metadata.json (37286 bytes, backs PROMPT_TAG_SUGGESTIONS and gallery-prompt tag lookups)"
+    ],
+    "snapshot_method": "read directly from V0 worktree filesystem at commit 05e5f2d3...; both V0 and V2 worktrees started byte-identical (verified diff -rq empty) so catalog is identical for both sides of the evaluation unless V2 code changes intentionally touch these files (none planned)"
+  },
+  "low_result_threshold": {
+    "value": 5,
+    "verified_in_v0_at": [
+      "app/[locale]/(public)/search/page.tsx:47 (server-side gate: initialThinCount < LOW_RESULT_THRESHOLD triggers LLM rewrite/multi-path expansion)",
+      "app/[locale]/(public)/search/SearchResultsClient.tsx:204 (client-side duplicate constant, used only for the low-result tracking beacon threshold, not for retrieval logic)"
+    ],
+    "note": "matches the value documented in prior historical reports (LOW_RESULT_THRESHOLD=5); re-verified directly in V0 worktree source, not assumed from history"
+  },
+  "llm_model": {
+    "rewrite_and_multiquery_model": "gpt-4o-mini (lib/searchRewrite.ts:19, MODEL constant, used by both rewriteQuery and getMultiQueryPaths)",
+    "template_matcher_model": "gpt-4o-mini (lib/searchTemplateMatch.ts:20, MODEL constant, used by matchTemplatesForQuery and rerankTemplateCandidatesForQuery -- powers the 'Generate' section, a separate LLM call from the rewriter)",
+    "provider": "OpenAI, via OPENAI_API_KEY",
+    "note": "GEMINI_API_KEY exists in env but is not referenced anywhere in the search code paths audited (rewriter, template matcher); its usage elsewhere in the app was not in scope for this audit"
+  },
+  "rewrite_prompt_location": {
+    "single_rewrite_system_prompt": "lib/searchRewrite.ts SYSTEM_PROMPT constant, lines 59-189",
+    "multi_query_system_prompt": "lib/searchRewrite.ts SYSTEM_PROMPT_MULTI constant, lines 201-243 (extends SYSTEM_PROMPT with a decomposition-object output schema)",
+    "catalog_context_block": "lib/searchRewrite.ts CATALOG_CONTEXT constant, lines 39-57 (inlined catalog summary fed to the LLM, last documented refresh 2026-05-22)"
+  },
+  "cache_configuration": {
+    "rewrite_cache": "process-local in-memory Map, CACHE_MAX=256 entries, CACHE_TTL_MS=7 days (lib/searchRewrite.ts:252-253); does not persist across Vercel serverless invocations in production, mainly benefits local dev / single warm container",
+    "multi_query_cache": "separate process-local Map (MULTI_CACHE), same 256-entry / 7-day TTL policy (lib/searchRewrite.ts:393)",
+    "template_matcher_cache": "separate process-local Map, same 256/7-day policy (lib/searchTemplateMatch.ts:185-187)",
+    "timeout_ms": {
+      "rewriter_and_multiquery": 8000,
+      "template_matcher": 15000
+    }
+  },
+  "required_environment_variable_names": [
+    "NEXTAUTH_SECRET",
+    "NEXT_PUBLIC_API_URL",
+    "NEXT_PUBLIC_GOOGLE_CLIENT_ID",
+    "NEXT_PUBLIC_GOOGLE_CLIENT_SECRET",
+    "NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY",
+    "NEXT_PUBLIC_CDN_URL",
+    "NEXT_PUBLIC_ENV",
+    "DATABASE_URL",
+    "OPENAI_API_KEY",
+    "AZURE_STORAGE_CONNECTION_STRING",
+    "AZURE_STORAGE_CONTAINER_NAME",
+    "GEMINI_API_KEY"
+  ],
+  "env_values_never_printed": true,
+  "llm_environment_live_check": {
+    "openai_api_key": "LIVE_VERIFIED (200 response from gpt-4o-mini via /v1/chat/completions, this session)",
+    "gemini_api_key": "LIVE_VERIFIED (200 response from /v1beta/models, valid model list returned including gemini-2.5-flash/gemini-2.0-flash, this session)",
+    "blocked": false
+  },
+  "source_design_paths": [
+    "docs/daily_report/7.17/easy-query-search-solution-design-v1/EASY_QUERY_SEARCH_SOLUTION_DESIGN_2026-07-17_zh.md",
+    "docs/daily_report/7.19/easy-query-search-solution-design-post-meeting/EASY_QUERY_SEARCH_SOLUTION_DESIGN_2026-07-18_POST_MEETING_ZH.md",
+    "docs/daily_report/7.19/easy-query-search-solution-design-post-meeting/EASY_QUERY_SEARCH_SOLUTION_DESIGN_2026-07-18_CHANGELOG.md"
+  ],
+  "query_file_paths": {
+    "easy_326_benchmark_v2": "docs/daily_report/7.16/easy-query-bank-v3/easy_query_bank_v2_2026-07-16.csv",
+    "easy_328_old_seed": "docs/daily_report/7.15/easy-query-production-baseline-v1/query_input/easy_queries_cleaned_300_plus_2026-07-14.csv",
+    "hard_68_regression": "docs/daily_report/7.14/search-relevance-stage7-rerun/full-68-rerun-v2/hard_queries_baseline_locked_68_2026-07-14.csv",
+    "p0_12_page_regression_index": "docs/daily_report/7.14/search-relevance-stage7-rerun/p0-12-before-after/P0_SCREENSHOT_INDEX_2026-07-14.md"
+  },
+  "query_file_sha256": {
+    "easy_326_benchmark_v2": "c5b1368e33ab601884ad91aff21802c64391bee781b6daa2f3ef50e4d54a08c6",
+    "easy_328_old_seed": "682ed08a97f69ff39317c923ac859fe2f085ab8e8d7b9dc7b1a0f31fa0b32f3e",
+    "hard_68_regression": "904ea6a5a17a28dbafe3948de6f5bcb958674e518280e5eaad079b150453d233",
+    "verification": "re-computed this session with shasum -a 256; matches the pre-recorded hashes in the task spec exactly for all three files; line counts (327/329/69 including header) also matched"
+  },
+  "p0_12_page_cases": [
+    { "id": "P0_01", "query": "NCT Dream photocard template", "prior_status": "FAIL" },
+    { "id": "P0_02", "query": "maker space label set printable", "prior_status": "FAIL" },
+    { "id": "P0_03", "query": "Y2K chrome skincare launch poster", "prior_status": "FAIL" },
+    { "id": "P0_04", "query": "K-beauty glass skin brand launch visual", "prior_status": "FAIL" },
+    { "id": "P0_05", "query": "小红书香薰产品种草图", "prior_status": "PARTIAL" },
+    { "id": "P0_06", "query": "低饱和国风茶包装设计", "prior_status": "PARTIAL" },
+    { "id": "P0_07", "query": "zones of regulation poster classroom", "prior_status": "PARTIAL" },
+    { "id": "P0_08", "query": "coding unplugged activity cards", "prior_status": "FAIL" },
+    { "id": "P0_09", "query": "genshin impact Furina fanart wallpaper 4k", "prior_status": "PARTIAL" },
+    { "id": "P0_10", "query": "Amazon EBC enhanced brand content layout", "prior_status": "PARTIAL" },
+    { "id": "P0_11", "query": "IEP accommodations checklist visual", "prior_status": "FAIL" },
+    { "id": "P0_12", "query": "光与夜之恋 卡面设计参考图", "prior_status": "FAIL" }
+  ],
+  "known_net_negative_case_queries": {
+    "V125": { "query": "烘焙包装", "translation": "baking packaging", "locale": "zh" },
+    "V127": { "query": "咖啡馆菜单", "translation": "cafe menu", "locale": "zh" },
+    "V153": { "query": "饮料瓶", "translation": "beverage bottle", "locale": "zh" },
+    "V271": { "query": "课程表", "translation": "class schedule", "locale": "zh" },
+    "source": "docs/daily_report/7.16/easy-query-v2-validation/easy_query_v2_relevance_evaluation.csv (rows for V125/V127/V153/V271), cross-referenced with HYBRID_SEARCH_CORE80_CANDIDATE_SET.csv in the same directory; these were captured on the OLD CANDIDATE (V1) branch, not V0 -- must be independently re-tested against V0 per Stage 4, cannot be assumed to reproduce identically"
+  },
+  "test_runner": {
+    "framework": "Vitest",
+    "unit_config": "vitest.unit.config.ts (include: lib/__tests__/**/*.test.ts, environment: node)",
+    "browser_config": "vitest.config.ts (Storybook interaction/visual tests via @storybook/addon-vitest, browser provider: playwright/chromium -- NOT a general E2E suite)",
+    "npm_test_script": "NONE defined in package.json -- must invoke vitest directly (e.g. npx vitest run --config vitest.unit.config.ts)",
+    "npm_typecheck_script": "NONE defined -- must invoke npx tsc --noEmit directly",
+    "playwright_e2e_config": "NONE exists in the repo; playwright ^1.55.0 is a devDependency but only wired as the Storybook browser-mode provider, not a standalone E2E test suite"
+  },
+  "notes": [
+    "This manifest completes Stage 0. All fields above were verified directly against the V0 worktree source and/or this session's live checks, not assumed from historical documents, except where explicitly cited as historical/UNKNOWN.",
+    "L2 hierarchical content and multi-paragraph display could NOT be mapped to any specific code artifact in V0 after full-repo grep + targeted file reads; the source design doc itself flags this as UNKNOWN pending engineering clarification. Recorded as UNKNOWN, not guessed. See 02_PRODUCTION_SEARCH_CODE_AUDIT.md."
+  ]
+}
