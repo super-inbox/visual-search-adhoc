@@ -1,0 +1,785 @@
+{
+  "query": "拼读卡",
+  "locale": "zh",
+  "baseline": {
+    "ok": true,
+    "totalResults": 19,
+    "inspirationCount": 12,
+    "matchedTemplateCount": 7,
+    "pathsUsed": 6,
+    "usedRewrites": [
+      "phonics flashcards",
+      "reading vocabulary cards",
+      "spelling practice cards"
+    ],
+    "rewriteTriggered": true,
+    "inspirations": [
+      {
+        "id": "template-detailed-vocab-flashcard-apple",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "apple",
+        "tags": [
+          "bilingual",
+          "china",
+          "food",
+          "fruits",
+          "illustration",
+          "kids-learning",
+          "language",
+          "intermediate",
+          "art-prints",
+          "flashcards",
+          "watercolor",
+          "cozy",
+          "whimsical",
+          "vocabulary",
+          "daily-life-grid",
+          "modern",
+          "playful",
+          "serene",
+          "nature",
+          "kawaii",
+          "learning",
+          "wall-art",
+          "character",
+          "design",
+          "stylish",
+          "vintage",
+          "soft-light",
+          "seasonal",
+          "composition",
+          "mood"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-book",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "book",
+        "tags": [
+          "bilingual",
+          "china",
+          "illustration",
+          "kids-learning",
+          "language",
+          "language-english",
+          "vocabulary",
+          "character",
+          "learning",
+          "intermediate",
+          "flashcards",
+          "art-prints",
+          "wall-art",
+          "modern",
+          "cozy",
+          "serene",
+          "playful",
+          "whimsical",
+          "infographic",
+          "design",
+          "product",
+          "literature",
+          "study-sheets",
+          "chinese-cuisine",
+          "cultural-fusion",
+          "minimalist",
+          "vibrant",
+          "soft-light",
+          "warm"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-dog",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "dog",
+        "tags": [
+          "bilingual",
+          "china",
+          "dog",
+          "early-childhood-learning",
+          "illustration",
+          "kids-learning",
+          "language",
+          "vocabulary",
+          "animal",
+          "character",
+          "learning",
+          "art-prints",
+          "flashcards",
+          "intermediate",
+          "playful",
+          "whimsical",
+          "cozy",
+          "watercolor",
+          "modern",
+          "soft",
+          "soft-light",
+          "serene",
+          "family",
+          "pets-at-home",
+          "pet-care-basics",
+          "animals",
+          "nature",
+          "kawaii",
+          "vibrant",
+          "wall-art",
+          "daily-life-grid",
+          "study-sheets"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-high-speed-rail",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "high speed rail",
+        "tags": [
+          "bilingual",
+          "china",
+          "intermediate",
+          "kids-learning",
+          "language",
+          "vocabulary"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-school-timetable",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "school timetable",
+        "tags": [
+          "bilingual",
+          "infographic",
+          "intermediate",
+          "kids-learning",
+          "language",
+          "vocabulary"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-animal-learning-card-structure-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "animal learning card structure mindmap",
+        "tags": [
+          "animal",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science",
+          "flashcards",
+          "mind-maps",
+          "art-prints",
+          "illustration",
+          "cartoon",
+          "watercolor",
+          "modern",
+          "cozy",
+          "playful",
+          "vibrant",
+          "nature",
+          "animals"
+        ],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-dinosaur-bilingual-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "dinosaur bilingual mindmap",
+        "tags": [
+          "bilingual",
+          "dinosaur-names",
+          "information-card",
+          "learning",
+          "science",
+          "infographic",
+          "mind-maps",
+          "flashcards",
+          "art-prints",
+          "animals",
+          "illustration",
+          "playful",
+          "modern",
+          "vibrant",
+          "dynamic",
+          "nature",
+          "character",
+          "cartoon",
+          "whimsical",
+          "cozy",
+          "illustration",
+          "dinosaur-eras",
+          "family",
+          "vintage"
+        ],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-plant-kingdom-botanical-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "plant kingdom botanical mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "mind-maps",
+          "infographic",
+          "information-card",
+          "art-prints",
+          "botanical",
+          "nature",
+          "plants-and-seeds",
+          "illustration",
+          "vibrant",
+          "modern",
+          "cozy",
+          "serene",
+          "whimsical",
+          "wall-art",
+          "flashcards",
+          "study-sheets",
+          "digital-canvas",
+          "illustration",
+          "natural-light",
+          "calm",
+          "playful"
+        ],
+        "topics": [
+          "nature"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-human-body-bilingual-science-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "human body bilingual science mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "mind-maps",
+          "information-card",
+          "bilingual",
+          "anatomy",
+          "illustration",
+          "infographic",
+          "art-prints",
+          "health",
+          "body-parts",
+          "emotions",
+          "intellectual",
+          "calm",
+          "serene",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "dynamic",
+          "concept-sketch",
+          "study-sheets"
+        ],
+        "topics": [
+          "anatomy"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-ocean-animals-marine-biology-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "ocean animals marine biology mindmap",
+        "tags": [],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-solar-system-astronomy-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "solar system astronomy mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "information-card",
+          "infographic",
+          "mind-maps",
+          "art-prints",
+          "wall-art",
+          "space",
+          "planets-of-the-solar-system",
+          "illustration",
+          "modern",
+          "vibrant",
+          "dynamic",
+          "intellectual",
+          "introspective",
+          "calm",
+          "serene",
+          "playful",
+          "whimsical",
+          "cozy",
+          "professional",
+          "concept-sketch",
+          "digital-canvas",
+          "illustration"
+        ],
+        "topics": [
+          "space"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-world-countries-geography-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "world countries geography mindmap",
+        "tags": [
+          "learning",
+          "mind-maps",
+          "information-card",
+          "infographic",
+          "art-prints",
+          "posters",
+          "science",
+          "world-cuisines",
+          "culture",
+          "travel",
+          "urban",
+          "modern",
+          "vibrant",
+          "illustration",
+          "cartoon",
+          "dynamic",
+          "insight"
+        ],
+        "topics": []
+      }
+    ]
+  },
+  "candidate": {
+    "ok": true,
+    "totalResults": 29,
+    "inspirationCount": 19,
+    "matchedTemplateCount": 10,
+    "pathsUsed": 6,
+    "usedRewrites": [
+      "phonics flashcards",
+      "reading vocabulary cards",
+      "spelling flashcards"
+    ],
+    "rewriteTriggered": true,
+    "inspirations": [
+      {
+        "id": "template-detailed-vocab-flashcard-apple",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "apple",
+        "tags": [
+          "bilingual",
+          "china",
+          "food",
+          "fruits",
+          "illustration",
+          "kids-learning",
+          "language",
+          "intermediate",
+          "art-prints",
+          "flashcards",
+          "watercolor",
+          "cozy",
+          "whimsical",
+          "vocabulary",
+          "daily-life-grid",
+          "modern",
+          "playful",
+          "serene",
+          "nature",
+          "kawaii",
+          "learning",
+          "wall-art",
+          "character",
+          "design",
+          "stylish",
+          "vintage",
+          "soft-light",
+          "seasonal",
+          "composition",
+          "mood"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-book",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "book",
+        "tags": [
+          "bilingual",
+          "china",
+          "illustration",
+          "kids-learning",
+          "language",
+          "language-english",
+          "vocabulary",
+          "character",
+          "learning",
+          "intermediate",
+          "flashcards",
+          "art-prints",
+          "wall-art",
+          "modern",
+          "cozy",
+          "serene",
+          "playful",
+          "whimsical",
+          "infographic",
+          "design",
+          "product",
+          "literature",
+          "study-sheets",
+          "chinese-cuisine",
+          "cultural-fusion",
+          "minimalist",
+          "vibrant",
+          "soft-light",
+          "warm"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-dog",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "dog",
+        "tags": [
+          "bilingual",
+          "china",
+          "dog",
+          "early-childhood-learning",
+          "illustration",
+          "kids-learning",
+          "language",
+          "vocabulary",
+          "animal",
+          "character",
+          "learning",
+          "art-prints",
+          "flashcards",
+          "intermediate",
+          "playful",
+          "whimsical",
+          "cozy",
+          "watercolor",
+          "modern",
+          "soft",
+          "soft-light",
+          "serene",
+          "family",
+          "pets-at-home",
+          "pet-care-basics",
+          "animals",
+          "nature",
+          "kawaii",
+          "vibrant",
+          "wall-art",
+          "daily-life-grid",
+          "study-sheets"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-high-speed-rail",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "high speed rail",
+        "tags": [
+          "bilingual",
+          "china",
+          "intermediate",
+          "kids-learning",
+          "language",
+          "vocabulary"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-detailed-vocab-flashcard-school-timetable",
+        "template_id": "template-detailed-vocab-flashcard",
+        "title": "school timetable",
+        "tags": [
+          "bilingual",
+          "infographic",
+          "intermediate",
+          "kids-learning",
+          "language",
+          "vocabulary"
+        ],
+        "topics": [
+          "english-chinese"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-animal-learning-card-structure-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "animal learning card structure mindmap",
+        "tags": [
+          "animal",
+          "information-card",
+          "kids-learning",
+          "learning",
+          "science",
+          "flashcards",
+          "mind-maps",
+          "art-prints",
+          "illustration",
+          "cartoon",
+          "watercolor",
+          "modern",
+          "cozy",
+          "playful",
+          "vibrant",
+          "nature",
+          "animals"
+        ],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-dinosaur-bilingual-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "dinosaur bilingual mindmap",
+        "tags": [
+          "bilingual",
+          "dinosaur-names",
+          "information-card",
+          "learning",
+          "science",
+          "infographic",
+          "mind-maps",
+          "flashcards",
+          "art-prints",
+          "animals",
+          "illustration",
+          "playful",
+          "modern",
+          "vibrant",
+          "dynamic",
+          "nature",
+          "character",
+          "cartoon",
+          "whimsical",
+          "cozy",
+          "illustration",
+          "dinosaur-eras",
+          "family",
+          "vintage"
+        ],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-human-body-bilingual-science-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "human body bilingual science mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "mind-maps",
+          "information-card",
+          "bilingual",
+          "anatomy",
+          "illustration",
+          "infographic",
+          "art-prints",
+          "health",
+          "body-parts",
+          "emotions",
+          "intellectual",
+          "calm",
+          "serene",
+          "modern",
+          "minimalist",
+          "vibrant",
+          "dynamic",
+          "concept-sketch",
+          "study-sheets"
+        ],
+        "topics": [
+          "anatomy"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-ocean-animals-marine-biology-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "ocean animals marine biology mindmap",
+        "tags": [],
+        "topics": [
+          "animals"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-plant-kingdom-botanical-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "plant kingdom botanical mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "mind-maps",
+          "infographic",
+          "information-card",
+          "art-prints",
+          "botanical",
+          "nature",
+          "plants-and-seeds",
+          "illustration",
+          "vibrant",
+          "modern",
+          "cozy",
+          "serene",
+          "whimsical",
+          "wall-art",
+          "flashcards",
+          "study-sheets",
+          "digital-canvas",
+          "illustration",
+          "natural-light",
+          "calm",
+          "playful"
+        ],
+        "topics": [
+          "nature"
+        ]
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-solar-system-astronomy-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "solar system astronomy mindmap",
+        "tags": [
+          "learning",
+          "science",
+          "information-card",
+          "infographic",
+          "mind-maps",
+          "art-prints",
+          "wall-art",
+          "space",
+          "planets-of-the-solar-system",
+          "illustration",
+          "modern",
+          "vibrant",
+          "dynamic",
+          "intellectual",
+          "introspective",
+          "calm",
+          "serene",
+          "playful",
+          "whimsical",
+          "cozy",
+          "professional",
+          "concept-sketch",
+          "digital-canvas",
+          "illustration"
+        ],
+        "topics": [
+          "space"
+        ]
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-phonics-letter-d",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "Mode 1 Alphabet Phonics | Letter Dd (purple letter) | Top right example: dog | Bottom 4 items: duck, doll, drum, desk",
+        "tags": [],
+        "topics": [
+          "flashcards",
+          "study-sheets",
+          "education",
+          "kids",
+          "animals"
+        ]
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-color-purple",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "color purple",
+        "tags": [],
+        "topics": []
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-drink",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "drink",
+        "tags": [],
+        "topics": [
+          "food-and-drink"
+        ]
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-food-eat",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "food eat",
+        "tags": [],
+        "topics": [
+          "food-and-drink"
+        ]
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-letter-a",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "letter a",
+        "tags": [],
+        "topics": []
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-letter-b",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "letter b",
+        "tags": [],
+        "topics": []
+      },
+      {
+        "id": "template-educational-flashcard-ontology-mindmap-infographic-world-countries-geography-mindmap",
+        "template_id": "template-educational-flashcard-ontology-mindmap-infographic",
+        "title": "world countries geography mindmap",
+        "tags": [
+          "learning",
+          "mind-maps",
+          "information-card",
+          "infographic",
+          "art-prints",
+          "posters",
+          "science",
+          "world-cuisines",
+          "culture",
+          "travel",
+          "urban",
+          "modern",
+          "vibrant",
+          "illustration",
+          "cartoon",
+          "dynamic",
+          "insight"
+        ],
+        "topics": []
+      },
+      {
+        "id": "template-kids-english-phonics-sentence-flashcard-letter-c",
+        "template_id": "template-kids-english-phonics-sentence-flashcard",
+        "title": "letter c",
+        "tags": [],
+        "topics": []
+      }
+    ]
+  }
+}

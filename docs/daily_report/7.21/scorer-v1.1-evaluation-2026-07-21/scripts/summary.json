@@ -1,0 +1,617 @@
+{
+  "base": {
+    "PASS": 24,
+    "PARTIAL": 83,
+    "FAIL": 207,
+    "UNJUDGABLE": 12,
+    "zero": 23,
+    "low": 19,
+    "mean": 14.51
+  },
+  "cand": {
+    "PASS": 37,
+    "PARTIAL": 76,
+    "FAIL": 203,
+    "UNJUDGABLE": 10,
+    "zero": 20,
+    "low": 13,
+    "mean": 16.97
+  },
+  "improved": 52,
+  "regressed": 41,
+  "unchanged": 233,
+  "improved_list": [
+    [
+      "玩具",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "toy",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "吉祥物",
+      "zh",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "贴纸",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "sticker",
+      "en",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "collectible",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "statue",
+      "en",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "冰箱贴",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "mini figure",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "vinyl toy",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "潮流手办",
+      "zh",
+      "FAIL",
+      "UNJUDGABLE"
+    ],
+    [
+      "sticker pack",
+      "en",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "文创手办",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "logo",
+      "en",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "包装",
+      "zh",
+      "UNJUDGABLE",
+      "PASS"
+    ],
+    [
+      "标签",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "菜单",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "business card",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "产品盒",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "skincare package",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "咖啡馆菜单",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "门店招牌",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "product tag",
+      "en",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "咖啡杯",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "product photo",
+      "en",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "促销活动",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "advertisement",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "social media post",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "产品展示",
+      "zh",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "电影海报",
+      "zh",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "促销海报",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "sale poster",
+      "en",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "产品画册",
+      "zh",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "product catalog",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "新品横幅",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "限时促销海报",
+      "zh",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "clearance sale banner",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "产品详情图",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "开箱照",
+      "zh",
+      "FAIL",
+      "UNJUDGABLE"
+    ],
+    [
+      "product launch poster",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "singles day sale poster",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "字母卡",
+      "zh",
+      "UNJUDGABLE",
+      "PASS"
+    ],
+    [
+      "alphabet card",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "日历",
+      "zh",
+      "FAIL",
+      "PASS"
+    ],
+    [
+      "classroom poster",
+      "en",
+      "PARTIAL",
+      "PASS"
+    ],
+    [
+      "世界地图",
+      "zh",
+      "FAIL",
+      "UNJUDGABLE"
+    ],
+    [
+      "黑板",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "算盘",
+      "zh",
+      "FAIL",
+      "UNJUDGABLE"
+    ],
+    [
+      "练习本",
+      "zh",
+      "UNJUDGABLE",
+      "PARTIAL"
+    ],
+    [
+      "阅读练习册",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "动物识字卡",
+      "zh",
+      "FAIL",
+      "PARTIAL"
+    ],
+    [
+      "alphabet poster",
+      "en",
+      "FAIL",
+      "PARTIAL"
+    ]
+  ],
+  "regressed_list": [
+    [
+      "娃娃",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "泰迪熊",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "teddy bear",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "mystery box",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "挂件",
+      "zh",
+      "PASS",
+      "FAIL"
+    ],
+    [
+      "公仔盒",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "cultural relic figure",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "anime merch",
+      "en",
+      "PASS",
+      "PARTIAL"
+    ],
+    [
+      "咖啡包装",
+      "zh",
+      "PASS",
+      "PARTIAL"
+    ],
+    [
+      "coffee package",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "coffee bean package",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "巧克力礼盒",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "护肤品包装",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "cosmetic package",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "酒标",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "wine label",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "零食包装",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "bakery package",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "coffee cup",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "drink bottle",
+      "en",
+      "PASS",
+      "PARTIAL"
+    ],
+    [
+      "广告",
+      "zh",
+      "UNJUDGABLE",
+      "FAIL"
+    ],
+    [
+      "product display",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "清仓促销横幅",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "online store banner",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "橱窗展示",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "trade show banner",
+      "en",
+      "UNJUDGABLE",
+      "FAIL"
+    ],
+    [
+      "black friday banner",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "直播预告横幅",
+      "zh",
+      "UNJUDGABLE",
+      "FAIL"
+    ],
+    [
+      "练习册",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "图解",
+      "zh",
+      "PASS",
+      "PARTIAL"
+    ],
+    [
+      "diagram",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "课程表",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "笔袋",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "pencil case",
+      "en",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "书签",
+      "zh",
+      "UNJUDGABLE",
+      "FAIL"
+    ],
+    [
+      "单词卡",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "科学图解",
+      "zh",
+      "PASS",
+      "UNJUDGABLE"
+    ],
+    [
+      "人体图解",
+      "zh",
+      "PASS",
+      "FAIL"
+    ],
+    [
+      "字母海报",
+      "zh",
+      "PARTIAL",
+      "FAIL"
+    ],
+    [
+      "荣誉证书",
+      "zh",
+      "UNJUDGABLE",
+      "FAIL"
+    ],
+    [
+      "贴纸奖励表",
+      "zh",
+      "PASS",
+      "UNJUDGABLE"
+    ]
+  ],
+  "new_zero": [
+    "bobblehead",
+    "场景模型",
+    "会员卡",
+    "积分卡"
+  ],
+  "recovered_zero": [
+    "扭蛋",
+    "puzzle",
+    "diorama",
+    "advertisement",
+    "折扣传单",
+    "优惠券",
+    "数学练习册"
+  ],
+  "transitions": {
+    "FAIL->PARTIAL": 26,
+    "PARTIAL->PARTIAL": 45,
+    "PASS->PASS": 16,
+    "FAIL->FAIL": 168,
+    "PARTIAL->FAIL": 28,
+    "FAIL->PASS": 9,
+    "PARTIAL->PASS": 10,
+    "FAIL->UNJUDGABLE": 4,
+    "PASS->FAIL": 2,
+    "PASS->PARTIAL": 4,
+    "UNJUDGABLE->PASS": 2,
+    "UNJUDGABLE->UNJUDGABLE": 4,
+    "UNJUDGABLE->FAIL": 5,
+    "UNJUDGABLE->PARTIAL": 1,
+    "PASS->UNJUDGABLE": 2
+  }
+}

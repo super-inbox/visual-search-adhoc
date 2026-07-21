@@ -1,0 +1,2216 @@
+[
+  {
+    "query": "笔袋",
+    "base": {
+      "total": 17,
+      "paths": 4,
+      "rewrites": [
+        "pencil case",
+        "stationery pouch",
+        "writing utensil holder"
+      ],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "microsoft ai dilemma 07 case google gemini",
+            "tags": [
+              "cartoon",
+              "flat-lay",
+              "illustration",
+              "learning",
+              "technology",
+              "trending"
+            ]
+          },
+          {
+            "title": "microsoft ai dilemma 07 case google gemini en",
+            "tags": [
+              "ai",
+              "infographic",
+              "learning",
+              "technology",
+              "modern",
+              "trending"
+            ]
+          },
+          {
+            "title": "Stationery",
+            "tags": [
+              "anime",
+              "bilingual",
+              "early-childhood-learning",
+              "kawaii",
+              "kids-learning",
+              "language"
+            ]
+          },
+          {
+            "title": "label printer",
+            "tags": [
+              "posters",
+              "product",
+              "showcase",
+              "interior",
+              "art-prints",
+              "modern"
+            ]
+          },
+          {
+            "title": "en-zh",
+            "tags": [
+              "intermediate",
+              "kawaii",
+              "language",
+              "stationery-and-supplies",
+              "vocabulary",
+              "flashcards"
+            ]
+          },
+          {
+            "title": "moyu zhong",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "art-prints",
+              "illustration",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "panda tea master",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "character",
+              "animal",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "rabbit ding feng",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "character",
+              "illustration",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "busan boogi duck",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "character",
+              "mascots",
+              "stickers"
+            ]
+          },
+          {
+            "title": "curi ai robot keyring mug notebook pen set",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "character-ip",
+              "illustration",
+              "stickers"
+            ]
+          },
+          {
+            "title": "boogi alpaca",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "character",
+              "mascots",
+              "illustration"
+            ]
+          },
+          {
+            "title": "ancient bronze beast merchandise collection",
+            "tags": [
+              "design",
+              "merch",
+              "mockups",
+              "anthropomorphic",
+              "modernized-artifact",
+              "cultural-fusion"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 8,
+      "paths": 4,
+      "rewrites": [
+        "pencil case",
+        "stationery pouch",
+        "writing tools bag"
+      ],
+      "offSubjectTop12": {
+        "n": 5,
+        "off": [
+          {
+            "title": "western1",
+            "tags": [
+              "design",
+              "food",
+              "lifestyle",
+              "stickers",
+              "social-media-posts",
+              "western"
+            ]
+          },
+          {
+            "title": "western2",
+            "tags": [
+              "design",
+              "food",
+              "lifestyle",
+              "stickers",
+              "western",
+              "casual"
+            ]
+          },
+          {
+            "title": "microsoft ai dilemma 07 case google gemini",
+            "tags": [
+              "cartoon",
+              "flat-lay",
+              "illustration",
+              "learning",
+              "technology",
+              "trending"
+            ]
+          },
+          {
+            "title": "microsoft ai dilemma 07 case google gemini en",
+            "tags": [
+              "ai",
+              "infographic",
+              "learning",
+              "technology",
+              "modern",
+              "trending"
+            ]
+          },
+          {
+            "title": "Stationery",
+            "tags": [
+              "anime",
+              "bilingual",
+              "early-childhood-learning",
+              "kawaii",
+              "kids-learning",
+              "language"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "促销海报",
+    "base": {
+      "total": 10,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 8,
+        "off": [
+          {
+            "title": "baby care brand",
+            "tags": [
+              "product",
+              "promotional-poster",
+              "showcase",
+              "trending",
+              "design",
+              "posters"
+            ]
+          },
+          {
+            "title": "spring beauty festival",
+            "tags": [
+              "beauty",
+              "festival",
+              "promotional-poster",
+              "spring",
+              "trending",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "summer beach sale",
+            "tags": [
+              "product",
+              "promotional-poster",
+              "summer",
+              "trending",
+              "beach-and-seashore",
+              "lifestyle"
+            ]
+          },
+          {
+            "title": "summer snack festival",
+            "tags": [
+              "festival",
+              "food",
+              "product",
+              "promotional-poster",
+              "summer",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "tech gadget sale",
+            "tags": [
+              "design",
+              "product",
+              "promotional-poster",
+              "showcase",
+              "trending",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "Chinese",
+            "tags": [
+              "language",
+              "product",
+              "promotional-poster",
+              "trending",
+              "design",
+              "showcase"
+            ]
+          },
+          {
+            "title": "Chinese",
+            "tags": [
+              "language",
+              "product",
+              "promotional-poster",
+              "trending",
+              "showcase",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "The AI Content Factory",
+            "tags": [
+              "character",
+              "comparison",
+              "groups",
+              "quiz",
+              "relationship",
+              "infographic"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 10,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 8,
+        "off": [
+          {
+            "title": "tech gadget sale",
+            "tags": [
+              "design",
+              "product",
+              "promotional-poster",
+              "showcase",
+              "trending",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "Chinese",
+            "tags": [
+              "language",
+              "product",
+              "promotional-poster",
+              "trending",
+              "design",
+              "showcase"
+            ]
+          },
+          {
+            "title": "Chinese",
+            "tags": [
+              "language",
+              "product",
+              "promotional-poster",
+              "trending",
+              "showcase",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "baby care brand",
+            "tags": [
+              "product",
+              "promotional-poster",
+              "showcase",
+              "trending",
+              "design",
+              "posters"
+            ]
+          },
+          {
+            "title": "spring beauty festival",
+            "tags": [
+              "beauty",
+              "festival",
+              "promotional-poster",
+              "spring",
+              "trending",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "summer snack festival",
+            "tags": [
+              "festival",
+              "food",
+              "product",
+              "promotional-poster",
+              "summer",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "The AI Content Factory",
+            "tags": [
+              "character",
+              "comparison",
+              "groups",
+              "quiz",
+              "relationship",
+              "infographic"
+            ]
+          },
+          {
+            "title": "summer beach sale",
+            "tags": [
+              "product",
+              "promotional-poster",
+              "summer",
+              "trending",
+              "beach-and-seashore",
+              "lifestyle"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "拼读卡",
+    "base": {
+      "total": 19,
+      "paths": 6,
+      "rewrites": [
+        "phonics flashcards",
+        "reading vocabulary cards",
+        "spelling practice cards"
+      ],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "apple",
+            "tags": [
+              "bilingual",
+              "china",
+              "food",
+              "fruits",
+              "illustration",
+              "kids-learning"
+            ]
+          },
+          {
+            "title": "book",
+            "tags": [
+              "bilingual",
+              "china",
+              "illustration",
+              "kids-learning",
+              "language",
+              "language-english"
+            ]
+          },
+          {
+            "title": "dog",
+            "tags": [
+              "bilingual",
+              "china",
+              "dog",
+              "early-childhood-learning",
+              "illustration",
+              "kids-learning"
+            ]
+          },
+          {
+            "title": "high speed rail",
+            "tags": [
+              "bilingual",
+              "china",
+              "intermediate",
+              "kids-learning",
+              "language",
+              "vocabulary"
+            ]
+          },
+          {
+            "title": "school timetable",
+            "tags": [
+              "bilingual",
+              "infographic",
+              "intermediate",
+              "kids-learning",
+              "language",
+              "vocabulary"
+            ]
+          },
+          {
+            "title": "animal learning card structure mindmap",
+            "tags": [
+              "animal",
+              "information-card",
+              "kids-learning",
+              "learning",
+              "science",
+              "flashcards"
+            ]
+          },
+          {
+            "title": "dinosaur bilingual mindmap",
+            "tags": [
+              "bilingual",
+              "dinosaur-names",
+              "information-card",
+              "learning",
+              "science",
+              "infographic"
+            ]
+          },
+          {
+            "title": "plant kingdom botanical mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "mind-maps",
+              "infographic",
+              "information-card",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "human body bilingual science mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "mind-maps",
+              "information-card",
+              "bilingual",
+              "anatomy"
+            ]
+          },
+          {
+            "title": "ocean animals marine biology mindmap",
+            "tags": []
+          },
+          {
+            "title": "solar system astronomy mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "information-card",
+              "infographic",
+              "mind-maps",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "world countries geography mindmap",
+            "tags": [
+              "learning",
+              "mind-maps",
+              "information-card",
+              "infographic",
+              "art-prints",
+              "posters"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 29,
+      "paths": 6,
+      "rewrites": [
+        "phonics flashcards",
+        "reading vocabulary cards",
+        "spelling flashcards"
+      ],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "apple",
+            "tags": [
+              "bilingual",
+              "china",
+              "food",
+              "fruits",
+              "illustration",
+              "kids-learning"
+            ]
+          },
+          {
+            "title": "book",
+            "tags": [
+              "bilingual",
+              "china",
+              "illustration",
+              "kids-learning",
+              "language",
+              "language-english"
+            ]
+          },
+          {
+            "title": "dog",
+            "tags": [
+              "bilingual",
+              "china",
+              "dog",
+              "early-childhood-learning",
+              "illustration",
+              "kids-learning"
+            ]
+          },
+          {
+            "title": "high speed rail",
+            "tags": [
+              "bilingual",
+              "china",
+              "intermediate",
+              "kids-learning",
+              "language",
+              "vocabulary"
+            ]
+          },
+          {
+            "title": "school timetable",
+            "tags": [
+              "bilingual",
+              "infographic",
+              "intermediate",
+              "kids-learning",
+              "language",
+              "vocabulary"
+            ]
+          },
+          {
+            "title": "animal learning card structure mindmap",
+            "tags": [
+              "animal",
+              "information-card",
+              "kids-learning",
+              "learning",
+              "science",
+              "flashcards"
+            ]
+          },
+          {
+            "title": "dinosaur bilingual mindmap",
+            "tags": [
+              "bilingual",
+              "dinosaur-names",
+              "information-card",
+              "learning",
+              "science",
+              "infographic"
+            ]
+          },
+          {
+            "title": "human body bilingual science mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "mind-maps",
+              "information-card",
+              "bilingual",
+              "anatomy"
+            ]
+          },
+          {
+            "title": "ocean animals marine biology mindmap",
+            "tags": []
+          },
+          {
+            "title": "plant kingdom botanical mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "mind-maps",
+              "infographic",
+              "information-card",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "solar system astronomy mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "information-card",
+              "infographic",
+              "mind-maps",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "Mode 1 Alphabet Phonics | Letter Dd (purple letter) | Top right example: dog | Bottom 4 items: duck, doll, drum, desk",
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "电影海报",
+    "base": {
+      "total": 90,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "buddha jumps over the wall",
+            "tags": [
+              "china",
+              "chinese-cuisine",
+              "food",
+              "illustration",
+              "infographic",
+              "lifestyle"
+            ]
+          },
+          {
+            "title": "four joy meatballs",
+            "tags": [
+              "celebration",
+              "china",
+              "chinese-cuisine",
+              "cuisine",
+              "cultural-festivals",
+              "festival"
+            ]
+          },
+          {
+            "title": "kung pao chicken",
+            "tags": [
+              "china",
+              "chinese-cuisine",
+              "food",
+              "guides",
+              "illustration",
+              "lifestyle"
+            ]
+          },
+          {
+            "title": "sweet and sour ribs",
+            "tags": [
+              "celebration",
+              "china",
+              "chinese-cuisine",
+              "cuisine",
+              "festival",
+              "food"
+            ]
+          },
+          {
+            "title": "forrest gump",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "kids-learning",
+              "vintage",
+              "posters"
+            ]
+          },
+          {
+            "title": "la land",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "music",
+              "posters",
+              "romantic"
+            ]
+          },
+          {
+            "title": "the shawshank redemption",
+            "tags": [
+              "cartoon",
+              "film",
+              "illustration",
+              "kids-learning",
+              "character",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "titanic",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "kids-learning",
+              "romantic",
+              "vintage"
+            ]
+          },
+          {
+            "title": "inception",
+            "tags": [
+              "design",
+              "film",
+              "illustration",
+              "infographic",
+              "kawaii",
+              "character"
+            ]
+          },
+          {
+            "title": "the godfather",
+            "tags": [
+              "character",
+              "early-childhood-learning",
+              "film",
+              "illustration",
+              "kids-learning",
+              "portrait"
+            ]
+          },
+          {
+            "title": "the truman show",
+            "tags": [
+              "film",
+              "humor",
+              "illustration",
+              "kawaii",
+              "portrait",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "casablanca",
+            "tags": [
+              "film",
+              "illustration",
+              "romantic",
+              "vintage",
+              "character",
+              "design"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 91,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "forrest gump",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "kids-learning",
+              "vintage",
+              "posters"
+            ]
+          },
+          {
+            "title": "la land",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "music",
+              "posters",
+              "romantic"
+            ]
+          },
+          {
+            "title": "titanic",
+            "tags": [
+              "film",
+              "illustration",
+              "kawaii",
+              "kids-learning",
+              "romantic",
+              "vintage"
+            ]
+          },
+          {
+            "title": "casablanca",
+            "tags": [
+              "film",
+              "illustration",
+              "romantic",
+              "vintage",
+              "character",
+              "design"
+            ]
+          },
+          {
+            "title": "gone with the wind",
+            "tags": [
+              "film",
+              "kids-learning",
+              "romantic",
+              "vintage",
+              "illustration",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "roman holiday",
+            "tags": [
+              "film",
+              "illustration",
+              "italy",
+              "romantic",
+              "vintage",
+              "character"
+            ]
+          },
+          {
+            "title": "farewell my concubine",
+            "tags": [
+              "design",
+              "posters",
+              "quote",
+              "reading",
+              "art-prints",
+              "character"
+            ]
+          },
+          {
+            "title": "green book",
+            "tags": [
+              "design",
+              "posters",
+              "quote",
+              "reading",
+              "art-prints",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "legendary heroes",
+            "tags": [
+              "character",
+              "composition",
+              "design",
+              "groups",
+              "posters",
+              "cartoon"
+            ]
+          },
+          {
+            "title": "brad pitt",
+            "tags": [
+              "character",
+              "film",
+              "portrait",
+              "infographic",
+              "celebrity",
+              "groups"
+            ]
+          },
+          {
+            "title": "johnny depp",
+            "tags": [
+              "character",
+              "film",
+              "portrait",
+              "infographic",
+              "celebrity",
+              "groups"
+            ]
+          },
+          {
+            "title": "tom hanks",
+            "tags": [
+              "character",
+              "film",
+              "portrait",
+              "infographic",
+              "celebrity",
+              "groups"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "sticker pack",
+    "base": {
+      "total": 24,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "graduation alpaca",
+            "tags": [
+              "character",
+              "design",
+              "merch",
+              "illustration",
+              "playful",
+              "whimsical"
+            ]
+          },
+          {
+            "title": "basketball tennis badminton",
+            "tags": [
+              "product",
+              "showcase",
+              "sports",
+              "illustration",
+              "flashcards",
+              "dynamic"
+            ]
+          },
+          {
+            "title": "tennis volleyball soccer baseball",
+            "tags": [
+              "product",
+              "showcase",
+              "sports",
+              "illustration",
+              "flashcards",
+              "character"
+            ]
+          },
+          {
+            "title": "curi ai robot poses views icons",
+            "tags": [
+              "ai",
+              "character",
+              "design",
+              "merch",
+              "illustration",
+              "dynamic"
+            ]
+          },
+          {
+            "title": "Bronze worker mythical beast",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Tang horse figurine ride-share driver",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Office plant succulent buddy",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Anthropomorphized rubber duck product manager",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "ancient bronze beast full character sheet",
+            "tags": [
+              "character",
+              "stickers",
+              "anthropomorphic",
+              "modernized-artifact",
+              "original-ip",
+              "design"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 89,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "Bronze worker mythical beast",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Tang horse figurine ride-share driver",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Office plant succulent buddy",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "Anthropomorphized rubber duck product manager",
+            "tags": [
+              "character",
+              "design",
+              "original-ip",
+              "stickers",
+              "anthropomorphic",
+              "kawaii"
+            ]
+          },
+          {
+            "title": "graduation alpaca",
+            "tags": [
+              "character",
+              "design",
+              "merch",
+              "illustration",
+              "playful",
+              "whimsical"
+            ]
+          },
+          {
+            "title": "cristiano ronaldo portugal",
+            "tags": []
+          },
+          {
+            "title": "haaland man city",
+            "tags": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "product photo",
+    "base": {
+      "total": 39,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "bell peppers",
+            "tags": [
+              "food",
+              "guides",
+              "lifestyle",
+              "vegetables",
+              "infographic",
+              "step-by-step-tutorial"
+            ]
+          },
+          {
+            "title": "carrots",
+            "tags": [
+              "food",
+              "guides",
+              "lifestyle",
+              "infographic",
+              "step-by-step-tutorial",
+              "vegetables"
+            ]
+          },
+          {
+            "title": "lettuce",
+            "tags": [
+              "food",
+              "guides",
+              "lifestyle",
+              "infographic",
+              "step-by-step-tutorial",
+              "vegetables"
+            ]
+          },
+          {
+            "title": "pineapple",
+            "tags": [
+              "food",
+              "fruits",
+              "guides",
+              "lifestyle",
+              "infographic",
+              "posters"
+            ]
+          },
+          {
+            "title": "strawberries",
+            "tags": [
+              "food",
+              "fruits",
+              "guides",
+              "lifestyle",
+              "infographic",
+              "step-by-step-tutorial"
+            ]
+          },
+          {
+            "title": "tomatoes",
+            "tags": [
+              "food",
+              "guides",
+              "lifestyle",
+              "infographic",
+              "step-by-step-tutorial",
+              "vegetables"
+            ]
+          },
+          {
+            "title": "cat",
+            "tags": [
+              "cat",
+              "guides",
+              "information-card",
+              "learning",
+              "lifestyle",
+              "animal"
+            ]
+          },
+          {
+            "title": "dog",
+            "tags": [
+              "dog",
+              "guides",
+              "learning",
+              "lifestyle",
+              "animal",
+              "infographic"
+            ]
+          },
+          {
+            "title": "hamster",
+            "tags": [
+              "guides",
+              "kids-learning",
+              "learning",
+              "lifestyle",
+              "animal",
+              "character"
+            ]
+          },
+          {
+            "title": "horse",
+            "tags": [
+              "guides",
+              "horse",
+              "infographic",
+              "learning",
+              "lifestyle",
+              "animal"
+            ]
+          },
+          {
+            "title": "parrot",
+            "tags": [
+              "guides",
+              "infographic",
+              "learning",
+              "lifestyle",
+              "animal",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "rabbit",
+            "tags": [
+              "guides",
+              "infographic",
+              "learning",
+              "lifestyle",
+              "animal",
+              "character"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 93,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "Organic Rolled Oats",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "Double Chocolate Cookies",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "Italian Pasta Sauce",
+            "tags": [
+              "design",
+              "italian-cuisine",
+              "packaging",
+              "product",
+              "food",
+              "mockups"
+            ]
+          },
+          {
+            "title": "choco chip cookies",
+            "tags": [
+              "food",
+              "packaging",
+              "product",
+              "design",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "espresso coffee beans",
+            "tags": [
+              "food",
+              "packaging",
+              "product",
+              "design",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "marinara sauce",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "matcha powder",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "infographic"
+            ]
+          },
+          {
+            "title": "pasta sauce",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "pasta-and-noodles",
+              "product",
+              "mockups"
+            ]
+          },
+          {
+            "title": "rolled oats",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "eyemask",
+            "tags": [
+              "ecommerce",
+              "fashion",
+              "mockups",
+              "modern",
+              "product",
+              "travel"
+            ]
+          },
+          {
+            "title": "musical instrument",
+            "tags": [
+              "ecommerce",
+              "lifestyle",
+              "music",
+              "portrait",
+              "product",
+              "design"
+            ]
+          },
+          {
+            "title": "pendant",
+            "tags": [
+              "early-childhood-learning",
+              "fashion",
+              "kids-learning",
+              "mockups",
+              "product",
+              "design"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "日历",
+    "base": {
+      "total": 20,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "2026 FIFA World Cup — North American Soccer Showcase",
+            "tags": [
+              "celebration",
+              "design",
+              "promotional-poster",
+              "soccer",
+              "world-cup-2026",
+              "world-cup"
+            ]
+          },
+          {
+            "title": "Milano Cortina 2026 — Winter Olympic Games",
+            "tags": [
+              "celebration",
+              "world-cup",
+              "design",
+              "sports",
+              "italy",
+              "cultural-festivals"
+            ]
+          },
+          {
+            "title": "Nagoya 2026 Asian Games — Japan multi-sport showcase",
+            "tags": [
+              "celebration",
+              "japan",
+              "promotional-poster",
+              "sports",
+              "world-cup",
+              "design"
+            ]
+          },
+          {
+            "title": "Coachella Valley Music and Arts Festival 2026",
+            "tags": [
+              "celebration",
+              "design",
+              "music",
+              "festival",
+              "art-prints",
+              "vibrant"
+            ]
+          },
+          {
+            "title": "resort",
+            "tags": [
+              "information-card",
+              "learning",
+              "posters"
+            ]
+          },
+          {
+            "title": "beijing 798 art season 2026",
+            "tags": [
+              "beijing",
+              "celebration",
+              "art-prints",
+              "design",
+              "digital-canvas",
+              "modern"
+            ]
+          },
+          {
+            "title": "coachella 2026 festival",
+            "tags": [
+              "celebration",
+              "design",
+              "festival",
+              "art-prints",
+              "posters",
+              "music"
+            ]
+          },
+          {
+            "title": "dakar 2026 youth olympics",
+            "tags": [
+              "celebration",
+              "design",
+              "art-prints",
+              "wall-art",
+              "modern",
+              "vibrant"
+            ]
+          },
+          {
+            "title": "fifa world cup 2026 spanish",
+            "tags": [
+              "celebration",
+              "posters",
+              "world-cup-2026",
+              "world-cup",
+              "design",
+              "sports"
+            ]
+          },
+          {
+            "title": "Local Festival Schedule",
+            "tags": [
+              "cultural-festivals",
+              "information-card",
+              "learning",
+              "posters",
+              "art-prints",
+              "infographic"
+            ]
+          },
+          {
+            "title": "Community Center Annual Events",
+            "tags": [
+              "information-card",
+              "learning",
+              "posters",
+              "infographic",
+              "art-prints",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "2025 RV Resort Events",
+            "tags": [
+              "information-card",
+              "learning",
+              "infographic",
+              "art-prints",
+              "wall-art",
+              "travel"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 20,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "resort",
+            "tags": [
+              "information-card",
+              "learning",
+              "posters"
+            ]
+          },
+          {
+            "title": "Local Festival Schedule",
+            "tags": [
+              "cultural-festivals",
+              "information-card",
+              "learning",
+              "posters",
+              "art-prints",
+              "infographic"
+            ]
+          },
+          {
+            "title": "Community Center Annual Events",
+            "tags": [
+              "information-card",
+              "learning",
+              "posters",
+              "infographic",
+              "art-prints",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "2025 RV Resort Events",
+            "tags": [
+              "information-card",
+              "learning",
+              "infographic",
+              "art-prints",
+              "wall-art",
+              "travel"
+            ]
+          },
+          {
+            "title": "chiikawa 2026",
+            "tags": [
+              "calendar",
+              "character",
+              "cartoon",
+              "character-ip",
+              "wall-art",
+              "posters"
+            ]
+          },
+          {
+            "title": "crayon shinchan 2026",
+            "tags": [
+              "calendar",
+              "character",
+              "cartoon",
+              "character-ip",
+              "wall-art",
+              "posters"
+            ]
+          },
+          {
+            "title": "jiji black cat 2026",
+            "tags": [
+              "calendar",
+              "ghibli",
+              "character",
+              "cartoon",
+              "character-ip",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "snoopy peanuts 2026",
+            "tags": [
+              "calendar",
+              "character",
+              "cartoon",
+              "character-ip",
+              "wall-art",
+              "posters"
+            ]
+          },
+          {
+            "title": "studio ghibli 2026",
+            "tags": [
+              "calendar",
+              "ghibli",
+              "character",
+              "cartoon",
+              "character-ip",
+              "wall-art"
+            ]
+          },
+          {
+            "title": "2026 FIFA World Cup — North American Soccer Showcase",
+            "tags": [
+              "celebration",
+              "design",
+              "promotional-poster",
+              "soccer",
+              "world-cup-2026",
+              "world-cup"
+            ]
+          },
+          {
+            "title": "Milano Cortina 2026 — Winter Olympic Games",
+            "tags": [
+              "celebration",
+              "world-cup",
+              "design",
+              "sports",
+              "italy",
+              "cultural-festivals"
+            ]
+          },
+          {
+            "title": "Nagoya 2026 Asian Games — Japan multi-sport showcase",
+            "tags": [
+              "celebration",
+              "japan",
+              "promotional-poster",
+              "sports",
+              "world-cup",
+              "design"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "logo",
+    "base": {
+      "total": 61,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "ghibli vs mappa",
+            "tags": [
+              "anime",
+              "comparison",
+              "ghibli",
+              "infographic",
+              "character",
+              "composition"
+            ]
+          },
+          {
+            "title": "kyotoani vs ufotable 1",
+            "tags": [
+              "anime",
+              "character",
+              "comparison",
+              "infographic",
+              "art-prints",
+              "composition"
+            ]
+          },
+          {
+            "title": "kyotoani vs ufotable 2",
+            "tags": [
+              "anime",
+              "character",
+              "comparison",
+              "infographic",
+              "art-prints",
+              "composition"
+            ]
+          },
+          {
+            "title": "pixar vs dreamworks",
+            "tags": [
+              "character",
+              "comparison",
+              "infographic",
+              "anime",
+              "composition",
+              "art-prints"
+            ]
+          },
+          {
+            "title": "wit vs ufotable",
+            "tags": [
+              "anime",
+              "character",
+              "comparison",
+              "infographic",
+              "art-prints",
+              "composition"
+            ]
+          },
+          {
+            "title": "Organic Rolled Oats",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "Double Chocolate Cookies",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "Italian Pasta Sauce",
+            "tags": [
+              "design",
+              "italian-cuisine",
+              "packaging",
+              "product",
+              "food",
+              "mockups"
+            ]
+          },
+          {
+            "title": "choco chip cookies",
+            "tags": [
+              "food",
+              "packaging",
+              "product",
+              "design",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "espresso coffee beans",
+            "tags": [
+              "food",
+              "packaging",
+              "product",
+              "design",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "marinara sauce",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "posters"
+            ]
+          },
+          {
+            "title": "matcha powder",
+            "tags": [
+              "design",
+              "food",
+              "packaging",
+              "product",
+              "mockups",
+              "infographic"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 61,
+      "paths": 1,
+      "rewrites": [],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "ghibli vs mappa",
+            "tags": [
+              "anime",
+              "comparison",
+              "ghibli",
+              "infographic",
+              "character",
+              "composition"
+            ]
+          },
+          {
+            "title": "kyotoani vs ufotable 1",
+            "tags": [
+              "anime",
+              "character",
+              "comparison",
+              "infographic",
+              "art-prints",
+              "composition"
+            ]
+          },
+          {
+            "title": "kyotoani vs ufotable 2",
+            "tags": [
+              "anime",
+              "character",
+              "comparison",
+              "infographic",
+              "art-prints",
+              "composition"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "query": "人体图解",
+    "base": {
+      "total": 303,
+      "paths": 6,
+      "rewrites": [
+        "human anatomy infographic",
+        "body diagram poster",
+        "anatomy illustration"
+      ],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "human brain usage",
+            "tags": [
+              "infographic",
+              "science",
+              "art-prints",
+              "wall-art",
+              "brain",
+              "anatomy"
+            ]
+          },
+          {
+            "title": "human body bilingual science mindmap",
+            "tags": [
+              "learning",
+              "science",
+              "mind-maps",
+              "information-card",
+              "bilingual",
+              "anatomy"
+            ]
+          },
+          {
+            "title": "human body",
+            "tags": [
+              "beginner",
+              "bilingual",
+              "illustration",
+              "infographic",
+              "kids-learning",
+              "language"
+            ]
+          },
+          {
+            "title": "body parts",
+            "tags": [
+              "anatomy",
+              "artistic",
+              "bilingual",
+              "early-childhood-learning",
+              "illustration",
+              "kids-learning"
+            ]
+          },
+          {
+            "title": "sleep disorder guide",
+            "tags": [
+              "guides",
+              "health",
+              "infographic",
+              "learning",
+              "science",
+              "calm"
+            ]
+          },
+          {
+            "title": "fitness science guide",
+            "tags": [
+              "fitness",
+              "illustration",
+              "information-card",
+              "learning",
+              "science",
+              "infographic"
+            ]
+          },
+          {
+            "title": "muscle fiber types",
+            "tags": [
+              "fitness",
+              "infographic",
+              "kids-learning",
+              "learning",
+              "science",
+              "cartoon"
+            ]
+          },
+          {
+            "title": "muscle growth mechanisms",
+            "tags": [
+              "fitness",
+              "infographic",
+              "kids-learning",
+              "learning",
+              "science",
+              "illustration"
+            ]
+          },
+          {
+            "title": "supercompensation",
+            "tags": [
+              "fitness",
+              "infographic",
+              "learning",
+              "science",
+              "cartoon",
+              "illustration"
+            ]
+          },
+          {
+            "title": "hack squat tbar row incline bench press hip abductor",
+            "tags": [
+              "anatomy",
+              "fitness",
+              "guides",
+              "information-card",
+              "gym",
+              "health"
+            ]
+          },
+          {
+            "title": "leg extension bicep curl tricep dip ab crunch",
+            "tags": [
+              "anatomy",
+              "fitness",
+              "guides",
+              "illustration",
+              "information-card",
+              "infographic"
+            ]
+          },
+          {
+            "title": "leg press lat pulldown chest press cable row",
+            "tags": [
+              "anatomy",
+              "fitness",
+              "guides",
+              "illustration",
+              "information-card",
+              "lifestyle"
+            ]
+          }
+        ]
+      }
+    },
+    "cand": {
+      "total": 164,
+      "paths": 6,
+      "rewrites": [
+        "human anatomy infographic",
+        "body diagram poster",
+        "anatomy illustration"
+      ],
+      "offSubjectTop12": {
+        "n": 12,
+        "off": [
+          {
+            "title": "human body",
+            "tags": [
+              "beginner",
+              "bilingual",
+              "illustration",
+              "infographic",
+              "kids-learning",
+              "language"
+            ]
+          },
+          {
+            "title": "empire state building",
+            "tags": [
+              "architecture",
+              "infographic",
+              "learning",
+              "anatomy",
+              "city",
+              "modern"
+            ]
+          },
+          {
+            "title": "giant wild goose pagoda",
+            "tags": [
+              "architecture",
+              "history",
+              "infographic",
+              "kids-learning",
+              "learning",
+              "anatomy"
+            ]
+          },
+          {
+            "title": "national stadium bird nest",
+            "tags": [
+              "architecture",
+              "design",
+              "infographic",
+              "modern",
+              "anatomy",
+              "urban"
+            ]
+          },
+          {
+            "title": "oriental pearl tower",
+            "tags": [
+              "architecture",
+              "city",
+              "illustration",
+              "infographic",
+              "learning",
+              "modern"
+            ]
+          },
+          {
+            "title": "beijing opera colorful female armor",
+            "tags": [
+              "beijing",
+              "china",
+              "costumes",
+              "culture",
+              "fashion",
+              "history"
+            ]
+          },
+          {
+            "title": "ming dynasty dragon robe",
+            "tags": [
+              "china",
+              "costumes",
+              "fashion",
+              "history",
+              "illustration",
+              "vintage"
+            ]
+          },
+          {
+            "title": "qing dynasty buzi",
+            "tags": [
+              "china",
+              "costumes",
+              "fashion",
+              "history",
+              "illustration",
+              "vintage"
+            ]
+          },
+          {
+            "title": "song beizi",
+            "tags": [
+              "china",
+              "costumes",
+              "fashion",
+              "history",
+              "illustration",
+              "vintage"
+            ]
+          },
+          {
+            "title": "tang qixiong",
+            "tags": [
+              "china",
+              "costumes",
+              "fashion",
+              "history",
+              "illustration",
+              "vintage"
+            ]
+          },
+          {
+            "title": "human body",
+            "tags": [
+              "body",
+              "cartoon",
+              "information-card",
+              "learning",
+              "science",
+              "illustration"
+            ]
+          },
+          {
+            "title": "kangaroo steak",
+            "tags": [
+              "cuisine",
+              "food",
+              "illustration",
+              "infographic",
+              "art-prints",
+              "lifestyle"
+            ]
+          }
+        ]
+      }
+    }
+  }
+]
