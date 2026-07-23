@@ -1,0 +1,323 @@
+{
+  "run": "curify-template-discovery-top10-2026-07-23",
+  "generated_at": "2026-07-23T00:00:00",
+  "recovery_from_interruption": true,
+  "interruption_reason": "API Error: Response stalled mid-stream",
+  "task_a_source": {
+    "path": "docs/daily_report/7.22/cluster-ab-latest-fix-full326-2026-07-22",
+    "frontend_commit": "0e794cd91396a96cd56fd1d8f7f1495909f3adc5",
+    "total": 326,
+    "pass": 38,
+    "partial": 86,
+    "fail": 195,
+    "unjudgable": 7,
+    "zero_result": 20,
+    "low_result": 18,
+    "rerun": false
+  },
+  "top10_count": 10,
+  "map_classification": "SEARCH_ISSUE_ONLY (excluded)",
+  "flashcard_classification": "SEARCH_ISSUE_ONLY (excluded)",
+  "frontend_code_modified": false,
+  "commit_created": false,
+  "push_performed": false,
+  "pr_created": false,
+  "file_count": 59,
+  "files": [
+    {
+      "path": "00_RUN_CONTEXT.md",
+      "sha256": "1838fb3253ce5b3c7cd78ccf517db614a9c9063a8924e9ec52b622db5f796d28",
+      "size_bytes": 3503
+    },
+    {
+      "path": "01_SOURCE_INVENTORY.csv",
+      "sha256": "26d46cff653df64beefe82db9abeed082a419471a0cd0e1745f87c167c72c4c3",
+      "size_bytes": 8994
+    },
+    {
+      "path": "02_UNIFIED_QUERY_INVENTORY.csv",
+      "sha256": "131c36b6dc5280893d28e427a193e56189ef2c7148a0dc89797771bac5bcadc3",
+      "size_bytes": 21503
+    },
+    {
+      "path": "03_QUERY_VERTICAL_MAPPING.csv",
+      "sha256": "6226df0c260ca8d2dd1a4f2c59d21b633cdb04981c8e4f167562f4600024bebc",
+      "size_bytes": 3812
+    },
+    {
+      "path": "03_VERTICAL_TAXONOMY.md",
+      "sha256": "c13059ab897164703097bd29846e3ff7301abce586b9b15126fd4737576f7bbd",
+      "size_bytes": 2804
+    },
+    {
+      "path": "04_LATEST326_CONTENT_GAP_SIGNALS.csv",
+      "sha256": "1d6df45b03f2edb54c3e062fe76ded4ee0327ff86269265587fff3a24f035f63",
+      "size_bytes": 7438
+    },
+    {
+      "path": "04_LATEST326_CONTENT_GAP_SUMMARY.md",
+      "sha256": "ccbeac1727247caef85a0244ee180c29b2c36ae7a85a395e957b217044af1f0b",
+      "size_bytes": 2831
+    },
+    {
+      "path": "05_DEMAND_PATTERN_SUMMARY.md",
+      "sha256": "0278b86fce422815d82a3871fc61e62ca3b034c03452408edef0aee2822875e9",
+      "size_bytes": 1863
+    },
+    {
+      "path": "05_REPEATED_QUERY_DEMAND.csv",
+      "sha256": "8dbdd8e14231f1a327a58ba41588d9812b1c2d7a06a344bade9b3d0b05a30ecb",
+      "size_bytes": 4463
+    },
+    {
+      "path": "06_COMPETITOR_ANALYSIS_SUMMARY.md",
+      "sha256": "110945985206a7c51f09bc623a2129c2f1d03a01b3b8d69e952386589f958ba4",
+      "size_bytes": 1994
+    },
+    {
+      "path": "06_COMPETITOR_EVIDENCE_INDEX.csv",
+      "sha256": "1ecd111ab88149c3c9dcc18739e2ba668ceb192ea231d1c616c3e1aa663b1541",
+      "size_bytes": 3575
+    },
+    {
+      "path": "07_SEARCH_VS_CONTENT_GAP_CLASSIFICATION.csv",
+      "sha256": "78b7b70fe2010a8baf271f95fcd31e12ab7f26d5408bf04c8ab32f59b7abdc27",
+      "size_bytes": 2537
+    },
+    {
+      "path": "08_TEMPLATE_CANDIDATE_POOL.csv",
+      "sha256": "3784be2b5c2b94ea4351710d69638c73fb84d4dd7d61e80a5266a74c15ff0e65",
+      "size_bytes": 3866
+    },
+    {
+      "path": "09_SCORING_METHOD.md",
+      "sha256": "054f3a1da3730921b4052bc629918c1fc9c54221ee59c613338b75a8e4312a37",
+      "size_bytes": 2818
+    },
+    {
+      "path": "09_TEMPLATE_CANDIDATE_SCORING.csv",
+      "sha256": "52001370ae0567330616e455c928e94e25f1f503567c4d68defdf9aa811cf262",
+      "size_bytes": 1037
+    },
+    {
+      "path": "10_TOP10_TEMPLATE_RECOMMENDATIONS.csv",
+      "sha256": "052e8346118a195c527f9bd3d786ed84430b69654e1774c969a7db9a644313ac",
+      "size_bytes": 22149
+    },
+    {
+      "path": "11_IMAGE_EVIDENCE_INDEX.csv",
+      "sha256": "26905c84f7afc84d3de4d1c185496e364a1b8d3ee905164a5f3c9c4b74479983",
+      "size_bytes": 4900
+    },
+    {
+      "path": "11_MISSING_IMAGE_EVIDENCE.md",
+      "sha256": "f90f7efadcf9b0afa242ffc6aa6ecce870222499a668712a8c28df2dec0967d0",
+      "size_bytes": 1660
+    },
+    {
+      "path": "12_TOP10_TEMPLATE_DISCOVERY_REPORT_ZH.md",
+      "sha256": "751d8bc64cb52909e962f9b1a989158f7876c326c4f5cc35d058e21b8c0e9dfa",
+      "size_bytes": 9765
+    },
+    {
+      "path": "13_MANAGER_REVIEW_SUMMARY.md",
+      "sha256": "ec21048e129e1e858a83ac5cbc00fb59d29ea12d7e5fc32ab16da54f7836a1c2",
+      "size_bytes": 2476
+    },
+    {
+      "path": "13_MANAGER_REVIEW_TOP10.csv",
+      "sha256": "b3a3f72582f893afd447e89129ae6a6eca01453cd134a031fb756b3e913389e1",
+      "size_bytes": 2769
+    },
+    {
+      "path": "RUN_LOG.md",
+      "sha256": "2a34dbabfa66f3bb7c4cd73d7b8fdd782398648d49119c25f0586aad6ad8a2de",
+      "size_bytes": 4854
+    },
+    {
+      "path": "TOP10_TEMPLATE_CONTACT_SHEET.png",
+      "sha256": "e08902d3aca5819f46073989c8edb855092cc683de3c0605a24ff78d257d2903",
+      "size_bytes": 704459
+    },
+    {
+      "path": "_candidates.json",
+      "sha256": "d7b9e2d7392ee5cd637f49a428324663c0da58a9572ba51c96afd1ba8294314b",
+      "size_bytes": 35963
+    },
+    {
+      "path": "cards/T01_01_certificates-achievement-awards.png",
+      "sha256": "8a8da132e6fc0ba8e0308e247c31970e95521c98fb2f3de24ea9cdfb05285bc2",
+      "size_bytes": 171256
+    },
+    {
+      "path": "cards/T02_02_stem-classroom-teaching-aids.png",
+      "sha256": "3054c8284f09ab528a40705028c9a339ee8eb9567691bc285247dfc292328781",
+      "size_bytes": 177826
+    },
+    {
+      "path": "cards/T03_03_workbook-practice-book-covers.png",
+      "sha256": "36cf781c29b34add17792a9ba704ea1ec13f7daaebfb5237767061b6c636800e",
+      "size_bytes": 147620
+    },
+    {
+      "path": "cards/T04_04_flyer-promotional-flyer.png",
+      "sha256": "3def9418d936e27ef897b0e14a5fdd409208b5d755bfe9781499afe4bfd90d7b",
+      "size_bytes": 143758
+    },
+    {
+      "path": "cards/T05_05_price-tag-product-label.png",
+      "sha256": "ad5d60554c656a107d0df90bef53698797505a39f2347f580c6e4c6068261aa0",
+      "size_bytes": 122512
+    },
+    {
+      "path": "cards/T06_06_chocolate-giftbox-packaging.png",
+      "sha256": "bdd8abb33ccbe6929ac8b5699adb568c7ac508e211a5d55367b1ed31270f0392",
+      "size_bytes": 215806
+    },
+    {
+      "path": "cards/T07_07_perfume-cosmetic-bottle-packaging.png",
+      "sha256": "1721d8d13baf34db26fbe976c1d706057307eae666549c3597e9230be98c51d8",
+      "size_bytes": 283548
+    },
+    {
+      "path": "cards/T08_08_puzzle-jigsaw-collectible.png",
+      "sha256": "4ff13cd482a04f1fe10d6bb5c1b23688acf3af3693e038b4c8a0d488152c834c",
+      "size_bytes": 139648
+    },
+    {
+      "path": "cards/T09_09_discount-coupon-voucher.png",
+      "sha256": "10238258ba444663d048615a1a49d74eb92c1908f1aedcb798aef3473b445bcf",
+      "size_bytes": 120131
+    },
+    {
+      "path": "cards/T10_10_fridge-magnet-merch.png",
+      "sha256": "9ed0bcf29077de130ba37297651d9f0249c347c7cf842ab9991c1890ceb326f9",
+      "size_bytes": 121699
+    },
+    {
+      "path": "images/00_excluded-search-issues/flashcard/canva-manual-review.jpg",
+      "sha256": "9eb7a3674cd342128ea4ee75de4dc2160dfe3b5caa1906c17ab4693ae55d3413",
+      "size_bytes": 197106
+    },
+    {
+      "path": "images/00_excluded-search-issues/flashcard/curify_7.17_flashcard_680_results.png",
+      "sha256": "b995c7eb67ae0cb72b184c5c9ba00d2678e93cda93f63e85ae8691f5eb9a79d8",
+      "size_bytes": 1687203
+    },
+    {
+      "path": "images/00_excluded-search-issues/map/canva-manual-review.jpg",
+      "sha256": "89dede72b7149713c60b6e5f7c335f6c292b09476f4c60b329239293e6509a18",
+      "size_bytes": 200579
+    },
+    {
+      "path": "images/00_excluded-search-issues/map/curify_7.17_map_60plus_results.png",
+      "sha256": "0a7f97f63780d1f8e5b9bb48a3efc37684c3122f956e9b3cc7291e7d147a5ab5",
+      "size_bytes": 2719996
+    },
+    {
+      "path": "images/00_excluded-search-issues/pencil-case/笔袋.png",
+      "sha256": "c569d0b54ea47bd5b77c4a3dc5949f913cfcc5da60c14b0a05ce3b16d3faad3e",
+      "size_bytes": 3133198
+    },
+    {
+      "path": "images/01_certificates-achievement-awards/curify_current/260_V260_certificate.png",
+      "sha256": "54e2baf48f643bff33cd00a8115f848f78c5423a5c7f28f3c91c15a435805dc4",
+      "size_bytes": 329115
+    },
+    {
+      "path": "images/01_certificates-achievement-awards/curify_current/316_V316_achievement_certificate.png",
+      "sha256": "0ba8b7148c151420be8d7f81586751379640cea5e1b9206d56648f0edfcb8105",
+      "size_bytes": 2323051
+    },
+    {
+      "path": "images/02_stem-classroom-teaching-aids/curify_current/290_V290_whiteboard.png",
+      "sha256": "d5994cecb17640d52474a4f08b2e79e482c30a334be1a27b209b48dff64c73b1",
+      "size_bytes": 329340
+    },
+    {
+      "path": "images/02_stem-classroom-teaching-aids/curify_current/292_V292_microscope.png",
+      "sha256": "8b186b6e0742687c923f83ef022e114b031ca05ffb8c1a6d8b6337f775de4d5a",
+      "size_bytes": 1810421
+    },
+    {
+      "path": "images/02_stem-classroom-teaching-aids/curify_current/296_V296_abacus.png",
+      "sha256": "ab3af495e0d03a1f7bb72b4b554e9f22a7e622ad2a864d43cfba56e88281c1e6",
+      "size_bytes": 2042362
+    },
+    {
+      "path": "images/03_workbook-practice-book-covers/curify_current/298_V298_workbook.png",
+      "sha256": "1562a968e131a2d6685007703f8fa8fa7dda88560a8dd11f3517dd1a9f369f09",
+      "size_bytes": 2113817
+    },
+    {
+      "path": "images/04_flyer-promotional-flyer/curify_current/168_V168_flyer.png",
+      "sha256": "a7b245e16a2d8d648d975ed0ab03f4c8887a8e6a070376ec3b33766278f0d22b",
+      "size_bytes": 2319820
+    },
+    {
+      "path": "images/04_flyer-promotional-flyer/curify_current/192_V192_discount_flyer.png",
+      "sha256": "15767371002526b4a8bfe832a7db4021ad0a6392cfa887bbe61c1ab4086d36ab",
+      "size_bytes": 268372
+    },
+    {
+      "path": "images/05_price-tag-product-label/curify_current/136_V136_price_tag.png",
+      "sha256": "a17e5ac0952dd904299a62eef44192b273b195ea988e393ef5825c2ab1e043b1",
+      "size_bytes": 328944
+    },
+    {
+      "path": "images/06_chocolate-giftbox-packaging/curify_current/110_V110_chocolate_box.png",
+      "sha256": "395d3763d4b7b6d269e990dd4f5a14745bb10ca8fd4b855cb39a8d3b62d5a665",
+      "size_bytes": 2068731
+    },
+    {
+      "path": "images/06_chocolate-giftbox-packaging/curify_current/120_V120_gift_box.png",
+      "sha256": "780768367caac287b8778efe1246cd346b6f3788998d8016bab082b03dee5712",
+      "size_bytes": 2119213
+    },
+    {
+      "path": "images/06_chocolate-giftbox-packaging/curify_current/164_V164_mooncake_gift_box.png",
+      "sha256": "6220033383a22632e17fbfe3a8c15b83677442956dd782d0e16e915c4cb60a32",
+      "size_bytes": 1900067
+    },
+    {
+      "path": "images/07_perfume-cosmetic-bottle-packaging/competitor/xiaohongshu_aromatherapy_canva.png",
+      "sha256": "61152f68dae445deb93ed5d676e06a45d367740f9c610a2ef90d429cb4f31c18",
+      "size_bytes": 3849544
+    },
+    {
+      "path": "images/07_perfume-cosmetic-bottle-packaging/competitor/xiaohongshu_aromatherapy_curify_current.png",
+      "sha256": "0661a948a9cefab0f42b43c6f908dad685d91f1ff1974f0f72593924d29593a6",
+      "size_bytes": 1636327
+    },
+    {
+      "path": "images/07_perfume-cosmetic-bottle-packaging/competitor/xiaohongshu_aromatherapy_pinterest.png",
+      "sha256": "d3edeb976d7a95320ce439a0b5340643a934f5299de22f13f92f950a9c026f77",
+      "size_bytes": 4756297
+    },
+    {
+      "path": "images/07_perfume-cosmetic-bottle-packaging/curify_current/102_V102_perfume_bottle.png",
+      "sha256": "478f32ddd72c69582bfd134cdc591ad55f44042d8f282e8273aa4efd5e893dfe",
+      "size_bytes": 2216072
+    },
+    {
+      "path": "images/07_perfume-cosmetic-bottle-packaging/curify_current/104_V104_perfume_box.png",
+      "sha256": "be2346838bdbf356cf26df142c253e6056798e05481c0ba84e9acc4648fce6b4",
+      "size_bytes": 2221387
+    },
+    {
+      "path": "images/08_puzzle-jigsaw-collectible/curify_current/060_V060_puzzle.png",
+      "sha256": "27a2b281d1d0fb56d870ca22b9f2de3d131807e1f8891044670ede38d3408b50",
+      "size_bytes": 2313544
+    },
+    {
+      "path": "images/09_discount-coupon-voucher/curify_current/222_V222_discount_coupon.png",
+      "sha256": "e40eafacb26df3d2149c18d3f4c8d1ca12f1db7cbe087c50902e4fa050c28989",
+      "size_bytes": 330007
+    },
+    {
+      "path": "images/10_fridge-magnet-merch/curify_current/042_V042_magnet.png",
+      "sha256": "7ea83d9c65f565e41dec3be2d19eaf0e692c508eb110bed2a28ae4c214c0e2d1",
+      "size_bytes": 324929
+    }
+  ]
+}

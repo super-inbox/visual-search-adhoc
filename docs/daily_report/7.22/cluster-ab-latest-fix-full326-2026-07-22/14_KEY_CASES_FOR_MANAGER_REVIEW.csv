@@ -1,0 +1,50 @@
+section,query,note,detail
+MAJOR_IMPROVEMENT,吉祥物,FAIL->PASS vs production,mascot
+MAJOR_IMPROVEMENT,statue,FAIL->PASS vs production,collectible
+MAJOR_IMPROVEMENT,logo,FAIL->PASS vs production,logo
+MAJOR_IMPROVEMENT,product tag,FAIL->PASS vs production,label
+MAJOR_IMPROVEMENT,外卖餐盒,FAIL->PASS vs production,product_box
+MAJOR_IMPROVEMENT,product photo,FAIL->PASS vs production,product_photo
+MAJOR_IMPROVEMENT,产品展示,FAIL->PASS vs production,product_display
+MAJOR_IMPROVEMENT,电影海报,FAIL->PASS vs production,poster_specific
+MAJOR_REGRESSION,手办,"PARTIAL->FAIL vs production, severity=HIGH",figure
+MAJOR_REGRESSION,娃娃,"PARTIAL->FAIL vs production, severity=HIGH",doll
+MAJOR_REGRESSION,泰迪熊,"PARTIAL->FAIL vs production, severity=HIGH",plush
+MAJOR_REGRESSION,mystery box,"PARTIAL->FAIL vs production, severity=HIGH",blind_box
+MAJOR_REGRESSION,cultural relic figure,"PARTIAL->FAIL vs production, severity=HIGH",figure
+MAJOR_REGRESSION,IP figure,"PARTIAL->FAIL vs production, severity=HIGH",figure
+MAJOR_REGRESSION,menu,"PARTIAL->FAIL vs production, severity=HIGH",menu
+MAJOR_REGRESSION,coffee bean package,"PARTIAL->FAIL vs production, severity=HIGH",package
+MAJOR_REGRESSION,巧克力礼盒,"PARTIAL->FAIL vs production, severity=HIGH",product_box
+MAJOR_REGRESSION,酒标,"PARTIAL->FAIL vs production, severity=HIGH",label
+CLUSTER_A,wine label,fixed,PARTIAL->FAIL->PASS
+CLUSTER_A,酒标,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_A,字母海报,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_A,巧克力礼盒,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_A,人体图解,partially_recovered,PASS->FAIL->PARTIAL
+CLUSTER_A-adjacent,coffee package,fixed,PARTIAL->FAIL->PASS
+CLUSTER_A-adjacent,coffee bean package,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_A-adjacent,cosmetic package,partially_recovered,PARTIAL->FAIL->PARTIAL
+CLUSTER_A-known-gap,black friday banner,"unresolved (disclosed follow-up, not in this fix's scope)",PARTIAL->FAIL->FAIL
+CLUSTER_B,笔袋,"unresolved (flagship, still worse than production)",PARTIAL->FAIL->FAIL
+CLUSTER_B,pencil case,unresolved (still worse than production),PARTIAL->FAIL->FAIL
+CLUSTER_B,挂件,fixed (recovered to production PASS level),PASS->FAIL->PASS
+CLUSTER_B,娃娃,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_B,泰迪熊,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_B,单词卡,unresolved,PARTIAL->FAIL->FAIL
+CLUSTER_B-related (new-zero from 7/21),积分卡,fixed (recovered from zero),FAIL->FAIL->PARTIAL
+CLUSTER_B-related (new-zero from 7/21),会员卡,unresolved (still zero),FAIL->FAIL->FAIL
+CONTENT_GAP,character,zero-result across production/previous-candidate/latest -- likely missing catalog content,character
+CONTENT_GAP,价格标签,zero-result across production/previous-candidate/latest -- likely missing catalog content,label
+CONTENT_GAP,price tag,zero-result across production/previous-candidate/latest -- likely missing catalog content,label
+CONTENT_GAP,传单,zero-result across production/previous-candidate/latest -- likely missing catalog content,flyer
+CONTENT_GAP,flyer,zero-result across production/previous-candidate/latest -- likely missing catalog content,flyer
+CONTENT_GAP,discount coupon,zero-result across production/previous-candidate/latest -- likely missing catalog content,coupon
+CONTENT_GAP,flashcard,zero-result across production/previous-candidate/latest -- likely missing catalog content,flashcard
+CONTENT_GAP,地图,zero-result across production/previous-candidate/latest -- likely missing catalog content,map
+CONTENT_GAP,map,zero-result across production/previous-candidate/latest -- likely missing catalog content,map
+CONTENT_GAP,certificate,zero-result across production/previous-candidate/latest -- likely missing catalog content,certificate
+NEW_RISK,puzzle,NEW zero-result regression introduced somewhere in the retrieval/filter chain (not pre-existing),collectible
+NEW_RISK,优惠券,NEW zero-result regression introduced somewhere in the retrieval/filter chain (not pre-existing),coupon
+NEW_RISK,会员卡,NEW zero-result regression introduced somewhere in the retrieval/filter chain (not pre-existing),membership_card
+NEW_RISK,diploma,NEW zero-result regression introduced somewhere in the retrieval/filter chain (not pre-existing),certificate

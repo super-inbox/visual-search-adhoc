@@ -1,0 +1,657 @@
+RUN START: Wed Jul 22 15:25:58 CST 2026
+[run_eval_single] 326 queries from /Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.16/easy-query-bank-v3/easy_query_bank_v2_2026-07-16.csv against http://localhost:4522, concurrency=6
+[run_eval_single] row 0 start "玩具"
+[run_eval_single] row 1 start "toy"
+[run_eval_single] row 2 start "手办"
+[run_eval_single] row 3 start "figure"
+[run_eval_single] row 4 start "毛绒玩具"
+[run_eval_single] row 5 start "plush"
+[run_eval_single] row 3 done in 5487ms (1/326)
+[run_eval_single] row 6 start "娃娃"
+[run_eval_single] row 1 done in 5758ms (2/326)
+[run_eval_single] row 7 start "doll"
+[run_eval_single] row 0 done in 6096ms (3/326)
+[run_eval_single] row 8 start "吉祥物"
+[run_eval_single] row 2 done in 6250ms (4/326)
+[run_eval_single] row 9 start "mascot"
+[run_eval_single] row 4 done in 6951ms (5/326)
+[run_eval_single] row 10 start "卡通形象"
+[run_eval_single] row 9 done in 1817ms (6/326)
+[run_eval_single] row 11 start "character"
+[run_eval_single] row 7 done in 2337ms (7/326)
+[run_eval_single] row 12 start "贴纸"
+[run_eval_single] row 5 done in 8131ms (8/326)
+[run_eval_single] row 13 start "sticker"
+[run_eval_single] row 11 done in 481ms (9/326)
+[run_eval_single] row 14 start "钥匙扣"
+[run_eval_single] row 10 done in 1696ms (10/326)
+[run_eval_single] row 15 start "keychain"
+[run_eval_single] row 8 done in 2584ms (11/326)
+[run_eval_single] row 16 start "收藏品"
+[run_eval_single] row 6 done in 3576ms (12/326)
+[run_eval_single] row 17 start "collectible"
+[run_eval_single] row 13 done in 2087ms (13/326)
+[run_eval_single] row 18 start "盲盒"
+[run_eval_single] row 16 done in 1945ms (14/326)
+[run_eval_single] row 19 start "blind box"
+[run_eval_single] row 15 done in 1947ms (15/326)
+[run_eval_single] row 20 start "动作人偶"
+[run_eval_single] row 12 done in 2732ms (16/326)
+[run_eval_single] row 21 start "action figure"
+[run_eval_single] row 17 done in 2422ms (17/326)
+[run_eval_single] row 22 start "泰迪熊"
+[run_eval_single] row 14 done in 3011ms (18/326)
+[run_eval_single] row 23 start "teddy bear"
+[run_eval_single] row 22 done in 3920ms (19/326)
+[run_eval_single] row 24 start "扭蛋"
+[run_eval_single] row 23 done in 4023ms (20/326)
+[run_eval_single] row 25 start "capsule toy"
+[run_eval_single] row 19 done in 4999ms (21/326)
+[run_eval_single] row 26 start "卡牌"
+[run_eval_single] row 18 done in 5526ms (22/326)
+[run_eval_single] row 27 start "trading card"
+[run_eval_single] row 21 done in 5537ms (23/326)
+[run_eval_single] row 28 start "模型"
+[run_eval_single] row 20 done in 5833ms (24/326)
+[run_eval_single] row 29 start "model kit"
+[run_eval_single] row 25 done in 4193ms (25/326)
+[run_eval_single] row 30 start "雕像"
+[run_eval_single] row 26 done in 4273ms (26/326)
+[run_eval_single] row 31 start "statue"
+[run_eval_single] row 29 done in 3502ms (27/326)
+[run_eval_single] row 32 start "帆布袋"
+[run_eval_single] row 27 done in 4274ms (28/326)
+[run_eval_single] row 33 start "tote bag"
+[run_eval_single] row 24 done in 4629ms (29/326)
+[run_eval_single] row 34 start "手机壳"
+[run_eval_single] row 28 done in 4199ms (30/326)
+[run_eval_single] row 35 start "phone case"
+[run_eval_single] row 31 done in 2437ms (31/326)
+[run_eval_single] row 36 start "徽章"
+[run_eval_single] row 32 done in 2592ms (32/326)
+[run_eval_single] row 37 start "badge"
+[run_eval_single] row 30 done in 2853ms (33/326)
+[run_eval_single] row 38 start "胸针"
+[run_eval_single] row 33 done in 2638ms (34/326)
+[run_eval_single] row 39 start "enamel pin"
+[run_eval_single] row 35 done in 2505ms (35/326)
+[run_eval_single] row 40 start "冰箱贴"
+[run_eval_single] row 34 done in 3238ms (36/326)
+[run_eval_single] row 41 start "magnet"
+[run_eval_single] row 41 done in 2875ms (37/326)
+[run_eval_single] row 42 start "挂绳"
+[run_eval_single] row 36 done in 3912ms (38/326)
+[run_eval_single] row 43 start "lanyard"
+[run_eval_single] row 39 done in 3610ms (39/326)
+[run_eval_single] row 44 start "迷你手办"
+[run_eval_single] row 40 done in 3236ms (40/326)
+[run_eval_single] row 45 start "mini figure"
+[run_eval_single] row 37 done in 3901ms (41/326)
+[run_eval_single] row 46 start "潮流公仔"
+[run_eval_single] row 38 done in 3886ms (42/326)
+[run_eval_single] row 47 start "vinyl toy"
+[run_eval_single] row 47 done in 3781ms (43/326)
+[run_eval_single] row 48 start "潮流手办"
+[run_eval_single] row 45 done in 4196ms (44/326)
+[run_eval_single] row 49 start "pop figure"
+[run_eval_single] row 42 done in 4367ms (45/326)
+[run_eval_single] row 50 start "惊喜盒子"
+[run_eval_single] row 43 done in 4453ms (46/326)
+[run_eval_single] row 51 start "mystery box"
+[run_eval_single] row 46 done in 4326ms (47/326)
+[run_eval_single] row 52 start "挂件"
+[run_eval_single] row 44 done in 5142ms (48/326)
+[run_eval_single] row 53 start "charm"
+[run_eval_single] row 49 done in 4192ms (49/326)
+[run_eval_single] row 54 start "马克杯"
+[run_eval_single] row 48 done in 4395ms (50/326)
+[run_eval_single] row 55 start "collectible mug"
+[run_eval_single] row 52 done in 3945ms (51/326)
+[run_eval_single] row 56 start "抱枕"
+[run_eval_single] row 51 done in 4479ms (52/326)
+[run_eval_single] row 57 start "plush pillow"
+[run_eval_single] row 53 done in 3795ms (53/326)
+[run_eval_single] row 58 start "拼图"
+[run_eval_single] row 50 done in 4947ms (54/326)
+[run_eval_single] row 59 start "puzzle"
+[run_eval_single] row 59 done in 1800ms (55/326)
+[run_eval_single] row 60 start "积木"
+[run_eval_single] row 56 done in 4136ms (56/326)
+[run_eval_single] row 61 start "building blocks"
+[run_eval_single] row 58 done in 4035ms (57/326)
+[run_eval_single] row 62 start "公仔盒"
+[run_eval_single] row 54 done in 4548ms (58/326)
+[run_eval_single] row 63 start "sticker pack"
+[run_eval_single] row 57 done in 4172ms (59/326)
+[run_eval_single] row 64 start "文创手办"
+[run_eval_single] row 55 done in 4915ms (60/326)
+[run_eval_single] row 65 start "cultural relic figure"
+[run_eval_single] row 60 done in 2954ms (61/326)
+[run_eval_single] row 66 start "博物馆文创"
+[run_eval_single] row 61 done in 1762ms (62/326)
+[run_eval_single] row 67 start "museum souvenir"
+[run_eval_single] row 66 done in 4079ms (63/326)
+[run_eval_single] row 68 start "国潮公仔"
+[run_eval_single] row 63 done in 5102ms (64/326)
+[run_eval_single] row 69 start "IP figure"
+[run_eval_single] row 67 done in 3784ms (65/326)
+[run_eval_single] row 70 start "动漫周边"
+[run_eval_single] row 62 done in 5156ms (66/326)
+[run_eval_single] row 71 start "anime merch"
+[run_eval_single] row 65 done in 4970ms (67/326)
+[run_eval_single] row 72 start "明信片套装"
+[run_eval_single] row 64 done in 6119ms (68/326)
+[run_eval_single] row 73 start "postcard set"
+[run_eval_single] row 72 done in 3858ms (69/326)
+[run_eval_single] row 74 start "艺术微喷"
+[run_eval_single] row 71 done in 4105ms (70/326)
+[run_eval_single] row 75 start "art print"
+[run_eval_single] row 73 done in 3098ms (71/326)
+[run_eval_single] row 76 start "摇头公仔"
+[run_eval_single] row 70 done in 4176ms (72/326)
+[run_eval_single] row 77 start "bobblehead"
+[run_eval_single] row 69 done in 4272ms (73/326)
+[run_eval_single] row 78 start "场景模型"
+[run_eval_single] row 68 done in 5240ms (74/326)
+[run_eval_single] row 79 start "diorama"
+[run_eval_single] row 75 done in 4219ms (75/326)
+[run_eval_single] row 80 start "角色卡通贴纸"
+[run_eval_single] row 77 done in 4167ms (76/326)
+[run_eval_single] row 81 start "character sticker pack"
+[run_eval_single] row 76 done in 4185ms (77/326)
+[run_eval_single] row 82 start "标志"
+[run_eval_single] row 74 done in 4285ms (78/326)
+[run_eval_single] row 83 start "logo"
+[run_eval_single] row 79 done in 3289ms (79/326)
+[run_eval_single] row 84 start "包装"
+[run_eval_single] row 78 done in 4896ms (80/326)
+[run_eval_single] row 85 start "package"
+[run_eval_single] row 81 done in 2415ms (81/326)
+[run_eval_single] row 86 start "标签"
+[run_eval_single] row 84 done in 2627ms (82/326)
+[run_eval_single] row 87 start "label"
+[run_eval_single] row 83 done in 2729ms (83/326)
+[run_eval_single] row 88 start "瓶子"
+[run_eval_single] row 85 done in 2229ms (84/326)
+[run_eval_single] row 89 start "bottle"
+[run_eval_single] row 82 done in 3623ms (85/326)
+[run_eval_single] row 90 start "菜单"
+[run_eval_single] row 86 done in 1465ms (86/326)
+[run_eval_single] row 91 start "menu"
+[run_eval_single] row 89 done in 1723ms (87/326)
+[run_eval_single] row 92 start "名片"
+[run_eval_single] row 88 done in 2098ms (88/326)
+[run_eval_single] row 93 start "business card"
+[run_eval_single] row 90 done in 1578ms (89/326)
+[run_eval_single] row 94 start "产品盒"
+[run_eval_single] row 87 done in 2517ms (90/326)
+[run_eval_single] row 95 start "product box"
+[run_eval_single] row 91 done in 1619ms (91/326)
+[run_eval_single] row 96 start "咖啡包装"
+[run_eval_single] row 92 done in 1904ms (92/326)
+[run_eval_single] row 97 start "coffee package"
+[run_eval_single] row 93 done in 3252ms (93/326)
+[run_eval_single] row 98 start "餐厅菜单"
+[run_eval_single] row 97 done in 2359ms (94/326)
+[run_eval_single] row 99 start "restaurant menu"
+[run_eval_single] row 96 done in 3507ms (95/326)
+[run_eval_single] row 100 start "香水瓶"
+[run_eval_single] row 95 done in 3773ms (96/326)
+[run_eval_single] row 101 start "perfume bottle"
+[run_eval_single] row 94 done in 4066ms (97/326)
+[run_eval_single] row 102 start "香水盒"
+[run_eval_single] row 80 done in 9354ms (98/326)
+[run_eval_single] row 103 start "perfume box"
+[run_eval_single] row 98 done in 1977ms (99/326)
+[run_eval_single] row 104 start "茶叶包装"
+[run_eval_single] row 104 done in 3805ms (100/326)
+[run_eval_single] row 105 start "tea package"
+[run_eval_single] row 103 done in 4679ms (101/326)
+[run_eval_single] row 106 start "咖啡豆包装"
+[run_eval_single] row 101 done in 5044ms (102/326)
+[run_eval_single] row 107 start "coffee bean package"
+[run_eval_single] row 99 done in 5237ms (103/326)
+[run_eval_single] row 108 start "巧克力礼盒"
+[run_eval_single] row 102 done in 5470ms (104/326)
+[run_eval_single] row 109 start "chocolate box"
+[run_eval_single] row 100 done in 8953ms (105/326)
+[run_eval_single] row 110 start "护肤品包装"
+[run_eval_single] row 106 done in 5209ms (106/326)
+[run_eval_single] row 111 start "skincare package"
+[run_eval_single] row 105 done in 5784ms (107/326)
+[run_eval_single] row 112 start "化妆品包装"
+[run_eval_single] row 109 done in 4913ms (108/326)
+[run_eval_single] row 113 start "cosmetic package"
+[run_eval_single] row 107 done in 5893ms (109/326)
+[run_eval_single] row 114 start "酒标"
+[run_eval_single] row 108 done in 5716ms (110/326)
+[run_eval_single] row 115 start "wine label"
+[run_eval_single] row 110 done in 2646ms (111/326)
+[run_eval_single] row 116 start "零食包装"
+[run_eval_single] row 116 done in 4184ms (112/326)
+[run_eval_single] row 117 start "snack package"
+[run_eval_single] row 111 done in 5775ms (113/326)
+[run_eval_single] row 118 start "礼品盒"
+[run_eval_single] row 113 done in 5477ms (114/326)
+[run_eval_single] row 119 start "gift box"
+[run_eval_single] row 115 done in 5938ms (115/326)
+[run_eval_single] row 120 start "购物袋"
+[run_eval_single] row 112 done in 6292ms (116/326)
+[run_eval_single] row 121 start "shopping bag"
+[run_eval_single] row 114 done in 7135ms (117/326)
+[run_eval_single] row 122 start "产品标签"
+[run_eval_single] row 118 done in 3423ms (118/326)
+[run_eval_single] row 123 start "product label"
+[run_eval_single] row 122 done in 1805ms (119/326)
+[run_eval_single] row 124 start "烘焙包装"
+[run_eval_single] row 119 done in 3967ms (120/326)
+[run_eval_single] row 125 start "bakery package"
+[run_eval_single] row 120 done in 3296ms (121/326)
+[run_eval_single] row 126 start "咖啡馆菜单"
+[run_eval_single] row 117 done in 4444ms (122/326)
+[run_eval_single] row 127 start "cafe menu"
+[run_eval_single] row 121 done in 4180ms (123/326)
+[run_eval_single] row 128 start "店招"
+[run_eval_single] row 123 done in 2534ms (124/326)
+[run_eval_single] row 129 start "shop sign"
+[run_eval_single] row 126 done in 4967ms (125/326)
+[run_eval_single] row 130 start "门店招牌"
+[run_eval_single] row 124 done in 5319ms (126/326)
+[run_eval_single] row 131 start "storefront sign"
+[run_eval_single] row 128 done in 4590ms (127/326)
+[run_eval_single] row 132 start "产品吊牌"
+[run_eval_single] row 129 done in 4891ms (128/326)
+[run_eval_single] row 133 start "product tag"
+[run_eval_single] row 125 done in 6953ms (129/326)
+[run_eval_single] row 134 start "价格标签"
+[run_eval_single] row 127 done in 7241ms (130/326)
+[run_eval_single] row 135 start "price tag"
+[run_eval_single] row 134 done in 996ms (131/326)
+[run_eval_single] row 136 start "服装吊牌"
+[run_eval_single] row 132 done in 2653ms (132/326)
+[run_eval_single] row 137 start "clothing tag"
+[run_eval_single] row 130 done in 3267ms (133/326)
+[run_eval_single] row 138 start "首饰盒"
+[run_eval_single] row 131 done in 3469ms (134/326)
+[run_eval_single] row 139 start "jewelry box"
+[run_eval_single] row 135 done in 3219ms (135/326)
+[run_eval_single] row 140 start "蜡烛标签"
+[run_eval_single] row 139 done in 3573ms (136/326)
+[run_eval_single] row 141 start "candle label"
+[run_eval_single] row 136 done in 4216ms (137/326)
+[run_eval_single] row 142 start "香皂包装"
+[run_eval_single] row 137 done in 4026ms (138/326)
+[run_eval_single] row 143 start "soap package"
+[run_eval_single] row 140 done in 2058ms (139/326)
+[run_eval_single] row 144 start "茶叶罐"
+[run_eval_single] row 138 done in 4337ms (140/326)
+[run_eval_single] row 145 start "tea box"
+[run_eval_single] row 133 done in 6211ms (141/326)
+[run_eval_single] row 146 start "咖啡杯"
+[run_eval_single] row 146 done in 4611ms (142/326)
+[run_eval_single] row 147 start "coffee cup"
+[run_eval_single] row 143 done in 5327ms (143/326)
+[run_eval_single] row 148 start "咖啡杯套"
+[run_eval_single] row 141 done in 5733ms (144/326)
+[run_eval_single] row 149 start "coffee cup sleeve"
+[run_eval_single] row 145 done in 5279ms (145/326)
+[run_eval_single] row 150 start "外卖餐盒"
+[run_eval_single] row 144 done in 5338ms (146/326)
+[run_eval_single] row 151 start "takeout box"
+[run_eval_single] row 142 done in 6728ms (147/326)
+[run_eval_single] row 152 start "饮料瓶"
+[run_eval_single] row 149 done in 5087ms (148/326)
+[run_eval_single] row 153 start "drink bottle"
+[run_eval_single] row 147 done in 5465ms (149/326)
+[run_eval_single] row 154 start "水瓶标签"
+[run_eval_single] row 150 done in 5476ms (150/326)
+[run_eval_single] row 155 start "water bottle label"
+[run_eval_single] row 152 done in 4747ms (151/326)
+[run_eval_single] row 156 start "信封"
+[run_eval_single] row 148 done in 6228ms (152/326)
+[run_eval_single] row 157 start "envelope"
+[run_eval_single] row 151 done in 5974ms (153/326)
+[run_eval_single] row 158 start "手提袋"
+[run_eval_single] row 156 done in 4195ms (154/326)
+[run_eval_single] row 159 start "paper bag"
+[run_eval_single] row 154 done in 4800ms (155/326)
+[run_eval_single] row 160 start "蛋糕盒"
+[run_eval_single] row 155 done in 4510ms (156/326)
+[run_eval_single] row 161 start "cake box"
+[run_eval_single] row 158 done in 3977ms (157/326)
+[run_eval_single] row 162 start "月饼礼盒"
+[run_eval_single] row 153 done in 5154ms (158/326)
+[run_eval_single] row 163 start "mooncake gift box"
+[run_eval_single] row 157 done in 4556ms (159/326)
+[run_eval_single] row 164 start "横幅"
+[run_eval_single] row 161 done in 4795ms (160/326)
+[run_eval_single] row 165 start "banner"
+[run_eval_single] row 164 done in 4395ms (161/326)
+[run_eval_single] row 166 start "传单"
+[run_eval_single] row 159 done in 4976ms (162/326)
+[run_eval_single] row 167 start "flyer"
+[run_eval_single] row 162 done in 4964ms (163/326)
+[run_eval_single] row 168 start "画册"
+[run_eval_single] row 166 done in 418ms (164/326)
+[run_eval_single] row 169 start "catalog"
+[run_eval_single] row 167 done in 427ms (165/326)
+[run_eval_single] row 170 start "促销横幅"
+[run_eval_single] row 163 done in 5159ms (166/326)
+[run_eval_single] row 171 start "sale banner"
+[run_eval_single] row 160 done in 5629ms (167/326)
+[run_eval_single] row 172 start "产品图"
+[run_eval_single] row 165 done in 2042ms (168/326)
+[run_eval_single] row 173 start "product photo"
+[run_eval_single] row 168 done in 2688ms (169/326)
+[run_eval_single] row 174 start "促销活动"
+[run_eval_single] row 170 done in 2383ms (170/326)
+[run_eval_single] row 175 start "promotion"
+[run_eval_single] row 173 done in 1590ms (171/326)
+[run_eval_single] row 176 start "广告"
+[run_eval_single] row 169 done in 3521ms (172/326)
+[run_eval_single] row 177 start "advertisement"
+[run_eval_single] row 172 done in 5031ms (173/326)
+[run_eval_single] row 178 start "社交媒体帖子"
+[run_eval_single] row 171 done in 5396ms (174/326)
+[run_eval_single] row 179 start "social media post"
+[run_eval_single] row 174 done in 3154ms (175/326)
+[run_eval_single] row 180 start "产品展示"
+[run_eval_single] row 176 done in 2402ms (176/326)
+[run_eval_single] row 181 start "product display"
+[run_eval_single] row 175 done in 3322ms (177/326)
+[run_eval_single] row 182 start "餐厅传单"
+[run_eval_single] row 177 done in 3745ms (178/326)
+[run_eval_single] row 183 start "restaurant flyer"
+[run_eval_single] row 178 done in 2131ms (179/326)
+[run_eval_single] row 184 start "电影海报"
+[run_eval_single] row 181 done in 3131ms (180/326)
+[run_eval_single] row 185 start "movie poster"
+[run_eval_single] row 182 done in 5100ms (181/326)
+[run_eval_single] row 186 start "产品横幅"
+[run_eval_single] row 185 done in 2184ms (182/326)
+[run_eval_single] row 187 start "product banner"
+[run_eval_single] row 184 done in 3758ms (183/326)
+[run_eval_single] row 188 start "促销海报"
+[run_eval_single] row 180 done in 5708ms (184/326)
+[run_eval_single] row 189 start "sale poster"
+[run_eval_single] row 183 done in 4082ms (185/326)
+[run_eval_single] row 190 start "折扣传单"
+[run_eval_single] row 179 done in 6122ms (186/326)
+[run_eval_single] row 191 start "discount flyer"
+[run_eval_single] row 186 done in 2522ms (187/326)
+[run_eval_single] row 192 start "电商横幅"
+[run_eval_single] row 188 done in 3047ms (188/326)
+[run_eval_single] row 193 start "ecommerce banner"
+[run_eval_single] row 187 done in 3512ms (189/326)
+[run_eval_single] row 194 start "产品画册"
+[run_eval_single] row 189 done in 3257ms (190/326)
+[run_eval_single] row 195 start "product catalog"
+[run_eval_single] row 191 done in 4850ms (191/326)
+[run_eval_single] row 196 start "活动传单"
+[run_eval_single] row 193 done in 2626ms (192/326)
+[run_eval_single] row 197 start "event flyer"
+[run_eval_single] row 192 done in 3879ms (193/326)
+[run_eval_single] row 198 start "开业横幅"
+[run_eval_single] row 190 done in 6115ms (194/326)
+[run_eval_single] row 199 start "grand opening banner"
+[run_eval_single] row 195 done in 4795ms (195/326)
+[run_eval_single] row 200 start "节日促销横幅"
+[run_eval_single] row 197 done in 2538ms (196/326)
+[run_eval_single] row 201 start "holiday sale banner"
+[run_eval_single] row 194 done in 5088ms (197/326)
+[run_eval_single] row 202 start "新品横幅"
+[run_eval_single] row 199 done in 5334ms (198/326)
+[run_eval_single] row 203 start "new arrival banner"
+[run_eval_single] row 198 done in 5812ms (199/326)
+[run_eval_single] row 204 start "限时促销海报"
+[run_eval_single] row 196 done in 6629ms (200/326)
+[run_eval_single] row 205 start "flash sale poster"
+[run_eval_single] row 202 done in 4430ms (201/326)
+[run_eval_single] row 206 start "清仓促销横幅"
+[run_eval_single] row 201 done in 6471ms (202/326)
+[run_eval_single] row 207 start "clearance sale banner"
+[run_eval_single] row 200 done in 6997ms (203/326)
+[run_eval_single] row 208 start "产品详情图"
+[run_eval_single] row 203 done in 6248ms (204/326)
+[run_eval_single] row 209 start "product listing image"
+[run_eval_single] row 205 done in 6047ms (205/326)
+[run_eval_single] row 210 start "网店横幅"
+[run_eval_single] row 206 done in 5374ms (206/326)
+[run_eval_single] row 211 start "online store banner"
+[run_eval_single] row 204 done in 6281ms (207/326)
+[run_eval_single] row 212 start "社交媒体广告"
+[run_eval_single] row 208 done in 3084ms (208/326)
+[run_eval_single] row 213 start "social media ad"
+[run_eval_single] row 207 done in 5354ms (209/326)
+[run_eval_single] row 214 start "种草帖"
+[run_eval_single] row 212 done in 2198ms (210/326)
+[run_eval_single] row 215 start "influencer post"
+[run_eval_single] row 210 done in 5219ms (211/326)
+[run_eval_single] row 216 start "开箱照"
+[run_eval_single] row 211 done in 5134ms (212/326)
+[run_eval_single] row 217 start "unboxing photo"
+[run_eval_single] row 213 done in 5471ms (213/326)
+[run_eval_single] row 218 start "前后对比图"
+[run_eval_single] row 209 done in 5805ms (214/326)
+[run_eval_single] row 219 start "before after comparison"
+[run_eval_single] row 214 done in 5688ms (215/326)
+[run_eval_single] row 220 start "优惠券"
+[run_eval_single] row 215 done in 5463ms (216/326)
+[run_eval_single] row 221 start "discount coupon"
+[run_eval_single] row 219 done in 2351ms (217/326)
+[run_eval_single] row 222 start "会员卡"
+[run_eval_single] row 218 done in 2536ms (218/326)
+[run_eval_single] row 223 start "membership card"
+[run_eval_single] row 220 done in 1932ms (219/326)
+[run_eval_single] row 224 start "积分卡"
+[run_eval_single] row 221 done in 2113ms (220/326)
+[run_eval_single] row 225 start "loyalty card"
+[run_eval_single] row 222 done in 2085ms (221/326)
+[run_eval_single] row 226 start "礼品卡"
+[run_eval_single] row 216 done in 6049ms (222/326)
+[run_eval_single] row 227 start "gift card"
+[run_eval_single] row 217 done in 7357ms (223/326)
+[run_eval_single] row 228 start "门店横幅"
+[run_eval_single] row 226 done in 3222ms (224/326)
+[run_eval_single] row 229 start "storefront banner"
+[run_eval_single] row 225 done in 3565ms (225/326)
+[run_eval_single] row 230 start "橱窗展示"
+[run_eval_single] row 227 done in 2471ms (226/326)
+[run_eval_single] row 231 start "window display"
+[run_eval_single] row 223 done in 5482ms (227/326)
+[run_eval_single] row 232 start "展会展架"
+[run_eval_single] row 224 done in 4312ms (228/326)
+[run_eval_single] row 233 start "trade show banner"
+[run_eval_single] row 228 done in 3725ms (229/326)
+[run_eval_single] row 234 start "展览传单"
+[run_eval_single] row 229 done in 6077ms (230/326)
+[run_eval_single] row 235 start "exhibition flyer"
+[run_eval_single] row 233 done in 5429ms (231/326)
+[run_eval_single] row 236 start "新品发布海报"
+[run_eval_single] row 230 done in 5991ms (232/326)
+[run_eval_single] row 237 start "product launch poster"
+[run_eval_single] row 231 done in 5828ms (233/326)
+[run_eval_single] row 238 start "季节促销横幅"
+[run_eval_single] row 232 done in 6743ms (234/326)
+[run_eval_single] row 239 start "seasonal sale banner"
+[run_eval_single] row 236 done in 2326ms (235/326)
+[run_eval_single] row 240 start "黑五促销横幅"
+[run_eval_single] row 237 done in 3057ms (236/326)
+[run_eval_single] row 241 start "black friday banner"
+[run_eval_single] row 234 done in 6312ms (237/326)
+[run_eval_single] row 242 start "双十一促销海报"
+[run_eval_single] row 235 done in 3424ms (238/326)
+[run_eval_single] row 243 start "singles day sale poster"
+[run_eval_single] row 238 done in 3520ms (239/326)
+[run_eval_single] row 244 start "直播预告横幅"
+[run_eval_single] row 239 done in 5068ms (240/326)
+[run_eval_single] row 245 start "livestream promo banner"
+[run_eval_single] row 240 done in 4440ms (241/326)
+[run_eval_single] row 246 start "识字卡"
+[run_eval_single] row 241 done in 6262ms (242/326)
+[run_eval_single] row 247 start "flashcard"
+[run_eval_single] row 247 done in 138ms (243/326)
+[run_eval_single] row 248 start "练习册"
+[run_eval_single] row 243 done in 6280ms (244/326)
+[run_eval_single] row 249 start "worksheet"
+[run_eval_single] row 244 done in 6220ms (245/326)
+[run_eval_single] row 250 start "字母卡"
+[run_eval_single] row 242 done in 7092ms (246/326)
+[run_eval_single] row 251 start "alphabet card"
+[run_eval_single] row 246 done in 3624ms (247/326)
+[run_eval_single] row 252 start "地图"
+[run_eval_single] row 249 done in 1701ms (248/326)
+[run_eval_single] row 253 start "map"
+[run_eval_single] row 252 done in 1453ms (249/326)
+[run_eval_single] row 254 start "图解"
+[run_eval_single] row 253 done in 611ms (250/326)
+[run_eval_single] row 255 start "diagram"
+[run_eval_single] row 248 done in 3664ms (251/326)
+[run_eval_single] row 256 start "日历"
+[run_eval_single] row 245 done in 7147ms (252/326)
+[run_eval_single] row 257 start "calendar"
+[run_eval_single] row 250 done in 4585ms (253/326)
+[run_eval_single] row 258 start "证书"
+[run_eval_single] row 254 done in 2584ms (254/326)
+[run_eval_single] row 259 start "certificate"
+[run_eval_single] row 255 done in 2514ms (255/326)
+[run_eval_single] row 260 start "科学海报"
+[run_eval_single] row 257 done in 1704ms (256/326)
+[run_eval_single] row 261 start "science poster"
+[run_eval_single] row 251 done in 5092ms (257/326)
+[run_eval_single] row 262 start "课堂装饰海报"
+[run_eval_single] row 256 done in 2548ms (258/326)
+[run_eval_single] row 263 start "classroom poster"
+[run_eval_single] row 259 done in 1959ms (259/326)
+[run_eval_single] row 264 start "教科书"
+[run_eval_single] row 261 done in 1887ms (260/326)
+[run_eval_single] row 265 start "textbook"
+[run_eval_single] row 260 done in 2305ms (261/326)
+[run_eval_single] row 266 start "地球仪"
+[run_eval_single] row 262 done in 1545ms (262/326)
+[run_eval_single] row 267 start "globe"
+[run_eval_single] row 264 done in 1698ms (263/326)
+[run_eval_single] row 268 start "图表"
+[run_eval_single] row 263 done in 2543ms (264/326)
+[run_eval_single] row 269 start "chart"
+[run_eval_single] row 258 done in 4161ms (265/326)
+[run_eval_single] row 270 start "课程表"
+[run_eval_single] row 269 done in 2624ms (266/326)
+[run_eval_single] row 271 start "timetable"
+[run_eval_single] row 266 done in 4211ms (267/326)
+[run_eval_single] row 272 start "数字表"
+[run_eval_single] row 268 done in 2994ms (268/326)
+[run_eval_single] row 273 start "number chart"
+[run_eval_single] row 267 done in 4311ms (269/326)
+[run_eval_single] row 274 start "元素周期表"
+[run_eval_single] row 265 done in 4859ms (270/326)
+[run_eval_single] row 275 start "periodic table"
+[run_eval_single] row 272 done in 1135ms (271/326)
+[run_eval_single] row 276 start "世界地图"
+[run_eval_single] row 270 done in 4075ms (272/326)
+[run_eval_single] row 277 start "world map"
+[run_eval_single] row 274 done in 1852ms (273/326)
+[run_eval_single] row 278 start "拼读卡"
+[run_eval_single] row 275 done in 2264ms (274/326)
+[run_eval_single] row 279 start "phonics card"
+[run_eval_single] row 276 done in 1792ms (275/326)
+[run_eval_single] row 280 start "试卷"
+[run_eval_single] row 273 done in 2959ms (276/326)
+[run_eval_single] row 281 start "exam paper"
+[run_eval_single] row 271 done in 3276ms (277/326)
+[run_eval_single] row 282 start "成绩单"
+[run_eval_single] row 277 done in 1940ms (278/326)
+[run_eval_single] row 283 start "report card"
+[run_eval_single] row 283 done in 2412ms (279/326)
+[run_eval_single] row 284 start "笔袋"
+[run_eval_single] row 278 done in 4040ms (280/326)
+[run_eval_single] row 285 start "pencil case"
+[run_eval_single] row 279 done in 3484ms (281/326)
+[run_eval_single] row 286 start "黑板"
+[run_eval_single] row 282 done in 4113ms (282/326)
+[run_eval_single] row 287 start "chalkboard"
+[run_eval_single] row 280 done in 4380ms (283/326)
+[run_eval_single] row 288 start "白板"
+[run_eval_single] row 281 done in 4659ms (284/326)
+[run_eval_single] row 289 start "whiteboard"
+[run_eval_single] row 284 done in 2365ms (285/326)
+[run_eval_single] row 290 start "显微镜"
+[run_eval_single] row 286 done in 2078ms (286/326)
+[run_eval_single] row 291 start "microscope"
+[run_eval_single] row 289 done in 1294ms (287/326)
+[run_eval_single] row 292 start "书签"
+[run_eval_single] row 287 done in 1778ms (288/326)
+[run_eval_single] row 293 start "bookmark"
+[run_eval_single] row 291 done in 1635ms (289/326)
+[run_eval_single] row 294 start "算盘"
+[run_eval_single] row 285 done in 4053ms (290/326)
+[run_eval_single] row 295 start "abacus"
+[run_eval_single] row 288 done in 4502ms (291/326)
+[run_eval_single] row 296 start "练习本"
+[run_eval_single] row 295 done in 4524ms (292/326)
+[run_eval_single] row 297 start "workbook"
+[run_eval_single] row 292 done in 6450ms (293/326)
+[run_eval_single] row 298 start "单词卡"
+[run_eval_single] row 293 done in 6439ms (294/326)
+[run_eval_single] row 299 start "vocabulary card"
+[run_eval_single] row 290 done in 7160ms (295/326)
+[run_eval_single] row 300 start "拼写卡"
+[run_eval_single] row 299 done in 336ms (296/326)
+[run_eval_single] row 301 start "spelling card"
+[run_eval_single] row 297 done in 1783ms (297/326)
+[run_eval_single] row 302 start "数学练习册"
+[run_eval_single] row 294 done in 6526ms (298/326)
+[run_eval_single] row 303 start "math worksheet"
+[run_eval_single] row 296 done in 5124ms (299/326)
+[run_eval_single] row 304 start "阅读练习册"
+[run_eval_single] row 298 done in 2079ms (300/326)
+[run_eval_single] row 305 start "reading worksheet"
+[run_eval_single] row 301 done in 6430ms (301/326)
+[run_eval_single] row 306 start "科学图解"
+[run_eval_single] row 300 done in 6735ms (302/326)
+[run_eval_single] row 307 start "science diagram"
+[run_eval_single] row 304 done in 5835ms (303/326)
+[run_eval_single] row 308 start "人体图解"
+[run_eval_single] row 303 done in 6365ms (304/326)
+[run_eval_single] row 309 start "anatomy chart"
+[run_eval_single] row 305 done in 5529ms (305/326)
+[run_eval_single] row 310 start "动物识字卡"
+[run_eval_single] row 302 done in 6875ms (306/326)
+[run_eval_single] row 311 start "animal flashcard"
+[run_eval_single] row 307 done in 2477ms (307/326)
+[run_eval_single] row 312 start "字母海报"
+[run_eval_single] row 306 done in 3142ms (308/326)
+[run_eval_single] row 313 start "alphabet poster"
+[run_eval_single] row 308 done in 3243ms (309/326)
+[run_eval_single] row 314 start "荣誉证书"
+[run_eval_single] row 309 done in 3074ms (310/326)
+[run_eval_single] row 315 start "achievement certificate"
+[run_eval_single] row 312 done in 2075ms (311/326)
+[run_eval_single] row 316 start "毕业证"
+[run_eval_single] row 311 done in 3598ms (312/326)
+[run_eval_single] row 317 start "diploma"
+[run_eval_single] row 310 done in 5117ms (313/326)
+[run_eval_single] row 318 start "校历"
+[run_eval_single] row 317 done in 3502ms (314/326)
+[run_eval_single] row 319 start "school calendar"
+[run_eval_single] row 315 done in 4367ms (315/326)
+[run_eval_single] row 320 start "教室装饰"
+[run_eval_single] row 314 done in 5875ms (316/326)
+[run_eval_single] row 321 start "classroom decoration"
+[run_eval_single] row 313 done in 6554ms (317/326)
+[run_eval_single] row 322 start "学习图表"
+[run_eval_single] row 320 done in 1833ms (318/326)
+[run_eval_single] row 323 start "learning chart"
+[run_eval_single] row 316 done in 5605ms (319/326)
+[run_eval_single] row 324 start "贴纸奖励表"
+[run_eval_single] row 318 done in 4952ms (320/326)
+[run_eval_single] row 325 start "reward chart"
+[run_eval_single] row 319 done in 3036ms (321/326)
+[run_eval_single] row 322 done in 2261ms (322/326)
+[run_eval_single] row 323 done in 2871ms (323/326)
+[run_eval_single] row 324 done in 4096ms (324/326)
+[run_eval_single] row 321 done in 5013ms (325/326)
+[run_eval_single] row 325 done in 7816ms (326/326)
+[run_eval_single] DONE 326/326
+RUN END: Wed Jul 22 15:29:43 CST 2026
+EXIT_CODE=0

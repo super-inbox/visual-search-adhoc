@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-07-22T15:40:34.690734",
+  "run_label": "cluster-ab-latest-fix-full326-2026-07-22",
+  "artifacts": [
+    {
+      "path": "00_CONFIG_LOCK.json",
+      "purpose": "Frozen configuration record for this run (repos, SHAs, benchmark/catalog checksums, thresholds, LLM settings).",
+      "row_count": null,
+      "byte_size": 8275,
+      "sha256": "c9959cce02a7197d45d33ba0bc27a3d335877b3331f596b7a9dda8c8eb4f86b3",
+      "modified_timestamp": "2026-07-22T15:22:25.560499"
+    },
+    {
+      "path": "00_RUN_CONTEXT.md",
+      "purpose": "Plain-language explanation of what this run is and is not.",
+      "row_count": null,
+      "byte_size": 2441,
+      "sha256": "5c88ff00159545ce2bc30c050dca54db32c9736a3c39acf9ad8dd60b2aa9d54c",
+      "modified_timestamp": "2026-07-22T15:22:39.685076"
+    },
+    {
+      "path": "01_AUTOMATED_SANITY_NOTES.md",
+      "purpose": "Notes on the pre-full-run sanity check.",
+      "row_count": null,
+      "byte_size": 2687,
+      "sha256": "841470958aac826f66f1b3d49b134156af08c7193a1e0360e1fa0c6253337558",
+      "modified_timestamp": "2026-07-22T15:21:30.838647"
+    },
+    {
+      "path": "01_AUTOMATED_SANITY_RESULTS.csv",
+      "purpose": "Raw sanity-check query results (7 queries).",
+      "row_count": 7,
+      "byte_size": 1609,
+      "sha256": "043a377e1b8c5be577f56445eca6b32cd9b6a1cca6811bab3b5feaef77d23e76",
+      "modified_timestamp": "2026-07-22T15:21:12.721102"
+    },
+    {
+      "path": "02_INPUT_OUTPUT_INTEGRITY.md",
+      "purpose": "Completeness/integrity verification of the 326-query run.",
+      "row_count": null,
+      "byte_size": 3075,
+      "sha256": "3e83731badab1ac29eccde22e44765c7cea5ff4c662dcdad228b6b1ccc2e4790",
+      "modified_timestamp": "2026-07-22T15:30:38.228654"
+    },
+    {
+      "path": "02_QUERY_COMPLETENESS.csv",
+      "purpose": "Row-level completeness check, all 326 bank queries vs output.",
+      "row_count": 326,
+      "byte_size": 13720,
+      "sha256": "78031fa35b65b49bea578778571f943a1915e7fc97974cce7fc9063fe8492858",
+      "modified_timestamp": "2026-07-22T15:30:17.844657"
+    },
+    {
+      "path": "03_FULL326_LATEST_RESULTS.csv",
+      "purpose": "One row per query -- latest candidate (0e794cd9) full results.",
+      "row_count": 326,
+      "byte_size": 99692,
+      "sha256": "08c1b6a5e89c94066f37715d90f49e25ed19a6a017eb0e53c2c9fbdebc24c4eb",
+      "modified_timestamp": "2026-07-22T15:31:49.058442"
+    },
+    {
+      "path": "04_FULL326_TOP_RESULTS.csv",
+      "purpose": "Top-5 result titles per query, latest candidate (Top 10 unavailable in established schema).",
+      "row_count": 1406,
+      "byte_size": 222915,
+      "sha256": "50acbee9c0b64b9bc10385099153e0201b171cb1c4c9baac63dfcb4f6b74823a",
+      "modified_timestamp": "2026-07-22T15:31:49.063401"
+    },
+    {
+      "path": "05_STATUS_TRANSITIONS_VS_PRODUCTION.csv",
+      "purpose": "Row-level status transitions, latest vs production baseline.",
+      "row_count": 326,
+      "byte_size": 107695,
+      "sha256": "35d9934afc90cccb35149758c9f652b579b830746567de4109aa878812d56758",
+      "modified_timestamp": "2026-07-22T15:31:49.066769"
+    },
+    {
+      "path": "06_STATUS_TRANSITIONS_VS_PREVIOUS_CANDIDATE.csv",
+      "purpose": "Row-level status transitions, latest vs previous candidate.",
+      "row_count": 326,
+      "byte_size": 116441,
+      "sha256": "a9194e9d5bb7869fbcdb56887ed91a0b3d71082fc7dbbdbab97a495dd562fd92",
+      "modified_timestamp": "2026-07-22T15:31:49.068976"
+    },
+    {
+      "path": "07_IMPROVEMENTS.csv",
+      "purpose": "Rows that improved vs production baseline.",
+      "row_count": 57,
+      "byte_size": 17311,
+      "sha256": "7f449eee608e74328d347e6f24ff2fb81e0b75d18414bbc8a89a2e919fd6f3ea",
+      "modified_timestamp": "2026-07-22T15:31:49.069469"
+    },
+    {
+      "path": "08_REGRESSIONS.csv",
+      "purpose": "Rows that regressed vs production baseline.",
+      "row_count": 38,
+      "byte_size": 11852,
+      "sha256": "36a0a90f429695a25ffb71f3abb3b0b4e971c4eaa61ee1476bd6976fab5b9afc",
+      "modified_timestamp": "2026-07-22T15:31:49.069861"
+    },
+    {
+      "path": "09_ZERO_LOW_RESULT_ANALYSIS.csv",
+      "purpose": "Row-level zero/low-result transitions across all three runs.",
+      "row_count": 326,
+      "byte_size": 31591,
+      "sha256": "89442db7aefd2d613069b6e4f33f694f8047011dec604d22ccbc493b450c60e5",
+      "modified_timestamp": "2026-07-22T15:31:49.072112"
+    },
+    {
+      "path": "09_ZERO_LOW_RESULT_REPORT.md",
+      "purpose": "Narrative zero/low-result analysis.",
+      "row_count": null,
+      "byte_size": 4988,
+      "sha256": "fce34dba40a99bf60ebd3718f5fbbef75209424ea27a5c24d030e1626640e73c",
+      "modified_timestamp": "2026-07-22T15:34:54.412969"
+    },
+    {
+      "path": "10_VERTICAL_REPORT.md",
+      "purpose": "Narrative vertical/category analysis.",
+      "row_count": null,
+      "byte_size": 5107,
+      "sha256": "05f40c667a1cd47b331dfed912ba740456aa52d6ac393936f37a935e7cca4987",
+      "modified_timestamp": "2026-07-22T15:35:24.962433"
+    },
+    {
+      "path": "10_VERTICAL_SUMMARY.csv",
+      "purpose": "Per-category aggregate stats and improvement/regression counts.",
+      "row_count": 42,
+      "byte_size": 1760,
+      "sha256": "80bdc9f291b056bad1f0047526d31fccac25e2b76a19ba85cde39aa6da84bd2a",
+      "modified_timestamp": "2026-07-22T15:31:49.073926"
+    },
+    {
+      "path": "11_CLUSTER_AB_OUTCOME_ANALYSIS.md",
+      "purpose": "Cluster A/B fix outcome analysis against live full-326 evidence.",
+      "row_count": null,
+      "byte_size": 8829,
+      "sha256": "41e927899a367499de9a92e5cada33be7f43e65efa3b4f0e3cfbc2f3a8af49ad",
+      "modified_timestamp": "2026-07-22T15:36:07.137823"
+    },
+    {
+      "path": "11_CLUSTER_AB_REPRESENTATIVE_CASES.csv",
+      "purpose": "Row-level detail for the 17 named Cluster A/B representative queries.",
+      "row_count": 17,
+      "byte_size": 7335,
+      "sha256": "ae9c37b5c5f12c4bc7a825261ac6f317d3795020b30d8a1244175040ac5a5099",
+      "modified_timestamp": "2026-07-22T15:34:27.538969"
+    },
+    {
+      "path": "12_REMAINING_FAILURE_ROOT_CAUSES.csv",
+      "purpose": "Automated root-cause classification for all FAIL + regressed-PARTIAL rows.",
+      "row_count": 203,
+      "byte_size": 93461,
+      "sha256": "fe5bed97590cf8ded3b8f381d254fb7b61dd0223178da972b217aa090912b8a2",
+      "modified_timestamp": "2026-07-22T15:34:06.429259"
+    },
+    {
+      "path": "12_ROOT_CAUSE_SUMMARY.md",
+      "purpose": "Root-cause category counts, percentages, fixability split.",
+      "row_count": null,
+      "byte_size": 3663,
+      "sha256": "1b23b62a3699bb93c15e34583a23c2ee63e828c46dca67be7731bbded041719c",
+      "modified_timestamp": "2026-07-22T15:36:27.479236"
+    },
+    {
+      "path": "13_AGGREGATE_COMPARISON.csv",
+      "purpose": "3-way aggregate comparison table (production/previous-candidate/latest).",
+      "row_count": 3,
+      "byte_size": 426,
+      "sha256": "de8bc00243f5345b8e40001a62e5a2a0c32cbf7cbb9486cd07c2736054ce0169",
+      "modified_timestamp": "2026-07-22T15:31:49.074028"
+    },
+    {
+      "path": "14_KEY_CASES_FOR_MANAGER_REVIEW.csv",
+      "purpose": "Curated concise list of major improvements/regressions/cluster cases/content gaps.",
+      "row_count": 49,
+      "byte_size": 4281,
+      "sha256": "e6195e558d9098b997f367c611adac08909f257b1aa74164f53e758358475313",
+      "modified_timestamp": "2026-07-22T15:36:43.542796"
+    },
+    {
+      "path": "15_FULL326_COMPARISON_REPORT_ZH.md",
+      "purpose": "Final Chinese-language comparison report (primary deliverable).",
+      "row_count": null,
+      "byte_size": 19721,
+      "sha256": "8673739723292ef9ab6e2385bd8a1b5050bb8db907733a703709799952dc6417",
+      "modified_timestamp": "2026-07-22T15:40:07.163647"
+    },
+    {
+      "path": "16_ENGINEERING_VALIDATION.md",
+      "purpose": "Engineering gate detail (tests, tsc, build).",
+      "row_count": null,
+      "byte_size": 2138,
+      "sha256": "6f24398f9bef8927fd3ded210eda59f12a6c9b3f3e9ec45bd0e5a34e3b9aff86",
+      "modified_timestamp": "2026-07-22T15:36:57.823261"
+    },
+    {
+      "path": "RUN_LOG.md",
+      "purpose": "Chronological run log for the full evaluation session.",
+      "row_count": null,
+      "byte_size": 8499,
+      "sha256": "cab590f170adaf21c4cebaddc7dffd1aabfd345b0ebb454b32ae9bb457435e41",
+      "modified_timestamp": "2026-07-22T15:37:46.803467"
+    },
+    {
+      "path": "RUN_LOG_full326.txt",
+      "purpose": "Raw worker log from the 326-query run_eval_single.mjs execution.",
+      "row_count": null,
+      "byte_size": 31674,
+      "sha256": "88aaef74fe8be26ad3923be89feecf1ed8c4f6d7d68517382ec2671c426da415",
+      "modified_timestamp": "2026-07-22T15:29:43.952009"
+    },
+    {
+      "path": "eval_raw/CANDIDATE_LATEST_EASY326.csv",
+      "purpose": "supporting script/data file",
+      "row_count": 326,
+      "byte_size": 91609,
+      "sha256": "153c3e2b2a242bffbd00a2ed5270de731b18599fb2987010d0f4d2c88c601d93",
+      "modified_timestamp": "2026-07-22T15:29:43.930904"
+    },
+    {
+      "path": "scripts/analyze_full326.py",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 17564,
+      "sha256": "14665b0cd09bb533927ef07b0fca39998ae51adead67346c18d93c35f29f78ab",
+      "modified_timestamp": "2026-07-22T15:31:45.195434"
+    },
+    {
+      "path": "scripts/cluster_ab_cases.py",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 3027,
+      "sha256": "d4631abdc79f44f6379d44221837c1a45a57a6add013de7b881081d30929f799",
+      "modified_timestamp": "2026-07-22T15:34:23.012558"
+    },
+    {
+      "path": "scripts/collector.mjs",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 6538,
+      "sha256": "ded59e39818501fae4de726102d7317f323cedc7151937f2c478ce4e7f6d25e1",
+      "modified_timestamp": "2026-07-22T15:20:42.123961"
+    },
+    {
+      "path": "scripts/judge.mjs",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 9648,
+      "sha256": "9a66c98e0bbe46407d19e6dc24119c4bd70730e7edcd2b09be44185f1a41fc28",
+      "modified_timestamp": "2026-07-22T15:20:42.124430"
+    },
+    {
+      "path": "scripts/key_cases.py",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 2258,
+      "sha256": "bd55faa4a2b22397bb123525b183f9c250fbe60b13d6c966f4b8ae4cda5e1c48",
+      "modified_timestamp": "2026-07-22T15:36:38.824867"
+    },
+    {
+      "path": "scripts/root_cause.py",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 6822,
+      "sha256": "4a70dd066722889c2ab9fb65623f5f974f719a2a1d264c2528b38cb9028527fa",
+      "modified_timestamp": "2026-07-22T15:34:02.162563"
+    },
+    {
+      "path": "scripts/root_cause_summary.json",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 335,
+      "sha256": "41b674b424070735b98a02cea9a50f0234b540397b0fe7a9a27e9a0afc13cdca",
+      "modified_timestamp": "2026-07-22T15:34:06.429672"
+    },
+    {
+      "path": "scripts/run_eval_single.mjs",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 5761,
+      "sha256": "e79bdee477de6f78f64b6bad3c9cf4296f4418528aee31724daad988b7ea45f0",
+      "modified_timestamp": "2026-07-22T15:20:42.125095"
+    },
+    {
+      "path": "scripts/summary.json",
+      "purpose": "supporting script/data file",
+      "row_count": null,
+      "byte_size": 2511,
+      "sha256": "6b072c133636f4f4eb338d30317cc0c779fc0e305f58d454d651021afc01320a",
+      "modified_timestamp": "2026-07-22T15:31:49.074255"
+    }
+  ]
+}

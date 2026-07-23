@@ -1,0 +1,8 @@
+query,locale,ok,http_status,elapsed_ms,total_results,inspiration_count,zero_result,top5_titles
+笔袋,zh,true,200,644,8,5,false,"[""microsoft ai dilemma 07 case google gemini"",""microsoft ai dilemma 07 case google gemini en"",""Stationery"",""label printer"",""en-zh""]"
+人体图解,zh,true,200,846,92,12,false,"[""human body"",""human body bilingual science mindmap"",""human body"",""empire state building"",""giant wild goose pagoda""]"
+促销海报,zh,true,200,198,10,8,false,"[""tech gadget sale"",""Chinese"",""Chinese"",""baby care brand"",""spring beauty festival""]"
+日历,zh,true,200,192,20,17,false,"[""resort"",""Local Festival Schedule"",""Community Center Annual Events"",""2025 RV Resort Events"",""chiikawa 2026""]"
+logo,en,true,200,236,61,53,false,"[""Meta lays off 8,000 workers and pivots with $115M America's Workforce Academy — crowd of office workers walking out of glass-and-stone Meta headquarters carrying cardboard 'PERSONAL ITEMS' boxes, prominent 'meta' wordmark + infinity-loop logo on the building, Meta blue #1877F2 as the single accent color on the logo signage only"",""PAW PARADISE Pet Shop brand identity moodboard"",""BREW & CO Coffee Shop brand identity moodboard"",""Golden Crust Bakery brand identity moodboard"",""GreenBasket Grocery brand identity moodboard""]"
+movie poster,en,true,200,243,87,80,false,"[""forrest gump"",""la land"",""the shawshank redemption"",""titanic"",""inception""]"
+product photo,en,true,200,242,93,80,false,"[""Organic Rolled Oats"",""Double Chocolate Cookies"",""Italian Pasta Sauce"",""choco chip cookies"",""espresso coffee beans""]"

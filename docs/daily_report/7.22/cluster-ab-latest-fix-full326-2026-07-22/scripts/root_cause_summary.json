@@ -1,0 +1,13 @@
+{
+  "total": 203,
+  "counts": {
+    "insufficient_evidence": 65,
+    "rewrite_or_decomposition_issue": 28,
+    "catalog_content_gap": 16,
+    "subject_binding_or_coverage_gap": 47,
+    "retrieval_scoring_relevance_issue": 24,
+    "candidate_loss": 11,
+    "candidate_loss_regression": 4,
+    "partial_regression_vs_production": 8
+  }
+}

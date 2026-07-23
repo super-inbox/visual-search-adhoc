@@ -1,0 +1,122 @@
+{
+  "run_label": "cluster-ab-latest-fix-full326-2026-07-22",
+  "run_start_timestamp_local": "2026-07-22T15:20:00+08:00",
+  "run_start_timezone": "Asia/Shanghai",
+  "frontend_repository": {
+    "absolute_path": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r3-2026-07-19",
+    "branch": "baobao/search-relevance-prod-main-v2-r3-root-cause-fix-2026-07-19",
+    "head_sha_full": "0e794cd91396a96cd56fd1d8f7f1495909f3adc5",
+    "remote_tracking_sha_full": "0e794cd91396a96cd56fd1d8f7f1495909f3adc5",
+    "local_equals_remote": true,
+    "worktree_clean_at_start": true,
+    "worktree_clean_at_end": "TO_BE_VERIFIED_STEP21",
+    "node_version": "v26.3.0",
+    "package_manager": "npm",
+    "package_manager_version": "11.16.0"
+  },
+  "evaluation_repository": {
+    "absolute_path": "/Users/baobaoli/Desktop/visual-search-adhoc",
+    "output_directory": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.22/cluster-ab-latest-fix-full326-2026-07-22"
+  },
+  "benchmark_input": {
+    "path": "/Users/baobaoli/Desktop/visual-search-adhoc/docs/daily_report/7.16/easy-query-bank-v3/easy_query_bank_v2_2026-07-16.csv",
+    "sha256": "c5b1368e33ab601884ad91aff21802c64391bee781b6daa2f3ef50e4d54a08c6",
+    "total_data_rows": 326,
+    "unique_query_count": 326,
+    "duplicate_query_count": 0,
+    "missing_query_rows": 0,
+    "query_id_column": "none (query text itself is the join key, aligned by stable row_index/original CSV row order — same method as the 7/21 and 7/19 runs)",
+    "columns": ["query", "language", "scenario", "category", "reason"],
+    "encoding": "UTF-8 (CSV text)",
+    "language_split": {"zh": 163, "en": 163},
+    "scenario_split": {"creative_merch": 82, "brand_business": 82, "marketing_ecommerce": 82, "education": 80}
+  },
+  "runner": {
+    "collector_script": "docs/daily_report/7.19/search-relevance-prod-main-v2/scripts/collector.mjs",
+    "collector_sha256": "ded59e39818501fae4de726102d7317f323cedc7151937f2c478ce4e7f6d25e1",
+    "judge_script": "docs/daily_report/7.19/search-relevance-prod-main-v2/scripts/judge.mjs",
+    "judge_sha256": "9a66c98e0bbe46407d19e6dc24119c4bd70730e7edcd2b09be44185f1a41fc28",
+    "run_script": "docs/daily_report/7.19/search-relevance-prod-main-v2/scripts/run_eval_single.mjs",
+    "run_script_sha256": "e79bdee477de6f78f64b6bad3c9cf4296f4418528aee31724daad988b7ea45f0",
+    "copies_used_for_this_run": "byte-identical copies placed in this output directory's scripts/ subfolder (checksums verified equal to source)",
+    "command": "node scripts/run_eval_single.mjs <bank.csv> query language eval_raw/CANDIDATE_LATEST_EASY326.csv http://localhost:4522 Infinity 6",
+    "concurrency": 6,
+    "top_k_judged": 5,
+    "collector_timeout_ms": 30000,
+    "collector_retry": "1 retry after 500ms on collect failure (not counted as a separate query row)",
+    "llm_call_timeout_ms": 20000,
+    "llm_call_retry": "up to 4 attempts with exponential backoff (800ms * 2^attempt) inside chatCompletionJSON, plus 1 outer retry in judgeResultSet on first-call failure",
+    "checkpoint_resume": "run_eval_single.mjs writes eval_raw output incrementally every 5 completed rows (crash-safe partial write); no read-side resume-from-partial — a fresh invocation reprocesses all rows in its input list. Not needed this run (single uninterrupted pass).",
+    "reused_without_modification": true
+  },
+  "search_server": {
+    "candidate_latest_port": 4522,
+    "candidate_latest_url": "http://localhost:4522",
+    "note": "Ports 4520/4521 (used by the 7/21 baseline/previous-candidate servers) intentionally NOT reused/restarted this run — those CSVs are reused as static artifacts, not re-collected.",
+    "build_id": "f-pp5Q3gQdRK6AuBomZkF-",
+    "next_start_command": "npm run start -- -p 4522"
+  },
+  "catalog": {
+    "path": "public/data/nano_inspiration.json",
+    "sha256_at_0e794cd9": "32015cabe4058a51fcb67e438bf47052ba972db640efce74cc8d4b77986b1934",
+    "sha256_at_6efdd904": "7ec2983a913f7018ade4e80c90ca692220eee05cb0ba7e79798b58d16776240d",
+    "sha256_at_1e56e3f0_previous_candidate": "7ec2983a913f7018ade4e80c90ca692220eee05cb0ba7e79798b58d16776240d",
+    "record_count_all_commits": 3403,
+    "content_change_between_6efdd904_and_0e794cd9": "commit b4116648 stripped hallucinated merch/POD aliases from 4 non-mockup templates — same record count (3403), different byte content. This is a CATALOG DATA change, not a scorer/code change; see 03/Step-3 analysis.",
+    "catalog_identical_to_previous_candidate_run_2026_07_21": false
+  },
+  "scoring_config": {
+    "SCORER_CONFIG_VERSION_at_0e794cd9": "v1.2.0-2026-07-22",
+    "SCORER_CONFIG_VERSION_at_1e56e3f0_previous_candidate": "v1.1.0-2026-07-21 (approx — pre-dates version-string field; see relevanceScorerConfig.ts history)",
+    "TOTAL_CANDIDATE_POOL_CAP": 80,
+    "PATH_CANDIDATE_CAP": 40,
+    "REQUIRED_TERM_COVERAGE_MIN_RATIO": 0.5,
+    "ISOLATED_HIT_MAX_COVERAGE_RATIO": 0.5,
+    "ISOLATED_HIT_SCORE_CAP": 8,
+    "RESULT_RICH_MIN_ONSUBJECT": 8,
+    "subject_derivation": "lib/searchSubject.ts subjectUnits() — new in 0e794cd9, format-word-aware (Fix A / Cluster A). Replaces the pre-existing 'longest original token' heuristic and Fix B's (6efdd904) single-token tokenInBlob check.",
+    "no_thresholds_changed_for_benchmark_purposes": "SCORER_WEIGHTS unchanged in 0e794cd9 vs 6efdd904 per relevanceScorerConfig.ts diff; only the subject-derivation upstream input changed."
+  },
+  "llm_judge": {
+    "model": "gpt-4o-mini",
+    "temperature": 0,
+    "max_tokens": 500,
+    "response_format": "json_object",
+    "real_llm_calls": true,
+    "rubric_version": "rubric-v1.1 deterministic scoring (RANK_WEIGHTS [0.30,0.25,0.20,0.15,0.10], hard-fail/PASS/PARTIAL thresholds as coded in judge.mjs)",
+    "pass_definition": "irrelevant_rate <= 0.20 AND original_intent_preserved != NO AND semantic_drift != SEVERE AND (relevant_rate >= 0.60 OR (rel_plus_partial_rate >= 0.80 AND relevant_rate >= 0.20))",
+    "fail_definition": "irrelevant_rate > 0.60 OR (semantic_drift == SEVERE AND original_intent_preserved == NO) OR zero_result (auto-FAIL, score 0, reason ZERO_RESULT)",
+    "partial_definition": "judgeable > 0, not hardFail, not PASS",
+    "unjudgable_definition": "zero top5 items with usable evidence (NO_EVIDENCE), or judge call failed after retries (JUDGE_CALL_FAILED), or 0 judgeable labels (NO_JUDGEABLE_RESULTS)",
+    "zero_result_definition": "totalResults === 0 (inspirations + matchedTemplates + galleryPrompts all empty)",
+    "low_result_definition": "totalResults > 0 AND totalResults < 5"
+  },
+  "comparison_baselines": {
+    "production_baseline": {
+      "label": "current production main (as captured 2026-07-21, NOT re-fetched from remote main today per charter Step 10)",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-main-baseline-2026-07-21",
+      "commit_sha": "c550856e07c2c7058f955799beb9738e7a9b4f0a",
+      "detached_head": true,
+      "results_csv_source": "docs/daily_report/7.21/scorer-v1.1-evaluation-2026-07-21/eval_raw/BASELINE_EASY326.csv",
+      "reused_verbatim": true
+    },
+    "previous_candidate": {
+      "label": "scorer v1.1 candidate, pre-Cluster-A/B-fix (2026-07-21 eval)",
+      "worktree": "/Users/baobaoli/Desktop/curify-frontend-search-v2-r3-2026-07-19 (same worktree, different HEAD at the time)",
+      "commit_sha": "1e56e3f04da96c040c711efb54883e6d16d3ba0f",
+      "results_csv_source": "docs/daily_report/7.21/scorer-v1.1-evaluation-2026-07-21/eval_raw/CANDIDATE_EASY326.csv",
+      "reused_verbatim": true
+    },
+    "latest_candidate": {
+      "label": "post-Cluster-A-and-B-fix (this run)",
+      "commit_sha": "0e794cd91396a96cd56fd1d8f7f1495909f3adc5",
+      "results_csv": "eval_raw/CANDIDATE_LATEST_EASY326.csv (freshly collected this run)"
+    },
+    "catalog_note": "production_baseline and previous_candidate CSVs were collected on 2026-07-21 against their own contemporaneous catalog snapshots. The catalog changed (byte-level, same record count) between 6efdd904/1e56e3f0 and 0e794cd9 (b4116648 content strip). This is an unavoidable configuration difference, disclosed here and in the final report per charter Step 8/Step 10."
+  },
+  "environment": {
+    "os": "Darwin 23.1.0",
+    "shell": "zsh",
+    "benchmark_timezone": "Asia/Shanghai (CST, UTC+8)"
+  }
+}

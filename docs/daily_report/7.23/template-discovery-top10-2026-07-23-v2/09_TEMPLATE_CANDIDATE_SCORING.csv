@@ -1,0 +1,11 @@
+candidate_id,en_name,demand_25,severity_25,vertical_20,competitor_15,scalability_10,feasibility_5,raw_opportunity_score,evidence_completeness_pct,evidence_adjusted_score,rank,priority,status,final_confidence,ranking_rule
+T03,Workbook & Practice-Book Cover Collection,20,24,20,8,9,5,86,100,86.0,1,P0,CONFIRMED,HIGH,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T04,Flyer & Promotional-Flyer Templates,19,24,20,8,9,5,85,100,85.0,2,P0,CONFIRMED,HIGH,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T02,STEM Classroom Teaching-Aid Illustrations,23,24,20,1,7,5,80,83,66.4,3,P0,CONFIRMED,HIGH,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T05,Price Tag & Product Label Templates,16,24,20,1,9,5,75,83,62.2,4,P1,CONFIRMED,HIGH,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T01,Certificates & Achievement Awards Collection,16,24,20,1,9,5,75,67,50.2,5,P1,CONFIRMED,HIGH,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T07,Perfume & Cosmetic Bottle Packaging Mockups,16,16,20,9,7,3,71,100,71.0,6,P1,PROVISIONAL,MEDIUM,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T06,Chocolate & Specialty Gift-Box Packaging,16,14,20,5,7,3,65,67,43.5,7,P1,PROVISIONAL,MEDIUM,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T08,Puzzle & Jigsaw Collectible Templates,16,14,20,1,5,3,59,50,29.5,8,P2,PROVISIONAL,MEDIUM,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T09,Discount Coupon & Promotional Voucher Templates,9,21,20,1,5,5,61,33,20.1,9,P2,PROVISIONAL,MEDIUM,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"
+T10,Fridge Magnet & Small Merch-Item Templates,9,11,20,1,5,5,51,33,16.8,10,P2,PROVISIONAL,LOW-MEDIUM,"Priority (P0>P1>P2) > Status (CONFIRMED>PROVISIONAL) > Evidence-Adjusted Score (desc) > Candidate ID (asc, tie-break)"

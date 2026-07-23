@@ -1,0 +1,32 @@
+normalized_query_id,original_query,language,category_or_vertical,mapped_top10_candidate_id,role_in_candidate,latest_root_cause_classification
+Q001,certificate,EN,Certificates & Academic Documents,T01,PRIMARY,catalog_content_gap
+Q002,achievement certificate,EN,Certificates & Academic Documents,T01,PRIMARY,catalog_content_gap
+Q003,diploma,EN,Certificates & Academic Documents,,EXCLUDED_NOT_IN_TOP10,candidate_loss_regression (NEW_ZERO both comparisons)
+Q004,whiteboard,EN,Education & Classroom Materials,T02,PRIMARY,catalog_content_gap
+Q005,microscope,EN,Education & Classroom Materials,T02,PRIMARY,catalog_content_gap
+Q006,算盘,ZH,Education & Classroom Materials,T02,PRIMARY,"catalog_content_gap (cross-validated: 7/19 relaxed_above_floor=0, 7/20 regression-50, 7/22 latest)"
+Q007,workbook,EN,Education & Classroom Materials,T03,PRIMARY,catalog_content_gap
+Q008,练习册,ZH,Education & Classroom Materials,T03,PRIMARY,catalog_content_gap (cross-validated: 7/20 regression-50 + 7/22 latest)
+Q009,传单,ZH,Posters & Information Design,T04,PRIMARY,catalog_content_gap
+Q010,flyer,EN,Posters & Information Design,T04,PRIMARY,catalog_content_gap
+Q011,discount flyer,EN,Posters & Information Design,T04,PRIMARY,catalog_content_gap (weak/corroborating)
+Q012,价格标签,ZH,Sticker & Product-Label Design,T05,PRIMARY,catalog_content_gap
+Q013,price tag,EN,Sticker & Product-Label Design,T05,PRIMARY,catalog_content_gap
+Q014,巧克力礼盒,ZH,Packaging Design,T06,PRIMARY,content_gap_partial + partial_regression
+Q015,礼品盒,ZH,Packaging Design,T06,PRIMARY,mixed: candidate_loss + thin catalog
+Q016,香水瓶,ZH,Packaging Design,T07,PRIMARY,"catalog_content_gap (partial: general bottle content exists, cosmetic-specific does not)"
+Q017,perfume bottle,EN,Packaging Design,T07,PRIMARY,catalog_content_gap (partial)
+Q018,拼图,ZH,"Toy, Plush, Character & Collectible Design",T08,PRIMARY,content_gap_partial
+Q019,puzzle,EN,"Toy, Plush, Character & Collectible Design",T08,PRIMARY,candidate_loss_regression (NEW_ZERO)
+Q020,discount coupon,EN,Commercial & Graphic Design,T09,PRIMARY,catalog_content_gap
+Q021,优惠券,ZH,Commercial & Graphic Design,T09,PRIMARY,candidate_loss_regression (NEW_ZERO)
+Q022,magnet,EN,Product & Merchandise Design,T10,PRIMARY,content_gap_partial
+Q023,笔袋,ZH,Sticker & Product-Label Design / Stationery,,EXCLUDED_NOT_IN_TOP10,"SEARCH_ISSUE (candidate_loss / retrieval, per Cluster-B analysis) -- historical tension: 7/19 and 7/20 independently labeled this CATALOG_GAP (MEDIUM) via relaxed_above_floor=0 / identical-top5-set methodology"
+Q024,地图,ZH,Commercial & Graphic Design / Posters,,EXCLUDED_NOT_IN_TOP10,SEARCH_ISSUE (regression) -- reclassified from initial catalog_content_gap label after 7/17 screenshot review
+Q025,map,EN,Commercial & Graphic Design / Posters,,EXCLUDED_NOT_IN_TOP10,SEARCH_ISSUE (regression)
+Q026,flashcard,EN,Education & Classroom Materials,,EXCLUDED_NOT_IN_TOP10,SEARCH_ISSUE (regression) -- reclassified from initial catalog_content_gap label after 7/17 screenshot review
+Q027,vocabulary card,EN,Education & Classroom Materials,,EXCLUDED_NOT_IN_TOP10,"SEARCH_ISSUE (regression, inferred from flashcard sibling evidence)"
+Q028,单词卡,ZH,Education & Classroom Materials,,EXCLUDED_NOT_IN_TOP10,SEARCH_ISSUE (subject-binding failure -- '卡' collides with cartoon IP card content)
+Q029,会员卡,ZH,Brand Identity & Membership Materials,,EXCLUDED_NOT_IN_TOP10,"SEARCH_ISSUE (candidate_loss, NEW_ZERO vs production)"
+Q030,礼品卡,ZH,Brand Identity & Membership Materials,,EXCLUDED_NOT_IN_TOP10,"AMBIGUOUS (likely subject-binding: '卡' collides with sports-card content, same failure mode as 单词卡)"
+Q031,character,EN,Ambiguous / Cross-vertical,,EXCLUDED_NOT_IN_TOP10,catalog_content_gap (label) but AMBIGUOUS intent

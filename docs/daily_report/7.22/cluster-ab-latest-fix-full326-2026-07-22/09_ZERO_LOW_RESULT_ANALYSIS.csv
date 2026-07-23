@@ -1,0 +1,327 @@
+row_index,query,language,category,production_total,prevcandidate_total,latest_total,production_zero,prevcandidate_zero,latest_zero,production_low,prevcandidate_low,latest_low,transition_zero_vs_production,transition_zero_vs_prevcandidate
+0,玩具,zh,toy,21,21,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+1,toy,en,toy,14,14,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+2,手办,zh,figure,193,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+3,figure,en,figure,92,98,98,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+4,毛绒玩具,zh,plush,9,7,41,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+5,plush,en,plush,6,6,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+6,娃娃,zh,doll,3,10,10,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+7,doll,en,doll,5,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+8,吉祥物,zh,mascot,43,43,43,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+9,mascot,en,mascot,53,55,55,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+10,卡通形象,zh,character,15,15,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+11,character,en,character,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+12,贴纸,zh,sticker,80,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+13,sticker,en,sticker,78,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+14,钥匙扣,zh,keychain,19,19,19,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+15,keychain,en,keychain,19,19,19,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+16,收藏品,zh,collectible,18,18,18,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+17,collectible,en,collectible,93,99,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+18,盲盒,zh,blind_box,43,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+19,blind box,en,blind_box,43,43,37,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+20,动作人偶,zh,figure,186,121,40,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+21,action figure,en,figure,7,99,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+22,泰迪熊,zh,plush,31,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+23,teddy bear,en,plush,349,41,84,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+24,扭蛋,zh,blind_box,0,127,11,True,False,False,False,False,False,RECOVERED,NEVER_ZERO
+25,capsule toy,en,blind_box,2,80,82,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+26,卡牌,zh,collectible,375,168,83,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+27,trading card,en,collectible,34,99,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+28,模型,zh,collectible,57,59,59,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+29,model kit,en,collectible,11,20,94,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+30,雕像,zh,collectible,6,6,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+31,statue,en,collectible,104,2,2,False,False,False,False,True,True,NEVER_ZERO,NEVER_ZERO
+32,帆布袋,zh,merch_item,37,37,13,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+33,tote bag,en,merch_item,47,49,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+34,手机壳,zh,merch_item,11,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+35,phone case,en,merch_item,16,23,23,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+36,徽章,zh,merch_item,37,38,38,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+37,badge,en,merch_item,34,35,35,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+38,胸针,zh,merch_item,100,11,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+39,enamel pin,en,merch_item,187,86,86,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+40,冰箱贴,zh,merch_item,124,118,36,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+41,magnet,en,merch_item,3,3,3,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+42,挂绳,zh,merch_item,11,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+43,lanyard,en,merch_item,11,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+44,迷你手办,zh,figure,19,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+45,mini figure,en,figure,93,98,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+46,潮流公仔,zh,collectible,2,35,26,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+47,vinyl toy,en,collectible,94,14,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+48,潮流手办,zh,figure,2,12,11,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+49,pop figure,en,figure,7,97,98,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+50,惊喜盒子,zh,blind_box,181,169,83,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+51,mystery box,en,blind_box,2,45,95,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+52,挂件,zh,merch_item,5,9,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+53,charm,en,merch_item,6,6,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+54,马克杯,zh,merch_item,40,40,16,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+55,collectible mug,en,merch_item,37,131,28,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+56,抱枕,zh,merch_item,14,14,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+57,plush pillow,en,merch_item,249,8,87,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+58,拼图,zh,collectible,3,3,3,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+59,puzzle,en,collectible,0,162,0,True,False,True,False,False,False,STILL_ZERO,NEW_ZERO
+60,积木,zh,collectible,13,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+61,building blocks,en,collectible,7,15,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+62,公仔盒,zh,merch_item,49,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+63,sticker pack,en,merch_item,24,89,89,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+64,文创手办,zh,figure,95,34,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+65,cultural relic figure,en,figure,41,97,98,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+66,博物馆文创,zh,merch_item,27,27,27,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+67,museum souvenir,en,merch_item,77,87,48,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+68,国潮公仔,zh,figure,17,7,26,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+69,IP figure,en,figure,16,96,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+70,动漫周边,zh,merch_item,16,16,16,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+71,anime merch,en,merch_item,19,104,104,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+72,明信片套装,zh,merch_item,42,46,22,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+73,postcard set,en,merch_item,74,42,42,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+74,艺术微喷,zh,collectible,283,165,85,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+75,art print,en,collectible,111,117,113,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+76,摇头公仔,zh,collectible,121,140,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+77,bobblehead,en,collectible,2,0,10,False,True,False,True,False,False,NEVER_ZERO,RECOVERED
+78,场景模型,zh,collectible,91,0,9,False,True,False,False,False,False,NEVER_ZERO,RECOVERED
+79,diorama,en,collectible,0,7,7,True,False,False,False,False,False,RECOVERED,NEVER_ZERO
+80,角色卡通贴纸,zh,sticker,23,35,35,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+81,character sticker pack,en,sticker,21,81,73,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+82,标志,zh,logo,115,121,121,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+83,logo,en,logo,61,61,61,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+84,包装,zh,package,90,96,92,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+85,package,en,package,5,5,5,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+86,标签,zh,label,118,121,121,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+87,label,en,label,99,99,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+88,瓶子,zh,bottle,13,13,13,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+89,bottle,en,bottle,2,4,4,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+90,菜单,zh,menu,57,59,59,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+91,menu,en,menu,32,34,34,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+92,名片,zh,business_card,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+93,business card,en,business_card,95,113,113,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+94,产品盒,zh,product_box,121,156,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+95,product box,en,product_box,34,110,110,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+96,咖啡包装,zh,package,107,125,40,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+97,coffee package,en,package,187,126,126,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+98,餐厅菜单,zh,menu,45,47,47,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+99,restaurant menu,en,menu,28,69,69,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+100,香水瓶,zh,bottle,4,6,4,False,False,False,True,False,True,NEVER_ZERO,NEVER_ZERO
+101,perfume bottle,en,bottle,2,4,4,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+102,香水盒,zh,product_box,94,167,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+103,perfume box,en,product_box,53,46,94,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+104,茶叶包装,zh,package,108,117,81,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+105,tea package,en,package,188,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+106,咖啡豆包装,zh,package,113,114,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+107,coffee bean package,en,package,20,3,3,False,False,False,False,True,True,NEVER_ZERO,NEVER_ZERO
+108,巧克力礼盒,zh,product_box,53,52,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+109,chocolate box,en,product_box,188,119,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+110,护肤品包装,zh,package,100,176,16,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+111,skincare package,en,package,118,9,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+112,化妆品包装,zh,package,103,180,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+113,cosmetic package,en,package,183,109,86,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+114,酒标,zh,label,191,154,86,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+115,wine label,en,label,187,48,109,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+116,零食包装,zh,package,187,157,80,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+117,snack package,en,package,181,94,94,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+118,礼品盒,zh,product_box,40,168,4,False,False,False,False,False,True,NEVER_ZERO,NEVER_ZERO
+119,gift box,en,product_box,48,80,56,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+120,购物袋,zh,merch_item,5,5,3,False,False,False,False,False,True,NEVER_ZERO,NEVER_ZERO
+121,shopping bag,en,merch_item,13,104,102,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+122,产品标签,zh,label,88,89,89,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+123,product label,en,label,46,108,108,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+124,烘焙包装,zh,package,184,166,80,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+125,bakery package,en,package,8,13,18,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+126,咖啡馆菜单,zh,menu,6,16,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+127,cafe menu,en,menu,301,96,96,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+128,店招,zh,signage,178,174,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+129,shop sign,en,signage,9,26,26,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+130,门店招牌,zh,signage,188,8,86,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+131,storefront sign,en,signage,197,87,87,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+132,产品吊牌,zh,label,14,14,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+133,product tag,en,label,129,141,143,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+134,价格标签,zh,label,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+135,price tag,en,label,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+136,服装吊牌,zh,label,184,161,84,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+137,clothing tag,en,label,52,51,121,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+138,首饰盒,zh,product_box,68,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+139,jewelry box,en,product_box,62,52,28,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+140,蜡烛标签,zh,label,10,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+141,candle label,en,label,29,29,29,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+142,香皂包装,zh,package,98,110,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+143,soap package,en,package,2,7,7,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+144,茶叶罐,zh,product_box,20,10,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+145,tea box,en,product_box,6,59,35,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+146,咖啡杯,zh,cup,117,2,2,False,False,False,False,True,True,NEVER_ZERO,NEVER_ZERO
+147,coffee cup,en,cup,352,188,190,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+148,咖啡杯套,zh,cup,4,8,4,False,False,False,True,False,True,NEVER_ZERO,NEVER_ZERO
+149,coffee cup sleeve,en,cup,116,44,46,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+150,外卖餐盒,zh,product_box,115,6,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+151,takeout box,en,product_box,97,48,19,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+152,饮料瓶,zh,bottle,5,5,3,False,False,False,False,False,True,NEVER_ZERO,NEVER_ZERO
+153,drink bottle,en,bottle,2,179,112,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+154,水瓶标签,zh,label,29,29,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+155,water bottle label,en,label,29,21,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+156,信封,zh,stationery,11,11,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+157,envelope,en,stationery,9,9,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+158,手提袋,zh,merch_item,185,169,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+159,paper bag,en,merch_item,189,97,76,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+160,蛋糕盒,zh,product_box,98,7,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+161,cake box,en,product_box,52,51,38,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+162,月饼礼盒,zh,product_box,85,38,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+163,mooncake gift box,en,product_box,120,40,16,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+164,横幅,zh,banner,100,102,102,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+165,banner,en,banner,102,114,114,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+166,传单,zh,flyer,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+167,flyer,en,flyer,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+168,画册,zh,catalog,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+169,catalog,en,catalog,3,3,3,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+170,促销横幅,zh,banner,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+171,sale banner,en,banner,112,114,114,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+172,产品图,zh,product_photo,134,158,58,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+173,product photo,en,product_photo,39,93,93,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+174,促销活动,zh,promotion,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+175,promotion,en,promotion,37,37,37,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+176,广告,zh,advertisement,14,21,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+177,advertisement,en,advertisement,0,2,2,True,False,False,False,True,True,RECOVERED,NEVER_ZERO
+178,社交媒体帖子,zh,social_post,125,125,125,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+179,social media post,en,social_post,151,156,156,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+180,产品展示,zh,product_display,94,103,103,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+181,product display,en,product_display,57,110,110,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+182,餐厅传单,zh,flyer,47,45,18,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+183,restaurant flyer,en,flyer,47,47,47,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+184,电影海报,zh,poster_specific,90,91,91,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+185,movie poster,en,poster_specific,85,99,87,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+186,产品横幅,zh,banner,61,61,61,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+187,product banner,en,banner,43,111,111,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+188,促销海报,zh,poster_specific,10,10,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+189,sale poster,en,poster_specific,8,105,105,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+190,折扣传单,zh,flyer,0,9,9,True,False,False,False,False,False,RECOVERED,NEVER_ZERO
+191,discount flyer,en,flyer,3,3,3,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+192,电商横幅,zh,banner,20,21,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+193,ecommerce banner,en,banner,12,96,96,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+194,产品画册,zh,catalog,133,142,51,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+195,product catalog,en,catalog,136,141,142,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+196,活动传单,zh,flyer,105,104,20,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+197,event flyer,en,flyer,7,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+198,开业横幅,zh,banner,112,83,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+199,grand opening banner,en,banner,112,27,27,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+200,节日促销横幅,zh,banner,114,86,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+201,holiday sale banner,en,banner,112,25,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+202,新品横幅,zh,banner,114,75,34,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+203,new arrival banner,en,banner,112,25,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+204,限时促销海报,zh,poster_specific,277,171,82,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+205,flash sale poster,en,poster_specific,277,82,81,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+206,清仓促销横幅,zh,banner,110,82,31,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+207,clearance sale banner,en,banner,111,27,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+208,产品详情图,zh,product_photo,7,9,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+209,product listing image,en,product_photo,126,44,41,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+210,网店横幅,zh,banner,111,84,26,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+211,online store banner,en,banner,110,31,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+212,社交媒体广告,zh,advertisement,125,125,125,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+213,social media ad,en,advertisement,86,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+214,种草帖,zh,social_post,134,139,87,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+215,influencer post,en,social_post,160,83,83,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+216,开箱照,zh,product_photo,100,65,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+217,unboxing photo,en,product_photo,100,159,101,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+218,前后对比图,zh,product_photo,36,36,36,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+219,before after comparison,en,product_photo,42,49,49,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+220,优惠券,zh,coupon,0,8,0,True,False,True,False,False,False,STILL_ZERO,NEW_ZERO
+221,discount coupon,en,coupon,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+222,会员卡,zh,membership_card,368,0,0,False,True,True,False,False,False,NEW_ZERO,STILL_ZERO
+223,membership card,en,membership_card,192,179,157,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+224,积分卡,zh,membership_card,368,0,87,False,True,False,False,False,False,NEVER_ZERO,RECOVERED
+225,loyalty card,en,membership_card,95,101,101,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+226,礼品卡,zh,membership_card,3,3,3,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+227,gift card,en,membership_card,21,112,109,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+228,门店横幅,zh,banner,110,92,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+229,storefront banner,en,banner,111,115,115,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+230,橱窗展示,zh,product_display,187,172,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+231,window display,en,product_display,189,20,20,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+232,展会展架,zh,banner,109,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+233,trade show banner,en,banner,112,30,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+234,展览传单,zh,flyer,9,15,15,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+235,exhibition flyer,en,flyer,7,7,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+236,新品发布海报,zh,poster_specific,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+237,product launch poster,en,poster_specific,16,109,109,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+238,季节促销横幅,zh,banner,8,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+239,seasonal sale banner,en,banner,112,56,56,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+240,黑五促销横幅,zh,banner,112,67,31,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+241,black friday banner,en,banner,112,25,25,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+242,双十一促销海报,zh,poster_specific,281,165,82,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+243,singles day sale poster,en,poster_specific,277,89,89,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+244,直播预告横幅,zh,banner,112,67,30,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+245,livestream promo banner,en,banner,112,31,32,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+246,识字卡,zh,flashcard,122,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+247,flashcard,en,flashcard,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+248,练习册,zh,worksheet,92,7,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+249,worksheet,en,worksheet,32,61,61,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+250,字母卡,zh,flashcard,17,26,12,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+251,alphabet card,en,flashcard,17,98,98,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+252,地图,zh,map,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+253,map,en,map,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+254,图解,zh,diagram,97,103,103,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+255,diagram,en,diagram,92,93,93,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+256,日历,zh,calendar,20,20,20,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+257,calendar,en,calendar,34,34,34,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+258,证书,zh,certificate,96,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+259,certificate,en,certificate,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+260,科学海报,zh,poster_specific,89,93,93,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+261,science poster,en,poster_specific,103,103,103,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+262,课堂装饰海报,zh,poster_specific,41,41,41,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+263,classroom poster,en,poster_specific,105,111,111,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+264,教科书,zh,textbook,7,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+265,textbook,en,textbook,13,13,13,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+266,地球仪,zh,globe,275,159,83,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+267,globe,en,globe,351,159,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+268,图表,zh,chart,91,119,119,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+269,chart,en,chart,75,80,80,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+270,课程表,zh,chart,280,167,89,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+271,timetable,en,chart,2,2,2,False,False,False,True,True,True,NEVER_ZERO,NEVER_ZERO
+272,数字表,zh,chart,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+273,number chart,en,chart,35,35,35,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+274,元素周期表,zh,chart,27,27,27,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+275,periodic table,en,chart,27,33,33,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+276,世界地图,zh,map,36,36,36,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+277,world map,en,map,46,102,104,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+278,拼读卡,zh,flashcard,19,29,14,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+279,phonics card,en,flashcard,9,101,101,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+280,试卷,zh,worksheet,93,11,11,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+281,exam paper,en,worksheet,28,70,65,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+282,成绩单,zh,certificate,96,121,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+283,report card,en,certificate,78,98,98,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+284,笔袋,zh,stationery,17,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+285,pencil case,en,stationery,21,3,3,False,False,False,False,True,True,NEVER_ZERO,NEVER_ZERO
+286,黑板,zh,classroom_material,84,84,84,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+287,chalkboard,en,classroom_material,78,78,78,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+288,白板,zh,classroom_material,96,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+289,whiteboard,en,classroom_material,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+290,显微镜,zh,classroom_material,298,169,89,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+291,microscope,en,classroom_material,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+292,书签,zh,stationery,98,8,8,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+293,bookmark,en,stationery,190,167,86,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+294,算盘,zh,classroom_material,98,163,6,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+295,abacus,en,classroom_material,7,68,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+296,练习本,zh,worksheet,10,15,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+297,workbook,en,worksheet,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+298,单词卡,zh,flashcard,88,97,97,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+299,vocabulary card,en,flashcard,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+300,拼写卡,zh,flashcard,38,40,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+301,spelling card,en,flashcard,22,115,106,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+302,数学练习册,zh,worksheet,0,9,6,True,False,False,False,False,False,RECOVERED,NEVER_ZERO
+303,math worksheet,en,worksheet,24,29,26,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+304,阅读练习册,zh,worksheet,90,9,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+305,reading worksheet,en,worksheet,7,95,95,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+306,科学图解,zh,diagram,21,21,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+307,science diagram,en,diagram,82,102,102,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+308,人体图解,zh,chart,303,164,92,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+309,anatomy chart,en,chart,16,95,95,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+310,动物识字卡,zh,flashcard,101,74,21,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+311,animal flashcard,en,flashcard,8,95,94,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+312,字母海报,zh,poster_specific,56,56,56,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+313,alphabet poster,en,poster_specific,281,173,173,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+314,荣誉证书,zh,certificate,2,117,86,False,False,False,True,False,False,NEVER_ZERO,NEVER_ZERO
+315,achievement certificate,en,certificate,0,0,0,True,True,True,False,False,False,STILL_ZERO,STILL_ZERO
+316,毕业证,zh,certificate,187,9,9,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+317,diploma,en,certificate,101,6,0,False,False,True,False,False,False,NEW_ZERO,NEW_ZERO
+318,校历,zh,calendar,32,7,7,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+319,school calendar,en,calendar,5,111,113,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+320,教室装饰,zh,classroom_material,10,10,10,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+321,classroom decoration,en,classroom_material,170,159,116,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+322,学习图表,zh,chart,82,88,88,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+323,learning chart,en,chart,40,99,99,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+324,贴纸奖励表,zh,chart,58,67,20,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO
+325,reward chart,en,chart,38,110,110,False,False,False,False,False,False,NEVER_ZERO,NEVER_ZERO

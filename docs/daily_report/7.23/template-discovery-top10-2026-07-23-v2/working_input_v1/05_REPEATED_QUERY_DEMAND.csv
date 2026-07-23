@@ -1,0 +1,32 @@
+normalized_query_id,original_query,number_of_benchmark_appearances,source_benchmark_versions,first_appearance_date,latest_appearance_date,persistent_across_all_versions
+Q001,certificate,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q002,achievement certificate,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q003,diploma,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q004,whiteboard,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q005,microscope,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q006,算盘,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q007,workbook,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q008,练习册,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q009,传单,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q010,flyer,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q011,discount flyer,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q012,价格标签,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q013,price tag,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q014,巧克力礼盒,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q015,礼品盒,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q016,香水瓶,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q017,perfume bottle,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q018,拼图,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q019,puzzle,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q020,discount coupon,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q021,优惠券,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q022,magnet,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q023,笔袋,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q024,地图,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q025,map,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q026,flashcard,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q027,vocabulary card,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q028,单词卡,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q029,会员卡,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q030,礼品卡,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES
+Q031,character,4,easy_query_bank_v2(7/16); v2r3_easy326(7/19); scorer_v1.1_full326(7/21); latest_full326(7/22),2026-07-16,2026-07-22,YES

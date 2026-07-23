@@ -1,0 +1,124 @@
+{
+  "base": {
+    "PASS": 24,
+    "PARTIAL": 83,
+    "FAIL": 207,
+    "UNJUDGABLE": 12,
+    "zero": 23,
+    "low": 19,
+    "mean_total": 74.42331288343559,
+    "median_total": 46.5,
+    "min_total": 0,
+    "max_total": 375,
+    "mean_score": 14.512738853503185,
+    "n": 326
+  },
+  "prev": {
+    "PASS": 37,
+    "PARTIAL": 76,
+    "FAIL": 203,
+    "UNJUDGABLE": 10,
+    "zero": 20,
+    "low": 13,
+    "mean_total": 61.72699386503067,
+    "median_total": 46.0,
+    "min_total": 0,
+    "max_total": 188,
+    "mean_score": 16.974683544303797,
+    "n": 326
+  },
+  "latest": {
+    "PASS": 38,
+    "PARTIAL": 86,
+    "FAIL": 195,
+    "UNJUDGABLE": 7,
+    "zero": 20,
+    "low": 18,
+    "mean_total": 46.56748466257669,
+    "median_total": 28.5,
+    "min_total": 0,
+    "max_total": 190,
+    "mean_score": 18.946708463949843,
+    "n": 326
+  },
+  "improved_vs_prod": 57,
+  "regressed_vs_prod": 38,
+  "unchanged_vs_prod": 231,
+  "improved_vs_prevcand": 30,
+  "regressed_vs_prevcand": 23,
+  "unchanged_vs_prevcand": 273,
+  "trans_prod": {
+    "FAIL->PARTIAL": 28,
+    "PARTIAL->FAIL": 23,
+    "PASS->PASS": 15,
+    "FAIL->FAIL": 166,
+    "FAIL->PASS": 9,
+    "PARTIAL->PARTIAL": 48,
+    "PARTIAL->PASS": 12,
+    "FAIL->UNJUDGABLE": 4,
+    "PASS->PARTIAL": 8,
+    "UNJUDGABLE->PASS": 2,
+    "UNJUDGABLE->UNJUDGABLE": 2,
+    "UNJUDGABLE->FAIL": 6,
+    "PASS->UNJUDGABLE": 1,
+    "UNJUDGABLE->PARTIAL": 2
+  },
+  "trans_prevcand": {
+    "PARTIAL->PARTIAL": 63,
+    "PARTIAL->FAIL": 13,
+    "PASS->PASS": 31,
+    "FAIL->FAIL": 177,
+    "FAIL->PARTIAL": 17,
+    "FAIL->UNJUDGABLE": 4,
+    "UNJUDGABLE->FAIL": 4,
+    "FAIL->PASS": 5,
+    "PASS->PARTIAL": 4,
+    "UNJUDGABLE->UNJUDGABLE": 2,
+    "PASS->FAIL": 1,
+    "PASS->UNJUDGABLE": 1,
+    "UNJUDGABLE->PARTIAL": 2,
+    "UNJUDGABLE->PASS": 2
+  },
+  "new_zero_vs_prod": [
+    "会员卡",
+    "diploma"
+  ],
+  "recovered_zero_vs_prod": [
+    "扭蛋",
+    "diorama",
+    "advertisement",
+    "折扣传单",
+    "数学练习册"
+  ],
+  "new_zero_vs_prev": [
+    "puzzle",
+    "优惠券",
+    "diploma"
+  ],
+  "recovered_zero_vs_prev": [
+    "bobblehead",
+    "场景模型",
+    "积分卡"
+  ],
+  "new_low_vs_prod": [
+    "statue",
+    "coffee bean package",
+    "礼品盒",
+    "购物袋",
+    "咖啡杯",
+    "饮料瓶",
+    "advertisement",
+    "pencil case"
+  ],
+  "resolved_low_vs_prod": [
+    "娃娃",
+    "capsule toy",
+    "潮流公仔",
+    "潮流手办",
+    "mystery box",
+    "bobblehead",
+    "soap package",
+    "drink bottle",
+    "荣誉证书"
+  ]
+}
