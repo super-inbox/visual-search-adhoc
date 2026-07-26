@@ -1,0 +1,14 @@
+{
+  "template_id": "T09",
+  "example_id": "template-09-discount-coupon-voucher-example-03",
+  "scenario": "Different visual content, same layout: buy-one-get-one coffee shop coupon",
+  "target_audience": "Cafes/coffee shops running a BOGO promotion",
+  "editable_fields": {
+    "business_name": "Daybreak Coffee Roasters",
+    "discount_amount": "BOGO",
+    "discount_type": "Buy one specialty drink, get one free",
+    "expiry_date": "Expires October 5, 2026",
+    "terms_text": "Equal or lesser value. Valid after 2pm only.",
+    "color_scheme": "warm amber and espresso brown"
+  }
+}

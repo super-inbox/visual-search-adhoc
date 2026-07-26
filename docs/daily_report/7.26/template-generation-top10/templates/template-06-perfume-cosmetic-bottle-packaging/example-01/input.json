@@ -1,0 +1,13 @@
+{
+  "template_id": "T07",
+  "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-01",
+  "scenario": "Typical case: classic perfume glass-bottle launch visual",
+  "target_audience": "Independent fragrance brand launching a new scent",
+  "editable_fields": {
+    "bottle_shape_variant": "a classic tall rectangular glass perfume bottle with a faceted cap",
+    "brand_name": "Lumière",
+    "product_name": "Velvet Amber Eau de Parfum",
+    "backdrop_tone": "soft blush pink gradient",
+    "palette": "rose gold and blush"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "template_id": "T05",
+  "example_id": "template-04-price-tag-product-label-example-02",
+  "scenario": "Different business: handmade candle shop sale tag",
+  "target_audience": "Handmade/craft sellers running a clearance sale",
+  "editable_fields": {
+    "brand_name": "Ember & Oak Candle Co.",
+    "price": "$12.00 (was $18.00)",
+    "product_name": "Cedarwood Soy Candle",
+    "tag_shape_variant": "scalloped edge",
+    "seasonal_motif": "small sale-burst starburst icon",
+    "color_scheme": "sale red and cream"
+  }
+}

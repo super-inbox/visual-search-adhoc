@@ -1,0 +1,71 @@
+# TEMPLATE SPEC — Workbook & Practice-Book Cover Collection (T03)
+
+## Identity
+- **template_id**: T03
+- **template_name**: Workbook & Practice-Book Cover Collection
+- **zh_name**: 练习册/习题册封面合集
+- **category**: Education & Classroom Materials
+- **rank in discovery package**: #1
+
+## Purpose & audience
+- **purpose**: Printable subject workbook / homework practice-booklet cover art that Curify's catalog currently has zero coverage for.
+- **target_user**: Teachers, tutoring centers, homeschool parents, EdTech content sellers
+
+## Discovery grounding
+- **content_gap**: 'workbook' and '练习册 (practice book)' return 0 and near-0 (filler-only) results at every benchmarked timepoint; the only adjacent competitor reference on file (Canva 'Phonics Worksheets Kindergarten') is adjacent, not exact -- an exact workbook-cover reference is still needed.
+- **discovery_reason**: CONFIRMED content gap, HIGH confidence, rank #1 (P0), evidence-adjusted score 86.0 -- the strongest candidate in the discovery pool, confirmed independently at 7/16, 7/19, 7/21, 7/22, plus an independent 7/17 live-screenshot ground truth and a separate 7/20 regression-50 CATALOG_GAP finding.
+- **discovery_source**: docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=1, candidate_id=T03)
+- **benchmark_queries**: workbook; 练习册 (practice book)
+- **competitor_references**: Adjacent (not exact): Canva 'Phonics Worksheets Kindergarten' screenshot, source 6.19-20/external-signal-pilot/canva-search-eval-58, item 047-phonics-worksheets-kindergarten. No exact workbook-cover competitor reference on file.
+
+## Format
+- **aspect_ratio**: 3:4
+- **output_size**: 1200x1600
+
+## Fixed structure (must not vary across examples)
+- Top title band (approx top 18% of frame): subject name lockup + a small grade-level ribbon badge in the top-right corner
+- Center illustration zone (approx middle 55%): one large, flat-vector subject motif/icon relevant to the subject (e.g. numbers for math, alphabet blocks for language, a beaker for science)
+- Thin colored border frame around the entire cover, color keyed to subject
+- Bottom footer bar (approx bottom 12%): series/brand wordmark, left-aligned, small and unobtrusive
+- Consistent two-color-plus-neutral palette system across all examples of this template (accent color rotates by subject, layout does not)
+
+## Variable content (must vary across examples)
+- **editable_fields**: subject_name, grade_level, series_brand, accent_color, subject_motif, language_mode
+- **image_slots**: center_subject_motif_illustration
+- **text_slots**: subject_name_title, grade_level_badge, series_brand_footer
+
+## Information hierarchy
+1) subject name (largest) 2) grade-level badge 3) subject illustration (dominant visual weight) 4) series/brand footer (smallest)
+
+## Visual system
+- **visual_style**: Clean flat-vector illustration, consistent with Curify's existing worksheet/flashcard visual language; no photorealism
+- **typography_direction**: Rounded, friendly sans-serif for subject title; compact sans-serif for footer/badge
+- **color_direction**: Subject-coded accent (math=blue, language=coral, science=green, general=purple) over a white/cream neutral background
+
+## Prompt template
+```
+Design a printable workbook / practice-book COVER, {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a top title band occupying about the top 18% of the frame containing the subject-name title and a small grade-level ribbon badge in the top-right corner; a large center illustration zone (about the middle 55% of the frame) containing exactly one large flat-vector subject motif illustration relevant to the subject; a thin colored border frame around the entire cover; a bottom footer bar (about the bottom 12%) with a small left-aligned series/brand wordmark. Clean flat-vector illustration style, no photorealism, consistent with a children's educational worksheet/flashcard visual language. VARIABLE CONTENT for this specific example: subject name = "{subject_name}", grade level badge text = "{grade_level}", series/brand footer text = "{series_brand}", accent color = {accent_color}, center subject illustration = {subject_motif}. Render the subject name and grade-level badge as real, legible, correctly spelled text exactly as given -- do not add any other text. Do not add a watermark. Do not crop the illustration at the frame edges.
+```
+
+## Negative constraints
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- no photorealistic rendering of the subject motif -- flat vector only
+- no more than one grade-level badge
+
+## Quality criteria
+- subject_name_title text is present, legible, and spelled exactly as specified
+- grade_level badge is present as a distinct top-right ribbon element
+- layout matches the fixed structure across all examples of this template (title band / center illustration / footer)
+- no watermark, no extraneous text, no cropped subject
+
+## Planned examples
+- Example 01: Typical case: elementary math practice workbook
+- Example 02: Different business/subject: bilingual language-arts practice book for a homeschool seller
+- Example 03: Different visual content, same layout: science practice workbook
+- Example 04: Edge case: general/mixed-subject exam-prep booklet with a longer series name

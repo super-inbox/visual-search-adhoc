@@ -1,0 +1,15 @@
+{
+  "template_id": "T04",
+  "example_id": "template-02-flyer-promotional-flyer-example-01",
+  "scenario": "Typical case: restaurant discount flyer",
+  "target_audience": "Local restaurant owners promoting a weekday discount",
+  "editable_fields": {
+    "headline": "Golden Wok Bistro - Weekday Lunch Special",
+    "hero_image_subject": "an appetizing flat-illustration of a steaming noodle bowl with chopsticks",
+    "offer_details": "20% off all lunch combos, Monday-Friday 11am-2pm. Dine-in or takeout.",
+    "date_time": "Every Mon-Fri, 11:00 AM - 2:00 PM",
+    "contact_info": "123 Maple Street, Springfield - (555) 201-4477",
+    "cta_text": "Show this flyer to redeem",
+    "color_scheme": "warm red and gold"
+  }
+}

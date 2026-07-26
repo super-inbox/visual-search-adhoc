@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "generation_model": "gemini-3-pro-image-preview",
+  "parameters": {
+    "responseModalities": [
+      "IMAGE",
+      "TEXT"
+    ]
+  },
+  "attempt_count": 1,
+  "generated_at": "2026-07-25T16:28:24.535Z",
+  "output_path": "templates/template-05-certificates-achievement-awards/example-02/output.png",
+  "bytes": 875258,
+  "mime_type": "image/jpeg",
+  "finish_reason": "STOP",
+  "error": null,
+  "qa_result": null
+}

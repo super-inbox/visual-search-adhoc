@@ -1,0 +1,639 @@
+<title>Curify Top 10 Template Generation — Gallery</title>
+<style>
+  :root {
+    --bg: #fafafa; --fg: #1a1a1a; --card-bg: #ffffff; --border: #e2e2e2;
+    --accent: #3457d5; --muted: #6b6b6b; --pass: #1e8e3e; --review: #b8860b; --fail: #c62828;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121212; --fg: #ececec; --card-bg: #1c1c1c; --border: #333; --muted: #9a9a9a; }
+  }
+  :root[data-theme="dark"] { --bg: #121212; --fg: #ececec; --card-bg: #1c1c1c; --border: #333; --muted: #9a9a9a; }
+  :root[data-theme="light"] { --bg: #fafafa; --fg: #1a1a1a; --card-bg: #ffffff; --border: #e2e2e2; --muted: #6b6b6b; }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--fg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    margin: 0; padding: 0 0 4rem 0;
+  }
+  header {
+    padding: 2rem 1.5rem 1rem; max-width: 1200px; margin: 0 auto;
+  }
+  h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+  .subtitle { color: var(--muted); font-size: .95rem; margin-bottom: 1.2rem; }
+  .stats { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: .5rem; }
+  .stat {
+    background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px;
+    padding: .7rem 1rem; min-width: 110px; text-align: center;
+  }
+  .stat .n { font-size: 1.4rem; font-weight: 700; }
+  .stat .l { font-size: .72rem; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .stat.pass .n { color: var(--pass); }
+  .stat.review .n { color: var(--review); }
+  .stat.fail .n { color: var(--fail); }
+  main { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+  section.template {
+    border: 1px solid var(--border); border-radius: 14px; background: var(--card-bg);
+    margin: 1.5rem 0; padding: 1.3rem 1.4rem 1.5rem; scroll-margin-top: 1rem;
+  }
+  .tpl-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem; }
+  .tpl-head h2 { margin: 0; font-size: 1.2rem; }
+  .tpl-rank { color: var(--accent); font-weight: 700; margin-right: .4rem; }
+  .tpl-meta { color: var(--muted); font-size: .85rem; margin: .3rem 0 .2rem; }
+  .tpl-purpose { font-size: .92rem; margin: .5rem 0; }
+  .tpl-rationale { font-size: .82rem; color: var(--muted); border-left: 3px solid var(--border); padding-left: .7rem; margin: .6rem 0 1rem; }
+  .tpl-links a { font-size: .8rem; margin-right: 1rem; color: var(--accent); text-decoration: none; }
+  .tpl-links a:hover { text-decoration: underline; }
+  .examples { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; margin-top: 1rem; }
+  .example { border: 1px solid var(--border); border-radius: 10px; overflow: hidden; background: var(--bg); }
+  .example img { width: 100%; display: block; aspect-ratio: 4/5; object-fit: cover; cursor: zoom-in; background: #eee; }
+  .example .body { padding: .6rem .7rem .7rem; }
+  .example .scenario { font-size: .78rem; margin: 0 0 .4rem; }
+  .badge { display: inline-block; font-size: .68rem; font-weight: 700; padding: .15rem .5rem; border-radius: 999px; text-transform: uppercase; letter-spacing: .03em; }
+  .badge.success { background: rgba(30,142,62,.15); color: var(--pass); }
+  .badge.needs_review { background: rgba(184,134,11,.15); color: var(--review); }
+  .badge.failed { background: rgba(198,40,40,.15); color: var(--fail); }
+  .example .links { margin-top: .4rem; }
+  .example .links a { font-size: .72rem; color: var(--accent); text-decoration: none; margin-right: .6rem; }
+  .example .links a:hover { text-decoration: underline; }
+  #lightbox {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,.85); z-index: 999;
+    align-items: center; justify-content: center; padding: 2rem; cursor: zoom-out;
+  }
+  #lightbox.open { display: flex; }
+  #lightbox img { max-width: 100%; max-height: 100%; border-radius: 6px; }
+  nav.toc { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; font-size: .82rem; color: var(--muted); }
+  nav.toc a { color: var(--accent); text-decoration: none; margin-right: .8rem; display: inline-block; margin-bottom: .3rem; }
+  nav.toc a:hover { text-decoration: underline; }
+</style>
+
+<header>
+<h1>Curify Top 10 Template Generation — Gallery</h1>
+<div class="subtitle">Discovery source: <code>docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv</code> &middot; generated 2026-07-26T00:00:00-07:00</div>
+<div class="stats">
+<div class="stat"><div class="n">10</div><div class="l">Templates</div></div>
+<div class="stat"><div class="n">40</div><div class="l">Planned examples</div></div>
+<div class="stat pass"><div class="n">40</div><div class="l">Successful</div></div>
+<div class="stat review"><div class="n">0</div><div class="l">Needs review</div></div>
+<div class="stat fail"><div class="n">0</div><div class="l">Failed</div></div>
+</div></header>
+<nav class="toc">
+<a href="#template-01-workbook-practice-book-covers">#1 T03 Workbook &amp; Practice-Book Cover Collection</a>
+<a href="#template-02-flyer-promotional-flyer">#2 T04 Flyer &amp; Promotional-Flyer Templates</a>
+<a href="#template-03-stem-classroom-teaching-aids">#3 T02 STEM Classroom Teaching-Aid Illustrations</a>
+<a href="#template-04-price-tag-product-label">#4 T05 Price Tag &amp; Product Label Templates</a>
+<a href="#template-05-certificates-achievement-awards">#5 T01 Certificates &amp; Achievement Awards Collection</a>
+<a href="#template-06-perfume-cosmetic-bottle-packaging">#6 T07 Perfume &amp; Cosmetic Bottle Packaging Mockups</a>
+<a href="#template-07-chocolate-giftbox-packaging">#7 T06 Chocolate &amp; Specialty Gift-Box Packaging</a>
+<a href="#template-08-puzzle-jigsaw-collectible">#8 T08 Puzzle &amp; Jigsaw Collectible Templates</a>
+<a href="#template-09-discount-coupon-voucher">#9 T09 Discount Coupon &amp; Promotional Voucher Templates</a>
+<a href="#template-10-fridge-magnet-merch">#10 T10 Fridge Magnet &amp; Small Merch-Item Templates</a>
+</nav>
+<main>
+<section class="template" id="template-01-workbook-practice-book-covers">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#1</span>Workbook &amp; Practice-Book Cover Collection <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T03 &middot; 练习册/习题册封面合集)</span></h2>
+</div>
+<div class="tpl-meta">Education &amp; Classroom Materials &middot; target user: Teachers, tutoring centers, homeschool parents, EdTech content sellers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Printable subject workbook / homework practice-booklet cover art that Curify&#x27;s catalog currently has zero coverage for.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap, HIGH confidence, rank #1 (P0), evidence-adjusted score 86.0 -- the strongest candidate in the discovery pool, confirmed independently at 7/16, 7/19, 7/21, 7/22, plus an independent 7/17 live-screenshot ground truth and a separate 7/20 regression-50 CATALOG_GAP finding.<br><strong>Content gap:</strong> &#x27;workbook&#x27; and &#x27;练习册 (practice book)&#x27; return 0 and near-0 (filler-only) results at every benchmarked timepoint; the only adjacent competitor reference on file (Canva &#x27;Phonics Worksheets Kindergarten&#x27;) is adjacent, not exact -- an exact workbook-cover reference is still needed.</div>
+<div class="tpl-links">
+<a href="templates/template-01-workbook-practice-book-covers/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-01-workbook-practice-book-covers/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-01-workbook-practice-book-covers/example-01/output.png" loading="lazy" alt="template-01-workbook-practice-book-covers-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: elementary math practice workbook</p>
+<div class="links">
+<a href="templates/template-01-workbook-practice-book-covers/example-01/input.json">input</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-01/prompt.txt">prompt</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-01-workbook-practice-book-covers/example-02/output.png" loading="lazy" alt="template-01-workbook-practice-book-covers-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different business/subject: bilingual language-arts practice book for a homeschool seller</p>
+<div class="links">
+<a href="templates/template-01-workbook-practice-book-covers/example-02/input.json">input</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-02/prompt.txt">prompt</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-01-workbook-practice-book-covers/example-03/output.png" loading="lazy" alt="template-01-workbook-practice-book-covers-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: science practice workbook</p>
+<div class="links">
+<a href="templates/template-01-workbook-practice-book-covers/example-03/input.json">input</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-03/prompt.txt">prompt</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-01-workbook-practice-book-covers/example-04/output.png" loading="lazy" alt="template-01-workbook-practice-book-covers-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: general/mixed-subject exam-prep booklet with a longer series name</p>
+<div class="links">
+<a href="templates/template-01-workbook-practice-book-covers/example-04/input.json">input</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-04/prompt.txt">prompt</a>
+<a href="templates/template-01-workbook-practice-book-covers/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-02-flyer-promotional-flyer">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#2</span>Flyer &amp; Promotional-Flyer Templates <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T04 &middot; 传单/促销单页合集)</span></h2>
+</div>
+<div class="tpl-meta">Posters &amp; Information Design &middot; target user: Restaurants, retail/small business owners, event organizers, schools</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Compact, info-dense single-page promotional flyers (restaurant/retail/event/school-notice), distinct from Curify&#x27;s existing wall-poster format.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap, HIGH confidence, rank #2 (P0), evidence-adjusted score 85.0 -- zero/near-zero at every benchmark timepoint including an independent 7/17 screenshot baseline predating the recent search-fix cycle.<br><strong>Content gap:</strong> &#x27;传单&#x27; and &#x27;flyer&#x27; return 0 results at every timepoint; &#x27;discount flyer&#x27; returns only 3 irrelevant results. Curify has poster-style content but no dedicated compact flyer layout.</div>
+<div class="tpl-links">
+<a href="templates/template-02-flyer-promotional-flyer/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-02-flyer-promotional-flyer/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-02-flyer-promotional-flyer/example-01/output.png" loading="lazy" alt="template-02-flyer-promotional-flyer-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: restaurant discount flyer</p>
+<div class="links">
+<a href="templates/template-02-flyer-promotional-flyer/example-01/input.json">input</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-01/prompt.txt">prompt</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-02-flyer-promotional-flyer/example-02/output.png" loading="lazy" alt="template-02-flyer-promotional-flyer-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different business: retail seasonal sale flyer</p>
+<div class="links">
+<a href="templates/template-02-flyer-promotional-flyer/example-02/input.json">input</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-02/prompt.txt">prompt</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-02-flyer-promotional-flyer/example-03/output.png" loading="lazy" alt="template-02-flyer-promotional-flyer-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: community event flyer</p>
+<div class="links">
+<a href="templates/template-02-flyer-promotional-flyer/example-03/input.json">input</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-03/prompt.txt">prompt</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-02-flyer-promotional-flyer/example-04/output.png" loading="lazy" alt="template-02-flyer-promotional-flyer-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: school-notice flyer with denser text requirements</p>
+<div class="links">
+<a href="templates/template-02-flyer-promotional-flyer/example-04/input.json">input</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-04/prompt.txt">prompt</a>
+<a href="templates/template-02-flyer-promotional-flyer/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-03-stem-classroom-teaching-aids">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#3</span>STEM Classroom Teaching-Aid Illustrations <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T02 &middot; STEM课堂教具图解合集)</span></h2>
+</div>
+<div class="tpl-meta">Education &amp; Classroom Materials &middot; target user: K-12 teachers, tutoring centers, STEM curriculum designers, classroom-decor sellers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Flat-vector, labeled classroom-equipment illustrations (whiteboard, microscope, abacus, etc.) for K-12 STEM teaching materials.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap, HIGH confidence, rank #3 (P0), highest raw opportunity score in the pool (80) though evidence-adjusted lower (66.4) pending a competitor spot-check the manager summary explicitly recommends before greenlighting.<br><strong>Content gap:</strong> &#x27;whiteboard&#x27; and &#x27;microscope&#x27; return 0 results; &#x27;算盘 (abacus)&#x27; returns only 6 fully irrelevant results (AI-tool category cards). No dedicated classroom-equipment illustration set exists in the catalog.</div>
+<div class="tpl-links">
+<a href="templates/template-03-stem-classroom-teaching-aids/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-03-stem-classroom-teaching-aids/example-01/output.png" loading="lazy" alt="template-03-stem-classroom-teaching-aids-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: classroom whiteboard</p>
+<div class="links">
+<a href="templates/template-03-stem-classroom-teaching-aids/example-01/input.json">input</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-01/prompt.txt">prompt</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-03-stem-classroom-teaching-aids/example-02/output.png" loading="lazy" alt="template-03-stem-classroom-teaching-aids-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different subject/topic: lab microscope</p>
+<div class="links">
+<a href="templates/template-03-stem-classroom-teaching-aids/example-02/input.json">input</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-02/prompt.txt">prompt</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-03-stem-classroom-teaching-aids/example-03/output.png" loading="lazy" alt="template-03-stem-classroom-teaching-aids-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: counting abacus</p>
+<div class="links">
+<a href="templates/template-03-stem-classroom-teaching-aids/example-03/input.json">input</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-03/prompt.txt">prompt</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-03-stem-classroom-teaching-aids/example-04/output.png" loading="lazy" alt="template-03-stem-classroom-teaching-aids-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: less common equipment with denser labeling needs</p>
+<div class="links">
+<a href="templates/template-03-stem-classroom-teaching-aids/example-04/input.json">input</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-04/prompt.txt">prompt</a>
+<a href="templates/template-03-stem-classroom-teaching-aids/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-04-price-tag-product-label">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#4</span>Price Tag &amp; Product Label Templates <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T05 &middot; 价格标签/商品吊牌合集)</span></h2>
+</div>
+<div class="tpl-meta">Sticker &amp; Product-Label Design &middot; target user: Small retailers, boutique/handmade sellers, e-commerce merchandisers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Small die-cut-style retail price tags and product labels for boutique, sale, and gift-shop merchandising.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap, HIGH confidence, rank #4 (P1), evidence-adjusted score 62.2 -- now correctly outranks T01 (Certificates) after the v2 ranking-rule correction.<br><strong>Content gap:</strong> &#x27;价格标签&#x27; and &#x27;price tag&#x27; return 0 results at every timepoint, confirmed by an independent 7/17 &#x27;No results&#x27; screenshot.</div>
+<div class="tpl-links">
+<a href="templates/template-04-price-tag-product-label/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-04-price-tag-product-label/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-04-price-tag-product-label/example-01/output.png" loading="lazy" alt="template-04-price-tag-product-label-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: standard boutique clothing price tag</p>
+<div class="links">
+<a href="templates/template-04-price-tag-product-label/example-01/input.json">input</a>
+<a href="templates/template-04-price-tag-product-label/example-01/prompt.txt">prompt</a>
+<a href="templates/template-04-price-tag-product-label/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-04-price-tag-product-label/example-02/output.png" loading="lazy" alt="template-04-price-tag-product-label-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different business: handmade candle shop sale tag</p>
+<div class="links">
+<a href="templates/template-04-price-tag-product-label/example-02/input.json">input</a>
+<a href="templates/template-04-price-tag-product-label/example-02/prompt.txt">prompt</a>
+<a href="templates/template-04-price-tag-product-label/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-04-price-tag-product-label/example-03/output.png" loading="lazy" alt="template-04-price-tag-product-label-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: gift-shop souvenir hang tag</p>
+<div class="links">
+<a href="templates/template-04-price-tag-product-label/example-03/input.json">input</a>
+<a href="templates/template-04-price-tag-product-label/example-03/prompt.txt">prompt</a>
+<a href="templates/template-04-price-tag-product-label/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-04-price-tag-product-label/example-04/output.png" loading="lazy" alt="template-04-price-tag-product-label-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: holiday seasonal gift tag with longer product name</p>
+<div class="links">
+<a href="templates/template-04-price-tag-product-label/example-04/input.json">input</a>
+<a href="templates/template-04-price-tag-product-label/example-04/prompt.txt">prompt</a>
+<a href="templates/template-04-price-tag-product-label/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-05-certificates-achievement-awards">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#5</span>Certificates &amp; Achievement Awards Collection <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T01 &middot; 证书与荣誉奖状合集)</span></h2>
+</div>
+<div class="tpl-meta">Certificates &amp; Academic Documents &middot; target user: Teachers, K-12 schools, corporate HR / recognition programs, event &amp; competition organizers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Formal, bordered achievement/award certificates for classrooms, corporate recognition, and event competitions.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap, HIGH confidence, rank #5 (P1), evidence-adjusted score 50.2 -- 0% PASS rate across the entire &#x27;certificate&#x27; vertical (8 queries), untouched by the recent search-fix cycle.<br><strong>Content gap:</strong> &#x27;certificate&#x27; and &#x27;achievement certificate&#x27; return 0 results at every timepoint; the in-app UI itself surfaces a &#x27;Generate this yourself&#x27; prompt, confirming Curify&#x27;s own product surface acknowledges the gap.</div>
+<div class="tpl-links">
+<a href="templates/template-05-certificates-achievement-awards/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-05-certificates-achievement-awards/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-05-certificates-achievement-awards/example-01/output.png" loading="lazy" alt="template-05-certificates-achievement-awards-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: classroom academic achievement award</p>
+<div class="links">
+<a href="templates/template-05-certificates-achievement-awards/example-01/input.json">input</a>
+<a href="templates/template-05-certificates-achievement-awards/example-01/prompt.txt">prompt</a>
+<a href="templates/template-05-certificates-achievement-awards/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-05-certificates-achievement-awards/example-02/output.png" loading="lazy" alt="template-05-certificates-achievement-awards-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different business/context: corporate employee recognition</p>
+<div class="links">
+<a href="templates/template-05-certificates-achievement-awards/example-02/input.json">input</a>
+<a href="templates/template-05-certificates-achievement-awards/example-02/prompt.txt">prompt</a>
+<a href="templates/template-05-certificates-achievement-awards/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-05-certificates-achievement-awards/example-03/output.png" loading="lazy" alt="template-05-certificates-achievement-awards-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: sports-day award</p>
+<div class="links">
+<a href="templates/template-05-certificates-achievement-awards/example-03/input.json">input</a>
+<a href="templates/template-05-certificates-achievement-awards/example-03/prompt.txt">prompt</a>
+<a href="templates/template-05-certificates-achievement-awards/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-05-certificates-achievement-awards/example-04/output.png" loading="lazy" alt="template-05-certificates-achievement-awards-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: course-completion certificate with longer text fields</p>
+<div class="links">
+<a href="templates/template-05-certificates-achievement-awards/example-04/input.json">input</a>
+<a href="templates/template-05-certificates-achievement-awards/example-04/prompt.txt">prompt</a>
+<a href="templates/template-05-certificates-achievement-awards/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-06-perfume-cosmetic-bottle-packaging">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#6</span>Perfume &amp; Cosmetic Bottle Packaging Mockups <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T07 &middot; 香水/美妆瓶身包装样机合集)</span></h2>
+</div>
+<div class="tpl-meta">Packaging Design &middot; target user: Cosmetics/fragrance brands, beauty e-commerce sellers, brand-launch marketers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Studio-lit glass-bottle product mockups for perfume/cosmetic brand launches and beauty social-media teasers.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> PARTIAL content gap, MEDIUM-HIGH confidence, rank #6 (P1, PROVISIONAL) -- general adjacent content exists (ruling out total search failure) but the specific bottle sub-type is absent; has the best competitor-image evidence of the whole pool (3 adjacent images on file).<br><strong>Content gap:</strong> &#x27;香水瓶&#x27; and &#x27;perfume bottle&#x27; both return only 4 wrong-type results (sport/water bottles); no dedicated perfume/cosmetic bottle content exists in the catalog.</div>
+<div class="tpl-links">
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-06-perfume-cosmetic-bottle-packaging/example-01/output.png" loading="lazy" alt="template-06-perfume-cosmetic-bottle-packaging-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: classic perfume glass-bottle launch visual</p>
+<div class="links">
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-01/input.json">input</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-01/prompt.txt">prompt</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-06-perfume-cosmetic-bottle-packaging/example-02/output.png" loading="lazy" alt="template-06-perfume-cosmetic-bottle-packaging-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different product line: cosmetic pump-bottle mockup</p>
+<div class="links">
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-02/input.json">input</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-02/prompt.txt">prompt</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-06-perfume-cosmetic-bottle-packaging/example-03/output.png" loading="lazy" alt="template-06-perfume-cosmetic-bottle-packaging-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: aromatherapy roller-bottle</p>
+<div class="links">
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-03/input.json">input</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-03/prompt.txt">prompt</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-06-perfume-cosmetic-bottle-packaging/example-04/output.png" loading="lazy" alt="template-06-perfume-cosmetic-bottle-packaging-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: luxury gift-set of three bottles in one frame</p>
+<div class="links">
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-04/input.json">input</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-04/prompt.txt">prompt</a>
+<a href="templates/template-06-perfume-cosmetic-bottle-packaging/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-07-chocolate-giftbox-packaging">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#7</span>Chocolate &amp; Specialty Gift-Box Packaging <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T06 &middot; 巧克力/节日礼盒包装合集)</span></h2>
+</div>
+<div class="tpl-meta">Packaging Design &middot; target user: Confectionery/gift retailers, holiday-season sellers, corporate gifting</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Layered gift-box mockups (open lid, visible compartments, ribbon) for chocolate and holiday/gift merchandising, distinct from Curify&#x27;s existing generic &#x27;mystery box&#x27; style.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> PARTIAL content gap, MEDIUM confidence, rank #7 (P1, PROVISIONAL) -- textbook partial-coverage pattern: general chocolate product photography exists in the catalog, but the multi-compartment gift-box ribbon-presentation format does not.<br><strong>Content gap:</strong> &#x27;巧克力礼盒&#x27; returns only generic mystery-box templates (none chocolate-specific); &#x27;礼品盒&#x27; returns 1 irrelevant hit. General chocolate product photography exists but no dedicated gift-box presentation layout.</div>
+<div class="tpl-links">
+<a href="templates/template-07-chocolate-giftbox-packaging/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-07-chocolate-giftbox-packaging/example-01/output.png" loading="lazy" alt="template-07-chocolate-giftbox-packaging-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: holiday chocolate gift box</p>
+<div class="links">
+<a href="templates/template-07-chocolate-giftbox-packaging/example-01/input.json">input</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-01/prompt.txt">prompt</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-07-chocolate-giftbox-packaging/example-02/output.png" loading="lazy" alt="template-07-chocolate-giftbox-packaging-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different occasion: Valentine&#x27;s Day chocolate box</p>
+<div class="links">
+<a href="templates/template-07-chocolate-giftbox-packaging/example-02/input.json">input</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-02/prompt.txt">prompt</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-07-chocolate-giftbox-packaging/example-03/output.png" loading="lazy" alt="template-07-chocolate-giftbox-packaging-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: corporate holiday gift set</p>
+<div class="links">
+<a href="templates/template-07-chocolate-giftbox-packaging/example-03/input.json">input</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-03/prompt.txt">prompt</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-07-chocolate-giftbox-packaging/example-04/output.png" loading="lazy" alt="template-07-chocolate-giftbox-packaging-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: mooncake-adjacent festival gift box</p>
+<div class="links">
+<a href="templates/template-07-chocolate-giftbox-packaging/example-04/input.json">input</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-04/prompt.txt">prompt</a>
+<a href="templates/template-07-chocolate-giftbox-packaging/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-08-puzzle-jigsaw-collectible">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#8</span>Puzzle &amp; Jigsaw Collectible Templates <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T08 &middot; 拼图收藏品合集)</span></h2>
+</div>
+<div class="tpl-meta">Toy, Plush, Character &amp; Collectible Design &middot; target user: Collectible/merch sellers, gift shops, licensed-IP merchandise producers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Collectible jigsaw-puzzle box-cover mockups for merch/gift-shop and licensed-IP puzzle products.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> PARTIAL content gap, MEDIUM confidence, rank #8 (P2, PROVISIONAL) -- kept PROVISIONAL due to single confirmed-language signal (拼图 ZH) and no competitor evidence on file; English &#x27;puzzle&#x27; zero-result explicitly excluded from the justification as a candidate-build artifact.<br><strong>Content gap:</strong> 拼图 (ZH) shows a stable, low, persistently-irrelevant result set (3 results) at every timepoint; the in-app UI shows a &#x27;Generate this yourself&#x27; prompt for the English query, independently confirming the gap.</div>
+<div class="tpl-links">
+<a href="templates/template-08-puzzle-jigsaw-collectible/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-08-puzzle-jigsaw-collectible/example-01/output.png" loading="lazy" alt="template-08-puzzle-jigsaw-collectible-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: nature-landscape collectible puzzle</p>
+<div class="links">
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-01/input.json">input</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-01/prompt.txt">prompt</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-08-puzzle-jigsaw-collectible/example-02/output.png" loading="lazy" alt="template-08-puzzle-jigsaw-collectible-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different theme: mini travel puzzle</p>
+<div class="links">
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-02/input.json">input</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-02/prompt.txt">prompt</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-08-puzzle-jigsaw-collectible/example-03/output.png" loading="lazy" alt="template-08-puzzle-jigsaw-collectible-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: licensed-IP tie-in collectible puzzle</p>
+<div class="links">
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-03/input.json">input</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-03/prompt.txt">prompt</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-08-puzzle-jigsaw-collectible/example-04/output.png" loading="lazy" alt="template-08-puzzle-jigsaw-collectible-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: large-format gift puzzle set with extended piece count</p>
+<div class="links">
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-04/input.json">input</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-04/prompt.txt">prompt</a>
+<a href="templates/template-08-puzzle-jigsaw-collectible/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-09-discount-coupon-voucher">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#9</span>Discount Coupon &amp; Promotional Voucher Templates <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T09 &middot; 折扣优惠券/代金券合集)</span></h2>
+</div>
+<div class="tpl-meta">Commercial &amp; Graphic Design &middot; target user: Retailers, restaurants, membership/loyalty programs</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Tear-tab ticket-style discount coupons and vouchers for retail, restaurant, and loyalty-program promotions.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> CONFIRMED content gap (single-language basis), MEDIUM confidence, rank #9 (P2, PROVISIONAL) -- now correctly outranks T10 within P2 after the v2 ranking-rule correction; thinnest evidence-completeness (33%) of the ten candidates.<br><strong>Content gap:</strong> English &#x27;discount coupon&#x27; returns 0 results at every timepoint including production, confirmed by an independent 7/17 &#x27;No results&#x27; screenshot.</div>
+<div class="tpl-links">
+<a href="templates/template-09-discount-coupon-voucher/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-09-discount-coupon-voucher/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-09-discount-coupon-voucher/example-01/output.png" loading="lazy" alt="template-09-discount-coupon-voucher-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: retail percentage-off coupon</p>
+<div class="links">
+<a href="templates/template-09-discount-coupon-voucher/example-01/input.json">input</a>
+<a href="templates/template-09-discount-coupon-voucher/example-01/prompt.txt">prompt</a>
+<a href="templates/template-09-discount-coupon-voucher/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-09-discount-coupon-voucher/example-02/output.png" loading="lazy" alt="template-09-discount-coupon-voucher-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different business: restaurant fixed-amount voucher</p>
+<div class="links">
+<a href="templates/template-09-discount-coupon-voucher/example-02/input.json">input</a>
+<a href="templates/template-09-discount-coupon-voucher/example-02/prompt.txt">prompt</a>
+<a href="templates/template-09-discount-coupon-voucher/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-09-discount-coupon-voucher/example-03/output.png" loading="lazy" alt="template-09-discount-coupon-voucher-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: buy-one-get-one coffee shop coupon</p>
+<div class="links">
+<a href="templates/template-09-discount-coupon-voucher/example-03/input.json">input</a>
+<a href="templates/template-09-discount-coupon-voucher/example-03/prompt.txt">prompt</a>
+<a href="templates/template-09-discount-coupon-voucher/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-09-discount-coupon-voucher/example-04/output.png" loading="lazy" alt="template-09-discount-coupon-voucher-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: loyalty-program punch-card style insert with denser terms text</p>
+<div class="links">
+<a href="templates/template-09-discount-coupon-voucher/example-04/input.json">input</a>
+<a href="templates/template-09-discount-coupon-voucher/example-04/prompt.txt">prompt</a>
+<a href="templates/template-09-discount-coupon-voucher/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+<section class="template" id="template-10-fridge-magnet-merch">
+<div class="tpl-head">
+<h2><span class="tpl-rank">#10</span>Fridge Magnet &amp; Small Merch-Item Templates <span style="color:var(--muted);font-weight:400;font-size:.85rem;">(T10 &middot; 冰箱贴/小型周边商品合集)</span></h2>
+</div>
+<div class="tpl-meta">Product &amp; Merchandise Design &middot; target user: Souvenir/gift shops, small brands doing promotional merch, print-on-demand sellers</div>
+<div class="tpl-purpose"><strong>Purpose:</strong> Small die-cut fridge-magnet product mockups beyond Curify&#x27;s existing single travel-landmark theme.</div>
+<div class="tpl-rationale"><strong>Discovery rationale:</strong> PARTIAL content gap, LOW-MEDIUM confidence, rank #10 (P2, PROVISIONAL) -- lowest-priority candidate in the pool; general adjacent content exists, ruling out total search failure, but the requested general-purpose sub-type is absent.<br><strong>Content gap:</strong> &#x27;magnet&#x27; returns only 3 results, all the same single travel-landmark theme (Nanjing/Yangzhou landmark magnets) -- confirms magnet content exists but only in one narrow theme, not as a general-purpose product line.</div>
+<div class="tpl-links">
+<a href="templates/template-10-fridge-magnet-merch/TEMPLATE_SPEC.md">Template spec</a>
+<a href="templates/template-10-fridge-magnet-merch/template.json">template.json</a>
+</div>
+<div class="examples">
+<div class="example">
+<img src="templates/template-10-fridge-magnet-merch/example-01/output.png" loading="lazy" alt="template-10-fridge-magnet-merch-example-01" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Typical case: custom photo fridge magnet</p>
+<div class="links">
+<a href="templates/template-10-fridge-magnet-merch/example-01/input.json">input</a>
+<a href="templates/template-10-fridge-magnet-merch/example-01/prompt.txt">prompt</a>
+<a href="templates/template-10-fridge-magnet-merch/example-01/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-10-fridge-magnet-merch/example-02/output.png" loading="lazy" alt="template-10-fridge-magnet-merch-example-02" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different theme: brand/promotional magnet</p>
+<div class="links">
+<a href="templates/template-10-fridge-magnet-merch/example-02/input.json">input</a>
+<a href="templates/template-10-fridge-magnet-merch/example-02/prompt.txt">prompt</a>
+<a href="templates/template-10-fridge-magnet-merch/example-02/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-10-fridge-magnet-merch/example-03/output.png" loading="lazy" alt="template-10-fridge-magnet-merch-example-03" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Different visual content, same layout: holiday seasonal magnet</p>
+<div class="links">
+<a href="templates/template-10-fridge-magnet-merch/example-03/input.json">input</a>
+<a href="templates/template-10-fridge-magnet-merch/example-03/prompt.txt">prompt</a>
+<a href="templates/template-10-fridge-magnet-merch/example-03/metadata.json">metadata</a>
+</div></div></div>
+<div class="example">
+<img src="templates/template-10-fridge-magnet-merch/example-04/output.png" loading="lazy" alt="template-10-fridge-magnet-merch-example-04" onclick="openLightbox(this.src)">
+<div class="body">
+<span class="badge success">success</span>
+<p class="scenario">Edge case: quote/decorative magnet with longer text on the face</p>
+<div class="links">
+<a href="templates/template-10-fridge-magnet-merch/example-04/input.json">input</a>
+<a href="templates/template-10-fridge-magnet-merch/example-04/prompt.txt">prompt</a>
+<a href="templates/template-10-fridge-magnet-merch/example-04/metadata.json">metadata</a>
+</div></div></div>
+</div>
+</section>
+</main>
+
+<div id="lightbox" onclick="this.classList.remove('open')"><img id="lightbox-img" src=""></div>
+<script>
+function openLightbox(src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+</script>

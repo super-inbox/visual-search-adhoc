@@ -1,0 +1,13 @@
+{
+  "template_id": "T03",
+  "example_id": "template-01-workbook-practice-book-covers-example-03",
+  "scenario": "Different visual content, same layout: science practice workbook",
+  "target_audience": "Middle-school science teachers and tutoring centers",
+  "editable_fields": {
+    "subject_name": "States of Matter Practice",
+    "grade_level": "Grade 6",
+    "series_brand": "Curiosity Labs",
+    "accent_color": "leaf green (#3FAE6B)",
+    "subject_motif": "a flat-vector illustration of a beaker with bubbling liquid and a small molecule diagram"
+  }
+}

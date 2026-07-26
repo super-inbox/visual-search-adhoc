@@ -1,0 +1,13 @@
+{
+  "template_id": "T06",
+  "example_id": "template-07-chocolate-giftbox-packaging-example-02",
+  "scenario": "Different occasion: Valentine's Day chocolate box",
+  "target_audience": "Specialty chocolate shops around Valentine's Day",
+  "editable_fields": {
+    "occasion": "Valentine's Day",
+    "compartment_contents": "heart-shaped chocolate pralines in pink and red wrappers",
+    "brand_name": "Rosette Chocolaterie",
+    "ribbon_color": "blush pink satin ribbon",
+    "box_pattern": "soft pink box with a subtle heart pattern"
+  }
+}

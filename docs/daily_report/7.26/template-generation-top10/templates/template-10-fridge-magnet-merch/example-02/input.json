@@ -1,0 +1,13 @@
+{
+  "template_id": "T10",
+  "example_id": "template-10-fridge-magnet-merch-example-02",
+  "scenario": "Different theme: brand/promotional magnet",
+  "target_audience": "Small brands ordering promotional giveaway merch",
+  "editable_fields": {
+    "theme": "brand promotional",
+    "shape_variant": "circle",
+    "face_subject": "a bold minimalist coffee-cup logo icon",
+    "brand_wordmark": "Daybreak Coffee Roasters",
+    "palette": "espresso brown and cream"
+  }
+}

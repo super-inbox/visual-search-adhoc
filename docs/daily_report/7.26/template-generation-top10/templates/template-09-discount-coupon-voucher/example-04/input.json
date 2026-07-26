@@ -1,0 +1,14 @@
+{
+  "template_id": "T09",
+  "example_id": "template-09-discount-coupon-voucher-example-04",
+  "scenario": "Edge case: loyalty-program punch-card style insert with denser terms text",
+  "target_audience": "Membership/loyalty programs issuing a reward voucher",
+  "editable_fields": {
+    "business_name": "Summit Fitness Club Loyalty Rewards",
+    "discount_amount": "1 FREE MONTH",
+    "discount_type": "Redeemable after 10 punches on your loyalty card",
+    "expiry_date": "Redeem within 90 days of final punch",
+    "terms_text": "Non-transferable. Valid for existing members only. See front desk for details.",
+    "color_scheme": "navy and silver"
+  }
+}

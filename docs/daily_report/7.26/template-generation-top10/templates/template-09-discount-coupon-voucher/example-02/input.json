@@ -1,0 +1,14 @@
+{
+  "template_id": "T09",
+  "example_id": "template-09-discount-coupon-voucher-example-02",
+  "scenario": "Different business: restaurant fixed-amount voucher",
+  "target_audience": "Restaurants offering a fixed-dollar-amount promotion",
+  "editable_fields": {
+    "business_name": "Basil & Vine Trattoria",
+    "discount_amount": "$10 OFF",
+    "discount_type": "Any purchase of $40 or more",
+    "expiry_date": "Expires September 15, 2026",
+    "terms_text": "Dine-in only. Not valid on holidays.",
+    "color_scheme": "deep green and cream"
+  }
+}

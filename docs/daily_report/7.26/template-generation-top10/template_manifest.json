@@ -1,0 +1,625 @@
+{
+  "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv",
+  "generated_at": "2026-07-26T00:00:00-07:00",
+  "template_count": 10,
+  "templates": [
+    {
+      "template_id": "T03",
+      "order": 1,
+      "dir": "template-01-workbook-practice-book-covers",
+      "template_name": "Workbook & Practice-Book Cover Collection",
+      "zh_name": "练习册/习题册封面合集",
+      "category": "Education & Classroom Materials",
+      "purpose": "Printable subject workbook / homework practice-booklet cover art that Curify's catalog currently has zero coverage for.",
+      "target_user": "Teachers, tutoring centers, homeschool parents, EdTech content sellers",
+      "content_gap": "'workbook' and '练习册 (practice book)' return 0 and near-0 (filler-only) results at every benchmarked timepoint; the only adjacent competitor reference on file (Canva 'Phonics Worksheets Kindergarten') is adjacent, not exact -- an exact workbook-cover reference is still needed.",
+      "discovery_reason": "CONFIRMED content gap, HIGH confidence, rank #1 (P0), evidence-adjusted score 86.0 -- the strongest candidate in the discovery pool, confirmed independently at 7/16, 7/19, 7/21, 7/22, plus an independent 7/17 live-screenshot ground truth and a separate 7/20 regression-50 CATALOG_GAP finding.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=1, candidate_id=T03)",
+      "benchmark_queries": "workbook; 练习册 (practice book)",
+      "competitor_references": "Adjacent (not exact): Canva 'Phonics Worksheets Kindergarten' screenshot, source 6.19-20/external-signal-pilot/canva-search-eval-58, item 047-phonics-worksheets-kindergarten. No exact workbook-cover competitor reference on file.",
+      "aspect_ratio": "3:4",
+      "output_size": "1200x1600",
+      "fixed_layout_structure": [
+        "Top title band (approx top 18% of frame): subject name lockup + a small grade-level ribbon badge in the top-right corner",
+        "Center illustration zone (approx middle 55%): one large, flat-vector subject motif/icon relevant to the subject (e.g. numbers for math, alphabet blocks for language, a beaker for science)",
+        "Thin colored border frame around the entire cover, color keyed to subject",
+        "Bottom footer bar (approx bottom 12%): series/brand wordmark, left-aligned, small and unobtrusive",
+        "Consistent two-color-plus-neutral palette system across all examples of this template (accent color rotates by subject, layout does not)"
+      ],
+      "editable_fields": [
+        "subject_name",
+        "grade_level",
+        "series_brand",
+        "accent_color",
+        "subject_motif",
+        "language_mode"
+      ],
+      "image_slots": [
+        "center_subject_motif_illustration"
+      ],
+      "text_slots": [
+        "subject_name_title",
+        "grade_level_badge",
+        "series_brand_footer"
+      ],
+      "information_hierarchy": "1) subject name (largest) 2) grade-level badge 3) subject illustration (dominant visual weight) 4) series/brand footer (smallest)",
+      "visual_style": "Clean flat-vector illustration, consistent with Curify's existing worksheet/flashcard visual language; no photorealism",
+      "typography_direction": "Rounded, friendly sans-serif for subject title; compact sans-serif for footer/badge",
+      "color_direction": "Subject-coded accent (math=blue, language=coral, science=green, general=purple) over a white/cream neutral background",
+      "prompt_template": "Design a printable workbook / practice-book COVER, {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a top title band occupying about the top 18% of the frame containing the subject-name title and a small grade-level ribbon badge in the top-right corner; a large center illustration zone (about the middle 55% of the frame) containing exactly one large flat-vector subject motif illustration relevant to the subject; a thin colored border frame around the entire cover; a bottom footer bar (about the bottom 12%) with a small left-aligned series/brand wordmark. Clean flat-vector illustration style, no photorealism, consistent with a children's educational worksheet/flashcard visual language. VARIABLE CONTENT for this specific example: subject name = \"{subject_name}\", grade level badge text = \"{grade_level}\", series/brand footer text = \"{series_brand}\", accent color = {accent_color}, center subject illustration = {subject_motif}. Render the subject name and grade-level badge as real, legible, correctly spelled text exactly as given -- do not add any other text. Do not add a watermark. Do not crop the illustration at the frame edges.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "no photorealistic rendering of the subject motif -- flat vector only",
+        "no more than one grade-level badge"
+      ],
+      "quality_criteria": [
+        "subject_name_title text is present, legible, and spelled exactly as specified",
+        "grade_level badge is present as a distinct top-right ribbon element",
+        "layout matches the fixed structure across all examples of this template (title band / center illustration / footer)",
+        "no watermark, no extraneous text, no cropped subject"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T04",
+      "order": 2,
+      "dir": "template-02-flyer-promotional-flyer",
+      "template_name": "Flyer & Promotional-Flyer Templates",
+      "zh_name": "传单/促销单页合集",
+      "category": "Posters & Information Design",
+      "purpose": "Compact, info-dense single-page promotional flyers (restaurant/retail/event/school-notice), distinct from Curify's existing wall-poster format.",
+      "target_user": "Restaurants, retail/small business owners, event organizers, schools",
+      "content_gap": "'传单' and 'flyer' return 0 results at every timepoint; 'discount flyer' returns only 3 irrelevant results. Curify has poster-style content but no dedicated compact flyer layout.",
+      "discovery_reason": "CONFIRMED content gap, HIGH confidence, rank #2 (P0), evidence-adjusted score 85.0 -- zero/near-zero at every benchmark timepoint including an independent 7/17 screenshot baseline predating the recent search-fix cycle.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=2, candidate_id=T04)",
+      "benchmark_queries": "传单 (flyer); flyer; discount flyer (weak, partial signal)",
+      "competitor_references": "Text-only (not image) category evidence: CURIFY_CENTERED_EXTERNAL_SIGNAL_INSIGHTS_2026-06-21.md documents Canva's filter-chip taxonomy explicitly includes 'Flyer' as a template-type facet.",
+      "aspect_ratio": "4:5",
+      "output_size": "1600x2000",
+      "fixed_layout_structure": [
+        "Top headline band (top ~20%): business/event name + short headline",
+        "Hero image/graphic block (upper-middle ~35%): one dominant photo-style or illustrated visual matching the promotion",
+        "Offer/detail text block (lower-middle ~30%): the specific offer, date/time, and 2-3 supporting detail lines",
+        "Bottom contact/QR footer bar (~15%): address/phone/QR-code placeholder + CTA line"
+      ],
+      "editable_fields": [
+        "business_name",
+        "headline",
+        "offer_details",
+        "date_time",
+        "contact_info",
+        "cta_text",
+        "hero_image_subject",
+        "color_scheme"
+      ],
+      "image_slots": [
+        "hero_image_block",
+        "qr_code_placeholder"
+      ],
+      "text_slots": [
+        "headline",
+        "offer_details",
+        "date_time",
+        "contact_footer",
+        "cta_text"
+      ],
+      "information_hierarchy": "1) headline/offer (largest) 2) hero image (dominant visual weight) 3) date/time + details 4) contact/QR footer (smallest)",
+      "visual_style": "Compact, info-dense commercial flyer layout -- clearly distinct from a wall-poster: more text zones, smaller margins, denser information packing",
+      "typography_direction": "Bold condensed sans-serif headline; clean sans-serif body for offer details; small mono/sans for contact footer",
+      "color_direction": "High-contrast promotional palette keyed to business type (warm red/orange for food, cool blue for retail/events, navy/gold for school notices)",
+      "prompt_template": "Design a single-page promotional FLYER (not a wall poster), {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a top headline band (top ~20% of frame) with the business/event name and headline; a hero image/graphic block (upper-middle ~35%) with one dominant visual; an offer/detail text block (lower-middle ~30%) containing the offer, date/time, and 2-3 supporting detail lines; a bottom contact/QR footer bar (~15%) with a QR-code-shaped placeholder graphic, address/phone line, and a short call-to-action line. Keep the layout compact and info-dense like a real commercial flyer, NOT a sparse wall-poster. VARIABLE CONTENT for this specific example: business/event name and headline = \"{headline}\", hero image = {hero_image_subject}, offer details = \"{offer_details}\", date/time = \"{date_time}\", contact footer text = \"{contact_info}\", call-to-action text = \"{cta_text}\", color scheme = {color_scheme}. Render all specified text exactly as given, legible and correctly spelled. The QR-code placeholder should look like a generic scannable QR pattern graphic, not a real functional code. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "must read as a compact flyer, not a sparse decorative poster",
+        "QR placeholder must not be presented as a real scannable code"
+      ],
+      "quality_criteria": [
+        "all four fixed zones (headline / hero image / offer details / contact footer) are present and in the correct vertical order",
+        "offer details and date/time text are legible and correctly spelled",
+        "layout reads as flyer-dense, not poster-sparse"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T02",
+      "order": 3,
+      "dir": "template-03-stem-classroom-teaching-aids",
+      "template_name": "STEM Classroom Teaching-Aid Illustrations",
+      "zh_name": "STEM课堂教具图解合集",
+      "category": "Education & Classroom Materials",
+      "purpose": "Flat-vector, labeled classroom-equipment illustrations (whiteboard, microscope, abacus, etc.) for K-12 STEM teaching materials.",
+      "target_user": "K-12 teachers, tutoring centers, STEM curriculum designers, classroom-decor sellers",
+      "content_gap": "'whiteboard' and 'microscope' return 0 results; '算盘 (abacus)' returns only 6 fully irrelevant results (AI-tool category cards). No dedicated classroom-equipment illustration set exists in the catalog.",
+      "discovery_reason": "CONFIRMED content gap, HIGH confidence, rank #3 (P0), highest raw opportunity score in the pool (80) though evidence-adjusted lower (66.4) pending a competitor spot-check the manager summary explicitly recommends before greenlighting.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=3, candidate_id=T02)",
+      "benchmark_queries": "whiteboard; microscope; 算盘 (abacus)",
+      "competitor_references": "No local competitor screenshot found for whiteboard / microscope / abacus specifically (NOT_FOUND). Manager review flags this as worth a quick competitor spot-check before production approval.",
+      "aspect_ratio": "1:1",
+      "output_size": "1600x1600",
+      "fixed_layout_structure": [
+        "Center equipment illustration (occupying ~55% of frame): one piece of classroom/lab equipment, flat-vector style, fully visible and uncropped",
+        "Labeled callout lines radiating from 3-4 key parts of the equipment to short label text placed in the surrounding margin",
+        "Top title band (~12%): equipment/topic name",
+        "Bottom caption strip (~12%): a short one-line 'how it works' or classroom-use caption"
+      ],
+      "editable_fields": [
+        "equipment_type",
+        "part_labels",
+        "topic_title",
+        "caption_text",
+        "color_palette",
+        "grade_level"
+      ],
+      "image_slots": [
+        "center_equipment_illustration"
+      ],
+      "text_slots": [
+        "topic_title",
+        "part_labels",
+        "bottom_caption"
+      ],
+      "information_hierarchy": "1) center equipment illustration (dominant) 2) topic title 3) part-label callouts 4) bottom caption (smallest)",
+      "visual_style": "Flat/vector classroom-equipment illustration with clean line labels, consistent with Curify's existing 'Science'/classroom_material catalog style",
+      "typography_direction": "Clear sans-serif for title; small uppercase sans-serif for part labels; italic or light-weight sans for the caption",
+      "color_direction": "Muted educational palette (soft blues, greens, warm neutrals) with one accent color highlighting the labeled parts",
+      "prompt_template": "Design a labeled STEM classroom teaching-aid illustration, {aspect_ratio} square aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a top title band (~12% of frame) with the equipment/topic name; a large center illustration (~55% of frame) of exactly one piece of classroom or lab equipment, in flat/vector style, fully visible with nothing cropped at the edges; thin callout lines radiating from 3-4 key parts of the equipment out to short label text placed in the surrounding margin; a bottom caption strip (~12%) with a short one-line classroom-use caption. VARIABLE CONTENT for this specific example: equipment = {equipment_type}, title text = \"{topic_title}\", part labels = {part_labels}, bottom caption text = \"{caption_text}\", color palette = {color_palette}. Render the title, part labels, and caption as real, legible, correctly spelled text exactly as given. Do not add a watermark. Do not crop the equipment illustration at the frame edges.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "no photorealistic rendering -- flat/vector illustration only",
+        "equipment must not be cropped or bleed off the frame edge"
+      ],
+      "quality_criteria": [
+        "the illustrated equipment matches the specified equipment_type and is fully visible",
+        "at least 3 labeled callouts are present and legible",
+        "title and bottom caption text are legible and correctly spelled"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T05",
+      "order": 4,
+      "dir": "template-04-price-tag-product-label",
+      "template_name": "Price Tag & Product Label Templates",
+      "zh_name": "价格标签/商品吊牌合集",
+      "category": "Sticker & Product-Label Design",
+      "purpose": "Small die-cut-style retail price tags and product labels for boutique, sale, and gift-shop merchandising.",
+      "target_user": "Small retailers, boutique/handmade sellers, e-commerce merchandisers",
+      "content_gap": "'价格标签' and 'price tag' return 0 results at every timepoint, confirmed by an independent 7/17 'No results' screenshot.",
+      "discovery_reason": "CONFIRMED content gap, HIGH confidence, rank #4 (P1), evidence-adjusted score 62.2 -- now correctly outranks T01 (Certificates) after the v2 ranking-rule correction.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=4, candidate_id=T05)",
+      "benchmark_queries": "价格标签 (price tag); price tag",
+      "competitor_references": "No local competitor screenshot found for 'price tag' specifically (NOT_FOUND).",
+      "aspect_ratio": "2:3",
+      "output_size": "1000x1500",
+      "fixed_layout_structure": [
+        "Die-cut tag silhouette (rounded rectangle or scalloped-edge shape) with a punched string hole at top-center",
+        "Brand/shop name band directly below the hole (~top 20%)",
+        "Large center price display (~middle 45%), price as the dominant text element",
+        "Product/item name line directly below price (~15%)",
+        "Bottom barcode-placeholder strip (~15%) with a generic barcode-pattern graphic"
+      ],
+      "editable_fields": [
+        "brand_name",
+        "price",
+        "product_name",
+        "tag_shape_variant",
+        "seasonal_motif",
+        "color_scheme"
+      ],
+      "image_slots": [
+        "barcode_placeholder_graphic",
+        "seasonal_motif_icon"
+      ],
+      "text_slots": [
+        "brand_name",
+        "price",
+        "product_name"
+      ],
+      "information_hierarchy": "1) price (largest, dominant) 2) brand name 3) product name 4) barcode placeholder (smallest)",
+      "visual_style": "Small die-cut-style tag layout with string/hole punch mark, clean retail-merchandising aesthetic",
+      "typography_direction": "Bold display numerals for price; clean sans-serif for brand and product name",
+      "color_direction": "Seasonal/sale color variants (standard = neutral kraft/white, sale = red, boutique = pastel, holiday = green/gold)",
+      "prompt_template": "Design a die-cut-style retail PRICE TAG, {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a die-cut tag silhouette (rounded rectangle or scalloped edge) with a small punched string hole at the top-center; a brand/shop name band directly below the hole; a large center price display as the dominant text element; a product/item name line directly below the price; a bottom strip with a generic barcode-pattern graphic. VARIABLE CONTENT for this specific example: brand/shop name = \"{brand_name}\", price = \"{price}\", product/item name = \"{product_name}\", tag shape = {tag_shape_variant}, seasonal motif = {seasonal_motif}, color scheme = {color_scheme}. Render the brand name, price, and product name as real, legible, correctly spelled text exactly as given. The barcode graphic should look like a generic scannable barcode pattern, not a real functional code. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "barcode graphic must be a generic decorative pattern, not a real functional barcode",
+        "price text must be the single largest text element on the tag"
+      ],
+      "quality_criteria": [
+        "die-cut tag silhouette with a visible string hole is present",
+        "price is the visually dominant text element and is legible",
+        "brand name and product name are both present and correctly spelled"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T01",
+      "order": 5,
+      "dir": "template-05-certificates-achievement-awards",
+      "template_name": "Certificates & Achievement Awards Collection",
+      "zh_name": "证书与荣誉奖状合集",
+      "category": "Certificates & Academic Documents",
+      "purpose": "Formal, bordered achievement/award certificates for classrooms, corporate recognition, and event competitions.",
+      "target_user": "Teachers, K-12 schools, corporate HR / recognition programs, event & competition organizers",
+      "content_gap": "'certificate' and 'achievement certificate' return 0 results at every timepoint; the in-app UI itself surfaces a 'Generate this yourself' prompt, confirming Curify's own product surface acknowledges the gap.",
+      "discovery_reason": "CONFIRMED content gap, HIGH confidence, rank #5 (P1), evidence-adjusted score 50.2 -- 0% PASS rate across the entire 'certificate' vertical (8 queries), untouched by the recent search-fix cycle.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=5, candidate_id=T01)",
+      "benchmark_queries": "certificate; achievement certificate",
+      "competitor_references": "No local competitor screenshot or document found for 'certificate' / 'diploma' in any reviewed competitor-analysis artifact (NOT_FOUND).",
+      "aspect_ratio": "4:3",
+      "output_size": "1600x1200",
+      "fixed_layout_structure": [
+        "Decorative border frame around the entire certificate (double-rule or ornamental corner-motif style)",
+        "Seal or ribbon motif badge positioned top-center or top-right corner",
+        "Title banner (~top 20%): award/certificate title in large formal lettering",
+        "Recipient name line (~middle, largest script/serif text after the title)",
+        "Award reason/description line directly below recipient name",
+        "Bottom signature + date line (two columns: signature line left, date line right)"
+      ],
+      "editable_fields": [
+        "award_title",
+        "recipient_name",
+        "org_name",
+        "award_reason",
+        "date",
+        "signature_name",
+        "palette_variant"
+      ],
+      "image_slots": [
+        "seal_ribbon_motif"
+      ],
+      "text_slots": [
+        "award_title",
+        "recipient_name",
+        "award_reason",
+        "org_name",
+        "date",
+        "signature_name"
+      ],
+      "information_hierarchy": "1) award title (largest formal heading) 2) recipient name 3) award reason/description 4) org name + seal 5) signature/date (smallest)",
+      "visual_style": "Clean bordered certificate frame, seal or ribbon motif, formal but approachable classroom/corporate hybrid aesthetic",
+      "typography_direction": "Formal serif or script for award title and recipient name; clean sans-serif for reason/signature/date lines",
+      "color_direction": "Formal palettes: gold/navy classic for corporate, pastel classroom-friendly variant for kids' awards",
+      "prompt_template": "Design a formal ACHIEVEMENT CERTIFICATE, {aspect_ratio} landscape aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a decorative border frame around the entire certificate; a seal or ribbon motif badge positioned top-center; a title banner near the top with the award/certificate title in large formal lettering; a recipient name line in the middle in large script or serif lettering; an award reason/description line directly below the recipient name; a bottom row with a signature line on the left and a date line on the right. VARIABLE CONTENT for this specific example: award title = \"{award_title}\", recipient name = \"{recipient_name}\", organization name = \"{org_name}\", award reason = \"{award_reason}\", date = \"{date}\", signature name = \"{signature_name}\", palette = {palette_variant}. Render all specified text exactly as given, legible and correctly spelled. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "border/frame must fully enclose the certificate with no gaps",
+        "recipient name must be visually distinguishable from the award title (different weight/size)"
+      ],
+      "quality_criteria": [
+        "border frame fully encloses the certificate",
+        "award title, recipient name, and date are all present and legible",
+        "seal/ribbon motif is present near the top"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T07",
+      "order": 6,
+      "dir": "template-06-perfume-cosmetic-bottle-packaging",
+      "template_name": "Perfume & Cosmetic Bottle Packaging Mockups",
+      "zh_name": "香水/美妆瓶身包装样机合集",
+      "category": "Packaging Design",
+      "purpose": "Studio-lit glass-bottle product mockups for perfume/cosmetic brand launches and beauty social-media teasers.",
+      "target_user": "Cosmetics/fragrance brands, beauty e-commerce sellers, brand-launch marketers",
+      "content_gap": "'香水瓶' and 'perfume bottle' both return only 4 wrong-type results (sport/water bottles); no dedicated perfume/cosmetic bottle content exists in the catalog.",
+      "discovery_reason": "PARTIAL content gap, MEDIUM-HIGH confidence, rank #6 (P1, PROVISIONAL) -- general adjacent content exists (ruling out total search failure) but the specific bottle sub-type is absent; has the best competitor-image evidence of the whole pool (3 adjacent images on file).",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=6, candidate_id=T07)",
+      "benchmark_queries": "香水瓶 (perfume bottle); perfume bottle",
+      "competitor_references": "Adjacent (not exact): 7.9 xiaohongshu aromatherapy/scent-product teaser images (Bing/Google/Pinterest all show on-topic aromatherapy/scent-bottle product imagery).",
+      "aspect_ratio": "3:4",
+      "output_size": "1200x1600",
+      "fixed_layout_structure": [
+        "Centered glass-bottle silhouette product mockup, occupying ~50% of vertical frame height, fully visible",
+        "Soft studio-lighting backdrop with a subtle gradient and soft shadow beneath the bottle",
+        "Label area on the bottle body reserved for the brand/product name",
+        "Small brand wordmark repeated at the bottom of the frame (~bottom 10%), understated"
+      ],
+      "editable_fields": [
+        "bottle_shape_variant",
+        "brand_name",
+        "product_name",
+        "palette",
+        "backdrop_tone"
+      ],
+      "image_slots": [
+        "center_bottle_mockup"
+      ],
+      "text_slots": [
+        "bottle_label_brand_name",
+        "bottom_wordmark"
+      ],
+      "information_hierarchy": "1) bottle silhouette (dominant visual) 2) label brand/product name on the bottle 3) bottom wordmark (smallest)",
+      "visual_style": "Glass-bottle silhouette mockup with editable label area, soft studio-lighting product-photo aesthetic matching the k-beauty/Y2K-chrome competitor visual language",
+      "typography_direction": "Minimal elegant serif or thin sans-serif for the label brand name; small caps for bottom wordmark",
+      "color_direction": "Soft studio tones -- pastel gradient backdrops (blush, sage, lavender, chrome) depending on product line",
+      "prompt_template": "Design a studio product-photography style MOCKUP of a perfume or cosmetic bottle, {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): one centered glass-bottle silhouette occupying about half the frame height, fully visible with nothing cropped; a soft studio-lighting backdrop with a subtle gradient and a soft shadow beneath the bottle; a label area on the bottle body reserved for the brand/product name; a small, understated brand wordmark repeated at the very bottom of the frame. VARIABLE CONTENT for this specific example: bottle shape = {bottle_shape_variant}, label brand/product name text = \"{brand_name} - {product_name}\", backdrop tone = {backdrop_tone}, palette = {palette}. Render the label brand/product name as real, legible, correctly spelled text on the bottle label. Do not add a watermark. Do not crop the bottle at the frame edges.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "must be a perfume/cosmetic bottle shape, not a sport or water bottle",
+        "bottle must not be cropped at the frame edges"
+      ],
+      "quality_criteria": [
+        "bottle silhouette clearly reads as a perfume/cosmetic container, not a sport/water bottle",
+        "label text is legible and correctly spelled",
+        "studio-lighting backdrop with soft shadow is present"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T06",
+      "order": 7,
+      "dir": "template-07-chocolate-giftbox-packaging",
+      "template_name": "Chocolate & Specialty Gift-Box Packaging",
+      "zh_name": "巧克力/节日礼盒包装合集",
+      "category": "Packaging Design",
+      "purpose": "Layered gift-box mockups (open lid, visible compartments, ribbon) for chocolate and holiday/gift merchandising, distinct from Curify's existing generic 'mystery box' style.",
+      "target_user": "Confectionery/gift retailers, holiday-season sellers, corporate gifting",
+      "content_gap": "'巧克力礼盒' returns only generic mystery-box templates (none chocolate-specific); '礼品盒' returns 1 irrelevant hit. General chocolate product photography exists but no dedicated gift-box presentation layout.",
+      "discovery_reason": "PARTIAL content gap, MEDIUM confidence, rank #7 (P1, PROVISIONAL) -- textbook partial-coverage pattern: general chocolate product photography exists in the catalog, but the multi-compartment gift-box ribbon-presentation format does not.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=7, candidate_id=T06)",
+      "benchmark_queries": "巧克力礼盒 (chocolate gift box); 礼品盒 (gift box, weak/partial signal)",
+      "competitor_references": "Adjacent (not exact): 7.9 Pinterest tea gift-box/tin packaging product photography, re-verified in v2 as genuinely on-topic for the low-saturation gift-box packaging aesthetic.",
+      "aspect_ratio": "1:1",
+      "output_size": "1600x1600",
+      "fixed_layout_structure": [
+        "Open gift-box mockup shown at a 3/4 angle with the lid tilted open, revealing internal compartments",
+        "Compartmentalized interior showing individual items nestled in each compartment",
+        "Ribbon wrapped around the closed portion of the box, tied in a bow at the front-left",
+        "Seasonal motif badge in the top-right corner",
+        "Brand label centered on the box front/lid exterior"
+      ],
+      "editable_fields": [
+        "occasion",
+        "brand_name",
+        "ribbon_color",
+        "box_pattern",
+        "compartment_contents"
+      ],
+      "image_slots": [
+        "open_box_mockup",
+        "seasonal_motif_badge"
+      ],
+      "text_slots": [
+        "brand_label"
+      ],
+      "information_hierarchy": "1) open box mockup with visible compartments (dominant) 2) ribbon/bow accent 3) brand label 4) seasonal motif badge (smallest)",
+      "visual_style": "Layered gift-box mockup (open lid showing compartments), ribbon and seasonal motif overlays, distinct from the existing generic 'mystery box' art style",
+      "typography_direction": "Elegant serif or script for the brand label on the box lid",
+      "color_direction": "Occasion-coded palette (holiday=red/green/gold, Valentine=pink/red/gold, corporate=navy/gold, mooncake-adjacent=burgundy/gold)",
+      "prompt_template": "Design an open GIFT-BOX packaging mockup, {aspect_ratio} square aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): the gift box shown at a 3/4 angle with the lid tilted open, revealing a compartmentalized interior with individual items nestled in each compartment; a ribbon wrapped around the closed portion of the box tied in a bow at the front-left; a small seasonal motif badge in the top-right corner; a brand label centered on the box lid exterior. VARIABLE CONTENT for this specific example: occasion = {occasion}, box contents = {compartment_contents}, brand label text = \"{brand_name}\", ribbon color = {ribbon_color}, box pattern = {box_pattern}. Render the brand label as real, legible, correctly spelled text. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "must show a genuinely open box with visible compartments, not a closed 'mystery box'",
+        "compartment contents must match the specified occasion (e.g. chocolates, not unrelated items)"
+      ],
+      "quality_criteria": [
+        "box is shown open with visible, distinct compartments",
+        "ribbon/bow accent is present",
+        "brand label text is legible and correctly spelled"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T08",
+      "order": 8,
+      "dir": "template-08-puzzle-jigsaw-collectible",
+      "template_name": "Puzzle & Jigsaw Collectible Templates",
+      "zh_name": "拼图收藏品合集",
+      "category": "Toy, Plush, Character & Collectible Design",
+      "purpose": "Collectible jigsaw-puzzle box-cover mockups for merch/gift-shop and licensed-IP puzzle products.",
+      "target_user": "Collectible/merch sellers, gift shops, licensed-IP merchandise producers",
+      "content_gap": "拼图 (ZH) shows a stable, low, persistently-irrelevant result set (3 results) at every timepoint; the in-app UI shows a 'Generate this yourself' prompt for the English query, independently confirming the gap.",
+      "discovery_reason": "PARTIAL content gap, MEDIUM confidence, rank #8 (P2, PROVISIONAL) -- kept PROVISIONAL due to single confirmed-language signal (拼图 ZH) and no competitor evidence on file; English 'puzzle' zero-result explicitly excluded from the justification as a candidate-build artifact.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=8, candidate_id=T08)",
+      "benchmark_queries": "拼图 (puzzle, CN) -- primary evidence; puzzle (EN) explicitly excluded from justification",
+      "competitor_references": "No local competitor screenshot found for 'puzzle' specifically (NOT_FOUND).",
+      "aspect_ratio": "4:3",
+      "output_size": "1600x1200",
+      "fixed_layout_structure": [
+        "Puzzle box front mockup shown flat-on, occupying the full frame as the box face",
+        "Box cover art area (center ~65%) showing the puzzle's completed-image artwork",
+        "Brand/series logo band across the top (~12%)",
+        "Jigsaw-piece-cutout accent graphic in one corner (bottom-right), suggesting the puzzle format",
+        "Piece-count badge in the opposite bottom corner (bottom-left)"
+      ],
+      "editable_fields": [
+        "theme_ip",
+        "piece_count",
+        "box_size_variant",
+        "palette",
+        "cover_art_subject"
+      ],
+      "image_slots": [
+        "box_cover_art",
+        "jigsaw_piece_cutout_accent"
+      ],
+      "text_slots": [
+        "brand_series_logo",
+        "piece_count_badge"
+      ],
+      "information_hierarchy": "1) box cover art (dominant) 2) brand/series logo 3) piece-count badge 4) jigsaw-piece cutout accent (smallest)",
+      "visual_style": "Puzzle-piece-cutout product mockup with box cover art area, consistent with the existing 'mystery box' merchandise visual family already in-catalog",
+      "typography_direction": "Playful bold sans-serif or display font for the brand/series logo; compact sans-serif for the piece-count badge",
+      "color_direction": "Theme-coded palette matching the cover art subject (nature themes = greens/blues, travel themes = warm earth tones)",
+      "prompt_template": "Design a jigsaw PUZZLE BOX cover mockup, {aspect_ratio} landscape aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): the box front shown flat-on filling the frame; a large center cover-art area showing the puzzle's completed-image artwork; a brand/series logo band across the top; a jigsaw-piece-shaped cutout accent graphic in the bottom-right corner; a piece-count badge in the bottom-left corner. VARIABLE CONTENT for this specific example: cover art subject = {cover_art_subject}, theme = {theme_ip}, brand/series logo text = \"{theme_ip} Puzzle Co.\", piece-count badge text = \"{piece_count}\", palette = {palette}. Render the brand/series logo and piece-count badge as real, legible, correctly spelled text. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "cover art must clearly read as puzzle box art, not a generic mystery-box design",
+        "piece-count badge text must be a plausible number (e.g. 500, 1000)"
+      ],
+      "quality_criteria": [
+        "jigsaw-piece-shaped cutout accent is present in the bottom-right",
+        "piece-count badge is present and legible",
+        "cover art matches the specified theme"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T09",
+      "order": 9,
+      "dir": "template-09-discount-coupon-voucher",
+      "template_name": "Discount Coupon & Promotional Voucher Templates",
+      "zh_name": "折扣优惠券/代金券合集",
+      "category": "Commercial & Graphic Design",
+      "purpose": "Tear-tab ticket-style discount coupons and vouchers for retail, restaurant, and loyalty-program promotions.",
+      "target_user": "Retailers, restaurants, membership/loyalty programs",
+      "content_gap": "English 'discount coupon' returns 0 results at every timepoint including production, confirmed by an independent 7/17 'No results' screenshot.",
+      "discovery_reason": "CONFIRMED content gap (single-language basis), MEDIUM confidence, rank #9 (P2, PROVISIONAL) -- now correctly outranks T10 within P2 after the v2 ranking-rule correction; thinnest evidence-completeness (33%) of the ten candidates.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=9, candidate_id=T09)",
+      "benchmark_queries": "discount coupon (EN) -- sole basis; 优惠券 (ZH) explicitly excluded from justification",
+      "competitor_references": "No local competitor screenshot found for 'discount coupon' specifically (NOT_FOUND).",
+      "aspect_ratio": "5:2",
+      "output_size": "2000x800",
+      "fixed_layout_structure": [
+        "Horizontal ticket-style coupon shape with a vertical perforated/dashed tear line about 25% in from the left edge",
+        "Left tear-tab stub section: percentage/amount-off callout in large display numerals",
+        "Right main section: business name (top), discount description (middle), expiry date and barcode-placeholder (bottom)"
+      ],
+      "editable_fields": [
+        "business_name",
+        "discount_amount",
+        "discount_type",
+        "expiry_date",
+        "terms_text",
+        "color_scheme"
+      ],
+      "image_slots": [
+        "barcode_placeholder_graphic"
+      ],
+      "text_slots": [
+        "business_name",
+        "discount_callout",
+        "expiry_date",
+        "terms_text"
+      ],
+      "information_hierarchy": "1) discount callout (largest, on the tear-tab) 2) business name 3) expiry date 4) terms/fine print (smallest)",
+      "visual_style": "Tear-tab / ticket-style coupon layout with a percentage-off callout, barcode/QR placeholder, expiry-date field",
+      "typography_direction": "Extra-bold display numerals for the discount callout; clean sans-serif for business name and terms",
+      "color_direction": "High-contrast promotional palette (red/yellow for urgency, brand-neutral navy/white for loyalty-program vouchers)",
+      "prompt_template": "Design a tear-tab ticket-style DISCOUNT COUPON, {aspect_ratio} wide horizontal aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a horizontal ticket shape with a vertical perforated/dashed tear line about a quarter of the way in from the left edge; a left tear-tab stub section containing a large percentage/amount-off callout in bold display numerals; a right main section containing the business name at the top, a short discount description in the middle, and an expiry date plus a barcode-placeholder graphic at the bottom. VARIABLE CONTENT for this specific example: business name = \"{business_name}\", discount callout = \"{discount_amount}\", discount description = \"{discount_type}\", expiry date = \"{expiry_date}\", terms text = \"{terms_text}\", color scheme = {color_scheme}. Render all specified text exactly as given, legible and correctly spelled. The barcode graphic should look like a generic scannable pattern, not a real functional code. Do not add a watermark.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "perforated tear line must be clearly visible and vertical",
+        "discount callout must be the single largest text element"
+      ],
+      "quality_criteria": [
+        "perforated tear line dividing stub from main section is visible",
+        "discount callout is legible and matches the specified amount",
+        "business name and expiry date are both present and legible"
+      ],
+      "example_count_planned": 4
+    },
+    {
+      "template_id": "T10",
+      "order": 10,
+      "dir": "template-10-fridge-magnet-merch",
+      "template_name": "Fridge Magnet & Small Merch-Item Templates",
+      "zh_name": "冰箱贴/小型周边商品合集",
+      "category": "Product & Merchandise Design",
+      "purpose": "Small die-cut fridge-magnet product mockups beyond Curify's existing single travel-landmark theme.",
+      "target_user": "Souvenir/gift shops, small brands doing promotional merch, print-on-demand sellers",
+      "content_gap": "'magnet' returns only 3 results, all the same single travel-landmark theme (Nanjing/Yangzhou landmark magnets) -- confirms magnet content exists but only in one narrow theme, not as a general-purpose product line.",
+      "discovery_reason": "PARTIAL content gap, LOW-MEDIUM confidence, rank #10 (P2, PROVISIONAL) -- lowest-priority candidate in the pool; general adjacent content exists, ruling out total search failure, but the requested general-purpose sub-type is absent.",
+      "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=10, candidate_id=T10)",
+      "benchmark_queries": "magnet",
+      "competitor_references": "No local competitor screenshot found for 'magnet' specifically (NOT_FOUND).",
+      "aspect_ratio": "1:1",
+      "output_size": "1200x1200",
+      "fixed_layout_structure": [
+        "Small die-cut magnet shape (rounded rectangle or circle) centered in the frame, shown as a product mockup with a subtle drop shadow",
+        "Photo/logo/illustration area filling the magnet face (~80% of the die-cut shape)",
+        "Small brand wordmark band along the bottom edge of the magnet face (~15% of the shape height), understated"
+      ],
+      "editable_fields": [
+        "theme",
+        "shape_variant",
+        "palette",
+        "face_subject",
+        "brand_wordmark"
+      ],
+      "image_slots": [
+        "magnet_face_illustration"
+      ],
+      "text_slots": [
+        "brand_wordmark"
+      ],
+      "information_hierarchy": "1) magnet face illustration (dominant) 2) brand wordmark (smallest, bottom edge)",
+      "visual_style": "Small die-cut magnet mockup, photo/logo placeholder area, seasonal and quote-based variants beyond the existing travel-landmark style",
+      "typography_direction": "Compact, friendly sans-serif for the bottom brand wordmark; playful hand-lettered style if the face subject is a quote",
+      "color_direction": "Theme-coded palette (photo magnet=neutral frame, brand magnet=brand colors, holiday=red/green/gold, quote=pastel)",
+      "prompt_template": "Design a small die-cut FRIDGE MAGNET product mockup, {aspect_ratio} square aspect ratio, output size {output_size}, shown against a plain neutral background with a subtle drop shadow beneath the magnet. FIXED LAYOUT (must match across every variant of this template): one centered die-cut magnet shape ({shape_variant}) filling most of the frame; a photo/logo/illustration area filling about 80% of the magnet face; a small, understated brand wordmark band along the bottom edge of the magnet face. VARIABLE CONTENT for this specific example: theme = {theme}, magnet face illustration = {face_subject}, brand wordmark text = \"{brand_wordmark}\", palette = {palette}. Render the brand wordmark as real, legible, correctly spelled text. Do not add a watermark. Do not crop the magnet shape at the frame edges.",
+      "negative_constraints": [
+        "no watermark of any kind",
+        "no stock-photo watermark text or agency logos",
+        "no extra/duplicate text blocks beyond the specified text_slots",
+        "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+        "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+        "no cropped or clipped subject at the edges of the frame",
+        "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+        "must be shown as a single product mockup (not a sheet/grid of many magnets)",
+        "magnet die-cut shape must not be cropped at the frame edges"
+      ],
+      "quality_criteria": [
+        "a single, clearly die-cut magnet shape is shown as a product mockup with a drop shadow",
+        "face illustration matches the specified theme",
+        "brand wordmark is legible and correctly spelled"
+      ],
+      "example_count_planned": 4
+    }
+  ]
+}

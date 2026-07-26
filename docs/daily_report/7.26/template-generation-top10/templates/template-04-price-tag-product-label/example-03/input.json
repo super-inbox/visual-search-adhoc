@@ -1,0 +1,14 @@
+{
+  "template_id": "T05",
+  "example_id": "template-04-price-tag-product-label-example-03",
+  "scenario": "Different visual content, same layout: gift-shop souvenir hang tag",
+  "target_audience": "Gift-shop and souvenir retailers",
+  "editable_fields": {
+    "brand_name": "Lakeside General Store",
+    "price": "$9.50",
+    "product_name": "Ceramic Lake-View Mug",
+    "tag_shape_variant": "rounded rectangle",
+    "seasonal_motif": "small pine-tree icon",
+    "color_scheme": "lake blue and natural kraft"
+  }
+}

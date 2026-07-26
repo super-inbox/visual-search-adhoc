@@ -1,0 +1,12 @@
+Design a studio product-photography style MOCKUP of a perfume or cosmetic bottle, 3:4 portrait aspect ratio, output size 1200x1600. FIXED LAYOUT (must match across every variant of this template): one centered glass-bottle silhouette occupying about half the frame height, fully visible with nothing cropped; a soft studio-lighting backdrop with a subtle gradient and a soft shadow beneath the bottle; a label area on the bottle body reserved for the brand/product name; a small, understated brand wordmark repeated at the very bottom of the frame. VARIABLE CONTENT for this specific example: bottle shape = a frosted glass cosmetic pump bottle with a chrome pump head, label brand/product name text = "Verdalis - Renewing Vitamin C Serum", backdrop tone = soft sage green gradient, palette = sage green and matte white. Render the label brand/product name as real, legible, correctly spelled text on the bottle label. Do not add a watermark. Do not crop the bottle at the frame edges.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- must be a perfume/cosmetic bottle shape, not a sport or water bottle
+- bottle must not be cropped at the frame edges

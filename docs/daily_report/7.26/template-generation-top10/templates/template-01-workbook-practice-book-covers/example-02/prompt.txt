@@ -1,0 +1,12 @@
+Design a printable workbook / practice-book COVER, 3:4 portrait aspect ratio, output size 1200x1600. FIXED LAYOUT (must match across every variant of this template): a top title band occupying about the top 18% of the frame containing the subject-name title and a small grade-level ribbon badge in the top-right corner; a large center illustration zone (about the middle 55% of the frame) containing exactly one large flat-vector subject motif illustration relevant to the subject; a thin colored border frame around the entire cover; a bottom footer bar (about the bottom 12%) with a small left-aligned series/brand wordmark. Clean flat-vector illustration style, no photorealism, consistent with a children's educational worksheet/flashcard visual language. VARIABLE CONTENT for this specific example: subject name = "English-Chinese Vocabulary Practice / 中英文词汇练习", grade level badge text = "Ages 6-8", series/brand footer text = "双语启蒙 Bilingual Beginnings", accent color = warm coral (#F26B5B), center subject illustration = a flat-vector illustration of an open alphabet book with Latin letters and Chinese character strokes side by side. Render the subject name and grade-level badge as real, legible, correctly spelled text exactly as given -- do not add any other text. Do not add a watermark. Do not crop the illustration at the frame edges.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- no photorealistic rendering of the subject motif -- flat vector only
+- no more than one grade-level badge

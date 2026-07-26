@@ -1,0 +1,59 @@
+{
+  "template_id": "T07",
+  "order": 6,
+  "dir": "template-06-perfume-cosmetic-bottle-packaging",
+  "template_name": "Perfume & Cosmetic Bottle Packaging Mockups",
+  "zh_name": "香水/美妆瓶身包装样机合集",
+  "category": "Packaging Design",
+  "purpose": "Studio-lit glass-bottle product mockups for perfume/cosmetic brand launches and beauty social-media teasers.",
+  "target_user": "Cosmetics/fragrance brands, beauty e-commerce sellers, brand-launch marketers",
+  "content_gap": "'香水瓶' and 'perfume bottle' both return only 4 wrong-type results (sport/water bottles); no dedicated perfume/cosmetic bottle content exists in the catalog.",
+  "discovery_reason": "PARTIAL content gap, MEDIUM-HIGH confidence, rank #6 (P1, PROVISIONAL) -- general adjacent content exists (ruling out total search failure) but the specific bottle sub-type is absent; has the best competitor-image evidence of the whole pool (3 adjacent images on file).",
+  "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=6, candidate_id=T07)",
+  "benchmark_queries": "香水瓶 (perfume bottle); perfume bottle",
+  "competitor_references": "Adjacent (not exact): 7.9 xiaohongshu aromatherapy/scent-product teaser images (Bing/Google/Pinterest all show on-topic aromatherapy/scent-bottle product imagery).",
+  "aspect_ratio": "3:4",
+  "output_size": "1200x1600",
+  "fixed_layout_structure": [
+    "Centered glass-bottle silhouette product mockup, occupying ~50% of vertical frame height, fully visible",
+    "Soft studio-lighting backdrop with a subtle gradient and soft shadow beneath the bottle",
+    "Label area on the bottle body reserved for the brand/product name",
+    "Small brand wordmark repeated at the bottom of the frame (~bottom 10%), understated"
+  ],
+  "editable_fields": [
+    "bottle_shape_variant",
+    "brand_name",
+    "product_name",
+    "palette",
+    "backdrop_tone"
+  ],
+  "image_slots": [
+    "center_bottle_mockup"
+  ],
+  "text_slots": [
+    "bottle_label_brand_name",
+    "bottom_wordmark"
+  ],
+  "information_hierarchy": "1) bottle silhouette (dominant visual) 2) label brand/product name on the bottle 3) bottom wordmark (smallest)",
+  "visual_style": "Glass-bottle silhouette mockup with editable label area, soft studio-lighting product-photo aesthetic matching the k-beauty/Y2K-chrome competitor visual language",
+  "typography_direction": "Minimal elegant serif or thin sans-serif for the label brand name; small caps for bottom wordmark",
+  "color_direction": "Soft studio tones -- pastel gradient backdrops (blush, sage, lavender, chrome) depending on product line",
+  "prompt_template": "Design a studio product-photography style MOCKUP of a perfume or cosmetic bottle, {aspect_ratio} portrait aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): one centered glass-bottle silhouette occupying about half the frame height, fully visible with nothing cropped; a soft studio-lighting backdrop with a subtle gradient and a soft shadow beneath the bottle; a label area on the bottle body reserved for the brand/product name; a small, understated brand wordmark repeated at the very bottom of the frame. VARIABLE CONTENT for this specific example: bottle shape = {bottle_shape_variant}, label brand/product name text = \"{brand_name} - {product_name}\", backdrop tone = {backdrop_tone}, palette = {palette}. Render the label brand/product name as real, legible, correctly spelled text on the bottle label. Do not add a watermark. Do not crop the bottle at the frame edges.",
+  "negative_constraints": [
+    "no watermark of any kind",
+    "no stock-photo watermark text or agency logos",
+    "no extra/duplicate text blocks beyond the specified text_slots",
+    "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+    "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+    "no cropped or clipped subject at the edges of the frame",
+    "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+    "must be a perfume/cosmetic bottle shape, not a sport or water bottle",
+    "bottle must not be cropped at the frame edges"
+  ],
+  "quality_criteria": [
+    "bottle silhouette clearly reads as a perfume/cosmetic container, not a sport/water bottle",
+    "label text is legible and correctly spelled",
+    "studio-lighting backdrop with soft shadow is present"
+  ],
+  "example_count_planned": 4
+}

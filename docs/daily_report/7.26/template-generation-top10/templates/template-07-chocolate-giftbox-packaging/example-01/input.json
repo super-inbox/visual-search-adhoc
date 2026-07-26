@@ -1,0 +1,13 @@
+{
+  "template_id": "T06",
+  "example_id": "template-07-chocolate-giftbox-packaging-example-01",
+  "scenario": "Typical case: holiday chocolate gift box",
+  "target_audience": "Confectionery retailers selling holiday gift boxes",
+  "editable_fields": {
+    "occasion": "winter holiday",
+    "compartment_contents": "an assortment of foil-wrapped chocolate truffles in gold and red wrappers",
+    "brand_name": "Maple & Cocoa Chocolatiers",
+    "ribbon_color": "deep red satin ribbon",
+    "box_pattern": "matte forest-green box with gold foil trim"
+  }
+}

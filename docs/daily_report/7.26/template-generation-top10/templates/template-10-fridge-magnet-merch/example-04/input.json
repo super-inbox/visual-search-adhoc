@@ -1,0 +1,13 @@
+{
+  "template_id": "T10",
+  "example_id": "template-10-fridge-magnet-merch-example-04",
+  "scenario": "Edge case: quote/decorative magnet with longer text on the face",
+  "target_audience": "Gift shops selling decorative quote-based kitchen magnets",
+  "editable_fields": {
+    "theme": "quote/decorative",
+    "shape_variant": "circle",
+    "face_subject": "a hand-lettered illustration of the short phrase 'Home Is Where the Kitchen Is' surrounded by small floral accents",
+    "brand_wordmark": "Homestead Paper Co.",
+    "palette": "soft sage and cream"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "template_id": "T06",
+  "example_id": "template-07-chocolate-giftbox-packaging-example-04",
+  "scenario": "Edge case: mooncake-adjacent festival gift box",
+  "target_audience": "Festival/holiday gift retailers serving a Chinese-heritage customer base",
+  "editable_fields": {
+    "occasion": "Mid-Autumn Festival (mooncake-adjacent)",
+    "compartment_contents": "four individually wrapped mooncakes with a small lotus-motif card",
+    "brand_name": "Golden Lotus Bakery",
+    "ribbon_color": "burgundy silk ribbon",
+    "box_pattern": "burgundy box with a gold lotus-pattern lid"
+  }
+}

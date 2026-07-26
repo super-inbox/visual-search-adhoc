@@ -1,0 +1,13 @@
+{
+  "template_id": "T03",
+  "example_id": "template-01-workbook-practice-book-covers-example-02",
+  "scenario": "Different business/subject: bilingual language-arts practice book for a homeschool seller",
+  "target_audience": "Homeschool parents and bilingual EdTech content sellers",
+  "editable_fields": {
+    "subject_name": "English-Chinese Vocabulary Practice / 中英文词汇练习",
+    "grade_level": "Ages 6-8",
+    "series_brand": "双语启蒙 Bilingual Beginnings",
+    "accent_color": "warm coral (#F26B5B)",
+    "subject_motif": "a flat-vector illustration of an open alphabet book with Latin letters and Chinese character strokes side by side"
+  }
+}

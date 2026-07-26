@@ -1,0 +1,13 @@
+{
+  "template_id": "T03",
+  "example_id": "template-01-workbook-practice-book-covers-example-01",
+  "scenario": "Typical case: elementary math practice workbook",
+  "target_audience": "3rd-grade classroom teachers sourcing printable homework packets",
+  "editable_fields": {
+    "subject_name": "Multiplication & Division Practice",
+    "grade_level": "Grade 3",
+    "series_brand": "BrightPath Learning",
+    "accent_color": "cornflower blue (#4C7EF3)",
+    "subject_motif": "a friendly flat-vector illustration of colorful numbers and a small abacus motif"
+  }
+}

@@ -1,0 +1,12 @@
+Design a single-page promotional FLYER (not a wall poster), 4:5 portrait aspect ratio, output size 1600x2000. FIXED LAYOUT (must match across every variant of this template): a top headline band (top ~20% of frame) with the business/event name and headline; a hero image/graphic block (upper-middle ~35%) with one dominant visual; an offer/detail text block (lower-middle ~30%) containing the offer, date/time, and 2-3 supporting detail lines; a bottom contact/QR footer bar (~15%) with a QR-code-shaped placeholder graphic, address/phone line, and a short call-to-action line. Keep the layout compact and info-dense like a real commercial flyer, NOT a sparse wall-poster. VARIABLE CONTENT for this specific example: business/event name and headline = "Riverside Fall Festival", hero image = a flat-illustration of string lights over a row of festival food stalls, offer details = "Live music, local food vendors, kids' craft corner, and a pumpkin-carving contest.", date/time = "Saturday, October 10, 4:00 PM - 9:00 PM", contact footer text = "Riverside Park - free admission - riversidefallfest.org", call-to-action text = "Bring the whole family", color scheme = autumn orange and deep green. Render all specified text exactly as given, legible and correctly spelled. The QR-code placeholder should look like a generic scannable QR pattern graphic, not a real functional code. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- must read as a compact flyer, not a sparse decorative poster
+- QR placeholder must not be presented as a real scannable code

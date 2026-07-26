@@ -1,0 +1,12 @@
+Design a labeled STEM classroom teaching-aid illustration, 1:1 square aspect ratio, output size 1600x1600. FIXED LAYOUT (must match across every variant of this template): a top title band (~12% of frame) with the equipment/topic name; a large center illustration (~55% of frame) of exactly one piece of classroom or lab equipment, in flat/vector style, fully visible with nothing cropped at the edges; thin callout lines radiating from 3-4 key parts of the equipment out to short label text placed in the surrounding margin; a bottom caption strip (~12%) with a short one-line classroom-use caption. VARIABLE CONTENT for this specific example: equipment = a simple classroom circuit board with a battery, switch, wires, and a small lightbulb, title text = "The Basic Circuit Board", part labels = battery, switch, wire, lightbulb, connection point, bottom caption text = "Shows how a closed circuit lets electricity flow to light the bulb.", color palette = warm yellow and charcoal. Render the title, part labels, and caption as real, legible, correctly spelled text exactly as given. Do not add a watermark. Do not crop the equipment illustration at the frame edges.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- no photorealistic rendering -- flat/vector illustration only
+- equipment must not be cropped or bleed off the frame edge

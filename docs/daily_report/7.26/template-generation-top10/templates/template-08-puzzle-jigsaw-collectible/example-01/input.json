@@ -1,0 +1,12 @@
+{
+  "template_id": "T08",
+  "example_id": "template-08-puzzle-jigsaw-collectible-example-01",
+  "scenario": "Typical case: nature-landscape collectible puzzle",
+  "target_audience": "Gift shops selling general-audience jigsaw puzzles",
+  "editable_fields": {
+    "cover_art_subject": "a vivid painted illustration of a mountain lake at sunset with pine trees",
+    "theme_ip": "Mountain Lake",
+    "piece_count": "1000 pieces",
+    "palette": "deep blue and warm sunset orange"
+  }
+}

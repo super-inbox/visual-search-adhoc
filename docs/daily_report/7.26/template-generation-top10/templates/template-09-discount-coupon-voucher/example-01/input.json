@@ -1,0 +1,14 @@
+{
+  "template_id": "T09",
+  "example_id": "template-09-discount-coupon-voucher-example-01",
+  "scenario": "Typical case: retail percentage-off coupon",
+  "target_audience": "Retail stores running a seasonal storewide discount",
+  "editable_fields": {
+    "business_name": "Cedar Lane Home Goods",
+    "discount_amount": "25% OFF",
+    "discount_type": "Any single item, storewide",
+    "expiry_date": "Expires August 31, 2026",
+    "terms_text": "One per customer. Cannot combine with other offers.",
+    "color_scheme": "red and white"
+  }
+}

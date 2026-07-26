@@ -1,0 +1,13 @@
+{
+  "template_id": "T02",
+  "example_id": "template-03-stem-classroom-teaching-aids-example-04",
+  "scenario": "Edge case: less common equipment with denser labeling needs",
+  "target_audience": "Upper-elementary STEM curriculum designers covering basic circuits",
+  "editable_fields": {
+    "equipment_type": "a simple classroom circuit board with a battery, switch, wires, and a small lightbulb",
+    "topic_title": "The Basic Circuit Board",
+    "part_labels": "battery, switch, wire, lightbulb, connection point",
+    "caption_text": "Shows how a closed circuit lets electricity flow to light the bulb.",
+    "color_palette": "warm yellow and charcoal"
+  }
+}

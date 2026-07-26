@@ -1,0 +1,12 @@
+Design an open GIFT-BOX packaging mockup, 1:1 square aspect ratio, output size 1600x1600. FIXED LAYOUT (must match across every variant of this template): the gift box shown at a 3/4 angle with the lid tilted open, revealing a compartmentalized interior with individual items nestled in each compartment; a ribbon wrapped around the closed portion of the box tied in a bow at the front-left; a small seasonal motif badge in the top-right corner; a brand label centered on the box lid exterior. VARIABLE CONTENT for this specific example: occasion = Mid-Autumn Festival (mooncake-adjacent), box contents = four individually wrapped mooncakes with a small lotus-motif card, brand label text = "Golden Lotus Bakery", ribbon color = burgundy silk ribbon, box pattern = burgundy box with a gold lotus-pattern lid. Render the brand label as real, legible, correctly spelled text. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- must show a genuinely open box with visible compartments, not a closed 'mystery box'
+- compartment contents must match the specified occasion (e.g. chocolates, not unrelated items)

@@ -1,0 +1,13 @@
+{
+  "template_id": "T10",
+  "example_id": "template-10-fridge-magnet-merch-example-01",
+  "scenario": "Typical case: custom photo fridge magnet",
+  "target_audience": "Print-on-demand sellers offering personalized photo magnets",
+  "editable_fields": {
+    "theme": "custom photo",
+    "shape_variant": "rounded rectangle",
+    "face_subject": "a warm illustrated family portrait scene with a dog",
+    "brand_wordmark": "PicPerfect Prints",
+    "palette": "neutral cream frame"
+  }
+}

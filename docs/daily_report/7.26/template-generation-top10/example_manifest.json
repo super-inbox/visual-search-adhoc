@@ -1,0 +1,406 @@
+{
+  "generated_at": "2026-07-26T00:00:00-07:00",
+  "example_count": 40,
+  "examples": [
+    {
+      "template_id": "T03",
+      "template_dir": "template-01-workbook-practice-book-covers",
+      "template_order": 1,
+      "example_id": "template-01-workbook-practice-book-covers-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-01-workbook-practice-book-covers/example-01",
+      "scenario": "Typical case: elementary math practice workbook",
+      "status": "success"
+    },
+    {
+      "template_id": "T03",
+      "template_dir": "template-01-workbook-practice-book-covers",
+      "template_order": 1,
+      "example_id": "template-01-workbook-practice-book-covers-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-01-workbook-practice-book-covers/example-02",
+      "scenario": "Different business/subject: bilingual language-arts practice book for a homeschool seller",
+      "status": "success"
+    },
+    {
+      "template_id": "T03",
+      "template_dir": "template-01-workbook-practice-book-covers",
+      "template_order": 1,
+      "example_id": "template-01-workbook-practice-book-covers-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-01-workbook-practice-book-covers/example-03",
+      "scenario": "Different visual content, same layout: science practice workbook",
+      "status": "success"
+    },
+    {
+      "template_id": "T03",
+      "template_dir": "template-01-workbook-practice-book-covers",
+      "template_order": 1,
+      "example_id": "template-01-workbook-practice-book-covers-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-01-workbook-practice-book-covers/example-04",
+      "scenario": "Edge case: general/mixed-subject exam-prep booklet with a longer series name",
+      "status": "success"
+    },
+    {
+      "template_id": "T04",
+      "template_dir": "template-02-flyer-promotional-flyer",
+      "template_order": 2,
+      "example_id": "template-02-flyer-promotional-flyer-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-02-flyer-promotional-flyer/example-01",
+      "scenario": "Typical case: restaurant discount flyer",
+      "status": "success"
+    },
+    {
+      "template_id": "T04",
+      "template_dir": "template-02-flyer-promotional-flyer",
+      "template_order": 2,
+      "example_id": "template-02-flyer-promotional-flyer-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-02-flyer-promotional-flyer/example-02",
+      "scenario": "Different business: retail seasonal sale flyer",
+      "status": "success"
+    },
+    {
+      "template_id": "T04",
+      "template_dir": "template-02-flyer-promotional-flyer",
+      "template_order": 2,
+      "example_id": "template-02-flyer-promotional-flyer-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-02-flyer-promotional-flyer/example-03",
+      "scenario": "Different visual content, same layout: community event flyer",
+      "status": "success"
+    },
+    {
+      "template_id": "T04",
+      "template_dir": "template-02-flyer-promotional-flyer",
+      "template_order": 2,
+      "example_id": "template-02-flyer-promotional-flyer-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-02-flyer-promotional-flyer/example-04",
+      "scenario": "Edge case: school-notice flyer with denser text requirements",
+      "status": "success"
+    },
+    {
+      "template_id": "T02",
+      "template_dir": "template-03-stem-classroom-teaching-aids",
+      "template_order": 3,
+      "example_id": "template-03-stem-classroom-teaching-aids-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-03-stem-classroom-teaching-aids/example-01",
+      "scenario": "Typical case: classroom whiteboard",
+      "status": "success"
+    },
+    {
+      "template_id": "T02",
+      "template_dir": "template-03-stem-classroom-teaching-aids",
+      "template_order": 3,
+      "example_id": "template-03-stem-classroom-teaching-aids-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-03-stem-classroom-teaching-aids/example-02",
+      "scenario": "Different subject/topic: lab microscope",
+      "status": "success"
+    },
+    {
+      "template_id": "T02",
+      "template_dir": "template-03-stem-classroom-teaching-aids",
+      "template_order": 3,
+      "example_id": "template-03-stem-classroom-teaching-aids-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-03-stem-classroom-teaching-aids/example-03",
+      "scenario": "Different visual content, same layout: counting abacus",
+      "status": "success"
+    },
+    {
+      "template_id": "T02",
+      "template_dir": "template-03-stem-classroom-teaching-aids",
+      "template_order": 3,
+      "example_id": "template-03-stem-classroom-teaching-aids-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-03-stem-classroom-teaching-aids/example-04",
+      "scenario": "Edge case: less common equipment with denser labeling needs",
+      "status": "success"
+    },
+    {
+      "template_id": "T05",
+      "template_dir": "template-04-price-tag-product-label",
+      "template_order": 4,
+      "example_id": "template-04-price-tag-product-label-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-04-price-tag-product-label/example-01",
+      "scenario": "Typical case: standard boutique clothing price tag",
+      "status": "success"
+    },
+    {
+      "template_id": "T05",
+      "template_dir": "template-04-price-tag-product-label",
+      "template_order": 4,
+      "example_id": "template-04-price-tag-product-label-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-04-price-tag-product-label/example-02",
+      "scenario": "Different business: handmade candle shop sale tag",
+      "status": "success"
+    },
+    {
+      "template_id": "T05",
+      "template_dir": "template-04-price-tag-product-label",
+      "template_order": 4,
+      "example_id": "template-04-price-tag-product-label-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-04-price-tag-product-label/example-03",
+      "scenario": "Different visual content, same layout: gift-shop souvenir hang tag",
+      "status": "success"
+    },
+    {
+      "template_id": "T05",
+      "template_dir": "template-04-price-tag-product-label",
+      "template_order": 4,
+      "example_id": "template-04-price-tag-product-label-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-04-price-tag-product-label/example-04",
+      "scenario": "Edge case: holiday seasonal gift tag with longer product name",
+      "status": "success"
+    },
+    {
+      "template_id": "T01",
+      "template_dir": "template-05-certificates-achievement-awards",
+      "template_order": 5,
+      "example_id": "template-05-certificates-achievement-awards-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-05-certificates-achievement-awards/example-01",
+      "scenario": "Typical case: classroom academic achievement award",
+      "status": "success"
+    },
+    {
+      "template_id": "T01",
+      "template_dir": "template-05-certificates-achievement-awards",
+      "template_order": 5,
+      "example_id": "template-05-certificates-achievement-awards-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-05-certificates-achievement-awards/example-02",
+      "scenario": "Different business/context: corporate employee recognition",
+      "status": "success"
+    },
+    {
+      "template_id": "T01",
+      "template_dir": "template-05-certificates-achievement-awards",
+      "template_order": 5,
+      "example_id": "template-05-certificates-achievement-awards-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-05-certificates-achievement-awards/example-03",
+      "scenario": "Different visual content, same layout: sports-day award",
+      "status": "success"
+    },
+    {
+      "template_id": "T01",
+      "template_dir": "template-05-certificates-achievement-awards",
+      "template_order": 5,
+      "example_id": "template-05-certificates-achievement-awards-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-05-certificates-achievement-awards/example-04",
+      "scenario": "Edge case: course-completion certificate with longer text fields",
+      "status": "success"
+    },
+    {
+      "template_id": "T07",
+      "template_dir": "template-06-perfume-cosmetic-bottle-packaging",
+      "template_order": 6,
+      "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-06-perfume-cosmetic-bottle-packaging/example-01",
+      "scenario": "Typical case: classic perfume glass-bottle launch visual",
+      "status": "success"
+    },
+    {
+      "template_id": "T07",
+      "template_dir": "template-06-perfume-cosmetic-bottle-packaging",
+      "template_order": 6,
+      "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-06-perfume-cosmetic-bottle-packaging/example-02",
+      "scenario": "Different product line: cosmetic pump-bottle mockup",
+      "status": "success"
+    },
+    {
+      "template_id": "T07",
+      "template_dir": "template-06-perfume-cosmetic-bottle-packaging",
+      "template_order": 6,
+      "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-06-perfume-cosmetic-bottle-packaging/example-03",
+      "scenario": "Different visual content, same layout: aromatherapy roller-bottle",
+      "status": "success"
+    },
+    {
+      "template_id": "T07",
+      "template_dir": "template-06-perfume-cosmetic-bottle-packaging",
+      "template_order": 6,
+      "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04",
+      "scenario": "Edge case: luxury gift-set of three bottles in one frame",
+      "status": "success"
+    },
+    {
+      "template_id": "T06",
+      "template_dir": "template-07-chocolate-giftbox-packaging",
+      "template_order": 7,
+      "example_id": "template-07-chocolate-giftbox-packaging-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-07-chocolate-giftbox-packaging/example-01",
+      "scenario": "Typical case: holiday chocolate gift box",
+      "status": "success"
+    },
+    {
+      "template_id": "T06",
+      "template_dir": "template-07-chocolate-giftbox-packaging",
+      "template_order": 7,
+      "example_id": "template-07-chocolate-giftbox-packaging-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-07-chocolate-giftbox-packaging/example-02",
+      "scenario": "Different occasion: Valentine's Day chocolate box",
+      "status": "success"
+    },
+    {
+      "template_id": "T06",
+      "template_dir": "template-07-chocolate-giftbox-packaging",
+      "template_order": 7,
+      "example_id": "template-07-chocolate-giftbox-packaging-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-07-chocolate-giftbox-packaging/example-03",
+      "scenario": "Different visual content, same layout: corporate holiday gift set",
+      "status": "success"
+    },
+    {
+      "template_id": "T06",
+      "template_dir": "template-07-chocolate-giftbox-packaging",
+      "template_order": 7,
+      "example_id": "template-07-chocolate-giftbox-packaging-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-07-chocolate-giftbox-packaging/example-04",
+      "scenario": "Edge case: mooncake-adjacent festival gift box",
+      "status": "success"
+    },
+    {
+      "template_id": "T08",
+      "template_dir": "template-08-puzzle-jigsaw-collectible",
+      "template_order": 8,
+      "example_id": "template-08-puzzle-jigsaw-collectible-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-08-puzzle-jigsaw-collectible/example-01",
+      "scenario": "Typical case: nature-landscape collectible puzzle",
+      "status": "success"
+    },
+    {
+      "template_id": "T08",
+      "template_dir": "template-08-puzzle-jigsaw-collectible",
+      "template_order": 8,
+      "example_id": "template-08-puzzle-jigsaw-collectible-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-08-puzzle-jigsaw-collectible/example-02",
+      "scenario": "Different theme: mini travel puzzle",
+      "status": "success"
+    },
+    {
+      "template_id": "T08",
+      "template_dir": "template-08-puzzle-jigsaw-collectible",
+      "template_order": 8,
+      "example_id": "template-08-puzzle-jigsaw-collectible-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-08-puzzle-jigsaw-collectible/example-03",
+      "scenario": "Different visual content, same layout: licensed-IP tie-in collectible puzzle",
+      "status": "success"
+    },
+    {
+      "template_id": "T08",
+      "template_dir": "template-08-puzzle-jigsaw-collectible",
+      "template_order": 8,
+      "example_id": "template-08-puzzle-jigsaw-collectible-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-08-puzzle-jigsaw-collectible/example-04",
+      "scenario": "Edge case: large-format gift puzzle set with extended piece count",
+      "status": "success"
+    },
+    {
+      "template_id": "T09",
+      "template_dir": "template-09-discount-coupon-voucher",
+      "template_order": 9,
+      "example_id": "template-09-discount-coupon-voucher-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-09-discount-coupon-voucher/example-01",
+      "scenario": "Typical case: retail percentage-off coupon",
+      "status": "success"
+    },
+    {
+      "template_id": "T09",
+      "template_dir": "template-09-discount-coupon-voucher",
+      "template_order": 9,
+      "example_id": "template-09-discount-coupon-voucher-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-09-discount-coupon-voucher/example-02",
+      "scenario": "Different business: restaurant fixed-amount voucher",
+      "status": "success"
+    },
+    {
+      "template_id": "T09",
+      "template_dir": "template-09-discount-coupon-voucher",
+      "template_order": 9,
+      "example_id": "template-09-discount-coupon-voucher-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-09-discount-coupon-voucher/example-03",
+      "scenario": "Different visual content, same layout: buy-one-get-one coffee shop coupon",
+      "status": "success"
+    },
+    {
+      "template_id": "T09",
+      "template_dir": "template-09-discount-coupon-voucher",
+      "template_order": 9,
+      "example_id": "template-09-discount-coupon-voucher-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-09-discount-coupon-voucher/example-04",
+      "scenario": "Edge case: loyalty-program punch-card style insert with denser terms text",
+      "status": "success"
+    },
+    {
+      "template_id": "T10",
+      "template_dir": "template-10-fridge-magnet-merch",
+      "template_order": 10,
+      "example_id": "template-10-fridge-magnet-merch-example-01",
+      "example_index": 1,
+      "example_dir": "templates/template-10-fridge-magnet-merch/example-01",
+      "scenario": "Typical case: custom photo fridge magnet",
+      "status": "success"
+    },
+    {
+      "template_id": "T10",
+      "template_dir": "template-10-fridge-magnet-merch",
+      "template_order": 10,
+      "example_id": "template-10-fridge-magnet-merch-example-02",
+      "example_index": 2,
+      "example_dir": "templates/template-10-fridge-magnet-merch/example-02",
+      "scenario": "Different theme: brand/promotional magnet",
+      "status": "success"
+    },
+    {
+      "template_id": "T10",
+      "template_dir": "template-10-fridge-magnet-merch",
+      "template_order": 10,
+      "example_id": "template-10-fridge-magnet-merch-example-03",
+      "example_index": 3,
+      "example_dir": "templates/template-10-fridge-magnet-merch/example-03",
+      "scenario": "Different visual content, same layout: holiday seasonal magnet",
+      "status": "success"
+    },
+    {
+      "template_id": "T10",
+      "template_dir": "template-10-fridge-magnet-merch",
+      "template_order": 10,
+      "example_id": "template-10-fridge-magnet-merch-example-04",
+      "example_index": 4,
+      "example_dir": "templates/template-10-fridge-magnet-merch/example-04",
+      "scenario": "Edge case: quote/decorative magnet with longer text on the face",
+      "status": "success"
+    }
+  ]
+}

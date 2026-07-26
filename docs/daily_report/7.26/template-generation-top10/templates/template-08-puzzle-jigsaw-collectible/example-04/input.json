@@ -1,0 +1,12 @@
+{
+  "template_id": "T08",
+  "example_id": "template-08-puzzle-jigsaw-collectible-example-04",
+  "scenario": "Edge case: large-format gift puzzle set with extended piece count",
+  "target_audience": "Collectible/gift retailers selling premium large-format puzzles",
+  "editable_fields": {
+    "cover_art_subject": "a detailed illustration of a bustling night market with lanterns and food stalls",
+    "theme_ip": "Night Market",
+    "piece_count": "2000 pieces (deluxe edition)",
+    "palette": "deep purple and warm lantern gold"
+  }
+}

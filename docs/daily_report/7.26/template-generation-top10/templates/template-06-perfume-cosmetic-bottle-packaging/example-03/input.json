@@ -1,0 +1,13 @@
+{
+  "template_id": "T07",
+  "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-03",
+  "scenario": "Different visual content, same layout: aromatherapy roller-bottle",
+  "target_audience": "Wellness/aromatherapy sellers on social media",
+  "editable_fields": {
+    "bottle_shape_variant": "a small amber-glass roller-bottle with a wooden cap",
+    "brand_name": "Still Grove",
+    "product_name": "Lavender Calm Roll-On",
+    "backdrop_tone": "warm neutral linen gradient",
+    "palette": "amber and sage"
+  }
+}

@@ -1,0 +1,12 @@
+Design a jigsaw PUZZLE BOX cover mockup, 4:3 landscape aspect ratio, output size 1600x1200. FIXED LAYOUT (must match across every variant of this template): the box front shown flat-on filling the frame; a large center cover-art area showing the puzzle's completed-image artwork; a brand/series logo band across the top; a jigsaw-piece-shaped cutout accent graphic in the bottom-right corner; a piece-count badge in the bottom-left corner. VARIABLE CONTENT for this specific example: cover art subject = a detailed illustration of a bustling night market with lanterns and food stalls, theme = Night Market, brand/series logo text = "Night Market Puzzle Co.", piece-count badge text = "2000 pieces (deluxe edition)", palette = deep purple and warm lantern gold. Render the brand/series logo and piece-count badge as real, legible, correctly spelled text. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- cover art must clearly read as puzzle box art, not a generic mystery-box design
+- piece-count badge text must be a plausible number (e.g. 500, 1000)

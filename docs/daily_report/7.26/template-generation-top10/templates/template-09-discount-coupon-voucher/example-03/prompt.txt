@@ -1,0 +1,12 @@
+Design a tear-tab ticket-style DISCOUNT COUPON, 5:2 wide horizontal aspect ratio, output size 2000x800. FIXED LAYOUT (must match across every variant of this template): a horizontal ticket shape with a vertical perforated/dashed tear line about a quarter of the way in from the left edge; a left tear-tab stub section containing a large percentage/amount-off callout in bold display numerals; a right main section containing the business name at the top, a short discount description in the middle, and an expiry date plus a barcode-placeholder graphic at the bottom. VARIABLE CONTENT for this specific example: business name = "Daybreak Coffee Roasters", discount callout = "BOGO", discount description = "Buy one specialty drink, get one free", expiry date = "Expires October 5, 2026", terms text = "Equal or lesser value. Valid after 2pm only.", color scheme = warm amber and espresso brown. Render all specified text exactly as given, legible and correctly spelled. The barcode graphic should look like a generic scannable pattern, not a real functional code. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- perforated tear line must be clearly visible and vertical
+- discount callout must be the single largest text element

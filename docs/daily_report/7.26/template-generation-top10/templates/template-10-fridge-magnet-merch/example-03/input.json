@@ -1,0 +1,13 @@
+{
+  "template_id": "T10",
+  "example_id": "template-10-fridge-magnet-merch-example-03",
+  "scenario": "Different visual content, same layout: holiday seasonal magnet",
+  "target_audience": "Souvenir/gift shops selling seasonal holiday merch",
+  "editable_fields": {
+    "theme": "holiday seasonal",
+    "shape_variant": "rounded rectangle",
+    "face_subject": "a small illustrated snow-covered pine tree with string lights",
+    "brand_wordmark": "Northgate Holiday Market",
+    "palette": "holiday red and green"
+  }
+}

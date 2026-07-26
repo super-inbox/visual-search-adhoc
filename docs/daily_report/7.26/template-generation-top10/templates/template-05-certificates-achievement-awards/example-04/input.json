@@ -1,0 +1,15 @@
+{
+  "template_id": "T01",
+  "example_id": "template-05-certificates-achievement-awards-example-04",
+  "scenario": "Edge case: course-completion certificate with longer text fields",
+  "target_audience": "Online course providers and training organizers",
+  "editable_fields": {
+    "award_title": "Certificate of Course Completion",
+    "recipient_name": "Priya Venkataraman",
+    "org_name": "Northfield Professional Development Institute",
+    "award_reason": "For successfully completing the 40-hour Advanced Project Management certification course",
+    "date": "July 18, 2026",
+    "signature_name": "Dr. Alan Whitcombe, Program Director",
+    "palette_variant": "gold and navy classic"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "template_id": "T05",
+  "example_id": "template-04-price-tag-product-label-example-04",
+  "scenario": "Edge case: holiday seasonal gift tag with longer product name",
+  "target_audience": "Seasonal pop-up shops during the winter holiday period",
+  "editable_fields": {
+    "brand_name": "Northgate Holiday Market",
+    "price": "$22.00",
+    "product_name": "Hand-Painted Glass Ornament Set (3-pack)",
+    "tag_shape_variant": "scalloped edge",
+    "seasonal_motif": "holly-leaf corner icon",
+    "color_scheme": "holiday green and gold"
+  }
+}

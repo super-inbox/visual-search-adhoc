@@ -1,0 +1,61 @@
+{
+  "template_id": "T08",
+  "order": 8,
+  "dir": "template-08-puzzle-jigsaw-collectible",
+  "template_name": "Puzzle & Jigsaw Collectible Templates",
+  "zh_name": "拼图收藏品合集",
+  "category": "Toy, Plush, Character & Collectible Design",
+  "purpose": "Collectible jigsaw-puzzle box-cover mockups for merch/gift-shop and licensed-IP puzzle products.",
+  "target_user": "Collectible/merch sellers, gift shops, licensed-IP merchandise producers",
+  "content_gap": "拼图 (ZH) shows a stable, low, persistently-irrelevant result set (3 results) at every timepoint; the in-app UI shows a 'Generate this yourself' prompt for the English query, independently confirming the gap.",
+  "discovery_reason": "PARTIAL content gap, MEDIUM confidence, rank #8 (P2, PROVISIONAL) -- kept PROVISIONAL due to single confirmed-language signal (拼图 ZH) and no competitor evidence on file; English 'puzzle' zero-result explicitly excluded from the justification as a candidate-build artifact.",
+  "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=8, candidate_id=T08)",
+  "benchmark_queries": "拼图 (puzzle, CN) -- primary evidence; puzzle (EN) explicitly excluded from justification",
+  "competitor_references": "No local competitor screenshot found for 'puzzle' specifically (NOT_FOUND).",
+  "aspect_ratio": "4:3",
+  "output_size": "1600x1200",
+  "fixed_layout_structure": [
+    "Puzzle box front mockup shown flat-on, occupying the full frame as the box face",
+    "Box cover art area (center ~65%) showing the puzzle's completed-image artwork",
+    "Brand/series logo band across the top (~12%)",
+    "Jigsaw-piece-cutout accent graphic in one corner (bottom-right), suggesting the puzzle format",
+    "Piece-count badge in the opposite bottom corner (bottom-left)"
+  ],
+  "editable_fields": [
+    "theme_ip",
+    "piece_count",
+    "box_size_variant",
+    "palette",
+    "cover_art_subject"
+  ],
+  "image_slots": [
+    "box_cover_art",
+    "jigsaw_piece_cutout_accent"
+  ],
+  "text_slots": [
+    "brand_series_logo",
+    "piece_count_badge"
+  ],
+  "information_hierarchy": "1) box cover art (dominant) 2) brand/series logo 3) piece-count badge 4) jigsaw-piece cutout accent (smallest)",
+  "visual_style": "Puzzle-piece-cutout product mockup with box cover art area, consistent with the existing 'mystery box' merchandise visual family already in-catalog",
+  "typography_direction": "Playful bold sans-serif or display font for the brand/series logo; compact sans-serif for the piece-count badge",
+  "color_direction": "Theme-coded palette matching the cover art subject (nature themes = greens/blues, travel themes = warm earth tones)",
+  "prompt_template": "Design a jigsaw PUZZLE BOX cover mockup, {aspect_ratio} landscape aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): the box front shown flat-on filling the frame; a large center cover-art area showing the puzzle's completed-image artwork; a brand/series logo band across the top; a jigsaw-piece-shaped cutout accent graphic in the bottom-right corner; a piece-count badge in the bottom-left corner. VARIABLE CONTENT for this specific example: cover art subject = {cover_art_subject}, theme = {theme_ip}, brand/series logo text = \"{theme_ip} Puzzle Co.\", piece-count badge text = \"{piece_count}\", palette = {palette}. Render the brand/series logo and piece-count badge as real, legible, correctly spelled text. Do not add a watermark.",
+  "negative_constraints": [
+    "no watermark of any kind",
+    "no stock-photo watermark text or agency logos",
+    "no extra/duplicate text blocks beyond the specified text_slots",
+    "no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution",
+    "no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)",
+    "no cropped or clipped subject at the edges of the frame",
+    "no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone",
+    "cover art must clearly read as puzzle box art, not a generic mystery-box design",
+    "piece-count badge text must be a plausible number (e.g. 500, 1000)"
+  ],
+  "quality_criteria": [
+    "jigsaw-piece-shaped cutout accent is present in the bottom-right",
+    "piece-count badge is present and legible",
+    "cover art matches the specified theme"
+  ],
+  "example_count_planned": 4
+}

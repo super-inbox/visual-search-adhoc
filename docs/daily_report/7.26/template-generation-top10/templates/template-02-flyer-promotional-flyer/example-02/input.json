@@ -1,0 +1,15 @@
+{
+  "template_id": "T04",
+  "example_id": "template-02-flyer-promotional-flyer-example-02",
+  "scenario": "Different business: retail seasonal sale flyer",
+  "target_audience": "Small boutique retailers running a seasonal clearance",
+  "editable_fields": {
+    "headline": "Harbor & Pine Boutique - End of Season Sale",
+    "hero_image_subject": "a flat-illustration of a folded sweater and a price tag with a percent sign",
+    "offer_details": "Up to 40% off select fall inventory. New markdowns added daily.",
+    "date_time": "Sat Aug 1 - Sun Aug 9",
+    "contact_info": "45 Harbor Ave, Unit 2 - @harborandpine",
+    "cta_text": "In-store only, while supplies last",
+    "color_scheme": "cool teal and cream"
+  }
+}

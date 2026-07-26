@@ -1,0 +1,13 @@
+{
+  "template_id": "T07",
+  "example_id": "template-06-perfume-cosmetic-bottle-packaging-example-02",
+  "scenario": "Different product line: cosmetic pump-bottle mockup",
+  "target_audience": "Skincare brand marketing a new serum line",
+  "editable_fields": {
+    "bottle_shape_variant": "a frosted glass cosmetic pump bottle with a chrome pump head",
+    "brand_name": "Verdalis",
+    "product_name": "Renewing Vitamin C Serum",
+    "backdrop_tone": "soft sage green gradient",
+    "palette": "sage green and matte white"
+  }
+}

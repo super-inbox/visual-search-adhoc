@@ -1,0 +1,69 @@
+# TEMPLATE SPEC — STEM Classroom Teaching-Aid Illustrations (T02)
+
+## Identity
+- **template_id**: T02
+- **template_name**: STEM Classroom Teaching-Aid Illustrations
+- **zh_name**: STEM课堂教具图解合集
+- **category**: Education & Classroom Materials
+- **rank in discovery package**: #3
+
+## Purpose & audience
+- **purpose**: Flat-vector, labeled classroom-equipment illustrations (whiteboard, microscope, abacus, etc.) for K-12 STEM teaching materials.
+- **target_user**: K-12 teachers, tutoring centers, STEM curriculum designers, classroom-decor sellers
+
+## Discovery grounding
+- **content_gap**: 'whiteboard' and 'microscope' return 0 results; '算盘 (abacus)' returns only 6 fully irrelevant results (AI-tool category cards). No dedicated classroom-equipment illustration set exists in the catalog.
+- **discovery_reason**: CONFIRMED content gap, HIGH confidence, rank #3 (P0), highest raw opportunity score in the pool (80) though evidence-adjusted lower (66.4) pending a competitor spot-check the manager summary explicitly recommends before greenlighting.
+- **discovery_source**: docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=3, candidate_id=T02)
+- **benchmark_queries**: whiteboard; microscope; 算盘 (abacus)
+- **competitor_references**: No local competitor screenshot found for whiteboard / microscope / abacus specifically (NOT_FOUND). Manager review flags this as worth a quick competitor spot-check before production approval.
+
+## Format
+- **aspect_ratio**: 1:1
+- **output_size**: 1600x1600
+
+## Fixed structure (must not vary across examples)
+- Center equipment illustration (occupying ~55% of frame): one piece of classroom/lab equipment, flat-vector style, fully visible and uncropped
+- Labeled callout lines radiating from 3-4 key parts of the equipment to short label text placed in the surrounding margin
+- Top title band (~12%): equipment/topic name
+- Bottom caption strip (~12%): a short one-line 'how it works' or classroom-use caption
+
+## Variable content (must vary across examples)
+- **editable_fields**: equipment_type, part_labels, topic_title, caption_text, color_palette, grade_level
+- **image_slots**: center_equipment_illustration
+- **text_slots**: topic_title, part_labels, bottom_caption
+
+## Information hierarchy
+1) center equipment illustration (dominant) 2) topic title 3) part-label callouts 4) bottom caption (smallest)
+
+## Visual system
+- **visual_style**: Flat/vector classroom-equipment illustration with clean line labels, consistent with Curify's existing 'Science'/classroom_material catalog style
+- **typography_direction**: Clear sans-serif for title; small uppercase sans-serif for part labels; italic or light-weight sans for the caption
+- **color_direction**: Muted educational palette (soft blues, greens, warm neutrals) with one accent color highlighting the labeled parts
+
+## Prompt template
+```
+Design a labeled STEM classroom teaching-aid illustration, {aspect_ratio} square aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a top title band (~12% of frame) with the equipment/topic name; a large center illustration (~55% of frame) of exactly one piece of classroom or lab equipment, in flat/vector style, fully visible with nothing cropped at the edges; thin callout lines radiating from 3-4 key parts of the equipment out to short label text placed in the surrounding margin; a bottom caption strip (~12%) with a short one-line classroom-use caption. VARIABLE CONTENT for this specific example: equipment = {equipment_type}, title text = "{topic_title}", part labels = {part_labels}, bottom caption text = "{caption_text}", color palette = {color_palette}. Render the title, part labels, and caption as real, legible, correctly spelled text exactly as given. Do not add a watermark. Do not crop the equipment illustration at the frame edges.
+```
+
+## Negative constraints
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- no photorealistic rendering -- flat/vector illustration only
+- equipment must not be cropped or bleed off the frame edge
+
+## Quality criteria
+- the illustrated equipment matches the specified equipment_type and is fully visible
+- at least 3 labeled callouts are present and legible
+- title and bottom caption text are legible and correctly spelled
+
+## Planned examples
+- Example 01: Typical case: classroom whiteboard
+- Example 02: Different subject/topic: lab microscope
+- Example 03: Different visual content, same layout: counting abacus
+- Example 04: Edge case: less common equipment with denser labeling needs

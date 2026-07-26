@@ -1,0 +1,13 @@
+{
+  "template_id": "T06",
+  "example_id": "template-07-chocolate-giftbox-packaging-example-03",
+  "scenario": "Different visual content, same layout: corporate holiday gift set",
+  "target_audience": "Corporate gifting programs sending client appreciation boxes",
+  "editable_fields": {
+    "occasion": "corporate year-end gifting",
+    "compartment_contents": "an assorted set of dark chocolate bars and a small branded notecard",
+    "brand_name": "Sterling & Oak Corporate Gifts",
+    "ribbon_color": "navy grosgrain ribbon",
+    "box_pattern": "matte navy box with subtle gold foil embossing"
+  }
+}

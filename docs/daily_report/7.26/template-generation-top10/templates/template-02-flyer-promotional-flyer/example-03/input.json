@@ -1,0 +1,15 @@
+{
+  "template_id": "T04",
+  "example_id": "template-02-flyer-promotional-flyer-example-03",
+  "scenario": "Different visual content, same layout: community event flyer",
+  "target_audience": "Event organizers promoting a neighborhood festival",
+  "editable_fields": {
+    "headline": "Riverside Fall Festival",
+    "hero_image_subject": "a flat-illustration of string lights over a row of festival food stalls",
+    "offer_details": "Live music, local food vendors, kids' craft corner, and a pumpkin-carving contest.",
+    "date_time": "Saturday, October 10, 4:00 PM - 9:00 PM",
+    "contact_info": "Riverside Park - free admission - riversidefallfest.org",
+    "cta_text": "Bring the whole family",
+    "color_scheme": "autumn orange and deep green"
+  }
+}

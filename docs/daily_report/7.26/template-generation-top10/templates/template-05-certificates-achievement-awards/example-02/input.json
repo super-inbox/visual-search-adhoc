@@ -1,0 +1,15 @@
+{
+  "template_id": "T01",
+  "example_id": "template-05-certificates-achievement-awards-example-02",
+  "scenario": "Different business/context: corporate employee recognition",
+  "target_audience": "Corporate HR teams running a quarterly recognition program",
+  "editable_fields": {
+    "award_title": "Certificate of Excellence",
+    "recipient_name": "Marcus Thibodeaux",
+    "org_name": "Alderbrook Consulting Group",
+    "award_reason": "In recognition of outstanding leadership and dedication during Q3 2026",
+    "date": "October 1, 2026",
+    "signature_name": "Dana Whitfield, VP of People",
+    "palette_variant": "gold and navy classic"
+  }
+}

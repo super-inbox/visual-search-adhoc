@@ -1,0 +1,12 @@
+{
+  "template_id": "T08",
+  "example_id": "template-08-puzzle-jigsaw-collectible-example-02",
+  "scenario": "Different theme: mini travel puzzle",
+  "target_audience": "Souvenir shops selling compact travel-sized puzzles",
+  "editable_fields": {
+    "cover_art_subject": "a stylized illustrated map of a coastal city's landmarks",
+    "theme_ip": "Coastal City Map",
+    "piece_count": "300 pieces (travel size)",
+    "palette": "teal and sandy beige"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "template_id": "T03",
+  "example_id": "template-01-workbook-practice-book-covers-example-04",
+  "scenario": "Edge case: general/mixed-subject exam-prep booklet with a longer series name",
+  "target_audience": "Test-prep publishers bundling multiple subjects into one practice series",
+  "editable_fields": {
+    "subject_name": "Mixed-Subject Weekly Review",
+    "grade_level": "Grades 4-5",
+    "series_brand": "Summit Test-Prep Publishing Co.",
+    "accent_color": "deep purple (#6A4C9C)",
+    "subject_motif": "a flat-vector illustration of a stack of three books with a pencil and a checkmark badge on top"
+  }
+}

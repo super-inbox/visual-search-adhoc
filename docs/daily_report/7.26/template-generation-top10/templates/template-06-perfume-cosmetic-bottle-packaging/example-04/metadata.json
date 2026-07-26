@@ -1,0 +1,18 @@
+{
+  "status": "success",
+  "generation_model": "gemini-3-pro-image-preview",
+  "parameters": {
+    "responseModalities": [
+      "IMAGE",
+      "TEXT"
+    ]
+  },
+  "attempt_count": 1,
+  "generated_at": "2026-07-25T16:28:44.537Z",
+  "output_path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04/output.png",
+  "bytes": 533203,
+  "mime_type": "image/jpeg",
+  "finish_reason": "STOP",
+  "error": null,
+  "qa_result": null
+}

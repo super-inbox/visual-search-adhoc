@@ -1,0 +1,71 @@
+# TEMPLATE SPEC — Certificates & Achievement Awards Collection (T01)
+
+## Identity
+- **template_id**: T01
+- **template_name**: Certificates & Achievement Awards Collection
+- **zh_name**: 证书与荣誉奖状合集
+- **category**: Certificates & Academic Documents
+- **rank in discovery package**: #5
+
+## Purpose & audience
+- **purpose**: Formal, bordered achievement/award certificates for classrooms, corporate recognition, and event competitions.
+- **target_user**: Teachers, K-12 schools, corporate HR / recognition programs, event & competition organizers
+
+## Discovery grounding
+- **content_gap**: 'certificate' and 'achievement certificate' return 0 results at every timepoint; the in-app UI itself surfaces a 'Generate this yourself' prompt, confirming Curify's own product surface acknowledges the gap.
+- **discovery_reason**: CONFIRMED content gap, HIGH confidence, rank #5 (P1), evidence-adjusted score 50.2 -- 0% PASS rate across the entire 'certificate' vertical (8 queries), untouched by the recent search-fix cycle.
+- **discovery_source**: docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/10_TOP10_TEMPLATE_RECOMMENDATIONS.csv (row rank=5, candidate_id=T01)
+- **benchmark_queries**: certificate; achievement certificate
+- **competitor_references**: No local competitor screenshot or document found for 'certificate' / 'diploma' in any reviewed competitor-analysis artifact (NOT_FOUND).
+
+## Format
+- **aspect_ratio**: 4:3
+- **output_size**: 1600x1200
+
+## Fixed structure (must not vary across examples)
+- Decorative border frame around the entire certificate (double-rule or ornamental corner-motif style)
+- Seal or ribbon motif badge positioned top-center or top-right corner
+- Title banner (~top 20%): award/certificate title in large formal lettering
+- Recipient name line (~middle, largest script/serif text after the title)
+- Award reason/description line directly below recipient name
+- Bottom signature + date line (two columns: signature line left, date line right)
+
+## Variable content (must vary across examples)
+- **editable_fields**: award_title, recipient_name, org_name, award_reason, date, signature_name, palette_variant
+- **image_slots**: seal_ribbon_motif
+- **text_slots**: award_title, recipient_name, award_reason, org_name, date, signature_name
+
+## Information hierarchy
+1) award title (largest formal heading) 2) recipient name 3) award reason/description 4) org name + seal 5) signature/date (smallest)
+
+## Visual system
+- **visual_style**: Clean bordered certificate frame, seal or ribbon motif, formal but approachable classroom/corporate hybrid aesthetic
+- **typography_direction**: Formal serif or script for award title and recipient name; clean sans-serif for reason/signature/date lines
+- **color_direction**: Formal palettes: gold/navy classic for corporate, pastel classroom-friendly variant for kids' awards
+
+## Prompt template
+```
+Design a formal ACHIEVEMENT CERTIFICATE, {aspect_ratio} landscape aspect ratio, output size {output_size}. FIXED LAYOUT (must match across every variant of this template): a decorative border frame around the entire certificate; a seal or ribbon motif badge positioned top-center; a title banner near the top with the award/certificate title in large formal lettering; a recipient name line in the middle in large script or serif lettering; an award reason/description line directly below the recipient name; a bottom row with a signature line on the left and a date line on the right. VARIABLE CONTENT for this specific example: award title = "{award_title}", recipient name = "{recipient_name}", organization name = "{org_name}", award reason = "{award_reason}", date = "{date}", signature name = "{signature_name}", palette = {palette_variant}. Render all specified text exactly as given, legible and correctly spelled. Do not add a watermark.
+```
+
+## Negative constraints
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- border/frame must fully enclose the certificate with no gaps
+- recipient name must be visually distinguishable from the award title (different weight/size)
+
+## Quality criteria
+- border frame fully encloses the certificate
+- award title, recipient name, and date are all present and legible
+- seal/ribbon motif is present near the top
+
+## Planned examples
+- Example 01: Typical case: classroom academic achievement award
+- Example 02: Different business/context: corporate employee recognition
+- Example 03: Different visual content, same layout: sports-day award
+- Example 04: Edge case: course-completion certificate with longer text fields

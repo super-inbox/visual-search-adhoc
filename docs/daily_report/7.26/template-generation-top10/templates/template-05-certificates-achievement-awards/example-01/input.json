@@ -1,0 +1,15 @@
+{
+  "template_id": "T01",
+  "example_id": "template-05-certificates-achievement-awards-example-01",
+  "scenario": "Typical case: classroom academic achievement award",
+  "target_audience": "K-12 teachers recognizing a student's academic performance",
+  "editable_fields": {
+    "award_title": "Certificate of Academic Achievement",
+    "recipient_name": "Emma Rodriguez",
+    "org_name": "Maple Grove Elementary School",
+    "award_reason": "For outstanding achievement in Mathematics during the Fall semester",
+    "date": "December 12, 2026",
+    "signature_name": "Mrs. Patricia Chen, Principal",
+    "palette_variant": "pastel classroom-friendly (soft blue and cream)"
+  }
+}

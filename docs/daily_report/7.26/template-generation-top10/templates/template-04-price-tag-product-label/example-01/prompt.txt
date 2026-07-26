@@ -1,0 +1,12 @@
+Design a die-cut-style retail PRICE TAG, 2:3 portrait aspect ratio, output size 1000x1500. FIXED LAYOUT (must match across every variant of this template): a die-cut tag silhouette (rounded rectangle or scalloped edge) with a small punched string hole at the top-center; a brand/shop name band directly below the hole; a large center price display as the dominant text element; a product/item name line directly below the price; a bottom strip with a generic barcode-pattern graphic. VARIABLE CONTENT for this specific example: brand/shop name = "Willow & Birch Boutique", price = "$34.00", product/item name = "Linen Wrap Dress", tag shape = rounded rectangle, seasonal motif = none, standard tag, color scheme = kraft brown and white. Render the brand name, price, and product name as real, legible, correctly spelled text exactly as given. The barcode graphic should look like a generic scannable barcode pattern, not a real functional code. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- barcode graphic must be a generic decorative pattern, not a real functional barcode
+- price text must be the single largest text element on the tag

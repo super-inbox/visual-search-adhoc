@@ -1,0 +1,13 @@
+{
+  "template_id": "T02",
+  "example_id": "template-03-stem-classroom-teaching-aids-example-02",
+  "scenario": "Different subject/topic: lab microscope",
+  "target_audience": "Middle-school science teachers building a lab-safety unit",
+  "editable_fields": {
+    "equipment_type": "a classic compound light microscope on a lab bench",
+    "topic_title": "The Compound Microscope",
+    "part_labels": "eyepiece, objective lens, stage, focus knob",
+    "caption_text": "Used to magnify and examine small specimens in the science lab.",
+    "color_palette": "muted green and grey"
+  }
+}

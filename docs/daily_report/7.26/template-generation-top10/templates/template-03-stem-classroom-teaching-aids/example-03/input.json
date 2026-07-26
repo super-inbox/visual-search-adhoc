@@ -1,0 +1,13 @@
+{
+  "template_id": "T02",
+  "example_id": "template-03-stem-classroom-teaching-aids-example-03",
+  "scenario": "Different visual content, same layout: counting abacus",
+  "target_audience": "Early-math tutoring centers building a counting-concepts unit",
+  "editable_fields": {
+    "equipment_type": "a wooden counting abacus with colorful beads on rods",
+    "topic_title": "The Counting Abacus",
+    "part_labels": "frame, rod, bead, counting row",
+    "caption_text": "A hands-on tool for practicing addition and place value.",
+    "color_palette": "warm wood tones with red and yellow beads"
+  }
+}

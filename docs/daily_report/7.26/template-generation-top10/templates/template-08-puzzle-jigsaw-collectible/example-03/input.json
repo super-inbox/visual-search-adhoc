@@ -1,0 +1,12 @@
+{
+  "template_id": "T08",
+  "example_id": "template-08-puzzle-jigsaw-collectible-example-03",
+  "scenario": "Different visual content, same layout: licensed-IP tie-in collectible puzzle",
+  "target_audience": "Licensed-merchandise producers selling character-themed puzzles",
+  "editable_fields": {
+    "cover_art_subject": "a group illustration of five friendly cartoon animal characters in a forest clearing",
+    "theme_ip": "Forest Friends",
+    "piece_count": "500 pieces",
+    "palette": "bright green and playful yellow"
+  }
+}

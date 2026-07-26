@@ -1,0 +1,976 @@
+{
+  "package": "template-generation-top10",
+  "generated_at": "2026-07-26T00:35:00-07:00",
+  "discovery_source": "docs/daily_report/7.23/template-discovery-top10-2026-07-23-v2/",
+  "template_count": 10,
+  "example_count_planned": 40,
+  "example_count_success": 40,
+  "file_count": 193,
+  "files": [
+    {
+      "path": "INVESTIGATION_REPORT.md",
+      "bytes": 9124,
+      "sha256": "a5df64eca52ab3e6f7711f57d94a1d3dd8a8ecc866f0fb2624b0b1731d8f17c3"
+    },
+    {
+      "path": "PILOT_REVIEW.md",
+      "bytes": 3913,
+      "sha256": "5fff4e000b93326a34be7f91115706e5bb4067b799600f912846b12015a69ae4"
+    },
+    {
+      "path": "QUALITY_REVIEW.md",
+      "bytes": 10159,
+      "sha256": "d0466bef8eda51053ce9016b59d2e23d376fbc6fd1ec07d642791a5785332533"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2905,
+      "sha256": "58f40928ab68fa2b8c23da7df962a3b796befee65ac6cb5eb3d52f07cace4fac"
+    },
+    {
+      "path": "RUN_LOG.md",
+      "bytes": 3892,
+      "sha256": "b57982da0e4fb0671b88a03502a4ebe6ac2703cf5f24d6cf41668b557aad712b"
+    },
+    {
+      "path": "TEMPLATE_GENERATION_SUMMARY_ZH.md",
+      "bytes": 8443,
+      "sha256": "9ee16fa412fc518a59276058917e3da4719ec015e7eb53b19c5ee59929fddd76"
+    },
+    {
+      "path": "example_manifest.json",
+      "bytes": 16847,
+      "sha256": "5e350fd4717f37a5089fc4e8be593c1d6c6bc25121309ecd150b03200a710b4b"
+    },
+    {
+      "path": "gallery.html",
+      "bytes": 47682,
+      "sha256": "71c48c7180f9027ed3e330b3870eb77149c56ce2ce9f9014601523c7911e3a01"
+    },
+    {
+      "path": "generation_log.jsonl",
+      "bytes": 14228,
+      "sha256": "ccd8ddde36830b0d44d05727761c7c1ae34a3bd7b81b0af9a06b9c76f630b370"
+    },
+    {
+      "path": "scripts/build_gallery.py",
+      "bytes": 9474,
+      "sha256": "9491a5c4d3e22456e1518d9ab309c43525ba406ddd4182c0ef6184f59755ab75"
+    },
+    {
+      "path": "scripts/generate_examples.mjs",
+      "bytes": 11559,
+      "sha256": "64de5a4aee1fc0ca368d01ee09726e504ea735585ad9bf44834a115944220ff7"
+    },
+    {
+      "path": "scripts/validate_outputs.py",
+      "bytes": 5739,
+      "sha256": "5ef7a65879da5962316dfaf50204f8c091fc81b793615b0762fc7c5c7ed1f55c"
+    },
+    {
+      "path": "template_manifest.json",
+      "bytes": 50069,
+      "sha256": "0873d2c902e90fa83eabade2e850a3b5be2765b860eace9c4b35f1d5d5b8a591"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/TEMPLATE_SPEC.md",
+      "bytes": 5869,
+      "sha256": "7a98963e43063400649b2d7d447c9f02a1e489425bb18a670a2eae22759343f2"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-01/input.json",
+      "bytes": 565,
+      "sha256": "139865ef592042c3007fc1bb7fcf73d61b429abb5049c0b02968073f7cb7503b"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-01/metadata.json",
+      "bytes": 438,
+      "sha256": "826da5172320bc890e22c56d32a5ec37eeb3cb45598cf733e58381192f57a699"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-01/output.png",
+      "bytes": 425396,
+      "sha256": "8618cb5e9b056f40aac435a96d946ada56d7978b8ca7fd7856175ad399dad82e"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-01/prompt.txt",
+      "bytes": 1956,
+      "sha256": "6e360c668fec9bddcf9e7bc7c92dcc864a2e6d88cef3ebefa5992f10738736f2"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-02/input.json",
+      "bytes": 666,
+      "sha256": "5fafdf559895e550cde99a597f5069a002e0c376193585a001d02ad148c646f3"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-02/metadata.json",
+      "bytes": 438,
+      "sha256": "51f3685ac8e8d53688f5a5bb4916a743e9a2056eff49f48fcfbb5500563e0cb7"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-02/output.png",
+      "bytes": 497885,
+      "sha256": "9c1780e60b034146f322fb8bb4b4ccebbcfee6c5851f44bbe6798355840483a1"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-02/prompt.txt",
+      "bytes": 2024,
+      "sha256": "79c92129d05f3bcac13e5015bec1b2e84ef3bfd87c4aec455b99b060373e309f"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-03/input.json",
+      "bytes": 558,
+      "sha256": "13c3569392048611580d167335db3f9b8941a842aa3cca48b599f6733ea4e7c0"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-03/metadata.json",
+      "bytes": 438,
+      "sha256": "7cd86435c361ffe93c9ff760278d295224e9139429fc6041b29cba0f878b4f9b"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-03/output.png",
+      "bytes": 438856,
+      "sha256": "3099bc6b17b0a013c5142f69d2f3bc42c50d9bbf2246b3c051e6fe05bba11a85"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-03/prompt.txt",
+      "bytes": 1945,
+      "sha256": "13f3868a24a5ec9a2563d5d654e0066924c62292469e75397a80c0258dbc8812"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-04/input.json",
+      "bytes": 621,
+      "sha256": "eacd74ea26ef14b1c02774ad067f8000110acfe626b179cd390bb2efc8258c65"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-04/metadata.json",
+      "bytes": 438,
+      "sha256": "1bc55575de1fba30231bb1ea5aed11c8f3249b832553cf1a257d4d0d6e803718"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-04/output.png",
+      "bytes": 441955,
+      "sha256": "649b32a0f26fe4a930e6b8f6a7d244c6ef895cbe57792f205a0e39c6d5272675"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/example-04/prompt.txt",
+      "bytes": 1975,
+      "sha256": "5b5790382059fd329cb6c620e855d58398fb14b7228e4e2bd83918d8653be4bb"
+    },
+    {
+      "path": "templates/template-01-workbook-practice-book-covers/template.json",
+      "bytes": 5554,
+      "sha256": "65ee78e4f42a286f978b08581727141114ca5f527e43ef3fe107d723a11f5a27"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/TEMPLATE_SPEC.md",
+      "bytes": 5371,
+      "sha256": "e0c32b1bcf8cbfbdf426fc0eb6cb2515e42d1853c3af1e42c83dd6fd3f2525fb"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-01/input.json",
+      "bytes": 722,
+      "sha256": "8dc8a7b95133dcce35008c43ff929efb238c7be839ca4a587245c0cc96e8bec3"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-01/metadata.json",
+      "bytes": 432,
+      "sha256": "40fd1544015a99a70f12f81475e6553164ff52868755723f6782f194d0220550"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-01/output.png",
+      "bytes": 993182,
+      "sha256": "351511aa2a250d5884165e591ab7a8f29077b5aa62a5c3686cc718dcb0930597"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-01/prompt.txt",
+      "bytes": 2059,
+      "sha256": "c494ffa963bb8eb1b2aa6f2964a28f625ade62a068c089ef76eb746fa0b55cd7"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-02/input.json",
+      "bytes": 719,
+      "sha256": "8718fbec73c2a0234b3998c013d50f46dd5d2a38a8769d18ff6d8966b7dd9a25"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-02/metadata.json",
+      "bytes": 432,
+      "sha256": "dcda14a23868056314ff55036bf476106e173d30540bdce183d1f517d6f2698d"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-02/output.png",
+      "bytes": 708127,
+      "sha256": "a219e15bfd89343523ea5e8b94c1b39182986a1db69574aee2507d7b63bd005c"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-02/prompt.txt",
+      "bytes": 2048,
+      "sha256": "f3a0433f73bd5b9cb111aba8fb667723e2439d95a1f11a2b19d951c05d5f1415"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-03/input.json",
+      "bytes": 757,
+      "sha256": "d22083f988303d06cb3f1d10f7b0acda9544c3fee5d47a24dbf0641b6677cd25"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-03/metadata.json",
+      "bytes": 432,
+      "sha256": "ac697308a681be3b48ffacf20bc18c0c319797bd48e9fe2c5fd932baa48fcc60"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-03/output.png",
+      "bytes": 823647,
+      "sha256": "2b88bafad1f0e916149490ef1d4c14c69a0c35246e3c099605e2468cdbafe73f"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-03/prompt.txt",
+      "bytes": 2075,
+      "sha256": "e9b95a19052427dcc853c5c6c984b83d8b8bf68908c531f40c62827387156009"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-04/input.json",
+      "bytes": 808,
+      "sha256": "36841c1d2d5b89ce2899250f5b36f9aa82e3c1b7f5e2f520417fc9cc25ffeaa1"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-04/metadata.json",
+      "bytes": 432,
+      "sha256": "1064c4559f3d488d51deb4247de64adadbf7f7b2f26a1cf2414c7a3e16efcce6"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-04/output.png",
+      "bytes": 708753,
+      "sha256": "3363d261baf6023a356c1d117f93793d1162ed958f791d4edcc661dd209c4e00"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/example-04/prompt.txt",
+      "bytes": 2120,
+      "sha256": "5692a08e389ee81ab0375a8130c56447ac6c6c04d3732adfa837e7ec188160f0"
+    },
+    {
+      "path": "templates/template-02-flyer-promotional-flyer/template.json",
+      "bytes": 5151,
+      "sha256": "9ddefe76ea252c9ca0da8361d82e29b0f853fbf9b0223b04f5f88536066fdbd5"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/TEMPLATE_SPEC.md",
+      "bytes": 5097,
+      "sha256": "764cb9e441575f4547d15c85e04e811186b9a593262162f046b9eac0fcc35354"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-01/input.json",
+      "bytes": 609,
+      "sha256": "597c04c6b35f0f57f1d1d54975fcc925fd7e6aff53f025e21fbd89497a6e5417"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-01/metadata.json",
+      "bytes": 437,
+      "sha256": "aebfd3c11b391b6ea5abf6a60e02dee5888a870188cb39448b8112bf76b3c2d2"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-01/output.png",
+      "bytes": 448100,
+      "sha256": "411eddbae512d6832e08488a3acfb35938dda5f3b4737ba1711524d50ea34177"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-01/prompt.txt",
+      "bytes": 1823,
+      "sha256": "b9aef89a9685e881b5d3ba8c734bba5f60202bbad11a0b7e7cfee36767547a1a"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-02/input.json",
+      "bytes": 584,
+      "sha256": "9811b26d311e1032dbcdca1794af22b73d934e97437eda2a5ee62e3aed6fdd8b"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-02/metadata.json",
+      "bytes": 437,
+      "sha256": "765697758385ca80fad1899f42d02ea59d3e5eb6ebea2079496c3ade39627856"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-02/output.png",
+      "bytes": 439380,
+      "sha256": "a46715d64c10f11e62607cb672e1a213b8d36b8cf94a7eac48755590a7ce8497"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-02/prompt.txt",
+      "bytes": 1787,
+      "sha256": "f64ee69280a6e48459e70650d3576cefb0fd5300a3c0828a3c013e5ce6f2a347"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-03/input.json",
+      "bytes": 602,
+      "sha256": "e426e46e8dcfc49d4f9e05ce26f2b175815204d0e60fcb77ef7d06e8f83ad4b9"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-03/metadata.json",
+      "bytes": 437,
+      "sha256": "43551b6f1c04712b75ca98bc19bb7bbd381467954b7d7f48a4ce68e49ac13db5"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-03/output.png",
+      "bytes": 705668,
+      "sha256": "8ba29099a15483e69e52098d654f9982c2a878f328293065ae7da14476beebdd"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-03/prompt.txt",
+      "bytes": 1786,
+      "sha256": "f458284c1b15ded892293b88ddf8b6e19ce48568a9b73d34c0790178edc386c7"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-04/input.json",
+      "bytes": 663,
+      "sha256": "9ea323edaa1db0151d830b9c99bd2932e0de1e8771693cb6e8e493462d982e71"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-04/metadata.json",
+      "bytes": 437,
+      "sha256": "561f97362654c96d071bf44e92a17cd5537ea4654aea4feddf1075f55dbf7054"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-04/output.png",
+      "bytes": 429291,
+      "sha256": "f24eb1996b8e371999182e9cd6df040595bfa38565cd54b621fed7d6af03ad57"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/example-04/prompt.txt",
+      "bytes": 1837,
+      "sha256": "aac0625ab34394fcc78391dfb3ef8d7c0de29fdd9bcd693a99d29eb2c6d22a6c"
+    },
+    {
+      "path": "templates/template-03-stem-classroom-teaching-aids/template.json",
+      "bytes": 4859,
+      "sha256": "a8230a1cedaaca033db01a282f33e6a6a6ef9f414f935a2914d608ec85e9291f"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/TEMPLATE_SPEC.md",
+      "bytes": 4678,
+      "sha256": "2389c6a12e9324aed5b2a0cd557756c07761fefcd78ee5b151121d53fbcef7d8"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-01/input.json",
+      "bytes": 507,
+      "sha256": "6ae46d06c1f3dd5bd0cede59cfb4a3474a1da60784f4a3853f3eb59a885aca45"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-01/metadata.json",
+      "bytes": 432,
+      "sha256": "446f02eda86c1447c5edd491e3c2973ecbea02a712d3ebf584dd1fdbd783f804"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-01/output.png",
+      "bytes": 872506,
+      "sha256": "d152494060d6c93d353aa2bca15c5dd2d19d73efafa3c9937227dfc414563c2d"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-01/prompt.txt",
+      "bytes": 1663,
+      "sha256": "b67540150ddd69fa32941d1eab86c4d3c43dafe3c9669a8536e005fd884cfdc4"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-02/input.json",
+      "bytes": 525,
+      "sha256": "ac4ac93595ef1ed3dc2f2efd8f2df8b1ef84411c3488564f1fdcb03ba4cd8ab3"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-02/metadata.json",
+      "bytes": 432,
+      "sha256": "7f2cc5b5728e858e461f846623121df53f56f997e3893b49eee4f7966dd92cfd"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-02/output.png",
+      "bytes": 781692,
+      "sha256": "9cd5e88fa8aebdfff586e5c55fc3120b568d9c8cf99ab1c73b8c5b6735039484"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-02/prompt.txt",
+      "bytes": 1686,
+      "sha256": "c89488ffd0ce8bcc7dc45d68e74407e40bfbc3ce65cca56e115adce949ec2b4e"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-03/input.json",
+      "bytes": 515,
+      "sha256": "554a72095741e37dcd260ce7b48b7024ccd54b92b32fdb5efabde17acaf3e9af"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-03/metadata.json",
+      "bytes": 432,
+      "sha256": "8e969af8b9597f9ed630dd2b349d249435b1fad6de194abd5218a1db0231c8a3"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-03/output.png",
+      "bytes": 817729,
+      "sha256": "a05e1f58eb728184a0f077bbff143ed2a4f6d7973474fb52e32f87c0a5ac8e7e"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-03/prompt.txt",
+      "bytes": 1674,
+      "sha256": "4aff0b9f063f431a99da6937c3771cd1ddf5453c6e33bf35cf4649cf5177ee26"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-04/input.json",
+      "bytes": 548,
+      "sha256": "3547230ca34355e44338e0122a00d99ffe8e6dbedc0838cfe3020b6e9ddecef6"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-04/metadata.json",
+      "bytes": 432,
+      "sha256": "3e896f91ecc6e587941c8e2f7061cb500deb8da0070dcc2abea159295b3e7a66"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-04/output.png",
+      "bytes": 968827,
+      "sha256": "def3e10224d1292f9fb95b9d4e8bcee16798b2f307dbfc2671e477a487ae1de5"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/example-04/prompt.txt",
+      "bytes": 1690,
+      "sha256": "588f757781e35371ccc7e0b85f3a0008b02cd49b5ca465ed162861986b0a6bbb"
+    },
+    {
+      "path": "templates/template-04-price-tag-product-label/template.json",
+      "bytes": 4414,
+      "sha256": "91495c17246c5b46d58fcbeba3528539b62fcb09aa81cc96e2998aa039cea510"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/TEMPLATE_SPEC.md",
+      "bytes": 5038,
+      "sha256": "f63fbe9a05bdf6cbd388992fd3e5326e1f293c41bb7e29acf822376386d82ede"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-01/input.json",
+      "bytes": 679,
+      "sha256": "64e72ff0fc1bc189901cfa82a4118c787afc4768b2788e74ef6d2bd8b760a7ae"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-01/metadata.json",
+      "bytes": 440,
+      "sha256": "cd63e346db10c66f9fdaf1b37c71d087c11a551e2506d39c758ab61ba6bbff5e"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-01/output.png",
+      "bytes": 640704,
+      "sha256": "18572e860e49b6dc084326b9c9c45d3301302f6592239af815b28989efdd7959"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-01/prompt.txt",
+      "bytes": 1780,
+      "sha256": "21f85923e45f2e94f34edf46c519d33c2051f13f2c955254ccb65f616228845a"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-02/input.json",
+      "bytes": 652,
+      "sha256": "10acced2b3a9cfb7199ce29994985523b771ab4a653a0a3d5d1e425377ca3f8b"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-02/metadata.json",
+      "bytes": 440,
+      "sha256": "93455cb6773185487803493afd984e0b2727a58eda790eaa412c227ada11b5e8"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-02/output.png",
+      "bytes": 875258,
+      "sha256": "112437906cbbda57b0d2ab5c4eed4f476dfdab5abd8e586874ac4f36cdd0cb37"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-02/prompt.txt",
+      "bytes": 1745,
+      "sha256": "6a7fadc73b98bd9922bd4c5fb324807054b48ada1c8f7124477f5c76534c56ae"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-03/input.json",
+      "bytes": 654,
+      "sha256": "f8441e67ea0c73e461563655d2eb10827cde12260817f5926702d22fb3d211cc"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-03/metadata.json",
+      "bytes": 440,
+      "sha256": "a80d1cc000f150fa0e7ace6c6532b891ea2e5929a7759a3c5c5536785f31bd00"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-03/output.png",
+      "bytes": 843589,
+      "sha256": "d6e93d13eb2bcb1edbe814ac45b0e8fd5662fa86b3efd536a6fb186ae06277e3"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-03/prompt.txt",
+      "bytes": 1754,
+      "sha256": "3858221090e510c9257e976c774a4371c8c0d64114c24abb428b21e079775abc"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-04/input.json",
+      "bytes": 697,
+      "sha256": "2d9c17d55d72b47745208970c2ac70fc0409a7d03849e471ec8735fead751d4b"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-04/metadata.json",
+      "bytes": 440,
+      "sha256": "a0b6f91351f71c652afc19294b66a07ca9f7ca77a21b602fb762c501b236e159"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-04/output.png",
+      "bytes": 937763,
+      "sha256": "a985b0c6950c546ad1f6c53af2aab9c5641b6265d1a9ffd7f83549727510dac2"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/example-04/prompt.txt",
+      "bytes": 1795,
+      "sha256": "1d688059f9cfa678ac6b4cb2963d042a15f67ad78f5329e6533194d7e0fb0ebe"
+    },
+    {
+      "path": "templates/template-05-certificates-achievement-awards/template.json",
+      "bytes": 4801,
+      "sha256": "12d6e7cc44d614d0a8f59a2f7112ac05c773d1fdc2c9ce9e89b34c0103dc3df2"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/TEMPLATE_SPEC.md",
+      "bytes": 4901,
+      "sha256": "e68c6560470a08f353ebdaf277bf9f1b116b05e4ab8821a655fe996ae72adcaa"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-01/input.json",
+      "bytes": 543,
+      "sha256": "d185df733408d7cf909361e2ab5ad33ae2398ce97e827fc022312cd63b165cbf"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-01/metadata.json",
+      "bytes": 442,
+      "sha256": "490f620498f23d388fe4c9d44a0b799cf69b230ad9f97b86b6a4cf2fc3fe6262"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-01/output.png",
+      "bytes": 532078,
+      "sha256": "09fd231af983dbc9977a372e93862a23545d7ea1c5e785581d0e600b457516c6"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-01/prompt.txt",
+      "bytes": 1650,
+      "sha256": "80239c690129fffbc8874c7fad21f0264bd0b9a7c0fdac4564577637f5622b21"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-02/input.json",
+      "bytes": 529,
+      "sha256": "642c91ef7ae053220c082853a6731939ee1ae81120c77f0392dbaca19887abc5"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-02/metadata.json",
+      "bytes": 442,
+      "sha256": "ce29bd9dddd1a09f7fe13f54add06450ba927e1ca5f8e4b0adf78a93e9f06f8e"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-02/output.png",
+      "bytes": 403404,
+      "sha256": "9189a3a55411d10a15164b74bc3bc1f4309dbbfc1f0c8a07527ea4876667b0aa"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-02/prompt.txt",
+      "bytes": 1649,
+      "sha256": "2de868e12f44f73e7e0bbea1e4fb5cdb0caab4227982f420afe5608ae9c143aa"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-03/input.json",
+      "bytes": 529,
+      "sha256": "3e5aaec054df1baffe6059b2bbb6821f57758f7b579f73659a4cccf1b5f4cb3f"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-03/metadata.json",
+      "bytes": 442,
+      "sha256": "ee1500fd60994c40aac69738c81839e4b7a0a5e872c78673e05be2afe644df8e"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-03/output.png",
+      "bytes": 593917,
+      "sha256": "78c28699c23ae055df392d026ba475b8db4592b32440b6b566167a35d8ff576c"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-03/prompt.txt",
+      "bytes": 1631,
+      "sha256": "b7e888eef944c961e83e49d91fba0dacf65d05ac9a8220166251034d0084b987"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04/input.json",
+      "bytes": 606,
+      "sha256": "490967c445b7a9703d74290fb297863370b691cffb0ec5ad549ccc326c0b7b30"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04/metadata.json",
+      "bytes": 442,
+      "sha256": "9810e9234f038b55384b0fcf6b11dc52bf686a831a75571212802f17b905065d"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04/output.png",
+      "bytes": 533203,
+      "sha256": "7ab3bc0dd9cb724b693858c2a3debcac7bb9b11d43d1c7be282d492d3f554e54"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/example-04/prompt.txt",
+      "bytes": 1713,
+      "sha256": "e2a21add0d88bc62e049b8167be21c0a007b9e41d30836a7e42001bbec599508"
+    },
+    {
+      "path": "templates/template-06-perfume-cosmetic-bottle-packaging/template.json",
+      "bytes": 4610,
+      "sha256": "6c1b6efc83390d9ea3fec00457315e3a02de2a98b9e48c3e04e21da77d4ff4f2"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/TEMPLATE_SPEC.md",
+      "bytes": 4870,
+      "sha256": "b7c8f63f9c74c7ccca9aa3989e00699df1c49ae8ffeb65ad40966743dfb9823d"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-01/input.json",
+      "bytes": 554,
+      "sha256": "60d37562123cd19b47ccd0f772d722098b3b826677e97143920f7d97f0d26b2a"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-01/metadata.json",
+      "bytes": 436,
+      "sha256": "1a39384f21537a67f1c3443a8df646a2165cd467f915620b6964ff55fcda5bdd"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-01/output.png",
+      "bytes": 804090,
+      "sha256": "46863e512f6304939db5b9208e8f8edbf86a0a31b396c5547df9563afe07fffb"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-01/prompt.txt",
+      "bytes": 1616,
+      "sha256": "3c6b0f37d2aedf46142639772b37a30c2ce7897af7e7665d63fc620eb3ca6889"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-02/input.json",
+      "bytes": 540,
+      "sha256": "1fb870ec38fe0717f538dcdc0074ad0e3b57b14548d18368e6f95c05abc848e4"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-02/metadata.json",
+      "bytes": 436,
+      "sha256": "0e969eb1ef3e5be74d3c54835bdb1ff2677ba7d11c20f753dcac7de15c2a4da1"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-02/output.png",
+      "bytes": 764507,
+      "sha256": "837a910f5e587c3b9006e0f567a9d0d5f8f055a564761f4a608b245dfd66deb1"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-02/prompt.txt",
+      "bytes": 1595,
+      "sha256": "64152caaca929dfe7fcc6949f4fff5dd3a80a8b26e5af5b26009ab9ec4000c03"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-03/input.json",
+      "bytes": 603,
+      "sha256": "6284ef9428dbbb52968e53a51445e5534a2765d5231160f2db08caf7a4738da2"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-03/metadata.json",
+      "bytes": 436,
+      "sha256": "178c6b422a8a97d8a98ba84e38ee001da117984bed8de3782512d3db8f7f1f56"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-03/output.png",
+      "bytes": 746999,
+      "sha256": "17a327f85da3f5990eb3e4a233b4ea365f4219fc0855e85fa2bdac6d5f377e2d"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-03/prompt.txt",
+      "bytes": 1630,
+      "sha256": "6ec631926ebf073b6ae319879914f260ea24fe3157c84089b87f1d6a76093b43"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-04/input.json",
+      "bytes": 591,
+      "sha256": "a6fb1b99745e5ad93f48d2093e1f910de076c08c94f553fbeb5769cf3d858957"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-04/metadata.json",
+      "bytes": 436,
+      "sha256": "d97a5e2352c14746203f6b1ee9fd8c9770b7407a9534881f19b6be6dd48d546e"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-04/output.png",
+      "bytes": 946442,
+      "sha256": "baa1b1e63bc0e455c8014a0ce9b0be9103cd492cf99be40617a03ce2c62d932d"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/example-04/prompt.txt",
+      "bytes": 1625,
+      "sha256": "6b575899e43c066f994d97b10f196039948c9df7a3f7c592d8166257b7515abf"
+    },
+    {
+      "path": "templates/template-07-chocolate-giftbox-packaging/template.json",
+      "bytes": 4609,
+      "sha256": "d1fbaa8696daae21419fa52df9b2e95be8227260addfc895582957c83d5cc044"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/TEMPLATE_SPEC.md",
+      "bytes": 4788,
+      "sha256": "b0e8e81e261bb7e41163bbac32f0fc91d771ad2a593088282305e2ae6b32ae1b"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-01/input.json",
+      "bytes": 484,
+      "sha256": "643765e97b44d6f5b77e0f61e9ffd1de39f924615e5ebf844ef2811c4c3aa38b"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-01/metadata.json",
+      "bytes": 434,
+      "sha256": "9d017922743d51b4d934156724b558c6996e30bc8c5ed0e93e7c1cf8d4e839c6"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-01/output.png",
+      "bytes": 797607,
+      "sha256": "fb1891287cdd8b7966bbea9c6678982b493960a1cf269aeda047f4929c2e6689"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-01/prompt.txt",
+      "bytes": 1551,
+      "sha256": "018def98213a87dd23654008f22d3a3dd7975c804d07fb9d2d4570036147654d"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-02/input.json",
+      "bytes": 458,
+      "sha256": "7ccaf940efca6a060e51f9ccc4fc66ce1c3fa0b3def20f732b7488016f32ad83"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-02/metadata.json",
+      "bytes": 435,
+      "sha256": "a411fdc10738b638557bf75965362baf7cd74a33738678f10f4c0ec291eee591"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-02/output.png",
+      "bytes": 1012308,
+      "sha256": "3b1a36c7e4acacbd1a50b6ab7ca9ecfb1a709b509b738eaa38e361cda6ad2713"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-02/prompt.txt",
+      "bytes": 1541,
+      "sha256": "d6e1349eb03448c1f758795c87707a8091d80f37b09596908fe87b7b7902b497"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-03/input.json",
+      "bytes": 534,
+      "sha256": "bcdf5a0e616da8bfa6a5725b578a7cf484f64f550c2150509c62e9e275db9e3a"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-03/metadata.json",
+      "bytes": 434,
+      "sha256": "f1b3995050907274187b655d3215a98c2886852f431d40e33f296380e8a78c45"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-03/output.png",
+      "bytes": 667791,
+      "sha256": "f743cf8d93bfe832462212d0817080fbbf05f8afcf232fc9ac4afe18ad584303"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-03/prompt.txt",
+      "bytes": 1562,
+      "sha256": "4934b14820be46601273d40e60b0096a6b43f0448ff323dd51f46bd01ff64910"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-04/input.json",
+      "bytes": 537,
+      "sha256": "001e0b5d1e9a9d6170820a4fa0fcc8a8e0584049e99c097a08d55b5654aff59d"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-04/metadata.json",
+      "bytes": 435,
+      "sha256": "f3035c479c41273c62ea2ed440771264ca9be4a54b028e2f3187f3a6bc817691"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-04/output.png",
+      "bytes": 1068509,
+      "sha256": "18c7b27a2f3fc3ba4d006944aac459965de2288d2fef82c2e42d7d82edd74c22"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/example-04/prompt.txt",
+      "bytes": 1574,
+      "sha256": "8a4f7929325765be5bb25fbc22d2b3c8e3f3b20b757156b7a33e384bd8a7c61c"
+    },
+    {
+      "path": "templates/template-08-puzzle-jigsaw-collectible/template.json",
+      "bytes": 4511,
+      "sha256": "b2e48b1472e9ecff96655dfd62c5560d71bfc54d77fdcb065e618d3668bffe40"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/TEMPLATE_SPEC.md",
+      "bytes": 4866,
+      "sha256": "df4863e31330798b94fae61392d9c20d26732418ea013cba0a8efada4a9beb54"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-01/input.json",
+      "bytes": 543,
+      "sha256": "2adebe7258b0bb973f359ac0e4204ec282ab3751e1e4f7dbde90c4a7884647f3"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-01/metadata.json",
+      "bytes": 432,
+      "sha256": "ea97a3a798eec15b844cdc0665b6144340f9ebc5e6db5bfedc1d88759aa191a0"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-01/output.png",
+      "bytes": 754532,
+      "sha256": "0305a8e8c17ee4485e481f9297514ff0204809f8cdc70e03a7febc9f935f90c5"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-01/prompt.txt",
+      "bytes": 1731,
+      "sha256": "1519170beee1f9d46176c69e7bf322cd5667c6c845f03be328d4cfa25b1284e4"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-02/input.json",
+      "bytes": 550,
+      "sha256": "07056fc50c9fe8e55be911c4fc3106587db23bb26480f561c0214b80bc17b190"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-02/metadata.json",
+      "bytes": 432,
+      "sha256": "22245235b4dd732973d72bbbe7c5fbd3a8783b218d820b823883dc45e539d2a1"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-02/output.png",
+      "bytes": 735791,
+      "sha256": "1de054d108f5743e987e7d1a1c1e31d57fe7b182b5d2515a254e71b1b5dc082a"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-02/prompt.txt",
+      "bytes": 1728,
+      "sha256": "186848024117240e1735903b24f31ceb04dc105b84ffa127277142b65b8cd367"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-03/input.json",
+      "bytes": 586,
+      "sha256": "d4320ed1fdbba8160d54a936de8fafba0498e46310a202f351dc710efa17f710"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-03/metadata.json",
+      "bytes": 432,
+      "sha256": "6c5a6cbcddea53e04ebf2cbbc680abe251060cd2adbed3bf3dd37e728b9b8ee5"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-03/output.png",
+      "bytes": 866554,
+      "sha256": "04fdc86f9f83d1f0800a2b59c3c84c589e34ee0732ade80fffd26b2f1ae45568"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-03/prompt.txt",
+      "bytes": 1751,
+      "sha256": "d72fc239e695b918eabfc1e08dabdf67ded2a3390d1381db5f887f4d0ea3ab9c"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-04/input.json",
+      "bytes": 658,
+      "sha256": "f67ee31faaa5173a0fd1571be9927b14cf840a7b138c3e7b0755fa6f8e70aa57"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-04/metadata.json",
+      "bytes": 432,
+      "sha256": "14626c6460cef2d13e15e355b653879444776d2cbd142809657f857656e563b4"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-04/output.png",
+      "bytes": 634668,
+      "sha256": "901235332a8953eecab379db05e18ab7571cbb2733473a9d3cd39a72c52e8983"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/example-04/prompt.txt",
+      "bytes": 1814,
+      "sha256": "e573bff19449f418897dc1d583c8b6c0c1b107cb104643b0e447719f3a973559"
+    },
+    {
+      "path": "templates/template-09-discount-coupon-voucher/template.json",
+      "bytes": 4571,
+      "sha256": "b542fe6a3eb6621a8c4f17cfa02ae6634ed591aa9ebf40068a26a67cd0419b07"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/TEMPLATE_SPEC.md",
+      "bytes": 4580,
+      "sha256": "bfadc4dc56af2a2020d366b103929bedd5ec05c1b59573940c72b8619569dca0"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-01/input.json",
+      "bytes": 485,
+      "sha256": "ccb4a1e7535efecaee81abd974dd8af56d75891566be3ff676c64286ebfba86b"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-01/metadata.json",
+      "bytes": 428,
+      "sha256": "23372e6535d8bc8afe4d29e73d3f4c29ad779db1a027c0bf9ad10ea936791428"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-01/output.png",
+      "bytes": 432493,
+      "sha256": "3aedd1b59c1f2215a6fd4074d07363cbe3fff7922444fbac6d5e32ec3e366afc"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-01/prompt.txt",
+      "bytes": 1531,
+      "sha256": "e5a5b319ecfc8e7fc77560333bd35c2ecbbea2a9999ad4b45c28abe2eafc20ae"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-02/input.json",
+      "bytes": 468,
+      "sha256": "4cb23720aa9f621f2ffcacf56bf2b240922ac47cf4a47935a3462f55ced75780"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-02/metadata.json",
+      "bytes": 428,
+      "sha256": "2242101fd1b915fd6471c846ff787b622d2aedcb089284f5af5a6512534dce8d"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-02/output.png",
+      "bytes": 432591,
+      "sha256": "eb9b822366ee1174c603492ad461003121f05cb807cb87785123cf227c19efd7"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-02/prompt.txt",
+      "bytes": 1524,
+      "sha256": "112edac390d8fcecb61d57153ee6c583905c9a883f632650c1b2af2d00179f86"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-03/input.json",
+      "bytes": 521,
+      "sha256": "4041bc889d5325b8bf1c1aafbb9d8c28fd805a6bd4cdf75b24a83066696de872"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-03/metadata.json",
+      "bytes": 428,
+      "sha256": "fc604e39826717010ecad45a26cb8f0b927e3c2ad85c3ee00dcdd65fb38d7c7f"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-03/output.png",
+      "bytes": 536219,
+      "sha256": "1307fcd4431bc26a900754a137dd4c4d8041637850d1c7011e9b4144ac5612be"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-03/prompt.txt",
+      "bytes": 1554,
+      "sha256": "c9fd3facf15de0049fa6554d892d96d66d43dd54b2cb4f07f68bf9e77343d5b5"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-04/input.json",
+      "bytes": 564,
+      "sha256": "7ca099d1b76f133e1c4e914419997de2ee0b57c6736a412e84e119a340e45120"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-04/metadata.json",
+      "bytes": 428,
+      "sha256": "5761c4b9f7ba5a1deeaf96a57e49ffba524011ac8d5601ba60cb201c75b18b15"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-04/output.png",
+      "bytes": 482067,
+      "sha256": "21d1f88077818b23f10dcae7455485752174b15ff36c12723c4efb742c45fd49"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/example-04/prompt.txt",
+      "bytes": 1589,
+      "sha256": "20f9d8c5b9856ec9b8581507738a24bc1e0ae740a59afee0de8e355942431d24"
+    },
+    {
+      "path": "templates/template-10-fridge-magnet-merch/template.json",
+      "bytes": 4287,
+      "sha256": "23e712dea91d97fd360b6f6c93d4324ae5fd958158cc0afb1cf885e7efed1bd6"
+    }
+  ]
+}

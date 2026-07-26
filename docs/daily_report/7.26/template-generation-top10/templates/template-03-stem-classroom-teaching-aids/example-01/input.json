@@ -1,0 +1,13 @@
+{
+  "template_id": "T02",
+  "example_id": "template-03-stem-classroom-teaching-aids-example-01",
+  "scenario": "Typical case: classroom whiteboard",
+  "target_audience": "Elementary classroom-decor and teaching-aid sellers",
+  "editable_fields": {
+    "equipment_type": "a classroom whiteboard on a rolling stand with markers and an eraser tray",
+    "topic_title": "The Classroom Whiteboard",
+    "part_labels": "writing surface, marker tray, dry-erase marker, magnetic surface",
+    "caption_text": "Used daily for lessons, notes, and group brainstorming.",
+    "color_palette": "soft blue and white"
+  }
+}

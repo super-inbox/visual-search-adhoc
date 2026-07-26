@@ -1,0 +1,12 @@
+Design a small die-cut FRIDGE MAGNET product mockup, 1:1 square aspect ratio, output size 1200x1200, shown against a plain neutral background with a subtle drop shadow beneath the magnet. FIXED LAYOUT (must match across every variant of this template): one centered die-cut magnet shape (circle) filling most of the frame; a photo/logo/illustration area filling about 80% of the magnet face; a small, understated brand wordmark band along the bottom edge of the magnet face. VARIABLE CONTENT for this specific example: theme = brand promotional, magnet face illustration = a bold minimalist coffee-cup logo icon, brand wordmark text = "Daybreak Coffee Roasters", palette = espresso brown and cream. Render the brand wordmark as real, legible, correctly spelled text. Do not add a watermark. Do not crop the magnet shape at the frame edges.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- must be shown as a single product mockup (not a sheet/grid of many magnets)
+- magnet die-cut shape must not be cropped at the frame edges

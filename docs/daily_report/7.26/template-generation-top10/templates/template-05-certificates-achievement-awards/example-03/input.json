@@ -1,0 +1,15 @@
+{
+  "template_id": "T01",
+  "example_id": "template-05-certificates-achievement-awards-example-03",
+  "scenario": "Different visual content, same layout: sports-day award",
+  "target_audience": "School sports-day and extracurricular event organizers",
+  "editable_fields": {
+    "award_title": "Certificate of Athletic Achievement",
+    "recipient_name": "Jamal Okafor",
+    "org_name": "Riverside Middle School Athletics",
+    "award_reason": "For first place in the Annual Fall Track & Field Day",
+    "date": "September 20, 2026",
+    "signature_name": "Coach Luis Fernandez",
+    "palette_variant": "pastel classroom-friendly (green and gold)"
+  }
+}

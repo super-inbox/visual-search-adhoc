@@ -1,0 +1,15 @@
+{
+  "template_id": "T04",
+  "example_id": "template-02-flyer-promotional-flyer-example-04",
+  "scenario": "Edge case: school-notice flyer with denser text requirements",
+  "target_audience": "School administrators sending home a multi-detail notice",
+  "editable_fields": {
+    "headline": "Lincoln Elementary - Parent-Teacher Conference Week",
+    "hero_image_subject": "a flat-illustration of a calendar page with a pencil and a small school-building icon",
+    "offer_details": "Sign up for a 15-minute slot with your child's teacher. Slots available before and after school.",
+    "date_time": "Nov 3-7, sign-up sheets posted outside each classroom",
+    "contact_info": "Front Office - (555) 330-1200 ext. 2",
+    "cta_text": "Please sign up by Oct 27",
+    "color_scheme": "school navy and gold"
+  }
+}

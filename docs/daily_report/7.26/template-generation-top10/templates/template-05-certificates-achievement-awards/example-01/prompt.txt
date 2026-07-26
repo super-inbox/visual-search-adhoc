@@ -1,0 +1,12 @@
+Design a formal ACHIEVEMENT CERTIFICATE, 4:3 landscape aspect ratio, output size 1600x1200. FIXED LAYOUT (must match across every variant of this template): a decorative border frame around the entire certificate; a seal or ribbon motif badge positioned top-center; a title banner near the top with the award/certificate title in large formal lettering; a recipient name line in the middle in large script or serif lettering; an award reason/description line directly below the recipient name; a bottom row with a signature line on the left and a date line on the right. VARIABLE CONTENT for this specific example: award title = "Certificate of Academic Achievement", recipient name = "Emma Rodriguez", organization name = "Maple Grove Elementary School", award reason = "For outstanding achievement in Mathematics during the Fall semester", date = "December 12, 2026", signature name = "Mrs. Patricia Chen, Principal", palette = pastel classroom-friendly (soft blue and cream). Render all specified text exactly as given, legible and correctly spelled. Do not add a watermark.
+
+STRICT CONSTRAINTS:
+- no watermark of any kind
+- no stock-photo watermark text or agency logos
+- no extra/duplicate text blocks beyond the specified text_slots
+- no misspelled or garbled text -- render all specified text exactly as given, legible at output resolution
+- no meta-references (no 'template', 'placeholder', 'lorem ipsum', or design-tool UI chrome in the image)
+- no cropped or clipped subject at the edges of the frame
+- no low-contrast text over busy backgrounds -- keep all text slots on a readable, sufficiently contrasted zone
+- border/frame must fully enclose the certificate with no gaps
+- recipient name must be visually distinguishable from the award title (different weight/size)
