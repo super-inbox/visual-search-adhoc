@@ -1,0 +1,479 @@
+{
+  "tested_repository": "curify-frontend-prod-template-qa",
+  "tested_commit": "2d4a89f81946414095c122ca6422aa0ec41b09d3",
+  "tested_commit_short": "2d4a89f8",
+  "source_content_drop_commit": "19d9e978e215b0a008f5178e015d11eeaed64227",
+  "source_content_drop_commit_short": "19d9e978",
+  "production_canonical_url": "https://www.curify-ai.com",
+  "production_url_source": "README.md lines 3,5 (repo evidence, not fallback)",
+  "detail_page_route_pattern": "app/[locale]/(public)/nano-template/[slug]/page.tsx",
+  "slug_derivation": "toSlug(id) in lib/nano_pure.ts:151-153 -> strips leading 'template-' prefix",
+  "locale_prefix_mode": "as-needed (en = no prefix, others = /{locale}/... ) per i18n/routing.ts",
+  "templates_expected": 10,
+  "templates_identified": 10,
+  "examples_expected": 40,
+  "examples_identified": 40,
+  "templates": [
+    {
+      "template_id": "template-workbook-practice-book-cover",
+      "slug": "workbook-practice-book-cover",
+      "production_url_en": "https://www.curify-ai.com/nano-template/workbook-practice-book-cover",
+      "title": "Nano Banana Prompt: Workbook & Practice-Book Cover Collection Generator | Curify AI",
+      "category": "Workbook & Practice-Book Cover",
+      "description": "Printable subject workbook / homework practice-booklet cover art that Curify's catalog currently has zero coverage for. For teachers, tutoring centers, homeschool parents, edtech content sellers.",
+      "og_image": "/images/nano_insp_preview/template-workbook-practice-book-cover-multiplication-division-practice-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-workbook-practice-book-cover-multiplication-division-practice-prev.jpg",
+      "topics": [
+        "education",
+        "learning",
+        "printable",
+        "book-cover",
+        "worksheet",
+        "classroom",
+        "kids",
+        "design"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "3:4",
+      "declared_output_size": "1200x1600",
+      "parameters_count": 5,
+      "parameters": [
+        "subject_name",
+        "grade_level",
+        "series_brand",
+        "accent_color",
+        "subject_motif"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-workbook-practice-book-cover-english-chinese-vocabulary-practice",
+        "template-workbook-practice-book-cover-mixed-subject-weekly-review",
+        "template-workbook-practice-book-cover-multiplication-division-practice",
+        "template-workbook-practice-book-cover-states-of-matter-practice"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-promotional-flyer",
+      "slug": "promotional-flyer",
+      "production_url_en": "https://www.curify-ai.com/nano-template/promotional-flyer",
+      "title": "Nano Banana Prompt: Flyer & Promotional-Flyer Templates Generator | Curify AI",
+      "category": "Flyer & Promotional-Flyer",
+      "description": "Compact, info-dense single-page promotional flyers (restaurant/retail/event/school-notice), distinct from Curify's existing wall-poster format. For restaurants, retail/small business owners, event organizers, schools.",
+      "og_image": "/images/nano_insp_preview/template-promotional-flyer-golden-wok-bistro-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-promotional-flyer-golden-wok-bistro-prev.jpg",
+      "topics": [
+        "design",
+        "marketing",
+        "poster",
+        "flyer",
+        "business",
+        "promotion",
+        "event"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "4:5",
+      "declared_output_size": "1600x2000",
+      "parameters_count": 7,
+      "parameters": [
+        "headline",
+        "offer_details",
+        "date_time",
+        "contact_info",
+        "cta_text",
+        "hero_image_subject",
+        "color_scheme"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-promotional-flyer-golden-wok-bistro",
+        "template-promotional-flyer-harbor-pine-boutique",
+        "template-promotional-flyer-lincoln-elementary",
+        "template-promotional-flyer-riverside-fall-festival"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-stem-classroom-teaching-aid",
+      "slug": "stem-classroom-teaching-aid",
+      "production_url_en": "https://www.curify-ai.com/nano-template/stem-classroom-teaching-aid",
+      "title": "Nano Banana Prompt: STEM Classroom Teaching-Aid Illustrations Generator | Curify AI",
+      "category": "STEM Classroom Teaching-Aid Illustrations",
+      "description": "Flat-vector, labeled classroom-equipment illustrations (whiteboard, microscope, abacus, etc.) for K-12 STEM teaching materials. For k-12 teachers, tutoring centers, stem curriculum designers, classroom-decor sellers.",
+      "og_image": "/images/nano_insp_preview/template-stem-classroom-teaching-aid-classroom-whiteboard-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-stem-classroom-teaching-aid-classroom-whiteboard-prev.jpg",
+      "topics": [
+        "education",
+        "science",
+        "learning",
+        "infographic",
+        "classroom",
+        "diagram",
+        "stem"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "1:1",
+      "declared_output_size": "1600x1600",
+      "parameters_count": 5,
+      "parameters": [
+        "equipment_type",
+        "part_labels",
+        "topic_title",
+        "caption_text",
+        "color_palette"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-stem-classroom-teaching-aid-basic-circuit-board",
+        "template-stem-classroom-teaching-aid-classroom-whiteboard",
+        "template-stem-classroom-teaching-aid-compound-microscope",
+        "template-stem-classroom-teaching-aid-counting-abacus"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-price-tag-product-label",
+      "slug": "price-tag-product-label",
+      "production_url_en": "https://www.curify-ai.com/nano-template/price-tag-product-label",
+      "title": "Nano Banana Prompt: Price Tag & Product Label Templates Generator | Curify AI",
+      "category": "Price Tag & Product Label",
+      "description": "Small die-cut-style retail price tags and product labels for boutique, sale, and gift-shop merchandising. For small retailers, boutique/handmade sellers, e-commerce merchandisers.",
+      "og_image": "/images/nano_insp_preview/template-price-tag-product-label-linen-wrap-dress-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-price-tag-product-label-linen-wrap-dress-prev.jpg",
+      "topics": [
+        "design",
+        "product",
+        "label",
+        "retail",
+        "packaging",
+        "ecommerce"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "2:3",
+      "declared_output_size": "1000x1500",
+      "parameters_count": 6,
+      "parameters": [
+        "brand_name",
+        "price",
+        "product_name",
+        "tag_shape_variant",
+        "seasonal_motif",
+        "color_scheme"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-price-tag-product-label-cedarwood-soy-candle",
+        "template-price-tag-product-label-ceramic-lake-view-mug",
+        "template-price-tag-product-label-hand-painted-glass-ornament-set",
+        "template-price-tag-product-label-linen-wrap-dress"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-achievement-certificate-award",
+      "slug": "achievement-certificate-award",
+      "production_url_en": "https://www.curify-ai.com/nano-template/achievement-certificate-award",
+      "title": "Nano Banana Prompt: Certificates & Achievement Awards Collection Generator | Curify AI",
+      "category": "Certificates & Achievement Awards",
+      "description": "Formal, bordered achievement/award certificates for classrooms, corporate recognition, and event competitions. For teachers, k-12 schools, corporate hr / recognition programs, event & competition organizers.",
+      "og_image": "/images/nano_insp_preview/template-achievement-certificate-award-certificate-of-academic-achievement-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-achievement-certificate-award-certificate-of-academic-achievement-prev.jpg",
+      "topics": [
+        "design",
+        "printable",
+        "certificate",
+        "award",
+        "education",
+        "template"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "4:3",
+      "declared_output_size": "1600x1200",
+      "parameters_count": 7,
+      "parameters": [
+        "award_title",
+        "recipient_name",
+        "org_name",
+        "award_reason",
+        "date",
+        "signature_name",
+        "palette_variant"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-achievement-certificate-award-certificate-of-academic-achievement",
+        "template-achievement-certificate-award-certificate-of-athletic-achievement",
+        "template-achievement-certificate-award-certificate-of-course-completion",
+        "template-achievement-certificate-award-certificate-of-excellence"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-perfume-cosmetic-bottle-mockup",
+      "slug": "perfume-cosmetic-bottle-mockup",
+      "production_url_en": "https://www.curify-ai.com/nano-template/perfume-cosmetic-bottle-mockup",
+      "title": "Nano Banana Prompt: Perfume & Cosmetic Bottle Packaging Mockups Generator | Curify AI",
+      "category": "Perfume & Cosmetic Bottle Packaging",
+      "description": "Studio-lit glass-bottle product mockups for perfume/cosmetic brand launches and beauty social-media teasers. For cosmetics/fragrance brands, beauty e-commerce sellers, brand-launch marketers.",
+      "og_image": "/images/nano_insp_preview/template-perfume-cosmetic-bottle-mockup-velvet-amber-eau-de-parfum-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-perfume-cosmetic-bottle-mockup-velvet-amber-eau-de-parfum-prev.jpg",
+      "topics": [
+        "design",
+        "product",
+        "packaging",
+        "mockup",
+        "beauty",
+        "cosmetics",
+        "luxury"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "3:4",
+      "declared_output_size": "1200x1600",
+      "parameters_count": 5,
+      "parameters": [
+        "bottle_shape_variant",
+        "brand_name",
+        "product_name",
+        "palette",
+        "backdrop_tone"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-perfume-cosmetic-bottle-mockup-lavender-calm-roll-on",
+        "template-perfume-cosmetic-bottle-mockup-renewing-vitamin-c-serum",
+        "template-perfume-cosmetic-bottle-mockup-signature-trio-gift-set",
+        "template-perfume-cosmetic-bottle-mockup-velvet-amber-eau-de-parfum"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-chocolate-giftbox-packaging",
+      "slug": "chocolate-giftbox-packaging",
+      "production_url_en": "https://www.curify-ai.com/nano-template/chocolate-giftbox-packaging",
+      "title": "Nano Banana Prompt: Chocolate & Specialty Gift-Box Packaging Generator | Curify AI",
+      "category": "Chocolate & Specialty Gift-Box Packaging",
+      "description": "Layered gift-box mockups (open lid, visible compartments, ribbon) for chocolate and holiday/gift merchandising, distinct from Curify's existing generic 'mystery box' style. For confectionery/gift retailers, holiday-season sellers, corporate gifting.",
+      "og_image": "/images/nano_insp_preview/template-chocolate-giftbox-packaging-winter-holiday-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-chocolate-giftbox-packaging-winter-holiday-prev.jpg",
+      "topics": [
+        "design",
+        "product",
+        "packaging",
+        "giftbox",
+        "food",
+        "celebration"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "1:1",
+      "declared_output_size": "1600x1600",
+      "parameters_count": 5,
+      "parameters": [
+        "occasion",
+        "brand_name",
+        "ribbon_color",
+        "box_pattern",
+        "compartment_contents"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-chocolate-giftbox-packaging-corporate-year-end-gifting",
+        "template-chocolate-giftbox-packaging-mid-autumn-festival-mooncake-adjacent",
+        "template-chocolate-giftbox-packaging-valentine-s-day",
+        "template-chocolate-giftbox-packaging-winter-holiday"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-jigsaw-puzzle-box",
+      "slug": "jigsaw-puzzle-box",
+      "production_url_en": "https://www.curify-ai.com/nano-template/jigsaw-puzzle-box",
+      "title": "Nano Banana Prompt: Puzzle & Jigsaw Collectible Templates Generator | Curify AI",
+      "category": "Puzzle & Jigsaw Collectible",
+      "description": "Collectible jigsaw-puzzle box-cover mockups for merch/gift-shop and licensed-IP puzzle products. For collectible/merch sellers, gift shops, licensed-ip merchandise producers.",
+      "og_image": "/images/nano_insp_preview/template-jigsaw-puzzle-box-mountain-lake-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-jigsaw-puzzle-box-mountain-lake-prev.jpg",
+      "topics": [
+        "design",
+        "product",
+        "puzzle",
+        "game",
+        "collectible",
+        "merch"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "4:3",
+      "declared_output_size": "1600x1200",
+      "parameters_count": 4,
+      "parameters": [
+        "theme_ip",
+        "piece_count",
+        "palette",
+        "cover_art_subject"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-jigsaw-puzzle-box-coastal-city-map",
+        "template-jigsaw-puzzle-box-forest-friends",
+        "template-jigsaw-puzzle-box-mountain-lake",
+        "template-jigsaw-puzzle-box-night-market"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-discount-coupon-voucher",
+      "slug": "discount-coupon-voucher",
+      "production_url_en": "https://www.curify-ai.com/nano-template/discount-coupon-voucher",
+      "title": "Nano Banana Prompt: Discount Coupon & Promotional Voucher Templates Generator | Curify AI",
+      "category": "Discount Coupon & Promotional Voucher",
+      "description": "Tear-tab ticket-style discount coupons and vouchers for retail, restaurant, and loyalty-program promotions. For retailers, restaurants, membership/loyalty programs.",
+      "og_image": "/images/nano_insp_preview/template-discount-coupon-voucher-cedar-lane-home-goods-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-discount-coupon-voucher-cedar-lane-home-goods-prev.jpg",
+      "topics": [
+        "design",
+        "marketing",
+        "coupon",
+        "voucher",
+        "business",
+        "promotion",
+        "retail"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "5:2",
+      "declared_output_size": "2000x800",
+      "parameters_count": 6,
+      "parameters": [
+        "business_name",
+        "discount_amount",
+        "discount_type",
+        "expiry_date",
+        "terms_text",
+        "color_scheme"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-discount-coupon-voucher-basil-vine-trattoria",
+        "template-discount-coupon-voucher-cedar-lane-home-goods",
+        "template-discount-coupon-voucher-daybreak-coffee-roasters",
+        "template-discount-coupon-voucher-summit-fitness-club-loyalty-rewards"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    },
+    {
+      "template_id": "template-fridge-magnet-merch",
+      "slug": "fridge-magnet-merch",
+      "production_url_en": "https://www.curify-ai.com/nano-template/fridge-magnet-merch",
+      "title": "Nano Banana Prompt: Fridge Magnet & Small Merch-Item Templates Generator | Curify AI",
+      "category": "Fridge Magnet & Small Merch-Item",
+      "description": "Small die-cut fridge-magnet product mockups beyond Curify's existing single travel-landmark theme. For souvenir/gift shops, small brands doing promotional merch, print-on-demand sellers.",
+      "og_image": "/images/nano_insp_preview/template-fridge-magnet-merch-custom-photo-prev.jpg",
+      "og_image_cdn_url": "https://cdn.curify-ai.com/images/nano_insp_preview/template-fridge-magnet-merch-custom-photo-prev.jpg",
+      "topics": [
+        "design",
+        "merch",
+        "magnet",
+        "souvenir",
+        "product",
+        "decor"
+      ],
+      "rank_score": 90,
+      "base_rank_score": 90,
+      "allow_generation": true,
+      "creation_date": "2026-07-28",
+      "declared_aspect_ratio": "1:1",
+      "declared_output_size": "1200x1200",
+      "parameters_count": 5,
+      "parameters": [
+        "theme",
+        "shape_variant",
+        "palette",
+        "face_subject",
+        "brand_wordmark"
+      ],
+      "locales_in_nano_templates_json": [
+        "en"
+      ],
+      "example_count": 4,
+      "example_ids": [
+        "template-fridge-magnet-merch-brand-promotional",
+        "template-fridge-magnet-merch-custom-photo",
+        "template-fridge-magnet-merch-holiday-seasonal",
+        "template-fridge-magnet-merch-quote-decorative"
+      ],
+      "source_file_template": "public/data/nano_templates.json",
+      "source_file_examples": "public/data/nano_inspiration.json",
+      "source_file_i18n": "messages/{10 locales}/nano.json"
+    }
+  ]
+}
