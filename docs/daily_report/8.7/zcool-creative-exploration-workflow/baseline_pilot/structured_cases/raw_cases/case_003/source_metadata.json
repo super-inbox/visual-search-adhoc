@@ -1,0 +1,21 @@
+{
+  "case_id": "case_003",
+  "source_platform": "zcool",
+  "source_url": "https://www.zcool.com.cn/work/ZNjQ0MTA3MDg=.html",
+  "source_title": "MELLOWCO好醇恰巧|品牌全案设计",
+  "source_author": "神秘熊_Design",
+  "source_publish_date": "3年前（项目时间标注为2023.01）",
+  "source_access_date": "2026-08-05",
+  "design_category": "brand_full_case",
+  "industry": "food_chocolate",
+  "brand_or_project_name": "MELLOWCO好醇恰巧",
+  "language": "zh",
+  "case_summary": "低卡牛奶巧克力品牌，正文有清晰的产品定位与受众说明，但设计交付内容只以'标志/VIS识别/产品包装'服务类别列出，缺乏分阶段的过程叙述文字。图片数量大（40+），是测试组合图/重复图处理规则的良好素材，但本 Pilot 无法验证图片内容。",
+  "workflow_completeness": "partial",
+  "workflow_order_recoverability": "low",
+  "source_quality": "text_ok_images_blocked",
+  "usable_for_workflow_training": false,
+  "usage_recommendation": "usable_for_analysis_only",
+  "copyright_or_reuse_notes": "内容为站酷平台设计师'神秘熊_Design'原创作品，版权归原作者/工作室所有，本研究仅做内部数据结构验证，不做二次发布。",
+  "review_status": "reviewed_by_ai_only"
+}

@@ -1,0 +1,13 @@
+{
+  "case_id": "case_005",
+  "steps": [],
+  "missing_stages": [
+    "project_brief", "business_context", "brand_research", "competitor_research",
+    "audience_definition", "brand_strategy", "brand_positioning", "naming",
+    "moodboard", "reference_collection", "creative_direction", "concept_development",
+    "color_system", "logo_sketch", "logo_exploration", "logo_refinement",
+    "logo_selection", "logo_system", "typography", "custom_lettering",
+    "graphic_elements", "packaging", "print_materials", "marketing_materials",
+    "brand_guidelines"
+  ]
+}

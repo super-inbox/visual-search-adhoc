@@ -1,0 +1,189 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "zcool-design-workflow-schema-v0.1",
+  "title": "Design Workflow Reconstruction Schema (v0.1, Pilot)",
+  "description": "Schema for reverse-constructing design-workflow data from public zcool.com.cn brand design case pages. Pilot-quality: field set is stable but not yet validated at scale.",
+  "type": "object",
+  "definitions": {
+    "stage_type": {
+      "type": "string",
+      "enum": [
+        "project_brief",
+        "business_context",
+        "brand_research",
+        "competitor_research",
+        "audience_definition",
+        "brand_strategy",
+        "brand_positioning",
+        "naming",
+        "moodboard",
+        "reference_collection",
+        "creative_direction",
+        "concept_development",
+        "color_system",
+        "logo_sketch",
+        "logo_exploration",
+        "logo_refinement",
+        "logo_selection",
+        "logo_system",
+        "typography",
+        "custom_lettering",
+        "graphic_elements",
+        "illustration_system",
+        "icon_system",
+        "photography_direction",
+        "packaging",
+        "print_materials",
+        "marketing_materials",
+        "social_media",
+        "digital_application",
+        "merchandise",
+        "signage",
+        "spatial_design",
+        "store_design",
+        "brand_guidelines",
+        "final_presentation",
+        "unknown"
+      ]
+    },
+    "evidence_type": {
+      "type": "string",
+      "enum": ["explicit", "visual_explicit", "inferred", "unknown"],
+      "description": "explicit: page body text explicitly describes the step/decision. visual_explicit: the image itself unambiguously shows the stage (e.g. a color swatch sheet, logo sketch grid, type spec sheet). inferred: only derivable from surrounding context/order, not stated. unknown: cannot be determined. `inferred` must never be treated as a confirmed fact downstream."
+    },
+    "confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "workflow_completeness": {
+      "type": "string",
+      "enum": ["complete", "substantial", "partial", "showcase_only", "unusable"],
+      "description": "complete: brief through final application all present with explicit or visual_explicit evidence and recoverable order. substantial: most mid-pipeline stages present (e.g. strategy + at least one exploration/selection stage + at least one output stage) but brief or guidelines may be missing. partial: only a few stages recoverable, mostly single-stage evidence, order largely unrecoverable. showcase_only: only final outputs/mockups present, no process evidence of any kind. unusable: page is not a real single-project design case (e.g. multi-project collection, generic article) or content is too degraded to analyze."
+    },
+    "order_confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low", "unknown"]
+    },
+    "review_status": {
+      "type": "string",
+      "enum": ["not_reviewed", "in_review", "reviewed_by_ai_only", "reviewed_by_human", "needs_human_review"]
+    }
+  },
+  "properties": {
+    "case": {
+      "type": "object",
+      "description": "Section A — case-level fields, one object per pilot case.",
+      "required": ["case_id", "source_platform", "source_url", "source_access_date", "workflow_completeness", "usable_for_workflow_training", "review_status"],
+      "properties": {
+        "case_id": { "type": "string", "description": "Unique within pilot_cases.jsonl, e.g. case_001." },
+        "source_platform": { "type": "string", "const": "zcool" },
+        "source_url": { "type": "string", "format": "uri" },
+        "source_title": { "type": "string" },
+        "source_author": { "type": "string" },
+        "source_publish_date": { "type": ["string", "null"], "description": "As stated on page, often relative (e.g. '1年前'); record raw string, do not compute an absolute date that the page did not provide." },
+        "source_access_date": { "type": "string", "format": "date" },
+        "design_category": { "type": "string", "description": "e.g. brand_full_case, brand_full_case_packaging, logo_showcase, logo_collection, educational_article." },
+        "industry": { "type": "string" },
+        "brand_or_project_name": { "type": "string" },
+        "language": { "type": "string", "const": "zh" },
+        "case_summary": { "type": "string", "description": "1-3 sentence factual summary; must not include invented details beyond what the page states." },
+        "workflow_completeness": { "$ref": "#/definitions/workflow_completeness" },
+        "workflow_order_recoverability": { "$ref": "#/definitions/order_confidence" },
+        "source_quality": {
+          "type": "string",
+          "enum": ["text_and_images_ok", "text_ok_images_blocked", "text_partial_images_blocked", "degraded", "inaccessible"],
+          "description": "Pilot note: as of 2026-08-05 all 8 candidate pages returned text_ok_images_blocked via WebFetch — real image bytes were not retrievable (placeholder images only), see logs/access_log.md."
+        },
+        "usable_for_workflow_training": { "type": "boolean" },
+        "usage_recommendation": {
+          "type": "string",
+          "enum": ["usable_for_workflow_training", "usable_as_visual_reference_only", "usable_for_analysis_only", "not_recommended"]
+        },
+        "copyright_or_reuse_notes": { "type": "string", "description": "Must state platform, author, and that content is zcool designer IP, not Curify-owned." },
+        "review_status": { "$ref": "#/definitions/review_status" }
+      }
+    },
+    "step": {
+      "type": "object",
+      "description": "Section B — one workflow step. A case has 0..N steps.",
+      "required": ["step_id", "case_id", "step_order", "stage_type", "evidence_type", "confidence", "order_confidence"],
+      "properties": {
+        "step_id": { "type": "string", "description": "Unique within its case, e.g. case_006_step_03." },
+        "case_id": { "type": "string" },
+        "step_order": { "type": "integer", "minimum": 1 },
+        "stage_type": { "$ref": "#/definitions/stage_type" },
+        "stage_name": { "type": "string", "description": "Human-readable label, may be the page's own section heading if present." },
+        "stage_goal": { "type": ["string", "null"] },
+        "input_assets": { "type": "array", "items": { "type": "string" }, "description": "asset_id references." },
+        "input_context": { "type": ["string", "null"] },
+        "design_operation": { "type": ["string", "null"], "description": "What the designer did in this step, stated or visually evident." },
+        "candidate_outputs": { "type": "array", "items": { "type": "string" }, "description": "asset_id references to candidate/alternative outputs, if shown." },
+        "selected_output": { "type": ["string", "null"], "description": "asset_id of the chosen candidate, if stated or visually marked." },
+        "selection_reason": { "type": ["string", "null"] },
+        "revision_instruction": { "type": ["string", "null"] },
+        "output_assets": { "type": "array", "items": { "type": "string" } },
+        "output_description": { "type": ["string", "null"] },
+        "next_step_dependencies": { "type": "array", "items": { "type": "string" }, "description": "step_id references this step feeds into." },
+        "evidence_text": { "type": ["string", "null"], "description": "Verbatim or closely-paraphrased quote from page body supporting this step. Required when evidence_type is explicit." },
+        "evidence_asset_ids": { "type": "array", "items": { "type": "string" } },
+        "evidence_type": { "$ref": "#/definitions/evidence_type" },
+        "confidence": { "$ref": "#/definitions/confidence" },
+        "order_confidence": { "$ref": "#/definitions/order_confidence" },
+        "order_basis": {
+          "type": "string",
+          "enum": ["explicit_text_sequence", "page_visual_top_to_bottom_order", "image_numbering_or_heading", "design_logic_dependency", "manual_inference"],
+          "description": "Which evidence tier (per CLEANING_RULES_V0.1.md section 7) established step_order."
+        },
+        "quality_flags": { "type": "array", "items": { "type": "string" } },
+        "review_notes": { "type": ["string", "null"] }
+      }
+    },
+    "asset": {
+      "type": "object",
+      "description": "Section C — one visual/media asset referenced by a case.",
+      "required": ["asset_id", "case_id", "asset_type", "is_process_asset", "is_final_showcase", "usable_for_analysis", "usable_for_training"],
+      "properties": {
+        "asset_id": { "type": "string" },
+        "case_id": { "type": "string" },
+        "asset_type": {
+          "type": "string",
+          "enum": ["image", "long_image_panel", "composite_image", "text_block", "video", "unknown"]
+        },
+        "source_url": { "type": ["string", "null"], "format": "uri" },
+        "local_path": { "type": ["string", "null"], "description": "Must be null unless the file was actually downloaded in this session. Never fabricate a path." },
+        "source_position": { "type": ["integer", "null"], "description": "1-indexed position of the asset in the page's original image sequence." },
+        "caption": { "type": ["string", "null"] },
+        "detected_content": { "type": ["string", "null"], "description": "What the asset appears to show. If image bytes were not retrievable (per source_quality), this must be null or explicitly 'unknown - image not retrieved', never guessed from caption alone." },
+        "workflow_stage_candidates": { "type": "array", "items": { "$ref": "#/definitions/stage_type" } },
+        "is_process_asset": { "type": "boolean" },
+        "is_final_showcase": { "type": "boolean" },
+        "is_composite": { "type": "boolean" },
+        "is_duplicate": { "type": "boolean" },
+        "duplicate_group": { "type": ["string", "null"] },
+        "has_watermark": { "type": ["boolean", "string"], "description": "boolean if verified visually; string 'unknown' if image bytes unavailable." },
+        "usable_for_analysis": { "type": "boolean" },
+        "usable_for_training": { "type": "boolean" },
+        "quality_flags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "long_image_panel": {
+      "type": "object",
+      "description": "Optional sub-structure for section on long-image splitting (see CLEANING_RULES_V0.1.md section 3). Not populated in this pilot (no images were downloaded), defined for forward compatibility.",
+      "required": ["original_asset_id", "panel_index"],
+      "properties": {
+        "original_asset_id": { "type": "string" },
+        "panel_index": { "type": "integer", "minimum": 0 },
+        "panel_bbox": {
+          "type": ["object", "null"],
+          "properties": {
+            "x": { "type": "number" },
+            "y": { "type": "number" },
+            "width": { "type": "number" },
+            "height": { "type": "number" }
+          }
+        },
+        "panel_stage_candidates": { "type": "array", "items": { "$ref": "#/definitions/stage_type" } }
+      }
+    }
+  }
+}
