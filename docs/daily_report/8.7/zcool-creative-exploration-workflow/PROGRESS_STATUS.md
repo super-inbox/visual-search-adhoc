@@ -1,6 +1,6 @@
-Task: zcool creative exploration workflow — Phase 4 (image access validation)
+Task: zcool creative exploration workflow — Phase 5 (targeted candidate screening)
 
-Current phase: PHASE_E_COMPLETE — small-scale IMAGE_ACCESS_VALIDATION run on the 3 existing baseline-pilot cases (case_001–case_003). No new cases searched or scraped, no new creative_explore queries added, no changes to the authoritative curify-studio queries.jsonl.
+Current phase: PHASE_F_COMPLETE — small-scale, targeted discovery and screening of 10 new zcool candidate cases (ZCE-CAND-001..010). No creative_explore query generated, no case promoted to a formal structured case record, no changes to the authoritative curify-studio queries.jsonl or to provenance/query_to_case_mapping.jsonl.
 
 Phase status:
 - Phase A (verify authoritative query schema):     COMPLETE — origin/main confirmed as super-inbox/curify-studio, file exists, read via git show, compared against local worktree copy (byte-identical)
@@ -8,8 +8,21 @@ Phase status:
 - Phase C (migrate baseline pilot cleaning outputs):  COMPLETE — 31 files migrated, 12 files explicitly excluded and logged, manifest written
 - Phase D (case eligibility + local candidate queries + provenance): COMPLETE — see prior entry below
 - Phase E (image access validation, 3 cases only):    COMPLETE — see below; IMAGE_ACCESS_VALIDATION now PASSED
-- New candidate discovery / scraping:                 NOT_STARTED (still out of scope; SCALE_UP_SCRAPING recommendation updated to CONTINUE_TARGETED_ONLY but not acted on)
+- Phase F (targeted new-candidate screening, 10 cases): COMPLETE — see below; candidates/ populated, no formal case created
 - New benchmark query authoring in the authoritative curify-studio queries.jsonl: NOT_STARTED and NOT IN SCOPE for this repo — this task only produces local, adhoc-repo candidate queries
+
+Completed this phase (Phase F — targeted candidate screening):
+- Searched zcool.com.cn with 8 targeted Chinese keyword phrases (see candidates/CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md §2); triaged search results down to 10 real /work/*.html candidate pages (excluded /collection/*, /tag/*, and author-homepage links)
+- Rendered all 10 pages with the same Playwright/Chromium method validated in Phase E: scrolled to trigger lazyload, saved one internal-research full-page screenshot per candidate to candidates/screenshots/{id}_full_page.png, extracted visible page text and real data-src image URLs (never the bg-placeholder.jpg src)
+- Verified all 10 screenshots decode correctly and are non-blank (PIL verify + per-crop pixel-stddev sampling); verified 30/30 sampled data-src URLs (3 per candidate, not a bulk download) return HTTP 200 via HEAD request
+- Manually reviewed cropped sections of each full-page screenshot (5 crops per candidate: top/first-third/middle/lower-third/final) plus each page's extracted text to score all 9 creative-exploration criteria per candidate
+- Wrote candidates/creative_exploration_candidates.csv (10 rows, ZCE-CAND-001..010), candidates/CANDIDATE_EVIDENCE_INDEX.csv (25 evidence rows), candidates/CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md
+- Result: 1 SELECT (ZCE-CAND-001, score 8/9), 0 BACKUP, 8 REJECT, 1 NEGATIVE_SAMPLE (ZCE-CAND-010, score 2/9) — standards were not loosened to manufacture additional SELECT/BACKUP results
+- Updated README.md, PROGRESS_STATUS.md (this file), CREATIVE_EXPLORATION_FINDINGS.md to reflect Phase F status only — no existing case facts changed, no new creative_explore query added, no provenance/query_to_case_mapping.jsonl change
+- IMAGE_ACCESS_VALIDATION and SCALE_UP_SCRAPING statuses unchanged from Phase E (PASSED / CONTINUE_TARGETED_ONLY) — this phase acted on, but did not change, that recommendation
+
+Open item new this phase, requiring a human decision:
+- Whether to authorize a formal structured workflow-cleaning pass on ZCE-CAND-001 (the sole SELECT candidate) next phase, and whether brief-derived-only queries should be drafted for the 4 REJECT candidates that have a real brief but no workflow evidence (ZCE-CAND-004, 005, 008, 009) — see candidates/CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md §13, §15.
 
 Completed this phase (Phase E — image access validation):
 - Read `source_url` for case_001–case_003 from their existing `source_metadata.json` (not re-derived, not guessed)
@@ -62,4 +75,4 @@ Commit status: NOT_COMMITTED
 Push status: NOT_PUSHED
 PR status: NOT_CREATED
 
-Recommended next action: (1) obtain schema-owner (Jay) confirmation before any `AR-ZCE-xxx` candidate query is proposed for merge into the authoritative `queries.jsonl`; (2) obtain a human decision on whether/how to act on the new `SCALE_UP_SCRAPING: CONTINUE_TARGETED_ONLY` recommendation (targeted case selection + copyright/reuse policy), now that the image-access blocker is resolved.
+Recommended next action: (1) obtain schema-owner (Jay) confirmation before any `AR-ZCE-xxx` candidate query is proposed for merge into the authoritative `queries.jsonl`; (2) obtain a human decision on whether/how to act on the new `SCALE_UP_SCRAPING: CONTINUE_TARGETED_ONLY` recommendation (targeted case selection + copyright/reuse policy), now that the image-access blocker is resolved; (3) obtain a human decision on whether to authorize a formal structured workflow-cleaning pass on the Phase F SELECT candidate `ZCE-CAND-001`, and whether to draft brief-derived-only queries for the 4 Phase F REJECT candidates that have a real brief but no workflow evidence.

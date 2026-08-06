@@ -1,5 +1,8 @@
 # zcool Creative Exploration Workflow — Phase 3 (Local Candidate Query Generation + Provenance)
 
+**Phase 5 update (2026-08-07):** small-scale, targeted discovery of **10 new** zcool candidate cases (`ZCE-CAND-001`..`ZCE-CAND-010`), searched, opened in a real browser, screenshotted, and scored against a 9-criterion creative-exploration rubric. Result: **1 SELECT** (`ZCE-CAND-001`, a full 品牌视觉升级 process case with a real sketch→comparison→final progression), **0 BACKUP**, **8 REJECT**, **1 NEGATIVE_SAMPLE** (`ZCE-CAND-010`, a highly polished but process-free final-result-only case, kept as a deliberate counter-example). No new `creative_explore` query was generated, no `provenance/query_to_case_mapping.jsonl` change, no official `queries.jsonl` change, no case promoted to a formal structured `case_00N` record — this phase is candidate screening only. Full detail in `candidates/CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md`, `candidates/creative_exploration_candidates.csv`, and `candidates/CANDIDATE_EVIDENCE_INDEX.csv`.
+- `IMAGE_ACCESS_VALIDATION` and `SCALE_UP_SCRAPING` statuses unchanged from Phase 4 (`PASSED` / `CONTINUE_TARGETED_ONLY`) — this phase acted on, but did not change, that recommendation.
+
 **Phase 4 update (2026-08-07):** small-scale `IMAGE_ACCESS_VALIDATION` on the 3 existing baseline-pilot cases (`case_001`–`case_003`), no new cases, no new queries, no scale-up. Result: image access is **not actually blocked** — the prior `text_ok_images_blocked` conclusion was an artifact of only reading each `<img>`'s `src` attribute (a site-wide placeholder); the real image URL lives in `data-src`, and 84/84 such URLs across the 3 cases were directly, publicly accessible (HTTP 200, no login/cookies). Full detail in `image_access_validation/IMAGE_ACCESS_VALIDATION_REPORT.md`.
 - `IMAGE_ACCESS_VALIDATION`: `CONTINUE` → **`PASSED`**
 - `SCALE_UP_SCRAPING`: `PAUSED` → **`CONTINUE_TARGETED_ONLY`** (recommendation only; no scraping performed this phase, still requires a human decision before acting)
@@ -78,7 +81,7 @@ zcool-creative-exploration-workflow/
 ├── query_schema/                      authoritative schema profile + mapping analysis
 │   ├── QUERY_SCHEMA_PROFILE.md
 │   └── SCHEMA_MAPPING.md
-├── candidates/                        still empty — next-round *new* zcool case discovery (not started this phase; see Phase 4 SCALE_UP_SCRAPING recommendation above)
+├── candidates/                        Phase 5 (new) — 10 targeted candidate cases screened; see CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md, creative_exploration_candidates.csv, CANDIDATE_EVIDENCE_INDEX.csv, screenshots/
 ├── cases/                             CASE_QUERY_ELIGIBILITY.csv (Phase 3) — eligibility analysis of the 5 existing baseline_pilot cases
 ├── provenance/                        query_to_case_mapping.jsonl (Phase 3) — 6 rows, one per generated candidate query
 ├── image_access_validation/           Phase 4 (new) — image access validation on case_001–case_003; see its own README.md and IMAGE_ACCESS_VALIDATION_REPORT.md
