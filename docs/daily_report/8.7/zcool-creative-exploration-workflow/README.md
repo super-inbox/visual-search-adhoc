@@ -1,5 +1,10 @@
 # zcool Creative Exploration Workflow — Phase 3 (Local Candidate Query Generation + Provenance)
 
+**Phase 4 update (2026-08-07):** small-scale `IMAGE_ACCESS_VALIDATION` on the 3 existing baseline-pilot cases (`case_001`–`case_003`), no new cases, no new queries, no scale-up. Result: image access is **not actually blocked** — the prior `text_ok_images_blocked` conclusion was an artifact of only reading each `<img>`'s `src` attribute (a site-wide placeholder); the real image URL lives in `data-src`, and 84/84 such URLs across the 3 cases were directly, publicly accessible (HTTP 200, no login/cookies). Full detail in `image_access_validation/IMAGE_ACCESS_VALIDATION_REPORT.md`.
+- `IMAGE_ACCESS_VALIDATION`: `CONTINUE` → **`PASSED`**
+- `SCALE_UP_SCRAPING`: `PAUSED` → **`CONTINUE_TARGETED_ONLY`** (recommendation only; no scraping performed this phase, still requires a human decision before acting)
+- No case facts were changed and no new `creative_explore` queries were added this phase — this was an access-layer check only.
+
 **Phase 3 update (2026-08-07):** this phase re-verified the authoritative `agent_route` schema (unchanged), evaluated the 5 migrated baseline-pilot cases for query-derivation eligibility, and generated **6 local, provisional `creative_explore` candidate queries** with full query→case provenance. See `CREATIVE_EXPLORATION_FINDINGS.md` and `QUERY_DERIVATION_FINDINGS.md` for the phase summary and detailed analysis, and `VALIDATION_REPORT.md` for the verification checklist. The rest of this README (below) describes Phase 2 (schema verification, worktree isolation, baseline migration) and is kept as-is since it remains accurate background.
 
 **Key facts about Phase 3, stated explicitly per task requirement:**
@@ -8,8 +13,8 @@
 - The official `super-inbox/curify-studio` `queries.jsonl` was **not modified** — read-only access only (`git show`, no checkout, no branch switch, no write).
 - `source_refs` is not part of the `agent_route` schema, so this phase's query generation **does not depend on, and does not add, any new ZCOOL `source_refs` tags** — that open governance question from Phase 2 (`query_schema/SCHEMA_MAPPING.md` §6) remains untouched and unresolved.
 - Any future merge of `AR-ZCE-xxx` candidates into the official `queries.jsonl` still requires the schema owner (Jay) to review and re-confirm or re-number them — `AR-ZCE-xxx` are **provisional, adhoc-repo-local candidate IDs**, not curify-studio official numbering, and must not be treated as pre-reserved.
-- `SCALE_UP_SCRAPING` remains `PAUSED`.
-- `IMAGE_ACCESS_VALIDATION` remains `CONTINUE` (recommended next technical investigation, not started).
+- `SCALE_UP_SCRAPING`: see Phase 4 update above — now `CONTINUE_TARGETED_ONLY` (recommendation).
+- `IMAGE_ACCESS_VALIDATION`: see Phase 4 update above — now `PASSED`.
 
 ---
 
@@ -42,12 +47,14 @@ The task's primary `visual-search-adhoc` checkout (`/Users/baobaoli/Desktop/visu
 - **No new benchmark queries were written.** Nothing was added to, or derived as a draft for, the authoritative `queries.jsonl`.
 - **No commit, push, or PR was created.** All work exists only as uncommitted files in the isolated worktree.
 
-## Status carried forward from the 8.5 pilot (unchanged)
+## Status (updated Phase 4 — see `image_access_validation/IMAGE_ACCESS_VALIDATION_REPORT.md`)
 
 ```text
-SCALE_UP_SCRAPING:        PAUSED     — unchanged; still blocked on zcool image access (see baseline_pilot/reviews/PILOT_FINDINGS.md §4)
-IMAGE_ACCESS_VALIDATION:  CONTINUE   — unchanged; still the recommended next technical investigation, not yet started
+SCALE_UP_SCRAPING:        CONTINUE_TARGETED_ONLY  — access blocker resolved; recommendation only, no scraping performed
+IMAGE_ACCESS_VALIDATION:  PASSED                  — 84/84 real image URLs (3 cases) directly accessible, no login/cookies needed
 ```
+
+Original 8.5-pilot status (superseded by Phase 4, kept for history): `SCALE_UP_SCRAPING: PAUSED` — "still blocked on zcool image access" (see `baseline_pilot/reviews/PILOT_FINDINGS.md` §4); `IMAGE_ACCESS_VALIDATION: CONTINUE` — not yet started at that time.
 
 ## Query schema sourcing rule for this task
 
@@ -71,10 +78,11 @@ zcool-creative-exploration-workflow/
 ├── query_schema/                      authoritative schema profile + mapping analysis
 │   ├── QUERY_SCHEMA_PROFILE.md
 │   └── SCHEMA_MAPPING.md
-├── candidates/                        still empty — next-round *new* zcool case discovery (not started, SCALE_UP_SCRAPING remains PAUSED)
-├── cases/                             CASE_QUERY_ELIGIBILITY.csv (new, Phase 3) — eligibility analysis of the 5 existing baseline_pilot cases
-├── provenance/                        query_to_case_mapping.jsonl (new, Phase 3) — 6 rows, one per generated candidate query
+├── candidates/                        still empty — next-round *new* zcool case discovery (not started this phase; see Phase 4 SCALE_UP_SCRAPING recommendation above)
+├── cases/                             CASE_QUERY_ELIGIBILITY.csv (Phase 3) — eligibility analysis of the 5 existing baseline_pilot cases
+├── provenance/                        query_to_case_mapping.jsonl (Phase 3) — 6 rows, one per generated candidate query
+├── image_access_validation/           Phase 4 (new) — image access validation on case_001–case_003; see its own README.md and IMAGE_ACCESS_VALIDATION_REPORT.md
 └── outputs/
-    ├── creative_explore_agent_route_queries.jsonl   6 local candidate agent_route records (new, Phase 3): AR-ZCE-001..AR-ZCE-006
-    └── creative_exploration_workflows.jsonl          still empty — no new case→step→asset workflow records produced this phase
+    ├── creative_explore_agent_route_queries.jsonl   6 local candidate agent_route records (Phase 3): AR-ZCE-001..AR-ZCE-006
+    └── creative_exploration_workflows.jsonl          still empty — no new case→step→asset workflow records produced
 ```
