@@ -1,0 +1,16 @@
+{
+  "case_id": "zcool_ce_001",
+  "source_candidate_id": "ZCE-CAND-001",
+  "source_url": "https://www.zcool.com.cn/work/ZNjc0OTk2NDQ=.html",
+  "title": "「韩娱嘉年华」品牌视觉升级全流程分享",
+  "project_type": "brand_upgrade_full_process",
+  "language": "zh-CN",
+  "source_platform": "ZCOOL",
+  "access_date": "2026-08-07",
+  "page_access_status": "accessible",
+  "image_access_method": "Real page images are lazy-loaded via data-src attributes and only resolve to real bytes after browser rendering/scroll; captured in Phase 5 as a single full-page browser screenshot (headless render + scroll-to-load), not via direct HTTP image fetch. See ../../image_access_validation/IMAGE_ACCESS_VALIDATION_REPORT.md for the general methodology this candidate's screenshot followed.",
+  "screenshot_path": "candidates/screenshots/ZCE-CAND-001_full_page.png",
+  "original_candidate_score": "8/9",
+  "original_candidate_decision": "SELECT",
+  "copyright_or_reuse_notes": "Internal research evidence only. Original ZCOOL artwork and page content must not be republished as a public dataset asset."
+}

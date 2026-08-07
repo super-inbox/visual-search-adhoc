@@ -1,5 +1,8 @@
 # zcool Creative Exploration Workflow — Phase 3 (Local Candidate Query Generation + Provenance)
 
+**Phase 6 update (2026-08-07):** formal, structured workflow cleaning of the single Phase 5 `SELECT` candidate, `ZCE-CAND-001`, into the task's first formal case record: `cases/zcool_ce_001/`. No new zcool page was fetched, no new screenshot taken, no images downloaded — cleaning was done entirely from Phase 5's already-captured screenshot and findings narrative. Result: `workflow_completeness=substantial`, 9 workflow steps (`ZCE-WF-001`..`ZCE-WF-009`, brief → persona label → moodboard → keyword result → 8-sketch grid → logo concept rationale → two-version comparison → sketch-to-final progression → applications), 11 cross-referenced evidence rows, zero orphaned references. `usable_for_workflow_training=true` — the first `true` in this task's full case lineage (15 cases reviewed to date: 5 `baseline_pilot` + 10 Phase 5 candidates), since this is the only case with both real sketch-exploration and side-by-side final-comparison evidence — but it explicitly remains **not** usable as a selection-decision training example, since no page evidence states why any sketch or final version was chosen (`has_selection_reason=false`, unchanged from Phase 5), and KV/IP exploration content mentioned only in Phase 5's narrative was deliberately excluded rather than recorded from unconfirmed detail. A schema-conformant copy was also written to `outputs/creative_exploration_workflows.jsonl` (previously empty). No `creative_explore` query was generated this phase, no `provenance/query_to_case_mapping.jsonl` change, no official `queries.jsonl` change. Full detail in `cases/zcool_ce_001/FORMAL_WORKFLOW_CLEANING_FINDINGS.md`.
+- `IMAGE_ACCESS_VALIDATION` and `SCALE_UP_SCRAPING` statuses unchanged from Phase 5 (`PASSED` / `CONTINUE_TARGETED_ONLY`).
+
 **Phase 5 update (2026-08-07):** small-scale, targeted discovery of **10 new** zcool candidate cases (`ZCE-CAND-001`..`ZCE-CAND-010`), searched, opened in a real browser, screenshotted, and scored against a 9-criterion creative-exploration rubric. Result: **1 SELECT** (`ZCE-CAND-001`, a full 品牌视觉升级 process case with a real sketch→comparison→final progression), **0 BACKUP**, **8 REJECT**, **1 NEGATIVE_SAMPLE** (`ZCE-CAND-010`, a highly polished but process-free final-result-only case, kept as a deliberate counter-example). No new `creative_explore` query was generated, no `provenance/query_to_case_mapping.jsonl` change, no official `queries.jsonl` change, no case promoted to a formal structured `case_00N` record — this phase is candidate screening only. Full detail in `candidates/CREATIVE_EXPLORATION_CANDIDATE_FINDINGS.md`, `candidates/creative_exploration_candidates.csv`, and `candidates/CANDIDATE_EVIDENCE_INDEX.csv`.
 - `IMAGE_ACCESS_VALIDATION` and `SCALE_UP_SCRAPING` statuses unchanged from Phase 4 (`PASSED` / `CONTINUE_TARGETED_ONLY`) — this phase acted on, but did not change, that recommendation.
 
@@ -50,11 +53,13 @@ The task's primary `visual-search-adhoc` checkout (`/Users/baobaoli/Desktop/visu
 - **No new benchmark queries were written.** Nothing was added to, or derived as a draft for, the authoritative `queries.jsonl`.
 - **No commit, push, or PR was created.** All work exists only as uncommitted files in the isolated worktree.
 
-## Status (updated Phase 4 — see `image_access_validation/IMAGE_ACCESS_VALIDATION_REPORT.md`)
+## Status (updated Phase 6 — see `cases/zcool_ce_001/FORMAL_WORKFLOW_CLEANING_FINDINGS.md`)
 
 ```text
-SCALE_UP_SCRAPING:        CONTINUE_TARGETED_ONLY  — access blocker resolved; recommendation only, no scraping performed
+SCALE_UP_SCRAPING:        CONTINUE_TARGETED_ONLY  — access blocker resolved (Phase 4); recommendation only, no further scraping performed
 IMAGE_ACCESS_VALIDATION:  PASSED                  — 84/84 real image URLs (3 cases) directly accessible, no login/cookies needed
+CANDIDATE_SCREENING:      1 SELECT / 0 BACKUP / 8 REJECT / 1 NEGATIVE_SAMPLE  — Phase 5, 10 new candidates scored
+CASE_CLEANING:            1/1 SELECT candidates formally cleaned  — Phase 6, cases/zcool_ce_001/ (usable_for_workflow_training=true, not usable for selection-decision training)
 ```
 
 Original 8.5-pilot status (superseded by Phase 4, kept for history): `SCALE_UP_SCRAPING: PAUSED` — "still blocked on zcool image access" (see `baseline_pilot/reviews/PILOT_FINDINGS.md` §4); `IMAGE_ACCESS_VALIDATION: CONTINUE` — not yet started at that time.

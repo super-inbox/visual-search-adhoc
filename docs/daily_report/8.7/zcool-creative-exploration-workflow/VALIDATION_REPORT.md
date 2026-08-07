@@ -2,6 +2,41 @@
 
 All checks below were re-run at the end of this phase, 2026-08-07.
 
+## Phase 6 addendum (formal workflow cleaning of `zcool_ce_001`, 2026-08-07)
+
+All checks below were run at the end of Phase 6, against the new files in `cases/zcool_ce_001/` and `outputs/creative_exploration_workflows.jsonl`, plus a re-verification that Phase 6 did not disturb any earlier phase's protected outputs.
+
+| # | Check | Result |
+|---|---|---|
+| P6-1 | Authoritative `queries.jsonl` (`curify-studio@origin/main:dev/jayw/design-agent-v0/eval/queries.jsonl`) re-fetched and re-verified, still 118 lines | **PASS** — 118 |
+| P6-2 | Authoritative `queries.jsonl` SHA-256 unchanged | **PASS** — `5384474f8334f352f6ce157331b7d96c68721179f5da2049fcdc8c8e0ffe2e3d`, identical to Phase 2/3 |
+| P6-3 | `baseline_pilot/schema/design_workflow_schema_v0.1.json` not modified this phase | **PASS** — `git diff --stat` against the commit that introduced it shows no changes |
+| P6-4 | `provenance/query_to_case_mapping.jsonl` not modified this phase | **PASS** — `git diff --stat` against the commit that last touched it shows no changes |
+| P6-5 | `candidates/` (Phase 5 screenshots, CSVs, findings) not modified this phase | **PASS** — `git diff --stat` against the commit that introduced it shows no changes; no candidate scores, decisions, or evidence rows were altered |
+| P6-6 | `cases/zcool_ce_001/source_metadata.json` and `workflow_extraction.json` are valid JSON | **PASS** — both parse |
+| P6-7 | `outputs/creative_exploration_workflows.jsonl` — every line is valid JSON | **PASS** — 1/1 line parses |
+| P6-8 | Every `evidence_id` referenced by a `workflow_steps` entry exists in `evidence_manifest.csv`, and vice versa | **PASS** — set equality, 11 == 11, zero orphans in either direction |
+| P6-9 | No `raw_text.md` present anywhere in this directory | **PASS** — `find … -iname raw_text.md` returns nothing |
+| P6-10 | No new image files were added this phase | **PASS** — `git status --porcelain --untracked-files=all` shows no new `.png`/`.jpg`/etc.; Phase 6 reused Phase 5's existing screenshot only, referenced by path, never copied |
+| P6-11 | No `.env` files present anywhere in this directory | **PASS** — `find … -iname .env*` returns nothing |
+| P6-12 | Secret scan — 0 real hits | **PASS** — same pattern scan as Phase 3 check #17; the only matches are the pre-existing Phase 3 prose sentences stating no secrets were found, not secrets themselves |
+| P6-13 | `git diff --check` passes (no whitespace errors) | **PASS** — exit code 0, no output |
+| P6-14 | All Phase 6 changes confined to `docs/daily_report/8.7/zcool-creative-exploration-workflow/` | **PASS** — `git status --porcelain --untracked-files=all` for the whole repo shows only paths under this directory |
+| P6-15 | `outputs/creative_exploration_workflows.jsonl`'s single record uses the same `step_id`s (`ZCE-WF-001`..`009`) as `workflow_extraction.json`, no second ID space introduced | **PASS** — verified by direct comparison |
+| P6-16 | `case.language`/`case.source_platform` deviations from the baseline schema's `const` values are documented, not silent | **PASS** — recorded in `cases/zcool_ce_001/QUALITY_REVIEW.md` "Schema compatibility notes" and mirrored in `outputs/creative_exploration_workflows.jsonl`'s `case.schema_note` field |
+
+### Phase 6 full file list (new/modified)
+
+New: `cases/zcool_ce_001/{CASE_SUMMARY.md, QUALITY_REVIEW.md, FORMAL_WORKFLOW_CLEANING_FINDINGS.md, source_metadata.json, workflow_extraction.json, evidence_manifest.csv}`.
+Modified: `README.md`, `PROGRESS_STATUS.md`, `CREATIVE_EXPLORATION_FINDINGS.md`, `cases/README.md`, `outputs/README.md`, `outputs/creative_exploration_workflows.jsonl` (populated from empty).
+Not touched: everything under `baseline_pilot/`, `candidates/`, `image_access_validation/`, `provenance/`, `query_schema/`, `QUERY_DERIVATION_FINDINGS.md`, `outputs/creative_explore_agent_route_queries.jsonl`.
+
+### Not performed / out of scope this phase (by task instruction, not a gap)
+
+- No new zcool page fetch, no new screenshot, no image download — Phase 6 cleaned `zcool_ce_001` entirely from Phase 5's already-captured evidence.
+- No `creative_explore` query generated, no `provenance/query_to_case_mapping.jsonl` change — case cleaning and query authoring remain separate phases in this task's workflow.
+- No `git add`/`commit`/`push` performed as part of running these checks — see `PROGRESS_STATUS.md` "Git status" for the commit/push state at the time this addendum was written.
+
 | # | Check | Result |
 |---|---|---|
 | 1 | Authoritative `queries.jsonl` (`origin/main:dev/jayw/design-agent-v0/eval/queries.jsonl`) is still 118 lines | **PASS** — 118 |
