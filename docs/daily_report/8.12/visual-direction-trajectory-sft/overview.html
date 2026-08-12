@@ -1,0 +1,575 @@
+<title>Visual Direction Trajectory SFT</title>
+<style>
+  :root {
+    --bg: #edeeea;
+    --surface: #ffffff;
+    --surface-sunken: #e2e4de;
+    --ink: #15191a;
+    --ink-soft: #4d5658;
+    --ink-faint: #7d8688;
+    --line: #d3d6cf;
+    --accent: #1f6f5c;
+    --accent-ink: #ffffff;
+    --accent-soft: #dcece6;
+    --accent-soft-line: #b8d9cd;
+    --warn: #a8631f;
+    --warn-soft: #f3e4d2;
+    --warn-soft-line: #e2c298;
+    --reject: #a23b3b;
+    --reject-soft: #f5e2e0;
+    --reject-soft-line: #e3bab6;
+    --mono-bg: #14181a;
+    --mono-ink: #d9e2df;
+    --mono-accent: #7fd6b8;
+    --shadow: 0 1px 2px rgba(20,24,25,0.06), 0 8px 24px -12px rgba(20,24,25,0.18);
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Songti SC", serif;
+    --sans: -apple-system, "SF Pro Text", "Segoe UI", "PingFang SC", Roboto, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Menlo", "Consolas", monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14181a;
+      --surface: #1b2022;
+      --surface-sunken: #101314;
+      --ink: #eef1ee;
+      --ink-soft: #b7c0bd;
+      --ink-faint: #838d8a;
+      --line: #2c3335;
+      --accent: #6fc9ac;
+      --accent-ink: #0d211b;
+      --accent-soft: #1e2f2a;
+      --accent-soft-line: #33493f;
+      --warn: #e0a862;
+      --warn-soft: #33291a;
+      --warn-soft-line: #55402400;
+      --reject: #e08b83;
+      --reject-soft: #352220;
+      --reject-soft-line: #563531;
+      --mono-bg: #0d1112;
+      --mono-ink: #cfe0da;
+      --mono-accent: #8fe0c2;
+      --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 12px 28px -14px rgba(0,0,0,0.55);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14181a;
+    --surface: #1b2022;
+    --surface-sunken: #101314;
+    --ink: #eef1ee;
+    --ink-soft: #b7c0bd;
+    --ink-faint: #838d8a;
+    --line: #2c3335;
+    --accent: #6fc9ac;
+    --accent-ink: #0d211b;
+    --accent-soft: #1e2f2a;
+    --accent-soft-line: #33493f;
+    --warn: #e0a862;
+    --warn-soft: #33291a;
+    --warn-soft-line: #554024;
+    --reject: #e08b83;
+    --reject-soft: #352220;
+    --reject-soft-line: #563531;
+    --mono-bg: #0d1112;
+    --mono-ink: #cfe0da;
+    --mono-accent: #8fe0c2;
+    --shadow: 0 1px 2px rgba(0,0,0,0.35), 0 12px 28px -14px rgba(0,0,0,0.55);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 28px 96px; }
+
+  header.masthead {
+    border-bottom: 1px solid var(--line);
+    padding: 56px 0 32px;
+    margin-bottom: 40px;
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 14px;
+  }
+  h1 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: clamp(30px, 4.4vw, 42px);
+    line-height: 1.14;
+    margin: 0 0 14px;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+  .dek {
+    font-size: 17px;
+    color: var(--ink-soft);
+    max-width: 62ch;
+    margin: 0 0 20px;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--ink-faint);
+  }
+  .meta-row span {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 3px 8px;
+  }
+
+  nav.toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 18px;
+    margin: 28px 0 56px;
+    padding: 14px 18px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    font-size: 13px;
+  }
+  nav.toc a { color: var(--ink-soft); text-decoration: none; }
+  nav.toc a:hover { color: var(--accent); }
+  nav.toc .toc-label { color: var(--ink-faint); font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; }
+
+  section { margin: 0 0 64px; scroll-margin-top: 24px; }
+  .section-num {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0.05em;
+  }
+  h2 {
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 26px;
+    margin: 4px 0 10px;
+    letter-spacing: -0.01em;
+  }
+  .section-dek {
+    color: var(--ink-soft);
+    max-width: 68ch;
+    margin: 0 0 28px;
+    font-size: 15px;
+  }
+  h3 {
+    font-family: var(--sans);
+    font-weight: 650;
+    font-size: 15px;
+    margin: 0 0 10px;
+  }
+  p { margin: 0 0 14px; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 22px 24px;
+    box-shadow: var(--shadow);
+  }
+
+  /* Section 1: repo lessons */
+  .lesson-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  @media (max-width: 640px) { .lesson-grid { grid-template-columns: 1fr; } }
+  .lesson {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 20px;
+  }
+  .lesson .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  .lesson.adopt .tag { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-soft-line); }
+  .lesson.avoid .tag { background: var(--reject-soft); color: var(--reject); border: 1px solid var(--reject-soft-line); }
+  .lesson p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .lesson strong { color: var(--ink); }
+
+  /* Section 2: workflow vs trajectory */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  @media (max-width: 640px) { .compare { grid-template-columns: 1fr; } }
+  .compare .panel {
+    border-radius: 10px;
+    padding: 20px 22px;
+    border: 1px solid var(--line);
+  }
+  .compare .panel.workflow { background: var(--surface-sunken); }
+  .compare .panel.trajectory { background: var(--accent-soft); border-color: var(--accent-soft-line); }
+  .chain {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 14px;
+    font-family: var(--mono);
+    font-size: 12.5px;
+  }
+  .chain .node {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 7px 11px;
+  }
+  .trajectory .chain .node { border-color: var(--accent-soft-line); }
+  .chain .arrow { color: var(--ink-faint); text-align: center; padding: 3px 0; font-size: 13px; }
+  .compare .caption { font-size: 13px; color: var(--ink-soft); margin-top: 14px; margin-bottom: 0; }
+
+  /* Section 3: stages */
+  .stages { display: flex; flex-direction: column; border-left: 2px solid var(--line); margin-left: 10px; }
+  .stage-row {
+    position: relative;
+    padding: 4px 0 20px 26px;
+  }
+  .stage-row::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent);
+    border: 2px solid var(--bg);
+  }
+  .stage-row.conditional::before { background: var(--warn); }
+  .stage-head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stage-num { font-family: var(--mono); font-size: 12px; color: var(--ink-faint); }
+  .stage-name { font-weight: 650; font-size: 15px; }
+  .stage-badge {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase;
+    padding: 1px 7px; border-radius: 3px; background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn-soft-line);
+  }
+  .stage-desc { font-size: 13.5px; color: var(--ink-soft); margin: 4px 0 0; max-width: 60ch; }
+
+  /* Section 4: trajectory example */
+  .traj-meta { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+  .pill { font-family: var(--mono); font-size: 11.5px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink-soft); background: var(--surface); }
+  .pill.outcome { background: var(--accent-soft); border-color: var(--accent-soft-line); color: var(--accent); }
+  .steps { display: flex; flex-direction: column; gap: 10px; }
+  .step {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+  }
+  .step.step-reject { border-color: var(--reject-soft-line); background: var(--reject-soft); }
+  .step.step-revise { border-color: var(--warn-soft-line); background: var(--warn-soft); }
+  .step-top { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; margin-bottom: 6px; }
+  .step-stage { font-family: var(--mono); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--ink-faint); }
+  .step-id { font-family: var(--mono); font-size: 11px; color: var(--ink-faint); }
+  .step-decision { font-size: 13.5px; margin: 0; }
+  .step-detail { font-size: 12.5px; color: var(--ink-soft); margin: 4px 0 0; }
+  .step-detail b { color: var(--ink); font-weight: 600; }
+
+  /* Section 5: benchmark layers */
+  .layers { display: flex; flex-direction: column; gap: 14px; }
+  .layer {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 18px 22px;
+    background: var(--surface);
+  }
+  .layer-head { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .layer-index {
+    font-family: var(--mono); font-size: 12px; width: 26px; height: 26px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    background: var(--accent); color: var(--accent-ink); flex-shrink: 0;
+  }
+  .layer h3 { margin: 0; }
+  .layer p { font-size: 13.5px; color: var(--ink-soft); margin: 0; }
+  .dims {
+    display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px;
+  }
+  .dim-chip {
+    font-family: var(--mono); font-size: 11px; padding: 3px 8px; border-radius: 4px;
+    background: var(--surface-sunken); border: 1px solid var(--line); color: var(--ink-soft);
+  }
+
+  /* Section 6: pilot */
+  .pilot-card {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-soft-line);
+    border-radius: 10px;
+    padding: 26px 28px;
+  }
+  .pilot-card h2 { margin-top: 0; }
+  .pilot-stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 18px 0 20px; }
+  @media (max-width: 640px) { .pilot-stats { grid-template-columns: 1fr; } }
+  .pilot-stat { background: var(--surface); border: 1px solid var(--accent-soft-line); border-radius: 8px; padding: 14px 16px; }
+  .pilot-stat .num { font-family: var(--serif); font-size: 26px; font-weight: 600; color: var(--accent); display: block; font-variant-numeric: tabular-nums; }
+  .pilot-stat .lbl { font-size: 12px; color: var(--ink-soft); }
+  .pilot-card ul { margin: 0; padding-left: 20px; font-size: 14px; color: var(--ink); }
+  .pilot-card li { margin-bottom: 6px; }
+
+  footer {
+    border-top: 1px solid var(--line);
+    padding-top: 24px;
+    margin-top: 24px;
+    font-size: 13px;
+    color: var(--ink-faint);
+  }
+  footer .files { font-family: var(--mono); font-size: 12px; display: flex; flex-direction: column; gap: 4px; margin: 10px 0 18px; }
+  .note-box {
+    background: var(--surface-sunken);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 14px 16px;
+    font-size: 13px;
+    color: var(--ink-soft);
+    margin-bottom: 18px;
+  }
+  .note-box b { color: var(--ink); }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Curify · Adhoc Research · 2026-08-12</p>
+    <h1>Visual Direction as an Agent Trajectory</h1>
+    <p class="dek">Research into whether Curify's Visual Direction / Creative Exploration flow can be represented as a trajectory suitable for future trajectory SFT and benchmark evaluation — informed by the <code>gc-minimal-zine-poster</code> skill repo and Curify's existing five-domain workflow research. Research only: no training, no pipeline, no product change.</p>
+    <div class="meta-row">
+      <span>research artifact</span>
+      <span>no model trained</span>
+      <span>no frontend changed</span>
+      <span>4 proposed trajectory examples</span>
+    </div>
+  </header>
+
+  <nav class="toc">
+    <span class="toc-label">Contents</span>
+    <a href="#lessons">External repo lessons</a>
+    <a href="#compare">Workflow vs. trajectory</a>
+    <a href="#stages">Trajectory stages</a>
+    <a href="#example">Worked example</a>
+    <a href="#benchmark">Benchmark layers</a>
+    <a href="#pilot">Next pilot</a>
+  </nav>
+
+  <section id="lessons">
+    <p class="section-num">01</p>
+    <h2>What gc-minimal-zine-poster actually offers</h2>
+    <p class="section-dek">A public Codex Skill (markdown instructions, no code, no logged runs) for generating minimal zine posters. It has no executed trajectories to learn from — but its documented procedure gives a working vocabulary for stage design. Full detail in <code>REPO_ANALYSIS.md</code>.</p>
+    <div class="lesson-grid">
+      <div class="lesson adopt">
+        <span class="tag">Adopt the pattern</span>
+        <p><strong>Fixed / variable / residue split.</strong> Reference analysis separates traits that must carry over, traits safe to vary, and sample-specific detail that must never be reused.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">Adopt the pattern</span>
+        <p><strong>Numeric, checkable fields over adjectives.</strong> "70–90% negative space" can be graded; "elegant" cannot. Curify needs its own domain-specific numbers, not the poster repo's.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">Adopt the pattern</span>
+        <p><strong>Anti-repetition rule on variation.</strong> New candidates must change layout grammar, not just position — directly informs the direction-diversity benchmark dimension.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">Adopt the pattern</span>
+        <p><strong>Capped single-retry revision.</strong> Regenerate once against a stated defect; if still failing, disclose the limitation rather than claim success.</p>
+      </div>
+      <div class="lesson avoid">
+        <span class="tag">Do not copy</span>
+        <p><strong>The poster-specific numbers.</strong> 3:5 canvas, one high-chroma hue at 0.8–2.5% area — tuned to one visual family, not transferable to coffee/brand/packaging.</p>
+      </div>
+      <div class="lesson avoid">
+        <span class="tag">Do not copy</span>
+        <p><strong>The eval set as "a benchmark."</strong> <code>evals.json</code> is seven rubric prompts for a human/LLM reader — no automated metrics, no step-level breakdown. Evidence that lightweight rubrics work as one layer, not proof of rigor.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <p class="section-num">02</p>
+    <h2>Workflow data vs. trajectory data</h2>
+    <p class="section-dek">Curify's 8.8 workflow research (five domains) captured finished-project case studies — a content pipeline. Trajectory SFT needs a different object: a logged decision process, including paths that were tried and rejected.</p>
+    <div class="compare">
+      <div class="panel workflow">
+        <h3>Workflow data <span style="color:var(--ink-faint); font-weight:400;">— what shipped</span></h3>
+        <div class="chain">
+          <div class="node">brief</div>
+          <div class="arrow">↓</div>
+          <div class="node">concepts</div>
+          <div class="arrow">↓</div>
+          <div class="node">design</div>
+          <div class="arrow">↓</div>
+          <div class="node">final result</div>
+        </div>
+        <p class="caption">Linear. One path. No rejected candidates — a published case study cannot show what didn't ship. Source: <code>cases/brand_logo_001/workflow_extraction.json</code> and similar.</p>
+      </div>
+      <div class="panel trajectory">
+        <h3>Trajectory data <span style="color:var(--ink-faint); font-weight:400;">— how it was decided</span></h3>
+        <div class="chain">
+          <div class="node">state</div>
+          <div class="arrow">↓</div>
+          <div class="node">decision → action / tool</div>
+          <div class="arrow">↓</div>
+          <div class="node">observation → evaluation</div>
+          <div class="arrow">↓</div>
+          <div class="node">revision (if needed)</div>
+          <div class="arrow">↓</div>
+          <div class="node">final output</div>
+        </div>
+        <p class="caption">Branches. Includes rejected candidates and their stated reasons. This is what SFT on decision-making requires.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stages">
+    <p class="section-num">03</p>
+    <h2>Proposed Curify trajectory stages</h2>
+    <p class="section-dek">Ten stages, derived from the 8.8 workflow vocabulary, the poster repo's procedure, and the requirement that a weak direction be catchable mid-trajectory. Two stages are conditional — most trajectories skip them when the first direction already clears the bar.</p>
+    <div class="stages">
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">01</span><span class="stage-name">Brief understanding</span></div><p class="stage-desc">Parse the brief into mood, constraints, format — explicit and checkable, not implied.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">02</span><span class="stage-name">Reference retrieval</span></div><p class="stage-desc">Select or fetch reference material relevant to the brief.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">03</span><span class="stage-name">Reference analysis</span></div><p class="stage-desc">Split into fixed system / variable system / sample residue, observed vs. inferred.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">04</span><span class="stage-name">Direction generation</span></div><p class="stage-desc">Produce 2+ candidates that differ on real axes, not cosmetic variants of one idea.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">05</span><span class="stage-name">Direction evaluation</span></div><p class="stage-desc">Score each candidate against the brief on named, observable dimensions.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">06</span><span class="stage-name">Selection</span></div><p class="stage-desc">Choose one direction (or shortlist) with a stated reason tied to the evaluation; log what was rejected and why.</p></div>
+      <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">07</span><span class="stage-name">Critique</span><span class="stage-badge">conditional</span></div><p class="stage-desc">If the selected candidate has an observable mismatch or defect, state it in checkable terms.</p></div>
+      <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">08</span><span class="stage-name">Revision</span><span class="stage-badge">conditional</span></div><p class="stage-desc">Regenerate against the stated critique — capped, not an open-ended loop.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">09</span><span class="stage-name">Generation</span></div><p class="stage-desc">Produce the actual asset(s) for the selected, post-revision direction.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">10</span><span class="stage-name">Final output</span></div><p class="stage-desc">Return the asset with a short, checkable rationale — no hidden reasoning trace.</p></div>
+    </div>
+  </section>
+
+  <section id="example">
+    <p class="section-num">04</p>
+    <h2>Worked example — coffee shop launch post</h2>
+    <p class="section-dek">One of four proposed trajectories in <code>CURIFY_TRAJECTORY_EXAMPLES.jsonl</code> (<code>vd-coffee-0001</code>), shown in full below because it demonstrates the required weak-direction path: a candidate is generated, evaluated as a brief mismatch, rejected with a stated reason, and a separate defect on the winner is caught and fixed in one capped revision.</p>
+    <div class="card">
+      <div class="traj-meta">
+        <span class="pill">domain: coffee_shop</span>
+        <span class="pill">8 steps</span>
+        <span class="pill outcome">outcome: revised_success</span>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-top"><span class="step-stage">brief_understanding</span><span class="step-id">step_01</span></div>
+          <p class="step-decision">Parse into target attributes: warm + calm mood, minimalist style, 1:1 format, avoid stock latte-art cliché.</p>
+        </div>
+        <div class="step">
+          <div class="step-top"><span class="step-stage">direction_generation</span><span class="step-id">step_03</span></div>
+          <p class="step-decision">Generate two candidates on distinct axes — (A) warm neutral type-led, (B) high-saturation duotone poster style — to cover a genuine spread.</p>
+        </div>
+        <div class="step step-reject">
+          <div class="step-top"><span class="step-stage">direction_evaluation</span><span class="step-id">step_04</span></div>
+          <p class="step-decision">Candidate B's saturation and headline weight read energetic/loud, not calm — an observable mismatch against the brief, not a taste call.</p>
+          <p class="step-detail"><b>Evaluation:</b> A aligns with warm+calm+minimalist. B fails on both mood and style.</p>
+        </div>
+        <div class="step step-reject">
+          <div class="step-top"><span class="step-stage">selection</span><span class="step-id">step_05</span></div>
+          <p class="step-decision">Select Candidate A. Reject Candidate B with the evaluation's stated reason, logged rather than silently dropped.</p>
+        </div>
+        <div class="step step-revise">
+          <div class="step-top"><span class="step-stage">critique</span><span class="step-id">step_06</span></div>
+          <p class="step-decision">At Instagram thumbnail scale (161×161px), the linework accent overlaps three letterforms of the wordmark — a checkable production defect.</p>
+        </div>
+        <div class="step step-revise">
+          <div class="step-top"><span class="step-stage">revision</span><span class="step-id">step_07</span></div>
+          <p class="step-decision">Regenerate once with the accent repositioned below the wordmark. Palette, layout, and type untouched — those already passed brief-alignment.</p>
+          <p class="step-detail"><b>Result:</b> wordmark legible at thumbnail scale; brief-alignment unchanged from the approved A.</p>
+        </div>
+        <div class="step">
+          <div class="step-top"><span class="step-stage">final_output</span><span class="step-id">step_08</span></div>
+          <p class="step-decision">Return A-v2 — warm-neutral, type-led direction, thumbnail-legibility defect fixed in one revision pass.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="benchmark">
+    <p class="section-num">05</p>
+    <h2>Benchmark — three layers, never one score</h2>
+    <p class="section-dek">A single final image can't reveal whether the brief was understood or a weak candidate was caught. Full 11-dimension table with automated/human split is in <code>BENCHMARK_PROPOSAL.md</code>.</p>
+    <div class="layers">
+      <div class="layer">
+        <div class="layer-head"><span class="layer-index">1</span><h3>Step-level</h3></div>
+        <p>Is each individual decision/evaluation/critique good on its own, given the state at that point?</p>
+        <div class="dims">
+          <span class="dim-chip">brief understanding</span>
+          <span class="dim-chip">reference relevance</span>
+          <span class="dim-chip">reference understanding</span>
+          <span class="dim-chip">visual-system extraction</span>
+          <span class="dim-chip">critique correctness</span>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-head"><span class="layer-index">2</span><h3>Trajectory-level</h3></div>
+        <p>Does the sequence hang together — did evaluation actually drive selection, did critique actually get addressed by revision?</p>
+        <div class="dims">
+          <span class="dim-chip">direction diversity</span>
+          <span class="dim-chip">selection quality</span>
+          <span class="dim-chip">revision effectiveness</span>
+          <span class="dim-chip">tool / action efficiency</span>
+        </div>
+      </div>
+      <div class="layer">
+        <div class="layer-head"><span class="layer-index">3</span><h3>Final-output</h3></div>
+        <p>Does the deliverable match the brief — necessary, but never treated as sufficient on its own.</p>
+        <div class="dims">
+          <span class="dim-chip">direction-to-brief alignment</span>
+          <span class="dim-chip">final visual quality</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pilot">
+    <p class="section-num">06</p>
+    <h2>Recommended next pilot</h2>
+    <div class="pilot-card">
+      <h2 style="font-size:20px;">Benchmark first, training later</h2>
+      <p style="color:var(--ink-soft); margin-bottom:0;">Test whether the benchmark dimensions are gradable by hand before collecting any SFT data. No trajectory-SFT training should start before this shows the dimensions are usable — supervision that can't be evaluated can't be trusted.</p>
+      <div class="pilot-stats">
+        <div class="pilot-stat"><span class="num">10–20</span><span class="lbl">Creative Exploration tasks</span></div>
+        <div class="pilot-stat"><span class="num">2–3</span><span class="lbl">domains, not all at once</span></div>
+        <div class="pilot-stat"><span class="num">100%</span><span class="lbl">manually reviewed trajectories</span></div>
+      </div>
+      <ul>
+        <li>Explicit intermediate outputs required — final-image-only logs can't be step- or trajectory-graded.</li>
+        <li>Deliberately include both clean successes and failed/revised examples.</li>
+        <li>Human review first; only then check whether an LLM-judge tracks that human judgment on the automatable subset.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p><b>Source files</b> — all in <code>docs/daily_report/8.12/visual-direction-trajectory-sft/</code>:</p>
+    <div class="files">
+      <span>REPO_ANALYSIS.md — external repo, explicit vs. inferred</span>
+      <span>TRAJECTORY_SCHEMA.md — full field definitions</span>
+      <span>CURIFY_TRAJECTORY_EXAMPLES.jsonl — 4 proposed trajectories</span>
+      <span>BENCHMARK_PROPOSAL.md — 11-dimension benchmark design</span>
+      <span>MANAGER_SUMMARY.md — condensed summary</span>
+    </div>
+    <div class="note-box">
+      <b>Note on scope.</b> The four trajectories referenced here (coffee shop, brand/logo, poster, packaging) are hand-authored <b>proposed examples for schema illustration</b>, not historical production logs. The manager-shared ChatGPT discussion link was not accessible — the share page is a JavaScript-rendered SPA that returned only its title to automated fetch, and no content from it was used or invented in this research.
+    </div>
+  </footer>
+
+</div>
