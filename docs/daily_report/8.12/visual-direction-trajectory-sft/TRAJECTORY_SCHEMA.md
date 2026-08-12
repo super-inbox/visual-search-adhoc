@@ -1,9 +1,11 @@
 # TRAJECTORY_SCHEMA.md — Curify Visual Direction / Creative Exploration
 
 Research artifact. Defines a proposed (not implemented) data schema for future trajectory-SFT and
-benchmark work. No training pipeline, backend, or frontend change is implied or included.
+benchmark work. No training pipeline, backend, or frontend change is implied or included. Updated
+in this incremental pass to incorporate the manager-provided trajectory-SFT discussion — see
+`DISCUSSION_ANALYSIS.md` for the source-attributed analysis behind the additions in §1, §3.5, §4–5.
 
-## 1. Workflow data vs. trajectory data
+## 1. Three data types: workflow, trajectory, preference
 
 The existing 8.8 workflow research (`curify-frontend-workflow-inspiration-2026-08-09/docs/daily_report/8.8/workflow-research-5-domains/`)
 extracted **workflow data**: a professional's *stated process*, reconstructed as an ordered list of
@@ -39,6 +41,15 @@ case study.
 checks) but contains zero *executed* trajectories — no logs of an actual run. It's a source of stage
 vocabulary and step I/O shape, not of trajectory examples.
 
+**Preference / taste data** is a third, distinct object, per the manager-provided discussion (see
+`DISCUSSION_ANALYSIS.md` §2–3): not a record of one agent's process, but a *comparison* between two
+or more candidates or trajectories for the same task — e.g. "A > C", "D > B" — collected from a model
+judge, a designer, a client, or observed user behavior. It answers "which output is better," not
+"how did the agent get there." The schema's `human_preference` field (§4) and pairwise-example
+guidance in `BENCHMARK_PROPOSAL.md` §4 are this data type; it is not interchangeable with trajectory
+data, since a strong trajectory can still lose a pairwise comparison on subjective craft grounds that
+the trajectory log itself never flagged as a defect.
+
 ## 2. Proposed trajectory stages for Curify Visual Direction / Creative Exploration
 
 Derived from three inputs: (a) the workflow-stage vocabulary implicit across all five 8.8 domain
@@ -57,13 +68,18 @@ revised — which requires an explicit evaluation-before-selection step, not jus
 | 5 | `direction_evaluation` | Score/critique each candidate against the brief on named, observable dimensions. | 8.8 "concepts scored against 3 named goals" (packaging_001); quality-gate.md checklist pattern |
 | 6 | `selection` | Choose one direction (or shortlist), with an explicit, stated reason tied to the evaluation. | Inferred — no source has an executed selection log; this is the connective step evaluation data requires |
 | 7 | `critique` *(conditional)* | If the selected/generated candidate has an observable mismatch vs. the brief, state what's wrong in checkable terms. | quality-gate.md "if a central check fails..."; brief's explicit weak-direction requirement |
-| 8 | `revision` *(conditional)* | Regenerate or adjust, addressing the stated critique. Capped — do not loop indefinitely. | quality-gate.md's single-retry-then-report-limitation policy |
+| 8 | `revision` *(conditional)* | Regenerate or adjust, addressing the stated critique **or** stated client feedback (see stage 10a). Capped — do not loop indefinitely. | quality-gate.md's single-retry-then-report-limitation policy; manager-provided discussion's recovery-loop pattern (`DISCUSSION_ANALYSIS.md` §4) |
 | 9 | `generation` | Produce the actual visual asset(s) for the selected (post-revision) direction. | All sources |
-| 10 | `final_output` | Return the asset plus a short, checkable rationale — not hidden reasoning. | quality-gate.md's returned "interpretation note" |
+| 10a | `client_feedback` *(conditional)* | A human/client reviews a delivered artifact and gives feedback in their own words; the agent translates it into concrete, checkable design changes before any revision. | Manager-provided discussion's `BEFORE → HUMAN/CLIENT FEEDBACK → AFTER` pattern (`DISCUSSION_ANALYSIS.md` §3) — not present in either prior source |
+| 10 | `final_output` | Return the asset plus a short, checkable rationale — not hidden reasoning. May follow `generation` directly, or follow a `client_feedback` → `revision` → `generation` loop. | quality-gate.md's returned "interpretation note" |
 
 Stages 7–8 are conditional: a strong first direction may skip straight from `selection` to
-`generation`. This is why the schema below stores stage as a per-step field rather than assuming a
-fixed-length trajectory — trajectories will vary in length and do not all touch every stage.
+`generation`. Stage 10a is also conditional and, when present, can trigger another pass through
+`revision` (stage 8) and `generation` (stage 9) before reaching `final_output` — a trajectory's
+`revision` stage may therefore recur, once triggered by self/model critique (stage 7) and again
+triggered by client feedback (stage 10a), each capped independently rather than looping indefinitely.
+This is why the schema below stores stage as a per-step field rather than assuming a fixed-length
+trajectory — trajectories will vary in length and do not all touch every stage.
 
 ## 3. Design constraint: no hidden chain-of-thought
 
@@ -74,7 +90,25 @@ not an unrestricted internal reasoning trace. This mirrors `gc-minimal-zine-post
 its `quality-gate.md` produces checklist-style pass/fail statements, not free-form deliberation, and
 its final output includes a "short interpretation note," not a reasoning transcript.
 
-## 4. Top-level schema
+## 4. Training target
+
+Per the manager-provided discussion (`DISCUSSION_ANALYSIS.md` §1), trajectory SFT on this schema
+should primarily train:
+
+```
+state + tools + history → next action / tool / arguments / concise decision summary
+```
+
+not unrestricted reasoning traces. Concretely: the model of value is one that, given
+`state_summary` (or `environment_state`, §5), `available_tools` (§5), and the prior `steps` array,
+predicts the next step's `action`, `tool`, `tool_input`, and `decision` — where `decision` stays a
+short, structured, observable rationale (§3), not a free-form deliberation transcript. This is the
+same constraint §3 already states for `decision`/`critique`, restated here as the explicit shape of
+the *training example*, not just the *logged field*. A trajectory-SFT dataset built from this schema
+is therefore a set of `(state, tools, history) → next_action` pairs extracted from the `steps` array,
+not a set of `(prompt) → full_reasoning_trace` pairs.
+
+## 5. Top-level schema
 
 ```json
 {
@@ -93,7 +127,11 @@ its final output includes a "short interpretation note," not a reasoning transcr
       "role": "enum: style_reference | edit_target | supporting_insert"
     }
   ],
-  "steps": ["array of Step objects, see section 5"],
+  "harness": {
+    "available_tools": ["string, tool/capability names exposed to the agent for this trajectory, e.g. 'reference_analysis', 'direction_generation', 'generation'"],
+    "environment_notes": "string or null, optional — UI/host/model-version context, if relevant to reproducing the trajectory"
+  },
+  "steps": ["array of Step objects, see section 6"],
   "final_output": {
     "asset_refs": ["string, path or id of final generated asset(s)"],
     "rationale": "string, short observable summary of why this is the final output",
@@ -111,6 +149,7 @@ its final output includes a "short interpretation note," not a reasoning transcr
     "preferred": "boolean or null",
     "rater": "string, optional identifier"
   },
+  "final_acceptance": "boolean or null — whether a human/client explicitly accepted the final_output (distinct from quality_labels, which are rater scores, not a client sign-off)",
   "failure_mode": "enum or null: none | weak_brief_parse | low_direction_diversity | selection_misaligned_to_brief | critique_missed_mismatch | revision_failed_to_fix | tool_error | other",
   "provenance": {
     "created_by": "enum: proposed_example | pilot_run | production_log",
@@ -120,7 +159,12 @@ its final output includes a "short interpretation note," not a reasoning transcr
 }
 ```
 
-## 5. Step object
+`harness` and `final_acceptance` were added in this incremental update per the manager-provided
+discussion (`DISCUSSION_ANALYSIS.md` §1, §3); both are optional/nullable, so trajectories authored
+before this update (all four in `CURIFY_TRAJECTORY_EXAMPLES.jsonl` prior to this pass) remain valid
+without retrofitting.
+
+## 6. Step object
 
 ```json
 {
@@ -137,7 +181,9 @@ its final output includes a "short interpretation note," not a reasoning transcr
   "critique": "string or null — specific, checkable issue statement, only present on critique steps",
   "selected_candidate": "string or null — id of the candidate chosen, only present on selection steps",
   "rejected_candidates": ["string, ids of candidates not chosen, with one-line reason each, only present on selection steps"],
-  "revision_reason": "string or null — why a revision was triggered, only present on revision steps"
+  "revision_reason": "string or null — why a revision was triggered, references the triggering critique or client_feedback step_id, only present on revision steps",
+  "user_feedback": "string or null — verbatim or lightly-summarized human/client feedback on a delivered artifact, only present on client_feedback steps",
+  "preference": "object or null — pairwise preference judgment recorded at this step, e.g. {\"preferred\": \"candidate_A\", \"over\": \"candidate_B\", \"rater\": \"client\"}, only present when a comparative judgment (not a single-candidate evaluation) was made"
 }
 ```
 
@@ -148,10 +194,18 @@ Field-level notes:
   `brief_understanding`) and populated for steps that call an actual capability (e.g.
   `direction_generation` calling an image-generation tool, `reference_retrieval` calling a search
   tool).
+- `state_summary` doubles as the per-step `environment_state` the manager-provided discussion's
+  training-unit framing (§4) refers to — it is not a separate field, to avoid duplicating the same
+  information under two names. Where a step's available tool set differs from the trajectory-level
+  `harness.available_tools` (§5), that can be noted in `state_summary`; the schema does not duplicate
+  a full tool list on every step.
+- `user_feedback` and `preference` were added in this incremental update (`DISCUSSION_ANALYSIS.md`
+  §3) and are optional — steps predating this update do not need to be retrofitted with these keys
+  set to `null`; their absence is equivalent to `null`.
 - Not every step has every field populated — most fields are step-type-conditional, kept optional
   rather than duplicated into stage-specific sub-schemas, to keep the schema small.
 
-## 6. Abbreviated example
+## 7. Abbreviated example
 
 (Full worked examples are in `CURIFY_TRAJECTORY_EXAMPLES.jsonl`. This is a two-step excerpt to show
 the shape.)

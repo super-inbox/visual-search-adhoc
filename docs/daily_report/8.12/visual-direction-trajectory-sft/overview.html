@@ -352,23 +352,28 @@
   <header class="masthead">
     <p class="eyebrow">Curify · Adhoc Research · 2026-08-12</p>
     <h1>Visual Direction as an Agent Trajectory</h1>
-    <p class="dek">Research into whether Curify's Visual Direction / Creative Exploration flow can be represented as a trajectory suitable for future trajectory SFT and benchmark evaluation — informed by the <code>gc-minimal-zine-poster</code> skill repo and Curify's existing five-domain workflow research. Research only: no training, no pipeline, no product change.</p>
+    <p class="dek">Research into whether Curify's Visual Direction / Creative Exploration flow can be represented as a trajectory suitable for future trajectory SFT and benchmark evaluation — informed by the <code>gc-minimal-zine-poster</code> skill repo, Curify's existing five-domain workflow research, and a manager-provided trajectory-SFT discussion incorporated in this update. Research only: no training, no pipeline, no product change.</p>
     <div class="meta-row">
       <span>research artifact</span>
       <span>no model trained</span>
       <span>no frontend changed</span>
       <span>4 proposed trajectory examples</span>
+      <span>discussion incorporated 2026-08-13</span>
     </div>
   </header>
 
   <nav class="toc">
     <span class="toc-label">Contents</span>
     <a href="#lessons">External repo lessons</a>
+    <a href="#discussion">Manager discussion lessons</a>
     <a href="#compare">Workflow vs. trajectory</a>
+    <a href="#harness">Harness → trajectory → preference</a>
     <a href="#stages">Trajectory stages</a>
-    <a href="#example">Worked example</a>
+    <a href="#example">Worked example + recovery</a>
     <a href="#benchmark">Benchmark layers</a>
-    <a href="#pilot">Next pilot</a>
+    <a href="#robustness">Semantic robustness</a>
+    <a href="#moat">Workflow × data × evaluation</a>
+    <a href="#pilot">Phase 0 → Phase 1</a>
   </nav>
 
   <section id="lessons">
@@ -403,8 +408,40 @@
     </div>
   </section>
 
-  <section id="compare">
+  <section id="discussion">
     <p class="section-num">02</p>
+    <h2>What the manager-provided discussion adds</h2>
+    <p class="section-dek">A ChatGPT discussion shared by the manager — inaccessible to automated fetch in the first pass, later provided as transcript text and now incorporated (see footer note). Full source-attributed analysis in <code>DISCUSSION_ANALYSIS.md</code>.</p>
+    <div class="lesson-grid">
+      <div class="lesson adopt">
+        <span class="tag">Core thesis</span>
+        <p><strong>Distill behavior, not hidden CoT.</strong> For an agent product, the useful target is trajectory, tool-use policy, taste, and recovery behavior — not an unrestricted reasoning trace.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">Reframe</span>
+        <p><strong>"100k decisions," not "100k images."</strong> The valuable asset may be decisions about what changes next in a design state, not a media library.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">New data pattern</span>
+        <p><strong>BEFORE → CLIENT FEEDBACK → AFTER.</strong> "This feels too cheap" → concrete design changes → "This is right." Turns qualitative feedback into observable actions.</p>
+      </div>
+      <div class="lesson avoid">
+        <span class="tag">Caveat</span>
+        <p><strong>Interface memorization risk.</strong> Trajectory SFT on one fixed tool schema may teach token-matching, not tool-use semantics — needs deliberate perturbation testing.</p>
+      </div>
+      <div class="lesson avoid">
+        <span class="tag">Caveat</span>
+        <p><strong>Teacher-data compliance.</strong> Don't assume a closed frontier model's output can freely train a competing model — verify terms before any real distillation run.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">Strategic</span>
+        <p><strong>Product niche hypothesis.</strong> Brief → Design System → Product Family → Production, not "generic Design Agent" — recorded as a hypothesis, not a commitment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="compare">
+    <p class="section-num">03</p>
     <h2>Workflow data vs. trajectory data</h2>
     <p class="section-dek">Curify's 8.8 workflow research (five domains) captured finished-project case studies — a content pipeline. Trajectory SFT needs a different object: a logged decision process, including paths that were tried and rejected.</p>
     <div class="compare">
@@ -439,10 +476,30 @@
     </div>
   </section>
 
+  <section id="harness">
+    <p class="section-num">04</p>
+    <h2>Three layers: harness, trajectory, preference</h2>
+    <p class="section-dek">The discussion's data model. Harness is designed and logged first, before any model training; trajectory data trains next-action policy; preference data trains taste — three different objects, never collapsed into one dataset.</p>
+    <div class="lesson-grid">
+      <div class="lesson adopt">
+        <span class="tag">1 · Harness</span>
+        <p><strong>Workflow + tools, designed first.</strong> Brief → find references → propose directions → generate → inspect → detect problems → adjust → regenerate → expand to more assets.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">2 · Trajectory</span>
+        <p><strong>Action-policy SFT.</strong> <code>state + tools + history → next action/tool/arguments/decision</code>. Expert trajectories, not hidden reasoning traces.</p>
+      </div>
+      <div class="lesson adopt">
+        <span class="tag">3 · Preference</span>
+        <p><strong>Taste as comparison.</strong> Pairwise judgments ("A &gt; C") from a model judge, designer, client, or user behavior — reward/judge models, DPO, reranking, self-critique.</p>
+      </div>
+    </div>
+  </section>
+
   <section id="stages">
-    <p class="section-num">03</p>
+    <p class="section-num">05</p>
     <h2>Proposed Curify trajectory stages</h2>
-    <p class="section-dek">Ten stages, derived from the 8.8 workflow vocabulary, the poster repo's procedure, and the requirement that a weak direction be catchable mid-trajectory. Two stages are conditional — most trajectories skip them when the first direction already clears the bar.</p>
+    <p class="section-dek">Ten core stages, derived from the 8.8 workflow vocabulary, the poster repo's procedure, and the requirement that a weak direction be catchable mid-trajectory — plus one new conditional stage from the manager-provided discussion. Three stages are conditional; most trajectories skip them when the first direction already clears the bar.</p>
     <div class="stages">
       <div class="stage-row"><div class="stage-head"><span class="stage-num">01</span><span class="stage-name">Brief understanding</span></div><p class="stage-desc">Parse the brief into mood, constraints, format — explicit and checkable, not implied.</p></div>
       <div class="stage-row"><div class="stage-head"><span class="stage-num">02</span><span class="stage-name">Reference retrieval</span></div><p class="stage-desc">Select or fetch reference material relevant to the brief.</p></div>
@@ -451,16 +508,17 @@
       <div class="stage-row"><div class="stage-head"><span class="stage-num">05</span><span class="stage-name">Direction evaluation</span></div><p class="stage-desc">Score each candidate against the brief on named, observable dimensions.</p></div>
       <div class="stage-row"><div class="stage-head"><span class="stage-num">06</span><span class="stage-name">Selection</span></div><p class="stage-desc">Choose one direction (or shortlist) with a stated reason tied to the evaluation; log what was rejected and why.</p></div>
       <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">07</span><span class="stage-name">Critique</span><span class="stage-badge">conditional</span></div><p class="stage-desc">If the selected candidate has an observable mismatch or defect, state it in checkable terms.</p></div>
-      <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">08</span><span class="stage-name">Revision</span><span class="stage-badge">conditional</span></div><p class="stage-desc">Regenerate against the stated critique — capped, not an open-ended loop.</p></div>
+      <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">08</span><span class="stage-name">Revision</span><span class="stage-badge">conditional</span></div><p class="stage-desc">Regenerate against a stated critique <b>or</b> client feedback — capped, not an open-ended loop.</p></div>
       <div class="stage-row"><div class="stage-head"><span class="stage-num">09</span><span class="stage-name">Generation</span></div><p class="stage-desc">Produce the actual asset(s) for the selected, post-revision direction.</p></div>
-      <div class="stage-row"><div class="stage-head"><span class="stage-num">10</span><span class="stage-name">Final output</span></div><p class="stage-desc">Return the asset with a short, checkable rationale — no hidden reasoning trace.</p></div>
+      <div class="stage-row conditional"><div class="stage-head"><span class="stage-num">10a</span><span class="stage-name">Client feedback</span><span class="stage-badge">conditional · new</span></div><p class="stage-desc">A human/client reviews the delivered artifact in their own words; feedback is translated into concrete changes before revision. From the manager-provided discussion — not in either prior source.</p></div>
+      <div class="stage-row"><div class="stage-head"><span class="stage-num">10</span><span class="stage-name">Final output</span></div><p class="stage-desc">Return the asset with a short, checkable rationale — no hidden reasoning trace. May follow generation directly, or a client_feedback → revision loop.</p></div>
     </div>
   </section>
 
   <section id="example">
-    <p class="section-num">04</p>
-    <h2>Worked example — coffee shop launch post</h2>
-    <p class="section-dek">One of four proposed trajectories in <code>CURIFY_TRAJECTORY_EXAMPLES.jsonl</code> (<code>vd-coffee-0001</code>), shown in full below because it demonstrates the required weak-direction path: a candidate is generated, evaluated as a brief mismatch, rejected with a stated reason, and a separate defect on the winner is caught and fixed in one capped revision.</p>
+    <p class="section-num">06</p>
+    <h2>Worked example — coffee shop launch post <span style="font-size:13px; font-weight:400; color:var(--warn); font-family:var(--mono); text-transform:uppercase; letter-spacing:0.05em;">recovery</span></h2>
+    <p class="section-dek">One of four proposed trajectories in <code>CURIFY_TRAJECTORY_EXAMPLES.jsonl</code> (<code>vd-coffee-0001</code>), shown in full below because it demonstrates the discussion's <code>wrong result → detect → diagnose → change → verify</code> recovery pattern: a candidate is generated, evaluated as a brief mismatch, rejected with a stated reason, and a separate defect on the winner is caught and fixed in one capped revision.</p>
     <div class="card">
       <div class="traj-meta">
         <span class="pill">domain: coffee_shop</span>
@@ -500,12 +558,38 @@
         </div>
       </div>
     </div>
+
+    <h3 style="margin-top:28px;">Client-feedback loop — chili oil packaging <span style="font-weight:400; color:var(--warn); font-family:var(--mono); text-transform:uppercase; font-size:11px; letter-spacing:0.05em;">before → feedback → after</span></h3>
+    <p class="section-dek" style="margin-bottom:16px;">The new stage from the manager-provided discussion, added to <code>vd-packaging-0001</code> (steps 08–10) in this update: a human/client reviews a delivered artifact in their own words, and the feedback is translated into concrete, checkable design changes.</p>
+    <div class="card">
+      <div class="traj-meta">
+        <span class="pill">domain: packaging</span>
+        <span class="pill">steps 08–10 of 10</span>
+        <span class="pill outcome">outcome: revised_success</span>
+      </div>
+      <div class="steps">
+        <div class="step step-reject">
+          <div class="step-top"><span class="step-stage">client_feedback</span><span class="step-id">step_08</span></div>
+          <p class="step-decision">Client reviews candidate A-final.</p>
+          <p class="step-detail"><b>Feedback:</b> "This packaging feels too cheap / mass-market for a small-batch artisanal brand."</p>
+        </div>
+        <div class="step step-revise">
+          <div class="step-top"><span class="step-stage">revision</span><span class="step-id">step_09</span></div>
+          <p class="step-decision">Translate feedback into concrete changes: reduce saturation, serif product-name type, more whitespace, less illustration density, matte-finish mockup — without abandoning the bold/artisanal direction itself.</p>
+        </div>
+        <div class="step">
+          <div class="step-top"><span class="step-stage">final_output</span><span class="step-id">step_10</span></div>
+          <p class="step-decision">Return the revised candidate.</p>
+          <p class="step-detail"><b>Client response:</b> "This is right." (<code>final_acceptance: true</code>)</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <section id="benchmark">
-    <p class="section-num">05</p>
+    <p class="section-num">07</p>
     <h2>Benchmark — three layers, never one score</h2>
-    <p class="section-dek">A single final image can't reveal whether the brief was understood or a weak candidate was caught. Full 11-dimension table with automated/human split is in <code>BENCHMARK_PROPOSAL.md</code>.</p>
+    <p class="section-dek">A single final image can't reveal whether the brief was understood or a weak candidate was caught. Full 18-dimension table with automated/human split is in <code>BENCHMARK_PROPOSAL.md</code>.</p>
     <div class="layers">
       <div class="layer">
         <div class="layer-head"><span class="layer-index">1</span><h3>Step-level</h3></div>
@@ -516,16 +600,21 @@
           <span class="dim-chip">reference understanding</span>
           <span class="dim-chip">visual-system extraction</span>
           <span class="dim-chip">critique correctness</span>
+          <span class="dim-chip">tool-call correctness</span>
         </div>
       </div>
       <div class="layer">
         <div class="layer-head"><span class="layer-index">2</span><h3>Trajectory-level</h3></div>
-        <p>Does the sequence hang together — did evaluation actually drive selection, did critique actually get addressed by revision?</p>
+        <p>Does the sequence hang together — did evaluation actually drive selection, did critique or client feedback actually get addressed by revision?</p>
         <div class="dims">
           <span class="dim-chip">direction diversity</span>
           <span class="dim-chip">selection quality</span>
           <span class="dim-chip">revision effectiveness</span>
           <span class="dim-chip">tool / action efficiency</span>
+          <span class="dim-chip">recovery rate / quality</span>
+          <span class="dim-chip">turns to completion</span>
+          <span class="dim-chip">cost / efficiency</span>
+          <span class="dim-chip">cross-asset consistency</span>
         </div>
       </div>
       <div class="layer">
@@ -534,16 +623,53 @@
         <div class="dims">
           <span class="dim-chip">direction-to-brief alignment</span>
           <span class="dim-chip">final visual quality</span>
+          <span class="dim-chip">production readiness</span>
+          <span class="dim-chip">human preference</span>
         </div>
       </div>
+    </div>
+    <p style="font-size:12.5px; color:var(--ink-faint); margin-top:14px;">Recovery rate, tool-call correctness, turns to completion, cost, cross-asset consistency, production readiness, and human preference are new in this update, from the manager-provided discussion. This is the small internal pilot benchmark (11+ dimensions, 10–20 tasks) — not the larger, not-yet-built future Curify Design Agent Benchmark (see <code>BENCHMARK_PROPOSAL.md</code> §8).</p>
+  </section>
+
+  <section id="robustness">
+    <p class="section-num">08</p>
+    <h2>Semantic robustness — don't memorize the interface</h2>
+    <p class="section-dek">A caveat from the manager-provided discussion: trajectory SFT on one fixed tool schema risks teaching token-matching, not tool-use semantics. The fix is deliberate perturbation testing — not built yet, recorded here as a requirement for any Phase 1 evaluation. Full detail in <code>BENCHMARK_PROPOSAL.md</code> §4.</p>
+    <div class="lesson-grid">
+      <div class="lesson avoid"><span class="tag">Perturbation</span><p><strong>Tool rename.</strong> Same capability, different tool name across otherwise-identical trajectories.</p></div>
+      <div class="lesson avoid"><span class="tag">Perturbation</span><p><strong>Schema perturbation.</strong> Same tool, different argument shape — e.g. <code>count</code> vs. <code>num_candidates</code>.</p></div>
+      <div class="lesson avoid"><span class="tag">Perturbation</span><p><strong>Tool ordering change.</strong> Same available tools, presented in a different order than at training time.</p></div>
+      <div class="lesson avoid"><span class="tag">Perturbation</span><p><strong>Alternate generators / sources.</strong> Different backend behind the same tool name and schema.</p></div>
+    </div>
+    <p style="font-size:13px; color:var(--ink-soft); margin-top:14px;">Scoring question: not "did it call the exact same tool," but "did it still know <em>when</em> this kind of capability was needed."</p>
+  </section>
+
+  <section id="moat">
+    <p class="section-num">09</p>
+    <h2>Workflow × data × evaluation moat</h2>
+    <p class="section-dek">The discussion's strategic argument: don't compete as another generic image generator or prompt-to-design tool — the underlying model stays replaceable (Claude / GPT / Gemini / OSS). What's defensible is workflow, trajectory data, and evaluation. Recorded as a strategic hypothesis, not a product decision made in this research.</p>
+    <div class="lesson-grid">
+      <div class="lesson adopt"><span class="tag">Moat</span><p><strong>Workflow moat.</strong> The workflow library — knowing how a real design task moves from requirement to deliverable.</p></div>
+      <div class="lesson adopt"><span class="tag">Moat</span><p><strong>Trajectory data moat.</strong> Logged decisions, recoveries, and client-feedback loops — not just final images.</p></div>
+      <div class="lesson adopt"><span class="tag">Moat</span><p><strong>Evaluation moat.</strong> The benchmark and judge system built on that data — potentially an asset in its own right (future Curify Design Agent Benchmark, not yet built).</p></div>
+    </div>
+    <p class="section-dek" style="margin-top:22px; margin-bottom:8px;">Product niche hypothesis this points toward (recorded, not implemented):</p>
+    <div class="chain" style="max-width:520px;">
+      <div class="node">Brief</div>
+      <div class="arrow">↓</div>
+      <div class="node">Design System</div>
+      <div class="arrow">↓</div>
+      <div class="node">Product Family <span style="color:var(--ink-faint); font-weight:400;">— packaging / poster / sticker / merch</span></div>
+      <div class="arrow">↓</div>
+      <div class="node">Production</div>
     </div>
   </section>
 
   <section id="pilot">
-    <p class="section-num">06</p>
-    <h2>Recommended next pilot</h2>
+    <p class="section-num">10</p>
+    <h2>Phase 0 → Phase 1</h2>
     <div class="pilot-card">
-      <h2 style="font-size:20px;">Benchmark first, training later</h2>
+      <h2 style="font-size:20px;">Phase 0 — benchmark first, training later</h2>
       <p style="color:var(--ink-soft); margin-bottom:0;">Test whether the benchmark dimensions are gradable by hand before collecting any SFT data. No trajectory-SFT training should start before this shows the dimensions are usable — supervision that can't be evaluated can't be trusted.</p>
       <div class="pilot-stats">
         <div class="pilot-stat"><span class="num">10–20</span><span class="lbl">Creative Exploration tasks</span></div>
@@ -556,19 +682,34 @@
         <li>Human review first; only then check whether an LLM-judge tracks that human judgment on the automatable subset.</li>
       </ul>
     </div>
+    <div class="pilot-card" style="margin-top:16px; background:var(--surface-sunken); border-color:var(--line);">
+      <h2 style="font-size:20px;">Phase 1 — possible MVP, only if Phase 0 succeeds</h2>
+      <p style="color:var(--ink-soft); margin-bottom:0;">Not a committed plan — the source discussion's proposed next-stage shape, recorded for reference. Requires a data-provenance/compliance check on the teacher model before it starts.</p>
+      <div class="pilot-stats">
+        <div class="pilot-stat"><span class="num">300–500</span><span class="lbl">real design briefs</span></div>
+        <div class="pilot-stat"><span class="num">4–8</span><span class="lbl">teacher trajectories per brief</span></div>
+        <div class="pilot-stat"><span class="num">2k–4k</span><span class="lbl">total trajectories, top 20–30% selected</span></div>
+      </div>
+      <ul>
+        <li>Same harness/tools given to teacher and student; blind teacher-vs-student evaluation.</li>
+        <li>Dimensions: task success, visual quality, brand consistency, tool-call correctness, recovery rate, turns to completion, cost, human preference.</li>
+        <li>Train a permitted/open-weight student — verify teacher-model/provider terms first.</li>
+      </ul>
+    </div>
   </section>
 
   <footer>
     <p><b>Source files</b> — all in <code>docs/daily_report/8.12/visual-direction-trajectory-sft/</code>:</p>
     <div class="files">
       <span>REPO_ANALYSIS.md — external repo, explicit vs. inferred</span>
+      <span>DISCUSSION_ANALYSIS.md — manager-provided discussion, source-attributed</span>
       <span>TRAJECTORY_SCHEMA.md — full field definitions</span>
       <span>CURIFY_TRAJECTORY_EXAMPLES.jsonl — 4 proposed trajectories</span>
-      <span>BENCHMARK_PROPOSAL.md — 11-dimension benchmark design</span>
+      <span>BENCHMARK_PROPOSAL.md — 18-dimension benchmark design</span>
       <span>MANAGER_SUMMARY.md — condensed summary</span>
     </div>
     <div class="note-box">
-      <b>Note on scope.</b> The four trajectories referenced here (coffee shop, brand/logo, poster, packaging) are hand-authored <b>proposed examples for schema illustration</b>, not historical production logs. The manager-shared ChatGPT discussion link was not accessible — the share page is a JavaScript-rendered SPA that returned only its title to automated fetch, and no content from it was used or invented in this research.
+      <b>Note on scope.</b> The four trajectories referenced here (coffee shop, brand/logo, poster, packaging) are hand-authored <b>proposed examples for schema illustration</b>, not historical production logs. The manager-shared ChatGPT discussion link itself was not machine-readable to automated fetch during the initial pass (the share page is a JavaScript-rendered SPA that returned only its title) — but the discussion's transcript was subsequently provided directly by the user/manager and has now been incorporated throughout this directory. No content from it was invented.
     </div>
   </footer>
 

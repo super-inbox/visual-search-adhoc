@@ -32,11 +32,13 @@ Full report: [`inspiration-topic-pinterest/DAILY_REPORT.md`](inspiration-topic-p
 ## Task 2 — Visual Direction / Creative Exploration Trajectory SFT
 
 Full reports: [`visual-direction-trajectory-sft/`](visual-direction-trajectory-sft/) —
-`REPO_ANALYSIS.md`, `TRAJECTORY_SCHEMA.md`, `CURIFY_TRAJECTORY_EXAMPLES.jsonl`,
-`BENCHMARK_PROPOSAL.md`, `MANAGER_SUMMARY.md`, `overview.html`.
+`REPO_ANALYSIS.md`, `DISCUSSION_ANALYSIS.md`, `TRAJECTORY_SCHEMA.md`,
+`CURIFY_TRAJECTORY_EXAMPLES.jsonl`, `BENCHMARK_PROPOSAL.md`, `MANAGER_SUMMARY.md`, `overview.html`.
 
 Research only, per manager direction to look at how trajectory SFT methods could apply to Visual
-Direction / Creative Exploration. No training, pipeline, backend, or frontend code was built.
+Direction / Creative Exploration. No training, pipeline, backend, or frontend code was built. This
+entry reflects an **incremental correction-and-completion pass**: the manager-shared discussion,
+previously inaccessible, has now been incorporated.
 
 - **gc-minimal-zine-poster** (public GitHub repo, verified real — not the typo'd "-posterr"
   variant) is a Codex Skill (markdown instructions, no code, no logged trajectory data). Useful
@@ -45,39 +47,65 @@ Direction / Creative Exploration. No training, pipeline, backend, or frontend co
   single-retry revision loop that discloses residual limitations instead of overclaiming. The
   poster-specific numbers and its eval set (rubric prompts, not a real benchmark) are explicitly
   flagged as not transferable as-is.
-- **The manager-shared ChatGPT discussion link was not accessible.** WebFetch returned only the
-  page title ("ChatGPT - Agentic AI Architecture State"); the share page is a JS-rendered SPA that
-  serves no body content to a non-interactive fetch, and interactive browser access wasn't available
-  in this environment (Chrome extension not connected). No content from that discussion was used or
-  invented.
-- **Workflow data vs. trajectory data**: Curify's existing 8.8 five-domain workflow research
-  captured finished-project pipelines (`brief → concepts → design → final result`) with no rejected
-  paths, by construction — a published case study can't show what didn't ship. Trajectory data is
-  a different object: a logged decision process (`state → decision → action/tool → observation →
-  evaluation → revision → final output`) that must include rejected/revised paths to be useful for
-  SFT.
-- **Proposed 10-stage trajectory structure**: brief understanding → reference retrieval → reference
-  analysis → direction generation → direction evaluation → selection → critique (conditional) →
-  revision (conditional) → generation → final output.
-- **Proposed data schema** (`TRAJECTORY_SCHEMA.md`): trajectory-level fields (id, task, domain,
-  user_input, references, steps, final_output, outcome, quality_labels, human_preference,
-  failure_mode, provenance) and step-level fields (stage, state_summary, decision, action, tool,
-  tool_input, observation, evaluation, critique, selected/rejected candidates, revision_reason).
-  Every field is a short, observable, structured statement — **no hidden chain-of-thought** is
-  required or stored.
+- **The public ChatGPT share was not directly machine-readable during the initial pass** — WebFetch
+  returned only the page title, and interactive browser access wasn't available in that environment
+  — **but the discussion transcript was subsequently provided directly by the user/manager and has
+  now been incorporated** (`DISCUSSION_ANALYSIS.md`). No content from it was invented.
+- **Workflow data vs. trajectory data vs. preference data**: Curify's existing 8.8 five-domain
+  workflow research captured finished-project pipelines (`brief → concepts → design → final
+  result`) with no rejected paths, by construction. Trajectory data is a different object: a logged
+  decision process (`state → decision → action/tool → observation → evaluation → revision → final
+  output`) including rejected/revised paths. The incorporated discussion adds a third object,
+  **preference/taste data** — pairwise comparisons between candidates ("A > C"), used for judge/
+  reward models or DPO-style training, not a record of process.
+- **Distill observable behavior/action policy, not hidden CoT**: the discussion's central claim.
+  Trajectory SFT should train `state + tools + history → next action/tool/arguments/concise
+  decision`, never an unrestricted reasoning trace — consistent with, and reinforcing, this
+  research's existing no-hidden-CoT schema constraint.
+- **Harness → Trajectory → Preference**: a three-layer framing from the discussion — the harness
+  (workflow/tools) is designed first, trajectory data trains the next-action policy, preference data
+  trains taste. The insight that the valuable asset may be "100k decisions about what changes next,"
+  not "100k design images," reframes what counts as a data asset.
+- **11-stage trajectory structure** (10 core + 1 new conditional stage): brief understanding →
+  reference retrieval → reference analysis → direction generation → direction evaluation →
+  selection → critique (conditional) → revision (conditional) → generation → **client feedback
+  (conditional, new)** → final output. The new `client_feedback` stage captures the discussion's
+  `BEFORE → HUMAN/CLIENT FEEDBACK → AFTER` pattern (e.g. "this feels too cheap" → concrete design
+  changes → "this is right"), added to `TRAJECTORY_SCHEMA.md` and demonstrated end-to-end in the
+  packaging example below.
+- **Recovery trajectories**: the discussion names `wrong result → detect → diagnose → change →
+  verify` as a meaningful distinction between a strong agent and a demo, and recommends a dedicated
+  Recovery benchmark dimension. The existing coffee-shop example already demonstrated this pattern
+  and needed no change; Recovery is now a named benchmark dimension.
+- **Semantic robustness / interface-perturbation caveat (new)**: trajectory SFT on one fixed tool
+  schema risks teaching interface memorization (token/schema matching) instead of tool-use
+  semantics. `BENCHMARK_PROPOSAL.md` now has a dedicated section recommending tool-rename, schema-
+  perturbation, tool-ordering, and alternate-generator/source tests for any future evaluation.
 - **4 proposed trajectory examples** (`CURIFY_TRAJECTORY_EXAMPLES.jsonl`, all lines independently
   valid JSON): coffee shop, brand/logo, poster, packaging. The coffee-shop example demonstrates the
-  required weak-direction path — a candidate generated, evaluated as a brief mismatch, rejected with
-  a stated reason, and a separate defect on the winner caught and fixed in one capped revision. All
-  are labeled **proposed examples for schema illustration, not production logs**.
+  required weak-direction/recovery path. The packaging example was extended (steps 8–10) to
+  demonstrate the before → client-feedback → after pattern, closing with an explicit
+  `final_acceptance: true`. All remain labeled **proposed examples for schema illustration, not
+  production logs**.
 - **Benchmark proposal** (`BENCHMARK_PROPOSAL.md`): three separate layers — step-level,
-  trajectory-level, final-output — across 11 evaluation dimensions, each split into rule-based
-  checks, LLM-judge checks, and human-only review. No single scalar "visual quality" score is
-  proposed.
-- **Smallest recommended next pilot**: 10–20 Creative Exploration tasks across 2–3 domains, manually
-  reviewed as full trajectories (not just final images), including both clean successes and
-  failed/revised examples — benchmark the dimensions for gradability first; do not start
-  trajectory-SFT data collection or training until that pilot shows the dimensions are usable.
+  trajectory-level, final-output — now across **18 evaluation dimensions** (11 original + 7 added:
+  recovery rate/quality, tool-call correctness, turns to completion, cost/efficiency, human
+  preference, cross-asset consistency, production readiness). No single scalar "visual quality"
+  score is proposed. This small internal pilot benchmark is explicitly distinguished from a much
+  larger, not-yet-built future Curify Design Agent Benchmark the discussion describes as a possible
+  strategic asset.
+- **Curify's possible moat** (strategic framing from the discussion, not a product decision made
+  here): **Workflow × Trajectory Data × Evaluation**, with the underlying model kept replaceable.
+  Points toward a narrower product niche hypothesis — **Brief → Design System → Product Family →
+  Production** — recorded for reference, not scoped or implemented.
+- **Two-phase pilot roadmap**: **Phase 0** (unchanged from the original recommendation) — 10–20
+  Creative Exploration tasks across 2–3 domains, manually reviewed as full trajectories, including
+  clean successes and failed/revised examples, testing whether the dimensions are gradable before
+  any training. **Phase 1** (only if Phase 0 succeeds; the source discussion's proposed next-stage
+  MVP shape, not a committed plan) — roughly 300–500 design briefs, a teacher agent running 4–8
+  trajectories per brief, training a permitted/open-weight student on the same harness, blind
+  teacher-vs-student evaluation. Any real Phase 1 run requires a data-provenance/compliance check on
+  the teacher model/provider's terms first.
 
 ---
 
@@ -86,5 +114,8 @@ Direction / Creative Exploration. No training, pipeline, backend, or frontend co
 - Both tasks are research/data-prep only — no production frontend or backend code was changed
   today.
 - Task 1's evidence (CSVs, gallery, screenshots) was completed and pushed previously; it was not
-  redone or modified in this session.
-- Task 2's outputs, including screenshots, were generated fresh in this session.
+  redone or modified in this session, and its numbers above are unchanged.
+- Task 2's outputs were originally generated in an earlier session; this entry reflects a later
+  incremental pass that incorporated the manager-provided discussion transcript (`DISCUSSION_ANALYSIS.md`,
+  new) and updated the schema, examples, benchmark, manager summary, and `overview.html` accordingly.
+  Screenshots were regenerated to match.
