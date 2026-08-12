@@ -1,0 +1,11 @@
+query_id,query,domain,subdomain,google_record_count,proposed_topic,mapping_status
+V004,figure,merch,figure_generic,5,,unmapped
+V174,product photo,ecommerce,product_photography,5,product;ecommerce;showcase,needs_product_confirmation
+V014,sticker,merch,sticker,5,stickers,mapped
+V216,influencer post,ecommerce,social_commerce_content,4,social-media-posts,mapped
+V248,flashcard,education,flashcard_generic,4,flashcards,mapped
+V084,logo,brand_logo,logo,5,branding,needs_product_confirmation
+V260,certificate,education,certificate_generic,4,,unmapped
+V094,business card,brand_logo,print_collateral,5,,unmapped
+V098,coffee package,packaging,food_beverage_packaging,5,packaging,needs_product_confirmation
+V120,gift box,packaging,gift_packaging,5,packaging,needs_product_confirmation

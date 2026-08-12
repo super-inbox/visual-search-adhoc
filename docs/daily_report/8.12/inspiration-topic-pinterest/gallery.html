@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Google vs Pinterest Inspiration Pilot — 8.12</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --panel-border: #e3e6ea;
+  --text: #1a1d23;
+  --text-dim: #565d68;
+  --text-faint: #8891a0;
+  --accent: #3452db;
+  --accent-dim: #eef1fd;
+
+  --status-mapped-fg: #0f6b3f;
+  --status-mapped-bg: #e5f6ed;
+  --status-mapped-bd: #b7e4c9;
+
+  --status-needs-fg: #8a5a00;
+  --status-needs-bg: #fff5e0;
+  --status-needs-bd: #f3d791;
+
+  --status-unmapped-fg: #9a2f2f;
+  --status-unmapped-bg: #fdeceb;
+  --status-unmapped-bd: #f3c3c0;
+
+  --zero-fg: #6b7280;
+  --zero-bg: #f1f2f4;
+  --zero-bd: #dadde2;
+
+  --card-bg: #fbfbfc;
+  --shadow: 0 1px 2px rgba(20,22,30,0.05), 0 1px 1px rgba(20,22,30,0.03);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+img { max-width: 100%; display: block; }
+
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px 80px;
+}
+
+header.page-header {
+  padding: 40px 24px 28px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header.page-header h1 {
+  font-size: 26px;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+header.page-header p.sub {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 14.5px;
+  max-width: 780px;
+}
+
+nav.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(246,247,249,0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--panel-border);
+}
+
+nav.topnav .inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 24px;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 13.5px;
+}
+
+nav.topnav .section-links {
+  display: flex;
+  gap: 14px;
+  font-weight: 600;
+}
+
+nav.topnav .section-links a { color: var(--text); }
+
+nav.topnav .divider {
+  width: 1px;
+  height: 16px;
+  background: var(--panel-border);
+}
+
+.chip-row {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--panel-border);
+  background: var(--panel);
+  color: var(--text-dim);
+  font-size: 12.5px;
+  white-space: nowrap;
+}
+.chip:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.chip .dot { width: 7px; height: 7px; border-radius: 50%; flex: none; }
+.chip .dot.mapped { background: var(--status-mapped-fg); }
+.chip .dot.needs_product_confirmation { background: var(--status-needs-fg); }
+.chip .dot.unmapped { background: var(--status-unmapped-fg); }
+
+section { padding: 40px 0 8px; }
+section h2 {
+  font-size: 18px;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+}
+section .section-sub {
+  color: var(--text-dim);
+  font-size: 13.5px;
+  margin: 0 0 20px;
+}
+
+/* ---- Stat tiles ---- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.stat-tile {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 16px 16px 14px;
+  box-shadow: var(--shadow);
+}
+.stat-tile .num {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.stat-tile .label {
+  font-size: 12.5px;
+  color: var(--text-dim);
+  margin-top: 3px;
+}
+.stat-tile.mapped { border-top: 3px solid var(--status-mapped-fg); }
+.stat-tile.needs { border-top: 3px solid var(--status-needs-fg); }
+.stat-tile.unmapped { border-top: 3px solid var(--status-unmapped-fg); }
+
+/* ---- Status badge ---- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.badge.mapped { color: var(--status-mapped-fg); background: var(--status-mapped-bg); border-color: var(--status-mapped-bd); }
+.badge.needs_product_confirmation { color: var(--status-needs-fg); background: var(--status-needs-bg); border-color: var(--status-needs-bd); }
+.badge.unmapped { color: var(--status-unmapped-fg); background: var(--status-unmapped-bg); border-color: var(--status-unmapped-bd); }
+.badge.zero { color: var(--zero-fg); background: var(--zero-bg); border-color: var(--zero-bd); }
+
+/* ---- Topic mapping table ---- */
+.mapping-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+.map-card {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-radius: 12px;
+  padding: 16px 16px 14px;
+  box-shadow: var(--shadow);
+}
+.map-card .row1 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+.map-card h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.map-card .domain {
+  font-size: 12px;
+  color: var(--text-faint);
+  margin-bottom: 10px;
+}
+.map-card .topic-line {
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+.map-card .topic-line .lbl { color: var(--text-faint); }
+.map-card .topic-line code {
+  background: var(--accent-dim);
+  color: var(--accent);
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.map-card details {
+  margin-top: 6px;
+  font-size: 12.5px;
+  color: var(--text-dim);
+}
+.map-card summary {
+  cursor: pointer;
+  color: var(--text-faint);
+  font-size: 12px;
+  outline: none;
+}
+.map-card details p { margin: 6px 0 0; }
+
+/* ---- Comparison sections ---- */
+.query-section {
+  scroll-margin-top: 64px;
+  border-top: 1px solid var(--panel-border);
+  padding: 28px 0 8px;
+}
+.query-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+.query-head h3 {
+  margin: 0;
+  font-size: 19px;
+}
+.query-head .qmeta {
+  font-size: 12.5px;
+  color: var(--text-faint);
+}
+.count-summary {
+  font-size: 13px;
+  color: var(--text-dim);
+  margin: 6px 0 14px;
+}
+.count-summary b { color: var(--text); }
+
+.compare-note {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--text-dim);
+  margin: 0 0 18px;
+}
+.compare-note .pref {
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  margin-right: 8px;
+}
+.compare-note-secondary {
+  margin-top: 5px;
+  font-size: 12px;
+  color: var(--text-faint);
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+@media (max-width: 860px) {
+  .columns { grid-template-columns: 1fr; }
+}
+.panel {
+  min-width: 0;
+}
+.column-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+.column-head .n {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-dim);
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px;
+}
+@media (max-width: 700px) {
+  .card-grid { flex-wrap: wrap; }
+  .card-grid .card { flex: 1 1 120px; }
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--panel-border);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  flex: 1 1 0;
+  min-width: 0;
+}
+.card .thumb {
+  aspect-ratio: 4 / 3;
+  background: #eceef1 center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+.card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.card .thumb .noimg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--text-faint);
+  padding: 8px;
+  text-align: center;
+}
+.card .body {
+  padding: 8px 9px 10px;
+  font-size: 11.5px;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+.card .title {
+  font-size: 12px;
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card .src {
+  font-size: 11px;
+  color: var(--text-faint);
+}
+.card .rel {
+  font-size: 10.5px;
+  padding: 2px 6px;
+  border-radius: 5px;
+  display: inline-block;
+  width: fit-content;
+}
+.card .rel.rel-high { background: var(--status-mapped-bg); color: var(--status-mapped-fg); }
+.card .rel.rel-medium { background: var(--status-needs-bg); color: var(--status-needs-fg); }
+.card .rel.rel-low { background: var(--status-unmapped-bg); color: var(--status-unmapped-fg); }
+.card .rel.rel-unclear { background: var(--zero-bg); color: var(--zero-fg); }
+.card .tags {
+  font-size: 10.5px;
+  color: var(--text-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.card .link {
+  font-size: 11px;
+  margin-top: 2px;
+}
+.card .topicchip {
+  font-size: 10px;
+  padding: 1px 6px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.zero-card {
+  border: 1px dashed var(--zero-bd);
+  background: var(--zero-bg);
+  border-radius: 10px;
+  padding: 18px;
+  font-size: 13px;
+  color: var(--zero-fg);
+  text-align: center;
+}
+.zero-card .big {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+/* ---- Footer ---- */
+footer {
+  margin-top: 56px;
+  padding: 28px 0 10px;
+  border-top: 1px solid var(--panel-border);
+  font-size: 13px;
+  color: var(--text-dim);
+}
+footer h2 { font-size: 15px; color: var(--text); margin: 0 0 10px; }
+footer ul { margin: 0 0 16px; padding-left: 20px; }
+footer li { margin-bottom: 6px; }
+footer .meta { font-size: 11.5px; color: var(--text-faint); margin-top: 18px; }
+
+.top-link {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+::selection { background: var(--accent-dim); }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <h1>Google vs Pinterest Inspiration Pilot &mdash; 8.12</h1>
+  <p class="sub">Same-query comparison of the original Google/Behance inspiration pilot against a same-query Pinterest pilot, plus Curify topic-mapping status for all 10 authoritative queries. Adhoc research visualization &mdash; not a production surface.</p>
+</header>
+
+<nav class="topnav">
+  <div class="inner">
+    <div class="section-links">
+      <a href="#summary">Summary</a>
+      <a href="#topic-mapping">Topic mapping</a>
+      <a href="#comparison">Comparison</a>
+      <a href="#interpretation">Interpretation</a>
+    </div>
+    <div class="divider"></div>
+    <div class="chip-row" id="query-chips"></div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<section id="summary">
+  <h2>Summary</h2>
+  <p class="section-sub">Pilot scale and topic-mapping outcome across the 10 authoritative queries.</p>
+  <div class="stat-grid">
+    <div class="stat-tile"><div class="num">47</div><div class="label">Google pilot records</div></div>
+    <div class="stat-tile"><div class="num">10</div><div class="label">Google unique queries</div></div>
+    <div class="stat-tile"><div class="num">44</div><div class="label">Pinterest captured candidates</div></div>
+    <div class="stat-tile"><div class="num">31</div><div class="label">Pinterest usable candidates</div></div>
+    <div class="stat-tile mapped"><div class="num">3 / 13</div><div class="label">Mapped &mdash; queries / records</div></div>
+    <div class="stat-tile needs"><div class="num">4 / 20</div><div class="label">Needs product confirmation &mdash; queries / records</div></div>
+    <div class="stat-tile unmapped"><div class="num">3 / 14</div><div class="label">Unmapped &mdash; queries / records</div></div>
+  </div>
+</section>
+
+<section id="topic-mapping">
+  <h2>Topic mapping status</h2>
+  <p class="section-sub">All 10 authoritative queries mapped against the live Curify topic taxonomy (<code>taxonomy.json</code> / <code>topics.json</code>). Click a card's note to see the full mapping rationale.</p>
+  <div class="mapping-grid" id="mapping-grid"></div>
+</section>
+
+<section id="comparison">
+  <h2>Google vs Pinterest &mdash; by query</h2>
+  <p class="section-sub">Same 10 queries, same order as the filter chips above. Left column = Google/Behance pilot cards (historical curation). Right column = Pinterest same-query pilot cards (captured this session). Real local thumbnails only &mdash; no fabricated images.</p>
+  <div id="query-sections"></div>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <h2 id="interpretation">Interpretation</h2>
+    <ul>
+      <li><b>Pinterest is supplemental, not a replacement for Google</b>, based on this pilot &mdash; it never matched Google/Behance's 100% outbound-URL and source-attribution completeness, and its usable-candidate rate swung from 0/5 to 5/5 depending on query.</li>
+      <li><b>Production integration into Search, Creative Exploration, Inspiration Hub, or Topic Pages was NOT performed here.</b> This is data preparation and comparison only.</li>
+      <li><b>This is an adhoc research visualization</b> built from the CSVs and local thumbnails already captured in this task &mdash; no new data was collected to produce this page, and no missing images or metadata were invented.</li>
+      <li>Next step per the daily report: get product confirmation on the 4 <code>needs_product_confirmation</code> mappings and a decision on the 3 missing topics (<code>figure</code>, <code>business card</code>, <code>certificate</code>).</li>
+    </ul>
+    <div class="meta">
+      Source data: <code>topic_mapping.csv</code>, <code>google_pilot_clean.csv</code>, <code>pinterest_candidates.csv</code>, <code>google_vs_pinterest_comparison.csv</code>, <code>authoritative_queries.csv</code> (all in this folder). Google thumbnails linked from <code>../../8.8/inspiration-source-pilot/thumbnails/</code> (original 8.8 pilot capture). Pinterest thumbnails linked from <code>thumbnails/pinterest/</code> in this folder. Generated 2026-08-12.
+    </div>
+    <a class="top-link" href="#summary">Back to top &uarr;</a>
+  </div>
+</footer>
+
+<script id="gallery-data" type="application/json">[{"query_id": "V004", "query": "figure", "domain": "merch", "subdomain": "figure_generic", "proposed_topic": "", "mapping_status": "unmapped", "mapping_rationale": "No 'figure'/'toy'/'collectible' entry anywhere in taxonomy.json or topics.json (verified: zero grep hits). Adjacent declared topics (merch, character, mascots, character-ip) exist but none actually cover 3D collectible figures -- not a real match.", "google_record_count": 5, "pinterest_candidate_count": 4, "pinterest_usable_count": 4, "is_zero_result": false, "google_cards": [{"source_id": "merch_v004_001", "source_url": "https://www.behance.net/gallery/252973693/MIKO-ART-TOY", "canonical_url": "https://www.behance.net/gallery/252973693/MIKO-ART-TOY", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v004_001.jpg", "tags": "merch;figure;character_design;3d_toy;art_toy;cute_style", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "merch_v004_002", "source_url": "https://www.behance.net/gallery/250994817/Vinyl-Figures-Logo-Full-Collection", "canonical_url": "https://www.behance.net/gallery/250994817/Vinyl-Figures-Logo-Full-Collection", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v004_002.jpg", "tags": "merch;figure;character_design;vinyl_figure;logo_brand_identity;collection_set", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "merch_v004_003", "source_url": "https://www.behance.net/gallery/247684035/Octopus-Starfy-Dessert-Blind-Box", "canonical_url": "https://www.behance.net/gallery/247684035/Octopus-Starfy-Dessert-Blind-Box", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v004_003.jpg", "tags": "merch;figure;character_design;blind_box;dessert_theme;product_photography", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "merch_v004_004", "source_url": "https://www.behance.net/gallery/246538595/TAG-Blind-Box-Series-01-Thai-Culture", "canonical_url": "https://www.behance.net/gallery/246538595/TAG-Blind-Box-Series-01-Thai-Culture", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v004_004.jpg", "tags": "merch;figure;character_design;blind_box;soft_vinyl;cultural_theme", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "merch_v004_005", "source_url": "https://www.behance.net/gallery/248907745/BATON-OFFICE-BLIND-BOX-COLLECTION", "canonical_url": "https://www.behance.net/gallery/248907745/BATON-OFFICE-BLIND-BOX-COLLECTION", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v004_005.jpg", "tags": "merch;figure;character_design;blind_box;packaging;retail_display", "proposed_internal_topic": "", "mapping_status": "unmapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/AbkDpUTLmjJOpbVDNdiglHBQiEwtuewjogGdYmLkIxW8dSRwcBSTcHKINOTg99Ll-321KRklb3GxI89yWsFPbSk/", "title": "POP MART Molly X Tom & Jerry Figure in Assorted at Urban Outfitters", "thumbnail": "thumbnails/pinterest/pinterest_V004_001.jpg", "domain_category": "Urban Outfitters", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - real collectible art-toy figure, matches pilot's merch/figure_generic subject exactly", "quality_assessment": "medium - retail product photo (studio shot), not a designer case-study page like the Google/Behance set", "notes": "Purchasable retail listing, not a designer portfolio/process page"}, {"pin_url": "https://www.pinterest.com/pin/34340015906648800/", "title": "Psl Character Vocal Series 01 Hatsune Miku 15th Anniversary Ver. 1/7 Pre Order", "thumbnail": "thumbnails/pinterest/pinterest_V004_002.jpg", "domain_category": "eBay", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - collectible character figure, on-topic", "quality_assessment": "medium - marketplace listing photo", "notes": "Marketplace resale listing"}, {"pin_url": "https://www.pinterest.com/pin/4598597513539408256/", "title": "Yoimiya Figure: genshin Figure Painted Unpainted Garage Kit", "thumbnail": "thumbnails/pinterest/pinterest_V004_003.jpg", "domain_category": "Etsy", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - garage-kit figure, on-topic", "quality_assessment": "medium - marketplace product photo", "notes": "Marketplace listing"}, {"pin_url": "https://www.pinterest.com/pin/4607112172732803968/", "title": "Sanrio Unisex Action figure", "thumbnail": "thumbnails/pinterest/pinterest_V004_004.jpg", "domain_category": "Depop", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - collectible action figure, on-topic", "quality_assessment": "medium - resale marketplace photo", "notes": "Resale marketplace listing"}], "comparison": {"google_quality_grades": "A:2 B:3 (all behance.net)", "pinterest_source_domains_observed": "Urban Outfitters, eBay, Etsy, Depop (all marketplace/retail listings)", "google_visual_design_relevance": "high - real designer/studio art-toy case studies (sketch-to-product stages on 2 of 5)", "pinterest_visual_design_relevance": "high - all 4 are real collectible figures, on-topic", "google_style_diversity": "medium - 5 distinct designer/studio projects, some process documentation", "pinterest_style_diversity": "low-medium - 4 distinct retail listings, but all single product photos, no process/behind-the-scenes content", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 4/4 downloaded successfully (236px preview size)", "source_outbound_url_quality": "Google: source_url+canonical_url present for all 5, pointing to designer portfolios. Pinterest: outbound URL not extractable for any of the 4 (see limitation); only the retailer name is visible", "internal_topic_mapping_usefulness": "identical - both feed the same unmapped 'figure' query-level decision; neither source resolves the missing topic", "collection_difficulty": "Google: historical WebSearch+Behance curation (not re-run this session). Pinterest: automated in-session, fast, no blocking encountered", "preferred_source_for_this_query": "supplemental_at_best - Pinterest results are purchasable retail photos, not design case studies; Google/Behance set already covers the process angle this query needs", "notes": "Pinterest is more 'is this a real product' evidence; Google/Behance is more 'how was this designed' evidence", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "figure"}, {"query_id": "V174", "query": "product photo", "domain": "ecommerce", "subdomain": "product_photography", "proposed_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "mapping_rationale": "Three declared topics are all plausible for 'product photography': product (tier1, 'Commerce & Branding'), ecommerce and showcase (tier2 children of product). No single canonical slug -- product must pick one (or a combination).", "google_record_count": 5, "pinterest_candidate_count": 5, "pinterest_usable_count": 3, "is_zero_result": false, "google_cards": [{"source_id": "ecom_v174_001", "source_url": "https://www.behance.net/gallery/247950949/Amazon-Listing-Images-Luxury-Skincare", "canonical_url": "https://www.behance.net/gallery/247950949/Amazon-Listing-Images-Luxury-Skincare", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v174_001.jpg", "tags": "ecommerce;product_photography;listing_design;skincare;amazon_a_plus;lifestyle_photography", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation"}, {"source_id": "ecom_v174_002", "source_url": "https://www.behance.net/gallery/182137947/Meno8-Menopause-Supplement-Product-Photography", "canonical_url": "https://www.behance.net/gallery/182137947/Meno8-Menopause-Supplement-Product-Photography", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v174_002.jpg", "tags": "ecommerce;product_photography;supplement;studio_lighting;neutral_background", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation"}, {"source_id": "ecom_v174_003", "source_url": "https://www.behance.net/gallery/247830083/High-End-E-commerce-Retouching-Footwear", "canonical_url": "https://www.behance.net/gallery/247830083/High-End-E-commerce-Retouching-Footwear", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v174_003.jpg", "tags": "ecommerce;product_photography;retouching;footwear;before_after;process_documentation", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation"}, {"source_id": "ecom_v174_004", "source_url": "https://www.behance.net/gallery/234853381/Luxury-Jewelry-Ring-Still-Life-Photography-Retouching", "canonical_url": "https://www.behance.net/gallery/234853381/Luxury-Jewelry-Ring-Still-Life-Photography-Retouching", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v174_004.jpg", "tags": "ecommerce;product_photography;jewelry;still_life;studio_lighting;retouching", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation"}, {"source_id": "ecom_v174_005", "source_url": "https://www.behance.net/gallery/190268013/AMAZON-A-Content-Listing-Images", "canonical_url": "https://www.behance.net/gallery/190268013/AMAZON-A-Content-Listing-Images", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v174_005.jpg", "tags": "ecommerce;product_photography;listing_design;amazon_a_plus;freelance_service", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/599752875425271527/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V174_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "relevance_assessment": "unclear - no title/source text captured, relevance cannot be assessed from grid alone", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/985231158770900/", "title": "Something & Nothing - Studio AS-CC", "thumbnail": "thumbnails/pinterest/pinterest_V174_002.jpg", "domain_category": "Studio AS-CC", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "relevance_assessment": "high - named studio's product photography work, closest analog to the Google pilot's Behance case-study style", "quality_assessment": "high - styled product photography", "notes": "Closest Pinterest analog found to the Google/Behance 'designer portfolio' pattern"}, {"pin_url": "https://www.pinterest.com/pin/777152479470341457/", "title": "UGC photography, portfolio, content creation, ideas", "thumbnail": "thumbnails/pinterest/pinterest_V174_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "relevance_assessment": "high - explicitly product/UGC photography inspiration", "quality_assessment": "medium - styled flat-lay", "notes": "Native Pinterest idea-board style pin, no outbound source shown"}, {"pin_url": "https://www.pinterest.com/pin/1196337404596498/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V174_004.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/7951736838747562/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V174_005.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "product;ecommerce;showcase", "mapping_status": "needs_product_confirmation", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}], "comparison": {"google_quality_grades": "A:2 B:2 C:1 (all behance.net)", "pinterest_source_domains_observed": "Studio AS-CC (1), unlabeled/native (4)", "google_visual_design_relevance": "high - dedicated e-commerce retouching/photography case studies", "pinterest_visual_design_relevance": "medium - 2/5 had no title text at all (grid metadata gap); of the 3 with text, 2 are on-topic photography-inspiration pins", "google_style_diversity": "medium - skincare, footwear, jewelry across 5 records", "pinterest_style_diversity": "low - mostly generic styled flat-lays, less subject variety visible than the Google set", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url. Pinterest: outbound URL not extractable for any row; 2/5 rows have no source domain or title metadata at all", "internal_topic_mapping_usefulness": "Pinterest images could visually supplement the ambiguous product/ecommerce/showcase decision, but do not resolve which of the 3 candidate topic ids is correct", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "google_stronger - Pinterest's 40% no-metadata rate on this query makes it a weaker candidate than the fully-documented Google set", "notes": "Pinterest grid metadata (title/source) is missing for a meaningful share of pins on this query", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "product-photo"}, {"query_id": "V014", "query": "sticker", "domain": "merch", "subdomain": "sticker", "proposed_topic": "stickers", "mapping_status": "mapped", "mapping_rationale": "Exact match: declared topic id 'stickers' (displayName 'Stickers').", "google_record_count": 5, "pinterest_candidate_count": 5, "pinterest_usable_count": 5, "is_zero_result": false, "google_cards": [{"source_id": "merch_v014_001", "source_url": "https://www.behance.net/gallery/251388765/UNHCR-character-Stickers", "canonical_url": "https://www.behance.net/gallery/251388765/UNHCR-character-Stickers", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v014_001.jpg", "tags": "merch;sticker;character_design;emoji;animated_gif;institutional_client", "proposed_internal_topic": "stickers", "mapping_status": "mapped"}, {"source_id": "merch_v014_002", "source_url": "https://www.behance.net/gallery/248254715/Sweetless-Sticker-Sheet", "canonical_url": "https://www.behance.net/gallery/248254715/Sweetless-Sticker-Sheet", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v014_002.jpg", "tags": "merch;sticker;character_design;digital_illustration;animated_gif", "proposed_internal_topic": "stickers", "mapping_status": "mapped"}, {"source_id": "merch_v014_003", "source_url": "https://www.behance.net/gallery/250183369/Its-giving-Anye-Sticker-Pack", "canonical_url": "https://www.behance.net/gallery/250183369/Its-giving-Anye-Sticker-Pack", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v014_003.jpg", "tags": "merch;sticker;character_design;digital_illustration;special_finish", "proposed_internal_topic": "stickers", "mapping_status": "mapped"}, {"source_id": "merch_v014_004", "source_url": "https://www.behance.net/gallery/246494945/Personal-sticker-pack-for-messengers", "canonical_url": "https://www.behance.net/gallery/246494945/Personal-sticker-pack-for-messengers", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v014_004.jpg", "tags": "merch;sticker;character_design;messenger_app;animated_gif", "proposed_internal_topic": "stickers", "mapping_status": "mapped"}, {"source_id": "merch_v014_005", "source_url": "https://www.behance.net/gallery/190367193/Sexy-Veggies-sticker-sheet", "canonical_url": "https://www.behance.net/gallery/190367193/Sexy-Veggies-sticker-sheet", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/merch_v014_005.jpg", "tags": "merch;sticker;character_design;food_theme;vintage_style;illustration", "proposed_internal_topic": "stickers", "mapping_status": "mapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/211174978880880/", "title": "Burn Out 4 Sticker Mental Health You Cant Do Everything Work Harder", "thumbnail": "thumbnails/pinterest/pinterest_V014_001.jpg", "domain_category": "eBay", "proposed_internal_topic": "stickers", "mapping_status": "mapped", "relevance_assessment": "high - die-cut sticker product, matches pilot's merch/sticker subject", "quality_assessment": "medium - marketplace product photo", "notes": "Marketplace listing"}, {"pin_url": "https://www.pinterest.com/pin/4591419894587078016/", "title": "Strawberry Cat Sticker | Kawaii Kitty Vinyl Decal, Laptop Water Bottle Sticker", "thumbnail": "thumbnails/pinterest/pinterest_V014_002.jpg", "domain_category": "Etsy", "proposed_internal_topic": "stickers", "mapping_status": "mapped", "relevance_assessment": "high - vinyl sticker product, on-topic", "quality_assessment": "medium - marketplace product photo", "notes": "Marketplace listing"}, {"pin_url": "https://www.pinterest.com/pin/72902087714423646/", "title": "Hot Topic Accessories | Meme Dog Vinyl Sticker", "thumbnail": "thumbnails/pinterest/pinterest_V014_003.jpg", "domain_category": "Poshmark", "proposed_internal_topic": "stickers", "mapping_status": "mapped", "relevance_assessment": "high - vinyl sticker product, on-topic", "quality_assessment": "medium - resale marketplace photo", "notes": "Resale marketplace listing"}, {"pin_url": "https://www.pinterest.com/pin/16888567418614805/", "title": "Idiot Repellent, Funny Sticker", "thumbnail": "thumbnails/pinterest/pinterest_V014_004.jpg", "domain_category": "Zazzle", "proposed_internal_topic": "stickers", "mapping_status": "mapped", "relevance_assessment": "high - sticker product, on-topic", "quality_assessment": "medium - print-on-demand product photo", "notes": "Print-on-demand storefront listing"}, {"pin_url": "https://www.pinterest.com/pin/4599160509287694976/", "title": "Find Your Sparks Sticker", "thumbnail": "thumbnails/pinterest/pinterest_V014_005.jpg", "domain_category": "Rock Paper Scissors Shop", "proposed_internal_topic": "stickers", "mapping_status": "mapped", "relevance_assessment": "high - independent sticker shop product, on-topic", "quality_assessment": "medium-high - branded small-shop product photo", "notes": "Independent small-shop storefront listing"}], "comparison": {"google_quality_grades": "A:2 B:3 (all behance.net)", "pinterest_source_domains_observed": "eBay, Etsy, Poshmark, Zazzle, Rock Paper Scissors Shop", "google_visual_design_relevance": "high - dedicated sticker-sheet/pack design case studies", "pinterest_visual_design_relevance": "high - all 5 are real sticker products, on-topic", "google_style_diversity": "medium-high - 5 distinct designer sticker-pack projects (institutional, messenger, food, vintage themes)", "pinterest_style_diversity": "medium - 5 distinct retail/marketplace listings across different shops, but all single-sticker product photos rather than sheet/pack design", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url pointing to designer case studies. Pinterest: outbound URL not extractable for any of the 5; only retailer names visible", "internal_topic_mapping_usefulness": "both map cleanly to the existing 'stickers' topic id; Pinterest adds retail-product visual variety but no new topic-mapping information", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "supplemental - this query is already 'mapped' with a confident Curify topic; Pinterest can supplement with retail-style product photos but Google/Behance covers the design-process angle", "notes": "This is one of the 3 already-mapped queries; the mapping decision does not change based on Pinterest evidence", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "sticker"}, {"query_id": "V084", "query": "logo", "domain": "brand_logo", "subdomain": "logo", "proposed_topic": "branding", "mapping_status": "needs_product_confirmation", "mapping_rationale": "No topic literally named 'logo'. Taxonomy has 'logo-application' as a tier3 vocabulary entry under product, but it is NOT declared in topics.json (no page). Closest live topic is 'branding', which is broader than logo design specifically.", "google_record_count": 5, "pinterest_candidate_count": 5, "pinterest_usable_count": 3, "is_zero_result": false, "google_cards": [{"source_id": "brand_v084_001", "source_url": "https://www.behance.net/gallery/223081363/Uncle-Joes-Branding-Case-Study", "canonical_url": "https://www.behance.net/gallery/223081363/Uncle-Joes-Branding-Case-Study", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v084_001.jpg", "tags": "brand_logo;logo;emblem;vintage_style;typography;food_branding", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation"}, {"source_id": "brand_v084_002", "source_url": "https://www.behance.net/gallery/165211261/Goufoo-Case-study-Agriculture-Brand-identity-2023", "canonical_url": "https://www.behance.net/gallery/165211261/Goufoo-Case-study-Agriculture-Brand-identity-2023", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v084_002.jpg", "tags": "brand_logo;logo;agriculture;organic_style;typography;brand_guidelines", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation"}, {"source_id": "brand_v084_003", "source_url": "https://www.behance.net/gallery/236620489/Design-Monks-UXUI-Agency-Brand-Identity-Logo-Design", "canonical_url": "https://www.behance.net/gallery/236620489/Design-Monks-UXUI-Agency-Brand-Identity-Logo-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v084_003.jpg", "tags": "brand_logo;logo;agency_self_brand;minimalism;typography;geometric_mark", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation"}, {"source_id": "brand_v084_004", "source_url": "https://www.behance.net/gallery/246708321/Zendo-SaaS-Productivity-Branding-Case-Study", "canonical_url": "https://www.behance.net/gallery/246708321/Zendo-SaaS-Productivity-Branding-Case-Study", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v084_004.jpg", "tags": "brand_logo;logo;saas;isotype;visual_identity;task_management", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation"}, {"source_id": "brand_v084_005", "source_url": "https://www.behance.net/gallery/244591329/SkyRuote-Logo-case-study-and-Stationary-Design", "canonical_url": "https://www.behance.net/gallery/244591329/SkyRuote-Logo-case-study-and-Stationary-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v084_005.jpg", "tags": "brand_logo;logo;aviation;stationery;grid_construction;typography", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/1097048790517938675/", "title": "Fresh modern organic lively eco food beverage grocery brand wordmark logo branding design", "thumbnail": "thumbnails/pinterest/pinterest_V084_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation", "relevance_assessment": "high - explicit logo/branding design post", "quality_assessment": "high - designer-style branding presentation", "notes": "Design-inspiration style pin, closest to a real logo case study in this query's results"}, {"pin_url": "https://www.pinterest.com/pin/834573374741782646/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V084_002.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/296674694226394615/", "title": "Free Logo Maker - Create a Logo By AI Logo Generator Tool", "thumbnail": "thumbnails/pinterest/pinterest_V084_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation", "relevance_assessment": "low - promotes a logo-generator SaaS tool, not a logo design example itself", "quality_assessment": "low - marketing graphic, not a design artifact", "notes": "Advertisement for a logo-generation tool, not design inspiration"}, {"pin_url": "https://www.pinterest.com/pin/4596416134571689344/", "title": "Plumber Service Logo", "thumbnail": "thumbnails/pinterest/pinterest_V084_004.jpg", "domain_category": "Scalebranding", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation", "relevance_assessment": "medium - a real logo design example, on-topic", "quality_assessment": "medium - single logo mockup", "notes": "Branding-studio product/portfolio pin"}, {"pin_url": "https://www.pinterest.com/pin/903394006528908327/", "title": "Don & Charlys - Instagram photo", "thumbnail": "thumbnails/pinterest/pinterest_V084_005.jpg", "domain_category": "Instagram", "proposed_internal_topic": "branding", "mapping_status": "needs_product_confirmation", "relevance_assessment": "low - generic Instagram repost, logo relevance unclear from title alone", "quality_assessment": "unknown - not opened", "notes": "Repost from Instagram, not a dedicated design source"}], "comparison": {"google_quality_grades": "A:3 B:2 (all behance.net)", "pinterest_source_domains_observed": "unlabeled (1), unlabeled/no-text (1), (an AI logo-maker ad), Scalebranding, Instagram", "google_visual_design_relevance": "high - 5 distinct branding case studies from named designers/agencies", "pinterest_visual_design_relevance": "low-medium - 1/5 is an advertisement for a logo-generator SaaS tool (not design inspiration), 1/5 is a generic Instagram repost, 1/5 has no title text", "google_style_diversity": "high - agriculture, aviation, SaaS, food-branding, stationery-system projects", "pinterest_style_diversity": "low - mostly single-logo mockups or non-design content, less variety than Google set", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url. Pinterest: outbound URL not extractable for any of the 5; 2/5 have no source domain shown at all", "internal_topic_mapping_usefulness": "Google set is closer to informing the ambiguous 'logo vs branding' topic decision (project-level case studies); Pinterest's ad/repost content does not help resolve it", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "google_stronger - Pinterest results for this query include a SaaS advertisement, weakening overall relevance versus Google's 5/5 real design case studies", "notes": "Lowest Pinterest usable-rate (3/5) among is-topic-related queries, driven by an ad and a low-signal repost", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "logo"}, {"query_id": "V094", "query": "business card", "domain": "brand_logo", "subdomain": "print_collateral", "proposed_topic": "", "mapping_status": "unmapped", "mapping_rationale": "Zero hits for 'business-card'/'stationery'/'print-collateral' anywhere in taxonomy.json or topics.json. No adjacent taxonomy branch covers this.", "google_record_count": 5, "pinterest_candidate_count": 5, "pinterest_usable_count": 5, "is_zero_result": false, "google_cards": [{"source_id": "brand_v094_001", "source_url": "https://www.behance.net/gallery/66506709/Corporate-Branding-Stationery", "canonical_url": "https://www.behance.net/gallery/66506709/Corporate-Branding-Stationery", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v094_001.jpg", "tags": "brand_logo;print_collateral;business_card;letterhead;envelope;stationery_system", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "brand_v094_002", "source_url": "https://www.behance.net/gallery/12278583/Letterpress-Business-Cards", "canonical_url": "https://www.behance.net/gallery/12278583/Letterpress-Business-Cards", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v094_002.jpg", "tags": "brand_logo;print_collateral;business_card;letterpress;kraft_paper;production_technique", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "brand_v094_003", "source_url": "https://www.behance.net/gallery/137638661/CLIFFARD-SEAFOOD-RESTAURANT", "canonical_url": "https://www.behance.net/gallery/137638661/CLIFFARD-SEAFOOD-RESTAURANT", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v094_003.jpg", "tags": "brand_logo;print_collateral;business_card;restaurant;mascot_character;illustration", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "brand_v094_004", "source_url": "https://www.behance.net/gallery/234897027/GOOD-Interior-Studio-Logo-Visual-Identity", "canonical_url": "https://www.behance.net/gallery/234897027/GOOD-Interior-Studio-Logo-Visual-Identity", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v094_004.jpg", "tags": "brand_logo;print_collateral;business_card;interior_design;pattern_design;gift_certificate", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "brand_v094_005", "source_url": "https://www.behance.net/gallery/223494785/Nook-Coffee", "canonical_url": "https://www.behance.net/gallery/223494785/Nook-Coffee", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/brand_v094_005.jpg", "tags": "brand_logo;print_collateral;business_card;coffee_shop;monogram;typography", "proposed_internal_topic": "", "mapping_status": "unmapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/891923901238681491/", "title": "Minimalist Modern Elegant Beige Luxury Gold Foil Spot Gloss Business Cards", "thumbnail": "thumbnails/pinterest/pinterest_V094_001.jpg", "domain_category": "Zazzle", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - print-collateral business card product, matches pilot's brand_logo/print_collateral subject", "quality_assessment": "medium - print-on-demand product photo", "notes": "Print-on-demand storefront listing"}, {"pin_url": "https://www.pinterest.com/pin/140806233782954/", "title": "40+ Most Creative Business Cards That Are Sure to Get Noticed", "thumbnail": "thumbnails/pinterest/pinterest_V094_002.jpg", "domain_category": "My Modern Met", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - editorial design-inspiration roundup, closest analog to a curated case-study", "quality_assessment": "high - editorial photography of multiple designs", "notes": "Editorial roundup article pin, closest to Google pilot's curation style for this query"}, {"pin_url": "https://www.pinterest.com/pin/608267493435697946/", "title": "(video pin, 0:10)", "thumbnail": "thumbnails/pinterest/pinterest_V094_003.jpg", "domain_category": "BcardsCreation", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "medium - business-card product video, on-topic but not a static design reference", "quality_assessment": "unknown - video pin, not evaluated as a static thumbnail", "notes": "Video pin (0:10) rather than a static image"}, {"pin_url": "https://www.pinterest.com/pin/4608519503777724288/", "title": "Luxury Real Estate Broker Branding Taupe Faux Gold Business Card", "thumbnail": "thumbnails/pinterest/pinterest_V094_004.jpg", "domain_category": "Zazzle", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - business card product, on-topic", "quality_assessment": "medium - print-on-demand product photo", "notes": "Print-on-demand storefront listing"}, {"pin_url": "https://www.pinterest.com/pin/4608871343411083136/", "title": "Monogram Executive Visiting Card Business Card Personalized Entrepreneur Consult", "thumbnail": "thumbnails/pinterest/pinterest_V094_005.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - business card product, on-topic", "quality_assessment": "medium - product photo", "notes": "No outbound domain badge shown in grid"}], "comparison": {"google_quality_grades": "A:4 B:1 (all behance.net)", "pinterest_source_domains_observed": "Zazzle (2), My Modern Met, BcardsCreation, unlabeled", "google_visual_design_relevance": "high - 4 of 5 rated A quality, named designer stationery-system case studies", "pinterest_visual_design_relevance": "high - all 5 on-topic business-card content; the 'My Modern Met' editorial roundup is a genuine design-curation source", "google_style_diversity": "medium-high - coffee shop, restaurant, monogram, letterpress-production-technique projects", "pinterest_style_diversity": "medium - print-on-demand listings plus one editorial roundup and one video pin", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url. Pinterest: outbound URL not extractable for any of the 5", "internal_topic_mapping_usefulness": "this query is currently unmapped (no Curify topic exists for business cards/print collateral at all) -- neither source resolves that gap, since it is a taxonomy gap, not a content-sourcing gap", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "both_viable - this is the strongest Pinterest showing of the 10 queries (5/5 usable, incl. an editorial roundup); worth reconsidering if/when a business-card topic is created", "notes": "Best Pinterest performance of the pilot; still does not change the query's unmapped topic status, which is a Curify-taxonomy gap not a sourcing gap", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "business-card"}, {"query_id": "V098", "query": "coffee package", "domain": "packaging", "subdomain": "food_beverage_packaging", "proposed_topic": "packaging", "mapping_status": "needs_product_confirmation", "mapping_rationale": "Only the generic 'packaging' topic is declared/live. Taxonomy has finer tier3 entries 'food-packaging' / 'beverage-packaging' under product, but neither is in topics.json (undeclared, no page) -- broad match only.", "google_record_count": 5, "pinterest_candidate_count": 5, "pinterest_usable_count": 5, "is_zero_result": false, "google_cards": [{"source_id": "pack_v098_001", "source_url": "https://www.behance.net/gallery/241739091/CRAVEA-Coffee-Brand-Identity-Packaging-Case-Study", "canonical_url": "https://www.behance.net/gallery/241739091/CRAVEA-Coffee-Brand-Identity-Packaging-Case-Study", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v098_001.jpg", "tags": "packaging;food_beverage_packaging;coffee;bag_format;illustration;brand_identity", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v098_002", "source_url": "https://www.behance.net/gallery/239303367/ALTO-ROASTERS-Coffee-Brand-Identity-Packaging", "canonical_url": "https://www.behance.net/gallery/239303367/ALTO-ROASTERS-Coffee-Brand-Identity-Packaging", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v098_002.jpg", "tags": "packaging;food_beverage_packaging;coffee;bag_format;typography;premium_branding", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v098_003", "source_url": "https://www.behance.net/gallery/151709757/Swerl-Coffee-Roasters-Brand-identity-packaging", "canonical_url": "https://andreaspedersen.se/work/swerlcoffeeroasters", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v098_003.jpg", "tags": "packaging;food_beverage_packaging;coffee;bag_format;retro_style;mascot", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v098_004", "source_url": "https://www.behance.net/gallery/247587755/SIPPA-drip-bags-Brand-identity-Packaging-design", "canonical_url": "https://www.behance.net/gallery/247587755/SIPPA-drip-bags-Brand-identity-Packaging-design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v098_004.jpg", "tags": "packaging;food_beverage_packaging;coffee;drip_bag_format;minimalist;box_design", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v098_005", "source_url": "https://www.behance.net/gallery/239381383/KakaoBank-Brand-Goods-Drip-Bag-Coffee-Duo", "canonical_url": "https://www.behance.net/gallery/239381383/KakaoBank-Brand-Goods-Drip-Bag-Coffee-Duo", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v098_005.jpg", "tags": "packaging;food_beverage_packaging;coffee;drip_bag_format;corporate_merchandise;qr_integration", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/1011972978792653332/", "title": "Professional Coffee Bag Manufacturer | Custom Coffee Packaging Supplier | Wholesale", "thumbnail": "thumbnails/pinterest/pinterest_V098_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation", "relevance_assessment": "medium - B2B packaging-manufacturer ad, on-topic subject but a sales pitch rather than a design case study", "quality_assessment": "medium - product/catalog photo", "notes": "Manufacturer/supplier advertisement"}, {"pin_url": "https://www.pinterest.com/pin/4604015900176754560/", "title": "Whole Bean Coffee", "thumbnail": "thumbnails/pinterest/pinterest_V098_002.jpg", "domain_category": "Manhattan", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation", "relevance_assessment": "medium - real coffee-bag product, on-topic", "quality_assessment": "medium - retail product photo", "notes": "Retail product listing"}, {"pin_url": "https://www.pinterest.com/pin/1112037333027915675/", "title": "Coffee package | Coffee packaging, Cafe package design, Logo design trends", "thumbnail": "thumbnails/pinterest/pinterest_V098_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation", "relevance_assessment": "high - explicit packaging-design-trend roundup, closest analog to a curated case study", "quality_assessment": "high - curated design-roundup style", "notes": "Design-trend roundup pin, closest to Google pilot's curation style for this query"}, {"pin_url": "https://www.pinterest.com/pin/655836764533839786/", "title": "Modern Coffee Packaging That Makes Customers Stop and Look", "thumbnail": "thumbnails/pinterest/pinterest_V098_004.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation", "relevance_assessment": "high - packaging-design editorial content, on-topic", "quality_assessment": "high - curated design-roundup style", "notes": "Design-editorial roundup pin"}, {"pin_url": "https://www.pinterest.com/pin/137289488899251197/", "title": "Verve Street Level Whole Bean Espresso Roast Craft Coffee - 12oz", "thumbnail": "thumbnails/pinterest/pinterest_V098_005.jpg", "domain_category": "Target", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation", "relevance_assessment": "medium - real retail coffee-bag product, on-topic", "quality_assessment": "medium - big-box retail product photo", "notes": "Big-box retailer product listing"}], "comparison": {"google_quality_grades": "A:4 B:1 (4x behance.net, 1x andreaspedersen.se)", "pinterest_source_domains_observed": "unlabeled (manufacturer ad), Manhattan, unlabeled (design roundup), unlabeled (design roundup), Target", "google_visual_design_relevance": "high - 4 of 5 rated A, includes the pack_v098_003 case (designer's own site as richer canonical source)", "pinterest_visual_design_relevance": "medium-high - real coffee packaging content, but skews toward manufacturer ads and big-box retail rather than design case studies", "google_style_diversity": "high - bag, drip-bag, and box formats across 5 distinct brand identities", "pinterest_style_diversity": "medium - bag-format retail products plus 2 curated design-trend roundup pins", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url (this is the query containing the legitimate pack_v098_003 dual-URL case). Pinterest: outbound URL not extractable for any of the 5", "internal_topic_mapping_usefulness": "both would map to the same broad 'packaging' topic; the finer taxonomy vocabulary (beverage-packaging) is undeclared in Curify regardless of source", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "google_stronger - higher proportion of real design case studies (A-grade) vs. Pinterest's mix of manufacturer ads and retail listings", "notes": "Confirms pack_v098_003's legitimate two-URL pattern is a Google/Behance-side finding, unrelated to Pinterest", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "coffee-package"}, {"query_id": "V120", "query": "gift box", "domain": "packaging", "subdomain": "gift_packaging", "proposed_topic": "packaging", "mapping_status": "needs_product_confirmation", "mapping_rationale": "Only the generic 'packaging' topic is declared/live. Taxonomy has a tier3 entry 'gift-packaging' (name matches the pilot's own subdomain almost exactly) but it is NOT in topics.json -- undeclared, no page. Broad match only.", "google_record_count": 5, "pinterest_candidate_count": 0, "pinterest_usable_count": 0, "is_zero_result": true, "google_cards": [{"source_id": "pack_v120_001", "source_url": "https://www.behance.net/gallery/233463469/Edifier-Valentines-Day-Gift-Box-Packaging-Design", "canonical_url": "https://www.behance.net/gallery/233463469/Edifier-Valentines-Day-Gift-Box-Packaging-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v120_001.jpg", "tags": "packaging;gift_packaging;electronics;dual_opening_structure;magnetic_closure;illustration", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v120_002", "source_url": "https://www.behance.net/gallery/240616709/2026", "canonical_url": "https://www.behance.net/gallery/240616709/2026", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v120_002.jpg", "tags": "packaging;gift_packaging;corporate_merchandise;kraft_paper;mixed_media;illustration", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v120_003", "source_url": "https://www.behance.net/gallery/183841943/KOOKYCREAM-NEW-YEAR-GIFT-BOX", "canonical_url": "https://www.behance.net/gallery/183841943/KOOKYCREAM-NEW-YEAR-GIFT-BOX", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v120_003.jpg", "tags": "packaging;gift_packaging;chinese_new_year;food_gifting;3d_rendering", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v120_004", "source_url": "https://www.behance.net/gallery/253344779/Flourishing-Banquet-Gift-Box", "canonical_url": "https://www.behance.net/gallery/253344779/Flourishing-Banquet-Gift-Box", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v120_004.jpg", "tags": "packaging;gift_packaging;botanical_illustration;gold_foil;food_beverage;box_and_interior", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}, {"source_id": "pack_v120_005", "source_url": "https://www.behance.net/gallery/253127379/Freaky-Lizard-Branding-Packaging", "canonical_url": "https://www.behance.net/gallery/253127379/Freaky-Lizard-Branding-Packaging", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/pack_v120_005.jpg", "tags": "packaging;gift_packaging;mascot_design;glass_bottle;fmcg;display_window", "proposed_internal_topic": "packaging", "mapping_status": "needs_product_confirmation"}], "pinterest_cards": [], "comparison": {"google_quality_grades": "A:4 B:1 (all behance.net)", "pinterest_source_domains_observed": "not_applicable - zero results", "google_visual_design_relevance": "high - 4 of 5 rated A, includes 3D rendering, kraft-paper, magnetic-closure, gold-foil techniques", "pinterest_visual_design_relevance": "not_applicable - Pinterest returned zero results for the literal query string", "google_style_diversity": "high - Chinese New Year, electronics, FMCG, food-gifting themes across 5 records", "pinterest_style_diversity": "not_applicable", "thumbnail_accessibility": "Google: 5/5 local jpgs present. Pinterest: 0 thumbnails (no results to capture)", "source_outbound_url_quality": "Google: 5/5 have distinct source_url/canonical_url. Pinterest: not_applicable", "internal_topic_mapping_usefulness": "not_applicable for Pinterest this run; Google set still informs the same broad 'packaging' topic decision", "collection_difficulty": "Google: historical curation. Pinterest: BLOCKED for this exact query -- see Section 2 access-limitation notes (confirmed reproducible zero-result for literal 'gift box', while 'gift boxes' plural worked normally in the same session)", "preferred_source_for_this_query": "google_only - Pinterest produced no usable candidates for this exact query in this pilot", "notes": "Not a login/rate-limit block; a literal-phrase search-index quirk specific to singular 'gift box' on Pinterest at time of testing (2026-08-12)", "duplicate_redundancy_observations": "not_applicable"}, "slug": "gift-box"}, {"query_id": "V248", "query": "flashcard", "domain": "education", "subdomain": "flashcard_generic", "proposed_topic": "flashcards", "mapping_status": "mapped", "mapping_rationale": "Exact match: declared topic id 'flashcards' (tier2 child of learning).", "google_record_count": 4, "pinterest_candidate_count": 5, "pinterest_usable_count": 5, "is_zero_result": false, "google_cards": [{"source_id": "edu_v248_001", "source_url": "https://www.behance.net/gallery/228273137/My-First-Vehicles-Flashcards-20-Printable-3D-Cartoon", "canonical_url": "https://www.behance.net/gallery/228273137/My-First-Vehicles-Flashcards-20-Printable-3D-Cartoon", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v248_001.jpg", "tags": "education;flashcard;vehicle_theme;3d_cartoon_style;printable;early_learning", "proposed_internal_topic": "flashcards", "mapping_status": "mapped"}, {"source_id": "edu_v248_002", "source_url": "https://www.behance.net/gallery/225981187/Animals-Flashcard-Design", "canonical_url": "https://www.behance.net/gallery/225981187/Animals-Flashcard-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v248_002.jpg", "tags": "education;flashcard;animal_theme;cartoon_style;montessori;preschool", "proposed_internal_topic": "flashcards", "mapping_status": "mapped"}, {"source_id": "edu_v248_003", "source_url": "https://www.behance.net/gallery/155261851/Kids-Alphabet-and-Number-Cartoon-Flash-Card-Design", "canonical_url": "https://www.behance.net/gallery/155261851/Kids-Alphabet-and-Number-Cartoon-Flash-Card-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v248_003.jpg", "tags": "education;flashcard;alphabet;numbers;cartoon_style", "proposed_internal_topic": "flashcards", "mapping_status": "mapped"}, {"source_id": "edu_v248_004", "source_url": "https://www.behance.net/gallery/206490159/Color-Flashcard-Design", "canonical_url": "https://www.behance.net/gallery/206490159/Color-Flashcard-Design", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v248_004.jpg", "tags": "education;flashcard;color_recognition;grid_layout", "proposed_internal_topic": "flashcards", "mapping_status": "mapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/7670261861624556/", "title": "Alphabet Flashcards - Free Printable", "thumbnail": "thumbnails/pinterest/pinterest_V248_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "flashcards", "mapping_status": "mapped", "relevance_assessment": "high - printable alphabet flashcards, matches pilot's education/flashcard_generic subject exactly", "quality_assessment": "medium-high - clean printable-template layout", "notes": "Free-printable style pin, no outbound domain badge shown"}, {"pin_url": "https://www.pinterest.com/pin/6262886976878906/", "title": "Free Printable Alphabet Flashcards for Kids", "thumbnail": "thumbnails/pinterest/pinterest_V248_002.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "flashcards", "mapping_status": "mapped", "relevance_assessment": "high - on-topic printable flashcards", "quality_assessment": "medium-high - clean printable-template layout", "notes": "Free-printable style pin"}, {"pin_url": "https://www.pinterest.com/pin/351912465631703/", "title": "Free Printable Shapes Flashcards", "thumbnail": "thumbnails/pinterest/pinterest_V248_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "flashcards", "mapping_status": "mapped", "relevance_assessment": "high - on-topic printable flashcards", "quality_assessment": "medium-high - clean printable-template layout", "notes": "Free-printable style pin"}, {"pin_url": "https://www.pinterest.com/pin/812618326527217689/", "title": "Animal Flashcards PDF", "thumbnail": "thumbnails/pinterest/pinterest_V248_004.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "flashcards", "mapping_status": "mapped", "relevance_assessment": "high - on-topic printable flashcards", "quality_assessment": "medium-high - clean printable-template layout", "notes": "Free-printable style pin"}, {"pin_url": "https://www.pinterest.com/pin/969540626069757851/", "title": "Teach the Hardest Science Concepts with Free Space Cards", "thumbnail": "thumbnails/pinterest/pinterest_V248_005.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "flashcards", "mapping_status": "mapped", "relevance_assessment": "medium - flashcard-adjacent (science cards), on-topic", "quality_assessment": "medium-high - clean printable-template layout", "notes": "Free-printable style pin"}], "comparison": {"google_quality_grades": "B:4 (all behance.net)", "pinterest_source_domains_observed": "(none shown on any of the 5 -- free-printable style content)", "google_visual_design_relevance": "high - dedicated flashcard-set design case studies (vehicles, animals, alphabet, colors)", "pinterest_visual_design_relevance": "high - all 5 on-topic printable flashcard/study-card content", "google_style_diversity": "medium - 4 distinct themed flashcard sets from designer portfolios", "pinterest_style_diversity": "medium - alphabet, shapes, animals, science-card variety, all in a 'free printable' visual style", "thumbnail_accessibility": "Google: 4/4 local jpgs present. Pinterest: 5/5 downloaded successfully", "source_outbound_url_quality": "Google: 4/4 have distinct source_url/canonical_url pointing to designer portfolios. Pinterest: outbound URL not extractable for any of the 5, and no source domain shown for any of them either (likely native/blog-hosted printables)", "internal_topic_mapping_usefulness": "both map cleanly to the existing 'flashcards' topic id; Pinterest adds visual variety in a distinct 'free-printable' style not present in the Google/Behance set", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking", "preferred_source_for_this_query": "both_viable - this is the strongest Pinterest showing among already-mapped queries; Pinterest's free-printable aesthetic is a genuinely different style bucket worth keeping as a supplemental reference", "notes": "One of only 2 queries (with sticker) where Pinterest usable rate reached 5/5 with a distinct style angle", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "flashcard"}, {"query_id": "V260", "query": "certificate", "domain": "education", "subdomain": "certificate_generic", "proposed_topic": "", "mapping_status": "unmapped", "mapping_rationale": "Zero hits for 'certificate' anywhere in taxonomy.json or topics.json. 'information-card' is the only remotely adjacent declared topic but is a stretch, not a real match.", "google_record_count": 4, "pinterest_candidate_count": 5, "pinterest_usable_count": 1, "is_zero_result": false, "google_cards": [{"source_id": "edu_v260_001", "source_url": "https://www.behance.net/gallery/239433419/Certificate-Formal-Document-Design-20242025", "canonical_url": "https://www.behance.net/gallery/239433419/Certificate-Formal-Document-Design-20242025", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v260_001.jpg", "tags": "education;certificate;formal_document;typography;minimal_layout", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "edu_v260_002", "source_url": "https://www.behance.net/gallery/242821429/Certificate-Design-as-a-Brand-Touchpoint", "canonical_url": "https://www.behance.net/gallery/242821429/Certificate-Design-as-a-Brand-Touchpoint", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v260_002.jpg", "tags": "education;certificate;course_completion;brand_touchpoint;minimal_design;typography", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "edu_v260_003", "source_url": "https://www.behance.net/gallery/242784499/Certificate-of-Completion-(Course-Certificate)", "canonical_url": "https://www.behance.net/gallery/242784499/Certificate-of-Completion-(Course-Certificate)", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v260_003.jpg", "tags": "education;certificate;course_completion;achievement;template_design", "proposed_internal_topic": "", "mapping_status": "unmapped"}, {"source_id": "edu_v260_004", "source_url": "https://www.behance.net/gallery/252742691/AI-Fluency-for-Students-Certificate-of-Completion", "canonical_url": "https://www.behance.net/gallery/252742691/AI-Fluency-for-Students-Certificate-of-Completion", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/edu_v260_004.jpg", "tags": "education;certificate;course_completion;ai_literacy;real_institution", "proposed_internal_topic": "", "mapping_status": "unmapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/871165121682977800/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V260_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/3025924747009847/", "title": "Certificate of achievement for kids in competition. Diploma template, certificate", "thumbnail": "thumbnails/pinterest/pinterest_V260_002.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "high - certificate/diploma template, matches pilot's education/certificate_generic subject exactly", "quality_assessment": "medium - template-graphic style", "notes": "Template-graphic style pin, no outbound domain badge shown"}, {"pin_url": "https://www.pinterest.com/pin/41728734045159524/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V260_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/389842911512405170/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V260_004.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin"}, {"pin_url": "https://www.pinterest.com/pin/4714774600946862/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V260_005.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "", "mapping_status": "unmapped", "relevance_assessment": "unclear - no title/source text captured", "quality_assessment": "unknown - not opened", "notes": "No title/source text rendered in grid for this pin. Query as a whole: 4 of 5 captured 'certificate' results had no title text rendered in the grid, the highest opacity rate of any successful query -- template-style graphics appear to carry less descriptive metadata on Pinterest than product listings."}], "comparison": {"google_quality_grades": "B:3 A:1 (all behance.net)", "pinterest_source_domains_observed": "(none shown on any of the 5)", "google_visual_design_relevance": "high - dedicated certificate/diploma design case studies, incl. a real-institution AI-fluency certificate", "pinterest_visual_design_relevance": "low - 4/5 pins have no title text at all; only 1/5 ('Certificate of achievement for kids...') is confirmable as on-topic", "google_style_diversity": "medium - achievement, brand-touchpoint, and course-completion certificate styles", "pinterest_style_diversity": "unclear - cannot assess 4/5 without titles", "thumbnail_accessibility": "Google: 4/4 local jpgs present. Pinterest: 5/5 downloaded successfully despite missing titles", "source_outbound_url_quality": "Google: 4/4 have distinct source_url/canonical_url. Pinterest: outbound URL not extractable for any of the 5, and no source domain shown for any of them either", "internal_topic_mapping_usefulness": "this query is currently unmapped (no Curify topic exists for certificates) -- neither source resolves that gap, since it is a taxonomy gap, not a content-sourcing gap", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking, but metadata-poor results (4/5 untitled, the worst opacity rate of any successful query)", "preferred_source_for_this_query": "google_stronger - Pinterest's 1/5 usable rate is the weakest of the pilot; Google/Behance set is far more confirmable", "notes": "Weakest Pinterest showing of the 10 queries by usable-candidate rate", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "certificate"}, {"query_id": "V216", "query": "influencer post", "domain": "ecommerce", "subdomain": "social_commerce_content", "proposed_topic": "social-media-posts", "mapping_status": "mapped", "mapping_rationale": "Declared topic 'social-media-posts' (tier3 child of design) is the only real candidate and conceptually matches; not literally 'influencer' but treated as a clear match.", "google_record_count": 4, "pinterest_candidate_count": 5, "pinterest_usable_count": 0, "is_zero_result": false, "google_cards": [{"source_id": "ecom_v216_001", "source_url": "https://www.behance.net/gallery/247113277/AI-Generated-UGC-Style-Ad-Novara-Skincare", "canonical_url": "https://www.behance.net/gallery/247113277/AI-Generated-UGC-Style-Ad-Novara-Skincare", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v216_001.jpg", "tags": "ecommerce;social_commerce_content;ugc_style;skincare;ai_generated;social_media_post", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped"}, {"source_id": "ecom_v216_002", "source_url": "https://www.designkit.cn/article/xiaohongshuzhongcaobiji-sheji", "canonical_url": "https://www.designkit.cn/article/xiaohongshuzhongcaobiji-sheji", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v216_002.jpg", "tags": "ecommerce;social_commerce_content;xiaohongshu;template_design;layout_ratio;content_strategy", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped"}, {"source_id": "ecom_v216_003", "source_url": "https://www.behance.net/gallery/68508883/Influencer-Media-Kit", "canonical_url": "https://www.behance.net/gallery/68508883/Influencer-Media-Kit", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v216_003.jpg", "tags": "ecommerce;social_commerce_content;media_kit;influencer_branding;template_design;typography", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped"}, {"source_id": "ecom_v216_004", "source_url": "https://www.behance.net/gallery/248753981/UGC-Style-Ad-Facial-Serum-TikTok-Facebook", "canonical_url": "https://www.behance.net/gallery/248753981/UGC-Style-Ad-Facial-Serum-TikTok-Facebook", "thumbnail": "../../8.8/inspiration-source-pilot/thumbnails/ecom_v216_004.jpg", "tags": "ecommerce;social_commerce_content;ugc_style;video_ad;skincare", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped"}], "pinterest_cards": [{"pin_url": "https://www.pinterest.com/pin/2674081025143172/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V216_001.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped", "relevance_assessment": "unclear - no title/source text captured; screenshot shows a lifestyle selfie-style photo", "quality_assessment": "unknown - not opened", "notes": "Native-looking Pinterest content, no outbound domain badge"}, {"pin_url": "https://www.pinterest.com/pin/492649954496123/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V216_002.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped", "relevance_assessment": "unclear - no title/source text captured; screenshot shows a phone-mirror selfie photo", "quality_assessment": "unknown - not opened", "notes": "Native-looking Pinterest content, no outbound domain badge"}, {"pin_url": "https://www.pinterest.com/pin/3025924747175959/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V216_003.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped", "relevance_assessment": "unclear - no title/source text captured; screenshot shows an influencer-style mirror photo", "quality_assessment": "unknown - not opened", "notes": "Native-looking Pinterest content, no outbound domain badge"}, {"pin_url": "https://www.pinterest.com/pin/1077134435903897419/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V216_004.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped", "relevance_assessment": "unclear - no title/source text captured; screenshot shows a 'Hi, I'm Laura!' influencer bio-card graphic", "quality_assessment": "unknown - not opened", "notes": "Native-looking Pinterest content, no outbound domain badge"}, {"pin_url": "https://www.pinterest.com/pin/34551122141125618/", "title": "", "thumbnail": "thumbnails/pinterest/pinterest_V216_005.jpg", "domain_category": "(none shown)", "proposed_internal_topic": "social-media-posts", "mapping_status": "mapped", "relevance_assessment": "unclear - no title/source text captured; screenshot shows a phone-selfie style photo", "quality_assessment": "unknown - not opened", "notes": "Native-looking Pinterest content, no outbound domain badge. Query as a whole: unlike sticker/business card/logo, most 'influencer post' results carry no visible outbound retailer/domain badge -- this query returns predominantly native lifestyle/UGC-style content rather than linked product or case-study pages."}], "comparison": {"google_quality_grades": "B:3 C:1 (3x behance.net, 1x designkit.cn)", "pinterest_source_domains_observed": "(none shown on any of the 5)", "google_visual_design_relevance": "medium - lower-graded query overall (no A grades); includes an AI-generated UGC-style ad case study and a Xiaohongshu content-design article", "pinterest_visual_design_relevance": "unclear - 4/5 pins have no title text at all in the grid; the 5th is likewise untitled. Screenshot inspection shows lifestyle selfie/bio-card style content, but nothing confirms design-case-study relevance", "google_style_diversity": "medium - skincare UGC ad + Xiaohongshu article + media-kit case study", "pinterest_style_diversity": "unclear - cannot assess without titles; visually appears to be native lifestyle content rather than design/template work", "thumbnail_accessibility": "Google: 4/4 local jpgs present. Pinterest: 5/5 downloaded successfully despite missing titles", "source_outbound_url_quality": "Google: 4/4 have distinct source_url/canonical_url. Pinterest: outbound URL not extractable for any of the 5, and unlike other queries, no retailer/domain badge was shown for any of them either", "internal_topic_mapping_usefulness": "both would map to the existing 'social-media-posts' topic (already mapped); Pinterest's untitled results add little confirmable value here", "collection_difficulty": "Google: historical curation. Pinterest: automated, fast, no blocking, but metadata-poor results", "preferred_source_for_this_query": "google_stronger - Pinterest's near-total lack of title/source metadata on this query makes it hard to justify as an inspiration source without individually opening each pin", "notes": "Highest Pinterest metadata-opacity of any successful query (5/5 untitled)", "duplicate_redundancy_observations": "none observed in either set"}, "slug": "influencer-post"}]</script>
+<script>
+const DATA = JSON.parse(document.getElementById('gallery-data').textContent);
+const STATUS_LABEL = {"mapped": "Mapped", "needs_product_confirmation": "Needs product confirmation", "unmapped": "Unmapped"};
+
+function esc(s) {
+  if (s === undefined || s === null) return '';
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function relClass(assessment) {
+  if (!assessment) return 'rel-unclear';
+  const a = assessment.toLowerCase();
+  if (a.startsWith('high')) return 'rel-high';
+  if (a.startsWith('medium')) return 'rel-medium';
+  if (a.startsWith('low')) return 'rel-low';
+  return 'rel-unclear';
+}
+
+function domainFromUrl(url) {
+  try {
+    const u = new URL(url);
+    return u.hostname.replace(/^www\./,'');
+  } catch (e) { return ''; }
+}
+
+// ---- query chips ----
+const chipRow = document.getElementById('query-chips');
+DATA.forEach(q => {
+  const a = document.createElement('a');
+  a.className = 'chip';
+  a.href = '#q-' + q.slug;
+  a.innerHTML = `<span class="dot ${q.mapping_status}"></span>${esc(q.query)}`;
+  chipRow.appendChild(a);
+});
+
+// ---- topic mapping grid ----
+const mapGrid = document.getElementById('mapping-grid');
+DATA.forEach(q => {
+  const el = document.createElement('div');
+  el.className = 'map-card';
+  const topic = q.proposed_topic ? q.proposed_topic.split(';').map(t=>`<code>${esc(t)}</code>`).join(' ') : '<span style="color:var(--text-faint)">&mdash; none declared &mdash;</span>';
+  el.innerHTML = `
+    <div class="row1">
+      <h3>${esc(q.query)}</h3>
+      <span class="badge ${q.mapping_status}">${STATUS_LABEL[q.mapping_status]}</span>
+    </div>
+    <div class="domain">${esc(q.domain)} / ${esc(q.subdomain)} &middot; query id ${esc(q.query_id)}</div>
+    <div class="topic-line"><span class="lbl">Proposed topic: </span>${topic}</div>
+    <details>
+      <summary>Mapping rationale</summary>
+      <p>${esc(q.mapping_rationale)}</p>
+    </details>
+  `;
+  mapGrid.appendChild(el);
+});
+
+// ---- comparison sections ----
+function googleCard(c) {
+  const domain = domainFromUrl(c.source_url);
+  const tags = c.tags ? c.tags.split(';').slice(0,4).join(' &middot; ') : '';
+  const topicChipHtml = c.proposed_internal_topic
+    ? `<span class="topicchip badge ${c.mapping_status}">${esc(c.proposed_internal_topic.split(';')[0])}</span>`
+    : `<span class="topicchip badge ${c.mapping_status}">unmapped</span>`;
+  return `
+  <div class="card">
+    <div class="thumb">
+      <img src="${esc(c.thumbnail)}" loading="lazy" alt="${esc(c.source_id)}"
+           onerror="this.parentElement.innerHTML='<div class=\'noimg\'>Thumbnail not found locally</div>'">
+    </div>
+    <div class="body">
+      <div class="src">${esc(domain || 'source')}</div>
+      <div class="tags" title="${esc(c.tags)}">${tags}</div>
+      ${topicChipHtml}
+      <a class="link" href="${esc(c.source_url)}" target="_blank" rel="noopener">View source &rarr;</a>
+    </div>
+  </div>`;
+}
+
+function pinterestCard(c) {
+  const rc = relClass(c.relevance_assessment);
+  const relShort = c.relevance_assessment ? esc(c.relevance_assessment.split(' - ')[0]) : 'unclear';
+  const src = (c.domain_category && c.domain_category !== '(none shown)') ? c.domain_category : 'no domain shown';
+  return `
+  <div class="card">
+    <div class="thumb">
+      <img src="${esc(c.thumbnail)}" loading="lazy" alt="pinterest candidate"
+           onerror="this.parentElement.innerHTML='<div class=\'noimg\'>Thumbnail not found locally</div>'">
+    </div>
+    <div class="body">
+      <div class="title">${c.title ? esc(c.title) : '<span style="color:var(--text-faint);font-weight:400">(no title captured)</span>'}</div>
+      <div class="src">${esc(src)}</div>
+      <span class="rel ${rc}" title="${esc(c.relevance_assessment)}">${relShort} relevance</span>
+      <a class="link" href="${esc(c.pin_url)}" target="_blank" rel="noopener">View pin &rarr;</a>
+    </div>
+  </div>`;
+}
+
+const qSections = document.getElementById('query-sections');
+DATA.forEach(q => {
+  const sec = document.createElement('div');
+  sec.className = 'query-section';
+  sec.id = 'q-' + q.slug;
+
+  const gCards = q.google_cards.map(googleCard).join('');
+  let pBlockHead, pBlockBody;
+  if (q.is_zero_result) {
+    pBlockHead = `0 captured`;
+    pBlockBody = `<div class="zero-card">
+        <div class="big">0</div>
+        Exact-query result = 0. Pinterest returned no results for the literal phrase &ldquo;gift box&rdquo;
+        (tested twice); the plural &ldquo;gift boxes&rdquo; worked normally in the same session as a diagnostic only.
+        Not used as a data substitute &mdash; not counted as a captured candidate.
+      </div>`;
+  } else {
+    pBlockHead = `${q.pinterest_candidate_count} captured &middot; ${q.pinterest_usable_count} usable`;
+    pBlockBody = `<div class="card-grid">${q.pinterest_cards.map(pinterestCard).join('')}</div>`;
+  }
+
+  const cmp = q.comparison;
+  const prefParts = (cmp.preferred_source_for_this_query || '').split(' - ');
+  const prefLabel = prefParts[0].replace(/_/g, ' ');
+  const prefExplain = prefParts.slice(1).join(' - ');
+  sec.innerHTML = `
+    <div class="query-head">
+      <h3>${esc(q.query)}</h3>
+      <span class="badge ${q.mapping_status}">${STATUS_LABEL[q.mapping_status]}</span>
+      <span class="qmeta">${esc(q.domain)} / ${esc(q.subdomain)}</span>
+    </div>
+    <div class="count-summary">
+      Google <b>${q.google_record_count}</b> records &middot;
+      Pinterest <b>${q.is_zero_result ? 0 : q.pinterest_candidate_count}</b> captured
+      ${q.is_zero_result ? '' : `(<b>${q.pinterest_usable_count}</b> usable)`}
+    </div>
+    <div class="compare-note">
+      <span class="pref">${esc(prefLabel)}</span>${esc(prefExplain)}
+      <div class="compare-note-secondary">${esc(cmp.notes)}</div>
+    </div>
+    <div class="columns">
+      <div class="panel">
+        <div class="column-head"><span>Google / Behance</span><span class="n">${q.google_record_count} cards</span></div>
+        <div class="card-grid">${gCards}</div>
+      </div>
+      <div class="panel">
+        <div class="column-head"><span>Pinterest</span><span class="n">${pBlockHead}</span></div>
+        ${pBlockBody}
+      </div>
+    </div>
+  `;
+  qSections.appendChild(sec);
+});
+</script>
+</body>
+</html>
