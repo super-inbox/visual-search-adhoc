@@ -1,0 +1,13 @@
+field,type,required,description,source_alignment_note
+query,string,yes,"Raw query text as entered by the user (content_id in production, may include encoded suffixes like |within=/|n=<count>/|rw=1/|paths=N that should be stripped before use as a query string)",Aligned to curify-studio's user_interactions.content_id column (curify_background/app/models/interactions.py)
+action_type,enum,yes,"One of SEARCH / SEARCH_NORESULT / SEARCH_LOWRESULT",Aligned to curify-studio's ActionType enum; SEARCH_NORESULT and SEARCH_LOWRESULT are the two signals this task cares about (few/zero results)
+result_count,integer,no,"Number of results returned, if available; production currently has no dedicated numeric result_count column -- zero-result state is only inferable from action_type=SEARCH_NORESULT today",No numeric result_count column exists in production; this field documents the gap, not a confirmed source
+click_count,integer,no,Number of result clicks attributed to this query/session,"Approximate only in production -- computed as result_clicks / searches per curify_background/app/crud/admin.py _section_search_queries, not a stored per-query column"
+ctr,float,no,click_count / search_count approximation,"Same caveat as click_count -- production's own SEARCH_FUNNEL_METRIC_DEFINITIONS.md documents this as APPROXIMATE, not exact (no impression/visible-result event exists)"
+session_id,string,no,Anonymous session identifier (no user PII),Aligned to user_interactions.session_id
+created_at,datetime,yes,ISO 8601 timestamp of the search event,Aligned to user_interactions.created_at
+search_category,string,no,"Target domain/topic if classifiable (merch/packaging/ecommerce/edtech/brand_design or other)",Not a production column today; would need to be derived post-export by matching against the topic registry
+rewrite,string,no,"Query-rewrite text if the system rewrote the raw query, if available",Corresponds to the |rw=1 suffix observed in content_id
+selected_result,string,no,ID/URL of the result the user clicked, if available,No confirmed join today between click events and specific result identity at the row level
+zero_result_flag,boolean,no,True if action_type == SEARCH_NORESULT,Derivable directly from action_type
+notes,string,no,Free-text annotation (e.g. why this query is interesting for Task A),n/a

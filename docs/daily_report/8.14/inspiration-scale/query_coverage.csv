@@ -1,0 +1,6 @@
+target_domain,pool_count,selected_count,reserve_count,a1_count,a2_count,a3_count,mapped_full_count,mapped_stub_count,needs_confirmation_count,old_pilot_overlap_count
+merch,13,12,1,2,11,0,1,12,0,1
+packaging,7,6,1,0,7,0,1,0,6,3
+ecommerce,8,8,0,1,7,0,6,0,2,1
+edtech,8,6,2,1,7,0,4,3,1,2
+brand_design,5,4,1,0,5,0,4,0,1,1
