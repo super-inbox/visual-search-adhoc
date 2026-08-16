@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Brand Direction Explorer — real preference A/B</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root {
+  --bg: #f7f6f3; --panel: #ffffff; --border: #e4e0d8; --text: #24211c; --muted: #7a756a;
+  --accent: #7c5cff; --accent-soft: #efe9ff; --good: #1f8a4c; --bad: #b3402a; --tie: #a67c00;
+  --code-bg: #f1efe9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17161a; --panel: #201f24; --border: #34323a; --text: #ece9e2; --muted: #a39d8f;
+    --accent: #b6a6ff; --accent-soft: #2c274a; --good: #4cc98a; --bad: #ff8266; --tie: #e0b74e;
+    --code-bg: #26242a;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17161a; --panel: #201f24; --border: #34323a; --text: #ece9e2; --muted: #a39d8f;
+  --accent: #b6a6ff; --accent-soft: #2c274a; --good: #4cc98a; --bad: #ff8266; --tie: #e0b74e;
+  --code-bg: #26242a;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 24px; }
+.wrap { max-width: 1100px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 0 0 6px; }
+.subtitle { color: var(--muted); font-size: 13.5px; margin-bottom: 8px; }
+.banner { background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; padding: 10px 14px; font-size: 13px; margin-bottom: 22px; }
+.case { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; }
+.case-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 10px; }
+.case-head h2 { font-size: 17px; margin: 0; }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+.tag { display: inline-block; font-size: 10.5px; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; border: 1px solid var(--border); border-radius: 999px; padding: 3px 9px; color: var(--muted); }
+.tag.src-real { background: color-mix(in srgb, var(--good) 20%, transparent); color: var(--good); border-color: transparent; }
+.tag.src-synthetic { background: color-mix(in srgb, var(--tie) 22%, transparent); color: var(--tie); border-color: transparent; }
+.tag.winner-personalized { background: color-mix(in srgb, var(--good) 18%, transparent); color: var(--good); border-color: transparent; }
+.tag.winner-baseline { background: color-mix(in srgb, var(--bad) 18%, transparent); color: var(--bad); border-color: transparent; }
+.tag.winner-tie { background: color-mix(in srgb, var(--tie) 20%, transparent); color: var(--tie); border-color: transparent; }
+.brief, .pref-block { background: var(--code-bg); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; font-size: 12.5px; }
+.brief-label, .pref-label { font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.brief div, .pref-block div { display: flex; gap: 8px; padding: 2px 0; }
+.field { color: var(--muted); min-width: 130px; flex-shrink: 0; }
+.fv { color: var(--text); }
+.arms { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 12px; }
+@media (max-width: 760px) { .arms { grid-template-columns: 1fr; } }
+.arm-head { font-weight: 700; font-size: 13px; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.direction { background: var(--code-bg); border-radius: 8px; padding: 8px 10px; margin-bottom: 6px; font-size: 12.5px; }
+.dir-title { font-weight: 700; }
+.dir-sub { color: var(--muted); font-size: 11.5px; margin-bottom: 4px; }
+.dir-tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 4px; }
+.dir-tags .tag { text-transform: none; font-weight: 500; color: var(--muted); }
+.dir-prompt { font-size: 11.5px; color: var(--muted); line-height: 1.4; }
+.scores { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 8px; }
+.scores div { background: var(--panel); border: 1px solid var(--border); border-radius: 6px; padding: 4px 6px; font-size: 10.5px; display: flex; flex-direction: column; }
+.dim { color: var(--muted); text-transform: capitalize; }
+.val { font-weight: 700; font-size: 13px; }
+.reason { font-size: 12.5px; margin-top: 10px; padding: 10px 12px; background: var(--accent-soft); border-radius: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Brand Direction Explorer &mdash; real preference A/B (small validation)</h1>
+  <div class="subtitle">3 scenarios &middot; 6 real Stage-1 OpenAI calls (gpt-4o-mini) &middot; captured 2026-08-17 against the live local dev server</div>
+  <div class="banner">
+    Every direction shown below is a <strong>REAL CURRENT AGENT OUTPUT</strong> &mdash; a live response from
+    <code>/api/brand-direction-explorer/directions</code> on <code>curify-frontend-brand-direction-explorer</code>
+    (branch <code>baobao/brand-direction-explorer-tool-demo-2026-08-04</code>), captured with this pass's own
+    preferenceProfile code change. The preference text itself is a <strong>SYNTHETIC PREFERENCE INPUT</strong>
+    &mdash; hand-authored for this test, not from a real user. n=3 paired cases: call this a small real
+    validation, not a benchmark or statistical proof.
+  </div>
+
+
+  <section class="case" data-scenario="coffee-opening" data-winner="personalized_win">
+    <div class="case-head">
+      <h2>Coffee shop opening poster</h2>
+      <div class="tags">
+        <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span>
+        <span class="tag winner winner-personalized">Personalized win &middot; medium confidence</span>
+      </div>
+    </div>
+
+    <div class="brief">
+      <div class="brief-label">Project brief (identical in both arms)</div>
+      <div><span class="field">shopName</span><span class="fv">Maple &amp; Grind</span></div><div><span class="field">openingDate</span><span class="fv">March 15, 2026</span></div><div><span class="field">location</span><span class="fv">123 Main Street</span></div><div><span class="field">offerDetails</span><span class="fv">Free pastry with any drink, 9-11 AM opening weekend</span></div>
+    </div>
+
+    <div class="pref-block">
+      <div class="pref-label"><span class="tag src-synthetic">SYNTHETIC PREFERENCE INPUT</span> (personalized arm only)</div>
+      <div><span class="field">likes</span><span class="fv">editorial typography, restrained warm palette, tactile natural materials</span></div><div><span class="field">dislikes</span><span class="fv">cute mascot illustration, neon gradients</span></div>
+    </div>
+
+    <div class="arms">
+      <div class="arm">
+        <div class="arm-head">Baseline <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Warm Welcomes Await</div>
+          <div class="dir-sub">Maple &amp; Grind Opens March 15, 2026</div>
+          <div class="dir-tags"><span class="tag">rustic</span> <span class="tag">cozy</span> <span class="tag">warm</span> <span class="tag">inviting</span></div>
+          <div class="dir-prompt">Composition: an inviting scene showcasing a beautifully brewed coffee cup placed artfully on a rustic wooden table, with a flaky pastry nearby. Palette: earthy tones of deep browns and soft creams, accented with warm amber lighting for a welcoming glow. Materials/Texture: a textured wooden background with subtle grain patterns, paired with a soft-focus effect on the images to create a nostalgic feel. Typography: bold serif fonts for the shop&#x27;s name, balanced by a clean sans-serif for event details. Mood: warm, rustic, and inviting, encouraging community gathering during the opening weekend.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Stylish Coffee Experience</div>
+          <div class="dir-sub">Join Us March 15, 2026</div>
+          <div class="dir-tags"><span class="tag">modern</span> <span class="tag">minimal</span> <span class="tag">clean</span> <span class="tag">chic</span></div>
+          <div class="dir-prompt">Composition: a sleek, minimal vertical layout featuring a close-up of a minimalist coffee cup against a clean white backdrop, complemented by a vibrant pastry on the side. Palette: stark white with splashes of metallic gold and deep coffee chocolate hues for a sophisticated contrast. Materials/Texture: smooth matte paper with high-gloss accents, allowing the coffee and pastry to pop visually. Typography: contemporary sans-serif typeface that communicates clarity and modernity, with bold emphasis on the opening details. Mood: chic, modern, and sophisticated, appealing to the urban coffee aficionado.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">A Taste of Tradition</div>
+          <div class="dir-sub">Discover Maple &amp; Grind on March 15, 2026</div>
+          <div class="dir-tags"><span class="tag">vintage</span> <span class="tag">nostalgic</span> <span class="tag">artisanal</span> <span class="tag">whimsical</span></div>
+          <div class="dir-prompt">Composition: an artistic layout featuring a retro coffee pot pouring a steaming cup, with an assortment of pastries displayed beautifully on a vintage tablecloth. Palette: muted pastel colors with soft greens and blush pinks, creating a whimsical yet warm atmosphere. Materials/Texture: textured paper that mimics a vintage postcard, layering effects to give depth and nostalgia. Typography: playful, handwritten-style font that evokes a sense of whimsy, paired with a classic typeface for event details. Mood: cheerful, nostalgic, and artisanal, reminiscent of a classic café experience.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">5</span></div><div><span class="dim">direction diversity</span><span class="val">5</span></div><div><span class="dim">specificity</span><span class="val">4</span></div><div><span class="dim">actionability</span><span class="val">4</span></div><div><span class="dim">preference fit</span><span class="val">1</span></div><div><span class="dim">visual distinctiveness</span><span class="val">5</span></div><div><span class="dim">redundancy</span><span class="val">5</span></div></div>
+      </div>
+      <div class="arm">
+        <div class="arm-head">Personalized <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Rustic Warmth</div>
+          <div class="dir-sub">Your Neighborhood Coffee Haven</div>
+          <div class="dir-tags"><span class="tag">rustic</span> <span class="tag">warm</span> <span class="tag">natural</span> <span class="tag">editorial</span></div>
+          <div class="dir-prompt">Composition: a dynamic layout featuring large typography, the name &#x27;Maple &amp; Grind&#x27; prominently at the top, followed by the opening date and address in a staggered alignment. Palette: earthy tones of soft browns and warm creams, evoking comfort and coziness. Materials/texture: a background with a tactile, raw paper texture, giving a handcrafted feel, with drop shadows to create depth. Typography: bold serif for the coffee shop name, paired with a clean sans-serif for the details to maintain clarity. Mood: inviting, warm, and community-oriented, creating a sense of anticipation for the new gathering place.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Modern Minimalism</div>
+          <div class="dir-sub">Sip, Savor, Celebrate!</div>
+          <div class="dir-tags"><span class="tag">minimal</span> <span class="tag">modern</span> <span class="tag">clean</span> <span class="tag">editorial</span></div>
+          <div class="dir-prompt">Composition: a clean, centered layout with ample negative space around the headline elements, prioritizing readability. Palette: cool whites and soft beige, creating a serene and sophisticated atmosphere. Materials/texture: a smooth matte surface with a subtle sheen that reflects light, enhancing the modern feel. Typography: a combination of bold geometric sans-serif for &#x27;Maple &amp; Grind&#x27; and a light, elegant serif for the accompanying text, ensuring a sleek contrast. Mood: chic, clean, and forward-thinking, appealing to urban coffee enthusiasts looking for a fresh experience.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Textured Elegance</div>
+          <div class="dir-sub">Indulge in Fresh Brews!</div>
+          <div class="dir-tags"><span class="tag">elegant</span> <span class="tag">tactile</span> <span class="tag">warm</span> <span class="tag">editorial</span></div>
+          <div class="dir-prompt">Composition: a layered approach with the name &#x27;Maple &amp; Grind&#x27; at the forefront, slightly elevated with a shadow effect, along with the opening date and address creatively intertwined. Palette: rich maple tones combined with deep greens and soft creams to evoke a natural and inviting ambiance. Materials/texture: a background resembling handcrafted paper with visible fibers and a subtle gloss, giving warmth and depth. Typography: a sophisticated serif type for the main title to impart elegance, with a clean sans-serif for other details, ensuring harmony. Mood: warm, inviting, and rich with texture, embodying the craft and care of a premium coffee experience.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">5</span></div><div><span class="dim">direction diversity</span><span class="val">4</span></div><div><span class="dim">specificity</span><span class="val">5</span></div><div><span class="dim">actionability</span><span class="val">5</span></div><div><span class="dim">preference fit</span><span class="val">5</span></div><div><span class="dim">visual distinctiveness</span><span class="val">4</span></div><div><span class="dim">redundancy</span><span class="val">4</span></div></div>
+      </div>
+    </div>
+
+    <div class="reason"><strong>Evaluation rationale:</strong> Preference materially shifted all 3 directions from product-photo-led to typography/editorial-led compositions (raw paper texture, ample negative space, serif+sans pairing) with no invented facts and no mascot/neon language. Diversity narrowed slightly — all 3 now sit in a warm/neutral editorial register rather than baseline&#x27;s rustic/gold-modern/vintage-whimsical spread — so this is a real but moderate over-constraint effect, not a collapse.</div>
+  </section>
+
+  <section class="case" data-scenario="tea-brand-exploration" data-winner="baseline_win">
+    <div class="case-head">
+      <h2>Chinese tea brand style exploration</h2>
+      <div class="tags">
+        <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span>
+        <span class="tag winner winner-baseline">Baseline win &middot; medium confidence</span>
+      </div>
+    </div>
+
+    <div class="brief">
+      <div class="brief-label">Project brief (identical in both arms)</div>
+      <div><span class="field">brandName</span><span class="fv">Qingye</span></div><div><span class="field">productType</span><span class="fv">White tea</span></div><div><span class="field">brandDescription</span><span class="fv">A boutique tea house blending heritage craft with a minimalist retail experience</span></div><div><span class="field">applications</span><span class="fv">Packaging, storefront signage, social media</span></div><div><span class="field">desiredTone</span><span class="fv">Refined, calm, contemporary</span></div>
+    </div>
+
+    <div class="pref-block">
+      <div class="pref-label"><span class="tag src-synthetic">SYNTHETIC PREFERENCE INPUT</span> (personalized arm only)</div>
+      <div><span class="field">likes</span><span class="fv">contemporary Chinese editorial design, generous negative space, subtle botanical detail</span></div><div><span class="field">dislikes</span><span class="fv">generic luxury black-and-gold, overly traditional ornament</span></div>
+    </div>
+
+    <div class="arms">
+      <div class="arm">
+        <div class="arm-head">Baseline <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Timeless Essence</div>
+          <div class="dir-sub">Crafted Simplicity</div>
+          <div class="dir-tags"><span class="tag">refined</span> <span class="tag">minimalist</span> <span class="tag">natural</span> <span class="tag">elegant</span></div>
+          <div class="dir-prompt">Composition: an elegant vertical layout featuring a prominent hero shot of a white tea tin, positioned centrally with soft shadows to enhance depth. Palette: a soothing blend of creamy whites, gentle greens, and soft earth tones, creating an inviting atmosphere. Materials/texture: a smooth matte finish for the tin and a subtle linen texture in the background to add warmth. Typography: a refined serif for the brand name &#x27;Qingye&#x27;, complemented by a clean sans-serif for the product description. Mood: serene, sophisticated, and contemporary.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Cultural Reverie</div>
+          <div class="dir-sub">Artisanal Balance</div>
+          <div class="dir-tags"><span class="tag">heritage</span> <span class="tag">artisanal</span> <span class="tag">warm</span> <span class="tag">inviting</span></div>
+          <div class="dir-prompt">Composition: a structured vertical presentation with a central focus on a handcrafted ceramic tea jar, elegantly displayed against a soft muted background. Palette: deep jade, warm clay, and creamy beige, creating an inviting visual narrative. Materials/texture: a natural clay texture for the jar, rich in tactile quality, paired with a refined matte paper for the surrounding layout. Typography: a stylish mix of calligraphic and modern fonts for brand name &#x27;Qingye&#x27;, enhancing the connection to heritage. Mood: tranquil, culturally rich, and sophisticated.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Modern Serenity</div>
+          <div class="dir-sub">Chic Essentials</div>
+          <div class="dir-tags"><span class="tag">contemporary</span> <span class="tag">minimalist</span> <span class="tag">elegant</span> <span class="tag">calm</span></div>
+          <div class="dir-prompt">Composition: vertically oriented with a focus on a sleek glass tea bottle that stands out against a gentle gradient background of light grey and white. Palette: cool teal and soft lavender tones evoke tranquility, supported by subtle splashes of pastel colors. Materials/texture: clear glass reflecting light beautifully, combined with a soft matte background for contrast. Typography: modern sans-serif for the brand name &#x27;Qingye&#x27; positioned prominently, emphasizing a clean aesthetic. Mood: calm, refined, and contemporary.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">5</span></div><div><span class="dim">direction diversity</span><span class="val">5</span></div><div><span class="dim">specificity</span><span class="val">4</span></div><div><span class="dim">actionability</span><span class="val">4</span></div><div><span class="dim">preference fit</span><span class="val">1</span></div><div><span class="dim">visual distinctiveness</span><span class="val">5</span></div><div><span class="dim">redundancy</span><span class="val">5</span></div></div>
+      </div>
+      <div class="arm">
+        <div class="arm-head">Personalized <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Refined Minimalism</div>
+          <div class="dir-sub">A Balance of Heritage and Modernity</div>
+          <div class="dir-tags"><span class="tag">minimalist</span> <span class="tag">contemporary</span> <span class="tag">refined</span> <span class="tag">botanical</span></div>
+          <div class="dir-prompt">Composition: centered hero product shot of a sleek white tea tin on a light textured backdrop, complemented by a color palette swatch beneath featuring soft earthy tones. Palette: warm muted whites, soft greens, gentle taupes. Materials/texture: matte paper texture for packaging, subtle linen-like background texture to enhance visual warmth. Typography: clean sans-serif font for labels, enhancing readability and modernity. Mood: refined, calm, and contemporary.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Modern Botanical</div>
+          <div class="dir-sub">Bringing Nature to Life</div>
+          <div class="dir-tags"><span class="tag">botanical</span> <span class="tag">nature-inspired</span> <span class="tag">modern</span> <span class="tag">fresh</span></div>
+          <div class="dir-prompt">Composition: a stylized hero shot of an elegant tea jar featuring delicate botanical illustrations set against a soft gradient backdrop, with a color palette swatch strip showcasing earthy greens and soft golds below. Palette: fresh greens, soft whites, gentle gold accents. Materials/texture: tactile matte surfaces for the jar, smooth gradient texture in the background. Typography: elegant serif font for product names and simple sans-serif for subtext to create contrast. Mood: refreshing, sophisticated, and nature-inspired.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Heritage Meets Minimalism</div>
+          <div class="dir-sub">Timeless Elegance in Simplicity</div>
+          <div class="dir-tags"><span class="tag">minimalist</span> <span class="tag">elegant</span> <span class="tag">traditional</span> <span class="tag">sophisticated</span></div>
+          <div class="dir-prompt">Composition: a distinguished hero product shot of a finely crafted tea tin against a soft ivory backdrop, enhanced with subtle golden undertones, alongside a color palette swatch strip featuring muted tones of taupe and soft greens. Palette: muted ivory, gentle gold accents, soft taupe. Materials/texture: high-quality matte finish for packaging, smooth soft background texture evoking warmth. Typography: classic serif font paired with modern sans-serif for a clean contrast. Mood: timeless, elegant, and sophisticated.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">5</span></div><div><span class="dim">direction diversity</span><span class="val">3</span></div><div><span class="dim">specificity</span><span class="val">4</span></div><div><span class="dim">actionability</span><span class="val">4</span></div><div><span class="dim">preference fit</span><span class="val">3</span></div><div><span class="dim">visual distinctiveness</span><span class="val">3</span></div><div><span class="dim">redundancy</span><span class="val">3</span></div></div>
+      </div>
+    </div>
+
+    <div class="reason"><strong>Evaluation rationale:</strong> Preference partially honored: direction 2 explicitly adds botanical illustration (subtle botanical detail, as asked); but all 3 directions converge on the same hero-product-shot + palette-swatch-strip compositional structure, a real diversity reduction vs. baseline&#x27;s 3 distinct compositions. 2 of 3 directions also introduce recurring gold accents/undertones, which sits close to the &#x27;generic luxury black-and-gold&#x27; the preference explicitly asked to avoid — a partial preference self-contradiction, not present in the baseline at all.</div>
+  </section>
+
+  <section class="case" data-scenario="event-poster" data-winner="personalized_win">
+    <div class="case-head">
+      <h2>Market / community event poster</h2>
+      <div class="tags">
+        <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span>
+        <span class="tag winner winner-personalized">Personalized win &middot; high confidence</span>
+      </div>
+    </div>
+
+    <div class="brief">
+      <div class="brief-label">Project brief (identical in both arms)</div>
+      <div><span class="field">eventName</span><span class="fv">Riverside Night Market</span></div><div><span class="field">eventDateTime</span><span class="fv">Saturday, March 21, 4-9 PM</span></div><div><span class="field">location</span><span class="fv">Riverside Pier, Pier 7</span></div><div><span class="field">eventHighlights</span><span class="fv">Live music, local vendors, sunset views</span></div><div><span class="field">visualTone</span><span class="fv">Warm, golden-hour, laid-back</span></div>
+    </div>
+
+    <div class="pref-block">
+      <div class="pref-label"><span class="tag src-synthetic">SYNTHETIC PREFERENCE INPUT</span> (personalized arm only)</div>
+      <div><span class="field">likes</span><span class="fv">bold modular typography, community collage energy, high information density</span></div><div><span class="field">dislikes</span><span class="fv">corporate minimalism, generic startup gradients</span></div>
+    </div>
+
+    <div class="arms">
+      <div class="arm">
+        <div class="arm-head">Baseline <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Golden Hour Vibes</div>
+          <div class="dir-sub">Experience Riverside in Style</div>
+          <div class="dir-tags"><span class="tag">warm</span> <span class="tag">community</span> <span class="tag">sunset</span> <span class="tag">music</span> <span class="tag">vendors</span></div>
+          <div class="dir-prompt">Composition: a sweeping landscape of the Riverside Pier with a large, soft-focus sunset in the background, featuring silhouetted figures enjoying the event. Palette: warm golds and oranges emulating sunset tones, with deeper purples and blues encroaching on the edges to suggest early night. Materials/texture: a slightly textured paper to emulate warmth, with a slight gloss finish on the sunset imagery. Typography: bold serif type for the event name, with an elegant script for the date and location that creates an inviting feel. Mood: relaxed, vibrant, inviting, and community-focused.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Night Market Charm</div>
+          <div class="dir-sub">Local Culture Under the Stars</div>
+          <div class="dir-tags"><span class="tag">local</span> <span class="tag">cultural</span> <span class="tag">festive</span> <span class="tag">bright</span> <span class="tag">inviting</span></div>
+          <div class="dir-prompt">Composition: layered imagery with a prominent close-up of local vendors&#x27; booths displaying products, surrounded by atmospheric fairy lights and people enjoying live music. Palette: bright and lively colors reflecting the products of the vendors—vivid greens, reds, and yellows against a twilight blue backdrop. Materials/texture: smooth, semi-gloss finish giving off a lively feel, with a bit of sheen that catches light. Typography: playful hand-lettered fonts for the event name paired with clear sans-serif for details; the use of playful angles adds to the whimsical feel. Mood: playful, festive, and friendly, capturing the spirit of a community market.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Riverside Sunset Dream</div>
+          <div class="dir-sub">Serenade of Sounds and Sights</div>
+          <div class="dir-tags"><span class="tag">serene</span> <span class="tag">artistic</span> <span class="tag">romantic</span> <span class="tag">sunset</span></div>
+          <div class="dir-prompt">Composition: a scenic view of Riverside Pier featuring a stylized sunset with an artistic depiction of people mingling and enjoying the ambiance, suggesting movement and community interaction. Palette: a blend of soft pastel pinks, oranges, and purples to create a dreamy sunset effect, contrasting with the darker silhouettes of people and stalls. Materials/texture: textured paper that gives a hand-painted feel, bringing warmth and depth to the design. Typography: elegant cursive script for the event name and a clear, bold sans-serif for the date and location to ensure readability; harmonious placement enhances the overall flow of the design. Mood: romantic, serene, and inviting, capturing the essence of a tranquil evening market.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">5</span></div><div><span class="dim">direction diversity</span><span class="val">5</span></div><div><span class="dim">specificity</span><span class="val">4</span></div><div><span class="dim">actionability</span><span class="val">4</span></div><div><span class="dim">preference fit</span><span class="val">1</span></div><div><span class="dim">visual distinctiveness</span><span class="val">5</span></div><div><span class="dim">redundancy</span><span class="val">5</span></div></div>
+      </div>
+      <div class="arm">
+        <div class="arm-head">Personalized <span class="tag src-real">REAL CURRENT AGENT OUTPUT</span></div>
+        
+        <div class="direction">
+          <div class="dir-title">Sunset Vibes</div>
+          <div class="dir-sub">Join Us for an Evening of Community</div>
+          <div class="dir-tags"><span class="tag">warm</span> <span class="tag">community</span> <span class="tag">event</span> <span class="tag">vibrant</span></div>
+          <div class="dir-prompt">Composition: dynamic diagonal layout featuring layered images of sunset, music notes, and vendor stalls, creating a sense of movement and energy. Palette: warm golden hues with rich oranges and soft purples, echoing the sunset. Materials/Texture: a mix of matte and glossy finishes to highlight key elements, with subtle textures reminiscent of handcrafted goods. Typography: bold modular fonts for important details, paired with softer script for event vibes. Mood: warm, inviting, and full of community spirit, capturing the essence of a lively night market.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Riverside Night Market</div>
+          <div class="dir-sub">Local Vendors &amp; Live Music</div>
+          <div class="dir-tags"><span class="tag">collage</span> <span class="tag">bold</span> <span class="tag">informal</span> <span class="tag">inviting</span></div>
+          <div class="dir-prompt">Composition: vibrant collage of community engagement featuring vendor images, musical instruments, and sunset graphics layered together, creating a tapestry of activity. Palette: deep blues and warm yellows, with splashes of bright colors to enhance excitement and draw attention. Materials/Texture: textured paper aesthetic with elements that look hand-drawn or crafted, emphasizing the local artistry. Typography: bold sans-serif type for event details, mixed with playful script emphasizing the event&#x27;s warmth. Mood: energetic, celebratory, and community-focused, reflecting a bustling outdoor market atmosphere.</div>
+        </div>
+
+        <div class="direction">
+          <div class="dir-title">Evening at the Pier</div>
+          <div class="dir-sub">Enjoy Live Music and Local Eats</div>
+          <div class="dir-tags"><span class="tag">laid-back</span> <span class="tag">social</span> <span class="tag">nostalgic</span> <span class="tag">friendly</span></div>
+          <div class="dir-prompt">Composition: centered layout with a large central image of people enjoying food and music at the pier, surrounded by text that frames the scene. Palette: warm earth tones complemented by hints of sunset pinks and oranges, creating a cozy atmosphere. Materials/Texture: soft textured backgrounds resembling canvas, with a warm glow to enhance the evening feel. Typography: relaxed serif font for the main event title, with a playful handwritten style for the date and details, balancing professionalism with warmth. Mood: laid-back, friendly, and inviting, encouraging community gathering and enjoyment.</div>
+        </div>
+        <div class="scores"><div><span class="dim">relevance</span><span class="val">4</span></div><div><span class="dim">brief integrity</span><span class="val">4</span></div><div><span class="dim">direction diversity</span><span class="val">4</span></div><div><span class="dim">specificity</span><span class="val">5</span></div><div><span class="dim">actionability</span><span class="val">5</span></div><div><span class="dim">preference fit</span><span class="val">5</span></div><div><span class="dim">visual distinctiveness</span><span class="val">4</span></div><div><span class="dim">redundancy</span><span class="val">4</span></div></div>
+      </div>
+    </div>
+
+    <div class="reason"><strong>Evaluation rationale:</strong> Cleanest positive case: 2 of 3 directions explicitly and concretely reflect the preference (bold modular fonts; vibrant collage / tapestry of activity for &#x27;community collage energy&#x27;), while the 3rd stays in a calmer, more centered register — preserving real choice rather than 3x the same look. No corporate-minimalism or startup-gradient language appears. Minor note: direction 2&#x27;s &#x27;energetic, celebratory&#x27; mood reads slightly more high-energy than the brief&#x27;s own &#x27;laid-back&#x27; tone — a small tone stretch, not a dropped fact (event name/date/location/highlights all still addressable via the unchanged USER-PROVIDED DATA section).</div>
+  </section>
+
+
+</div>
+</body>
+</html>
