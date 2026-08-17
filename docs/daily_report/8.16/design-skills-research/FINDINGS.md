@@ -1,0 +1,76 @@
+# Findings
+
+Direct answers to the boss's request, based on the validated datasets in this directory (`skills_candidates.csv`, `skill_reviews.jsonl`, `skills_shortlist.csv` -- see `DAILY_REPORT.md` for the exact reconciled counts).
+
+### 1. How many design-skill candidates were found?
+**39** candidates were entered into the candidate pool, covering 17 categories (see `skills_candidates.csv`). This includes all 15 of the boss's seed names, 13 from a first discovery search, 7 from a second supplementary pass, and 4 from a focused Codex-specific correction pass -- above the task's "approximately 20-30" guidance, kept deliberately across three discovery rounds because the extra material was independently verified and non-redundant (it filled two real gaps: branding, and Codex-ecosystem representation) rather than trimmed to hit a round number.
+
+### 2. How many original/primary sources were successfully verified?
+**20** candidates received direct primary-source verification (fetched SKILL.md/README/repo content directly, not just search snippets): the 19 deep-reviewed candidates, plus `composio` which was verified as **not design-specific** and excluded from deep review on that basis. A further 8 candidates from the supplementary and Codex-focused passes (`canvas-design`, `claude-wcag-accessibility-skill`, `design-system-skill`, `motion-dev-animations-skill`, `ui-ux-pro-max-skill`, `openai/plugins`, `MengTo/Skills`, the `fcakyon` Codex frontend-design port) were independently source-checked but not taken through the full deep-review process. Of the 19 deep-reviewed: 16 fully verified, 2 verified-with-caveat (`figma-implement-design` -- content verified but host repo deprecated; `ui-ux-pro-max-skill`'s dial/persistence mechanism verified, but its headline "119 guidelines" claim was checked and found unsubstantiated), and 1 partially verified (`hyperframes-creative` -- the exact SKILL.md URL 404'd; assessment relies on repo-level and third-party summaries). The remaining 11 candidates are discovery leads only (`verification_status = discovery_only`) -- found via search but not yet primary-source verified.
+
+One boss seed name, **"design-process-pack,"** could not be resolved to any specific matching repository despite search -- it is recorded as not-found rather than guessed.
+
+### 3. How many candidates received deep review?
+**19**, within the requested 12-18 range plus one addition (`Codex-Skills`) justified by the explicit Codex-coverage correction (`skill_reviews.jsonl`).
+
+### 4. How many were genuinely high quality?
+**5 candidates reached S tier**: `impeccable`, `styleseed`, Anthropic's official `frontend-design`, `product-shots`, and `guizang-social-card-skill`. A tightened **7 more reached the primary A-tier shortlist**, including `visual-verdict` (the cleanest deterministic compare-and-fix loop found in the entire research pass), `brand-skills` (the only branding-specific candidate found anywhere), and `Codex-Skills` (TheGoat395) -- the strongest genuinely Codex-first candidate found. Combined, **12 of the 19 deep-reviewed candidates (63%)** made the tightened primary shortlist. Three further A-tier candidates (`webapp-testing`, `figma-implement-design`, `video-shotcraft`) were cut from the primary 12 during a deliberate tightening pass and moved to an Honorable Mentions / Watchlist (still genuinely good, just not curated top-12 material -- see `README.md`). Four other deep-reviewed candidates (`theme-factory`, `hyperframes-creative`, `platform-design-skills`, `photo-abstract-editorial`) were reviewed but judged not strong enough -- either too thin, too unverified, or too narrow -- to shortlist at all.
+
+### 5. Which categories currently have the strongest resources?
+- **Visual polish / anti-"AI slop" checking** (`impeccable`, `styleseed`) -- the two strongest implementations in the whole pool, both with real validation mechanisms.
+- **Product/e-commerce image generation** (`product-shots`) -- the most specific, transferable domain expertise found.
+- **Social content generation** (`guizang-social-card-skill`) -- directly on-topic for Objective B, with a genuine automated layout-fault checker.
+- **Design process orchestration** (`designer-skills`) -- the clearest example of a staged, gated creative pipeline.
+- **Visual QA / compare-and-fix loops** (`visual-verdict`, `excalidraw-diagram-skill`, `styleseed`) -- collectively the strongest evidence that "validation loop" isn't just marketing language; each ships a genuinely different mechanism (JSON-verdict gate, render-screenshot-fix, dual-gate scoring).
+- **Codex-native design skills** (`Codex-Skills` / TheGoat395) -- the strongest single Codex-specific find of the whole research pass: ~70 real, code-bearing skills with an honestly-caveated benchmark methodology.
+- **Branding** is the weakest-covered category by breadth (only one candidate, `brand-skills`, found across three discovery rounds) but that one candidate is a real, MIT-licensed, structurally serious pipeline -- not absent, just thin on choice.
+
+### 6. Which popular/promoted resources were weaker than expected?
+- `theme-factory` (official Anthropic) is a clean, simple theme picker but has essentially no validation step and limited domain reasoning beyond a curated preset list -- useful, but thinner than its "official Anthropic skill" framing might suggest.
+- `platform-design-skills` claims 300-450+ rules sourced from Apple HIG/Material 3/WCAG 2.2 (the repo's own header and body text disagree on the exact count, a minor but real inconsistency), but the actual rule-file depth could not be independently confirmed in this review -- it's plausible and well-sourced in principle, but currently sits at "insufficient evidence," not confirmed strength.
+- `ui-ux-pro-max-skill` headlines "119 UX Guidelines" in its README, but direct inspection found no enumerated reference file substantiating that count -- the tunable dials and persistent design-system-memory mechanism are real, but the specific number is an unverified marketing claim and should not be repeated as fact. A clean, concrete example of the boss's "哪些只是 prompt 包装" question.
+- A weekly-install figure circulating for `web-design-guidelines` in search results (~133k/week) could **not** be independently verified from the primary repository and was explicitly excluded from scoring -- a good reminder that popularity numbers found via search are not primary-source facts.
+- `openai/plugins` -- widely referenced (including by the deprecated `openai/skills` repo itself) as "the current place to look" for Codex plugin/skill examples -- turned out to be **archived (read-only)** as of 2026-08-16 when checked directly. Even the semi-official pointer-to-the-successor is itself no longer an active target; see finding 16 below.
+
+### 7. What differentiates a strong design skill from a thin prompt wrapper?
+Three consistent traits separated the shortlisted resources from the rest:
+1. **A real mechanism beyond the prompt** -- code, a rule engine, a render pipeline, or an orchestrator with persisted state (not just markdown instructions).
+2. **Specific, named domain knowledge** -- e.g. Amazon's compliance rules, WCAG 2.2 criteria, named aesthetic philosophies with concrete parameters -- as opposed to generic adjectives like "modern" or "clean."
+3. **Some form of self-check** -- even a manual "take a screenshot and critique it" step beats no validation at all; automated/scripted checks (styleseed's dual-gate score, `guizang`'s layout-fault script) are the strongest form observed.
+
+`photo-abstract-editorial` (C16) is an instructive edge case: it's a single-file prompt with **no code and no validation loop**, so it's classified `thin_prompt_wrapper` by implementation -- but the prompt itself contains genuinely specific compositional reasoning. Thin implementation and real domain knowledge are not mutually exclusive; the rubric scores them on separate axes rather than collapsing to one label.
+
+### 8. Which skills contain actual design knowledge?
+Strongest, by evidence: `impeccable` (typography/color/spacing anti-patterns with named reasoning), Anthropic's `frontend-design` (color/typography/motion/hierarchy/copy, most complete single document reviewed), `product-shots` (e-commerce compliance + photography continuity rules), `guizang-social-card-skill` (editorial vs. Swiss grid typography/composition rules), `styleseed` (74 named craft rules with stated reasoning), `designer-skills` (named aesthetic philosophies with concrete parameters), `accesslint` (WCAG 2.2 criteria with severity/confidence grading), `video-shotcraft` (cinematography vocabulary from studying real product films), `Codex-Skills` (motion/easing language, color-material-lighting direction, accessible-component patterns across ~70 skills).
+
+### 9. Which skills contain useful validation/critique loops?
+Strongest to weakest among the shortlist: `visual-verdict` (deterministic JSON verdict -- score + pass/revise/fail + structured differences[] -- gated at a numeric threshold, the cleanest machine-checkable contract found) ≈ `styleseed` (quantified dual-gate: rule score + rendered pixel check) > `guizang-social-card-skill` (scripted post-render fault detection) > `excalidraw-diagram-skill` (render-screenshot-inspect-fix loop) > `figma-implement-design` (7-dimension screenshot-vs-source checklist) > `accesslint` (scan/fix/diff regression pipeline) > `webapp-testing` (browser-based reconnaissance-then-verify) > Anthropic `frontend-design` and `designer-skills` (manual/qualitative self-critique, no automation) > `brand-skills` (documents/specifies but doesn't critique generated visuals).
+
+### 10. Which patterns are most relevant to Curify?
+See `CURIFY_CAPABILITY_FINDINGS.md` for full detail. Top patterns: (1) deterministic anti-pattern checking, (2) render->inspect->fix loops (now also evidenced by `visual-verdict`'s JSON-verdict contract), (3) locked identity anchors for multi-asset consistency, (4) hard constraints as prompt fields, (5) staged pipelines with persisted intermediate state (also evidenced by `brand-skills`' brand.yaml package), (6) quantified self-scored quality gates, (7) reference decomposition into explicit semantic tokens.
+
+### 11. Which are worth learning from but NOT installing?
+All 19 deep-reviewed candidates, without exception -- Task D's scope is static review and pattern extraction, not installation. The ones with the *most* to learn from structurally are `impeccable`, `styleseed`, `product-shots`, `designer-skills`, `visual-verdict`, `Codex-Skills`, and `excalidraw-diagram-skill` (see `CURIFY_CAPABILITY_FINDINGS.md`).
+
+### 12. Which are safe/useful enough to recommend externally?
+The 12 resources in `SOCIAL_MEDIA_SHORTLIST.md`. All are verified, publicly accessible, and paired with an explicit caveat where one exists (AGPL license for `guizang-social-card-skill`, API-key dependency for `product-shots`, deprecated host repo excluded entirely for `figma-implement-design`, unstated license for `visual-verdict`, unverified "70+ agents" claim for `brand-skills`).
+
+### 13. What important security/trust risks exist?
+- **License obligations:** `guizang-social-card-skill` is AGPL-3.0 -- copyleft applies to derivatives/SaaS use.
+- **External credentials:** `product-shots` requires an image-gen API key via environment variable; `figma-implement-design` requires a Figma MCP server with account access.
+- **Execution surface:** `accesslint` and `excalidraw-diagram-skill` both require local Node/Python + Chrome/Chromium automation (CDP or Playwright); `video-shotcraft` and `guizang-social-card-skill` require Node + Playwright/Remotion rendering. None of this was executed for Task D -- all evaluation was static (SKILL.md/README/source reading only), per the Task D safety policy.
+- **Unclear provenance:** `photo-abstract-editorial` has no stated author identity or license -- treat with lower trust despite genuine content quality.
+- **Deprecated hosting:** `figma-implement-design`'s repository (`openai/skills`) is explicitly marked deprecated by OpenAI.
+
+### 14. Is there enough strong material for a social-media post?
+Yes. 12 verified, distinct, explainable resources is comfortably enough for one solid post (`SOCIAL_MEDIA_DRAFT.md`), with room to hold several more in reserve for future posts without repeating material.
+
+### 15. What are the top 3-5 next internal experiments?
+In priority order (see `INTERNAL_EXPERIMENTS.md` for full detail): **E2** (render->screenshot->one-iteration-fix loop) first, then **E3** (locked identity anchors for multi-asset batches), then **E1** (static generic-output checklist), **E4** (reference-to-token extraction step), and **E5** (layout-fault linter for social/marketing assets).
+
+### 16. What does the public Claude vs. Codex design-skill ecosystem look like today?
+**Evidence from this research:** of 39 candidates, **20 are Claude-specific**, **4 are Codex-specific**, **11 are multi-agent** (explicitly built to run across Claude Code, Codex, Cursor, and/or Gemini CLI), 3 are generic/unspecified-agent, and 1 is unknown. Among the 19 deep-reviewed candidates specifically, only 2 are Codex-specific (`figma-implement-design`, host repo deprecated; `Codex-Skills`, genuinely native and the strongest Codex find) against 5 Claude-specific deep reviews and 8 multi-agent.
+
+**Does Codex-specific design tooling look less mature?** On this sample, yes -- but the gap is about *ecosystem breadth and stability*, not necessarily about the ceiling of any one tool. Three concrete signals support this, not just the raw count: (1) the SKILL.md standard itself appears to have originated and matured first in the Claude Code / Anthropic ecosystem, with Codex support following via compatibility adapters in several multi-agent tools (`Codex-Skills`, `MengTo/Skills`) rather than being designed Codex-first from day one -- `Codex-Skills` is the one clear exception found; (2) `openai/skills` (an early Codex-oriented skills catalog) is explicitly marked **deprecated** by OpenAI, and the repo it points to as a successor, `openai/plugins`, is itself now **archived** -- two dead ends in a row for anyone starting from official OpenAI sources; (3) the focused Codex discovery pass surfaced far fewer independent, high-quality, genuinely-Codex-native design resources than either Claude-focused pass, despite comparable search effort. This is evidence of a smaller and newer ecosystem on this sample, not proof that Codex is incapable of good design work -- a single focused search session is not exhaustive, and `Codex-Skills` itself demonstrates the ceiling is real when someone builds for Codex specifically.
+
+**Which multi-agent resources are realistically useful to Codex users today?** `MengTo/Skills` (123 skills, portable `SKILL.md` contracts, an explicit 19-skill "Codex Workflows" subset) and `web-design-guidelines` (Vercel; framework-agnostic static audit with no Claude-specific assumptions) are the most directly usable by a Codex user right now without adaptation. `impeccable` (14-CLI support) and `accesslint/skills` (multi-agent, MCP-based) are also realistically portable, though neither was verified running inside Codex specifically in this static review.
