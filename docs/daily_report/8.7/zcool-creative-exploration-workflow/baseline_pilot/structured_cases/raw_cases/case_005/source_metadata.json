@@ -1,0 +1,21 @@
+{
+  "case_id": "case_005",
+  "source_platform": "zcool",
+  "source_url": "https://www.zcool.com.cn/work/ZNjgwMTg0NTI=.html",
+  "source_title": "视觉盛宴：探索LOGO设计之旅",
+  "source_author": "叁方合意",
+  "source_publish_date": "2年前",
+  "source_access_date": "2026-08-05",
+  "design_category": "logo_showcase",
+  "industry": "mixed_generic",
+  "brand_or_project_name": null,
+  "language": "zh",
+  "case_summary": "刻意选取的负面样本：页面仅展示15张最终Logo成品，配以泛泛而谈的'Logo很重要'式文案，无具体项目背景、无单一品牌、无设计过程说明。用于验证清洗规则和schema能否正确识别并标记'showcase_only/不可用于工作流训练'的案例，而不是被硬凑成虚假的工作流数据。",
+  "workflow_completeness": "showcase_only",
+  "workflow_order_recoverability": "unknown",
+  "source_quality": "text_ok_images_blocked",
+  "usable_for_workflow_training": false,
+  "usage_recommendation": "not_recommended",
+  "copyright_or_reuse_notes": "内容为站酷平台设计师'叁方合意'原创作品，版权归原作者/工作室所有，本研究仅做内部数据结构验证，不做二次发布。",
+  "review_status": "reviewed_by_ai_only"
+}
