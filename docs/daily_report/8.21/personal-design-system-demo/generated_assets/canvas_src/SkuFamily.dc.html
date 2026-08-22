@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;900&family=Manrope:wght@500;700;800&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #92400e; } a:hover { color: #78350f; }
+    .stage { width:100%; height:100%; position:relative; overflow:hidden;
+              background: radial-gradient(circle at 50% 20%, oklch(99% 0.004 90) 0%, oklch(97% 0.006 90) 60%, oklch(95% 0.008 90) 100%);
+              display:flex; flex-direction:column; }
+    .brandmark { display:flex; align-items:center; gap:10px; padding:28px 0 0 40px; }
+    .brandmark .symwrap { width:34px; height:34px; }
+    .brandmark .txt { display:flex; flex-direction:column; line-height:1.05; font-family:'Manrope', sans-serif; }
+    .brandmark .cn { font-family:'Noto Sans SC', sans-serif; font-weight:900; font-size:18px; color: oklch(22% 0.02 260); }
+    .brandmark .en { font-weight:800; font-size:9px; letter-spacing:2.5px; color: oklch(35% 0.02 260 / 0.7); text-transform:uppercase; }
+    .row { flex:1; display:flex; align-items:flex-end; justify-content:center; gap:90px; padding: 20px 60px 70px; }
+    .ground-shadow { position:absolute; bottom:64px; left:50%; width:78%; height:30px; transform:translateX(-50%);
+                      background: radial-gradient(ellipse at center, oklch(20% 0.02 260 / 0.14), transparent 72%); }
+  </style>
+</helmet>
+<div class="stage">
+  <div class="brandmark">
+    <div class="symwrap"><dc-import name="SproutBubbleSymbol" hint-size="34,34"></dc-import></div>
+    <div class="txt"><div class="cn">荔泉气泡</div><div class="en">Lichuan Sparkling</div></div>
+  </div>
+  <div class="ground-shadow"></div>
+  <div class="row">
+    <dc-import name="Can" dominant="oklch(83% 0.08 18)" flavor-c-n="荔枝玫瑰" flavor-e-n="Lychee Rose" flavor-icon="lychee" hint-size="220,480"></dc-import>
+    <dc-import name="Can" dominant="oklch(80% 0.09 155)" flavor-c-n="黄瓜薄荷" flavor-e-n="Cucumber Mint" flavor-icon="mint" hint-size="220,480"></dc-import>
+    <dc-import name="Can" dominant="oklch(86% 0.09 85)" flavor-c-n="柚子姜片" flavor-e-n="Yuzu Ginger" flavor-icon="yuzu" hint-size="220,480"></dc-import>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>
