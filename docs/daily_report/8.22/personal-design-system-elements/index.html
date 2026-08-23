@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Design Systems — Three Portfolios</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:#1f1b16; --paper:#faf7f2; --paper-alt:#f1ece3; --line:#e2d9cb;
+    --source:#9c6b1f; --source-bg:#fbf1de; --source-border:#e8c98a;
+    --zq:#8a4a1f; --zq-bg:#f5e2cf;
+    --ul:#4a5d2a; --ul-bg:#e4e8d5;
+    --hjx:#9c6d1f; --hjx-bg:#f2e2b8;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.55; }
+  .wrap { max-width:1160px; margin:0 auto; padding:0 24px 100px; }
+  header.top { text-align:center; padding:44px 0 34px; border-bottom:1px solid var(--line); margin-bottom:40px; }
+  header.top h1 { font-size:1.8rem; margin:0 0 8px; }
+  header.top .sub { color:#6b6255; font-size:.98rem; max-width:680px; margin:0 auto; }
+
+  .callout { border:1px solid var(--line); background:var(--paper-alt); border-radius:10px; padding:16px 18px; margin:0 0 40px; font-size:.9rem; }
+
+  section > h2 { font-size:1.2rem; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:20px; }
+
+  .card-row { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-bottom:56px; }
+  @media (max-width:900px) { .card-row { grid-template-columns:1fr; } }
+  .card { border-radius:14px; overflow:hidden; border:1px solid var(--line); background:#fff; display:flex; flex-direction:column; }
+  .card .thumb { height:150px; object-fit:cover; width:100%; display:block; }
+  .card .body { padding:18px 20px; flex:1; display:flex; flex-direction:column; }
+  .card .discipline { font-size:.68rem; text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
+  .card h3 { margin:6px 0 10px; font-size:1.25rem; }
+  .card .tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
+  .card .tags span { font-size:.68rem; padding:3px 9px; border-radius:999px; color:#fff; }
+  .card .sig { font-size:.82rem; color:#4a453c; margin-bottom:14px; flex:1; }
+  .card .sig b { display:block; font-size:.68rem; text-transform:uppercase; letter-spacing:.03em; color:#8a8072; margin-bottom:4px; }
+  .card a.cta { display:inline-block; text-align:center; padding:10px 16px; border-radius:8px; font-weight:700; font-size:.85rem; text-decoration:none; color:#fff; }
+
+  .zq-top { border-top:5px solid var(--zq); } .zq-disc { color:var(--zq); } .zq-cta { background:var(--zq); }
+  .ul-top { border-top:5px solid var(--ul); } .ul-disc { color:var(--ul); } .ul-cta { background:var(--ul); }
+  .hjx-top { border-top:5px solid var(--hjx); } .hjx-disc { color:var(--hjx); } .hjx-cta { background:var(--hjx); }
+  .tag-zq { background:var(--zq); } .tag-ul { background:var(--ul); } .tag-hjx { background:var(--hjx); }
+
+  table.matrix { width:100%; border-collapse:collapse; font-size:.84rem; margin-bottom:56px; }
+  table.matrix th, table.matrix td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+  table.matrix th { background:var(--paper-alt); font-size:.7rem; text-transform:uppercase; letter-spacing:.03em; color:#6b6255; }
+  table.matrix td.dim { font-weight:700; background:var(--paper-alt); width:150px; }
+  table.matrix td.zq { background:#fdf6ee; } table.matrix td.ul { background:#f4f6ec; } table.matrix td.hjx { background:#fcf6e6; }
+
+  footer.bottom { text-align:center; color:#8a8072; font-size:.82rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Personal Design Systems — Three Portfolios</h1>
+  <div class="sub">Boss follow-up to the Personal Design System demo: three real ZCOOL portfolios, each turned into an evidence-grounded, visually distinct reusable design system.</div>
+</header>
+
+<div class="callout">
+  <strong>What this page is:</strong> a side-by-side comparison of three independently-extracted
+  Personal Design Systems. Each was built the same way — sample real portfolio works, extract only
+  evidence-supported rules, tag confidence honestly — but the <em>results</em> are deliberately
+  different, because the three studios are genuinely different. See the comparison matrix below for
+  exactly where they diverge.
+</div>
+
+<section>
+  <h2>The Three Systems</h2>
+  <div class="card-row">
+
+    <div class="card zq-top">
+      <img class="thumb" src="zaowu-qiyi/evidence/work_05_01.jpg" alt="Zaowu Qiyi representative work">
+      <div class="body">
+        <div class="discipline zq-disc">Packaging &amp; Brand Design · Guangzhou</div>
+        <h3>造物起异包装设计</h3>
+        <div class="tags">
+          <span class="tag-zq">Super-symbol-led</span><span class="tag-zq">One-hue+accent</span>
+          <span class="tag-zq">Bilingual</span><span class="tag-zq">CGI-staged</span>
+        </div>
+        <div class="sig"><b>Strongest signature</b>One fixed mark, reused verbatim across every SKU in a family (HIGH, 4 works) — the studio's own stated "超级符号" method.</div>
+        <a class="cta zq-cta" href="zaowu-qiyi/DESIGN_SYSTEM.html">View full system →</a>
+      </div>
+    </div>
+
+    <div class="card ul-top">
+      <img class="thumb" src="unicorn-lion/evidence/ul_06_guangxia_wine.jpg" alt="Unicorn Lion representative work">
+      <div class="body">
+        <div class="discipline ul-disc">Regional Brand &amp; Packaging · Yinchuan</div>
+        <h3>独角狮设计</h3>
+        <div class="tags">
+          <span class="tag-ul">Regional authenticity</span><span class="tag-ul">Restrained palette</span>
+          <span class="tag-ul">Category-driven register</span>
+        </div>
+        <div class="sig"><b>Strongest signature</b>Full register-shift methodology — photography, illustration, or clean corporate, matched to category rather than one house style (HIGH, all 8 works).</div>
+        <a class="cta ul-cta" href="unicorn-lion/DESIGN_SYSTEM.html">View full system →</a>
+      </div>
+    </div>
+
+    <div class="card hjx-top">
+      <img class="thumb" src="hanjiangxue/evidence/hjx_04_cloisonne_zodiac.jpg" alt="Han Jiang Xue representative work">
+      <div class="body">
+        <div class="discipline hjx-disc">Illustration &amp; Cultural Character/IP · Beijing</div>
+        <h3>寒江雪的插画</h3>
+        <div class="tags">
+          <span class="tag-hjx">Gold-accented density</span><span class="tag-hjx">Animals-in-regalia</span>
+          <span class="tag-hjx">Ornate framing</span>
+        </div>
+        <div class="sig"><b>Strongest signature</b>Gold as a unifying premium accent across otherwise different illustration techniques (HIGH, 6 of 10 works).</div>
+        <a class="cta hjx-cta" href="hanjiangxue/DESIGN_SYSTEM.html">View full system →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Comparison Matrix</h2>
+  <table class="matrix">
+    <tr><th>Dimension</th><th>造物起异</th><th>独角狮</th><th>寒江雪</th></tr>
+    <tr><td class="dim">Dominant visual mode</td><td class="zq">Symbol-repetition system</td><td class="ul">Category-driven versatility/range</td><td class="hjx">Character/IP personification + craft reinterpretation</td></tr>
+    <tr><td class="dim">Color behavior</td><td class="zq">One dominant hue + one accent, per brand</td><td class="ul">Restrained 2–3 colors, fully client-driven; earth tones for agri clients</td><td class="hjx">Gold as a unifying accent across otherwise different techniques</td></tr>
+    <tr><td class="dim">Typography</td><td class="zq">Bilingual CN/Latin, hierarchy decided per brief</td><td class="ul">Icon-integrated logotype; occasional numeral-as-icon (weak signal)</td><td class="hjx">Sparse, image-led; theatrical staged type or seal-stamp title graphics</td></tr>
+    <tr><td class="dim">Composition</td><td class="zq">Ensemble/family shots for multi-SKU; dark-vs-light staging split by category</td><td class="ul">Format-versatile — grid, logo, technical manual, tri-fold; no one repeated layout</td><td class="hjx">Staged narrative scenes vs. single-figure portraits vs. plain product-photo</td></tr>
+    <tr><td class="dim">Signature device</td><td class="zq">One fixed repeatable mark, unchanged across a family</td><td class="ul">None found — the client's own mark carries the identity</td><td class="hjx">Animals in imperial regalia + ornate circular/curtain framing</td></tr>
+    <tr><td class="dim">Imagery</td><td class="zq">CGI-rendered mockup default; real photography as exception</td><td class="ul">Spans photography / illustration / flat graphic design by deliverable type</td><td class="hjx">Spans gongbi / cloisonné / stipple / ink-wash illustration, plus a separate real product-photography competency</td></tr>
+    <tr><td class="dim">Cultural references</td><td class="zq">Chinese heritage motifs used selectively, only for premium/ceremonial category</td><td class="ul">Regional Ningxia agricultural identity; traditional ink-brush accent (single instance)</td><td class="hjx">Pervasive — imperial regalia, cloisonné enamel, gongbi painting, ancient bronze vessels, Dunhuang frescoes, as core practice</td></tr>
+    <tr><td class="dim">Strongest transferable rule</td><td class="zq">Design one fixed mark, reuse it unchanged across every SKU in a family</td><td class="ul">Match rendering mode and palette restraint to category, not to a fixed house style</td><td class="hjx">Default to gold as the unifying accent regardless of which illustration technique is chosen</td></tr>
+  </table>
+</section>
+
+<footer class="bottom">Personal Design Systems — three portfolios, three distinct systems · evidence acquired 2026-08-22 · workflow proof, not production-ready final creative</footer>
+</div>
+</body>
+</html>
