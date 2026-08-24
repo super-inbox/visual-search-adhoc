@@ -1,0 +1,43 @@
+1
+00:00:00,300 --> 00:00:05,333
+The boy's name is Greg.
+
+2
+00:00:08,800 --> 00:00:09,700
+Number two.
+
+3
+00:00:12,200 --> 00:00:14,567
+You're going to dance?
+
+4
+00:00:17,900 --> 00:00:18,933
+Number three.
+
+5
+00:00:21,767 --> 00:00:24,667
+The lights are on the screen.
+
+6
+00:00:28,667 --> 00:00:29,700
+Number four.
+
+7
+00:00:32,367 --> 00:00:40,867
+The woman named Sara has a name sign.
+
+8
+00:00:44,400 --> 00:00:45,300
+Number four.
+
+9
+00:00:48,400 --> 00:01:02,667
+The man is wearing brown pants and a brown shirt. Number.
+
+10
+00:01:05,233 --> 00:01:11,333
+The book is number three.
+
+11
+00:01:13,033 --> 00:01:15,667
+You read it.

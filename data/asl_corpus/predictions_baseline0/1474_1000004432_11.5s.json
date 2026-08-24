@@ -1,0 +1,38 @@
+{
+  "project_id": "1474_1474_5c52cfa8_fb0a9864",
+  "video": "videos/1474_1000004432_11.5s.mp4",
+  "producer": "Baseline 0 — gemini-2.5-flash over motion-adaptive sampled stills, FRAME_BUDGET=96, KEYFRAME_WIDTH=512, BATCH_SIZE=24, temperature unset (default 1.0)",
+  "warning": "UNVERIFIED machine output. Repeat runs of identical input differ — see 1466/1467.",
+  "segments": [
+    {
+      "line": 1,
+      "start": 0.69,
+      "end": 1.46,
+      "text": "Explain."
+    },
+    {
+      "line": 2,
+      "start": 1.51,
+      "end": 3.92,
+      "text": "strong"
+    },
+    {
+      "line": 3,
+      "start": 4.47,
+      "end": 8.09,
+      "text": "Talking about the house."
+    },
+    {
+      "line": 4,
+      "start": 8.2,
+      "end": 8.5,
+      "text": "A smell."
+    },
+    {
+      "line": 5,
+      "start": 10.03,
+      "end": 10.46,
+      "text": "A lot."
+    }
+  ]
+}

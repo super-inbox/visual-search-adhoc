@@ -1,0 +1,19 @@
+{
+  "source": "https://www.youtube.com/watch?v=f_nVhrOgpYw",
+  "title": "Basic ASL Conversation", "channel": "Jay Harris", "duration_s": 37,
+  "transcript_source": "YouTube comment (crowd-sourced, not authoritative)",
+  "clip_window": "video 0:03-0:19 (user 1434 screen recording, 16.6s)",
+  "lines": [
+    {"signer":"blue","text":"Hello","in_clip":true},
+    {"signer":"red","text":"Hello","in_clip":true},
+    {"signer":"blue","text":"How are you?","in_clip":true},
+    {"signer":"red","text":"I'm fine, how are you?","in_clip":true},
+    {"signer":"blue","text":"Great","in_clip":true},
+    {"signer":"red","text":"Good","in_clip":"boundary"},
+    {"signer":"blue","text":"Are you deaf or hearing?","in_clip":false},
+    {"signer":"red","text":"Hearing. Are you deaf or hearing?","in_clip":false},
+    {"signer":"blue","text":"I'm deaf","in_clip":false},
+    {"signer":"red","text":"Nice to meet you","in_clip":false},
+    {"signer":"blue","text":"Same here","in_clip":false}
+  ]
+}

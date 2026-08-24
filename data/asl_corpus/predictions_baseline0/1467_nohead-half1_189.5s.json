@@ -1,0 +1,182 @@
+{
+  "project_id": "1467_1467_81983cc9_2c67f749",
+  "video": "videos/1467_nohead-half1_189.5s.mp4",
+  "producer": "Baseline 0 — gemini-2.5-flash over motion-adaptive sampled stills, FRAME_BUDGET=96, KEYFRAME_WIDTH=512, BATCH_SIZE=24, temperature unset (default 1.0)",
+  "warning": "UNVERIFIED machine output. Repeat runs of identical input differ — see 1466/1467.",
+  "segments": [
+    {
+      "line": 1,
+      "start": 4.88,
+      "end": 6.12,
+      "text": "You,"
+    },
+    {
+      "line": 2,
+      "start": 7.38,
+      "end": 9.88,
+      "text": "next, you"
+    },
+    {
+      "line": 3,
+      "start": 11.46,
+      "end": 14.29,
+      "text": "will expand."
+    },
+    {
+      "line": 4,
+      "start": 20.19,
+      "end": 22.75,
+      "text": "Work together"
+    },
+    {
+      "line": 5,
+      "start": 24.94,
+      "end": 25.31,
+      "text": "to grow"
+    },
+    {
+      "line": 6,
+      "start": 27.59,
+      "end": 28.82,
+      "text": "and give"
+    },
+    {
+      "line": 7,
+      "start": 30.05,
+      "end": 33.74,
+      "text": "a meeting for three"
+    },
+    {
+      "line": 8,
+      "start": 34.97,
+      "end": 37.43,
+      "text": "to further grow,"
+    },
+    {
+      "line": 9,
+      "start": 38.66,
+      "end": 38.66,
+      "text": "giving one"
+    },
+    {
+      "line": 10,
+      "start": 41.06,
+      "end": 42.15,
+      "text": "to join you."
+    },
+    {
+      "line": 11,
+      "start": 47.35,
+      "end": 49.31,
+      "text": "Not"
+    },
+    {
+      "line": 12,
+      "start": 62.94,
+      "end": 64.44,
+      "text": "Not"
+    },
+    {
+      "line": 13,
+      "start": 73.75,
+      "end": 75.69,
+      "text": "Not over"
+    },
+    {
+      "line": 14,
+      "start": 83.25,
+      "end": 84.44,
+      "text": "Not"
+    },
+    {
+      "line": 15,
+      "start": 89.65,
+      "end": 94.81,
+      "text": "Wash your hands."
+    },
+    {
+      "line": 16,
+      "start": 98.75,
+      "end": 99.75,
+      "text": "I feel good."
+    },
+    {
+      "line": 17,
+      "start": 103.69,
+      "end": 105.44,
+      "text": "Many are spread out, three."
+    },
+    {
+      "line": 18,
+      "start": 109.4,
+      "end": 112.0,
+      "text": "That's it."
+    },
+    {
+      "line": 19,
+      "start": 114.6,
+      "end": 116.19,
+      "text": "Many groups."
+    },
+    {
+      "line": 20,
+      "start": 121.44,
+      "end": 126.25,
+      "text": "Together, the second one."
+    },
+    {
+      "line": 21,
+      "start": 128.0,
+      "end": 133.83,
+      "text": "Sit down, two."
+    },
+    {
+      "line": 22,
+      "start": 135.88,
+      "end": 137.94,
+      "text": "Start."
+    },
+    {
+      "line": 23,
+      "start": 140.12,
+      "end": 149.94,
+      "text": "Prepare to develop everything."
+    },
+    {
+      "line": 24,
+      "start": 152.38,
+      "end": 152.38,
+      "text": "Feel."
+    },
+    {
+      "line": 25,
+      "start": 157.31,
+      "end": 159.94,
+      "text": "Stop and settle down."
+    },
+    {
+      "line": 26,
+      "start": 163.06,
+      "end": 163.06,
+      "text": "Walk."
+    },
+    {
+      "line": 27,
+      "start": 172.0,
+      "end": 175.0,
+      "text": "Hug."
+    },
+    {
+      "line": 28,
+      "start": 177.32,
+      "end": 181.93,
+      "text": "Many people are growing."
+    },
+    {
+      "line": 29,
+      "start": 186.5,
+      "end": 188.17,
+      "text": "Explain to the group."
+    }
+  ]
+}

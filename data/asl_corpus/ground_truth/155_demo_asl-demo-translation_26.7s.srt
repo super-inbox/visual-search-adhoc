@@ -1,0 +1,23 @@
+1
+00:00:00,300 --> 00:00:04,800
+My family has five, including my father.
+
+2
+00:00:05,667 --> 00:00:07,900
+My father is thirty.
+
+3
+00:00:08,867 --> 00:00:12,833
+My mother is twenty-nine.
+
+4
+00:00:13,667 --> 00:00:15,100
+I am nine.
+
+5
+00:00:18,200 --> 00:00:20,300
+My brother is seven.
+
+6
+00:00:21,533 --> 00:00:24,967
+My sister is seven.

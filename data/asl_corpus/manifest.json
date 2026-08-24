@@ -1,0 +1,152 @@
+{
+  "name": "Curify ASL corpus",
+  "assembled": "2026-08-25",
+  "source": "Curify production — Supabase `project` / `projectsegment` / `video`, Azure blob container `processed-videos`",
+  "sensitivity": "CONTAINS PERSONAL DATA. Real user-submitted video of identifiable people signing. Not consented for public release. Do not publish, redistribute, or push to any public repository. ASL grammar is carried on the face, so faces CANNOT be blurred without destroying the signal this corpus exists to measure.",
+  "counts": {"videos": 13, "distinct_submitters": 9, "with_ground_truth": 4, "with_baseline0_predictions": 5},
+  "videos": [
+    {"file": "videos/155_demo_asl-demo-translation_26.7s.mp4", "user": 155, "internal": true,
+     "duration_s": 26.7, "width": 640, "height": 360, "fps": 30.0,
+     "job_type": "asl_translation", "job_status": "FAILED", "failure": "GOOGLE_API_KEY env var missing",
+     "credits_charged": 0, "submitted": "2026-08-17T09:25:45Z",
+     "ground_truth": "ground_truth/155_demo_asl-demo-translation_26.7s.srt",
+     "gt_kind": "human-translated, verified", "gt_lines": 6,
+     "content": "Family description with ages — numbers are diagnostic content, not guessable from setting.",
+     "notes": "Curify's own demo asset, already public at /video/asl-demo-translation.mp4. Lowest-risk item in the set."},
+
+    {"file": "videos/1434_screenrec_youtube_16.6s.mp4", "user": 1434,
+     "duration_s": 16.595, "width": 2732, "height": 2048, "fps": 52.05,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 0,
+     "submitted": "2026-08-17T20:02:59Z",
+     "ground_truth": "ground_truth/1434_screenrec_youtube_16.6s.json",
+     "gt_kind": "crowd-sourced YouTube comment, not authoritative", "gt_lines": 11,
+     "content": "Screen recording of a PUBLIC YouTube video (Jay Harris, 'Basic ASL Conversation'), two signers. Clip covers video 0:03-0:19 = greeting lines 1-6 only.",
+     "notes": "WARNING: greetings are the highest-prior exchange in ASL. A VLM emits 'Hello / How are you? / I'm fine' for any two-signer clip without decoding anything, so this scores ~65% by guessing. The DIAGNOSTIC content is lines 7-11 (deaf/hearing), which are NOT in this clip. Nine machine runs across 5 configs are tabulated in curify-studio/docs/asl-recognition-evaluation-2026-08-18.md section 3; none are in projectsegment.",
+     "user_contacted": true},
+
+    {"file": "videos/1442_clip01_300.0s.mp4", "user": 1442,
+     "duration_s": 300.0, "width": 1280, "height": 720, "fps": 30.0,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 40,
+     "submitted": "2026-08-19T14:50:00Z",
+     "prediction": "predictions_baseline0/1442_clip01_300.0s.json",
+     "notes": "Longest job in the set. Budget-implied sampling density 1 frame / 3.13s. Output is the most fluent and most confident in the corpus AND the most likely to be fabricated — the 'priors dominate when perception is weak' failure mode."},
+
+    {"file": "videos/1457_10426_28.3s.mp4", "user": 1457,
+     "duration_s": 28.2723, "width": 2340, "height": 1080, "fps": 36.36,
+     "job_type": "asl_translation", "job_status": "FAILED", "credits_charged": 0,
+     "failure": "Gemini monthly spend cap (our fault, not the video's)",
+     "submitted": "2026-08-21T12:30:53Z",
+     "notes": "Never processed. Clean unseen test input."},
+
+    {"file": "videos/1466_nohead-half2_190.0s.mp4", "user": 1466,
+     "duration_s": 189.966667, "width": 1920, "height": 1080, "fps": 30.0,
+     "job_type": "asl_translation", "job_status": "FAILED", "credits_charged": 0,
+     "failure": "upload still PROCESSING after 900s",
+     "submitted": "2026-08-21T21:23:59Z",
+     "notes": "Second half of the same session as half1. Never processed."},
+
+    {"file": "videos/1466_nohead-half1_189.5s.mp4", "user": 1466,
+     "duration_s": 189.466667, "width": 1920, "height": 1080, "fps": 30.0,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 32,
+     "submitted": "2026-08-21T21:54:29Z",
+     "prediction": "predictions_baseline0/1466_nohead-half1_189.5s.json",
+     "pair_with": "videos/1467_nohead-half1_189.5s.mp4",
+     "notes": "DETERMINISM PAIR A. See determinism_pair below. ALSO: framing cuts off the signer's head entirely (the filename is literal). ASL grammar is carried on the face — brow raise = yes/no question, furrow = wh-question — so this input is missing half the linguistic signal by construction. Treat as a framing-failure case, not only a density case."},
+
+    {"file": "videos/1467_nohead-half1_189.5s.mp4", "user": 1467,
+     "duration_s": 189.466667, "width": 1920, "height": 1080, "fps": 30.0,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 32,
+     "submitted": "2026-08-21T21:54:40Z",
+     "prediction": "predictions_baseline0/1467_nohead-half1_189.5s.json",
+     "pair_with": "videos/1466_nohead-half1_189.5s.mp4",
+     "notes": "DETERMINISM PAIR B. Same content as pair A, submitted by a DIFFERENT account 11 seconds later."},
+
+    {"file": "videos/1474_1000004432_11.5s.mp4", "user": 1474,
+     "duration_s": 11.483811, "width": 1920, "height": 1080, "fps": 29.78,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 8,
+     "submitted": "2026-08-22T14:11:13Z",
+     "prediction": "predictions_baseline0/1474_1000004432_11.5s.json",
+     "notes": "Short self-recorded phone clip. Learner-shaped: the submitter knows what they signed, so this is a candidate for the verifiability product framing."},
+
+    {"file": "videos/1477_recording_6.7s.mp4", "user": 1477,
+     "duration_s": 6.68, "width": 640, "height": 480, "fps": 25.0,
+     "job_type": "asl_translation", "job_status": "COMPLETED", "credits_charged": 8,
+     "submitted": "2026-08-23T16:29:56Z",
+     "prediction": "predictions_baseline0/1477_recording_6.7s.json",
+     "notes": "Shortest and lowest-resolution. 640x480 webcam. Highest achievable sampling density in the set (1 frame / 0.07s), so it isolates resolution from density."},
+
+    {"file": "videos/1252_1000016397_76.8s.mp4", "user": 1252,
+     "duration_s": 76.753444,
+     "job_type": "subtitle_only + full_translation (BOTH FAILED)", "credits_charged": 0,
+     "failure": "Translation failed or returned empty",
+     "submitted": "2026-06-08T02:45:46Z",
+     "ground_truth": "ground_truth/1252_1000016397_76.8s.srt",
+     "gt_kind": "human-translated by Curify, verified", "gt_lines": 11,
+     "burned_reference": "ground_truth/1252_1000016397_76.8s_burned.mp4",
+     "content": "ASL class exercise. Contains FINGERSPELLED NAMES ('Greg', 'Sara') and numbered items — the only fingerspelling case in the corpus, and fully diagnostic content.",
+     "notes": "MISFILED as a speech job — predates the asl_translation job type. Hand-translated and emailed to the submitter (curify-studio/gtm_tools/send_1252_asl.py).",
+     "user_contacted": true},
+
+    {"file": "videos/1252_1000016402_250.8s.mp4", "user": 1252,
+     "duration_s": 250.807611,
+     "job_type": "video_transcript (FAILED)", "credits_charged": 0,
+     "failure": "NO_SPEECH — 'We can't transcribe sign language or silent footage'",
+     "submitted": "2026-06-08T02:47:59Z",
+     "notes": "MISFILED. Same submitter's second, longer video; the one the outreach email offered to translate too. Never processed.",
+     "user_contacted": true},
+
+    {"file": "videos/1415_unit7_200.6s.mp4", "user": 1415,
+     "duration_s": 200.6,
+     "job_type": "full_translation x2 (BOTH FAILED)", "credits_charged": 0,
+     "failure": "WhisperX transcription service unreachable",
+     "submitted": "2026-08-14T21:35:49Z",
+     "content": "'Unit 7 discussion forum' — pulled from YouTube by the user.",
+     "notes": "MISFILED. Submitted twice, both failed. This is the video the original motion-sampler validation was run on (100% of a 96-frame budget landed inside active signing; active was only 65% of the timeline)."},
+
+    {"file": "videos/1320_1000022357_137.2s.mp4", "user": 1320,
+     "duration_s": 137.203733, "width": 1920, "height": 1080,
+     "job_type": "video_transcript (FAILED)", "credits_charged": 0,
+     "failure": "NO_SPEECH — 'We can't transcribe sign language or silent footage'",
+     "submitted": "2026-06-28T19:02:40Z",
+     "gt_kind": "BURNED-IN ENGLISH CAPTIONS — extractable ground truth, not yet transcribed",
+     "content": "Professionally produced ASL video: single signer, plain grey studio background, title card reading 'INSTRUCTION', English captions burned into the frame throughout. Sampled caption lines: 'What if you could have a positive relationship?' / 'Happiness comes from our hearts and our lives.' / 'The word is near you, in your mouth and in your heart.' / \"I'm not happy; I'm just trying to find a few things.\"",
+     "notes": "MISFILED, and confirmed ASL by frame inspection on 2026-08-25 (was listed as unconfirmed before that). HIGHEST-VALUE ITEM IN THE CORPUS: studio-quality, single signer, face fully visible, and it carries its own aligned English ground truth on screen. OCR the caption band to get a free labelled ASL->English pair. Verify direction of production (ASL rendition captioned vs. English source interpreted) before treating captions as a gold translation."}
+  ],
+
+  "determinism_pair": {
+    "videos": ["videos/1466_nohead-half1_189.5s.mp4", "videos/1467_nohead-half1_189.5s.mp4"],
+    "what_happened": "The same video was submitted by two different accounts 11 seconds apart and processed as two independent production jobs.",
+    "byte_identical": false,
+    "content_identical": true,
+    "identity_evidence": "Identical duration to the millisecond (189.504000s), identical codec/resolution/framerate, identical frame counts (5684 video / 8884 audio), file sizes differ by 0.02% (49,304,806 vs 49,314,506 bytes) — independently re-encoded on upload. Frames sampled at t=30s, 90s and 150s are visually identical.",
+    "result": {
+      "segment_boundaries_shared": "29 of 45 timestamps",
+      "text_overlap": "effectively zero",
+      "examples": [
+        {"t": "89.7-94.8", "run_a": "Apply hand cream.", "run_b": "Wash your hands."},
+        {"t": "20.2-25.3", "run_a": "Repeat that. Think and explain.", "run_b": "Work together / to grow"},
+        {"t": "186.5-188.2", "run_a": "With.", "run_b": "Explain to the group."}
+      ]
+    },
+    "interpretation": "Segmentation (the motion-energy sampler) is deterministic; recognition (the VLM) is not. Free production A/B on identical input. Both submitters were charged 32 credits.",
+    "caveat": "Decode temperature is unset in _call_vlm, so Gemini defaults to 1.0. Pin temperature=0 before attributing any of this variance to the model's ASL competence."
+  },
+
+  "baseline0_config": {
+    "code": "curify-studio/curify_background/app/utils/asl_utils.py",
+    "model": "gemini-2.5-flash",
+    "temperature": "unset (provider default 1.0)",
+    "FRAME_BUDGET": 96, "note_on_budget": "absolute, NOT per-minute — mean density across this corpus ranges 1 frame/0.07s (6.7s clip) to 1 frame/3.13s (300s clip), a ~44x spread with no user warning and no price difference",
+    "KEYFRAME_WIDTH": 512, "BATCH_SIZE": 24, "PROBE_FPS": 4.0,
+    "IDLE_QUANTILE": 0.35, "ABS_MOTION_FLOOR": 2.0,
+    "pipeline": "motion-energy probe -> active/idle run segmentation -> 100% of budget allocated inside active runs -> ffmpeg stills at 512px -> N batched VLM calls -> JSON segments",
+    "price": "8 credits/min, excluded from the FREE plan's 60 monthly subtitle minutes"
+  },
+
+  "known_gaps": [
+    "No labelled fingerspelling case except 1252_1000016397 (names Greg, Sara).",
+    "1320's burned-in captions are not yet transcribed into an SRT.",
+    "The 1434 diagnostic half (video 0:19-0:37, the deaf/hearing exchange) has still never been tested — the only clip content in the whole corpus that cannot be guessed from setting. It was blocked by a yt-dlp HTTP 403, not by anything hard.",
+    "No per-job frame counts: asl_frames_sampled is destroyed before it reaches the DB by a runtime_config overwrite in curify_background/app/pipelines/base.py:130-166."
+  ]
+}

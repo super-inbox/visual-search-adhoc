@@ -1,0 +1,98 @@
+{
+  "project_id": "1442_1442_343c799d_213c7671",
+  "video": "videos/1442_clip01_300.0s.mp4",
+  "producer": "Baseline 0 — gemini-2.5-flash over motion-adaptive sampled stills, FRAME_BUDGET=96, KEYFRAME_WIDTH=512, BATCH_SIZE=24, temperature unset (default 1.0)",
+  "warning": "UNVERIFIED machine output. Repeat runs of identical input differ — see 1466/1467.",
+  "segments": [
+    {
+      "line": 1,
+      "start": 1.19,
+      "end": 13.88,
+      "text": "First, we're discussing the ongoing challenges faced by those who are blind."
+    },
+    {
+      "line": 2,
+      "start": 19.06,
+      "end": 23.88,
+      "text": "Let's not focus on differences."
+    },
+    {
+      "line": 3,
+      "start": 28.91,
+      "end": 56.92,
+      "text": "Through coffee, we explore what you want, connecting people and fostering growth."
+    },
+    {
+      "line": 4,
+      "start": 60.58,
+      "end": 72.81,
+      "text": "My point is: be open to change. Meeting new people is good. That's all."
+    },
+    {
+      "line": 5,
+      "start": 77.38,
+      "end": 106.94,
+      "text": "I want to show you something different: how you (Deaf people) perceive and learn about various other topics."
+    },
+    {
+      "line": 6,
+      "start": 114.0,
+      "end": 157.58,
+      "text": "Come back, everyone! I will teach you how, and it will be good after one or two tries. Now, please help and..."
+    },
+    {
+      "line": 7,
+      "start": 159.3,
+      "end": 166.17,
+      "text": "Alright everyone, about everything."
+    },
+    {
+      "line": 8,
+      "start": 176.5,
+      "end": 192.94,
+      "text": "It's important for you to remember to discuss this together."
+    },
+    {
+      "line": 9,
+      "start": 195.5,
+      "end": 221.15,
+      "text": "Choose to get started, then talk, say, think, and notice how everything changes."
+    },
+    {
+      "line": 10,
+      "start": 224.44,
+      "end": 233.31,
+      "text": "Why? I'll explain and tell you."
+    },
+    {
+      "line": 11,
+      "start": 235.5,
+      "end": 248.71,
+      "text": "Again, there are different types of hearing people."
+    },
+    {
+      "line": 12,
+      "start": 252.54,
+      "end": 262.38,
+      "text": "Within our community, working together creates opportunities. What kind?"
+    },
+    {
+      "line": 13,
+      "start": 265.5,
+      "end": 268.56,
+      "text": "For things to grow."
+    },
+    {
+      "line": 14,
+      "start": 274.06,
+      "end": 279.44,
+      "text": "Remember to connect and come together. Why?"
+    },
+    {
+      "line": 15,
+      "start": 283.12,
+      "end": 298.79,
+      "text": "We need to discuss this and include everyone."
+    }
+  ]
+}

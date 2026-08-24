@@ -1,0 +1,152 @@
+{
+  "project_id": "1466_1466_9fa87b2c_934a8b60",
+  "video": "videos/1466_nohead-half1_189.5s.mp4",
+  "producer": "Baseline 0 — gemini-2.5-flash over motion-adaptive sampled stills, FRAME_BUDGET=96, KEYFRAME_WIDTH=512, BATCH_SIZE=24, temperature unset (default 1.0)",
+  "warning": "UNVERIFIED machine output. Repeat runs of identical input differ — see 1466/1467.",
+  "segments": [
+    {
+      "line": 1,
+      "start": 1.12,
+      "end": 14.29,
+      "text": "What are you doing? Tell me."
+    },
+    {
+      "line": 2,
+      "start": 20.19,
+      "end": 25.31,
+      "text": "Repeat that. Think and explain."
+    },
+    {
+      "line": 3,
+      "start": 27.59,
+      "end": 37.43,
+      "text": "Begin three tasks together."
+    },
+    {
+      "line": 4,
+      "start": 38.66,
+      "end": 42.15,
+      "text": "You review and agree."
+    },
+    {
+      "line": 5,
+      "start": 44.75,
+      "end": 49.31,
+      "text": "Many"
+    },
+    {
+      "line": 6,
+      "start": 60.5,
+      "end": 64.44,
+      "text": "Many"
+    },
+    {
+      "line": 7,
+      "start": 70.62,
+      "end": 70.88,
+      "text": "All"
+    },
+    {
+      "line": 8,
+      "start": 74.75,
+      "end": 75.69,
+      "text": "Many"
+    },
+    {
+      "line": 9,
+      "start": 80.69,
+      "end": 84.44,
+      "text": "Many"
+    },
+    {
+      "line": 10,
+      "start": 86.69,
+      "end": 86.69,
+      "text": "All"
+    },
+    {
+      "line": 11,
+      "start": 89.65,
+      "end": 94.81,
+      "text": "Apply hand cream."
+    },
+    {
+      "line": 12,
+      "start": 98.75,
+      "end": 104.56,
+      "text": "For myself and everyone in society."
+    },
+    {
+      "line": 13,
+      "start": 105.44,
+      "end": 114.6,
+      "text": "It's about you and everyone."
+    },
+    {
+      "line": 14,
+      "start": 120.31,
+      "end": 121.44,
+      "text": "Some are the same, some are different."
+    },
+    {
+      "line": 15,
+      "start": 123.81,
+      "end": 126.25,
+      "text": "How two people are distinguished."
+    },
+    {
+      "line": 16,
+      "start": 128.0,
+      "end": 133.83,
+      "text": "All the people right here."
+    },
+    {
+      "line": 17,
+      "start": 144.56,
+      "end": 146.19,
+      "text": "Down here."
+    },
+    {
+      "line": 18,
+      "start": 157.31,
+      "end": 158.81,
+      "text": "Give."
+    },
+    {
+      "line": 19,
+      "start": 159.94,
+      "end": 163.06,
+      "text": "Take over."
+    },
+    {
+      "line": 20,
+      "start": 172.0,
+      "end": 172.0,
+      "text": "Good."
+    },
+    {
+      "line": 21,
+      "start": 175.0,
+      "end": 175.0,
+      "text": "My."
+    },
+    {
+      "line": 22,
+      "start": 177.32,
+      "end": 179.62,
+      "text": "Down here."
+    },
+    {
+      "line": 23,
+      "start": 180.78,
+      "end": 181.93,
+      "text": "Explain."
+    },
+    {
+      "line": 24,
+      "start": 186.5,
+      "end": 188.17,
+      "text": "With."
+    }
+  ]
+}

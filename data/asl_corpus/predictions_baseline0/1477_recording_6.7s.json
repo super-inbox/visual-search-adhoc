@@ -1,0 +1,32 @@
+{
+  "project_id": "1477_1477_cb971aff_8ab4cd12",
+  "video": "videos/1477_recording_6.7s.mp4",
+  "producer": "Baseline 0 — gemini-2.5-flash over motion-adaptive sampled stills, FRAME_BUDGET=96, KEYFRAME_WIDTH=512, BATCH_SIZE=24, temperature unset (default 1.0)",
+  "warning": "UNVERIFIED machine output. Repeat runs of identical input differ — see 1466/1467.",
+  "segments": [
+    {
+      "line": 1,
+      "start": 0.8,
+      "end": 3.37,
+      "text": "I have three of them."
+    },
+    {
+      "line": 2,
+      "start": 3.41,
+      "end": 4.32,
+      "text": "I know popular English."
+    },
+    {
+      "line": 3,
+      "start": 4.48,
+      "end": 4.72,
+      "text": "I don't know."
+    },
+    {
+      "line": 4,
+      "start": 4.76,
+      "end": 5.16,
+      "text": "X"
+    }
+  ]
+}
