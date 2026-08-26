@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>个人设计系统 — 寒江雪的插画</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:#241708; --paper:#faf5e8; --paper-alt:#f0e2c2; --line:#dcc888;
+    --accent:#9c6d1f; --accent-bg:#f2e2b8; --accent-2:#1f4a8a;
+    --source:#9c6b1f; --source-bg:#fbf1de; --source-border:#e8c98a;
+    --gen:#1f5c8a; --gen-bg:#e4eef7; --gen-border:#a9c7e0;
+    --hi:#9c6d1f; --med:#1f4a8a; --lo:#8a7a5c;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC","Segoe UI",Helvetica,Arial,sans-serif; line-height:1.7; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px 100px; }
+  header.top { text-align:center; padding:40px 0 30px; border-bottom:3px solid var(--accent); margin-bottom:36px; background:linear-gradient(180deg,var(--accent-bg),var(--paper)); }
+  header.top .cat { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--accent-2); font-weight:700; }
+  header.top h1 { font-size:2rem; margin:8px 0 6px; }
+  header.top .src { font-size:.88rem; color:#5c4a2a; }
+  header.top .dna { margin-top:16px; font-size:1.05rem; font-style:normal; max-width:680px; margin-left:auto; margin-right:auto; }
+  section { margin:0 0 56px; }
+  section > h2 { font-size:1.2rem; display:flex; align-items:baseline; gap:10px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:18px; }
+  section > h2 .num { font-size:.72rem; font-weight:700; color:#fff; background:var(--ink); border-radius:999px; padding:2px 9px; }
+  p.lede { color:#4a3a20; max-width:780px; }
+  .badge { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.04em; padding:3px 8px; border-radius:4px; border:1px solid; }
+  .badge.source { color:var(--source); background:var(--source-bg); border-color:var(--source-border); }
+  .badge.gen { color:var(--gen); background:var(--gen-bg); border-color:var(--gen-border); }
+
+  .tag-cloud { display:flex; flex-wrap:wrap; gap:10px; }
+  .tag-cloud span { font-size:1.05rem; font-weight:700; padding:8px 18px; border-radius:999px; background:var(--accent); color:#fff; }
+  .tag-cloud span:nth-child(2n) { background:var(--accent-2); }
+
+  .grid-evidence { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+  @media (max-width:800px) { .grid-evidence { grid-template-columns:repeat(2,1fr); } }
+  figure.ev { margin:0; border:1px solid var(--source-border); border-radius:10px; overflow:hidden; background:#fff; }
+  figure.ev img { width:100%; height:135px; object-fit:cover; display:block; }
+  figure.ev figcaption { padding:8px 9px; font-size:.7rem; color:#4a3a20; }
+  figure.ev figcaption .wid { font-family:ui-monospace,monospace; font-weight:700; color:var(--source); display:block; }
+
+  .swatch-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .swatch { width:118px; text-align:center; }
+  .swatch .chip { width:118px; height:70px; border-radius:8px; border:1px solid rgba(0,0,0,.12); margin-bottom:6px; }
+  .swatch .lbl { font-size:.75rem; font-weight:600; }
+
+  .rule-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .rule-grid { grid-template-columns:1fr; } }
+  .rule-card { border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:#fff; }
+  .rule-card h3 { margin:0 0 6px; font-size:.95rem; }
+  .rule-card p { margin:0; font-size:.85rem; color:#4a3a20; }
+  .rule-card .evid { font-size:.72rem; color:#8a7a5c; margin-top:6px; font-family:ui-monospace,monospace; }
+
+  .diagram { border:1px dashed var(--gen-border); background:var(--gen-bg); border-radius:10px; padding:18px; }
+  .diagram .cap { font-size:.72rem; color:var(--gen); font-weight:700; letter-spacing:.03em; margin-bottom:10px; }
+  .comp-row { display:flex; gap:10px; flex-wrap:wrap; }
+  .comp-row .cell { flex:1; min-width:150px; background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px; text-align:center; font-size:.8rem; }
+
+  .frame-demo { display:flex; justify-content:center; padding:10px 0; }
+  .frame-demo .medallion { width:140px; height:140px; border-radius:50%; border:6px double #9c6d1f; display:flex; align-items:center; justify-content:center; background:#fff; font-size:.72rem; color:#8a7a5c; text-align:center; padding:10px; }
+
+  .sig-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .sig-grid { grid-template-columns:1fr; } }
+  .sig-card { border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+  .sig-card h3 { margin:0 0 6px; font-size:1rem; display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .conf { font-size:.62rem; font-weight:700; padding:2px 7px; border-radius:999px; color:#fff; white-space:nowrap; }
+  .conf.hi { background:var(--hi); } .conf.med { background:var(--med); } .conf.lo { background:var(--lo); }
+  .sig-card p { margin:4px 0; font-size:.84rem; color:#4a3a20; }
+  .sig-card .wids { font-size:.72rem; font-family:ui-monospace,monospace; color:#8a7a5c; }
+
+  .ipbox { border:1px solid var(--line); background:#fff; border-radius:10px; padding:18px; }
+  .ipbox ul { columns:2; -webkit-columns:2; font-size:.86rem; }
+  @media (max-width:700px) { .ipbox ul { columns:1; } }
+  .ipbox li { margin-bottom:8px; break-inside:avoid; }
+
+  .dodont { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:700px) { .dodont { grid-template-columns:1fr; } }
+  .dodont .col { border-radius:10px; padding:18px; }
+  .dodont .do { background:var(--gen-bg); border:1px solid var(--gen-border); }
+  .dodont .dont { background:#fbe9e5; border:1px solid #edb7a9; }
+  .dodont h3 { margin-top:0; }
+  .dodont ul { margin:0; padding-left:20px; font-size:.86rem; }
+
+  .agent-box { background:var(--ink); color:#f2e2b8; border-radius:12px; padding:24px; font-size:.9rem; }
+  .agent-box h3 { margin-top:0; color:#e8c98a; }
+  .agent-box ol { padding-left:20px; }
+  .agent-box li { margin-bottom:8px; }
+
+  table.evalt { width:100%; border-collapse:collapse; font-size:.85rem; }
+  table.evalt th, table.evalt td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+  table.evalt th { background:var(--paper-alt); font-size:.72rem; letter-spacing:.03em; color:#5c4a2a; }
+
+  footer.bottom { text-align:center; color:#8a7a5c; font-size:.8rem; margin-top:40px; }
+
+  figure.ev, .rule-card, .sig-card, .dodont .col, .swatch, .comp-row .cell, tr, table.evalt { break-inside:avoid; }
+  section > h2 { break-after:avoid; }
+
+  @media print {
+    @page { size:Letter; margin:13mm 12mm; }
+    body { line-height:1.48; }
+    section { margin:0 0 14px; }
+    header.top { padding:18px 0 12px; margin-bottom:14px; }
+    header.top .dna { margin-top:8px; }
+    section > h2 { margin-bottom:8px; padding-bottom:5px; }
+    p.lede { margin:0 0 10px; }
+    .grid-evidence { gap:10px; }
+    figure.ev img { height:104px; }
+    figure.ev figcaption { padding:6px 8px; }
+    .rule-grid, .sig-grid { gap:10px; }
+    .rule-card, .sig-card { padding:8px 12px; }
+    .ipbox, .agent-box, .dodont .col { padding:10px 14px; }
+    .swatch-row { gap:10px; }
+    .frame-demo { padding:2px 0; }
+    .frame-demo .medallion { width:100px; height:100px; }
+    table.evalt th, table.evalt td { padding:4px 10px; }
+    footer.bottom { margin-top:14px; }
+    #section-composition { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="cat">插画 · 角色IP · 传统工艺 · 北京 · ZCOOL</div>
+  <h1>寒江雪的插画</h1>
+  <div class="src">寒江雪插画作品 — <a href="https://www.zcool.com.cn/u/ZMzY4MTA2NA==" target="_blank" rel="noopener">zcool.com.cn/u/ZMzY4MTA2NA==</a></div>
+  <div class="dna">以宫廷人物般的庄重感描绘生肖与神话动物、装饰繁复浓郁、金色点缀的插画风格——既能驾驭获奖级的精致插画，也能胜任干净利落的商业产品摄影。</div>
+</header>
+
+<section>
+  <h2><span class="num">1</span> 视觉基因</h2>
+  <div class="tag-cloud">
+    <span>金色点缀 · 高密度装饰</span><span>宫廷华服中的动物</span><span>华丽装饰边框</span>
+    <span>景泰蓝 / 工笔技法</span><span>插画与产品设计双线并行</span>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">2</span> 作品实证</h2>
+  <p class="lede">基于 10 件公开作品进行整理与分析，于 2026-08-22 采集，涵盖潮玩 IP、商业插画、中国传统文化插画、传统工艺再创作与包装设计等多个领域。</p>
+  <div class="grid-evidence">
+    <figure class="ev"><img src="evidence/hjx_01_gaoyuan_sansha.jpg" alt="潮玩IP雪豹音乐会海报"><figcaption><span class="wid">hjx_01</span>潮玩·高原三傻 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_02_display.jpg" alt="中秋工笔插画"><figcaption><span class="wid">hjx_02</span>中秋节插画 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_03_display.jpg" alt="敦煌点彩风格插画"><figcaption><span class="wid">hjx_03</span>马年的创作 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_04_display.jpg" alt="景泰蓝生肖插画"><figcaption><span class="wid">hjx_04</span>景泰蓝星座 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_05_display.jpg" alt="生肖毛绒玩具概念设计"><figcaption><span class="wid">hjx_05</span>生肖毛绒玩具 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_06_display.jpg" alt="华服绵羊玩具概念设计"><figcaption><span class="wid">hjx_06</span>三羊开泰 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_07_display.jpg" alt="青铜器再设计"><figcaption><span class="wid">hjx_07</span>四羊方尊 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_08_display.jpg" alt="故宫纪念设计"><figcaption><span class="wid">hjx_08</span>故宫收藏 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_09_display.jpg" alt="神话题材水墨插画"><figcaption><span class="wid">hjx_09</span>创世山海经 <span class="badge source">原始作品</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/presentation/hjx_10_display.jpg" alt="香薰产品实拍"><figcaption><span class="wid">hjx_10</span>香薰产品设计 <span class="badge source">原始作品</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">3</span> 色彩语言</h2>
+  <p class="lede">金色在 10 件作品中的 6 件里稳定出现，作为统一的高级感点缀色，无论具体技法如何变化。在工艺再创作类作品中，高饱和度的景泰蓝蓝与金色搭配使用。<strong>以下色卡为基于截图的近似视觉取色，并非声称的实际生产用色。</strong></p>
+  <div class="swatch-row">
+    <div class="swatch"><div class="chip" style="background:#c9a13a;"></div><div class="lbl">金色点缀色（6件作品）</div></div>
+    <div class="swatch"><div class="chip" style="background:#1f4a8a;"></div><div class="lbl">景泰蓝蓝（04、07）</div></div>
+    <div class="swatch"><div class="chip" style="background:#c07a3a;"></div><div class="lbl">赭石/陶土色（02、03）</div></div>
+    <div class="swatch"><div class="chip" style="background:#3a3630;"></div><div class="lbl">炭灰色（10，产品实拍）</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">4</span> 字体与排版</h2>
+  <div class="rule-grid">
+    <div class="rule-card"><h3>舞台剧场式字体</h3><p>英文标题字体（"DUO CONCERT"）置于华丽的幕布与金色边框造型之中。</p><div class="evid">hjx_01</div></div>
+    <div class="rule-card"><h3>印章式标题图形</h3><p>标题以做旧红色印章的形式呈现，而非普通字体排版。</p><div class="evid">hjx_09</div></div>
+  </div>
+</section>
+
+<section id="section-composition">
+  <h2><span class="num">5</span> 构图体系</h2>
+  <div class="diagram">
+    <div class="cap">生成图示 — 10 件作品的构图模式归纳，非原始作品图像</div>
+    <div class="comp-row">
+      <div class="cell">舞台叙事场景<br><small>hjx_01、02、09</small></div>
+      <div class="cell">单主体居中肖像<br><small>hjx_04、05、06、07</small></div>
+      <div class="cell">简约产品实拍场景<br><small>hjx_10</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">6</span> 造型与图形语言</h2>
+  <p class="lede">华丽的装饰性边框反复出现在主体形象周围——幕布/舞台边框、圆形勋章式边框、纹样盘边（hjx_01、04、08）。下图为对反复出现的圆形勋章式边框元素的抽象归纳，非原始作品图像。</p>
+  <div class="frame-demo">
+    <div class="medallion">主体形象<br>（景泰蓝风格圆形边框）</div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">7</span> 图像风格 / 插画技法</h2>
+  <p class="lede">技法跨度宽广且富有章法：精细的工笔线描（hjx_02）、敦煌风格点彩/点画技法（hjx_03，仅此一例）、景泰蓝/珐琅工艺质感表现（hjx_04、07）、水彩水墨角色插画（hjx_05、06），以及更为松弛的水墨笔触（hjx_09）——此外还展现出独立于插画之外、已得到印证的真实产品摄影能力（hjx_10）。在所有插画类作品中，装饰密度始终保持在较高水平。</p>
+</section>
+
+<section>
+  <h2><span class="num">7b</span> 角色IP与文化产品语言</h2>
+  <div class="ipbox">
+    <ul>
+      <li><strong>角色IP语言：</strong>生肖/地域动物被赋予庄重的角色人格，而非泛化的吉祥物形象（01、05、06）。</li>
+      <li><strong>面部/形体风格化：</strong>柔和、圆润、大眼睛，气质温和而非凶猛——即便是守护神兽类角色也是如此（01、05、06）。</li>
+      <li><strong>传统纹样：</strong>龙、凤、云纹、波浪、仙鹤等图案反复出现（02、04、07、08）。</li>
+      <li><strong>装饰密度：</strong>在几乎所有插画样本中都维持较高水平，而非偶尔点缀。</li>
+      <li><strong>叙事性构图：</strong>舞台场景、神话群像、节庆场景等叙事性画面出现的频率，高于单纯的肖像构图。</li>
+      <li><strong>纹样/织物转译：</strong>景泰蓝与工笔的表面纹样呈现出类似织物/刺绣的装饰效果（02、04、07）。</li>
+      <li><strong>潮玩/文创产品转译：</strong>同一套“华服拟人化”视觉语言，可延伸应用于海报、潮玩概念设计与博物馆级纪念品。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">8</span> 标志性视觉元素</h2>
+  <div class="sig-grid">
+    <div class="sig-card"><h3>金色点缀符号 <span class="conf hi">高</span></h3><p>金色线描/饰品/器物色贯穿于不同技法之中。</p><div class="wids">02,04,05,06,07,08(6件)</div></div>
+    <div class="sig-card"><h3>宫廷华服中的动物形象 <span class="conf hi">高</span></h3><p>长袍、镶玉配饰与礼仪感的庄重气质，而非泛化的吉祥物处理方式。</p><div class="wids">01,05,06(3件)</div></div>
+    <div class="sig-card"><h3>华丽装饰性边框 <span class="conf hi">高</span></h3><p>幕布/舞台、圆形勋章式边框或纹样边框环绕主体形象。</p><div class="wids">01,04,08(3件)</div></div>
+    <div class="sig-card"><h3>景泰蓝/珐琅工艺质感表现 <span class="conf med">中</span></h3><p>以金色掐丝轮廓搭配高饱和度填色，用于文物再创作。</p><div class="wids">04,07(2件)</div></div>
+    <div class="sig-card"><h3>插画与产品设计双线能力 <span class="conf hi">高（方法论）</span></h3><p>以插画为主线，同时展现出真实产品摄影这一独立且已验证的能力。</p><div class="wids">全部10件</div></div>
+    <div class="sig-card"><h3>敦煌点彩技法 <span class="conf lo">低</span></h3><p>陶土色点彩渲染，营造出敦煌壁画般的质感。</p><div class="wids">仅03</div></div>
+    <div class="sig-card"><h3>松弛水墨笔触 <span class="conf lo">低</span></h3><p>用于神话群像场景的松弛水墨笔触。</p><div class="wids">仅09</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">9</span> 宜与忌</h2>
+  <div class="dodont">
+    <div class="col do"><h3>宜</h3><ul>
+      <li>在高级感/文化类角色或器物类作品中，优先使用金色作为点缀色</li>
+      <li>为拟人化动物角色搭配宫廷华服，并赋予温和圆润的表情</li>
+      <li>在主视觉/肖像类作品中使用华丽装饰边框</li>
+      <li>针对文物/非遗类项目，专门采用景泰蓝风格的渲染方式</li>
+      <li>将产品摄影视为一项独立且同样专业的能力</li>
+    </ul></div>
+    <div class="col dont"><h3>忌</h3><ul>
+      <li>不要假设存在单一固定的插画技法——已观察到至少 4 种不同风格</li>
+      <li>不要过度断言点彩（见第8节）或水墨（见第8节）风格已成为稳定特征——两者目前均仅有 1 件作品支撑</li>
+      <li>不要将潮玩/毛绒玩具类作品误认为量产实物照片——它们均为插画概念设计</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">10</span> 生成指南</h2>
+  <div class="agent-box">
+    <h3>写给下游生成智能体（AI 绘图/设计工具）的建议</h3>
+    <ol>
+      <li>首先判断项目需求属于角色 IP 类处理，还是产品摄影类处理——两者都是已验证的真实能力。</li>
+      <li>如为角色类项目，应为主体赋予宫廷风格的华服（长袍、镶玉配饰）以及温和圆润、大眼睛的表情。</li>
+      <li>无论最终选择何种具体渲染技法，均应默认以金色作为统一的高级感点缀色。</li>
+      <li>针对文物类或博物馆合作类项目，采用景泰蓝风格的金色掐丝轮廓搭配高饱和度填色。</li>
+      <li>在主视觉/肖像类构图中使用华丽装饰边框（幕布、勋章式边框、纹样边框）；在场景类或产品实拍类作品中则不建议使用。</li>
+      <li>不要强行套用单一标志性插画风格——应根据项目具体的文化题材，选择合适的技法（工笔、点彩、景泰蓝、水墨等）。</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">11</span> 实证与置信度</h2>
+  <table class="evalt">
+    <tr><th>元素</th><th>作品编号</th><th>置信度</th></tr>
+    <tr><td>金色点缀符号</td><td>02,04,05,06,07,08</td><td>高（6件）</td></tr>
+    <tr><td>宫廷华服中的动物形象</td><td>01,05,06</td><td>高（3件）</td></tr>
+    <tr><td>华丽装饰性边框</td><td>01,04,08</td><td>高（3件）</td></tr>
+    <tr><td>景泰蓝/珐琅工艺质感表现</td><td>04,07</td><td>中（2件）</td></tr>
+    <tr><td>插画与产品设计双线能力</td><td>全部10件</td><td>高（方法论）</td></tr>
+    <tr><td>敦煌点彩技法</td><td>03</td><td>低（1件）</td></tr>
+    <tr><td>松弛水墨笔触</td><td>09</td><td>低（1件）</td></tr>
+  </table>
+</section>
+
+<footer class="bottom">寒江雪的插画 — 个人设计系统 · 证据采集于 2026-08-22</footer>
+</div>
+</body>
+</html>
