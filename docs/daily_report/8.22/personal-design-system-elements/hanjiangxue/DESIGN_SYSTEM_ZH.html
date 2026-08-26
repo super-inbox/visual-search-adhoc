@@ -35,7 +35,7 @@
   .grid-evidence { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
   @media (max-width:800px) { .grid-evidence { grid-template-columns:repeat(2,1fr); } }
   figure.ev { margin:0; border:1px solid var(--source-border); border-radius:10px; overflow:hidden; background:#fff; }
-  figure.ev img { width:100%; height:135px; object-fit:cover; display:block; }
+  figure.ev img { width:100%; height:145px; object-fit:contain; display:block; background:#fff; }
   figure.ev figcaption { padding:8px 9px; font-size:.7rem; color:#4a3a20; }
   figure.ev figcaption .wid { font-family:ui-monospace,monospace; font-weight:700; color:var(--source); display:block; }
 
@@ -104,7 +104,7 @@
     section > h2 { margin-bottom:8px; padding-bottom:5px; }
     p.lede { margin:0 0 10px; }
     .grid-evidence { gap:10px; }
-    figure.ev img { height:104px; }
+    figure.ev img { height:130px; }
     figure.ev figcaption { padding:6px 8px; }
     .rule-grid, .sig-grid { gap:10px; }
     .rule-card, .sig-card { padding:8px 12px; }
