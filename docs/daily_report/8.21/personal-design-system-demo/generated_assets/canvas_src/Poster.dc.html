@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;900&family=Manrope:wght@500;700;800&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #92400e; } a:hover { color: #78350f; }
+    .stage { width:100%; height:100%; position:relative; overflow:hidden; font-family:'Manrope', sans-serif;
+              background: oklch(97% 0.01 90); display:flex; flex-direction:column; align-items:center; }
+    .bg-symbol { position:absolute; left:50%; top:6%; width:78%; height:78%; transform:translateX(-50%);
+                 opacity:0.16; }
+    .headline { position:relative; z-index:1; text-align:center; margin-top:96px; }
+    .headline .cn { font-family:'Noto Sans SC', sans-serif; font-weight:900; font-size:56px; line-height:1.15;
+                     color: oklch(30% 0.07 25); }
+    .headline .en { margin-top:10px; font-weight:800; font-size:15px; letter-spacing:4px;
+                     color: oklch(40% 0.06 25 / 0.72); text-transform:uppercase; }
+    .can-wrap { position:relative; z-index:1; width:220px; height:480px; margin-top:36px; }
+    .footer { position:relative; z-index:1; margin-top:auto; margin-bottom:64px; text-align:center;
+              font-family:'Noto Sans SC', sans-serif; font-weight:700; font-size:14px; color: oklch(35% 0.03 60); }
+  </style>
+</helmet>
+<div class="stage">
+  <div class="bg-symbol"><dc-import name="SproutBubbleSymbol" hint-size="800,800"></dc-import></div>
+  <div class="headline">
+    <div class="cn">轻盈气泡<br/>源头养分</div>
+    <div class="en">Lichuan Sparkling</div>
+  </div>
+  <div class="can-wrap">
+    <dc-import name="Can" dominant="oklch(83% 0.08 18)" flavor-c-n="荔枝玫瑰" flavor-e-n="Lychee Rose" flavor-icon="lychee" hint-size="220,480"></dc-import>
+  </div>
+  <div class="footer">荔枝玫瑰 · 黄瓜薄荷 · 柚子姜片 — 即刻开启</div>
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

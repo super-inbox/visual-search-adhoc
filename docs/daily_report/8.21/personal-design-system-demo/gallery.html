@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Design System Demo — 造物起异包装设计 → 荔泉气泡</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink: #1f1b16;
+    --paper: #faf7f2;
+    --paper-alt: #f1ece3;
+    --line: #e2d9cb;
+    --source: #9c6b1f;
+    --source-bg: #fbf1de;
+    --source-border: #e8c98a;
+    --generated: #1f6f6b;
+    --generated-bg: #e7f4f2;
+    --generated-border: #9ecfc9;
+    --warn: #a13d2e;
+    --warn-bg: #fbe9e5;
+    --warn-border: #edb7a9;
+    --high: #1f6f6b;
+    --medium: #9c6b1f;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px 100px; }
+  header.top {
+    text-align: center;
+    padding: 8px 0 36px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 40px;
+  }
+  header.top h1 { font-size: 1.7rem; margin: 0 0 8px; }
+  header.top .sub { color: #6b6255; font-size: 0.98rem; }
+  header.top .chain {
+    margin-top: 14px; font-size: 0.85rem; color: #8a8072;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+
+  section { margin: 0 0 56px; }
+  section > h2 {
+    font-size: 1.25rem;
+    display: flex; align-items: baseline; gap: 10px;
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 8px;
+    margin-bottom: 18px;
+  }
+  section > h2 .num {
+    font-size: 0.75rem; font-weight: 700; color: #fff; background: var(--ink);
+    border-radius: 999px; padding: 2px 9px;
+  }
+  p.lede { color: #4a453c; max-width: 760px; }
+
+  .badge {
+    display: inline-block; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.04em;
+    text-transform: uppercase; padding: 3px 8px; border-radius: 4px; border: 1px solid;
+  }
+  .badge.source { color: var(--source); background: var(--source-bg); border-color: var(--source-border); }
+  .badge.generated { color: var(--generated); background: var(--generated-bg); border-color: var(--generated-border); }
+
+  .callout {
+    border: 1px solid var(--line); background: var(--paper-alt); border-radius: 10px;
+    padding: 16px 18px; margin: 14px 0;
+  }
+  .callout.warn { border-color: var(--warn-border); background: var(--warn-bg); color: #5c261b; }
+  .callout.warn strong { color: var(--warn); }
+
+  /* Section 1: source grid */
+  .grid-source {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px;
+  }
+  @media (max-width: 720px) { .grid-source { grid-template-columns: repeat(2, 1fr); } }
+  figure.source-card {
+    margin: 0; border: 1px solid var(--source-border); border-radius: 10px; overflow: hidden;
+    background: #fff;
+  }
+  figure.source-card img { width: 100%; height: 130px; object-fit: cover; display: block; background: #eee; }
+  figure.source-card figcaption { padding: 8px 9px; font-size: 0.72rem; color: #55503f; }
+  figure.source-card figcaption .wid { font-family: ui-monospace, monospace; font-weight: 700; color: var(--source); display: block; }
+
+  /* Section 2: rules */
+  .rule-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  @media (max-width: 720px) { .rule-grid { grid-template-columns: 1fr; } }
+  .rule-card {
+    border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; background: #fff;
+  }
+  .rule-card h3 { margin: 0 0 6px; font-size: 0.98rem; display: flex; justify-content: space-between; gap: 8px; align-items: baseline; }
+  .conf { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.03em; padding: 2px 7px; border-radius: 999px; white-space: nowrap; }
+  .conf.high { color: #fff; background: var(--high); }
+  .conf.optional { color: #fff; background: #8a7a5c; }
+  .rule-card p { margin: 0; font-size: 0.86rem; color: #4a453c; }
+  .rule-card .evid { font-size: 0.74rem; color: #8a8072; margin-top: 6px; font-family: ui-monospace, monospace; }
+
+  /* Section 3: brief */
+  .brief-box { border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 20px 24px; }
+  .brief-box h3 { margin: 0 0 4px; font-size: 1.3rem; }
+  .brief-box .tag { color: #6b6255; font-size: 0.95rem; margin-bottom: 14px; }
+  .brief-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 10px; }
+  @media (max-width: 720px) { .brief-facts { grid-template-columns: 1fr; } }
+  .brief-facts div { background: var(--paper-alt); border-radius: 8px; padding: 10px 12px; }
+  .brief-facts div b { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: #8a8072; margin-bottom: 3px; }
+
+  /* Section 4: visual system */
+  .vsys-grid { display: grid; grid-template-columns: 220px 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 720px) { .vsys-grid { grid-template-columns: 1fr; } }
+  .symbol-box { border: 1px solid var(--line); border-radius: 12px; background: #fff; padding: 18px; text-align: center; }
+  .symbol-box svg { width: 100px; height: 100px; }
+  .symbol-box .cap { font-size: 0.78rem; color: #6b6255; margin-top: 8px; }
+  .swatch-row { display: flex; gap: 10px; margin: 10px 0 4px; flex-wrap: wrap; }
+  .swatch { width: 54px; text-align: center; font-size: 0.66rem; color: #6b6255; }
+  .swatch .chip { width: 54px; height: 34px; border-radius: 6px; border: 1px solid rgba(0,0,0,0.12); margin-bottom: 4px; }
+  table.sku { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 0.85rem; }
+  table.sku th, table.sku td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; }
+  table.sku th { background: var(--paper-alt); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; color: #6b6255; }
+
+  /* Section 5: generated assets */
+  .grid-generated {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+  }
+  @media (max-width: 900px) { .grid-generated { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .grid-generated { grid-template-columns: 1fr; } }
+  figure.gen-card {
+    margin: 0; border: 1px solid var(--generated-border); border-radius: 10px; overflow: hidden; background: #fff;
+  }
+  figure.gen-card img { width: 100%; height: 220px; object-fit: contain; background: #fdfdfc; display: block; }
+  figure.gen-card figcaption { padding: 10px 12px; }
+  figure.gen-card figcaption .name { font-weight: 700; font-size: 0.88rem; display: block; margin-bottom: 2px; }
+  figure.gen-card figcaption .desc { font-size: 0.78rem; color: #55503f; }
+
+  /* Section 6: traceability */
+  .trace-chain { border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: 14px 16px; margin-bottom: 10px; }
+  .trace-chain .steps { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 0.82rem; }
+  .trace-chain .step { padding: 4px 9px; border-radius: 6px; background: var(--paper-alt); }
+  .trace-chain .step.p { background: var(--source-bg); color: var(--source); }
+  .trace-chain .step.g { background: var(--generated-bg); color: var(--generated); }
+  .trace-chain .arrow { color: #b6ac9a; }
+  .trace-chain .title { font-weight: 700; font-size: 0.8rem; margin-bottom: 6px; color: #6b6255; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  /* Section 7: evaluation */
+  table.evalt { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+  table.evalt th, table.evalt td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; }
+  table.evalt th { background: var(--paper-alt); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.03em; color: #6b6255; }
+  .score { font-weight: 700; }
+  .bar { display: inline-block; height: 8px; border-radius: 4px; background: var(--line); width: 80px; position: relative; vertical-align: middle; margin-right: 8px; }
+  .bar > i { display: block; height: 100%; border-radius: 4px; background: var(--generated); }
+  .bar.low > i { background: var(--warn); }
+  tr.highlight td { background: #fbfaf6; }
+
+  footer.bottom { text-align: center; color: #8a8072; font-size: 0.82rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Personal Design System Demo</h1>
+  <div class="sub">造物起异包装设计 (ZCOOL) → 荔泉气泡 / Lichuan Sparkling (new brand)</div>
+  <div class="chain">portfolio → evidence → personal design system → brand brief → brand visual system → generated assets</div>
+</header>
+
+<div class="callout warn">
+  <strong>Read this first:</strong> this is a <strong>workflow proof</strong>, not a finished
+  creative deliverable. Every generated asset in Section 5 is a flat/vector rendering (CSS + SVG),
+  not a photoreal CGI product render or real photography — no photoreal image-generation tool was
+  available in this environment. See Section 8 for the full limitation and next step.
+</div>
+
+<!-- SECTION 1 -->
+<section>
+  <h2><span class="num">1</span> Source Portfolio</h2>
+  <p class="lede">
+    <strong>造物起异包装设计</strong> (Zaowu Qiyi Packaging Design), a Guangzhou-based packaging/
+    brand studio — profile on <strong>ZCOOL</strong> (站酷),
+    <a href="https://www.zcool.com.cn/u/ZNTI2Mjc5ODA=" target="_blank" rel="noopener">zcool.com.cn/u/ZNTI2Mjc5ODA=</a>.
+    10 of the studio's works were sampled as this system's entire evidential base — one cover image
+    per work, screenshot-resolution, anonymous session (no login). Full sourcing detail:
+    <code>PORTFOLIO_SOURCE.md</code>, <code>PORTFOLIO_SAMPLE_SELECTION.md</code>.
+  </p>
+  <div class="grid-source">
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_01_01.jpg" alt="work_01 — 摘要·酌古 wine bottle packaging" loading="lazy">
+      <figcaption><span class="wid">work_01</span>摘要·酌古 — spirits/bottle <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_02_01.jpg" alt="work_02 — 天堂伞 sunscreen packaging" loading="lazy">
+      <figcaption><span class="wid">work_02</span>天堂伞 — sunscreen/outdoor <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_03_01.jpg" alt="work_03 — Artevive brand symbol" loading="lazy">
+      <figcaption><span class="wid">work_03</span>Artevive — brand symbol <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_04_01.jpg" alt="work_04 — 元气女孩 yoga apparel packaging" loading="lazy">
+      <figcaption><span class="wid">work_04</span>元气女孩 — yoga apparel <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_05_01.jpg" alt="work_05 — CreativeArt hairbrush packaging" loading="lazy">
+      <figcaption><span class="wid">work_05</span>CreativeArt — hairbrush <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_06_01.jpg" alt="work_06 — LVDAO Mid-Autumn gift box" loading="lazy">
+      <figcaption><span class="wid">work_06</span>绿岛集团 LVDAO — gift box <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_07_01.jpg" alt="work_07 — 洁柔 cat-paw tissue packaging" loading="lazy">
+      <figcaption><span class="wid">work_07</span>洁柔 — cat-paw tissue <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_08_01.jpg" alt="work_08 — Innovite maternal/infant retail photo" loading="lazy">
+      <figcaption><span class="wid">work_08</span>Innovite — retail context <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_09_01.jpg" alt="work_09 — 山楂爷爷 snack packaging family" loading="lazy">
+      <figcaption><span class="wid">work_09</span>山楂爷爷 — snack family <span class="badge source">source work</span></figcaption>
+    </figure>
+    <figure class="source-card">
+      <img src="portfolio/source_images/work_10_01.jpg" alt="work_10 — 英珞维 tree-shaped bottle cap, partially rendered" loading="lazy">
+      <figcaption><span class="wid">work_10</span>英珞维 — tree cap (partial image) <span class="badge source">source work</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SECTION 2 -->
+<section>
+  <h2><span class="num">2</span> Extracted Personal Design System</h2>
+  <p class="lede">7 Signature Rules, each requiring 3+ supporting works for HIGH confidence (2+ for MEDIUM). Full detail: <code>PERSONAL_DESIGN_SYSTEM.md</code>, <code>PERSONAL_SYSTEM_VALIDATION.md</code>.</p>
+  <div class="rule-grid">
+    <div class="rule-card">
+      <h3>Dominant hue + small accent <span class="conf high">HIGH · 5 works</span></h3>
+      <p>One dominant hue family per brand, then exactly one small saturated accent — never a flat multicolor palette.</p>
+      <div class="evid">work_01, 02, 03, 06, 07</div>
+    </div>
+    <div class="rule-card">
+      <h3>Persistent super-symbol <span class="conf high">HIGH · 4 works</span></h3>
+      <p>One fixed, simplified graphic mark, reused verbatim across every SKU/format in a family — the studio's own "超级符号" method.</p>
+      <div class="evid">work_01, 05, 06, 09</div>
+    </div>
+    <div class="rule-card">
+      <h3>Bilingual CN/EN hierarchy <span class="conf high">HIGH · 4 works</span></h3>
+      <p>Chinese + Latin naming pairs systematically, but which language leads in size is decided per brief, not fixed.</p>
+      <div class="evid">work_01, 03, 04, 09</div>
+    </div>
+    <div class="rule-card">
+      <h3>CGI/product-render default <span class="conf high">HIGH · 7 works</span></h3>
+      <p>Photoreal CGI-rendered mockup is the default presentation mode; real photography is a valid but occasional exception.</p>
+      <div class="evid">work_01, 03, 04, 05, 06, 07, 09 (photo exceptions: 02, 08)</div>
+    </div>
+    <div class="rule-card">
+      <h3>Category-conditioned staging <span class="conf high">HIGH · 8 works</span></h3>
+      <p>Dark/dramatic backdrop for heritage or premium categories; light/pastel backdrop for soft-goods, wellness, or children's categories.</p>
+      <div class="evid">dark: 01,03,05,06 · light: 02,04,08,10</div>
+    </div>
+    <div class="rule-card">
+      <h3>SKU family / ensemble composition <span class="conf high">HIGH · 3 works</span></h3>
+      <p>Multi-SKU or multi-piece lines are shown together as one family, unified by the recurring mark — not isolated single-item shots.</p>
+      <div class="evid">work_05, 06, 09</div>
+    </div>
+    <div class="rule-card">
+      <h3>Form-as-symbol <span class="conf optional">OPTIONAL · softest rule</span></h3>
+      <p>Package/product form is sometimes shaped to echo the brand concept. Kept optional/aspirational here — 1 of its 3 supporting works (work_10) is a partially-rendered image.</p>
+      <div class="evid">work_01, 05, 10 (10 = partial)</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3 -->
+<section>
+  <h2><span class="num">3</span> New Brand Brief</h2>
+  <div class="brief-box">
+    <h3>荔泉气泡 / Lichuan Sparkling</h3>
+    <div class="tag">Plant-protein sparkling water · young Chinese urban professionals</div>
+    <div class="callout" style="margin:0 0 14px;">
+      <strong>This brand does not exist in the source portfolio.</strong> None of the 10 sampled
+      works is a beverage or a carbonated product. This brief is a deliberate
+      <strong>generalization test</strong>: does the extracted system transfer to a category the
+      studio has no documented prior work in?
+    </div>
+    <div class="brief-facts">
+      <div><b>Category</b>Plant-protein sparkling water</div>
+      <div><b>Audience</b>Urban professionals, 24–35, first-tier China cities</div>
+      <div><b>Occasion</b>Desk break · post-workout · commute</div>
+      <div><b>Positioning</b>"Healthy indulgence" above mass sparkling water, below premium tonics</div>
+      <div><b>Format</b>Standard 330ml slim aluminum can</div>
+      <div><b>Core message</b>轻盈气泡，源头养分 — "Light bubbles, real nourishment"</div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4 -->
+<section>
+  <h2><span class="num">4</span> New Brand Visual System</h2>
+  <p class="lede">Full detail: <code>BRAND_VISUAL_SYSTEM.md</code>.</p>
+  <div class="vsys-grid">
+    <div class="symbol-box">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="54" r="42" fill="none" stroke="#c9974a" stroke-width="3"/>
+        <path d="M50 38 C34 52 26 63 26 74 C26 87 37 96 50 96 C63 96 74 87 74 74 C74 63 66 52 50 38 Z"
+              fill="#fdfbf7" stroke="#c9974a" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M50 38 C48 32 45 27 40 23" fill="none" stroke="#c9974a" stroke-width="3" stroke-linecap="round"/>
+        <path d="M50 38 C52 32 55 27 60 23" fill="none" stroke="#c9974a" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <div class="cap"><strong>Sprout-Bubble</strong><br>original super-symbol — a bubble rising into a sprout, inside a circle (the circle borrows the portfolio's recurring container convention; the shape inside is new)</div>
+    </div>
+    <div>
+      <p style="margin-top:0;"><strong>Color logic</strong> — one dominant hue per SKU, one shared accent held constant across the whole line (Rule 1, extended per work_05's per-SKU-hue pattern):</p>
+      <div class="swatch-row">
+        <div class="swatch"><div class="chip" style="background:oklch(83% 0.08 18);"></div>Lychee Rose</div>
+        <div class="swatch"><div class="chip" style="background:oklch(80% 0.09 155);"></div>Cucumber Mint</div>
+        <div class="swatch"><div class="chip" style="background:oklch(86% 0.09 85);"></div>Yuzu Ginger</div>
+        <div class="swatch"><div class="chip" style="background:oklch(98% 0.005 90); border-color:#c9974a;"></div>Spark accent</div>
+      </div>
+      <p style="font-size:0.78rem; color:#8a8072; margin-top:2px;">Newly designed brand values — not extracted, sampled, or estimated source-portfolio colors.</p>
+      <p><strong>Typography</strong> — Chinese "荔泉气泡" leads (largest), English "LICHUAN SPARKLING" smaller beneath it, flavor name smallest tier (work_01/03's large-native pattern, chosen over work_09's near-parity alternative). No source typeface is claimed.</p>
+      <table class="sku">
+        <tr><th>SKU</th><th>Flavor (CN / EN)</th><th>Dominant hue</th><th>Shared</th></tr>
+        <tr><td>1</td><td>荔枝玫瑰 / Lychee Rose</td><td>Blush/coral</td><td rowspan="3" style="vertical-align:middle;">Sprout-Bubble mark · type hierarchy · can silhouette · spark accent</td></tr>
+        <tr><td>2</td><td>黄瓜薄荷 / Cucumber Mint</td><td>Mid-green</td></tr>
+        <tr><td>3</td><td>柚子姜片 / Yuzu Ginger</td><td>Pale gold</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5 -->
+<section>
+  <h2><span class="num">5</span> Generated Assets</h2>
+  <p class="lede">All 5 rendered as flat/vector Claude Design canvas components (CSS + SVG), sharing one symbol and can component — <strong>not photoreal CGI</strong>. Full spec/prompts: <code>ASSET_PLAN.md</code>, <code>generated_assets/prompts/</code>.</p>
+  <div class="grid-generated">
+    <figure class="gen-card">
+      <img src="generated_assets/HERO_KEY_VISUAL.png" alt="Hero key visual — Lychee Rose can" loading="lazy">
+      <figcaption><span class="name">HERO_KEY_VISUAL <span class="badge generated">generated demo asset</span></span><span class="desc">Lychee Rose hero shot — symbol, bilingual type, condensation staging</span></figcaption>
+    </figure>
+    <figure class="gen-card">
+      <img src="generated_assets/SKU_FAMILY_SHOT.png" alt="SKU family shot — 3 flavors" loading="lazy">
+      <figcaption><span class="name">SKU_FAMILY_SHOT <span class="badge generated">generated demo asset</span></span><span class="desc">All 3 SKUs — identical mark, hue-per-flavor, ensemble composition</span></figcaption>
+    </figure>
+    <figure class="gen-card">
+      <img src="generated_assets/SOCIAL_POST.png" alt="Social campaign post — illustrated desk scene" loading="lazy">
+      <figcaption><span class="name">SOCIAL_POST <span class="badge generated">generated demo asset</span></span><span class="desc">Illustrated lifestyle scene — stands in for the brief's photography exception</span></figcaption>
+    </figure>
+    <figure class="gen-card">
+      <img src="generated_assets/CAMPAIGN_POSTER.png" alt="Campaign poster — enlarged symbol background" loading="lazy">
+      <figcaption><span class="name">CAMPAIGN_POSTER <span class="badge generated">generated demo asset</span></span><span class="desc">Enlarged Sprout-Bubble as background device, same shape, not redrawn</span></figcaption>
+    </figure>
+    <figure class="gen-card">
+      <img src="generated_assets/WEBSITE_HERO.png" alt="Website hero — 3-SKU family with CTA" loading="lazy">
+      <figcaption><span class="name">WEBSITE_HERO <span class="badge generated">generated demo asset</span></span><span class="desc">Wide banner — full family, bilingual copy, CTA</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- SECTION 6 -->
+<section>
+  <h2><span class="num">6</span> Traceability</h2>
+  <p class="lede">Every decision traces from real portfolio evidence to a rule to a new-brand decision to a specific asset. Full chains (8 total): <code>END_TO_END_TRACE.md</code>.</p>
+
+  <div class="trace-chain">
+    <div class="title">Super-symbol</div>
+    <div class="steps">
+      <span class="step p">work_05, 06, 09 — repeated fixed mark across SKUs/pieces</span><span class="arrow">→</span>
+      <span class="step">Rule 2 — one fixed mark, reused verbatim</span><span class="arrow">→</span>
+      <span class="step">Original bubble+sprout mark in a circle</span><span class="arrow">→</span>
+      <span class="step g">all 5 assets</span>
+    </div>
+  </div>
+
+  <div class="trace-chain">
+    <div class="title">Dominant hue + accent</div>
+    <div class="steps">
+      <span class="step p">work_01,02,03,06,07 — one dominant hue + one accent</span><span class="arrow">→</span>
+      <span class="step">Rule 1</span><span class="arrow">→</span>
+      <span class="step">3 new SKU hues + 1 shared spark accent</span><span class="arrow">→</span>
+      <span class="step g">SKU_FAMILY_SHOT, WEBSITE_HERO</span>
+    </div>
+  </div>
+
+  <div class="trace-chain">
+    <div class="title">Bilingual hierarchy</div>
+    <div class="steps">
+      <span class="step p">work_01, 03 — large native mark + small Latin line</span><span class="arrow">→</span>
+      <span class="step">Rule 3</span><span class="arrow">→</span>
+      <span class="step">"荔泉气泡" large, "LICHUAN SPARKLING" small</span><span class="arrow">→</span>
+      <span class="step g">every can, all 5 assets</span>
+    </div>
+  </div>
+
+  <div class="trace-chain">
+    <div class="title">SKU family consistency</div>
+    <div class="steps">
+      <span class="step p">work_05 — 1 mark, 3 SKU colors</span><span class="arrow">→</span>
+      <span class="step">Rule 7</span><span class="arrow">→</span>
+      <span class="step">3-SKU table, shared Can component</span><span class="arrow">→</span>
+      <span class="step g">SKU_FAMILY_SHOT, WEBSITE_HERO</span>
+    </div>
+  </div>
+
+  <div class="trace-chain">
+    <div class="title">Category-conditioned staging</div>
+    <div class="steps">
+      <span class="step p">work_02,04,08,10 — light backdrop for wellness/soft-goods</span><span class="arrow">→</span>
+      <span class="step">Rule 6 (light branch)</span><span class="arrow">→</span>
+      <span class="step">bright, cool staging — not the portfolio's dark heritage register</span><span class="arrow">→</span>
+      <span class="step g">all 5 assets</span>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 7 -->
+<section>
+  <h2><span class="num">7</span> Evaluation</h2>
+  <p class="lede">Full scoring and rationale: <code>EVALUATION.md</code>, <code>EVALUATION.csv</code>.</p>
+  <table class="evalt">
+    <tr><th>Dimension</th><th>Score</th><th>Note</th></tr>
+    <tr class="highlight"><td>Personal-System Specificity</td><td><span class="bar"><i style="width:100%"></i></span><span class="score">5/5</span></td><td>Checkable mechanisms, not generic design advice</td></tr>
+    <tr class="highlight"><td>Cross-Asset Consistency</td><td><span class="bar"><i style="width:100%"></i></span><span class="score">5/5</span></td><td>Structurally guaranteed via shared components</td></tr>
+    <tr class="highlight"><td>Traceability</td><td><span class="bar"><i style="width:100%"></i></span><span class="score">5/5</span></td><td>Brief → rule → work ID → asset, documented 3 ways</td></tr>
+    <tr class="highlight"><td>Originality / Non-Copying</td><td><span class="bar"><i style="width:100%"></i></span><span class="score">5/5</span></td><td>No sampled work is even a beverage category</td></tr>
+    <tr><td>Brand Brief Fit</td><td><span class="bar"><i style="width:100%"></i></span><span class="score">5/5</span></td><td>Verified against drift toward source's other categories</td></tr>
+    <tr><td>Portfolio Grounding</td><td><span class="bar"><i style="width:80%"></i></span><span class="score">4/5</span></td><td>1 rule (form-as-symbol) rests partly on a partial image</td></tr>
+    <tr><td>Style Transfer / Generalization</td><td><span class="bar"><i style="width:80%"></i></span><span class="score">4/5</span></td><td>Reasoned, not empirically blind-tested</td></tr>
+    <tr><td>Asset Completeness</td><td><span class="bar"><i style="width:80%"></i></span><span class="score">4/5</span></td><td>No retail POS / e-commerce / motion asset yet</td></tr>
+    <tr><td>Automation Level</td><td><span class="bar"><i style="width:60%"></i></span><span class="score">3/5</span></td><td>1 human checkpoint; rendering fully blocked</td></tr>
+    <tr class="highlight"><td>Visual Fidelity</td><td><span class="bar low"><i style="width:40%"></i></span><span class="score">2/5</span></td><td>Flat/vector proxy, not photoreal CGI — see Section 8</td></tr>
+  </table>
+</section>
+
+<!-- SECTION 8 -->
+<section>
+  <h2><span class="num">8</span> Limitation &amp; Next Step</h2>
+  <div class="callout warn">
+    <strong>Current assets are flat/vector proxies, not photoreal CGI.</strong> No photoreal
+    image-generation tool was available in this environment — every PNG in Section 5 is a browser
+    screenshot of a rendered <code>.dc.html</code> canvas (CSS gradients + SVG shapes standing in
+    for a can), not a diffusion-model or photographic render. <code>SOCIAL_POST</code> specifically
+    substitutes a flat illustration for the brief's requested real lifestyle photography. This is a
+    disclosed capability gap, not a claim of production readiness.
+  </div>
+  <p class="lede">
+    <strong>Next step:</strong> connect the already-saved, fully-specified system and per-asset
+    generation prompts (<code>generated_assets/prompts/*.md</code>) to an actual photoreal
+    image-generation model. Every step upstream of final rendering — portfolio evidence extraction,
+    rule synthesis, brand brief authoring, and asset prompt construction — is already complete and
+    automated; only the final rendering step needs a real model wired in. Full accounting:
+    <code>LIMITATIONS_AND_NEXT_STEPS.md</code>, <code>FINAL_DEMO_VERDICT.md</code>.
+  </p>
+</section>
+
+<footer class="bottom">
+  Personal Design System demo — 荔泉气泡 / Lichuan Sparkling · 2026-08-21 · workflow proof, not production creative
+</footer>
+
+</div>
+</body>
+</html>
