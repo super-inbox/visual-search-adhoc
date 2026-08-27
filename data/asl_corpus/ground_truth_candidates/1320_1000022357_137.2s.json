@@ -1,0 +1,30 @@
+{
+  "video": "videos/1320_1000022357_137.2s.mp4",
+  "duration_s": 137.203733,
+  "meta": {
+    "gt_kind": "burned_caption_reference",
+    "source_file": "videos/1320_1000022357_137.2s.mp4",
+    "verified": false,
+    "source": "burned-in English captions visible in source video",
+    "verification_status": "pending_production_direction_confirmation",
+    "extraction_method": "Local ffmpeg frame sampling only (no OCR, no external/cloud service). Frames pulled every 2s across the full 137.2s video and visually inspected by the assistant to locate the caption band and find caption-change windows; each change window was then refined with a 1s-resolution mid-point frame to narrow the boundary. Caption text was read directly off tight crops of the caption band at native 1920x1080 resolution and cross-checked against the wider frame. All processing was local; no video or frame was uploaded or sent to any network service.",
+    "manual_review_required": false,
+    "review_notes": "All 14 caption boundaries landed on whole-second sample points during 1s-resolution refinement (no caption was observed changing mid-window), so timestamps are given at :00 milliseconds. This is the finest boundary precision the sampling strategy actually confirmed -- true cut points could fall up to ~1s earlier within the last 'absent' second observed for each transition. No caption text was ambiguous, obscured, or unreadable; every segment below was confirmed by direct pixel-level inspection of a cropped, upscaled still of the caption band. Three non-caption production slides (opening title 'RECEPTIVE SKILLS EVALUATION' / 'SIGN TO VOICE - CATEGORY: RELIGIOUS' / 'INSTRUCTION: Record yourself voicing the video', t=0-16s, and the closing 'RECEPTIVE SKILLS EVALUATION' card, t=~130-137s) were observed but intentionally excluded from segments: they are static production slides, not burned-in captions aligned to the signer's speech."
+  },
+  "segments": [
+    {"id": 1,  "start": 16.000,  "end": 20.000,  "text": "Hello, I'm Crystal Cousineau.", "speaker": null},
+    {"id": 2,  "start": 22.000,  "end": 28.000,  "text": "I want to welcome you and share something positive and motivating about life.", "speaker": null},
+    {"id": 3,  "start": 28.000,  "end": 32.000,  "text": "What if you could have a positive relationship?", "speaker": null},
+    {"id": 4,  "start": 34.000,  "end": 42.000,  "text": "This service is surrounded by families and community.", "speaker": null},
+    {"id": 5,  "start": 44.000,  "end": 50.000,  "text": "Happiness comes from our hearts and our lives.", "speaker": null},
+    {"id": 6,  "start": 52.000,  "end": 56.000,  "text": "It is your decision, and it takes dedication.", "speaker": null},
+    {"id": 7,  "start": 62.000,  "end": 68.000,  "text": "Can we read Romans 10:6-8?", "speaker": null},
+    {"id": 8,  "start": 72.000,  "end": 78.000,  "text": "Do not say in your heart, 'Who will go up to heaven?'", "speaker": null},
+    {"id": 9,  "start": 78.000,  "end": 86.000,  "text": "And do not say, 'Who will go down into the abyss?'", "speaker": null},
+    {"id": 10, "start": 86.000,  "end": 92.000,  "text": "The word is near you, in your mouth and in your heart.", "speaker": null},
+    {"id": 11, "start": 96.000,  "end": 108.000, "text": "This is the message of faith about salvation in Christ.", "speaker": null},
+    {"id": 12, "start": 108.000, "end": 116.000, "text": "I'm not happy; I'm just trying to find a few things.", "speaker": null},
+    {"id": 13, "start": 118.000, "end": 124.000, "text": "I'm sure this is about a relationship with Christ.", "speaker": null},
+    {"id": 14, "start": 124.000, "end": 130.000, "text": "Here's a story: you're going to be a blessing.", "speaker": null}
+  ]
+}
