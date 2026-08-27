@@ -1,0 +1,100 @@
+{
+  "reference": "data/asl_corpus/ground_truth/155_demo_asl-demo-translation_26.7s.srt",
+  "prediction": "data/asl_corpus/predictions_eval/155_demo_asl-demo-translation_26.7s_temperature0.json",
+  "reference_segment_count": 6,
+  "prediction_segment_count": 8,
+  "text_metrics": {
+    "reference_words": 27,
+    "prediction_words": 36,
+    "substitutions": 0,
+    "deletions": 0,
+    "insertions": 9,
+    "wer": 0.3333,
+    "cer": 0.3409,
+    "char_level": {
+      "reference_chars": 132,
+      "prediction_chars": 177,
+      "substitutions": 0,
+      "deletions": 0,
+      "insertions": 45
+    },
+    "reference_transcript_normalized": "my family has five including my father my father is thirty my mother is twenty nine i am nine my brother is seven my sister is seven",
+    "prediction_transcript_normalized": "my family has five including my father my father is thirty my mother is twenty nine my mother is twenty nine i am nine my brother is seven my brother is seven my sister is seven"
+  },
+  "timing_metrics": {
+    "reference_coverage_s": 17.666,
+    "prediction_coverage_s": 15.5,
+    "overlap_s": 13.713,
+    "temporal_precision": 0.8847,
+    "temporal_recall": 0.7762,
+    "temporal_iou": 0.7049
+  },
+  "segment_alignment": [
+    {
+      "ref_index": 0,
+      "ref_start": 0.3,
+      "ref_end": 4.8,
+      "ref_text": "My family has five, including my father.",
+      "matched_prediction_text": "My family has five, including my father.",
+      "matched_prediction_start": 0.58,
+      "matched_prediction_end": 4.33,
+      "overlap_s": 3.75,
+      "iou": 0.8333
+    },
+    {
+      "ref_index": 1,
+      "ref_start": 5.667,
+      "ref_end": 7.9,
+      "ref_text": "My father is thirty.",
+      "matched_prediction_text": "My father is thirty.",
+      "matched_prediction_start": 4.65,
+      "matched_prediction_end": 7.42,
+      "overlap_s": 1.753,
+      "iou": 0.5394
+    },
+    {
+      "ref_index": 2,
+      "ref_start": 8.867,
+      "ref_end": 12.833,
+      "ref_text": "My mother is twenty-nine.",
+      "matched_prediction_text": "My mother is twenty-nine.",
+      "matched_prediction_start": 10.31,
+      "matched_prediction_end": 12.65,
+      "overlap_s": 2.34,
+      "iou": 0.59
+    },
+    {
+      "ref_index": 3,
+      "ref_start": 13.667,
+      "ref_end": 15.1,
+      "ref_text": "I am nine.",
+      "matched_prediction_text": "I am nine.",
+      "matched_prediction_start": 14.74,
+      "matched_prediction_end": 15.9,
+      "overlap_s": 0.36,
+      "iou": 0.1612
+    },
+    {
+      "ref_index": 4,
+      "ref_start": 18.2,
+      "ref_end": 20.3,
+      "ref_text": "My brother is seven.",
+      "matched_prediction_text": "My brother is seven.",
+      "matched_prediction_start": 19.12,
+      "matched_prediction_end": 20.42,
+      "overlap_s": 1.18,
+      "iou": 0.5315
+    },
+    {
+      "ref_index": 5,
+      "ref_start": 21.533,
+      "ref_end": 24.967,
+      "ref_text": "My sister is seven.",
+      "matched_prediction_text": "My sister is seven.",
+      "matched_prediction_start": 22.1,
+      "matched_prediction_end": 24.9,
+      "overlap_s": 2.8,
+      "iou": 0.8154
+    }
+  ]
+}
