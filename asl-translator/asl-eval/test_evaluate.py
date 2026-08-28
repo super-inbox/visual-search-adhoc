@@ -2,7 +2,7 @@
 """Deterministic tests for the ASL evaluation scaffold.
 
 Run with:
-    python3 -m unittest tools/asl-eval/test_evaluate.py -v
+    python3 -m unittest asl-translator/asl-eval/test_evaluate.py -v
 
 Uses synthetic in-memory/tempfile fixtures except where explicitly testing
 SRT parsing against the real corpus reference files (read-only).
@@ -18,8 +18,11 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import lib  # noqa: E402
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-CORPUS_ROOT = REPO_ROOT / "data" / "asl_corpus"
+# This file lives at asl-translator/asl-eval/test_evaluate.py — one level up
+# is asl-translator/, which is the root all corpus paths are anchored to.
+# Explicit, not derived from a fixed depth-from-repo-root assumption.
+ASL_TRANSLATOR_ROOT = Path(__file__).resolve().parents[1]
+CORPUS_ROOT = ASL_TRANSLATOR_ROOT / "data" / "asl_corpus"
 
 
 def _write(tmp_dir: Path, name: str, content: str) -> Path:

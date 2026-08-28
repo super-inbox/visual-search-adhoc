@@ -6,7 +6,7 @@ behavior is exercised, synthetic MotionRun lists are used instead of real
 video files so these tests stay fast and hermetic.
 
 Run:
-    python3 -m unittest tools/asl-eval/test_run_current_model.py -v
+    python3 -m unittest asl-translator/asl-eval/test_run_current_model.py -v
 """
 from __future__ import annotations
 

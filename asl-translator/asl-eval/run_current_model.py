@@ -15,7 +15,7 @@ requires GEMINI_API_KEY.
 A real model call requires BOTH --run AND --acknowledge-private-data-upload,
 requires GEMINI_API_KEY, and is the only code path that imports google.genai
 or opens a network connection. It was NOT executed as part of building this
-script — see tools/asl-eval/README.md.
+script — see asl-translator/asl-eval/README.md.
 
 ────────────────────────────────────────────────────────────────────────────
 SOURCE PROVENANCE
@@ -69,8 +69,8 @@ from typing import List, Optional
 
 # ─────────────────────────────────────────────────────────────────────────
 # Copied production constants — verified against origin/main's
-# data/asl_corpus/manifest.json → baseline0_config (see README "Production
-# parity"). Do NOT import these from curify-studio: importing app.config.Settings
+# asl-translator/data/asl_corpus/manifest.json → baseline0_config (see README
+# "Production parity"). Do NOT import these from curify-studio: importing app.config.Settings
 # requires unrelated production environment variables at import time.
 # ─────────────────────────────────────────────────────────────────────────
 ASL_MODEL = "gemini-2.5-flash"
@@ -386,7 +386,7 @@ def dry_run_report_to_json(report: DryRunReport, config_name: str, video_arg: st
     return {
         "project_id": None,
         "video": video_arg,
-        "producer": "tools/asl-eval/run_current_model.py (dry_run)",
+        "producer": "asl-translator/asl-eval/run_current_model.py (dry_run)",
         "warning": "DRY RUN — no model call was made; no prediction segments exist.",
         "dry_run": True,
         "run_metadata": {
@@ -490,7 +490,7 @@ def run_real(video_path: Path, config_name: str, frame_budget: int, output_path:
         output = {
             "project_id": None,
             "video": str(video_path),
-            "producer": "tools/asl-eval/run_current_model.py (--run)",
+            "producer": "asl-translator/asl-eval/run_current_model.py (--run)",
             "warning": "UNVERIFIED machine output — offline evaluation run, not a production job.",
             "run_metadata": {
                 "config": config_name,

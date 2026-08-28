@@ -7,7 +7,7 @@ Local, deterministic, stdlib-only. Does not open any video or prediction
 content — only checks file existence and the manifest's own fields.
 
 Usage:
-    python3 tools/asl-eval/status.py [--json-out /tmp/status.json]
+    python3 asl-translator/asl-eval/status.py [--json-out /tmp/status.json]
 """
 from __future__ import annotations
 
@@ -16,8 +16,11 @@ import json
 import sys
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-CORPUS_ROOT = REPO_ROOT / "data" / "asl_corpus"
+# This file lives at asl-translator/asl-eval/status.py — one level up is
+# asl-translator/, which is the root all corpus paths are anchored to.
+# Explicit, not derived from a fixed depth-from-repo-root assumption.
+ASL_TRANSLATOR_ROOT = Path(__file__).resolve().parents[1]
+CORPUS_ROOT = ASL_TRANSLATOR_ROOT / "data" / "asl_corpus"
 MANIFEST_PATH = CORPUS_ROOT / "evaluation_set.json"
 
 
@@ -54,7 +57,7 @@ def build_status(manifest: dict) -> list[dict]:
                 "reference_status": item["reference_status"],
                 "reference_exists": reference_exists,
                 "prediction_found": prediction_found,
-                "prediction_path": str(prediction_path.relative_to(REPO_ROOT)) if prediction_path else None,
+                "prediction_path": str(prediction_path.relative_to(ASL_TRANSLATOR_ROOT)) if prediction_path else None,
                 "eligibility": eligibility,
             }
         )

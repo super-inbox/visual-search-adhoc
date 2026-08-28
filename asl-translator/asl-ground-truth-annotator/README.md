@@ -1,7 +1,7 @@
 # ASL Ground Truth Annotator
 
 A small local, browser-based tool for creating and correcting timestamped
-English ground truth for ASL videos in `data/asl_corpus/`.
+English ground truth for ASL videos in `asl-translator/data/asl_corpus/`.
 
 ## Privacy — read this first
 
@@ -15,8 +15,8 @@ WebSocket, no external `<script>`/`<link>` sources. Videos are loaded via
 in-memory and handed to the browser's normal file-save flow. Nothing is
 uploaded anywhere, and the page works the same with Wi-Fi off.
 
-`data/asl_corpus/` contains identifiable real-user video from a paid
-product (see `data/asl_corpus/README.md`). Do not point any other tool,
+`asl-translator/data/asl_corpus/` contains identifiable real-user video from a paid
+product (see `asl-translator/data/asl_corpus/README.md`). Do not point any other tool,
 script, or service at these files.
 
 ## Launch
@@ -24,7 +24,7 @@ script, or service at these files.
 From the repo root:
 
 ```
-python3 -m http.server 8934 --bind 127.0.0.1 -d tools/asl-ground-truth-annotator
+python3 -m http.server 8934 --bind 127.0.0.1 -d asl-translator/asl-ground-truth-annotator
 ```
 
 then open **http://127.0.0.1:8934/index.html** in a browser. `--bind
@@ -44,7 +44,7 @@ Stop the server with `Ctrl+C` when done.
 ## Workflow
 
 1. **Load video…** — pick the matching `.mp4` from
-   `data/asl_corpus/videos/`. The `video` field auto-fills as
+   `asl-translator/data/asl_corpus/videos/`. The `video` field auto-fills as
    `videos/<filename>` (edit if needed — it's just a label recorded in
    the exported JSON, not a filesystem path the tool resolves).
 2. Either **Import SRT/JSON…** an existing reference/prediction to start
@@ -140,7 +140,7 @@ summary says so.
    warnings are expected/intentional, e.g. real overlap), set `gt_kind`
    to `human` and check `verified` once you've reviewed the full pass.
 6. Export both SRT (for quick diffing/eyeballing) and JSON (for
-   evaluation tooling) into `data/asl_corpus/ground_truth/`.
+   evaluation tooling) into `asl-translator/data/asl_corpus/ground_truth/`.
 
 ## Known limitations
 

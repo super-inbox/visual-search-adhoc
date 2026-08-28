@@ -5,8 +5,8 @@ Local, deterministic, stdlib-only. No network calls, no model calls.
 Never reads the corpus videos.
 
 Usage:
-    python3 tools/asl-eval/evaluate.py \\
-        --reference data/asl_corpus/ground_truth/155_demo_asl-demo-translation_26.7s.srt \\
+    python3 asl-translator/asl-eval/evaluate.py \\
+        --reference asl-translator/data/asl_corpus/ground_truth/155_demo_asl-demo-translation_26.7s.srt \\
         --prediction /path/to/prediction.json \\
         [--json-out /tmp/eval.json] [--no-alignment]
 
