@@ -1,0 +1,41 @@
+{
+  "name": "Curify ASL evaluation reference set",
+  "version": "v0",
+  "assembled": "2026-08-26",
+  "note": "Reference items this evaluation scaffold can defend today. Does NOT assert that matching predictions exist yet — see tools/asl-eval status. 1320 is a candidate reference only, pending production-direction confirmation. 1434 is deliberately excluded: its clip is greeting-only content, guessable from priors without decoding any signing, so it is not a valid acceptance test (see data/asl_corpus/README.md).",
+  "items": [
+    {
+      "video_id": "155_demo_asl-demo-translation_26.7s",
+      "video": "videos/155_demo_asl-demo-translation_26.7s.mp4",
+      "reference": "ground_truth/155_demo_asl-demo-translation_26.7s.srt",
+      "reference_status": "verified_gold",
+      "reference_kind": "human_translated",
+      "usable_for_official_metrics": true
+    },
+    {
+      "video_id": "1252_1000016397_76.8s",
+      "video": "videos/1252_1000016397_76.8s.mp4",
+      "reference": "ground_truth/1252_1000016397_76.8s.srt",
+      "reference_status": "verified_gold",
+      "reference_kind": "human_translated",
+      "usable_for_official_metrics": true
+    },
+    {
+      "video_id": "1320_1000022357_137.2s",
+      "video": "videos/1320_1000022357_137.2s.mp4",
+      "reference": "ground_truth_candidates/1320_1000022357_137.2s.srt",
+      "reference_json": "ground_truth_candidates/1320_1000022357_137.2s.json",
+      "reference_status": "candidate_reference",
+      "reference_kind": "burned_caption_reference",
+      "usable_for_official_metrics": false,
+      "verification_status": "pending_production_direction_confirmation"
+    }
+  ],
+  "excluded": [
+    {
+      "video_id": "1434_screenrec_youtube_16.6s",
+      "reason": "greeting_only_non_diagnostic",
+      "note": "README warns this clip covers only the greeting exchange, the highest-prior content in ASL; a model can score ~65% by guessing without decoding any signing. Not an acceptance item."
+    }
+  ]
+}

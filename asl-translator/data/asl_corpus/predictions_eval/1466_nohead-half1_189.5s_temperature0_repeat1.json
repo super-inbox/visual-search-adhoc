@@ -1,0 +1,133 @@
+{
+  "project_id": null,
+  "video": "asl-translator/data/asl_corpus/videos/1466_nohead-half1_189.5s.mp4",
+  "producer": "asl-translator/asl-eval/run_current_model.py (--run)",
+  "warning": "UNVERIFIED machine output \u2014 offline evaluation run, not a production job.",
+  "run_metadata": {
+    "config": "temperature0",
+    "model": "gemini-2.5-flash",
+    "temperature": "0.0",
+    "frame_budget": 96,
+    "keyframe_width": 512,
+    "batch_size": 24,
+    "duration_s": 189.25,
+    "frames_sampled": 96,
+    "model_calls": 4,
+    "production_side_effects": false,
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "ac21f24fd25357f859741421f10775f6800c6c1c",
+    "source_file": "curify_background/app/utils/asl_utils.py",
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda"
+  },
+  "segments": [
+    {
+      "line": 1,
+      "start": 1.12,
+      "end": 14.29,
+      "text": "Explain what is wrong with you."
+    },
+    {
+      "line": 2,
+      "start": 20.25,
+      "end": 20.75,
+      "text": "You hit."
+    },
+    {
+      "line": 3,
+      "start": 22.75,
+      "end": 25.31,
+      "text": "Build together."
+    },
+    {
+      "line": 4,
+      "start": 27.59,
+      "end": 32.51,
+      "text": "Give to rub."
+    },
+    {
+      "line": 5,
+      "start": 33.74,
+      "end": 38.66,
+      "text": "Build three, then two."
+    },
+    {
+      "line": 6,
+      "start": 41.06,
+      "end": 42.15,
+      "text": "Clap for you."
+    },
+    {
+      "line": 7,
+      "start": 44.75,
+      "end": 49.31,
+      "text": "Talking about payment."
+    },
+    {
+      "line": 8,
+      "start": 59.5,
+      "end": 64.44,
+      "text": "Talking about payment."
+    },
+    {
+      "line": 9,
+      "start": 70.62,
+      "end": 75.69,
+      "text": "Talking about payment."
+    },
+    {
+      "line": 10,
+      "start": 80.69,
+      "end": 84.44,
+      "text": "Talking about payment."
+    },
+    {
+      "line": 11,
+      "start": 89.65,
+      "end": 94.81,
+      "text": "Wash your hands, finished."
+    },
+    {
+      "line": 12,
+      "start": 98.75,
+      "end": 105.44,
+      "text": "I am good, all three of us."
+    },
+    {
+      "line": 13,
+      "start": 109.4,
+      "end": 116.19,
+      "text": "You have nothing to worry about."
+    },
+    {
+      "line": 14,
+      "start": 120.5,
+      "end": 133.83,
+      "text": "It's good. Two people walk across calmly."
+    },
+    {
+      "line": 15,
+      "start": 135.88,
+      "end": 146.19,
+      "text": "Hands join, then open and close. Two items are placed here."
+    },
+    {
+      "line": 16,
+      "start": 157.31,
+      "end": 163.06,
+      "text": "Stop, it's over."
+    },
+    {
+      "line": 17,
+      "start": 172.0,
+      "end": 175.0,
+      "text": "Good, strong."
+    },
+    {
+      "line": 18,
+      "start": 177.32,
+      "end": 188.17,
+      "text": "Two items are here, they open and close. With two."
+    }
+  ]
+}

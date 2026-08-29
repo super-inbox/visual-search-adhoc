@@ -1,0 +1,109 @@
+{
+  "project_id": null,
+  "video": "data/asl_corpus/videos/1252_1000016397_76.8s.mp4",
+  "producer": "tools/asl-eval/run_current_model.py (--run)",
+  "warning": "UNVERIFIED machine output \u2014 offline evaluation run, not a production job.",
+  "run_metadata": {
+    "config": "baseline0",
+    "model": "gemini-2.5-flash",
+    "temperature": "temperature_unset_provider_default",
+    "frame_budget": 96,
+    "keyframe_width": 512,
+    "batch_size": 24,
+    "duration_s": 76.5,
+    "frames_sampled": 96,
+    "model_calls": 4,
+    "production_side_effects": false,
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "ac21f24fd25357f859741421f10775f6800c6c1c",
+    "source_file": "curify_background/app/utils/asl_utils.py",
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda"
+  },
+  "segments": [
+    {
+      "line": 1,
+      "start": 1.5,
+      "end": 6.19,
+      "text": "Do you know H.G.Q.?"
+    },
+    {
+      "line": 2,
+      "start": 9.29,
+      "end": 10.46,
+      "text": "Two more."
+    },
+    {
+      "line": 3,
+      "start": 12.79,
+      "end": 13.96,
+      "text": "Are they here?"
+    },
+    {
+      "line": 4,
+      "start": 18.02,
+      "end": 19.68,
+      "text": "And three more."
+    },
+    {
+      "line": 5,
+      "start": 23.28,
+      "end": 26.0,
+      "text": "See, remember this?"
+    },
+    {
+      "line": 6,
+      "start": 28.77,
+      "end": 33.25,
+      "text": "numbers: four, three."
+    },
+    {
+      "line": 7,
+      "start": 39.25,
+      "end": 41.25,
+      "text": "sign, yes."
+    },
+    {
+      "line": 8,
+      "start": 45.69,
+      "end": 49.0,
+      "text": "There are five classes."
+    },
+    {
+      "line": 9,
+      "start": 50.62,
+      "end": 55.28,
+      "text": "You will describe things that are nice and about privilege."
+    },
+    {
+      "line": 10,
+      "start": 56.5,
+      "end": 59.31,
+      "text": "Think about this, and ask questions."
+    },
+    {
+      "line": 11,
+      "start": 61.79,
+      "end": 62.38,
+      "text": "More."
+    },
+    {
+      "line": 12,
+      "start": 62.96,
+      "end": 66.74,
+      "text": "Together,"
+    },
+    {
+      "line": 13,
+      "start": 67.22,
+      "end": 72.01,
+      "text": "you show number three."
+    },
+    {
+      "line": 14,
+      "start": 73.48,
+      "end": 75.8,
+      "text": "You explain."
+    }
+  ]
+}

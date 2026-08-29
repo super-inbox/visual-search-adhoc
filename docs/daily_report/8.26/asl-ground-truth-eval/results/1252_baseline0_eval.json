@@ -1,0 +1,155 @@
+{
+  "reference": "data/asl_corpus/ground_truth/1252_1000016397_76.8s.srt",
+  "prediction": "data/asl_corpus/predictions_eval/1252_1000016397_76.8s_baseline0.json",
+  "reference_segment_count": 11,
+  "prediction_segment_count": 14,
+  "text_metrics": {
+    "reference_words": 52,
+    "prediction_words": 50,
+    "substitutions": 46,
+    "deletions": 2,
+    "insertions": 0,
+    "wer": 0.9231,
+    "cer": 0.7211,
+    "char_level": {
+      "reference_chars": 251,
+      "prediction_chars": 266,
+      "substitutions": 120,
+      "deletions": 23,
+      "insertions": 38
+    },
+    "reference_transcript_normalized": "the boy s name is greg number two you re going to dance number three the lights are on the screen number four the woman named sara has a name sign number four the man is wearing brown pants and a brown shirt number the book is number three you read it",
+    "prediction_transcript_normalized": "do you know h g q two more are they here and three more see remember this numbers four three sign yes there are five classes you will describe things that are nice and about privilege think about this and ask questions more together you show number three you explain"
+  },
+  "timing_metrics": {
+    "reference_coverage_s": 45.667,
+    "prediction_coverage_s": 40.15,
+    "overlap_s": 27.61,
+    "temporal_precision": 0.6877,
+    "temporal_recall": 0.6046,
+    "temporal_iou": 0.4743
+  },
+  "segment_alignment": [
+    {
+      "ref_index": 0,
+      "ref_start": 0.3,
+      "ref_end": 5.333,
+      "ref_text": "The boy's name is Greg.",
+      "matched_prediction_text": "Do you know H.G.Q.?",
+      "matched_prediction_start": 1.5,
+      "matched_prediction_end": 6.19,
+      "overlap_s": 3.833,
+      "iou": 0.6508
+    },
+    {
+      "ref_index": 1,
+      "ref_start": 8.8,
+      "ref_end": 9.7,
+      "ref_text": "Number two.",
+      "matched_prediction_text": "Two more.",
+      "matched_prediction_start": 9.29,
+      "matched_prediction_end": 10.46,
+      "overlap_s": 0.41,
+      "iou": 0.247
+    },
+    {
+      "ref_index": 2,
+      "ref_start": 12.2,
+      "ref_end": 14.567,
+      "ref_text": "You're going to dance?",
+      "matched_prediction_text": "Are they here?",
+      "matched_prediction_start": 12.79,
+      "matched_prediction_end": 13.96,
+      "overlap_s": 1.17,
+      "iou": 0.4943
+    },
+    {
+      "ref_index": 3,
+      "ref_start": 17.9,
+      "ref_end": 18.933,
+      "ref_text": "Number three.",
+      "matched_prediction_text": "And three more.",
+      "matched_prediction_start": 18.02,
+      "matched_prediction_end": 19.68,
+      "overlap_s": 0.913,
+      "iou": 0.5129
+    },
+    {
+      "ref_index": 4,
+      "ref_start": 21.767,
+      "ref_end": 24.667,
+      "ref_text": "The lights are on the screen.",
+      "matched_prediction_text": "See, remember this?",
+      "matched_prediction_start": 23.28,
+      "matched_prediction_end": 26.0,
+      "overlap_s": 1.387,
+      "iou": 0.3277
+    },
+    {
+      "ref_index": 5,
+      "ref_start": 28.667,
+      "ref_end": 29.7,
+      "ref_text": "Number four.",
+      "matched_prediction_text": "numbers: four, three.",
+      "matched_prediction_start": 28.77,
+      "matched_prediction_end": 33.25,
+      "overlap_s": 0.93,
+      "iou": 0.2029
+    },
+    {
+      "ref_index": 6,
+      "ref_start": 32.367,
+      "ref_end": 40.867,
+      "ref_text": "The woman named Sara has a name sign.",
+      "matched_prediction_text": "sign, yes.",
+      "matched_prediction_start": 39.25,
+      "matched_prediction_end": 41.25,
+      "overlap_s": 1.617,
+      "iou": 0.182
+    },
+    {
+      "ref_index": 7,
+      "ref_start": 44.4,
+      "ref_end": 45.3,
+      "ref_text": "Number four.",
+      "matched_prediction_text": null,
+      "matched_prediction_start": null,
+      "matched_prediction_end": null,
+      "overlap_s": 0.0,
+      "iou": 0.0
+    },
+    {
+      "ref_index": 8,
+      "ref_start": 48.4,
+      "ref_end": 62.667,
+      "ref_text": "The man is wearing brown pants and a brown shirt. Number.",
+      "matched_prediction_text": "You will describe things that are nice and about privilege.",
+      "matched_prediction_start": 50.62,
+      "matched_prediction_end": 55.28,
+      "overlap_s": 4.66,
+      "iou": 0.3266
+    },
+    {
+      "ref_index": 9,
+      "ref_start": 65.233,
+      "ref_end": 71.333,
+      "ref_text": "The book is number three.",
+      "matched_prediction_text": "you show number three.",
+      "matched_prediction_start": 67.22,
+      "matched_prediction_end": 72.01,
+      "overlap_s": 4.113,
+      "iou": 0.6069
+    },
+    {
+      "ref_index": 10,
+      "ref_start": 73.033,
+      "ref_end": 75.667,
+      "ref_text": "You read it.",
+      "matched_prediction_text": "You explain.",
+      "matched_prediction_start": 73.48,
+      "matched_prediction_end": 75.8,
+      "overlap_s": 2.187,
+      "iou": 0.7904
+    }
+  ]
+}
