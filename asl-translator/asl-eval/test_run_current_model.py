@@ -266,3 +266,219 @@ class TestPromptProvenance(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# 2026-08-29 mirror: duration-scaled budget, dedup, degeneracy signal.
+# Fixtures are real values from data/asl_corpus/, not invented ones.
+# ─────────────────────────────────────────────────────────────────────────
+class TestBudgetForDuration(unittest.TestCase):
+    def test_short_clips_get_the_floor(self):
+        self.assertEqual(m.budget_for_duration(6.7), m.MIN_FRAME_BUDGET)
+
+    def test_mid_length_hits_the_target_density(self):
+        for duration in (26.7, 76.8):
+            self.assertAlmostEqual(
+                m.budget_for_duration(duration) / duration,
+                m.TARGET_FRAMES_PER_SEC, delta=0.05)
+
+    def test_long_clips_are_capped(self):
+        self.assertEqual(m.budget_for_duration(300.0), m.MAX_FRAME_BUDGET)
+
+    def test_190s_job_clears_the_density_floor(self):
+        # 0.51 f/s under the old absolute budget; the read collapsed into "Many".
+        self.assertGreater(m.budget_for_duration(189.5) / 189.5, m.DENSITY_FLOOR_FPS)
+
+    def test_300s_job_still_does_not_clear_the_floor(self):
+        # The cap binds, so this stays flagged rather than silently shipped.
+        self.assertLess(m.budget_for_duration(300.0) / 300.0, m.DENSITY_FLOOR_FPS)
+
+    def test_1320_crosses_the_floor(self):
+        # The corpus's best unlabelled video: 0.70 f/s before, above the floor now.
+        self.assertLess(m.FRAME_BUDGET / 137.2, m.DENSITY_FLOOR_FPS)
+        self.assertGreater(m.budget_for_duration(137.2) / 137.2, m.DENSITY_FLOOR_FPS)
+
+
+class TestResolveFrameBudget(unittest.TestCase):
+    def test_historical_configs_keep_the_absolute_budget(self):
+        for name in ("baseline0", "temperature0"):
+            self.assertEqual(m.resolve_frame_budget(name, 300.0), m.FRAME_BUDGET)
+
+    def test_current_config_scales_with_duration(self):
+        self.assertEqual(m.resolve_frame_budget("production_2026_08_29", 26.7),
+                         m.budget_for_duration(26.7))
+
+    def test_explicit_override_wins_everywhere(self):
+        for name in sorted(m.CONFIGS):
+            self.assertEqual(m.resolve_frame_budget(name, 300.0, override=7), 7)
+
+
+class TestConfigs(unittest.TestCase):
+    def test_historical_configs_are_unchanged(self):
+        """These reproduce every saved prediction; changing them invalidates them."""
+        self.assertIsNone(m.CONFIGS["baseline0"]["temperature"])
+        self.assertEqual(m.CONFIGS["baseline0"]["budget_mode"], "absolute")
+        self.assertFalse(m.CONFIGS["baseline0"]["dedup"])
+        self.assertEqual(m.CONFIGS["temperature0"]["temperature"], 0.0)
+        self.assertEqual(m.CONFIGS["temperature0"]["budget_mode"], "absolute")
+        self.assertFalse(m.CONFIGS["temperature0"]["dedup"])
+
+    def test_current_config_matches_what_production_ships(self):
+        cfg = m.CONFIGS["production_2026_08_29"]
+        self.assertEqual(cfg["temperature"], 0.0)
+        self.assertEqual(cfg["budget_mode"], "duration_scaled")
+        self.assertTrue(cfg["dedup"])
+
+    def test_every_config_declares_the_full_knob_set(self):
+        for name, cfg in m.CONFIGS.items():
+            for key in ("model", "temperature", "temperature_label", "budget_mode", "dedup"):
+                self.assertIn(key, cfg, f"{name} is missing {key}")
+
+
+class TestMergeAdjacentDuplicates(unittest.TestCase):
+    def _seg(self, i, start, end, text):
+        return {"line": i, "start": start, "end": end, "text": text}
+
+    def test_merges_the_155_batch_boundary_repeats(self):
+        segs = [
+            self._seg(1, 8.88, 9.94, "My mother is twenty-nine."),
+            self._seg(2, 10.31, 12.65, "My mother is twenty-nine."),
+            self._seg(3, 18.48, 18.80, "My brother is seven."),
+            self._seg(4, 19.12, 20.42, "My brother is seven."),
+        ]
+        out = m.merge_adjacent_duplicates(segs)
+        self.assertEqual(len(out), 2)
+        self.assertEqual(out[0]["start"], 8.88)
+        self.assertEqual(out[0]["end"], 12.65)  # union span
+        self.assertEqual([s["line"] for s in out], [1, 2])  # renumbered
+
+    def test_does_not_merge_the_degenerate_long_video_repeats(self):
+        segs = [
+            self._seg(1, 1.10, 14.30, "Many"),
+            self._seg(2, 25.49, 30.10, "Many"),   # gap 11.19s
+            self._seg(3, 35.10, 40.00, "Many"),   # gap  5.00s
+        ]
+        self.assertEqual(len(m.merge_adjacent_duplicates(segs)), 3)
+
+    def test_matching_ignores_case_and_punctuation(self):
+        segs = [self._seg(1, 0.0, 1.0, "My mother is twenty-nine."),
+                self._seg(2, 1.2, 2.0, "my mother is twenty nine")]
+        self.assertEqual(len(m.merge_adjacent_duplicates(segs)), 1)
+
+    def test_identical_text_split_by_another_caption_is_untouched(self):
+        segs = [self._seg(1, 0.0, 1.0, "Yes."), self._seg(2, 1.1, 2.0, "No."),
+                self._seg(3, 2.1, 3.0, "Yes.")]
+        self.assertEqual(len(m.merge_adjacent_duplicates(segs)), 3)
+
+    def test_blank_captions_never_merge(self):
+        segs = [self._seg(1, 0.0, 1.0, "   "), self._seg(2, 1.1, 2.0, "  ")]
+        self.assertEqual(len(m.merge_adjacent_duplicates(segs)), 2)
+
+    def test_does_not_mutate_the_input(self):
+        segs = [self._seg(1, 0.0, 1.0, "Hi"), self._seg(2, 1.2, 2.0, "Hi")]
+        m.merge_adjacent_duplicates(segs)
+        self.assertEqual(segs[0]["end"], 1.0)
+
+    def test_empty(self):
+        self.assertEqual(m.merge_adjacent_duplicates([]), [])
+
+
+class TestDegenerateRepetition(unittest.TestCase):
+    def _segs(self, texts):
+        return [{"line": i + 1, "start": i * 10.0, "end": i * 10.0 + 1.0, "text": t}
+                for i, t in enumerate(texts)]
+
+    def test_fires_on_a_collapsed_read(self):
+        self.assertTrue(m.has_degenerate_repetition(self._segs(["Many"] * 4)))
+
+    def test_threshold_is_the_documented_count(self):
+        n = m.DEGENERATE_REPEAT_COUNT
+        self.assertFalse(m.has_degenerate_repetition(self._segs(["Not"] * (n - 1))))
+        self.assertTrue(m.has_degenerate_repetition(self._segs(["Not"] * n)))
+
+    def test_does_not_fire_on_fluent_fabrication(self):
+        """Documents the blind spot: job 1442 is 15 distinct fluent sentences."""
+        self.assertFalse(m.has_degenerate_repetition(
+            self._segs([f"Distinct sentence number {i}." for i in range(15)])))
+
+    def test_empty(self):
+        self.assertFalse(m.has_degenerate_repetition([]))
+
+
+class TestAllocateTimestampsGuard(unittest.TestCase):
+    def test_budget_of_one_does_not_divide_by_zero(self):
+        runs = [m.MotionRun(0.0, 5.0, 100.0, True), m.MotionRun(6.0, 12.0, 120.0, True)]
+        self.assertEqual(len(m.allocate_timestamps(runs, 1)), 1)
+
+
+class TestProductionParity(unittest.TestCase):
+    """Load curify-studio's asl_utils.py directly and diff it against this mirror.
+
+    This is the drift detector. Everything in this file is a hand-copied port, so
+    the only thing that actually keeps it honest is comparing it to the source.
+    Skipped when curify-studio is not checked out next door — CI without it still
+    runs every other test.
+
+    asl_utils keeps every heavy import (numpy, google.genai, imagen_service)
+    function-local, so it loads with no environment and no provider config. That
+    is what makes this possible; app.config would not.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        import importlib.util
+        candidates = [
+            Path.home() / "curify-studio" / "curify_background" / "app" / "utils" / "asl_utils.py",
+            Path(__file__).resolve().parents[3] / "curify-studio" / "curify_background"
+            / "app" / "utils" / "asl_utils.py",
+        ]
+        src = next((p for p in candidates if p.exists()), None)
+        if src is None:
+            raise unittest.SkipTest("curify-studio not available; parity check skipped")
+        spec = importlib.util.spec_from_file_location("_prod_asl_utils", src)
+        mod = importlib.util.module_from_spec(spec)
+        sys.modules["_prod_asl_utils"] = mod  # dataclasses needs it registered
+        spec.loader.exec_module(mod)
+        cls.prod = mod
+
+    def test_constants_match_production(self):
+        for name in ("PROBE_FPS", "PROBE_WIDTH", "KEYFRAME_WIDTH", "MIN_FRAMES_PER_RUN",
+                     "BATCH_SIZE", "IDLE_QUANTILE", "ABS_MOTION_FLOOR",
+                     "TARGET_FRAMES_PER_SEC", "MIN_FRAME_BUDGET", "MAX_FRAME_BUDGET",
+                     "DENSITY_FLOOR_FPS", "ASL_TEMPERATURE", "DEDUP_MAX_GAP_S",
+                     "DEGENERATE_REPEAT_COUNT"):
+            self.assertEqual(getattr(m, name), getattr(self.prod, name),
+                             f"{name} has drifted from production")
+
+    def test_model_matches_production(self):
+        self.assertEqual(m.ASL_MODEL, self.prod.ASL_MODEL)
+
+    def test_prompt_matches_production(self):
+        self.assertEqual(m.PRODUCTION_PROMPT, self.prod._PROMPT)
+
+    def test_budget_curve_matches_production(self):
+        for duration in (3.0, 6.7, 11.5, 26.7, 76.8, 137.2, 189.5, 300.0, 3600.0):
+            self.assertEqual(m.budget_for_duration(duration),
+                             self.prod._budget_for_duration(duration),
+                             f"budget diverges at {duration}s")
+
+    def test_normalization_matches_production(self):
+        for text in ("My mother is twenty-nine.", "I don't know", "  Many  ",
+                     "H.G.Q.", "", "   "):
+            self.assertEqual(m.normalize_for_dedup(text),
+                             self.prod._normalize_for_dedup(text))
+
+    def test_dedup_matches_production(self):
+        fixtures = [
+            [(8.88, 9.94, "My mother is twenty-nine."), (10.31, 12.65, "My mother is twenty-nine.")],
+            [(1.10, 14.30, "Many"), (25.49, 30.10, "Many"), (35.10, 40.00, "Many")],
+            [(0.0, 1.0, "Yes."), (1.1, 2.0, "No."), (2.1, 3.0, "Yes.")],
+        ]
+        for fixture in fixtures:
+            mine = m.merge_adjacent_duplicates(
+                [{"line": i + 1, "start": s, "end": e, "text": t}
+                 for i, (s, e, t) in enumerate(fixture)])
+            theirs = self.prod._merge_adjacent_duplicates(
+                [self.prod.AslSegment(s, e, t) for s, e, t in fixture])
+            self.assertEqual([(x["start"], x["end"], x["text"]) for x in mine],
+                             [(x.start, x.end, x.text) for x in theirs])

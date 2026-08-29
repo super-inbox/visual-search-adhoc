@@ -196,17 +196,67 @@ them anywhere. `--keep-frames-dir <DIR>` (requires `--extract-frames`) writes
 them to a directory you name instead, is **not** auto-deleted, and prints a
 privacy warning — prefer not to use it.
 
-### `baseline0` vs `temperature0`
+### Configs
 
-- `--config baseline0` (default): `gemini-2.5-flash`, `FRAME_BUDGET=96`,
-  `KEYFRAME_WIDTH=512`, `BATCH_SIZE=24`, `PROBE_FPS=4.0`, `IDLE_QUANTILE=0.35`,
-  `ABS_MOTION_FLOOR=2.0`, and the `temperature` argument is **genuinely omitted**
-  from `GenerateContentConfig` — not defaulted to any number in code. Reported
-  as `"temperature_unset_provider_default"`. (The corpus manifest's own note
-  that the provider default is numerically 1.0 is an existing corpus
-  assumption, not something this runner asserts on its own.)
-- `--config temperature0`: identical, except `temperature=0.0` is passed
-  explicitly.
+A config is the **full knob set**, not just the temperature. It has to be: on
+2026-08-29 production changed three things at once, and a harness that pinned
+only temperature would quietly stop reproducing either the old runs or the new
+ones.
+
+| | `baseline0` | `temperature0` | `production_2026_08_29` |
+|---|---|---|---|
+| temperature | omitted | `0.0` | `0.0` |
+| budget | absolute 96 | absolute 96 | duration-scaled |
+| dedup | no | no | **yes** |
+| what it is | production 08-16 → 08-29 | the 8.26 A/B arm | production today |
+
+- **`baseline0` (default) and `temperature0` are historical and must not be
+  "modernised".** Every prediction JSON under `data/asl_corpus/` and every number
+  in `docs/daily_report/8.26/asl-ground-truth-eval/` was produced with them; edit
+  them and that evidence becomes unverifiable. Shared knobs: `gemini-2.5-flash`,
+  `FRAME_BUDGET=96`, `KEYFRAME_WIDTH=512`, `BATCH_SIZE=24`, `PROBE_FPS=4.0`,
+  `IDLE_QUANTILE=0.35`, `ABS_MOTION_FLOOR=2.0`. In `baseline0` the `temperature`
+  argument is **genuinely omitted** from `GenerateContentConfig`, not defaulted to
+  a number in code, and is reported as `"temperature_unset_provider_default"`.
+  (The corpus manifest's note that the provider default is numerically 1.0 is an
+  existing corpus assumption, not something this runner asserts.)
+- **`production_2026_08_29`** mirrors curify-studio `f42a3a44`: `temperature=0.0`,
+  a duration-derived budget (`TARGET_FRAMES_PER_SEC=2.0`, floor
+  `MIN_FRAME_BUDGET=24`, ceiling `MAX_FRAME_BUDGET=240`), and adjacent-duplicate
+  caption merging (`DEDUP_MAX_GAP_S=1.0`). It is dated rather than called
+  "current" so the parity claim carries its own expiry — if production changes
+  again, add another dated config instead of editing this one.
+
+Runs now also report **sampling density** (frames/sec) against
+`DENSITY_FLOOR_FPS=1.0`, and flag `low_density` below it. That floor is empirical:
+across this corpus every job at or below 0.51 f/s was degenerate or
+suspected-fabricated, and every job at or above 1.25 was neither. What the budget
+change does to a real video, e.g. `1320_1000022357_137.2s`:
+
+```
+--config baseline0               96 frames,  0.700 f/s,  4 calls   ⚠️ below floor
+--config production_2026_08_29  240 frames,  1.749 f/s, 10 calls
+```
+
+⚠️ `low_density` is the only signal that catches the *dangerous* failure. The
+`degenerate_repetition` flag catches a read that collapsed into one repeated
+caption (the ~190s jobs), but job 1442 — 300s, the sparsest sampling in the
+corpus — produced fifteen distinct fluent sentences and is the output we most
+suspect of being invented outright. Repetition cannot see that.
+
+### Staying in sync with production
+
+This file is a hand-copied port, so the thing that actually keeps it honest is
+`TestProductionParity` in `test_run_current_model.py`. It loads
+`curify-studio/curify_background/app/utils/asl_utils.py` **directly by path** and
+diffs the constants, the prompt, the budget curve, the dedup normalizer and the
+dedup behaviour against it. This works because `asl_utils` keeps every heavy
+import (numpy, `google.genai`, `imagen_service`) function-local, so it loads with
+no environment and no provider config — `app.config` would not.
+
+The check **skips** when curify-studio is not checked out next door, so CI
+without it still runs everything else. If you change production, run the tests
+here: a drifted constant fails with the constant's name.
 
 ### The explicit real-run gate (NOT executed by this phase)
 
@@ -229,8 +279,9 @@ runner.
 ### Future evaluation workflow
 
 1. Dry-run a video to sanity-check sampling before spending a real call.
-2. When ready, run the gated `--run` command above to produce a baseline0- or
-   temperature0-shaped prediction JSON.
+2. When ready, run the gated `--run` command above. Use
+   `--config production_2026_08_29` to evaluate what users actually get today;
+   use `baseline0` / `temperature0` only to reproduce a historical result.
 3. Score it with `evaluate.py` / check readiness with `status.py`, as above.
 
 ## Adding a future prediction
