@@ -76,28 +76,70 @@ from typing import List, Optional
 ASL_MODEL = "gemini-2.5-flash"
 PROBE_FPS = 4.0
 PROBE_WIDTH = 160
-FRAME_BUDGET = 96
 KEYFRAME_WIDTH = 512
 MIN_FRAMES_PER_RUN = 2
 BATCH_SIZE = 24
 IDLE_QUANTILE = 0.35
 ABS_MOTION_FLOOR = 2.0
 
+# The absolute frame budget production used until 2026-08-29. KEPT, and kept at
+# 96, because every prediction JSON in data/asl_corpus/ and every number in the
+# 8.26 report was produced with it — the baseline0 and temperature0 configs must
+# stay bit-reproducible or that evidence becomes unverifiable.
+FRAME_BUDGET = 96
+
+# What production runs from 2026-08-29 (curify-studio f42a3a44). The budget is
+# derived from duration instead of being absolute: at a flat 96 the sampling
+# density spanned ~44x across real jobs, 14.3 frames/sec on a 6.7s clip and 0.32
+# on a 300s one. Density separates output quality cleanly on this corpus —
+# everything at or below 0.51 f/s was degenerate or suspected-fabricated,
+# everything at or above 1.25 was neither — so the floor below sits in that gap.
+TARGET_FRAMES_PER_SEC = 2.0
+MIN_FRAME_BUDGET = 24
+MAX_FRAME_BUDGET = 240
+DENSITY_FLOOR_FPS = 1.0
+ASL_TEMPERATURE = 0.0
+DEDUP_MAX_GAP_S = 1.0
+DEGENERATE_REPEAT_COUNT = 3
+
 SOURCE_REPO = "curify-studio"
 SOURCE_REF = "origin/main"
-SOURCE_COMMIT = "ac21f24fd25357f859741421f10775f6800c6c1c"
+# Bumped 2026-08-29 for the dedup / temperature / duration-scaled-budget change.
+# The pre-08-29 parity point, which baseline0 and temperature0 still reproduce,
+# was ac21f24fd25357f859741421f10775f6800c6c1c.
+SOURCE_COMMIT = "f42a3a44"
 SOURCE_FILE = "curify_background/app/utils/asl_utils.py"
 
+# A config is the FULL knob set, not just the temperature. It has to be: from
+# 2026-08-29 production changed three things at once, and a harness that pins only
+# temperature would quietly stop reproducing either the old runs or the new ones.
 CONFIGS = {
+    # Production as it ran 2026-08-16 .. 2026-08-29. Historical — every saved
+    # prediction was made with this. Do not "modernise" it.
     "baseline0": {
         "model": ASL_MODEL,
-        "temperature": None,  # omitted from GenerateContentConfig, matches production
+        "temperature": None,  # omitted from GenerateContentConfig
         "temperature_label": "temperature_unset_provider_default",
+        "budget_mode": "absolute",
+        "dedup": False,
     },
+    # The 8.26 A/B arm: baseline0 with temperature pinned, nothing else changed.
     "temperature0": {
         "model": ASL_MODEL,
         "temperature": 0.0,
         "temperature_label": "0.0",
+        "budget_mode": "absolute",
+        "dedup": False,
+    },
+    # Production from 2026-08-29. Dated rather than called "current" so the parity
+    # claim carries its own expiry: if production changes again, add another dated
+    # config instead of editing this one.
+    "production_2026_08_29": {
+        "model": ASL_MODEL,
+        "temperature": ASL_TEMPERATURE,
+        "temperature_label": "0.0",
+        "budget_mode": "duration_scaled",
+        "dedup": True,
     },
 }
 
@@ -214,7 +256,7 @@ def segment_runs(times: List[float], motion: List[float]) -> List[MotionRun]:
 # ─────────────────────────────────────────────────────────────────────────
 # Stage 3: timestamp allocation — ported from asl_utils._allocate_timestamps
 # ─────────────────────────────────────────────────────────────────────────
-def allocate_timestamps(runs: List[MotionRun], budget: int = FRAME_BUDGET) -> List[float]:
+def allocate_timestamps(runs: List[MotionRun], budget: int) -> List[float]:
     active = [r for r in runs if r.active and r.duration > 0]
     if not active:
         if not runs:
@@ -232,6 +274,8 @@ def allocate_timestamps(runs: List[MotionRun], budget: int = FRAME_BUDGET) -> Li
             frac = (i + 0.5) / n
             stamps.append(r.start_s + r.duration * frac)
     stamps.sort()
+    if budget <= 1:  # /(budget - 1) below would divide by zero
+        return stamps[:1]
     if len(stamps) > budget:
         idx = [int(round(i * (len(stamps) - 1) / (budget - 1))) for i in range(budget)]
         stamps = [stamps[i] for i in sorted(set(idx))]
@@ -253,6 +297,86 @@ def extract_frames(video_path: str, stamps: List[float], outdir: str) -> List[st
         if r.returncode == 0 and os.path.exists(out) and os.path.getsize(out) > 0:
             paths.append(out)
     return paths
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# Budget resolution + post-processing — ported from asl_utils
+# (_budget_for_duration, _normalize_for_dedup, _merge_adjacent_duplicates,
+#  _has_degenerate_repetition), 2026-08-29.
+# ─────────────────────────────────────────────────────────────────────────
+def budget_for_duration(duration_s: float) -> int:
+    """Frames to sample for a clip of this length, clamped to the cost ceiling."""
+    return max(MIN_FRAME_BUDGET,
+               min(MAX_FRAME_BUDGET, int(round(duration_s * TARGET_FRAMES_PER_SEC))))
+
+
+def resolve_frame_budget(config_name: str, duration_s: float,
+                         override: Optional[int] = None) -> int:
+    """Budget for this config, unless the caller forced one with --frame-budget."""
+    if override is not None:
+        return override
+    if CONFIGS[config_name]["budget_mode"] == "duration_scaled":
+        return budget_for_duration(duration_s)
+    return FRAME_BUDGET
+
+
+_DEDUP_PUNCT_RE = re.compile(r"[^\w\s]", re.UNICODE)
+_DEDUP_WS_RE = re.compile(r"\s+")
+
+
+def normalize_for_dedup(text: str) -> str:
+    """Lowercase, punctuation to space, collapse whitespace.
+
+    Identical to lib.normalize_text in the scorer next door and to
+    _normalize_for_dedup in production, so a dedup measured in one place
+    reproduces in the others.
+    """
+    return _DEDUP_WS_RE.sub(" ", _DEDUP_PUNCT_RE.sub(" ", text.lower())).strip()
+
+
+def merge_adjacent_duplicates(segments: List[dict],
+                              max_gap_s: float = DEDUP_MAX_GAP_S) -> List[dict]:
+    """Collapse consecutive segments repeating the same caption across a small gap.
+
+    Batches are non-overlapping and stateless, so a sign spanning a batch boundary
+    is read and emitted twice. On the 155 demo clip this was the ONLY error:
+    scored against its human reference the raw output had zero substitutions and
+    zero deletions, and dropping the duplicates makes it an exact match.
+
+    Adjacency + small gap + exact normalized match, never text alone — ASL uses
+    reduplication for emphasis. 1.0s is safe by a wide margin here: the boundary
+    artefacts sit 0.32s and 0.37s apart while every genuine repeat in this corpus
+    is 5.0s or further.
+    """
+    out: List[dict] = []
+    for seg in segments:
+        key = normalize_for_dedup(seg.get("text", ""))
+        if out and key and normalize_for_dedup(out[-1].get("text", "")) == key \
+                and float(seg["start"]) - float(out[-1]["end"]) <= max_gap_s:
+            out[-1]["end"] = max(float(out[-1]["end"]), float(seg["end"]))
+            continue
+        out.append(dict(seg))
+    for i, seg in enumerate(out):  # line numbers are positional, so renumber
+        seg["line"] = i + 1
+    return out
+
+
+def has_degenerate_repetition(segments: List[dict]) -> bool:
+    """True when one caption dominates the output — a read that fell apart.
+
+    Fires on the ~190s jobs ("Many" x4, "Not" x3). Deliberately measured AFTER
+    dedup so tight batch-boundary repeats do not count.
+
+    Does NOT catch job 1442: 300s, the sparsest sampling in the corpus, fifteen
+    distinct fluent sentences, and the output we most suspect of being invented
+    outright. Only low_density catches that one.
+    """
+    counts: dict = {}
+    for seg in segments:
+        key = normalize_for_dedup(seg.get("text", ""))
+        if key:
+            counts[key] = counts.get(key, 0) + 1
+    return bool(counts) and max(counts.values()) >= DEGENERATE_REPEAT_COUNT
 
 
 def expected_batch_count(n_frames: int, batch_size: int = BATCH_SIZE) -> int:
@@ -314,13 +438,21 @@ class DryRunReport:
     selected_timestamps: List[float] = field(default_factory=list)
     frames_extracted: int = 0
     frames_verified_on_disk: bool = False
+    # Defaulted so existing callers and tests that build a report positionally or
+    # by keyword keep working.
+    sampling_density_fps: float = 0.0
+    low_density: bool = False
 
 
-def run_dry(video_path: Path, frame_budget: int, extract: bool, keep_frames_dir: Optional[str]) -> DryRunReport:
+def run_dry(video_path: Path, config_name: str, frame_budget: Optional[int],
+            extract: bool, keep_frames_dir: Optional[str]) -> DryRunReport:
     duration = probe_duration(str(video_path))
     times, motion = probe_motion(str(video_path))
     if not times:
         raise RuntimeError("could not read video frames for motion probe")
+
+    effective_duration = duration or times[-1]
+    frame_budget = resolve_frame_budget(config_name, effective_duration, frame_budget)
 
     runs = segment_runs(times, motion)
     stamps = allocate_timestamps(runs, frame_budget)
@@ -339,6 +471,7 @@ def run_dry(video_path: Path, frame_budget: int, extract: bool, keep_frames_dir:
 
     active = [r for r in runs if r.active]
     idle = [r for r in runs if not r.active]
+    density = round(len(stamps) / effective_duration, 3) if effective_duration > 0 else 0.0
 
     return DryRunReport(
         video=str(video_path),
@@ -353,6 +486,8 @@ def run_dry(video_path: Path, frame_budget: int, extract: bool, keep_frames_dir:
         selected_timestamps=[round(t, 3) for t in stamps],
         frames_extracted=frames_extracted,
         frames_verified_on_disk=extract,
+        sampling_density_fps=density,
+        low_density=density < DENSITY_FLOOR_FPS,
     )
 
 
@@ -373,6 +508,13 @@ def print_dry_run_report(report: DryRunReport, config_name: str) -> None:
     print(f"sampled frame count   : {report.sampled_frame_count}")
     print(f"used full budget      : {report.used_full_budget}")
     print(f"expected Gemini calls : {report.expected_model_calls} (batch_size={BATCH_SIZE})")
+    print(f"budget mode           : {cfg['budget_mode']}")
+    print(f"dedup                 : {cfg['dedup']}")
+    print(f"sampling density      : {report.sampling_density_fps} frames/sec"
+          f" (floor {DENSITY_FLOOR_FPS})")
+    if report.low_density:
+        print("  ⚠️  BELOW THE DENSITY FLOOR — production flags a job like this as"
+              " low-confidence. Expect degenerate or fabricated output.")
     if report.frames_verified_on_disk:
         print(f"frames extracted (tmp, deleted after run unless --keep-frames-dir): {report.frames_extracted}")
     print(f"selected timestamps (s): {report.selected_timestamps}")
@@ -393,7 +535,13 @@ def dry_run_report_to_json(report: DryRunReport, config_name: str, video_arg: st
             "config": config_name,
             "model": cfg["model"],
             "temperature": cfg["temperature_label"],
-            "frame_budget": FRAME_BUDGET,
+            # report.frame_budget, not the module constant: this used to hardcode
+            # FRAME_BUDGET and therefore lied whenever --frame-budget was passed.
+            "frame_budget": report.frame_budget,
+            "budget_mode": cfg["budget_mode"],
+            "sampling_density_fps": report.sampling_density_fps,
+            "low_density": report.low_density,
+            "dedup": cfg["dedup"],
             "keyframe_width": KEYFRAME_WIDTH,
             "batch_size": BATCH_SIZE,
             "duration_s": report.duration_s,
@@ -420,7 +568,8 @@ def dry_run_report_to_json(report: DryRunReport, config_name: str, video_arg: st
 # Real-run path — GATED. Not executed by this task. google.genai is only
 # imported inside this function, only reached when --run is passed.
 # ─────────────────────────────────────────────────────────────────────────
-def run_real(video_path: Path, config_name: str, frame_budget: int, output_path: Path) -> None:
+def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
+             output_path: Path) -> None:
     """Call Gemini directly with production-equivalent frames/prompt/config.
 
     Requires GEMINI_API_KEY. Writes ONLY the specified local --output file.
@@ -444,6 +593,8 @@ def run_real(video_path: Path, config_name: str, frame_budget: int, output_path:
     if not times:
         raise RuntimeError("could not read video frames for motion probe")
     runs = segment_runs(times, motion)
+    duration = times[-1]
+    frame_budget = resolve_frame_budget(config_name, duration, frame_budget)
     stamps = allocate_timestamps(runs, frame_budget)
 
     segments = []
@@ -486,7 +637,11 @@ def run_real(video_path: Path, config_name: str, frame_budget: int, output_path:
                 except (KeyError, TypeError, ValueError):
                     continue
 
-        duration = times[-1]
+        segments_before_dedup = len(segments)
+        if cfg["dedup"]:
+            segments = merge_adjacent_duplicates(segments)
+        density = round(len(frames) / duration, 3) if duration > 0 else 0.0
+
         output = {
             "project_id": None,
             "video": str(video_path),
@@ -496,7 +651,15 @@ def run_real(video_path: Path, config_name: str, frame_budget: int, output_path:
                 "config": config_name,
                 "model": cfg["model"],
                 "temperature": cfg["temperature_label"],
-                "frame_budget": FRAME_BUDGET,
+                # The budget actually used. This used to hardcode the module
+                # constant and so misreported any --frame-budget override.
+                "frame_budget": frame_budget,
+                "budget_mode": cfg["budget_mode"],
+                "sampling_density_fps": density,
+                "low_density": density < DENSITY_FLOOR_FPS,
+                "dedup": cfg["dedup"],
+                "segments_before_dedup": segments_before_dedup,
+                "degenerate_repetition": has_degenerate_repetition(segments),
                 "keyframe_width": KEYFRAME_WIDTH,
                 "batch_size": BATCH_SIZE,
                 "duration_s": round(duration, 3),
@@ -525,9 +688,14 @@ def build_arg_parser() -> argparse.ArgumentParser:
     )
     ap.add_argument("--video", required=True, help="Path to a LOCAL video file. No URLs.")
     ap.add_argument("--config", choices=sorted(CONFIGS), default="baseline0",
-                     help="baseline0 (temperature unset, matches production) or temperature0.")
-    ap.add_argument("--frame-budget", type=int, default=FRAME_BUDGET,
-                     help=f"Override frame budget for local experimentation (default: production {FRAME_BUDGET}).")
+                     help="baseline0 = production as it ran 2026-08-16..08-29 (temperature unset, "
+                          "absolute 96-frame budget, no dedup), kept so saved predictions stay "
+                          "reproducible. temperature0 = the 8.26 A/B arm. "
+                          "production_2026_08_29 = what production runs now.")
+    ap.add_argument("--frame-budget", type=int, default=None,
+                     help="Override the frame budget for local experimentation. Default: whatever "
+                          f"the chosen --config specifies — {FRAME_BUDGET} for baseline0/temperature0, "
+                          "duration-scaled for production_2026_08_29.")
     ap.add_argument("--extract-frames", action="store_true",
                      help="Locally extract sampled frames to a temp dir (auto-deleted) to verify parity. No network.")
     ap.add_argument("--keep-frames-dir", default=None, metavar="DIR",
@@ -590,7 +758,8 @@ def main(argv: Optional[List[str]] = None) -> int:
             "NOT auto-deleted. They may show identifiable people. Delete them yourself when done."
         )
 
-    report = run_dry(video_path, args.frame_budget, args.extract_frames, args.keep_frames_dir)
+    report = run_dry(video_path, args.config, args.frame_budget, args.extract_frames,
+                     args.keep_frames_dir)
     print_dry_run_report(report, args.config)
 
     if args.json_out:
