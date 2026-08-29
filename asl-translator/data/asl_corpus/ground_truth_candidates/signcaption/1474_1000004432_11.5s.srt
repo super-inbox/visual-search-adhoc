@@ -1,0 +1,7 @@
+1
+00:00:00,301 --> 00:00:01,872
+Tug-of-war requires strength.
+
+2
+00:00:10,162 --> 00:00:11,065
+Aww, that's a good idea.
