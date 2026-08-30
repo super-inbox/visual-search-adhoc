@@ -1,41 +1,50 @@
 {
-  "name": "Curify ASL evaluation reference set",
-  "version": "v0",
-  "assembled": "2026-08-26",
-  "note": "Reference items this evaluation scaffold can defend today. Does NOT assert that matching predictions exist yet — see tools/asl-eval status. 1320 is a candidate reference only, pending production-direction confirmation. 1434 is deliberately excluded: its clip is greeting-only content, guessable from priors without decoding any signing, so it is not a valid acceptance test (see data/asl_corpus/README.md).",
-  "items": [
-    {
-      "video_id": "155_demo_asl-demo-translation_26.7s",
-      "video": "videos/155_demo_asl-demo-translation_26.7s.mp4",
-      "reference": "ground_truth/155_demo_asl-demo-translation_26.7s.srt",
-      "reference_status": "verified_gold",
-      "reference_kind": "human_translated",
-      "usable_for_official_metrics": true
-    },
-    {
-      "video_id": "1252_1000016397_76.8s",
-      "video": "videos/1252_1000016397_76.8s.mp4",
-      "reference": "ground_truth/1252_1000016397_76.8s.srt",
-      "reference_status": "verified_gold",
-      "reference_kind": "human_translated",
-      "usable_for_official_metrics": true
-    },
-    {
-      "video_id": "1320_1000022357_137.2s",
-      "video": "videos/1320_1000022357_137.2s.mp4",
-      "reference": "ground_truth_candidates/1320_1000022357_137.2s.srt",
-      "reference_json": "ground_truth_candidates/1320_1000022357_137.2s.json",
-      "reference_status": "candidate_reference",
-      "reference_kind": "burned_caption_reference",
-      "usable_for_official_metrics": false,
-      "verification_status": "pending_production_direction_confirmation"
-    }
-  ],
-  "excluded": [
-    {
-      "video_id": "1434_screenrec_youtube_16.6s",
-      "reason": "greeting_only_non_diagnostic",
-      "note": "README warns this clip covers only the greeting exchange, the highest-prior content in ASL; a model can score ~65% by guessing without decoding any signing. Not an acceptance item."
-    }
-  ]
+ "name": "Curify ASL evaluation reference set",
+ "version": "v1",
+ "assembled": "2026-08-26",
+ "revised": "2026-08-30",
+ "note": "Reference items this evaluation scaffold can defend today. Does NOT assert that matching predictions exist yet - see asl-eval/status.py. REVISION 2026-08-30: 155 was removed from the scoreable set. Its corpus input was the caption-burned marketing OUTPUT, so the reference answer was visible in the model's input and every 155 score measured OCR rather than sign reading; see CONTAMINATION.md. A clean input is now in place but has no prediction. 1320 is likewise caption-burned and is now referenced through a masked input. 1434 remains excluded: greeting-only content, guessable from priors without decoding any signing.",
+ "items": [
+  {
+   "video_id": "1252_1000016397_76.8s",
+   "video": "videos/1252_1000016397_76.8s.mp4",
+   "reference": "ground_truth/1252_1000016397_76.8s.srt",
+   "reference_status": "verified_gold",
+   "reference_kind": "human_translated",
+   "label_in_input": false,
+   "usable_for_official_metrics": true,
+   "note": "As of 2026-08-30 this is the ONLY item in the corpus with both a verified human reference and an uncontaminated input. Every defensible accuracy claim about the ASL translator rests on this one video."
+  },
+  {
+   "video_id": "1320_1000022357_137.2s",
+   "video": "videos/1320_1000022357_137.2s.mp4",
+   "reference": "ground_truth_candidates/1320_1000022357_137.2s.srt",
+   "reference_json": "ground_truth_candidates/1320_1000022357_137.2s.json",
+   "reference_status": "candidate_reference",
+   "reference_kind": "burned_caption_reference",
+   "label_in_input": true,
+   "input_mask": {
+    "required": true,
+    "masked_input": "videos/1320_1000022357_137.2s.mp4",
+    "unmasked_source": "ground_truth_candidates/1320_1000022357_137.2s_burned.mp4",
+    "verified_clean": "band fully black in 4112 of 4112 frames (exhaustive per-frame pixel check)",
+    "method": "Unconditional ffmpeg drawbox over the caption band (y=795 h=155, full width, ALL frames), plus full-frame black over the two title/instruction cards (t<15.0 and t>132.1, the ranges where the signer is absent). Re-encoded libx264 crf 18; duration and frame count unchanged."
+   },
+   "usable_for_official_metrics": false,
+   "verification_status": "pending_human_verification_of_caption_text_against_signing",
+   "production_direction": "RESOLVED 2026-08-30. Title cards read 'Certificate Program for Sign Language Interpreters - RECEPTIVE SKILLS EVALUATION' / 'SIGN TO VOICE' / 'Record yourself voicing the video'. An interpreter certification exercise: the ASL is the source and the captions are the answer key. This was the blocker recorded in the spec as SS9.5; it no longer applies. What remains is an annotator confirming the caption text against the actual signing."
+  }
+ ],
+ "excluded": [
+  {
+   "video_id": "155_demo_asl-demo-translation_26.7s",
+   "reason": "label_was_burned_into_input",
+   "note": "Held verified_gold / usable_for_official_metrics=true until 2026-08-30. The file at videos/155_....mp4 was byte-identical to curify-frontend/public/video/asl-demo-translation.mp4 - the published demo OUTPUT, with the English captions burned in. The temperature0 prediction reproduces the gold SRT verbatim including punctuation, with 0 substitutions and 0 deletions, and its two 'duplicate' segments are two batches reading the same caption while it was still on screen. All 155 scores are retracted. A clean input (the raw demo source) is now at videos/155_....mp4, but no prediction has been generated from it, so the item cannot re-enter the scoreable set yet."
+  },
+  {
+   "video_id": "1434_screenrec_youtube_16.6s",
+   "reason": "greeting_only_non_diagnostic",
+   "note": "README warns this clip covers only the greeting exchange, the highest-prior content in ASL; a model can score ~65% by guessing without decoding any signing. Not an acceptance item."
+  }
+ ]
 }

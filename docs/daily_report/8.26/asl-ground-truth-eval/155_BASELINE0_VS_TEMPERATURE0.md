@@ -1,3 +1,23 @@
+> # ⛔ RETRACTED — 2026-08-30
+>
+> **Every 155 number below is withdrawn.** The video scored as `155` was
+> `videos/155_demo_asl-demo-translation_26.7s.mp4`, which was byte-identical to
+> `curify-frontend/public/video/asl-demo-translation.mp4` — the **published demo output, with
+> the English captions burned into the frame**. The reference answer was visible in the model's
+> input, so these scores measure OCR of on-screen text, not ASL recognition.
+>
+> The tell is in the numbers themselves: the prediction reproduces the gold SRT verbatim
+> including punctuation, with **0 substitutions and 0 deletions**, and the two "duplicate"
+> segments are two batches reading the same caption while it was still on screen.
+>
+> Withdrawn: baseline0 WER 0.3704, temperature0 WER 0.3333, the post-dedup WER 0.0000
+> "exact match", and any pooled figure combining 155 with 1252.
+>
+> **What still stands: everything about 1252** — clean input, verified human reference,
+> WER 0.9231 under both configs. It is now the only accuracy measurement the corpus supports.
+>
+> Full account: `asl-translator/data/asl_corpus/CONTAMINATION.md`.
+
 # 155 ASL Eval — Baseline0 vs Temperature=0
 
 ## Experiment

@@ -1,3 +1,8 @@
+> **Not affected by the 2026-08-30 label-leakage finding.** The videos used here
+> (1466, 1467, 1474, 1477) carry no burned-in captions and were re-checked frame by frame.
+> Only 155 and 1320 were contaminated; see
+> `asl-translator/data/asl_corpus/CONTAMINATION.md`. The repeatability results below stand.
+
 # Determinism experiment v1 — does `temperature=0` improve baseline0 repeatability?
 
 **Status: COMPLETE.** Both gated real model calls (Step 1, below) were

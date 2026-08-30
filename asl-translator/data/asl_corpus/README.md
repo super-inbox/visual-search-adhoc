@@ -20,7 +20,8 @@ be blurred without destroying the exact signal this corpus exists to measure. Th
 "anonymize it" option here; the choice is private hosting or no hosting.
 
 Three items are lower risk and separable if you need something shareable:
-`155_demo_*` (Curify's own demo asset, already public on the site), `1434_*` (a screen
+`155_demo_*` (Curify's own demo asset — note the *public* copy is the caption-burned output;
+`videos/` holds the raw source), `1434_*` (a screen
 recording of a public YouTube video), `1415_*` (a YouTube pull).
 
 ---
@@ -38,16 +39,37 @@ asl_corpus/
 Filenames are `<user_id>_<source>_<duration>.mp4`. User IDs match Curify's `project.user_id`
 and the ASL index in `curify-studio/docs/asl-translation-mvp-spec.md`.
 
+---
+
+## 🔴 Label leakage — read before scoring anything
+
+Two videos had **the reference answer burned into the frame the model reads**. One of them
+was this corpus's primary accuracy anchor. Found 2026-08-30; full account in
+[`CONTAMINATION.md`](CONTAMINATION.md).
+
+| Video | What was wrong | State now |
+|---|---|---|
+| `155_demo_…` | `videos/` held the **published demo OUTPUT**, captions burned in. All its scores measured OCR, and are retracted. | Clean raw source swapped in. **No prediction exists from it**, so 155 is out of the evaluation set. |
+| `1320_…` | Burned-in captions over ~69% of the clip; title cards leak topic and instructions. | `videos/1320_….mp4` is now a **conditionally masked** render, verified free of on-screen text. Unmasked source moved to `ground_truth_candidates/`. |
+
+**No other corpus video is affected** — all 13 were re-checked frame by frame.
+
+**The rule this establishes:** a video with its own translation on screen is a *labelled
+reference render*, not a corpus input. Those live in `ground_truth/` and
+`ground_truth_candidates/` beside the SRTs they came from. Anything in `videos/` must carry
+`label_in_input: false` in `manifest.json`. `asl-eval/check_leakage.py` enforces this.
+
 ## Ground truth — 4 of 13
 
 | Video | Kind | Lines | Diagnostic content? |
 |---|---|---|---|
-| `155_demo_asl-demo-translation_26.7s` | human-translated, verified | 6 | ✅ ages/numbers |
+| `155_demo_asl-demo-translation_26.7s` | human-translated, verified | 6 | ✅ ages/numbers — **but see the leakage warning above: the reference is sound, the input was not, and there is no valid prediction** |
 | `1252_1000016397_76.8s` | human-translated by Curify, verified | 11 | ✅ **fingerspelled names** (Greg, Sara) + numbered items |
-| `1320_1000022357_137.2s` | **burned-in English captions**, not yet transcribed | ~unknown | ✅ full sentences |
+| `1320_1000022357_137.2s` | candidate SRT derived from **burned-in English captions** | 14 | ✅ full sentences — **score only via the masked input** |
 | `1434_screenrec_youtube_16.6s` | crowd-sourced YouTube comment | 11 (6 in clip) | ❌ **greetings only — see warning** |
 
-Two `*_burned.mp4` reference renders are included alongside their SRTs.
+Reference renders with captions burned in live alongside their SRTs in `ground_truth/` and
+`ground_truth_candidates/`. **They are references, never inputs.**
 
 **⚠️ The 1434 warning matters more than the rest of this file.** Its clip contains only the
 greeting exchange, which is the highest-prior content in ASL. A vision model emits
@@ -57,9 +79,17 @@ acceptance test.** The diagnostic half — lines 7–11, the deaf/hearing exchan
 the clip and has still never been tested.
 
 `1320` is the best item here: studio-quality, single signer, face fully visible, and it
-carries its own aligned English translation burned into the frame. OCR the caption band and
-you have a free labelled pair. Confirm the production direction first (ASL rendition that
-was captioned, vs. English source that was interpreted) before treating the captions as gold.
+carries its own aligned English translation burned into the frame — which makes it both the
+most valuable item and the one that most easily produces a fake result. **Score it only
+through `videos/1320_….mp4`, the masked render**; the unmasked source in
+`ground_truth_candidates/` exists to derive the reference from, not to feed the model.
+
+**Production direction: RESOLVED 2026-08-30.** OCR of the title cards reads *"Certificate
+Program for Sign Language Interpreters — RECEPTIVE SKILLS EVALUATION"*, *"SIGN TO VOICE"*,
+*"Record yourself voicing the video"*. It is an interpreter certification exercise, so the
+ASL is the source and the captions are the answer key. The remaining step before the
+candidate can be promoted to gold is an annotator confirming the caption text against the
+actual signing.
 
 ## Predictions — Baseline 0
 
