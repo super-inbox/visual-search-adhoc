@@ -34,6 +34,19 @@ def find_prediction(video_id: str) -> Path | None:
     return candidate if candidate.exists() else None
 
 
+def _leakage_blocked(item: dict) -> bool:
+    """True when the item's own answer is visible in the input it would be scored on.
+
+    An item flagged `label_in_input` is only scoreable through a declared, verified
+    mask. Without one, any score it produces measures OCR of on-screen text. This
+    check exists because the corpus shipped exactly that number for four days.
+    """
+    if not item.get("label_in_input"):
+        return False
+    mask = item.get("input_mask") or {}
+    return not (mask.get("masked_input") and mask.get("verified_clean"))
+
+
 def build_status(manifest: dict) -> list[dict]:
     rows = []
     for item in manifest["items"]:
@@ -42,7 +55,9 @@ def build_status(manifest: dict) -> list[dict]:
         prediction_path = find_prediction(item["video_id"])
         prediction_found = prediction_path is not None
 
-        if not reference_exists:
+        if _leakage_blocked(item):
+            eligibility = "blocked_label_leakage"
+        elif not reference_exists:
             eligibility = "reference_missing"
         elif not prediction_found:
             eligibility = "waiting_prediction"
@@ -93,10 +108,22 @@ def main() -> int:
     print_human(rows)
 
     ready = [r for r in rows if r["eligibility"] == "ready_for_official_metrics"]
+    blocked = [r for r in rows if r["eligibility"] == "blocked_label_leakage"]
     print()
     print(f"{len(ready)} of {len(rows)} evaluation-set item(s) are ready for official metrics.")
     if not ready:
         print("No real accuracy score can currently be computed — every item is waiting on a matching prediction.")
+    if blocked:
+        print(f"{len(blocked)} item(s) blocked on label leakage: "
+              + ", ".join(r["video_id"] for r in blocked))
+        print("  Their reference answer is visible in the input. See data/asl_corpus/CONTAMINATION.md.")
+
+    excluded = manifest.get("excluded", [])
+    if excluded:
+        print()
+        print(f"Excluded from the evaluation set ({len(excluded)}):")
+        for e in excluded:
+            print(f"  {e['video_id']}: {e['reason']}")
 
     if args.json_out:
         Path(args.json_out).write_text(json.dumps(rows, indent=2), encoding="utf-8")

@@ -57,6 +57,7 @@ non-deterministic even at temperature 0 in practice. Treat it as
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 import re
@@ -168,6 +169,22 @@ Return STRICT JSON only:
  "confidence":"high|medium|low",
  "notes":"what limited the reading, if anything"}
 """
+
+
+def input_md5(path: str | Path) -> str:
+    """Hash of the file the model actually read.
+
+    The runner already pins `source_commit` and `prompt_sha256`, so a prediction can
+    be traced back to the exact code and prompt that produced it — but nothing
+    recorded the *input*. That is the gap that let 155's predictions be generated
+    from the caption-burned marketing output while everyone read them as scores on
+    the raw demo clip. A prediction that does not name its input cannot be audited.
+    """
+    h = hashlib.md5()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
 
 
 def prompt_sha256() -> str:
@@ -558,6 +575,7 @@ def dry_run_report_to_json(report: DryRunReport, config_name: str, video_arg: st
             "source_commit": SOURCE_COMMIT,
             "source_file": SOURCE_FILE,
             "prompt_sha256": prompt_sha256(),
+            "input_md5": input_md5(video_arg) if Path(video_arg).exists() else None,
         },
         "selected_timestamps_s": report.selected_timestamps,
         "segments": [],
@@ -671,6 +689,7 @@ def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
                 "source_commit": SOURCE_COMMIT,
                 "source_file": SOURCE_FILE,
                 "prompt_sha256": prompt_sha256(),
+                "input_md5": input_md5(video_path),
             },
             "segments": segments,
         }
@@ -708,6 +727,9 @@ def build_arg_parser() -> argparse.ArgumentParser:
     ap.add_argument("--run", action="store_true",
                      help="NOT EXECUTED IN THIS PHASE. Enables the real Gemini call path. Also requires "
                           "--acknowledge-private-data-upload and GEMINI_API_KEY.")
+    ap.add_argument("--acknowledge-contaminated-input", action="store_true",
+                     help="Run against a video the corpus marks as showing its own reference answer. "
+                          "Only for deliberately reproducing a retracted result.")
     ap.add_argument("--acknowledge-private-data-upload", action="store_true",
                      help="Required together with --run: confirms you understand sampled frames contain "
                           "identifiable people and will leave this machine.")
@@ -726,6 +748,21 @@ def main(argv: Optional[List[str]] = None) -> int:
     except (ValueError, FileNotFoundError) as e:
         print(f"error: {e}", file=sys.stderr)
         return 2
+
+    if not args.acknowledge_contaminated_input:
+        try:
+            sys.path.insert(0, str(Path(__file__).resolve().parent))
+            import corpus_guard
+
+            corpus_guard.assert_input_usable(video_path)
+        except ImportError:
+            pass  # guard unavailable (runner used outside the repo); do not block
+        except Exception as e:  # corpus_guard.LeakageError
+            print(f"REFUSED: {e}", file=sys.stderr)
+            print("Any prediction from this file would measure OCR of on-screen text, not sign "
+                  "recognition. Pass --acknowledge-contaminated-input only to reproduce a known-bad "
+                  "result on purpose.", file=sys.stderr)
+            return 2
 
     if args.run:
         if not args.acknowledge_private_data_upload:

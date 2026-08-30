@@ -1,3 +1,10 @@
+> **Updated 2026-08-30 — label leakage.** `155` is no longer a verified anchor: its corpus
+> input was the caption-burned demo output, so its scores measured OCR and are retracted
+> (`CONTAMINATION.md`). **The corpus now has exactly one scoreable verified case, 1252**,
+> which raises the value of every item below. For `1320`, annotate from the *unmasked* source
+> in `ground_truth_candidates/`, but any model run must use the masked `videos/` render — and
+> its production direction is already resolved, so only caption-vs-signing verification remains.
+
 # Manual Annotation Plan
 
 Companion to `corpus_inventory.csv` (full 13-video inventory) and
