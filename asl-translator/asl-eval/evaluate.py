@@ -21,10 +21,14 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import corpus_guard  # noqa: E402
 import lib  # noqa: E402
 
 
-def run(reference: str, prediction: str, include_alignment: bool = True) -> dict:
+def run(reference: str, prediction: str, include_alignment: bool = True,
+        allow_retracted: bool = False) -> dict:
+    if not allow_retracted:
+        corpus_guard.assert_prediction_usable(prediction)
     ref_segments = lib.parse_srt(reference)
     pred_segments = lib.parse_prediction_json(prediction)
 
@@ -87,9 +91,21 @@ def main() -> int:
     ap.add_argument("--prediction", required=True, help="Path to prediction .json")
     ap.add_argument("--json-out", default=None, help="Optional path to write machine-readable JSON result")
     ap.add_argument("--no-alignment", action="store_true", help="Skip the per-segment alignment diagnostic")
+    ap.add_argument("--allow-retracted", action="store_true",
+                    help="Score a prediction the corpus has marked contaminated or retracted. "
+                         "Only for reproducing a withdrawn result on purpose; the number is not usable.")
     args = ap.parse_args()
 
-    result = run(args.reference, args.prediction, include_alignment=not args.no_alignment)
+    try:
+        result = run(args.reference, args.prediction, include_alignment=not args.no_alignment,
+                     allow_retracted=args.allow_retracted)
+    except corpus_guard.LeakageError as exc:
+        print(f"REFUSED: {exc}", file=sys.stderr)
+        print("Pass --allow-retracted only if you intend to reproduce a withdrawn number.", file=sys.stderr)
+        return 3
+    if args.allow_retracted:
+        print("⚠️  --allow-retracted: this prediction is contaminated or retracted. "
+              "The numbers below are not evidence of anything.\n")
     print_human(result)
 
     if args.json_out:

@@ -1,73 +1,83 @@
 {
-  "project_id": null,
-  "video": "data/asl_corpus/videos/155_demo_asl-demo-translation_26.7s.mp4",
-  "producer": "tools/asl-eval/run_current_model.py (--run)",
-  "warning": "UNVERIFIED machine output \u2014 offline evaluation run, not a production job.",
-  "run_metadata": {
-    "config": "baseline0",
-    "model": "gemini-2.5-flash",
-    "temperature": "temperature_unset_provider_default",
-    "frame_budget": 96,
-    "keyframe_width": 512,
-    "batch_size": 24,
-    "duration_s": 26.5,
-    "frames_sampled": 96,
-    "model_calls": 4,
-    "production_side_effects": false,
-    "source_repo": "curify-studio",
-    "source_ref": "origin/main",
-    "source_commit": "ac21f24fd25357f859741421f10775f6800c6c1c",
-    "source_file": "curify_background/app/utils/asl_utils.py",
-    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda"
+ "contamination": {
+  "RETRACTED": "2026-08-30",
+  "reason": "The input file was the caption-burned marketing OUTPUT, not the raw demo source. The English reference was visible in the frames the model was reading, so this prediction measures OCR of on-screen captions, not ASL recognition.",
+  "evidence": "Text reproduces the gold SRT verbatim including punctuation, 0 substitutions and 0 deletions; the two adjacent duplicate segments are two batches reading the same caption while it was still on screen (their union matches the caption's display window).",
+  "contaminated_input_md5": "d714db71628698cd99c3b6bcfadfe2c1",
+  "contaminated_input_now_at": "data/asl_corpus/ground_truth/155_demo_asl-demo-translation_26.7s_burned_marketing.mp4",
+  "clean_input_now_at": "data/asl_corpus/videos/155_demo_asl-demo-translation_26.7s.mp4",
+  "scores_withdrawn": "baseline0 WER 0.3704 / CER 0.3485; temperature0 WER 0.3333 / CER 0.3409; temperature0-after-dedup WER 0.0000 / CER 0.0000; and the pooled 79-word micro WER.",
+  "see": "data/asl_corpus/CONTAMINATION.md"
+ },
+ "project_id": null,
+ "video": "data/asl_corpus/videos/155_demo_asl-demo-translation_26.7s.mp4",
+ "producer": "tools/asl-eval/run_current_model.py (--run)",
+ "warning": "UNVERIFIED machine output — offline evaluation run, not a production job.",
+ "run_metadata": {
+  "config": "baseline0",
+  "model": "gemini-2.5-flash",
+  "temperature": "temperature_unset_provider_default",
+  "frame_budget": 96,
+  "keyframe_width": 512,
+  "batch_size": 24,
+  "duration_s": 26.5,
+  "frames_sampled": 96,
+  "model_calls": 4,
+  "production_side_effects": false,
+  "source_repo": "curify-studio",
+  "source_ref": "origin/main",
+  "source_commit": "ac21f24fd25357f859741421f10775f6800c6c1c",
+  "source_file": "curify_background/app/utils/asl_utils.py",
+  "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda"
+ },
+ "segments": [
+  {
+   "line": 1,
+   "start": 0.58,
+   "end": 3.67,
+   "text": "My family has five."
   },
-  "segments": [
-    {
-      "line": 1,
-      "start": 0.58,
-      "end": 3.67,
-      "text": "My family has five."
-    },
-    {
-      "line": 2,
-      "start": 5.79,
-      "end": 7.42,
-      "text": "My father is thirty."
-    },
-    {
-      "line": 3,
-      "start": 8.88,
-      "end": 9.94,
-      "text": "My mother is twenty-nine."
-    },
-    {
-      "line": 4,
-      "start": 10.31,
-      "end": 12.65,
-      "text": "My mother is twenty-nine."
-    },
-    {
-      "line": 5,
-      "start": 14.35,
-      "end": 15.9,
-      "text": "I am nine."
-    },
-    {
-      "line": 6,
-      "start": 17.83,
-      "end": 18.8,
-      "text": "My brother is seven."
-    },
-    {
-      "line": 7,
-      "start": 19.12,
-      "end": 20.42,
-      "text": "My brother is seven."
-    },
-    {
-      "line": 8,
-      "start": 22.1,
-      "end": 24.9,
-      "text": "My sister is seven."
-    }
-  ]
+  {
+   "line": 2,
+   "start": 5.79,
+   "end": 7.42,
+   "text": "My father is thirty."
+  },
+  {
+   "line": 3,
+   "start": 8.88,
+   "end": 9.94,
+   "text": "My mother is twenty-nine."
+  },
+  {
+   "line": 4,
+   "start": 10.31,
+   "end": 12.65,
+   "text": "My mother is twenty-nine."
+  },
+  {
+   "line": 5,
+   "start": 14.35,
+   "end": 15.9,
+   "text": "I am nine."
+  },
+  {
+   "line": 6,
+   "start": 17.83,
+   "end": 18.8,
+   "text": "My brother is seven."
+  },
+  {
+   "line": 7,
+   "start": 19.12,
+   "end": 20.42,
+   "text": "My brother is seven."
+  },
+  {
+   "line": 8,
+   "start": 22.1,
+   "end": 24.9,
+   "text": "My sister is seven."
+  }
+ ]
 }

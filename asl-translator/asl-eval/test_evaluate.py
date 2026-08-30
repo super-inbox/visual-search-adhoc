@@ -16,6 +16,7 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+import corpus_guard  # noqa: E402
 import lib  # noqa: E402
 
 # This file lives at asl-translator/asl-eval/test_evaluate.py — one level up
@@ -151,9 +152,46 @@ class TestEvaluationSetManifest(unittest.TestCase):
         self.manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         self.by_id = {i["video_id"]: i for i in self.manifest["items"]}
 
-    def test_155_is_verified_gold(self):
-        self.assertEqual(self.by_id["155_demo_asl-demo-translation_26.7s"]["reference_status"], "verified_gold")
-        self.assertTrue(self.by_id["155_demo_asl-demo-translation_26.7s"]["usable_for_official_metrics"])
+    def test_155_is_excluded_for_label_leakage(self):
+        """155 was the corpus's primary anchor until 2026-08-30.
+
+        Its input was the caption-burned demo OUTPUT, so its scores measured OCR.
+        This test is the tripwire against quietly promoting it back without a
+        prediction generated from the clean input.
+        """
+        self.assertNotIn("155_demo_asl-demo-translation_26.7s", self.by_id)
+        excluded = {e["video_id"]: e for e in self.manifest["excluded"]}
+        self.assertIn("155_demo_asl-demo-translation_26.7s", excluded)
+        self.assertEqual(excluded["155_demo_asl-demo-translation_26.7s"]["reason"],
+                         "label_was_burned_into_input")
+
+    def test_only_one_item_is_official(self):
+        """As of 2026-08-30 exactly one item can produce a defensible accuracy number.
+
+        If this starts failing because the count went up, good -- but check that the
+        new item's input does not contain its own answer before relaxing it.
+        """
+        official = [i for i in self.manifest["items"] if i.get("usable_for_official_metrics")]
+        self.assertEqual([i["video_id"] for i in official], ["1252_1000016397_76.8s"])
+
+    def test_every_official_item_is_leak_free(self):
+        for item in self.manifest["items"]:
+            if not item.get("usable_for_official_metrics"):
+                continue
+            with self.subTest(video=item["video_id"]):
+                self.assertFalse(item.get("label_in_input"),
+                                 "an item whose input shows its own answer cannot be official")
+
+    def test_flagged_items_declare_a_verified_mask(self):
+        for item in self.manifest["items"]:
+            if not item.get("label_in_input"):
+                continue
+            with self.subTest(video=item["video_id"]):
+                mask = item.get("input_mask") or {}
+                self.assertTrue(mask.get("masked_input"))
+                self.assertTrue(mask.get("verified_clean"))
+                self.assertEqual(Path(mask["masked_input"]).name, Path(item["video"]).name,
+                                 "the item must point at its masked input, not the raw source")
 
     def test_1252_is_verified_gold(self):
         self.assertEqual(self.by_id["1252_1000016397_76.8s"]["reference_status"], "verified_gold")
@@ -166,6 +204,48 @@ class TestEvaluationSetManifest(unittest.TestCase):
 
     def test_1434_is_not_in_items(self):
         self.assertNotIn("1434_screenrec_youtube_16.6s", self.by_id)
+
+
+class TestLeakageGuard(unittest.TestCase):
+    """The guard that refuses to score a video showing its own answer."""
+
+    def test_refuses_a_retracted_prediction(self):
+        pred = CORPUS_ROOT / "predictions_eval" / "155_demo_asl-demo-translation_26.7s_temperature0.json"
+        if not pred.exists():
+            self.skipTest("retracted prediction not present")
+        with self.assertRaises(corpus_guard.LeakageError):
+            corpus_guard.assert_prediction_usable(pred)
+
+    def test_allows_a_clean_prediction(self):
+        pred = CORPUS_ROOT / "predictions_eval" / "1252_1000016397_76.8s_temperature0.json"
+        if not pred.exists():
+            self.skipTest("clean prediction not present")
+        corpus_guard.assert_prediction_usable(pred)  # must not raise
+
+    def test_refuses_a_burned_reference_render(self):
+        for name in ("155_demo_asl-demo-translation_26.7s_burned_marketing.mp4",
+                     "1320_1000022357_137.2s_burned.mp4"):
+            with self.subTest(video=name):
+                with self.assertRaises(corpus_guard.LeakageError):
+                    corpus_guard.assert_input_usable(name)
+
+    def test_allows_the_masked_and_clean_inputs(self):
+        for name in ("1320_1000022357_137.2s.mp4", "155_demo_asl-demo-translation_26.7s.mp4",
+                     "1252_1000016397_76.8s.mp4"):
+            with self.subTest(video=name):
+                corpus_guard.assert_input_usable(name)  # must not raise
+
+    def test_every_video_in_videos_dir_is_declared_leak_free(self):
+        """manifest.json must agree that nothing in videos/ carries its own answer,
+        except where a verified mask is declared."""
+        manifest = json.loads((CORPUS_ROOT / "manifest.json").read_text(encoding="utf-8"))
+        for entry in manifest["videos"]:
+            with self.subTest(video=entry["file"]):
+                if entry.get("label_in_input"):
+                    mask = entry.get("input_mask") or {}
+                    self.assertTrue(mask.get("masked_input"), "flagged video needs a masked input")
+                    self.assertTrue(mask.get("verified"), "flagged video needs a recorded verification")
+
 
 
 if __name__ == "__main__":

@@ -1,3 +1,8 @@
+> **Not affected by the 2026-08-30 label-leakage finding.** The videos used here
+> (1466, 1467, 1474, 1477) carry no burned-in captions and were re-checked frame by frame.
+> Only 155 and 1320 were contaminated; see
+> `asl-translator/data/asl_corpus/CONTAMINATION.md`. The repeatability results below stand.
+
 # SignCaption (Sign-Speak) vs. Curify `predictions_baseline0` — comparison v1
 
 **Status of this document:** debugging / triage comparison only. It does **not**
