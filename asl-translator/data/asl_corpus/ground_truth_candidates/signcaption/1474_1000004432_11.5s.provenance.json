@@ -1,0 +1,14 @@
+{
+  "video_id": "1474_1000004432_11.5s",
+  "source_video": "videos/1474_1000004432_11.5s.mp4",
+  "duration_s": 11.483811,
+  "srt_file": "1474_1000004432_11.5s.srt",
+  "tool": "SignCaption / Sign-Speak",
+  "workflow": "Upload Signed Video -> automatic English captions -> SRT Export",
+  "provenance": "confirmed by user (retroactive, added 2026-08-29)",
+  "verified_by_human": false,
+  "usable_for_official_metrics": false,
+  "role": "external_tool_reference_candidate",
+  "annotation_date": "unknown - not recorded when this file was first added to the repo (commit d19016e, 2026-08-28); user has confirmed the workflow used but not the exact run date/time",
+  "notes": "Retroactive provenance record. No session ID, account, or credit-usage detail is available for this run and none is asserted here."
+}

@@ -1,3 +1,10 @@
 .DS_Store
 __pycache__/
 *.pyc
+
+# How2Sign public benchmark: local-only binary/data directories.
+# README, manifest, references, metadata, and scripts under
+# public_benchmarks/how2sign/ are versioned and must NOT be ignored.
+asl-translator/data/public_benchmarks/how2sign/videos/
+asl-translator/data/public_benchmarks/how2sign/openslt_features/
+asl-translator/data/public_benchmarks/how2sign/openslt_checkpoint/

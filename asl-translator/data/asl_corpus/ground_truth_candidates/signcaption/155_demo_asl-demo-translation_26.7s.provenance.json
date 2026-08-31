@@ -1,0 +1,16 @@
+{
+  "video_id": "155_demo_asl-demo-translation_26.7s",
+  "source_video": "videos/155_demo_asl-demo-translation_26.7s.mp4",
+  "duration_s": 26.7,
+  "srt_file": "155_demo_asl-demo-translation_26.7s.srt",
+  "tool": "SignCaption / Sign-Speak",
+  "workflow": "Upload Signed Video -> automatic English captions -> SRT Export",
+  "provenance": "confirmed by user",
+  "verified_by_human": false,
+  "usable_for_official_metrics": false,
+  "role": "external_tool_reference_candidate",
+  "annotation_date": "2026-08-31",
+  "original_downloaded_filename": "155_demo_asl-demo-translation_26.7s.mp4.srt",
+  "original_local_source_path": "/Users/baobaoli/Downloads/155_demo_asl-demo-translation_26.7s.mp4.srt",
+  "notes": "Raw export copied byte-identical from /Users/baobaoli/Downloads/155_demo_asl-demo-translation_26.7s.mp4.srt into this folder as 155_demo_asl-demo-translation_26.7s.srt (filename normalized, dropping the tool's native double .mp4.srt extension seen on this and on the 1467 export); no text or timing was edited. Uploaded input was the clean, decontaminated source video/155_....mp4 (raw demo footage, no burned-in captions) -- see data/asl_corpus/CONTAMINATION.md -- not the retracted caption-burned marketing file. This is an unverified external-tool candidate, not human-verified gold, and is a separate reference from the existing verified-gold ground_truth/155_demo_asl-demo-translation_26.7s.srt. This is the first SignCaption export in the corpus for a video that already has a human-verified gold reference, enabling a direct SignCaption-vs-verified-gold comparison rather than only tool-vs-tool comparisons."
+}

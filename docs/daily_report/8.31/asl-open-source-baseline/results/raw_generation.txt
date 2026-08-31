@@ -1,0 +1,5 @@
+T-0	what you're going to do is you're going to take both your arms and they're going to come underneath your legs.
+H-0	-0.825009286403656	▁so , ▁what ▁i ' ▁be / ▁to ▁do ▁is ▁i ' ▁be / ▁to ▁from ▁all ▁together ▁pressure ▁the ▁kick .
+D-0	-0.825009286403656	so, what i' be/ to do is i' be/ to from all together pressure the kick.
+P-0	-1.5306 -1.2380 -1.0461 -0.2097 -1.2911 -0.1119 -0.1604 -0.0959 -0.1056 -0.3465 -2.6669 -0.6118 -0.1114 -0.5254 -0.1015 -1.0138 -1.5917 -1.2287 -1.8524 -1.5817 -1.3637 -0.1323 -0.0579
+Generate cvpr23.fairseq.i3d.test.how2sign with beam=5: BLEU = 7.67 30.0/10.5/5.6/2.9 (BP = 0.905 ratio = 0.909 hyp_len = 20 ref_len = 22)

@@ -1,0 +1,14 @@
+{
+  "video_id": "1320_1000022357_137.2s",
+  "source_video": "videos/1320_1000022357_137.2s.mp4",
+  "duration_s": 137.203733,
+  "srt_file": "1320_1000022357_137.2s.srt",
+  "tool": "SignCaption / Sign-Speak",
+  "workflow": "Upload Signed Video -> automatic English captions -> SRT Export",
+  "provenance": "confirmed by user",
+  "verified_by_human": false,
+  "usable_for_official_metrics": false,
+  "role": "external_tool_reference_candidate",
+  "annotation_date": "2026-08-29",
+  "notes": "Raw export copied byte-identical from /Users/baobaoli/Downloads/1320_1000022357_137.2s.mp4.srt into this folder; no text or timing was edited. This is an unverified external-tool candidate, not human-verified gold, and not the same reference as ground_truth_candidates/1320_1000022357_137.2s.srt (a separate, hand-read burned-caption candidate for the same video)."
+}

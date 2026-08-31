@@ -1,0 +1,14 @@
+{
+  "video_id": "1467_nohead-half1_189.5s",
+  "source_video": "videos/1467_nohead-half1_189.5s.mp4",
+  "duration_s": 189.466667,
+  "srt_file": "1467_nohead-half1_189.5s.mp4.srt",
+  "tool": "SignCaption / Sign-Speak",
+  "workflow": "Upload Signed Video -> automatic English captions -> SRT Export",
+  "provenance": "confirmed by user (retroactive, added 2026-08-29)",
+  "verified_by_human": false,
+  "usable_for_official_metrics": false,
+  "role": "external_tool_reference_candidate",
+  "annotation_date": "unknown - not recorded when this file was first added to the repo (commit d19016e, 2026-08-28); user has confirmed the workflow used but not the exact run date/time",
+  "notes": "Retroactive provenance record. Filename carries a nonstandard double extension (.mp4.srt) inherited from the original export; kept as-is to match the existing SRT filename exactly. Per asl-translator/data/asl_corpus/README.md, this file is named after 1467 and was reused (not independently confirmed) as the SignCaption reference for content-identical twin video 1466_nohead-half1 in prior comparisons -- which of the two production jobs (1466's upload or 1467's) SignCaption actually processed is not independently confirmed. No session ID, account, or credit-usage detail is available for this run and none is asserted here."
+}
