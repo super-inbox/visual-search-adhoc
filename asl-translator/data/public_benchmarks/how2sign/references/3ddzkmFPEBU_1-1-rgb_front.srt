@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:07,960
+One would be a string winder, which is used on the tuning machine to wind it as you're putting the string on, make it much quicker than turning by hand.

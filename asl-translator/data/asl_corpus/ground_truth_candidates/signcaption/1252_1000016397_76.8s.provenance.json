@@ -1,0 +1,16 @@
+{
+  "video_id": "1252_1000016397_76.8s",
+  "source_video": "videos/1252_1000016397_76.8s.mp4",
+  "duration_s": 76.753444,
+  "srt_file": "1252_1000016397_76.8s.srt",
+  "tool": "SignCaption / Sign-Speak",
+  "workflow": "Upload Signed Video -> automatic English captions -> SRT Export",
+  "provenance": "confirmed by user",
+  "verified_by_human": false,
+  "usable_for_official_metrics": false,
+  "role": "external_tool_reference_candidate",
+  "annotation_date": "2026-08-31",
+  "original_downloaded_filename": "1252_1000016397_76.8s.mp4.srt",
+  "original_local_source_path": "/Users/baobaoli/Downloads/1252_1000016397_76.8s.mp4.srt",
+  "notes": "Raw export copied byte-identical from /Users/baobaoli/Downloads/1252_1000016397_76.8s.mp4.srt into this folder as 1252_1000016397_76.8s.srt (filename normalized, dropping the tool's native double .mp4.srt extension); no text or timing was edited. Uploaded input was the clean video/1252_1000016397_76.8s.mp4 (no burned-in captions, no known label leakage). This is an unverified external-tool candidate, not human-verified gold, and is a separate reference from the existing verified-gold ground_truth/1252_1000016397_76.8s.srt. Second SignCaption export (after 155) for a video that already has a human-verified gold reference, enabling a direct SignCaption-vs-verified-gold comparison; this video is also the corpus's only fingerspelling case (names Greg, Sara), with existing baseline0 and temperature0 Curify predictions already on disk for a 4-way comparison."
+}

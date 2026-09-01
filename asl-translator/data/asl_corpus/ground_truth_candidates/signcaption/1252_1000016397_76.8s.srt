@@ -1,0 +1,47 @@
+1
+00:00:01,075 --> 00:00:06,283
+The boy's name is Greg.
+
+2
+00:00:07,660 --> 00:00:10,046
+Number two.
+
+3
+00:00:12,229 --> 00:00:14,615
+Are you going dancing?
+
+4
+00:00:16,664 --> 00:00:19,587
+Number three.
+
+5
+00:00:22,476 --> 00:00:29,565
+The light switch is number four.
+
+6
+00:00:32,388 --> 00:00:40,955
+The woman's name is Sara, and she has a name sign.
+
+7
+00:00:44,415 --> 00:00:45,994
+Number five.
+
+8
+00:00:47,372 --> 00:00:53,251
+The man is wearing pants.
+
+9
+00:00:54,125 --> 00:00:59,332
+It's nice to volunteer.
+
+10
+00:01:00,441 --> 00:01:02,692
+Number one.
+
+11
+00:01:05,145 --> 00:01:11,158
+The book is number three.
+
+12
+00:01:12,872 --> 00:01:14,989
+I'm reading a little.

@@ -1,0 +1,191 @@
+{
+  "video_id": "1320_1000022357_137.2s",
+  "comparison": "signcaption_vs_burned_caption",
+  "note": "Neither side is human-verified gold. Both are usable_for_official_metrics=false candidate references. Computed with asl-translator/asl-eval/lib.py (existing, unmodified) -- no new metric code.",
+  "reference": "burned_caption: asl-translator/data/asl_corpus/ground_truth_candidates/1320_1000022357_137.2s.srt",
+  "prediction_role": "signcaption: asl-translator/data/asl_corpus/ground_truth_candidates/signcaption/1320_1000022357_137.2s.srt",
+  "reference_segment_count": 14,
+  "prediction_segment_count": 12,
+  "text_metrics": {
+    "reference_words": 136,
+    "prediction_words": 107,
+    "substitutions": 89,
+    "deletions": 29,
+    "insertions": 0,
+    "wer": 0.8676,
+    "cer": 0.6662,
+    "char_level": {
+      "reference_chars": 671,
+      "prediction_chars": 505,
+      "substitutions": 263,
+      "deletions": 175,
+      "insertions": 9
+    },
+    "reference_transcript_normalized": "hello i m crystal cousineau i want to welcome you and share something positive and motivating about life what if you could have a positive relationship this service is surrounded by families and community happiness comes from our hearts and our lives it is your decision and it takes dedication can we read romans 10 6 8 do not say in your heart who will go up to heaven and do not say who will go down into the abyss the word is near you in your mouth and in your heart this is the message of faith about salvation in christ i m not happy i m just trying to find a few things i m sure this is about a relationship with christ here s a story you re going to be a blessing",
+    "prediction_transcript_normalized": "i m going to praise my brother he s a good person i m here to talk about life and how we face it i m struggling with it and i m not inspired i m not happy about it anymore healing is a way to happiness and our gratitude selflessness and decisions show our dedication to god no christian life relies on faith you can decide what you want and you ll get what you promised life depends on faith and doing what he wants the truth is you want to be happy i m sure this is about christ s family here s a message"
+  },
+  "timing_metrics": {
+    "reference_coverage_s": 90.0,
+    "prediction_coverage_s": 62.772,
+    "overlap_s": 51.755,
+    "temporal_precision": 0.8245,
+    "temporal_recall": 0.5751,
+    "temporal_iou": 0.5123
+  },
+  "segment_alignment": [
+    {
+      "ref_index": 0,
+      "ref_start": 16.0,
+      "ref_end": 20.0,
+      "ref_text": "Hello, I'm Crystal Cousineau.",
+      "matched_prediction_text": "I'm going to praise my brother. He's a good person.",
+      "matched_prediction_start": 15.21,
+      "matched_prediction_end": 19.579,
+      "overlap_s": 3.579,
+      "iou": 0.7472
+    },
+    {
+      "ref_index": 1,
+      "ref_start": 22.0,
+      "ref_end": 28.0,
+      "ref_text": "I want to welcome you and share something positive and motivating about life.",
+      "matched_prediction_text": "I'm here to talk about life and how we face it.",
+      "matched_prediction_start": 22.447,
+      "matched_prediction_end": 29.885,
+      "overlap_s": 5.553,
+      "iou": 0.7042
+    },
+    {
+      "ref_index": 2,
+      "ref_start": 28.0,
+      "ref_end": 32.0,
+      "ref_text": "What if you could have a positive relationship?",
+      "matched_prediction_text": "I'm here to talk about life and how we face it.",
+      "matched_prediction_start": 22.447,
+      "matched_prediction_end": 29.885,
+      "overlap_s": 1.885,
+      "iou": 0.1973
+    },
+    {
+      "ref_index": 3,
+      "ref_start": 34.0,
+      "ref_end": 42.0,
+      "ref_text": "This service is surrounded by families and community.",
+      "matched_prediction_text": "I'm not happy about it anymore.",
+      "matched_prediction_start": 33.654,
+      "matched_prediction_end": 43.361,
+      "overlap_s": 8.0,
+      "iou": 0.8241
+    },
+    {
+      "ref_index": 4,
+      "ref_start": 44.0,
+      "ref_end": 50.0,
+      "ref_text": "Happiness comes from our hearts and our lives.",
+      "matched_prediction_text": "Healing is a way to happiness, and our gratitude, selflessness,",
+      "matched_prediction_start": 44.094,
+      "matched_prediction_end": 51.914,
+      "overlap_s": 5.906,
+      "iou": 0.7463
+    },
+    {
+      "ref_index": 5,
+      "ref_start": 52.0,
+      "ref_end": 56.0,
+      "ref_text": "It is your decision, and it takes dedication.",
+      "matched_prediction_text": "and decisions show our dedication to God.",
+      "matched_prediction_start": 51.914,
+      "matched_prediction_end": 57.002,
+      "overlap_s": 4.0,
+      "iou": 0.7862
+    },
+    {
+      "ref_index": 6,
+      "ref_start": 62.0,
+      "ref_end": 68.0,
+      "ref_text": "Can we read Romans 10:6-8?",
+      "matched_prediction_text": "No. Christian life relies on faith.",
+      "matched_prediction_start": 57.703,
+      "matched_prediction_end": 65.007,
+      "overlap_s": 3.007,
+      "iou": 0.292
+    },
+    {
+      "ref_index": 7,
+      "ref_start": 72.0,
+      "ref_end": 78.0,
+      "ref_text": "Do not say in your heart, 'Who will go up to heaven?'",
+      "matched_prediction_text": "You can decide what you want, and you'll get what you promised.",
+      "matched_prediction_start": 72.145,
+      "matched_prediction_end": 79.183,
+      "overlap_s": 5.855,
+      "iou": 0.8151
+    },
+    {
+      "ref_index": 8,
+      "ref_start": 78.0,
+      "ref_end": 86.0,
+      "ref_text": "And do not say, 'Who will go down into the abyss?'",
+      "matched_prediction_text": "You can decide what you want, and you'll get what you promised.",
+      "matched_prediction_start": 72.145,
+      "matched_prediction_end": 79.183,
+      "overlap_s": 1.183,
+      "iou": 0.0854
+    },
+    {
+      "ref_index": 9,
+      "ref_start": 86.0,
+      "ref_end": 92.0,
+      "ref_text": "The word is near you, in your mouth and in your heart.",
+      "matched_prediction_text": null,
+      "matched_prediction_start": null,
+      "matched_prediction_end": null,
+      "overlap_s": 0.0,
+      "iou": 0.0
+    },
+    {
+      "ref_index": 10,
+      "ref_start": 96.0,
+      "ref_end": 108.0,
+      "ref_text": "This is the message of faith about salvation in Christ.",
+      "matched_prediction_text": "Life depends on faith and doing what He wants.",
+      "matched_prediction_start": 98.829,
+      "matched_prediction_end": 102.371,
+      "overlap_s": 3.542,
+      "iou": 0.2952
+    },
+    {
+      "ref_index": 11,
+      "ref_start": 108.0,
+      "ref_end": 116.0,
+      "ref_text": "I'm not happy; I'm just trying to find a few things.",
+      "matched_prediction_text": null,
+      "matched_prediction_start": null,
+      "matched_prediction_end": null,
+      "overlap_s": 0.0,
+      "iou": 0.0
+    },
+    {
+      "ref_index": 12,
+      "ref_start": 118.0,
+      "ref_end": 124.0,
+      "ref_text": "I'm sure this is about a relationship with Christ.",
+      "matched_prediction_text": "I'm sure this is about Christ's family.",
+      "matched_prediction_start": 118.241,
+      "matched_prediction_end": 121.276,
+      "overlap_s": 3.035,
+      "iou": 0.5058
+    },
+    {
+      "ref_index": 13,
+      "ref_start": 124.0,
+      "ref_end": 130.0,
+      "ref_text": "Here's a story: you're going to be a blessing.",
+      "matched_prediction_text": "Here's a message.",
+      "matched_prediction_start": 124.645,
+      "matched_prediction_end": 126.479,
+      "overlap_s": 1.834,
+      "iou": 0.3057
+    }
+  ]
+}
