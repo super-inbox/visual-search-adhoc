@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:21,800
+Okay here we go our quick and easy spaghetti what we did we finish boiling our spaghetti, got it to a delta state and then we drained it and then we add the spaghetti directly to the sauce that we where preparing and we made sure that all the spaghetti was covered with sauce and mixed and mixed and mixed.

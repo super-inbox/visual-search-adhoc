@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:15,490
+And this is good because you know where one end is, you know where the other end is, and when you undo it, you just unwrap this, and it's ready to throw.

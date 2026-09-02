@@ -8,3 +8,9 @@ __pycache__/
 asl-translator/data/public_benchmarks/how2sign/videos/
 asl-translator/data/public_benchmarks/how2sign/openslt_features/
 asl-translator/data/public_benchmarks/how2sign/openslt_checkpoint/
+
+# How2Sign v2 benchmark: same local-only videos/ convention as above.
+# README, manifest, references, source_metadata, validation artifacts, and
+# checksums under public_benchmarks/how2sign_v2/ are versioned and must NOT
+# be ignored.
+asl-translator/data/public_benchmarks/how2sign_v2/videos/

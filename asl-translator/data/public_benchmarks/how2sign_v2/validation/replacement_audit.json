@@ -1,0 +1,1600 @@
+[
+  {
+    "video_id": "G23JltC2N8g",
+    "rejected_clip": "G23JltC2N8g_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G23JltC2N8g_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=5.393s (official=16.240 physical=21.633)"
+      },
+      {
+        "tried": "G23JltC2N8g_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.340s (official=7.060 physical=9.400)"
+      },
+      {
+        "tried": "G23JltC2N8g_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.710s (official=8.090 physical=10.800)"
+      },
+      {
+        "tried": "G23JltC2N8g_5-5-rgb_front",
+        "result": "MISSING_IN_ARCHIVE"
+      },
+      {
+        "tried": "G23JltC2N8g_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.793s (official=11.440 physical=15.233)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G2lEchCCRAo",
+    "rejected_clip": "G2lEchCCRAo_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2lEchCCRAo_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.530s (official=13.670 physical=18.200)"
+      },
+      {
+        "tried": "G2lEchCCRAo_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.040s (official=3.160 physical=4.200)"
+      },
+      {
+        "tried": "G2lEchCCRAo_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.193s (official=3.540 physical=4.733)"
+      },
+      {
+        "tried": "G2lEchCCRAo_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.067s (official=6.300 physical=8.367)"
+      },
+      {
+        "tried": "G2lEchCCRAo_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.660s (official=7.940 physical=10.600)"
+      },
+      {
+        "tried": "G2lEchCCRAo_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.110s (official=7.990 physical=10.100)"
+      },
+      {
+        "tried": "G2lEchCCRAo_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.870s (official=8.530 physical=11.400)"
+      },
+      {
+        "tried": "G2lEchCCRAo_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.137s (official=9.330 physical=12.467)"
+      },
+      {
+        "tried": "G2lEchCCRAo_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.077s (official=12.190 physical=16.267)"
+      },
+      {
+        "tried": "G2lEchCCRAo_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.940s (official=14.860 physical=19.800)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G33aqW3DLpc",
+    "rejected_clip": "G33aqW3DLpc_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G33aqW3DLpc_0-10-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "G33aqW3DLpc_0-10-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:long_duration_15_31s); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "G38DbiHHTW0",
+    "rejected_clip": "G38DbiHHTW0_3-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G38DbiHHTW0_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.527s (official=10.640 physical=14.167)"
+      },
+      {
+        "tried": "G38DbiHHTW0_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.618s (official=1.840 physical=2.458)"
+      },
+      {
+        "tried": "G38DbiHHTW0_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.378s (official=7.080 physical=9.458)"
+      },
+      {
+        "tried": "G38DbiHHTW0_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.075s (official=3.300 physical=4.375)"
+      },
+      {
+        "tried": "G38DbiHHTW0_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.932s (official=2.860 physical=3.792)"
+      },
+      {
+        "tried": "G38DbiHHTW0_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.802s (official=2.490 physical=3.292)"
+      },
+      {
+        "tried": "G38DbiHHTW0_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.748s (official=2.210 physical=2.958)"
+      },
+      {
+        "tried": "G38DbiHHTW0_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.758s (official=2.200 physical=2.958)"
+      },
+      {
+        "tried": "G38DbiHHTW0_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.952s (official=8.840 physical=11.792)"
+      },
+      {
+        "tried": "G38DbiHHTW0_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.380s (official=10.120 physical=13.500)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3EE6yhl1vk",
+    "rejected_clip": "G3EE6yhl1vk_9-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3EE6yhl1vk_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.013s (official=3.070 physical=4.083)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.847s (official=5.570 physical=7.417)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.280s (official=6.720 physical=9.000)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.852s (official=2.690 physical=3.542)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.762s (official=2.280 physical=3.042)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.633s (official=1.950 physical=2.583)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.410s (official=1.340 physical=1.750)"
+      },
+      {
+        "tried": "G3EE6yhl1vk_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.602s (official=13.940 physical=18.542)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3HKHxevpFI",
+    "rejected_clip": "G3HKHxevpFI_5-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3HKHxevpFI_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=6.547s (official=19.620 physical=26.167)"
+      },
+      {
+        "tried": "G3HKHxevpFI_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.163s (official=3.570 physical=4.733)"
+      },
+      {
+        "tried": "G3HKHxevpFI_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.643s (official=4.890 physical=6.533)"
+      },
+      {
+        "tried": "G3HKHxevpFI_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.457s (official=7.310 physical=9.767)"
+      },
+      {
+        "tried": "G3HKHxevpFI_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.117s (official=6.450 physical=8.567)"
+      },
+      {
+        "tried": "G3HKHxevpFI_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.290s (official=12.810 physical=17.100)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3VM7etNABI",
+    "rejected_clip": "G3VM7etNABI_2_3-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3VM7etNABI_0-10-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "G3VM7etNABI_0-10-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:proper_noun_fingerspelling_heuristic); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "G3gm_C5UueQ",
+    "rejected_clip": "G3gm_C5UueQ_16-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3gm_C5UueQ_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.023s (official=3.060 physical=4.083)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.063s (official=6.270 physical=8.333)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.400s (official=7.100 physical=9.500)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.585s (official=1.790 physical=2.375)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.087s (official=6.330 physical=8.417)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.510s (official=1.490 physical=2.000)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.365s (official=4.010 physical=5.375)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.970s (official=3.030 physical=4.000)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.342s (official=3.950 physical=5.292)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.767s (official=5.400 physical=7.167)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.812s (official=5.480 physical=7.292)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.075s (official=6.300 physical=8.375)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.140s (official=6.360 physical=8.500)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.130s (official=3.370 physical=4.500)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.027s (official=3.140 physical=4.167)"
+      },
+      {
+        "tried": "G3gm_C5UueQ_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.737s (official=2.180 physical=2.917)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3k86AVFwVs",
+    "rejected_clip": "G3k86AVFwVs_15-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3k86AVFwVs_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=6.638s (official=19.820 physical=26.458)"
+      },
+      {
+        "tried": "G3k86AVFwVs_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.358s (official=1.100 physical=1.458)"
+      },
+      {
+        "tried": "G3k86AVFwVs_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.745s (official=2.130 physical=2.875)"
+      },
+      {
+        "tried": "G3k86AVFwVs_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.437s (official=4.230 physical=5.667)"
+      },
+      {
+        "tried": "G3k86AVFwVs_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.858s (official=5.600 physical=7.458)"
+      },
+      {
+        "tried": "G3k86AVFwVs_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.952s (official=5.840 physical=7.792)"
+      },
+      {
+        "tried": "G3k86AVFwVs_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.253s (official=3.830 physical=5.083)"
+      },
+      {
+        "tried": "G3k86AVFwVs_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.027s (official=6.140 physical=8.167)"
+      },
+      {
+        "tried": "G3k86AVFwVs_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.122s (official=3.420 physical=4.542)"
+      },
+      {
+        "tried": "G3k86AVFwVs_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.937s (official=2.730 physical=3.667)"
+      },
+      {
+        "tried": "G3k86AVFwVs_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.423s (official=7.160 physical=9.583)"
+      },
+      {
+        "tried": "G3k86AVFwVs_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.582s (official=10.710 physical=14.292)"
+      },
+      {
+        "tried": "G3k86AVFwVs_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.373s (official=13.210 physical=17.583)"
+      },
+      {
+        "tried": "G3k86AVFwVs_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.420s (official=13.330 physical=17.750)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "_fZbAxSSbX4",
+    "rejected_clip": "_fZbAxSSbX4_16-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "_fZbAxSSbX4_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=5.747s (official=17.170 physical=22.917)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_23-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.122s (official=3.420 physical=4.542)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_26-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.987s (official=8.930 physical=11.917)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.992s (official=3.050 physical=4.042)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.897s (official=5.770 physical=7.667)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.562s (official=13.730 physical=18.292)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.048s (official=3.160 physical=4.208)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.458s (official=1.500 physical=1.958)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_19-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.087s (official=3.330 physical=4.417)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_22-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.333s (official=1.000 physical=1.333)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_18-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.573s (official=4.760 physical=6.333)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_20-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.712s (official=5.080 physical=6.792)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.825s (official=5.550 physical=7.375)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.395s (official=4.230 physical=5.625)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.985s (official=5.890 physical=7.875)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.195s (official=6.680 physical=8.875)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.957s (official=2.960 physical=3.917)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.920s (official=2.830 physical=3.750)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.835s (official=2.540 physical=3.375)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_24-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.730s (official=2.270 physical=3.000)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_21-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.592s (official=7.700 physical=10.292)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.562s (official=1.730 physical=2.292)"
+      },
+      {
+        "tried": "_fZbAxSSbX4_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.758s (official=11.200 physical=14.958)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "_g0fpC8aiME",
+    "rejected_clip": "_g0fpC8aiME_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "_g0fpC8aiME_1-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "_g0fpC8aiME_1-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:long_duration_15_31s); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "fzDHRCKr7wU",
+    "rejected_clip": "fzDHRCKr7wU_3-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fzDHRCKr7wU_3-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "fzDHRCKr7wU_3-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:long_duration_15_31s); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "fzNnTgHa1lM",
+    "rejected_clip": "fzNnTgHa1lM_2-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fzNnTgHa1lM_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=5.437s (official=16.230 physical=21.667)"
+      },
+      {
+        "tried": "fzNnTgHa1lM_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.617s (official=4.800 physical=6.417)"
+      },
+      {
+        "tried": "fzNnTgHa1lM_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.333s (official=4.000 physical=5.333)"
+      },
+      {
+        "tried": "fzNnTgHa1lM_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.077s (official=6.340 physical=8.417)"
+      },
+      {
+        "tried": "fzNnTgHa1lM_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.722s (official=11.070 physical=14.792)"
+      }
+    ],
+    "replacement_clip": "fzNnTgHa1lM_2-5-rgb_front (RESCUED via re-aligned-file timing, same clip ID, corrected reference duration)",
+    "replacement_reason": "physical file did not match 'original' TSV timing (diff>0.05s) but matched the 'manually re-aligned' TSV timing within 0.05s tolerance -- same clip, corrected official reference source, not a different sentence"
+  },
+  {
+    "video_id": "fzOH00UZg84",
+    "rejected_clip": "fzOH00UZg84_30-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fzOH00UZg84_30-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "fzOH00UZg84_30-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:long_duration_15_31s); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "fzXgYPSnaDs",
+    "rejected_clip": "fzXgYPSnaDs_6-8-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fzXgYPSnaDs_5-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "fzXgYPSnaDs_5-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:number_heuristic); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "G2sD7N53ju8",
+    "rejected_clip": "G2sD7N53ju8_9-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2sD7N53ju8_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.720s (official=2.180 physical=2.900)"
+      },
+      {
+        "tried": "G2sD7N53ju8_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.417s (official=4.250 physical=5.667)"
+      },
+      {
+        "tried": "G2sD7N53ju8_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.997s (official=3.070 physical=4.067)"
+      },
+      {
+        "tried": "G2sD7N53ju8_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.523s (official=4.610 physical=6.133)"
+      },
+      {
+        "tried": "G2sD7N53ju8_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.453s (official=7.380 physical=9.833)"
+      },
+      {
+        "tried": "G2sD7N53ju8_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.873s (official=2.560 physical=3.433)"
+      },
+      {
+        "tried": "G2sD7N53ju8_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.053s (official=3.180 physical=4.233)"
+      },
+      {
+        "tried": "G2sD7N53ju8_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.617s (official=4.950 physical=6.567)"
+      },
+      {
+        "tried": "G2sD7N53ju8_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.667s (official=5.100 physical=6.767)"
+      },
+      {
+        "tried": "G2sD7N53ju8_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.833s (official=5.500 physical=7.333)"
+      },
+      {
+        "tried": "G2sD7N53ju8_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.037s (official=6.230 physical=8.267)"
+      },
+      {
+        "tried": "G2sD7N53ju8_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.393s (official=7.140 physical=9.533)"
+      },
+      {
+        "tried": "G2sD7N53ju8_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.747s (official=2.320 physical=3.067)"
+      },
+      {
+        "tried": "G2sD7N53ju8_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.753s (official=2.280 physical=3.033)"
+      },
+      {
+        "tried": "G2sD7N53ju8_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.647s (official=2.020 physical=2.667)"
+      },
+      {
+        "tried": "G2sD7N53ju8_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.003s (official=8.930 physical=11.933)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G2uKe6hCNSo",
+    "rejected_clip": "G2uKe6hCNSo_11-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2uKe6hCNSo_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.537s (official=4.630 physical=6.167)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.288s (official=6.920 physical=9.208)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.660s (official=4.840 physical=6.500)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.313s (official=4.020 physical=5.333)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.967s (official=5.950 physical=7.917)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.102s (official=3.190 physical=4.292)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.215s (official=6.660 physical=8.875)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.030s (official=2.970 physical=4.000)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.952s (official=2.840 physical=3.792)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.923s (official=2.660 physical=3.583)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.417s (official=7.250 physical=9.667)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.700s (official=2.050 physical=2.750)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.558s (official=1.650 physical=2.208)"
+      },
+      {
+        "tried": "G2uKe6hCNSo_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.415s (official=1.210 physical=1.625)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3g0-BeFN3c",
+    "rejected_clip": "G3g0-BeFN3c_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3g0-BeFN3c_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.435s (official=1.190 physical=1.625)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.898s (official=2.560 physical=3.458)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_29-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.030s (official=3.220 physical=4.250)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_25-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.473s (official=4.360 physical=5.833)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.315s (official=1.060 physical=1.375)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_20-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.743s (official=2.340 physical=3.083)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_30-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.697s (official=1.970 physical=2.667)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.518s (official=4.440 physical=5.958)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.463s (official=4.370 physical=5.833)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.182s (official=3.610 physical=4.792)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.028s (official=3.180 physical=4.208)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.078s (official=3.130 physical=4.208)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_22-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.047s (official=3.120 physical=4.167)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.928s (official=2.780 physical=3.708)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_31-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.938s (official=2.770 physical=3.708)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_23-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.958s (official=2.750 physical=3.708)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_24-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.787s (official=2.380 physical=3.167)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.718s (official=2.240 physical=2.958)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.712s (official=2.080 physical=2.792)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.690s (official=2.060 physical=2.750)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_21-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.658s (official=2.050 physical=2.708)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.623s (official=1.960 physical=2.583)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_34-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.620s (official=1.880 physical=2.500)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_28-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.573s (official=1.760 physical=2.333)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.482s (official=1.560 physical=2.042)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_19-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.533s (official=1.550 physical=2.083)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_33-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.480s (official=1.520 physical=2.000)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.445s (official=1.430 physical=1.875)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_18-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.448s (official=1.260 physical=1.708)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_32-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.395s (official=1.230 physical=1.625)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_26-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.425s (official=1.200 physical=1.625)"
+      },
+      {
+        "tried": "G3g0-BeFN3c_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.403s (official=1.180 physical=1.583)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "fzQ2E3_xBZA",
+    "rejected_clip": "fzQ2E3_xBZA_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fzQ2E3_xBZA_1-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "fzQ2E3_xBZA_1-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:question); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "FzoUVr98JmQ",
+    "rejected_clip": "FzoUVr98JmQ_10-8-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "FzoUVr98JmQ_6-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "FzoUVr98JmQ_6-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:number_heuristic); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "G2dND014Ps4",
+    "rejected_clip": "G2dND014Ps4_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2dND014Ps4_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.765s (official=5.360 physical=7.125)"
+      },
+      {
+        "tried": "G2dND014Ps4_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.383s (official=4.200 physical=5.583)"
+      },
+      {
+        "tried": "G2dND014Ps4_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.987s (official=5.930 physical=7.917)"
+      },
+      {
+        "tried": "G2dND014Ps4_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.198s (official=3.510 physical=4.708)"
+      },
+      {
+        "tried": "G2dND014Ps4_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.083s (official=3.250 physical=4.333)"
+      },
+      {
+        "tried": "G2dND014Ps4_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.800s (official=2.450 physical=3.250)"
+      },
+      {
+        "tried": "G2dND014Ps4_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.753s (official=2.330 physical=3.083)"
+      },
+      {
+        "tried": "G2dND014Ps4_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.793s (official=2.290 physical=3.083)"
+      },
+      {
+        "tried": "G2dND014Ps4_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.738s (official=2.220 physical=2.958)"
+      },
+      {
+        "tried": "G2dND014Ps4_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.713s (official=2.120 physical=2.833)"
+      },
+      {
+        "tried": "G2dND014Ps4_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.607s (official=7.810 physical=10.417)"
+      },
+      {
+        "tried": "G2dND014Ps4_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.610s (official=1.890 physical=2.500)"
+      },
+      {
+        "tried": "G2dND014Ps4_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.592s (official=1.700 physical=2.292)"
+      },
+      {
+        "tried": "G2dND014Ps4_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.980s (official=9.020 physical=12.000)"
+      },
+      {
+        "tried": "G2dND014Ps4_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.620s (official=10.880 physical=14.500)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G2hnUeetWcc",
+    "rejected_clip": "G2hnUeetWcc_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2hnUeetWcc_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.418s (official=10.290 physical=13.708)"
+      },
+      {
+        "tried": "G2hnUeetWcc_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.707s (official=5.210 physical=6.917)"
+      },
+      {
+        "tried": "G2hnUeetWcc_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.618s (official=1.840 physical=2.458)"
+      },
+      {
+        "tried": "G2hnUeetWcc_18-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.418s (official=1.290 physical=1.708)"
+      },
+      {
+        "tried": "G2hnUeetWcc_19-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.398s (official=4.060 physical=5.458)"
+      },
+      {
+        "tried": "G2hnUeetWcc_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.947s (official=5.720 physical=7.667)"
+      },
+      {
+        "tried": "G2hnUeetWcc_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.313s (official=4.020 physical=5.333)"
+      },
+      {
+        "tried": "G2hnUeetWcc_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.268s (official=3.940 physical=5.208)"
+      },
+      {
+        "tried": "G2hnUeetWcc_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.298s (official=3.910 physical=5.208)"
+      },
+      {
+        "tried": "G2hnUeetWcc_20-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.000s (official=6.000 physical=8.000)"
+      },
+      {
+        "tried": "G2hnUeetWcc_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.245s (official=3.630 physical=4.875)"
+      },
+      {
+        "tried": "G2hnUeetWcc_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.145s (official=3.480 physical=4.625)"
+      },
+      {
+        "tried": "G2hnUeetWcc_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.153s (official=3.430 physical=4.583)"
+      },
+      {
+        "tried": "G2hnUeetWcc_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.107s (official=3.310 physical=4.417)"
+      },
+      {
+        "tried": "G2hnUeetWcc_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.810s (official=2.440 physical=3.250)"
+      },
+      {
+        "tried": "G2hnUeetWcc_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.608s (official=7.850 physical=10.458)"
+      },
+      {
+        "tried": "G2hnUeetWcc_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.580s (official=1.670 physical=2.250)"
+      },
+      {
+        "tried": "G2hnUeetWcc_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.488s (official=1.470 physical=1.958)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3CyVk6dizw",
+    "rejected_clip": "G3CyVk6dizw_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3CyVk6dizw_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.735s (official=14.140 physical=18.875)"
+      },
+      {
+        "tried": "G3CyVk6dizw_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.380s (official=7.120 physical=9.500)"
+      },
+      {
+        "tried": "G3CyVk6dizw_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.653s (official=4.930 physical=6.583)"
+      },
+      {
+        "tried": "G3CyVk6dizw_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.718s (official=5.240 physical=6.958)"
+      },
+      {
+        "tried": "G3CyVk6dizw_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.017s (official=6.150 physical=8.167)"
+      },
+      {
+        "tried": "G3CyVk6dizw_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.460s (official=10.290 physical=13.750)"
+      },
+      {
+        "tried": "G3CyVk6dizw_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.050s (official=12.200 physical=16.250)"
+      },
+      {
+        "tried": "G3CyVk6dizw_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.097s (official=12.320 physical=16.417)"
+      },
+      {
+        "tried": "G3CyVk6dizw_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.342s (official=12.950 physical=17.292)"
+      },
+      {
+        "tried": "G3CyVk6dizw_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.782s (official=14.260 physical=19.042)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3EYpadwqck",
+    "rejected_clip": "G3EYpadwqck_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3EYpadwqck_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.412s (official=10.130 physical=13.542)"
+      },
+      {
+        "tried": "G3EYpadwqck_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.145s (official=3.480 physical=4.625)"
+      },
+      {
+        "tried": "G3EYpadwqck_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.027s (official=3.140 physical=4.167)"
+      },
+      {
+        "tried": "G3EYpadwqck_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.080s (official=3.170 physical=4.250)"
+      },
+      {
+        "tried": "G3EYpadwqck_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.395s (official=1.230 physical=1.625)"
+      },
+      {
+        "tried": "G3EYpadwqck_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.448s (official=1.260 physical=1.708)"
+      },
+      {
+        "tried": "G3EYpadwqck_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.485s (official=4.390 physical=5.875)"
+      },
+      {
+        "tried": "G3EYpadwqck_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.432s (official=4.360 physical=5.792)"
+      },
+      {
+        "tried": "G3EYpadwqck_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.802s (official=5.490 physical=7.292)"
+      },
+      {
+        "tried": "G3EYpadwqck_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.858s (official=5.600 physical=7.458)"
+      },
+      {
+        "tried": "G3EYpadwqck_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.322s (official=3.970 physical=5.292)"
+      },
+      {
+        "tried": "G3EYpadwqck_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.282s (official=3.760 physical=5.042)"
+      },
+      {
+        "tried": "G3EYpadwqck_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.810s (official=2.440 physical=3.250)"
+      },
+      {
+        "tried": "G3EYpadwqck_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.505s (official=7.620 physical=10.125)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3GcPpidwxk",
+    "rejected_clip": "G3GcPpidwxk_5-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3GcPpidwxk_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.960s (official=5.840 physical=7.800)"
+      },
+      {
+        "tried": "G3GcPpidwxk_19-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.880s (official=5.620 physical=7.500)"
+      },
+      {
+        "tried": "G3GcPpidwxk_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.733s (official=8.200 physical=10.933)"
+      },
+      {
+        "tried": "G3GcPpidwxk_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.867s (official=2.700 physical=3.567)"
+      },
+      {
+        "tried": "G3GcPpidwxk_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.693s (official=2.140 physical=2.833)"
+      },
+      {
+        "tried": "G3GcPpidwxk_18-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.490s (official=1.510 physical=2.000)"
+      },
+      {
+        "tried": "G3GcPpidwxk_21-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.303s (official=4.870 physical=3.567)"
+      },
+      {
+        "tried": "G3GcPpidwxk_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.770s (official=5.230 physical=7.000)"
+      },
+      {
+        "tried": "G3GcPpidwxk_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.387s (official=4.180 physical=5.567)"
+      },
+      {
+        "tried": "G3GcPpidwxk_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.420s (official=4.180 physical=5.600)"
+      },
+      {
+        "tried": "G3GcPpidwxk_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.107s (official=6.360 physical=8.467)"
+      },
+      {
+        "tried": "G3GcPpidwxk_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.110s (official=3.390 physical=4.500)"
+      },
+      {
+        "tried": "G3GcPpidwxk_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.170s (official=6.430 physical=8.600)"
+      },
+      {
+        "tried": "G3GcPpidwxk_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.077s (official=3.290 physical=4.367)"
+      },
+      {
+        "tried": "G3GcPpidwxk_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.947s (official=2.820 physical=3.767)"
+      },
+      {
+        "tried": "G3GcPpidwxk_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.910s (official=2.790 physical=3.700)"
+      },
+      {
+        "tried": "G3GcPpidwxk_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.900s (official=2.700 physical=3.600)"
+      },
+      {
+        "tried": "G3GcPpidwxk_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.900s (official=2.700 physical=3.600)"
+      },
+      {
+        "tried": "G3GcPpidwxk_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.750s (official=2.150 physical=2.900)"
+      },
+      {
+        "tried": "G3GcPpidwxk_22-5-rgb_front",
+        "result": "MISSING_IN_ARCHIVE"
+      },
+      {
+        "tried": "G3GcPpidwxk_20-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.460s (official=1.340 physical=1.800)"
+      }
+    ],
+    "replacement_clip": "G3GcPpidwxk_5-5-rgb_front (RESCUED via re-aligned-file timing, same clip ID, corrected reference duration)",
+    "replacement_reason": "physical file did not match 'original' TSV timing (diff>0.05s) but matched the 'manually re-aligned' TSV timing within 0.05s tolerance -- same clip, corrected official reference source, not a different sentence"
+  },
+  {
+    "video_id": "G3IJAoK0uSE",
+    "rejected_clip": "G3IJAoK0uSE_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3IJAoK0uSE_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.360s (official=7.060 physical=9.420)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.690s (official=2.130 physical=2.820)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.050s (official=6.190 physical=8.240)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.170s (official=12.530 physical=16.700)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.640s (official=4.980 physical=6.620)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.080s (official=6.320 physical=8.400)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.860s (official=2.600 physical=3.460)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.510s (official=7.570 physical=10.080)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.840s (official=8.600 physical=11.440)"
+      },
+      {
+        "tried": "G3IJAoK0uSE_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.920s (official=8.720 physical=11.640)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3bMqicS4bQ",
+    "rejected_clip": "G3bMqicS4bQ_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3bMqicS4bQ_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.480s (official=10.520 physical=14.000)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.238s (official=12.720 physical=16.958)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.372s (official=13.170 physical=17.542)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.182s (official=6.610 physical=8.792)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.008s (official=2.950 physical=3.958)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.950s (official=5.800 physical=7.750)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.572s (official=7.720 physical=10.292)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.680s (official=2.070 physical=2.750)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.027s (official=3.140 physical=4.167)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_18-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.425s (official=1.200 physical=1.625)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.208s (official=3.750 physical=4.958)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.127s (official=3.290 physical=4.417)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.073s (official=3.260 physical=4.333)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.558s (official=7.650 physical=10.208)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.228s (official=9.730 physical=12.958)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.660s (official=10.840 physical=14.500)"
+      },
+      {
+        "tried": "G3bMqicS4bQ_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.763s (official=14.320 physical=19.083)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G3qZW-hZXaQ",
+    "rejected_clip": "G3qZW-hZXaQ_0-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G3qZW-hZXaQ_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.532s (official=4.510 physical=6.042)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.585s (official=4.790 physical=6.375)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.507s (official=4.410 physical=5.917)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.870s (official=5.630 physical=7.500)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.285s (official=3.840 physical=5.125)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.170s (official=6.580 physical=8.750)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.337s (official=10.080 physical=13.417)"
+      },
+      {
+        "tried": "G3qZW-hZXaQ_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.880s (official=14.620 physical=19.500)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "_G0MZFLIHa0",
+    "rejected_clip": "_G0MZFLIHa0_0_1_2-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "_G0MZFLIHa0_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.977s (official=2.890 physical=3.867)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.390s (official=1.160 physical=1.550)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_7-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.633s (official=4.950 physical=6.583)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.690s (official=5.060 physical=6.750)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.733s (official=5.150 physical=6.883)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.233s (official=6.700 physical=8.933)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.483s (official=7.400 physical=9.883)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_16-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.730s (official=2.170 physical=2.900)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_17-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.680s (official=2.020 physical=2.700)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.727s (official=8.140 physical=10.867)"
+      },
+      {
+        "tried": "_G0MZFLIHa0_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.687s (official=11.080 physical=14.767)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "_G0RrDVpOZ4",
+    "rejected_clip": "_G0RrDVpOZ4_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "_G0RrDVpOZ4_14-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.512s (official=10.530 physical=14.042)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.268s (official=3.690 physical=4.958)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.620s (official=4.880 physical=6.500)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.495s (official=1.380 physical=1.875)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.968s (official=2.990 physical=3.958)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_13-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.400s (official=4.100 physical=5.500)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.852s (official=2.440 physical=3.292)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.545s (official=7.580 physical=10.125)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.672s (official=2.120 physical=2.792)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.650s (official=7.850 physical=10.500)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_15-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.607s (official=1.810 physical=2.417)"
+      },
+      {
+        "tried": "_G0RrDVpOZ4_17-5-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "_G0RrDVpOZ4_17-5-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:general_fill_plain_or_typical); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "G2Go6a76xd0",
+    "rejected_clip": "G2Go6a76xd0_7-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2Go6a76xd0_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.730s (official=5.170 physical=6.900)"
+      },
+      {
+        "tried": "G2Go6a76xd0_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.453s (official=4.380 physical=5.833)"
+      },
+      {
+        "tried": "G2Go6a76xd0_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.037s (official=6.130 physical=8.167)"
+      },
+      {
+        "tried": "G2Go6a76xd0_8-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.147s (official=3.520 physical=4.667)"
+      },
+      {
+        "tried": "G2Go6a76xd0_1-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.100s (official=3.300 physical=4.400)"
+      },
+      {
+        "tried": "G2Go6a76xd0_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.040s (official=3.060 physical=4.100)"
+      },
+      {
+        "tried": "G2Go6a76xd0_12-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=1.557s (official=7.010 physical=8.567)"
+      },
+      {
+        "tried": "G2Go6a76xd0_10-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.727s (official=2.240 physical=2.967)"
+      },
+      {
+        "tried": "G2Go6a76xd0_11-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.730s (official=2.170 physical=2.900)"
+      },
+      {
+        "tried": "G2Go6a76xd0_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=0.690s (official=2.110 physical=2.800)"
+      },
+      {
+        "tried": "G2Go6a76xd0_9-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.693s (official=8.140 physical=10.833)"
+      },
+      {
+        "tried": "G2Go6a76xd0_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.430s (official=10.370 physical=13.800)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "G2VAlFdgof4",
+    "rejected_clip": "G2VAlFdgof4_1-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "G2VAlFdgof4_0-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=4.533s (official=13.550 physical=18.083)"
+      },
+      {
+        "tried": "G2VAlFdgof4_3-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.272s (official=6.770 physical=9.042)"
+      },
+      {
+        "tried": "G2VAlFdgof4_5-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.018s (official=5.940 physical=7.958)"
+      },
+      {
+        "tried": "G2VAlFdgof4_6-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=2.128s (official=6.330 physical=8.458)"
+      },
+      {
+        "tried": "G2VAlFdgof4_4-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.122s (official=9.420 physical=12.542)"
+      },
+      {
+        "tried": "G2VAlFdgof4_2-5-rgb_front",
+        "result": "ALIGNMENT_MISMATCH diff=3.970s (official=12.030 physical=16.000)"
+      }
+    ],
+    "replacement_clip": null,
+    "replacement_reason": "NO VALID REPLACEMENT: every remaining row from this same source video also failed validation (or none remained); video dropped, no substitute video exists (all 149 already assigned)"
+  },
+  {
+    "video_id": "fZIHe3dXPR0",
+    "rejected_clip": "fZIHe3dXPR0_5-5-rgb_front",
+    "rejection_reason": "ALIGNMENT_MISMATCH",
+    "attempts": [
+      {
+        "tried": "fZIHe3dXPR0_5-8-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "fZIHe3dXPR0_5-8-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:number_heuristic); no other video was available since all 149 were already assigned"
+  },
+  {
+    "video_id": "g0yUlOaqL6k",
+    "rejected_clip": "g0yUlOaqL6k_17-3-rgb_front",
+    "rejection_reason": "MISSING_IN_ARCHIVE",
+    "attempts": [
+      {
+        "tried": "g0yUlOaqL6k_12-3-rgb_front",
+        "result": "OK"
+      }
+    ],
+    "replacement_clip": "g0yUlOaqL6k_12-3-rgb_front",
+    "replacement_reason": "next candidate from the SAME source video under the original priority rule (replacement:number_heuristic); no other video was available since all 149 were already assigned"
+  }
+]
