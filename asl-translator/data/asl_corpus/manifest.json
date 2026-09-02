@@ -1,5 +1,6 @@
 {
  "name": "Curify ASL corpus",
+ "canonical_live_status": "asl-translator/data/asl_corpus/inventory.json is the canonical source for current reference-independence, human-verification, and usable_for_official_metrics status per video. The per-video fields below (gt_kind, notes, content) are retained as historical/narrative provenance and are NOT guaranteed to reflect current status - see inventory.json before treating any gt_kind string here as a live claim.",
  "assembled": "2026-08-25",
  "source": "Curify production — Supabase `project` / `projectsegment` / `video`, Azure blob container `processed-videos`",
  "sensitivity": "CONTAINS PERSONAL DATA. Real user-submitted video of identifiable people signing. Not consented for public release. Do not publish, redistribute, or push to any public repository. ASL grammar is carried on the face, so faces CANNOT be blurred without destroying the signal this corpus exists to measure.",
@@ -29,7 +30,7 @@
    "gt_kind": "human-translated, verified",
    "gt_lines": 6,
    "content": "Family description with ages — numbers are diagnostic content, not guessable from setting.",
-   "notes": "Curify's own demo asset. NOTE: /video/asl-demo-translation.mp4 (the public marketing asset) is the CAPTION-BURNED output, not this file. Every prediction in predictions_eval/ for 155 was generated from that burned file and is retracted — see CONTAMINATION.md.",
+   "notes": "Curify's own demo asset. NOTE: /video/asl-demo-translation.mp4 (the public marketing asset) is the CAPTION-BURNED output, not this file. Every prediction in predictions_eval/ for 155 was generated from that burned file and is retracted — see CONTAMINATION.md. STATUS UPDATE 2026-09-02: separately from the input-contamination history above, this video's reference INDEPENDENCE is unresolved — job 155 itself failed with no output, so whether the gt SRT came from an independent human translation or an earlier model run is unconfirmed. See inventory.json.",
    "label_in_input": false,
    "input_provenance": "CLEAN SOURCE, swapped in 2026-08-30. This is the RAW demo input (md5 d71313d00e00e7ddcabf99aeceacb920, 1,481,524 bytes). Until 2026-08-30 this path held the PUBLISHED demo OUTPUT (md5 d714db71628698cd99c3b6bcfadfe2c1), which has the English captions burned into the frame — i.e. the reference answer was visible in the model's input. That file now lives at ground_truth/155_demo_asl-demo-translation_26.7s_burned_marketing.mp4.",
    "predictions_valid": false
@@ -80,7 +81,7 @@
    "credits_charged": 0,
    "failure": "Gemini monthly spend cap (our fault, not the video's)",
    "submitted": "2026-08-21T12:30:53Z",
-   "notes": "Never processed. Clean unseen test input.",
+   "notes": "Never processed. NOTE 2026-09-02: do not treat as a routine 'clean unseen test input' without qualification — VIDEO_TYPE_AUDIT.csv's frame-by-frame review found this is the corpus's one genuinely uncertain authenticity case (screen recording of a social-media DM reply, isolated gestures, poor/backlit lighting; consistent with but not clearly confirming sustained ASL discourse). Recommends full manual video review first. See inventory.json (input.authenticity_status=uncertain).",
    "label_in_input": false
   },
   {
@@ -173,7 +174,7 @@
    "gt_lines": 11,
    "burned_reference": "ground_truth/1252_1000016397_76.8s_burned.mp4",
    "content": "ASL class exercise. Contains FINGERSPELLED NAMES ('Greg', 'Sara') and numbered items — the only fingerspelling case in the corpus, and fully diagnostic content.",
-   "notes": "MISFILED as a speech job — predates the asl_translation job type. Hand-translated and emailed to the submitter (curify-studio/gtm_tools/send_1252_asl.py).",
+   "notes": "MISFILED as a speech job — predates the asl_translation job type. Hand-translated and emailed to the submitter (curify-studio/gtm_tools/send_1252_asl.py). STATUS UPDATE 2026-09-02: this reference is CIRCULAR, not independently verified — OCR-confirmed 2026-09-01 that ground_truth/1252_1000016397_76.8s_burned.mp4 reproduces this SRT verbatim, because it is the render made FROM this same outreach translation. The gold SRT, that render, and the frame-inspector's embedded gold are one translation counted three times. Not usable_for_official_metrics. See inventory.json and asl-translator/README.md 'Reference independence'.",
    "user_contacted": true,
    "label_in_input": false
   },
@@ -262,6 +263,7 @@
   "caveat": "Decode temperature is unset in _call_vlm, so Gemini defaults to 1.0. Pin temperature=0 before attributing any of this variance to the model's ASL competence."
  },
  "baseline0_config": {
+  "STATUS_NOTE_2026_09_02": "This describes production AS IT RAN 2026-08-16..08-29 ONLY. Production changed 2026-08-29 (duration-scaled frame budget instead of flat 96, temperature pinned to 0 instead of unset, batch-boundary dedup added). No prediction in this corpus (predictions_baseline0/, predictions_eval/) reflects the current config — see asl-translator/README.md 'Data status' and asl-eval/run_current_model.py's production_2026_08_29 config.",
   "code": "curify-studio/curify_background/app/utils/asl_utils.py",
   "model": "gemini-2.5-flash",
   "temperature": "unset (provider default 1.0)",
