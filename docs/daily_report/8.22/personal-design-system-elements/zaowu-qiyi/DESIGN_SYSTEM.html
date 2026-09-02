@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Design System — 造物起异包装设计</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:#20180f; --paper:#faf6ee; --paper-alt:#f1e8d8; --line:#e3d3ac;
+    --accent:#8a4a1f; --accent-bg:#f5e2cf; --accent-2:#b8791f;
+    --source:#9c6b1f; --source-bg:#fbf1de; --source-border:#e8c98a;
+    --gen:#1f6f6b; --gen-bg:#e7f4f2; --gen-border:#9ecfc9;
+    --hi:#8a4a1f; --med:#b8791f; --lo:#8a7a5c;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.55; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px 100px; }
+  header.top { text-align:center; padding:40px 0 30px; border-bottom:3px solid var(--accent); margin-bottom:36px; background:linear-gradient(180deg,var(--accent-bg),var(--paper)); }
+  header.top .cat { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--accent-2); font-weight:700; }
+  header.top h1 { font-size:2rem; margin:8px 0 6px; }
+  header.top .src { font-size:.88rem; color:#6b6255; }
+  header.top .dna { margin-top:16px; font-size:1.05rem; font-style:italic; color:var(--ink); max-width:640px; margin-left:auto; margin-right:auto; }
+  section { margin:0 0 56px; }
+  section > h2 { font-size:1.2rem; display:flex; align-items:baseline; gap:10px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:18px; }
+  section > h2 .num { font-size:.72rem; font-weight:700; color:#fff; background:var(--ink); border-radius:999px; padding:2px 9px; }
+  p.lede { color:#4a453c; max-width:760px; }
+  .badge { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:4px; border:1px solid; }
+  .badge.source { color:var(--source); background:var(--source-bg); border-color:var(--source-border); }
+  .badge.gen { color:var(--gen); background:var(--gen-bg); border-color:var(--gen-border); }
+
+  .tag-cloud { display:flex; flex-wrap:wrap; gap:10px; }
+  .tag-cloud span { font-size:1.1rem; font-weight:700; padding:8px 18px; border-radius:999px; background:var(--accent); color:#fff; }
+  .tag-cloud span:nth-child(3n+2) { background:var(--accent-2); }
+  .tag-cloud span:nth-child(3n+3) { background:#6b3a12; }
+
+  .grid-evidence { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+  @media (max-width:800px) { .grid-evidence { grid-template-columns:repeat(2,1fr); } }
+  figure.ev { margin:0; border:1px solid var(--source-border); border-radius:10px; overflow:hidden; background:#fff; }
+  figure.ev img { width:100%; height:130px; object-fit:cover; display:block; }
+  figure.ev figcaption { padding:8px 9px; font-size:.7rem; color:#55503f; }
+  figure.ev figcaption .wid { font-family:ui-monospace,monospace; font-weight:700; color:var(--source); display:block; }
+
+  .swatch-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .swatch { width:110px; text-align:center; }
+  .swatch .chip { width:110px; height:70px; border-radius:8px; border:1px solid rgba(0,0,0,.12); margin-bottom:6px; }
+  .swatch .lbl { font-size:.75rem; font-weight:600; }
+  .swatch .note { font-size:.65rem; color:#8a8072; }
+
+  .rule-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .rule-grid { grid-template-columns:1fr; } }
+  .rule-card { border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:#fff; }
+  .rule-card h3 { margin:0 0 6px; font-size:.95rem; }
+  .rule-card p { margin:0; font-size:.85rem; color:#4a453c; }
+  .rule-card .evid { font-size:.72rem; color:#8a8072; margin-top:6px; font-family:ui-monospace,monospace; }
+
+  .diagram { border:1px dashed var(--gen-border); background:var(--gen-bg); border-radius:10px; padding:18px; }
+  .diagram .cap { font-size:.72rem; color:var(--gen); font-weight:700; text-transform:uppercase; letter-spacing:.03em; margin-bottom:10px; }
+  .stage-split { display:flex; gap:12px; }
+  .stage-split .panel { flex:1; border-radius:8px; padding:16px; text-align:center; font-size:.82rem; }
+  .stage-split .dark { background:#241a12; color:#f0e2c8; }
+  .stage-split .light { background:#fdfaf3; color:#4a453c; border:1px solid var(--line); }
+
+  .sig-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .sig-grid { grid-template-columns:1fr; } }
+  .sig-card { border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+  .sig-card h3 { margin:0 0 6px; font-size:1rem; display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .conf { font-size:.62rem; font-weight:700; padding:2px 7px; border-radius:999px; color:#fff; white-space:nowrap; }
+  .conf.hi { background:var(--hi); } .conf.med { background:var(--med); } .conf.lo { background:var(--lo); }
+  .sig-card p { margin:4px 0; font-size:.84rem; color:#4a453c; }
+  .sig-card .wids { font-size:.72rem; font-family:ui-monospace,monospace; color:#8a8072; }
+
+  .dodont { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:700px) { .dodont { grid-template-columns:1fr; } }
+  .dodont .col { border-radius:10px; padding:18px; }
+  .dodont .do { background:var(--gen-bg); border:1px solid var(--gen-border); }
+  .dodont .dont { background:#fbe9e5; border:1px solid #edb7a9; }
+  .dodont h3 { margin-top:0; }
+  .dodont ul { margin:0; padding-left:20px; font-size:.86rem; }
+
+  .agent-box { background:var(--ink); color:#f3ead6; border-radius:12px; padding:24px; font-size:.9rem; }
+  .agent-box h3 { margin-top:0; color:#e8c98a; }
+  .agent-box ol { padding-left:20px; }
+  .agent-box li { margin-bottom:8px; }
+
+  table.evalt { width:100%; border-collapse:collapse; font-size:.85rem; }
+  table.evalt th, table.evalt td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+  table.evalt th { background:var(--paper-alt); font-size:.7rem; text-transform:uppercase; letter-spacing:.03em; color:#6b6255; }
+
+  footer.bottom { text-align:center; color:#8a8072; font-size:.8rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="cat">Packaging &amp; Brand Design · Guangzhou · ZCOOL</div>
+  <h1>造物起异包装设计</h1>
+  <div class="src">Zaowu Qiyi Packaging Design — <a href="https://www.zcool.com.cn/u/ZNTI2Mjc5ODA=" target="_blank" rel="noopener">zcool.com.cn/u/ZNTI2Mjc5ODA=</a></div>
+  <div class="dna">A super-symbol-led packaging studio: one repeatable mark, one dominant hue plus a single accent, reused verbatim across every SKU in a family.</div>
+</header>
+
+<section>
+  <h2><span class="num">1</span> Visual DNA</h2>
+  <div class="tag-cloud">
+    <span>Super-symbol-led</span><span>One-hue-plus-accent</span><span>Bilingual</span>
+    <span>CGI-staged</span><span>Category-adaptive</span><span>Systemic, not one-off</span>
+  </div>
+  <p class="lede" style="margin-top:16px;">Confident, commercial, symbol-first packaging design that moves between a ceremonial/heritage register and a playful/contemporary one depending on category — while keeping one constant method underneath. Full evidence: <code>PERSONAL_DESIGN_SYSTEM.md</code>.</p>
+</section>
+
+<section>
+  <h2><span class="num">2</span> Portfolio Evidence</h2>
+  <p class="lede">10 sampled cover images, reused from the prior Personal Design System demo (Phase 1–2, 2026-08-21). Each is that work's cover shot only.</p>
+  <div class="grid-evidence">
+    <figure class="ev"><img src="evidence/work_01_01.jpg" alt="work_01 摘要酌古 wine bottle"><figcaption><span class="wid">work_01</span>摘要·酌古 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_02_01.jpg" alt="work_02 sunscreen"><figcaption><span class="wid">work_02</span>天堂伞 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_03_01.jpg" alt="work_03 Artevive"><figcaption><span class="wid">work_03</span>Artevive <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_04_01.jpg" alt="work_04 yoga apparel"><figcaption><span class="wid">work_04</span>元气女孩 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_05_01.jpg" alt="work_05 hairbrush"><figcaption><span class="wid">work_05</span>CreativeArt <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_06_01.jpg" alt="work_06 gift box"><figcaption><span class="wid">work_06</span>绿岛集团 LVDAO <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_07_01.jpg" alt="work_07 tissue"><figcaption><span class="wid">work_07</span>洁柔 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_08_01.jpg" alt="work_08 Innovite retail"><figcaption><span class="wid">work_08</span>Innovite <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_09_01.jpg" alt="work_09 snack family"><figcaption><span class="wid">work_09</span>山楂爷爷 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/work_10_01.jpg" alt="work_10 tree cap, partial"><figcaption><span class="wid">work_10</span>英珞维 (partial) <span class="badge source">source work</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">3</span> Color Language</h2>
+  <p class="lede">One dominant hue family per brand, plus exactly one small saturated accent. <strong>Swatches below are approximate visual reads from screenshots, not claimed production colors.</strong></p>
+  <div class="swatch-row">
+    <div class="swatch"><div class="chip" style="background:#c98a6e;"></div><div class="lbl">work_01 gold/maroon</div><div class="note badge gen">derived sample</div></div>
+    <div class="swatch"><div class="chip" style="background:#a9c9b0;"></div><div class="lbl">work_02 sage mint</div><div class="note badge gen">derived sample</div></div>
+    <div class="swatch"><div class="chip" style="background:#2b2b2b;"></div><div class="lbl">work_03 black/blue</div><div class="note badge gen">derived sample</div></div>
+    <div class="swatch"><div class="chip" style="background:#6e2530;"></div><div class="lbl">work_06 burgundy</div><div class="note badge gen">derived sample</div></div>
+    <div class="swatch"><div class="chip" style="background:#a9b8dd;"></div><div class="lbl">work_07 periwinkle</div><div class="note badge gen">derived sample</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">4</span> Typography</h2>
+  <div class="rule-grid">
+    <div class="rule-card"><h3>Large native mark + small Latin line</h3><p>Bilingual pairing where Chinese leads at large scale, Latin transliteration sits small beneath.</p><div class="evid">work_01 (摘要 / ZHAI YAO), work_03 (artevive / 文创芝)</div></div>
+    <div class="rule-card"><h3>Near-parity per-SKU naming</h3><p>An alternative bilingual pattern where CN/EN sit closer to equal weight, used per-SKU.</p><div class="evid">work_09</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">5</span> Composition</h2>
+  <div class="diagram">
+    <div class="cap">Generated diagram — not a source image</div>
+    <div class="stage-split">
+      <div class="panel dark">Dark / dramatic staging<br><span style="opacity:.7;font-size:.75rem;">work_01, 03, 05, 06 — heritage / premium</span></div>
+      <div class="panel light">Light / pastel staging<br><span style="opacity:.7;font-size:.75rem;">work_02, 04, 07, 08, 10 — soft-goods / wellness</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">6</span> Shape &amp; Graphic Language</h2>
+  <p class="lede">The circle/roundel recurs as a logo-container shape across otherwise unrelated brands (work_01, 05, 06, 09).</p>
+  <svg width="220" height="90" style="background:#fff;border:1px solid var(--line);border-radius:10px;">
+    <circle cx="45" cy="45" r="30" fill="none" stroke="#8a4a1f" stroke-width="3"/>
+    <circle cx="115" cy="45" r="30" fill="none" stroke="#8a4a1f" stroke-width="3"/>
+    <circle cx="185" cy="45" r="30" fill="none" stroke="#8a4a1f" stroke-width="3"/>
+    <text x="45" y="80" font-size="9" text-anchor="middle" fill="#8a8072">work_05</text>
+    <text x="115" y="80" font-size="9" text-anchor="middle" fill="#8a8072">work_06</text>
+    <text x="185" y="80" font-size="9" text-anchor="middle" fill="#8a8072">work_09</text>
+  </svg>
+  <p style="font-size:.72rem;color:#8a8072;">Generated diagram — abstracted shape, not a source image.</p>
+</section>
+
+<section>
+  <h2><span class="num">7</span> Imagery / Illustration</h2>
+  <p class="lede">Photoreal CGI-rendered mockup is the default (7 of 10 works), with real environmental/lifestyle photography as an occasional deliberate exception (work_02, 08). Illustration, where present, is flat continuous linework (work_01) or a folk-art character style (work_09) — not painterly/textured rendering.</p>
+</section>
+
+<section>
+  <h2><span class="num">8</span> Signature Elements</h2>
+  <div class="sig-grid">
+    <div class="sig-card"><h3>Hue + accent rule <span class="conf hi">HIGH</span></h3><p>One dominant hue, one small saturated accent, never a flat multicolor palette.</p><div class="wids">work_01,02,03,06,07</div></div>
+    <div class="sig-card"><h3>Repeated fixed mark <span class="conf hi">HIGH</span></h3><p>One simplified symbol reused verbatim on every SKU/format.</p><div class="wids">work_01,05,06,09</div></div>
+    <div class="sig-card"><h3>Bilingual pairing <span class="conf hi">HIGH</span></h3><p>Chinese + Latin naming; hierarchy decided per brief.</p><div class="wids">work_01,03,04,09</div></div>
+    <div class="sig-card"><h3>Category-conditioned staging <span class="conf hi">HIGH</span></h3><p>Dark/dramatic for heritage-premium; light/pastel for soft-goods/wellness.</p><div class="wids">01,03,05,06 / 02,04,08,10</div></div>
+    <div class="sig-card"><h3>CGI-render default <span class="conf hi">HIGH</span></h3><p>Clean staged product render as the default; photography as exception.</p><div class="wids">01,03,04,05,06,07,09</div></div>
+    <div class="sig-card"><h3>Ensemble/family composition <span class="conf hi">HIGH</span></h3><p>Multi-SKU lines shown together, unified by the repeating mark.</p><div class="wids">05,06,09</div></div>
+    <div class="sig-card"><h3>Form-as-symbol (optional) <span class="conf med">HIGH, borderline</span></h3><p>Package form itself echoes the brand concept.</p><div class="wids">01,05,10 (10 partial)</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">9</span> Do / Don't</h2>
+  <div class="dodont">
+    <div class="col do"><h3>Do</h3><ul>
+      <li>One dominant hue + one small accent</li>
+      <li>One fixed mark reused everywhere</li>
+      <li>Bilingual naming</li>
+      <li>CGI staging by default</li>
+      <li>Match backdrop to category</li>
+      <li>Ensemble shots for multi-SKU lines</li>
+    </ul></div>
+    <div class="col dont"><h3>Don't</h3><ul>
+      <li>Two dominant colors on one item</li>
+      <li>A unique mark per SKU</li>
+      <li>Assume one language always leads</li>
+      <li>Assume one illustration style fits every brand</li>
+      <li>Assume a border/frame device — none found</li>
+      <li>Invent exact colors/fonts</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">10</span> Agent Design Guide</h2>
+  <div class="agent-box">
+    <h3>For a downstream generation agent</h3>
+    <ol>
+      <li>Choose the register (dark/heritage vs. light/wellness) based on the brief's category — don't default to one.</li>
+      <li>Pick one dominant hue; add exactly one small accent color.</li>
+      <li>Design one simplified graphic mark before designing any individual package; reuse it unchanged across every SKU.</li>
+      <li>Decide bilingual hierarchy (CN-leads vs. near-parity) per brief.</li>
+      <li>Default to a clean CGI-style render; use real photography only as a deliberate exception.</li>
+      <li>For multi-SKU briefs, compose a family/ensemble shot, not isolated single-item shots.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">11</span> Evidence / Confidence</h2>
+  <table class="evalt">
+    <tr><th>Rule</th><th>Work IDs</th><th>Confidence</th></tr>
+    <tr><td>Hue + accent</td><td>01,02,03,06,07</td><td>HIGH (5)</td></tr>
+    <tr><td>Repeated mark</td><td>01,05,06,09</td><td>HIGH (4)</td></tr>
+    <tr><td>Bilingual pairing</td><td>01,03,04,09</td><td>HIGH (4)</td></tr>
+    <tr><td>Category-conditioned staging</td><td>01,03,05,06 / 02,04,08,10</td><td>HIGH (8)</td></tr>
+    <tr><td>CGI-render default</td><td>01,03,04,05,06,07,09</td><td>HIGH (7)</td></tr>
+    <tr><td>Ensemble composition</td><td>05,06,09</td><td>HIGH (3)</td></tr>
+    <tr><td>Form-as-symbol</td><td>01,05,10*</td><td>HIGH, borderline (*10 partial)</td></tr>
+  </table>
+  <p class="lede" style="margin-top:12px;">Full [A]/[B]/[C]-tagged evidence: <code>PERSONAL_DESIGN_SYSTEM.md</code> and the source
+  <code>docs/daily_report/8.21/personal-design-system-demo/PORTFOLIO_EVIDENCE.jsonl</code>.</p>
+</section>
+
+<footer class="bottom">造物起异包装设计 — Personal Design System · reused evidence from 2026-08-21, reformatted 2026-08-22</footer>
+</div>
+</body>
+</html>

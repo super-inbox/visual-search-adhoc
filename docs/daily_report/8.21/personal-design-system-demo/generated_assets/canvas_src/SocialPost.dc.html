@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;900&family=Manrope:wght@500;700;800&display=swap">
+  <style>
+    body { margin: 0; }
+    a { color: #92400e; } a:hover { color: #78350f; }
+    .stage { width:100%; height:100%; position:relative; overflow:hidden; font-family:'Manrope', sans-serif;
+              background: linear-gradient(180deg, oklch(96% 0.01 90) 0%, oklch(93% 0.015 85) 55%, oklch(88% 0.02 60) 100%); }
+    .window-light { position:absolute; top:-10%; right:-10%; width:60%; height:60%;
+                    background: radial-gradient(circle, oklch(100% 0.01 90 / 0.55), transparent 70%); }
+    .desk { position:absolute; left:0; right:0; bottom:0; height:34%;
+            background: linear-gradient(180deg, oklch(72% 0.03 70), oklch(60% 0.03 60)); }
+    .laptop { position:absolute; left:8%; bottom:34%; width:34%; height:16%;
+              background: oklch(30% 0.01 260); border-radius: 6px 6px 2px 2px;
+              box-shadow: 0 10px 24px oklch(20% 0.02 260 / 0.25); }
+    .laptop::before { content:""; position:absolute; left:0; right:0; bottom:-8px; height:8px;
+                       background: oklch(24% 0.01 260); border-radius: 0 0 8px 8px; }
+    .plant { position:absolute; right:9%; bottom:34%; width:70px; }
+    .can-wrap { position:absolute; left:50%; bottom:35.5%; transform:translateX(-50%); width:140px; height:305px; }
+    .headline { position:absolute; top:9%; left:9%; right:9%; }
+    .headline .cn { font-family:'Noto Sans SC', sans-serif; font-weight:900; font-size:38px; line-height:1.2;
+                     color: oklch(24% 0.03 60); }
+    .headline .en { margin-top:6px; font-weight:700; font-size:13px; letter-spacing:1.5px;
+                     color: oklch(35% 0.03 60 / 0.75); text-transform:uppercase; }
+    .brandmark { position:absolute; bottom:5%; left:9%; display:flex; align-items:center; gap:8px; }
+    .brandmark .symwrap { width:26px; height:26px; }
+    .brandmark .cn { font-family:'Noto Sans SC', sans-serif; font-weight:900; font-size:14px; color: oklch(28% 0.02 260); }
+  </style>
+</helmet>
+<div class="stage">
+  <div class="window-light"></div>
+  <div class="headline">
+    <div class="cn">轻盈气泡<br/>源头养分</div>
+    <div class="en">Light bubbles. Real nourishment.</div>
+  </div>
+  <svg class="plant" viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+    <rect x="18" y="55" width="34" height="30" rx="4" fill="oklch(55% 0.03 60)"/>
+    <path d="M35 55 C30 40 30 30 35 15 C40 30 40 40 35 55 Z" fill="oklch(55% 0.1 150)"/>
+    <path d="M35 50 C25 40 18 32 14 20 C24 26 30 34 35 50 Z" fill="oklch(60% 0.1 150)"/>
+    <path d="M35 50 C45 40 52 32 56 20 C46 26 40 34 35 50 Z" fill="oklch(60% 0.1 150)"/>
+  </svg>
+  <div class="laptop"></div>
+  <div class="desk"></div>
+  <div class="can-wrap">
+    <dc-import name="Can" dominant="oklch(83% 0.08 18)" flavor-c-n="荔枝玫瑰" flavor-e-n="Lychee Rose" flavor-icon="lychee" hint-size="140,305"></dc-import>
+  </div>
+  <div class="brandmark">
+    <div class="symwrap"><dc-import name="SproutBubbleSymbol" hint-size="26,26"></dc-import></div>
+    <div class="cn">荔泉气泡</div>
+  </div>
+</div>
+</x-dc>
+<script data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

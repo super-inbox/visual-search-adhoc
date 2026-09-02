@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Design System — 寒江雪的插画</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:#241708; --paper:#faf5e8; --paper-alt:#f0e2c2; --line:#dcc888;
+    --accent:#9c6d1f; --accent-bg:#f2e2b8; --accent-2:#1f4a8a;
+    --source:#9c6b1f; --source-bg:#fbf1de; --source-border:#e8c98a;
+    --gen:#1f5c8a; --gen-bg:#e4eef7; --gen-border:#a9c7e0;
+    --hi:#9c6d1f; --med:#1f4a8a; --lo:#8a7a5c;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.55; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px 100px; }
+  header.top { text-align:center; padding:40px 0 30px; border-bottom:3px solid var(--accent); margin-bottom:36px; background:linear-gradient(180deg,var(--accent-bg),var(--paper)); }
+  header.top .cat { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--accent-2); font-weight:700; }
+  header.top h1 { font-size:2rem; margin:8px 0 6px; }
+  header.top .src { font-size:.88rem; color:#5c4a2a; }
+  header.top .dna { margin-top:16px; font-size:1.05rem; font-style:italic; max-width:680px; margin-left:auto; margin-right:auto; }
+  section { margin:0 0 56px; }
+  section > h2 { font-size:1.2rem; display:flex; align-items:baseline; gap:10px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:18px; }
+  section > h2 .num { font-size:.72rem; font-weight:700; color:#fff; background:var(--ink); border-radius:999px; padding:2px 9px; }
+  p.lede { color:#4a3a20; max-width:780px; }
+  .badge { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:4px; border:1px solid; }
+  .badge.source { color:var(--source); background:var(--source-bg); border-color:var(--source-border); }
+  .badge.gen { color:var(--gen); background:var(--gen-bg); border-color:var(--gen-border); }
+
+  .tag-cloud { display:flex; flex-wrap:wrap; gap:10px; }
+  .tag-cloud span { font-size:1.1rem; font-weight:700; padding:8px 18px; border-radius:999px; background:var(--accent); color:#fff; }
+  .tag-cloud span:nth-child(2n) { background:var(--accent-2); }
+
+  .grid-evidence { display:grid; grid-template-columns:repeat(5,1fr); gap:14px; }
+  @media (max-width:800px) { .grid-evidence { grid-template-columns:repeat(2,1fr); } }
+  figure.ev { margin:0; border:1px solid var(--source-border); border-radius:10px; overflow:hidden; background:#fff; }
+  figure.ev img { width:100%; height:135px; object-fit:cover; display:block; }
+  figure.ev figcaption { padding:8px 9px; font-size:.68rem; color:#4a3a20; }
+  figure.ev figcaption .wid { font-family:ui-monospace,monospace; font-weight:700; color:var(--source); display:block; }
+
+  .swatch-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .swatch { width:110px; text-align:center; }
+  .swatch .chip { width:110px; height:70px; border-radius:8px; border:1px solid rgba(0,0,0,.12); margin-bottom:6px; }
+  .swatch .lbl { font-size:.75rem; font-weight:600; }
+
+  .rule-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .rule-grid { grid-template-columns:1fr; } }
+  .rule-card { border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:#fff; }
+  .rule-card h3 { margin:0 0 6px; font-size:.95rem; }
+  .rule-card p { margin:0; font-size:.85rem; color:#4a3a20; }
+  .rule-card .evid { font-size:.72rem; color:#8a7a5c; margin-top:6px; font-family:ui-monospace,monospace; }
+
+  .diagram { border:1px dashed var(--gen-border); background:var(--gen-bg); border-radius:10px; padding:18px; }
+  .diagram .cap { font-size:.72rem; color:var(--gen); font-weight:700; text-transform:uppercase; letter-spacing:.03em; margin-bottom:10px; }
+  .comp-row { display:flex; gap:10px; flex-wrap:wrap; }
+  .comp-row .cell { flex:1; min-width:140px; background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px; text-align:center; font-size:.78rem; }
+
+  .frame-demo { display:flex; justify-content:center; padding:10px 0; }
+  .frame-demo .medallion { width:130px; height:130px; border-radius:50%; border:6px double #9c6d1f; display:flex; align-items:center; justify-content:center; background:#fff; font-size:.7rem; color:#8a7a5c; text-align:center; padding:10px; }
+
+  .sig-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .sig-grid { grid-template-columns:1fr; } }
+  .sig-card { border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+  .sig-card h3 { margin:0 0 6px; font-size:1rem; display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .conf { font-size:.6rem; font-weight:700; padding:2px 7px; border-radius:999px; color:#fff; white-space:nowrap; }
+  .conf.hi { background:var(--hi); } .conf.med { background:var(--med); } .conf.lo { background:var(--lo); }
+  .sig-card p { margin:4px 0; font-size:.84rem; color:#4a3a20; }
+  .sig-card .wids { font-size:.72rem; font-family:ui-monospace,monospace; color:#8a7a5c; }
+
+  .ipbox { border:1px solid var(--line); background:#fff; border-radius:10px; padding:18px; }
+  .ipbox ul { columns:2; -webkit-columns:2; font-size:.86rem; }
+  @media (max-width:700px) { .ipbox ul { columns:1; } }
+  .ipbox li { margin-bottom:8px; break-inside:avoid; }
+
+  .dodont { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:700px) { .dodont { grid-template-columns:1fr; } }
+  .dodont .col { border-radius:10px; padding:18px; }
+  .dodont .do { background:var(--gen-bg); border:1px solid var(--gen-border); }
+  .dodont .dont { background:#fbe9e5; border:1px solid #edb7a9; }
+  .dodont h3 { margin-top:0; }
+  .dodont ul { margin:0; padding-left:20px; font-size:.86rem; }
+
+  .agent-box { background:var(--ink); color:#f2e2b8; border-radius:12px; padding:24px; font-size:.9rem; }
+  .agent-box h3 { margin-top:0; color:#e8c98a; }
+  .agent-box ol { padding-left:20px; }
+  .agent-box li { margin-bottom:8px; }
+
+  table.evalt { width:100%; border-collapse:collapse; font-size:.85rem; }
+  table.evalt th, table.evalt td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+  table.evalt th { background:var(--paper-alt); font-size:.7rem; text-transform:uppercase; letter-spacing:.03em; color:#5c4a2a; }
+
+  footer.bottom { text-align:center; color:#8a7a5c; font-size:.8rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="cat">Illustration · Character/IP · Cultural Craft · Beijing · ZCOOL</div>
+  <h1>寒江雪的插画</h1>
+  <div class="src">Han Jiang Xue Illustration — <a href="https://www.zcool.com.cn/u/ZMzY4MTA2NA==" target="_blank" rel="noopener">zcool.com.cn/u/ZMzY4MTA2NA==</a></div>
+  <div class="dna">Richly ornamented illustration that treats zodiac and mythical animals with the dignity of imperial court figures — gold-accented, densely decorated, and equally comfortable in award-winning fine illustration or clean commercial product photography.</div>
+</header>
+
+<section>
+  <h2><span class="num">1</span> Visual DNA</h2>
+  <div class="tag-cloud">
+    <span>Gold-accented density</span><span>Animals-in-imperial-regalia</span><span>Ornate framing</span>
+    <span>Cloisonné / gongbi craft</span><span>Dual illustration+product design</span>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">2</span> Portfolio Evidence</h2>
+  <p class="lede">10 sampled cover images, acquired 2026-08-22 via anonymous browser session (no login, no WAF evasion), spanning toy/IP, commercial illustration, Chinese cultural illustration, craft reinterpretation, and packaging.</p>
+  <div class="grid-evidence">
+    <figure class="ev"><img src="evidence/hjx_01_gaoyuan_sansha.jpg" alt="toy IP snow leopard concert poster"><figcaption><span class="wid">hjx_01</span>潮玩·高原三傻 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_02_zhongqiu_poster.jpg" alt="Mid-Autumn gongbi illustration"><figcaption><span class="wid">hjx_02</span>中秋节插画 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_03_mayear_creation.jpg" alt="Dunhuang stipple illustration"><figcaption><span class="wid">hjx_03</span>马年的创作 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_04_cloisonne_zodiac.jpg" alt="cloisonne zodiac illustration"><figcaption><span class="wid">hjx_04</span>泰蓝星座 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_05_zodiac_plush.jpg" alt="zodiac plush toy concept"><figcaption><span class="wid">hjx_05</span>生肖毛绒玩具 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_06_sanyang_kaitai.jpg" alt="sheep in royal robe toy concept"><figcaption><span class="wid">hjx_06</span>三羊开泰 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_07_siyang_fangzun.jpg" alt="ancient bronze vessel reinterpretation"><figcaption><span class="wid">hjx_07</span>四羊方尊 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_08_gugong_collection.jpg" alt="Forbidden City commemorative design"><figcaption><span class="wid">hjx_08</span>故宫收藏 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_09_shanhaijing.jpg" alt="mythological ink illustration"><figcaption><span class="wid">hjx_09</span>创世山海经 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/hjx_10_xiangxun_packaging.jpg" alt="aromatherapy product photography"><figcaption><span class="wid">hjx_10</span>香薰产品设计 <span class="badge source">source work</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">3</span> Color Language</h2>
+  <p class="lede">Gold as a consistent premium accent across 6 of 10 works, regardless of otherwise-different technique. Saturated cloisonné blue pairs with gold in the craft-reinterpretation pieces. <strong>Swatches are approximate visual reads, not claimed production colors.</strong></p>
+  <div class="swatch-row">
+    <div class="swatch"><div class="chip" style="background:#c9a13a;"></div><div class="lbl">gold accent (6 works)</div></div>
+    <div class="swatch"><div class="chip" style="background:#1f4a8a;"></div><div class="lbl">cloisonné blue (04,07)</div></div>
+    <div class="swatch"><div class="chip" style="background:#c07a3a;"></div><div class="lbl">terracotta/ochre (02,03)</div></div>
+    <div class="swatch"><div class="chip" style="background:#3a3630;"></div><div class="lbl">charcoal (10, product photo)</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">4</span> Typography</h2>
+  <div class="rule-grid">
+    <div class="rule-card"><h3>Theatrical staged type</h3><p>English display type ("DUO CONCERT") inside an ornate curtain-and-gold-border frame.</p><div class="evid">hjx_01</div></div>
+    <div class="rule-card"><h3>Seal-stamp title graphic</h3><p>Title rendered as a weathered red ink-stamp mark rather than a plain typeface.</p><div class="evid">hjx_09</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">5</span> Composition</h2>
+  <div class="diagram">
+    <div class="cap">Generated diagram — composition modes across the 10 works, not a source image</div>
+    <div class="comp-row">
+      <div class="cell">Staged narrative scene<br><small>hjx_01, 02, 09</small></div>
+      <div class="cell">Single-figure centered portrait<br><small>hjx_04, 05, 06, 07</small></div>
+      <div class="cell">Plain product-photo staging<br><small>hjx_10</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">6</span> Shape &amp; Graphic Language</h2>
+  <p class="lede">Ornate decorative framing recurs around the central figure — curtain/stage border, circular medallion, patterned plate edge (hjx_01, 04, 08). Below: a generated abstraction of the recurring circular-medallion framing device, not a source image.</p>
+  <div class="frame-demo">
+    <div class="medallion">central figure<br>(cloisonné-style circular frame)</div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">7</span> Imagery / Illustration</h2>
+  <p class="lede">Technique range is wide and deliberate: meticulous gongbi fine linework (hjx_02), Dunhuang-inspired stipple/pointillism (hjx_03, single instance), cloisonné/enamel-craft rendering (hjx_04, 07), watercolor-ink character illustration (hjx_05, 06), and looser ink-wash brushwork (hjx_09) — plus a separate, distinct competency in real product photography (hjx_10). Decorative density is uniformly high across illustration works.</p>
+</section>
+
+<section>
+  <h2><span class="num">7b</span> Character / IP &amp; Cultural-Product Language</h2>
+  <div class="ipbox">
+    <ul>
+      <li><strong>Character/IP language:</strong> zodiac/regional animals personified as dignified characters, not generic mascots (01, 05, 06).</li>
+      <li><strong>Facial/body stylization:</strong> soft, rounded, large-eyed, gentle rather than fierce — even for guardian creatures (01, 05, 06).</li>
+      <li><strong>Traditional motifs:</strong> dragon, phoenix, cloud, wave, crane patterns recur (02, 04, 07, 08).</li>
+      <li><strong>Decorative density:</strong> high across nearly the entire illustrated sample, not an occasional flourish.</li>
+      <li><strong>Narrative composition:</strong> staged scenes (stage, mythological gathering, festival tableau) appear more often than plain portraits alone.</li>
+      <li><strong>Pattern/textile translation:</strong> cloisonné and gongbi surface patterns read as textile/embroidery-like decoration (02, 04, 07).</li>
+      <li><strong>Toy/cultural-product translation:</strong> the same personification-in-regalia vocabulary transfers across poster, toy-concept, and museum-grade commemorative object.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">8</span> Signature Elements</h2>
+  <div class="sig-grid">
+    <div class="sig-card"><h3>Gold accent cue <span class="conf hi">HIGH</span></h3><p>Gold linework/jewelry/vessel color across different techniques.</p><div class="wids">02,04,05,06,07,08 (6)</div></div>
+    <div class="sig-card"><h3>Animals in imperial regalia <span class="conf hi">HIGH</span></h3><p>Robes, jeweled pendants, ceremonial dignity, not generic mascot treatment.</p><div class="wids">01,05,06 (3)</div></div>
+    <div class="sig-card"><h3>Ornate decorative framing <span class="conf hi">HIGH</span></h3><p>Curtain/stage, circular medallion, or patterned border around the central figure.</p><div class="wids">01,04,08 (3)</div></div>
+    <div class="sig-card"><h3>Cloisonné/enamel craft rendering <span class="conf med">MEDIUM</span></h3><p>Gold cell-outline + saturated color fill for artifact reinterpretation.</p><div class="wids">04,07 (2)</div></div>
+    <div class="sig-card"><h3>Dual illustration+product design <span class="conf hi">HIGH (methodology)</span></h3><p>Illustration dominant, real product photography a demonstrated separate discipline.</p><div class="wids">all 10</div></div>
+    <div class="sig-card"><h3>Dunhuang stipple technique <span class="conf lo">LOW</span></h3><p>Terracotta pointillist rendering evoking cave-fresco texture.</p><div class="wids">03 only</div></div>
+    <div class="sig-card"><h3>Loose ink-wash register <span class="conf lo">LOW</span></h3><p>Looser brushwork for a mythological group scene.</p><div class="wids">09 only</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">9</span> Do / Don't</h2>
+  <div class="dodont">
+    <div class="col do"><h3>Do</h3><ul>
+      <li>Default to gold accenting for premium/cultural character or object work</li>
+      <li>Give personified animals imperial-court regalia and gentle, rounded expressions</li>
+      <li>Use ornate framing for hero/portrait pieces</li>
+      <li>Apply cloisonné-style rendering for heritage-artifact briefs specifically</li>
+      <li>Treat product photography as a legitimate separate discipline</li>
+    </ul></div>
+    <div class="col dont"><h3>Don't</h3><ul>
+      <li>Assume one fixed illustration technique — at least 4 distinct styles observed</li>
+      <li>Over-claim the stipple (§8) or ink-wash (§8) register as stable — each is 1 work</li>
+      <li>Assume the toy/plush concept pieces are photos of real manufactured products — they are illustrated concept designs</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">10</span> Agent Design Guide</h2>
+  <div class="agent-box">
+    <h3>For a downstream generation agent</h3>
+    <ol>
+      <li>Decide whether the brief calls for a character/IP treatment or a product-photography treatment — both are real, evidenced competencies.</li>
+      <li>For character work, personify the subject with imperial-court-style regalia (robe, jeweled pendant) and a gentle, rounded, large-eyed expression.</li>
+      <li>Default to gold as the unifying premium accent, regardless of which specific rendering technique is chosen.</li>
+      <li>For heritage-artifact or museum-collaboration briefs, use cloisonné-style gold-outline + saturated-fill rendering.</li>
+      <li>Use ornate framing (curtain, medallion, patterned border) for hero/portrait compositions; skip it for scene-based or product-photo work.</li>
+      <li>Do not force one signature illustration style — choose the technique (gongbi, stipple, cloisonné, ink-wash) that fits the brief's specific cultural reference.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">11</span> Evidence / Confidence</h2>
+  <table class="evalt">
+    <tr><th>Element</th><th>Work IDs</th><th>Confidence</th></tr>
+    <tr><td>Gold accent cue</td><td>02,04,05,06,07,08</td><td>HIGH (6)</td></tr>
+    <tr><td>Animals in imperial regalia</td><td>01,05,06</td><td>HIGH (3)</td></tr>
+    <tr><td>Ornate decorative framing</td><td>01,04,08</td><td>HIGH (3)</td></tr>
+    <tr><td>Cloisonné/enamel rendering</td><td>04,07</td><td>MEDIUM (2)</td></tr>
+    <tr><td>Dual illustration+product design</td><td>all 10</td><td>HIGH (methodology)</td></tr>
+    <tr><td>Dunhuang stipple technique</td><td>03</td><td>LOW (1)</td></tr>
+    <tr><td>Loose ink-wash register</td><td>09</td><td>LOW (1)</td></tr>
+  </table>
+  <p class="lede" style="margin-top:12px;">Full evidence: <code>PERSONAL_DESIGN_SYSTEM.md</code>.</p>
+</section>
+
+<footer class="bottom">寒江雪的插画 — Personal Design System · evidence acquired 2026-08-22</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Personal Design System — 独角狮设计</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --ink:#1e2417; --paper:#f7f5ec; --paper-alt:#ece6d3; --line:#d9d0b0;
+    --accent:#4a5d2a; --accent-bg:#e4e8d5; --accent-2:#8a6a2f;
+    --source:#9c6b1f; --source-bg:#fbf1de; --source-border:#e8c98a;
+    --gen:#2a6d5d; --gen-bg:#e2f0e8; --gen-border:#9ecfba;
+    --hi:#4a5d2a; --med:#8a6a2f; --lo:#8a7a5c;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif; line-height:1.55; }
+  .wrap { max-width:1100px; margin:0 auto; padding:0 24px 100px; }
+  header.top { text-align:center; padding:40px 0 30px; border-bottom:3px solid var(--accent); margin-bottom:36px; background:linear-gradient(180deg,var(--accent-bg),var(--paper)); }
+  header.top .cat { font-size:.72rem; text-transform:uppercase; letter-spacing:.08em; color:var(--accent-2); font-weight:700; }
+  header.top h1 { font-size:2rem; margin:8px 0 6px; }
+  header.top .src { font-size:.88rem; color:#5c5a4a; }
+  header.top .dna { margin-top:16px; font-size:1.05rem; font-style:italic; max-width:660px; margin-left:auto; margin-right:auto; }
+  section { margin:0 0 56px; }
+  section > h2 { font-size:1.2rem; display:flex; align-items:baseline; gap:10px; border-bottom:2px solid var(--ink); padding-bottom:8px; margin-bottom:18px; }
+  section > h2 .num { font-size:.72rem; font-weight:700; color:#fff; background:var(--ink); border-radius:999px; padding:2px 9px; }
+  p.lede { color:#4a4a3a; max-width:780px; }
+  .badge { display:inline-block; font-size:.65rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:3px 8px; border-radius:4px; border:1px solid; }
+  .badge.source { color:var(--source); background:var(--source-bg); border-color:var(--source-border); }
+  .badge.gen { color:var(--gen); background:var(--gen-bg); border-color:var(--gen-border); }
+
+  .tag-cloud { display:flex; flex-wrap:wrap; gap:10px; }
+  .tag-cloud span { font-size:1.1rem; font-weight:700; padding:8px 18px; border-radius:999px; background:var(--accent); color:#fff; }
+  .tag-cloud span:nth-child(2n) { background:var(--accent-2); }
+
+  .callout { border:1px solid var(--line); background:var(--paper-alt); border-radius:10px; padding:16px 18px; margin:14px 0; }
+  .callout.honest { border-color:#c9a26a; background:#f6ecd8; }
+
+  .grid-evidence { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; }
+  @media (max-width:800px) { .grid-evidence { grid-template-columns:repeat(2,1fr); } }
+  figure.ev { margin:0; border:1px solid var(--source-border); border-radius:10px; overflow:hidden; background:#fff; }
+  figure.ev img { width:100%; height:150px; object-fit:cover; display:block; }
+  figure.ev figcaption { padding:8px 9px; font-size:.7rem; color:#4a4a3a; }
+  figure.ev figcaption .wid { font-family:ui-monospace,monospace; font-weight:700; color:var(--source); display:block; }
+
+  .swatch-row { display:flex; gap:14px; flex-wrap:wrap; }
+  .swatch { width:110px; text-align:center; }
+  .swatch .chip { width:110px; height:70px; border-radius:8px; border:1px solid rgba(0,0,0,.12); margin-bottom:6px; }
+  .swatch .lbl { font-size:.75rem; font-weight:600; }
+
+  .rule-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .rule-grid { grid-template-columns:1fr; } }
+  .rule-card { border:1px solid var(--line); border-radius:10px; padding:14px 16px; background:#fff; }
+  .rule-card h3 { margin:0 0 6px; font-size:.95rem; }
+  .rule-card p { margin:0; font-size:.85rem; color:#4a4a3a; }
+  .rule-card .evid { font-size:.72rem; color:#8a8072; margin-top:6px; font-family:ui-monospace,monospace; }
+
+  .diagram { border:1px dashed var(--gen-border); background:var(--gen-bg); border-radius:10px; padding:18px; }
+  .diagram .cap { font-size:.72rem; color:var(--gen); font-weight:700; text-transform:uppercase; letter-spacing:.03em; margin-bottom:10px; }
+  .register-row { display:flex; gap:10px; flex-wrap:wrap; }
+  .register-row .cell { flex:1; min-width:130px; background:#fff; border:1px solid var(--line); border-radius:8px; padding:10px; text-align:center; font-size:.78rem; }
+
+  .sig-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:14px; }
+  @media (max-width:760px) { .sig-grid { grid-template-columns:1fr; } }
+  .sig-card { border:1px solid var(--line); border-radius:10px; padding:16px; background:#fff; }
+  .sig-card h3 { margin:0 0 6px; font-size:1rem; display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .conf { font-size:.6rem; font-weight:700; padding:2px 7px; border-radius:999px; color:#fff; white-space:nowrap; }
+  .conf.hi { background:var(--hi); } .conf.med { background:var(--med); } .conf.lo { background:var(--lo); }
+  .sig-card p { margin:4px 0; font-size:.84rem; color:#4a4a3a; }
+  .sig-card .wids { font-size:.72rem; font-family:ui-monospace,monospace; color:#8a8072; }
+
+  .dodont { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  @media (max-width:700px) { .dodont { grid-template-columns:1fr; } }
+  .dodont .col { border-radius:10px; padding:18px; }
+  .dodont .do { background:var(--gen-bg); border:1px solid var(--gen-border); }
+  .dodont .dont { background:#fbe9e5; border:1px solid #edb7a9; }
+  .dodont h3 { margin-top:0; }
+  .dodont ul { margin:0; padding-left:20px; font-size:.86rem; }
+
+  .agent-box { background:var(--ink); color:#e8e6d5; border-radius:12px; padding:24px; font-size:.9rem; }
+  .agent-box h3 { margin-top:0; color:#c9d6a0; }
+  .agent-box ol { padding-left:20px; }
+  .agent-box li { margin-bottom:8px; }
+
+  table.evalt { width:100%; border-collapse:collapse; font-size:.85rem; }
+  table.evalt th, table.evalt td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+  table.evalt th { background:var(--paper-alt); font-size:.7rem; text-transform:uppercase; letter-spacing:.03em; color:#5c5a4a; }
+
+  footer.bottom { text-align:center; color:#8a8072; font-size:.8rem; margin-top:40px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="cat">Regional Brand &amp; Packaging Design · Yinchuan, Ningxia · ZCOOL</div>
+  <h1>独角狮设计</h1>
+  <div class="src">Unicorn Lion Design — <a href="https://www.zcool.com.cn/u/ZNzEyMzA4MDA=" target="_blank" rel="noopener">zcool.com.cn/u/ZNzEyMzA4MDA=</a></div>
+  <div class="dna">A range-driven regional studio: restrained per-piece palettes, earth-toned authenticity for Ningxia food/agri clients, and a full register shift — photography, illustration, or clean corporate — depending on what the category calls for.</div>
+</header>
+
+<section>
+  <h2><span class="num">1</span> Visual DNA</h2>
+  <div class="tag-cloud">
+    <span>Regional authenticity</span><span>Restrained palette</span><span>Category-driven register</span>
+    <span>Production-ready</span><span>Ningxia identity</span>
+  </div>
+  <div class="callout honest">
+    <strong>Read before the sections below:</strong> with 8 sampled works spanning packaging, a
+    brand logo, a VI manual, and a brochure, this portfolio does <strong>not</strong> show one
+    repeated graphic symbol the way 造物起异's does. That absence is itself a real finding — this
+    studio's signature is <strong>range and competency</strong>, not a single visual device. See
+    §8 for exactly what confidence levels this evidence supports.
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">2</span> Portfolio Evidence</h2>
+  <p class="lede">8 sampled cover images, acquired 2026-08-22 via anonymous browser session (no login, no WAF evasion).</p>
+  <div class="grid-evidence">
+    <figure class="ev"><img src="evidence/ul_01_yuanqijitang.jpg" alt="chicken soup packaging"><figcaption><span class="wid">ul_01</span>元气鸡汤 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_02_discovery_logo.jpg" alt="Discovery logo"><figcaption><span class="wid">ul_02</span>Discovery logo <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_03_xiaoming_vi.jpg" alt="agri VI manual"><figcaption><span class="wid">ul_03</span>晓鸣农牧 VI <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_04_lanxi_rice.jpg" alt="tribute rice, partial"><figcaption><span class="wid">ul_04</span>兰熙贡米 (partial) <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_05_30du_rice.jpg" alt="regional rice bag"><figcaption><span class="wid">ul_05</span>30°宁夏大米 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_06_guangxia_wine.jpg" alt="4-bottle wine family"><figcaption><span class="wid">ul_06</span>广夏葡萄酒 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_07_malanhua_oil.jpg" alt="sesame oil carton"><figcaption><span class="wid">ul_07</span>马兰花胡麻油 <span class="badge source">source work</span></figcaption></figure>
+    <figure class="ev"><img src="evidence/ul_08_xinshuan_spa.jpg" alt="foot spa brochure"><figcaption><span class="wid">ul_08</span>鑫蜀岸足浴 <span class="badge source">source work</span></figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">3</span> Color Language</h2>
+  <p class="lede">No single dominant hue repeats across clients — each piece is fully client/category-driven. What does repeat: a restrained 2–3-color discipline within any one piece, and earth tones specifically for the regional food/agri client set. <strong>Swatches are approximate visual reads, not claimed production colors.</strong></p>
+  <div class="swatch-row">
+    <div class="swatch"><div class="chip" style="background:#c4a15c;"></div><div class="lbl">ul_05 tan/khaki</div></div>
+    <div class="swatch"><div class="chip" style="background:#3d5c2e;"></div><div class="lbl">ul_08 wellness green</div></div>
+    <div class="swatch"><div class="chip" style="background:#3060c0;"></div><div class="lbl">ul_02 Discovery blue</div></div>
+    <div class="swatch"><div class="chip" style="background:#d9a7c7;"></div><div class="lbl">ul_06 pastel gradient</div></div>
+    <div class="swatch"><div class="chip" style="background:#8a5a2f;"></div><div class="lbl">ul_07 kraft brown</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">4</span> Typography</h2>
+  <div class="rule-grid">
+    <div class="rule-card"><h3>Icon-integrated logotype</h3><p>Discovery wordmark fuses a crescent-moon/star icon directly into the "o" letterform.</p><div class="evid">ul_02</div></div>
+    <div class="rule-card"><h3>Numeral as graphic anchor <span class="badge gen" style="margin-left:6px;">weak signal</span></h3><p>A bold numeral in a bordered box ("38°") functions as the primary graphic device — observed once, not yet a stable rule.</p><div class="evid">ul_05 only</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">5</span> Composition</h2>
+  <div class="diagram">
+    <div class="cap">Generated diagram — register range across the 8 works, not a source image</div>
+    <div class="register-row">
+      <div class="cell">Product grid<br><small>ul_01</small></div>
+      <div class="cell">Centered logo<br><small>ul_02</small></div>
+      <div class="cell">Technical manual grid<br><small>ul_03</small></div>
+      <div class="cell">Single front-facing pack<br><small>ul_05</small></div>
+      <div class="cell">Bottle-family row<br><small>ul_06</small></div>
+      <div class="cell">Tri-fold panels<br><small>ul_08</small></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">6</span> Shape &amp; Graphic Language</h2>
+  <p class="lede">No consistent geometric tendency holds across all 8 works — each client's mark (e.g. ul_03's rooster/phoenix bird logo) is the client's own identity, not a repeated studio device. This absence is recorded honestly rather than forced into a false pattern.</p>
+</section>
+
+<section>
+  <h2><span class="num">7</span> Imagery / Illustration</h2>
+  <p class="lede">ul_01 is real product photography; ul_06 is flat fashion-editorial illustration; ul_03, 05, 07, 08 read as flat graphic/print design. This studio moves across photography, illustration, and flat graphic design depending on the deliverable type — a range finding, not a single default mode.</p>
+</section>
+
+<section>
+  <h2><span class="num">8</span> Signature Elements</h2>
+  <div class="sig-grid">
+    <div class="sig-card"><h3>Restrained palette <span class="conf med">MEDIUM-HIGH</span></h3><p>2–3 dominant colors per piece regardless of category.</p><div class="wids">ul_02,03,05,07,08 (5)</div></div>
+    <div class="sig-card"><h3>Earth-tone regional register <span class="conf med">MEDIUM</span></h3><p>Tan/khaki/olive/brown, paper-craft texture, for Ningxia food-agri clients.</p><div class="wids">ul_04,05,07 (3, 1 partial)</div></div>
+    <div class="sig-card"><h3>Full register-shift methodology <span class="conf hi">HIGH (methodology)</span></h3><p>Photography, illustration, or clean corporate — matched to category, not defaulted.</p><div class="wids">all 8</div></div>
+    <div class="sig-card"><h3>Production-ready VI documentation <span class="conf lo">LOW</span></h3><p>Explicit dimension callouts, structured manual grid.</p><div class="wids">ul_03 only</div></div>
+    <div class="sig-card"><h3>Ink-brush/mountain accenting <span class="conf lo">LOW</span></h3><p>Traditional decorative linework in wellness context.</p><div class="wids">ul_08 only</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">9</span> Do / Don't</h2>
+  <div class="dodont">
+    <div class="col do"><h3>Do</h3><ul>
+      <li>Keep any single deliverable to 2–3 colors</li>
+      <li>Lean into earth tones/paper-craft texture for regional food-agri briefs</li>
+      <li>Match rendering mode to category, not one default</li>
+      <li>Expect strong technical polish in VI/collateral</li>
+    </ul></div>
+    <div class="col dont"><h3>Don't</h3><ul>
+      <li>Assume a repeated graphic symbol or mascot — none found</li>
+      <li>Assume one fixed color family for the whole studio</li>
+      <li>Assume illustration is the default — more than half the sample is photography or flat graphic design</li>
+      <li>Over-claim the numeral-icon (§4) or ink-brush accent (§6) as stable rules — both single-work</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">10</span> Agent Design Guide</h2>
+  <div class="agent-box">
+    <h3>For a downstream generation agent</h3>
+    <ol>
+      <li>Identify the client category first — this studio's whole approach follows from it, not from a fixed house style.</li>
+      <li>Keep any single deliverable's palette to 2–3 colors.</li>
+      <li>For regional food/agriculture briefs, default to earth tones and a paper-craft/kraft surface look.</li>
+      <li>Choose rendering mode deliberately: photography for food-realism briefs, illustration for fashion-forward premium goods, clean flat graphic design for corporate/VI work.</li>
+      <li>Do not invent a "signature symbol" for this studio — none was found across 8 sampled works; build the identity from the client's own mark instead.</li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">11</span> Evidence / Confidence</h2>
+  <table class="evalt">
+    <tr><th>Element</th><th>Work IDs</th><th>Confidence</th></tr>
+    <tr><td>Restrained palette</td><td>ul_02,03,05,07,08</td><td>MEDIUM-HIGH (5)</td></tr>
+    <tr><td>Earth-tone regional register</td><td>ul_04,05,07</td><td>MEDIUM (3, 1 partial)</td></tr>
+    <tr><td>Register-shift methodology</td><td>all 8</td><td>HIGH (methodology)</td></tr>
+    <tr><td>Production-ready VI docs</td><td>ul_03</td><td>LOW (1)</td></tr>
+    <tr><td>Ink-brush accenting</td><td>ul_08</td><td>LOW (1)</td></tr>
+  </table>
+  <p class="lede" style="margin-top:12px;">Full evidence: <code>PERSONAL_DESIGN_SYSTEM.md</code>.</p>
+</section>
+
+<footer class="bottom">独角狮设计 — Personal Design System · evidence acquired 2026-08-22</footer>
+</div>
+</body>
+</html>

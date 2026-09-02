@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@700;900&family=Manrope:wght@500;700;800&display=swap">
+  <style>
+    body { margin: 0; font-family: 'Manrope', system-ui, sans-serif; }
+    a { color: #92400e; } a:hover { color: #78350f; }
+    .can { display:flex; flex-direction:column; align-items:stretch; width:220px; height:480px;
+           border-radius:28px; overflow:hidden; position:relative;
+           box-shadow: 0 30px 60px -20px oklch(20% 0.02 260 / 0.35), 0 4px 10px oklch(20% 0.02 260 / 0.15); }
+    .rim { height:24px; flex-shrink:0; background: linear-gradient(180deg, oklch(92% 0.005 90), oklch(80% 0.01 90) 45%, oklch(66% 0.015 90)); }
+    .rim-top { border-radius:28px 28px 0 0; }
+    .rim-bottom { border-radius:0 0 28px 28px; }
+    .body { flex:1; position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center;
+            gap:12px; padding:22px 18px; overflow:hidden; }
+    .gloss { position:absolute; left:15%; top:0; bottom:0; width:9%;
+             background: linear-gradient(180deg, oklch(100% 0 0 / 0.38), oklch(100% 0 0 / 0.04));
+             filter: blur(2px); pointer-events:none; }
+    .condensation { position:absolute; inset:0; pointer-events:none; }
+    .droplet { position:absolute; border-radius:50%;
+               background: radial-gradient(circle at 35% 30%, oklch(100% 0 0 / 0.85), oklch(90% 0.01 200 / 0.15) 65%, transparent 78%); }
+    .symbol-wrap { width:78px; height:78px; position:relative; z-index:1; }
+    .cn { font-family:'Noto Sans SC', sans-serif; font-weight:900; font-size:32px; line-height:1;
+          color: oklch(20% 0.02 260); letter-spacing:0.5px; position:relative; z-index:1; }
+    .en { font-family:'Manrope', sans-serif; font-weight:800; font-size:12px; letter-spacing:3px;
+          color: oklch(28% 0.02 260 / 0.72); text-transform:uppercase; margin-top:-6px; position:relative; z-index:1; }
+    .flavor-row { display:flex; align-items:center; gap:6px; margin-top:8px; padding:6px 14px;
+                  background: oklch(98% 0.005 90 / 0.55); border-radius:999px; position:relative; z-index:1; }
+    .ficon { width:16px; height:16px; flex-shrink:0; }
+    .flavor-text { font-family:'Noto Sans SC', sans-serif; font-size:12px; font-weight:700; color: oklch(24% 0.02 260); white-space:nowrap; }
+  </style>
+</helmet>
+<div class="can">
+  <div class="rim rim-top"></div>
+  <div class="body" style="background: linear-gradient(90deg,
+        color-mix(in oklch, {{dominant}} 82%, black 8%) 0%,
+        {{dominant}} 20%, {{dominant}} 80%,
+        color-mix(in oklch, {{dominant}} 82%, black 8%) 100%);">
+    <div class="gloss"></div>
+    <div class="condensation">
+      <div class="droplet" style="width:7px;height:7px;top:14%;left:22%;"></div>
+      <div class="droplet" style="width:4px;height:4px;top:20%;left:31%;"></div>
+      <div class="droplet" style="width:6px;height:6px;top:10%;left:68%;"></div>
+      <div class="droplet" style="width:5px;height:5px;top:79%;left:26%;"></div>
+      <div class="droplet" style="width:8px;height:8px;top:83%;left:70%;"></div>
+      <div class="droplet" style="width:4px;height:4px;top:71%;left:60%;"></div>
+    </div>
+    <div class="symbol-wrap"><dc-import name="SproutBubbleSymbol" hint-size="78,78"></dc-import></div>
+    <div class="cn">荔泉气泡</div>
+    <div class="en">LICHUAN SPARKLING</div>
+    <div class="flavor-row">
+      <sc-if value="{{isLychee}}" hint-placeholder-val="{{true}}">
+        <svg class="ficon" viewBox="0 0 24 24"><circle cx="12" cy="14" r="7" fill="none" stroke="#b5473f" stroke-width="1.6"/><path d="M12 7 C10 5 9 4 8 3.5" fill="none" stroke="#5c8a52" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </sc-if>
+      <sc-if value="{{isMint}}" hint-placeholder-val="{{false}}">
+        <svg class="ficon" viewBox="0 0 24 24"><path d="M12 21 C6 17 5 10 12 4 C19 10 18 17 12 21 Z" fill="none" stroke="#3f8a5c" stroke-width="1.6"/><path d="M12 20 L12 6" fill="none" stroke="#3f8a5c" stroke-width="1.2"/></svg>
+      </sc-if>
+      <sc-if value="{{isYuzu}}" hint-placeholder-val="{{false}}">
+        <svg class="ficon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8" fill="none" stroke="#c98a2b" stroke-width="1.6"/><path d="M12 4 L12 20 M4 12 L20 12 M6.3 6.3 L17.7 17.7 M17.7 6.3 L6.3 17.7" stroke="#c98a2b" stroke-width="1"/></svg>
+      </sc-if>
+      <div class="flavor-text">{{flavorCN}} · {{flavorEN}}</div>
+    </div>
+  </div>
+  <div class="rim rim-bottom"></div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{
+  "dominant": {"editor":"color","default":"oklch(83% 0.08 18)"},
+  "flavorCN": {"editor":"text","default":"荔枝玫瑰"},
+  "flavorEN": {"editor":"text","default":"Lychee Rose"},
+  "flavorIcon": {"editor":"enum","options":["lychee","mint","yuzu"],"default":"lychee"}
+}'>
+class Component extends DCLogic {
+  renderVals() {
+    const icon = this.props.flavorIcon ?? 'lychee';
+    return {
+      dominant: this.props.dominant ?? 'oklch(83% 0.08 18)',
+      flavorCN: this.props.flavorCN ?? '荔枝玫瑰',
+      flavorEN: this.props.flavorEN ?? 'Lychee Rose',
+      isLychee: icon === 'lychee',
+      isMint: icon === 'mint',
+      isYuzu: icon === 'yuzu'
+    };
+  }
+}
+</script>
+</body>
+</html>
