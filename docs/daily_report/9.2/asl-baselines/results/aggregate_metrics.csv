@@ -1,0 +1,5 @@
+subset,model,n,n_total,n_failure,corpus_wer,corpus_cer,corpus_sacrebleu,corpus_chrf,total_runtime_s,peak_rss_mb
+Uni-Sign full-128,Uni-Sign,128,128,0,0.9819,0.7608,5.3876,22.7498,4170.6,3621.8
+OpenSLT successful-126,OpenSLT,126,128,2,1.0246,0.7689,0.98,18.5904,96.55,1639.9
+Uni-Sign matched-126 (PRIMARY comparison subset),Uni-Sign,126,126,0,0.9801,0.7601,5.4,22.8262,4133.4,3621.8
+OpenSLT matched-126 (PRIMARY comparison subset),OpenSLT,126,126,0,1.0246,0.7689,0.98,18.5904,96.55,1639.9

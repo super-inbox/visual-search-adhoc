@@ -1,0 +1,3 @@
+model,clip_id,failure_reason
+OpenSLT,G3EfBFwsOpE_3-10-rgb_front,"MISSING_OFFICIAL_FEATURE: clip not present in OpenSLT's official released I3D test-feature archive (Dataverse file 51538); not regenerated, not substituted, per instructions"
+OpenSLT,fZK9hW81XCU_9-10-rgb_front,"MISSING_OFFICIAL_FEATURE: clip not present in OpenSLT's official released I3D test-feature archive (Dataverse file 51538); not regenerated, not substituted, per instructions"
