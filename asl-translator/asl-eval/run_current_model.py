@@ -161,6 +161,24 @@ CONFIGS = {
         "dedup": True,  # identical to production_2026_08_29
         "thinking_level": "medium",  # Gemini 3.6's documented default; pinned explicitly for reproducibility
     },
+    # Experiment B of the 2026-09-06 temporal-sampling ablation. Identical to
+    # evaluation_2026_09_04_gemini_3_6 in every knob EXCEPT target_frames_per_sec —
+    # that is the one intended experimental variable (does higher temporal
+    # sampling density reduce the deletion/coverage failure mode?). Everything
+    # else (model, thinking_level, prompt, schema, batch size, dedup) is copied
+    # verbatim so any WER/CER/coverage delta between the two configs can only be
+    # attributed to sampling density. See resolve_frame_budget()/budget_for_duration()
+    # below for how this per-config override is threaded through without touching
+    # the module-level TARGET_FRAMES_PER_SEC that baseline A and production still use.
+    "evaluation_2026_09_06_gemini_3_6_8fps": {
+        "model": "gemini-3.6-flash",
+        "temperature": None,
+        "temperature_label": "temperature_not_set_gemini3_uses_thinking_level",
+        "budget_mode": "duration_scaled",
+        "dedup": True,
+        "thinking_level": "medium",
+        "target_frames_per_sec": 8.0,  # ablation variable; overrides the 2.0 module default for THIS config only
+    },
 }
 
 # Status registry for reporting only — never read by the sampling/inference
@@ -190,6 +208,17 @@ CONFIG_STATUS = {
             "Same prompt/sampling/batching/dedup/schema; model and decoding "
             "knobs updated for the Gemini 3.x migration (see this config's "
             "own CONFIGS entry above)."
+        ),
+    },
+    "evaluation_2026_09_06_gemini_3_6_8fps": {
+        "model": "gemini-3.6-flash",
+        "status": "runnable_ablation_arm",
+        "detail": (
+            "Experiment B of the 2026-09-06 temporal-sampling ablation against "
+            "frozen baseline A (evaluation_2026_09_04_gemini_3_6). Only "
+            "target_frames_per_sec differs (8.0 vs. 2.0) — everything else is "
+            "identical. Not production_2026_08_29 and not baseline A; must "
+            "never be reported as either."
         ),
     },
 }
@@ -371,10 +400,27 @@ def extract_frames(video_path: str, stamps: List[float], outdir: str) -> List[st
 # (_budget_for_duration, _normalize_for_dedup, _merge_adjacent_duplicates,
 #  _has_degenerate_repetition), 2026-08-29.
 # ─────────────────────────────────────────────────────────────────────────
-def budget_for_duration(duration_s: float) -> int:
-    """Frames to sample for a clip of this length, clamped to the cost ceiling."""
+def budget_for_duration(duration_s: float, target_frames_per_sec: float = TARGET_FRAMES_PER_SEC) -> int:
+    """Frames to sample for a clip of this length, clamped to the cost ceiling.
+
+    target_frames_per_sec defaults to the module constant (2.0, what
+    production_2026_08_29 and evaluation_2026_09_04_gemini_3_6 use) so every
+    existing caller and test is unaffected. A config may override the density
+    via CONFIGS[name]["target_frames_per_sec"] — see resolve_frame_budget().
+    """
     return max(MIN_FRAME_BUDGET,
-               min(MAX_FRAME_BUDGET, int(round(duration_s * TARGET_FRAMES_PER_SEC))))
+               min(MAX_FRAME_BUDGET, int(round(duration_s * target_frames_per_sec))))
+
+
+def resolve_target_fps(config_name: str) -> float:
+    """The temporal-sampling density this config uses.
+
+    The module-level TARGET_FRAMES_PER_SEC (2.0) stays the default for every
+    config that doesn't declare its own — baseline A and production are
+    untouched. A config opts into a different density with a
+    "target_frames_per_sec" key (e.g. evaluation_2026_09_06_gemini_3_6_8fps).
+    """
+    return CONFIGS[config_name].get("target_frames_per_sec", TARGET_FRAMES_PER_SEC)
 
 
 def resolve_frame_budget(config_name: str, duration_s: float,
@@ -383,7 +429,7 @@ def resolve_frame_budget(config_name: str, duration_s: float,
     if override is not None:
         return override
     if CONFIGS[config_name]["budget_mode"] == "duration_scaled":
-        return budget_for_duration(duration_s)
+        return budget_for_duration(duration_s, resolve_target_fps(config_name))
     return FRAME_BUDGET
 
 

@@ -136,6 +136,10 @@ UNISIGN_PER_CLIP_PATH = (
 )
 DEFAULT_RESULTS_DIR_NAME = {
     "evaluation_2026_09_04_gemini_3_6": "curify_gemini_3_6_2026_09_04",
+    # Experiment B (temporal-sampling ablation, 8 fps target) — its own
+    # directory so it can never reuse or overwrite frozen baseline-A
+    # predictions/results, which live under curify_gemini_3_6_2026_09_04/.
+    "evaluation_2026_09_06_gemini_3_6_8fps": "curify_gemini_3_6_2026_09_06_8fps",
 }
 
 sys.path.insert(0, str(ASL_EVAL_DIR))
@@ -525,7 +529,10 @@ def build_run_metadata(config_name: str, rows: list[dict], started_at: str) -> d
             "probe_fps": run_current_model.PROBE_FPS,
             "idle_quantile": run_current_model.IDLE_QUANTILE,
             "abs_motion_floor": run_current_model.ABS_MOTION_FLOOR,
-            "target_frames_per_sec": run_current_model.TARGET_FRAMES_PER_SEC,
+            # Per-config resolved density, not the bare module constant — that
+            # constant stays 2.0 for every config; a config (e.g. this
+            # ablation's 8fps arm) overrides it via CONFIGS[name]["target_frames_per_sec"].
+            "target_frames_per_sec": run_current_model.resolve_target_fps(config_name),
             "min_frame_budget": run_current_model.MIN_FRAME_BUDGET,
             "max_frame_budget": run_current_model.MAX_FRAME_BUDGET,
             "keyframe_width": run_current_model.KEYFRAME_WIDTH,
