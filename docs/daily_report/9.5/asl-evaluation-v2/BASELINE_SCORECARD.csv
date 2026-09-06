@@ -1,0 +1,5 @@
+dataset_scope,system,n,wer,cer,bleu,chrf,substitutions,deletions,insertions,total_reference_words,temporal_precision,temporal_recall,notes
+ALL-128,Curify (evaluation_2026_09_04_gemini_3_6),128,0.9762,0.8071,0.1341,11.2835,1095,1779,32,2977,0.9922,0.5814,All attempted clips; 128/128 succeeded 0 failed
+MATCHED-126,Curify (evaluation_2026_09_04_gemini_3_6),126,0.9761,0.8070,0.1346,11.3033,1091,1772,32,2966,0.9921,0.5823,Excludes 2 clips OpenSLT could not produce a prediction for (G3EfBFwsOpE_3-10-rgb_front fZK9hW81XCU_9-10-rgb_front); this is the only row directly comparable to OpenSLT/Uni-Sign below
+MATCHED-126,OpenSLT,126,1.0246,0.7689,0.962,18.5904,2053,552,434,2966,,,"No temporal precision/recall metric exists for OpenSLT (text-only reference implementation); insertion-heavy error profile, opposite of Curify's deletion-dominant profile"
+MATCHED-126,Uni-Sign,126,0.9801,0.7601,5.40,22.8262,,,,,,,"No temporal precision/recall metric exists for Uni-Sign (text-only); no substitution/deletion/insertion breakdown published in saved results; BLEU/chrF both clearly highest of the three systems"

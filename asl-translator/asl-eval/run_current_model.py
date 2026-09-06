@@ -142,6 +142,56 @@ CONFIGS = {
         "budget_mode": "duration_scaled",
         "dedup": True,
     },
+    # Added 2026-09-04. NOT production_2026_08_29 and must never be reported as
+    # it — that config's own dict entry above is untouched by this addition.
+    # Only the model changes for the Gemini 3.x migration; every sampling/
+    # batching/dedup/prompt/schema knob is copied verbatim from
+    # production_2026_08_29 by reusing the same budget_mode/dedup values (see
+    # run_real() and print_dry_run_report(), which read these generically —
+    # nothing model-specific was added to the sampling pipeline itself).
+    # temperature=0.0 is deliberately NOT carried over: Gemini 3.x models use
+    # `thinking_config` for reasoning-effort control, and mixing a legacy
+    # temperature pin with a thinking-enabled 3.x model is not a documented,
+    # supported combination — thinking_level is the reproducibility knob here.
+    "evaluation_2026_09_04_gemini_3_6": {
+        "model": "gemini-3.6-flash",
+        "temperature": None,  # omitted; not carried over from production_2026_08_29 (see note above)
+        "temperature_label": "temperature_not_set_gemini3_uses_thinking_level",
+        "budget_mode": "duration_scaled",  # identical to production_2026_08_29
+        "dedup": True,  # identical to production_2026_08_29
+        "thinking_level": "medium",  # Gemini 3.6's documented default; pinned explicitly for reproducibility
+    },
+}
+
+# Status registry for reporting only — never read by the sampling/inference
+# code paths above, so adding or editing entries here cannot change any
+# config's runtime behavior. Exists so the current credential's model-access
+# blocker is recorded next to the config it affects, per 2026-09-04 decision.
+CONFIG_STATUS = {
+    "production_2026_08_29": {
+        "model": ASL_MODEL,
+        "status": "blocked_for_provided_credential",
+        "detail": (
+            "generate_content on gemini-2.5-flash returns 404 NOT_FOUND, "
+            "'no longer available to new users', for the currently provided "
+            "GEMINI_API_KEY/project. models.list()/models.get() both show the "
+            "model with generateContent listed as supported — this is a "
+            "server-side account/project entitlement restriction, not a "
+            "code, prompt, or sampling issue. See "
+            "docs/daily_report/9.2/asl-baselines/GEMINI_PHASE3A_CREDENTIAL_BLOCKER.md "
+            "and the 2026-09-04 diagnostic for the full evidence trail."
+        ),
+    },
+    "evaluation_2026_09_04_gemini_3_6": {
+        "model": "gemini-3.6-flash",
+        "status": "runnable_evaluation_baseline",
+        "detail": (
+            "Not production_2026_08_29 and must never be labeled as it. "
+            "Same prompt/sampling/batching/dedup/schema; model and decoding "
+            "knobs updated for the Gemini 3.x migration (see this config's "
+            "own CONFIGS entry above)."
+        ),
+    },
 }
 
 # Production prompt, copied verbatim from _PROMPT in the source file above.
@@ -631,6 +681,14 @@ def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
             gen_config_kwargs = {"response_mime_type": "application/json"}
             if cfg["temperature"] is not None:
                 gen_config_kwargs["temperature"] = cfg["temperature"]
+            # Only present on configs that declare it (currently just
+            # evaluation_2026_09_04_gemini_3_6) — no effect on baseline0,
+            # temperature0, or production_2026_08_29, which have no
+            # "thinking_level" key.
+            if cfg.get("thinking_level"):
+                gen_config_kwargs["thinking_config"] = gtypes.ThinkingConfig(
+                    thinking_level=cfg["thinking_level"]
+                )
 
             resp = client.models.generate_content(
                 model=cfg["model"],
@@ -693,6 +751,14 @@ def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
             },
             "segments": segments,
         }
+        # Additive-only: these keys only appear for configs that declare
+        # "thinking_level" (currently just evaluation_2026_09_04_gemini_3_6).
+        # baseline0 / temperature0 / production_2026_08_29 output JSON is
+        # byte-for-byte unaffected by this block.
+        if cfg.get("thinking_level"):
+            output["run_metadata"]["thinking_level"] = cfg["thinking_level"]
+            output["run_metadata"]["config_status"] = CONFIG_STATUS.get(config_name, {})
+            output["run_metadata"]["not_production_2026_08_29"] = True
     output_path.write_text(json.dumps(output, indent=2), encoding="utf-8")
     print(f"Wrote {len(segments)} segment(s) from {model_calls} model call(s) to {output_path}")
 
@@ -710,7 +776,10 @@ def build_arg_parser() -> argparse.ArgumentParser:
                      help="baseline0 = production as it ran 2026-08-16..08-29 (temperature unset, "
                           "absolute 96-frame budget, no dedup), kept so saved predictions stay "
                           "reproducible. temperature0 = the 8.26 A/B arm. "
-                          "production_2026_08_29 = what production runs now.")
+                          "production_2026_08_29 = what production runs now (gemini-2.5-flash; "
+                          "BLOCKED as of 2026-09-04 for the provided credential — see CONFIG_STATUS). "
+                          "evaluation_2026_09_04_gemini_3_6 = runnable evaluation baseline on "
+                          "gemini-3.6-flash, added 2026-09-04; NOT production_2026_08_29.")
     ap.add_argument("--frame-budget", type=int, default=None,
                      help="Override the frame budget for local experimentation. Default: whatever "
                           f"the chosen --config specifies — {FRAME_BUDGET} for baseline0/temperature0, "

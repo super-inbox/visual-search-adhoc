@@ -1,0 +1,153 @@
+{
+  "report_date": "2026-09-05",
+  "frozen_baseline_source_dir": "asl-translator/evaluation/results/how2sign_v2/curify_gemini_3_6_2026_09_04/",
+  "verification_method": "Independently re-read and recomputed from the saved corpus_summary.json, corpus_summary_matched_126.json, and per_clip_results.csv in the source dir above (not copied from a prior report). All figures below matched the pre-supplied facts exactly on re-check.",
+  "config": {
+    "label": "evaluation_2026_09_04_gemini_3_6",
+    "model": "gemini-3.6-flash",
+    "status": "runnable_evaluation_baseline",
+    "is_production_2026_08_29": false,
+    "note": "This is a separately labeled runnable evaluation baseline, NOT the historical production_2026_08_29 baseline. Same prompt/sampling/batching/dedup/schema as production_2026_08_29; only the model and decoding knobs changed for the Gemini 3.x migration.",
+    "thinking_level": "medium",
+    "budget_mode": "duration_scaled",
+    "dedup": true,
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "f42a3a44",
+    "run_timestamp_utc": "2026-09-06T03:17:13.419924+00:00",
+    "completed_at_utc": "2026-09-06T03:53:44.791071+00:00"
+  },
+  "historical_production_config": {
+    "label": "production_2026_08_29",
+    "model": "gemini-2.5-flash",
+    "status": "blocked_for_provided_credential",
+    "detail": "generate_content on gemini-2.5-flash returns 404 NOT_FOUND ('no longer available to new users') for the currently provided credential/project. models.list()/models.get() both list the model as generateContent-capable, so this is a server-side account/project entitlement restriction, not a code, prompt, or sampling defect.",
+    "preserved_unchanged": true,
+    "verification": "Diffed asl-eval/run_current_model.py: the production_2026_08_29 CONFIGS dict entry is untouched; only new keys were added elsewhere in the file for evaluation_2026_09_04_gemini_3_6."
+  },
+  "benchmark": {
+    "manifest": "asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+    "freeze_sha256_fingerprint": "16c41282b21928e36e4c5481d8c3de48d56794accbb091fde67698dd2963411a",
+    "freeze_fingerprint_verified": "Recomputed sha256 of FREEZE_CHECKSUMS.sha256 directly; matches the stored FREEZE.sha256 value exactly. All 260 individually checksummed files in the benchmark tree (manifest, references, source_metadata) re-verified against FREEZE_CHECKSUMS.sha256 with zero mismatches.",
+    "total_clips_in_manifest": 128,
+    "total_clips_attempted": 128,
+    "successful_clips": 128,
+    "failed_clips": 0
+  },
+  "metrics": {
+    "all_128": {
+      "n_total": 128,
+      "n_success": 128,
+      "n_failure": 0,
+      "corpus_wer": 0.9762,
+      "corpus_cer": 0.8071,
+      "total_reference_words": 2977,
+      "total_substitutions": 1095,
+      "total_deletions": 1779,
+      "total_insertions": 32,
+      "mean_temporal_precision": 0.9922,
+      "mean_temporal_recall": 0.5814,
+      "corpus_sacrebleu": 0.1341,
+      "corpus_chrf": 11.2835,
+      "sacrebleu_version": "2.6.0"
+    },
+    "matched_126": {
+      "n_total": 126,
+      "n_success": 126,
+      "n_failure": 0,
+      "corpus_wer": 0.9761,
+      "corpus_cer": 0.8070,
+      "total_reference_words": 2966,
+      "total_substitutions": 1091,
+      "total_deletions": 1772,
+      "total_insertions": 32,
+      "mean_temporal_precision": 0.9921,
+      "mean_temporal_recall": 0.5823,
+      "corpus_sacrebleu": 0.1346,
+      "corpus_chrf": 11.3033,
+      "sacrebleu_version": "2.6.0",
+      "excluded_clip_ids": [
+        "G3EfBFwsOpE_3-10-rgb_front",
+        "fZK9hW81XCU_9-10-rgb_front"
+      ],
+      "excluded_reason": "OpenSLT could not produce a prediction for these 2 clips; excluded from this scope so the comparison against OpenSLT/Uni-Sign below is apples-to-apples on the identical clip set."
+    }
+  },
+  "apples_to_apples_comparison_matched_126": {
+    "curify_evaluation_2026_09_04_gemini_3_6": {
+      "wer": 0.9761,
+      "cer": 0.8070,
+      "bleu": 0.1346,
+      "chrf": 11.3033,
+      "has_temporal_metrics": true
+    },
+    "openslt": {
+      "wer": 1.0246,
+      "cer": 0.7689,
+      "bleu": 0.962,
+      "chrf": 18.5904,
+      "substitutions": 2053,
+      "deletions": 552,
+      "insertions": 434,
+      "has_temporal_metrics": false,
+      "source": "asl-translator/evaluation/results/how2sign_v2/openslt/corpus_summary.json"
+    },
+    "uni_sign": {
+      "wer": 0.9801,
+      "cer": 0.7601,
+      "bleu": 5.40,
+      "chrf": 22.8262,
+      "has_temporal_metrics": false,
+      "source": "asl-translator/evaluation/results/how2sign_v2/unisign/matched126_summary.json"
+    },
+    "interpretation_caveat": "Curify's WER (0.9761) is numerically between OpenSLT's (1.0246) and Uni-Sign's (0.9801) but this must NOT be read as 'Curify outperforms Uni-Sign.' Uni-Sign's BLEU (5.40) is ~40x Curify's (0.1346) and its chrF (22.83) is roughly double Curify's (11.30) -- both far more sensitive than WER to whether the *content* of the output is actually correct. WER alone is a weak signal here because Curify's error profile is deletion-dominated (see deletion_dominance below): a system that outputs very few words can post a deceptively competitive WER purely by avoiding substitution opportunities, without saying anything correct."
+  },
+  "deletion_dominance_evidence": {
+    "total_reference_words_all_128": 2977,
+    "total_predicted_words_all_128": 1230,
+    "predicted_to_reference_word_ratio": 0.4132,
+    "total_edit_operations_all_128": 2906,
+    "deletion_share_of_edits": 0.6122,
+    "substitution_share_of_edits": 0.3768,
+    "insertion_share_of_edits": 0.0110,
+    "interpretation": "Curify predictions average 41% of the reference length. Deletions account for 61% of all edit operations vs. 38% substitutions and 1% insertions -- the model is systematically truncating/omitting content rather than mis-describing it, consistent with the qualitative pattern of short, thin outputs."
+  },
+  "wer_distribution": {
+    "n_clips": 128,
+    "mean_wer": 0.987,
+    "median_wer": 1.0,
+    "clips_wer_lt_0_5": 0,
+    "clips_wer_0_5_to_1_0": 47,
+    "clips_wer_gte_1_0": 81,
+    "clips_with_empty_prediction": 1,
+    "empty_prediction_clip_id": "92V3oH63zbQ_5-1-rgb_front"
+  },
+  "temporal_recall_vs_precision": {
+    "mean_temporal_precision_all_128": 0.9922,
+    "mean_temporal_recall_all_128": 0.5814,
+    "interpretation": "Very high precision (0.99) with much lower recall (0.58) means that when Curify does emit a segment, it is almost always aligned to genuine reference signing time (few false-positive time spans), but it only covers ~58% of the total reference signing duration -- consistent with the deletion-dominant text pattern: the model is silent/skipping across a large fraction of the video rather than misplacing its guesses in time."
+  },
+  "flagged_clip_frozen_prediction": {
+    "how2sign_id": "FZbyRzy4huk_3-8-rgb_front",
+    "frozen_saved_prediction_segments": ["Tablecloth", "Coffee"],
+    "note": "This is the only value to use. An earlier ad-hoc 'Tuberculosis / Drive / Nice' output for this clip is NOT from the frozen saved baseline and must not be cited."
+  },
+  "security_note": {
+    "incident": "A Gemini API key was accidentally printed into local Claude session history during verification.",
+    "remediation": "The local transcript was removed and local secret scans are now clean.",
+    "scope_of_claim": "No claim is made here about provider-side deletion of the key from any external system -- only that the local transcript containing it was removed and a local secret scan of this repository's changed/untracked files found no credential material.",
+    "credential_value_included": false
+  },
+  "audit": {
+    "benchmark_reference_checksums_unchanged": true,
+    "production_2026_08_29_config_unchanged": true,
+    "raw_result_directory_gitignored": true,
+    "no_api_secret_found_in_changed_or_untracked_files": true,
+    "report_numbers_traced_to_saved_outputs": true
+  },
+  "next_controlled_experiment_not_yet_implemented": {
+    "proposal": "Higher-FPS temporal sampling ablation: re-run the frozen evaluation_2026_09_04_gemini_3_6 config with an increased target_frames_per_sec (and/or raised max_frame_budget) against the same frozen 128-clip How2Sign v2 benchmark, holding prompt/model/dedup/schema fixed, to test whether the low temporal recall (0.58) and deletion-dominated outputs are caused by frame-sparsity (too few sampled frames per unit of signing time) rather than by the language model's reading/generation behavior itself.",
+    "status": "NOT implemented as part of this report -- proposed as the next step only."
+  }
+}
