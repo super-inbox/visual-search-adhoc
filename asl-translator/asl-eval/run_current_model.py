@@ -179,6 +179,26 @@ CONFIGS = {
         "thinking_level": "medium",
         "target_frames_per_sec": 8.0,  # ablation variable; overrides the 2.0 module default for THIS config only
     },
+    # Phase 3A, 2026-09-07: controlled SAMPLING-STRATEGY ablation against frozen
+    # baseline A (evaluation_2026_09_04_gemini_3_6). Identical to baseline A in
+    # every knob EXCEPT sampling_strategy — target_frames_per_sec is left
+    # UNSET so it resolves to the same 2.0 module default baseline A uses
+    # (density is the thing held fixed here, unlike the 8fps config above).
+    # The one experimental variable is timestamp ALLOCATION: this config uses
+    # allocate_timestamps_uniform() (evenly spaced across the clip span, no
+    # motion weighting) instead of the production motion-weighted
+    # allocate_timestamps(). See resolve_sampling_strategy() / run_dry() /
+    # run_real() for how this per-config override is threaded through without
+    # touching the adaptive path any other config uses.
+    "evaluation_2026_09_07_gemini_3_6_uniform_2fps": {
+        "model": "gemini-3.6-flash",
+        "temperature": None,
+        "temperature_label": "temperature_not_set_gemini3_uses_thinking_level",
+        "budget_mode": "duration_scaled",
+        "dedup": True,
+        "thinking_level": "medium",
+        "sampling_strategy": "uniform",  # ablation variable; every other config is "adaptive" (the default)
+    },
 }
 
 # Status registry for reporting only — never read by the sampling/inference
@@ -219,6 +239,18 @@ CONFIG_STATUS = {
             "target_frames_per_sec differs (8.0 vs. 2.0) — everything else is "
             "identical. Not production_2026_08_29 and not baseline A; must "
             "never be reported as either."
+        ),
+    },
+    "evaluation_2026_09_07_gemini_3_6_uniform_2fps": {
+        "model": "gemini-3.6-flash",
+        "status": "runnable_ablation_arm",
+        "detail": (
+            "Phase 3A sampling-strategy ablation against frozen baseline A "
+            "(evaluation_2026_09_04_gemini_3_6). Only sampling_strategy differs "
+            "(uniform vs. adaptive/motion-weighted) - target_frames_per_sec, "
+            "model, prompt, batch size, dedup, and thinking_level are identical "
+            "to baseline A. Not production_2026_08_29, not baseline A, and not "
+            "the 8fps arm; must never be reported as any of them."
         ),
     },
 }
@@ -376,6 +408,42 @@ def allocate_timestamps(runs: List[MotionRun], budget: int) -> List[float]:
         idx = [int(round(i * (len(stamps) - 1) / (budget - 1))) for i in range(budget)]
         stamps = [stamps[i] for i in sorted(set(idx))]
     return stamps
+
+
+# ─────────────────────────────────────────────────────────────────────────
+# Uniform-sampling ablation arm — added 2026-09-07, Phase 3A controlled
+# sampling-strategy ablation. NOT part of the production/baseline sampler
+# above (`allocate_timestamps`, motion-weighted/adaptive) and never called by
+# any config unless that config explicitly sets sampling_strategy="uniform".
+# ─────────────────────────────────────────────────────────────────────────
+def allocate_timestamps_uniform(times: List[float], budget: int) -> List[float]:
+    """Evenly-spaced timestamps across the observed clip span, ignoring motion entirely.
+
+    Deliberately takes `times` (the motion probe's own timestamp grid), not the
+    segmented MotionRuns, so it never reads motion energy — only the clip span
+    [times[0], times[-1]], which the adaptive path also uses for its own
+    no-active-motion fallback (see the `if not active:` branch of
+    allocate_timestamps above). This keeps the two samplers' notion of "clip
+    span" identical; the only difference is that this function does not weight
+    by motion at all, and does not use MotionRun/active-run structure. Returns
+    exactly `budget` timestamps (not capped/rounded per-run like the adaptive
+    path), already chronologically ordered.
+    """
+    if not times:
+        return []
+    lo, hi = times[0], times[-1]
+    if budget <= 1:
+        return [lo]
+    return [lo + (hi - lo) * i / (budget - 1) for i in range(budget)]
+
+
+def resolve_sampling_strategy(config_name: str) -> str:
+    """"adaptive" (motion-weighted, the production/baseline sampler) unless a
+    config explicitly opts into "uniform" via CONFIGS[name]["sampling_strategy"].
+    Every existing config (baseline0 through evaluation_2026_09_06_gemini_3_6_8fps)
+    has no such key and therefore resolves to "adaptive" — unchanged behavior.
+    """
+    return CONFIGS[config_name].get("sampling_strategy", "adaptive")
 
 
 # ─────────────────────────────────────────────────────────────────────────
@@ -555,6 +623,9 @@ class DryRunReport:
     # by keyword keep working.
     sampling_density_fps: float = 0.0
     low_density: bool = False
+    # "adaptive" (default, unchanged for every pre-existing config) or "uniform"
+    # for a config that sets sampling_strategy="uniform" (Phase 3A ablation).
+    sampling_strategy: str = "adaptive"
 
 
 def run_dry(video_path: Path, config_name: str, frame_budget: Optional[int],
@@ -568,7 +639,15 @@ def run_dry(video_path: Path, config_name: str, frame_budget: Optional[int],
     frame_budget = resolve_frame_budget(config_name, effective_duration, frame_budget)
 
     runs = segment_runs(times, motion)
-    stamps = allocate_timestamps(runs, frame_budget)
+    strategy = resolve_sampling_strategy(config_name)
+    # `runs` is still computed above for BOTH strategies so the report's
+    # active_run_count/idle_run_count describe this clip's actual motion
+    # structure either way — the uniform arm simply never uses `runs` to
+    # choose timestamps.
+    if strategy == "uniform":
+        stamps = allocate_timestamps_uniform(times, frame_budget)
+    else:
+        stamps = allocate_timestamps(runs, frame_budget)
 
     frames_extracted = 0
     if extract:
@@ -601,6 +680,7 @@ def run_dry(video_path: Path, config_name: str, frame_budget: Optional[int],
         frames_verified_on_disk=extract,
         sampling_density_fps=density,
         low_density=density < DENSITY_FLOOR_FPS,
+        sampling_strategy=strategy,
     )
 
 
@@ -622,6 +702,9 @@ def print_dry_run_report(report: DryRunReport, config_name: str) -> None:
     print(f"used full budget      : {report.used_full_budget}")
     print(f"expected Gemini calls : {report.expected_model_calls} (batch_size={BATCH_SIZE})")
     print(f"budget mode           : {cfg['budget_mode']}")
+    print(f"sampling strategy     : {report.sampling_strategy}"
+          + (" (production/baseline motion-weighted sampler)" if report.sampling_strategy == "adaptive"
+             else " (Phase 3A ablation — evenly spaced, ignores motion)"))
     print(f"dedup                 : {cfg['dedup']}")
     print(f"sampling density      : {report.sampling_density_fps} frames/sec"
           f" (floor {DENSITY_FLOOR_FPS})")
@@ -672,6 +755,11 @@ def dry_run_report_to_json(report: DryRunReport, config_name: str, video_arg: st
             "source_file": SOURCE_FILE,
             "prompt_sha256": prompt_sha256(),
             "input_md5": input_md5(video_arg) if Path(video_arg).exists() else None,
+            # Additive-only, like thinking_level/config_status below: appears only
+            # for a config that declares sampling_strategy (currently just the
+            # Phase 3A uniform-2fps ablation). Every other config's dry-run JSON
+            # is byte-for-byte unaffected.
+            **({"sampling_strategy": cfg["sampling_strategy"]} if cfg.get("sampling_strategy") else {}),
         },
         "selected_timestamps_s": report.selected_timestamps,
         "segments": [],
@@ -709,7 +797,11 @@ def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
     runs = segment_runs(times, motion)
     duration = times[-1]
     frame_budget = resolve_frame_budget(config_name, duration, frame_budget)
-    stamps = allocate_timestamps(runs, frame_budget)
+    strategy = resolve_sampling_strategy(config_name)
+    if strategy == "uniform":
+        stamps = allocate_timestamps_uniform(times, frame_budget)
+    else:
+        stamps = allocate_timestamps(runs, frame_budget)
 
     segments = []
     model_calls = 0
@@ -805,6 +897,13 @@ def run_real(video_path: Path, config_name: str, frame_budget: Optional[int],
             output["run_metadata"]["thinking_level"] = cfg["thinking_level"]
             output["run_metadata"]["config_status"] = CONFIG_STATUS.get(config_name, {})
             output["run_metadata"]["not_production_2026_08_29"] = True
+        # Additive-only, same pattern as thinking_level above: appears only for
+        # a config that declares sampling_strategy (currently just the Phase 3A
+        # uniform-2fps ablation). baseline0/temperature0/production_2026_08_29/
+        # evaluation_2026_09_04_gemini_3_6/evaluation_2026_09_06_gemini_3_6_8fps
+        # output JSON is byte-for-byte unaffected by this block.
+        if cfg.get("sampling_strategy"):
+            output["run_metadata"]["sampling_strategy"] = cfg["sampling_strategy"]
     output_path.write_text(json.dumps(output, indent=2), encoding="utf-8")
     print(f"Wrote {len(segments)} segment(s) from {model_calls} model call(s) to {output_path}")
 

@@ -1,0 +1,119 @@
+{
+  "project_id": null,
+  "video": "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/videos/fZM3IcM2Xs4_14_15_16-10-rgb_front.mp4",
+  "producer": "asl-translator/evaluation/diagnostics/phase1_temporal_ablation/controlled_ablation/run_sliding_arm.py",
+  "warning": "UNVERIFIED machine output \u2014 offline Phase 3B ablation run, not a production job. NOT the evaluation_2026_09_04_gemini_3_6 baseline (Arm A) \u2014 same sampled frames, different (overlapping) batch/window construction.",
+  "run_metadata": {
+    "config": "phase3b_independent_vs_sliding_window24_stride12_2026_09_07",
+    "not_baseline_config": "evaluation_2026_09_04_gemini_3_6",
+    "model": "gemini-3.6-flash",
+    "temperature": "temperature_not_set_gemini3_uses_thinking_level",
+    "thinking_level": "medium",
+    "frame_budget": 37,
+    "budget_mode": "duration_scaled",
+    "sampling_density_fps": 2.0,
+    "sampling_strategy": "adaptive (identical to baseline A -- reused frames, not resampled)",
+    "dedup": true,
+    "segments_before_dedup": 4,
+    "degenerate_repetition": false,
+    "keyframe_width": 512,
+    "duration_s": 18.5,
+    "frames_sampled": 37,
+    "model_calls": 3,
+    "batching_strategy": "overlapping_sliding_window",
+    "window_size": 24,
+    "stride": 12,
+    "n_windows": 3,
+    "merge_strategy": "deterministic_frame_index_ownership_partition_then_exact_text_dedup",
+    "window_reports": [
+      {
+        "window_index": 0,
+        "frame_index_range": [
+          0,
+          24
+        ],
+        "owned_frame_index_range": [
+          0,
+          12
+        ],
+        "owned_time_range_s": [
+          "-inf",
+          6.402
+        ],
+        "raw_segments_returned": 3,
+        "segments_kept_by_ownership": 2,
+        "segments_discarded_by_ownership": 1
+      },
+      {
+        "window_index": 1,
+        "frame_index_range": [
+          12,
+          36
+        ],
+        "owned_frame_index_range": [
+          12,
+          24
+        ],
+        "owned_time_range_s": [
+          6.402,
+          12.417
+        ],
+        "raw_segments_returned": 2,
+        "segments_kept_by_ownership": 0,
+        "segments_discarded_by_ownership": 2
+      },
+      {
+        "window_index": 2,
+        "frame_index_range": [
+          24,
+          37
+        ],
+        "owned_frame_index_range": [
+          24,
+          37
+        ],
+        "owned_time_range_s": [
+          12.417,
+          "inf"
+        ],
+        "raw_segments_returned": 2,
+        "segments_kept_by_ownership": 2,
+        "segments_discarded_by_ownership": 0
+      }
+    ],
+    "production_side_effects": false,
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "f42a3a44",
+    "source_file": "curify_background/app/utils/asl_utils.py",
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+    "input_md5": "023de7a7736d7d25e481158d96a9444d",
+    "not_production_2026_08_29": true
+  },
+  "segments": [
+    {
+      "start": 2.15,
+      "end": 4.28,
+      "text": "There are many different ways to combine things,",
+      "line": 1
+    },
+    {
+      "start": 4.58,
+      "end": 8.83,
+      "text": "with various options available,",
+      "line": 2
+    },
+    {
+      "start": 12.42,
+      "end": 15.06,
+      "text": "My heart was racing,",
+      "line": 3
+    },
+    {
+      "start": 16.56,
+      "end": 18.19,
+      "text": "and I had butterflies in my stomach.",
+      "line": 4
+    }
+  ]
+}

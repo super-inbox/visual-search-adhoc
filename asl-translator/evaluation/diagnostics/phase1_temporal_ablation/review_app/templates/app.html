@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ASL Phase 1 — human review</title>
+<style>
+  :root{color-scheme:light dark;--bg:#fff;--fg:#1a1a1a;--muted:#666;--border:#ddd;
+    --card:#f6f7f8;--accent:#3454d1;--hit:#dff3dc;--warn:#fff2cc;--priority:#ffe0e0;}
+  @media (prefers-color-scheme: dark){
+    body{--bg:#15161a;--fg:#e8e8ea;--muted:#9a9aa2;--border:#33343a;--card:#1d1e23;
+      --accent:#7f96ff;--hit:#1e3a20;--warn:#4a3f1a;--priority:#4a1e1e;}}
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,sans-serif;margin:0;padding:0}
+  header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--border);
+    padding:10px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;z-index:5}
+  header h1{font-size:16px;margin:0}
+  main{max-width:980px;margin:0 auto;padding:20px}
+  .progress{font-weight:600}
+  .badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:12px;font-weight:600}
+  .badge.priority{background:var(--priority);color:#a11;}
+  .badge.normal{background:var(--card);color:var(--muted)}
+  select#jump{margin-left:auto;padding:4px 8px}
+  .navbtns{display:flex;gap:8px}
+  button{cursor:pointer;border:1px solid var(--border);background:var(--card);color:var(--fg);
+    border-radius:6px;padding:6px 14px;font-size:13px}
+  button.primary{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+  button:disabled{opacity:.4;cursor:default}
+  .card{background:var(--card);border:1px solid var(--border);border-radius:8px;padding:14px 16px;margin-bottom:16px}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px}
+  .meta b{color:var(--fg)}
+  .pill{display:inline-block;background:var(--bg);border:1px solid var(--border);border-radius:999px;
+    padding:2px 10px;font-size:12px;margin:2px 4px 2px 0}
+  video{width:100%;max-height:420px;background:#000;border-radius:6px}
+  .thumbs{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+  .thumbs img{height:80px;border-radius:4px;border:1px solid var(--border)}
+  .textblock{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:8px 10px;margin-top:6px}
+  h2{font-size:14px;margin:0 0 8px;border-bottom:1px solid var(--border);padding-bottom:4px}
+  fieldset{border:1px solid var(--border);border-radius:6px;margin:0 0 14px;padding:10px 14px}
+  legend{padding:0 6px;font-weight:600;font-size:13px}
+  label.tag{display:inline-flex;align-items:center;gap:5px;margin:3px 14px 3px 0;font-size:13px}
+  .radiorow{display:flex;gap:16px;flex-wrap:wrap}
+  textarea{width:100%;min-height:64px;font:13px/1.4 system-ui,sans-serif;padding:8px;
+    border-radius:6px;border:1px solid var(--border);background:var(--bg);color:var(--fg)}
+  .legend-box{font-size:12px;color:var(--muted);background:var(--bg);border:1px dashed var(--border);
+    border-radius:6px;padding:8px 10px;margin-bottom:10px}
+  .savebar{display:flex;align-items:center;gap:12px;margin-top:6px}
+  .saved-indicator{font-size:12px;color:var(--muted)}
+  .saved-indicator.ok{color:#2a8a2a}
+  a.inspector-link{font-size:13px}
+  .hint-note{font-size:12px;color:var(--muted);margin-top:2px}
+  .section-note{font-size:12px;color:var(--muted);margin:-6px 0 10px}
+  fieldset.textbased{border-color:var(--accent)}
+  fieldset.aslvisual{border-style:dashed}
+  legend.textbased{color:var(--accent)}
+  legend.aslvisual{color:var(--muted)}
+  label.tag.asl{opacity:.85}
+  .asl-badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.02em;
+    color:var(--muted);background:var(--bg);border:1px dashed var(--border);border-radius:4px;
+    padding:0 5px;margin-left:2px}
+  .capability-box{font-size:12px;background:var(--warn);border:1px solid var(--border);
+    border-radius:6px;padding:8px 10px;margin-bottom:10px}
+</style>
+</head>
+<body>
+<header>
+  <h1>ASL Phase 1 — human review</h1>
+  <span class="progress" id="progress">– / –</span>
+  <span class="badge normal" id="priorityBadge"></span>
+  <div class="navbtns">
+    <button id="prevBtn">&larr; Previous</button>
+    <button id="nextBtn">Next &rarr;</button>
+  </div>
+  <select id="jump"></select>
+</header>
+<main>
+
+  <div class="capability-box">
+    <b>Reviewer-capability note:</b> if you are not ASL-fluent, you cannot reliably tell from the
+    video whether a prediction has "no visual basis," nor diagnose handshape / motion /
+    fingerspelling / facial-non-manual / segmentation failures. Fields below are grouped into
+    <b>TEXT-BASED</b> (judge by comparing the English reference to the English prediction — you can
+    always fill these in) and <b>ASL/VISUAL</b> (leave blank unless directly obvious; they exist for
+    an ASL-fluent reviewer). See <code>HUMAN_REVIEW_GUIDE.md</code> for full definitions.
+  </div>
+
+  <div class="legend-box">
+    <b>Semantic adequacy:</b>
+    <b>2</b> = core meaning correct &nbsp;·&nbsp;
+    <b>1</b> = partially correct / important omission or error &nbsp;·&nbsp;
+    <b>0</b> = wrong meaning or essentially hallucinated.
+    &nbsp;&nbsp;<b>reference_topic_mismatch</b> (text-based) = the prediction's meaning/topic is
+    clearly inconsistent with the English reference — no claim about visual grounding.
+    &nbsp;&nbsp;<b>hallucination</b> = "yes" requires confidence the predicted content has no basis
+    in the signed video at all; without ASL expertise, prefer "uncertain" or "requires_asl_review"
+    over "yes".
+  </div>
+
+  <div class="card" id="metaCard">
+    <div class="meta" id="metaRow"></div>
+    <div id="hints" style="margin-top:8px"></div>
+    <div id="inspectorLinkWrap" style="margin-top:8px"></div>
+  </div>
+
+  <div class="card">
+    <h2>Source video</h2>
+    <video id="video" controls preload="metadata"></video>
+    <div class="thumbs" id="thumbs"></div>
+    <div class="hint-note">Thumbnails are a quick 6-frame overview of what the model's motion-weighted
+      sampler actually selected for this clip (no model call) — not exhaustive; use the video for full review.</div>
+  </div>
+
+  <div class="card">
+    <h2>Reference (ground truth)</h2>
+    <div class="textblock" id="referenceText"></div>
+    <h2 style="margin-top:14px">Baseline Gemini prediction</h2>
+    <div class="textblock" id="predictionText"></div>
+  </div>
+
+  <div class="card">
+    <h2>Your annotation</h2>
+    <form id="annotationForm">
+      <fieldset id="contentFieldset"><legend>Content / clip tags</legend></fieldset>
+      <div class="section-note">Tags marked <span class="asl-badge">ASL</span> require ASL/visual
+        review unless directly obvious — leave unchecked if unsure.</div>
+      <fieldset id="failureFieldset"><legend>Failure tags</legend></fieldset>
+      <div class="section-note">Tags marked <span class="asl-badge">ASL</span> require ASL/visual
+        review unless directly obvious — leave unchecked if unsure.</div>
+
+      <fieldset class="textbased">
+        <legend class="textbased">Semantic adequacy — TEXT-BASED</legend>
+        <div class="radiorow" id="semanticRadios"></div>
+      </fieldset>
+
+      <fieldset class="textbased">
+        <legend class="textbased">reference_topic_mismatch — TEXT-BASED: is the prediction's
+          meaning/topic clearly inconsistent with the English reference? (no claim about visual
+          grounding)</legend>
+        <div class="radiorow" id="topicMismatchRadios"></div>
+      </fieldset>
+
+      <fieldset class="aslvisual">
+        <legend class="aslvisual">Hallucination — ASL/VISUAL: "yes" requires confidence the
+          predicted content has no basis in the signed video, which a non-ASL-fluent reviewer
+          normally cannot establish. Prefer "uncertain" or "requires_asl_review" instead of "yes"
+          unless you're confident.</legend>
+        <div class="radiorow" id="hallucinationRadios"></div>
+      </fieldset>
+
+      <fieldset class="aslvisual">
+        <legend class="aslvisual">requires_asl_review — flag this clip for an ASL-fluent reviewer
+          (default blank; only set if you believe this specific clip needs one)</legend>
+        <div class="radiorow" id="requiresAslRadios"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>fps_might_help — only "yes" if the sampled frames visibly seem to miss important
+          intermediate motion/handshape</legend>
+        <div class="radiorow" id="fpsRadios"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>batch_boundary_might_help — only "yes" if a sign/semantic unit appears to cross or
+          be disrupted by an independent 24-frame batch seam</legend>
+        <div class="radiorow" id="batchRadios"></div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Notes (free text — 1–2 short observations)</legend>
+        <textarea id="notes" placeholder="e.g. Fast fingerspelling transition is missing between sampled frames."></textarea>
+      </fieldset>
+
+      <div class="savebar">
+        <button type="button" class="primary" id="saveBtn">Save</button>
+        <span class="saved-indicator" id="savedIndicator"></span>
+      </div>
+    </form>
+  </div>
+
+</main>
+
+<script>
+const CONTENT_LABELS = {}; // filled from server
+const state = { clips: [], reviews: {}, contentTags: [], failureTags: [],
+  contentTagsAslReview: [], failureTagsAslReview: [], idx: 0, dirty: false };
+
+function el(tag, attrs, ...children){
+  const e = document.createElement(tag);
+  for(const [k,v] of Object.entries(attrs||{})){
+    if(k==='class') e.className=v; else if(k==='html') e.innerHTML=v; else e.setAttribute(k,v);
+  }
+  for(const c of children) if(c!=null) e.appendChild(typeof c==='string'?document.createTextNode(c):c);
+  return e;
+}
+
+async function loadState(){
+  const r = await fetch('/api/state');
+  const data = await r.json();
+  state.clips = data.clips;
+  state.reviews = data.reviews;
+  state.contentTags = data.content_tags;
+  state.failureTags = data.failure_tags;
+  state.contentTagsAslReview = data.content_tags_asl_review || [];
+  state.failureTagsAslReview = data.failure_tags_asl_review || [];
+
+  const jump = document.getElementById('jump');
+  jump.innerHTML = '';
+  state.clips.forEach((c,i)=>{
+    const opt = el('option', {value:i}, `${i+1}. ${c.priority?'★ ':''}${c.clip_id}`);
+    jump.appendChild(opt);
+  });
+  jump.onchange = ()=>{ saveCurrent(false).then(()=>{ state.idx = parseInt(jump.value,10); render(); }); };
+
+  const savedIdx = parseInt(localStorage.getItem('asl_review_idx')||'0',10);
+  state.idx = (savedIdx>=0 && savedIdx<state.clips.length) ? savedIdx : 0;
+  buildTagFieldsets();
+  render();
+}
+
+function buildTagFieldsets(){
+  const cf = document.getElementById('contentFieldset');
+  const ff = document.getElementById('failureFieldset');
+  const aslContent = new Set(state.contentTagsAslReview);
+  const aslFailure = new Set(state.failureTagsAslReview);
+  state.contentTags.forEach(tag=>{
+    const id = 'content__'+tag;
+    const needsAsl = aslContent.has(tag);
+    const label = el('label', {class:'tag'+(needsAsl?' asl':''),
+        title: needsAsl ? 'Requires ASL/visual review unless directly obvious.' : ''},
+      el('input', {type:'checkbox', id, 'data-group':'content', 'data-tag':tag}),
+      tag.replace(/_/g,' '),
+      needsAsl ? el('span',{class:'asl-badge'},'ASL') : null);
+    cf.appendChild(label);
+  });
+  state.failureTags.forEach(tag=>{
+    const id = 'failure__'+tag;
+    const needsAsl = aslFailure.has(tag);
+    const label = el('label', {class:'tag'+(needsAsl?' asl':''),
+        title: needsAsl ? 'Requires ASL/visual review unless directly obvious.' : ''},
+      el('input', {type:'checkbox', id, 'data-group':'failure', 'data-tag':tag}),
+      tag.replace(/_/g,' '),
+      needsAsl ? el('span',{class:'asl-badge'},'ASL') : null);
+    ff.appendChild(label);
+  });
+  document.querySelectorAll('input[type=checkbox]').forEach(cb=>cb.addEventListener('change', markDirtyAndAutosave));
+
+  const semRow = document.getElementById('semanticRadios');
+  [["2","2 — core meaning correct"],["1","1 — partially correct / important omission"],["0","0 — wrong / hallucinated"]]
+    .forEach(([v,label])=>{
+      semRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'semantic_adequacy', value:v}), label));
+    });
+  const topicRow = document.getElementById('topicMismatchRadios');
+  ["yes","no"].forEach(v=> topicRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'reference_topic_mismatch', value:v}), v)));
+  const halRow = document.getElementById('hallucinationRadios');
+  ["yes","no","uncertain","requires_asl_review"].forEach(v=> halRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'hallucination', value:v}), v)));
+  const reqAslRow = document.getElementById('requiresAslRadios');
+  ["yes","no"].forEach(v=> reqAslRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'requires_asl_review', value:v}), v)));
+  const fpsRow = document.getElementById('fpsRadios');
+  ["yes","no","uncertain","unable_to_judge"].forEach(v=> fpsRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'fps_might_help', value:v}), v)));
+  const batchRow = document.getElementById('batchRadios');
+  ["yes","no","uncertain","unable_to_judge"].forEach(v=> batchRow.appendChild(el('label',{class:'tag'}, el('input',{type:'radio', name:'batch_boundary_might_help', value:v}), v)));
+
+  document.querySelectorAll('input[type=radio]').forEach(r=>r.addEventListener('change', markDirtyAndAutosave));
+  document.getElementById('notes').addEventListener('input', markDirtyAndAutosave);
+  document.getElementById('saveBtn').addEventListener('click', ()=>saveCurrent(true));
+  document.getElementById('prevBtn').addEventListener('click', ()=>nav(-1));
+  document.getElementById('nextBtn').addEventListener('click', ()=>nav(1));
+}
+
+let autosaveTimer = null;
+function markDirtyAndAutosave(){
+  state.dirty = true;
+  document.getElementById('savedIndicator').textContent = 'unsaved changes…';
+  document.getElementById('savedIndicator').className = 'saved-indicator';
+  clearTimeout(autosaveTimer);
+  autosaveTimer = setTimeout(()=>saveCurrent(false), 800);
+}
+
+function currentClip(){ return state.clips[state.idx]; }
+
+function gatherForm(){
+  const content = {}; state.contentTags.forEach(t=> content[t] = document.getElementById('content__'+t).checked);
+  const failure = {}; state.failureTags.forEach(t=> failure[t] = document.getElementById('failure__'+t).checked);
+  const rv = name => { const r = document.querySelector(`input[name=${name}]:checked`); return r?r.value:""; };
+  return {
+    content, failure,
+    semantic_adequacy: rv('semantic_adequacy'),
+    reference_topic_mismatch: rv('reference_topic_mismatch'),
+    hallucination: rv('hallucination'),
+    requires_asl_review: rv('requires_asl_review'),
+    fps_might_help: rv('fps_might_help'),
+    batch_boundary_might_help: rv('batch_boundary_might_help'),
+    notes: document.getElementById('notes').value,
+  };
+}
+
+async function saveCurrent(showConfirm){
+  if(!state.dirty && !showConfirm) return;
+  const clip = currentClip();
+  const annotation = gatherForm();
+  state.reviews[clip.clip_id] = {...annotation, last_saved_utc: new Date().toISOString()};
+  const r = await fetch('/api/save', {method:'POST', headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({clip_id: clip.clip_id, annotation})});
+  const ind = document.getElementById('savedIndicator');
+  if(r.ok){
+    state.dirty = false;
+    ind.textContent = 'saved ✓ ' + new Date().toLocaleTimeString();
+    ind.className = 'saved-indicator ok';
+  } else {
+    ind.textContent = 'save failed — check server terminal';
+    ind.className = 'saved-indicator';
+  }
+}
+
+function nav(delta){
+  saveCurrent(false).then(()=>{
+    state.idx = Math.max(0, Math.min(state.clips.length-1, state.idx+delta));
+    render();
+  });
+}
+
+function fillForm(clipId){
+  const rv = state.reviews[clipId] || {};
+  state.contentTags.forEach(t=> document.getElementById('content__'+t).checked = !!(rv.content||{})[t]);
+  state.failureTags.forEach(t=> document.getElementById('failure__'+t).checked = !!(rv.failure||{})[t]);
+  const setRadio = (name, val) => {
+    document.querySelectorAll(`input[name=${name}]`).forEach(r=> r.checked = (r.value===val));
+  };
+  setRadio('semantic_adequacy', rv.semantic_adequacy||"");
+  setRadio('reference_topic_mismatch', rv.reference_topic_mismatch||"");
+  setRadio('hallucination', rv.hallucination||"");
+  setRadio('requires_asl_review', rv.requires_asl_review||"");
+  setRadio('fps_might_help', rv.fps_might_help||"");
+  setRadio('batch_boundary_might_help', rv.batch_boundary_might_help||"");
+  document.getElementById('notes').value = rv.notes||"";
+  const ind = document.getElementById('savedIndicator');
+  ind.textContent = rv.last_saved_utc ? ('last saved ' + new Date(rv.last_saved_utc).toLocaleString()) : 'not yet saved';
+  ind.className = 'saved-indicator' + (rv.last_saved_utc?' ok':'');
+}
+
+async function loadThumbs(clipId){
+  const wrap = document.getElementById('thumbs');
+  wrap.innerHTML = '<span class="hint-note">loading thumbnails…</span>';
+  try{
+    const r = await fetch('/api/thumbs/' + encodeURIComponent(clipId));
+    const data = await r.json();
+    wrap.innerHTML = '';
+    (data.thumbs||[]).forEach((src,i)=>{
+      if(!src) return;
+      const t = (data.timestamps||[])[i];
+      wrap.appendChild(el('img', {src, title: t!=null ? (t+'s') : ''}));
+    });
+    if(!data.thumbs || !data.thumbs.length){
+      wrap.innerHTML = '<span class="hint-note">' + (data.note || 'no thumbnails available') + '</span>';
+    }
+  }catch(e){
+    wrap.innerHTML = '<span class="hint-note">thumbnail load failed</span>';
+  }
+}
+
+function render(){
+  const clip = currentClip();
+  localStorage.setItem('asl_review_idx', state.idx);
+  document.getElementById('progress').textContent = `${state.idx+1} / ${state.clips.length}`;
+  const badge = document.getElementById('priorityBadge');
+  if(clip.priority){ badge.textContent = 'PRIORITY DIAGNOSTIC SET (review these 12 first)'; badge.className='badge priority'; }
+  else { badge.textContent = 'general 40-clip taxonomy'; badge.className='badge normal'; }
+  document.getElementById('jump').value = state.idx;
+  document.getElementById('prevBtn').disabled = state.idx===0;
+  document.getElementById('nextBtn').disabled = state.idx===state.clips.length-1;
+
+  const meta = document.getElementById('metaRow');
+  meta.innerHTML = '';
+  const metaPairs = [
+    ['clip_id', clip.clip_id], ['duration_s', clip.duration_s], ['baseline WER', clip.baseline_wer],
+    ['frames_sampled', clip.frames_sampled], ['model_calls', clip.model_calls_baseline],
+    ['density_fps', clip.sampling_density_fps_baseline], ['reason_selected', clip.reason_selected],
+  ];
+  metaPairs.forEach(([k,v])=> meta.appendChild(el('div',{}, el('b',{},k+': '), String(v))));
+
+  const hints = document.getElementById('hints');
+  hints.innerHTML = '';
+  const hintList = [
+    ['hint_number_token','numbers'], ['hint_fingerspelling_candidate','fingerspelling'],
+    ['hint_fast_signing','fast signing'], ['hint_question','question'],
+  ];
+  hintList.forEach(([key,label])=>{
+    if(String(clip[key]).toLowerCase()==='true'){
+      hints.appendChild(el('span',{class:'pill'}, 'manifest hint: '+label));
+    }
+  });
+  if(!hintList.some(([key])=> String(clip[key]).toLowerCase()==='true')){
+    hints.appendChild(el('span',{class:'pill'}, 'no manifest heuristic hint (plain)'));
+  }
+  hints.appendChild(el('div',{class:'hint-note'},
+    'Manifest hints describe the English reference text, not confirmed visual content — they are not answers.'));
+
+  const linkWrap = document.getElementById('inspectorLinkWrap');
+  linkWrap.innerHTML = '';
+  if(clip.inspector_available){
+    linkWrap.appendChild(el('a', {class:'inspector-link', href:'/inspector/'+encodeURIComponent(clip.clip_id), target:'_blank'},
+      '↗ Open full frame inspector (sampled frames, batch boundaries, motion trace, word diff)'));
+  }
+
+  document.getElementById('video').src = '/video/' + encodeURIComponent(clip.clip_id);
+  document.getElementById('referenceText').textContent = clip.reference || '';
+  document.getElementById('predictionText').textContent = clip.baseline_prediction || '';
+
+  fillForm(clip.clip_id);
+  loadThumbs(clip.clip_id);
+}
+
+window.addEventListener('beforeunload', ()=>{ if(state.dirty) saveCurrent(true); });
+loadState();
+</script>
+</body>
+</html>

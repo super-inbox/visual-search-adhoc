@@ -1,0 +1,65 @@
+{
+  "project_id": null,
+  "video": "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/videos/G19uBylwQww_1-2-rgb_front.mp4",
+  "producer": "asl-translator/evaluation/diagnostics/phase1_temporal_ablation/controlled_ablation/run_sliding_arm.py",
+  "warning": "UNVERIFIED machine output \u2014 offline Phase 3B ablation run, not a production job. NOT the evaluation_2026_09_04_gemini_3_6 baseline (Arm A) \u2014 same sampled frames, different (overlapping) batch/window construction.",
+  "run_metadata": {
+    "config": "phase3b_independent_vs_sliding_window24_stride12_2026_09_07",
+    "not_baseline_config": "evaluation_2026_09_04_gemini_3_6",
+    "model": "gemini-3.6-flash",
+    "temperature": "temperature_not_set_gemini3_uses_thinking_level",
+    "thinking_level": "medium",
+    "frame_budget": 24,
+    "budget_mode": "duration_scaled",
+    "sampling_density_fps": 5.647,
+    "sampling_strategy": "adaptive (identical to baseline A -- reused frames, not resampled)",
+    "dedup": true,
+    "segments_before_dedup": 1,
+    "degenerate_repetition": false,
+    "keyframe_width": 512,
+    "duration_s": 4.25,
+    "frames_sampled": 24,
+    "model_calls": 1,
+    "batching_strategy": "overlapping_sliding_window",
+    "window_size": 24,
+    "stride": 12,
+    "n_windows": 1,
+    "merge_strategy": "deterministic_frame_index_ownership_partition_then_exact_text_dedup",
+    "window_reports": [
+      {
+        "window_index": 0,
+        "frame_index_range": [
+          0,
+          24
+        ],
+        "owned_frame_index_range": [
+          0,
+          24
+        ],
+        "owned_time_range_s": [
+          "-inf",
+          "inf"
+        ],
+        "raw_segments_returned": 1,
+        "segments_kept_by_ownership": 1,
+        "segments_discarded_by_ownership": 0
+      }
+    ],
+    "production_side_effects": false,
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "f42a3a44",
+    "source_file": "curify_background/app/utils/asl_utils.py",
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+    "input_md5": "5cf4b46d8ed7c199037d006ca67c3a6e",
+    "not_production_2026_08_29": true
+  },
+  "segments": [
+    {
+      "start": 0.55,
+      "end": 1.7,
+      "text": "My name is Robbie.",
+      "line": 1
+    }
+  ]
+}
