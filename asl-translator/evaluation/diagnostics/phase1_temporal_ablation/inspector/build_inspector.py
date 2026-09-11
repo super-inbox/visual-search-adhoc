@@ -17,9 +17,24 @@ NO MODEL CALL IS MADE. This script only:
     in that clip's own saved prediction run_metadata,
   - extracts thumbnail JPEGs locally with ffmpeg for display,
   - reads the already-saved baseline prediction JSON and reference SRT,
-  - scores with asl-eval/lib.py (WER/CER numbers are read from the frozen
-    per_clip_results.csv, not recomputed, so they always agree with the
-    scored corpus).
+  - reads the already-saved Uni-Sign prediction (results/how2sign_v2/unisign/
+    per_clip_results.json) — read-only, Uni-Sign is NOT rerun by this script,
+  - reads the already-saved Gemini native-video prediction (results/
+    how2sign_v2/curify_gemini_native_video_2026_09_10/per_clip_results.json,
+    from run_native_video_how2sign_v2_benchmark.py) — read-only, native
+    video is NOT rerun by this script. As of 2026-09-10 5/12 diagnostic
+    clips have a native-video result (including G05uFub3YFc, recovered by a
+    retry after a local response-parsing bug fix — see
+    docs/daily_report/9.10/asl-native-video-evaluation/BLOCKER_STATUS.md
+    §"Stage 3"); the other 7 are blocked at the Gemini Files API before
+    model inference (root cause unresolved — see
+    docs/daily_report/9.10/asl-native-video-evaluation/) and render as
+    "Unavailable — Gemini Files API processing failed before inference",
+  - scores with asl-eval/lib.py (WER/CER numbers for the frame-baseline are
+    read from the frozen per_clip_results.csv, Uni-Sign's and native-video's
+    own numbers are read from their own frozen per_clip_results.json, none
+    of it recomputed here, so everything always agrees with the scored
+    corpora).
 
 Run:
     python3 asl-translator/evaluation/diagnostics/phase1_temporal_ablation/inspector/build_inspector.py
@@ -41,9 +56,14 @@ DIAG_DIR = HERE.parent
 REPO_ROOT = HERE.parents[4]
 ASL_EVAL_DIR = REPO_ROOT / "asl-translator" / "asl-eval"
 BASELINE_DIR = REPO_ROOT / "asl-translator" / "evaluation" / "results" / "how2sign_v2" / "curify_gemini_3_6_2026_09_04"
+UNISIGN_DIR = REPO_ROOT / "asl-translator" / "evaluation" / "results" / "how2sign_v2" / "unisign"
+NATIVE_VIDEO_DIR = REPO_ROOT / "asl-translator" / "evaluation" / "results" / "how2sign_v2" / "curify_gemini_native_video_2026_09_10"
 DIAGNOSTIC_JSON = DIAG_DIR / "diagnostic_12_clips.json"
 MANIFEST_PATH = REPO_ROOT / "asl-translator" / "data" / "public_benchmarks" / "how2sign_v2" / "manifest.csv"
 PER_CLIP_CSV = BASELINE_DIR / "per_clip_results.csv"
+UNISIGN_PER_CLIP_JSON = UNISIGN_DIR / "per_clip_results.json"
+NATIVE_VIDEO_PER_CLIP_JSON = NATIVE_VIDEO_DIR / "per_clip_results.json"
+TRAJECTORY_PROBE_DIR = DIAG_DIR / "trajectory_probe"
 
 CACHE_ROOT = Path(tempfile.gettempdir()) / "asl-how2sign-inspector-frames"
 THUMB_WIDTH = 220
@@ -228,7 +248,62 @@ def render_timeline_svg(width: int, height: int, duration: float, runs, stamps, 
     return "".join(parts)
 
 
-def build_clip_page(rec: dict, manifest_row: dict) -> tuple[str, dict]:
+def render_prediction_block(title: str, gold_text: str, pred_text: str, extra_meta: str = "") -> str:
+    """Word-level diff block for a prediction against the reference, same
+    Levenshtein-highlight technique as the baseline block below. Used for
+    the Uni-Sign and native-video sections so all three systems are shown
+    with the same visual treatment."""
+    ops = diff_ops(gold_text, pred_text)
+    hyp_html = render_diff_html(pred_text, ops, side=2) if pred_text else '<span class="muted">(empty prediction)</span>'
+    return (
+        f'<div class="textblock" style="margin-top:8px"><b>{html.escape(title)}:</b>{extra_meta}<br>{hyp_html}</div>'
+    )
+
+
+def render_trajectory_block(clip_id: str) -> tuple[str, bool]:
+    """Phase D1 trajectory-probe section — purely additive, read-only. Only 5
+    of the 12 diagnostic clips have a probe (2026-09-10); every other clip's
+    page renders an explicit 'not run' note, never a silent omission. Reads
+    trajectory_summary.json / trajectory_plot.svg already written by
+    asl-translator/asl-eval/trajectory_probe/{extract,summarize,render_overlay}.py
+    — this inspector script does not run the tracker itself."""
+    probe_dir = TRAJECTORY_PROBE_DIR / clip_id
+    summary_path = probe_dir / "trajectory_summary.json"
+    svg_path = probe_dir / "trajectory_plot.svg"
+    qa_path = probe_dir / "QA.md"
+    if not summary_path.exists():
+        return (
+            '<h2>Trajectory probe (RTMPose, Phase D1)</h2>\n'
+            '<p class="muted">Not run for this clip. Phase D1 (2026-09-10) covered 5 of '
+            'the 12 diagnostic clips; see '
+            '<code>docs/daily_report/9.10/trajectory-tracking-feasibility/</code> for '
+            'which clips and why.</p>',
+            False,
+        )
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    svg_inline = svg_path.read_text(encoding="utf-8") if svg_path.exists() else "<p class='muted'>(plot missing)</p>"
+    mt = summary["missing_tracking_pct"]
+    conf = summary["confidence"]
+    disc = summary["discontinuity_candidates"]
+    qa_rel = qa_path.relative_to(REPO_ROOT) if qa_path.exists() else None
+    block = f"""<h2>Trajectory probe (RTMPose via rtmlib, Phase D1)</h2>
+<p class="muted">Read-only geometric tracking output — raw keypoints and derived kinematic
+signals only (position/velocity/distance/threshold bands). No ASL gloss, handshape, or
+semantic label is inferred anywhere in this section. Not used by any existing prediction,
+score, or benchmark result above — this section is informational only.</p>
+<div class="meta">
+  <div><b>missing-tracking %</b> body {mt['body']} / L-hand {mt['left_hand']} / R-hand {mt['right_hand']}</div>
+  <div><b>mean confidence</b> body {conf['body']['mean']} / L-hand {conf['left_hand']['mean']} / R-hand {conf['right_hand']['mean']}</div>
+  <div><b>discontinuity candidates</b> L {disc['left_hand_center']['n_candidates']} / R {disc['right_hand_center']['n_candidates']}</div>
+  <div><b>frames processed</b> {summary['n_frames_total']}</div>
+</div>
+<div style="margin-top:8px">{svg_inline}</div>
+{'<p class="muted">Full QA write-up: <code>' + html.escape(str(qa_rel)) + '</code></p>' if qa_rel else ''}
+"""
+    return block, True
+
+
+def build_clip_page(rec: dict, manifest_row: dict, unisign_rec: dict | None, native_rec: dict | None) -> tuple[str, dict]:
     clip_id = rec["clip_id"]
     video_path = REPO_ROOT / manifest_row["local_video_path"]
     ref_path = REPO_ROOT / manifest_row["local_reference_path"]
@@ -264,6 +339,49 @@ def build_clip_page(rec: dict, manifest_row: dict) -> tuple[str, dict]:
     ops = diff_ops(gold_text, pred_text)
     ref_html = render_diff_html(gold_text, ops, side=1)
     hyp_html = render_diff_html(pred_text, ops, side=2)
+
+    # Uni-Sign prediction — read-only, not rerun (see module docstring update).
+    if unisign_rec is not None and unisign_rec.get("status") == "success":
+        unisign_text = unisign_rec.get("prediction_text", "") or ""
+        unisign_meta = f' <span class="muted">(WER {unisign_rec.get("wer")}, CER {unisign_rec.get("cer")})</span>'
+        unisign_block = render_prediction_block("Uni-Sign prediction", gold_text, unisign_text, unisign_meta)
+    else:
+        reason = (unisign_rec or {}).get("failure_reason") or "no result on file"
+        unisign_block = (
+            f'<div class="textblock" style="margin-top:8px"><b>Uni-Sign prediction:</b> '
+            f'<span class="muted">Unavailable — {html.escape(str(reason))}</span></div>'
+        )
+
+    # Gemini native-video prediction — from the Stage-1/2/3 harness runs,
+    # not rerun by this page. 7 of 12 diagnostic clips are currently blocked
+    # at the Gemini Files API before model inference (see
+    # docs/daily_report/9.10/asl-native-video-evaluation/); root cause is
+    # unresolved (transient/account-side Files API degradation, or a
+    # clip-specific Files-API processing incompatibility — not yet
+    # distinguished). The other 5 (including G05uFub3YFc, recovered in
+    # Stage 3 after a local parser fix) are valid and scored below.
+    if native_rec is not None and native_rec.get("status") == "success":
+        native_text = native_rec.get("prediction_text", "") or ""
+        native_meta = f' <span class="muted">(WER {native_rec.get("wer")}, CER {native_rec.get("cer")})</span>'
+        native_block = render_prediction_block("Gemini native-video prediction", gold_text, native_text, native_meta)
+    else:
+        native_failure_reason = (native_rec or {}).get("failure_reason") or ""
+        if "Files API" in native_failure_reason:
+            native_unavailable_msg = "Unavailable — Gemini Files API processing failed before inference"
+        elif native_failure_reason:
+            # Not every non-success clip failed the same way: some failed
+            # pre-inference at the Files API, but at least one (see
+            # docs/daily_report/9.10/asl-native-video-evaluation/) failed
+            # in local response post-processing AFTER a real model call was
+            # made (non-zero inference_wall_clock_s). Show the real reason
+            # instead of collapsing every failure into the Files-API message.
+            native_unavailable_msg = f"Unavailable — {html.escape(native_failure_reason)}"
+        else:
+            native_unavailable_msg = "Unavailable — no result on file"
+        native_block = (
+            f'<div class="textblock" style="margin-top:8px"><b>Gemini native-video prediction:</b> '
+            f'<span class="muted">{native_unavailable_msg}</span></div>'
+        )
 
     # flag model segments whose start lands near a batch seam
     seg_rows = []
@@ -313,6 +431,8 @@ def build_clip_page(rec: dict, manifest_row: dict) -> tuple[str, dict]:
     tags = rec["manifest_heuristic_tags"]
     tag_pills = "".join(f'<span class="pill">{k}</span>' for k, v in tags.items() if v) or '<span class="pill">plain / no heuristic tag</span>'
 
+    trajectory_block, has_trajectory = render_trajectory_block(clip_id)
+
     page = f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -343,11 +463,16 @@ Thin ticks = each sampled frame timestamp. Dashed red lines = independent-batch 
 <h2>Sampled frames, grouped by batch (red outline = frame adjacent to a batch seam)</h2>
 {"".join(frame_groups_html)}
 
-<h2>Reference vs. baseline prediction (word-level diff)</h2>
+<h2>Reference vs. predictions (word-level diff, one row per system)</h2>
 <div class="textblock"><b>Reference:</b><br>{ref_html}</div>
-<div class="textblock" style="margin-top:8px"><b>Baseline prediction:</b><br>{hyp_html}</div>
+<div class="textblock" style="margin-top:8px"><b>Curify / Gemini frame-baseline prediction:</b> <span class="muted">(WER {wer})</span><br>{hyp_html}</div>
+{unisign_block}
+{native_block}
 <p class="muted">Highlighting is a word-level Levenshtein alignment for display only; the
-authoritative WER above is read from <code>per_clip_results.csv</code>, not recomputed here.</p>
+authoritative WER for the frame-baseline and Uni-Sign rows above is read from each system's own
+frozen <code>per_clip_results.csv</code>/<code>.json</code>, not recomputed here. The native-video
+WER is read from that harness's own <code>per_clip_results.json</code> the same way. No ASL-specific
+visual labels are inferred by this page — all three predictions are the systems' own raw text output.</p>
 
 <h2>Model output segments (in order) — batch-seam proximity flagged</h2>
 <table><tr><th>#</th><th>start</th><th>end</th><th>text</th><th>flag</th></tr>{seg_table_rows}</table>
@@ -358,11 +483,15 @@ authoritative WER above is read from <code>per_clip_results.csv</code>, not reco
 <tr><td>reference</td><td><code>{html.escape(str(manifest_row['local_reference_path']))}</code></td></tr>
 <tr><td>baseline prediction</td><td><code>{html.escape(str(pred_path.relative_to(REPO_ROOT)))}</code></td></tr>
 <tr><td>config</td><td><code>{rec['baseline_config']}</code> (model={rm['model']}, thinking_level={rm.get('thinking_level')})</td></tr>
+<tr><td>Uni-Sign prediction</td><td><code>{html.escape(str((UNISIGN_DIR / "predictions" / f"{clip_id}.json").relative_to(REPO_ROOT)))}</code> (not rerun by this page)</td></tr>
+<tr><td>native-video prediction</td><td><code>{html.escape(str((NATIVE_VIDEO_DIR / "predictions" / f"{clip_id}.json").relative_to(REPO_ROOT)))}</code> if available (not rerun by this page; config <code>native_video_2026_09_10_gemini_3_6</code>)</td></tr>
 <tr><td>sampler</td><td>asl-translator/asl-eval/run_current_model.py: probe_motion &rarr; segment_runs &rarr; allocate_timestamps (unmodified; ported, with attribution, from curify-studio origin/main)</td></tr>
 <tr><td>frame_budget used</td><td>{frame_budget} (recorded in this clip's saved run_metadata.json, not re-derived)</td></tr>
 <tr><td>scoring</td><td>asl-translator/asl-eval/lib.py — WER/CER numbers shown above are copied from per_clip_results.csv</td></tr>
 <tr><td>inspector pattern reused from</td><td>curify-studio origin/main commit 007dcf6, dev/asl_mvp/inspector/build/build.py (read-only reference; curify-studio not checked out/modified)</td></tr>
 </table>
+
+{trajectory_block}
 </body></html>
 """
     summary = {
@@ -372,6 +501,14 @@ authoritative WER above is read from <code>per_clip_results.csv</code>, not reco
         "frame_count_mismatch": mismatch,
         "n_segments_near_batch_seam": sum(1 for s in seg_rows if s["near_batch_seam"]),
         "reason_selected": rec["reason_selected"],
+        "unisign_wer": unisign_rec.get("wer") if unisign_rec and unisign_rec.get("status") == "success" else None,
+        "native_video_wer": native_rec.get("wer") if native_rec and native_rec.get("status") == "success" else None,
+        "native_video_available": bool(native_rec and native_rec.get("status") == "success"),
+        "native_video_files_api_blocked": bool(
+            native_rec and native_rec.get("status") != "success"
+            and "Files API" in (native_rec.get("failure_reason") or "")
+        ),
+        "has_trajectory_probe": has_trajectory,
     }
     return page, summary
 
@@ -379,13 +516,21 @@ authoritative WER above is read from <code>per_clip_results.csv</code>, not reco
 def build_index(summaries: list[dict]) -> str:
     rows = "".join(
         f'<tr><td><a href="{html.escape(s["clip_id"])}.html">{html.escape(s["clip_id"])}</a></td>'
-        f'<td>{s["duration_s"]:.2f}</td><td>{s["wer"]}</td><td>{s["frames_sampled"]}</td>'
+        f'<td>{s["duration_s"]:.2f}</td><td>{s["wer"]}</td>'
+        f'<td>{s["unisign_wer"] if s["unisign_wer"] is not None else "—"}</td>'
+        f'<td>{s["native_video_wer"] if s["native_video_available"] else "unavailable"}</td>'
+        f'<td>{"done" if s["has_trajectory_probe"] else "not run"}</td>'
+        f'<td>{s["frames_sampled"]}</td>'
         f'<td>{s["model_calls"]}</td><td>{s["sampling_density_fps"]}</td>'
         f'<td>{s["n_batches"]}</td><td>{s["n_segments_near_batch_seam"]}</td>'
         f'<td>{", ".join(s["reason_selected"])}</td>'
         f'<td>{"&#9888; recomputed frame count differs" if s["frame_count_mismatch"] else ""}</td></tr>'
         for s in summaries
     )
+    n_native_available = sum(1 for s in summaries if s["native_video_available"])
+    n_files_api_blocked = sum(1 for s in summaries if s["native_video_files_api_blocked"])
+    n_other_native_failure = (len(summaries) - n_native_available) - n_files_api_blocked
+    n_trajectory = sum(1 for s in summaries if s["has_trajectory_probe"])
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -393,11 +538,21 @@ def build_index(summaries: list[dict]) -> str:
 <style>{PAGE_CSS}</style></head><body>
 <h1>Phase 1 temporal-architecture diagnostic — 12 selected How2Sign v2 clips</h1>
 <p class="muted">Baseline A (<code>evaluation_2026_09_04_gemini_3_6</code>, 2 fps target density,
-independent 24-frame batches, 128/128 clips scored). No model call made by this inspector.
+independent 24-frame batches, 128/128 clips scored). Uni-Sign and Gemini native-video columns are
+read from each system's own frozen results (neither is rerun by this inspector).
 See <a href="../TASK0_baseline_denominator.md">TASK0_baseline_denominator.md</a> and
 <a href="../diagnostic_12_clips.json">diagnostic_12_clips.json</a> for how these 12 were chosen.</p>
+<div class="warn">Gemini native-video: {n_native_available}/12 available, {n_files_api_blocked}/12
+blocked at the Gemini Files API before model inference (root cause unresolved — see
+<code>docs/daily_report/9.10/asl-native-video-evaluation/</code>){f"; {n_other_native_failure} failed for a different, unrelated reason after a model call was made (see that clip's own page for its exact failure_reason) — not a Files API block" if n_other_native_failure else ""}.
+Do not extrapolate the {n_native_available}/12 WER column below to the full diagnostic-12 set.</div>
+<div class="warn">Trajectory probe (Phase D1, RTMPose via rtmlib): {n_trajectory}/12 clips. Geometric
+tracking-quality inspection only — no ASL semantic interpretation, not used by any prediction/score
+above. See <code>docs/daily_report/9.10/trajectory-tracking-feasibility/</code>.</div>
 <table>
-<tr><th>clip</th><th>duration_s</th><th>WER</th><th>frames</th><th>model_calls</th>
+<tr><th>clip</th><th>duration_s</th><th>frame-baseline WER</th><th>Uni-Sign WER</th><th>native-video WER</th>
+<th>trajectory probe</th>
+<th>frames</th><th>model_calls</th>
 <th>density_fps</th><th>n_batches</th><th>segments near seam</th><th>reason_selected</th><th>note</th></tr>
 {rows}
 </table>
@@ -412,11 +567,23 @@ def main() -> None:
     with MANIFEST_PATH.open(newline="", encoding="utf-8") as f:
         manifest = {r["how2sign_id"]: r for r in csv.DictReader(f)}
 
+    unisign_by_id: dict = {}
+    if UNISIGN_PER_CLIP_JSON.exists():
+        unisign_by_id = {r["how2sign_id"]: r for r in json.loads(UNISIGN_PER_CLIP_JSON.read_text(encoding="utf-8"))}
+    else:
+        print(f"warning: {UNISIGN_PER_CLIP_JSON} not found — Uni-Sign section will show 'Unavailable' on every page")
+
+    native_by_id: dict = {}
+    if NATIVE_VIDEO_PER_CLIP_JSON.exists():
+        native_by_id = {r["how2sign_id"]: r for r in json.loads(NATIVE_VIDEO_PER_CLIP_JSON.read_text(encoding="utf-8"))}
+    else:
+        print(f"warning: {NATIVE_VIDEO_PER_CLIP_JSON} not found — native-video section will show 'Unavailable' on every page")
+
     summaries = []
     for rec in diag["clips"]:
         clip_id = rec["clip_id"]
         print(f"building {clip_id} ...")
-        page, summary = build_clip_page(rec, manifest[clip_id])
+        page, summary = build_clip_page(rec, manifest[clip_id], unisign_by_id.get(clip_id), native_by_id.get(clip_id))
         (HERE / f"{clip_id}.html").write_text(page, encoding="utf-8")
         summaries.append(summary)
 
