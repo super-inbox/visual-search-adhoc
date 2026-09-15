@@ -1,0 +1,11 @@
+clip_id,semantic_adequacy,topic_mismatch,error_note,reviewer,review_type
+g2NA_eBUcH8_0-3-rgb_front,1,no,"Correct greeting + ""want to learn something new"" register; drops ""poker"" — domain match, not specific-content match.",claude_text_only_v1,reference_vs_prediction_text_only
+G19uBylwQww_1-2-rgb_front,1,no,"Correct name + ""today I'm..."" opening; transcript is truncated before the actual subject (paper airplanes) is stated.",claude_text_only_v1,reference_vs_prediction_text_only
+fZM3IcM2Xs4_14_15_16-10-rgb_front,1,no,"Plausible simplification (singing / festive-happy mood) but drops all specific content (Morris, Christmas, ""mash"").",claude_text_only_v1,reference_vs_prediction_text_only
+g2nvBjp0loQ_4-3-rgb_front,2,no,"Near-exact paraphrase; only drops ""sweat"" — strongest specific-content match in Batch-2.",claude_text_only_v1,reference_vs_prediction_text_only
+g05yGRoZE10_1-8-rgb_front,1,no,"Recovers the domain (naming a substance used in a process) but substitutes ""fluid""/""painter"" for the reference's specific term ""flux"".",claude_text_only_v1,reference_vs_prediction_text_only
+FzQPg4aqNYc_13-1-rgb_front,0,yes,Reference is a cooking/seasoning instruction; prediction shares no topic content.,claude_text_only_v1,reference_vs_prediction_text_only
+G3RvsnzQrXQ_3-10-rgb_front,0,yes,"Invents an unrelated ""book""/""lid""/""lever"" mechanism; shared word ""fold"" is superficial overlap, not a topic match.",claude_text_only_v1,reference_vs_prediction_text_only
+g0UUmEkoT1w_2-10-rgb_front,0,yes,Reference is fatigue/symptoms; prediction is juice flavor/appearance — unrelated. Also the worst WER in Batch-2.,claude_text_only_v1,reference_vs_prediction_text_only
+FZCEymcpq7I_14-1-rgb_front,1,no,"Correctly stays in the golf-swing domain and reproduces real golf vocabulary (""draw fade""), but the specific narrative (hitting ""fat"", practicing to fix it) doesn't match.",claude_text_only_v1,reference_vs_prediction_text_only
+G1jsDl1mVvk_1-1-rgb_front,2,no,"Correctly identifies the referee topic and reproduces the specific uniform colors near-verbatim; ""has a whistle"" is an unverified addition.",claude_text_only_v1,reference_vs_prediction_text_only
