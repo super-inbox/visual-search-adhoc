@@ -171,10 +171,22 @@ pairs together:
 | Curify frame baseline | 0.9766 | 0.8136 | 0.28 | 11.60 |
 | **Uni-Sign** | **0.9064** | **0.6845** | **3.15** | **20.85** |
 | Gemini native-video | 0.9708 | 0.8514 | 0.18 | 6.36 |
-| SignCaption | 0.9240 | 0.7686 | 1.98 | 15.91 |
+| SignCaption | 0.9240 | 0.7686 | 1.97 | 15.91 |
 
 n=5 for every system/metric in both tables (all 5 clips have a scored result for all 4
 systems).
+
+**Correction (2026-09-13):** SignCaption's corpus BLEU was previously listed here as
+`1.98`. An independent calculation audit — a from-scratch SRT parser, text normalizer,
+Levenshtein/edit-distance implementation, and direct `sacrebleu` calls, deliberately not
+reusing `score_pilot.py`'s own code — confirmed every other figure in this document (all
+20 per-clip SignCaption values and all 8 matched-5 corpus values for both systems) and
+found exactly one error: the true corpus BLEU is `1.9749509...`, which rounds to `1.97`,
+not `1.98`. Root cause was a manual double-rounding mistake made when this table was
+written, not a bug in any scoring code. The value has been corrected above; no other
+number, ranking, or conclusion in this document changes as a result (Uni-Sign's BLEU lead
+over SignCaption moves from 1.17 to 1.18 points — the same conclusion, slightly
+reinforced). Full trace: `docs/daily_report/9.13/signcaption-calculation-audit/CALCULATION_AUDIT.md`.
 
 **The ranking changes under the official convention.** Under the macro mean, SignCaption
 had the lowest (best) WER. Under the benchmark's own corpus-level (length-weighted)
@@ -290,7 +302,7 @@ SignCaption is not even the best-scoring system on lexical metrics; Uni-Sign is.
 **A. Lexical metric improvement:** No, using the official aggregation. Under corpus-level
 WER/CER/BLEU/chrF (§3b — the same convention the existing benchmark scorer uses), **Uni-Sign
 has the best score on all 4 metrics**: corpus WER 0.9064 vs. SignCaption's 0.9240, corpus
-CER 0.6845 vs. 0.7686, corpus BLEU 3.15 vs. 1.98, corpus chrF 20.85 vs. 15.91. SignCaption
+CER 0.6845 vs. 0.7686, corpus BLEU 3.15 vs. 1.97, corpus chrF 20.85 vs. 15.91. SignCaption
 is second-best on WER and BLEU/chrF, ahead of the frame baseline and native-video, but it
 does not lead the field. (The earlier, simple per-clip-mean table in §3a did show
 SignCaption with the lowest mean WER — that ranking does not survive switching to the
