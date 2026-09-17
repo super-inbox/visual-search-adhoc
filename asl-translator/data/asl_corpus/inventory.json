@@ -1,0 +1,461 @@
+{
+  "$schema_note": "Canonical live-status source for the 13 private Curify ASL corpus videos. See asl-translator/data/asl_corpus/validate_inventory.py to check invariants, and asl-translator/README.md 'Data status' (2026-09-01) for the reference-independence methodology this file implements.",
+  "assembled": "2026-09-02",
+  "supersedes_live_status_in": [
+    "evaluation_set.json",
+    "manifest.json (status fields only \u2014 provenance prose in manifest.json is retained)",
+    "corpus_inventory.csv",
+    "annotation_queue.csv"
+  ],
+  "authoritative_source_for_reference_independence": "asl-translator/README.md, 'Data status \u2014 2026-09-01' section, merged into this branch 2026-09-02",
+  "count": 13,
+  "videos": [
+    {
+      "video_id": "155_demo_asl-demo-translation_26.7s",
+      "duration_seconds": 26.7,
+      "input": {
+        "status": "contaminated_history",
+        "current_file_state": "clean \u2014 raw demo source swapped in 2026-08-30 (md5 d71313d0...); the contaminated file (published marketing OUTPUT with burned-in captions, md5 d714db71...) now lives at ground_truth/155_demo_asl-demo-translation_26.7s_burned_marketing.mp4",
+        "contamination_history": "Until 2026-08-30, videos/ held the published demo OUTPUT with the English reference captions burned into the frame \u2014 the model's input contained its own answer. Full account: CONTAMINATION.md.",
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "claimed human-translated SRT (6 lines) + SignCaption external candidate",
+        "source": "unresolved \u2014 see independence",
+        "independence": "unknown",
+        "human_verified": "unknown",
+        "provenance_quality": "undocumented \u2014 no named annotator, no ASL qualification stated, no date, no method recorded. Job 155 itself FAILED (GOOGLE_API_KEY missing, 0 credits), so the reference text did not come from that run; whether a human wrote it independently or it originated from an earlier/other model run is unresolved (asl-translator/README.md, 2026-09-01).",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "Do not treat as verified_gold. SignCaption candidate exists (ground_truth_candidates/signcaption/155_..., external tool, annotation_date 2026-08-31) \u2014 external only, never gold."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0",
+          "temperature0"
+        ],
+        "retracted": true,
+        "current_production_equivalent": false,
+        "notes": "Both predictions_eval/155_..._baseline0.json and _temperature0.json carry an explicit contamination block (RETRACTED 2026-08-30) \u2014 generated from the contaminated input, reproduce the reference verbatim (0 substitutions/deletions), and are blocked from scoring by asl-eval/corpus_guard.py. No prediction has been generated from the clean input. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "provenance_pending",
+        "blocker": "Reference independence and human-verification status are both unknown. Input is clean and could take a fresh prediction, but the reference itself must be resolved first \u2014 a person needs to establish whether the SRT has an independent, documented origin."
+      }
+    },
+    {
+      "video_id": "1252_1000016397_76.8s",
+      "duration_seconds": 76.753444,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean, no leakage found",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "claimed human-translated SRT (11 lines) + burned render + SignCaption external candidate",
+        "source": "Curify's own outreach translation, produced to email the submitter (curify-studio/gtm_tools/send_1252_asl.py)",
+        "independence": "non_independent",
+        "human_verified": "unknown",
+        "provenance_quality": "poor and circular. Verified by OCR 2026-09-01: ground_truth/1252_1000016397_76.8s_burned.mp4 reproduces the gold SRT verbatim. The 'gold' SRT, that burned render, and the (curify-studio) frame inspector's embedded gold are one translation counted three times \u2014 they agree because they share a source, not because they corroborate each other. Provenance is a single manifest string ('human-translated by Curify, verified') with no named annotator, no stated ASL qualification, no date, no method, and no second-annotator check.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "CIRCULAR CURIFY OUTREACH TRANSLATION \u2014 this is the corpus's central reference-integrity problem. The reference was authored by Curify itself (to send back to the submitter) and is not independent of the system being evaluated. Do NOT use for absolute WER/CER claims. What DOES survive: SignCaption and this reference independently agree on the fingerspelled names 'Greg'/'Sara' \u2014 two unrelated readers agreeing on two proper nouns is real evidence those names are in the video, even though the reference is not independent for full-sentence scoring. ANNOTATION_PLAN.md's instruction not to re-annotate this video protects the wrong thing and should not be followed as-is (asl-translator/README.md, 2026-09-01)."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0",
+          "temperature0"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "Generated via the offline production-config-equivalent runner (asl-eval/run_current_model.py --run), not a live production job (the original live job FAILED with empty translation). Input is clean, so these predictions are not retracted \u2014 but they score against a non-independent reference, so the resulting WER is diagnostic only. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "diagnostic_only",
+        "blocker": "Reference is circular (non-independent) and its 'verified' claim has no recoverable method/annotator. Not usable for an official accuracy number. Retained only for the independently-corroborated fingerspelling (Greg/Sara) comparison."
+      }
+    },
+    {
+      "video_id": "1252_1000016402_250.8s",
+      "duration_seconds": 250.807611,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; audio flagged as louder than typical for this corpus (-44.7dB mean) \u2014 noted, not resolved, no transcription performed",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": false,
+        "type": null,
+        "source": null,
+        "independence": "not_applicable",
+        "human_verified": false,
+        "provenance_quality": null,
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "No reference of any kind exists for this video. Status not invented."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "future_candidate_low_priority",
+        "blocker": "No reference and no prediction. Long (250.8s); high annotation cost relative to immediate payoff. Same submitter as the circular 1252_...16397 case but this video itself is untouched \u2014 a clean slate, not affected by that problem."
+      }
+    },
+    {
+      "video_id": "1320_1000022357_137.2s",
+      "duration_seconds": 137.203733,
+      "input": {
+        "status": "masked",
+        "current_file_state": "conditionally masked render (caption band + title/instruction cards blacked out unconditionally on every frame; verified exhaustively clean, band fully black in 4112 of 4112 frames). Unmasked source preserved at ground_truth_candidates/1320_1000022357_137.2s_burned.mp4.",
+        "contamination_history": "English captions burned in across ~69% of the clip; title cards additionally leaked the topic and exercise instructions. Full masking method and verification in CONTAMINATION.md.",
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "hand-transcribed burned-caption candidate (SRT + JSON) + SignCaption external candidate",
+        "source": "Third-party interpreter-certification exam answer key \u2014 the clip's own title cards read 'Certificate Program for Sign Language Interpreters \u2014 RECEPTIVE SKILLS EVALUATION / SIGN TO VOICE / Record yourself voicing the video'.",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "Strongest reference source in the corpus \u2014 authored by a certification body with zero knowledge of Curify (asl-translator/README.md, 2026-09-01). Production direction is RESOLVED: the ASL is the source, the burned captions are the answer key. What remains is a qualified annotator confirming the caption text against the actual signing \u2014 the candidate was hand-transcribed from the on-screen caption text, not yet checked against the signing itself. NOTE: the SignCaption candidate's own provenance.json records source_video pointing at the current videos/ path with annotation_date 2026-08-29, one day BEFORE that path was masked (2026-08-30) \u2014 it almost certainly ran against the old unmasked/burned file, and its provenance record was never corrected after the swap. Treat that record's file-path claim as stale.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "Certification answer-key provenance must be preserved verbatim in any future edit \u2014 this is the single most valuable fact about this video. Do not re-derive the production-direction question; it is settled."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "independent_candidate_pending_human_verification",
+        "blocker": "Never run through any model \u2014 no prediction exists at all. Reference also needs a qualified annotator to confirm caption text against the actual signing before promotion. Two separate blockers, neither is a metadata fix."
+      }
+    },
+    {
+      "video_id": "1415_unit7_200.6s",
+      "duration_seconds": 200.6,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; a 'Professor Weingart' watermark is visible but is not the answer (check_leakage-equivalent frame review: 0.00 overlap)",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": false,
+        "type": null,
+        "source": null,
+        "independence": "not_applicable",
+        "human_verified": false,
+        "provenance_quality": null,
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "No reference of any kind exists for this video. Status not invented."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "future_candidate_low_priority",
+        "blocker": "No reference and no prediction. Long (200.6s). Historically used only to validate the motion-adaptive sampler (not an accuracy reference)."
+      }
+    },
+    {
+      "video_id": "1434_screenrec_youtube_16.6s",
+      "duration_seconds": 16.595,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; screen recording of a public YouTube video, player/browser chrome visible but not an answer leak",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "crowd-sourced YouTube comment (11 lines; only 6 fall inside this clip)",
+        "source": "A YouTube comment on the public source video ('Basic ASL Conversation', Jay Harris) \u2014 third party, independent of Curify",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "low \u2014 crowd-sourced, unverified translator/qualification, not authoritative",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "Keep excluded. Clip covers only the greeting exchange, the highest-prior content in ASL \u2014 a model can score ~65% by guessing without decoding any signing. The actually diagnostic content (a deaf/hearing exchange, source video 0:19-0:37) was never captured in this corpus."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "excluded_non_diagnostic",
+        "blocker": "Not fixable by annotation \u2014 the diagnostic content simply isn't in this clip. Exclusion is well-supported and consistent across every file; no contradiction to resolve here."
+      }
+    },
+    {
+      "video_id": "1442_clip01_300.0s",
+      "duration_seconds": 300.0,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean, no leakage found",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": false,
+        "type": null,
+        "source": null,
+        "independence": "not_applicable",
+        "human_verified": false,
+        "provenance_quality": null,
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "No reference of any kind exists for this video. Status not invented."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "Live production job output. Longest job in the corpus, sparsest sampling density (1 frame/3.13s). Flagged as the most fluent-and-confident output in the corpus AND the most suspected of being fabricated rather than perceived. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "annotation_candidate_fabrication_test",
+        "blocker": "No reference exists yet. Annotating this video would directly test the fluent-but-fabricated hypothesis against an existing prediction."
+      }
+    },
+    {
+      "video_id": "1457_10426_28.3s",
+      "duration_seconds": 28.2723,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean (never processed, no reference exists to leak)",
+        "contamination_history": null,
+        "authenticity_status": "uncertain"
+      },
+      "reference": {
+        "available": false,
+        "type": null,
+        "source": null,
+        "independence": "not_applicable",
+        "human_verified": false,
+        "provenance_quality": null,
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "No reference of any kind exists for this video. Status not invented."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "authenticity_review_required",
+        "blocker": "VIDEO_TYPE_AUDIT.csv (frame-by-frame, low confidence) found this is a screen recording of a social-media DM/story reply with isolated hand-near-face/chin gestures in poor, backlit lighting \u2014 consistent with, but not clearly confirming, sustained ASL discourse (could be a single sign or incidental gesture). This is the ONE genuinely uncertain authenticity case in the corpus (12 of 13 confirmed ASL). Do not treat as a routine 'clean unseen test input' until a full manual video review resolves this \u2014 that framing appears in manifest.json/README.md and should not be read as overriding this audit finding."
+      }
+    },
+    {
+      "video_id": "1466_nohead-half1_189.5s",
+      "duration_seconds": 189.466667,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; framing crops the signer's head out of frame entirely (filename is literal) \u2014 non-manual grammar markers (brow raise/furrow) structurally unavailable",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "SignCaption external candidate, proxied from content-identical twin 1467_nohead-half1",
+        "source": "SignCaption run directly on 1467_nohead-half1_189.5s.mp4, applied here because 1466/1467 are independently verified content-identical (same duration to the millisecond, same frame counts, visually identical at t=30/90/150s)",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "proxy \u2014 valid only insofar as the 1466/1467 content-identity finding holds (well-documented, reasonably solid). Not a direct run on this file.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": true,
+        "notes": "Determinism Pair A. Not representative of well-framed ASL \u2014 head-cropped framing removes the facial-grammar channel by construction."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0",
+          "offline_runner_temperature0_repeat1",
+          "offline_runner_temperature0_repeat2"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "baseline0 is the live production job. The two temperature0 repeats are from the offline runner, used for the repeatability/determinism experiment (DETERMINISM_EXPERIMENT_V1.md), not an accuracy claim. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "annotation_priority_high_unlocks_pair",
+        "blocker": "No human reference yet. One annotation here would immediately make both this video's AND 1467's existing predictions scoreable against the same reference (ANNOTATION_PLAN.md item 4)."
+      }
+    },
+    {
+      "video_id": "1466_nohead-half2_190.0s",
+      "duration_seconds": 189.966667,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; same head-cropped framing caveat as half1",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": false,
+        "type": null,
+        "source": null,
+        "independence": "not_applicable",
+        "human_verified": false,
+        "provenance_quality": null,
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": false,
+        "notes": "No reference of any kind exists for this video. Status not invented."
+      },
+      "prediction": {
+        "available": false,
+        "configs": [],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "No prediction of any kind exists for this video."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "redundant_skip",
+        "blocker": "No prediction to unlock (job never processed \u2014 upload stuck PROCESSING). Second half of the same session as half1; the framing/non-manual-marker diagnostic angle is already covered there."
+      }
+    },
+    {
+      "video_id": "1467_nohead-half1_189.5s",
+      "duration_seconds": 189.466667,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean; same head-cropped framing caveat as 1466_nohead-half1",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "SignCaption external candidate (direct)",
+        "source": "SignCaption, run directly on this file",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "SignCaption's own provenance.json honestly records annotation_date as 'unknown \u2014 not recorded when this file was first added to the repo (commit d19016e, 2026-08-28); workflow confirmed but not the exact run date/time'.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": true,
+        "notes": "Determinism Pair B \u2014 content-identical to 1466_nohead-half1, submitted by a different account 11 seconds later. Text overlap with pair A's prediction is effectively zero despite 29/45 shared segment boundaries."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "Live production job output. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "reuse_twin_reference_do_not_reannotate",
+        "blocker": "Do not separately annotate \u2014 reuse the reference that will be built for 1466_nohead-half1 (content-identical) to score this video's own prediction instead."
+      }
+    },
+    {
+      "video_id": "1474_1000004432_11.5s",
+      "duration_seconds": 11.483811,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean, no leakage found",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "SignCaption external candidate",
+        "source": "SignCaption",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "SignCaption's own provenance.json records annotation_date as 'unknown \u2014 not recorded when this file was first added to the repo (commit d19016e, 2026-08-28)'.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": true,
+        "notes": "Short self-recorded phone clip; learner-shaped content (submitter knows what they signed) \u2014 candidate for a verifiability product framing."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "Live production job output. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "annotation_priority_high",
+        "blocker": "No human reference yet. Short, low annotation cost, already has a baseline0 prediction ready to score against once annotated (ANNOTATION_PLAN.md item 2)."
+      }
+    },
+    {
+      "video_id": "1477_recording_6.7s",
+      "duration_seconds": 6.68,
+      "input": {
+        "status": "clean",
+        "current_file_state": "clean, no leakage found",
+        "contamination_history": null,
+        "authenticity_status": "confirmed"
+      },
+      "reference": {
+        "available": true,
+        "type": "SignCaption external candidate",
+        "source": "SignCaption",
+        "independence": "independent",
+        "human_verified": false,
+        "provenance_quality": "SignCaption's own provenance.json records annotation_date as 'unknown \u2014 not recorded when this file was first added to the repo (commit d19016e, 2026-08-28)'.",
+        "usable_for_official_metrics": false,
+        "is_primary_source_signcaption": true,
+        "notes": "Shortest and lowest-resolution video in the corpus (640x480 webcam); highest achievable sampling density (1 frame/0.07s)."
+      },
+      "prediction": {
+        "available": true,
+        "configs": [
+          "baseline0"
+        ],
+        "retracted": false,
+        "current_production_equivalent": false,
+        "notes": "Live production job output. Predates the 2026-08-29 production change (duration-scaled frame budget, temperature=0, batch-boundary dedup). Does not represent current production. See asl-translator/README.md Data status."
+      },
+      "evaluation": {
+        "readiness": "not_ready",
+        "recommended_status": "annotation_priority_highest",
+        "blocker": "No human reference yet. Cheapest annotation in the corpus (6.7s), already has a baseline0 prediction ready to score against (ANNOTATION_PLAN.md item 1)."
+      }
+    }
+  ]
+}

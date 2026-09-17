@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:04,940
+With a big hook like this, I would probably put ten of these on it, just line the whole thing.

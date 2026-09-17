@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>How2Sign v2 — Phase 1 frame inspector</title>
+<style>
+:root{color-scheme:light dark;
+  --bg:#ffffff;--fg:#1a1a1a;--muted:#6b6b6b;--border:#dcdcdc;
+  --active:#ffe1a8;--idle:#eef0f2;--seam:#ffb3b3;--hit:#b6e6b0;--miss:#f3c4c4;
+  --card:#f7f7f8;--accent:#3454d1;}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#15161a;--fg:#e8e8ea;--muted:#9a9aa2;
+  --border:#33343a;--active:#5b431a;--idle:#26272c;--seam:#5b2222;
+  --hit:#204a24;--miss:#4a2323;--card:#1d1e23;--accent:#7f96ff;}}
+:root[data-theme="dark"]{--bg:#15161a;--fg:#e8e8ea;--muted:#9a9aa2;
+  --border:#33343a;--active:#5b431a;--idle:#26272c;--seam:#5b2222;
+  --hit:#204a24;--miss:#4a2323;--card:#1d1e23;--accent:#7f96ff;}
+body{background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,sans-serif;margin:0;padding:24px;max-width:1100px}
+h1{font-size:20px;margin:0 0 4px}
+h2{font-size:15px;margin:28px 0 8px;border-bottom:1px solid var(--border);padding-bottom:4px}
+.muted{color:var(--muted)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 20px;background:var(--card);border:1px solid var(--border);
+  border-radius:8px;padding:12px 16px;font-size:13px}
+.meta b{color:var(--fg)}
+.warn{background:var(--seam);border:1px solid var(--border);border-radius:6px;padding:8px 12px;margin:10px 0;font-size:13px}
+.timeline{position:relative;height:140px;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--card)}
+.timeline svg{display:block}
+.frames{display:flex;flex-wrap:wrap;gap:4px}
+.batch{border:1px solid var(--border);border-radius:6px;padding:8px;margin:0 0 10px 0}
+.batch-label{font-size:12px;color:var(--muted);margin-bottom:6px}
+.thumb{position:relative;width:96px}
+.thumb img{width:96px;height:auto;display:block;border-radius:3px;border:1px solid var(--border)}
+.thumb .ts{font-size:10px;color:var(--muted);text-align:center}
+.thumb.seam img{outline:2px solid #d33;outline-offset:-2px}
+table{border-collapse:collapse;width:100%;font-size:13px}
+td,th{border:1px solid var(--border);padding:5px 8px;text-align:left;vertical-align:top}
+th{background:var(--card)}
+.hit{background:var(--hit);border-radius:2px;padding:0 2px}
+.miss{background:var(--miss);border-radius:2px;padding:0 2px}
+.textblock{background:var(--card);border:1px solid var(--border);border-radius:6px;padding:10px 12px}
+.pill{display:inline-block;background:var(--card);border:1px solid var(--border);border-radius:999px;
+  padding:2px 10px;font-size:12px;margin:2px 4px 2px 0}
+.seamflag{color:#d33;font-weight:600}
+a{color:var(--accent)}
+code{background:var(--card);padding:1px 4px;border-radius:3px}
+</style></head><body>
+<h1>Phase 1 temporal-architecture diagnostic — 12 selected How2Sign v2 clips</h1>
+<p class="muted">Baseline A (<code>evaluation_2026_09_04_gemini_3_6</code>, 2 fps target density,
+independent 24-frame batches, 128/128 clips scored). Uni-Sign and Gemini native-video columns are
+read from each system's own frozen results (neither is rerun by this inspector).
+See <a href="../TASK0_baseline_denominator.md">TASK0_baseline_denominator.md</a> and
+<a href="../diagnostic_12_clips.json">diagnostic_12_clips.json</a> for how these 12 were chosen.</p>
+<div class="warn">Gemini native-video: 5/12 available, 7/12
+blocked at the Gemini Files API before model inference (root cause unresolved — see
+<code>docs/daily_report/9.10/asl-native-video-evaluation/</code>).
+Do not extrapolate the 5/12 WER column below to the full diagnostic-12 set.</div>
+<div class="warn">Trajectory probe (Phase D1, RTMPose via rtmlib): 5/12 clips. Geometric
+tracking-quality inspection only — no ASL semantic interpretation, not used by any prediction/score
+above. See <code>docs/daily_report/9.10/trajectory-tracking-feasibility/</code>.</div>
+<table>
+<tr><th>clip</th><th>duration_s</th><th>frame-baseline WER</th><th>Uni-Sign WER</th><th>native-video WER</th>
+<th>trajectory probe</th>
+<th>frames</th><th>model_calls</th>
+<th>density_fps</th><th>n_batches</th><th>segments near seam</th><th>reason_selected</th><th>note</th></tr>
+<tr><td><a href="FzmL8SL6Bow_1-8-rgb_front.html">FzmL8SL6Bow_1-8-rgb_front</a></td><td>25.50</td><td>0.9615</td><td>0.8462</td><td>1.0</td><td>done</td><td>51</td><td>3</td><td>2.0</td><td>3</td><td>1</td><td>long_multi_batch_boundary_risk</td><td></td></tr><tr><td><a href="fzNnTgHa1lM_2-5-rgb_front.html">fzNnTgHa1lM_2-5-rgb_front</a></td><td>25.00</td><td>0.9412</td><td>0.7647</td><td>0.9118</td><td>not run</td><td>50</td><td>3</td><td>2.0</td><td>3</td><td>2</td><td>long_multi_batch_boundary_risk</td><td></td></tr><tr><td><a href="fZM3IcM2Xs4_14_15_16-10-rgb_front.html">fZM3IcM2Xs4_14_15_16-10-rgb_front</a></td><td>18.50</td><td>1.913</td><td>1.2609</td><td>unavailable</td><td>not run</td><td>37</td><td>2</td><td>2.0</td><td>2</td><td>2</td><td>fingerspelling_candidate, very_high_wer</td><td></td></tr><tr><td><a href="-g0iPSnQt6w_0-1-rgb_front.html">-g0iPSnQt6w_0-1-rgb_front</a></td><td>3.25</td><td>1.0</td><td>0.9333</td><td>unavailable</td><td>done</td><td>24</td><td>1</td><td>7.385</td><td>1</td><td>0</td><td>fingerspelling_candidate, fast_signing_or_question</td><td></td></tr><tr><td><a href="G05uFub3YFc_9-2-rgb_front.html">G05uFub3YFc_9-2-rgb_front</a></td><td>17.25</td><td>1.0294</td><td>1.0882</td><td>0.9412</td><td>not run</td><td>34</td><td>2</td><td>1.971</td><td>2</td><td>2</td><td>number_token</td><td></td></tr><tr><td><a href="-g0sqksgyc4_3-2-rgb_front.html">-g0sqksgyc4_3-2-rgb_front</a></td><td>5.25</td><td>1.0</td><td>0.9412</td><td>1.0</td><td>not run</td><td>24</td><td>1</td><td>4.571</td><td>1</td><td>0</td><td>number_token, fast_signing_or_question</td><td></td></tr><tr><td><a href="92V3oH63zbQ_5-1-rgb_front.html">92V3oH63zbQ_5-1-rgb_front</a></td><td>1.50</td><td>1.0</td><td>1.25</td><td>1.0</td><td>done</td><td>24</td><td>1</td><td>16.0</td><td>1</td><td>0</td><td>fast_signing_or_question</td><td></td></tr><tr><td><a href="Fz-N1S0swh8_2-8-rgb_front.html">Fz-N1S0swh8_2-8-rgb_front</a></td><td>2.00</td><td>1.0</td><td>0.5</td><td>unavailable</td><td>done</td><td>24</td><td>1</td><td>12.0</td><td>1</td><td>0</td><td>fast_signing_or_question</td><td></td></tr><tr><td><a href="g0TkUiO7t4I_6-8-rgb_front.html">g0TkUiO7t4I_6-8-rgb_front</a></td><td>5.25</td><td>1.4444</td><td>1.6667</td><td>unavailable</td><td>not run</td><td>24</td><td>1</td><td>4.571</td><td>1</td><td>0</td><td>very_high_wer</td><td></td></tr><tr><td><a href="g2ELiaFjKfs_3-10-rgb_front.html">g2ELiaFjKfs_3-10-rgb_front</a></td><td>4.50</td><td>1.1429</td><td>2.0714</td><td>unavailable</td><td>not run</td><td>24</td><td>1</td><td>5.333</td><td>1</td><td>0</td><td>very_high_wer</td><td></td></tr><tr><td><a href="g2NA_eBUcH8_0-3-rgb_front.html">g2NA_eBUcH8_0-3-rgb_front</a></td><td>2.75</td><td>0.75</td><td>0.6667</td><td>unavailable</td><td>not run</td><td>24</td><td>1</td><td>8.727</td><td>1</td><td>0</td><td>low_wer_contrast</td><td></td></tr><tr><td><a href="G19uBylwQww_1-2-rgb_front.html">G19uBylwQww_1-2-rgb_front</a></td><td>4.25</td><td>0.8077</td><td>0.8077</td><td>unavailable</td><td>done</td><td>24</td><td>1</td><td>5.647</td><td>1</td><td>0</td><td>low_wer_contrast</td><td></td></tr>
+</table>
+<p class="muted">Pattern reused (read-only) from curify-studio origin/main commit 007dcf6,
+<code>dev/asl_mvp/inspector/build/build.py</code> — not checked out, pulled, or modified.</p>
+</body></html>

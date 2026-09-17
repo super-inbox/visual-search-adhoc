@@ -1,0 +1,82 @@
+{
+  "project_id": null,
+  "video": "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/videos/G05uFub3YFc_9-2-rgb_front.mp4",
+  "producer": "asl-translator/asl-eval/run_current_model.py (--run)",
+  "warning": "UNVERIFIED machine output \u2014 offline evaluation run, not a production job.",
+  "run_metadata": {
+    "config": "evaluation_2026_09_07_gemini_3_6_uniform_2fps",
+    "model": "gemini-3.6-flash",
+    "temperature": "temperature_not_set_gemini3_uses_thinking_level",
+    "frame_budget": 34,
+    "budget_mode": "duration_scaled",
+    "sampling_density_fps": 1.971,
+    "low_density": false,
+    "dedup": true,
+    "segments_before_dedup": 7,
+    "degenerate_repetition": false,
+    "keyframe_width": 512,
+    "batch_size": 24,
+    "duration_s": 17.25,
+    "frames_sampled": 34,
+    "model_calls": 2,
+    "production_side_effects": false,
+    "source_repo": "curify-studio",
+    "source_ref": "origin/main",
+    "source_commit": "f42a3a44",
+    "source_file": "curify_background/app/utils/asl_utils.py",
+    "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+    "input_md5": "c0fe6c972da19ac8b1836248894e93fa",
+    "thinking_level": "medium",
+    "config_status": {
+      "model": "gemini-3.6-flash",
+      "status": "runnable_ablation_arm",
+      "detail": "Phase 3A sampling-strategy ablation against frozen baseline A (evaluation_2026_09_04_gemini_3_6). Only sampling_strategy differs (uniform vs. adaptive/motion-weighted) - target_frames_per_sec, model, prompt, batch size, dedup, and thinking_level are identical to baseline A. Not production_2026_08_29, not baseline A, and not the 8fps arm; must never be reported as any of them."
+    },
+    "not_production_2026_08_29": true,
+    "sampling_strategy": "uniform"
+  },
+  "segments": [
+    {
+      "line": 1,
+      "start": 0.25,
+      "end": 2.83,
+      "text": "He sat down and looked around."
+    },
+    {
+      "line": 2,
+      "start": 3.34,
+      "end": 4.89,
+      "text": "He tried to calm himself down."
+    },
+    {
+      "line": 3,
+      "start": 5.4,
+      "end": 6.95,
+      "text": "He felt his heart racing with excitement."
+    },
+    {
+      "line": 4,
+      "start": 7.46,
+      "end": 8.49,
+      "text": "He smelled something and washed his hands."
+    },
+    {
+      "line": 5,
+      "start": 10.04,
+      "end": 12.1,
+      "text": "Although he was dirty, he brushed it off and moved on."
+    },
+    {
+      "line": 6,
+      "start": 12.61,
+      "end": 14.16,
+      "text": "He pulled back his bow and shot an arrow,"
+    },
+    {
+      "line": 7,
+      "start": 14.67,
+      "end": 17.25,
+      "text": "striking the target as high flames burst into the air."
+    }
+  ]
+}

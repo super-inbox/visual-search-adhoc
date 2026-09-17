@@ -313,6 +313,54 @@ class TestResolveFrameBudget(unittest.TestCase):
             self.assertEqual(m.resolve_frame_budget(name, 300.0, override=7), 7)
 
 
+class TestExperimentB8fpsAblation(unittest.TestCase):
+    """2026-09-06 temporal-sampling ablation: Experiment B must scale the frame
+    budget at 8.0 f/s while leaving baseline A / production at 2.0 f/s."""
+
+    def test_module_default_target_fps_is_unchanged(self):
+        self.assertEqual(m.TARGET_FRAMES_PER_SEC, 2.0)
+
+    def test_8fps_config_declares_its_own_target(self):
+        cfg = m.CONFIGS["evaluation_2026_09_06_gemini_3_6_8fps"]
+        self.assertEqual(cfg["target_frames_per_sec"], 8.0)
+        self.assertEqual(cfg["budget_mode"], "duration_scaled")
+
+    def test_baseline_and_production_configs_have_no_override(self):
+        for name in ("production_2026_08_29", "evaluation_2026_09_04_gemini_3_6"):
+            self.assertNotIn("target_frames_per_sec", m.CONFIGS[name])
+
+    def test_resolve_target_fps(self):
+        self.assertEqual(m.resolve_target_fps("evaluation_2026_09_04_gemini_3_6"), 2.0)
+        self.assertEqual(m.resolve_target_fps("production_2026_08_29"), 2.0)
+        self.assertEqual(m.resolve_target_fps("evaluation_2026_09_06_gemini_3_6_8fps"), 8.0)
+
+    def test_8fps_config_quadruples_the_duration_scaled_budget_before_clamping(self):
+        # Mid-length clip, both densities land strictly inside [MIN_FRAME_BUDGET, MAX_FRAME_BUDGET]
+        # so the 4x relationship isn't hidden by clamping.
+        duration = 20.0
+        baseline_budget = m.resolve_frame_budget("evaluation_2026_09_04_gemini_3_6", duration)
+        ablation_budget = m.resolve_frame_budget("evaluation_2026_09_06_gemini_3_6_8fps", duration)
+        self.assertEqual(baseline_budget, 40)
+        self.assertEqual(ablation_budget, 160)
+        self.assertEqual(ablation_budget, baseline_budget * 4)
+
+    def test_8fps_config_still_respects_the_absolute_clamps(self):
+        self.assertEqual(
+            m.resolve_frame_budget("evaluation_2026_09_06_gemini_3_6_8fps", 1.0),
+            m.MIN_FRAME_BUDGET,
+        )
+        self.assertEqual(
+            m.resolve_frame_budget("evaluation_2026_09_06_gemini_3_6_8fps", 300.0),
+            m.MAX_FRAME_BUDGET,
+        )
+
+    def test_explicit_override_still_wins_over_the_ablation_target(self):
+        self.assertEqual(
+            m.resolve_frame_budget("evaluation_2026_09_06_gemini_3_6_8fps", 300.0, override=5),
+            5,
+        )
+
+
 class TestConfigs(unittest.TestCase):
     def test_historical_configs_are_unchanged(self):
         """These reproduce every saved prediction; changing them invalidates them."""

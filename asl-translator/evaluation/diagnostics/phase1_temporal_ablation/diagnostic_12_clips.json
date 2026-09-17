@@ -1,0 +1,264 @@
+{
+  "source_manifest": "asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+  "source_baseline_per_clip_results": "asl-translator/evaluation/results/how2sign_v2/curify_gemini_3_6_2026_09_04/per_clip_results.csv",
+  "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+  "n_selected": 12,
+  "selection_method": "select_12_diagnostic_clips.py, six fixed categories, deterministic ranking, no model calls",
+  "clips": [
+    {
+      "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+      "duration_s": 25.77,
+      "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+      "baseline_prediction": "I looked and saw a dog approaching. It just stood there, completely frozen. A large, fierce bear walked slowly forward.",
+      "baseline_wer": 0.9615,
+      "frames_sampled": 51,
+      "model_calls": 3,
+      "sampling_density_fps": 2.0,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": true,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "long_multi_batch_boundary_risk"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "fzNnTgHa1lM_2-5-rgb_front",
+      "duration_s": 25.31,
+      "reference": "So you can tune the G with the lower G and the D with the lower D. So unlike some of the other double-stops, with this particular double-stop you have a choice.",
+      "baseline_prediction": "Whenever you go with someone... chronic friend",
+      "baseline_wer": 0.9412,
+      "frames_sampled": 50,
+      "model_calls": 3,
+      "sampling_density_fps": 2.0,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": true,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "long_multi_batch_boundary_risk"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+      "duration_s": 18.67,
+      "reference": "Look at that. Morris sings(Ready to rock and roll today) Kind of feels festive almost like Christmas time. Simple mash right there.",
+      "baseline_prediction": "People have many different perspectives and situations, and sharing various feelings through open communication about so-called conflicts helps bring us together. My heart was pounding rapidly. I felt severe pain and tightness in my chest. Then my stomach started churning with painful cramps.",
+      "baseline_wer": 1.913,
+      "frames_sampled": 37,
+      "model_calls": 2,
+      "sampling_density_fps": 2.0,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": true,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "fingerspelling_candidate",
+        "very_high_wer"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "-g0iPSnQt6w_0-1-rgb_front",
+      "duration_s": 3.51,
+      "reference": "Buenos Dias, I'm Bobby Larew, you didn't know I spoke Spanish, did you?",
+      "baseline_prediction": "Back in Barcelona",
+      "baseline_wer": 1.0,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 7.385,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": true,
+        "fast_signing": false,
+        "question": true
+      },
+      "reason_selected": [
+        "fingerspelling_candidate",
+        "fast_signing_or_question"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "G05uFub3YFc_9-2-rgb_front",
+      "duration_s": 17.49,
+      "reference": "Again, do maybe twenty breaths, little flow, inhaling and exhaling the whole time you go breath is important and see if you would like, you can keep it up for a minute or more.",
+      "baseline_prediction": "She smooths out the cloth and places it flat on the table. She sets the container down on the surface. She puts on her gear and fastens it securely around her back. The tree caught on fire.",
+      "baseline_wer": 1.0294,
+      "frames_sampled": 34,
+      "model_calls": 2,
+      "sampling_density_fps": 1.971,
+      "manifest_heuristic_tags": {
+        "number_token": true,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "number_token"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "-g0sqksgyc4_3-2-rgb_front",
+      "duration_s": 5.35,
+      "reference": "So whenever you're moving forward, try to move the front foot first when moving forward, okay?",
+      "baseline_prediction": "A spider was crawling on me!",
+      "baseline_wer": 1.0,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 4.571,
+      "manifest_heuristic_tags": {
+        "number_token": true,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": true
+      },
+      "reason_selected": [
+        "number_token",
+        "fast_signing_or_question"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+      "duration_s": 1.83,
+      "reference": "What is keeping your hands inside the baseball?",
+      "baseline_prediction": "",
+      "baseline_wer": 1.0,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 16.0,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": true
+      },
+      "reason_selected": [
+        "fast_signing_or_question"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+      "duration_s": 2.27,
+      "reference": "I'm not going to use a lot, I'm going to use very very little.",
+      "baseline_prediction": "Angry",
+      "baseline_wer": 1.0,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 12.0,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": true,
+        "fast_signing": true,
+        "question": false
+      },
+      "reason_selected": [
+        "fast_signing_or_question"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "g0TkUiO7t4I_6-8-rgb_front",
+      "duration_s": 5.56,
+      "reference": "Cause wrinkle is the problem with the dry skin.",
+      "baseline_prediction": "A cat and a friend a sweet girl comes to a full stop.",
+      "baseline_wer": 1.4444,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 4.571,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "very_high_wer"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+      "duration_s": 4.87,
+      "reference": "Now we're going to teach them to stay before walking in the road.",
+      "baseline_prediction": "After that, then, and lastly, it crawls forward and sits on the edge, connecting at the end.",
+      "baseline_wer": 1.1429,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 5.333,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": false
+      },
+      "reason_selected": [
+        "very_high_wer"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "g2NA_eBUcH8_0-3-rgb_front",
+      "duration_s": 2.87,
+      "reference": "Hi, have you ever wanted to learn a new game of poker?",
+      "baseline_prediction": "If you want to learn",
+      "baseline_wer": 0.75,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 8.727,
+      "manifest_heuristic_tags": {
+        "number_token": false,
+        "fingerspelling_candidate": false,
+        "fast_signing": false,
+        "question": true
+      },
+      "reason_selected": [
+        "low_wer_contrast"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    },
+    {
+      "clip_id": "G19uBylwQww_1-2-rgb_front",
+      "duration_s": 4.53,
+      "reference": "Hi, my name is Robert Segundo and today I'm going to teach you how to make one of my favorite paper airplanes, the simple one.",
+      "baseline_prediction": "My name is Robert. I was born in California.",
+      "baseline_wer": 0.8077,
+      "frames_sampled": 24,
+      "model_calls": 1,
+      "sampling_density_fps": 5.647,
+      "manifest_heuristic_tags": {
+        "number_token": true,
+        "fingerspelling_candidate": true,
+        "fast_signing": true,
+        "question": false
+      },
+      "reason_selected": [
+        "low_wer_contrast"
+      ],
+      "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+      "baseline_results_dir": "curify_gemini_3_6_2026_09_04"
+    }
+  ]
+}

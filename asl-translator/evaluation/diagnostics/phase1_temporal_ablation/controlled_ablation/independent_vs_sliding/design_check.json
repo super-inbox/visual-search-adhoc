@@ -1,0 +1,500 @@
+{
+  "purpose": "Phase 3B design check (LOCAL ONLY, NO MODEL CALLS): re-verifies baseline sampling is reproduced exactly, then computes the sliding-window plan (window boundaries, ownership partition, call/frame estimates) before any Gemini inference.",
+  "baseline_config": "evaluation_2026_09_04_gemini_3_6",
+  "window_size": 24,
+  "stride": 12,
+  "overlap_fraction": 0.5,
+  "n_clips": 12,
+  "n_multi_batch_clips": 4,
+  "multi_batch_clips": [
+    "FzmL8SL6Bow_1-8-rgb_front",
+    "fzNnTgHa1lM_2-5-rgb_front",
+    "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+    "G05uFub3YFc_9-2-rgb_front"
+  ],
+  "n_single_batch_clips": 8,
+  "total_expected_sliding_window_model_calls": 21,
+  "total_baseline_independent_batch_calls_for_these_12": 18,
+  "total_unique_frames": 364,
+  "total_frame_exposures_with_overlap": 472,
+  "total_repeated_frame_exposures": 108,
+  "merge_strategy": {
+    "name": "deterministic frame-index ownership partition, applied before any dedup",
+    "what_each_window_sees": "Window i sees frames[start_i:end_i) of the SAME global chronologically-ordered sampled-frame sequence baseline A used for this clip (identical frame images, identical [t=...s] timestamp labels, identical prompt/model/decoding settings). start_i = i*stride, end_i = min(start_i+window_size, n_frames).",
+    "what_each_window_owns": "A disjoint, gap-free slice of the clip's TIME axis, decided purely from window POSITION in the sequence (known before inference): window 0 owns from the start of the clip; window i>0 owns starting at its own first frame's timestamp; every window except the last owns up to (not including) the next window's first frame's timestamp; the last window owns to the end of the clip. This is computed entirely from the pre-planned window boundaries -- it never looks at what any window actually returned.",
+    "how_overlap_outputs_are_merged": "For each window's returned segments, KEEP a segment iff its own reported `start` time falls inside that window's owned time range; DISCARD it otherwise (it will be covered by whichever window owns that time, if any window's kept segments cover it). Kept segments from all windows are then sorted by start time and, as a final pass IDENTICAL to what Arm A already does (dedup=True in the shared baseline config), run through the existing, unmodified run_current_model.merge_adjacent_duplicates() to collapse any remaining exact-text adjacent repeats (e.g. a window internally repeating a caption) -- this dedup pass runs on the ALREADY-DISJOINT-BY-CONSTRUCTION segment list, not on raw overlapping output, which is the blind-reuse failure mode the task flagged: dedup alone (exact-text match only) cannot safely resolve genuine content overlap between two windows describing the same moment in different words, so ownership partitioning -- not text matching -- is what removes the overlap.",
+    "why_it_cannot_look_at_ground_truth": "The ownership partition is fixed entirely by window start/end frame indices, which are computed from window_size/stride/n_frames alone -- BEFORE any Gemini call is made and therefore before any model output (let alone the reference) exists to consult. The only per-segment decision (keep vs. discard) uses that segment's own `start` time, a field the model always reports as part of its normal output schema regardless of correctness -- never the reference SRT, and never a comparison between what two different windows said.",
+    "why_the_comparison_remains_fair": "Arm A's predictions are untouched and unscored by anything in this design. Arm B's merge rule cannot see the reference, cannot see which window's wording is closer to the reference, and cannot selectively keep a 'better' overlapping segment over a 'worse' one -- ownership is a fixed geometric partition decided in advance, so the final transcript reflects exactly one window's read of each moment, chosen only by position, not by correctness. This mirrors how a real deployed sliding-window pipeline would have to work (no reference available at inference time), so the WER measured here is not inflated relative to a real-world use of this architecture."
+  },
+  "confound_check_result": "No blocker identified: baseline frame_budget/frame_count reproduced exactly for all 12 clips (0 mismatches), merge rule is fully deterministic and reference-free, and the only architecture difference from Arm A is independent-vs-overlapping batch construction over the SAME frames.",
+  "per_clip": [
+    {
+      "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+      "duration_s": 25.5,
+      "frame_budget": 51,
+      "n_frames_sampled": 51,
+      "n_baseline_independent_batches": 3,
+      "is_multi_batch": true,
+      "n_sliding_windows": 4,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          12,
+          36
+        ],
+        [
+          24,
+          48
+        ],
+        [
+          36,
+          51
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          12
+        ],
+        [
+          12,
+          24
+        ],
+        [
+          24,
+          36
+        ],
+        [
+          36,
+          51
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          3.97
+        ],
+        [
+          3.97,
+          9.5
+        ],
+        [
+          9.5,
+          17.429
+        ],
+        [
+          17.429,
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 87,
+      "repeated_frame_exposures": 36,
+      "same_as_baseline_batching_when_single_window": false
+    },
+    {
+      "clip_id": "fzNnTgHa1lM_2-5-rgb_front",
+      "duration_s": 25.0,
+      "frame_budget": 50,
+      "n_frames_sampled": 50,
+      "n_baseline_independent_batches": 3,
+      "is_multi_batch": true,
+      "n_sliding_windows": 4,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          12,
+          36
+        ],
+        [
+          24,
+          48
+        ],
+        [
+          36,
+          50
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          12
+        ],
+        [
+          12,
+          24
+        ],
+        [
+          24,
+          36
+        ],
+        [
+          36,
+          50
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          2.482
+        ],
+        [
+          2.482,
+          4.625
+        ],
+        [
+          4.625,
+          21.625
+        ],
+        [
+          21.625,
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 86,
+      "repeated_frame_exposures": 36,
+      "same_as_baseline_batching_when_single_window": false
+    },
+    {
+      "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+      "duration_s": 18.5,
+      "frame_budget": 37,
+      "n_frames_sampled": 37,
+      "n_baseline_independent_batches": 2,
+      "is_multi_batch": true,
+      "n_sliding_windows": 3,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          12,
+          36
+        ],
+        [
+          24,
+          37
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          12
+        ],
+        [
+          12,
+          24
+        ],
+        [
+          24,
+          37
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          6.402
+        ],
+        [
+          6.402,
+          12.417
+        ],
+        [
+          12.417,
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 61,
+      "repeated_frame_exposures": 24,
+      "same_as_baseline_batching_when_single_window": false
+    },
+    {
+      "clip_id": "-g0iPSnQt6w_0-1-rgb_front",
+      "duration_s": 3.25,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "G05uFub3YFc_9-2-rgb_front",
+      "duration_s": 17.25,
+      "frame_budget": 34,
+      "n_frames_sampled": 34,
+      "n_baseline_independent_batches": 2,
+      "is_multi_batch": true,
+      "n_sliding_windows": 2,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ],
+        [
+          12,
+          34
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          12
+        ],
+        [
+          12,
+          34
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          8.792
+        ],
+        [
+          8.792,
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 46,
+      "repeated_frame_exposures": 12,
+      "same_as_baseline_batching_when_single_window": false
+    },
+    {
+      "clip_id": "-g0sqksgyc4_3-2-rgb_front",
+      "duration_s": 5.25,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+      "duration_s": 1.5,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+      "duration_s": 2.0,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "g0TkUiO7t4I_6-8-rgb_front",
+      "duration_s": 5.25,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+      "duration_s": 4.5,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "g2NA_eBUcH8_0-3-rgb_front",
+      "duration_s": 2.75,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    },
+    {
+      "clip_id": "G19uBylwQww_1-2-rgb_front",
+      "duration_s": 4.25,
+      "frame_budget": 24,
+      "n_frames_sampled": 24,
+      "n_baseline_independent_batches": 1,
+      "is_multi_batch": false,
+      "n_sliding_windows": 1,
+      "windows_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_frame_index_ranges": [
+        [
+          0,
+          24
+        ]
+      ],
+      "windows_owned_time_ranges_s": [
+        [
+          "-inf",
+          "+inf"
+        ]
+      ],
+      "frame_exposures_with_overlap": 24,
+      "repeated_frame_exposures": 0,
+      "same_as_baseline_batching_when_single_window": true
+    }
+  ]
+}

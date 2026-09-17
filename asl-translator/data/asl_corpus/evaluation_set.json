@@ -2,18 +2,19 @@
  "name": "Curify ASL evaluation reference set",
  "version": "v1",
  "assembled": "2026-08-26",
- "revised": "2026-08-30",
- "note": "Reference items this evaluation scaffold can defend today. Does NOT assert that matching predictions exist yet - see asl-eval/status.py. REVISION 2026-08-30: 155 was removed from the scoreable set. Its corpus input was the caption-burned marketing OUTPUT, so the reference answer was visible in the model's input and every 155 score measured OCR rather than sign reading; see CONTAMINATION.md. A clean input is now in place but has no prediction. 1320 is likewise caption-burned and is now referenced through a masked input. 1434 remains excluded: greeting-only content, guessable from priors without decoding any signing.",
+ "revised": "2026-09-02",
+ "canonical_live_status": "asl-translator/data/asl_corpus/inventory.json is now the canonical live-status source for this corpus. The fields in this file (reference_status, usable_for_official_metrics) are kept here for backward compatibility but MUST agree with inventory.json; if they ever diverge, inventory.json wins. See asl-translator/README.md 'Data status' (2026-09-01) for the reference-independence methodology behind the 2026-09-02 revision below.",
+ "note": "Reference items this evaluation scaffold can defend today. Does NOT assert that matching predictions exist yet - see asl-eval/status.py. REVISION 2026-08-30: 155 was removed from the scoreable set (input contamination). REVISION 2026-09-02: 1252 was also removed from the scoreable set. Its reference is CIRCULAR, not merely 'verified' - OCR-confirmed 2026-09-01 that the gold SRT, the burned render, and the frame-inspector's embedded gold are one Curify outreach translation counted three times, not independent corroboration. See inventory.json and asl-translator/README.md's 'Reference independence' section. This evaluation set currently has ZERO items usable_for_official_metrics=true. 1320 is caption-burned and referenced through a masked input; its source is independent (a third-party interpreter-certification answer key) but still needs human verification against the signing. 1434 remains excluded: greeting-only content, guessable from priors without decoding any signing.",
  "items": [
   {
    "video_id": "1252_1000016397_76.8s",
    "video": "videos/1252_1000016397_76.8s.mp4",
    "reference": "ground_truth/1252_1000016397_76.8s.srt",
-   "reference_status": "verified_gold",
-   "reference_kind": "human_translated",
+   "reference_status": "circular_non_independent",
+   "reference_kind": "human_translated_by_curify_outreach",
    "label_in_input": false,
-   "usable_for_official_metrics": true,
-   "note": "As of 2026-08-30 this is the ONLY item in the corpus with both a verified human reference and an uncontaminated input. Every defensible accuracy claim about the ASL translator rests on this one video."
+   "usable_for_official_metrics": false,
+   "note": "STATUS CHANGED 2026-09-02 (was verified_gold / usable_for_official_metrics=true). OCR-confirmed 2026-09-01: this reference is CIRCULAR - ground_truth/1252_1000016397_76.8s_burned.mp4 reproduces the gold SRT verbatim, because it is the render Curify itself produced from the same outreach translation to email the submitter. The SRT, that render, and the frame-inspector's embedded gold are one translation counted three times, not independent corroboration. No named annotator, ASL qualification, date, or method was ever recorded. Retained here as a diagnostic_only item, not a defensible accuracy anchor - the one thing that survives is the fingerspelling cross-check (SignCaption independently agrees on 'Greg'/'Sara'). See inventory.json and asl-translator/README.md 'Reference independence'."
   },
   {
    "video_id": "1320_1000022357_137.2s",
@@ -38,8 +39,12 @@
  "excluded": [
   {
    "video_id": "155_demo_asl-demo-translation_26.7s",
-   "reason": "label_was_burned_into_input",
-   "note": "Held verified_gold / usable_for_official_metrics=true until 2026-08-30. The file at videos/155_....mp4 was byte-identical to curify-frontend/public/video/asl-demo-translation.mp4 - the published demo OUTPUT, with the English captions burned in. The temperature0 prediction reproduces the gold SRT verbatim including punctuation, with 0 substitutions and 0 deletions, and its two 'duplicate' segments are two batches reading the same caption while it was still on screen. All 155 scores are retracted. A clean input (the raw demo source) is now at videos/155_....mp4, but no prediction has been generated from it, so the item cannot re-enter the scoreable set yet."
+   "reason": "reference_provenance_unresolved",
+   "reason_history": "Excluded 2026-08-30 as 'label_was_burned_into_input'. That described the file's state THEN, not now - it no longer describes anything the corpus holds (see below). Kept here as history, not as the current reason.",
+   "note_current_input": "CLEAN since 2026-08-30. videos/155_demo_asl-demo-translation_26.7s.mp4 is the raw demo source (md5 d71313d0...). It is no longer byte-identical to the published marketing output.",
+   "note_current_predictions": "Both existing predictions (predictions_eval/155_..._baseline0.json, _temperature0.json) remain RETRACTED - they were generated from the contaminated file (md5 d714db71..., now at ground_truth/155_demo_asl-demo-translation_26.7s_burned_marketing.mp4) and reproduce the reference verbatim (0 substitutions/deletions). No prediction has been generated from the clean input. corpus_guard.py blocks these from scoring.",
+   "note_current_reference": "The CURRENT blocker is reference independence, not input contamination. Per asl-translator/README.md 'Reference independence' (2026-09-01): job 155 itself FAILED (GOOGLE_API_KEY missing, 0 credits), so the reference SRT's origin - written independently by a human, or derived from an earlier/other model run - is UNRESOLVED. This is a different, newer, and still-open question. See inventory.json.",
+   "note": "Historical text, preserved verbatim from the 2026-08-30 revision: Held verified_gold / usable_for_official_metrics=true until 2026-08-30. The file at videos/155_....mp4 was byte-identical to curify-frontend/public/video/asl-demo-translation.mp4 - the published demo OUTPUT, with the English captions burned in. The temperature0 prediction reproduces the gold SRT verbatim including punctuation, with 0 substitutions and 0 deletions, and its two 'duplicate' segments are two batches reading the same caption while it was still on screen. All 155 scores are retracted. A clean input (the raw demo source) is now at videos/155_....mp4, but no prediction has been generated from it, so the item cannot re-enter the scoreable set yet."
   },
   {
    "video_id": "1434_screenrec_youtube_16.6s",

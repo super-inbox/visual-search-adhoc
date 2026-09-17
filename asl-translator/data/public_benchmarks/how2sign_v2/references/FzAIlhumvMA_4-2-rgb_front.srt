@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:04,620
+It tells you the materials you're going to need which are all included in this kit conveniently enough.

@@ -1,0 +1,3 @@
+1
+00:00:00,000 --> 00:00:16,000
+Basically all you have got to do is make sure that your voltage meter is set up to your voltage setting by seeing you can have a V a low squiggly line there and also you are going to see a C over here on your read out.

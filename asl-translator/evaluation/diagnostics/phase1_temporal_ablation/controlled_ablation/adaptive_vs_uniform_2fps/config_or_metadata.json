@@ -1,0 +1,48 @@
+{
+  "experiment": "Phase 3A - controlled sampling-strategy ablation",
+  "research_question": "Does the current motion-weighted/adaptive sampling strategy itself hurt Gemini ASL translation compared with uniform temporal sampling, holding target density and all other inference conditions fixed?",
+  "date": "2026-09-07",
+  "scope": "12 fixed diagnostic clips only (diagnostic_12_clips.json) - not the full 40-clip taxonomy, not the 128-clip benchmark",
+  "arm_A_existing_baseline": {
+    "config": "evaluation_2026_09_04_gemini_3_6",
+    "description": "Existing production-equivalent sampler: motion-weighted/adaptive timestamp allocation (run_current_model.allocate_timestamps).",
+    "predictions_source": "asl-translator/evaluation/results/how2sign_v2/curify_gemini_3_6_2026_09_04/predictions/ - REUSED, NOT rerun",
+    "model": "gemini-3.6-flash",
+    "thinking_level": "medium",
+    "target_frames_per_sec": 2.0,
+    "budget_mode": "duration_scaled",
+    "min_frame_budget": 24,
+    "max_frame_budget": 240,
+    "batch_size": 24,
+    "dedup": true,
+    "sampling_strategy": "adaptive (motion-weighted, the module default)"
+  },
+  "arm_B_new_controlled_arm": {
+    "config": "evaluation_2026_09_07_gemini_3_6_uniform_2fps",
+    "description": "New ablation config, added to asl-translator/asl-eval/run_current_model.py CONFIGS additively. Identical to Arm A in every knob EXCEPT sampling_strategy.",
+    "sampling_strategy": "uniform (run_current_model.allocate_timestamps_uniform - evenly spaced across the observed clip span, ignores motion energy entirely, preserves chronological ordering)",
+    "model": "gemini-3.6-flash",
+    "thinking_level": "medium",
+    "target_frames_per_sec": 2.0,
+    "budget_mode": "duration_scaled",
+    "min_frame_budget": 24,
+    "max_frame_budget": 240,
+    "batch_size": 24,
+    "dedup": true,
+    "predictions_output": "asl-translator/evaluation/diagnostics/phase1_temporal_ablation/controlled_ablation/adaptive_vs_uniform_2fps/predictions/ - NEW real Gemini calls, this experiment only"
+  },
+  "single_controlled_variable": "timestamp allocation formula (motion-weighted vs. evenly-spaced). Frame budget, model, prompt, batch size, dedup, thinking_level, and target_frames_per_sec are identical between arms for every clip.",
+  "design_check_summary": {
+    "source": "design_check.json (same directory) - LOCAL ONLY, no model calls, produced before any inference",
+    "n_clips": 12,
+    "frame_count_mismatches_between_arms": 0,
+    "both_arms_chronologically_ordered": true,
+    "clips_where_min_frame_budget_24_is_binding": 8,
+    "note_on_min_frame_budget": "For 8 of the 12 clips, duration_s * 2.0 < 24, so MIN_FRAME_BUDGET=24 is the binding constraint and the ACTUAL sampling density is higher than a literal 2 frames/sec for BOTH arms equally (same duration, same budget_mode, so this affects Arm A and Arm B identically - not a confound between arms, but means '2fps' is not literally true for these 8 clips). See design_check.json per_clip[].min_frame_budget_binding and naive_literal_2fps_frame_count vs. frame_budget.",
+    "estimated_new_gemini_calls_uniform_arm_only": 18,
+    "estimated_total_frames_uniform_arm_only": 364,
+    "confound_check_result": "No major confound identified that would prevent a fair adaptive-vs-uniform comparison on these 12 clips: frame counts match exactly (0 mismatches), timestamp ordering is chronological in both arms, and every other inference condition (model, prompt, batch size, dedup, thinking_level, target density) is identical."
+  },
+  "baseline_predictions_reused_not_rerun": true,
+  "adaptive_production_sampler_unchanged": "run_current_model.allocate_timestamps() and every existing CONFIGS entry are byte-for-byte unmodified; the uniform path is purely additive (new function allocate_timestamps_uniform, new CONFIGS entry, new sampling_strategy branch gated on cfg.get('sampling_strategy'))."
+}

@@ -3,6 +3,15 @@
 13 real ASL videos from Curify production, with ground truth where it exists and the
 current production model's output where a job ran. Assembled 2026-08-25.
 
+> **Canonical live status: `inventory.json`.** This README, `manifest.json`,
+> `evaluation_set.json`, `corpus_inventory.csv`, and `annotation_queue.csv` all carry
+> per-video status, and they have drifted apart before (see `asl-translator/README.md`'s
+> 2026-09-01 "Data status" section for the audit that found this). `inventory.json` is
+> now the single source of truth for reference independence, human-verification, and
+> `usable_for_official_metrics` status — check it before trusting a status claim below.
+> Run `python3 asl-translator/data/asl_corpus/validate_inventory.py` to check it's internally
+> consistent.
+
 This is the test set `docs/daily_report/8.22/asl-transcription-ideas/EXPERIMENT_PRIORITY.md`
 §3 asks for and §8 lists as blocked-on-boss. It was never blocked — it was just undocumented.
 
@@ -61,11 +70,14 @@ reference render*, not a corpus input. Those live in `ground_truth/` and
 
 ## Ground truth — 4 of 13
 
+**Neither `155` nor `1252` is "verified" in an independently-checkable sense —
+see `inventory.json` before relying on the "Kind" column below.**
+
 | Video | Kind | Lines | Diagnostic content? |
 |---|---|---|---|
-| `155_demo_asl-demo-translation_26.7s` | human-translated, verified | 6 | ✅ ages/numbers — **but see the leakage warning above: the reference is sound, the input was not, and there is no valid prediction** |
-| `1252_1000016397_76.8s` | human-translated by Curify, verified | 11 | ✅ **fingerspelled names** (Greg, Sara) + numbered items |
-| `1320_1000022357_137.2s` | candidate SRT derived from **burned-in English captions** | 14 | ✅ full sentences — **score only via the masked input** |
+| `155_demo_asl-demo-translation_26.7s` | claimed human-translated; **independence UNKNOWN as of 2026-09-02** — job 155 failed with no output, so whether a human or an earlier model produced this text is unresolved | 6 | ✅ ages/numbers — **but see the leakage warning above: the input was not clean until 2026-08-30, and there is still no valid prediction** |
+| `1252_1000016397_76.8s` | claimed human-translated by Curify; **CIRCULAR as of 2026-09-02** — OCR-confirmed the gold SRT, its burned render, and the frame-inspector's gold are one Curify outreach translation counted three times, not independent corroboration | 11 | ✅ **fingerspelled names** (Greg, Sara) + numbered items — the fingerspelling cross-check with SignCaption is the one thing that still survives |
+| `1320_1000022357_137.2s` | candidate SRT derived from **burned-in English captions**; source is **independent** (third-party interpreter-certification answer key) but not yet human-verified against the signing | 14 | ✅ full sentences — **score only via the masked input** |
 | `1434_screenrec_youtube_16.6s` | crowd-sourced YouTube comment | 11 (6 in clip) | ❌ **greetings only — see warning** |
 
 Reference renders with captions burned in live alongside their SRTs in `ground_truth/` and
@@ -100,6 +112,12 @@ unset**.
 
 This output is **unverified and non-deterministic**. Treat it as the control to beat, never
 as a reference.
+
+**Does not represent current production.** Production changed 2026-08-29
+(duration-scaled frame budget instead of a flat 96, `temperature=0` instead of unset,
+batch-boundary dedup added). Every prediction in this corpus — `predictions_baseline0/`
+and `predictions_eval/` alike — predates that change. No number in this directory
+describes what production returns today; see `asl-translator/README.md` "Data status".
 
 ## The determinism pair — start your experiments here
 

@@ -1,0 +1,95 @@
+{
+  "run_date": "2026-09-01/2026-09-02",
+  "frozen_benchmark": {
+    "path": "asl-translator/data/public_benchmarks/how2sign_v2/",
+    "freeze_commit": "a373e03d15dc82fd1a3851378db2eeefd5ea3775",
+    "freeze_commit_message": "data(asl): freeze 128-clip How2Sign benchmark",
+    "FREEZE.sha256": "16c41282b21928e36e4c5481d8c3de48d56794accbb091fde67698dd2963411a",
+    "n_clips": 128
+  },
+  "no_tuning_statement": "No decoding parameter, model setting, or checkpoint was changed at any point after seeing this benchmark's output, for either system. OpenSLT's fairseq-generate flags match the official Taskfile.yml generate: target verbatim except two documented zero-effect additions (--cpu, --num-workers 0). Uni-Sign's num_beams=4 / max_new_tokens=100 are the documented defaults, unchanged throughout, including after observing the max_new_tokens truncation pattern reported separately below.",
+  "max_new_tokens_note": "Uni-Sign's predictions show truncation (no terminal punctuation) that rises with clip duration: 3.3% of clips <5s, 10.6% of clips 5-15s, 65.0% of clips 15-31s. This is consistent with the fixed max_new_tokens=100 decoding cap. This was OBSERVED, not corrected: the cap was NOT raised, and the frozen benchmark was NOT altered, truncated, or filtered in response.",
+  "openslt": {
+    "system": "OpenSLT (slt_how2sign_wicv2023)",
+    "repo": "https://github.com/imatge-upc/slt_how2sign_wicv2023",
+    "pinned_commit": "3260d05f4804d3611a911adf3fab8cc50d8204cd",
+    "checkpoint_file": "checkpoint.best_reduced_sacrebleu_3.5401.pt",
+    "checkpoint_md5": "52f2f55dca970d82c7ffe534fbfdec43",
+    "checkpoint_source": "CORA/Dataverse DOI 10.34810/DATA693, file ID 51903",
+    "feature_source": "CORA/Dataverse DOI 10.34810/DATA693, file ID 51538 (official released I3D test-split features)",
+    "feature_archive_md5": "ce7d020f0b84cab96100e2071ea7b693",
+    "feature_archive_size_bytes": 572646623,
+    "official_manifest_rows": 2328,
+    "how2sign_v2_clips_covered": 126,
+    "how2sign_v2_clips_missing": [
+      "G3EfBFwsOpE_3-10-rgb_front",
+      "fZK9hW81XCU_9-10-rgb_front"
+    ],
+    "conda_env": "openslt-cpu-arm64",
+    "python": "3.8.19",
+    "torch": "1.11.0.post2 (CPU, osx-arm64)",
+    "fairseq": "0.12.2",
+    "decoding_config": {
+      "beam": 5,
+      "max_tokens": 16000,
+      "max_source_positions": 1024,
+      "max_target_positions": 1024,
+      "seed": 48151623,
+      "sacrebleu_tokenizer": "13a",
+      "bpe": "sentencepiece"
+    },
+    "compatibility_patches": [
+      "--cpu (required, no GPU on this machine; zero effect on decoding)",
+      "--num-workers 0 (required: macOS spawn-based multiprocessing cannot pickle a fairseq Hydra config Enum; zero effect on decoding)",
+      "Cython transpilation of data_utils_fast.pyx/token_block_utils_fast.pyx run by hand before `pip install --editable .` (build-tooling gap in fairseq's setup.py under modern pip, unrelated to macOS/arm64; would fail identically on Linux with a modern toolchain)",
+      "pip downgraded to 24.0 inside this env only, to install omegaconf==2.0.6's old-style metadata"
+    ],
+    "not_tuned": "Every fairseq-generate flag matches the official Taskfile.yml generate: target verbatim except the two zero-effect additions above. No decoding parameter was changed after seeing any benchmark output.",
+    "command": "fairseq-generate <i3d_data_dir> --path checkpoint.best_reduced_sacrebleu_3.5401.pt --task sign_to_text --gen-subset cvpr23.fairseq.i3d.test.how2sign --seed 48151623 --cpu --num-workers 0 --batch-size 32 --scoring sacrebleu --max-source-positions 1024 --max-target-positions 1024 --max-tokens 16000 --beam 5 --sacrebleu --sacrebleu-tokenizer 13a --bpe sentencepiece --sentencepiece-model cvpr23.train.how2sign.unigram7000_lowercased.model --skip-invalid-size-inputs-valid-test",
+    "total_wall_clock_s": 96.55,
+    "peak_rss_bytes": 1639858176,
+    "note_on_per_clip_timing": "fairseq-generate processes the whole batch in one call; per-clip timing is not independently instrumented (same limitation documented in the pilot_v1 19-clip run). Total batch wall-clock and batch-average are reported instead of per-clip runtimes."
+  },
+  "unisign": {
+    "system": "Uni-Sign (pose-only, How2Sign checkpoint)",
+    "repo": "https://github.com/ZechengLi19/Uni-Sign",
+    "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+    "checkpoint_file": "how2sign_pose_only_slt.pth",
+    "checkpoint_size_bytes": 1186925007,
+    "checkpoint_sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+    "checkpoint_source": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_pose_only_slt.pth",
+    "checkpoint_license": "CC BY-NC-4.0 (research/evaluation only, not a production-use grant)",
+    "code_license": "none (no LICENSE file at the pinned commit)",
+    "input": "raw video (all 128 how2sign_v2 clips have local video; no external feature-coverage gap)",
+    "conda_env": "unisign-cpu-arm64",
+    "python": "3.10.13",
+    "torch": "2.1.1 (CPU, osx-arm64)",
+    "transformers": "4.40.0",
+    "decoding_config": {
+      "num_beams": 4,
+      "max_new_tokens": 100,
+      "seed": "default (unchanged)"
+    },
+    "compatibility_patches": [
+      "4 hardcoded .cuda()/device=\"cuda\" calls removed in a copy of demo/online_inference.py (no CUDA GPU on this machine); no model/decoding change",
+      "batch_inference_cpu_patched.py: batching convenience only (load model once, loop clips) built from the same online_inference logic; no model/decoding change",
+      "conda env built with CONDA_SUBDIR=osx-arm64 (base conda defaulted to Rosetta/x86_64)",
+      "Python bumped 3.9->3.10 (decord==0.6.0 has no arm64 wheel for 3.9)",
+      "decord installed via conda-forge with CONDA_OVERRIDE_OSX=14.0 (unavoidable import-time dependency)",
+      "numpy resolved to 2.2.6 (pulled in by decord's conda-forge build), opencv-python bumped 4.6.0.66->4.10.0.84 (NumPy 2.x ABI compatibility)",
+      "deepspeed==0.16.3 installed as pure-Python wheel, unused at runtime (import-time dependency only)",
+      "tensorflow (in requirements.txt) never installed - not imported anywhere in the actual inference code path"
+    ],
+    "not_tuned": "num_beams=4 and max_new_tokens=100 are the documented defaults and were not changed after seeing any benchmark output, on any clip.",
+    "command": "PYTHONPATH=<repo> python demo/batch_inference_cpu_patched.py --manifest_csv how2sign_v2/manifest.csv --videos_root how2sign_v2/videos --finetune how2sign_pose_only_slt.pth --output_json results_128clip.json --dataset How2Sign",
+    "total_wall_clock_s": 4170.6,
+    "sum_per_clip_runtime_s": 4154.4,
+    "one_time_setup_s": {
+      "pose_extractor_init": 0.2,
+      "model_construction": 14.4,
+      "checkpoint_load": 1.4
+    },
+    "peak_rss_mb": 3621.8,
+    "max_new_tokens_hit_note": "max_new_tokens=100 was NOT raised on this frozen benchmark, per instructions. See failure_analysis.json / the main report for which clips show truncated (non-terminal-punctuation) output consistent with hitting this cap."
+  }
+}
