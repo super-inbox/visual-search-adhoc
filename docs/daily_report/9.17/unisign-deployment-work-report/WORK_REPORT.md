@@ -327,4 +327,72 @@ A、B、C 三个层次**均已通过真实容器 + 真实 HTTP/`docker exec` 验
 
 ---
 
+## PART 12 — Manager follow-up C：轨迹追踪方法追了多少个点？是否包含面部？
+
+> 本节回答的是与本次 Uni-Sign 部署无关的独立追问（针对此前 `docs/daily_report/9.10/trajectory-tracking-feasibility/` 下 Phase D1 轨迹追踪 POC 的技术细节）。回答基于对 `asl-translator/asl-eval/trajectory_probe/` 下全部代码文件、一份真实 `landmarks.json`/`trajectory_summary.json` 产出、以及 D0/D1 阶段既有报告的直接检查，未运行新推理，未修改任何文件。**本节内容不影响本报告 PART 9 的 b1/b2 结论**，纯属信息性追问。
+
+### 1. 追踪器与 schema
+
+底层追踪器是 `rtmlib.Wholebody()`（RTMDet-tiny 检测 + RTMW-l 姿态模型，`lightweight` 模式），schema 是标准 **COCO-WholeBody 133 点**（`extract_trajectory.py` 中显式标注 `keypoint_schema: "coco_wholebody_133"`，与之前 Uni-Sign pose extraction 用的同一套 rtmlib/RTMPose 提取路径一致）。
+
+### 2. 精确点数分解（源自 `keypoint_schema.py` 索引定义，逐条核对代码确认）
+
+| 区域 | 点数 | 索引范围 | 原始提取/落盘？ | trajectory summary 是否使用？ |
+|---|---|---|---|---|
+| body 身体 | 17 | 0:17 | 是 | 是（部分：详见下） |
+| feet 脚 | 6 | 17:23 | 是 | 否 |
+| face 脸 | 68 | 23:91 | 是 | 否 |
+| left hand 左手 | 21 | 91:112 | 是 | 是 |
+| right hand 右手 | 21 | 112:133 | 是 | 是 |
+| **总计** | **133** | 0:133 | — | — |
+
+### 3. 关键结论（明确回答 manager 问题）
+
+底层追踪器**每帧确实提取 133 个全身关键点，且确实包含脸部（68 点）和双手**——这一步是真实发生的，`landmarks.json` 里逐帧都存了全部 133 个点的坐标+置信度。
+
+**但当前的轨迹分析层（`summarize_trajectory.py`）并没有使用全部 133 个点。** 逐行核对该文件，`ks.FACE_START`/`ks.FACE_END`/`ks.FEET_START`/`ks.FEET_END` 从未被引用；实际被读取切片的只有 `ks.BODY_START:ks.BODY_END`（body 区域）、`ks.LEFT_HAND_START:ks.LEFT_HAND_END`、`ks.RIGHT_HAND_START:ks.RIGHT_HAND_END`。也就是说，当前的量化 derived-feature 计算只覆盖 **body + 双手对应的区域（17+21+21=59 个点位）**，脸和脚被提取、落盘，但没有被消费。
+
+### 4. 这 59 个点位的区域目前实际产出了什么（逐项对应代码，未列未验证项）
+
+- **body 区域（17点）**：不是逐点等权使用——`_body_detected()` 只用"≥12/17 点置信度过阈值"判断 body 是否被检测到；其中 **nose + 左右肩** 这 3 个点被单独取出，作为"手相对身体高度分区"的参照线（见下）。
+- **双手（各21点）**：是主要的信号来源——
+  - 检测率：`_hand_detected()`，多数点过阈值即算检测到
+  - 手部置信度分布：mean/median
+  - 手腕轨迹（`left_wrist_trajectory`/`right_wrist_trajectory`，只取 body 区域里的 `LEFT_WRIST_IDX`/`RIGHT_WRIST_IDX` 两个点）
+  - 手心质心轨迹（`_hand_center()`，21点加权质心）
+  - 手腕速度、手心质心速度（`_velocity_stats()`）
+  - 双手间距离（`two_hand_distance`）
+  - 手相对身体高度分区（`hand_relative_to_body_band`，用手心质心 y 坐标与 nose_y/chest_y 比较）
+  - 帧间跳变候选（`discontinuity_candidates`，自校准阈值，标记疑似检测跳跃，不是确认的身份切换）
+
+### 5. 面部点的重要澄清：脸部 landmark 被追踪 ≠ 理解了 ASL 面部/非手动语法特征
+
+必须区分这两句话：
+- "脸部关键点被追踪"——**成立**，rtmlib 确实输出了 68 个脸部几何坐标点，且逐帧存进了 `landmarks.json`。
+- "ASL 的面部/非手动语言特征被理解了"——**不成立**。`keypoint_schema.py` 文件头原文写明："No ASL-specific meaning is attached to any of this — these are the tracker's own generic anatomical landmark names, not gloss/handshape labels."
+
+当前代码**没有**把这 68 个脸部坐标翻译成任何 ASL 非手动语法信号，例如：
+- 眉毛动作对应的语法意义（如疑问句眉毛上扬）
+- 嘴型/mouthing 模式
+- 头部动作的语法标记
+- 面部表情作为 ASL 句法/语义成分
+
+另外要指出一个容易误读的命名：`trajectory_summary.json` 里有个字段叫 `face_or_above`，名字里带"face"，但它**不是**基于脸部 68 点计算的——代码里它是拿 body 区域里的单个点 `nose_y`（以及左右肩连线推算的 `chest_y`）当参照线，判断"手心质心的 y 坐标是否高于鼻子高度"，和脸部 mesh 完全无关。这个字段不能被当作"脸部数据被分析"的证据。
+
+### 6. 此前 5-clip POC 的证据范围（引用 `PHASE_D1_RESULTS.md`，不做定性转定量的夸大）
+
+- 5/5 clip 提取成功，累计 1,038 帧（`92V3oH63zbQ_5-1-rgb_front` 55 帧、`Fz-N1S0swh8_2-8-rgb_front` 54 帧、`-g0iPSnQt6w_0-1-rgb_front` 175 帧、`G19uBylwQww_1-2-rgb_front` 136 帧、`FzmL8SL6Bow_1-8-rgb_front` 618 帧）。
+- **量化的追踪质量指标（missing-tracking %、mean/median confidence）只报告了 body / left-hand / right-hand 三项**（见该报告第4节表格），脸和脚**没有**对应的量化指标。
+- 脸部关键点仅在**唯一一段**全骨架 overlay 视频（`render_overlay.py` 把全部133点交给 rtmlib 的 `draw_skeleton` 绘制）及 4 个静态截图里做过**人工目检**（"skeleton lines on the actual shoulders/arms, face landmarks on the actual face"）——这是一次性的可视化 QA 观察，**不是**可复现的量化验证结果，不应被当作"脸部追踪质量已验证"的依据。
+
+### 7. 对现有研究结论的影响（范围严格限定，不重新评价 D2）
+
+已有的 Phase D2 负结果——"把轨迹信息转成结构化文字附加给通用 Gemini prompt，在这 5 个 clip 上没有恢复出语义（0/5）"——这个结论本身不变。
+
+但**这个负结果不能被解读为"面部/非手动信息没用"**，因为当前的轨迹分析代码从未真正总结或提取过脸部关键点轨迹，D2 测试的输入里根本不包含任何脸部/非手动派生特征。也就是说，D2 检验的是"手部轨迹文字化对 Gemini 有没有帮助"，不是"面部非手动特征对 Gemini 有没有帮助"——后者目前完全没有被测试过。这是当前轨迹研究工作的一个明确局限，需要向 manager 说明，不能默认已经排除。
+
+**未来可能的方向（仅作为方向提示，非已完成工作，本报告不提议或执行新实验）**：如果轨迹追踪这条线继续推进，一个可能的扩展是显式地从已经提取出来的 68 个脸部关键点（以及已存在但未使用的脚部 6 点）中派生出面部/头部/非手动特征（例如眉毛垂直位移、头部姿态角度变化等几何量），再评估这些特征是否对下游任务有帮助——这属于**未来工作（future work）**，本次未设计、未实现、未验证。
+
+---
+
 *本报告基于对 curify-studio（分支 `baobao/asl-unisign-fastapi-service`）、curify-studio-clean、以及本 ASL 仓库既有文档的直接检查生成，未运行新实验、未下载 checkpoint、未调用付费 API、未修改任何部署代码、未提交/推送任何改动。*
