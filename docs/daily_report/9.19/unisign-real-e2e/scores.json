@@ -1,0 +1,53 @@
+{
+  "short": {
+    "clip_id": "g0uGWjwdOIw_1-8-rgb_front",
+    "manifest_duration_s": 5.91,
+    "reference": "It got a lot to do with math and geometry, geometric designs.",
+    "unisign": "So, the main thing is that mathematics are involved in the design.",
+    "segments_source": [
+      "wrapper_derived"
+    ],
+    "wer": 1.0,
+    "cer": 0.7458,
+    "bleu": 0.0,
+    "chrf": 21.8,
+    "reference_words": 12,
+    "prediction_words": 12,
+    "prior_benchmark_prediction": "The point of this is that mathematics properly involved in the design.",
+    "prior_benchmark_runtime_s": 23.57
+  },
+  "long": {
+    "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+    "manifest_duration_s": 25.77,
+    "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+    "unisign": "We're going to go ahead and put this on the bottom and we're going to go ahead and put this on the bottom and we're going to go ahead and take our rubber band and",
+    "segments_source": [
+      "wrapper_derived"
+    ],
+    "wer": 0.8718,
+    "cer": 0.7022,
+    "bleu": 2.48,
+    "chrf": 20.51,
+    "reference_words": 78,
+    "prediction_words": 38,
+    "prior_benchmark_prediction": "So I'm going to take this hole because it's going to be nice and clean and then I'm going to go ahead and take this hole and I'm going to go ahead and take this",
+    "prior_benchmark_runtime_s": 101.31
+  },
+  "long_repeat": {
+    "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+    "manifest_duration_s": 25.77,
+    "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+    "unisign": "So I'm going to take this hole because it's going to be nice and clean and then I'm going to take this hole and I'm going to have the rubber band here and I'",
+    "segments_source": [
+      "wrapper_derived"
+    ],
+    "wer": 0.859,
+    "cer": 0.7022,
+    "bleu": 1.86,
+    "chrf": 21.99,
+    "reference_words": 78,
+    "prediction_words": 38,
+    "prior_benchmark_prediction": "So I'm going to take this hole because it's going to be nice and clean and then I'm going to go ahead and take this hole and I'm going to go ahead and take this",
+    "prior_benchmark_runtime_s": 101.31
+  }
+}

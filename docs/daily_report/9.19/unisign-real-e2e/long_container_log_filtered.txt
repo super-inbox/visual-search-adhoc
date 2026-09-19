@@ -1,0 +1,8 @@
+INFO:unisign_api:[1789804797829] Saved upload to /tmp/tmprn7jcy71.mp4
+load /root/.cache/rtmlib/hub/checkpoints/yolox_tiny_8xb8-300e_humanart-6f3252f9.onnx with onnxruntime backend
+[0;93m2026-09-19 07:59:58.175340753 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer '1467'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-09-19 07:59:58.175396045 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer '1462'. It is not used by any node and should be removed from the model.[m
+[0;93m2026-09-19 07:59:58.175402253 [W:onnxruntime:, graph.cc:4885 CleanUnusedInitializersAndNodeArgs] Removing initializer '1470'. It is not used by any node and should be removed from the model.[m
+load /root/.cache/rtmlib/hub/checkpoints/rtmw-dw-l-m_simcc-cocktail14_270e-256x192_20231122.onnx with onnxruntime backend
+INFO:unisign_api:[1789804797829] Cleaned temp file: /tmp/tmprn7jcy71.mp4
+INFO:     192.168.65.1:31915 - "POST /translate HTTP/1.1" 200 OK
