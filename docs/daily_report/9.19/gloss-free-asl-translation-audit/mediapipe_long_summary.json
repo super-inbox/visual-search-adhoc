@@ -1,0 +1,157 @@
+{
+  "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "video_path": "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/videos/FzmL8SL6Bow_1-8-rgb_front.mp4",
+  "video_resolution": [
+    1280,
+    720
+  ],
+  "video_fps": 24.0,
+  "video_duration_s_from_frames": 25.75,
+  "source_frame_count_cv2_prop": 618,
+  "processed_frame_count": 618,
+  "extraction_runtime_s": 15.17,
+  "extraction_fps": 40.73,
+  "output_npz": "data/e2e_landmarks/FzmL8SL6Bow_1-8-rgb_front.npz",
+  "output_npz_bytes": 1228009,
+  "extractor_settings": {
+    "api": "mediapipe.solutions.holistic.Holistic",
+    "model_complexity": 1,
+    "min_detection_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "refine_face_landmarks": false,
+    "static_image_mode": false,
+    "face_subset_size": 92
+  },
+  "streams": {
+    "pose": {
+      "shape": [
+        618,
+        33,
+        4
+      ],
+      "dtype": "float64",
+      "frames_missing": 0,
+      "frames_present": 618,
+      "missing_rate": 0.0,
+      "nan_count": 0,
+      "inf_count": 0,
+      "present_min": [
+        0.32325711846351624,
+        0.30098757147789,
+        -1.1509926319122314,
+        0.0008447713917121291
+      ],
+      "present_max": [
+        0.6976462602615356,
+        1.7961947917938232,
+        0.7066435217857361,
+        0.9999969005584717
+      ]
+    },
+    "left_hand": {
+      "shape": [
+        618,
+        21,
+        3
+      ],
+      "dtype": "float64",
+      "frames_missing": 210,
+      "frames_present": 408,
+      "missing_rate": 0.33980582524271846,
+      "nan_count": 0,
+      "inf_count": 0,
+      "present_min": [
+        0.45631057024002075,
+        0.6230875253677368,
+        -0.08516522496938705
+      ],
+      "present_max": [
+        0.7363256812095642,
+        1.100537657737732,
+        0.0038326499052345753
+      ]
+    },
+    "right_hand": {
+      "shape": [
+        618,
+        21,
+        3
+      ],
+      "dtype": "float64",
+      "frames_missing": 251,
+      "frames_present": 367,
+      "missing_rate": 0.40614886731391586,
+      "nan_count": 0,
+      "inf_count": 0,
+      "present_min": [
+        0.2948742210865021,
+        0.38069310784339905,
+        -0.09429071843624115
+      ],
+      "present_max": [
+        0.5992855429649353,
+        1.0949686765670776,
+        0.0087670823559165
+      ]
+    },
+    "face": {
+      "shape": [
+        618,
+        92,
+        3
+      ],
+      "dtype": "float64",
+      "frames_missing": 0,
+      "frames_present": 618,
+      "missing_rate": 0.0,
+      "nan_count": 0,
+      "inf_count": 0,
+      "present_min": [
+        0.46895524859428406,
+        0.27661973237991333,
+        -0.02048996090888977
+      ],
+      "present_max": [
+        0.5979017019271851,
+        0.4680381417274475,
+        0.0359002985060215
+      ]
+    }
+  },
+  "landmark_counts": {
+    "pose": 33,
+    "left_hand": 21,
+    "right_hand": 21,
+    "face_subset": 92,
+    "face_full_mesh_before_subset": 468
+  },
+  "max_len_150_stride": 5,
+  "model_input_features": {
+    "with_face": {
+      "tensor_shape_after_normalise_and_max_len150": [
+        124,
+        501
+      ],
+      "feature_dim": 501,
+      "frames_after_max_len": 124,
+      "nan_count": 0,
+      "abs_max": 6.636784553527832
+    },
+    "no_face": {
+      "tensor_shape_after_normalise_and_max_len150": [
+        124,
+        225
+      ],
+      "feature_dim": 225,
+      "frames_after_max_len": 124,
+      "nan_count": 0,
+      "abs_max": 6.636784553527832
+    }
+  },
+  "env": {
+    "python": "3.12.4",
+    "cv2": "5.0.0",
+    "numpy": "2.5.3",
+    "machine": "arm64"
+  }
+}

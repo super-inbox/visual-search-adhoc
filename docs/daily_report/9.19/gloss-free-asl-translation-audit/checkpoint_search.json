@@ -1,0 +1,27 @@
+{
+  "upstream": "https://github.com/yyouretoast/gloss-free-asl-translation",
+  "commit": "5b7eb92ff90c4ac5907bc6328edb79c24cec6c77",
+  "searched_on": "2026-09-19",
+  "verdict": "C",
+  "verdict_text": "No trained ASL translation checkpoint has been published (vanilla T5 weights do not count).",
+  "local_head_equals_upstream_main": true,
+  "evidence": [
+    {"surface": "working tree", "finding": "29 tracked files, none is a weight file (no .pt/.pth/.bin/.safetensors/.ckpt/.onnx/.npz/.npy)."},
+    {"surface": "git history", "finding": "94 commits, 1 branch (main), 0 tags. No blob > 500 kB ever committed; no weight-file extension appears anywhere in history."},
+    {"surface": "git LFS", "finding": "No .gitattributes at HEAD; no LFS pointers."},
+    {"surface": ".gitignore", "finding": "Ignores results/ (default --output_dir results/checkpoints) and *.safetensors, so checkpoints are deliberately kept out of the repo."},
+    {"surface": "README", "finding": "Demo: '(Placeholder: Hugging Face Spaces Gradio App Link will be added here once training is fully complete and the model is deployed.)' Results: '(Placeholder: BLEU-4 and WER metrics ... will be reported here after the full training run completes.)' No weights link."},
+    {"surface": "source/configs/scripts", "finding": "Only from_pretrained() calls are for the vanilla Hugging Face T5 tokenizer/decoder (t5-small, google/flan-t5-base, ...). inference.py/evaluate.py load a LOCAL --checkpoint directory; no download logic anywhere."},
+    {"surface": "kaggle_training.ipynb", "finding": "24 cells, 0 saved outputs (no recorded training logs/metrics). Checkpoints are zipped to /kaggle/working/checkpoints.zip inside the notebook; no public dataset/model link."},
+    {"surface": "deleted docs in history (attempt.md, context.md, critiques_and_actions.md)", "finding": "Only training-loop verification on MOCK data: 1-epoch CPU dry run eval_loss 12.68 / BLEU 0.0 / WER 1.0 and an 80-epoch memorisation run on mock data. 'Kaggle training' listed as a next step. No real-data result."},
+    {"surface": "commit messages", "finding": "Latest commits (2026-07-01) are README/notebook/augmentation/generation-flag tweaks; none mentions publishing weights or results."},
+    {"surface": "GitHub Releases / tags", "finding": "gh api .../releases -> []; .../tags -> []"},
+    {"surface": "GitHub Actions", "finding": "37 runs, workflow 'CI' only (ruff + pytest); 0 artifacts."},
+    {"surface": "GitHub issues/PRs", "finding": "0 issues/PRs; 1 branch; 2 stars; 0 forks."},
+    {"surface": "Hugging Face (author yyouretoast)", "finding": "Models: deepfake-detection, deepfake-detector. Spaces: deepfake-detector, cairo-house-pricer, debi_face_recog_hackathon, freightiq. NO ASL model, NO ASL Space."},
+    {"surface": "Hugging Face search 'gloss-free-asl'", "finding": "0 results. Other 'asl-translation' models exist (elpeeee/asl_translation_model, Muthukumar045454/asl-translation-t5, pedrofalconi/asl-translation, AlexD281/Gemma4-ASL-Translation-LoRA) but are unrelated third-party projects, not referenced by this repo and not trained with its Conformer+MediaPipe architecture; NOT used."},
+    {"surface": "Google Drive / Zenodo / wandb / gdown / wget URLs", "finding": "None referenced anywhere in tree or history."},
+    {"surface": "Kaggle", "finding": "Notebook attaches third-party INPUT datasets (how2sign-holistic, how2sign-i3d-features, how2sign-i3d-val). No published model/output. Author's private Kaggle outputs, if any, are not discoverable and not referenced."}
+  ],
+  "residual_uncertainty": "The author may hold private, unpublished Kaggle output from a real training run (the notebook is written for a 50-epoch run). That is unverifiable from public sources and irrelevant to us unless the author shares it."
+}

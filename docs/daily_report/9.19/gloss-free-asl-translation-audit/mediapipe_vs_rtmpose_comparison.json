@@ -1,0 +1,108 @@
+{
+  "clip": "FzmL8SL6Bow_1-8-rgb_front",
+  "frames_compared": 618,
+  "units": "error = Euclidean distance of (x/W, y/H) i.e. fraction of frame size",
+  "shared_joint_agreement": {
+    "L_shoulder MP11 vs RTM5": {
+      "n": 618,
+      "mean": 0.0066,
+      "median": 0.0055,
+      "p95": 0.0151
+    },
+    "R_shoulder MP12 vs RTM6": {
+      "n": 618,
+      "mean": 0.0059,
+      "median": 0.0052,
+      "p95": 0.0124
+    },
+    "L_wrist(pose) MP15 vs RTM9": {
+      "n": 618,
+      "mean": 0.0158,
+      "median": 0.0139,
+      "p95": 0.0319
+    },
+    "R_wrist(pose) MP16 vs RTM10": {
+      "n": 618,
+      "mean": 0.0221,
+      "median": 0.0231,
+      "p95": 0.0347
+    },
+    "nose MP0 vs RTM0": {
+      "n": 618,
+      "mean": 0.0082,
+      "median": 0.0077,
+      "p95": 0.0152
+    },
+    "MP left_hand wrist vs RTM kp91 (MP present)": {
+      "n": 408,
+      "mean": 0.0166,
+      "median": 0.0097,
+      "p95": 0.0488
+    },
+    "MP right_hand wrist vs RTM kp112 (MP present)": {
+      "n": 367,
+      "mean": 0.0146,
+      "median": 0.0084,
+      "p95": 0.0442
+    },
+    "SWAP-CHECK MP left_hand vs RTM RIGHT hand kp112": {
+      "n": 408,
+      "mean": 0.1462,
+      "median": 0.1347,
+      "p95": 0.2669
+    },
+    "SWAP-CHECK MP right_hand vs RTM LEFT hand kp91": {
+      "n": 367,
+      "mean": 0.1492,
+      "median": 0.1387,
+      "p95": 0.2683
+    }
+  },
+  "left_right_convention_matches": true,
+  "hand_presence": {
+    "mediapipe_left_missing_frames": 210,
+    "mediapipe_right_missing_frames": 251,
+    "rtmpose_left_hand_frames_below_0.3": 0,
+    "rtmpose_right_hand_frames_below_0.3": 0,
+    "rtmpose_lhand_mean_score_where_MP_LH_missing": 0.765,
+    "rtmpose_rhand_mean_score_where_MP_RH_missing": 0.808
+  },
+  "rtmpose_score_range": [
+    0.088,
+    1.234
+  ],
+  "rtmpose_xy_pixel_range": {
+    "x": [
+      338.7,
+      1034.3
+    ],
+    "y": [
+      201.8,
+      909.0
+    ],
+    "frame_wh": [
+      1280,
+      720
+    ]
+  },
+  "mediapipe_pose_visibility_mean_idx_11_12_15_16": [
+    1.0,
+    1.0,
+    0.984,
+    0.954
+  ],
+  "encoder_only_plumbing_check": {
+    "note": "random-init Conformer, hidden states only; NOT a translation",
+    "input_shape": [
+      1,
+      124,
+      501
+    ],
+    "encoder_output_shape": [
+      1,
+      62,
+      512
+    ],
+    "finite": true
+  }
+}
