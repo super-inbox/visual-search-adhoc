@@ -1,0 +1,174 @@
+{
+  "source": "wrapper_segmentation",
+  "timestamp_note": "start_sec/end_sec are OUR segmentation timestamps, NOT Uni-Sign-native alignment.",
+  "model_checkpoint": "how2sign_pose_only_slt.pth",
+  "checkpoint_sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+  "calls_per_segment": 1,
+  "segments": [
+    {
+      "segment_id": 0,
+      "start_sec": 0.0,
+      "end_sec": 6.75,
+      "duration_sec": 6.75,
+      "source": "wrapper_segmentation",
+      "http_status": 200,
+      "runtime_sec": 78.0,
+      "expected_frames_manifest": 162,
+      "frames_actual_clip_file": 162,
+      "frames_seen_by_service_tqdm_total": 162,
+      "random_256_sampling_occurred": false,
+      "request_started_utc": "2026-09-19T09:14:22.229980Z",
+      "curl_exit": 0,
+      "text": "So I'm just going to go ahead and put that into the bottom of the glass, and I'm just going to go ahead and just rub it on to the bottom of the glass.",
+      "raw_response": {
+        "model": {
+          "name": "Uni-Sign",
+          "checkpoint": "how2sign_pose_only_slt.pth",
+          "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830"
+        },
+        "translation": "So I'm just going to go ahead and put that into the bottom of the glass, and I'm just going to go ahead and just rub it on to the bottom of the glass.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 6.75,
+            "text": "So I'm just going to go ahead and put that into the bottom of the glass, and I'm just going to go ahead and just rub it on to the bottom of the glass.",
+            "source": "wrapper_derived",
+            "note": "start/end are NOT produced by Uni-Sign. They span the whole uploaded clip only. Uni-Sign has no native temporal alignment -- see README.md 'Timestamp semantics'."
+          }
+        ]
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_sec": 5.75,
+      "end_sec": 10.75,
+      "duration_sec": 5.0,
+      "source": "wrapper_segmentation",
+      "http_status": 200,
+      "runtime_sec": 37.13,
+      "expected_frames_manifest": 120,
+      "frames_actual_clip_file": 120,
+      "frames_seen_by_service_tqdm_total": 120,
+      "random_256_sampling_occurred": false,
+      "request_started_utc": "2026-09-19T09:15:40.382348Z",
+      "curl_exit": 0,
+      "text": "And then we're going to go ahead and drill the hole in the wheel.",
+      "raw_response": {
+        "model": {
+          "name": "Uni-Sign",
+          "checkpoint": "how2sign_pose_only_slt.pth",
+          "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830"
+        },
+        "translation": "And then we're going to go ahead and drill the hole in the wheel.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 5.0,
+            "text": "And then we're going to go ahead and drill the hole in the wheel.",
+            "source": "wrapper_derived",
+            "note": "start/end are NOT produced by Uni-Sign. They span the whole uploaded clip only. Uni-Sign has no native temporal alignment -- see README.md 'Timestamp semantics'."
+          }
+        ]
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_sec": 10.0,
+      "end_sec": 14.25,
+      "duration_sec": 4.25,
+      "source": "wrapper_segmentation",
+      "http_status": 200,
+      "runtime_sec": 31.29,
+      "expected_frames_manifest": 102,
+      "frames_actual_clip_file": 102,
+      "frames_seen_by_service_tqdm_total": 102,
+      "random_256_sampling_occurred": false,
+      "request_started_utc": "2026-09-19T09:16:17.569622Z",
+      "curl_exit": 0,
+      "text": "We're going to have a pair of rubber stamps here.",
+      "raw_response": {
+        "model": {
+          "name": "Uni-Sign",
+          "checkpoint": "how2sign_pose_only_slt.pth",
+          "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830"
+        },
+        "translation": "We're going to have a pair of rubber stamps here.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 4.25,
+            "text": "We're going to have a pair of rubber stamps here.",
+            "source": "wrapper_derived",
+            "note": "start/end are NOT produced by Uni-Sign. They span the whole uploaded clip only. Uni-Sign has no native temporal alignment -- see README.md 'Timestamp semantics'."
+          }
+        ]
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_sec": 13.25,
+      "end_sec": 19.5,
+      "duration_sec": 6.25,
+      "source": "wrapper_segmentation",
+      "http_status": 200,
+      "runtime_sec": 46.41,
+      "expected_frames_manifest": 150,
+      "frames_actual_clip_file": 150,
+      "frames_seen_by_service_tqdm_total": 150,
+      "random_256_sampling_occurred": false,
+      "request_started_utc": "2026-09-19T09:16:49.015281Z",
+      "curl_exit": 0,
+      "text": "You don't want to use it when you're watching and you don't want to move around too much.",
+      "raw_response": {
+        "model": {
+          "name": "Uni-Sign",
+          "checkpoint": "how2sign_pose_only_slt.pth",
+          "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830"
+        },
+        "translation": "You don't want to use it when you're watching and you don't want to move around too much.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 6.25,
+            "text": "You don't want to use it when you're watching and you don't want to move around too much.",
+            "source": "wrapper_derived",
+            "note": "start/end are NOT produced by Uni-Sign. They span the whole uploaded clip only. Uni-Sign has no native temporal alignment -- see README.md 'Timestamp semantics'."
+          }
+        ]
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_sec": 18.5,
+      "end_sec": 25.75,
+      "duration_sec": 7.25,
+      "source": "wrapper_segmentation",
+      "http_status": 200,
+      "runtime_sec": 55.7,
+      "expected_frames_manifest": 174,
+      "frames_actual_clip_file": 174,
+      "frames_seen_by_service_tqdm_total": 174,
+      "random_256_sampling_occurred": false,
+      "request_started_utc": "2026-09-19T09:17:35.546974Z",
+      "curl_exit": 0,
+      "text": "And then we're going to go ahead and put the bottom of the pot and we're going to talk about the bottom of the pot.",
+      "raw_response": {
+        "model": {
+          "name": "Uni-Sign",
+          "checkpoint": "how2sign_pose_only_slt.pth",
+          "pinned_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830"
+        },
+        "translation": "And then we're going to go ahead and put the bottom of the pot and we're going to talk about the bottom of the pot.",
+        "segments": [
+          {
+            "start": 0.0,
+            "end": 7.25,
+            "text": "And then we're going to go ahead and put the bottom of the pot and we're going to talk about the bottom of the pot.",
+            "source": "wrapper_derived",
+            "note": "start/end are NOT produced by Uni-Sign. They span the whole uploaded clip only. Uni-Sign has no native temporal alignment -- see README.md 'Timestamp semantics'."
+          }
+        ]
+      }
+    }
+  ]
+}

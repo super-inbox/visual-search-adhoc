@@ -1,0 +1,329 @@
+{
+  "task": "manager task (b) overlapping segmentation",
+  "source_video": "asl-translator/data/public_benchmarks/how2sign_v2/videos/FzmL8SL6Bow_1-8-rgb_front.mp4",
+  "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "video": {
+    "duration_sec": 25.75,
+    "container_duration_sec": 25.75,
+    "frame_count_ffprobe_pts": 618,
+    "r_frame_rate": "24/1",
+    "resolution": "1280x720",
+    "codec": "h264"
+  },
+  "motion_detector": {
+    "reused_from": "asl-translator/asl-eval/run_current_model.py::probe_motion + segment_runs (identical executable code to curify-studio origin/main curify_background/app/utils/asl_utils.py)",
+    "probe_fps": 4.0,
+    "probe_width_px": 160,
+    "resolution_sec": 0.25,
+    "n_samples": 102,
+    "smoothing": "5-tap boxcar, np.convolve mode='same' (same as segment_runs)",
+    "idle_quantile": 0.35,
+    "abs_motion_floor": 2.0,
+    "idle_threshold_smoothed_motion": 2.8711,
+    "not_reused": "allocate_timestamps / allocate_timestamps_uniform / extract_frames (VLM still-frame budgeting)"
+  },
+  "parameters": {
+    "target_duration_sec": 6.0,
+    "min_duration_sec": 4.0,
+    "max_duration_sec": 8.0,
+    "target_overlap_sec": 1.0,
+    "overlap_range_sec": [
+      0.5,
+      1.5
+    ],
+    "distance_weight_lambda": 0.3,
+    "grid_sec": 0.25,
+    "unisign_max_length_frames": 256
+  },
+  "timestamp_semantics": "start_sec/end_sec are wrapper/source-derived segmentation timestamps (source=wrapper_segmentation). They are NOT Uni-Sign-native alignment; Uni-Sign has none.",
+  "inputs_used_for_boundaries": "video pixels (motion) + video duration ONLY. No reference text, no model output.",
+  "num_segments": 5,
+  "validation_problems": [],
+  "boundary_motion_diagnostic": {
+    "note": "percentile rank of smoothed motion within this video: 0 = calmest, 1 = busiest; random cut ~0.5",
+    "mean_rank_chosen_interior_boundaries": 0.374,
+    "mean_rank_naive_fixed_6s_1s_grid_boundaries": 0.515,
+    "mean_rank_of_uniform_random_cut_in_legal_windows": 0.552
+  },
+  "segments": [
+    {
+      "segment_id": 0,
+      "start_sec": 0.0,
+      "end_sec": 6.75,
+      "duration_sec": 6.75,
+      "overlap_with_prev_sec": 0.0,
+      "expected_frames_pts": 162,
+      "subsampling_required_by_unisign": false,
+      "start_boundary": {
+        "reason": "video_start",
+        "search": null,
+        "motion": null
+      },
+      "end_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|dur-6|/2) over legal window",
+        "search": {
+          "window_sec": [
+            4.0,
+            8.0
+          ],
+          "n_candidates": 17,
+          "cost": 0.3699,
+          "window_mean_rank": 0.457,
+          "window_min_rank": 0.257
+        },
+        "motion": {
+          "time_sec": 6.75,
+          "smoothed_motion": 2.3899,
+          "raw_motion_0p25s": 1.9447,
+          "motion_percentile_rank": 0.257,
+          "above_idle_threshold": false,
+          "in_idle_run": true,
+          "is_local_min_pm0p5s": true
+        }
+      },
+      "source": "wrapper_segmentation",
+      "file": "segment_00.mp4",
+      "clip_verification": {
+        "readable": true,
+        "frames_actual": 162,
+        "duration_actual_sec": 6.75,
+        "resolution": "1280x720",
+        "codec": "h264",
+        "size_bytes": 1649670,
+        "frames_match_expected": true,
+        "duration_match_expected": true
+      }
+    },
+    {
+      "segment_id": 1,
+      "start_sec": 5.75,
+      "end_sec": 10.75,
+      "duration_sec": 5.0,
+      "overlap_with_prev_sec": 1.0,
+      "expected_frames_pts": 120,
+      "subsampling_required_by_unisign": false,
+      "start_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|overlap-1|/0.5) over overlap window [0.5,1.5]",
+        "search": {
+          "window_sec": [
+            5.25,
+            6.25
+          ],
+          "n_candidates": 5
+        },
+        "motion": {
+          "time_sec": 5.75,
+          "smoothed_motion": 4.5168,
+          "raw_motion_0p25s": 5.3683,
+          "motion_percentile_rank": 0.584,
+          "above_idle_threshold": true,
+          "in_idle_run": false,
+          "is_local_min_pm0p5s": false
+        }
+      },
+      "end_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|dur-6|/2) over legal window",
+        "search": {
+          "window_sec": [
+            9.75,
+            13.75
+          ],
+          "n_candidates": 17,
+          "cost": 0.1797,
+          "window_mean_rank": 0.327,
+          "window_min_rank": 0.03
+        },
+        "motion": {
+          "time_sec": 10.75,
+          "smoothed_motion": 0.565,
+          "raw_motion_0p25s": 0.6007,
+          "motion_percentile_rank": 0.03,
+          "above_idle_threshold": false,
+          "in_idle_run": true,
+          "is_local_min_pm0p5s": true
+        }
+      },
+      "source": "wrapper_segmentation",
+      "file": "segment_01.mp4",
+      "clip_verification": {
+        "readable": true,
+        "frames_actual": 120,
+        "duration_actual_sec": 5.0,
+        "resolution": "1280x720",
+        "codec": "h264",
+        "size_bytes": 1066013,
+        "frames_match_expected": true,
+        "duration_match_expected": true
+      }
+    },
+    {
+      "segment_id": 2,
+      "start_sec": 10.0,
+      "end_sec": 14.25,
+      "duration_sec": 4.25,
+      "overlap_with_prev_sec": 0.75,
+      "expected_frames_pts": 102,
+      "subsampling_required_by_unisign": false,
+      "start_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|overlap-1|/0.5) over overlap window [0.5,1.5]",
+        "search": {
+          "window_sec": [
+            9.25,
+            10.25
+          ],
+          "n_candidates": 5
+        },
+        "motion": {
+          "time_sec": 10.0,
+          "smoothed_motion": 0.9395,
+          "raw_motion_0p25s": 0.6608,
+          "motion_percentile_rank": 0.149,
+          "above_idle_threshold": false,
+          "in_idle_run": true,
+          "is_local_min_pm0p5s": false
+        }
+      },
+      "end_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|dur-6|/2) over legal window",
+        "search": {
+          "window_sec": [
+            14.0,
+            18.0
+          ],
+          "n_candidates": 17,
+          "cost": 0.4308,
+          "window_mean_rank": 0.673,
+          "window_min_rank": 0.168
+        },
+        "motion": {
+          "time_sec": 14.25,
+          "smoothed_motion": 1.2738,
+          "raw_motion_0p25s": 0.7286,
+          "motion_percentile_rank": 0.168,
+          "above_idle_threshold": false,
+          "in_idle_run": true,
+          "is_local_min_pm0p5s": true
+        }
+      },
+      "source": "wrapper_segmentation",
+      "file": "segment_02.mp4",
+      "clip_verification": {
+        "readable": true,
+        "frames_actual": 102,
+        "duration_actual_sec": 4.25,
+        "resolution": "1280x720",
+        "codec": "h264",
+        "size_bytes": 889507,
+        "frames_match_expected": true,
+        "duration_match_expected": true
+      }
+    },
+    {
+      "segment_id": 3,
+      "start_sec": 13.25,
+      "end_sec": 19.5,
+      "duration_sec": 6.25,
+      "overlap_with_prev_sec": 1.0,
+      "expected_frames_pts": 150,
+      "subsampling_required_by_unisign": false,
+      "start_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|overlap-1|/0.5) over overlap window [0.5,1.5]",
+        "search": {
+          "window_sec": [
+            12.75,
+            13.75
+          ],
+          "n_candidates": 5
+        },
+        "motion": {
+          "time_sec": 13.25,
+          "smoothed_motion": 3.0535,
+          "raw_motion_0p25s": 2.9689,
+          "motion_percentile_rank": 0.386,
+          "above_idle_threshold": true,
+          "in_idle_run": false,
+          "is_local_min_pm0p5s": false
+        }
+      },
+      "end_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|dur-6|/2) over legal window",
+        "search": {
+          "window_sec": [
+            17.25,
+            21.25
+          ],
+          "n_candidates": 17,
+          "cost": 0.6613,
+          "window_mean_rank": 0.752,
+          "window_min_rank": 0.515
+        },
+        "motion": {
+          "time_sec": 19.5,
+          "smoothed_motion": 4.6894,
+          "raw_motion_0p25s": 4.5248,
+          "motion_percentile_rank": 0.624,
+          "above_idle_threshold": true,
+          "in_idle_run": false,
+          "is_local_min_pm0p5s": true
+        }
+      },
+      "source": "wrapper_segmentation",
+      "file": "segment_03.mp4",
+      "clip_verification": {
+        "readable": true,
+        "frames_actual": 150,
+        "duration_actual_sec": 6.25,
+        "resolution": "1280x720",
+        "codec": "h264",
+        "size_bytes": 1528163,
+        "frames_match_expected": true,
+        "duration_match_expected": true
+      }
+    },
+    {
+      "segment_id": 4,
+      "start_sec": 18.5,
+      "end_sec": 25.75,
+      "duration_sec": 7.25,
+      "overlap_with_prev_sec": 1.0,
+      "expected_frames_pts": 174,
+      "subsampling_required_by_unisign": false,
+      "start_boundary": {
+        "reason": "argmin(motion_rank + 0.30*|overlap-1|/0.5) over overlap window [0.5,1.5]",
+        "search": {
+          "window_sec": [
+            18.0,
+            19.0
+          ],
+          "n_candidates": 5
+        },
+        "motion": {
+          "time_sec": 18.5,
+          "smoothed_motion": 5.5659,
+          "raw_motion_0p25s": 5.4093,
+          "motion_percentile_rank": 0.792,
+          "above_idle_threshold": true,
+          "in_idle_run": false,
+          "is_local_min_pm0p5s": false
+        }
+      },
+      "end_boundary": {
+        "reason": "video_end (remaining <= MAX)",
+        "search": null,
+        "motion": null
+      },
+      "source": "wrapper_segmentation",
+      "file": "segment_04.mp4",
+      "clip_verification": {
+        "readable": true,
+        "frames_actual": 174,
+        "duration_actual_sec": 7.25,
+        "resolution": "1280x720",
+        "codec": "h264",
+        "size_bytes": 1556150,
+        "frames_match_expected": true,
+        "duration_match_expected": true
+      }
+    }
+  ]
+}

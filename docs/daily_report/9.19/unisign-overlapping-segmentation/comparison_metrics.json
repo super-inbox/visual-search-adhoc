@@ -1,0 +1,275 @@
+{
+  "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+  "scoring_convention": "identical to docs/daily_report/9.19/unisign-real-e2e/score_e2e.py: WER/CER=asl-eval/lib.py::text_metrics; BLEU=sacrebleu sentence_score(effective_order=True), chrF=sacrebleu CHRF sentence_score, both on lib.normalize_text() strings. Sentence-level BLEU on one ~78-word item is very noisy.",
+  "direct_baseline_reproduced_exactly_from_raw_json": true,
+  "n": 1,
+  "all_segments_http_200": true,
+  "merge_params": {
+    "min_k_words_to_drop": 2,
+    "matching": "case/punctuation-insensitive exact word equality"
+  },
+  "texts": {
+    "A_direct_run1": "We're going to go ahead and put this on the bottom and we're going to go ahead and put this on the bottom and we're going to go ahead and take our rubber band and",
+    "A_direct_run2_repeat": "So I'm going to take this hole because it's going to be nice and clean and then I'm going to take this hole and I'm going to have the rubber band here and I'",
+    "B_segmented_naive": "So I'm just going to go ahead and put that into the bottom of the glass, and I'm just going to go ahead and just rub it on to the bottom of the glass. And then we're going to go ahead and drill the hole in the wheel. We're going to have a pair of rubber stamps here. You don't want to use it when you're watching and you don't want to move around too much. And then we're going to go ahead and put the bottom of the pot and we're going to talk about the bottom of the pot.",
+    "C_segmented_dedup": "So I'm just going to go ahead and put that into the bottom of the glass, and I'm just going to go ahead and just rub it on to the bottom of the glass. And then we're going to go ahead and drill the hole in the wheel. We're going to have a pair of rubber stamps here. You don't want to use it when you're watching and you don't want to move around too much. And then we're going to go ahead and put the bottom of the pot and we're going to talk about the bottom of the pot."
+  },
+  "metrics": {
+    "A_direct_run1": {
+      "wer": 0.8718,
+      "cer": 0.7022,
+      "bleu": 2.48,
+      "chrf": 20.51,
+      "reference_words": 78,
+      "prediction_words": 38
+    },
+    "A_direct_run2_repeat": {
+      "wer": 0.859,
+      "cer": 0.7022,
+      "bleu": 1.86,
+      "chrf": 21.99,
+      "reference_words": 78,
+      "prediction_words": 38
+    },
+    "B_segmented_naive": {
+      "wer": 1.1795,
+      "cer": 0.8146,
+      "bleu": 3.17,
+      "chrf": 35.33,
+      "reference_words": 78,
+      "prediction_words": 110
+    },
+    "C_segmented_dedup": {
+      "wer": 1.1795,
+      "cer": 0.8146,
+      "bleu": 3.17,
+      "chrf": 35.33,
+      "reference_words": 78,
+      "prediction_words": 110
+    }
+  },
+  "diagnostics_exploratory": {
+    "A_direct_run1": {
+      "rouge1_all_words": {
+        "recall": 0.2308,
+        "precision": 0.4737,
+        "f1": 0.3103,
+        "ref_n": 78,
+        "hyp_n": 38,
+        "overlap_n": 18
+      },
+      "rouge1_content_words": {
+        "recall": 0.1613,
+        "precision": 0.2632,
+        "f1": 0.2,
+        "ref_n": 31,
+        "hyp_n": 19,
+        "overlap_n": 5
+      },
+      "repeated_word_trigram_count": 18,
+      "repeated_word_5gram_count": 16,
+      "prediction_to_reference_word_ratio": 0.487
+    },
+    "A_direct_run2_repeat": {
+      "rouge1_all_words": {
+        "recall": 0.2949,
+        "precision": 0.6053,
+        "f1": 0.3966,
+        "ref_n": 78,
+        "hyp_n": 38,
+        "overlap_n": 23
+      },
+      "rouge1_content_words": {
+        "recall": 0.2581,
+        "precision": 0.4706,
+        "f1": 0.3333,
+        "ref_n": 31,
+        "hyp_n": 17,
+        "overlap_n": 8
+      },
+      "repeated_word_trigram_count": 7,
+      "repeated_word_5gram_count": 3,
+      "prediction_to_reference_word_ratio": 0.487
+    },
+    "B_segmented_naive": {
+      "rouge1_all_words": {
+        "recall": 0.4487,
+        "precision": 0.3182,
+        "f1": 0.3723,
+        "ref_n": 78,
+        "hyp_n": 110,
+        "overlap_n": 35
+      },
+      "rouge1_content_words": {
+        "recall": 0.3226,
+        "precision": 0.1961,
+        "f1": 0.2439,
+        "ref_n": 31,
+        "hyp_n": 51,
+        "overlap_n": 10
+      },
+      "repeated_word_trigram_count": 33,
+      "repeated_word_5gram_count": 15,
+      "prediction_to_reference_word_ratio": 1.41
+    },
+    "C_segmented_dedup": {
+      "rouge1_all_words": {
+        "recall": 0.4487,
+        "precision": 0.3182,
+        "f1": 0.3723,
+        "ref_n": 78,
+        "hyp_n": 110,
+        "overlap_n": 35
+      },
+      "rouge1_content_words": {
+        "recall": 0.3226,
+        "precision": 0.1961,
+        "f1": 0.2439,
+        "ref_n": 31,
+        "hyp_n": 51,
+        "overlap_n": 10
+      },
+      "repeated_word_trigram_count": 33,
+      "repeated_word_5gram_count": 15,
+      "prediction_to_reference_word_ratio": 1.41
+    }
+  },
+  "dedup_log": [
+    {
+      "junction": [
+        0,
+        1
+      ],
+      "exact_suffix_prefix_words": 0,
+      "removed": null
+    },
+    {
+      "junction": [
+        1,
+        2
+      ],
+      "exact_suffix_prefix_words": 0,
+      "removed": null
+    },
+    {
+      "junction": [
+        2,
+        3
+      ],
+      "exact_suffix_prefix_words": 0,
+      "removed": null
+    },
+    {
+      "junction": [
+        3,
+        4
+      ],
+      "exact_suffix_prefix_words": 0,
+      "removed": null
+    }
+  ],
+  "determinism_probe_segment2": {
+    "segment_id": 2,
+    "identical_to_first_run": true,
+    "text": "We're going to have a pair of rubber stamps here.",
+    "runtime_sec": 31.03,
+    "note": "single extra call, NOT used in any score; segment has 102 frames (<256) so no random sampling"
+  },
+  "adjacent_overlap_analysis": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "overlap_window_sec": [
+        5.75,
+        6.75
+      ],
+      "overlap_sec": 1.0,
+      "exact_suffix_prefix_words": 0,
+      "longest_common_word_run_anywhere": "going to go ahead and",
+      "texts_identical": false
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "overlap_window_sec": [
+        10.0,
+        10.75
+      ],
+      "overlap_sec": 0.75,
+      "exact_suffix_prefix_words": 0,
+      "longest_common_word_run_anywhere": "we're going to",
+      "texts_identical": false
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "overlap_window_sec": [
+        13.25,
+        14.25
+      ],
+      "overlap_sec": 1.0,
+      "exact_suffix_prefix_words": 0,
+      "longest_common_word_run_anywhere": "to",
+      "texts_identical": false
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "overlap_window_sec": [
+        18.5,
+        19.5
+      ],
+      "overlap_sec": 1.0,
+      "exact_suffix_prefix_words": 0,
+      "longest_common_word_run_anywhere": "to",
+      "texts_identical": false
+    }
+  ],
+  "cost": {
+    "direct": {
+      "model_calls": 1,
+      "runtime_sec_run1": 101.03806,
+      "runtime_sec_run2_repeat": 99.84442,
+      "frames_extracted": 618,
+      "frames_reaching_model": 256,
+      "segments_requiring_random_256_sampling": 1,
+      "frames_dropped_at_random": 362
+    },
+    "segmented": {
+      "model_calls": 5,
+      "runtime_sec_sum_of_calls": 248.53,
+      "runtime_sec_per_segment": [
+        78.0,
+        37.13,
+        31.29,
+        46.41,
+        55.7
+      ],
+      "frames_reaching_model_total": 708,
+      "frames_per_segment": [
+        162,
+        120,
+        102,
+        150,
+        174
+      ],
+      "frames_extra_vs_video_due_to_overlap": 90,
+      "segments_requiring_random_256_sampling": 0,
+      "seconds_per_frame_segments_1_to_N": 0.3123,
+      "cold_start_overhead_in_segment0_estimate_sec": 27.4,
+      "runtime_sec_warm_estimate": 221.1,
+      "warm_estimate_ratio_vs_direct_run1": 2.19,
+      "raw_sum_ratio_vs_direct_run1": 2.46,
+      "frames_dropped_at_random": 0
+    }
+  }
+}
