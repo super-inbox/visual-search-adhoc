@@ -8,7 +8,7 @@ Date: 2026-09-19 · Scope: local R&D POC, **n = 1 long clip**. Research repo onl
 
 ## 0. Audit of the pre-existing uncommitted POC (done first, nothing modified)
 
-Paths: `asl-translator/asl-eval/overlapping_segmentation_poc/` (3 scripts + `results/*.json`) and `docs/daily_report/9.18/asl-manager-followup-a-c/OVERLAPPING_SEGMENTATION_POC.md` (plus a +63-line "Phase B" section in the tracked `MANAGER_SUMMARY.md`, still an uncommitted modification).
+> **Provenance note.** The artifacts audited in this section were **pre-existing local, untracked files** on the author's working copy: `asl-translator/asl-eval/overlapping_segmentation_poc/` (3 scripts + `results/*.json`) and `docs/daily_report/9.18/asl-manager-followup-a-c/OVERLAPPING_SEGMENTATION_POC.md` (plus a +63-line "Phase B" section in the tracked `docs/daily_report/9.18/asl-manager-followup-a-c/MANAGER_SUMMARY.md`, an uncommitted local modification). They were inspected only for historical comparison. They are **not part of this branch and are not present on GitHub**, so readers should not expect to find them there. They were left untouched (not modified, staged or committed); the description below is the only record of them in this repo.
 
 | Question | Finding |
 |---|---|
@@ -181,7 +181,7 @@ The gate requires that one more example would *materially clarify the engineerin
 - Segments were **re-encoded** (crf 18) before pose extraction, so the pose model saw slightly recompressed frames (small possible confound; not measured).
 - Global frame-difference motion is a coarse pause detector; only ~2 real pauses in this clip; λ and the overlap prior were chosen a priori, not tuned or ablated.
 - Runtime measured under amd64 emulation; the cold-start correction (~27 s, 221 s "warm") is only an **approximate** estimate.
-- Old 13-segment POC was on a different video/parameter set and is not combined with these results.
+- The old 13-segment POC (local, untracked, not on this branch; see §0) was on a different video/parameter set and is not combined with these results.
 
 ## 13. Recommendation
 
