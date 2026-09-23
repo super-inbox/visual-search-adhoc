@@ -1,6 +1,6 @@
 # 技术报告：gloss-free landmark → T5 的 1% / 10% How2Sign 可行性实验
 
-日期：2026-09-22 · 作者：Baobao · 分支 `baobao/asl-temporal-ablation-2026-09-06`（实验目录未提交，git 中为 untracked）
+日期：2026-09-22 · 作者：Baobao · 分支 `baobao/asl-temporal-ablation-2026-09-06`（实验目录除 10% `RESULTS.md` 外未提交，git 中为 untracked）
 
 本报告只汇总已有 artifact。写报告时**没有**重新训练、**没有**下载数据、**没有**修改任何实验结果或冻结 benchmark。所有数字都来自下文列出的 JSON/日志文件。
 
