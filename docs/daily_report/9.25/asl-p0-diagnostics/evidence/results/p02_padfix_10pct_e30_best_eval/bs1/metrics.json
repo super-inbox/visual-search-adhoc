@@ -1,0 +1,41 @@
+{
+ "checkpoint": "results/p02_padfix_10pct_e30/checkpoints/checkpoint-6880/model.safetensors",
+ "checkpoint_sha256": "0d087522e12d8225434dbf4a591da8cd1eaada92747c51e46ef023d8264ca5ec",
+ "batch_size": 1,
+ "generate_kwargs": {
+  "max_length": 30,
+  "num_beams": 1,
+  "do_sample": false
+ },
+ "manual_encoder_sha256": "b7efabefbce68d2f97dd1390d4a79c139036ffedd73b0ebdd0df91c3a9924251",
+ "git_diff_src": "src/models/manual_encoder.py | 22 +++++++++++++++-------\n 1 file changed, 15 insertions(+), 7 deletions(-)",
+ "sets": {
+  "val366": {
+   "bleu": 0.9871921838061336,
+   "chrf": 11.891807802114645,
+   "wer": 1.0469609724888036,
+   "unique": 206,
+   "top1": "So, you can't get a lot of a lot of a lot of a lot of a lot of a",
+   "top1_count": 19,
+   "top1_fraction": 0.05191256830601093,
+   "loss_hf_style_batch_mean": 3.622422458044167,
+   "loss_sample_weighted": 3.622422458044167,
+   "loss_token_weighted": 3.6349125975652856,
+   "n": 366
+  },
+  "frozen147": {
+   "bleu": 1.0227246703839352,
+   "chrf": 11.12070061528381,
+   "wer": 1.0247629083245522,
+   "unique": 102,
+   "top1": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "top1_count": 10,
+   "top1_fraction": 0.06802721088435375,
+   "loss_hf_style_batch_mean": 3.7093244937001444,
+   "loss_sample_weighted": 3.7093244937001444,
+   "loss_token_weighted": 3.7224485250322137,
+   "n": 147
+  }
+ },
+ "checkpoint_sha256_unchanged": true
+}

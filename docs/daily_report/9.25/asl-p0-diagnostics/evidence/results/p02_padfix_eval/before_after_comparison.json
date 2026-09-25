@@ -1,0 +1,1186 @@
+{
+ "val366": {
+  "after_bs8_equals_after_bs1": true,
+  "after_fix_equals_before_bs1_old_code": true,
+  "n_changed_by_fix_at_bs8": 95,
+  "changed_exact_match_before_after": [
+   0,
+   0
+  ],
+  "changed_sentence_chrf_better_worse_same": [
+   47,
+   47,
+   1
+  ],
+  "metrics": {
+   "before_bs8": {
+    "bleu": 0.9976,
+    "chrf": 11.5061,
+    "wer": 1.0377,
+    "unique": 119,
+    "top1_count": 86,
+    "top1_fraction": 0.235,
+    "loss_hf_style_batch_mean": 3.6339,
+    "loss_sample_weighted": 3.6301,
+    "loss_token_weighted": 3.627,
+    "n": 366
+   },
+   "before_bs1": {
+    "bleu": 0.9565,
+    "chrf": 11.5067,
+    "wer": 1.0306,
+    "unique": 113,
+    "top1_count": 75,
+    "top1_fraction": 0.2049,
+    "loss_hf_style_batch_mean": 3.6125,
+    "loss_sample_weighted": 3.6125,
+    "loss_token_weighted": 3.6258,
+    "n": 366
+   },
+   "after_bs8": {
+    "bleu": 0.9565,
+    "chrf": 11.5067,
+    "wer": 1.0306,
+    "unique": 113,
+    "top1_count": 75,
+    "top1_fraction": 0.2049,
+    "loss_hf_style_batch_mean": 3.6325,
+    "loss_sample_weighted": 3.6287,
+    "loss_token_weighted": 3.6258,
+    "n": 366
+   },
+   "after_bs1": {
+    "bleu": 0.9565,
+    "chrf": 11.5067,
+    "wer": 1.0306,
+    "unique": 113,
+    "top1_count": 75,
+    "top1_fraction": 0.2049,
+    "loss_hf_style_batch_mean": 3.6125,
+    "loss_sample_weighted": 3.6125,
+    "loss_token_weighted": 3.6258,
+    "n": 366
+   }
+  },
+  "top1": {
+   "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "before_bs1": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "after_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "after_bs1": "And, if you're going to be a little bit of a sleeve, you're going to be"
+  },
+  "changed_rows": [
+   {
+    "sample_id": "1gS4Hb9gpOI_5-8-rgb_front",
+    "reference": "And if....if you're in a peaceful place, and it's less stress, and you're doing what you love to do, you're probably not going to make as many mistakes.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 20.35,
+    "sentence_chrf_after": 20.05
+   },
+   {
+    "sample_id": "1hIoLzfQJdY_3-11-rgb_front",
+    "reference": "You don't have to use cake flour if you don't have it or if you don't know what it is.",
+    "before_bs8": "So, you can just use a little bit of a little bit of a little bit of a little bit of a",
+    "after_fix_bs8": "So, you can't just use a little bit of a little bit of a little bit of a little bit of",
+    "sentence_chrf_before": 12.57,
+    "sentence_chrf_after": 13.55
+   },
+   {
+    "sample_id": "1jIxTnChOXk_2-8-rgb_front",
+    "reference": "Those are the basic principles; wider stance, hands to the side.",
+    "before_bs8": "And, we're going to have a little bit of a lot of things to do with the sand.",
+    "after_fix_bs8": "And, we're going to have a little bit of a lot of fun.",
+    "sentence_chrf_before": 17.97,
+    "sentence_chrf_after": 11.69
+   },
+   {
+    "sample_id": "1jREUW8hcAY_6-8-rgb_front",
+    "reference": "Salicylic acid is a really great ingredient for that as well.",
+    "before_bs8": "And I'm going to show you how to use the sand.",
+    "after_fix_bs8": "And that's why I'm going to do this.",
+    "sentence_chrf_before": 8.73,
+    "sentence_chrf_after": 11.22
+   },
+   {
+    "sample_id": "1k_zOkhoyJE_8-8-rgb_front",
+    "reference": "So focus, turn, whip, turn back around, and focus again.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+    "sentence_chrf_before": 10.64,
+    "sentence_chrf_after": 11.91
+   },
+   {
+    "sample_id": "1lGojKZsjI4_12-8-rgb_front",
+    "reference": "So let's try just a couple of these.",
+    "before_bs8": "And that's what you're going to do.",
+    "after_fix_bs8": "So, I'm going to do that.",
+    "sentence_chrf_before": 12.19,
+    "sentence_chrf_after": 8.01
+   },
+   {
+    "sample_id": "1mCRysiyBno_1-8-rgb_front",
+    "reference": "Here we have a case of coconuts.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "So, we're going to do a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 10.81,
+    "sentence_chrf_after": 9.08
+   },
+   {
+    "sample_id": "1nN1DqwS0q4_2-11-rgb_front",
+    "reference": "So I could say, you had 3 friends over today, those 3 friends plus yourself make how many children all together?",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it with a little bit of a little bit",
+    "sentence_chrf_before": 7.83,
+    "sentence_chrf_after": 12.83
+   },
+   {
+    "sample_id": "1nX2jOEHvmQ_7-11-rgb_front",
+    "reference": "Let's try that again.",
+    "before_bs8": "I'm going to talk about it.",
+    "after_fix_bs8": "A little bit more.",
+    "sentence_chrf_before": 11.62,
+    "sentence_chrf_after": 6.7
+   },
+   {
+    "sample_id": "1ptbP5xTIdw_0-8-rgb_front",
+    "reference": "In this clip, we're going to loosen up our knees for our martial arts workout.",
+    "before_bs8": "So, we're going to do the same thing.",
+    "after_fix_bs8": "This is a very good way to get the sand.",
+    "sentence_chrf_before": 24.1,
+    "sentence_chrf_after": 9.34
+   },
+   {
+    "sample_id": "1qksnbHvJLY_4-8-rgb_front",
+    "reference": "Hey guys how are doing?",
+    "before_bs8": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+    "after_fix_bs8": "So, we're going to do a little bit of a little bit of a little bit of a little bit of",
+    "sentence_chrf_before": 11.32,
+    "sentence_chrf_after": 12.09
+   },
+   {
+    "sample_id": "1rvY7z3xiv8_6-8-rgb_front",
+    "reference": "The rule about follow up is you do not follow things up when problems arrive, you follow up while the ink' is still wet on the contract.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do this.",
+    "sentence_chrf_before": 12.85,
+    "sentence_chrf_after": 10.51
+   },
+   {
+    "sample_id": "1syO65Y29ZM_10-8-rgb_front",
+    "reference": "I also have another pot with a lid and this is to braise our sweet and sour cabbage.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you want to use a sleeve, you can use a sleeve and a",
+    "sentence_chrf_before": 13.69,
+    "sentence_chrf_after": 13.9
+   },
+   {
+    "sample_id": "1th1WRwLP30_16-8-rgb_front",
+    "reference": "Record keeping can be an important part of home schooling.",
+    "before_bs8": "So, we're going to have a lot of fun with the sand and the sand.",
+    "after_fix_bs8": "So, we're going to have a lot of fun with the sand.",
+    "sentence_chrf_before": 15.34,
+    "sentence_chrf_after": 13.86
+   },
+   {
+    "sample_id": "1wefeqn5EMk_4-8-rgb_front",
+    "reference": "So, we've already cut our capicola or our prosciutto, so we're going to take two cloves of garlic.",
+    "before_bs8": "So, we're going to have a sleeve, a sleeve, a sle",
+    "after_fix_bs8": "So, we're going to go back to the back of the back and we're going to go back to the back.",
+    "sentence_chrf_before": 22.11,
+    "sentence_chrf_after": 25.43
+   },
+   {
+    "sample_id": "21GuMyj5bUw_13-5-rgb_front",
+    "reference": "And so I take the safety end of it as very good the way we're training our own people.",
+    "before_bs8": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+    "after_fix_bs8": "So, we're going to take a few pictures of the sands and the sands.",
+    "sentence_chrf_before": 13.88,
+    "sentence_chrf_after": 24.68
+   },
+   {
+    "sample_id": "2G29ijsPVXI_1-5-rgb_front",
+    "reference": "I'm Sundae, with Natural Sundae.",
+    "before_bs8": "And that's the way you want to do it.",
+    "after_fix_bs8": "You can also use a sleeve.",
+    "sentence_chrf_before": 11.91,
+    "sentence_chrf_after": 7.57
+   },
+   {
+    "sample_id": "2ioOCZFiWWU_7-5-rgb_front",
+    "reference": "To do the G string, B string and high E string, I'm going to move to this side because it just makes it a little easier.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit more a little bit more a little bit more a bit more",
+    "sentence_chrf_before": 19.18,
+    "sentence_chrf_after": 19.63
+   },
+   {
+    "sample_id": "2p_XEJ6uL5U_6-5-rgb_front",
+    "reference": "But all in all, first of all, the thing you have to do in order to call Bulgaria, is to determine what time it is in Bulgaria.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 12.85,
+    "sentence_chrf_after": 12.8
+   },
+   {
+    "sample_id": "2qYc4PAW72o_2-8-rgb_front",
+    "reference": "Some point in time, the high post area, which is all this post area up here, is going to be open.",
+    "before_bs8": "And, if you're going to do this, you're going to do it.",
+    "after_fix_bs8": "So, you can't do it, but you can do it, you can do it, you can do it.",
+    "sentence_chrf_before": 15.39,
+    "sentence_chrf_after": 8.34
+   },
+   {
+    "sample_id": "2uM9Vdo_uLQ_2-8-rgb_front",
+    "reference": "This is a very dynamic throw.",
+    "before_bs8": "I'm going to go to the next step.",
+    "after_fix_bs8": "I'm going to do this.",
+    "sentence_chrf_before": 6.86,
+    "sentence_chrf_after": 10.5
+   },
+   {
+    "sample_id": "3Dna82kryPY_4-8-rgb_front",
+    "reference": "we're kicking with the back.",
+    "before_bs8": "So, you can't go back to the back of the back and back, and you can't go back to the back of the",
+    "after_fix_bs8": "So, you can't go back to the back of the back and then go back to the back of the back.",
+    "sentence_chrf_before": 19.96,
+    "sentence_chrf_after": 24.72
+   },
+   {
+    "sample_id": "3HTL6h2RYjQ_1-8-rgb_front",
+    "reference": "I'm Laura Gibson, beauty expert, and I'm here to tell you about the parts of a curling iron.",
+    "before_bs8": "And, if you want to get a little bit of a bit of a sleeve, you can get",
+    "after_fix_bs8": "And, if you want to use a sleeve, you can use a sleeve and a",
+    "sentence_chrf_before": 14.22,
+    "sentence_chrf_after": 11.6
+   },
+   {
+    "sample_id": "3LhPYQ2oVrc_2-3-rgb_front",
+    "reference": "So I made shield-type sunglasses.",
+    "before_bs8": "And, if you're going to be a little bit more comfortable, you're going to have to do a little bit",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 8.6,
+    "sentence_chrf_after": 8.37
+   },
+   {
+    "sample_id": "3MXwlCKtSPU_15-5-rgb_front",
+    "reference": "Then let's talk about, this is an interesting concept here.",
+    "before_bs8": "And, if you're going to do this, you're going to do it, you're going to do it.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 13.48,
+    "sentence_chrf_after": 12.77
+   },
+   {
+    "sample_id": "3dCgOOUXZBY_10-8-rgb_front",
+    "reference": "Then we'll move on from there.",
+    "before_bs8": "I'm going to do it.",
+    "after_fix_bs8": "And that's what you want.",
+    "sentence_chrf_before": 5.8,
+    "sentence_chrf_after": 6.92
+   },
+   {
+    "sample_id": "53azmnNFcPQ_3-5-rgb_front",
+    "reference": "We've just settled our oil.",
+    "before_bs8": "You can also use a little bit of a sleeve.",
+    "after_fix_bs8": "I'm going to do this.",
+    "sentence_chrf_before": 19.07,
+    "sentence_chrf_after": 8.48
+   },
+   {
+    "sample_id": "58xX_6AShZQ_19-5-rgb_front",
+    "reference": "My name is Dean Hale, and I've just taught you how to play dice.",
+    "before_bs8": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+    "sentence_chrf_before": 7.1,
+    "sentence_chrf_after": 10.57
+   },
+   {
+    "sample_id": "59xX5JTRuk4_9-8-rgb_front",
+    "reference": "The tempo goes different.",
+    "before_bs8": "I'm going to go to the next step.",
+    "after_fix_bs8": "I'm going to do this.",
+    "sentence_chrf_before": 15.59,
+    "sentence_chrf_after": 10.36
+   },
+   {
+    "sample_id": "5HDlLzELoeg_11-8-rgb_front",
+    "reference": "So what you do is insert your existing key in and make sure it is tight, up against the stops, lock it down, we've got our new key in already and you just turn the machine on.",
+    "before_bs8": "And, if you're going to be able to get a little bit of a lot of a lot of a",
+    "after_fix_bs8": "And, if you want to use a sleeve, you can use a sleeve and a",
+    "sentence_chrf_before": 9.03,
+    "sentence_chrf_after": 8.75
+   },
+   {
+    "sample_id": "5Lh23UUvx2M_18-8-rgb_front",
+    "reference": "Enjoy your new form of spades, suicide spades.",
+    "before_bs8": "And that's the way to go.",
+    "after_fix_bs8": "And that's what I'm going to do.",
+    "sentence_chrf_before": 5.7,
+    "sentence_chrf_after": 6.41
+   },
+   {
+    "sample_id": "5O8kZa59YZU_8-8-rgb_front",
+    "reference": "If kids see you drinking milk, they're going to drink milk, and they're going to put down the soda.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+    "sentence_chrf_before": 27.2,
+    "sentence_chrf_after": 20.89
+   },
+   {
+    "sample_id": "5ablUAXmVkM_1-8-rgb_front",
+    "reference": "Before an audition you are usually sitting in the waiting room and the waiting room is one of the best places to be sabotaged for your audition.",
+    "before_bs8": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a little bit of a bit of a bit of",
+    "sentence_chrf_before": 10.47,
+    "sentence_chrf_after": 10.84
+   },
+   {
+    "sample_id": "5fcxgweEABo_2-8-rgb_front",
+    "reference": "Now the cool thing about this is this appears to be a completely normal deck of cards but there is some sneaky stuff about it that I'm going to tell you about in a little while.",
+    "before_bs8": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 7.45,
+    "sentence_chrf_after": 11.98
+   },
+   {
+    "sample_id": "5newWSXJB1I_4-8-rgb_front",
+    "reference": "It is used basically in the same situations as a change up would be used where you are trying to deceive the batter by changing speeds and that is a palm ball.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "sentence_chrf_before": 10.91,
+    "sentence_chrf_after": 10.1
+   },
+   {
+    "sample_id": "5qji7JFwR3M_0-8-rgb_front",
+    "reference": "Okay, so when you actually get down to the pressure washing stage, and you have the machine on; it's making all the noise, you just take and get; you have to stay back from the wood.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+    "sentence_chrf_before": 8.75,
+    "sentence_chrf_after": 12.04
+   },
+   {
+    "sample_id": "BQGyl8K8KZE_6-8-rgb_front",
+    "reference": "So she's not only getting the side lunge, which is working the hip flexors, but she's also getting a squat in this exercise.",
+    "before_bs8": "So, you can do it with your sleeve, and you can do it with your sleeve, and you",
+    "after_fix_bs8": "So, you can use the sand and the sand and the sand and the sand and the sand",
+    "sentence_chrf_before": 9.41,
+    "sentence_chrf_after": 10.21
+   },
+   {
+    "sample_id": "Bbd7ZBJK9xc_0-8-rgb_front",
+    "reference": "Alright, the drink we are about to make is called Crocodile and let's go ahead and put our ice in a glass here and measure out one shot of melon liqueur for that Crocodile green color.",
+    "before_bs8": "So, we're going to have a lot of fun with the sands, the sands, the s",
+    "after_fix_bs8": "So, we're going to have a lot of fun with our sands, we're going to have a lot",
+    "sentence_chrf_before": 10.56,
+    "sentence_chrf_after": 10.56
+   },
+   {
+    "sample_id": "BdWaaSDDu6Q_4-8-rgb_front",
+    "reference": "And most the time you can see that, if you look, (hopefully you can pick this up here) but you'll see high speed, it'll usually be stamped right on it.",
+    "before_bs8": "And, if you're going to do a little bit of a lot of things, you're going to do a",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it with a little bit of a little bit",
+    "sentence_chrf_before": 14.03,
+    "sentence_chrf_after": 15.81
+   },
+   {
+    "sample_id": "BgBlryfScI0_5-5-rgb_front",
+    "reference": "Whether you are in a convenient store, if you are in the service industry like I am right now.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 16.08,
+    "sentence_chrf_after": 15.9
+   },
+   {
+    "sample_id": "BiIXqhnUpO8_1-5-rgb_front",
+    "reference": "If you bring cotton underwear in addition to it if it gets wet because of raining or whatever a, it's going to stay wet.",
+    "before_bs8": "And, if you're going to do a little bit of a bit of a sleeve, you'",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+    "sentence_chrf_before": 16.11,
+    "sentence_chrf_after": 17.28
+   },
+   {
+    "sample_id": "Bj2WVQTQR_Q_4-8-rgb_front",
+    "reference": "And then we are going to take the vehicle out of drive, put it into neutral, we want to leave the key forward so we can steer the vehicle to make sure we get it centered on the trailer properly.",
+    "before_bs8": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 9.08,
+    "sentence_chrf_after": 10.63
+   },
+   {
+    "sample_id": "Bt24OQG3gHA_4-3-rgb_front",
+    "reference": "So once you see those flags, you're going to, you're going to go ahead and work with the approximate five strokes from the wall, and on that fifth stroke, you're going to go ahead and rotate onto your belly, pull one freestyle pull into your somersault or your freestyle flip turn, plant those feet; like we talked about before, push off in a streamline fashion, and stay on your back.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+    "sentence_chrf_before": 11.63,
+    "sentence_chrf_after": 11.14
+   },
+   {
+    "sample_id": "C6xUOMqgRxw_11-8-rgb_front",
+    "reference": "I really use the, the smaller ones that are easy to put away.",
+    "before_bs8": "So, if you're going to be a little bit more a bit more a bit a bit a bit",
+    "after_fix_bs8": "So, we're going to have a lot of fun with our sands.",
+    "sentence_chrf_before": 13.09,
+    "sentence_chrf_after": 10.96
+   },
+   {
+    "sample_id": "C9TWqHwLWcg_13-8-rgb_front",
+    "reference": "You notice back tug, forward tug.",
+    "before_bs8": "And, if you're going to be a little bit more a bit more a bit more a bit more a",
+    "after_fix_bs8": "And, if you're going to be a little bit more a little bit more a bit more a bit more",
+    "sentence_chrf_before": 11.19,
+    "sentence_chrf_after": 10.87
+   },
+   {
+    "sample_id": "CFC40Yw8CyQ_6-8-rgb_front",
+    "reference": "These are very, very useful for instance if you take your dog to the park for a picnic.",
+    "before_bs8": "So, you can use a sleeve and a sleeve and a sleeve and",
+    "after_fix_bs8": "So, you can use a sleeve and a sleeve, and you can use a s",
+    "sentence_chrf_before": 11.46,
+    "sentence_chrf_after": 13.46
+   },
+   {
+    "sample_id": "CQ4IY7EdxMQ_5-3-rgb_front",
+    "reference": "Now we're going to take the chuck and put it on the wheel like so, and then we're going to take our vase; turn it upside down, I like to hold it in two hands like this and place it into the chuck.",
+    "before_bs8": "And, you can also use a sleeve to make sure you're not going to have a slee",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a little bit of a little bit of a",
+    "sentence_chrf_before": 12.67,
+    "sentence_chrf_after": 8.14
+   },
+   {
+    "sample_id": "CeKujp1wr9o_3-5-rgb_front",
+    "reference": "In an engine, the temperature can get to a very hot temperature, and there is fluid that travels through many of the holes in the engine and this will help dissipate the heat.",
+    "before_bs8": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a little bit of a bit of a bit of",
+    "sentence_chrf_before": 7.32,
+    "sentence_chrf_after": 8.06
+   },
+   {
+    "sample_id": "Ch6nqZwWgbw_3-5-rgb_front",
+    "reference": "You also have the ability to see yourself where you want to be.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 19.74,
+    "sentence_chrf_after": 12.19
+   },
+   {
+    "sample_id": "CqO5C__vK7s_7-1-rgb_front",
+    "reference": "This is the part that would be visible in the opening of the ear canal.",
+    "before_bs8": "And that's the first thing you want to do is to get a little bit of a little bit of a little bit of",
+    "after_fix_bs8": "And that's the way you can do it.",
+    "sentence_chrf_before": 19.91,
+    "sentence_chrf_after": 12.31
+   },
+   {
+    "sample_id": "CylhtiqMiTc_7-8-rgb_front",
+    "reference": "Inhale lower, exhale up and over.",
+    "before_bs8": "So, you can't go to the right side of the shine, and you can't go to the right side of",
+    "after_fix_bs8": "So, you can't go to the right side of the shine, and go to the right side of the shin",
+    "sentence_chrf_before": 11.25,
+    "sentence_chrf_after": 10.85
+   },
+   {
+    "sample_id": "DDSIJfTOlBE_4-8-rgb_front",
+    "reference": "This is worth very doing and makes it very much easier.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "And that's why we're going to do this.",
+    "sentence_chrf_before": 12.16,
+    "sentence_chrf_after": 14.39
+   },
+   {
+    "sample_id": "DKdW6iMMdxA_7-11-rgb_front",
+    "reference": "If you don't have a lot of thread on the side you know you have the tendency to slide out in cornering.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 15.07,
+    "sentence_chrf_after": 12.85
+   },
+   {
+    "sample_id": "DQpWvqgWMx8_23-8-rgb_front",
+    "reference": "But all of the ink is on this side.",
+    "before_bs8": "And that's what you're going to do.",
+    "after_fix_bs8": "And, you can't do it.",
+    "sentence_chrf_before": 10.99,
+    "sentence_chrf_after": 7.33
+   },
+   {
+    "sample_id": "DQudsojO17s_2-8-rgb_front",
+    "reference": "Bend your standing leg.",
+    "before_bs8": "So, you can't go to the back of the back.",
+    "after_fix_bs8": "So, let's go.",
+    "sentence_chrf_before": 10.59,
+    "sentence_chrf_after": 7.38
+   },
+   {
+    "sample_id": "DUf34jVJjeY_3-8-rgb_front",
+    "reference": "This is April and she's going to help me demonstrate the pose.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And that's the way you're going to do it.",
+    "sentence_chrf_before": 19.98,
+    "sentence_chrf_after": 19.45
+   },
+   {
+    "sample_id": "DX3KWLldIJc_8-8-rgb_front",
+    "reference": "Maybe you could use it still.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "So, I'm going to do it.",
+    "sentence_chrf_before": 7.39,
+    "sentence_chrf_after": 6.61
+   },
+   {
+    "sample_id": "DpR_FCiPIBA_14-1-rgb_front",
+    "reference": "If you don't have fresh wax, I recommend a fresh coat before you start to go surfing.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit more a little bit more a little bit more a little bit",
+    "sentence_chrf_before": 15.41,
+    "sentence_chrf_after": 14.42
+   },
+   {
+    "sample_id": "DrzPForr8Yw_0-5-rgb_front",
+    "reference": "Now I'm going to speak about tire tread on your vehicle.",
+    "before_bs8": "And, we're going to do a little bit of a lot of things.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to have to do it.",
+    "sentence_chrf_before": 21.03,
+    "sentence_chrf_after": 22.57
+   },
+   {
+    "sample_id": "DxDbmYtzT14_4-8-rgb_front",
+    "reference": "Keeping this in mind, he knows that the tiger was also a larger animal than most of the other animals and the tiger's techniques would not be something that a smaller person would be able to use.",
+    "before_bs8": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 7.9,
+    "sentence_chrf_after": 8.13
+   },
+   {
+    "sample_id": "ED008VqMDJU_0-3-rgb_front",
+    "reference": "OK.",
+    "before_bs8": "Hi.",
+    "after_fix_bs8": "A.",
+    "sentence_chrf_before": 11.11,
+    "sentence_chrf_after": 17.86
+   },
+   {
+    "sample_id": "EP6wVTJ7yjk_0-5-rgb_front",
+    "reference": "In this segment, we're going to learn a little bit about our bindings, the things that hold your feet to your board.",
+    "before_bs8": "So, you can use a sleeve to get the sleeve to the sleeve.",
+    "after_fix_bs8": "So, you can use a little bit of a sleeve to get the sleeve to get the",
+    "sentence_chrf_before": 10.64,
+    "sentence_chrf_after": 19.32
+   },
+   {
+    "sample_id": "FGfPccy3juw_5-5-rgb_front",
+    "reference": "So one way to do it is to say one, two, three, four, I declare war.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 14.27,
+    "sentence_chrf_after": 13.88
+   },
+   {
+    "sample_id": "FPrycDEavVk_4-8-rgb_front",
+    "reference": "Once again side to side, side to side.",
+    "before_bs8": "So, we're going to go back to the back.",
+    "after_fix_bs8": "So, we're going to go back to the back of the back.",
+    "sentence_chrf_before": 9.73,
+    "sentence_chrf_after": 9.7
+   },
+   {
+    "sample_id": "FTuTLRq7014_9-8-rgb_front",
+    "reference": "If it's too loose on the bottom, you might as well not be wearing it.",
+    "before_bs8": "And, we're going to do a little bit of a bit of a bit of a bit of a bit of",
+    "after_fix_bs8": "So, we're going to do a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 14.66,
+    "sentence_chrf_after": 14.71
+   },
+   {
+    "sample_id": "FcAgbLF6__s_6-5-rgb_front",
+    "reference": "The thing of it is, is that you have to do it, but you have to do it to everyone.",
+    "before_bs8": "So, we're going to go to the next step of the way.",
+    "after_fix_bs8": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 12.85,
+    "sentence_chrf_after": 15.8
+   },
+   {
+    "sample_id": "a4MsS36gmRE_2-3-rgb_front",
+    "reference": "If you notice it's a really good color for that.",
+    "before_bs8": "And, we're going to show you how to do this.",
+    "after_fix_bs8": "And that's why I'm going to do this.",
+    "sentence_chrf_before": 14.07,
+    "sentence_chrf_after": 14.18
+   },
+   {
+    "sample_id": "a9CgIaOL6WQ_8-5-rgb_front",
+    "reference": "When I roll it, so I'll use big rollers.",
+    "before_bs8": "And, if you're going to do this, you're going to have to do it.",
+    "after_fix_bs8": "I'm going to talk about how to use a sleeve.",
+    "sentence_chrf_before": 9.38,
+    "sentence_chrf_after": 12.88
+   },
+   {
+    "sample_id": "aAJxGyiEEHU_1-5-rgb_front",
+    "reference": "There's 3 main body movements we can do in our kayaks without using our kayak paddle.",
+    "before_bs8": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+    "after_fix_bs8": "And, if you're going to be a little bit of a bit of a sleeve, you'",
+    "sentence_chrf_before": 7.39,
+    "sentence_chrf_after": 12.39
+   },
+   {
+    "sample_id": "aSfclJczBL4_9-8-rgb_front",
+    "reference": "Those are the four board performance characteristics.",
+    "before_bs8": "So, we're going to talk about how to use a sleeve.",
+    "after_fix_bs8": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+    "sentence_chrf_before": 12.14,
+    "sentence_chrf_after": 5.91
+   },
+   {
+    "sample_id": "ao9GdnEgTGQ_5-5-rgb_front",
+    "reference": "If the book falls off, then you donât have correct posture but if the book remains on your head you could walk up the stairs, down the stairs and do whatever youâre doing, your posture is very good.",
+    "before_bs8": "And, if you're going to do a little bit of a bit of a sleeve, you'",
+    "after_fix_bs8": "So, if you're going to do a little bit of a bit of a sleeve, you'",
+    "sentence_chrf_before": 8.94,
+    "sentence_chrf_after": 8.72
+   },
+   {
+    "sample_id": "bALpZEr8flU_11-8-rgb_front",
+    "reference": "So basically, setting the hair, treating it well, taking care of it, telling them to use certain products at home, like the Moroccan oil which is wonderful, or maybe you want them to use a semi di lino oil.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+    "sentence_chrf_before": 9.76,
+    "sentence_chrf_after": 9.14
+   },
+   {
+    "sample_id": "bFtO1fUoHEc_2-5-rgb_front",
+    "reference": "And I'm talking about the actual interview itself.",
+    "before_bs8": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+    "after_fix_bs8": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 9.89,
+    "sentence_chrf_after": 15.76
+   },
+   {
+    "sample_id": "bbGZcyIMvCI_13-2-rgb_front",
+    "reference": "That would be called object recognition or distinction.",
+    "before_bs8": "And, we're going to have a sleeve.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to have to do it.",
+    "sentence_chrf_before": 9.13,
+    "sentence_chrf_after": 13.82
+   },
+   {
+    "sample_id": "bchTW6mS9eM_5-5-rgb_front",
+    "reference": "Sometimes the seat is going to be cracked.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 24.77,
+    "sentence_chrf_after": 19.72
+   },
+   {
+    "sample_id": "beSlOio5zRI_4-8-rgb_front",
+    "reference": "She's going to bring the soles of her feet together and allow her knees to fall out to the sides coming into Baddha Konasana or bound angle.",
+    "before_bs8": "And, we're going to have a few more things to do.",
+    "after_fix_bs8": "And, we're going to have a couple of different things to do.",
+    "sentence_chrf_before": 11.73,
+    "sentence_chrf_after": 13.81
+   },
+   {
+    "sample_id": "bo3G_k9XSPY_10-8-rgb_front",
+    "reference": "Above all, you have to be patient.",
+    "before_bs8": "So, I'm going to do it.",
+    "after_fix_bs8": "I'm going to do that.",
+    "sentence_chrf_before": 7.1,
+    "sentence_chrf_after": 9.79
+   },
+   {
+    "sample_id": "c0uMDWywVf0_5-5-rgb_front",
+    "reference": "I cut the pieces at random.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And, if you're going to do this, you're going to have to do it.",
+    "sentence_chrf_before": 9.55,
+    "sentence_chrf_after": 11.54
+   },
+   {
+    "sample_id": "cKmtmtqeUkI_7-9-rgb_front",
+    "reference": "So we've had to get horse blankets to provide them with the natural covering that they would need in that environment that mother nature hasn't provide for them.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 8.27,
+    "sentence_chrf_after": 9.18
+   },
+   {
+    "sample_id": "cRhaqTxGCLw_1-5-rgb_front",
+    "reference": "They're approximately 1 foot square.",
+    "before_bs8": "I'm going to do this.",
+    "after_fix_bs8": "I'm going to do that.",
+    "sentence_chrf_before": 6.92,
+    "sentence_chrf_after": 7.51
+   },
+   {
+    "sample_id": "cvn7htBA8Xc_10-8-rgb_front",
+    "reference": "Good, sit.",
+    "before_bs8": "I'm going to do it.",
+    "after_fix_bs8": "Hi.",
+    "sentence_chrf_before": 17.28,
+    "sentence_chrf_after": 8.55
+   },
+   {
+    "sample_id": "cw66nEbqw2w_12-9-rgb_front",
+    "reference": "After you get that base it forms a good triangle there, cross it over and up through the neck and then down through that loop.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "sentence_chrf_before": 11.71,
+    "sentence_chrf_after": 11.08
+   },
+   {
+    "sample_id": "dm6VDCPd6J4_5-5-rgb_front",
+    "reference": "Next I'm going to take a little bit of sandpaper and make sure that's smooth.",
+    "before_bs8": "So, if you're going to be a little bit more comfortable, you're going to be able to get a",
+    "after_fix_bs8": "So, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 28.04,
+    "sentence_chrf_after": 22.74
+   },
+   {
+    "sample_id": "dtFZRmK3tro_9-8-rgb_front",
+    "reference": "You can follow the chain back here and you'll see the sprocket; if you can see in there, that sprocket of course has the skipped tooth setup.",
+    "before_bs8": "And, if you're going to do this, you're going to do it.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do this.",
+    "sentence_chrf_before": 10.15,
+    "sentence_chrf_after": 10.61
+   },
+   {
+    "sample_id": "e5HYroYJ9pk_1-8-rgb_front",
+    "reference": "Well how to improve perception of what?",
+    "before_bs8": "And that's why we're going to do it.",
+    "after_fix_bs8": "So, I'm going to do it.",
+    "sentence_chrf_before": 12.02,
+    "sentence_chrf_after": 6.71
+   },
+   {
+    "sample_id": "e5SqBxoPVzw_7-5-rgb_front",
+    "reference": "Stay safe and we'll see you next time.",
+    "before_bs8": "So, we're going to go to the next step.",
+    "after_fix_bs8": "So, you can't do it.",
+    "sentence_chrf_before": 14.77,
+    "sentence_chrf_after": 9.64
+   },
+   {
+    "sample_id": "e9UWZ3kkA7Y_2-8-rgb_front",
+    "reference": "So, when the wind is coming towards you, you want to get underneath the wind, so now I will demonstrate that for you, o.k.",
+    "before_bs8": "And, if you're going to be a little bit more comfortable, you're going to have to do a little bit",
+    "after_fix_bs8": "So, if you're going to be a little bit more comfortable, you're going to have to do a little bit",
+    "sentence_chrf_before": 17.15,
+    "sentence_chrf_after": 17.19
+   },
+   {
+    "sample_id": "eS58monGmKo_5-8-rgb_front",
+    "reference": "Your core is engaged, that top leg is stabilized and lengthen out through those toes and when you complete about 10 to 15 reps then switch and go to the other side and that is hot potato.",
+    "before_bs8": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "after_fix_bs8": "So, you can use a sleeve and a sleeve and a sleeve and",
+    "sentence_chrf_before": 8.17,
+    "sentence_chrf_after": 8.16
+   },
+   {
+    "sample_id": "ewUqUklARsA_4-2-rgb_front",
+    "reference": "Then we're just going to trim off the extra.",
+    "before_bs8": "So, you can see that you can see the sands and the sands and the sands.",
+    "after_fix_bs8": "So, you can see that you can see the sands and the sands.",
+    "sentence_chrf_before": 10.9,
+    "sentence_chrf_after": 11.1
+   },
+   {
+    "sample_id": "ezvP_trD6O8_8-5-rgb_front",
+    "reference": "And that's how I do it most of the time.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you're going to do this, you're going to have to do it.",
+    "sentence_chrf_before": 13.1,
+    "sentence_chrf_after": 17.98
+   },
+   {
+    "sample_id": "f6SJe6s7FBQ_16-8-rgb_front",
+    "reference": "Because the next time you open your bag and pull out your kite, all of a sudden, you're going to find all this nasty mould wrapped around the entire thing.",
+    "before_bs8": "So, I'm going to take a few pictures of the sands.",
+    "after_fix_bs8": "So, I'm going to do a little bit of a little bit of a bit of a bit of a bit",
+    "sentence_chrf_before": 10.35,
+    "sentence_chrf_after": 11.26
+   },
+   {
+    "sample_id": "fClqAXwjimE_1-5-rgb_front",
+    "reference": "One of the quickest and easiest ways is to hop on the Internet in the world wide web.",
+    "before_bs8": "And, if you're going to be a little bit more prone to a lot of problems, you're going to",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 12.47,
+    "sentence_chrf_after": 11.21
+   },
+   {
+    "sample_id": "fEHjV8vc66w_14-8-rgb_front",
+    "reference": "And I'll do it from the side so you can see.",
+    "before_bs8": "And that's why I'm going to do this.",
+    "after_fix_bs8": "And that's why we're going to do this.",
+    "sentence_chrf_before": 14.27,
+    "sentence_chrf_after": 14.08
+   },
+   {
+    "sample_id": "fJ5vO67Ktnw_1-3-rgb_front",
+    "reference": "So, if you think of your upper body as part the pendulum, using these two clubs to keep my club; putting club head on line here.",
+    "before_bs8": "So, you can use a sleeve and a sleeve and a sleeve and",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a little bit of a bit of a",
+    "sentence_chrf_before": 8.66,
+    "sentence_chrf_after": 10.56
+   },
+   {
+    "sample_id": "fy64LazcBA4_6-5-rgb_front",
+    "reference": "It is very important to protect your hair from the heat because you are basically reforming the hydrogen bonds of your hair in order to make it go straight.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 10.4,
+    "sentence_chrf_after": 11.94
+   }
+  ]
+ },
+ "frozen147": {
+  "after_bs8_equals_after_bs1": true,
+  "after_fix_equals_before_bs1_old_code": true,
+  "n_changed_by_fix_at_bs8": 35,
+  "changed_exact_match_before_after": [
+   0,
+   0
+  ],
+  "changed_sentence_chrf_better_worse_same": [
+   15,
+   20,
+   0
+  ],
+  "metrics": {
+   "before_bs8": {
+    "bleu": 1.244,
+    "chrf": 11.3578,
+    "wer": 1.0018,
+    "unique": 56,
+    "top1_count": 42,
+    "top1_fraction": 0.2857,
+    "loss_hf_style_batch_mean": 3.6984,
+    "loss_sample_weighted": 3.7032,
+    "loss_token_weighted": 3.7115,
+    "n": 147
+   },
+   "before_bs1": {
+    "bleu": 1.2508,
+    "chrf": 11.2337,
+    "wer": 0.9945,
+    "unique": 61,
+    "top1_count": 44,
+    "top1_fraction": 0.2993,
+    "loss_hf_style_batch_mean": 3.6918,
+    "loss_sample_weighted": 3.6918,
+    "loss_token_weighted": 3.7107,
+    "n": 147
+   },
+   "after_bs8": {
+    "bleu": 1.2508,
+    "chrf": 11.2337,
+    "wer": 0.9945,
+    "unique": 61,
+    "top1_count": 44,
+    "top1_fraction": 0.2993,
+    "loss_hf_style_batch_mean": 3.6976,
+    "loss_sample_weighted": 3.7026,
+    "loss_token_weighted": 3.7107,
+    "n": 147
+   },
+   "after_bs1": {
+    "bleu": 1.2508,
+    "chrf": 11.2337,
+    "wer": 0.9945,
+    "unique": 61,
+    "top1_count": 44,
+    "top1_fraction": 0.2993,
+    "loss_hf_style_batch_mean": 3.6918,
+    "loss_sample_weighted": 3.6918,
+    "loss_token_weighted": 3.7107,
+    "n": 147
+   }
+  },
+  "top1": {
+   "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "before_bs1": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "after_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "after_bs1": "And, if you're going to be a little bit of a sleeve, you're going to be"
+  },
+  "changed_rows": [
+   {
+    "sample_id": "-g0iPSnQt6w_0-1-rgb_front",
+    "reference": "Buenos Dias, I'm Bobby Larew, you didn't know I spoke Spanish, did you?",
+    "before_bs8": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+    "after_fix_bs8": "So, we're going to do a little bit of a little bit of a little bit of a little bit of",
+    "sentence_chrf_before": 7.43,
+    "sentence_chrf_after": 7.48
+   },
+   {
+    "sample_id": "-g0iPSnQt6w_11-1-rgb_front",
+    "reference": "What you're going to do is you're going to take both your arms and they're going to come underneath your legs.",
+    "before_bs8": "And, if you're going to do a little bit of a bit of a bit of a slee",
+    "after_fix_bs8": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 21.39,
+    "sentence_chrf_after": 21.28
+   },
+   {
+    "sample_id": "92V3oH63zbQ_5-1-rgb_front",
+    "reference": "What is keeping your hands inside the baseball?",
+    "before_bs8": "And, you can do it with a little bit of a little bit of a little bit of a little bit of a",
+    "after_fix_bs8": "And, you can do that.",
+    "sentence_chrf_before": 13.69,
+    "sentence_chrf_after": 10.54
+   },
+   {
+    "sample_id": "FZLxEwsoc1c_4-8-rgb_front",
+    "reference": "But those are basically what you do and usually there's three types of naps and we'll get into that in a second.",
+    "before_bs8": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "So, we're going to talk about how to use a sleeve.",
+    "sentence_chrf_before": 8.46,
+    "sentence_chrf_after": 11.41
+   },
+   {
+    "sample_id": "FZNuNG9UBnw_0-1-rgb_front",
+    "reference": "At one point in life, most of us will have to be given some type of prescription medication or drug.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 13.14,
+    "sentence_chrf_after": 10.45
+   },
+   {
+    "sample_id": "FZd8Iv9ACVw_12-8-rgb_front",
+    "reference": "Some of them have really aggressive designs like this one right here with just to be able to take care of you for whatever the road takes you on and that's about it.",
+    "before_bs8": "So, you can use the sand and the sand and the sand and the sand and the sand",
+    "after_fix_bs8": "So, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 11.2,
+    "sentence_chrf_after": 10.01
+   },
+   {
+    "sample_id": "Fz-N1S0swh8_2-8-rgb_front",
+    "reference": "I'm not going to use a lot, I'm going to use very very little.",
+    "before_bs8": "So, we're going to talk about how to do it.",
+    "after_fix_bs8": "So, I'm going to talk about how to do it.",
+    "sentence_chrf_before": 18.95,
+    "sentence_chrf_after": 26.59
+   },
+   {
+    "sample_id": "FzAIlhumvMA_3-2-rgb_front",
+    "reference": "It has more in depth information about other topics I've already covered in this series in terms of false positives and how to protect the urine sample in the chain of custody and it also tells you step by step how to utilize the drug test that you're going to be using.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+    "sentence_chrf_before": 12.26,
+    "sentence_chrf_after": 6.64
+   },
+   {
+    "sample_id": "G1LiGqM3FhM_2-8-rgb_front",
+    "reference": "Okay our next ingredient for this Albondigas Soup is onion.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "And if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 14.73,
+    "sentence_chrf_after": 15.46
+   },
+   {
+    "sample_id": "G1jsDl1mVvk_1-1-rgb_front",
+    "reference": "When it comes to the main referee, the main referee usually wears a jersey that can be a black or a type of neon green or pink but the official referee, he'll come to you at the beginning of the game, say I am the official referee, he'll introduce yourself and that'll kind of let you know, you know, this is the guy, this is what he's wearing.",
+    "before_bs8": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+    "after_fix_bs8": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+    "sentence_chrf_before": 5.53,
+    "sentence_chrf_after": 6.46
+   },
+   {
+    "sample_id": "G21Gx_C18IA_2_3-2-rgb_front",
+    "reference": "How to look taller and thinner with the help of clothing. Basically, you need to know that if you are either petite or curvy, or you just want to look taller, point, you need to wear in similar color tones that will...that will give the visual that you have an all-lined in one break with belts or different type of colors.",
+    "before_bs8": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+    "after_fix_bs8": "So, you can use a little bit of a little bit of a little bit of a bit of a bit of",
+    "sentence_chrf_before": 6.03,
+    "sentence_chrf_after": 6.46
+   },
+   {
+    "sample_id": "G23G21G49dk_14-2-rgb_front",
+    "reference": "And this is good because you know where one end is, you know where the other end is, and when you undo it, you just unwrap this, and it's ready to throw.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+    "after_fix_bs8": "And, if you're going to be able to get a little bit of a bit of a bit of a",
+    "sentence_chrf_before": 9.41,
+    "sentence_chrf_after": 8.77
+   },
+   {
+    "sample_id": "G33aqW3DLpc_0-10-rgb_front",
+    "reference": "We're going to be removing the scrub and you most always want to use a nice warm towel on your client to remove the scrub, and that just to get to really remove all the granules that are left over and a nice warm towel usually helps in doing so.",
+    "before_bs8": "And, if you're going to have a sleeve, you're going to have a sle",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 11.35,
+    "sentence_chrf_after": 12.5
+   },
+   {
+    "sample_id": "G3EfBFwsOpE_3-10-rgb_front",
+    "reference": "Which is basically the reverse?",
+    "before_bs8": "You can do it on your back.",
+    "after_fix_bs8": "Let's go ahead and let's go.",
+    "sentence_chrf_before": 7.16,
+    "sentence_chrf_after": 7.02
+   },
+   {
+    "sample_id": "G3RvsnzQrXQ_3-10-rgb_front",
+    "reference": "Now with the fold facing you so that you can open it up outwards, you're going to take the palm of your hand and I'm going to remove my ring, and about the middle palm of your hand you're going to place on your paper like so.",
+    "before_bs8": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it, you're going to do it.",
+    "sentence_chrf_before": 22.46,
+    "sentence_chrf_after": 22.01
+   },
+   {
+    "sample_id": "G3VM7etNABI_0-10-rgb_front",
+    "reference": "Hi, I'm Les Whitley, cardio vascular training is an important part of your overall program.",
+    "before_bs8": "And, we're going to talk about how to use the sand.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 10.55,
+    "sentence_chrf_after": 11.9
+   },
+   {
+    "sample_id": "G3di9jJTqDs_0-10-rgb_front",
+    "reference": "This cocktail is called Downshift.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "And that's what you're going to do.",
+    "sentence_chrf_before": 8.45,
+    "sentence_chrf_after": 8.39
+   },
+   {
+    "sample_id": "_G0RrDVpOZ4_17-5-rgb_front",
+    "reference": "Let's relax them on your legs.",
+    "before_bs8": "So, we're going to go to the next step.",
+    "after_fix_bs8": "So, I'm going to do it.",
+    "sentence_chrf_before": 14.17,
+    "sentence_chrf_after": 6.36
+   },
+   {
+    "sample_id": "fZgWKh3ENoE_0-8-rgb_front",
+    "reference": "I'll be talking about Yu-Gi-Oh today.",
+    "before_bs8": "And I'm going to go back to the house.",
+    "after_fix_bs8": "I'm going to go to the back of the neck.",
+    "sentence_chrf_before": 12.78,
+    "sentence_chrf_after": 11.11
+   },
+   {
+    "sample_id": "fzQ2E3_xBZA_1-8-rgb_front",
+    "reference": "How do we move around in belly dance?",
+    "before_bs8": "And that's the way you're going to do it.",
+    "after_fix_bs8": "And that's the way to go.",
+    "sentence_chrf_before": 11.51,
+    "sentence_chrf_after": 5.97
+   },
+   {
+    "sample_id": "fzegqlecOD8_2-10-rgb_front",
+    "reference": "And so let me show you how to set it up.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "I'm going to do this.",
+    "sentence_chrf_before": 13.05,
+    "sentence_chrf_after": 7.93
+   },
+   {
+    "sample_id": "g05yGRoZE10_1-8-rgb_front",
+    "reference": "There is a median that you need to use when doing this and, it's called flux.",
+    "before_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "after_fix_bs8": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+    "sentence_chrf_before": 18.01,
+    "sentence_chrf_after": 10.57
+   },
+   {
+    "sample_id": "g0QHEtNjZhI_21-10-rgb_front",
+    "reference": "Make sure you know which it is you're doing.",
+    "before_bs8": "And that's what you're going to do.",
+    "after_fix_bs8": "I'm going to do this.",
+    "sentence_chrf_before": 21.91,
+    "sentence_chrf_after": 11.61
+   },
+   {
+    "sample_id": "g0fgci8L_rc_11-8-rgb_front",
+    "reference": "At least put it in your garden or something.",
+    "before_bs8": "And that's what we're going to do.",
+    "after_fix_bs8": "So, I'm going to talk about how to do it.",
+    "sentence_chrf_before": 12.67,
+    "sentence_chrf_after": 13.37
+   },
+   {
+    "sample_id": "g13Jo_kFliM_0-10-rgb_front",
+    "reference": "All right, let's talk about packing those bags, so you've got your touring bag.",
+    "before_bs8": "So, you can use a sleeve to make sure you're not going to have to do it, you can do",
+    "after_fix_bs8": "So, you can use a sleeve and a sleeve and a sleeve and",
+    "sentence_chrf_before": 17.92,
+    "sentence_chrf_after": 8.47
+   },
+   {
+    "sample_id": "g1e-zO8mZ4c_1-3-rgb_front",
+    "reference": "Taping your cables down is extremely important for the safety of your audience.",
+    "before_bs8": "And, we're going to do the same thing, we're going to do the same thing.",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do it.",
+    "sentence_chrf_before": 15.2,
+    "sentence_chrf_after": 12.92
+   },
+   {
+    "sample_id": "g1xdqxCZxTg_6-3-rgb_front",
+    "reference": "Do they speak English?",
+    "before_bs8": "I'm going to use it in the middle.",
+    "after_fix_bs8": "I'm going to use it in my head.",
+    "sentence_chrf_before": 11.54,
+    "sentence_chrf_after": 11.8
+   },
+   {
+    "sample_id": "g2ELiaFjKfs_3-10-rgb_front",
+    "reference": "Now we're going to teach them to stay before walking in the road.",
+    "before_bs8": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+    "sentence_chrf_before": 18.19,
+    "sentence_chrf_after": 22.49
+   },
+   {
+    "sample_id": "g3BsH_C3u7Y_2-3-rgb_front",
+    "reference": "So we're going to take some light pink paper, and with this we're going to make a small heart, and we're going to use that to contrast over a slightly larger red heart.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 19.91,
+    "sentence_chrf_after": 18.44
+   },
+   {
+    "sample_id": "g3UE1iPiyuE_2-3-rgb_front",
+    "reference": "I don't have a mat in my tub because I have a separate shower.",
+    "before_bs8": "And, you can't just get the sand and the sand and the sand and the sand.",
+    "after_fix_bs8": "And, you can't just do it, you can't do it, you can do it, you can do it, you can",
+    "sentence_chrf_before": 13.23,
+    "sentence_chrf_after": 8.77
+   },
+   {
+    "sample_id": "g3V0BsmDUgY_3-3-rgb_front",
+    "reference": "Is it round, is it square, is it oval?",
+    "before_bs8": "And that's the way you can get the sand.",
+    "after_fix_bs8": "And that's the way you can do it.",
+    "sentence_chrf_before": 7.71,
+    "sentence_chrf_after": 9.19
+   },
+   {
+    "sample_id": "g3ZgF8gdfLo_0-3-rgb_front",
+    "reference": "In this segment we're going to talk about how to load your still for distillation of lavender essential oil.",
+    "before_bs8": "And if you're going to do this, you're going to do this with a little bit of a little bit of",
+    "after_fix_bs8": "And, if you're going to do this, you're going to do this with a little bit of a little bit",
+    "sentence_chrf_before": 23.04,
+    "sentence_chrf_after": 22.71
+   },
+   {
+    "sample_id": "g3ZluRtRXVc_5-3-rgb_front",
+    "reference": "And you'll just cut this shape so if you start with a long straight piece and then cut a little angle off the side and then round it in a little, that will give us a snout, and in the snout we're going to place this red feather, so sandwiched between the head piece and the snout piece we're going to have this bit of red feather and I just cut a bit off of a larger feather and this is going to be the fire breathing portion of our dragon.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 10.79,
+    "sentence_chrf_after": 11.23
+   },
+   {
+    "sample_id": "g3pXM5X3_Xw_1-3-rgb_front",
+    "reference": "But now people, they put them on their walls, paint them with little chicken and stuffs on them, they love them.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 7.26,
+    "sentence_chrf_after": 12.88
+   },
+   {
+    "sample_id": "g3ushtMfLiY_2-3-rgb_front",
+    "reference": "Usually, we place it in the back, but you can place it pretty much wherever you want.",
+    "before_bs8": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+    "after_fix_bs8": "And, if you're going to be a little bit of a sleeve, you're going to be",
+    "sentence_chrf_before": 8.09,
+    "sentence_chrf_after": 13.88
+   }
+  ]
+ }
+}

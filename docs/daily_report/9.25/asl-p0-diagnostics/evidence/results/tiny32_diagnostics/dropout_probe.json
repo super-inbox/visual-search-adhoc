@@ -1,0 +1,46 @@
+{
+ "linear": {
+  "all_eval": {
+   "loss_mean": 0.4256,
+   "acc_mean": 0.9283,
+   "n_seeds": 1
+  },
+  "encoder_dropout_only": {
+   "loss_mean": 0.5093,
+   "acc_mean": 0.889,
+   "n_seeds": 5
+  },
+  "t5_dropout_only": {
+   "loss_mean": 0.9551,
+   "acc_mean": 0.7121,
+   "n_seeds": 5
+  },
+  "all_train_mode": {
+   "loss_mean": 1.0977,
+   "acc_mean": 0.6739,
+   "n_seeds": 5
+  }
+ },
+ "constant": {
+  "all_eval": {
+   "loss_mean": 0.3614,
+   "acc_mean": 0.9099,
+   "n_seeds": 1
+  },
+  "encoder_dropout_only": {
+   "loss_mean": 0.4046,
+   "acc_mean": 0.9044,
+   "n_seeds": 5
+  },
+  "t5_dropout_only": {
+   "loss_mean": 0.8442,
+   "acc_mean": 0.7647,
+   "n_seeds": 5
+  },
+  "all_train_mode": {
+   "loss_mean": 0.9146,
+   "acc_mean": 0.7493,
+   "n_seeds": 5
+  }
+ }
+}

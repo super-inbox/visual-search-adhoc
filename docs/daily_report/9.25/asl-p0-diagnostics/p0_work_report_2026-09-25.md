@@ -1,10 +1,10 @@
 # P0 工作报告：tiny-set 过拟合、10% 多 epoch 训练与 padding 修复
 
 - 日期：2026-09-25
-- **发布说明**：本报告发布在 `super-inbox/visual-search-adhoc` 仓库，只包含这一份报告文档。报告涉及的模型代码（`src/`、`scripts/`、`tests/`、`experiments/` 等路径）都属于另一个代码仓库 `gloss-free-asl-translation`，**没有随本报告上传**。checkpoint 和 `results/` 也都没有上传。
-- 代码所在分支：`gloss-free-asl-translation` 仓库的 `baobao/asl-tiny-overfit-2026-09-24`。该分支只在本地提交，推送到 GitHub 失败（403），见第 6 节。
+- **发布说明**：本报告发布在 `super-inbox/visual-search-adhoc` 仓库的 `docs/daily_report/9.25/asl-p0-diagnostics/`。同一目录下另有 [`code/`](code/)（本次实验的代码和测试副本）、[`evidence/`](evidence/)（配置、指标、epoch 表、逐条预测、日志）和 [`README.md`](README.md)（来源、hash、复算方法、未上传清单）。**模型权重、checkpoint、landmark 和数据集都没有上传。**
+- 代码仓库：`gloss-free-asl-translation` 分支 `baobao/asl-tiny-overfit-2026-09-24` 的 commit `7da5734`。该 commit 只在作者本机，**推送到 GitHub 失败（403），仍未推送**，见第 6 节。
 - 报告中的所有数字都来自 `results/`、`experiments/` 下的文件。四舍五入前的精确值写在括号里。出处列在各节末尾。
-- **注意：文中所有 `results/...` 路径都只保存在作者本机**（`results/` 被 `.gitignore` 忽略，不在任何提交中）。这些路径只标明本地出处，不是仓库内可以打开的链接。如需核对原始文件，请向作者索取。
+- **路径对应**：文中的 `results/<X>` 对应本目录的 [`evidence/results/<X>`](evidence/results/)，`src/`、`scripts/`、`tests/` 对应 [`code/`](code/) 下的同名路径。唯一的例外是 `checkpoints/`、`final_model/` 和 `tensors/`，这些权重和张量没有上传，只在作者本机。
 
 ---
 
@@ -25,7 +25,7 @@
 | P0.1 | 固定 tiny set 过拟合，验证模型能否记住训练样本 | ✅ 完成（有条件通过） | 只有 T5 dropout=0 时通过（BLEU 100、32/32）。默认 dropout=0.1 时未达到 BLEU>80 的通过线（70.74、17/32）。 |
 | P0.2 | 10% 数据多 epoch 训练，观察验证集能否学到翻译 | ✅ 已完成，但结果为负 | 验证 loss 下降，但验证/测试 BLEU 始终约为 1。 |
 | — | 诊断：模型是否使用视频输入（输入错配） | ✅ 完成 | 模型使用了视频，但作用很弱。见第 4 节。 |
-| — | 诊断并修复 padding/mask bug | ✅ 已修复，测试通过 | 已修复，已在代码仓库本地提交（尚未推送，见第 6 节）。修复后同一模型用 bs=1 和 bs=8 预测，结果一致。 |
+| — | 诊断并修复 padding/mask bug | ✅ 已修复，测试通过 | 已修复；代码仓库中已在本地提交（尚未推送），副本见本目录 `code/`。修复后同一模型用 bs=1 和 bs=8 预测，结果一致。 |
 | — | 修复后受控重训 | ✅ 完成 | 翻译质量无实质变化。 |
 
 ---
@@ -154,19 +154,32 @@
 1. **（无需训练）在重训后的最佳 checkpoint 上重跑输入错配诊断**（`scripts/diagnose_input_dependence.py`），补上结论第 3 条的空缺，并确认 encoder 输出里共有成分是否仍占约 99.9%。
 2. **（无需训练或训练很少）排查 encoder 表示坍缩**：检查 501 维 landmark 输入的归一化（各维度的尺度、缺失帧怎样填充），以及 Conformer 和 bridge 输出在不同视频之间的方差。如果输入尺度被少数维度主导，或者 bridge 输出被 LayerNorm/bias 主导，就能解释为什么视频特有的信号这么弱。
 3. **做中等规模的记忆到泛化曲线**：例如 32 → 256 → 1,024 条训练样本，每档同时报告训练子集和固定 val 的 BLEU/chrF 以及错配 loss 差，定位泛化在哪一档开始失效。建议至少用 2 个 seed。
-4. **做针对 encoder 的消融**：给 encoder/bridge 和 T5 设置不同的学习率，或者先冻结 T5 decoder 预热 encod## 6. 代码与结果的提交状态（2026-09-25）
+4. **做针对 encoder 的消融**：给 encoder/bridge 和 T5 设置不同的学习率，或者先冻结 T5 decoder 预热 encoder，然后观察错配 loss 差能否明显高于约 0.1。以这个差值作为主要指标，BLEU 作为次要指标。
+5. **调整评估设置**：把生成的 max_length 放宽到能覆盖 val/frozen 参考句长度，或者按长度分桶报告，排除截断带来的偏差。
+6. **在第 1–4 步确认 encoder 能提供有效的视频信号之前，暂不建议**扩大到 100% 数据、换 flan-t5-base 或做长时间训练。
 
-**本报告的发布位置**：`super-inbox/visual-search-adhoc` 仓库，分支 `baobao/asl-p0-report-2026-09-25`，路径 `docs/daily_report/9.25/asl-p0-diagnostics/`。这次发布只上传了这一份报告文档。
+---
 
-**代码仓库 `gloss-free-asl-translation`**：
-- 以下代码已**在本地提交**到分支 `baobao/asl-tiny-overfit-2026-09-24`（基于 `main` 的 `5b7eb92`）：
-  - 源码修复：`src/models/manual_encoder.py`
-  - 训练、评估和诊断脚本：`scripts/overfit_tiny.py`、`scripts/train_p02.py`、`scripts/eval_checkpoint.py`、`scripts/diagnose_tiny.py`、`scripts/diagnose_input_dependence.py`、`scripts/diagnose_batch_context.py`
-  - 回归测试：`tests/test_padding_invariance.py`
-  - tiny32 样本 ID 列表：`experiments/tiny_overfit/tiny32_seed20260924_ids.txt`
-- **尚未推送**：推送到该仓库的 `origin`（`yyouretoast/gloss-free-asl-translation`）时返回 403，因为 GitHub 账号 `baobaoli03` 对该仓库没有写权限。远端没有这个分支，上面的代码目前**无法通过 GitHub 访问**。没有创建 PR，也没有创建 fork。
+## 6. 代码与结果的提交状态（2026-09-25）
 
-**仅本机保存的内容**（这两个仓库都没有上传）：
-- `results/` 整个目录，包括所有 summary、epoch_table、预测文件、日志和 checkpoint。它被 `.gitignore` 忽略，每个 P0.2 epoch checkpoint 约 420 MB。
-- `experiments/tiny_overfit/tiny32_seed20260924_manifest.json`。其中含有本机绝对路径，所以没有提交。抽样规则见第 4 节。
-- 训练和验证数据、frozen landmark 本身。
+**本目录在 GitHub 上已发布的内容**（`super-inbox/visual-search-adhoc`，分支 `baobao/asl-p0-report-2026-09-25`，路径 `docs/daily_report/9.25/asl-p0-diagnostics/`）：
+- 本报告和 `README.md`；
+- `code/`：代码仓库 commit `7da5734` 中本次新增或修改的 8 个文件，内容逐字节一致，另有 padding 修复的 patch：
+  - `src/models/manual_encoder.py`
+  - `scripts/overfit_tiny.py`、`train_p02.py`、`eval_checkpoint.py`、`diagnose_tiny.py`、`diagnose_input_dependence.py`、`diagnose_batch_context.py`
+  - `tests/test_padding_invariance.py`
+
+  这些代码**不能单独运行**，还依赖代码仓库中的其他文件和数据，见 README。
+- `evidence/`：P0.1、P0.2、padding 修复和输入错配诊断用到的 run_config、summary、epoch 表、逐 epoch 的 val/frozen 预测、逐条预测、指标、逐步日志、终端日志、样本 ID 和 tiny32 manifest。共 318 个文件，约 31.6 MB。
+  - 其中 11 个文件去除了本机路径前缀，数值没有改动，原件的 sha256 记录在 `MANIFEST.tsv`。
+  - `evidence/recompute_metrics.py` 可以从逐条预测复算 BLEU、chrF 和 exact match，发布前 385 项检查全部通过。
+
+**代码仓库 `gloss-free-asl-translation`**：commit `7da5734`（分支 `baobao/asl-tiny-overfit-2026-09-24`）**仍然只在作者本机，没有推送**。推送到 `yyouretoast/gloss-free-asl-translation` 时返回 403，因为 GitHub 账号 `baobaoli03` 对该仓库没有写权限。没有创建 PR，也没有创建 fork。本目录的 `code/` 是目前在 GitHub 上唯一能看到的副本。
+
+**仍未上传、只在作者本机的内容**（明细见 README）：
+- 全部模型权重：P0.2 两次运行的 58 个 epoch checkpoint（25.5 GB），P0.1 的 3 个最终模型（1.26 GB），每个 `model.safetensors` 420.8 MB；
+- batch-context 诊断的中间张量（0.49 GB）；
+- 与本报告无关的 smoke 运行；
+- 训练、验证和 frozen landmark、原始视频、metadata、split 文件；`.venv`；代码仓库中本次没有改动的文件。
+
+如需共享权重，README 中给出了建议方案，**尚未执行**。

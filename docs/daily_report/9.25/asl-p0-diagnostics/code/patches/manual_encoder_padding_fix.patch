@@ -1,0 +1,54 @@
+diff --git a/src/models/manual_encoder.py b/src/models/manual_encoder.py
+index d6d2436..816f7f8 100644
+--- a/src/models/manual_encoder.py
++++ b/src/models/manual_encoder.py
+@@ -5,7 +5,6 @@ from typing import Optional, Tuple
+ 
+ import torch
+ import torch.nn as nn
+-import torch.nn.functional as F
+ import math
+ 
+ 
+@@ -90,6 +89,12 @@ class ConformerConvModule(nn.Module):
+ 
+         x = self.pointwise_conv1(x)
+         x = self.glu(x)
++
++        # pointwise_conv1's bias makes padded positions non-zero again; re-zero them so the
++        # depthwise conv sees the same zero padding as an unpadded sequence
++        if key_padding_mask is not None:
++            x = x.masked_fill(key_padding_mask.unsqueeze(1), 0.0)
++
+         x = self.depthwise_conv(x)
+ 
+         # Transpose to (batch, seq_len, d_model) for LayerNorm to avoid padding bias
+@@ -285,6 +290,11 @@ class ConformerEncoder(nn.Module):
+ 
+         x = self.projection(x)
+ 
++        # Padded frames project to a non-zero vector (Linear bias + LayerNorm); zero them so the
++        # strided conv sees the same zero padding as an unpadded sequence
++        if attention_mask is not None:
++            x = x.masked_fill(attention_mask.unsqueeze(-1) < 0.5, 0.0)
++
+         # Downsample temporally
+         x = x.transpose(1, 2)
+         x = self.downsample(x)
+@@ -295,12 +305,10 @@ class ConformerEncoder(nn.Module):
+ 
+         key_padding_mask = None
+         if attention_mask is not None:
+-            # Downsample attention mask to match the feature downsampling Conv1d parameters (1 for valid, 0 for pad)
+-            # Use max_pool1d with same parameters (kernel_size=3, stride=2, padding=1) to ensure perfect alignment
+-            downsampled_mask = F.max_pool1d(
+-                attention_mask.unsqueeze(1).float(), kernel_size=3, stride=2, padding=1
+-            ).squeeze(1)
+-            key_padding_mask = downsampled_mask < 0.5
++            # Output position t of the stride-2 conv is centred on frame 2t, and an unpadded
++            # sequence of L frames yields ceil(L/2) positions; mark t valid iff frame 2t is valid.
++            # (max_pool1d(k=3, s=2, p=1) marked one extra position valid for even L.)
++            key_padding_mask = attention_mask[:, ::2] < 0.5
+ 
+             # Align mask length with features in a trace-friendly manner
+             key_padding_mask = key_padding_mask[:, : x.size(1)]

@@ -1,0 +1,2198 @@
+[
+ {
+  "sample_id": "1kMcBHJ2IPM_3-8-rgb_front",
+  "reference": "And there are two ways you can do this.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 1.7923442125320435
+ },
+ {
+  "sample_id": "0psMj0gsJjs_4-5-rgb_front",
+  "reference": "So you can have one or several psychiatrists in your game.",
+  "prediction": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 3.4851672649383545
+ },
+ {
+  "sample_id": "EQEjh8_dXSk_26-3-rgb_front",
+  "reference": "There's no better or worse.",
+  "prediction": "And that's what I'm going to do.",
+  "tf_loss": 2.214291572570801
+ },
+ {
+  "sample_id": "0HMTm0ljVl8_1-5-rgb_front",
+  "reference": "I'm an aesthetician and makeup artist at Ultra Salon and Cosmetics and I'm going to give you some tips on how you can fight oily skin.",
+  "prediction": "And I'm going to talk about how to use a sleeve.",
+  "tf_loss": 3.1665842533111572
+ },
+ {
+  "sample_id": "5Pm9nRXM-L0_5-8-rgb_front",
+  "reference": "They may be injured or something like that, and so the rescue dog serves a very important function of finding lost hikers, finding lost travelers, finding lost people that have, that have lost their way.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.116486549377441
+ },
+ {
+  "sample_id": "azmxjENWcXo_9-5-rgb_front",
+  "reference": "So you can do cap toe, wing tip, there's a lot of different options on that.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 3.328705072402954
+ },
+ {
+  "sample_id": "f6rSeB4glE8_8-8-rgb_front",
+  "reference": "I am going to put a minus sign next to the word \"merchant.\"",
+  "prediction": "And if you're going to do this, you're going to do it.",
+  "tf_loss": 3.442089319229126
+ },
+ {
+  "sample_id": "cfT0AmWaVUo_4_5_6-5-rgb_front",
+  "reference": "I'm going towards the crown. If we had a headache, I'd probably be staying there a little bit longer. Maybe not necessarily using my thumbs, but I can also use my middle finger or my index finger, or both and just staying there a little bit longer.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.246086359024048
+ },
+ {
+  "sample_id": "1Ibh1eWsoug_1-5-rgb_front",
+  "reference": "We want a eleven o'clock and a one o'clock with your toes.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.6877307891845703
+ },
+ {
+  "sample_id": "b-ATx2kXGCY_5-3-rgb_front",
+  "reference": "And it tells you if any members have been inactive and so it keeps a very close watch on what is actually happening.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.428567886352539
+ },
+ {
+  "sample_id": "DFS78Sd76ek_2-4-rgb_front",
+  "reference": "For instance this guy, he's been sitting here, he's not moving.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.705941677093506
+ },
+ {
+  "sample_id": "3LtXtL6PX0Q_12-5-rgb_front",
+  "reference": "When you look at pieces like this, you can see there's much more of a difference in the color.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a bit more a bit a",
+  "tf_loss": 2.145770788192749
+ },
+ {
+  "sample_id": "06S7xXXHWIs_10-5-rgb_front",
+  "reference": "You get them used to it over time work them into it.",
+  "prediction": "And, we're going to talk about how to use the sand.",
+  "tf_loss": 4.537356376647949
+ },
+ {
+  "sample_id": "EdJgTx0iFeE_9-5-rgb_front",
+  "reference": "A little bit further apart than hip width.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 4.194614410400391
+ },
+ {
+  "sample_id": "1TB2EBT2WQI_3-5-rgb_front",
+  "reference": "We need something to sop up that sauce.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 4.125654697418213
+ },
+ {
+  "sample_id": "-1fUFbij2s0_15-5-rgb_front",
+  "reference": "And I sharpen knives when I'm at work, I sharpen my knives before every task, so I don't have to stop in the middle and go back and sharpen it.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.289968252182007
+ },
+ {
+  "sample_id": "1b3UpS1gD2k_20-8-rgb_front",
+  "reference": "And I said \" Mr. Buckely my mother loves your accent\" and he was telling me about Bobby.",
+  "prediction": "And, if you're going to do a little bit of a bit of a sleeve, you'",
+  "tf_loss": 4.635852813720703
+ },
+ {
+  "sample_id": "-1rM0t5FMiE_7-5-rgb_front",
+  "reference": "Remove the hair and pull her leg up and keep finishing with the little pieces of hair that are sticking out here and there.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.7983789443969727
+ },
+ {
+  "sample_id": "1qMpH_7FL68_14-8-rgb_front",
+  "reference": "They could blow it off or they could get into hysterics when they're really not in trouble at all.",
+  "prediction": "So, you can use a sleeve and a sleeve and a sleeve and",
+  "tf_loss": 3.1740851402282715
+ },
+ {
+  "sample_id": "1KWcAgqPvEw_19-5-rgb_front",
+  "reference": "So, what we're going to do is take ours and just refold it right there at right there.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 2.8228583335876465
+ },
+ {
+  "sample_id": "celb3UJ9_Ko_8-8-rgb_front",
+  "reference": "This is a Buddha from a trip I took to Thailand.",
+  "prediction": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+  "tf_loss": 3.423865795135498
+ },
+ {
+  "sample_id": "c4cLox0Z9AA_4-8-rgb_front",
+  "reference": "Those are the action commands.",
+  "prediction": "And, you're going to go to the same place.",
+  "tf_loss": 3.0090627670288086
+ },
+ {
+  "sample_id": "1EeikJuDNao_8-5-rgb_front",
+  "reference": "And then you need three flower pieces which are with the holes that you embellish.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 4.417745113372803
+ },
+ {
+  "sample_id": "BlhCuryvt88_29-8-rgb_front",
+  "reference": "You just pull out and down.",
+  "prediction": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+  "tf_loss": 2.6875741481781006
+ },
+ {
+  "sample_id": "biBBePKaQMY_18-4-rgb_front",
+  "reference": "OK, some people have filters, sanitizers and other things that's going to kill that bacteria.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.893677234649658
+ },
+ {
+  "sample_id": "-0ZqnVFv7eI_2-5-rgb_front",
+  "reference": "When you get into advance tactics, you're talking about a lot of teamwork.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.0631191730499268
+ },
+ {
+  "sample_id": "0EXgSf1yN-0_9-8-rgb_front",
+  "reference": "So, when you start off doing breath stroke, I showed you how to do your legs, and you want to make sure that your arms are like this under the water.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.0694921016693115
+ },
+ {
+  "sample_id": "16n946j6kpM_15-8-rgb_front",
+  "reference": "Now take your time.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 3.1705501079559326
+ },
+ {
+  "sample_id": "E29uPL981ZQ_24-1-rgb_front",
+  "reference": "There's Tanzanian sand boas, Kenyan sand boas, rough scaled sand boas.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.16705322265625
+ },
+ {
+  "sample_id": "1QcVn72JzLw_0-5-rgb_front",
+  "reference": "What I'm doing here is I'm just kind of finishing up shaping my little orchid here.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a little bit more a bit more",
+  "tf_loss": 3.320578098297119
+ },
+ {
+  "sample_id": "bLR_bcYb0uI_7-5-rgb_front",
+  "reference": "Typically, if a tooth is sensitive to hot or cold, it means that the nerve in the tooth is still partially alive, and it can respond to temperature.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 3.1716537475585938
+ },
+ {
+  "sample_id": "48DncKS_yN0_32-8-rgb_front",
+  "reference": "Couple of dribbles, hit him, chest pass, right?",
+  "prediction": "So, I'm going to do a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 4.005253314971924
+ },
+ {
+  "sample_id": "1ib_NnOrt6A_7-8-rgb_front",
+  "reference": "Do you want to, there's probably going to be several different ways.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.6965179443359375
+ },
+ {
+  "sample_id": "19f_ac2f2C8_15-8-rgb_front",
+  "reference": "You'll have to have it redone again, so this is C.G, with Lips and More, and the greatest gift, is the gift of beauty.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.013940334320068
+ },
+ {
+  "sample_id": "1I7YRWosiJ8_2-5-rgb_front",
+  "reference": "So the hair can be evenly distribute on both sides.",
+  "prediction": "So, you can use the sand and the sand and the sand.",
+  "tf_loss": 3.2267696857452393
+ },
+ {
+  "sample_id": "1IHiA_6XXrI_26-5-rgb_front",
+  "reference": "Pajamas.",
+  "prediction": "And that's the way you want to go.",
+  "tf_loss": 3.619159698486328
+ },
+ {
+  "sample_id": "4S2nxOnWxVw_8-8-rgb_front",
+  "reference": "If you're going to be printing on the fabric, there's certain inks that you would use for that.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.479952812194824
+ },
+ {
+  "sample_id": "DoASe1QfXuI_5-3-rgb_front",
+  "reference": "This is the kind of a wrap that we could use on just about any extremity, so long as we recognize, that if we put this wrap in place, we've got to be able to get our fingers underneath, at the top and the bottom, but keeping it secure enough, so that it's not going to slip.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.090773344039917
+ },
+ {
+  "sample_id": "BJebuYFoRis_4-8-rgb_front",
+  "reference": "You can put it in boiling water and then put it in the freezer and it will not break.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.42677903175354
+ },
+ {
+  "sample_id": "-CI0wTBVlaI_9-8-rgb_front",
+  "reference": "I like to every now and then take just regular vegetable oil on a paper towel and wipe their beaks.",
+  "prediction": "And I'm going to talk about how to use a sleeve.",
+  "tf_loss": 3.8775973320007324
+ },
+ {
+  "sample_id": "034pv2RSK8E_4-8-rgb_front",
+  "reference": "Knees square with the hips.",
+  "prediction": "We're going to do this.",
+  "tf_loss": 3.3050074577331543
+ },
+ {
+  "sample_id": "075s9DECj2k_5-5-rgb_front",
+  "reference": "Watch how I extend my arms past my shoulders just like I did in the jump back and swing my arms quickly as I did in the arm string drill.",
+  "prediction": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+  "tf_loss": 4.083086967468262
+ },
+ {
+  "sample_id": "1YnA7Iv3oJ8_10-8-rgb_front",
+  "reference": "This one has different kind of levels of sensitivity here, right?",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.369311571121216
+ },
+ {
+  "sample_id": "BoBx1pDyFog_36-8-rgb_front",
+  "reference": "That enables a nice casting stroke.",
+  "prediction": "And that's why we're going to do this.",
+  "tf_loss": 3.913893222808838
+ },
+ {
+  "sample_id": "0xxbsy0Ek9I_3-5-rgb_front",
+  "reference": "Oops.",
+  "prediction": "And, yes.",
+  "tf_loss": 1.4993069171905518
+ },
+ {
+  "sample_id": "1XMJJ7B4Vjo_3-3-rgb_front",
+  "reference": "So in this case we are going to pour half a cap full of the rinse.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.381422281265259
+ },
+ {
+  "sample_id": "15-Lma3_mQ4_4-8-rgb_front",
+  "reference": "Well, if you go to a spa for reflexology massage it's a little bit different than going into a room and laying on a table and getting a full shiatsu or Swedish massage.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 2.882688283920288
+ },
+ {
+  "sample_id": "ez9_he04234_6-8-rgb_front",
+  "reference": "Am I regular?",
+  "prediction": "I'm going to do that.",
+  "tf_loss": 4.200736999511719
+ },
+ {
+  "sample_id": "4K_f93M-BrA_10-8-rgb_front",
+  "reference": "Then we're going to be looking at, is you need two heat bulbs.",
+  "prediction": "So, you can get a little bit of a little bit of a little bit of a little bit of a little bit",
+  "tf_loss": 3.2090647220611572
+ },
+ {
+  "sample_id": "23ZnD2tLoXU_0-5-rgb_front",
+  "reference": "Bring your chair to your left side and open up into the pose, Extending in all directions.",
+  "prediction": "So, you can't just go to the right side of the side, you can't just pull it out, you can",
+  "tf_loss": 3.9013123512268066
+ },
+ {
+  "sample_id": "0sal9F4RXeY_10-8-rgb_front",
+  "reference": "The second loop you do close to the first but not right into the first because it'll just pull the thread out.",
+  "prediction": "And, you can also use a sleeve to make sure you don't have a sleeve to",
+  "tf_loss": 3.9567503929138184
+ },
+ {
+  "sample_id": "5VseAeFbfgI_14-8-rgb_front",
+  "reference": "You will sew on those chalk lines and then you can just rub and the chalk will come off.",
+  "prediction": "And, if you want to do this, you can do it with a little bit of a little bit of a little bit",
+  "tf_loss": 3.7806990146636963
+ },
+ {
+  "sample_id": "3_EsFz2QLws_0-5-rgb_front",
+  "reference": "I've always thought a really fun part of tennis is dressing up for it.",
+  "prediction": "So, you can't just do it, you can't do it, you can do it, you can do it, you can",
+  "tf_loss": 3.594313859939575
+ },
+ {
+  "sample_id": "a8zoNzPmXik_7-8-rgb_front",
+  "reference": "Some vehicles you're going to have to wire the brakes yourself.",
+  "prediction": "And, if you're going to do that, you're going to have to do that.",
+  "tf_loss": 3.1902990341186523
+ },
+ {
+  "sample_id": "23vZCOWd5oE_13-5-rgb_front",
+  "reference": "There's a pluther of knowledge out there and every thingâs a click away.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.6654205322265625
+ },
+ {
+  "sample_id": "DSVW7Ak0qQw_0-5-rgb_front",
+  "reference": "The next silhouette is a mermaid, or a fish tailed silhouette.",
+  "prediction": "So, I'm going to go back to the back of the back.",
+  "tf_loss": 3.3870224952697754
+ },
+ {
+  "sample_id": "FGRuEn1-V4U_4-5-rgb_front",
+  "reference": "What we're going to do is we're going to use our block plane and we're going to plane this way about to where we reach half way point and then we're going to come around the other side and plane the other way.",
+  "prediction": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 2.594853401184082
+ },
+ {
+  "sample_id": "_DLMidC-b8w_24-8-rgb_front",
+  "reference": "Try to find a camera that's easier to use.",
+  "prediction": "And that's why I'm going to do this.",
+  "tf_loss": 2.37292742729187
+ },
+ {
+  "sample_id": "-dSv5URTW8M_18-5-rgb_front",
+  "reference": "So anyway, find a size you like or start with a pattern first.",
+  "prediction": "And, if you're going to do this, you're going to do this.",
+  "tf_loss": 3.803105354309082
+ },
+ {
+  "sample_id": "-a9uCz7Bo5E_17-8-rgb_front",
+  "reference": "Probably again there is a lot of influence on, on monitor lizards here, Komodo dragons and the like.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 4.207900524139404
+ },
+ {
+  "sample_id": "EYFKrcEtyy8_9-3-rgb_front",
+  "reference": "You just want to line it up so that the back pad does not go any further then the saddle pad and that it is lined up evenly with this side.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.5864486694335938
+ },
+ {
+  "sample_id": "cH9SbtBbEEY_4-8-rgb_front",
+  "reference": "Joining me from Pro Star Mixed Martial Arts is Mr. Joe Brignoli.",
+  "prediction": "I'm going to talk about the sand.",
+  "tf_loss": 5.074044227600098
+ },
+ {
+  "sample_id": "EdJgTx0iFeE_25-5-rgb_front",
+  "reference": "Once again, if it starts to fall, really give it that kick.",
+  "prediction": "So, if you're going to be a little bit more a bit more a bit more a bit a bit",
+  "tf_loss": 3.3365025520324707
+ },
+ {
+  "sample_id": "0IEzAXxCjO4_11-5-rgb_front",
+  "reference": "They're just muscle relaxants.",
+  "prediction": "I'm going to do this.",
+  "tf_loss": 3.48416805267334
+ },
+ {
+  "sample_id": "aygp09D7Z_w_11-5-rgb_front",
+  "reference": "Go through all your steps, boom, you're ready to swing, you still want to stay on top of the ball.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.309597969055176
+ },
+ {
+  "sample_id": "10om04b2LIw_23-8-rgb_front",
+  "reference": "And they're sort of veiny and oddly connected.",
+  "prediction": "So, you can't get a little bit of a lot of a lot of a lot of a lot of",
+  "tf_loss": 3.625317335128784
+ },
+ {
+  "sample_id": "-ayXzLtkpQU_2-8-rgb_front",
+  "reference": "That's where it starts, is with trapping that line.",
+  "prediction": "So, you can do that.",
+  "tf_loss": 3.0873212814331055
+ },
+ {
+  "sample_id": "0HW3SuQbV7g_18_19_20-5-rgb_front",
+  "reference": "So, what I just do--see? It's still fleshy like a potato. I just rip this off 'cause it's the eyes that matter, not the roots and get rid of that and you still have a good plant.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.706552028656006
+ },
+ {
+  "sample_id": "1zRg1-tq9Uc_4-8-rgb_front",
+  "reference": "I don't want to be thinking this is just a certain area for muddled color and I don't need to be paying attention to those things.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.708249568939209
+ },
+ {
+  "sample_id": "1ei1kVTw23A_14-8-rgb_front",
+  "reference": "Now he's going to do it in slow-motion.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.2219769954681396
+ },
+ {
+  "sample_id": "1DSsHgAToGY_7-5-rgb_front",
+  "reference": "And now gray is actually the new black.",
+  "prediction": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 3.960578441619873
+ },
+ {
+  "sample_id": "5q5q5d8vP24_13-8-rgb_front",
+  "reference": "If you're between clubs and you're using the hammer swing, go with the longer club and swing easy when you're in between two clubs on the course.",
+  "prediction": "So, you can't get a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 3.8126957416534424
+ },
+ {
+  "sample_id": "1YnA7Iv3oJ8_8-8-rgb_front",
+  "reference": "You ought to see if they're any good anymore.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.574937105178833
+ },
+ {
+  "sample_id": "EBmoqACA2tE_5-8-rgb_front",
+  "reference": "These are real nice because you don't have to do any folding of the ground cloth or anything like that.",
+  "prediction": "So, we're going to have a sleeve and we're going to have a sleeve",
+  "tf_loss": 3.165395736694336
+ },
+ {
+  "sample_id": "05pLyheXjeo_5-5-rgb_front",
+  "reference": "Because, I cut off her head.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 3.7118961811065674
+ },
+ {
+  "sample_id": "1_gd9m2tKvQ_8-8-rgb_front",
+  "reference": "But any time you string your racket, you want to set aside about thirty-six feet, linear feet of string for your racket.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.179722785949707
+ },
+ {
+  "sample_id": "034pv2RSK8E_1-8-rgb_front",
+  "reference": "We're going to put the weight behind our knee.",
+  "prediction": "So, we're going to go to the bottom of the bottom.",
+  "tf_loss": 2.1107077598571777
+ },
+ {
+  "sample_id": "eUkBa7h9VGM_7-5-rgb_front",
+  "reference": "Sometimes if you can find other friends who have a press, press is pretty important.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.5157885551452637
+ },
+ {
+  "sample_id": "1IRrpQJQvI4_5-5-rgb_front",
+  "reference": "Why is it important?",
+  "prediction": "I'm going to go to the next step.",
+  "tf_loss": 2.693645715713501
+ },
+ {
+  "sample_id": "ChTrqV8j3Fk_2-8-rgb_front",
+  "reference": "In this segment, we're going to talk about the maximum working distance of the multi-use fire extinguisher.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 2.7250611782073975
+ },
+ {
+  "sample_id": "1EEgqE9W4k8_12-3-rgb_front",
+  "reference": "Make sure that you clear a space and it's nice and comfortable with room for you to hoop around your waist, as well as taking it up and over your head.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.2735416889190674
+ },
+ {
+  "sample_id": "dZztN9Ewuzo_1-5-rgb_front",
+  "reference": "Again, you want to make sure you are in proper posture.",
+  "prediction": "And, you can see how you can do this.",
+  "tf_loss": 2.0067601203918457
+ },
+ {
+  "sample_id": "DOc7dEiPdQo_1-8-rgb_front",
+  "reference": "This is a nice looking chain guard, again it's got the space age style you'd find on a middleweight cycle.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a little bit more a little bit",
+  "tf_loss": 4.416961193084717
+ },
+ {
+  "sample_id": "2fThEtRYq7c_2-3-rgb_front",
+  "reference": "Another gag gift that you could get a co-worker would be a dart board with a picture of say your boss on it if you don't like him very much.",
+  "prediction": "So, if you're going to be a little bit more a little bit more a little bit more a bit more",
+  "tf_loss": 4.074707508087158
+ },
+ {
+  "sample_id": "1g8yWLfws8I_3-8-rgb_front",
+  "reference": "It's called tapping on the center.",
+  "prediction": "And that's how you can do it.",
+  "tf_loss": 2.903841495513916
+ },
+ {
+  "sample_id": "5sFOPW5LyA4_5-8-rgb_front",
+  "reference": "What you need to know is the bat is a long, cylinder.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.9309301376342773
+ },
+ {
+  "sample_id": "ahki1p2lqPI_6-8-rgb_front",
+  "reference": "Well first you want to approach the ball at a slight angle, your supporting foot comes a little bit behind the foot about six inches away from the ball, your kicking foot is going to approach the ball pointing your toes down, locking the ankle, and you're going to be kicking the ball with your shoelace.",
+  "prediction": "So, you can use a little bit of a sleeve to get the sleeve to the s",
+  "tf_loss": 3.5860607624053955
+ },
+ {
+  "sample_id": "12Q2z61azPg_10-8-rgb_front",
+  "reference": "Helps to, to clean off your knife first.",
+  "prediction": "And that's the way you can get the right thing.",
+  "tf_loss": 4.241154193878174
+ },
+ {
+  "sample_id": "EtbvdM_PTy0_16-5-rgb_front",
+  "reference": "You have different type of faucets.",
+  "prediction": "And that's the way you're going to do it.",
+  "tf_loss": 2.9536051750183105
+ },
+ {
+  "sample_id": "17hrR6QZBdU_3-8-rgb_front",
+  "reference": "This is a seminal text about improvisation, mainly about the psychological approach to improv, what goes on in the mind and the body, when you are improvising.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.5187389850616455
+ },
+ {
+  "sample_id": "eUgIpi7-Aqo_3-8-rgb_front",
+  "reference": "So this is root and ground vegetables here.",
+  "prediction": "So, I'm going to do a little bit of a little bit of a little bit of a little bit of",
+  "tf_loss": 4.469686031341553
+ },
+ {
+  "sample_id": "1yvskpdZCPs_11-8-rgb_front",
+  "reference": "You want to look towards your legs, try to avoid looking up towards the ceiling.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.4244565963745117
+ },
+ {
+  "sample_id": "ecerzCFJ7xg_0-8-rgb_front",
+  "reference": "In this clip not only are we going to add fancy foot work but we're going to show what we do with our hands at the same time.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.2194621562957764
+ },
+ {
+  "sample_id": "0xxbsy0Ek9I_15-5-rgb_front",
+  "reference": "I don't want this one.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 1.8145709037780762
+ },
+ {
+  "sample_id": "24-pXXQodVQ_4-5-rgb_front",
+  "reference": "Remember that a copyright is a constitutional guarantee of the authorship of a work of art, or medium of expression, it covers both published and unpublished works, but it's a very specialized area, and if you don't know what you're doing, you can get into a lot of trouble.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.6970486640930176
+ },
+ {
+  "sample_id": "d1h3XLGDMEY_4-8-rgb_front",
+  "reference": "One thing that you can use is a prepaid credit card.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.4893720149993896
+ },
+ {
+  "sample_id": "5VseAeFbfgI_10-8-rgb_front",
+  "reference": "So to further mark with chalk I would just, like I made my marks an inch and a half apart.",
+  "prediction": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+  "tf_loss": 4.430788516998291
+ },
+ {
+  "sample_id": "-eJI_YOtHNE_0_2_3-5-rgb_front",
+  "reference": "Hi! I'm John with expertvillage.com and we have our light switch plate cover and it's almost finished. All we have to do is seal it. Before we seal it, we can do a couple of other things.",
+  "prediction": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+  "tf_loss": 4.6323442459106445
+ },
+ {
+  "sample_id": "0HPNKFjr1KQ_9-5-rgb_front",
+  "reference": "So, who has time for that?",
+  "prediction": "So, you can't do it.",
+  "tf_loss": 3.001466989517212
+ },
+ {
+  "sample_id": "f6rSeB4glE8_1-8-rgb_front",
+  "reference": "We saw how the plus sign works in our Google search.",
+  "prediction": "And that's the way to go.",
+  "tf_loss": 4.434703826904297
+ },
+ {
+  "sample_id": "3daeOlNR8_A_21-5-rgb_front",
+  "reference": "Depending on your cat's usage and how many litter boxes you have in the house.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.158228874206543
+ },
+ {
+  "sample_id": "1KoWaCTX1jU_24-5-rgb_front",
+  "reference": "I'm Alexa Sparkman until next time.",
+  "prediction": "I'm going to talk about how to use the sand.",
+  "tf_loss": 4.318648338317871
+ },
+ {
+  "sample_id": "1CokUs2TOlw_4-5-rgb_front",
+  "reference": "So you're going to exhale and then back down, exhale and back down, exhale and back down, exhale and back down.",
+  "prediction": "So, you can use the sand and the sand and the sand and the sand and the sand",
+  "tf_loss": 2.461738109588623
+ },
+ {
+  "sample_id": "EmmuWoCUgXs_11-8-rgb_front",
+  "reference": "So those are some aspects that you want to look at it.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.5882017612457275
+ },
+ {
+  "sample_id": "0pryZawZCJI_3-5-rgb_front",
+  "reference": "Then you're going to take some sour mix, so pour that into your concoction as well, and then you're going to shake this up really well.",
+  "prediction": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 2.834491491317749
+ },
+ {
+  "sample_id": "4EFBr4Oe2ZE_6-8-rgb_front",
+  "reference": "When you are in a new posture, you might start to be aware of your legs.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.798668146133423
+ },
+ {
+  "sample_id": "cbBb4MkVqQw_11-5-rgb_front",
+  "reference": "Basically, the bottom line on gossip, is it is a negative thing that is very hard to repair.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.3598897457122803
+ },
+ {
+  "sample_id": "E6Cnf4SEZc0_15-8-rgb_front",
+  "reference": "And now you don't have to tug very hard, but we just want something physical associated with that word 'come'.",
+  "prediction": "And, if you want to do that, you can do it with a little bit of a little bit of a little bit",
+  "tf_loss": 3.4769699573516846
+ },
+ {
+  "sample_id": "F1495o0hagE_16-8-rgb_front",
+  "reference": "That looks great.",
+  "prediction": "So, we're going to do it.",
+  "tf_loss": 2.4937691688537598
+ },
+ {
+  "sample_id": "0EjXICFqrKo_44-8-rgb_front",
+  "reference": "Still keeping the navel scooped in.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 4.0932159423828125
+ },
+ {
+  "sample_id": "3yeunpfsN_Q_6-3-rgb_front",
+  "reference": "That's why I've got a strap around my waist.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.1002721786499023
+ },
+ {
+  "sample_id": "19loES0r7_4_1-8-rgb_front",
+  "reference": "So I've got a few things here that we're going to be looking at.",
+  "prediction": "And, if you're going to have a good time, you're going to have to do it.",
+  "tf_loss": 1.674835205078125
+ },
+ {
+  "sample_id": "0IsoobG67PY_2-5-rgb_front",
+  "reference": "A lot of us has started it into the journey down the garden path with vegetable gardening, growing vegetables out in the garden with our kids, with our moms and dads, with our grandparents maybe and it is one of the rewarding things you can do in the garden.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 4.496914386749268
+ },
+ {
+  "sample_id": "1nAiestkr0Q_7-11-rgb_front",
+  "reference": "Something that you can tie, and that wouldn't slip off very easily.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.319749116897583
+ },
+ {
+  "sample_id": "2-JvO5SCsCc_3-8-rgb_front",
+  "reference": "That's because we're trying to aleve pressure sores.",
+  "prediction": "And that's the way you can get to the bottom of the bottom.",
+  "tf_loss": 3.2553656101226807
+ },
+ {
+  "sample_id": "eMhscu5bckc_2-5-rgb_front",
+  "reference": "How do I not gossip when everybody at work is gossiping?",
+  "prediction": "And, if you're going to be a little bit more a little bit more a bit more a bit a",
+  "tf_loss": 4.60894250869751
+ },
+ {
+  "sample_id": "0EW2ql96Ksc_1-8-rgb_front",
+  "reference": "And the next measurement that we're going to go over is the shoulder to waist measurement.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.9540786743164062
+ },
+ {
+  "sample_id": "57_1T6O51TQ_12-8-rgb_front",
+  "reference": "And, so the third and fourth reason are overweight and not moving enough.",
+  "prediction": "And, if you're going to do a little bit of a bit of a sleeve, you'",
+  "tf_loss": 4.471359729766846
+ },
+ {
+  "sample_id": "0tbZoN0v4OE_32-8-rgb_front",
+  "reference": "These Capuchin monkeys don't really have large hands, they have little bit smaller limbs.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.799017906188965
+ },
+ {
+  "sample_id": "d-cJHsXcKCQ_10-8-rgb_front",
+  "reference": "You don't want to take off on somebody, which means, you know, the person who's on the wave or the person who's paddling for the wave and they're closest to the peak.",
+  "prediction": "And, if you're going to do a little bit of a bit of a sleeve, you'",
+  "tf_loss": 2.8372914791107178
+ },
+ {
+  "sample_id": "1kMlu1Z5DWM_11-8-rgb_front",
+  "reference": "If you get 30 pins in the first, and 30 pins all the way through to the 12th frame, or the 10th frame, 300!",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.6464345455169678
+ },
+ {
+  "sample_id": "0JLA3FdXedM_10-5-rgb_front",
+  "reference": "And that more reinforces in their mind the correct way to write things.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 4.239776134490967
+ },
+ {
+  "sample_id": "11bX6_dM6UQ_9-8-rgb_front",
+  "reference": "So, it gets flushed with blood.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.659067392349243
+ },
+ {
+  "sample_id": "18NasCihOMs_18-8-rgb_front",
+  "reference": "JOE PARSONS: One.",
+  "prediction": "It's a great way to do this.",
+  "tf_loss": 3.7800865173339844
+ },
+ {
+  "sample_id": "1EidpMNIaJE_6_7-5-rgb_front",
+  "reference": "There we go.Go ahead and pour that in, and let's give it a little mix. That should do it, and you're not going to want to let this drink sit around for very long, because the lime juice will actually separate, after a little while, and go ahead and give it a, well, let's set it up here.",
+  "prediction": "So, you can use a sand and a sand and a sand and a sand and",
+  "tf_loss": 3.47078800201416
+ },
+ {
+  "sample_id": "1FStJdud1lQ_15-5-rgb_front",
+  "reference": "I like to cut my threads, though.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 3.3175554275512695
+ },
+ {
+  "sample_id": "48DncKS_yN0_12-8-rgb_front",
+  "reference": "Into the pass, thumbs down.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 3.733975887298584
+ },
+ {
+  "sample_id": "c8qCeBSlaOw_2-8-rgb_front",
+  "reference": "If you hoop to the right, your second hand is your right hand.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.957972526550293
+ },
+ {
+  "sample_id": "-CiUc2Gk4v8_8-8-rgb_front",
+  "reference": "Now, although it is not recommended to use an extension chord, if you do have a situation where you need to use one to reach your location, you want to make sure that the extension chord is of the proper rating.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.28702449798584
+ },
+ {
+  "sample_id": "1EeikJuDNao_4-5-rgb_front",
+  "reference": "It's a small chain, it's not too bulky.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.2610442638397217
+ },
+ {
+  "sample_id": "1P0nCPuAqQU_1-8-rgb_front",
+  "reference": "Now using a marver like I did there will help your glass, like I said, keep its color as opposed to letting the flame do all the work for you because the flame can do what I just did and ball the glass up into a disc or a glob but you run the risk of burning the colors actually out of the glass so using your instruments definitely helps the colors stay.",
+  "prediction": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+  "tf_loss": 4.355749130249023
+ },
+ {
+  "sample_id": "1-2UTIfxWao_14-5-rgb_front",
+  "reference": "When you flip it over you can't see it on the other side.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.050779104232788
+ },
+ {
+  "sample_id": "03WUE9zzQY4_8-8-rgb_front",
+  "reference": "Visual.",
+  "prediction": "Okay.",
+  "tf_loss": 2.9547579288482666
+ },
+ {
+  "sample_id": "Dh9XkH0EOMA_11-8-rgb_front",
+  "reference": "Now lastly, with a storm door, our storm door that we're going to be purchasing will have a screen in it where as this one does not.",
+  "prediction": "So, if you're going to be a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.6289548873901367
+ },
+ {
+  "sample_id": "06St8W_JHok_9-5-rgb_front",
+  "reference": "Now if you're not so lucky to live near the ocean then you have to rely on pictures.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.7316033840179443
+ },
+ {
+  "sample_id": "0KU13AH-7bQ_4-5-rgb_front",
+  "reference": "So we're just going to take a little bit right on our fingertips, do some fingertip application.",
+  "prediction": "So, we're going to talk about how to use a sleeve.",
+  "tf_loss": 2.844149351119995
+ },
+ {
+  "sample_id": "1lmKfz4AyeQ_18-8-rgb_front",
+  "reference": "So it's how you want to accent your music and make your shimmy look really special doing your forward and back sliding shimmy.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 4.487573623657227
+ },
+ {
+  "sample_id": "-CtWAhfREEc_6-8-rgb_front",
+  "reference": "It's a form of entertainment that helps people really relax.",
+  "prediction": "And that's why I'm going to do this.",
+  "tf_loss": 2.6469919681549072
+ },
+ {
+  "sample_id": "c4Az5nStT7I_19-2-rgb_front",
+  "reference": "I would like to advocate feeding your cat wet food which contains a lot of water.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.430999279022217
+ },
+ {
+  "sample_id": "4K6kvm-NRYQ_15-8-rgb_front",
+  "reference": "Once you bring your car in, you should be able to have the mechanic look over your car and assess any repairs that need to be made.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.3825809955596924
+ },
+ {
+  "sample_id": "23LLbhn_Mjg_15-5-rgb_front",
+  "reference": "So the third thing that I did was to unload my kitchen.",
+  "prediction": "So, we're going to have a lot of fun with the sand.",
+  "tf_loss": 3.2757489681243896
+ },
+ {
+  "sample_id": "eKWP0Bql7g4_5-8-rgb_front",
+  "reference": "Right side's the rear for both the brakes and the shifting, left side's the front, so I would shift myself into the harder chain ring up front.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 3.944802761077881
+ },
+ {
+  "sample_id": "1Vq_uqeckF8_22-8-rgb_front",
+  "reference": "A thicker filet, once again, I'm going to cut it straight down.",
+  "prediction": "And, if you're going to do a little bit of a sleeve, you're going to do",
+  "tf_loss": 3.083782196044922
+ },
+ {
+  "sample_id": "0u83ZskRPt0_0-8-rgb_front",
+  "reference": "So here you have the possibility to look inside this kind of chipper shredder.",
+  "prediction": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.5807602405548096
+ },
+ {
+  "sample_id": "Bnm6QaAj6Qo_10-3-rgb_front",
+  "reference": "Now, there's an image of this half face on that DVD.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.2520954608917236
+ },
+ {
+  "sample_id": "CuqR-BVLU9k_9-8-rgb_front",
+  "reference": "What you want to do is you want to put the accents on the ups so when you come up, up, real sharp, drop slow.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.5403075218200684
+ },
+ {
+  "sample_id": "146HWl-YGTo_6-8-rgb_front",
+  "reference": "Place a pin about 1/4 inch down and then 1/4 inch down from that pin is where we will be doing the button hole.",
+  "prediction": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 3.735196352005005
+ },
+ {
+  "sample_id": "0Dgty_NNa48_4-5-rgb_front",
+  "reference": "The major conflict is what is the biggest conflict in the play?",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 4.087275505065918
+ },
+ {
+  "sample_id": "08nsvHZLNfE_5-5-rgb_front",
+  "reference": "The first thing we really need to do is take a look in the mirror.",
+  "prediction": "And, we're going to talk about how to use the sand.",
+  "tf_loss": 1.83171546459198
+ },
+ {
+  "sample_id": "1gqVLt2Z-DY_12-8-rgb_front",
+  "reference": "We've got dance.",
+  "prediction": "We're going to go to the same place.",
+  "tf_loss": 2.376776933670044
+ },
+ {
+  "sample_id": "eJIeFdrw4hM_9-8-rgb_front",
+  "reference": "Something else that you can do, is you can promise to your students that you will learn their names, and then that puts a lot of pressure on you because you don't want to break your promise.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.343574285507202
+ },
+ {
+  "sample_id": "05gjcxakphc_7-5-rgb_front",
+  "reference": "They may not go with every outfit but I have a pretty plain top and jeans on.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have to do a",
+  "tf_loss": 4.23486328125
+ },
+ {
+  "sample_id": "bwvtAII4pG0_31-5-rgb_front",
+  "reference": "One, two, three, five, six, seven.",
+  "prediction": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 2.0020925998687744
+ },
+ {
+  "sample_id": "0C_NjyLtHwc_76-8-rgb_front",
+  "reference": "And that's how you sew on a button that has two holes.",
+  "prediction": "And that's why we're going to do this.",
+  "tf_loss": 2.718451738357544
+ },
+ {
+  "sample_id": "4C6UadTF65I_2-8-rgb_front",
+  "reference": "In this case, on the bottom.",
+  "prediction": "So, we're going to go back to the back.",
+  "tf_loss": 2.370525598526001
+ },
+ {
+  "sample_id": "305bKBYRZfk_20-8-rgb_front",
+  "reference": "And the concept is pretty much to go from one bolt, you just have to pick one and start with it, to going to the next farthest one away.",
+  "prediction": "And, we're going to have a little bit of a little bit of a little bit of a little bit of",
+  "tf_loss": 3.5799942016601562
+ },
+ {
+  "sample_id": "1uXVMh-7lmI_11-8-rgb_front",
+  "reference": "I love the spots, and I love the different textures of the Cleopatra, it's gorgeous.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.0896096229553223
+ },
+ {
+  "sample_id": "_ClrZy5Kkkk_19-5-rgb_front",
+  "reference": "Basically they're supplements that help maintain a high quality of skin care for the cat which helps reduce the dander because the less dry skin, which helps reduce shedding.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.742173671722412
+ },
+ {
+  "sample_id": "077rQK39ycg_22-5-rgb_front",
+  "reference": "There's our vegetables.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 3.3512027263641357
+ },
+ {
+  "sample_id": "fB33NsuFbV0_1-1-rgb_front",
+  "reference": "There's four different types of fire you can learn, and use them in different scenarios.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.9357376098632812
+ },
+ {
+  "sample_id": "4UlmDZi98fk_2-5-rgb_front",
+  "reference": "One of the first things you can do just without buying anything is just to check and see your hard drive.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 3.173978328704834
+ },
+ {
+  "sample_id": "C_WfqBPxfJg_5-5-rgb_front",
+  "reference": "Keep looking straight ahead so the throat stays in line with the shoulders and the eyes are even with the floor.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.9388749599456787
+ },
+ {
+  "sample_id": "-1fUFbij2s0_7-5-rgb_front",
+  "reference": "Believe me.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.6008923053741455
+ },
+ {
+  "sample_id": "1T2EUqlbTtk_4-5-rgb_front",
+  "reference": "Take your left leg and cross it over your right leg.",
+  "prediction": "So, you can use a little bit of a sleeve to get the sleeve to the s",
+  "tf_loss": 3.173644542694092
+ },
+ {
+  "sample_id": "1aRNY8wFqa0_4-8-rgb_front",
+  "reference": "They have a bunch of sizes of these.",
+  "prediction": "I'm going to talk about how to use it.",
+  "tf_loss": 2.8549466133117676
+ },
+ {
+  "sample_id": "1-9KdWON_R0_10-5-rgb_front",
+  "reference": "These are the benefits of indoor rock climbing gyms.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.6118993759155273
+ },
+ {
+  "sample_id": "-BWRIFAD4_s_8-8-rgb_front",
+  "reference": "For the ganache layer we are going to use a ganache layer and a ganache topping we are using 8 ounces of the semi sweet chocolate and a 1/2 cup of cream.",
+  "prediction": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 2.9405124187469482
+ },
+ {
+  "sample_id": "bwLhAEu1h90_6-5-rgb_front",
+  "reference": "They have some type of foot wells or foot pedals in them depending if they do or don't have a rudder.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.1766772270202637
+ },
+ {
+  "sample_id": "1TUhpDtbOck_7-5-rgb_front",
+  "reference": "This is a line bale.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 3.125157594680786
+ },
+ {
+  "sample_id": "eK4B85cNKOo_14-8-rgb_front",
+  "reference": "This is called a guillotine type nail trimmer, a lot of people use these for cats and dogs too.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a bit more a bit a",
+  "tf_loss": 3.5044991970062256
+ },
+ {
+  "sample_id": "cQwxm1k62WY_7-5-rgb_front",
+  "reference": "I've got this artificial light up here that is on every night.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.7029101848602295
+ },
+ {
+  "sample_id": "14hq4hRjwLc_7-8-rgb_front",
+  "reference": "Now, the height we can't see because it's up inside this valance, but there will be a top finished surface just like this drywall finish up inside.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.7967755794525146
+ },
+ {
+  "sample_id": "EQ4tPCXpWsg_3-8-rgb_front",
+  "reference": "The tire that I have here on the front of my bike that is in my left hand right now is still really usable.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.2084438800811768
+ },
+ {
+  "sample_id": "2-vXO7MMLJc_14-5-rgb_front",
+  "reference": "That's how you would want to use a concealer when you're trying to achieve a perfect canvas look.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.520352363586426
+ },
+ {
+  "sample_id": "305bKBYRZfk_8-8-rgb_front",
+  "reference": "You'll see it's seated right there.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.3059325218200684
+ },
+ {
+  "sample_id": "3rW6wKS5nTU_0-5-rgb_front",
+  "reference": "My name is Jared Todd and I'm going to talk to you a little bit about the selection of the steel and why it's important in the style of knife that you choose.",
+  "prediction": "And if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 2.5636868476867676
+ },
+ {
+  "sample_id": "1ib_NnOrt6A_17-8-rgb_front",
+  "reference": "But, and I have it alot of times I will shut it and use it for a little table.",
+  "prediction": "So, you can just pull the ball out of the back and pull it out of the back and pull it out of the back and pull it",
+  "tf_loss": 3.03159236907959
+ },
+ {
+  "sample_id": "BfS0S717ykQ_7-2-rgb_front",
+  "reference": "It is a mousse treatment that you put on your hair.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.979668140411377
+ },
+ {
+  "sample_id": "-cv1gZaGtNk_1-5-rgb_front",
+  "reference": "I am with the Austin Homebrew Supply in Austin, Texas.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.02091646194458
+ },
+ {
+  "sample_id": "_4PBd_wiX_A_4-5-rgb_front",
+  "reference": "So what you're going to want to do is set up in your feet a rolling fakie position, going up the ramp backwards, and just before you get to the top, you generate enough momentum to turn all the way around, and get into this feeble position.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.2967073917388916
+ },
+ {
+  "sample_id": "FqtRy8RJa7E_5-3-rgb_front",
+  "reference": "Well a ten needs a three.",
+  "prediction": "And that's why we're going to do this.",
+  "tf_loss": 3.808361053466797
+ },
+ {
+  "sample_id": "1CsY0C0R2EI_1-5-rgb_front",
+  "reference": "The one thing you want to be aware of is just where the surf is breaking.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 2.9573659896850586
+ },
+ {
+  "sample_id": "0t4O9jMywAo_4-11-rgb_front",
+  "reference": "It's very simple to use.",
+  "prediction": "You can't do it.",
+  "tf_loss": 1.294472336769104
+ },
+ {
+  "sample_id": "0G4GGoZBQPo_4-8-rgb_front",
+  "reference": "But now we want to grab from the stash of hair that's in the middle, just to kind of keep it in line.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 3.1049792766571045
+ },
+ {
+  "sample_id": "De2llnXYz1U_12_13-5-rgb_front",
+  "reference": "So don't yell, know the number that you're going to call. Know if it's national that you have to dial 1 before the telephone number and speaks softly, speaks clearly; Kathy Pabst Robshaw, Telephone Effectiveness.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.285635471343994
+ },
+ {
+  "sample_id": "cTsJTnEs_hs_16-1-rgb_front",
+  "reference": "You can see his balance as he comes through.",
+  "prediction": "And that's the way you're going to do it.",
+  "tf_loss": 3.119542121887207
+ },
+ {
+  "sample_id": "3NFVQAQDGXE_7-5-rgb_front",
+  "reference": "Purpose is so important.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.863920211791992
+ },
+ {
+  "sample_id": "01m9yM04RwY_13-3-rgb_front",
+  "reference": "And strainer.",
+  "prediction": "And that's what you need.",
+  "tf_loss": 3.9851253032684326
+ },
+ {
+  "sample_id": "1835p3jEejw_12-8-rgb_front",
+  "reference": "This is very similar to a shooting enclosure in a way.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.3573670387268066
+ },
+ {
+  "sample_id": "3wrA8v-xDlg_3-8-rgb_front",
+  "reference": "Otherwise why would you only stop at one side, what's the point of that?",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.3179633617401123
+ },
+ {
+  "sample_id": "DFS78Sd76ek_5-4-rgb_front",
+  "reference": "There's the limp test, which is, is the crab limp?",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.525491714477539
+ },
+ {
+  "sample_id": "bUsxa-igAF0_7-8-rgb_front",
+  "reference": "Alright, it doesn't take very long.",
+  "prediction": "I'm going to do it.",
+  "tf_loss": 2.05475115776062
+ },
+ {
+  "sample_id": "03EzcoSP2pc_14-8-rgb_front",
+  "reference": "If it does go off the keeper, then the player is allowed to then try to get the rebound into the goal.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+  "tf_loss": 3.474604606628418
+ },
+ {
+  "sample_id": "f3A9L7yGmEM_22-3-rgb_front",
+  "reference": "Because the physical part of the game is not the hard part.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.0956578254699707
+ },
+ {
+  "sample_id": "03WUE9zzQY4_5-8-rgb_front",
+  "reference": "So I'm sure you've probably never heard it.",
+  "prediction": "And that's what I'm going to do.",
+  "tf_loss": 2.393822431564331
+ },
+ {
+  "sample_id": "1jVOx59INmU_16-11-rgb_front",
+  "reference": "This is not a huge batch of cornbread, really isn't.",
+  "prediction": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+  "tf_loss": 2.900317668914795
+ },
+ {
+  "sample_id": "eIOmY6ub-I0_2-5-rgb_front",
+  "reference": "Look how it's now boiling like that.",
+  "prediction": "And that's the way you're going to do it.",
+  "tf_loss": 3.6517045497894287
+ },
+ {
+  "sample_id": "3Uu9_GGILmc_2-8-rgb_front",
+  "reference": "We've done enough with the eyes that you can just maybe do a little eyeliner, a little mascara, and you're done.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.315484046936035
+ },
+ {
+  "sample_id": "CPZREUAZgsA_17-8-rgb_front",
+  "reference": "So again, I comb the hair over, have it nice and tight, I'm down to a horizontal, slightly twist the hair over, grab it with my fingers, notice that where my shortest piece will be is about at the bridge of the nose, cut the hair off bluntly, release the hair and comb it back over the side that we want it to go on.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 3.7369394302368164
+ },
+ {
+  "sample_id": "09wc1lfk_P4_2-8-rgb_front",
+  "reference": "I'm here to talk about how to choose your reception menu for your elegant beach theme wedding.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a little bit more a little bit",
+  "tf_loss": 3.562375068664551
+ },
+ {
+  "sample_id": "1fAed0ulvSA_5-8-rgb_front",
+  "reference": "You've got to have your toilet fifteen and a half to sixteen inches at least from any finished surface so that there's room to get in and out of this confined space.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.635467529296875
+ },
+ {
+  "sample_id": "edhG6Fflhtg_6-8-rgb_front",
+  "reference": "When you touch just put a little weight into it.",
+  "prediction": "And that's the way you want to go.",
+  "tf_loss": 3.177792549133301
+ },
+ {
+  "sample_id": "Eh4cZxdMMc8_10-8-rgb_front",
+  "reference": "And also, you incorporate air inside that flour, and that air gives it space, therefore it will mix much better inside the dough that you're trying to prepare.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 4.76557731628418
+ },
+ {
+  "sample_id": "45XYg7z7CdQ_9-5-rgb_front",
+  "reference": "So this one is just going to be need cleaned with a hose and a stiff brush where as some of the turnout and stable blankets are machine washable.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 4.024195194244385
+ },
+ {
+  "sample_id": "-EsVrbRTMU4_12-8-rgb_front",
+  "reference": "It doesn't really affect the game at all.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.442225933074951
+ },
+ {
+  "sample_id": "Dd6r7jX4VOQ_7-3-rgb_front",
+  "reference": "Terminology for trade-ins will vary.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.262839317321777
+ },
+ {
+  "sample_id": "1b3UpS1gD2k_12-8-rgb_front",
+  "reference": "\"Just watch your colon Bobby\".",
+  "prediction": "I'm going to do this.",
+  "tf_loss": 5.846130847930908
+ },
+ {
+  "sample_id": "1P0oKY4FNyI_17-8-rgb_front",
+  "reference": "The more you practice, the better you're going to get.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.091111183166504
+ },
+ {
+  "sample_id": "-EsVrbRTMU4_15-8-rgb_front",
+  "reference": "An infielder's glove is much smaller.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 3.4962656497955322
+ },
+ {
+  "sample_id": "fqEO3MuTlEE_7-5-rgb_front",
+  "reference": "Next we're going to add pineapple juice and orange juice.",
+  "prediction": "And if you're going to do this, you're going to do this, you're going to do it, you'",
+  "tf_loss": 2.6217753887176514
+ },
+ {
+  "sample_id": "1gqVLt2Z-DY_19-8-rgb_front",
+  "reference": "So, I would encourage you all to get your children checked by a chiropractor today.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.147495985031128
+ },
+ {
+  "sample_id": "e_S9g_NKlvY_5-8-rgb_front",
+  "reference": "It will state on the blanket what it is.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 4.089778423309326
+ },
+ {
+  "sample_id": "1gDezSEPi_o_10-8-rgb_front",
+  "reference": "We're going to go ahead and shake that up.",
+  "prediction": "I'm going to go to the next step.",
+  "tf_loss": 1.8236644268035889
+ },
+ {
+  "sample_id": "asnjOLvpsoQ_14-8-rgb_front",
+  "reference": "As that's what, you're most familiar with.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 2.752293348312378
+ },
+ {
+  "sample_id": "0zD5Uh7S35A_3-5-rgb_front",
+  "reference": "Now, there are a million designs of these type of carriers, but what I am showing you today is a design for this one.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 3.2867588996887207
+ },
+ {
+  "sample_id": "0wg18YtiA28_12-5-rgb_front",
+  "reference": "And if it's \"just in time for spring\", then I'm celebrating the world, I'm celebrating creation.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.155381679534912
+ },
+ {
+  "sample_id": "Db5SUQvNsHc_5-1-rgb_front",
+  "reference": "That's why I've got all these cards.",
+  "prediction": "And that's what I'm going to do.",
+  "tf_loss": 1.925516963005066
+ },
+ {
+  "sample_id": "1l6MC-9BQa0_2-5-rgb_front",
+  "reference": "In this clip, I'm going to talk about selecting guitar strings.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.4817099571228027
+ },
+ {
+  "sample_id": "D-2jxcZeURM_11-4-rgb_front",
+  "reference": "And then you actually have super soft Kryptonic wheels; now these are just pretty much for cruising or sometimes for a filmer to set up a board to roll along with the skateboarder while he's skating.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.536447048187256
+ },
+ {
+  "sample_id": "aCc-DzPTDo4_20-5-rgb_front",
+  "reference": "I can always take my fingernail and kinda rub a part of it and it's still gotten like a potato inside.",
+  "prediction": "And, if you're going to be a little bit more a little bit more a little bit more a bit more",
+  "tf_loss": 3.175442934036255
+ },
+ {
+  "sample_id": "0CGoYyy61p8_13-8-rgb_front",
+  "reference": "This is another variation and this is called a halter top.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.1732537746429443
+ },
+ {
+  "sample_id": "1imaK8eDk5Q_0-8-rgb_front",
+  "reference": "Hi, I'm Les Whitley.",
+  "prediction": "I'm going to go to the store.",
+  "tf_loss": 2.900747776031494
+ },
+ {
+  "sample_id": "02gzHnpz1W4_10-8-rgb_front",
+  "reference": "Now what I'm going to do is since my overhand loop, my initial loop I created, my working end.",
+  "prediction": "So, you can't get a little bit of a sleeve, you can't get a s",
+  "tf_loss": 3.8628506660461426
+ },
+ {
+  "sample_id": "dz1K0E0eewQ_3-5-rgb_front",
+  "reference": "Kind of like in the plums, eggplants.",
+  "prediction": "So, you can't just do it, you can't do it, you can't do it, you can do it,",
+  "tf_loss": 3.8544108867645264
+ },
+ {
+  "sample_id": "45XYg7z7CdQ_13-5-rgb_front",
+  "reference": "Think about can I just throw it in my washer or can I hose it off, will it clean up easily for the next season.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.752007484436035
+ },
+ {
+  "sample_id": "1DGKsqNpFqs_26-5-rgb_front",
+  "reference": "Then switch feet.",
+  "prediction": "And that's how you can do it.",
+  "tf_loss": 3.9958667755126953
+ },
+ {
+  "sample_id": "cbBb4MkVqQw_9-5-rgb_front",
+  "reference": "Can cause, can help regulate the behavior of an organization.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 4.622502326965332
+ },
+ {
+  "sample_id": "E29uPL981ZQ_11-1-rgb_front",
+  "reference": "If you ever see them in action they really do, they just slide right in the dirt like it's water and disappear right away.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.7538814544677734
+ },
+ {
+  "sample_id": "18YQlS_nliI_2-8-rgb_front",
+  "reference": "You learned a little bit of why to chose minerals over the over the counter products, how to apply and course our different materials needed to apply our different application.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.52936315536499
+ },
+ {
+  "sample_id": "0wPJGhjnX-s_12-8-rgb_front",
+  "reference": "And also if you're using a bare root type or one that somebody's giving you off one that they've just divided remember, it may take some time for it to reestablish, so it'll be a while before it blooms.",
+  "prediction": "So, you can use a sleeve and a sleeve and a sleeve and",
+  "tf_loss": 3.158120632171631
+ },
+ {
+  "sample_id": "1W4YokNwUtY_14-5-rgb_front",
+  "reference": "Exhale.",
+  "prediction": "You can't do it.",
+  "tf_loss": 2.252061128616333
+ },
+ {
+  "sample_id": "ah-PM4tolJ4_8-5-rgb_front",
+  "reference": "So we just tear it like that.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.128788948059082
+ },
+ {
+  "sample_id": "-fyFTnt9w9Q_4-5-rgb_front",
+  "reference": "So just think of your backhand now.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 3.5832481384277344
+ },
+ {
+  "sample_id": "11MdTWBChk0_5-8-rgb_front",
+  "reference": "There's a couple different styles.",
+  "prediction": "And that's what you're going to do.",
+  "tf_loss": 1.668508529663086
+ },
+ {
+  "sample_id": "BQoH1leUUlk_9-5-rgb_front",
+  "reference": "Okay?",
+  "prediction": "Okay.",
+  "tf_loss": 1.4959620237350464
+ },
+ {
+  "sample_id": "cP4ZkVUIKGE_4-9-rgb_front",
+  "reference": "This plant is one of those succulent kind of plants that's really tough.",
+  "prediction": "So, you can use a sleeve and a sleeve and a sleeve and",
+  "tf_loss": 3.3796026706695557
+ },
+ {
+  "sample_id": "CPF2W6Vr7tc_6-8-rgb_front",
+  "reference": "Go ahead and use the finer part of your comb and you're going to come in and you're going to keep your comb moving consistently and blend this line away.",
+  "prediction": "And, if you're going to be a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 2.5663115978240967
+ },
+ {
+  "sample_id": "0DhJ9bK49RM_11-8-rgb_front",
+  "reference": "And just apply a little bit to your, again we use a paper towel, you can use a soft cloth if you wish and just a little bit of the furniture polish, not very much.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.988941192626953
+ },
+ {
+  "sample_id": "1f6MTI3qidQ_2-8-rgb_front",
+  "reference": "We're going to talk about chants, and I'm going to demonstrate some that you can take to your squad.",
+  "prediction": "So, you can use a little bit of a sleeve to get the sleeve to the s",
+  "tf_loss": 2.6172635555267334
+ },
+ {
+  "sample_id": "1rs4i373I7w_18-8-rgb_front",
+  "reference": "Some items get forgotten and aren't placed in your budget.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.8103561401367188
+ },
+ {
+  "sample_id": "1ghvkzsMgbM_16-8-rgb_front",
+  "reference": "If you want a nice full basket of flowers, you're going to make a lot of flowers.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.2980899810791016
+ },
+ {
+  "sample_id": "-aEP1MfoUSU_7-8-rgb_front",
+  "reference": "So okay I run for this long this many hours, this many minutes, you go ahead and time your self put on a wrist watch or get someone to hold a stopwatch for you, but go ahead maybe put on some type of distance, and say I'm going to run this far and run that distance and know how well you do.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 4.524046421051025
+ },
+ {
+  "sample_id": "bbNhK0g8fJY_19-8-rgb_front",
+  "reference": "You can see the difference between the male and female rat.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.2241692543029785
+ },
+ {
+  "sample_id": "1-VX310yQTw_18-1-rgb_front",
+  "reference": "Let me give you a little example of what each one of them does.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.410027265548706
+ },
+ {
+  "sample_id": "23ln0Sw_8Qo_6-5-rgb_front",
+  "reference": "Patrick is going to demonstrate that.",
+  "prediction": "I'm going to talk about the sand.",
+  "tf_loss": 3.641735076904297
+ },
+ {
+  "sample_id": "4MXwmQ7Ht6E_15-8-rgb_front",
+  "reference": "There's a mark here and a mark here.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 2.244016408920288
+ },
+ {
+  "sample_id": "1XzuqBmJxK4_12-8-rgb_front",
+  "reference": "And that's someone who, they might be a little affected, or they might be someone who really likes to show themselves as somewhat more than they are.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.4317119121551514
+ },
+ {
+  "sample_id": "-c_OoOsTigw_12-5-rgb_front",
+  "reference": "Now you could actually get up here higher, where you start getting into the feet in the meerkat details.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.751101016998291
+ },
+ {
+  "sample_id": "cQBrXCcfDyc_16-5-rgb_front",
+  "reference": "Can you hold it?",
+  "prediction": "And that's what you're doing.",
+  "tf_loss": 2.4420714378356934
+ },
+ {
+  "sample_id": "1Mqg8dDpuIs_0-8-rgb_front",
+  "reference": "Ok, we're right around the green, but you've hit a shot, and now we've landed in this thick grass.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.2805585861206055
+ },
+ {
+  "sample_id": "06jk1stVwMI_0-5-rgb_front",
+  "reference": "Bridge pose is a classic finishing pose that can be done in prenatal yoga.",
+  "prediction": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+  "tf_loss": 4.200963497161865
+ },
+ {
+  "sample_id": "1XVcFJ97QQs_2-8-rgb_front",
+  "reference": "And so the sides are the short pieces here.",
+  "prediction": "And that's the way you're going to do it.",
+  "tf_loss": 3.6071624755859375
+ },
+ {
+  "sample_id": "0t94zPbIPTw_10-8-rgb_front",
+  "reference": "You got your roasted garlic and believe me this roasted garlic is gonna be wonderful, you're gonna love it.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.1548500061035156
+ },
+ {
+  "sample_id": "ezKICyY-HKY_6-2-rgb_front",
+  "reference": "Your hair, because of your own natural body heat, will dry by the root quicker.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.4577155113220215
+ },
+ {
+  "sample_id": "--dANj_01AU_10-5-rgb_front",
+  "reference": "I lift it up enough to make sure that I'm comfortable.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.7070364952087402
+ },
+ {
+  "sample_id": "0ACeI3_jN3k_13-8-rgb_front",
+  "reference": "And be consistent.",
+  "prediction": "And that's how you can do it.",
+  "tf_loss": 3.111433506011963
+ },
+ {
+  "sample_id": "2oIjI5k0n44_7-5-rgb_front",
+  "reference": "Walk back, three steps, sweep.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 5.116945743560791
+ },
+ {
+  "sample_id": "f9OsarAxuIQ_13-8-rgb_front",
+  "reference": "Your dealers, most people who sell tires, can find out the proper tire for your car, according to your driving conditions.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.0326337814331055
+ },
+ {
+  "sample_id": "azmxjENWcXo_13-5-rgb_front",
+  "reference": "Popular over the last couple years has been more of a square toe, I think fashion's changing on that a little bit and going more with a point toe.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.6616454124450684
+ },
+ {
+  "sample_id": "1lbhXfsU8DU_9-8-rgb_front",
+  "reference": "For example, if before I go out, if I have to fix my hair or fix my jewelry or make sure my watch looks nice, that's showing the child that I care how I look.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.49511981010437
+ },
+ {
+  "sample_id": "01j1UveqztE_15-3-rgb_front",
+  "reference": "It just kind of helps you over time be a lot more productive.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.9425323009490967
+ },
+ {
+  "sample_id": "16y-dsX1MDk_12-8-rgb_front",
+  "reference": "So, we choose which size we want to frame this in.",
+  "prediction": "So, you can also use a sleeve to make sure you're not going to have to do it.",
+  "tf_loss": 3.309556484222412
+ },
+ {
+  "sample_id": "07HhpnroTXs_2-5-rgb_front",
+  "reference": "Like say you're having a Hannah Montana party which is one of the most popular themes going right now.",
+  "prediction": "And, if you're going to do this, you're going to have to do this.",
+  "tf_loss": 4.181145668029785
+ },
+ {
+  "sample_id": "DcFCY1OFhCw_5-3-rgb_front",
+  "reference": "Everyone has heard the old safety rule, stop, drop and roll.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.729212760925293
+ },
+ {
+  "sample_id": "Bnm6QaAj6Qo_6-3-rgb_front",
+  "reference": "Another thing that is kind of interesting is that I took a DVD like this.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.860168218612671
+ },
+ {
+  "sample_id": "bjQrRezhvQU_19-1-rgb_front",
+  "reference": "Ok.",
+  "prediction": "Okay.",
+  "tf_loss": 1.2453047037124634
+ },
+ {
+  "sample_id": "2oIjI5k0n44_0_1-5-rgb_front",
+  "reference": "We're continuing now with the Traveling Step. All of these variations has a little bit of a, of a traveling to two sides.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 4.043946743011475
+ },
+ {
+  "sample_id": "1E4aT0mJ-V4_8-5-rgb_front",
+  "reference": "Now, conveniently, because my pen is an eighth of an inch, this is going to equal to a half inch in height for these letters.",
+  "prediction": "So, I'm going to go to the next step of the way, and I'm going to go to the next step.",
+  "tf_loss": 4.102966785430908
+ },
+ {
+  "sample_id": "17hrR6QZBdU_1-8-rgb_front",
+  "reference": "A lot of people in my improv classes, ask me for what books they should read, and I've read a ton of improv books, and many of them are the same, and some are better than others, so here is my list of recommendations for improv books, and which books are good for what things.",
+  "prediction": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+  "tf_loss": 3.475313425064087
+ },
+ {
+  "sample_id": "079tjgCukM4_8-5-rgb_front",
+  "reference": "You really are exposing your soul but just know that you are safe people generally don't judge people who take a risk.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.954638957977295
+ },
+ {
+  "sample_id": "0EhQlUjX9Q8_12-3-rgb_front",
+  "reference": "There is also a corporation called Spiker's Gel which make a bit of the stronger hold gels in order to help maintain and help coarser hair and fuller and thicker hair stand up and actually spike.",
+  "prediction": "And, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+  "tf_loss": 4.447851657867432
+ },
+ {
+  "sample_id": "biBBePKaQMY_16-4-rgb_front",
+  "reference": "OK, some of the things about water.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 3.2440860271453857
+ },
+ {
+  "sample_id": "1cp9sjT_1Tc_8-8-rgb_front",
+  "reference": "We'll go one leg and then the other leg; each time, forcing our low back down, belly button to spine, low back flat.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 4.763181686401367
+ },
+ {
+  "sample_id": "199hEEkd1aU_12-8-rgb_front",
+  "reference": "You just want the flesh.",
+  "prediction": "And that's the way you want to do it.",
+  "tf_loss": 3.1333768367767334
+ },
+ {
+  "sample_id": "D_w6T4nO-KA_2-8-rgb_front",
+  "reference": "There are several different styles and different ways to throw Ninja Stars.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 3.348801612854004
+ },
+ {
+  "sample_id": "08hX7LrGPZQ_4-5-rgb_front",
+  "reference": "So just to demonstrate, going to do a lighter coverage on one half of her face and a darker coverage on the other half.",
+  "prediction": "And, you can use a little bit of a sleeve, and you can use a little bit of a",
+  "tf_loss": 3.500908613204956
+ },
+ {
+  "sample_id": "0-0kX3XoMPQ_0-3-rgb_front",
+  "reference": "Alright folks, in this series we are drawing magical objects and in this clip I'm going to teach you how to draw a magic lamp.",
+  "prediction": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+  "tf_loss": 3.1829628944396973
+ },
+ {
+  "sample_id": "1fPFcBdBziw_11-8-rgb_front",
+  "reference": "You can also buy cards from individuals.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.1771345138549805
+ },
+ {
+  "sample_id": "beZVrUpjpwk_4-8-rgb_front",
+  "reference": "The best way for you to become an accurate shooter is to have your body squared.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.1089673042297363
+ },
+ {
+  "sample_id": "1pPAkrfqnHg_25-8-rgb_front",
+  "reference": "Now, we'll do that to the other four pieces.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.71352219581604
+ },
+ {
+  "sample_id": "-bLfarX5JXU_2-5-rgb_front",
+  "reference": "And now I'm going to discuss \"Nightmare\".",
+  "prediction": "And, if you're going to have a good time, you're going to have a good time.",
+  "tf_loss": 2.784392833709717
+ },
+ {
+  "sample_id": "0psMj0gsJjs_28-5-rgb_front",
+  "reference": "David: Yes.",
+  "prediction": "Hi, I'm going to do it.",
+  "tf_loss": 3.552821397781372
+ },
+ {
+  "sample_id": "0Gyur-C_KEo_7-5-rgb_front",
+  "reference": "The one other time that it's okay to stand and walk around is if you're conducting a wading maneuver and you're taking it very slowly and carefully.",
+  "prediction": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.201756715774536
+ },
+ {
+  "sample_id": "1s7e4sHQiAs_5-8-rgb_front",
+  "reference": "Next we are going to take a permanent marker and color the bottom.",
+  "prediction": "And, if you're going to have a little bit of a lot of a lot of a lot of a",
+  "tf_loss": 3.3513875007629395
+ },
+ {
+  "sample_id": "-DQ1scNd-M8_7-8-rgb_front",
+  "reference": "And then I'm going to pat to elongate it and thin it out just a little bit more.",
+  "prediction": "So, I'm going to talk about how to use a sleeve.",
+  "tf_loss": 2.4841184616088867
+ },
+ {
+  "sample_id": "darV50MH6vc_33-8-rgb_front",
+  "reference": "Yeah, and look your ears are so pretty.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.8085007667541504
+ },
+ {
+  "sample_id": "0-4j8fghNOE_2-5-rgb_front",
+  "reference": "There's no other way to make some fresh bruschetta than to use the whole fresh ingredients you have your garlic were going to use a lot of it.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.958601951599121
+ },
+ {
+  "sample_id": "0Dqrsiqf4pY_14-8-rgb_front",
+  "reference": "Second, if you've got a chair around or maybe some stairs, you can do a couple of stair raises.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+  "tf_loss": 2.8222341537475586
+ },
+ {
+  "sample_id": "EeVXp0hN3qY_0-5-rgb_front",
+  "reference": "Hi, I'm Kerri and I'm at Zebra in Berkeley.",
+  "prediction": "So, we're going to take a little bit of a sleeve.",
+  "tf_loss": 3.0643489360809326
+ },
+ {
+  "sample_id": "14hq4hRjwLc_5-8-rgb_front",
+  "reference": "So, my window is thirty one inches high.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.8591887950897217
+ },
+ {
+  "sample_id": "1s3sDViHORA_10-8-rgb_front",
+  "reference": "That's always nice because we know they're going to fit.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.670478105545044
+ },
+ {
+  "sample_id": "-bKHI_VTZ1Q_0-8-rgb_front",
+  "reference": "The next step before you actually apply the acrylic is to just go back and double check everything you've done.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.5833377838134766
+ },
+ {
+  "sample_id": "14BL0rO5e-8_0-8-rgb_front",
+  "reference": "Hi my name is Dean Hale and today I'm going to give you a general overview of how to play the American classic, poker.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.2204835414886475
+ },
+ {
+  "sample_id": "CH7AviIr0-0_7-8-rgb_front",
+  "reference": "Now, if we were to go up, the traditional movement of going into mascara can actually cause clumping.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.815570831298828
+ },
+ {
+  "sample_id": "0DU7wWLK-QU_4-8-rgb_front",
+  "reference": "Definitely just ice for 20 minutes, take an hour off.",
+  "prediction": "And, we're going to talk about how to use the sand.",
+  "tf_loss": 3.534005880355835
+ },
+ {
+  "sample_id": "5lHduGrvakM_3-3-rgb_front",
+  "reference": "Take a look at my pot, alright I think.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.057279109954834
+ },
+ {
+  "sample_id": "EeVXp0hN3qY_6-5-rgb_front",
+  "reference": "The signs of a tongue infection is extreme discoloration and coating of the tongue, sometimes in a yellow or greenish color.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.882817506790161
+ },
+ {
+  "sample_id": "3Kn3x7yGpQs_5-5-rgb_front",
+  "reference": "So this is a shoulder shrug to the wrist lock, take down and possibly an arm bar follow up if you get good at it.",
+  "prediction": "So, you can use a sleeve to make sure you don't have a sleeve to do",
+  "tf_loss": 4.199374198913574
+ },
+ {
+  "sample_id": "-9TmNCFEtDo_8-8-rgb_front",
+  "reference": "That is the mascara brush and that's how you use it.",
+  "prediction": "And that's the way you're going to do it.",
+  "tf_loss": 2.6981654167175293
+ },
+ {
+  "sample_id": "cN11VMtIguw_4-8-rgb_front",
+  "reference": "If this hair grows in this direction, then go that way and separate your sections.",
+  "prediction": "And, I'm going to talk about how to use a sleeve.",
+  "tf_loss": 4.374403953552246
+ },
+ {
+  "sample_id": "1RKbOiQngXo_9-5-rgb_front",
+  "reference": "That's how the garment stays on.",
+  "prediction": "And that's why we're going to do this.",
+  "tf_loss": 2.8583929538726807
+ },
+ {
+  "sample_id": "-b4_y6LOSx0_1-8-rgb_front",
+  "reference": "Some of the pros of being a high school teacher are your emotional commitment to your students and the incredible rewards that you get when they succeed.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.8066983222961426
+ },
+ {
+  "sample_id": "0DhJ9bK49RM_2-8-rgb_front",
+  "reference": "Actually there are more ways not to clean a trophy than there are to clean a trophy.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.189020872116089
+ },
+ {
+  "sample_id": "aP4KTUYgjyE_17-8-rgb_front",
+  "reference": "This is a side plank, it's great for your side and your overall core stability.",
+  "prediction": "So, you can use a little bit of a little bit of a little bit of a bit of a bit of",
+  "tf_loss": 3.122213840484619
+ },
+ {
+  "sample_id": "-dSv5URTW8M_2-5-rgb_front",
+  "reference": "And what we're going to do is we're going to be using art glass and/or stained glass for the surface of the stone, and then it's going to be poured with a bunch of grout.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.3739829063415527
+ },
+ {
+  "sample_id": "-f0h1J3POAg_6-5-rgb_front",
+  "reference": "We've got a couple cassette players, hi-tech.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.3427743911743164
+ },
+ {
+  "sample_id": "00Fc7cZX1gM_6-5-rgb_front",
+  "reference": "She was basically skin and bones.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 4.696566581726074
+ },
+ {
+  "sample_id": "ch8DtxId3Ng_9-5-rgb_front",
+  "reference": "You have about as much space up here as you have down here on this particular lamp.",
+  "prediction": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+  "tf_loss": 3.772590160369873
+ },
+ {
+  "sample_id": "ao4EesD6R44_9-5-rgb_front",
+  "reference": "Now, that was the throttle cable.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.740122079849243
+ },
+ {
+  "sample_id": "0tbwqARWKw8_25-4-rgb_front",
+  "reference": "And we want to continue to raise the vehicle with this jack just about as high as the jack will get it.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.3656513690948486
+ },
+ {
+  "sample_id": "4QhpU9Fk5dA_1-8-rgb_front",
+  "reference": "Well, flowering art tea, the base, which is this flower base that you see here, that's made of all tea leaves though tea leaves used is mainly a white tea, sometimes it's a green tea but mainly a white tea.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 4.3942646980285645
+ },
+ {
+  "sample_id": "BOAuIAm-p_A_19-8-rgb_front",
+  "reference": "And we're going to be using some tissue paper as well to cover the wagon.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 2.965697765350342
+ },
+ {
+  "sample_id": "FlXsdKWNhlM_10-8-rgb_front",
+  "reference": "Once you've done that, go ahead and apply your lip liner making sure to apply it right underneath the lip line.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 2.790872097015381
+ },
+ {
+  "sample_id": "23O-xRuWVdA_3-5-rgb_front",
+  "reference": "So on those easy days you can think about technique, think about not rocking your hips in the saddle, think about having a smooth pedal stroke and pedal in circles, just smooth efficient circles.",
+  "prediction": "So, you can use a little bit of a bit of a sleeve, and you can use a little",
+  "tf_loss": 3.7890233993530273
+ },
+ {
+  "sample_id": "1tryKCIRb40_11-8-rgb_front",
+  "reference": "Just go ahead and go to our next step.",
+  "prediction": "So, I'm going to do it.",
+  "tf_loss": 2.2886035442352295
+ },
+ {
+  "sample_id": "1XoT1-gzWfg_15-8-rgb_front",
+  "reference": "The education most comics have is street.",
+  "prediction": "And, if you're going to be a little bit more a bit more a bit more a bit more a",
+  "tf_loss": 5.146701812744141
+ },
+ {
+  "sample_id": "1FGZO3MoD0s_3-5-rgb_front",
+  "reference": "Again, when you're jumping or tumbling you could easily pull any muscle, especially in your legs.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.2767906188964844
+ },
+ {
+  "sample_id": "1RKo1xJauj4_5-5-rgb_front",
+  "reference": "So this is the correct way to pick it up turn it around.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 2.797790765762329
+ },
+ {
+  "sample_id": "0AL_w4FP-vA_6-8-rgb_front",
+  "reference": "Do you want to show them the single leg where we do not alternate?",
+  "prediction": "So, I'm going to show you how to do this.",
+  "tf_loss": 4.062006950378418
+ },
+ {
+  "sample_id": "1PhHBWErK9Q_23-8-rgb_front",
+  "reference": "As the case may be.",
+  "prediction": "And that's what you need.",
+  "tf_loss": 2.6774120330810547
+ },
+ {
+  "sample_id": "038vE9JsU9I_1-8-rgb_front",
+  "reference": "First off I'm going to start off with a little baby powder.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.450369119644165
+ },
+ {
+  "sample_id": "14vF1lPQCgc_31-8-rgb_front",
+  "reference": "And, you can cut off close to the knot.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 2.956385374069214
+ },
+ {
+  "sample_id": "bbNhK0g8fJY_25-8-rgb_front",
+  "reference": "Rats come in many different colors, hair types, different body types and without tails, if tails make you squeamish.",
+  "prediction": "So, we're going to have a lot of fun with the sands, the sands, the s",
+  "tf_loss": 3.8098483085632324
+ },
+ {
+  "sample_id": "CE23zzfUBDw_38-5-rgb_front",
+  "reference": "We get a whole new set of teeth and those are all baby teeth.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 3.172454595565796
+ },
+ {
+  "sample_id": "0I9Ks-BPfDs_2-5-rgb_front",
+  "reference": "And as long as there is water in here, that's where the gas is stopped, is right there.",
+  "prediction": "So, you can use a sleeve and a sleeve, and you can use a s",
+  "tf_loss": 3.009371042251587
+ },
+ {
+  "sample_id": "b3oisnNQnFM_10-8-rgb_front",
+  "reference": "What you need to do is just step your foot on the bottom of the door, push that latch closed and if you are going to be gone for long periods of time like you are going on vacatoin, most latches have a hole and you can actually put a padlock through it too.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.9472193717956543
+ },
+ {
+  "sample_id": "CR-YuYN2oxA_15-5-rgb_front",
+  "reference": "Because the people you're working with, the hazards that you're working with.",
+  "prediction": "So, if you're going to be a little bit more a little bit more a bit more a bit a",
+  "tf_loss": 2.71405291557312
+ },
+ {
+  "sample_id": "0H60j0VxTaE_1-5-rgb_front",
+  "reference": "First, one mask.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 3.964226007461548
+ },
+ {
+  "sample_id": "18NasCihOMs_11-8-rgb_front",
+  "reference": "This is a great one that you can play with your family and friends in the car, and it helps to get your mind working.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.5340676307678223
+ },
+ {
+  "sample_id": "4Af-nxPvbgY_9-5-rgb_front",
+  "reference": "Let's run it at full speed instead of the walk through (video demo).",
+  "prediction": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 4.196829795837402
+ },
+ {
+  "sample_id": "cmi0-jjwroA_8-5-rgb_front",
+  "reference": "Seasoning it up a little bit so I'm going to use some black pepper, be pretty liberal with this because it is in the flour so all this is not going to be on the chicken.",
+  "prediction": "So, you can use a sleeve and a sleeve, and you can use a s",
+  "tf_loss": 3.349168062210083
+ },
+ {
+  "sample_id": "23vZCOWd5oE_7-5-rgb_front",
+  "reference": "Recently, I just went to Bannock, Thailand.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.8523809909820557
+ },
+ {
+  "sample_id": "CyLfNgMZmc0_13-8-rgb_front",
+  "reference": "So you want to make sure that maybe you check in the mirror or in the reflection or somebody, spot you for a bit until your muscle memory develops, do a feel on each side and you're on a way to a happy, healthy core.",
+  "prediction": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 4.0799713134765625
+ },
+ {
+  "sample_id": "0CGoYyy61p8_18-8-rgb_front",
+  "reference": "Now, everybody has different shapes and sizes.",
+  "prediction": "And that's the way you can do it.",
+  "tf_loss": 2.700209856033325
+ },
+ {
+  "sample_id": "09KiqMdCSKc_21-8-rgb_front",
+  "reference": "If you get a little powder dust underneath, just clean it up with a brush.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+  "tf_loss": 2.8873486518859863
+ },
+ {
+  "sample_id": "-dE8T2Quw3I_6-5-rgb_front",
+  "reference": "This one actually has a retractable needle.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.0144309997558594
+ },
+ {
+  "sample_id": "1UhvxT9ri7U_9-5-rgb_front",
+  "reference": "Because like I said, if you listen to the interviewee you know what he's talking about but if you come prepared to say well in the 3rd quarter you threw an interception what were you trying to do.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+  "tf_loss": 3.079213857650757
+ },
+ {
+  "sample_id": "10VoWaHH80U_10-5-rgb_front",
+  "reference": "And how high the balls are floating will indicate the level of freeze protection you have.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 4.640377044677734
+ },
+ {
+  "sample_id": "1Rvc-TbUBJ0_13-5-rgb_front",
+  "reference": "Do you to see where it is sealed on before, that's the outboard pad that applies just to that.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 4.423030853271484
+ },
+ {
+  "sample_id": "18PiUlfjLEQ_20-2-rgb_front",
+  "reference": "Before you got pregnant, you had a lot more room here because there wasn't a baby in here.",
+  "prediction": "So, you can use a sleeve and a sleeve and a sleeve and",
+  "tf_loss": 3.045631170272827
+ },
+ {
+  "sample_id": "0xxbsy0Ek9I_5-5-rgb_front",
+  "reference": "There we go.",
+  "prediction": "Hi.",
+  "tf_loss": 1.978938341140747
+ },
+ {
+  "sample_id": "1UvJ0mvrOPw_28-5-rgb_front",
+  "reference": "So a couple of circles randomly placed, different shapes and sizes all flaking our hero.",
+  "prediction": "And, we're going to do the same thing, we're going to do the same thing.",
+  "tf_loss": 4.27195930480957
+ },
+ {
+  "sample_id": "bL2Lb4XEQdQ_31-9-rgb_front",
+  "reference": "Now we go even cleaner.",
+  "prediction": "And that's how you can do it.",
+  "tf_loss": 3.6334292888641357
+ },
+ {
+  "sample_id": "-6PULg1jlpc_13-5-rgb_front",
+  "reference": "Simply apply the cleanser or cream to your hands and apply it to the face and begin rubbing.",
+  "prediction": "And, we're going to do the same thing, we're going to do the same thing, we're going to do the",
+  "tf_loss": 3.133490800857544
+ },
+ {
+  "sample_id": "23vZCOWd5oE_9-5-rgb_front",
+  "reference": "I arrived in Bannock at one in the morning and I was so happy that heated the advice of a man I randomly met getting my oil changed in Los Angeles who told me to go to this particular guest house.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 4.824341297149658
+ },
+ {
+  "sample_id": "-aNfi7CP8vM_12-3-rgb_front",
+  "reference": "How does their political stance help determine who they are and how you are going to play them.",
+  "prediction": "So, you can also use a sleeve to make sure you're not going to have a slee",
+  "tf_loss": 3.4685585498809814
+ },
+ {
+  "sample_id": "-aZEs9_Vo6g_6-3-rgb_front",
+  "reference": "You got her lips and then just fill them in.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.8108394145965576
+ },
+ {
+  "sample_id": "3FJsNfuPILA_10-8-rgb_front",
+  "reference": "Never lock your elbow out, keep a slight bent, and that's the jab.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.7353620529174805
+ },
+ {
+  "sample_id": "5agwuoxNssM_13-5-rgb_front",
+  "reference": "And we did this in the other series just rolling the beak, putting a little pressure on.",
+  "prediction": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 3.723146438598633
+ },
+ {
+  "sample_id": "fz6XzPxdo-0_1-5-rgb_front",
+  "reference": "Now, we're going to show you some stretches that you can do with your partner.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 2.199141025543213
+ },
+ {
+  "sample_id": "10VoWaHH80U_24-5-rgb_front",
+  "reference": "This is the proper way to test your antifreeze.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.869572639465332
+ },
+ {
+  "sample_id": "23vZCOWd5oE_3-5-rgb_front",
+  "reference": "First of all, we've already discussed, read up on it.",
+  "prediction": "And, we're going to talk about how to use the sand.",
+  "tf_loss": 3.082021474838257
+ },
+ {
+  "sample_id": "--dANj_01AU_3-5-rgb_front",
+  "reference": "On the front leg you're going to be doing the outside.",
+  "prediction": "And, if you're going to do this, you're going to have to do it.",
+  "tf_loss": 2.5209717750549316
+ },
+ {
+  "sample_id": "1Y3Ruxz7AUw_5-8-rgb_front",
+  "reference": "And again roundworms are real common, that they can get passed from their mother.",
+  "prediction": "So, you can use a sleeve and a sleeve and a sleeve and",
+  "tf_loss": 4.675008773803711
+ },
+ {
+  "sample_id": "aziKlBI09Ug_6-8-rgb_front",
+  "reference": "And again, if you don't have an electric nail file, you can do the same thing with a regular nail file.",
+  "prediction": "And, if you're going to have a sleeve, you're going to have a sle",
+  "tf_loss": 2.1182632446289062
+ },
+ {
+  "sample_id": "05pLyheXjeo_20-5-rgb_front",
+  "reference": "And it just gets, put over the head.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 3.6840474605560303
+ },
+ {
+  "sample_id": "14fTPEpnW6s_8-8-rgb_front",
+  "reference": "Again, keep your focus into camera and notice that the body is totally broad to narrow by adding two elbows up.",
+  "prediction": "So, we're going to have a little bit of a lot of fun with the sand.",
+  "tf_loss": 4.772614002227783
+ },
+ {
+  "sample_id": "1gOQLPDtr3c_11-8-rgb_front",
+  "reference": "And everybody is going to be in a different place with it.",
+  "prediction": "And that's what we're going to do.",
+  "tf_loss": 2.303356409072876
+ },
+ {
+  "sample_id": "EN-WLnmBPjI_7-3-rgb_front",
+  "reference": "Any time you can educate your customer and we will speak about this a little bit more in detail later.",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.4982073307037354
+ },
+ {
+  "sample_id": "b29zLYHSim0_18-9-rgb_front",
+  "reference": "Tell your best friend.",
+  "prediction": "You can't use it.",
+  "tf_loss": 2.5195016860961914
+ },
+ {
+  "sample_id": "3FJsNfuPILA_9-8-rgb_front",
+  "reference": "Keep it here and punch with these 2 knuckles with your hands straight.",
+  "prediction": "And, if you're going to do this, you're going to do it.",
+  "tf_loss": 3.7128894329071045
+ },
+ {
+  "sample_id": "1f6MTI3qidQ_28-8-rgb_front",
+  "reference": "Now with \"K\"'s, you can either do a right or left.",
+  "prediction": "So, we're going to go to the next step.",
+  "tf_loss": 3.1948812007904053
+ },
+ {
+  "sample_id": "1L3g6l7j6JA_5-5-rgb_front",
+  "reference": "Some people think it's important to paint a dark room black on the inside but it's just a myth, you don't want to do that.",
+  "prediction": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+  "tf_loss": 2.95265531539917
+ },
+ {
+  "sample_id": "--8pSDeC-fg_3-5-rgb_front",
+  "reference": "In this clip I'm going to talk about how to tell if you have low self esteem.",
+  "prediction": "So, we're going to have a lot of fun with our sands, we're going to have a lot",
+  "tf_loss": 2.0369701385498047
+ },
+ {
+  "sample_id": "d7ZnbqAlscs_4-5-rgb_front",
+  "reference": "Well one thing that it does is that it dehydrates you.",
+  "prediction": "And, you can see that, you can see that.",
+  "tf_loss": 2.9929137229919434
+ },
+ {
+  "sample_id": "dvBdWGLzayI_21-8-rgb_front",
+  "reference": "Really good stuff to practice on, it's much cheaper than your art glass, okay?",
+  "prediction": "And, if you're going to be a little bit of a sleeve, you're going to be",
+  "tf_loss": 3.8477783203125
+ }
+]

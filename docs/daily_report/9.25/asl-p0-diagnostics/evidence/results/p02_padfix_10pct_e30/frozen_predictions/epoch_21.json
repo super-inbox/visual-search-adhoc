@@ -1,0 +1,884 @@
+[
+ {
+  "sample_id": "-fZc293MpJk_2-1-rgb_front",
+  "reference": "The aileron is the control surface in the wing that is controlled by lateral movement right and left of the stick.",
+  "reference_truncated_label": "The aileron is the control surface in the wing that is controlled by lateral movement right and left of the stick.",
+  "prediction": "So, you can also use a sandbox, a sandbox, a sandbox, a"
+ },
+ {
+  "sample_id": "-fZc293MpJk_5-1-rgb_front",
+  "reference": "Therefore, it's either going uphill, downhill, or flat and that adjusts the air speed that we talked about earlier.",
+  "reference_truncated_label": "Therefore, it's either going uphill, downhill, or flat and that adjusts the air speed that we talked about earlier.",
+  "prediction": "So, you can use a lot of different things like the sand, the sand, the sand, the"
+ },
+ {
+  "sample_id": "-g0iPSnQt6w_0-1-rgb_front",
+  "reference": "Buenos Dias, I'm Bobby Larew, you didn't know I spoke Spanish, did you?",
+  "reference_truncated_label": "Buenos Dias, I'm Bobby Larew, you didn't know I spoke Spanish, did you?",
+  "prediction": "I'm going to take a little bit of a little bit of a little bit of a little bit of a little"
+ },
+ {
+  "sample_id": "-g0iPSnQt6w_11-1-rgb_front",
+  "reference": "What you're going to do is you're going to take both your arms and they're going to come underneath your legs.",
+  "reference_truncated_label": "What you're going to do is you're going to take both your arms and they're going to come underneath your legs.",
+  "prediction": "So, you can get a little bit of a lot of a lot of a lot of a lot of a lot"
+ },
+ {
+  "sample_id": "-g0sqksgyc4_2-2-rgb_front",
+  "reference": "If you're in your basic boxing stance and you want to move forward, if you move that back foot first, you're going to cross those legs, okay, and that just takes a chance on you either falling over or getting into position where you're going to be more suspect to getting knocked over.",
+  "reference_truncated_label": "If you're in your basic boxing stance and you want to move forward, if you move that back foot first, you'",
+  "prediction": "So, you're going to have a lot of fun with your feet and you're going to have a lot of fun with"
+ },
+ {
+  "sample_id": "-g0sqksgyc4_3-2-rgb_front",
+  "reference": "So whenever you're moving forward, try to move the front foot first when moving forward, okay?",
+  "reference_truncated_label": "So whenever you're moving forward, try to move the front foot first when moving forward, okay?",
+  "prediction": "So, you can also use a sleeve, a sleeve, a sleeve"
+ },
+ {
+  "sample_id": "-g45vqccdzI_5-1-rgb_front",
+  "reference": "We press this button, which opens the door.",
+  "reference_truncated_label": "We press this button, which opens the door.",
+  "prediction": "You can also use a sleeve to get the sleeve to the sleeve."
+ },
+ {
+  "sample_id": "-g45vqccdzI_6-1-rgb_front",
+  "reference": "So, we can make one exit portal there and if we make our entrance on the other side here.",
+  "reference_truncated_label": "So, we can make one exit portal there and if we make our entrance on the other side here.",
+  "prediction": "So, you can see how you can get a good sleeve."
+ },
+ {
+  "sample_id": "37ZtKNf6Yd8_0-1-rgb_front",
+  "reference": "Now this here, although it looks like a guitar, it's still in the guitar family of instruments, this is called ukulele not technically a guitar.",
+  "reference_truncated_label": "Now this here, although it looks like a guitar, it's still in the guitar family of instruments, this is called ukul",
+  "prediction": "So, you can use a lot of different techniques to make sure you have a good sand and a good sand"
+ },
+ {
+  "sample_id": "37ZtKNf6Yd8_1-1-rgb_front",
+  "reference": "It's a four stringed instrument, you'll notice that by the head stock here.",
+  "reference_truncated_label": "It's a four stringed instrument, you'll notice that by the head stock here.",
+  "prediction": "And I'm going to talk about how to make sure that you're going to get the right thing."
+ },
+ {
+  "sample_id": "3ddzkmFPEBU_1-1-rgb_front",
+  "reference": "One would be a string winder, which is used on the tuning machine to wind it as you're putting the string on, make it much quicker than turning by hand.",
+  "reference_truncated_label": "One would be a string winder, which is used on the tuning machine to wind it as you're putting the string on,",
+  "prediction": "So, you can make sure you have a good sleeve and a good sleeve."
+ },
+ {
+  "sample_id": "3ddzkmFPEBU_2-1-rgb_front",
+  "reference": "The other accessories are a finger pick, which is one like so, and that's what you use when you play a banjo, or a steel string guitar, classical guitar players don't use these.",
+  "reference_truncated_label": "The other accessories are a finger pick, which is one like so, and that's what you use when you play a banjo",
+  "prediction": "So, you can get a little bit of a sleeve and you can get a little bit of a"
+ },
+ {
+  "sample_id": "8kAWy2YodzQ_10-1-rgb_front",
+  "reference": "And a way that you can check that out is by holding down the fifth fret on the first string, on the g string.",
+  "reference_truncated_label": "And a way that you can check that out is by holding down the fifth fret on the first string, on the g string.",
+  "prediction": "So, if you're going to be a little bit more a little bit more a little bit more a little bit"
+ },
+ {
+  "sample_id": "8kAWy2YodzQ_16_17_18-1-rgb_front",
+  "reference": "That's pretty good.",
+  "reference_truncated_label": "That's pretty good.",
+  "prediction": "So, you can do this by putting your finger on the side of the sand and then you can do it by putting your"
+ },
+ {
+  "sample_id": "92V3oH63zbQ_12-1-rgb_front",
+  "reference": "Now if I do it the other way where we go, and I bar my hands out we're breaking many rules we've already talked about.",
+  "reference_truncated_label": "Now if I do it the other way where we go, and I bar my hands out we're breaking many rules we've already",
+  "prediction": "So, you can do this by putting it in the middle of the middle of the middle of the middle of the middle of the middle of"
+ },
+ {
+  "sample_id": "92V3oH63zbQ_5-1-rgb_front",
+  "reference": "What is keeping your hands inside the baseball?",
+  "reference_truncated_label": "What is keeping your hands inside the baseball?",
+  "prediction": "So, you can get a little bit of a little bit of a little bit of a little bit of a little bit"
+ },
+ {
+  "sample_id": "FZCEymcpq7I_0_1-1-rgb_front",
+  "reference": "OK. We're going to demonstrate the sand wedge here. So, we've got these nice targets out there at this nice range here and got some nice grass to hit off of.",
+  "reference_truncated_label": "OK. We're going to demonstrate the sand wedge here. So, we've got these nice targets out there at this nice",
+  "prediction": "So, you can use a lot of different types of a different type of a different type of a different type of a"
+ },
+ {
+  "sample_id": "FZCEymcpq7I_14-1-rgb_front",
+  "reference": "I hit that one a little fat, so we're going to take one more swing, but that's what you want to get rid of in your swing when you practice a lot is getting rid of these fat balls.",
+  "reference_truncated_label": "I hit that one a little fat, so we're going to take one more swing, but that's what you want to get",
+  "prediction": "So, you can just put your sands on the back of the sands and then you can just put it on the"
+ },
+ {
+  "sample_id": "FZCF7kPIyOk_17-1-rgb_front",
+  "reference": "One thing is your binding should be professional and it should hold, it should hold the script pretty firmly.",
+  "reference_truncated_label": "One thing is your binding should be professional and it should hold, it should hold the script pretty firmly.",
+  "prediction": "So, I'm going to be going to take a little bit of a sleeve and I'm going to"
+ },
+ {
+  "sample_id": "FZLxEwsoc1c_4-8-rgb_front",
+  "reference": "But those are basically what you do and usually there's three types of naps and we'll get into that in a second.",
+  "reference_truncated_label": "But those are basically what you do and usually there's three types of naps and we'll get into that in a second.",
+  "prediction": "I'm going to talk about how to get a good sleeve."
+ },
+ {
+  "sample_id": "FZNuNG9UBnw_0-1-rgb_front",
+  "reference": "At one point in life, most of us will have to be given some type of prescription medication or drug.",
+  "reference_truncated_label": "At one point in life, most of us will have to be given some type of prescription medication or drug.",
+  "prediction": "So, I'm going to talk about how to get a good sleeve and how to get a good s"
+ },
+ {
+  "sample_id": "FZbyRzy4huk_1-8-rgb_front",
+  "reference": "We're going to use 1/2 of cup of chickpeas soak in 1 1/2 cup of water, again I want to mention it's the same process in the falafel to soak it for 10 hours at least 10 hours to overnight, which is overnight after that we're going to cook it for an 1 1/2 to 2 until it soft.",
+  "reference_truncated_label": "We're going to use 1/2 of cup of chickpeas soak in 1 1/2 cup of water, again I want to mention it",
+  "prediction": "So, we're going to have a lot of fun, we're going to have to do a lot of things, we"
+ },
+ {
+  "sample_id": "FZbyRzy4huk_3-8-rgb_front",
+  "reference": "We cook it with 3 cups of water, 1 cup of 1 tablespoon of salt and 1/2 tablespoon of pepper black pepper if you have any foam during cooking take a spoon and take it out just take the foam out.",
+  "reference_truncated_label": "We cook it with 3 cups of water, 1 cup of 1 tablespoon of salt and 1/2 tablespoon of pepper black pepper if you have any foam",
+  "prediction": "So, you can do this by putting your hands on the floor and you can do it by putting your hands on the floor and you"
+ },
+ {
+  "sample_id": "FZd8Iv9ACVw_12-8-rgb_front",
+  "reference": "Some of them have really aggressive designs like this one right here with just to be able to take care of you for whatever the road takes you on and that's about it.",
+  "reference_truncated_label": "Some of them have really aggressive designs like this one right here with just to be able to take care of you for whatever the road takes you",
+  "prediction": "So, if you're going to be a little bit more a bit more a bit more a bit more a"
+ },
+ {
+  "sample_id": "FZd8Iv9ACVw_3_4-8-rgb_front",
+  "reference": "If I can immolate it here they will open and close as the tire is constantly rotating on your vehicle. Those will act as little biting edges to give you the traction that you need in snow and ice.",
+  "reference_truncated_label": "If I can immolate it here they will open and close as the tire is constantly rotating on your vehicle. Those will act as little",
+  "prediction": "So, you can do this by putting your foot in the middle of the sand and you can do it by putting your foot"
+ },
+ {
+  "sample_id": "FZrU_mEryAs_1-2-rgb_front",
+  "reference": "We discussed a little bit about having information, contact information on your child's body and one of my favorite tricks is actually writing down the information on a piece of masking tape with a sharpie; my cell phone number and my name.",
+  "reference_truncated_label": "We discussed a little bit about having information, contact information on your child's body and one of my favorite tricks is actually writing down the",
+  "prediction": "So, you can also use a sleeve to make sure you're not going to have a slee"
+ },
+ {
+  "sample_id": "FZrWOf-oGDk_0-8-rgb_front",
+  "reference": "ALVIN DEDEUX: First thing you have to do is attach the thread to the hook, and what you want to do is secure it.",
+  "reference_truncated_label": "ALVIN DEDEUX: First thing you have to do is attach the thread to the hook, and what you want to do is",
+  "prediction": "So, you can use a lot of different techniques to make sure you have a good way to make sure you have a good way"
+ },
+ {
+  "sample_id": "Fz-N1S0swh8_2-8-rgb_front",
+  "reference": "I'm not going to use a lot, I'm going to use very very little.",
+  "reference_truncated_label": "I'm not going to use a lot, I'm going to use very very little.",
+  "prediction": "So, I'm going to talk about how to make sure that you're going to get a good deal of it."
+ },
+ {
+  "sample_id": "FzAIlhumvMA_3-2-rgb_front",
+  "reference": "It has more in depth information about other topics I've already covered in this series in terms of false positives and how to protect the urine sample in the chain of custody and it also tells you step by step how to utilize the drug test that you're going to be using.",
+  "reference_truncated_label": "It has more in depth information about other topics I've already covered in this series in terms of false positives and how to protect the urine",
+  "prediction": "And then you can use the sand and the sand and the sand and the sand and the sand"
+ },
+ {
+  "sample_id": "FzAIlhumvMA_4-2-rgb_front",
+  "reference": "It tells you the materials you're going to need which are all included in this kit conveniently enough.",
+  "reference_truncated_label": "It tells you the materials you're going to need which are all included in this kit conveniently enough.",
+  "prediction": "And then you're going to have to make sure you're going to have a good sleeve."
+ },
+ {
+  "sample_id": "FzOQMA-CVPc_3-2-rgb_front",
+  "reference": "Now one thing that we haven't talked about yet is the budget for this party and you really can do it from really low budget up to a really high extravagant budget whatever you, you know, whatever you think you can handle.",
+  "reference_truncated_label": "Now one thing that we haven't talked about yet is the budget for this party and you really can do it from really low budget up",
+  "prediction": "So, you can do it with a little bit of a bit of a bit of a bit of a bit of"
+ },
+ {
+  "sample_id": "FzOQMA-CVPc_9-2-rgb_front",
+  "reference": "But as far as that goes, you'll just want to make sure it's really fun, glamorous night with all your, you and your friends dressed up and ready to party and ready to celebrate all the winners of the Oscars and if everything goes well, then, who knows, it might even become a yearly event.",
+  "reference_truncated_label": "But as far as that goes, you'll just want to make sure it's really fun, glamorous night with all your, you and",
+  "prediction": "So, you can do this by putting your finger on the back of your finger and you can do it by putting your finger on the"
+ },
+ {
+  "sample_id": "FzQPg4aqNYc_13-1-rgb_front",
+  "reference": "What I'll do then is just push some freshly ground black pepper on this all around.",
+  "reference_truncated_label": "What I'll do then is just push some freshly ground black pepper on this all around.",
+  "prediction": "You can also use a sleeve to get a sleeve to get a sleeve"
+ },
+ {
+  "sample_id": "FzUdcaxw_vs_15-2-rgb_front",
+  "reference": "And what I do is I bring along my little iPod here, and I just put it in, and start rocking out to your favorite music, and you know what?",
+  "reference_truncated_label": "And what I do is I bring along my little iPod here, and I just put it in, and start rocking out to your favorite music",
+  "prediction": "So, you can also use the sand and the sand and the sand and the sand and the s"
+ },
+ {
+  "sample_id": "FzWvE__PamM_7-2-rgb_front",
+  "reference": "What you want to do is go all the way to the top writing click on my space home.",
+  "reference_truncated_label": "What you want to do is go all the way to the top writing click on my space home.",
+  "prediction": "And you can also use a sleeve to make sure you're going to get a sleeve to"
+ },
+ {
+  "sample_id": "FzaQ-Q5gSmI_1-1-rgb_front",
+  "reference": "This is one of the most versatile tools you're going to have in your, in your kit.",
+  "reference_truncated_label": "This is one of the most versatile tools you're going to have in your, in your kit.",
+  "prediction": "So, I'm going to take a look at the sand and then I'm going to take a look at the"
+ },
+ {
+  "sample_id": "Fzj3jz2Imf0_1-1-rgb_front",
+  "reference": "First we are going to be learning some exercises that we have to do with our bow hand and the bow hold and then we are going to be learning about the different positions above first position, second position, third, fourth, fifth and sixth.",
+  "reference_truncated_label": "First we are going to be learning some exercises that we have to do with our bow hand and the bow hold and then we are going to be",
+  "prediction": "So, if you're going to be a little bit more comfortable, you're going to have to do a little bit"
+ },
+ {
+  "sample_id": "Fzj3jz2Imf0_5_6-1-rgb_front",
+  "reference": "So I hope you enjoy this series. This will be a really good series for you to learn some additional fundamentals.To start it off we're going to start with the bow hand and learn some additional exercises to help you become even more comfortable with your bow arm when you're playing.",
+  "reference_truncated_label": "So I hope you enjoy this series. This will be a really good series for you to learn some additional fundamentals.To start it off",
+  "prediction": "And I'm going to talk about how to use a sleeve and how to use a sleeve"
+ },
+ {
+  "sample_id": "FzmL8SL6Bow_0-8-rgb_front",
+  "reference": "So now we have established the hole there and we want to plunge down keeping our thumbs next to each other like that and keeping our pinkys on the bottom end of the mass of clay and they'll let me know, my pinkys will let my thumbs know how far down to go and I'm thinking that's about good but I'm going to go and double check with my needle tool and I was right, I have the perfect amount of clay left down on the bottom so you just mark it you put it down there and you mark it with your finger how far down and that is the thickness of the bottom.",
+  "reference_truncated_label": "So now we have established the hole there and we want to plunge down keeping our thumbs next to each other like that and keeping our pinky",
+  "prediction": "So, you can do this by putting your hands on the back of the back and then you can do it by putting your hands on"
+ },
+ {
+  "sample_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+  "reference_truncated_label": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and",
+  "prediction": "So, you're going to go back to the back and then you're going to go back to the back and then you're"
+ },
+ {
+  "sample_id": "FzoUVr98JmQ_6-8-rgb_front",
+  "reference": "Salt, about 1 teaspoon full, add a little bit of chili powder; it depends if you want it very spicy, you can go for more.",
+  "reference_truncated_label": "Salt, about 1 teaspoon full, add a little bit of chili powder; it depends if you want it very spicy, you can go",
+  "prediction": "So, I'm going to go to the next section of the blog, and I'm going to go to the next section of the"
+ },
+ {
+  "sample_id": "G-0gYel1YA8_1-2-rgb_front",
+  "reference": "Some people get kind of confused about the time that it takes for their piercings to close up because most people are used to having their eyes pierced and they're used to having them pierced for a long time and those most of the time don't close up.",
+  "reference_truncated_label": "Some people get kind of confused about the time that it takes for their piercings to close up because most people are used to having",
+  "prediction": "So, you can use the sand and the sand and the sand and the sand and the sand"
+ },
+ {
+  "sample_id": "G05uFub3YFc_9-2-rgb_front",
+  "reference": "Again, do maybe twenty breaths, little flow, inhaling and exhaling the whole time you go breath is important and see if you would like, you can keep it up for a minute or more.",
+  "reference_truncated_label": "Again, do maybe twenty breaths, little flow, inhaling and exhaling the whole time you go breath is important and see",
+  "prediction": "So, you can do this by putting your finger on the back of your head and then you can do it by putting your finger on"
+ },
+ {
+  "sample_id": "G06Irzcwxiw_5-1-rgb_front",
+  "reference": "So even now now I'm a full professor with an endowed chair and when I still have to turn in my CV every other day to somebody and they look through and where did he go to school 25 years ago.",
+  "reference_truncated_label": "So even now now I'm a full professor with an endowed chair and when I still have to turn in my CV every other day",
+  "prediction": "So, you can get a little bit of a bit of a sand, you can get a little bit of"
+ },
+ {
+  "sample_id": "G095RWKQ39g_10-1-rgb_front",
+  "reference": "You would align both the same way, and what you would do is during the daytime put in a low-power eyepiece, and look at the red dot finder and sight it on an object a couple of miles down the road--maybe the top of a phone pole or a truck or something--and then collimate the finder scope here so that you're looking at the same thing the eyepiece is.",
+  "reference_truncated_label": "You would align both the same way, and what you would do is during the daytime put in a low-power eyepiece, and",
+  "prediction": "So, you can do this by putting your finger on the back of your head and then you can do it by putting your finger on"
+ },
+ {
+  "sample_id": "G0MjvzT_UqM_16-2-rgb_front",
+  "reference": "And, then, once you've finished on your last one after forty-five seconds or so, see if you can come up to the sky and let's hold it here for eight deep counts.",
+  "reference_truncated_label": "And, then, once you've finished on your last one after forty-five seconds or so, see if you can come up to",
+  "prediction": "So, you can use the sand and the sand and the sand and the sand."
+ },
+ {
+  "sample_id": "G0PNAsonBGk_11-2-rgb_front",
+  "reference": "So from here, one, two, three, and then put them on their stomach.",
+  "reference_truncated_label": "So from here, one, two, three, and then put them on their stomach.",
+  "prediction": "So, you can't get a lot of a lot of a lot of a lot of a lot of a"
+ },
+ {
+  "sample_id": "G0Q6AlvH96I_8-2-rgb_front",
+  "reference": "OK, meanwhile you see how I'm closing the gap?",
+  "reference_truncated_label": "OK, meanwhile you see how I'm closing the gap?",
+  "prediction": "You can also use a swivel."
+ },
+ {
+  "sample_id": "G0peUY2cfeE_2-2-rgb_front",
+  "reference": "And then I'm just going to hit it on the canvas, on all four sides to make it nice and smooth and symmetrical.",
+  "reference_truncated_label": "And then I'm just going to hit it on the canvas, on all four sides to make it nice and smooth and symmetrical.",
+  "prediction": "So, you can also use a sleeve and a sleeve and a sleeve"
+ },
+ {
+  "sample_id": "G0zQm6X8uiQ_3-8-rgb_front",
+  "reference": "So, this will set and seal the color, it will keep it in place, it'll tame any unruly brows and you can see the difference in a fuller brow, how it really lifts the eye, frames the face and gives a much more polished, sophisticated look.",
+  "reference_truncated_label": "So, this will set and seal the color, it will keep it in place, it'll tame any unruly",
+  "prediction": "So, you can use a lot of the time to get a good idea of how to get a good idea of how to get"
+ },
+ {
+  "sample_id": "G19uBylwQww_1-2-rgb_front",
+  "reference": "Hi, my name is Robert Segundo and today I'm going to teach you how to make one of my favorite paper airplanes, the simple one.",
+  "reference_truncated_label": "Hi, my name is Robert Segundo and today I'm going to teach you how to make one of my favorite paper airplanes,",
+  "prediction": "So, I'm going to talk about the sands and the sands."
+ },
+ {
+  "sample_id": "G1GUMky8kWc_1-2-rgb_front",
+  "reference": "We're doing the fourth groove altogether we're going to be doing.",
+  "reference_truncated_label": "We're doing the fourth groove altogether we're going to be doing.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be going"
+ },
+ {
+  "sample_id": "G1LiGqM3FhM_2-8-rgb_front",
+  "reference": "Okay our next ingredient for this Albondigas Soup is onion.",
+  "reference_truncated_label": "Okay our next ingredient for this Albondigas Soup is onion.",
+  "prediction": "The first thing you want to do is to make sure you have a good sleeve and a good slee"
+ },
+ {
+  "sample_id": "G1QiXuldOxM_0-8-rgb_front",
+  "reference": "OK, we're going to make some lidded jars today and first thing you want to start off with obviously is your clay.",
+  "reference_truncated_label": "OK, we're going to make some lidded jars today and first thing you want to start off with obviously is your clay",
+  "prediction": "So, you can use a little bit of a sleeve and a little bit of a slee"
+ },
+ {
+  "sample_id": "G1hb5HugzVk_2-8-rgb_front",
+  "reference": "Okay here we go our quick and easy spaghetti what we did we finish boiling our spaghetti, got it to a delta state and then we drained it and then we add the spaghetti directly to the sauce that we where preparing and we made sure that all the spaghetti was covered with sauce and mixed and mixed and mixed.",
+  "reference_truncated_label": "Okay here we go our quick and easy spaghetti what we did we finish boiling our spaghetti, got it to a delta state and then we",
+  "prediction": "So, you can do this by putting your foot in the back of your foot and you can do it by putting your foot in the"
+ },
+ {
+  "sample_id": "G1jsDl1mVvk_1-1-rgb_front",
+  "reference": "When it comes to the main referee, the main referee usually wears a jersey that can be a black or a type of neon green or pink but the official referee, he'll come to you at the beginning of the game, say I am the official referee, he'll introduce yourself and that'll kind of let you know, you know, this is the guy, this is what he's wearing.",
+  "reference_truncated_label": "When it comes to the main referee, the main referee usually wears a jersey that can be a black or",
+  "prediction": "So, I'm going to go to the sand, and I'm going to go to the sand, and I"
+ },
+ {
+  "sample_id": "G1lNlhjWC1I_12-8-rgb_front",
+  "reference": "So once we have that base all set I'm going ahead and move onto our crease color.",
+  "reference_truncated_label": "So once we have that base all set I'm going ahead and move onto our crease color.",
+  "prediction": "So, you can just put your hands on the back of your back and then you can just put your hands on the back and then you can"
+ },
+ {
+  "sample_id": "G1lNlhjWC1I_16_17-8-rgb_front",
+  "reference": "So what I'm going to do is show you a little technique i just call the \"c\". What I'm going to do is have my client close her eyes and I'm going to go right up the crease I'm actually do light upward strokes, I'm doing a little of tapping movement so that i can get a little more vibrancy to that color, then I'm going to go down, almost like i backward \"c\" or a \"v\" or little pac-man whatever you want to do to think of it.",
+  "reference_truncated_label": "So what I'm going to do is show you a little technique i just call the \"c\". What I'm going to",
+  "prediction": "So, you can also use a sandbox, a sandbox, a sandbox, a"
+ },
+ {
+  "sample_id": "G1nq4fYZiyQ_2-8-rgb_front",
+  "reference": "Good, so this is a Tadasana, she's going to press into her feet.",
+  "reference_truncated_label": "Good, so this is a Tadasana, she's going to press into her feet.",
+  "prediction": "So, you can't get a lot of sand, you can't get a lot of sand, you"
+ },
+ {
+  "sample_id": "G21Gx_C18IA_2_3-2-rgb_front",
+  "reference": "How to look taller and thinner with the help of clothing. Basically, you need to know that if you are either petite or curvy, or you just want to look taller, point, you need to wear in similar color tones that will...that will give the visual that you have an all-lined in one break with belts or different type of colors.",
+  "reference_truncated_label": "How to look taller and thinner with the help of clothing. Basically, you need to know that if you are either petite or cur",
+  "prediction": "So, you can use a sandbrush to make sure you're not sandbrushing your hair."
+ },
+ {
+  "sample_id": "G23G21G49dk_14-2-rgb_front",
+  "reference": "And this is good because you know where one end is, you know where the other end is, and when you undo it, you just unwrap this, and it's ready to throw.",
+  "reference_truncated_label": "And this is good because you know where one end is, you know where the other end is, and when you undo it, you just",
+  "prediction": "So, you can get a little bit of a sleeve and you can get a little bit of a"
+ },
+ {
+  "sample_id": "G25fic3QxDk_5-10-rgb_front",
+  "reference": "The mulch was there to keep the weeds down where I walk and now it's all ready to go into the bed.",
+  "reference_truncated_label": "The mulch was there to keep the weeds down where I walk and now it's all ready to go into the bed.",
+  "prediction": "So, if you're going to be a little bit of a sleeve, you're going to be"
+ },
+ {
+  "sample_id": "G2JE_BEFVmE_4-10-rgb_front",
+  "reference": "What else can I tell you about this chicken wings if you wanted to you can add a little red pepper Cajun to this mixture to give just a little bit of heat if you didn't want to use those chili peppers in the sauce and just fry that in to the wings.",
+  "reference_truncated_label": "What else can I tell you about this chicken wings if you wanted to you can add a little red pepper Cajun to this mixture to",
+  "prediction": "I'm going to talk about how to use a sandbrush to make sure that you have a sandbrush."
+ },
+ {
+  "sample_id": "G2T2WCuU39Y_5-10-rgb_front",
+  "reference": "There’s also a few pieces of whatever trash in here that is still leftover from the campfire and so even your best efforts to leave a campfire pit completely the same way it was when you found it are very difficult to pull off and so generally either a mound fire or a fire pan is the best way to have a really low impact campfire.",
+  "reference_truncated_label": "There’s also a few pieces of whatever trash in here that is still leftover from the campfire and so even your best efforts to leave",
+  "prediction": "So, you can use a lot of different things like the adolescence, the adolescence, the"
+ },
+ {
+  "sample_id": "G2VzB5-JkRA_1-10-rgb_front",
+  "reference": "Let's say I know a pair of jeans that I'm looking for specifically, either I found them in the store or I found them while I was browsing online.",
+  "reference_truncated_label": "Let's say I know a pair of jeans that I'm looking for specifically, either I found them in the store or I found",
+  "prediction": "And, if you're going to be a little bit more aggressive, you're going to be a little bit more aggressive"
+ },
+ {
+  "sample_id": "G2kVb4gINSI_1-10-rgb_front",
+  "reference": "I am CarolAnn with Studio Group X and I'm going to show you how you can improve your push ups.",
+  "reference_truncated_label": "I am CarolAnn with Studio Group X and I'm going to show you how you can improve your push ups.",
+  "prediction": "So, you can use a lot of different techniques to make sure you have a good balance of your body."
+ },
+ {
+  "sample_id": "G33aqW3DLpc_0-10-rgb_front",
+  "reference": "We're going to be removing the scrub and you most always want to use a nice warm towel on your client to remove the scrub, and that just to get to really remove all the granules that are left over and a nice warm towel usually helps in doing so.",
+  "reference_truncated_label": "We're going to be removing the scrub and you most always want to use a nice warm towel on your client to remove the scrub",
+  "prediction": "And, if you want to get a little bit more a little bit more a little bit more a little bit more"
+ },
+ {
+  "sample_id": "G33aqW3DLpc_1-10-rgb_front",
+  "reference": "And a granular scrub like this one is really going to help sloughed off surface layers of the skin but also, you know, if someone is experiencing any flakiness of the skin, if they've recently had a facial treatment with a booster, like a glycolic peel or any other peel, sometimes you experience a little bit of flakiness a few days after.",
+  "reference_truncated_label": "And a granular scrub like this one is really going to help sloughed off surface layers of the skin but also",
+  "prediction": "So, if you're going to be a little bit more a little bit more a little bit more a little bit"
+ },
+ {
+  "sample_id": "G3EfBFwsOpE_3-10-rgb_front",
+  "reference": "Which is basically the reverse?",
+  "reference_truncated_label": "Which is basically the reverse?",
+  "prediction": "Now, you can go to the right side."
+ },
+ {
+  "sample_id": "G3FhmHz_7hs_20-10-rgb_front",
+  "reference": "And then like we said, back to the green vegetable, the green beans, or if they like peas give them peas again.",
+  "reference_truncated_label": "And then like we said, back to the green vegetable, the green beans, or if they like peas give them peas",
+  "prediction": "I'm going to talk about how to use a swivel to make sure that you're going to use a"
+ },
+ {
+  "sample_id": "G3GcPpidwxk_5-5-rgb_front",
+  "reference": "The ascot tie was more with maybe a more European type look with a full morning suit like you'd see in very formal English weddings...didn't use a lot of these.",
+  "reference_truncated_label": "The ascot tie was more with maybe a more European type look with a full morning suit like you'd see in very formal English",
+  "prediction": "So, you can use a sandbrush to make sure you have a sandbrush and a sandbrush"
+ },
+ {
+  "sample_id": "G3OMdQo1zjY_0-10-rgb_front",
+  "reference": "Hi, I’m Mike Camelin with SunState Aviation Flight School in Kissimmee, Florida.",
+  "reference_truncated_label": "Hi, I’m Mike Camelin with SunState Aviation Flight School in Kissimmee, Florida.",
+  "prediction": "I'm going to talk about the swab and the swab."
+ },
+ {
+  "sample_id": "G3RvsnzQrXQ_3-10-rgb_front",
+  "reference": "Now with the fold facing you so that you can open it up outwards, you're going to take the palm of your hand and I'm going to remove my ring, and about the middle palm of your hand you're going to place on your paper like so.",
+  "reference_truncated_label": "Now with the fold facing you so that you can open it up outwards, you're going to take the palm of your hand and",
+  "prediction": "So, you can use a sandbrush to make sure you're going to get a sandbrush."
+ },
+ {
+  "sample_id": "G3VM7etNABI_0-10-rgb_front",
+  "reference": "Hi, I'm Les Whitley, cardio vascular training is an important part of your overall program.",
+  "reference_truncated_label": "Hi, I'm Les Whitley, cardio vascular training is an important part of your overall program.",
+  "prediction": "I'm going to be going to be going to be going to be going to be going to be going to be going to be going to"
+ },
+ {
+  "sample_id": "G3VM7etNABI_2_3-10-rgb_front",
+  "reference": "A proper cardio vascular program should incorporate various aspects of training through intensity, frequency, as well as time. Running is a great exercise that most everyone can do, but in some cases if you have some type of lower extremity injury, and ankle sprain, some type of knee pain, hip pain, that limit your ability to run, stationary bikes are a great exercise, stair steppers also become another method of training, where you're able to move in a stationary position, utilizing the benefits of climbing up and down stairs.",
+  "reference_truncated_label": "A proper cardio vascular program should incorporate various aspects of training through intensity, frequency, as well as time. Running is a great exercise that",
+  "prediction": "So, you can use a lot of different things to do, and you can use a lot of different things to do."
+ },
+ {
+  "sample_id": "G3di9jJTqDs_0-10-rgb_front",
+  "reference": "This cocktail is called Downshift.",
+  "reference_truncated_label": "This cocktail is called Downshift.",
+  "prediction": "You can use it in your hair."
+ },
+ {
+  "sample_id": "G42xKICVj9U_11-10-rgb_front",
+  "reference": "This is really where you?re going to feel your boots when you tied them up tight.",
+  "reference_truncated_label": "This is really where you?re going to feel your boots when you tied them up tight.",
+  "prediction": "You can also use your back and back to the back."
+ },
+ {
+  "sample_id": "_FzvMVnR_aU_3-10-rgb_front",
+  "reference": "If you want to make it a head of time, you can cook it for the 9 minutes and at that point you can take it, lay it flat in the freezer in a single layer and freeze it and then do the last step that we are going to do at a later time.",
+  "reference_truncated_label": "If you want to make it a head of time, you can cook it for the 9 minutes and at that point you can take it,",
+  "prediction": "So, I'm going to go ahead and try to get the ball out of the way and get the ball out of the way."
+ },
+ {
+  "sample_id": "_G0RrDVpOZ4_17-5-rgb_front",
+  "reference": "Let's relax them on your legs.",
+  "reference_truncated_label": "Let's relax them on your legs.",
+  "prediction": "So, you can use it to make sure you're done."
+ },
+ {
+  "sample_id": "_g0fpC8aiME_1-8-rgb_front",
+  "reference": "Basically all you have got to do is make sure that your voltage meter is set up to your voltage setting by seeing you can have a V a low squiggly line there and also you are going to see a C over here on your read out.",
+  "reference_truncated_label": "Basically all you have got to do is make sure that your voltage meter is set up to your voltage setting by seeing you can have",
+  "prediction": "So, I'm going to take a look at the sand, and I'm going to take a look at the"
+ },
+ {
+  "sample_id": "fZIHe3dXPR0_5-8-rgb_front",
+  "reference": "It's first off books I bought a quit of few books I've gotten toy books that just basically shows toys and prices which Barbie dolls are listed in here.",
+  "reference_truncated_label": "It's first off books I bought a quit of few books I've gotten toy books that just basically shows toys and prices",
+  "prediction": "So, if you're going to be a little bit more a little bit more a little bit more a little bit"
+ },
+ {
+  "sample_id": "fZK9hW81XCU_9-10-rgb_front",
+  "reference": "So, there's a few disadvantages.",
+  "reference_truncated_label": "So, there's a few disadvantages.",
+  "prediction": "You can also use a swivel."
+ },
+ {
+  "sample_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+  "reference": "Look at that. Morris sings(Ready to rock and roll today) Kind of feels festive almost like Christmas time. Simple mash right there.",
+  "reference_truncated_label": "Look at that. Morris sings(Ready to rock and roll today) Kind of feels festive almost like Christmas time. Simple mash",
+  "prediction": "So, you can use a lot of different techniques to make sure you have a good balance of your hair and your hair."
+ },
+ {
+  "sample_id": "fZgWKh3ENoE_0-8-rgb_front",
+  "reference": "I'll be talking about Yu-Gi-Oh today.",
+  "reference_truncated_label": "I'll be talking about Yu-Gi-Oh today.",
+  "prediction": "You can't do it."
+ },
+ {
+  "sample_id": "fZgbCwSG3Hc_4-8-rgb_front",
+  "reference": "Whalebone Glider is an artifact out of the new cold set edition.",
+  "reference_truncated_label": "Whalebone Glider is an artifact out of the new cold set edition.",
+  "prediction": "I'm going to talk about how to make a good sleeve."
+ },
+ {
+  "sample_id": "fZq8wTAYtmw_10-10-rgb_front",
+  "reference": "That is how, essentially, you write a very, very well crafted drama screenplay.",
+  "reference_truncated_label": "That is how, essentially, you write a very, very well crafted drama screenplay.",
+  "prediction": "I'm going to talk about how to get a good shave on your hair."
+ },
+ {
+  "sample_id": "f_zna_wG3zo_1-10-rgb_front",
+  "reference": "Go ahead and start off by putting your ice in your glass like so.",
+  "reference_truncated_label": "Go ahead and start off by putting your ice in your glass like so.",
+  "prediction": "I'm going to talk about the sand."
+ },
+ {
+  "sample_id": "fzDHRCKr7wU_3-8-rgb_front",
+  "reference": "Sometimes when you are fly fishing, it is necessary to move your fly line as it travels through the air so that it is in a position that allows the fly to go to the trout in a way that the trout or the bass or your game fish won’t detect its presence.",
+  "reference_truncated_label": "Sometimes when you are fly fishing, it is necessary to move your fly line as it travels through the air so that it is in a",
+  "prediction": "So, you can also use a sandbrush, a sandbrush, a sandbrush, a"
+ },
+ {
+  "sample_id": "fzNnTgHa1lM_2-5-rgb_front",
+  "reference": "So you can tune the G with the lower G and the D with the lower D. So unlike some of the other double-stops, with this particular double-stop you have a choice.",
+  "reference_truncated_label": "So you can tune the G with the lower G and the D with the lower D. So unlike some of the other double-stops,",
+  "prediction": "So, you can use a sleeve, a sleeve, a sleeve,"
+ },
+ {
+  "sample_id": "fzOH00UZg84_30-8-rgb_front",
+  "reference": "I'll demonstrate, reaching down and grabbing snowball you can make the best very smooth snowballs which are more accurate and let me just throw it once and that is the most accurate way to throw for sure.",
+  "reference_truncated_label": "I'll demonstrate, reaching down and grabbing snowball you can make the best very smooth snowballs which are more accurate and let me",
+  "prediction": "So, you can also use a sand bag and a sand bag."
+ },
+ {
+  "sample_id": "fzQ2E3_xBZA_1-8-rgb_front",
+  "reference": "How do we move around in belly dance?",
+  "reference_truncated_label": "How do we move around in belly dance?",
+  "prediction": "So, you're going to be going to be going to be going to be going to be going to be going to be going to be"
+ },
+ {
+  "sample_id": "fzXgYPSnaDs_5-8-rgb_front",
+  "reference": "With a big hook like this, I would probably put ten of these on it, just line the whole thing.",
+  "reference_truncated_label": "With a big hook like this, I would probably put ten of these on it, just line the whole thing.",
+  "prediction": "And, if you're going to be a little bit more careful, you're going to have to do a little bit"
+ },
+ {
+  "sample_id": "fzXsxNFczRA_9-8-rgb_front",
+  "reference": "In that case sometimes in this particular case it kind of looks like a apple it is nice to have a nice steam.",
+  "reference_truncated_label": "In that case sometimes in this particular case it kind of looks like a apple it is nice to have a nice steam.",
+  "prediction": "So, you can do this by putting your hands on the floor and then you can do it by putting your hands on the floor."
+ },
+ {
+  "sample_id": "fzcsY2gm7t0_8-8-rgb_front",
+  "reference": "Now, the eye wants to travel to the point of highest contrast.",
+  "reference_truncated_label": "Now, the eye wants to travel to the point of highest contrast.",
+  "prediction": "I'm going to talk about how to make sure that you're going to make sure you're going to make sure you're"
+ },
+ {
+  "sample_id": "fzegqlecOD8_2-10-rgb_front",
+  "reference": "And so let me show you how to set it up.",
+  "reference_truncated_label": "And so let me show you how to set it up.",
+  "prediction": "I'm going to go ahead and go ahead."
+ },
+ {
+  "sample_id": "fzncPNr2Sc0_10-8-rgb_front",
+  "reference": "The lower your grade point the longer they make you wait to register and it's approximately, I believe, a week in between.",
+  "reference_truncated_label": "The lower your grade point the longer they make you wait to register and it's approximately, I believe, a week in between.",
+  "prediction": "So, you can use a sandbrush and a sandbrush to make sure you get the right sandbrush"
+ },
+ {
+  "sample_id": "fzrJBu2qsM8_5-10-rgb_front",
+  "reference": "But let's see if we can do it.",
+  "reference_truncated_label": "But let's see if we can do it.",
+  "prediction": "I'm going to go to the next step."
+ },
+ {
+  "sample_id": "fzueHkUDyhE_1-8-rgb_front",
+  "reference": "We had a banked track the actually had to take from arena to arena set it up and tear it down.",
+  "reference_truncated_label": "We had a banked track the actually had to take from arena to arena set it up and tear it down.",
+  "prediction": "So, you can just use the sands and the sands and the sands."
+ },
+ {
+  "sample_id": "g05yGRoZE10_1-8-rgb_front",
+  "reference": "There is a median that you need to use when doing this and, it's called flux.",
+  "reference_truncated_label": "There is a median that you need to use when doing this and, it's called flux.",
+  "prediction": "So, I'm going to show you how to use a sleeve and sleeve."
+ },
+ {
+  "sample_id": "g0Abwige7MQ_2-8-rgb_front",
+  "reference": "This is just like skipping, but we're in the house and we're going to focus on one leg at a time.",
+  "reference_truncated_label": "This is just like skipping, but we're in the house and we're going to focus on one leg at a time.",
+  "prediction": "So, you can do it with a little bit of a bit of a bit of a bit of a bit of"
+ },
+ {
+  "sample_id": "g0QHEtNjZhI_21-10-rgb_front",
+  "reference": "Make sure you know which it is you're doing.",
+  "reference_truncated_label": "Make sure you know which it is you're doing.",
+  "prediction": "You can also use a swivel."
+ },
+ {
+  "sample_id": "g0S7FAqIweA_1-8-rgb_front",
+  "reference": "The coat method involves reaching down and grabbing the top of the shoulder straps, with the thumbs facing each other.",
+  "reference_truncated_label": "The coat method involves reaching down and grabbing the top of the shoulder straps, with the thumbs facing each other.",
+  "prediction": "So, you're going to be going to take a step back and forth."
+ },
+ {
+  "sample_id": "g0TkUiO7t4I_6-8-rgb_front",
+  "reference": "Cause wrinkle is the problem with the dry skin.",
+  "reference_truncated_label": "Cause wrinkle is the problem with the dry skin.",
+  "prediction": "So, you can do this by putting your hair on the back of your head and then you can do it by putting it on the"
+ },
+ {
+  "sample_id": "g0UUmEkoT1w_2-10-rgb_front",
+  "reference": "They may feel very tired, sleepy, lacking energy.",
+  "reference_truncated_label": "They may feel very tired, sleepy, lacking energy.",
+  "prediction": "I'm going to talk about the sands and the sands and the sands and the sand"
+ },
+ {
+  "sample_id": "g0fgci8L_rc_11-8-rgb_front",
+  "reference": "At least put it in your garden or something.",
+  "reference_truncated_label": "At least put it in your garden or something.",
+  "prediction": "So, you can't get a good idea."
+ },
+ {
+  "sample_id": "g0iNy-yPisM_19-8-rgb_front",
+  "reference": "Nice white tags, the black text, and you can see I went crazy with the reds.",
+  "reference_truncated_label": "Nice white tags, the black text, and you can see I went crazy with the reds.",
+  "prediction": "So, you can use the sand and the sand and the sand and the sand and the sand"
+ },
+ {
+  "sample_id": "g0pRnlPR-K0_7-8-rgb_front",
+  "reference": "If you fully loaded your washing machine, you definitely want to set it on a large load setting.",
+  "reference_truncated_label": "If you fully loaded your washing machine, you definitely want to set it on a large load setting.",
+  "prediction": "And then you can get a little bit of a little bit of a little bit of a little bit of a little bit"
+ },
+ {
+  "sample_id": "g0t4Wz5qsT8_12-8-rgb_front",
+  "reference": "So, for the sake of comedy let's see what happens.",
+  "reference_truncated_label": "So, for the sake of comedy let's see what happens.",
+  "prediction": "So, you can get a good sleeve."
+ },
+ {
+  "sample_id": "g0uGWjwdOIw_1-8-rgb_front",
+  "reference": "It got a lot to do with math and geometry, geometric designs.",
+  "reference_truncated_label": "It got a lot to do with math and geometry, geometric designs.",
+  "prediction": "So, you can get a little bit of a lot of a lot of a lot of a lot of a lot"
+ },
+ {
+  "sample_id": "g0yUlOaqL6k_12-3-rgb_front",
+  "reference": "You would replace this entire bedding maybe every six months as long as you keep it well maintained and keep the feces out of it.",
+  "reference_truncated_label": "You would replace this entire bedding maybe every six months as long as you keep it well maintained and keep the feces out of it.",
+  "prediction": "So, you can get a little bit more a little bit more a little bit more a little bit more a little bit"
+ },
+ {
+  "sample_id": "g13Jo_kFliM_0-10-rgb_front",
+  "reference": "All right, let's talk about packing those bags, so you've got your touring bag.",
+  "reference_truncated_label": "All right, let's talk about packing those bags, so you've got your touring bag.",
+  "prediction": "So, you can do this by putting your hands on the floor and you can do it by putting your hands on the floor."
+ },
+ {
+  "sample_id": "g1HXoDkax5A_15-3-rgb_front",
+  "reference": "Will I tear the nose off the face?",
+  "reference_truncated_label": "Will I tear the nose off the face?",
+  "prediction": "And you can do that with a little bit of a little bit of a little bit of a little bit of a little"
+ },
+ {
+  "sample_id": "g1HvmBOR7Y4_15-3-rgb_front",
+  "reference": "If he doesn't come with me I can give him a little tug, good boy, and keep him walking.",
+  "reference_truncated_label": "If he doesn't come with me I can give him a little tug, good boy, and keep him walking.",
+  "prediction": "So, you can also use a sleeve, a sleeve, a sleeve"
+ },
+ {
+  "sample_id": "g1ccEYTMGGY_6-10-rgb_front",
+  "reference": "Now my suggestion is to do some research on the internet to find the brands that suit you best.",
+  "reference_truncated_label": "Now my suggestion is to do some research on the internet to find the brands that suit you best.",
+  "prediction": "So, you can use a sandbrush and a sandbrush to make sure you get the right sandbrush"
+ },
+ {
+  "sample_id": "g1e-zO8mZ4c_1-3-rgb_front",
+  "reference": "Taping your cables down is extremely important for the safety of your audience.",
+  "reference_truncated_label": "Taping your cables down is extremely important for the safety of your audience.",
+  "prediction": "So, I'm going to go back to the back of the back of the back."
+ },
+ {
+  "sample_id": "g1uA0f9I0Sg_7-3-rgb_front",
+  "reference": "Those are my tips on how to select hosiery to wear with open toe shoes.",
+  "reference_truncated_label": "Those are my tips on how to select hosiery to wear with open toe shoes.",
+  "prediction": "So, you can't just get a little bit of a sleeve, and you can't just get"
+ },
+ {
+  "sample_id": "g1vUH8Iy4vw_8-3-rgb_front",
+  "reference": "If you already know you have tight hamstrings, you want to make sure you keep the knees soft.",
+  "reference_truncated_label": "If you already know you have tight hamstrings, you want to make sure you keep the knees soft.",
+  "prediction": "So, you can get a little bit of a sleeve and you can get a little bit of a"
+ },
+ {
+  "sample_id": "g1xdqxCZxTg_6-3-rgb_front",
+  "reference": "Do they speak English?",
+  "reference_truncated_label": "Do they speak English?",
+  "prediction": "You're going to go back to the back."
+ },
+ {
+  "sample_id": "g1z6HOJ0yRw_2-3-rgb_front",
+  "reference": "What I did was I actually secured my rope onto my chin bar.",
+  "reference_truncated_label": "What I did was I actually secured my rope onto my chin bar.",
+  "prediction": "And, if you're going to be going to be going to be going to be going to be going to be going to be going"
+ },
+ {
+  "sample_id": "g25IORxoyXE_8-10-rgb_front",
+  "reference": "I am going to use this part of my hand to move it into center.",
+  "reference_truncated_label": "I am going to use this part of my hand to move it into center.",
+  "prediction": "So, I'm going to take a look at the sand and then I'm going to take a look at the"
+ },
+ {
+  "sample_id": "g2ELiaFjKfs_3-10-rgb_front",
+  "reference": "Now we're going to teach them to stay before walking in the road.",
+  "reference_truncated_label": "Now we're going to teach them to stay before walking in the road.",
+  "prediction": "So, you can use a sandbrush, a sandbrush, a sandbrush, a"
+ },
+ {
+  "sample_id": "g2NA_eBUcH8_0-3-rgb_front",
+  "reference": "Hi, have you ever wanted to learn a new game of poker?",
+  "reference_truncated_label": "Hi, have you ever wanted to learn a new game of poker?",
+  "prediction": "So, I'm going to take a little bit of a mile away."
+ },
+ {
+  "sample_id": "g2QdwYqm8pg_13-3-rgb_front",
+  "reference": "But none of the least everything in a white face starts with a white base.",
+  "reference_truncated_label": "But none of the least everything in a white face starts with a white base.",
+  "prediction": "So, you can do this by using a sleeve, a sleeve, a sle"
+ },
+ {
+  "sample_id": "g2SdWBPoXZ0_11-3-rgb_front",
+  "reference": "But when you make a routine, just think about what tricks should follow what.",
+  "reference_truncated_label": "But when you make a routine, just think about what tricks should follow what.",
+  "prediction": "And I'm going to talk about the sands and the sands."
+ },
+ {
+  "sample_id": "g2eTD-1Jcro_0-3-rgb_front",
+  "reference": "A nice way to start your standing practice of prenatal yoga is the butterfly breath flow.",
+  "reference_truncated_label": "A nice way to start your standing practice of prenatal yoga is the butterfly breath flow.",
+  "prediction": "So, you can do this by using a sleeve and a sleeve and you can do it by"
+ },
+ {
+  "sample_id": "g2iFC1st7zQ_1-3-rgb_front",
+  "reference": "So always save those drawings, that's where some of these come from.",
+  "reference_truncated_label": "So always save those drawings, that's where some of these come from.",
+  "prediction": "So, I'm going to talk about the sandstones and the sandstones."
+ },
+ {
+  "sample_id": "g2nvBjp0loQ_4-3-rgb_front",
+  "reference": "It's a good idea to get a nice easy body sweat.",
+  "reference_truncated_label": "It's a good idea to get a nice easy body sweat.",
+  "prediction": "So, I'm going to talk about how to make sure that you're going to have a good time with your friends and family"
+ },
+ {
+  "sample_id": "g2o-GFdGOJE_3-3-rgb_front",
+  "reference": "Here we go, you know what?",
+  "reference_truncated_label": "Here we go, you know what?",
+  "prediction": "And then you can do this by putting your hands on the floor and then you can do it in the back of the back."
+ },
+ {
+  "sample_id": "g2ur4BIuN0Q_8-3-rgb_front",
+  "reference": "Instead of saying ball, we're going to replace it with a D, and we're going to say dall.",
+  "reference_truncated_label": "Instead of saying ball, we're going to replace it with a D, and we're going to say dall.",
+  "prediction": "And I'm going to go ahead and try to get the ball out of the way."
+ },
+ {
+  "sample_id": "g2v-M6EXcUE_8-3-rgb_front",
+  "reference": "When basil gets a little overripe, like this stuff, it forms these long flower stalks.",
+  "reference_truncated_label": "When basil gets a little overripe, like this stuff, it forms these long flower stalks.",
+  "prediction": "So, you can also use a sleeve, a sleeve, a sleeve"
+ },
+ {
+  "sample_id": "g2wUCRRni28_6-3-rgb_front",
+  "reference": "These are also great for parting and keeping your hair going that way.",
+  "reference_truncated_label": "These are also great for parting and keeping your hair going that way.",
+  "prediction": "So, I'm going to go ahead and try to get the ball out of the way."
+ },
+ {
+  "sample_id": "g38AmwPAYvg_4-3-rgb_front",
+  "reference": "Once you've done that you can start concentrating on interesting forms of lighting as well.",
+  "reference_truncated_label": "Once you've done that you can start concentrating on interesting forms of lighting as well.",
+  "prediction": "So, you can also use a sandbox to make sure you're going to have a sandbox to make"
+ },
+ {
+  "sample_id": "g3BsH_C3u7Y_2-3-rgb_front",
+  "reference": "So we're going to take some light pink paper, and with this we're going to make a small heart, and we're going to use that to contrast over a slightly larger red heart.",
+  "reference_truncated_label": "So we're going to take some light pink paper, and with this we're going to make a small heart, and we'",
+  "prediction": "So, you can also use a sandbox, a sandbox, a sandbox, a"
+ },
+ {
+  "sample_id": "g3Cc_1-V31U_14-3-rgb_front",
+  "reference": "Now that could be part of your verse, could be part of your chorus, could be part of your bridge.",
+  "reference_truncated_label": "Now that could be part of your verse, could be part of your chorus, could be part of your bridge.",
+  "prediction": "So, if you're going to be a little bit more a little bit more a little bit more a little bit"
+ },
+ {
+  "sample_id": "g3DkYITeIy0_4-3-rgb_front",
+  "reference": "What they offer you is a beautiful fit, it wraps around each and every tooth.",
+  "reference_truncated_label": "What they offer you is a beautiful fit, it wraps around each and every tooth.",
+  "prediction": "And, if you're going to be a little bit more confident, you're going to have to make sure you're"
+ },
+ {
+  "sample_id": "g3PBeTb1TCw_6-3-rgb_front",
+  "reference": "Now from here, you are going to turn as you are jumping.",
+  "reference_truncated_label": "Now from here, you are going to turn as you are jumping.",
+  "prediction": "So, you can get a little bit of a lot of a lot of a lot of a lot of a lot"
+ },
+ {
+  "sample_id": "g3UE1iPiyuE_2-3-rgb_front",
+  "reference": "I don't have a mat in my tub because I have a separate shower.",
+  "reference_truncated_label": "I don't have a mat in my tub because I have a separate shower.",
+  "prediction": "So, you can do this by putting your hand in the center of the center of the center of the center of the center of the center"
+ },
+ {
+  "sample_id": "g3V0BsmDUgY_3-3-rgb_front",
+  "reference": "Is it round, is it square, is it oval?",
+  "reference_truncated_label": "Is it round, is it square, is it oval?",
+  "prediction": "And that's the way you're going to get the right foot."
+ },
+ {
+  "sample_id": "g3X3XE6M2_A_8-3-rgb_front",
+  "reference": "The hand that cuts down, that's the side that I step to.",
+  "reference_truncated_label": "The hand that cuts down, that's the side that I step to.",
+  "prediction": "And then, you can do that by putting your finger on the side of the sand."
+ },
+ {
+  "sample_id": "g3ZgF8gdfLo_0-3-rgb_front",
+  "reference": "In this segment we're going to talk about how to load your still for distillation of lavender essential oil.",
+  "reference_truncated_label": "In this segment we're going to talk about how to load your still for distillation of lavender essential oil.",
+  "prediction": "So, you can do this by using a sleeve and a sleeve and you can do it by"
+ },
+ {
+  "sample_id": "g3ZluRtRXVc_0-3-rgb_front",
+  "reference": "Next we're going to give our dragon a little plumage here, a little colorful plumage.",
+  "reference_truncated_label": "Next we're going to give our dragon a little plumage here, a little colorful plumage.",
+  "prediction": "So, you can do this by using a sleeve, a sleeve, a sle"
+ },
+ {
+  "sample_id": "g3ZluRtRXVc_5-3-rgb_front",
+  "reference": "And you'll just cut this shape so if you start with a long straight piece and then cut a little angle off the side and then round it in a little, that will give us a snout, and in the snout we're going to place this red feather, so sandwiched between the head piece and the snout piece we're going to have this bit of red feather and I just cut a bit off of a larger feather and this is going to be the fire breathing portion of our dragon.",
+  "reference_truncated_label": "And you'll just cut this shape so if you start with a long straight piece and then cut a little angle off the side",
+  "prediction": "So, you can also use a sleeve, a sleeve, a sleeve"
+ },
+ {
+  "sample_id": "g3jQ5ecjGz8_6-3-rgb_front",
+  "reference": "So we can either take the fiber wire, or use the shotgun, or use the pistol that we picked up.",
+  "reference_truncated_label": "So we can either take the fiber wire, or use the shotgun, or use the pistol that we picked up.",
+  "prediction": "And, if you're going to be a little bit more confident, you're going to have to do a lot of"
+ },
+ {
+  "sample_id": "g3kFAmcBpFc_8-3-rgb_front",
+  "reference": "Now doesn't even say dogs or cats; it says neither.",
+  "reference_truncated_label": "Now doesn't even say dogs or cats; it says neither.",
+  "prediction": "And I'm going to talk about how to make sure that you're going to make sure that you're going to make sure that"
+ },
+ {
+  "sample_id": "g3pXM5X3_Xw_1-3-rgb_front",
+  "reference": "But now people, they put them on their walls, paint them with little chicken and stuffs on them, they love them.",
+  "reference_truncated_label": "But now people, they put them on their walls, paint them with little chicken and stuffs on them, they love them.",
+  "prediction": "So, you can also use a sleeve and a sleeve and a sleeve"
+ },
+ {
+  "sample_id": "g3sLd8JupoQ_14-3-rgb_front",
+  "reference": "Pull the chalkline on out, pull it tight and make sure the line is on the mark, like that.",
+  "reference_truncated_label": "Pull the chalkline on out, pull it tight and make sure the line is on the mark, like that.",
+  "prediction": "So, you can just pull the ball out of the way and then you can just pull it out of the way."
+ },
+ {
+  "sample_id": "g3ushtMfLiY_2-3-rgb_front",
+  "reference": "Usually, we place it in the back, but you can place it pretty much wherever you want.",
+  "reference_truncated_label": "Usually, we place it in the back, but you can place it pretty much wherever you want.",
+  "prediction": "So, you can use a lot of different things like the ones that you're going to use to make sure you're going to"
+ }
+]

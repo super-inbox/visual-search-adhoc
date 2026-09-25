@@ -1,0 +1,41 @@
+{
+ "checkpoint": "results/p02_10pct_e30/checkpoints/checkpoint-6192/model.safetensors",
+ "checkpoint_sha256": "49397a7b80a39366acca10b96f1a7ae1d38c2cfd8e43ebce8e2ab022426ada0f",
+ "batch_size": 1,
+ "generate_kwargs": {
+  "max_length": 30,
+  "num_beams": 1,
+  "do_sample": false
+ },
+ "manual_encoder_sha256": "b7efabefbce68d2f97dd1390d4a79c139036ffedd73b0ebdd0df91c3a9924251",
+ "git_diff_src": "src/models/manual_encoder.py | 22 +++++++++++++++-------\n 1 file changed, 15 insertions(+), 7 deletions(-)",
+ "sets": {
+  "val366": {
+   "bleu": 0.9565379561975388,
+   "chrf": 11.506709174312268,
+   "wer": 1.0305822136916187,
+   "unique": 113,
+   "top1": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "top1_count": 75,
+   "top1_fraction": 0.20491803278688525,
+   "loss_hf_style_batch_mean": 3.6125309776738694,
+   "loss_sample_weighted": 3.6125309776738694,
+   "loss_token_weighted": 3.625758983052333,
+   "n": 366
+  },
+  "frozen147": {
+   "bleu": 1.2507542771897842,
+   "chrf": 11.233734742275033,
+   "wer": 0.9944678609062171,
+   "unique": 61,
+   "top1": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "top1_count": 44,
+   "top1_fraction": 0.29931972789115646,
+   "loss_hf_style_batch_mean": 3.691808299142487,
+   "loss_sample_weighted": 3.691808299142487,
+   "loss_token_weighted": 3.710655809070573,
+   "n": 147
+  }
+ },
+ "checkpoint_sha256_unchanged": true
+}

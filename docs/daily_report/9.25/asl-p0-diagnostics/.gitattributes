@@ -1,0 +1,7 @@
+# Evidence files are verbatim copies of the original run outputs (sha256 in MANIFEST.tsv):
+# CSV/TSV use CRLF line endings (Python csv default), logs contain tqdm progress bars, and
+# the patch keeps blank diff context lines. Keep them byte-identical; skip whitespace checks.
+evidence/**/*.csv -whitespace -text
+evidence/**/*.tsv -whitespace -text
+evidence/**/*.log -whitespace -text
+code/patches/*.patch -whitespace -text

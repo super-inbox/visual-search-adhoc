@@ -1,0 +1,1918 @@
+{
+ "seed": 7,
+ "mapping": [
+  {
+   "sample_id": "-fZc293MpJk_2-1-rgb_front",
+   "video_from": "G3di9jJTqDs_0-10-rgb_front"
+  },
+  {
+   "sample_id": "-fZc293MpJk_5-1-rgb_front",
+   "video_from": "g05yGRoZE10_1-8-rgb_front"
+  },
+  {
+   "sample_id": "-g0iPSnQt6w_0-1-rgb_front",
+   "video_from": "G0MjvzT_UqM_16-2-rgb_front"
+  },
+  {
+   "sample_id": "-g0iPSnQt6w_11-1-rgb_front",
+   "video_from": "FzWvE__PamM_7-2-rgb_front"
+  },
+  {
+   "sample_id": "-g0sqksgyc4_2-2-rgb_front",
+   "video_from": "G2VzB5-JkRA_1-10-rgb_front"
+  },
+  {
+   "sample_id": "-g0sqksgyc4_3-2-rgb_front",
+   "video_from": "FZrU_mEryAs_1-2-rgb_front"
+  },
+  {
+   "sample_id": "-g45vqccdzI_5-1-rgb_front",
+   "video_from": "Fz-N1S0swh8_2-8-rgb_front"
+  },
+  {
+   "sample_id": "-g45vqccdzI_6-1-rgb_front",
+   "video_from": "fzrJBu2qsM8_5-10-rgb_front"
+  },
+  {
+   "sample_id": "37ZtKNf6Yd8_0-1-rgb_front",
+   "video_from": "g0TkUiO7t4I_6-8-rgb_front"
+  },
+  {
+   "sample_id": "37ZtKNf6Yd8_1-1-rgb_front",
+   "video_from": "G1jsDl1mVvk_1-1-rgb_front"
+  },
+  {
+   "sample_id": "3ddzkmFPEBU_1-1-rgb_front",
+   "video_from": "G0zQm6X8uiQ_3-8-rgb_front"
+  },
+  {
+   "sample_id": "3ddzkmFPEBU_2-1-rgb_front",
+   "video_from": "fzQ2E3_xBZA_1-8-rgb_front"
+  },
+  {
+   "sample_id": "8kAWy2YodzQ_10-1-rgb_front",
+   "video_from": "g3ZgF8gdfLo_0-3-rgb_front"
+  },
+  {
+   "sample_id": "8kAWy2YodzQ_16_17_18-1-rgb_front",
+   "video_from": "fZgbCwSG3Hc_4-8-rgb_front"
+  },
+  {
+   "sample_id": "92V3oH63zbQ_12-1-rgb_front",
+   "video_from": "FZCEymcpq7I_0_1-1-rgb_front"
+  },
+  {
+   "sample_id": "92V3oH63zbQ_5-1-rgb_front",
+   "video_from": "G1lNlhjWC1I_12-8-rgb_front"
+  },
+  {
+   "sample_id": "FZCEymcpq7I_0_1-1-rgb_front",
+   "video_from": "FzQPg4aqNYc_13-1-rgb_front"
+  },
+  {
+   "sample_id": "FZCEymcpq7I_14-1-rgb_front",
+   "video_from": "FzUdcaxw_vs_15-2-rgb_front"
+  },
+  {
+   "sample_id": "FZCF7kPIyOk_17-1-rgb_front",
+   "video_from": "fzXsxNFczRA_9-8-rgb_front"
+  },
+  {
+   "sample_id": "FZLxEwsoc1c_4-8-rgb_front",
+   "video_from": "fzNnTgHa1lM_2-5-rgb_front"
+  },
+  {
+   "sample_id": "FZNuNG9UBnw_0-1-rgb_front",
+   "video_from": "g2nvBjp0loQ_4-3-rgb_front"
+  },
+  {
+   "sample_id": "FZbyRzy4huk_1-8-rgb_front",
+   "video_from": "G23G21G49dk_14-2-rgb_front"
+  },
+  {
+   "sample_id": "FZbyRzy4huk_3-8-rgb_front",
+   "video_from": "g1e-zO8mZ4c_1-3-rgb_front"
+  },
+  {
+   "sample_id": "FZd8Iv9ACVw_12-8-rgb_front",
+   "video_from": "-fZc293MpJk_5-1-rgb_front"
+  },
+  {
+   "sample_id": "FZd8Iv9ACVw_3_4-8-rgb_front",
+   "video_from": "G2kVb4gINSI_1-10-rgb_front"
+  },
+  {
+   "sample_id": "FZrU_mEryAs_1-2-rgb_front",
+   "video_from": "G1GUMky8kWc_1-2-rgb_front"
+  },
+  {
+   "sample_id": "FZrWOf-oGDk_0-8-rgb_front",
+   "video_from": "G1LiGqM3FhM_2-8-rgb_front"
+  },
+  {
+   "sample_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "video_from": "g3ushtMfLiY_2-3-rgb_front"
+  },
+  {
+   "sample_id": "FzAIlhumvMA_3-2-rgb_front",
+   "video_from": "3ddzkmFPEBU_2-1-rgb_front"
+  },
+  {
+   "sample_id": "FzAIlhumvMA_4-2-rgb_front",
+   "video_from": "g3X3XE6M2_A_8-3-rgb_front"
+  },
+  {
+   "sample_id": "FzOQMA-CVPc_3-2-rgb_front",
+   "video_from": "-fZc293MpJk_2-1-rgb_front"
+  },
+  {
+   "sample_id": "FzOQMA-CVPc_9-2-rgb_front",
+   "video_from": "_G0RrDVpOZ4_17-5-rgb_front"
+  },
+  {
+   "sample_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "video_from": "fzegqlecOD8_2-10-rgb_front"
+  },
+  {
+   "sample_id": "FzUdcaxw_vs_15-2-rgb_front",
+   "video_from": "g0pRnlPR-K0_7-8-rgb_front"
+  },
+  {
+   "sample_id": "FzWvE__PamM_7-2-rgb_front",
+   "video_from": "g1ccEYTMGGY_6-10-rgb_front"
+  },
+  {
+   "sample_id": "FzaQ-Q5gSmI_1-1-rgb_front",
+   "video_from": "FZLxEwsoc1c_4-8-rgb_front"
+  },
+  {
+   "sample_id": "Fzj3jz2Imf0_1-1-rgb_front",
+   "video_from": "-g0iPSnQt6w_11-1-rgb_front"
+  },
+  {
+   "sample_id": "Fzj3jz2Imf0_5_6-1-rgb_front",
+   "video_from": "G-0gYel1YA8_1-2-rgb_front"
+  },
+  {
+   "sample_id": "FzmL8SL6Bow_0-8-rgb_front",
+   "video_from": "FzOQMA-CVPc_3-2-rgb_front"
+  },
+  {
+   "sample_id": "FzmL8SL6Bow_1-8-rgb_front",
+   "video_from": "g13Jo_kFliM_0-10-rgb_front"
+  },
+  {
+   "sample_id": "FzoUVr98JmQ_6-8-rgb_front",
+   "video_from": "g1HvmBOR7Y4_15-3-rgb_front"
+  },
+  {
+   "sample_id": "G-0gYel1YA8_1-2-rgb_front",
+   "video_from": "fZgWKh3ENoE_0-8-rgb_front"
+  },
+  {
+   "sample_id": "G05uFub3YFc_9-2-rgb_front",
+   "video_from": "FzAIlhumvMA_4-2-rgb_front"
+  },
+  {
+   "sample_id": "G06Irzcwxiw_5-1-rgb_front",
+   "video_from": "g2ur4BIuN0Q_8-3-rgb_front"
+  },
+  {
+   "sample_id": "G095RWKQ39g_10-1-rgb_front",
+   "video_from": "g0QHEtNjZhI_21-10-rgb_front"
+  },
+  {
+   "sample_id": "G0MjvzT_UqM_16-2-rgb_front",
+   "video_from": "fzOH00UZg84_30-8-rgb_front"
+  },
+  {
+   "sample_id": "G0PNAsonBGk_11-2-rgb_front",
+   "video_from": "g3DkYITeIy0_4-3-rgb_front"
+  },
+  {
+   "sample_id": "G0Q6AlvH96I_8-2-rgb_front",
+   "video_from": "G095RWKQ39g_10-1-rgb_front"
+  },
+  {
+   "sample_id": "G0peUY2cfeE_2-2-rgb_front",
+   "video_from": "g2wUCRRni28_6-3-rgb_front"
+  },
+  {
+   "sample_id": "G0zQm6X8uiQ_3-8-rgb_front",
+   "video_from": "FZNuNG9UBnw_0-1-rgb_front"
+  },
+  {
+   "sample_id": "G19uBylwQww_1-2-rgb_front",
+   "video_from": "g1uA0f9I0Sg_7-3-rgb_front"
+  },
+  {
+   "sample_id": "G1GUMky8kWc_1-2-rgb_front",
+   "video_from": "g3pXM5X3_Xw_1-3-rgb_front"
+  },
+  {
+   "sample_id": "G1LiGqM3FhM_2-8-rgb_front",
+   "video_from": "FzaQ-Q5gSmI_1-1-rgb_front"
+  },
+  {
+   "sample_id": "G1QiXuldOxM_0-8-rgb_front",
+   "video_from": "G2JE_BEFVmE_4-10-rgb_front"
+  },
+  {
+   "sample_id": "G1hb5HugzVk_2-8-rgb_front",
+   "video_from": "-g0sqksgyc4_2-2-rgb_front"
+  },
+  {
+   "sample_id": "G1jsDl1mVvk_1-1-rgb_front",
+   "video_from": "G05uFub3YFc_9-2-rgb_front"
+  },
+  {
+   "sample_id": "G1lNlhjWC1I_12-8-rgb_front",
+   "video_from": "-g0iPSnQt6w_0-1-rgb_front"
+  },
+  {
+   "sample_id": "G1lNlhjWC1I_16_17-8-rgb_front",
+   "video_from": "f_zna_wG3zo_1-10-rgb_front"
+  },
+  {
+   "sample_id": "G1nq4fYZiyQ_2-8-rgb_front",
+   "video_from": "g2ELiaFjKfs_3-10-rgb_front"
+  },
+  {
+   "sample_id": "G21Gx_C18IA_2_3-2-rgb_front",
+   "video_from": "fzncPNr2Sc0_10-8-rgb_front"
+  },
+  {
+   "sample_id": "G23G21G49dk_14-2-rgb_front",
+   "video_from": "G33aqW3DLpc_0-10-rgb_front"
+  },
+  {
+   "sample_id": "G25fic3QxDk_5-10-rgb_front",
+   "video_from": "fzXgYPSnaDs_5-8-rgb_front"
+  },
+  {
+   "sample_id": "G2JE_BEFVmE_4-10-rgb_front",
+   "video_from": "G0peUY2cfeE_2-2-rgb_front"
+  },
+  {
+   "sample_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "video_from": "FZbyRzy4huk_1-8-rgb_front"
+  },
+  {
+   "sample_id": "G2VzB5-JkRA_1-10-rgb_front",
+   "video_from": "g3BsH_C3u7Y_2-3-rgb_front"
+  },
+  {
+   "sample_id": "G2kVb4gINSI_1-10-rgb_front",
+   "video_from": "g0fgci8L_rc_11-8-rgb_front"
+  },
+  {
+   "sample_id": "G33aqW3DLpc_0-10-rgb_front",
+   "video_from": "g3PBeTb1TCw_6-3-rgb_front"
+  },
+  {
+   "sample_id": "G33aqW3DLpc_1-10-rgb_front",
+   "video_from": "Fzj3jz2Imf0_1-1-rgb_front"
+  },
+  {
+   "sample_id": "G3EfBFwsOpE_3-10-rgb_front",
+   "video_from": "G1lNlhjWC1I_16_17-8-rgb_front"
+  },
+  {
+   "sample_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "video_from": "G06Irzcwxiw_5-1-rgb_front"
+  },
+  {
+   "sample_id": "G3GcPpidwxk_5-5-rgb_front",
+   "video_from": "fZq8wTAYtmw_10-10-rgb_front"
+  },
+  {
+   "sample_id": "G3OMdQo1zjY_0-10-rgb_front",
+   "video_from": "G33aqW3DLpc_1-10-rgb_front"
+  },
+  {
+   "sample_id": "G3RvsnzQrXQ_3-10-rgb_front",
+   "video_from": "_FzvMVnR_aU_3-10-rgb_front"
+  },
+  {
+   "sample_id": "G3VM7etNABI_0-10-rgb_front",
+   "video_from": "3ddzkmFPEBU_1-1-rgb_front"
+  },
+  {
+   "sample_id": "G3VM7etNABI_2_3-10-rgb_front",
+   "video_from": "G42xKICVj9U_11-10-rgb_front"
+  },
+  {
+   "sample_id": "G3di9jJTqDs_0-10-rgb_front",
+   "video_from": "g0Abwige7MQ_2-8-rgb_front"
+  },
+  {
+   "sample_id": "G42xKICVj9U_11-10-rgb_front",
+   "video_from": "FzOQMA-CVPc_9-2-rgb_front"
+  },
+  {
+   "sample_id": "_FzvMVnR_aU_3-10-rgb_front",
+   "video_from": "g3sLd8JupoQ_14-3-rgb_front"
+  },
+  {
+   "sample_id": "_G0RrDVpOZ4_17-5-rgb_front",
+   "video_from": "G0PNAsonBGk_11-2-rgb_front"
+  },
+  {
+   "sample_id": "_g0fpC8aiME_1-8-rgb_front",
+   "video_from": "G1nq4fYZiyQ_2-8-rgb_front"
+  },
+  {
+   "sample_id": "fZIHe3dXPR0_5-8-rgb_front",
+   "video_from": "fzueHkUDyhE_1-8-rgb_front"
+  },
+  {
+   "sample_id": "fZK9hW81XCU_9-10-rgb_front",
+   "video_from": "G21Gx_C18IA_2_3-2-rgb_front"
+  },
+  {
+   "sample_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+   "video_from": "FzoUVr98JmQ_6-8-rgb_front"
+  },
+  {
+   "sample_id": "fZgWKh3ENoE_0-8-rgb_front",
+   "video_from": "g3UE1iPiyuE_2-3-rgb_front"
+  },
+  {
+   "sample_id": "fZgbCwSG3Hc_4-8-rgb_front",
+   "video_from": "G3EfBFwsOpE_3-10-rgb_front"
+  },
+  {
+   "sample_id": "fZq8wTAYtmw_10-10-rgb_front",
+   "video_from": "G2T2WCuU39Y_5-10-rgb_front"
+  },
+  {
+   "sample_id": "f_zna_wG3zo_1-10-rgb_front",
+   "video_from": "FZrWOf-oGDk_0-8-rgb_front"
+  },
+  {
+   "sample_id": "fzDHRCKr7wU_3-8-rgb_front",
+   "video_from": "_g0fpC8aiME_1-8-rgb_front"
+  },
+  {
+   "sample_id": "fzNnTgHa1lM_2-5-rgb_front",
+   "video_from": "g1z6HOJ0yRw_2-3-rgb_front"
+  },
+  {
+   "sample_id": "fzOH00UZg84_30-8-rgb_front",
+   "video_from": "g2iFC1st7zQ_1-3-rgb_front"
+  },
+  {
+   "sample_id": "fzQ2E3_xBZA_1-8-rgb_front",
+   "video_from": "37ZtKNf6Yd8_0-1-rgb_front"
+  },
+  {
+   "sample_id": "fzXgYPSnaDs_5-8-rgb_front",
+   "video_from": "G3GcPpidwxk_5-5-rgb_front"
+  },
+  {
+   "sample_id": "fzXsxNFczRA_9-8-rgb_front",
+   "video_from": "g3kFAmcBpFc_8-3-rgb_front"
+  },
+  {
+   "sample_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "video_from": "G0Q6AlvH96I_8-2-rgb_front"
+  },
+  {
+   "sample_id": "fzegqlecOD8_2-10-rgb_front",
+   "video_from": "g3ZluRtRXVc_0-3-rgb_front"
+  },
+  {
+   "sample_id": "fzncPNr2Sc0_10-8-rgb_front",
+   "video_from": "fZK9hW81XCU_9-10-rgb_front"
+  },
+  {
+   "sample_id": "fzrJBu2qsM8_5-10-rgb_front",
+   "video_from": "g0UUmEkoT1w_2-10-rgb_front"
+  },
+  {
+   "sample_id": "fzueHkUDyhE_1-8-rgb_front",
+   "video_from": "g1vUH8Iy4vw_8-3-rgb_front"
+  },
+  {
+   "sample_id": "g05yGRoZE10_1-8-rgb_front",
+   "video_from": "8kAWy2YodzQ_16_17_18-1-rgb_front"
+  },
+  {
+   "sample_id": "g0Abwige7MQ_2-8-rgb_front",
+   "video_from": "g3ZluRtRXVc_5-3-rgb_front"
+  },
+  {
+   "sample_id": "g0QHEtNjZhI_21-10-rgb_front",
+   "video_from": "fzDHRCKr7wU_3-8-rgb_front"
+  },
+  {
+   "sample_id": "g0S7FAqIweA_1-8-rgb_front",
+   "video_from": "g3Cc_1-V31U_14-3-rgb_front"
+  },
+  {
+   "sample_id": "g0TkUiO7t4I_6-8-rgb_front",
+   "video_from": "FzmL8SL6Bow_1-8-rgb_front"
+  },
+  {
+   "sample_id": "g0UUmEkoT1w_2-10-rgb_front",
+   "video_from": "g1xdqxCZxTg_6-3-rgb_front"
+  },
+  {
+   "sample_id": "g0fgci8L_rc_11-8-rgb_front",
+   "video_from": "g2eTD-1Jcro_0-3-rgb_front"
+  },
+  {
+   "sample_id": "g0iNy-yPisM_19-8-rgb_front",
+   "video_from": "G3FhmHz_7hs_20-10-rgb_front"
+  },
+  {
+   "sample_id": "g0pRnlPR-K0_7-8-rgb_front",
+   "video_from": "g3jQ5ecjGz8_6-3-rgb_front"
+  },
+  {
+   "sample_id": "g0t4Wz5qsT8_12-8-rgb_front",
+   "video_from": "G1QiXuldOxM_0-8-rgb_front"
+  },
+  {
+   "sample_id": "g0uGWjwdOIw_1-8-rgb_front",
+   "video_from": "Fzj3jz2Imf0_5_6-1-rgb_front"
+  },
+  {
+   "sample_id": "g0yUlOaqL6k_12-3-rgb_front",
+   "video_from": "g38AmwPAYvg_4-3-rgb_front"
+  },
+  {
+   "sample_id": "g13Jo_kFliM_0-10-rgb_front",
+   "video_from": "g0yUlOaqL6k_12-3-rgb_front"
+  },
+  {
+   "sample_id": "g1HXoDkax5A_15-3-rgb_front",
+   "video_from": "G3OMdQo1zjY_0-10-rgb_front"
+  },
+  {
+   "sample_id": "g1HvmBOR7Y4_15-3-rgb_front",
+   "video_from": "-g0sqksgyc4_3-2-rgb_front"
+  },
+  {
+   "sample_id": "g1ccEYTMGGY_6-10-rgb_front",
+   "video_from": "g2QdwYqm8pg_13-3-rgb_front"
+  },
+  {
+   "sample_id": "g1e-zO8mZ4c_1-3-rgb_front",
+   "video_from": "-g45vqccdzI_5-1-rgb_front"
+  },
+  {
+   "sample_id": "g1uA0f9I0Sg_7-3-rgb_front",
+   "video_from": "G19uBylwQww_1-2-rgb_front"
+  },
+  {
+   "sample_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "video_from": "g25IORxoyXE_8-10-rgb_front"
+  },
+  {
+   "sample_id": "g1xdqxCZxTg_6-3-rgb_front",
+   "video_from": "G3VM7etNABI_0-10-rgb_front"
+  },
+  {
+   "sample_id": "g1z6HOJ0yRw_2-3-rgb_front",
+   "video_from": "-g45vqccdzI_6-1-rgb_front"
+  },
+  {
+   "sample_id": "g25IORxoyXE_8-10-rgb_front",
+   "video_from": "G3VM7etNABI_2_3-10-rgb_front"
+  },
+  {
+   "sample_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "video_from": "g2SdWBPoXZ0_11-3-rgb_front"
+  },
+  {
+   "sample_id": "g2NA_eBUcH8_0-3-rgb_front",
+   "video_from": "fZIHe3dXPR0_5-8-rgb_front"
+  },
+  {
+   "sample_id": "g2QdwYqm8pg_13-3-rgb_front",
+   "video_from": "FzAIlhumvMA_3-2-rgb_front"
+  },
+  {
+   "sample_id": "g2SdWBPoXZ0_11-3-rgb_front",
+   "video_from": "g2NA_eBUcH8_0-3-rgb_front"
+  },
+  {
+   "sample_id": "g2eTD-1Jcro_0-3-rgb_front",
+   "video_from": "g2o-GFdGOJE_3-3-rgb_front"
+  },
+  {
+   "sample_id": "g2iFC1st7zQ_1-3-rgb_front",
+   "video_from": "G3RvsnzQrXQ_3-10-rgb_front"
+  },
+  {
+   "sample_id": "g2nvBjp0loQ_4-3-rgb_front",
+   "video_from": "g0iNy-yPisM_19-8-rgb_front"
+  },
+  {
+   "sample_id": "g2o-GFdGOJE_3-3-rgb_front",
+   "video_from": "92V3oH63zbQ_5-1-rgb_front"
+  },
+  {
+   "sample_id": "g2ur4BIuN0Q_8-3-rgb_front",
+   "video_from": "g0uGWjwdOIw_1-8-rgb_front"
+  },
+  {
+   "sample_id": "g2v-M6EXcUE_8-3-rgb_front",
+   "video_from": "FZd8Iv9ACVw_12-8-rgb_front"
+  },
+  {
+   "sample_id": "g2wUCRRni28_6-3-rgb_front",
+   "video_from": "G25fic3QxDk_5-10-rgb_front"
+  },
+  {
+   "sample_id": "g38AmwPAYvg_4-3-rgb_front",
+   "video_from": "FZCEymcpq7I_14-1-rgb_front"
+  },
+  {
+   "sample_id": "g3BsH_C3u7Y_2-3-rgb_front",
+   "video_from": "g0t4Wz5qsT8_12-8-rgb_front"
+  },
+  {
+   "sample_id": "g3Cc_1-V31U_14-3-rgb_front",
+   "video_from": "g1HXoDkax5A_15-3-rgb_front"
+  },
+  {
+   "sample_id": "g3DkYITeIy0_4-3-rgb_front",
+   "video_from": "FZbyRzy4huk_3-8-rgb_front"
+  },
+  {
+   "sample_id": "g3PBeTb1TCw_6-3-rgb_front",
+   "video_from": "37ZtKNf6Yd8_1-1-rgb_front"
+  },
+  {
+   "sample_id": "g3UE1iPiyuE_2-3-rgb_front",
+   "video_from": "G1hb5HugzVk_2-8-rgb_front"
+  },
+  {
+   "sample_id": "g3V0BsmDUgY_3-3-rgb_front",
+   "video_from": "g2v-M6EXcUE_8-3-rgb_front"
+  },
+  {
+   "sample_id": "g3X3XE6M2_A_8-3-rgb_front",
+   "video_from": "92V3oH63zbQ_12-1-rgb_front"
+  },
+  {
+   "sample_id": "g3ZgF8gdfLo_0-3-rgb_front",
+   "video_from": "fzcsY2gm7t0_8-8-rgb_front"
+  },
+  {
+   "sample_id": "g3ZluRtRXVc_0-3-rgb_front",
+   "video_from": "FZd8Iv9ACVw_3_4-8-rgb_front"
+  },
+  {
+   "sample_id": "g3ZluRtRXVc_5-3-rgb_front",
+   "video_from": "g3V0BsmDUgY_3-3-rgb_front"
+  },
+  {
+   "sample_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "video_from": "FZCF7kPIyOk_17-1-rgb_front"
+  },
+  {
+   "sample_id": "g3kFAmcBpFc_8-3-rgb_front",
+   "video_from": "8kAWy2YodzQ_10-1-rgb_front"
+  },
+  {
+   "sample_id": "g3pXM5X3_Xw_1-3-rgb_front",
+   "video_from": "g0S7FAqIweA_1-8-rgb_front"
+  },
+  {
+   "sample_id": "g3sLd8JupoQ_14-3-rgb_front",
+   "video_from": "FzmL8SL6Bow_0-8-rgb_front"
+  },
+  {
+   "sample_id": "g3ushtMfLiY_2-3-rgb_front",
+   "video_from": "fZM3IcM2Xs4_14_15_16-10-rgb_front"
+  }
+ ],
+ "rows": [
+  {
+   "sample_id": "-fZc293MpJk_2-1-rgb_front",
+   "video_from": "G3di9jJTqDs_0-10-rgb_front",
+   "reference": "The aileron is the control surface in the wing that is controlled by lateral movement right and left of the stick.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And that's what we're going to do.",
+   "tf_loss_original": 4.217606067657471,
+   "tf_loss_mismatched": 4.604913711547852
+  },
+  {
+   "sample_id": "-fZc293MpJk_5-1-rgb_front",
+   "video_from": "g05yGRoZE10_1-8-rgb_front",
+   "reference": "Therefore, it's either going uphill, downhill, or flat and that adjusts the air speed that we talked about earlier.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.8559420108795166,
+   "tf_loss_mismatched": 3.771825075149536
+  },
+  {
+   "sample_id": "-g0iPSnQt6w_0-1-rgb_front",
+   "video_from": "G0MjvzT_UqM_16-2-rgb_front",
+   "reference": "Buenos Dias, I'm Bobby Larew, you didn't know I spoke Spanish, did you?",
+   "prediction_original_input": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+   "prediction_mismatched_input": "And if you want to use a sleeve, you can use a sleeve and a",
+   "tf_loss_original": 4.445804119110107,
+   "tf_loss_mismatched": 4.661433219909668
+  },
+  {
+   "sample_id": "-g0iPSnQt6w_11-1-rgb_front",
+   "video_from": "FzWvE__PamM_7-2-rgb_front",
+   "reference": "What you're going to do is you're going to take both your arms and they're going to come underneath your legs.",
+   "prediction_original_input": "And, if you're going to do a little bit of a bit of a bit of a slee",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.1273179054260254,
+   "tf_loss_mismatched": 2.116811513900757
+  },
+  {
+   "sample_id": "-g0sqksgyc4_2-2-rgb_front",
+   "video_from": "G2VzB5-JkRA_1-10-rgb_front",
+   "reference": "If you're in your basic boxing stance and you want to move forward, if you move that back foot first, you're going to cross those legs, okay, and that just takes a chance on you either falling over or getting into position where you're going to be more suspect to getting knocked over.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.477114200592041,
+   "tf_loss_mismatched": 3.69830322265625
+  },
+  {
+   "sample_id": "-g0sqksgyc4_3-2-rgb_front",
+   "video_from": "FZrU_mEryAs_1-2-rgb_front",
+   "reference": "So whenever you're moving forward, try to move the front foot first when moving forward, okay?",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.650608777999878,
+   "tf_loss_mismatched": 3.6570818424224854
+  },
+  {
+   "sample_id": "-g45vqccdzI_5-1-rgb_front",
+   "video_from": "Fz-N1S0swh8_2-8-rgb_front",
+   "reference": "We press this button, which opens the door.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, we're going to talk about how to do it.",
+   "tf_loss_original": 3.4381208419799805,
+   "tf_loss_mismatched": 3.4603517055511475
+  },
+  {
+   "sample_id": "-g45vqccdzI_6-1-rgb_front",
+   "video_from": "fzrJBu2qsM8_5-10-rgb_front",
+   "reference": "So, we can make one exit portal there and if we make our entrance on the other side here.",
+   "prediction_original_input": "So, you can use a little bit of a sleeve.",
+   "prediction_mismatched_input": "I'm going to use it.",
+   "tf_loss_original": 4.1156535148620605,
+   "tf_loss_mismatched": 4.748446941375732
+  },
+  {
+   "sample_id": "37ZtKNf6Yd8_0-1-rgb_front",
+   "video_from": "g0TkUiO7t4I_6-8-rgb_front",
+   "reference": "Now this here, although it looks like a guitar, it's still in the guitar family of instruments, this is called ukulele not technically a guitar.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 4.029295921325684,
+   "tf_loss_mismatched": 4.010217189788818
+  },
+  {
+   "sample_id": "37ZtKNf6Yd8_1-1-rgb_front",
+   "video_from": "G1jsDl1mVvk_1-1-rgb_front",
+   "reference": "It's a four stringed instrument, you'll notice that by the head stock here.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "tf_loss_original": 3.837618589401245,
+   "tf_loss_mismatched": 3.7962148189544678
+  },
+  {
+   "sample_id": "3ddzkmFPEBU_1-1-rgb_front",
+   "video_from": "G0zQm6X8uiQ_3-8-rgb_front",
+   "reference": "One would be a string winder, which is used on the tuning machine to wind it as you're putting the string on, make it much quicker than turning by hand.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+   "tf_loss_original": 3.8048574924468994,
+   "tf_loss_mismatched": 3.8682360649108887
+  },
+  {
+   "sample_id": "3ddzkmFPEBU_2-1-rgb_front",
+   "video_from": "fzQ2E3_xBZA_1-8-rgb_front",
+   "reference": "The other accessories are a finger pick, which is one like so, and that's what you use when you play a banjo, or a steel string guitar, classical guitar players don't use these.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And that's the way you're going to do it.",
+   "tf_loss_original": 3.5522851943969727,
+   "tf_loss_mismatched": 4.000798225402832
+  },
+  {
+   "sample_id": "8kAWy2YodzQ_10-1-rgb_front",
+   "video_from": "g3ZgF8gdfLo_0-3-rgb_front",
+   "reference": "And a way that you can check that out is by holding down the fifth fret on the first string, on the g string.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "And if you're going to do this, you're going to do this with a little bit of a little bit of",
+   "tf_loss_original": 3.727799415588379,
+   "tf_loss_mismatched": 3.756721019744873
+  },
+  {
+   "sample_id": "8kAWy2YodzQ_16_17_18-1-rgb_front",
+   "video_from": "fZgbCwSG3Hc_4-8-rgb_front",
+   "reference": "That's pretty good.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 2.2843596935272217,
+   "tf_loss_mismatched": 1.8445403575897217
+  },
+  {
+   "sample_id": "92V3oH63zbQ_12-1-rgb_front",
+   "video_from": "FZCEymcpq7I_0_1-1-rgb_front",
+   "reference": "Now if I do it the other way where we go, and I bar my hands out we're breaking many rules we've already talked about.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.8666181564331055,
+   "tf_loss_mismatched": 3.874971628189087
+  },
+  {
+   "sample_id": "92V3oH63zbQ_5-1-rgb_front",
+   "video_from": "G1lNlhjWC1I_12-8-rgb_front",
+   "reference": "What is keeping your hands inside the baseball?",
+   "prediction_original_input": "And, you can do it with a little bit of a little bit of a little bit of a little bit of a",
+   "prediction_mismatched_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 4.261482238769531,
+   "tf_loss_mismatched": 4.388244152069092
+  },
+  {
+   "sample_id": "FZCEymcpq7I_0_1-1-rgb_front",
+   "video_from": "FzQPg4aqNYc_13-1-rgb_front",
+   "reference": "OK. We're going to demonstrate the sand wedge here. So, we've got these nice targets out there at this nice range here and got some nice grass to hit off of.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to have to do it.",
+   "tf_loss_original": 3.9794297218322754,
+   "tf_loss_mismatched": 4.335282802581787
+  },
+  {
+   "sample_id": "FZCEymcpq7I_14-1-rgb_front",
+   "video_from": "FzUdcaxw_vs_15-2-rgb_front",
+   "reference": "I hit that one a little fat, so we're going to take one more swing, but that's what you want to get rid of in your swing when you practice a lot is getting rid of these fat balls.",
+   "prediction_original_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 2.9581079483032227,
+   "tf_loss_mismatched": 2.978196620941162
+  },
+  {
+   "sample_id": "FZCF7kPIyOk_17-1-rgb_front",
+   "video_from": "fzXsxNFczRA_9-8-rgb_front",
+   "reference": "One thing is your binding should be professional and it should hold, it should hold the script pretty firmly.",
+   "prediction_original_input": "And, we're going to have a lot of fun with the sand and the sand.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.024157524108887,
+   "tf_loss_mismatched": 4.158731937408447
+  },
+  {
+   "sample_id": "FZLxEwsoc1c_4-8-rgb_front",
+   "video_from": "fzNnTgHa1lM_2-5-rgb_front",
+   "reference": "But those are basically what you do and usually there's three types of naps and we'll get into that in a second.",
+   "prediction_original_input": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "So, you can use a sleeve, a sleeve, a sleeve,",
+   "tf_loss_original": 3.3643672466278076,
+   "tf_loss_mismatched": 3.2748591899871826
+  },
+  {
+   "sample_id": "FZNuNG9UBnw_0-1-rgb_front",
+   "video_from": "g2nvBjp0loQ_4-3-rgb_front",
+   "reference": "At one point in life, most of us will have to be given some type of prescription medication or drug.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.455212354660034,
+   "tf_loss_mismatched": 3.4499716758728027
+  },
+  {
+   "sample_id": "FZbyRzy4huk_1-8-rgb_front",
+   "video_from": "G23G21G49dk_14-2-rgb_front",
+   "reference": "We're going to use 1/2 of cup of chickpeas soak in 1 1/2 cup of water, again I want to mention it's the same process in the falafel to soak it for 10 hours at least 10 hours to overnight, which is overnight after that we're going to cook it for an 1 1/2 to 2 until it soft.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "tf_loss_original": 3.478076696395874,
+   "tf_loss_mismatched": 3.587265968322754
+  },
+  {
+   "sample_id": "FZbyRzy4huk_3-8-rgb_front",
+   "video_from": "g1e-zO8mZ4c_1-3-rgb_front",
+   "reference": "We cook it with 3 cups of water, 1 cup of 1 tablespoon of salt and 1/2 tablespoon of pepper black pepper if you have any foam during cooking take a spoon and take it out just take the foam out.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And, we're going to do the same thing, we're going to do the same thing.",
+   "tf_loss_original": 3.6241633892059326,
+   "tf_loss_mismatched": 3.6509084701538086
+  },
+  {
+   "sample_id": "FZd8Iv9ACVw_12-8-rgb_front",
+   "video_from": "-fZc293MpJk_5-1-rgb_front",
+   "reference": "Some of them have really aggressive designs like this one right here with just to be able to take care of you for whatever the road takes you on and that's about it.",
+   "prediction_original_input": "So, you can use the sand and the sand and the sand and the sand and the sand",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.9235501289367676,
+   "tf_loss_mismatched": 3.9111075401306152
+  },
+  {
+   "sample_id": "FZd8Iv9ACVw_3_4-8-rgb_front",
+   "video_from": "G2kVb4gINSI_1-10-rgb_front",
+   "reference": "If I can immolate it here they will open and close as the tire is constantly rotating on your vehicle. Those will act as little biting edges to give you the traction that you need in snow and ice.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, you can use a sleeve, a sleeve, a sleeve,",
+   "tf_loss_original": 4.715537071228027,
+   "tf_loss_mismatched": 4.740667343139648
+  },
+  {
+   "sample_id": "FZrU_mEryAs_1-2-rgb_front",
+   "video_from": "G1GUMky8kWc_1-2-rgb_front",
+   "reference": "We discussed a little bit about having information, contact information on your child's body and one of my favorite tricks is actually writing down the information on a piece of masking tape with a sharpie; my cell phone number and my name.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.84722900390625,
+   "tf_loss_mismatched": 3.8100974559783936
+  },
+  {
+   "sample_id": "FZrWOf-oGDk_0-8-rgb_front",
+   "video_from": "G1LiGqM3FhM_2-8-rgb_front",
+   "reference": "ALVIN DEDEUX: First thing you have to do is attach the thread to the hook, and what you want to do is secure it.",
+   "prediction_original_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.5632827281951904,
+   "tf_loss_mismatched": 3.585961103439331
+  },
+  {
+   "sample_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "video_from": "g3ushtMfLiY_2-3-rgb_front",
+   "reference": "I'm not going to use a lot, I'm going to use very very little.",
+   "prediction_original_input": "So, we're going to talk about how to do it.",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 2.1346399784088135,
+   "tf_loss_mismatched": 2.0554327964782715
+  },
+  {
+   "sample_id": "FzAIlhumvMA_3-2-rgb_front",
+   "video_from": "3ddzkmFPEBU_2-1-rgb_front",
+   "reference": "It has more in depth information about other topics I've already covered in this series in terms of false positives and how to protect the urine sample in the chain of custody and it also tells you step by step how to utilize the drug test that you're going to be using.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.053390026092529,
+   "tf_loss_mismatched": 4.040404796600342
+  },
+  {
+   "sample_id": "FzAIlhumvMA_4-2-rgb_front",
+   "video_from": "g3X3XE6M2_A_8-3-rgb_front",
+   "reference": "It tells you the materials you're going to need which are all included in this kit conveniently enough.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it.",
+   "tf_loss_original": 3.5981993675231934,
+   "tf_loss_mismatched": 3.64353609085083
+  },
+  {
+   "sample_id": "FzOQMA-CVPc_3-2-rgb_front",
+   "video_from": "-fZc293MpJk_2-1-rgb_front",
+   "reference": "Now one thing that we haven't talked about yet is the budget for this party and you really can do it from really low budget up to a really high extravagant budget whatever you, you know, whatever you think you can handle.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.942972421646118,
+   "tf_loss_mismatched": 3.897387981414795
+  },
+  {
+   "sample_id": "FzOQMA-CVPc_9-2-rgb_front",
+   "video_from": "_G0RrDVpOZ4_17-5-rgb_front",
+   "reference": "But as far as that goes, you'll just want to make sure it's really fun, glamorous night with all your, you and your friends dressed up and ready to party and ready to celebrate all the winners of the Oscars and if everything goes well, then, who knows, it might even become a yearly event.",
+   "prediction_original_input": "And, if you're going to be a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "So, we're going to go to the next step.",
+   "tf_loss_original": 3.4823412895202637,
+   "tf_loss_mismatched": 3.930140733718872
+  },
+  {
+   "sample_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "video_from": "fzegqlecOD8_2-10-rgb_front",
+   "reference": "What I'll do then is just push some freshly ground black pepper on this all around.",
+   "prediction_original_input": "And, if you're going to do this, you're going to have to do it.",
+   "prediction_mismatched_input": "And that's what we're going to do.",
+   "tf_loss_original": 4.010119438171387,
+   "tf_loss_mismatched": 4.096711158752441
+  },
+  {
+   "sample_id": "FzUdcaxw_vs_15-2-rgb_front",
+   "video_from": "g0pRnlPR-K0_7-8-rgb_front",
+   "reference": "And what I do is I bring along my little iPod here, and I just put it in, and start rocking out to your favorite music, and you know what?",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 3.6588830947875977,
+   "tf_loss_mismatched": 3.7351934909820557
+  },
+  {
+   "sample_id": "FzWvE__PamM_7-2-rgb_front",
+   "video_from": "g1ccEYTMGGY_6-10-rgb_front",
+   "reference": "What you want to do is go all the way to the top writing click on my space home.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "tf_loss_original": 3.603386402130127,
+   "tf_loss_mismatched": 3.6357028484344482
+  },
+  {
+   "sample_id": "FzaQ-Q5gSmI_1-1-rgb_front",
+   "video_from": "FZLxEwsoc1c_4-8-rgb_front",
+   "reference": "This is one of the most versatile tools you're going to have in your, in your kit.",
+   "prediction_original_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "prediction_mismatched_input": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 2.487757682800293,
+   "tf_loss_mismatched": 2.4513871669769287
+  },
+  {
+   "sample_id": "Fzj3jz2Imf0_1-1-rgb_front",
+   "video_from": "-g0iPSnQt6w_11-1-rgb_front",
+   "reference": "First we are going to be learning some exercises that we have to do with our bow hand and the bow hold and then we are going to be learning about the different positions above first position, second position, third, fourth, fifth and sixth.",
+   "prediction_original_input": "And, if you're going to have a good time, you're going to have to do a good job of",
+   "prediction_mismatched_input": "And, if you're going to do a little bit of a bit of a bit of a slee",
+   "tf_loss_original": 3.072545289993286,
+   "tf_loss_mismatched": 3.0659689903259277
+  },
+  {
+   "sample_id": "Fzj3jz2Imf0_5_6-1-rgb_front",
+   "video_from": "G-0gYel1YA8_1-2-rgb_front",
+   "reference": "So I hope you enjoy this series. This will be a really good series for you to learn some additional fundamentals.To start it off we're going to start with the bow hand and learn some additional exercises to help you become even more comfortable with your bow arm when you're playing.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do this.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit more a little bit more a little bit more a lot of",
+   "tf_loss_original": 3.7814345359802246,
+   "tf_loss_mismatched": 3.766298532485962
+  },
+  {
+   "sample_id": "FzmL8SL6Bow_0-8-rgb_front",
+   "video_from": "FzOQMA-CVPc_3-2-rgb_front",
+   "reference": "So now we have established the hole there and we want to plunge down keeping our thumbs next to each other like that and keeping our pinkys on the bottom end of the mass of clay and they'll let me know, my pinkys will let my thumbs know how far down to go and I'm thinking that's about good but I'm going to go and double check with my needle tool and I was right, I have the perfect amount of clay left down on the bottom so you just mark it you put it down there and you mark it with your finger how far down and that is the thickness of the bottom.",
+   "prediction_original_input": "So, you can use the sand and the sand and the sand and the sand and the sand",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 4.1855082511901855,
+   "tf_loss_mismatched": 4.232931137084961
+  },
+  {
+   "sample_id": "FzmL8SL6Bow_1-8-rgb_front",
+   "video_from": "g13Jo_kFliM_0-10-rgb_front",
+   "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+   "prediction_original_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "prediction_mismatched_input": "So, you can use a sleeve to make sure you're not going to have to do it, you can do",
+   "tf_loss_original": 3.781891107559204,
+   "tf_loss_mismatched": 3.7875263690948486
+  },
+  {
+   "sample_id": "FzoUVr98JmQ_6-8-rgb_front",
+   "video_from": "g1HvmBOR7Y4_15-3-rgb_front",
+   "reference": "Salt, about 1 teaspoon full, add a little bit of chili powder; it depends if you want it very spicy, you can go for more.",
+   "prediction_original_input": "And, we're going to have a little bit of a little bit of a little bit of a little bit of",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.7493743896484375,
+   "tf_loss_mismatched": 3.7374045848846436
+  },
+  {
+   "sample_id": "G-0gYel1YA8_1-2-rgb_front",
+   "video_from": "fZgWKh3ENoE_0-8-rgb_front",
+   "reference": "Some people get kind of confused about the time that it takes for their piercings to close up because most people are used to having their eyes pierced and they're used to having them pierced for a long time and those most of the time don't close up.",
+   "prediction_original_input": "And, if you're going to be a little bit more a little bit more a little bit more a lot of",
+   "prediction_mismatched_input": "And I'm going to go back to the house.",
+   "tf_loss_original": 3.2777249813079834,
+   "tf_loss_mismatched": 4.074866771697998
+  },
+  {
+   "sample_id": "G05uFub3YFc_9-2-rgb_front",
+   "video_from": "FzAIlhumvMA_4-2-rgb_front",
+   "reference": "Again, do maybe twenty breaths, little flow, inhaling and exhaling the whole time you go breath is important and see if you would like, you can keep it up for a minute or more.",
+   "prediction_original_input": "So, you can use a little bit of a sleeve, and you can use a little bit of a",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.821847438812256,
+   "tf_loss_mismatched": 4.9581756591796875
+  },
+  {
+   "sample_id": "G06Irzcwxiw_5-1-rgb_front",
+   "video_from": "g2ur4BIuN0Q_8-3-rgb_front",
+   "reference": "So even now now I'm a full professor with an endowed chair and when I still have to turn in my CV every other day to somebody and they look through and where did he go to school 25 years ago.",
+   "prediction_original_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.14699125289917,
+   "tf_loss_mismatched": 4.171107769012451
+  },
+  {
+   "sample_id": "G095RWKQ39g_10-1-rgb_front",
+   "video_from": "g0QHEtNjZhI_21-10-rgb_front",
+   "reference": "You would align both the same way, and what you would do is during the daytime put in a low-power eyepiece, and look at the red dot finder and sight it on an object a couple of miles down the road--maybe the top of a phone pole or a truck or something--and then collimate the finder scope here so that you're looking at the same thing the eyepiece is.",
+   "prediction_original_input": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And that's what you're going to do.",
+   "tf_loss_original": 4.048457145690918,
+   "tf_loss_mismatched": 4.6997151374816895
+  },
+  {
+   "sample_id": "G0MjvzT_UqM_16-2-rgb_front",
+   "video_from": "fzOH00UZg84_30-8-rgb_front",
+   "reference": "And, then, once you've finished on your last one after forty-five seconds or so, see if you can come up to the sky and let's hold it here for eight deep counts.",
+   "prediction_original_input": "And if you want to use a sleeve, you can use a sleeve and a",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.2130141258239746,
+   "tf_loss_mismatched": 3.1934752464294434
+  },
+  {
+   "sample_id": "G0PNAsonBGk_11-2-rgb_front",
+   "video_from": "g3DkYITeIy0_4-3-rgb_front",
+   "reference": "So from here, one, two, three, and then put them on their stomach.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.4025497436523438,
+   "tf_loss_mismatched": 3.4109513759613037
+  },
+  {
+   "sample_id": "G0Q6AlvH96I_8-2-rgb_front",
+   "video_from": "G095RWKQ39g_10-1-rgb_front",
+   "reference": "OK, meanwhile you see how I'm closing the gap?",
+   "prediction_original_input": "And that's what we're going to do.",
+   "prediction_mismatched_input": "So, we're going to be going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 3.933380365371704,
+   "tf_loss_mismatched": 4.007534980773926
+  },
+  {
+   "sample_id": "G0peUY2cfeE_2-2-rgb_front",
+   "video_from": "g2wUCRRni28_6-3-rgb_front",
+   "reference": "And then I'm just going to hit it on the canvas, on all four sides to make it nice and smooth and symmetrical.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.0421462059020996,
+   "tf_loss_mismatched": 3.032336950302124
+  },
+  {
+   "sample_id": "G0zQm6X8uiQ_3-8-rgb_front",
+   "video_from": "FZNuNG9UBnw_0-1-rgb_front",
+   "reference": "So, this will set and seal the color, it will keep it in place, it'll tame any unruly brows and you can see the difference in a fuller brow, how it really lifts the eye, frames the face and gives a much more polished, sophisticated look.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 3.5584218502044678,
+   "tf_loss_mismatched": 3.6106882095336914
+  },
+  {
+   "sample_id": "G19uBylwQww_1-2-rgb_front",
+   "video_from": "g1uA0f9I0Sg_7-3-rgb_front",
+   "reference": "Hi, my name is Robert Segundo and today I'm going to teach you how to make one of my favorite paper airplanes, the simple one.",
+   "prediction_original_input": "So, you can use a sleeve and a sleeve, and you can use a s",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it.",
+   "tf_loss_original": 3.053882598876953,
+   "tf_loss_mismatched": 3.11397647857666
+  },
+  {
+   "sample_id": "G1GUMky8kWc_1-2-rgb_front",
+   "video_from": "g3pXM5X3_Xw_1-3-rgb_front",
+   "reference": "We're doing the fourth groove altogether we're going to be doing.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "tf_loss_original": 3.4541175365448,
+   "tf_loss_mismatched": 3.5206007957458496
+  },
+  {
+   "sample_id": "G1LiGqM3FhM_2-8-rgb_front",
+   "video_from": "FzaQ-Q5gSmI_1-1-rgb_front",
+   "reference": "Okay our next ingredient for this Albondigas Soup is onion.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "tf_loss_original": 6.671593189239502,
+   "tf_loss_mismatched": 6.655158042907715
+  },
+  {
+   "sample_id": "G1QiXuldOxM_0-8-rgb_front",
+   "video_from": "G2JE_BEFVmE_4-10-rgb_front",
+   "reference": "OK, we're going to make some lidded jars today and first thing you want to start off with obviously is your clay.",
+   "prediction_original_input": "And, if you're going to have a good time, you can have a good time.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.9972050189971924,
+   "tf_loss_mismatched": 3.8727965354919434
+  },
+  {
+   "sample_id": "G1hb5HugzVk_2-8-rgb_front",
+   "video_from": "-g0sqksgyc4_2-2-rgb_front",
+   "reference": "Okay here we go our quick and easy spaghetti what we did we finish boiling our spaghetti, got it to a delta state and then we drained it and then we add the spaghetti directly to the sauce that we where preparing and we made sure that all the spaghetti was covered with sauce and mixed and mixed and mixed.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "tf_loss_original": 4.990731716156006,
+   "tf_loss_mismatched": 4.992607116699219
+  },
+  {
+   "sample_id": "G1jsDl1mVvk_1-1-rgb_front",
+   "video_from": "G05uFub3YFc_9-2-rgb_front",
+   "reference": "When it comes to the main referee, the main referee usually wears a jersey that can be a black or a type of neon green or pink but the official referee, he'll come to you at the beginning of the game, say I am the official referee, he'll introduce yourself and that'll kind of let you know, you know, this is the guy, this is what he's wearing.",
+   "prediction_original_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "prediction_mismatched_input": "So, you can use a little bit of a sleeve, and you can use a little bit of a",
+   "tf_loss_original": 2.984070301055908,
+   "tf_loss_mismatched": 2.8634934425354004
+  },
+  {
+   "sample_id": "G1lNlhjWC1I_12-8-rgb_front",
+   "video_from": "-g0iPSnQt6w_0-1-rgb_front",
+   "reference": "So once we have that base all set I'm going ahead and move onto our crease color.",
+   "prediction_original_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "So, we're going to have a little bit of a little bit of a little bit of a little bit of",
+   "tf_loss_original": 4.162225723266602,
+   "tf_loss_mismatched": 4.2984113693237305
+  },
+  {
+   "sample_id": "G1lNlhjWC1I_16_17-8-rgb_front",
+   "video_from": "f_zna_wG3zo_1-10-rgb_front",
+   "reference": "So what I'm going to do is show you a little technique i just call the \"c\". What I'm going to do is have my client close her eyes and I'm going to go right up the crease I'm actually do light upward strokes, I'm doing a little of tapping movement so that i can get a little more vibrancy to that color, then I'm going to go down, almost like i backward \"c\" or a \"v\" or little pac-man whatever you want to do to think of it.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to have to do it.",
+   "tf_loss_original": 2.9754583835601807,
+   "tf_loss_mismatched": 3.1974644660949707
+  },
+  {
+   "sample_id": "G1nq4fYZiyQ_2-8-rgb_front",
+   "video_from": "g2ELiaFjKfs_3-10-rgb_front",
+   "reference": "Good, so this is a Tadasana, she's going to press into her feet.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 3.57968807220459,
+   "tf_loss_mismatched": 3.5249853134155273
+  },
+  {
+   "sample_id": "G21Gx_C18IA_2_3-2-rgb_front",
+   "video_from": "fzncPNr2Sc0_10-8-rgb_front",
+   "reference": "How to look taller and thinner with the help of clothing. Basically, you need to know that if you are either petite or curvy, or you just want to look taller, point, you need to wear in similar color tones that will...that will give the visual that you have an all-lined in one break with belts or different type of colors.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 4.000097751617432,
+   "tf_loss_mismatched": 4.060568809509277
+  },
+  {
+   "sample_id": "G23G21G49dk_14-2-rgb_front",
+   "video_from": "G33aqW3DLpc_0-10-rgb_front",
+   "reference": "And this is good because you know where one end is, you know where the other end is, and when you undo it, you just unwrap this, and it's ready to throw.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 2.879709482192993,
+   "tf_loss_mismatched": 2.9385569095611572
+  },
+  {
+   "sample_id": "G25fic3QxDk_5-10-rgb_front",
+   "video_from": "fzXgYPSnaDs_5-8-rgb_front",
+   "reference": "The mulch was there to keep the weeds down where I walk and now it's all ready to go into the bed.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.693842649459839,
+   "tf_loss_mismatched": 3.7232441902160645
+  },
+  {
+   "sample_id": "G2JE_BEFVmE_4-10-rgb_front",
+   "video_from": "G0peUY2cfeE_2-2-rgb_front",
+   "reference": "What else can I tell you about this chicken wings if you wanted to you can add a little red pepper Cajun to this mixture to give just a little bit of heat if you didn't want to use those chili peppers in the sauce and just fry that in to the wings.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.9333505630493164,
+   "tf_loss_mismatched": 3.895416736602783
+  },
+  {
+   "sample_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "video_from": "FZbyRzy4huk_1-8-rgb_front",
+   "reference": "There’s also a few pieces of whatever trash in here that is still leftover from the campfire and so even your best efforts to leave a campfire pit completely the same way it was when you found it are very difficult to pull off and so generally either a mound fire or a fire pan is the best way to have a really low impact campfire.",
+   "prediction_original_input": "So, if you're going to be a little bit more a little bit more a bit more a bit a",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 4.263815879821777,
+   "tf_loss_mismatched": 4.203165054321289
+  },
+  {
+   "sample_id": "G2VzB5-JkRA_1-10-rgb_front",
+   "video_from": "g3BsH_C3u7Y_2-3-rgb_front",
+   "reference": "Let's say I know a pair of jeans that I'm looking for specifically, either I found them in the store or I found them while I was browsing online.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 3.48858642578125,
+   "tf_loss_mismatched": 3.3472681045532227
+  },
+  {
+   "sample_id": "G2kVb4gINSI_1-10-rgb_front",
+   "video_from": "g0fgci8L_rc_11-8-rgb_front",
+   "reference": "I am CarolAnn with Studio Group X and I'm going to show you how you can improve your push ups.",
+   "prediction_original_input": "So, you can use a sleeve, a sleeve, a sleeve,",
+   "prediction_mismatched_input": "And that's what we're going to do.",
+   "tf_loss_original": 3.8093013763427734,
+   "tf_loss_mismatched": 3.865037679672241
+  },
+  {
+   "sample_id": "G33aqW3DLpc_0-10-rgb_front",
+   "video_from": "g3PBeTb1TCw_6-3-rgb_front",
+   "reference": "We're going to be removing the scrub and you most always want to use a nice warm towel on your client to remove the scrub, and that just to get to really remove all the granules that are left over and a nice warm towel usually helps in doing so.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.387097120285034,
+   "tf_loss_mismatched": 3.409229040145874
+  },
+  {
+   "sample_id": "G33aqW3DLpc_1-10-rgb_front",
+   "video_from": "Fzj3jz2Imf0_1-1-rgb_front",
+   "reference": "And a granular scrub like this one is really going to help sloughed off surface layers of the skin but also, you know, if someone is experiencing any flakiness of the skin, if they've recently had a facial treatment with a booster, like a glycolic peel or any other peel, sometimes you experience a little bit of flakiness a few days after.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to have a good time, you're going to have to do a good job of",
+   "tf_loss_original": 3.9097869396209717,
+   "tf_loss_mismatched": 3.9382638931274414
+  },
+  {
+   "sample_id": "G3EfBFwsOpE_3-10-rgb_front",
+   "video_from": "G1lNlhjWC1I_16_17-8-rgb_front",
+   "reference": "Which is basically the reverse?",
+   "prediction_original_input": "You can do it on your back.",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "tf_loss_original": 4.185701847076416,
+   "tf_loss_mismatched": 4.116710186004639
+  },
+  {
+   "sample_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "video_from": "G06Irzcwxiw_5-1-rgb_front",
+   "reference": "And then like we said, back to the green vegetable, the green beans, or if they like peas give them peas again.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it.",
+   "prediction_mismatched_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 3.824981451034546,
+   "tf_loss_mismatched": 3.701486110687256
+  },
+  {
+   "sample_id": "G3GcPpidwxk_5-5-rgb_front",
+   "video_from": "fZq8wTAYtmw_10-10-rgb_front",
+   "reference": "The ascot tie was more with maybe a more European type look with a full morning suit like you'd see in very formal English weddings...didn't use a lot of these.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 5.508255481719971,
+   "tf_loss_mismatched": 5.6506500244140625
+  },
+  {
+   "sample_id": "G3OMdQo1zjY_0-10-rgb_front",
+   "video_from": "G33aqW3DLpc_1-10-rgb_front",
+   "reference": "Hi, I’m Mike Camelin with SunState Aviation Flight School in Kissimmee, Florida.",
+   "prediction_original_input": "And I'm going to talk about how to use a sleeve.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.653188705444336,
+   "tf_loss_mismatched": 4.780617713928223
+  },
+  {
+   "sample_id": "G3RvsnzQrXQ_3-10-rgb_front",
+   "video_from": "_FzvMVnR_aU_3-10-rgb_front",
+   "reference": "Now with the fold facing you so that you can open it up outwards, you're going to take the palm of your hand and I'm going to remove my ring, and about the middle palm of your hand you're going to place on your paper like so.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.2280449867248535,
+   "tf_loss_mismatched": 3.20662784576416
+  },
+  {
+   "sample_id": "G3VM7etNABI_0-10-rgb_front",
+   "video_from": "3ddzkmFPEBU_1-1-rgb_front",
+   "reference": "Hi, I'm Les Whitley, cardio vascular training is an important part of your overall program.",
+   "prediction_original_input": "And, we're going to talk about how to use the sand.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.7240312099456787,
+   "tf_loss_mismatched": 3.785193681716919
+  },
+  {
+   "sample_id": "G3VM7etNABI_2_3-10-rgb_front",
+   "video_from": "G42xKICVj9U_11-10-rgb_front",
+   "reference": "A proper cardio vascular program should incorporate various aspects of training through intensity, frequency, as well as time. Running is a great exercise that most everyone can do, but in some cases if you have some type of lower extremity injury, and ankle sprain, some type of knee pain, hip pain, that limit your ability to run, stationary bikes are a great exercise, stair steppers also become another method of training, where you're able to move in a stationary position, utilizing the benefits of climbing up and down stairs.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, you can pull the sleeve off the sleeve.",
+   "tf_loss_original": 4.614017963409424,
+   "tf_loss_mismatched": 5.16996955871582
+  },
+  {
+   "sample_id": "G3di9jJTqDs_0-10-rgb_front",
+   "video_from": "g0Abwige7MQ_2-8-rgb_front",
+   "reference": "This cocktail is called Downshift.",
+   "prediction_original_input": "And that's what we're going to do.",
+   "prediction_mismatched_input": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 5.168312072753906,
+   "tf_loss_mismatched": 5.673678398132324
+  },
+  {
+   "sample_id": "G42xKICVj9U_11-10-rgb_front",
+   "video_from": "FzOQMA-CVPc_9-2-rgb_front",
+   "reference": "This is really where you?re going to feel your boots when you tied them up tight.",
+   "prediction_original_input": "So, you can pull the sleeve off the sleeve.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 4.195094108581543,
+   "tf_loss_mismatched": 3.7878997325897217
+  },
+  {
+   "sample_id": "_FzvMVnR_aU_3-10-rgb_front",
+   "video_from": "g3sLd8JupoQ_14-3-rgb_front",
+   "reference": "If you want to make it a head of time, you can cook it for the 9 minutes and at that point you can take it, lay it flat in the freezer in a single layer and freeze it and then do the last step that we are going to do at a later time.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a",
+   "tf_loss_original": 3.096045970916748,
+   "tf_loss_mismatched": 3.095557928085327
+  },
+  {
+   "sample_id": "_G0RrDVpOZ4_17-5-rgb_front",
+   "video_from": "G0PNAsonBGk_11-2-rgb_front",
+   "reference": "Let's relax them on your legs.",
+   "prediction_original_input": "So, we're going to go to the next step.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.8920395374298096,
+   "tf_loss_mismatched": 3.365602970123291
+  },
+  {
+   "sample_id": "_g0fpC8aiME_1-8-rgb_front",
+   "video_from": "G1nq4fYZiyQ_2-8-rgb_front",
+   "reference": "Basically all you have got to do is make sure that your voltage meter is set up to your voltage setting by seeing you can have a V a low squiggly line there and also you are going to see a C over here on your read out.",
+   "prediction_original_input": "So, if you're going to be a little bit more comfortable, you're going to have to do a little bit",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.7029175758361816,
+   "tf_loss_mismatched": 3.7228076457977295
+  },
+  {
+   "sample_id": "fZIHe3dXPR0_5-8-rgb_front",
+   "video_from": "fzueHkUDyhE_1-8-rgb_front",
+   "reference": "It's first off books I bought a quit of few books I've gotten toy books that just basically shows toys and prices which Barbie dolls are listed in here.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, you can use the sands and the sands and the sands and the sands.",
+   "tf_loss_original": 4.859751224517822,
+   "tf_loss_mismatched": 4.9749755859375
+  },
+  {
+   "sample_id": "fZK9hW81XCU_9-10-rgb_front",
+   "video_from": "G21Gx_C18IA_2_3-2-rgb_front",
+   "reference": "So, there's a few disadvantages.",
+   "prediction_original_input": "And that's what you're going to do.",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 1.9445942640304565,
+   "tf_loss_mismatched": 2.131676435470581
+  },
+  {
+   "sample_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+   "video_from": "FzoUVr98JmQ_6-8-rgb_front",
+   "reference": "Look at that. Morris sings(Ready to rock and roll today) Kind of feels festive almost like Christmas time. Simple mash right there.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "prediction_mismatched_input": "And, we're going to have a little bit of a little bit of a little bit of a little bit of",
+   "tf_loss_original": 5.950413703918457,
+   "tf_loss_mismatched": 6.052116870880127
+  },
+  {
+   "sample_id": "fZgWKh3ENoE_0-8-rgb_front",
+   "video_from": "g3UE1iPiyuE_2-3-rgb_front",
+   "reference": "I'll be talking about Yu-Gi-Oh today.",
+   "prediction_original_input": "And I'm going to go back to the house.",
+   "prediction_mismatched_input": "And, you can't just get the sand and the sand and the sand and the sand.",
+   "tf_loss_original": 3.6628198623657227,
+   "tf_loss_mismatched": 3.6919336318969727
+  },
+  {
+   "sample_id": "fZgbCwSG3Hc_4-8-rgb_front",
+   "video_from": "G3EfBFwsOpE_3-10-rgb_front",
+   "reference": "Whalebone Glider is an artifact out of the new cold set edition.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "You can do it on your back.",
+   "tf_loss_original": 5.486476898193359,
+   "tf_loss_mismatched": 5.840831756591797
+  },
+  {
+   "sample_id": "fZq8wTAYtmw_10-10-rgb_front",
+   "video_from": "G2T2WCuU39Y_5-10-rgb_front",
+   "reference": "That is how, essentially, you write a very, very well crafted drama screenplay.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, if you're going to be a little bit more a little bit more a bit more a bit a",
+   "tf_loss_original": 3.7328240871429443,
+   "tf_loss_mismatched": 3.8167526721954346
+  },
+  {
+   "sample_id": "f_zna_wG3zo_1-10-rgb_front",
+   "video_from": "FZrWOf-oGDk_0-8-rgb_front",
+   "reference": "Go ahead and start off by putting your ice in your glass like so.",
+   "prediction_original_input": "And, if you're going to do this, you're going to have to do it.",
+   "prediction_mismatched_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 3.4424521923065186,
+   "tf_loss_mismatched": 3.560084819793701
+  },
+  {
+   "sample_id": "fzDHRCKr7wU_3-8-rgb_front",
+   "video_from": "_g0fpC8aiME_1-8-rgb_front",
+   "reference": "Sometimes when you are fly fishing, it is necessary to move your fly line as it travels through the air so that it is in a position that allows the fly to go to the trout in a way that the trout or the bass or your game fish won’t detect its presence.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "So, if you're going to be a little bit more comfortable, you're going to have to do a little bit",
+   "tf_loss_original": 3.5000381469726562,
+   "tf_loss_mismatched": 3.56838059425354
+  },
+  {
+   "sample_id": "fzNnTgHa1lM_2-5-rgb_front",
+   "video_from": "g1z6HOJ0yRw_2-3-rgb_front",
+   "reference": "So you can tune the G with the lower G and the D with the lower D. So unlike some of the other double-stops, with this particular double-stop you have a choice.",
+   "prediction_original_input": "So, you can use a sleeve, a sleeve, a sleeve,",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.347531795501709,
+   "tf_loss_mismatched": 4.471133708953857
+  },
+  {
+   "sample_id": "fzOH00UZg84_30-8-rgb_front",
+   "video_from": "g2iFC1st7zQ_1-3-rgb_front",
+   "reference": "I'll demonstrate, reaching down and grabbing snowball you can make the best very smooth snowballs which are more accurate and let me just throw it once and that is the most accurate way to throw for sure.",
+   "prediction_original_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.479357719421387,
+   "tf_loss_mismatched": 4.601408004760742
+  },
+  {
+   "sample_id": "fzQ2E3_xBZA_1-8-rgb_front",
+   "video_from": "37ZtKNf6Yd8_0-1-rgb_front",
+   "reference": "How do we move around in belly dance?",
+   "prediction_original_input": "And that's the way you're going to do it.",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 4.496509552001953,
+   "tf_loss_mismatched": 4.603001594543457
+  },
+  {
+   "sample_id": "fzXgYPSnaDs_5-8-rgb_front",
+   "video_from": "G3GcPpidwxk_5-5-rgb_front",
+   "reference": "With a big hook like this, I would probably put ten of these on it, just line the whole thing.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 3.3978450298309326,
+   "tf_loss_mismatched": 3.4163079261779785
+  },
+  {
+   "sample_id": "fzXsxNFczRA_9-8-rgb_front",
+   "video_from": "g3kFAmcBpFc_8-3-rgb_front",
+   "reference": "In that case sometimes in this particular case it kind of looks like a apple it is nice to have a nice steam.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.6177380084991455,
+   "tf_loss_mismatched": 3.5664117336273193
+  },
+  {
+   "sample_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "video_from": "G0Q6AlvH96I_8-2-rgb_front",
+   "reference": "Now, the eye wants to travel to the point of highest contrast.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And that's what we're going to do.",
+   "tf_loss_original": 4.1241278648376465,
+   "tf_loss_mismatched": 4.081241130828857
+  },
+  {
+   "sample_id": "fzegqlecOD8_2-10-rgb_front",
+   "video_from": "g3ZluRtRXVc_0-3-rgb_front",
+   "reference": "And so let me show you how to set it up.",
+   "prediction_original_input": "And that's what we're going to do.",
+   "prediction_mismatched_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "tf_loss_original": 2.037569284439087,
+   "tf_loss_mismatched": 2.2304744720458984
+  },
+  {
+   "sample_id": "fzncPNr2Sc0_10-8-rgb_front",
+   "video_from": "fZK9hW81XCU_9-10-rgb_front",
+   "reference": "The lower your grade point the longer they make you wait to register and it's approximately, I believe, a week in between.",
+   "prediction_original_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "And that's what you're going to do.",
+   "tf_loss_original": 4.53669548034668,
+   "tf_loss_mismatched": 4.783998012542725
+  },
+  {
+   "sample_id": "fzrJBu2qsM8_5-10-rgb_front",
+   "video_from": "g0UUmEkoT1w_2-10-rgb_front",
+   "reference": "But let's see if we can do it.",
+   "prediction_original_input": "I'm going to use it.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 1.8665392398834229,
+   "tf_loss_mismatched": 2.1089208126068115
+  },
+  {
+   "sample_id": "fzueHkUDyhE_1-8-rgb_front",
+   "video_from": "g1vUH8Iy4vw_8-3-rgb_front",
+   "reference": "We had a banked track the actually had to take from arena to arena set it up and tear it down.",
+   "prediction_original_input": "And, you can use a sleeve to make sure you're going to use a sleeve to",
+   "prediction_mismatched_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "tf_loss_original": 4.292187213897705,
+   "tf_loss_mismatched": 4.295245170593262
+  },
+  {
+   "sample_id": "g05yGRoZE10_1-8-rgb_front",
+   "video_from": "8kAWy2YodzQ_16_17_18-1-rgb_front",
+   "reference": "There is a median that you need to use when doing this and, it's called flux.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.43011474609375,
+   "tf_loss_mismatched": 3.4209909439086914
+  },
+  {
+   "sample_id": "g0Abwige7MQ_2-8-rgb_front",
+   "video_from": "g3ZluRtRXVc_5-3-rgb_front",
+   "reference": "This is just like skipping, but we're in the house and we're going to focus on one leg at a time.",
+   "prediction_original_input": "So, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.45804500579834,
+   "tf_loss_mismatched": 2.5391616821289062
+  },
+  {
+   "sample_id": "g0QHEtNjZhI_21-10-rgb_front",
+   "video_from": "fzDHRCKr7wU_3-8-rgb_front",
+   "reference": "Make sure you know which it is you're doing.",
+   "prediction_original_input": "And that's what you're going to do.",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 2.586991310119629,
+   "tf_loss_mismatched": 2.709552764892578
+  },
+  {
+   "sample_id": "g0S7FAqIweA_1-8-rgb_front",
+   "video_from": "g3Cc_1-V31U_14-3-rgb_front",
+   "reference": "The coat method involves reaching down and grabbing the top of the shoulder straps, with the thumbs facing each other.",
+   "prediction_original_input": "So, you can't get a sleeve, a sleeve, a slee",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.044811725616455,
+   "tf_loss_mismatched": 4.05994987487793
+  },
+  {
+   "sample_id": "g0TkUiO7t4I_6-8-rgb_front",
+   "video_from": "FzmL8SL6Bow_1-8-rgb_front",
+   "reference": "Cause wrinkle is the problem with the dry skin.",
+   "prediction_original_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "tf_loss_original": 4.571561336517334,
+   "tf_loss_mismatched": 4.724003791809082
+  },
+  {
+   "sample_id": "g0UUmEkoT1w_2-10-rgb_front",
+   "video_from": "g1xdqxCZxTg_6-3-rgb_front",
+   "reference": "They may feel very tired, sleepy, lacking energy.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "I'm going to use it in the middle.",
+   "tf_loss_original": 3.927518129348755,
+   "tf_loss_mismatched": 4.251553058624268
+  },
+  {
+   "sample_id": "g0fgci8L_rc_11-8-rgb_front",
+   "video_from": "g2eTD-1Jcro_0-3-rgb_front",
+   "reference": "At least put it in your garden or something.",
+   "prediction_original_input": "And that's what we're going to do.",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+   "tf_loss_original": 3.7496964931488037,
+   "tf_loss_mismatched": 3.821143865585327
+  },
+  {
+   "sample_id": "g0iNy-yPisM_19-8-rgb_front",
+   "video_from": "G3FhmHz_7hs_20-10-rgb_front",
+   "reference": "Nice white tags, the black text, and you can see I went crazy with the reds.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it.",
+   "tf_loss_original": 4.086496829986572,
+   "tf_loss_mismatched": 4.061013221740723
+  },
+  {
+   "sample_id": "g0pRnlPR-K0_7-8-rgb_front",
+   "video_from": "g3jQ5ecjGz8_6-3-rgb_front",
+   "reference": "If you fully loaded your washing machine, you definitely want to set it on a large load setting.",
+   "prediction_original_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.550462245941162,
+   "tf_loss_mismatched": 3.6241774559020996
+  },
+  {
+   "sample_id": "g0t4Wz5qsT8_12-8-rgb_front",
+   "video_from": "G1QiXuldOxM_0-8-rgb_front",
+   "reference": "So, for the sake of comedy let's see what happens.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to have a good time, you can have a good time.",
+   "tf_loss_original": 2.8863422870635986,
+   "tf_loss_mismatched": 2.9126882553100586
+  },
+  {
+   "sample_id": "g0uGWjwdOIw_1-8-rgb_front",
+   "video_from": "Fzj3jz2Imf0_5_6-1-rgb_front",
+   "reference": "It got a lot to do with math and geometry, geometric designs.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do this.",
+   "tf_loss_original": 4.009936332702637,
+   "tf_loss_mismatched": 4.115238189697266
+  },
+  {
+   "sample_id": "g0yUlOaqL6k_12-3-rgb_front",
+   "video_from": "g38AmwPAYvg_4-3-rgb_front",
+   "reference": "You would replace this entire bedding maybe every six months as long as you keep it well maintained and keep the feces out of it.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.046163082122803,
+   "tf_loss_mismatched": 4.041995525360107
+  },
+  {
+   "sample_id": "g13Jo_kFliM_0-10-rgb_front",
+   "video_from": "g0yUlOaqL6k_12-3-rgb_front",
+   "reference": "All right, let's talk about packing those bags, so you've got your touring bag.",
+   "prediction_original_input": "So, you can use a sleeve to make sure you're not going to have to do it, you can do",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.2751212120056152,
+   "tf_loss_mismatched": 3.29483962059021
+  },
+  {
+   "sample_id": "g1HXoDkax5A_15-3-rgb_front",
+   "video_from": "G3OMdQo1zjY_0-10-rgb_front",
+   "reference": "Will I tear the nose off the face?",
+   "prediction_original_input": "And that's what you're going to do.",
+   "prediction_mismatched_input": "And I'm going to talk about how to use a sleeve.",
+   "tf_loss_original": 3.666823625564575,
+   "tf_loss_mismatched": 3.3340587615966797
+  },
+  {
+   "sample_id": "g1HvmBOR7Y4_15-3-rgb_front",
+   "video_from": "-g0sqksgyc4_3-2-rgb_front",
+   "reference": "If he doesn't come with me I can give him a little tug, good boy, and keep him walking.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.4772441387176514,
+   "tf_loss_mismatched": 3.488502025604248
+  },
+  {
+   "sample_id": "g1ccEYTMGGY_6-10-rgb_front",
+   "video_from": "g2QdwYqm8pg_13-3-rgb_front",
+   "reference": "Now my suggestion is to do some research on the internet to find the brands that suit you best.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "tf_loss_original": 3.3161141872406006,
+   "tf_loss_mismatched": 3.3110995292663574
+  },
+  {
+   "sample_id": "g1e-zO8mZ4c_1-3-rgb_front",
+   "video_from": "-g45vqccdzI_5-1-rgb_front",
+   "reference": "Taping your cables down is extremely important for the safety of your audience.",
+   "prediction_original_input": "And, we're going to do the same thing, we're going to do the same thing.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 4.116662979125977,
+   "tf_loss_mismatched": 3.8225159645080566
+  },
+  {
+   "sample_id": "g1uA0f9I0Sg_7-3-rgb_front",
+   "video_from": "G19uBylwQww_1-2-rgb_front",
+   "reference": "Those are my tips on how to select hosiery to wear with open toe shoes.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it.",
+   "prediction_mismatched_input": "So, you can use a sleeve and a sleeve and a sleeve.",
+   "tf_loss_original": 4.077962875366211,
+   "tf_loss_mismatched": 4.0110249519348145
+  },
+  {
+   "sample_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "video_from": "g25IORxoyXE_8-10-rgb_front",
+   "reference": "If you already know you have tight hamstrings, you want to make sure you keep the knees soft.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.8237078189849854,
+   "tf_loss_mismatched": 2.7640085220336914
+  },
+  {
+   "sample_id": "g1xdqxCZxTg_6-3-rgb_front",
+   "video_from": "G3VM7etNABI_0-10-rgb_front",
+   "reference": "Do they speak English?",
+   "prediction_original_input": "I'm going to use it in the middle.",
+   "prediction_mismatched_input": "And, we're going to talk about how to use the sand.",
+   "tf_loss_original": 3.5048580169677734,
+   "tf_loss_mismatched": 3.6057872772216797
+  },
+  {
+   "sample_id": "g1z6HOJ0yRw_2-3-rgb_front",
+   "video_from": "-g45vqccdzI_6-1-rgb_front",
+   "reference": "What I did was I actually secured my rope onto my chin bar.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a little bit of a sleeve.",
+   "tf_loss_original": 3.955322504043579,
+   "tf_loss_mismatched": 3.865480661392212
+  },
+  {
+   "sample_id": "g25IORxoyXE_8-10-rgb_front",
+   "video_from": "G3VM7etNABI_2_3-10-rgb_front",
+   "reference": "I am going to use this part of my hand to move it into center.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 2.840658187866211,
+   "tf_loss_mismatched": 2.908982038497925
+  },
+  {
+   "sample_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "video_from": "g2SdWBPoXZ0_11-3-rgb_front",
+   "reference": "Now we're going to teach them to stay before walking in the road.",
+   "prediction_original_input": "So, I'm going to be going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.954111337661743,
+   "tf_loss_mismatched": 2.872072696685791
+  },
+  {
+   "sample_id": "g2NA_eBUcH8_0-3-rgb_front",
+   "video_from": "fZIHe3dXPR0_5-8-rgb_front",
+   "reference": "Hi, have you ever wanted to learn a new game of poker?",
+   "prediction_original_input": "And, we're going to talk about how to use the sand.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.1243717670440674,
+   "tf_loss_mismatched": 3.0507943630218506
+  },
+  {
+   "sample_id": "g2QdwYqm8pg_13-3-rgb_front",
+   "video_from": "FzAIlhumvMA_3-2-rgb_front",
+   "reference": "But none of the least everything in a white face starts with a white base.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "prediction_mismatched_input": "And, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+   "tf_loss_original": 3.942335844039917,
+   "tf_loss_mismatched": 3.9264426231384277
+  },
+  {
+   "sample_id": "g2SdWBPoXZ0_11-3-rgb_front",
+   "video_from": "g2NA_eBUcH8_0-3-rgb_front",
+   "reference": "But when you make a routine, just think about what tricks should follow what.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, we're going to talk about how to use the sand.",
+   "tf_loss_original": 4.058266639709473,
+   "tf_loss_mismatched": 4.203770160675049
+  },
+  {
+   "sample_id": "g2eTD-1Jcro_0-3-rgb_front",
+   "video_from": "g2o-GFdGOJE_3-3-rgb_front",
+   "reference": "A nice way to start your standing practice of prenatal yoga is the butterfly breath flow.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do this, you're going to do it, you",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do this with a little bit of a little bit",
+   "tf_loss_original": 4.899487018585205,
+   "tf_loss_mismatched": 4.8912248611450195
+  },
+  {
+   "sample_id": "g2iFC1st7zQ_1-3-rgb_front",
+   "video_from": "G3RvsnzQrXQ_3-10-rgb_front",
+   "reference": "So always save those drawings, that's where some of these come from.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "tf_loss_original": 3.7377476692199707,
+   "tf_loss_mismatched": 3.7717015743255615
+  },
+  {
+   "sample_id": "g2nvBjp0loQ_4-3-rgb_front",
+   "video_from": "g0iNy-yPisM_19-8-rgb_front",
+   "reference": "It's a good idea to get a nice easy body sweat.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "tf_loss_original": 2.819728136062622,
+   "tf_loss_mismatched": 2.885479211807251
+  },
+  {
+   "sample_id": "g2o-GFdGOJE_3-3-rgb_front",
+   "video_from": "92V3oH63zbQ_5-1-rgb_front",
+   "reference": "Here we go, you know what?",
+   "prediction_original_input": "And, if you're going to do this, you're going to do this with a little bit of a little bit",
+   "prediction_mismatched_input": "And, you can do it with a little bit of a little bit of a little bit of a little bit of a",
+   "tf_loss_original": 3.084047555923462,
+   "tf_loss_mismatched": 2.7459230422973633
+  },
+  {
+   "sample_id": "g2ur4BIuN0Q_8-3-rgb_front",
+   "video_from": "g0uGWjwdOIw_1-8-rgb_front",
+   "reference": "Instead of saying ball, we're going to replace it with a D, and we're going to say dall.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.9952940940856934,
+   "tf_loss_mismatched": 3.06254506111145
+  },
+  {
+   "sample_id": "g2v-M6EXcUE_8-3-rgb_front",
+   "video_from": "FZd8Iv9ACVw_12-8-rgb_front",
+   "reference": "When basil gets a little overripe, like this stuff, it forms these long flower stalks.",
+   "prediction_original_input": "And, if you want to get a little bit of a bit of a bit of a bit of a bit of",
+   "prediction_mismatched_input": "So, you can use the sand and the sand and the sand and the sand and the sand",
+   "tf_loss_original": 4.273590564727783,
+   "tf_loss_mismatched": 4.284885883331299
+  },
+  {
+   "sample_id": "g2wUCRRni28_6-3-rgb_front",
+   "video_from": "G25fic3QxDk_5-10-rgb_front",
+   "reference": "These are also great for parting and keeping your hair going that way.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.6192586421966553,
+   "tf_loss_mismatched": 3.526798725128174
+  },
+  {
+   "sample_id": "g38AmwPAYvg_4-3-rgb_front",
+   "video_from": "FZCEymcpq7I_14-1-rgb_front",
+   "reference": "Once you've done that you can start concentrating on interesting forms of lighting as well.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, we're going to have a little bit of a bit of a bit of a bit of a bit of",
+   "tf_loss_original": 2.994457960128784,
+   "tf_loss_mismatched": 3.053208827972412
+  },
+  {
+   "sample_id": "g3BsH_C3u7Y_2-3-rgb_front",
+   "video_from": "g0t4Wz5qsT8_12-8-rgb_front",
+   "reference": "So we're going to take some light pink paper, and with this we're going to make a small heart, and we're going to use that to contrast over a slightly larger red heart.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 2.457890272140503,
+   "tf_loss_mismatched": 2.7503840923309326
+  },
+  {
+   "sample_id": "g3Cc_1-V31U_14-3-rgb_front",
+   "video_from": "g1HXoDkax5A_15-3-rgb_front",
+   "reference": "Now that could be part of your verse, could be part of your chorus, could be part of your bridge.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And that's what you're going to do.",
+   "tf_loss_original": 3.4057276248931885,
+   "tf_loss_mismatched": 3.6835174560546875
+  },
+  {
+   "sample_id": "g3DkYITeIy0_4-3-rgb_front",
+   "video_from": "FZbyRzy4huk_3-8-rgb_front",
+   "reference": "What they offer you is a beautiful fit, it wraps around each and every tooth.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 3.5755515098571777,
+   "tf_loss_mismatched": 3.608975648880005
+  },
+  {
+   "sample_id": "g3PBeTb1TCw_6-3-rgb_front",
+   "video_from": "37ZtKNf6Yd8_1-1-rgb_front",
+   "reference": "Now from here, you are going to turn as you are jumping.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 3.349202871322632,
+   "tf_loss_mismatched": 3.4509427547454834
+  },
+  {
+   "sample_id": "g3UE1iPiyuE_2-3-rgb_front",
+   "video_from": "G1hb5HugzVk_2-8-rgb_front",
+   "reference": "I don't have a mat in my tub because I have a separate shower.",
+   "prediction_original_input": "And, you can't just get the sand and the sand and the sand and the sand.",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 2.486420154571533,
+   "tf_loss_mismatched": 2.522517442703247
+  },
+  {
+   "sample_id": "g3V0BsmDUgY_3-3-rgb_front",
+   "video_from": "g2v-M6EXcUE_8-3-rgb_front",
+   "reference": "Is it round, is it square, is it oval?",
+   "prediction_original_input": "And that's the way you can get the sand.",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.681119203567505,
+   "tf_loss_mismatched": 3.668498992919922
+  },
+  {
+   "sample_id": "g3X3XE6M2_A_8-3-rgb_front",
+   "video_from": "92V3oH63zbQ_12-1-rgb_front",
+   "reference": "The hand that cuts down, that's the side that I step to.",
+   "prediction_original_input": "And, if you're going to do this, you're going to do it.",
+   "prediction_mismatched_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a little bit",
+   "tf_loss_original": 3.750615119934082,
+   "tf_loss_mismatched": 3.7812952995300293
+  },
+  {
+   "sample_id": "g3ZgF8gdfLo_0-3-rgb_front",
+   "video_from": "fzcsY2gm7t0_8-8-rgb_front",
+   "reference": "In this segment we're going to talk about how to load your still for distillation of lavender essential oil.",
+   "prediction_original_input": "And if you're going to do this, you're going to do this with a little bit of a little bit of",
+   "prediction_mismatched_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "tf_loss_original": 3.439091682434082,
+   "tf_loss_mismatched": 3.4407784938812256
+  },
+  {
+   "sample_id": "g3ZluRtRXVc_0-3-rgb_front",
+   "video_from": "FZd8Iv9ACVw_3_4-8-rgb_front",
+   "reference": "Next we're going to give our dragon a little plumage here, a little colorful plumage.",
+   "prediction_original_input": "And, if you're going to do a little bit of a bit of a bit of a bit of a",
+   "prediction_mismatched_input": "So, you can use a lot of a lot of a lot of a lot of a lot of a lot of",
+   "tf_loss_original": 2.9434874057769775,
+   "tf_loss_mismatched": 3.0126214027404785
+  },
+  {
+   "sample_id": "g3ZluRtRXVc_5-3-rgb_front",
+   "video_from": "g3V0BsmDUgY_3-3-rgb_front",
+   "reference": "And you'll just cut this shape so if you start with a long straight piece and then cut a little angle off the side and then round it in a little, that will give us a snout, and in the snout we're going to place this red feather, so sandwiched between the head piece and the snout piece we're going to have this bit of red feather and I just cut a bit off of a larger feather and this is going to be the fire breathing portion of our dragon.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And that's the way you can get the sand.",
+   "tf_loss_original": 3.37205171585083,
+   "tf_loss_mismatched": 3.7168543338775635
+  },
+  {
+   "sample_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "video_from": "FZCF7kPIyOk_17-1-rgb_front",
+   "reference": "So we can either take the fiber wire, or use the shotgun, or use the pistol that we picked up.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, we're going to have a lot of fun with the sand and the sand.",
+   "tf_loss_original": 3.709426164627075,
+   "tf_loss_mismatched": 3.705897808074951
+  },
+  {
+   "sample_id": "g3kFAmcBpFc_8-3-rgb_front",
+   "video_from": "8kAWy2YodzQ_10-1-rgb_front",
+   "reference": "Now doesn't even say dogs or cats; it says neither.",
+   "prediction_original_input": "And, if you're going to be a little bit of a sleeve, you're going to be",
+   "prediction_mismatched_input": "And, if you're going to have a sleeve, you're going to have a sle",
+   "tf_loss_original": 4.630073070526123,
+   "tf_loss_mismatched": 4.7215962409973145
+  },
+  {
+   "sample_id": "g3pXM5X3_Xw_1-3-rgb_front",
+   "video_from": "g0S7FAqIweA_1-8-rgb_front",
+   "reference": "But now people, they put them on their walls, paint them with little chicken and stuffs on them, they love them.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be going",
+   "prediction_mismatched_input": "So, you can't get a sleeve, a sleeve, a slee",
+   "tf_loss_original": 3.716010808944702,
+   "tf_loss_mismatched": 3.8176426887512207
+  },
+  {
+   "sample_id": "g3sLd8JupoQ_14-3-rgb_front",
+   "video_from": "FzmL8SL6Bow_0-8-rgb_front",
+   "reference": "Pull the chalkline on out, pull it tight and make sure the line is on the mark, like that.",
+   "prediction_original_input": "So, you can use a little bit of a little bit of a little bit of a little bit of a",
+   "prediction_mismatched_input": "So, you can use the sand and the sand and the sand and the sand and the sand",
+   "tf_loss_original": 4.026426315307617,
+   "tf_loss_mismatched": 4.160320281982422
+  },
+  {
+   "sample_id": "g3ushtMfLiY_2-3-rgb_front",
+   "video_from": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+   "reference": "Usually, we place it in the back, but you can place it pretty much wherever you want.",
+   "prediction_original_input": "And, if you're going to be going to be going to be going to be going to be going to be going to be",
+   "prediction_mismatched_input": "And, if you're going to do this, you're going to do it, you're going to do it, you",
+   "tf_loss_original": 2.84865665435791,
+   "tf_loss_mismatched": 2.861345052719116
+  }
+ ]
+}

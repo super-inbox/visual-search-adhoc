@@ -1,0 +1,12 @@
+{
+ "stop_reason": null,
+ "epochs_completed": 30,
+ "global_step": 10320,
+ "early_stopped": false,
+ "patience": 10,
+ "best_epoch": 20,
+ "best_val_loss": 3.6414923667907715,
+ "best_checkpoint": "results/p02_padfix_10pct_e30/checkpoints/checkpoint-6880",
+ "train_runtime_s_hf": 8465.6964,
+ "wall_clock_total_s": 8508.0
+}

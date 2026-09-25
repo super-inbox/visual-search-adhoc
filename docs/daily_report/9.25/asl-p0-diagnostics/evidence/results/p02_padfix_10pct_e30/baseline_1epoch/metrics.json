@@ -1,0 +1,43 @@
+{
+ "val366": {
+  "loss": 5.176625212677388,
+  "full_ref": {
+   "bleu": 0.025345290001588625,
+   "chrf": 2.2128614869732717,
+   "wer": 1.0238003838771592,
+   "cer": 0.8361111111111111,
+   "n": 366,
+   "unique_predictions": 8,
+   "top1_prediction": "So's a a a a a a a a a a a a a",
+   "top1_count": 331,
+   "top1_fraction": 0.9043715846994536
+  },
+  "legacy_truncated_ref": {
+   "bleu": 0.03522505888504038,
+   "chrf": 2.499342127602482,
+   "wer": 1.0375060105786185,
+   "cer": 0.8037905906417796
+  }
+ },
+ "frozen147": {
+  "loss": 5.26508861581542,
+  "full_ref": {
+   "bleu": 0.020995164527355028,
+   "chrf": 1.9593293399333906,
+   "wer": 0.9984193888303478,
+   "cer": 0.8554868222695846,
+   "n": 147,
+   "unique_predictions": 7,
+   "top1_prediction": "So's a a a a a a a a a a a a a",
+   "top1_count": 134,
+   "top1_fraction": 0.9115646258503401
+  },
+  "legacy_truncated_ref": {
+   "bleu": 0.03612520885118401,
+   "chrf": 2.4081831774321096,
+   "wer": 1.0153727901614142,
+   "cer": 0.8050937928930914
+  }
+ },
+ "checkpoint": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/run_10pct_1epoch/checkpoints/checkpoint-344"
+}

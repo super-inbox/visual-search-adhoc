@@ -1,0 +1,178 @@
+{
+  "rule": "Candidates = holdout_split.json['train'] (2751 IDs), sorted. Drop: empty reference, missing landmark file, t5-small token length (incl. </s>) > max_target_len=30 (would be truncated by the collator), and references whose tokenize->decode round trip differs. Then random.Random(20260924).sample(eligible, 32); order kept as sampled.",
+  "seed": 20260924,
+  "n": 32,
+  "split_json": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+  "split_json_sha256": "a730b75bd2d0562a796b7bfb6c37aec7ac6d8bfcf7ea65354010fb23b4e652ff",
+  "metadata": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+  "train_ids_total": 2751,
+  "excluded_counts": {
+    "would_be_truncated": 683,
+    "tokenizer_roundtrip_differs": 8
+  },
+  "eligible_count": 2060,
+  "tokenizer": "t5-small",
+  "samples": [
+    {
+      "sample_id": "-9nBmSvp2Co_6-8-rgb_front",
+      "reference": "Fudge is homemade, at least it should be, so that's okay, not a big deal.",
+      "n_target_tokens": 24
+    },
+    {
+      "sample_id": "18NasCihOMs_11-8-rgb_front",
+      "reference": "This is a great one that you can play with your family and friends in the car, and it helps to get your mind working.",
+      "n_target_tokens": 29
+    },
+    {
+      "sample_id": "03WUE9zzQY4_11-8-rgb_front",
+      "reference": "This is my design.",
+      "n_target_tokens": 6
+    },
+    {
+      "sample_id": "bLR_bcYb0uI_8-5-rgb_front",
+      "reference": "If the tooth is sensitive to air, that also is an indication, that the tooth is still alive.",
+      "n_target_tokens": 22
+    },
+    {
+      "sample_id": "2ckGjVDGnYE_20-8-rgb_front",
+      "reference": "Next, you aim and you shoot.",
+      "n_target_tokens": 9
+    },
+    {
+      "sample_id": "Du41T4cbdds_5-5-rgb_front",
+      "reference": "You want to read the instructions on the cap to make sure that you get the right brake fluid.",
+      "n_target_tokens": 21
+    },
+    {
+      "sample_id": "c4cLox0Z9AA_3-8-rgb_front",
+      "reference": "Use your dog's name for common heel.",
+      "n_target_tokens": 11
+    },
+    {
+      "sample_id": "BOBpYTUfuzs_3-8-rgb_front",
+      "reference": "You don't want to tip it on your nails necessarily.",
+      "n_target_tokens": 14
+    },
+    {
+      "sample_id": "CH7AviIr0-0_7-8-rgb_front",
+      "reference": "Now, if we were to go up, the traditional movement of going into mascara can actually cause clumping.",
+      "n_target_tokens": 26
+    },
+    {
+      "sample_id": "c2KLK-rr89U_5-8-rgb_front",
+      "reference": "Notice real quick the features, how we have the half circles with the rounded corner above.",
+      "n_target_tokens": 20
+    },
+    {
+      "sample_id": "1l6MC-9BQa0_19-5-rgb_front",
+      "reference": "On my acoustic, I don't play acoustic very often, so I don't.",
+      "n_target_tokens": 28
+    },
+    {
+      "sample_id": "03jABW2MKkk_10-8-rgb_front",
+      "reference": "And that's how to do the clasped hand from that angle until you see just the hint of the pinkie finger there.",
+      "n_target_tokens": 30
+    },
+    {
+      "sample_id": "20qFsdFD3io_31-8-rgb_front",
+      "reference": "Now, the kind I'm going to be using today are the full length professional nunchucks, okay.",
+      "n_target_tokens": 24
+    },
+    {
+      "sample_id": "1Vq_uqeckF8_8-8-rgb_front",
+      "reference": "Okay, the fish is not even as far as thickness.",
+      "n_target_tokens": 13
+    },
+    {
+      "sample_id": "23FtuKT8mUw_2-5-rgb_front",
+      "reference": "You need a table that you can kind of clear away and kind of have you work right in front of you.",
+      "n_target_tokens": 25
+    },
+    {
+      "sample_id": "-dE8T2Quw3I_6-5-rgb_front",
+      "reference": "This one actually has a retractable needle.",
+      "n_target_tokens": 11
+    },
+    {
+      "sample_id": "0GJk5oID0PA_10-3-rgb_front",
+      "reference": "If you have a long face something like a turtle neck can help make that long face look a little more round.",
+      "n_target_tokens": 27
+    },
+    {
+      "sample_id": "Dy0raZ2UbmU_15-8-rgb_front",
+      "reference": "Slow it down.",
+      "n_target_tokens": 5
+    },
+    {
+      "sample_id": "dZztN9Ewuzo_14-5-rgb_front",
+      "reference": "Knee.",
+      "n_target_tokens": 4
+    },
+    {
+      "sample_id": "5rtrGkZNfLo_9-5-rgb_front",
+      "reference": "So here is Ashli smoking some more Hookah.",
+      "n_target_tokens": 14
+    },
+    {
+      "sample_id": "0AL_w4FP-vA_6-8-rgb_front",
+      "reference": "Do you want to show them the single leg where we do not alternate?",
+      "n_target_tokens": 16
+    },
+    {
+      "sample_id": "1rs4i373I7w_15-8-rgb_front",
+      "reference": "Start a written plan for each month.",
+      "n_target_tokens": 10
+    },
+    {
+      "sample_id": "d1h3XLGDMEY_4-8-rgb_front",
+      "reference": "One thing that you can use is a prepaid credit card.",
+      "n_target_tokens": 15
+    },
+    {
+      "sample_id": "1bm6Ur4Z4BQ_1-8-rgb_front",
+      "reference": "I'm Jackie with how to eliminate acne.",
+      "n_target_tokens": 11
+    },
+    {
+      "sample_id": "fxtkHe6zRFg_7-5-rgb_front",
+      "reference": "To put on this harness, you're going to step through the leg loops that are already in place.",
+      "n_target_tokens": 24
+    },
+    {
+      "sample_id": "ezKICyY-HKY_11-2-rgb_front",
+      "reference": "Once your hair is about eighty percent dry, that's when it'll really start taking shape.",
+      "n_target_tokens": 23
+    },
+    {
+      "sample_id": "cmFd-YkgJ0w_3-9-rgb_front",
+      "reference": "First were going to start and always start in the back.",
+      "n_target_tokens": 13
+    },
+    {
+      "sample_id": "cZhGkz4jNnk_10-8-rgb_front",
+      "reference": "In addition green tea has moderate amount of caffeine, because it's still processed a little bit.",
+      "n_target_tokens": 22
+    },
+    {
+      "sample_id": "bhwmLgCrgVU_26-8-rgb_front",
+      "reference": "That's where the lid ends.",
+      "n_target_tokens": 9
+    },
+    {
+      "sample_id": "cEmmjObvNZE_0-5-rgb_front",
+      "reference": "Okay, let's talk for a minute about structure.",
+      "n_target_tokens": 14
+    },
+    {
+      "sample_id": "2Z3CpALUO9o_8-8-rgb_front",
+      "reference": "Two and a quarter black and white negative.",
+      "n_target_tokens": 11
+    },
+    {
+      "sample_id": "-eJI_YOtHNE_15-5-rgb_front",
+      "reference": "When you do it, start out here, work in.",
+      "n_target_tokens": 13
+    }
+  ],
+  "ids_sha256": "431e85e94c201cfd3bbd27e26e3442fce55e0b61f265d9e281f9cf2a530a0a7b"
+}

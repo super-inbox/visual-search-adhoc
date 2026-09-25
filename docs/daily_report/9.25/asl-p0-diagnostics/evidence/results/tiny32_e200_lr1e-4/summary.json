@@ -1,0 +1,29 @@
+{
+  "global_step": 800,
+  "optimizer_steps_counted": 800,
+  "optimizer_updates_expected": 800,
+  "train_runtime_s_hf": 537.0229,
+  "wall_clock_train_incl_periodic_generate_s": 537.1,
+  "periodic_generate_s": 45.8,
+  "param_update_l2": {
+    "encoder": 9.40008223372388,
+    "modality_bridge": 1.1431978070539737,
+    "t5": 5.380545925559295
+  },
+  "final_generate": {
+    "bleu": 70.74182958518206,
+    "chrf": 77.344705837074,
+    "wer": 0.3128205128205128,
+    "exact_match": 17,
+    "n": 32,
+    "unique_predictions": 32,
+    "top_prediction": "Fudge should be, so a big deal.",
+    "top_prediction_fraction": 0.03125
+  },
+  "generate_kwargs": {
+    "max_length": 30,
+    "num_beams": 1,
+    "do_sample": false
+  },
+  "pass_bleu_gt_80": false
+}

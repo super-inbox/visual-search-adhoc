@@ -1,0 +1,81 @@
+{
+  "argv": [
+    "scripts/overfit_tiny.py",
+    "--stage-dir",
+    "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/stage",
+    "--metadata",
+    "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+    "--split-json",
+    "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+    "--n",
+    "32",
+    "--seed",
+    "20260924",
+    "--batch-size",
+    "8",
+    "--lr",
+    "1e-4",
+    "--device",
+    "cpu",
+    "--epochs",
+    "200",
+    "--eval-every",
+    "10",
+    "--lr-scheduler",
+    "constant_with_warmup",
+    "--output-dir",
+    "results/tiny32_e200_lr1e-4_constant"
+  ],
+  "args": {
+    "stage_dir": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/stage",
+    "metadata": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+    "split_json": "<visual-search-adhoc>/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+    "sample_dir": "experiments/tiny_overfit",
+    "output_dir": "results/tiny32_e200_lr1e-4_constant",
+    "n": 32,
+    "seed": 20260924,
+    "epochs": 200,
+    "eval_every": 10,
+    "batch_size": 8,
+    "lr": 0.0001,
+    "lr_scheduler": "constant_with_warmup",
+    "max_len": 150,
+    "max_target_len": 30,
+    "device": "cpu",
+    "no_save": false
+  },
+  "weights": {
+    "conformer_encoder_and_modality_bridge": "fresh random init (torch default), after set_seed(20260924)",
+    "t5": "Hugging Face pretrained 't5-small' (T5ForConditionalGeneration.from_pretrained); its encoder is deleted",
+    "checkpoint_loaded": null,
+    "initial_state_dict_sha256": "baaae1620a06883e0e893f115458a063255e717eeb4e9a2d6328f5a3db5f1478"
+  },
+  "input_dim": 501,
+  "n_params": 67176192,
+  "steps_per_epoch_expected": 4,
+  "optimizer_updates_expected": 800,
+  "generate_kwargs": {
+    "max_length": 30,
+    "num_beams": 1,
+    "do_sample": false
+  },
+  "effective_training_args": {
+    "gradient_accumulation_steps": 1,
+    "per_device_train_batch_size": 8,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "lr_scheduler_type": "constant_with_warmup",
+    "optim": "adafactor",
+    "max_grad_norm": 1.0,
+    "gradient_checkpointing": true,
+    "seed": 20260924,
+    "num_train_epochs": 200
+  },
+  "trainer_device": "cpu",
+  "versions": {
+    "torch": "2.10.0",
+    "transformers": "4.57.6",
+    "python": "3.12.4"
+  }
+}

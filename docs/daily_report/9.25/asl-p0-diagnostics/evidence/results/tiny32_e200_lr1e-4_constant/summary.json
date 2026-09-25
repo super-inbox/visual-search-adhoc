@@ -1,0 +1,30 @@
+{
+  "global_step": 800,
+  "stop_reason": null,
+  "optimizer_steps_counted": 800,
+  "optimizer_updates_expected": 800,
+  "train_runtime_s_hf": 540.2246,
+  "wall_clock_train_incl_periodic_generate_s": 540.3,
+  "periodic_generate_s": 47.8,
+  "param_update_l2": {
+    "encoder": 14.138060177163666,
+    "modality_bridge": 1.7038869845658016,
+    "t5": 9.426174710028809
+  },
+  "final_generate": {
+    "bleu": 56.72079016662805,
+    "chrf": 64.67187752560139,
+    "wer": 0.5666666666666667,
+    "exact_match": 13,
+    "n": 32,
+    "unique_predictions": 32,
+    "top_prediction": "Fudge is homemade, not a big deal.",
+    "top_prediction_fraction": 0.03125
+  },
+  "generate_kwargs": {
+    "max_length": 30,
+    "num_beams": 1,
+    "do_sample": false
+  },
+  "pass_bleu_gt_80": false
+}

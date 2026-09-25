@@ -1,0 +1,157 @@
+{
+  "loaded_ids_equal_manifest": true,
+  "n_loaded": 32,
+  "deterministic_features": true,
+  "all_landmarks_loaded": true,
+  "all_targets_equal_reference": true,
+  "batch_shapes": [
+    {
+      "input_features": [
+        8,
+        119,
+        501
+      ],
+      "attention_mask": [
+        8,
+        119
+      ],
+      "labels": [
+        8,
+        30
+      ],
+      "decoder_attention_mask": [
+        8,
+        30
+      ],
+      "features_finite": true,
+      "features_abs_max": 7.511075973510742,
+      "mask_values": [
+        0.0,
+        1.0
+      ],
+      "mask_row_sums": [
+        95,
+        111,
+        36,
+        119,
+        78,
+        113,
+        67,
+        53
+      ],
+      "padded_region_zero": true,
+      "labels_minus100_matches_dec_mask0": true
+    },
+    {
+      "input_features": [
+        8,
+        142,
+        501
+      ],
+      "attention_mask": [
+        8,
+        142
+      ],
+      "labels": [
+        8,
+        30
+      ],
+      "decoder_attention_mask": [
+        8,
+        30
+      ],
+      "features_finite": true,
+      "features_abs_max": 7.130213260650635,
+      "mask_values": [
+        0.0,
+        1.0
+      ],
+      "mask_row_sums": [
+        131,
+        92,
+        106,
+        96,
+        125,
+        71,
+        142,
+        94
+      ],
+      "padded_region_zero": true,
+      "labels_minus100_matches_dec_mask0": true
+    },
+    {
+      "input_features": [
+        8,
+        133,
+        501
+      ],
+      "attention_mask": [
+        8,
+        133
+      ],
+      "labels": [
+        8,
+        30
+      ],
+      "decoder_attention_mask": [
+        8,
+        30
+      ],
+      "features_finite": true,
+      "features_abs_max": 7.245197772979736,
+      "mask_values": [
+        0.0,
+        1.0
+      ],
+      "mask_row_sums": [
+        94,
+        22,
+        4,
+        133,
+        72,
+        51,
+        81,
+        49
+      ],
+      "padded_region_zero": true,
+      "labels_minus100_matches_dec_mask0": true
+    },
+    {
+      "input_features": [
+        8,
+        138,
+        501
+      ],
+      "attention_mask": [
+        8,
+        138
+      ],
+      "labels": [
+        8,
+        30
+      ],
+      "decoder_attention_mask": [
+        8,
+        30
+      ],
+      "features_finite": true,
+      "features_abs_max": 7.390293598175049,
+      "mask_values": [
+        0.0,
+        1.0
+      ],
+      "mask_row_sums": [
+        138,
+        98,
+        71,
+        77,
+        33,
+        101,
+        45,
+        82
+      ],
+      "padded_region_zero": true,
+      "labels_minus100_matches_dec_mask0": true
+    }
+  ]
+}
