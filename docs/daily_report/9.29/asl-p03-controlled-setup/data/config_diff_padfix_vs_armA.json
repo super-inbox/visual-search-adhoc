@@ -1,0 +1,153 @@
+{
+ "padfix vs A_new_script": {
+  "args.arm": {
+   "padfix": "<absent>",
+   "A_new_script": "A"
+  },
+  "args.aux_temperature": {
+   "padfix": "<absent>",
+   "A_new_script": 0.07
+  },
+  "args.aux_weight": {
+   "padfix": "<absent>",
+   "A_new_script": 1.0
+  },
+  "args.baseline_checkpoint": {
+   "padfix": "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/run_10pct_1epoch/checkpoints/checkpoint-344",
+   "A_new_script": "<absent>"
+  },
+  "args.output_dir": {
+   "padfix": "results/p02_padfix_10pct_e30",
+   "A_new_script": "results/p03_controlled/smoke/armA_replay30"
+  },
+  "args.smoke_stop_after_steps": {
+   "padfix": "<absent>",
+   "A_new_script": 30
+  },
+  "argv": {
+   "padfix": [
+    "scripts/train_p02.py",
+    "--stage-dir",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/stage",
+    "--metadata",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+    "--split-json",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+    "--raw-dir",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download",
+    "--frozen-landmarks",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/landmarks",
+    "--frozen-metadata",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/frozen_benchmark_metadata.csv",
+    "--frozen-denylist",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_denylist.json",
+    "--how2sign-v2-manifest",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+    "--baseline-checkpoint",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/run_10pct_1epoch/checkpoints/checkpoint-344",
+    "--epochs",
+    "30",
+    "--patience",
+    "10",
+    "--output-dir",
+    "results/p02_padfix_10pct_e30"
+   ],
+   "A_new_script": [
+    "scripts/train_p03.py",
+    "--stage-dir",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/stage",
+    "--metadata",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+    "--split-json",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+    "--raw-dir",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download",
+    "--frozen-landmarks",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/landmarks",
+    "--frozen-metadata",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/frozen_benchmark_metadata.csv",
+    "--frozen-denylist",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_denylist.json",
+    "--how2sign-v2-manifest",
+    "/Users/baobaoli/Desktop/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+    "--epochs",
+    "30",
+    "--patience",
+    "10",
+    "--arm",
+    "A",
+    "--smoke-stop-after-steps",
+    "30",
+    "--output-dir",
+    "results/p03_controlled/smoke/armA_replay30"
+   ]
+  },
+  "arm": {
+   "padfix": "<absent>",
+   "A_new_script": "A"
+  },
+  "early_stopping.metric": {
+   "padfix": "eval_loss (366 val)",
+   "A_new_script": "eval_loss (366 val, translation loss only)"
+  },
+  "git.commit": {
+   "padfix": "<absent>",
+   "A_new_script": "7da5734ac4f58d76c59c1a66480426b954fcd963"
+  },
+  "git.src_diff_vs_head": {
+   "padfix": "<absent>",
+   "A_new_script": ""
+  },
+  "git.status_porcelain": {
+   "padfix": "<absent>",
+   "A_new_script": [
+    "?? experiments/tiny_overfit/tiny32_seed20260924_manifest.json",
+    "?? scripts/diagnose_collapse_trajectory.py",
+    "?? scripts/diagnose_encoder_collapse.py",
+    "?? scripts/probe_landmark_localization.py",
+    "?? scripts/probe_semantic_retrieval.py",
+    "?? scripts/train_p03.py"
+   ]
+  },
+  "input_dim": {
+   "padfix": "<absent>",
+   "A_new_script": 501
+  },
+  "n_params.aux_head": {
+   "padfix": "<absent>",
+   "A_new_script": 0
+  },
+  "n_params.total": {
+   "padfix": "<absent>",
+   "A_new_script": 67176192
+  },
+  "n_params.trainable": {
+   "padfix": "<absent>",
+   "A_new_script": 67176192
+  },
+  "optimizer_param_groups": {
+   "padfix": "<absent>",
+   "A_new_script": "UpstreamOptimizerTrainer (train_p02.py): non-T5 params lr, T5 params 0.1 x lr"
+  },
+  "split_sha256.frozen": {
+   "padfix": "<absent>",
+   "A_new_script": "a5e7277ce16d1752f9b528088605a9f3d75d15578d80b742f42d3b35505cf658"
+  },
+  "split_sha256.train": {
+   "padfix": "<absent>",
+   "A_new_script": "0328b76f2631a65c0191f4c3e5c6aae795de3978f8667f43d91eaecc596284fc"
+  },
+  "split_sha256.val": {
+   "padfix": "<absent>",
+   "A_new_script": "13b1d4925ba7c6f6c9a39a28f86efece567ab16b731e5a83c319df59b679104d"
+  },
+  "versions.torch_num_threads": {
+   "padfix": "<absent>",
+   "A_new_script": 6
+  },
+  "weights.initial_state_dict_sha256_excluding_aux_head": {
+   "padfix": "<absent>",
+   "A_new_script": "e651b0232eebd6a714a7ab857eacdeee54c4dffa20aa59f0d55218a5fea1baa2"
+  }
+ }
+}

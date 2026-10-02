@@ -1,0 +1,169 @@
+{
+ "counts": {
+  "train": 2751,
+  "val": 366,
+  "frozen": 147
+ },
+ "source_videos": {
+  "train": 1208,
+  "val": 366,
+  "frozen": 128
+ },
+ "source_video_overlap": {
+  "train-val": [],
+  "train-frozen": [],
+  "val-frozen": []
+ },
+ "clips_per_source_video": {
+  "train": {
+   "9": 3,
+   "8": 1,
+   "2": 476,
+   "1": 342,
+   "7": 2,
+   "6": 24,
+   "5": 42,
+   "4": 100,
+   "3": 218
+  },
+  "val": {
+   "1": 366
+  },
+  "frozen": {
+   "2": 19,
+   "1": 109
+  }
+ },
+ "frozen_clips_with_same_video_sibling": 38,
+ "val_clips_with_same_video_sibling": 0,
+ "metadata_columns": {
+  "subset_metadata.csv": "SENTENCE_NAME,SENTENCE",
+  "frozen_benchmark_metadata.csv": "SENTENCE_NAME,SENTENCE",
+  "how2sign_realigned_train.csv": "VIDEO_ID\tVIDEO_NAME\tSENTENCE_ID\tSENTENCE_NAME\tSTART_REALIGNED\tEND_REALIGNED\tSENTENCE"
+ },
+ "signer_metadata_available": false,
+ "signer_note": "No signer column in any metadata file. src/utils/splits.split_by_signer falls back to the filename prefix, i.e. the YouTube source-video ID, so the 'signer-independent' train/val split is a source-video-disjoint split; signer overlap cannot be verified.",
+ "exact_duplicate_text": {
+  "train": {
+   "groups": 18,
+   "clips": 51,
+   "examples": [
+    [
+     "okay",
+     7
+    ],
+    [
+     "there we go",
+     4
+    ],
+    [
+     "hi",
+     4
+    ],
+    [
+     "good",
+     4
+    ],
+    [
+     "one two three",
+     3
+    ],
+    [
+     "yes",
+     3
+    ],
+    [
+     "lift",
+     3
+    ],
+    [
+     "thank you",
+     3
+    ],
+    [
+     "all right",
+     2
+    ],
+    [
+     "around easter you'll start seeing little cute little bunnies will start popping up everywhere",
+     2
+    ]
+   ]
+  },
+  "val": {
+   "groups": 0,
+   "clips": 0,
+   "examples": []
+  },
+  "frozen": {
+   "groups": 0,
+   "clips": 0,
+   "examples": []
+  }
+ },
+ "exact_text_overlap": {
+  "train-val": [
+   "good",
+   "ok"
+  ],
+  "train-frozen": [],
+  "val-frozen": []
+ },
+ "near_duplicate_text_jaccard_ge_0.8_min4words": {
+  "train-val": {
+   "n": 1,
+   "examples": [
+    [
+     "1-iy8qmP4l0_7-5-rgb_front",
+     "EZdSBFrRQxM_3-4-rgb_front",
+     0.8,
+     "one two three one more four",
+     "four one two three four"
+    ]
+   ]
+  },
+  "train-frozen": {
+   "n": 0,
+   "examples": []
+  },
+  "val-frozen": {
+   "n": 0,
+   "examples": []
+  },
+  "within-val": {
+   "n": 0,
+   "examples": []
+  },
+  "within-frozen": {
+   "n": 0,
+   "examples": []
+  }
+ },
+ "duplicate_landmark_files": {
+  "groups": 0,
+  "examples": []
+ },
+ "length": {
+  "train": {
+   "frames_median": 124.0,
+   "words_median": 15.0,
+   "words_min": 1,
+   "words_max": 135,
+   "spearman_frames_vs_words": 0.8729734161631019
+  },
+  "val": {
+   "frames_median": 161.5,
+   "words_median": 20.0,
+   "words_min": 1,
+   "words_max": 104,
+   "spearman_frames_vs_words": 0.8213424987960846
+  },
+  "frozen": {
+   "frames_median": 136.0,
+   "words_median": 19.0,
+   "words_min": 3,
+   "words_max": 115,
+   "spearman_frames_vs_words": 0.8534254131123015
+  }
+ }
+}

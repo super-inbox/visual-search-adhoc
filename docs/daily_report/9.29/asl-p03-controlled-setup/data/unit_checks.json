@@ -1,0 +1,202 @@
+{
+ "B.dims_exactly_162": {
+  "pass": true,
+  "shape": [
+   8,
+   136,
+   162
+  ]
+ },
+ "B.columns_are_pose11-22_and_both_hands": {
+  "pass": true,
+  "landmarks": {
+   "pose_11-22": [
+    11,
+    22,
+    12
+   ],
+   "left_hand_0-20": [
+    0,
+    20,
+    21
+   ],
+   "right_hand_0-20": [
+    0,
+    20,
+    21
+   ],
+   "other": null
+  }
+ },
+ "B.selected_values_identical_to_full_input": {
+  "pass": true,
+  "other_batch_keys_identical": true
+ },
+ "B.init_identical_to_A_except_projection_weight": {
+  "pass": true,
+  "differing_keys": [
+   "encoder.projection.0.weight"
+  ],
+  "proj_shape": [
+   512,
+   162
+  ]
+ },
+ "B.forward_loss_finite_backward_ok": {
+  "pass": true,
+  "loss": 10.839393615722656,
+  "proj_grad_norm": 29.77225685119629
+ },
+ "B.checkpoint_save_load_strict_and_generate": {
+  "pass": true,
+  "ckpt": "/Users/baobaoli/Desktop/gloss-free-asl-translation/results/p03_controlled/smoke/armB_30steps/checkpoints/checkpoint-30/model.safetensors",
+  "loss": 7.842807769775391,
+  "sample": "1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 1/2 "
+ },
+ "C.base_init_identical_to_A": {
+  "pass": true,
+  "aux_head_params": 262656
+ },
+ "C.text_bank_equals_P0.2_t5enc_space": {
+  "pass": true,
+  "max_abs_diff": 8.071144641519368e-09,
+  "bank_shape": [
+   2751,
+   512
+  ]
+ },
+ "C.text_side_frozen": {
+  "pass": true,
+  "note": "bank is a non-persistent buffer; the pretrained T5 encoder is discarded after building it"
+ },
+ "C.targets_and_negatives": {
+  "pass": true,
+  "logits_shape": [
+   8,
+   2751
+  ],
+  "negatives_per_query": 2750,
+  "initial_aux_loss": 8.816193580627441,
+  "ln_2751": 7.919719760924575,
+  "aux_top1": 0.0,
+  "aux_mean_rank": 2188.0
+ },
+ "C.duplicate_text_rows_masked": {
+  "pass": true,
+  "okay_rows": 7,
+  "rows_with_duplicates": 51
+ },
+ "C.aux_gradients_reach_encoder_and_head_only": {
+  "pass": true,
+  "grad_abs_sum_nonNone_total": {
+   "encoder.projection": [
+    1495.6144,
+    4,
+    4
+   ],
+   "encoder.downsample": [
+    8891.5068,
+    2,
+    2
+   ],
+   "encoder.blocks.0": [
+    9091.1172,
+    30,
+    30
+   ],
+   "encoder.blocks.1": [
+    8335.6504,
+    30,
+    30
+   ],
+   "encoder.blocks.2": [
+    8289.5898,
+    30,
+    30
+   ],
+   "encoder.blocks.3": [
+    8146.896,
+    30,
+    30
+   ],
+   "aux_head": [
+    3695.3979,
+    2,
+    2
+   ],
+   "modality_bridge": [
+    0.0,
+    0,
+    4
+   ],
+   "t5.": [
+    0.0,
+    0,
+    81
+   ]
+  }
+ },
+ "C.total_loss_equals_translation_plus_weighted_aux": {
+  "pass": true,
+  "loss_translation": 10.957910537719727,
+  "loss_aux": 8.870861053466797,
+  "aux_top1": 0.0,
+  "aux_mean_rank": 2244.0,
+  "arm_A_loss_same_dropout_seed": 10.957910537719727
+ },
+ "C.init_encoder_grad_norm_ratio_recorded": {
+  "pass": true,
+  "encoder_grad_norm": {
+   "translation": 81.55781555175781,
+   "aux": 24.63359260559082
+  },
+  "aux_over_translation": 0.30203840599381887,
+  "note": "diagnostic only; aux_weight fixed at 1.0 a priori, not tuned"
+ },
+ "C.weight0_step_equals_armA": {
+  "pass": true,
+  "loss_w0": 11.036149978637695,
+  "loss_A": 11.036149978637695,
+  "max_abs_grad_diff_w0_vs_A": 0.0,
+  "max_abs_grad_diff_A_vs_A_rerun": 0.0,
+  "max_abs_grad": 3.3386266231536865,
+  "aux_head_grads_all_zero": true,
+  "n_params_compared": 211
+ },
+ "C.eval_loss_is_translation_only": {
+  "pass": true,
+  "eval_loss": 10.910635948181152,
+  "arm_A_eval_loss": 10.910635948181152
+ },
+ "C.tiny_optimisation_positive_beats_negatives": {
+  "pass": true,
+  "before": {
+   "aux_loss": 8.375080108642578,
+   "aux_top1": 0.0,
+   "aux_mean_rank": 1647.25,
+   "pos_cos_mean": -0.018512915819883347,
+   "neg_cos_mean": -0.0014080257387831807,
+   "frac_pos_above_all_16_batch_negatives": 0.0625
+  },
+  "after": {
+   "aux_loss": 1.9538956880569458,
+   "aux_top1": 0.5,
+   "aux_mean_rank": 2.25,
+   "pos_cos_mean": 0.5455009937286377,
+   "neg_cos_mean": 0.0012697529746219516,
+   "frac_pos_above_all_16_batch_negatives": 0.5
+  },
+  "note": "memorisation of 16 train clips; mechanical sanity only"
+ },
+ "C.checkpoint_save_load_and_eval_without_aux_state": {
+  "pass": true,
+  "ckpt": "/Users/baobaoli/Desktop/gloss-free-asl-translation/results/p03_controlled/smoke/armC_w1_30steps/checkpoints/checkpoint-30/model.safetensors",
+  "strict_load_into_AuxTextAlign": true,
+  "strict_load_into_base_after_dropping_aux_head": true,
+  "eval_loss_wrapper": 8.31263542175293,
+  "eval_loss_base": 8.31263542175293,
+  "n_aux_keys": 2,
+  "sample": "or trou trou trou trou trou trou trou trou trou trou trou tr"
+ },
+ "all_pass": true
+}

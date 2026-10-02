@@ -1,0 +1,12 @@
+{
+ "stop_reason": null,
+ "epochs_completed": 28,
+ "global_step": 9632,
+ "early_stopped": true,
+ "patience": 10,
+ "best_epoch": 18,
+ "best_val_loss": 3.6583311557769775,
+ "best_checkpoint": "results/p03_controlled/armB_hands_upper162/checkpoints/checkpoint-6192",
+ "train_runtime_s_hf": 8564.4062,
+ "wall_clock_total_s": 8565.9
+}
