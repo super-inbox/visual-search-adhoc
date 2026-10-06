@@ -1,0 +1,111 @@
+{
+  "experiment": "E0 - Uni-Sign official How2Sign reproduction",
+  "date": "2026-10-05",
+  "scope_constraints": {
+    "training": "none",
+    "new_model_inference": "none",
+    "product_or_frontend_changes": "none",
+    "committed": false
+  },
+  "overall_status": "PARTIAL - official scoring path reproduced exactly; official inference path BLOCKED (no CUDA GPU; official poses not downloaded; BLEURT not installed)",
+  "upstream": {
+    "repo": "https://github.com/ZechengLi19/Uni-Sign",
+    "commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+    "commit_date": "2026-02-11",
+    "is_upstream_head_on_audit_date": true,
+    "paper": "arXiv:2501.15187 (ICLR 2025)",
+    "published_how2sign_bleu4_pose_only": 14.5,
+    "published_how2sign_bleu4_rgb_pose": 14.9,
+    "released_predictions_files": {
+      "out/eval_how2sign_pose_only/test_tmp_pres.txt": "40c0927ec76c3c4d82f9d9bed5b162c6481e629c0525cfea67647c97a13b8110",
+      "out/eval_how2sign_pose_only/test_tmp_refs.txt": "bbb49bc70a9e16e9c11e6cda03b3acb5532cac141194a8f7172dd3c988454cf2"
+    },
+    "released_predictions_upstream_commits": ["27eb4f8", "2c9028f"],
+    "test_labels": {
+      "path": "data/How2Sign/labels.test",
+      "sha256": "3e4c70aa4dd3fcabf1380accad2e4787d1da5d9afe1f86e7518acee01895fad1",
+      "n": 2349
+    }
+  },
+  "official_protocol": {
+    "checkpoint": "how2sign_pose_only_slt.pth (HF ZechengLi19/Uni-Sign)",
+    "pose_source": "pre-extracted how2sign_pose_format pkl (HF, 4 parts, 8465474575 bytes); paper App. A.1: RTMPose-x via MMPose",
+    "split": "How2Sign test, 2349 clips; no dev set used",
+    "preprocessing": "keypoints normalized by (W,H); max_length=256 with sorted random.sample if longer; seed 42; DataLoader num_workers default 8",
+    "precision": "deepspeed engine, dtype bf16 (default)",
+    "batch_size": 8,
+    "decoding": {"num_beams": 4, "max_new_tokens": 100},
+    "postprocess": "pad to 150 with EOS; batch_decode(skip_special_tokens=True)",
+    "eval_entry": "deepspeed --include localhost:0 fine_tuning.py --dataset How2Sign --task SLT --eval --finetune <ckpt> (pose-only block of script/eval_stage3.sh)",
+    "bleu": "SLRT_metrics.sableu -> vendored external_metrics/sacrebleu.py v1.4.2 corpus_bleu, tokenize=13a, exp smoothing, mixed case; reported BLEU-4 = scores[3]",
+    "other_metrics": ["ROUGE-L (rouge package)", "BLEURT-20 (How2Sign/OpenASL --eval only)"]
+  },
+  "our_setup_5_39_run": {
+    "run_date": "2026-09-01/02",
+    "driver": "batch_inference_cpu_patched.py (recovered verbatim from session transcript 7d8d1d28-...jsonl; built from demo/online_inference.py)",
+    "checkpoint_sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+    "checkpoint_matches_hf_lfs_oid": true,
+    "checkpoint_proven_to_produce_14_5": false,
+    "pose_extractor": "rtmlib Wholebody mode=lightweight: yolox_tiny_8xb8-300e_humanart + rtmw-dw-l-m_simcc-cocktail14_270e-256x192, onnxruntime CPU",
+    "dataset_class": "S2T_Dataset_online, max_length=256, seed 42 once per process",
+    "precision": "bf16 on CPU",
+    "batch_size": 1,
+    "decoding": {"num_beams": 4, "max_new_tokens": 100},
+    "benchmark": "asl-translator/data/public_benchmarks/how2sign_v2 (128 clips, FREEZE.sha256 16c41282...411a)",
+    "predictions": "docs/daily_report/9.2/asl-baselines/results/unisign_predictions.jsonl"
+  },
+  "environment": {
+    "machine": "Apple M3 Pro, 18 GiB RAM",
+    "cuda_available": false,
+    "mps_available": true,
+    "conda_env": "/opt/anaconda3/envs/unisign-cpu-arm64",
+    "python": "3.10.13",
+    "torch": "2.1.1",
+    "transformers": "4.40.0",
+    "deepspeed": "0.16.3",
+    "sacrebleu_pip": "2.2.0",
+    "bleurt_installed": false,
+    "rouge_installed": false,
+    "official_pose_files_present": false
+  },
+  "results": {
+    "R1_official_released_preds_full_test_official_bleu": {
+      "n": 2349,
+      "bleu1": 39.3817,
+      "bleu2": 26.4434,
+      "bleu3": 19.2171,
+      "bleu4": 14.4988,
+      "bleu4_pip_sacrebleu_2_2_0": 14.4988,
+      "bp": 0.932,
+      "hyp_len": 42943,
+      "ref_len": 45980
+    },
+    "R2_official_released_preds_on_our_128": {"n": 128, "bleu4": 9.59},
+    "R2_our_preds_on_our_128": {"n": 128, "bleu4": 5.39},
+    "reference_mismatch_count": 3,
+    "reference_mismatch_nature": "mojibake in official labels (U+00E2 for U+2019); BLEU unchanged",
+    "identical_predictions_ours_vs_official": 0,
+    "frac_no_terminal_punct": {"official_on_128": 0.195, "ours_on_128": 0.156},
+    "R3_length_buckets": {
+      "le_256_frames": {"n": 94, "official": 10.54, "ours": 6.22},
+      "gt_256_frames": {"n": 34, "official": 7.71, "ours": 4.30},
+      "lt_5s": {"n": 61, "official": 9.60, "ours": 5.79},
+      "5_15s": {"n": 47, "official": 12.39, "ours": 7.17},
+      "15_31s": {"n": 20, "official": 4.83, "ours": 2.34}
+    },
+    "gap_decomposition_bleu": {
+      "published_to_official_on_our_128_benchmark_difficulty": -4.91,
+      "official_on_our_128_to_ours_inference_pipeline": -4.20
+    }
+  },
+  "blockers": [
+    "No CUDA GPU: fine_tuning.py hardcodes .cuda() (L69, L254, L276) and deepspeed engine (utils.py:404-429)",
+    "Official How2Sign pose files not downloaded (public; how2sign_pose_format.zip.00-.03, 8465474575 bytes)",
+    "BLEURT + BLEURT-20 not installed; unmodified How2Sign --eval crashes before writing outputs (fine_tuning.py:292-322)",
+    "config.py pose_dirs['How2Sign'] points to WLASL dir (upstream bug; local path edit needed)"
+  ],
+  "artifacts": {
+    "scripts": ["scripts/score_official_out.py", "scripts/subset_analysis.py"],
+    "data": ["data/official_vs_ours_128clip_per_clip.json", "data/length_bucket_breakdown.json"]
+  }
+}

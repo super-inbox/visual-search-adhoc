@@ -3,6 +3,7 @@
 Analysis only: no new training, inference, or generation. Full reports:
 
 - `asl-research-followup/ASL_DATA_REPRESENTATION_UNISIGN_ANALYSIS.md`
+- `asl-research-followup/e0-unisign-reproduction/` (E0: Uni-Sign reproduction check, `E0_RESULTS.md`)
 - `visual-production-research/` (landscape report, CSVs, pipelines, sources)
 
 # ASL
@@ -49,13 +50,27 @@ Analysis only: no new training, inference, or generation. Full reports:
 | Published result | How2Sign test BLEU-4 **14.5** (pose-only; 14.9 with RGB) |
 | Our result | **5.4** BLEU on our frozen 128-clip benchmark, under our current Uni-Sign evaluation setup |
 
-**Why the numbers are not yet directly comparable:**
+**E0 update (reproduction check, no training, no new inference):**
 
-1. Our benchmark intentionally over-samples hard clips: long, questions, numbers, names, fast signing.
-2. Our pose extraction (lightweight rtmlib model) differs from the paper's (RTMPose-x).
-3. We have not reproduced the official evaluation/deployment path: official pose files plus the official eval script, and the exact reference labels.
+- **Scoring reproduction: succeeded.** Re-scoring the authors' released How2Sign predictions with the official scorer gives BLEU-4 **14.50**, exactly the paper's number.
+- **Full official inference reproduction: not done.** The official Uni-Sign evaluation path requires CUDA + deepspeed, and this machine has no CUDA GPU. So we have not yet confirmed that the released checkpoint, run through the official pipeline, produces 14.5.
 
-**We do not attribute the gap to any single cause yet.**
+**The gap, decomposed** (same references, same official scorer):
+
+| Predictions | Clips | BLEU-4 |
+|---|---|---|
+| Authors' released predictions | full How2Sign test (2,349) | **14.50** |
+| Authors' released predictions | our 128 hard clips | **9.59** |
+| Our current pipeline | same 128 clips | **5.39** |
+
+- About **4.9 BLEU** of the 14.5 → 5.4 gap is explained by **benchmark difficulty**: our 128 clips intentionally over-sample long clips, questions, numbers, names, and fast signing.
+- About **4.2 BLEU** remains attributable to **our current inference / preprocessing pipeline**, on identical clips.
+
+**The cause of the remaining 4.2 BLEU is not known yet.**
+
+- **Leading suspect (unverified): pose extraction.** Our pipeline uses rtmlib RTMW-dw-l-m (lightweight); the paper uses RTMPose-x, and the checkpoint was fine-tuned on RTMPose-x poses.
+- **Smaller unverified candidates:** bf16 on CPU vs. CUDA kernels, and batch size 1 (ours) vs. 8 (official).
+- Ruled out as main causes: scorer/reference differences, and frame subsampling (the gap is the same on clips that are never subsampled).
 
 **Main limitations:**
 
@@ -68,23 +83,16 @@ Analysis only: no new training, inference, or generation. Full reports:
 - Heavy: ~32 s/clip on CPU.
 - Even the paper's 14.5 BLEU is far from product quality.
 
-**Build on it?** Conditionally yes: pause from-scratch Conformer+T5 training and use Uni-Sign (or a Uni-Sign-style pretrained encoder) as the base. Two conditions:
+**Build on it? (revised after E0)** Still promising, but **conditional**. Pausing from-scratch Conformer+T5 training in favor of Uni-Sign (or a Uni-Sign-style pretrained encoder) remains the leading direction, but it should not be committed to until:
 
-- E0 must reproduce roughly the paper's number.
-- The commercial license question must be resolved.
+- **Official GPU inference is reproduced:** the released checkpoint, run through the official path, gives ≈14.5 on the full test set (and ≈9.6 on our 128 clips).
+- **Model/license constraints are resolved:** weights are non-commercial (CC BY-NC), and the ASL-pretraining-stage weights are not released.
 
-**Immediate next experiment (E0, no training, highest priority):**
+**Next experiment (E0-b, needs a CUDA GPU, ~1 GPU-hour + ~8.5 GB download):**
 
-- **Setup:** download the official How2Sign pose files (~8.5 GB) and run the official eval script on:
-  1. the full test set
-  2. our 128 clips with official poses
-  3. our 128 clips with our own poses (already measured: 5.4)
-  4. our 128 clips with a higher-accuracy rtmlib model
-- **How to read it:**
-  - If (1) ≈ 14.5 and (2) ≈ 5: the gap is benchmark difficulty.
-  - If (2) ≫ (3): the gap is our pose extraction.
-  - If (1) ≪ 14.5: the release does not reproduce the paper.
-- **Cost (estimate):** about 1 GPU-hour, or about 1 CPU-day for the full test set (the 128 clips take ~70 min on CPU). Requires rebuilding the Uni-Sign environment.
+1. Run the official eval on the full How2Sign test set with the official pose files. Expect ≈14.5.
+2. Score our 128 clips from that output. Expect ≈9.6.
+3. **Pose-extractor isolation:** run our 128 clips through the same official loader with (a) official RTMPose-x poses and (b) our rtmlib RTMW-dw-l-m poses. If (a) ≈ 9.6 and (b) ≈ 5.4, pose extraction explains the remaining gap.
 
 # Visual Production
 
