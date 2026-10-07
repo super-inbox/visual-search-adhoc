@@ -1,0 +1,268 @@
+{
+  "experiment": "P0-12 - Uni-Sign same-128 inference gap (9.59 authors vs 5.39 ours): pose-source hypothesis",
+  "timestamp": "2026-10-07 (work 2026-10-06 evening to 2026-10-07; folder dated 10.06 per request)",
+  "status": "PARTIAL - controlled translation inference NOT run (no CUDA GPU); preprocessing-only diagnostics + observational analysis of existing predictions; GPU run prepared and loader-validated",
+  "repo": {
+    "path": "visual-search-adhoc",
+    "branch": "baobao/visual-production-research-2026-10-05",
+    "git_commit": "112e12b79f0382974a6b6151bd8771cc26549391",
+    "worktree_clean_at_start": true,
+    "committed": false
+  },
+  "hardware": {
+    "machine": "Apple M3 Pro, 18 GiB RAM (hw.memsize 19327352832)",
+    "os": "macOS 14.1 (Darwin 23.1.0), arm64",
+    "nvidia_smi": "not found",
+    "cuda_available": false,
+    "cuda_version": null,
+    "gpu": null,
+    "mps_available": true
+  },
+  "software": {
+    "conda_env": "/opt/anaconda3/envs/unisign-cpu-arm64",
+    "python": "3.10.13",
+    "torch": "2.1.1 (CPU build, torch.version.cuda=None)",
+    "transformers": "4.40.0",
+    "deepspeed": "0.16.3",
+    "onnxruntime": "1.23.2",
+    "numpy": "2.2.6",
+    "opencv": "4.10.0",
+    "sacrebleu_pip": "2.2.0 (chrF / sentence stats only)",
+    "rtmlib": "0.0.13 (site-packages)",
+    "bleurt_installed": false
+  },
+  "upstream": {
+    "repo": "https://github.com/ZechengLi19/Uni-Sign",
+    "commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+    "local_clone": "<prior E0 session scratchpad>/Uni-Sign (read-only; git status clean apart from __pycache__)",
+    "released_predictions_sha256": {
+      "out/eval_how2sign_pose_only/test_tmp_pres.txt": "40c0927ec76c3c4d82f9d9bed5b162c6481e629c0525cfea67647c97a13b8110",
+      "out/eval_how2sign_pose_only/test_tmp_refs.txt": "bbb49bc70a9e16e9c11e6cda03b3acb5532cac141194a8f7172dd3c988454cf2"
+    }
+  },
+  "checkpoint": {
+    "file": "how2sign_pose_only_slt.pth",
+    "path": "~/.cache/uni_sign_checkpoints/how2sign_pose_only_slt.pth",
+    "sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+    "equals_hf_lfs_oid": true,
+    "mt5_base_snapshot": "2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f"
+  },
+  "extractors": {
+    "B_and_C": {
+      "library": "rtmlib 0.0.13",
+      "call": "Wholebody(to_openpose=False, mode='lightweight', backend='onnxruntime', device='cpu')",
+      "detector_onnx": {
+        "file": "yolox_tiny_8xb8-300e_humanart-6f3252f9.onnx",
+        "sha256": "ceb11c07298f95c50d7c5abeb906d03340c85f23aa79e3e66966e7fb6c307250",
+        "input": "416x416"
+      },
+      "pose_onnx": {
+        "file": "rtmw-dw-l-m_simcc-cocktail14_270e-256x192_20231122.onnx",
+        "sha256": "68db326c5c6f3273456f803eae0faf5440478369f2c3ee67258d2f36512e8d76",
+        "input": "192x256"
+      },
+      "normalization": "keypoints / (W, H) per frame, every frame (identical to demo/online_inference.py pose_extraction)"
+    },
+    "A_official": {
+      "source": "HF ZechengLi19/Uni-Sign how2sign_pose_format.zip.00-.03, directory test-pose-rtmpose-192/",
+      "documented_as": "RTMPose via MMPose (docs/DATASET.md); paper App. A.1: RTMPose-x",
+      "exact_model": "unknown",
+      "zip_part_lfs_oids": [
+        "cfbc90d0378b790fd8451f71c2bc15ef7763d5d52025853ff29c0fa2c80fbc80",
+        "e1f8ad67748ac9141dd034b5bc3894601276ed921c70f9b35a9cfc379ccb39a8",
+        "8e5d8043a58f100473fdcd340519458fd534bdcb5515ef33a023d1d286f7f8b7",
+        "a091c9cd3d19ffcbd8a0009ceca905e32bf06ea1c2bee18b3af1a362ac2a6e24"
+      ],
+      "zip_entries_total": 33437,
+      "fetched": "128 entries by HTTP range request, 42,197,842 B compressed, CRC-32 verified (data/official_pkl_index_128.json)"
+    },
+    "official_crop_videos": {
+      "source": "HF ZechengLi19/Uni-Sign how2sign_rgb_format.zip.aa-.ae, directory crop_test/",
+      "zip_entries_total": 35176,
+      "fetched": "128 entries by HTTP range request, 94,621,629 B, CRC-32 verified (data/official_rgb_index_128.json)"
+    }
+  },
+  "clip_manifest": {
+    "path": "asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+    "manifest_sha256": "7f324af6b4b611688237d9a5f28b5c5dba14e1111addafd1d6b1cbef0c305251",
+    "FREEZE.sha256": "16c41282b21928e36e4c5481d8c3de48d56794accbb091fde67698dd2963411a",
+    "freeze_verified": "260/260 entries OK against videos in the asl-task-c worktree (read-only)",
+    "n_clips": 128,
+    "videos_path": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/videos/"
+  },
+  "timing_sources": {
+    "realigned_test_csv": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_1pct_REFERENCE/raw_download/how2sign_realigned_test.csv",
+    "realigned_test_csv_sha256": "d1799dcbf100eda822eeb1a0e6e754d82b12b2a57756bd47073c4e4b8a02ae4d",
+    "original_subset_tsv": "asl-translator/data/public_benchmarks/how2sign_v2/source_metadata/how2sign_test_original_subset_v2.tsv (+ realigned_subset_v2.tsv for 2 clips)"
+  },
+  "historical_5_39_run": {
+    "run_dir": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/results/how2sign_v2/unisign/",
+    "predictions": "docs/daily_report/9.2/asl-baselines/results/unisign_predictions.jsonl",
+    "driver_script": "batch_inference_cpu_patched.py - not on disk; E0's source transcript no longer present",
+    "pose_input_reproduction": "128/128 re-extracted B frame counts equal historical n_frames"
+  },
+  "inference_args_prepared_not_run": {
+    "entry": "deepspeed --include localhost:0 --master_port 29511 fine_tuning.py --batch-size 8 --gradient-accumulation-steps 1 --epochs 20 --opt AdamW --lr 3e-4 --output_dir out/p012_<COND>_<tag> --finetune <ckpt> --dataset How2Sign --task SLT --eval",
+    "config_py_edits": [
+      "mt5_path",
+      "test_label_paths['How2Sign'] -> labels.test_p012_128 (or _smoke3)",
+      "pose_dirs['How2Sign'] -> <P012>/<COND>/{}-pose-rtmpose-192"
+    ],
+    "decoding": {
+      "num_beams": 4,
+      "max_new_tokens": 100,
+      "dtype": "bf16",
+      "seed": 42,
+      "max_length": 256
+    },
+    "conditions": [
+      "A_official",
+      "B_ours_5p39",
+      "B_aspect",
+      "C_ours_on_official_crop"
+    ],
+    "runbook": "scripts/run_p012_gpu.sh",
+    "condition_dirs": "<this session scratchpad>/p012_conditions (284 MB, session-temporary; regenerate with scripts/)",
+    "official_loader_validation": "data/official_loader_validation.json (128/128 each condition, CPU, no model)",
+    "runs": [
+      "A_official n128",
+      "C_ours_on_official_crop n128",
+      "B_aspect n128",
+      "B_ours_5p39 n128",
+      "B_ours_5p39 bs1_nw0",
+      "A_official bs1_nw0",
+      "A_official seed43",
+      "A_official seed44",
+      "+ 3-clip smoke per main condition"
+    ],
+    "contrast_script": "scripts/contrasts.py (paired bootstrap, 2000 resamples, seed 0; IoU-stratified V2 interaction check)",
+    "estimated_gpu_hours": "1-2 (estimate, not measured)"
+  },
+  "scorer": {
+    "bleu": "Uni-Sign SLRT_metrics.sableu -> vendored external_metrics/sacrebleu.py v1.4.2 corpus_bleu, tokenize 13a",
+    "validated": {
+      "authors_released_128": 9.59,
+      "ours_5p39_128": 5.39,
+      "authors_full_test": 14.5
+    },
+    "other_metrics": "pip sacrebleu 2.2.0 corpus_chrf / sentence_bleu / sentence_chrf; WER = lowercase whitespace-token edit distance (historical 0.9819 used a different normalization; here 0.9791)"
+  },
+  "results": {
+    "new_inference_results": null,
+    "segment_alignment": {
+      "official_clip_duration_matches_realigned_within_0_25s": "128/128",
+      "ours_matches_realigned_within_0_1s": "10/128",
+      "iou_median": 0.555,
+      "iou_eq_0": 28,
+      "iou_lt_0_5": 61,
+      "iou_ge_0_9": 16
+    },
+    "iou_buckets_bleu4": {
+      "iou_eq_0": {
+        "n": 28,
+        "authors": 8.84,
+        "ours": 0.71
+      },
+      "iou_0_to_0.5": {
+        "n": 33,
+        "authors": 13.06,
+        "ours": 6.9
+      },
+      "iou_0.5_to_0.9": {
+        "n": 51,
+        "authors": 8.29,
+        "ours": 5.76
+      },
+      "iou_ge_0.9": {
+        "n": 16,
+        "authors": 8.45,
+        "ours": 7.01
+      }
+    },
+    "bootstrap": "data/bootstrap_iou_contrast.json",
+    "pose_A_vs_C_keypoint_error_over_shoulder_width_median": {
+      "body": 0.0085,
+      "left_hand": 0.0153,
+      "right_hand": 0.0168,
+      "face": 0.0063
+    },
+    "model_input_shoulder_w_over_neck_h_median": {
+      "A": 2.055,
+      "B": 0.902,
+      "C": 2.056,
+      "B_aspect": 2.014
+    },
+    "crossframe_B_vs_C": {
+      "clips_with_overlap": 100,
+      "best_offset_within_1_frame": 95,
+      "fitted_scale": 1.0009,
+      "fitted_sx_over_sy": 1.0033,
+      "resid_body_over_shoulder_median": 0.007,
+      "resid_hands_over_shoulder_median": 0.0105,
+      "file": "data/crossframe_alignment_B_vs_C.json"
+    },
+    "reference_gap_paired_bootstrap": {
+      "delta": 4.2,
+      "ci95": [
+        2.42,
+        6.15
+      ],
+      "file": "data/contrasts_dryrun_existing_predictions.json"
+    },
+    "bootstrap_iou_split": {
+      "ours_minus_authors_iou_lt_0_5": -7.09,
+      "ci95_lt": [
+        -10.55,
+        -3.87
+      ],
+      "ours_minus_authors_iou_ge_0_5": -2.25,
+      "ci95_ge": [
+        -4.39,
+        -0.32
+      ],
+      "gap_difference_ci95": [
+        1.03,
+        9.0
+      ]
+    }
+  },
+  "paths_used": {
+    "output_dir": "docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/",
+    "e0_dir": "docs/daily_report/10.05/asl-research-followup/e0-unisign-reproduction/"
+  },
+  "hypothesis": {
+    "as_received": "pose extractor (rtmlib RTMW-dw-l-m lightweight vs RTMPose-x) is the leading suspect",
+    "revised": "not supported as leading; V1 timestamp alignment = leading (observational support); V2 crop/coordinate normalization = strong candidate (untested); V3 extractor = minor at keypoint level; V4 runtime = expected small (untested)"
+  },
+  "variables": {
+    "V1_timestamp_alignment": {
+      "ours": "How2Sign original timestamps",
+      "official": "How2Sign re-aligned timestamps",
+      "contrast": "C_ours_on_official_crop - B_aspect"
+    },
+    "V2_crop_coordinate_normalization": {
+      "ours": "kp/(1280,720)",
+      "official": "kp/(crop W,H), median H/W 1.23",
+      "contrast": "B_aspect - B_ours_5p39"
+    },
+    "V3_pose_extractor": {
+      "ours": "rtmlib YOLOX-tiny + RTMW-dw-l-m 256x192",
+      "official": "test-pose-rtmpose-192 (MMPose RTMPose; exact model unknown)",
+      "contrast": "A_official - C_ours_on_official_crop"
+    },
+    "V4_dtype_device_batch": {
+      "ours": "bf16, CPU, batch 1, single process, S2T_Dataset_online",
+      "official": "bf16, CUDA deepspeed, batch 8, 8 workers, S2T_Dataset",
+      "contrasts": [
+        "B_ours_5p39 - B_ours_5p39_bs1_nw0",
+        "B_ours_5p39_bs1_nw0(GPU) - 5.39(historical CPU)",
+        "A_official - A_official_bs1_nw0"
+      ],
+      "dtype": "held equal (bf16); official --dtype allows only fp16/bf16"
+    },
+    "noise_band": [
+      "A_official_seed43 - A_official",
+      "A_official_seed44 - A_official"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+ "iou_lt_0.5": {
+  "n": 61,
+  "authors_bleu4": 11.27,
+  "ours_bleu4": 4.18,
+  "ours_minus_authors_95ci": [
+   -10.55,
+   -3.87
+  ],
+  "ours_over_authors_95ci": [
+   0.149,
+   0.543
+  ]
+ },
+ "iou_ge_0.5": {
+  "n": 67,
+  "authors_bleu4": 8.33,
+  "ours_bleu4": 6.08,
+  "ours_minus_authors_95ci": [
+   -4.39,
+   -0.32
+  ],
+  "ours_over_authors_95ci": [
+   0.54,
+   0.951
+  ]
+ },
+ "gap_difference_ge_minus_lt_95ci": [
+  1.03,
+  9.0
+ ],
+ "frac_boot_gap_smaller_when_aligned": 0.996
+}
