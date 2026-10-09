@@ -1,0 +1,12 @@
+{
+ "stop_reason": null,
+ "epochs_completed": 20,
+ "global_step": 6880,
+ "early_stopped": true,
+ "patience": 10,
+ "best_epoch": 10,
+ "best_val_loss": 3.273921251296997,
+ "best_checkpoint": "<scratchpad>/p013/runs/p013_unisign_e30/checkpoints/checkpoint-3440",
+ "train_runtime_s_hf": 9589.9444,
+ "wall_clock_total_s": 9591.2
+}

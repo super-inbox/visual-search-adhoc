@@ -1,0 +1,66 @@
+[
+ {
+  "clip_id": "FZbyRzy4huk_3-8-rgb_front",
+  "reference": "We cook it with 3 cups of water, 1 cup of 1 tablespoon of salt and 1/2 tablespoon of pepper black pepper if you have any foam during cooking take a spoon and take it out just take the foam out.",
+  "authors_prediction": "We're going to cut one cup of 1 tablespoon of salt and 1/2 cup of black pepper, and if you have any foam, you can just roll it.",
+  "decode_from_cached_features": "We're cooking 2 cups of water, 1 tablespoon of salt, 1 tablespoon of black pepper, and if you have any foam, just go ahead and strainer it.",
+  "reencode_vs_cached_cos_min": 0.9999998211860657,
+  "chrf_vs_authors_prediction": 59.16717894335072
+ },
+ {
+  "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "reference": "You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I'm not going to let it, my hands are there.",
+  "authors_prediction": "So, I'm just going to take this hole because it's going to be very, very nice, and then I'm going to take this hole because it's going to be very,",
+  "decode_from_cached_features": "So I'm just going to go ahead and take this hole because it's going to bottom up nicely and then I'm going to go ahead and take this hole and I'm also going",
+  "reencode_vs_cached_cos_min": 0.9999997615814209,
+  "chrf_vs_authors_prediction": 60.815748758365885
+ },
+ {
+  "clip_id": "G-0gYel1YA8_1-2-rgb_front",
+  "reference": "Some people get kind of confused about the time that it takes for their piercings to close up because most people are used to having their eyes pierced and they're used to having them pierced for a long time and those most of the time don't close up.",
+  "authors_prediction": "Some people have confused when it comes to crying because they're closed because they're closed because they're closed because people usually have ears.",
+  "decode_from_cached_features": "Some people have confused their eyes because they're confused because they're open because they're open because people usually have ears.",
+  "reencode_vs_cached_cos_min": 0.9999997615814209,
+  "chrf_vs_authors_prediction": 69.9512026583898
+ },
+ {
+  "clip_id": "G05uFub3YFc_9-2-rgb_front",
+  "reference": "Again, do maybe twenty breaths, little flow, inhaling and exhaling the whole time you go breath is important and see if you would like, you can keep it up for a minute or more.",
+  "authors_prediction": "Again, you're going to do maybe a chest lift, and you're going to breathe, and you're going to breathe all the time, so breathing is going to be",
+  "decode_from_cached_features": "Again, you're going to do maybe twenty breaths and you're going to breathe so you're going to breathe all the time, so breathing is going to be a very important",
+  "reencode_vs_cached_cos_min": 0.9999998211860657,
+  "chrf_vs_authors_prediction": 82.47209213477743
+ },
+ {
+  "clip_id": "G06Irzcwxiw_5-1-rgb_front",
+  "reference": "So even now now I'm a full professor with an endowed chair and when I still have to turn in my CV every other day to somebody and they look through and where did he go to school 25 years ago.",
+  "authors_prediction": "I'm a full teacher, I'm a co-worker, and I'm still demanding a return of my C.V. and I'm still looking for a return to my C.V.",
+  "decode_from_cached_features": "Now when I'm a full teacher and I'm a fellow, or I'm a fellow, or a fellow, or a fellow, or a fellow, or a fellow,",
+  "reencode_vs_cached_cos_min": 0.9999997615814209,
+  "chrf_vs_authors_prediction": 25.250449245737094
+ },
+ {
+  "clip_id": "G095RWKQ39g_10-1-rgb_front",
+  "reference": "You would align both the same way, and what you would do is during the daytime put in a low-power eyepiece, and look at the red dot finder and sight it on an object a couple of miles down the road--maybe the top of a phone pole or a truck or something--and then collimate the finder scope here so that you're looking at the same thing the eyepiece is.",
+  "authors_prediction": "We're going to use a typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical",
+  "decode_from_cached_features": "We're going to use a typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical",
+  "reencode_vs_cached_cos_min": 0.9999998211860657,
+  "chrf_vs_authors_prediction": 100.0
+ },
+ {
+  "clip_id": "G0zQm6X8uiQ_3-8-rgb_front",
+  "reference": "So, this will set and seal the color, it will keep it in place, it'll tame any unruly brows and you can see the difference in a fuller brow, how it really lifts the eye, frames the face and gives a much more polished, sophisticated look.",
+  "authors_prediction": "Again this is a standard look, it's a very standard look, it's a very durable look, and it's also going to help if the eye goes up and down, it'",
+  "decode_from_cached_features": "This is a standard color system and it's also going to help if the eyebrows are coming down the center, which allows you to see a little bit more of the whole ear where the eye",
+  "reencode_vs_cached_cos_min": 0.9999998211860657,
+  "chrf_vs_authors_prediction": 42.83876361583787
+ },
+ {
+  "clip_id": "G1hb5HugzVk_2-8-rgb_front",
+  "reference": "Okay here we go our quick and easy spaghetti what we did we finish boiling our spaghetti, got it to a delta state and then we drained it and then we add the spaghetti directly to the sauce that we where preparing and we made sure that all the spaghetti was covered with sauce and mixed and mixed and mixed.",
+  "authors_prediction": "Now the biggest and easiest way to do this is to cut the bottom of the pasta out of the Dallas done and then put it in the water and just pour it in there and make sure that you get the",
+  "decode_from_cached_features": "Now, the biggest and easiest way to do this is to cut the bottom of the pasta wire out of the al-dente, and then pour it in there, and I'm going to make sure that I",
+  "reencode_vs_cached_cos_min": 0.9999998211860657,
+  "chrf_vs_authors_prediction": 65.57792560355216
+ }
+]
