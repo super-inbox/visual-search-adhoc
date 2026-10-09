@@ -1,0 +1,40 @@
+{
+ "val_n": 366,
+ "frozen_n": 147,
+ "p02_ref": {
+  "n": 2751,
+  "unique_ids": 2751,
+  "all_in_archive_listing": true,
+  "empty_text": 0,
+  "normalised_text_overlap_with_val_clips": 6,
+  "normalised_text_overlap_with_frozen": 0,
+  "distinct_normalised_texts": 2718
+ },
+ "p25": {
+  "n": 6605,
+  "unique_ids": 6605,
+  "all_in_archive_listing": true,
+  "empty_text": 0,
+  "normalised_text_overlap_with_val_clips": 22,
+  "normalised_text_overlap_with_frozen": 0,
+  "distinct_normalised_texts": 6462
+ },
+ "p50": {
+  "n": 13210,
+  "unique_ids": 13210,
+  "all_in_archive_listing": true,
+  "empty_text": 0,
+  "normalised_text_overlap_with_val_clips": 48,
+  "normalised_text_overlap_with_frozen": 0,
+  "distinct_normalised_texts": 12836
+ },
+ "p100": {
+  "n": 26419,
+  "unique_ids": 26419,
+  "all_in_archive_listing": true,
+  "empty_text": 0,
+  "normalised_text_overlap_with_val_clips": 90,
+  "normalised_text_overlap_with_frozen": 0,
+  "distinct_normalised_texts": 25513
+ }
+}

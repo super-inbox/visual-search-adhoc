@@ -1,0 +1,12 @@
+{
+ "stop_reason": null,
+ "epochs_completed": 30,
+ "global_step": 10320,
+ "early_stopped": false,
+ "patience": 10,
+ "best_epoch": 29,
+ "best_val_loss": 3.5907812118530273,
+ "best_checkpoint": "$WORK/runs/p25/checkpoints/checkpoint-9976",
+ "train_runtime_s_hf": 29369.0845,
+ "wall_clock_total_s": 29375.9
+}
