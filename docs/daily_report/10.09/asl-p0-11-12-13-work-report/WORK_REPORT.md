@@ -3,9 +3,13 @@
 Date: 2026-10-09. A consolidated report; no new training or inference was run to write it. All numbers come from
 the result files listed in §11. Nothing was committed.
 
+**Update 2026-10-11.** The P0-11 same-init 2,751-clip control (`ref_sameinit`) was run to completion: one new CPU
+training run plus its diagnostics. Its results are added to §1, §2, §3, §6, §9–11, and P0-11 is now **COMPLETE**.
+P0-12 and P0-13 are unchanged. Detail: `10.08/asl-p0-11-data-scaling/P0_11_RESULTS.md`.
+
 | Experiment | Question | Status |
 |---|---|---|
-| P0-11 | Does more supervised How2Sign data help the current baseline? | **PARTIAL**: main runs complete, same-init control unfinished |
+| P0-11 | Does more supervised How2Sign data help the current baseline? | **COMPLETE**: main runs plus same-init control (2026-10-11) |
 | P0-12 | Why does our Uni-Sign path score 5.39 where the authors' predictions score 9.59? | **PARTIAL**: diagnosis done, controlled GPU run blocked |
 | P0-13 | Does a better representation help at fixed supervised data? | **COMPLETE** |
 
@@ -14,13 +18,18 @@ the result files listed in §11. Nothing was committed.
 - **Representation is the larger bottleneck in our current setup (strong current evidence, not final proof).**
   - P0-13 kept the 2,751 supervised clips fixed and swapped landmarks for frozen Uni-Sign features. Frozen-147
     BLEU went 1.02 → **3.25** (+2.23, 95 % CI [1.28, 3.39]) and chrF 11.12 → **17.05** (+5.93, CI [4.66, 7.34]).
-  - P0-11 kept the representation fixed and grew supervised How2Sign data up to 9.6×. Frozen-147 BLEU went
-    1.02 → 1.15 → 0.54 → **0.52**. No size came close to the P0-13 gain.
+  - P0-11 kept the representation fixed and grew supervised How2Sign data up to 9.6×. With initialization
+    matched across sizes, frozen-147 BLEU went 0.80 → 1.15 → 0.54 → **0.52** (no BLEU difference significant).
+    The best size gained +0.36 BLEU (CI [−0.28, 1.01]). No size came close to the P0-13 gain.
 - **More supervised How2Sign data made the model fit better but not translate better.**
   - Val and frozen loss improved steadily with data.
-  - BLEU peaked at 6,605 clips, then fell.
-  - Output diversity collapsed: distinct predictions on frozen-147 went 102 → 73 → 35 → 29.
-  - Reliance on the video stayed near zero: the shuffled-video loss gap was 0.06–0.07 at every size.
+  - BLEU was flat within noise. chrF rose about 1.7 at 2.4–4.8× data, then fell below the start at 9.6×.
+  - Output diversity fell at the larger sizes: distinct predictions on frozen-147 went 63 → 73 → 35 → 29
+    (same init).
+  - Reliance on the video stayed near zero: the shuffled-video loss gap was 0.05–0.07 at every size, vs 1.28
+    for P0-13.
+  - The same-init control **confirmed** the earlier conclusion. It shrank some earlier magnitudes ("BLEU halves",
+    "102 → 29"), which were partly the P0.2 reference's initialization.
 - **Our Uni-Sign path loses about 4.2 BLEU in input preparation, not in the model.**
   - Of the 14.50 → 5.39 gap, about 4.9 BLEU is subset difficulty and about 4.2 BLEU is our pipeline.
   - The leading explanation is timestamp alignment: 28/128 of our clips contain none of the signed sentence.
@@ -30,18 +39,18 @@ the result files listed in §11. Nothing was committed.
 - **Uni-Sign is a promising research base, not a product.**
 - **The two required next steps are:**
   1. Run the P0-12 controlled inference on one CUDA GPU (about 1–2 GPU-hours, already scripted).
-  2. Finish the P0-11 same-init control.
+  2. ~~Finish the P0-11 same-init control.~~ Done 2026-10-11.
 
 ## 2. Manager Questions
 
 | # | Question | Short answer | Confidence |
 |---|---|---|---|
-| 1 | Are we mainly limited by labeled data or by representation? | **Representation**, in this setup. A better pretrained representation gave about 3× BLEU at fixed data; up to 9.6× more supervised How2Sign data gave no BLEU gain. | Strong current evidence. Caveats: P0-11 same-init control unfinished, single seeds. |
-| 2 | Does scaling How2Sign supervised data help? | **Not for translation quality, with this model and recipe.** Loss improves, but BLEU/chrF do not improve monotonically, and diversity collapses. | Strong preliminary evidence. See §3 caveats (init, compute-matched budget). |
+| 1 | Are we mainly limited by labeled data or by representation? | **Representation**, in this setup. A better pretrained representation gave about 3× BLEU at fixed data; up to 9.6× more supervised How2Sign data gave no BLEU gain. | Strong current evidence. P0-11 init confound now removed; caveat: single seeds. |
+| 2 | Does scaling How2Sign supervised data help? | **Not for translation quality, with this model and recipe.** Loss improves, but BLEU is flat within noise and chrF rises modestly then falls; diversity drops at larger sizes. Holds with initialization controlled. | Strong evidence. See §3 caveats (single seed, compute-matched budget). |
 | 3 | What is wrong with our Uni-Sign pipeline? | **Input preparation, most likely.** Clips are cut at the original rather than the re-aligned timestamps, and the full frame is normalized instead of a signer crop. The pose model itself is not the leading suspect. | Observational. No translation-level split of the 4.2 BLEU yet. |
 | 4 | Can Uni-Sign be a useful research base? | **Yes, as a research base. No, not yet as a product.** | Moderate to high for research use. |
-| 5 | What remains unresolved? | See §9. Mainly the controlled size of each P0-12 factor, the P0-11 init confound, seed variance, and real-user generalization. | — |
-| 6 | What next? | Run the P0-12 GPU contrasts, finish the P0-11 control, then fix the canonical Uni-Sign preprocessing (§10). | — |
+| 5 | What remains unresolved? | See §9. Mainly the controlled size of each P0-12 factor, seed variance, and real-user generalization. (The P0-11 init confound is resolved.) | — |
+| 6 | What next? | Run the P0-12 GPU contrasts, then fix the canonical Uni-Sign preprocessing (§10). The P0-11 control is done. | — |
 
 ## 3. P0-11 — Supervised Data Scaling
 
@@ -60,7 +69,8 @@ recipe fixed. Measure whether translation on the frozen test set improves.
 | Selection | best val loss; primary endpoint = frozen-147 (official How2Sign test) at the val-selected checkpoint |
 | Subsets | nested prefixes: 2,751 ⊂ 6,605 ⊂ 13,210 ⊂ 26,419 clips (10.4 / 25 / 50 / 100 % of the 26,419-clip eligible pool; 8.8–84.8 % of official train) |
 | Val / frozen | 366 / 147, unchanged and video-disjoint from all training subsets |
-| Hardware | Apple M3 Pro, CPU, three runs concurrent (about 8.2 h wall each) |
+| Initialization | p25/p50/p100 and the same-init control: `set_seed(42)` under `OMP_NUM_THREADS=4` → init `c328ad26…`. Historical P0.2 reference: default threads → `e651b023…` |
+| Hardware | Apple M3 Pro, CPU. p25/p50/p100 ran three concurrent (about 8.2 h wall each); the same-init control ran alone (2.1 h) |
 
 Because the budget is fixed in steps, larger subsets see each clip fewer times: about 30 passes at 2,751, 12.5 at
 p25, 6.2 at p50 and 3.1 at p100.
@@ -71,7 +81,8 @@ Frozen-147 at the val-selected checkpoint (`10.08/.../metrics.csv`, `data/diagno
 
 | Condition | Train clips | Best val loss | Frozen loss | BLEU | chrF | WER | Distinct preds /147 | Top-1 share | Shuffled-video Δloss |
 |---|---|---|---|---|---|---|---|---|---|
-| P0.2 reference (existing run) | 2,751 | 3.6415 | 3.7224 | **1.02** | 11.12 | 1.025 | 102 | 6.8 % | 0.067 |
+| P0.2 reference (existing run, other init) | 2,751 | 3.6415 | 3.7224 | **1.02** | 11.12 | 1.025 | 102 | 6.8 % | 0.067 |
+| **Same-init control `ref_sameinit` (2026-10-11)** | 2,751 | 3.6418 | 3.7146 | **0.80** | 10.60 | 1.056 | 63 | 30.6 % | 0.048 |
 | p25 | 6,605 | 3.5908 | 3.6676 | **1.15** | 12.37 | 1.005 | 73 | 8.8 % | 0.073 |
 | p50 | 13,210 | 3.5866 | 3.6650 | **0.54** | 12.25 | 1.047 | 35 | 36.7 % | 0.066 |
 | p100 | 26,419 | 3.5760 | 3.6534 | **0.52** | 9.51 | 1.056 | 29 | 20.4 % | 0.061 |
@@ -85,20 +96,34 @@ Paired bootstrap against the P0.2 reference (10k resamples, frozen-147; `data/bo
 | p100 − ref | −0.51 [−0.98, +0.02] | **−1.61 [−2.42, −0.83]** |
 | p100 − p50 | −0.02 [−0.44, +0.36] | **−2.74 [−3.35, −2.16]** |
 
-The trainable encoder's output also became more collapsed with more data. Its participation ratio on frozen-147
-(effective dimensions) went **7.7 → 3.9 → 2.4 → 2.3**, and mean pairwise cosine went 0.998 → 0.9995.
+Paired bootstrap against the **same-init control** (the controlled comparison; same file):
+
+| Comparison | ΔBLEU [95 % CI] | ΔchrF [95 % CI] |
+|---|---|---|
+| p25 − ref_sameinit | +0.36 [−0.28, +1.01] | **+1.78 [+0.96, +2.61]** |
+| p50 − ref_sameinit | −0.26 [−0.71, +0.28] | **+1.66 [+1.07, +2.29]** |
+| p100 − ref_sameinit | −0.28 [−0.71, +0.21] | **−1.08 [−1.74, −0.45]** |
+| *Init effect: ref_sameinit − P0.2 reference (same 2,751 clips)* | *−0.22 [−0.86, +0.42]* | *−0.53 [−1.45, +0.39]* |
+
+The trainable encoder's output also became more collapsed at the larger sizes. Its participation ratio on
+frozen-147 (effective dimensions) went **3.8 → 3.9 → 2.4 → 2.3** from the same-init control. The P0.2 reference,
+with a different init, is at 7.7, so the earlier "7.7 → 2.3" was partly initialization.
 
 ### Interpretation
 
-- **Loss improves with data, translation does not.** Best val loss and frozen loss both fall at every size, but
-  BLEU peaks at p25 and roughly halves at p50/p100. chrF gains about 1.2 points at p25/p50, then drops below the
-  reference at p100.
-- **The model does not learn to use the video more.** The shuffled-video loss gap stays at 0.06–0.07 throughout.
+- **Loss improves with data, translation does not.** Best val loss and frozen loss both fall at every size.
+  Against the same-init control, BLEU is flat within noise (0.80 → 1.15 → 0.54 → 0.52, no pairwise BLEU delta
+  significant). chrF gains about 1.7 points at p25/p50, then drops below the start at p100. The earlier "BLEU
+  roughly halves" reading (vs the P0.2 reference) does not survive init control. "No sustained gain" does.
+- **The model does not learn to use the video more.** The shuffled-video loss gap stays at 0.05–0.07 throughout
+  (0.048 same-init 2,751; 0.061–0.073 larger).
   The extra data is absorbed as a better *language prior*: lower loss from predicting generic How2Sign sentences,
   not from reading the signing.
-- **Output diversity collapses.** Distinct predictions fall from 102 to 29, and encoder effective dimension falls
-  from 7.7 to 2.3. The model drifts toward a few generic outputs.
-- **Pre-registered rule (`P0_11_PLAN.md`).**
+- **Output diversity falls at the larger sizes.** With init matched, distinct predictions go 63 → 73 → 35 → 29,
+  and encoder effective dimension goes 3.8 → 3.9 → 2.4 → 2.3. The model drifts toward a few generic outputs from
+  p50 on.
+- **Pre-registered rule (`P0_11_PLAN.md`), first applied with the P0.2 reference.** The same-init control gives
+  the same verdict: A fails (p100 ΔchrF CI excludes 0 on the negative side), C is literally met, D in spirit.
   - Outcome A ("flat") misses by 0.006 BLEU (|ΔBLEU| 0.506 vs < 0.5), and its chrF condition fails because the
     p100 CI excludes 0 on the negative side.
   - Literally, outcome C ("rise then plateau") is met: p25 has a chrF CI excluding 0, and p100 − p50 has
@@ -110,16 +135,17 @@ The trainable encoder's output also became more collapsed with more data. Its pa
 
 ### Caveats
 
-- **Initialization confound (main caveat).** The historical P0.2 reference used init hash `e651b023…`. The new
-  p25/p50/p100 runs used `OMP_NUM_THREADS=4`, which changed PyTorch's random initialization, so the 2,751-clip
-  reference and the larger runs did not start from the same weights. A **same-init 2,751-clip control
-  (`ref_omp4`) was started but not finished** (see "Status" below). Until it runs, part of any
-  ref-vs-pXX difference could be init or seed variance.
+- **Initialization confound: resolved.** The historical P0.2 reference used init hash `e651b023…`. The
+  p25/p50/p100 runs used `OMP_NUM_THREADS=4`, which changed PyTorch's random initialization (`c328ad26…`). The
+  completed same-init control removes this confound. It also measures the init effect at fixed data: −0.22 BLEU,
+  −0.53 chrF, distinct predictions 102 vs 63. That is the same size as the BLEU differences between data sizes.
+- **Single seed per condition.** Bootstrap CIs cover test-sample noise, not training noise. Frozen BLEU also
+  fluctuates by about 0.6–0.9 between late checkpoints within each run. BLEU differences under about 0.5 are not
+  meaningful. A multi-seed matrix would be needed to pin down the curve's shape, but not to answer the question.
 - **Compute-matched budget.** At p100 each clip is seen only about 3 times. p25, p50 and p100 all selected their best
   checkpoint in the last two evaluations, so by the pre-registered rule their points are **lower bounds** on what a
   longer run could reach. This could plausibly matter at p100. It does not explain falling BLEU alongside falling
   loss, or the growing collapse.
-- **Single seed per condition.** Bootstrap CIs cover test-sample noise, not training noise.
 - **Val text overlap grows with subset size** (6 → 90 clips with a normalized text also in val). This slightly
   inflates val metrics for larger subsets. It is the reason frozen-147 is the primary endpoint.
 - **Scope.** This tests *supervised How2Sign scaling for this model and recipe*. It does not test broad
@@ -127,10 +153,24 @@ The trainable encoder's output also became more collapsed with more data. Its pa
 
 ### Status
 
-**PARTIAL.** The p25/p50/p100 main runs and their diagnostics are complete. The same-init 2,751-clip control is
-unfinished, with partial outputs preserved.
+**COMPLETE (2026-10-11).** The p25/p50/p100 main runs, the same-init 2,751-clip control and all diagnostics are
+complete. With initialization controlled, the answer is the same: more supervised How2Sign data gives no
+material, sustained translation gain with this model and recipe. Remaining caveats are single seeds and the
+compute-matched lower bounds, which do not reopen the question.
 
-**Same-init control (`ref_omp4`): record.**
+**Same-init control, completed run (`ref_sameinit`).**
+
+| Item | Value |
+|---|---|
+| Run | 2026-10-11 15:56 → 18:03, alone on CPU (`OMP_NUM_THREADS=4`, 4 intra-op threads), under `caffeinate -ims`; same command as `run_p011.sh` with the 2,751 P0.2 IDs |
+| Init | `c328ad26…`, identical to p25/p50/p100 |
+| Resume vs restart | Restarted from scratch rather than resuming `ref_omp4` from `checkpoint-688`, because an HF-Trainer resume does not replay the augmentation / dataloader-worker RNG stream exactly. The restart is bit-identical to `ref_omp4` on all 1,032 overlapping steps (loss and grad-norm), on evals 1–2, and on the epoch-2 frozen predictions |
+| Training | early stopping at eval 27 (step 9,288 of 10,320); best eval 17 (step 5,848), val loss 3.6418; train loss at best 3.663, at stop 3.465 (overfitting after eval 17); 7,584 s wall |
+| Frozen-147 at best | BLEU 0.80, chrF 10.60, WER 1.056, 63/147 distinct, top-1 share 30.6 % |
+| Diagnostics | shuffled-video Δloss 0.048 (frozen) / 0.077 (val); encoder participation ratio 3.84 |
+| Files | `10.08/asl-p0-11-data-scaling/data/runs/ref_sameinit/`, `data/diagnostics/ref_sameinit_best.json`, `P0_11_RESULTS.md`; checkpoints in `$P011/runs/ref_sameinit/` (scratchpad, not durable) |
+
+**Earlier partial attempt (`ref_omp4`, 2026-10-09): record (kept for provenance; superseded).**
 
 | Item | Value |
 |---|---|
@@ -143,7 +183,7 @@ unfinished, with partial outputs preserved.
 | Wall time | 17,289 s (4.8 h) from start to step 1,032. **Most of it was system sleep:** the lid was closed at 11:49 (`pmset` log: clamshell sleep) and epoch 2 shows 16,783 s wall vs 279 s for epoch 1. Actual compute was about 15 min. |
 | Ended | 2026-10-09 16:32:40, about 4 min after the machine resumed. When this report session checked at 16:33, **no process belonged to the run** (`ps`, `pgrep`, `lsof` on its log, checked with the sandbox disabled). So this session did not terminate anything, and no other process was touched. The log has no traceback, only a Python `resource_tracker` shutdown warning. That fits the run being shut down along with the earlier session that launched it, but **the exact cause is not verified.** |
 | Why stopped | The work was paused to write this report (by instruction). In practice the run had already exited before it could be stopped deliberately. |
-| To finish | Restart from scratch with the same command, or resume from `checkpoint-688`. Keep the machine awake: about 2.4 h of CPU alone, or rerun the whole matrix with identical init and seeds (§10). |
+| Outcome | Superseded by the completed from-scratch restart `ref_sameinit` above. `ref_omp4` itself was not modified. |
 
 ## 4. P0-12 — Uni-Sign Pipeline Gap
 
@@ -307,11 +347,13 @@ rule this **supports representation as an important bottleneck.**
 
 ## 6. P0-11 vs P0-13
 
-Same model family, same recipe, same frozen-147 endpoint, same 2,751-clip starting point (P0.2 reference).
+Same model family, same recipe, same frozen-147 endpoint. P0-11 rows are compared with the same-init 2,751 control.
+P0-13 is compared with the P0.2 reference, its own baseline.
 
 | Lever | Supervised clips | Representation | Frozen BLEU | Frozen chrF | WER | Distinct /147 | Shuffled Δloss |
 |---|---|---|---|---|---|---|---|
-| Starting point (P0.2) | 2,751 | landmarks | 1.02 | 11.12 | 1.025 | 102 | 0.067 |
+| Starting point (P0.2 reference; P0-13 baseline) | 2,751 | landmarks | 1.02 | 11.12 | 1.025 | 102 | 0.067 |
+| Starting point, same init as P0-11 (`ref_sameinit`) | 2,751 | landmarks | 0.80 | 10.60 | 1.056 | 63 | 0.048 |
 | More data (P0-11 p25) | 6,605 (2.4×) | landmarks | 1.15 | 12.37 | 1.005 | 73 | 0.073 |
 | More data (P0-11 p50) | 13,210 (4.8×) | landmarks | 0.54 | 12.25 | 1.047 | 35 | 0.066 |
 | More data (P0-11 p100) | 26,419 (9.6×) | landmarks | 0.52 | 9.51 | 1.056 | 29 | 0.061 |
@@ -319,13 +361,18 @@ Same model family, same recipe, same frozen-147 endpoint, same 2,751-clip starti
 
 | | Best ΔBLEU vs start | Best ΔchrF vs start | Effect on video reliance | Effect on diversity |
 |---|---|---|---|---|
-| 9.6× supervised How2Sign data | +0.13 (p25; CI includes 0) | +1.25 (p25) | none (0.06–0.07) | collapses (102 → 29) |
+| Up to 9.6× supervised How2Sign data (vs same-init control) | +0.36 [−0.28, +1.01] (p25); −0.28 at 9.6× | +1.78 [+0.96, +2.61] (p25); −1.08 at 9.6× | negligible (0.048 → 0.061–0.073) | falls at larger sizes (63 → 29) |
 | Pretrained representation, same data | **+2.23 [1.28, 3.39]** | **+5.93 [4.66, 7.34]** | 19× larger | full (147/147) |
 
 **Reading.** In our current experiments, a better pretrained representation is worth far more than up to 9.6× more
-supervised How2Sign clips. With P0-11's same-init control unfinished and single seeds throughout, this is **strong
-current evidence, not final causal proof.** Init variance would have to explain about 2 BLEU of difference for the
-conclusion to flip. That is unlikely given the size of the P0-13 effect, but it is unmeasured.
+supervised How2Sign clips.
+- The best supervised-scaling BLEU CI lies entirely below the P0-13 CI (1.01 < 1.28).
+- The best chrF gain is about 30 % of P0-13's.
+- At 9.6×, both metrics are at or below the start.
+
+The init effect is now measured: −0.22 BLEU / −0.53 chrF at fixed data. That is about a tenth of the P0-13 effect,
+so init variance cannot explain the comparison. Single seeds remain a caveat. This is **strong evidence, not final
+causal proof.**
 
 ## 7. What This Says About "Data vs Representation"
 
@@ -373,9 +420,8 @@ preprocessing. Do not present it as deployable.
 
 | Unknown | Why it matters | Resolved by |
 |---|---|---|
-| P0-11 init confound | ref vs p25/p50/p100 differ in init, not only data | same-init 2,751 control, or a full same-seed rerun |
 | P0-11 under-training at large subsets | p25/p50/p100 best checkpoints at the last evals (lower bounds) | longer or fixed-epoch run at p100 (optional) |
-| Seed variance (P0-11 and P0-13) | all CIs are test-sample only | multi-seed runs |
+| Seed variance (P0-11 and P0-13) | all CIs are test-sample only; P0-11 init alone moves BLEU by about 0.2 at fixed data | multi-seed runs |
 | Size of each P0-12 factor (timing, crop, extractor, runtime) | decides the canonical preprocessing path | P0-12 CUDA run |
 | Does the released checkpoint reproduce the released predictions? | E0 caveat; the link is plausible, not proven | P0-12 path-check arm |
 | Pretraining vs architecture in P0-13 | the gain might be partly architectural | random-init Uni-Sign encoder arm |
@@ -390,8 +436,8 @@ preprocessing. Do not present it as deployable.
 1. **P0-12 controlled inference on one CUDA GPU.** Run `scripts/run_p012_gpu.sh`: timestamp, crop/normalization,
    pose extractor and runtime/batch, one variable at a time, plus the path check and noise arms. About 1–2
    GPU-hours. Copy the prepared inputs out of the scratchpad first.
-2. **P0-11 same-init control.** Finish the 2,751-clip `ref_omp4` run (about 2.4 h CPU, machine kept awake), or
-   later rerun the full P0-11 matrix with identical initialization and seeds.
+2. ~~**P0-11 same-init control.**~~ **Done 2026-10-11** (`ref_sameinit`; §3). Optional follow-up: a multi-seed
+   P0-11 matrix to pin down the curve's shape.
 3. **Decide the canonical Uni-Sign preprocessing path** from the P0-12 results (expected: re-aligned segmentation
    plus signer crop before normalization).
 
@@ -415,7 +461,8 @@ See `NEXT_STEPS.md`.
 | P0-11 | `10.08/asl-p0-11-data-scaling/` (`P0_11_PLAN.md`, `DATASET_SPLITS.md`, `metrics.csv`, `learning_curve.csv`, `data/diagnostics_summary.csv`, `data/bootstrap_frozen147.json`, `data/runs/*/summary.json`, `figures/`) |
 | P0-12 | `10.06/asl-p0-12-unisign-pose-gap/` (`P0_12_RESULTS.md`, `BOSS_SUMMARY.md`, `POSE_DIAGNOSTICS.md`, `per_clip_results.csv`, `pose_diagnostics.csv`) |
 | P0-13 | `10.07/asl-p0-13-representation-swap/` (`P0_13_RESULTS.md`, `metrics.csv`, `representation_diagnostics.csv`) |
-| P0-11 same-init partial | `$P011/runs/ref_omp4/` and `$P011/logs/train_ref_omp4.log` (temporary session scratchpad, outside the repo; see §3) |
+| P0-11 same-init control | `10.08/asl-p0-11-data-scaling/P0_11_RESULTS.md`, `data/runs/ref_sameinit/`, `data/diagnostics/ref_sameinit_best.json`; checkpoints `$P011/runs/ref_sameinit/` (scratchpad) |
+| P0-11 same-init partial (superseded) | `$P011/runs/ref_omp4/` and `$P011/logs/train_ref_omp4.log` (temporary session scratchpad, outside the repo; see §3) |
 
 **Path placeholders in the committed P0-11 run metadata.** `data/runs/*/run_config.json` and `summary.json`
 record the original run paths with two placeholders:
@@ -442,7 +489,8 @@ Both are kept as provenance. To rerun, substitute local paths (see `10.08/asl-p0
 
 **What was not done (by instruction)**
 
-- No new training or inference.
+- No new training or inference when this report was first written (2026-10-09). The 2026-10-11 update added
+  exactly one training run: the P0-11 same-init control and its diagnostics.
 - No changes to P0-11 p25/p50/p100, P0-12 or P0-13 outputs.
 - No deletion of the partial `ref_omp4` outputs.
 - No commit or push.

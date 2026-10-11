@@ -13,10 +13,10 @@ rep, runs, p02, diag, p013 = map(Path, sys.argv[1:6])
 (rep / "figures").mkdir(exist_ok=True)
 splits = json.load(open(rep / "splits" / "splits_summary.json"))
 POOL, OFFICIAL = splits["pool_size"], splits["n_official_train"]
-# p02_ref = existing P0.2 run (init e651b023, default threads); ref_omp4 = same 2,751 clips re-run with the P0-11
+# p02_ref = existing P0.2 run (init e651b023, default threads); ref_sameinit = same 2,751 clips re-run with the P0-11
 # launcher (OMP_NUM_THREADS=4 -> init c328ad26, identical to p25/p50/p100). See P0_11_RESULTS.md, section "Initialization".
-conds = [("p02_ref", p02), ("ref_omp4", runs / "ref_omp4"), ("p25", runs / "p25"), ("p50", runs / "p50"), ("p100", runs / "p100")]
-SUB = lambda n: splits["subsets"]["p02_ref" if n == "ref_omp4" else n]
+conds = [("p02_ref", p02), ("ref_sameinit", runs / "ref_sameinit"), ("p25", runs / "p25"), ("p50", runs / "p50"), ("p100", runs / "p100")]
+SUB = lambda n: splits["subsets"]["p02_ref" if n == "ref_sameinit" else n]
 
 
 def table(d):
@@ -74,7 +74,7 @@ with open(rep / "metrics.csv", "w", newline="") as f:
 
 # bootstrap: each condition vs P0.2 reference, and adjacent steps (frozen 147)
 boot = {}
-for a, b in [("p02_ref", "ref_omp4"), ("ref_omp4", "p25"), ("ref_omp4", "p50"), ("ref_omp4", "p100"),
+for a, b in [("p02_ref", "ref_sameinit"), ("ref_sameinit", "p25"), ("ref_sameinit", "p50"), ("ref_sameinit", "p100"),
              ("p02_ref", "p25"), ("p02_ref", "p50"), ("p02_ref", "p100"), ("p25", "p50"), ("p50", "p100")]:
     ids = sorted(set(P[a]) & set(P[b]))
     boot[f"{b}_minus_{a}"] = compare(ids, P[a], P[b], 10000)
@@ -99,7 +99,7 @@ with open(rep / "learning_curve.csv", "w", newline="") as f:
                     "pct_of_official_train": r["fraction_of_official_train_pct"], "frozen_bleu": r["frozen_bleu"],
                     "frozen_chrf": r["frozen_chrf"], "frozen_wer": r["frozen_wer"], "val_bleu": r["val_bleu"],
                     "best_val_loss": r["val_loss"], "shuffle_loss_delta": r["shuffle_loss_delta"],
-                    "note": {"p02_ref": "existing P0.2 run (different init)", "ref_omp4": "2,751 re-run, same init as P0-11 runs"}.get(r["condition"], "P0-11 run")})
+                    "note": {"p02_ref": "existing P0.2 run (different init)", "ref_sameinit": "2,751 re-run, same init as P0-11 runs"}.get(r["condition"], "P0-11 run")})
     w.writerow({"series": "P0-13 representation swap (reference)", "condition": "p013_unisign", "train_examples": 2751,
                 "pct_of_pool": splits["subsets"]["p02_ref"]["pct_of_pool"],
                 "pct_of_official_train": splits["subsets"]["p02_ref"]["pct_of_official_train"],
@@ -116,7 +116,7 @@ SURF, INK, INK2, GRID = "#fcfcfb", "#0b0b0b", "#52514e", "#e4e3df"
 BLUE, ORANGE = "#2a78d6", "#eb6834"
 plt.rcParams.update({"font.size": 10, "axes.edgecolor": GRID, "axes.labelcolor": INK2, "xtick.color": INK2,
                      "ytick.color": INK2, "axes.titlecolor": INK, "figure.facecolor": SURF, "axes.facecolor": SURF})
-line = [r for r in out if r["condition"] != "p02_ref"]  # same-init series: ref_omp4, p25, p50, p100
+line = [r for r in out if r["condition"] != "p02_ref"]  # same-init series: ref_sameinit, p25, p50, p100
 p02r = next(r for r in out if r["condition"] == "p02_ref")
 x = [r["train_examples"] for r in line]
 panels = [("frozen_bleu", "Frozen-147 BLEU", "frozen_bleu"), ("frozen_chrf", "Frozen-147 chrF", "frozen_chrf"),

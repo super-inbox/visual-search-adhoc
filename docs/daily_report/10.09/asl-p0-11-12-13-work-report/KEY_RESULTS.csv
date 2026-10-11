@@ -36,6 +36,21 @@ P0-11,p100,frozen147,147,26419,landmarks,distinct_predictions,29,,,10.08/asl-p0-
 P0-11,p100,frozen147,147,26419,landmarks,shuffled_video_delta_loss,0.061,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
 P0-11,ref_omp4 (same-init control; partial),val366,366,2751,landmarks,val_loss at last completed eval (epoch 2 / step 688),4.9533,,,scratchpad p011/runs/ref_omp4/epoch_log.jsonl,unfinished; ended at step 1032 of 10320
 P0-11,ref_omp4 (same-init control; partial),frozen147,147,2751,landmarks,frozen_loss at last completed eval (epoch 2 / step 688),4.9845,,,scratchpad p011/runs/ref_omp4/epoch_log.jsonl,unfinished; not comparable to final runs
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,best_val_loss,3.6418,,,10.08/asl-p0-11-data-scaling/metrics.csv,"init c328ad26 = p25/p50/p100; best eval 17 (step 5,848); early-stopped at eval 27 (step 9,288)"
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,BLEU,0.80,,,10.08/asl-p0-11-data-scaling/metrics.csv,supersedes partial ref_omp4 rows above
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,chrF,10.60,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,WER,1.056,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,distinct_predictions,63,,,10.08/asl-p0-11-data-scaling/metrics.csv,top-1 share 30.6%
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,shuffled_video_delta_loss,0.048,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,encoder_effective_dims (participation ratio),3.84,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,p25 3.86; p50 2.38; p100 2.34
+P0-11,p25 minus ref_sameinit,frozen147,147,6605,landmarks,BLEU delta,0.36,-0.28,1.01,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p25 minus ref_sameinit,frozen147,147,6605,landmarks,chrF delta,1.78,0.96,2.61,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p50 minus ref_sameinit,frozen147,147,13210,landmarks,BLEU delta,-0.26,-0.71,0.28,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p50 minus ref_sameinit,frozen147,147,13210,landmarks,chrF delta,1.66,1.07,2.29,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p100 minus ref_sameinit,frozen147,147,26419,landmarks,BLEU delta,-0.28,-0.71,0.21,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p100 minus ref_sameinit,frozen147,147,26419,landmarks,chrF delta,-1.08,-1.74,-0.45,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,ref_sameinit minus p02_ref (init effect),frozen147,147,2751,landmarks,BLEU delta,-0.22,-0.86,0.42,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,same data; different init only
+P0-11,ref_sameinit minus p02_ref (init effect),frozen147,147,2751,landmarks,chrF delta,-0.53,-1.45,0.39,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,same data; different init only
 P0-13,baseline (landmarks),frozen147,147,2751,landmarks,BLEU,1.023,,,10.07/asl-p0-13-representation-swap/metrics.csv,same run as P0-11 p02_ref
 P0-13,baseline (landmarks),frozen147,147,2751,landmarks,chrF,11.121,,,10.07/asl-p0-13-representation-swap/metrics.csv,
 P0-13,baseline (landmarks),frozen147,147,2751,landmarks,WER,1.025,,,10.07/asl-p0-13-representation-swap/metrics.csv,
