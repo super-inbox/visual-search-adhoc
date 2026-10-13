@@ -1,0 +1,184 @@
+{
+ "labels_n": 128,
+ "manifest_n": 128,
+ "labels_order_equals_manifest_order": true,
+ "labels_refs_equal_manifest_refs": 125,
+ "labels_refs_differing_only_by_mojibake": [
+  "G2T2WCuU39Y_5-10-rgb_front",
+  "G3OMdQo1zjY_0-10-rgb_front",
+  "fzDHRCKr7wU_3-8-rgb_front"
+ ],
+ "systems": {
+  "A_official": {
+   "file_lines": 128,
+   "parsed_rows": 128,
+   "unparseable_or_blank_lines": [],
+   "empty_predictions": [],
+   "duplicate_ids": [],
+   "unknown_ids": [],
+   "missing_ids": [],
+   "order_equals_labels": true,
+   "first_order_mismatch": null,
+   "unique_predictions": 128,
+   "recomputed": {
+    "bleu1": 32.3904,
+    "bleu2": 19.5166,
+    "bleu3": 12.8778,
+    "bleu4": 9.1319,
+    "rouge": 28.9961,
+    "bleu4_with_labels_test_refs": 9.1319,
+    "rouge_with_labels_test_refs": 28.9961,
+    "chrf": 28.9939,
+    "wer_p012": 0.9096
+   },
+   "committed": {
+    "bleu1": 32.39038109532627,
+    "bleu2": 19.51656987685054,
+    "bleu3": 12.87775850498723,
+    "bleu4": 9.131944073379477,
+    "rouge": 29.0,
+    "bleurt": 0.44068175478605554
+   },
+   "diff_recomputed_minus_committed": {
+    "bleu1": 0.0,
+    "bleu2": 0.0,
+    "bleu3": 0.0,
+    "bleu4": 0.0,
+    "rouge": -0.0039
+   },
+   "metrics_reproduced": true,
+   "structural_ok": true
+  },
+  "C_ours_on_official_crop": {
+   "file_lines": 128,
+   "parsed_rows": 128,
+   "unparseable_or_blank_lines": [],
+   "empty_predictions": [],
+   "duplicate_ids": [],
+   "unknown_ids": [],
+   "missing_ids": [],
+   "order_equals_labels": true,
+   "first_order_mismatch": null,
+   "unique_predictions": 128,
+   "recomputed": {
+    "bleu1": 31.5038,
+    "bleu2": 18.9871,
+    "bleu3": 12.381,
+    "bleu4": 8.6082,
+    "rouge": 27.6729,
+    "bleu4_with_labels_test_refs": 8.6082,
+    "rouge_with_labels_test_refs": 27.6729,
+    "chrf": 28.1177,
+    "wer_p012": 0.9274
+   },
+   "committed": {
+    "bleu1": 31.503828813336295,
+    "bleu2": 18.987116528174813,
+    "bleu3": 12.38097702442627,
+    "bleu4": 8.608170284179286,
+    "rouge": 27.67,
+    "bleurt": 0.42474569648038596
+   },
+   "diff_recomputed_minus_committed": {
+    "bleu1": 0.0,
+    "bleu2": 0.0,
+    "bleu3": 0.0,
+    "bleu4": 0.0,
+    "rouge": 0.0029
+   },
+   "metrics_reproduced": true,
+   "structural_ok": true
+  },
+  "B_ours_5p39": {
+   "file_lines": 128,
+   "parsed_rows": 128,
+   "unparseable_or_blank_lines": [],
+   "empty_predictions": [],
+   "duplicate_ids": [],
+   "unknown_ids": [],
+   "missing_ids": [],
+   "order_equals_labels": true,
+   "first_order_mismatch": null,
+   "unique_predictions": 128,
+   "recomputed": {
+    "bleu1": 24.2379,
+    "bleu2": 12.7999,
+    "bleu3": 8.0799,
+    "bleu4": 5.4735,
+    "rouge": 18.6902,
+    "bleu4_with_labels_test_refs": 5.4735,
+    "rouge_with_labels_test_refs": 18.6902,
+    "chrf": 22.9455,
+    "wer_p012": 0.9548
+   },
+   "committed": {
+    "bleu1": 24.237892746320664,
+    "bleu2": 12.799910786751617,
+    "bleu3": 8.079871635034305,
+    "bleu4": 5.473511939274865,
+    "rouge": 18.69,
+    "bleurt": 0.3766846530488692
+   },
+   "diff_recomputed_minus_committed": {
+    "bleu1": 0.0,
+    "bleu2": 0.0,
+    "bleu3": 0.0,
+    "bleu4": 0.0,
+    "rouge": 0.0002
+   },
+   "metrics_reproduced": true,
+   "structural_ok": true
+  },
+  "B_aspect": {
+   "file_lines": 128,
+   "parsed_rows": 128,
+   "unparseable_or_blank_lines": [],
+   "empty_predictions": [],
+   "duplicate_ids": [],
+   "unknown_ids": [],
+   "missing_ids": [],
+   "order_equals_labels": true,
+   "first_order_mismatch": null,
+   "unique_predictions": 128,
+   "recomputed": {
+    "bleu1": 24.9927,
+    "bleu2": 13.772,
+    "bleu3": 8.7221,
+    "bleu4": 5.7973,
+    "rouge": 20.5859,
+    "bleu4_with_labels_test_refs": 5.7973,
+    "rouge_with_labels_test_refs": 20.5859,
+    "chrf": 23.7761,
+    "wer_p012": 0.951
+   },
+   "committed": {
+    "bleu1": 24.992738866773234,
+    "bleu2": 13.771975629739787,
+    "bleu3": 8.722096917931339,
+    "bleu4": 5.797295534182488,
+    "rouge": 20.59,
+    "bleurt": 0.38492491329088807
+   },
+   "diff_recomputed_minus_committed": {
+    "bleu1": 0.0,
+    "bleu2": 0.0,
+    "bleu3": 0.0,
+    "bleu4": 0.0,
+    "rouge": -0.0041
+   },
+   "metrics_reproduced": true,
+   "structural_ok": true
+  }
+ },
+ "all_files_same_line_order": true,
+ "bleurt_note": "BLEURT not recomputed (BLEURT-20 checkpoint not available locally); committed values carried over unchanged.",
+ "metric_tolerance_abs": {
+  "bleu1": 0.05,
+  "bleu2": 0.05,
+  "bleu3": 0.05,
+  "bleu4": 0.05,
+  "rouge": 0.05
+ },
+ "hard_failures": [],
+ "PASS": true
+}

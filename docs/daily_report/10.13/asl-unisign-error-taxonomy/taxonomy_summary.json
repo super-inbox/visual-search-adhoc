@@ -1,0 +1,4215 @@
+{
+ "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+ "n": 128,
+ "thresholds": {
+  "visual": {
+   "A_official": {
+    "low_hand_conf_q25": 0.821825,
+    "fast_hand_motion_q75": 0.0375825,
+    "high_hand_jitter_q75": 0.0184625
+   },
+   "C_ours_on_official_crop": {
+    "low_hand_conf_q25": 0.82925,
+    "fast_hand_motion_q75": 0.037315,
+    "high_hand_jitter_q75": 0.02152
+   }
+  },
+  "pose_disagreement_q75": 0.0193,
+  "ref_len_terciles": [
+   14.0,
+   22.0
+  ]
+ },
+ "categories": {
+  "ALL": {
+   "n": 128,
+   "group": "all",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 9.13,
+    "corpus_chrf": 28.99,
+    "pooled_wer": 0.9096,
+    "mean_chrf": 30.09,
+    "median_chrf": 27.35,
+    "mean_sentence_bleu": 9.44,
+    "mean_wer": 0.9647,
+    "mean_chrf_ci95": [
+     27.71,
+     32.47
+    ],
+    "rate_omission": 0.117,
+    "rate_over_generation": 0.086,
+    "rate_hallucination_candidate": 0.305,
+    "rate_repetition": 0.266,
+    "rate_truncation_candidate": 0.172,
+    "rate_substitution_dominant": 0.797,
+    "primary_repetition_loop": 18,
+    "primary_omission": 13,
+    "primary_hallucination": 26,
+    "primary_over_generation": 4,
+    "primary_substitution": 67,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.567,
+    "check_number_recall_broad": 0.538,
+    "check_negation_dropped": 0.538,
+    "check_question_mark_lost": 0.769,
+    "check_named_entity_recall": 0.181,
+    "check_fingerspelling_recall": 0.267
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 8.61,
+    "corpus_chrf": 28.12,
+    "pooled_wer": 0.9274,
+    "mean_chrf": 28.63,
+    "median_chrf": 27.23,
+    "mean_sentence_bleu": 8.86,
+    "mean_wer": 0.997,
+    "mean_chrf_ci95": [
+     26.44,
+     30.94
+    ],
+    "rate_omission": 0.125,
+    "rate_over_generation": 0.109,
+    "rate_hallucination_candidate": 0.289,
+    "rate_repetition": 0.312,
+    "rate_truncation_candidate": 0.211,
+    "rate_substitution_dominant": 0.789,
+    "primary_repetition_loop": 16,
+    "primary_omission": 15,
+    "primary_hallucination": 20,
+    "primary_over_generation": 3,
+    "primary_substitution": 74,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.533,
+    "check_number_recall_broad": 0.499,
+    "check_negation_dropped": 0.538,
+    "check_question_mark_lost": 0.846,
+    "check_named_entity_recall": 0.152,
+    "check_fingerspelling_recall": 0.233,
+    "paired_delta_chrf_vs_A": -1.46,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.27,
+     -0.67
+    ],
+    "paired_delta_bleu4_vs_A": -0.52
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 5.47,
+    "corpus_chrf": 22.95,
+    "pooled_wer": 0.9548,
+    "mean_chrf": 22.08,
+    "median_chrf": 19.51,
+    "mean_sentence_bleu": 6.19,
+    "mean_wer": 1.0239,
+    "mean_chrf_ci95": [
+     20.2,
+     24.08
+    ],
+    "rate_omission": 0.156,
+    "rate_over_generation": 0.078,
+    "rate_hallucination_candidate": 0.555,
+    "rate_repetition": 0.273,
+    "rate_truncation_candidate": 0.141,
+    "rate_substitution_dominant": 0.812,
+    "primary_repetition_loop": 21,
+    "primary_omission": 20,
+    "primary_hallucination": 42,
+    "primary_over_generation": 1,
+    "primary_substitution": 44,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.275,
+    "check_negation_dropped": 0.769,
+    "check_question_mark_lost": 0.846,
+    "check_named_entity_recall": 0.02,
+    "check_fingerspelling_recall": 0.133,
+    "paired_delta_chrf_vs_A": -8.01,
+    "paired_delta_chrf_vs_A_ci95": [
+     -10.26,
+     -5.89
+    ],
+    "paired_delta_bleu4_vs_A": -3.66
+   },
+   "B_aspect": {
+    "corpus_bleu4": 5.8,
+    "corpus_chrf": 23.78,
+    "pooled_wer": 0.951,
+    "mean_chrf": 22.72,
+    "median_chrf": 20.52,
+    "mean_sentence_bleu": 6.33,
+    "mean_wer": 1.0201,
+    "mean_chrf_ci95": [
+     20.92,
+     24.61
+    ],
+    "rate_omission": 0.203,
+    "rate_over_generation": 0.078,
+    "rate_hallucination_candidate": 0.531,
+    "rate_repetition": 0.289,
+    "rate_truncation_candidate": 0.188,
+    "rate_substitution_dominant": 0.773,
+    "primary_repetition_loop": 23,
+    "primary_omission": 24,
+    "primary_hallucination": 41,
+    "primary_over_generation": 2,
+    "primary_substitution": 38,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.275,
+    "check_negation_dropped": 0.769,
+    "check_question_mark_lost": 0.923,
+    "check_named_entity_recall": 0.078,
+    "check_fingerspelling_recall": 0.167,
+    "paired_delta_chrf_vs_A": -7.37,
+    "paired_delta_chrf_vs_A_ci95": [
+     -9.62,
+     -5.25
+    ],
+    "paired_delta_bleu4_vs_A": -3.33
+   }
+  },
+  "fingerspelling_candidate": {
+   "n": 15,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 10.29,
+    "corpus_chrf": 30.06,
+    "pooled_wer": 0.9711,
+    "mean_chrf": 30.61,
+    "median_chrf": 29.47,
+    "mean_sentence_bleu": 11.09,
+    "mean_wer": 1.0567,
+    "mean_chrf_ci95": [
+     24.72,
+     36.74
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.133,
+    "rate_hallucination_candidate": 0.4,
+    "rate_repetition": 0.133,
+    "rate_truncation_candidate": 0.133,
+    "rate_substitution_dominant": 0.8,
+    "primary_repetition_loop": 1,
+    "primary_omission": 0,
+    "primary_hallucination": 5,
+    "primary_over_generation": 0,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.146,
+    "check_fingerspelling_recall": 0.267,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 3.19,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.07,
+     12.58
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.92,
+     17.04
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.08,
+    "matched_ctrl_delta_wer": 0.042
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 10.22,
+    "corpus_chrf": 29.91,
+    "pooled_wer": 0.9807,
+    "mean_chrf": 30.11,
+    "median_chrf": 30.59,
+    "mean_sentence_bleu": 10.98,
+    "mean_wer": 1.046,
+    "mean_chrf_ci95": [
+     24.61,
+     35.85
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.2,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.2,
+    "rate_truncation_candidate": 0.2,
+    "rate_substitution_dominant": 0.933,
+    "primary_repetition_loop": 1,
+    "primary_omission": 0,
+    "primary_hallucination": 4,
+    "primary_over_generation": 1,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.146,
+    "check_fingerspelling_recall": 0.233,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 6.51,
+    "matched_ctrl_delta_chrf_ci95": [
+     -0.6,
+     14.43
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.31,
+     19.41
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 5.75,
+    "matched_ctrl_delta_wer": -0.0463,
+    "paired_delta_chrf_vs_A": -0.5,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.48,
+     1.32
+    ],
+    "paired_delta_bleu4_vs_A": -0.07,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.5,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.58,
+    "pose_sensitivity_interaction": -1.08,
+    "pose_sensitivity_interaction_ci95": [
+     -3.11,
+     1.13
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -4.27,
+     2.31
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 5.55,
+    "corpus_chrf": 22.86,
+    "pooled_wer": 0.8617,
+    "mean_chrf": 20.57,
+    "median_chrf": 20.45,
+    "mean_sentence_bleu": 6.37,
+    "mean_wer": 0.9395,
+    "mean_chrf_ci95": [
+     16.52,
+     25.16
+    ],
+    "rate_omission": 0.067,
+    "rate_over_generation": 0.067,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.2,
+    "rate_truncation_candidate": 0.133,
+    "rate_substitution_dominant": 0.867,
+    "primary_repetition_loop": 3,
+    "primary_omission": 1,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 8,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.25,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.133,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 2.25,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.98,
+     6.62
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.97,
+     8.82
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.1,
+    "matched_ctrl_delta_wer": -0.164,
+    "paired_delta_chrf_vs_A": -10.04,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.4,
+     -4.32
+    ],
+    "paired_delta_bleu4_vs_A": -4.74
+   },
+   "B_aspect": {
+    "corpus_bleu4": 7.09,
+    "corpus_chrf": 25.76,
+    "pooled_wer": 0.8328,
+    "mean_chrf": 23.36,
+    "median_chrf": 21.62,
+    "mean_sentence_bleu": 7.85,
+    "mean_wer": 0.8922,
+    "mean_chrf_ci95": [
+     18.81,
+     28.18
+    ],
+    "rate_omission": 0.333,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.133,
+    "rate_truncation_candidate": 0.067,
+    "rate_substitution_dominant": 0.733,
+    "primary_repetition_loop": 1,
+    "primary_omission": 5,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.25,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.042,
+    "check_fingerspelling_recall": 0.167,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 3.95,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.14,
+     9.08
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.64,
+     11.97
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.9,
+    "matched_ctrl_delta_wer": -0.1778,
+    "paired_delta_chrf_vs_A": -7.25,
+    "paired_delta_chrf_vs_A_ci95": [
+     -13.14,
+     -1.58
+    ],
+    "paired_delta_bleu4_vs_A": -3.2
+   }
+  },
+  "named_entity_candidate": {
+   "n": 17,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 8.06,
+    "corpus_chrf": 26.47,
+    "pooled_wer": 0.9072,
+    "mean_chrf": 28.9,
+    "median_chrf": 26.43,
+    "mean_sentence_bleu": 9.61,
+    "mean_wer": 0.9822,
+    "mean_chrf_ci95": [
+     23.62,
+     34.62
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.059,
+    "rate_hallucination_candidate": 0.235,
+    "rate_repetition": 0.176,
+    "rate_truncation_candidate": 0.118,
+    "rate_substitution_dominant": 0.941,
+    "primary_repetition_loop": 2,
+    "primary_omission": 0,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 12,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.181,
+    "check_fingerspelling_recall": 0.125,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.06,
+    "matched_ctrl_delta_chrf": 2.7,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.04,
+     11.72
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -10.09,
+     16.27
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.89,
+    "matched_ctrl_delta_wer": -0.0441
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 8.62,
+    "corpus_chrf": 26.03,
+    "pooled_wer": 0.9281,
+    "mean_chrf": 27.49,
+    "median_chrf": 25.43,
+    "mean_sentence_bleu": 9.31,
+    "mean_wer": 1.0261,
+    "mean_chrf_ci95": [
+     22.39,
+     32.94
+    ],
+    "rate_omission": 0.059,
+    "rate_over_generation": 0.176,
+    "rate_hallucination_candidate": 0.235,
+    "rate_repetition": 0.235,
+    "rate_truncation_candidate": 0.176,
+    "rate_substitution_dominant": 0.941,
+    "primary_repetition_loop": 2,
+    "primary_omission": 1,
+    "primary_hallucination": 3,
+    "primary_over_generation": 1,
+    "primary_substitution": 10,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.152,
+    "check_fingerspelling_recall": 0.125,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.06,
+    "matched_ctrl_delta_chrf": 4.04,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.09,
+     12.29
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.03,
+     16.84
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.45,
+    "matched_ctrl_delta_wer": -0.066,
+    "paired_delta_chrf_vs_A": -1.41,
+    "paired_delta_chrf_vs_A_ci95": [
+     -3.94,
+     0.82
+    ],
+    "paired_delta_bleu4_vs_A": 0.56,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 1.41,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.47,
+    "pose_sensitivity_interaction": -0.06,
+    "pose_sensitivity_interaction_ci95": [
+     -2.46,
+     2.72
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.55,
+     4.07
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 1.86,
+    "corpus_chrf": 17.81,
+    "pooled_wer": 0.9132,
+    "mean_chrf": 17.39,
+    "median_chrf": 16.63,
+    "mean_sentence_bleu": 4.85,
+    "mean_wer": 0.9676,
+    "mean_chrf_ci95": [
+     14.94,
+     19.87
+    ],
+    "rate_omission": 0.118,
+    "rate_over_generation": 0.059,
+    "rate_hallucination_candidate": 0.412,
+    "rate_repetition": 0.235,
+    "rate_truncation_candidate": 0.176,
+    "rate_substitution_dominant": 0.882,
+    "primary_repetition_loop": 4,
+    "primary_omission": 2,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 7,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.25,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.5,
+    "check_named_entity_recall": 0.02,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.06,
+    "matched_ctrl_delta_chrf": -1.06,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.7,
+     3.67
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.53,
+     5.56
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.94,
+    "matched_ctrl_delta_wer": -0.1416,
+    "paired_delta_chrf_vs_A": -11.51,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.7,
+     -6.99
+    ],
+    "paired_delta_bleu4_vs_A": -6.2
+   },
+   "B_aspect": {
+    "corpus_bleu4": 2.46,
+    "corpus_chrf": 20.28,
+    "pooled_wer": 0.9311,
+    "mean_chrf": 19.82,
+    "median_chrf": 20.45,
+    "mean_sentence_bleu": 6.15,
+    "mean_wer": 0.9667,
+    "mean_chrf_ci95": [
+     16.33,
+     23.22
+    ],
+    "rate_omission": 0.353,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.353,
+    "rate_repetition": 0.176,
+    "rate_truncation_candidate": 0.118,
+    "rate_substitution_dominant": 0.824,
+    "primary_repetition_loop": 2,
+    "primary_omission": 6,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 5,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.25,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.5,
+    "check_named_entity_recall": 0.078,
+    "check_fingerspelling_recall": 0.042,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.06,
+    "matched_ctrl_delta_chrf": -0.08,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.67,
+     5.08
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.65,
+     7.41
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.57,
+    "matched_ctrl_delta_wer": -0.1192,
+    "paired_delta_chrf_vs_A": -9.08,
+    "paired_delta_chrf_vs_A_ci95": [
+     -13.91,
+     -4.48
+    ],
+    "paired_delta_bleu4_vs_A": -5.6
+   }
+  },
+  "number_candidate": {
+   "n": 15,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 11.52,
+    "corpus_chrf": 31.61,
+    "pooled_wer": 0.8794,
+    "mean_chrf": 33.45,
+    "median_chrf": 33.26,
+    "mean_sentence_bleu": 11.81,
+    "mean_wer": 0.934,
+    "mean_chrf_ci95": [
+     26.39,
+     41.29
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.067,
+    "rate_hallucination_candidate": 0.4,
+    "rate_repetition": 0.467,
+    "rate_truncation_candidate": 0.2,
+    "rate_substitution_dominant": 0.933,
+    "primary_repetition_loop": 6,
+    "primary_omission": 0,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.567,
+    "check_number_recall_broad": 0.614,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 13,
+    "matched_ctrl_mean_abs_refwords_gap": 0.47,
+    "matched_ctrl_delta_chrf": -5.84,
+    "matched_ctrl_delta_chrf_ci95": [
+     -14.58,
+     5.17
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -18.1,
+     11.72
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -3.02,
+    "matched_ctrl_delta_wer": 0.1813
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 8.05,
+    "corpus_chrf": 28.15,
+    "pooled_wer": 0.9645,
+    "mean_chrf": 29.87,
+    "median_chrf": 29.46,
+    "mean_sentence_bleu": 8.84,
+    "mean_wer": 1.051,
+    "mean_chrf_ci95": [
+     23.34,
+     37.2
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.133,
+    "rate_hallucination_candidate": 0.2,
+    "rate_repetition": 0.6,
+    "rate_truncation_candidate": 0.4,
+    "rate_substitution_dominant": 0.933,
+    "primary_repetition_loop": 5,
+    "primary_omission": 0,
+    "primary_hallucination": 1,
+    "primary_over_generation": 0,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.533,
+    "check_number_recall_broad": 0.597,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 13,
+    "matched_ctrl_mean_abs_refwords_gap": 0.47,
+    "matched_ctrl_delta_chrf": -8.11,
+    "matched_ctrl_delta_chrf_ci95": [
+     -15.81,
+     2.15
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -18.27,
+     8.02
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -4.41,
+    "matched_ctrl_delta_wer": 0.3154,
+    "paired_delta_chrf_vs_A": -3.58,
+    "paired_delta_chrf_vs_A_ci95": [
+     -5.51,
+     -1.47
+    ],
+    "paired_delta_bleu4_vs_A": -3.47,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 3.58,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.18,
+    "pose_sensitivity_interaction": 2.4,
+    "pose_sensitivity_interaction_ci95": [
+     0.13,
+     4.54
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.09,
+     5.57
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 5.54,
+    "corpus_chrf": 23.67,
+    "pooled_wer": 0.9598,
+    "mean_chrf": 24.6,
+    "median_chrf": 20.98,
+    "mean_sentence_bleu": 6.46,
+    "mean_wer": 0.9914,
+    "mean_chrf_ci95": [
+     19.08,
+     30.7
+    ],
+    "rate_omission": 0.0,
+    "rate_over_generation": 0.067,
+    "rate_hallucination_candidate": 0.667,
+    "rate_repetition": 0.733,
+    "rate_truncation_candidate": 0.267,
+    "rate_substitution_dominant": 1.0,
+    "primary_repetition_loop": 7,
+    "primary_omission": 0,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 5,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.252,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 13,
+    "matched_ctrl_mean_abs_refwords_gap": 0.47,
+    "matched_ctrl_delta_chrf": -7.52,
+    "matched_ctrl_delta_chrf_ci95": [
+     -14.33,
+     -0.85
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -17.48,
+     2.47
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -5.08,
+    "matched_ctrl_delta_wer": 0.0614,
+    "paired_delta_chrf_vs_A": -8.85,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.12,
+     -3.11
+    ],
+    "paired_delta_bleu4_vs_A": -5.98
+   },
+   "B_aspect": {
+    "corpus_bleu4": 5.18,
+    "corpus_chrf": 23.54,
+    "pooled_wer": 1.0142,
+    "mean_chrf": 23.87,
+    "median_chrf": 20.38,
+    "mean_sentence_bleu": 6.05,
+    "mean_wer": 1.0358,
+    "mean_chrf_ci95": [
+     19.72,
+     28.4
+    ],
+    "rate_omission": 0.133,
+    "rate_over_generation": 0.133,
+    "rate_hallucination_candidate": 0.6,
+    "rate_repetition": 0.6,
+    "rate_truncation_candidate": 0.333,
+    "rate_substitution_dominant": 0.867,
+    "primary_repetition_loop": 6,
+    "primary_omission": 2,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 5,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.252,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 13,
+    "matched_ctrl_mean_abs_refwords_gap": 0.47,
+    "matched_ctrl_delta_chrf": -10.96,
+    "matched_ctrl_delta_chrf_ci95": [
+     -16.38,
+     -5.62
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -19.3,
+     -3.5
+    ],
+    "matched_ctrl_bonferroni_excludes_0": true,
+    "matched_ctrl_delta_sentence_bleu": -5.8,
+    "matched_ctrl_delta_wer": 0.2097,
+    "paired_delta_chrf_vs_A": -9.58,
+    "paired_delta_chrf_vs_A_ci95": [
+     -17.03,
+     -3.95
+    ],
+    "paired_delta_bleu4_vs_A": -6.34
+   }
+  },
+  "negation_candidate": {
+   "n": 13,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 5.77,
+    "corpus_chrf": 27.51,
+    "pooled_wer": 0.8385,
+    "mean_chrf": 29.47,
+    "median_chrf": 28.27,
+    "mean_sentence_bleu": 7.23,
+    "mean_wer": 0.8503,
+    "mean_chrf_ci95": [
+     24.21,
+     35.55
+    ],
+    "rate_omission": 0.308,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.154,
+    "rate_repetition": 0.231,
+    "rate_truncation_candidate": 0.308,
+    "rate_substitution_dominant": 0.692,
+    "primary_repetition_loop": 0,
+    "primary_omission": 4,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 7,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.538,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.083,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.92,
+    "matched_ctrl_delta_chrf": -0.54,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.34,
+     5.28
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.04,
+     7.74
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.78,
+    "matched_ctrl_delta_wer": -0.0611
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 4.62,
+    "corpus_chrf": 27.56,
+    "pooled_wer": 0.867,
+    "mean_chrf": 28.41,
+    "median_chrf": 26.5,
+    "mean_sentence_bleu": 5.97,
+    "mean_wer": 0.9218,
+    "mean_chrf_ci95": [
+     23.37,
+     33.7
+    ],
+    "rate_omission": 0.231,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.077,
+    "rate_repetition": 0.308,
+    "rate_truncation_candidate": 0.385,
+    "rate_substitution_dominant": 0.692,
+    "primary_repetition_loop": 2,
+    "primary_omission": 3,
+    "primary_hallucination": 0,
+    "primary_over_generation": 0,
+    "primary_substitution": 8,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.0,
+    "check_negation_dropped": 0.538,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.92,
+    "matched_ctrl_delta_chrf": 1.05,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.96,
+     8.01
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -10.05,
+     10.95
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.95,
+    "matched_ctrl_delta_wer": -0.0197,
+    "paired_delta_chrf_vs_A": -1.06,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.71,
+     0.58
+    ],
+    "paired_delta_bleu4_vs_A": -1.15,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 1.06,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.5,
+    "pose_sensitivity_interaction": -0.45,
+    "pose_sensitivity_interaction_ci95": [
+     -2.3,
+     1.43
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.32,
+     2.36
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 4.46,
+    "corpus_chrf": 22.35,
+    "pooled_wer": 0.9287,
+    "mean_chrf": 22.03,
+    "median_chrf": 20.47,
+    "mean_sentence_bleu": 5.82,
+    "mean_wer": 0.994,
+    "mean_chrf_ci95": [
+     17.05,
+     27.58
+    ],
+    "rate_omission": 0.077,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.538,
+    "rate_repetition": 0.308,
+    "rate_truncation_candidate": 0.231,
+    "rate_substitution_dominant": 0.846,
+    "primary_repetition_loop": 3,
+    "primary_omission": 1,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 5,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.769,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.92,
+    "matched_ctrl_delta_chrf": -4.54,
+    "matched_ctrl_delta_chrf_ci95": [
+     -11.24,
+     3.3
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -14.08,
+     7.61
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -0.49,
+    "matched_ctrl_delta_wer": 0.1068,
+    "paired_delta_chrf_vs_A": -7.44,
+    "paired_delta_chrf_vs_A_ci95": [
+     -13.98,
+     -1.77
+    ],
+    "paired_delta_bleu4_vs_A": -1.31
+   },
+   "B_aspect": {
+    "corpus_bleu4": 4.34,
+    "corpus_chrf": 25.48,
+    "pooled_wer": 0.9121,
+    "mean_chrf": 23.48,
+    "median_chrf": 21.32,
+    "mean_sentence_bleu": 4.93,
+    "mean_wer": 0.978,
+    "mean_chrf_ci95": [
+     18.7,
+     28.39
+    ],
+    "rate_omission": 0.308,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.385,
+    "rate_repetition": 0.385,
+    "rate_truncation_candidate": 0.385,
+    "rate_substitution_dominant": 0.769,
+    "primary_repetition_loop": 2,
+    "primary_omission": 4,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 4,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.769,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.167,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.92,
+    "matched_ctrl_delta_chrf": -2.62,
+    "matched_ctrl_delta_chrf_ci95": [
+     -9.13,
+     4.3
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -11.88,
+     7.91
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.39,
+    "matched_ctrl_delta_wer": 0.0365,
+    "paired_delta_chrf_vs_A": -5.98,
+    "paired_delta_chrf_vs_A_ci95": [
+     -13.69,
+     0.14
+    ],
+    "paired_delta_bleu4_vs_A": -1.43
+   }
+  },
+  "question_candidate": {
+   "n": 13,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 11.73,
+    "corpus_chrf": 29.85,
+    "pooled_wer": 0.9653,
+    "mean_chrf": 30.42,
+    "median_chrf": 24.52,
+    "mean_sentence_bleu": 11.77,
+    "mean_wer": 0.9844,
+    "mean_chrf_ci95": [
+     21.01,
+     40.26
+    ],
+    "rate_omission": 0.077,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.538,
+    "rate_repetition": 0.154,
+    "rate_truncation_candidate": 0.077,
+    "rate_substitution_dominant": 0.923,
+    "primary_repetition_loop": 2,
+    "primary_omission": 1,
+    "primary_hallucination": 6,
+    "primary_over_generation": 0,
+    "primary_substitution": 4,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.769,
+    "check_named_entity_recall": 0.625,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 10,
+    "matched_ctrl_mean_abs_refwords_gap": 0.08,
+    "matched_ctrl_delta_chrf": 8.21,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.84,
+     19.4
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.25,
+     24.96
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 5.46,
+    "matched_ctrl_delta_wer": -0.0754
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 9.99,
+    "corpus_chrf": 28.35,
+    "pooled_wer": 0.9792,
+    "mean_chrf": 28.44,
+    "median_chrf": 20.14,
+    "mean_sentence_bleu": 11.15,
+    "mean_wer": 1.0915,
+    "mean_chrf_ci95": [
+     19.98,
+     37.39
+    ],
+    "rate_omission": 0.077,
+    "rate_over_generation": 0.231,
+    "rate_hallucination_candidate": 0.615,
+    "rate_repetition": 0.231,
+    "rate_truncation_candidate": 0.077,
+    "rate_substitution_dominant": 0.769,
+    "primary_repetition_loop": 2,
+    "primary_omission": 1,
+    "primary_hallucination": 6,
+    "primary_over_generation": 0,
+    "primary_substitution": 4,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.846,
+    "check_named_entity_recall": 0.125,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 10,
+    "matched_ctrl_mean_abs_refwords_gap": 0.08,
+    "matched_ctrl_delta_chrf": 7.7,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.84,
+     17.94
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.35,
+     22.74
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.62,
+    "matched_ctrl_delta_wer": 0.0568,
+    "paired_delta_chrf_vs_A": -1.98,
+    "paired_delta_chrf_vs_A_ci95": [
+     -5.19,
+     0.73
+    ],
+    "paired_delta_bleu4_vs_A": -1.74,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 1.98,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.4,
+    "pose_sensitivity_interaction": 0.58,
+    "pose_sensitivity_interaction_ci95": [
+     -2.31,
+     3.89
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.44,
+     5.82
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 2.64,
+    "corpus_chrf": 15.18,
+    "pooled_wer": 0.9931,
+    "mean_chrf": 13.94,
+    "median_chrf": 13.24,
+    "mean_sentence_bleu": 4.57,
+    "mean_wer": 1.034,
+    "mean_chrf_ci95": [
+     10.42,
+     18.02
+    ],
+    "rate_omission": 0.154,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.846,
+    "rate_repetition": 0.0,
+    "rate_truncation_candidate": 0.077,
+    "rate_substitution_dominant": 0.846,
+    "primary_repetition_loop": 0,
+    "primary_omission": 2,
+    "primary_hallucination": 9,
+    "primary_over_generation": 0,
+    "primary_substitution": 2,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.0,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.846,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 10,
+    "matched_ctrl_mean_abs_refwords_gap": 0.08,
+    "matched_ctrl_delta_chrf": -1.46,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.28,
+     3.34
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.69,
+     5.49
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.45,
+    "matched_ctrl_delta_wer": -0.0589,
+    "paired_delta_chrf_vs_A": -16.48,
+    "paired_delta_chrf_vs_A_ci95": [
+     -26.42,
+     -7.33
+    ],
+    "paired_delta_bleu4_vs_A": -9.09
+   },
+   "B_aspect": {
+    "corpus_bleu4": 1.09,
+    "corpus_chrf": 15.01,
+    "pooled_wer": 1.0903,
+    "mean_chrf": 13.65,
+    "median_chrf": 14.07,
+    "mean_sentence_bleu": 3.85,
+    "mean_wer": 1.2212,
+    "mean_chrf_ci95": [
+     10.78,
+     16.6
+    ],
+    "rate_omission": 0.154,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.846,
+    "rate_repetition": 0.154,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.846,
+    "primary_repetition_loop": 1,
+    "primary_omission": 2,
+    "primary_hallucination": 9,
+    "primary_over_generation": 0,
+    "primary_substitution": 1,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.0,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.923,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 10,
+    "matched_ctrl_mean_abs_refwords_gap": 0.08,
+    "matched_ctrl_delta_chrf": -3.32,
+    "matched_ctrl_delta_chrf_ci95": [
+     -7.36,
+     0.01
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.55,
+     1.42
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -2.66,
+    "matched_ctrl_delta_wer": 0.2151,
+    "paired_delta_chrf_vs_A": -16.77,
+    "paired_delta_chrf_vs_A_ci95": [
+     -26.57,
+     -7.62
+    ],
+    "paired_delta_bleu4_vs_A": -10.64
+   }
+  },
+  "long_clip_gt_256_frames": {
+   "n": 36,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 6.55,
+    "corpus_chrf": 26.37,
+    "pooled_wer": 0.8738,
+    "mean_chrf": 27.67,
+    "median_chrf": 25.29,
+    "mean_sentence_bleu": 6.94,
+    "mean_wer": 0.8939,
+    "mean_chrf_ci95": [
+     24.44,
+     31.11
+    ],
+    "rate_omission": 0.222,
+    "rate_over_generation": 0.028,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.444,
+    "rate_truncation_candidate": 0.556,
+    "rate_substitution_dominant": 0.75,
+    "primary_repetition_loop": 10,
+    "primary_omission": 6,
+    "primary_hallucination": 6,
+    "primary_over_generation": 0,
+    "primary_substitution": 14,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.562,
+    "check_number_recall_broad": 0.58,
+    "check_negation_dropped": 0.625,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.18,
+    "check_fingerspelling_recall": 0.4,
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 8,
+    "matched_ctrl_mean_abs_refwords_gap": 11.11,
+    "matched_ctrl_delta_chrf": -12.55,
+    "matched_ctrl_delta_chrf_ci95": [
+     -16.99,
+     -7.83
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -18.78,
+     -5.15
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -8.35,
+    "matched_ctrl_delta_wer": 0.186
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 5.97,
+    "corpus_chrf": 26.1,
+    "pooled_wer": 0.8852,
+    "mean_chrf": 27.03,
+    "median_chrf": 26.4,
+    "mean_sentence_bleu": 5.95,
+    "mean_wer": 0.9175,
+    "mean_chrf_ci95": [
+     24.01,
+     30.23
+    ],
+    "rate_omission": 0.222,
+    "rate_over_generation": 0.056,
+    "rate_hallucination_candidate": 0.278,
+    "rate_repetition": 0.5,
+    "rate_truncation_candidate": 0.667,
+    "rate_substitution_dominant": 0.833,
+    "primary_repetition_loop": 9,
+    "primary_omission": 7,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 18,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.25,
+    "check_number_recall_broad": 0.364,
+    "check_negation_dropped": 0.625,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.264,
+    "check_fingerspelling_recall": 0.3,
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 8,
+    "matched_ctrl_mean_abs_refwords_gap": 11.11,
+    "matched_ctrl_delta_chrf": -14.78,
+    "matched_ctrl_delta_chrf_ci95": [
+     -18.81,
+     -10.3
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -20.84,
+     -7.83
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -9.53,
+    "matched_ctrl_delta_wer": 0.2149,
+    "paired_delta_chrf_vs_A": -0.64,
+    "paired_delta_chrf_vs_A_ci95": [
+     -1.99,
+     0.67
+    ],
+    "paired_delta_bleu4_vs_A": -0.58,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.64,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.78,
+    "pose_sensitivity_interaction": -1.13,
+    "pose_sensitivity_interaction_ci95": [
+     -2.81,
+     0.55
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.68,
+     1.42
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 4.44,
+    "corpus_chrf": 22.76,
+    "pooled_wer": 0.9099,
+    "mean_chrf": 23.04,
+    "median_chrf": 20.64,
+    "mean_sentence_bleu": 4.96,
+    "mean_wer": 0.9231,
+    "mean_chrf_ci95": [
+     20.08,
+     26.21
+    ],
+    "rate_omission": 0.194,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.611,
+    "rate_repetition": 0.444,
+    "rate_truncation_candidate": 0.472,
+    "rate_substitution_dominant": 0.778,
+    "primary_repetition_loop": 10,
+    "primary_omission": 7,
+    "primary_hallucination": 10,
+    "primary_over_generation": 0,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.125,
+    "check_number_recall_broad": 0.219,
+    "check_negation_dropped": 0.875,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.056,
+    "check_fingerspelling_recall": 0.2,
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 8,
+    "matched_ctrl_mean_abs_refwords_gap": 11.11,
+    "matched_ctrl_delta_chrf": -16.22,
+    "matched_ctrl_delta_chrf_ci95": [
+     -20.21,
+     -12.04
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -22.11,
+     -9.86
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -4.98,
+    "matched_ctrl_delta_wer": 0.1701,
+    "paired_delta_chrf_vs_A": -4.63,
+    "paired_delta_chrf_vs_A_ci95": [
+     -7.39,
+     -2.09
+    ],
+    "paired_delta_bleu4_vs_A": -2.11
+   },
+   "B_aspect": {
+    "corpus_bleu4": 5.09,
+    "corpus_chrf": 23.96,
+    "pooled_wer": 0.9126,
+    "mean_chrf": 24.21,
+    "median_chrf": 21.27,
+    "mean_sentence_bleu": 5.27,
+    "mean_wer": 0.9311,
+    "mean_chrf_ci95": [
+     21.31,
+     27.41
+    ],
+    "rate_omission": 0.306,
+    "rate_over_generation": 0.028,
+    "rate_hallucination_candidate": 0.583,
+    "rate_repetition": 0.389,
+    "rate_truncation_candidate": 0.583,
+    "rate_substitution_dominant": 0.75,
+    "primary_repetition_loop": 7,
+    "primary_omission": 9,
+    "primary_hallucination": 11,
+    "primary_over_generation": 0,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.152,
+    "check_negation_dropped": 0.875,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.222,
+    "check_fingerspelling_recall": 0.3,
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 8,
+    "matched_ctrl_mean_abs_refwords_gap": 11.11,
+    "matched_ctrl_delta_chrf": -14.74,
+    "matched_ctrl_delta_chrf_ci95": [
+     -18.37,
+     -10.87
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -19.9,
+     -8.75
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -4.31,
+    "matched_ctrl_delta_wer": 0.1994,
+    "paired_delta_chrf_vs_A": -3.46,
+    "paired_delta_chrf_vs_A_ci95": [
+     -6.01,
+     -1.02
+    ],
+    "paired_delta_bleu4_vs_A": -1.46
+   }
+  },
+  "hand_out_of_frame_candidate": {
+   "n": 18,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 7.25,
+    "corpus_chrf": 24.0,
+    "pooled_wer": 0.9386,
+    "mean_chrf": 29.14,
+    "median_chrf": 23.57,
+    "mean_sentence_bleu": 9.42,
+    "mean_wer": 0.9724,
+    "mean_chrf_ci95": [
+     23.12,
+     35.72
+    ],
+    "rate_omission": 0.167,
+    "rate_over_generation": 0.111,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.167,
+    "rate_truncation_candidate": 0.167,
+    "rate_substitution_dominant": 0.889,
+    "primary_repetition_loop": 3,
+    "primary_omission": 2,
+    "primary_hallucination": 3,
+    "primary_over_generation": 0,
+    "primary_substitution": 10,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.333,
+    "check_number_recall_broad": 0.1,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.5,
+    "check_named_entity_recall": 0.031,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.33,
+    "matched_ctrl_delta_chrf": 2.23,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.27,
+     9.34
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -7.6,
+     12.87
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.43,
+    "matched_ctrl_delta_wer": -0.0019
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 7.04,
+    "corpus_chrf": 24.01,
+    "pooled_wer": 0.9341,
+    "mean_chrf": 29.13,
+    "median_chrf": 24.89,
+    "mean_sentence_bleu": 9.98,
+    "mean_wer": 0.9477,
+    "mean_chrf_ci95": [
+     23.19,
+     35.36
+    ],
+    "rate_omission": 0.167,
+    "rate_over_generation": 0.167,
+    "rate_hallucination_candidate": 0.333,
+    "rate_repetition": 0.167,
+    "rate_truncation_candidate": 0.222,
+    "rate_substitution_dominant": 0.833,
+    "primary_repetition_loop": 3,
+    "primary_omission": 2,
+    "primary_hallucination": 2,
+    "primary_over_generation": 1,
+    "primary_substitution": 10,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.667,
+    "check_number_recall_broad": 0.3,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.5,
+    "check_named_entity_recall": 0.031,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.33,
+    "matched_ctrl_delta_chrf": 4.85,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.07,
+     11.42
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.34,
+     14.99
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.73,
+    "matched_ctrl_delta_wer": -0.0637,
+    "paired_delta_chrf_vs_A": -0.0,
+    "paired_delta_chrf_vs_A_ci95": [
+     -1.12,
+     1.29
+    ],
+    "paired_delta_bleu4_vs_A": -0.21,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.0,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.7,
+    "pose_sensitivity_interaction": -1.69,
+    "pose_sensitivity_interaction_ci95": [
+     -3.21,
+     -0.27
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -4.02,
+     0.36
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 6.09,
+    "corpus_chrf": 20.51,
+    "pooled_wer": 0.8977,
+    "mean_chrf": 22.75,
+    "median_chrf": 16.82,
+    "mean_sentence_bleu": 8.43,
+    "mean_wer": 0.9254,
+    "mean_chrf_ci95": [
+     16.84,
+     29.63
+    ],
+    "rate_omission": 0.222,
+    "rate_over_generation": 0.056,
+    "rate_hallucination_candidate": 0.444,
+    "rate_repetition": 0.333,
+    "rate_truncation_candidate": 0.167,
+    "rate_substitution_dominant": 0.833,
+    "primary_repetition_loop": 2,
+    "primary_omission": 4,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 8,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.333,
+    "check_number_recall_broad": 0.1,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.5,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.33,
+    "matched_ctrl_delta_chrf": 3.93,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.35,
+     10.01
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.52,
+     13.61
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.31,
+    "matched_ctrl_delta_wer": -0.1292,
+    "paired_delta_chrf_vs_A": -6.38,
+    "paired_delta_chrf_vs_A_ci95": [
+     -10.91,
+     -2.98
+    ],
+    "paired_delta_bleu4_vs_A": -1.16
+   },
+   "B_aspect": {
+    "corpus_bleu4": 4.58,
+    "corpus_chrf": 20.58,
+    "pooled_wer": 0.8955,
+    "mean_chrf": 22.98,
+    "median_chrf": 18.64,
+    "mean_sentence_bleu": 7.57,
+    "mean_wer": 0.9171,
+    "mean_chrf_ci95": [
+     17.85,
+     28.99
+    ],
+    "rate_omission": 0.333,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.389,
+    "rate_repetition": 0.222,
+    "rate_truncation_candidate": 0.167,
+    "rate_substitution_dominant": 0.778,
+    "primary_repetition_loop": 2,
+    "primary_omission": 5,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 7,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.333,
+    "check_number_recall_broad": 0.1,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 15,
+    "matched_ctrl_mean_abs_refwords_gap": 0.33,
+    "matched_ctrl_delta_chrf": 1.8,
+    "matched_ctrl_delta_chrf_ci95": [
+     -3.34,
+     7.78
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -5.51,
+     11.83
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.11,
+    "matched_ctrl_delta_wer": -0.1001,
+    "paired_delta_chrf_vs_A": -6.16,
+    "paired_delta_chrf_vs_A_ci95": [
+     -10.46,
+     -2.61
+    ],
+    "paired_delta_bleu4_vs_A": -2.67
+   }
+  },
+  "low_hand_conf_candidate": {
+   "n": 32,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 8.19,
+    "corpus_chrf": 25.65,
+    "pooled_wer": 0.9007,
+    "mean_chrf": 28.33,
+    "median_chrf": 24.65,
+    "mean_sentence_bleu": 9.18,
+    "mean_wer": 0.944,
+    "mean_chrf_ci95": [
+     23.85,
+     33.03
+    ],
+    "rate_omission": 0.219,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.344,
+    "rate_repetition": 0.125,
+    "rate_truncation_candidate": 0.125,
+    "rate_substitution_dominant": 0.781,
+    "primary_repetition_loop": 3,
+    "primary_omission": 6,
+    "primary_hallucination": 6,
+    "primary_over_generation": 1,
+    "primary_substitution": 16,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.4,
+    "check_number_recall_broad": 0.312,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.156,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 28,
+    "matched_ctrl_mean_abs_refwords_gap": 0.31,
+    "matched_ctrl_delta_chrf": -0.88,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.81,
+     5.18
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.61,
+     8.33
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.52,
+    "matched_ctrl_delta_wer": -0.0151
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 8.37,
+    "corpus_chrf": 25.76,
+    "pooled_wer": 0.9048,
+    "mean_chrf": 27.5,
+    "median_chrf": 24.65,
+    "mean_sentence_bleu": 9.51,
+    "mean_wer": 0.9578,
+    "mean_chrf_ci95": [
+     23.08,
+     32.37
+    ],
+    "rate_omission": 0.219,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.375,
+    "rate_repetition": 0.219,
+    "rate_truncation_candidate": 0.188,
+    "rate_substitution_dominant": 0.781,
+    "primary_repetition_loop": 2,
+    "primary_omission": 6,
+    "primary_hallucination": 6,
+    "primary_over_generation": 1,
+    "primary_substitution": 17,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.8,
+    "check_number_recall_broad": 0.562,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.031,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 28,
+    "matched_ctrl_mean_abs_refwords_gap": 0.31,
+    "matched_ctrl_delta_chrf": 0.71,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.73,
+     6.36
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -7.4,
+     9.0
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.72,
+    "matched_ctrl_delta_wer": -0.0431,
+    "paired_delta_chrf_vs_A": -0.83,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.27,
+     0.55
+    ],
+    "paired_delta_bleu4_vs_A": 0.18,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.83,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.67,
+    "pose_sensitivity_interaction": -0.83,
+    "pose_sensitivity_interaction_ci95": [
+     -2.51,
+     0.85
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.36,
+     1.98
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 7.07,
+    "corpus_chrf": 23.23,
+    "pooled_wer": 0.8979,
+    "mean_chrf": 23.03,
+    "median_chrf": 19.97,
+    "mean_sentence_bleu": 8.07,
+    "mean_wer": 0.9427,
+    "mean_chrf_ci95": [
+     19.02,
+     27.42
+    ],
+    "rate_omission": 0.188,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.531,
+    "rate_repetition": 0.156,
+    "rate_truncation_candidate": 0.125,
+    "rate_substitution_dominant": 0.812,
+    "primary_repetition_loop": 1,
+    "primary_omission": 6,
+    "primary_hallucination": 13,
+    "primary_over_generation": 0,
+    "primary_substitution": 12,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.2,
+    "check_number_recall_broad": 0.188,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 28,
+    "matched_ctrl_mean_abs_refwords_gap": 0.31,
+    "matched_ctrl_delta_chrf": 2.34,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.67,
+     7.61
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -5.08,
+     10.36
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.17,
+    "matched_ctrl_delta_wer": -0.1878,
+    "paired_delta_chrf_vs_A": -5.3,
+    "paired_delta_chrf_vs_A_ci95": [
+     -9.88,
+     -1.42
+    ],
+    "paired_delta_bleu4_vs_A": -1.12
+   },
+   "B_aspect": {
+    "corpus_bleu4": 6.06,
+    "corpus_chrf": 22.63,
+    "pooled_wer": 0.92,
+    "mean_chrf": 22.71,
+    "median_chrf": 19.91,
+    "mean_sentence_bleu": 7.45,
+    "mean_wer": 1.0232,
+    "mean_chrf_ci95": [
+     19.14,
+     26.53
+    ],
+    "rate_omission": 0.25,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.5,
+    "rate_repetition": 0.219,
+    "rate_truncation_candidate": 0.156,
+    "rate_substitution_dominant": 0.781,
+    "primary_repetition_loop": 4,
+    "primary_omission": 7,
+    "primary_hallucination": 10,
+    "primary_over_generation": 0,
+    "primary_substitution": 11,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.4,
+    "check_number_recall_broad": 0.312,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 28,
+    "matched_ctrl_mean_abs_refwords_gap": 0.31,
+    "matched_ctrl_delta_chrf": 1.13,
+    "matched_ctrl_delta_chrf_ci95": [
+     -3.76,
+     6.13
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -6.22,
+     9.29
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.03,
+    "matched_ctrl_delta_wer": 0.0485,
+    "paired_delta_chrf_vs_A": -5.62,
+    "paired_delta_chrf_vs_A_ci95": [
+     -9.73,
+     -1.94
+    ],
+    "paired_delta_bleu4_vs_A": -2.13
+   }
+  },
+  "hand_near_face_candidate": {
+   "n": 14,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 5.74,
+    "corpus_chrf": 26.64,
+    "pooled_wer": 0.8797,
+    "mean_chrf": 28.37,
+    "median_chrf": 24.76,
+    "mean_sentence_bleu": 8.16,
+    "mean_wer": 0.8894,
+    "mean_chrf_ci95": [
+     22.13,
+     35.38
+    ],
+    "rate_omission": 0.071,
+    "rate_over_generation": 0.071,
+    "rate_hallucination_candidate": 0.286,
+    "rate_repetition": 0.214,
+    "rate_truncation_candidate": 0.286,
+    "rate_substitution_dominant": 0.929,
+    "primary_repetition_loop": 3,
+    "primary_omission": 1,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 8,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.64,
+    "matched_ctrl_delta_chrf": -0.9,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.31,
+     5.81
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.03,
+     9.8
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.55,
+    "matched_ctrl_delta_wer": -0.0573
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 5.81,
+    "corpus_chrf": 26.84,
+    "pooled_wer": 0.8904,
+    "mean_chrf": 28.17,
+    "median_chrf": 26.81,
+    "mean_sentence_bleu": 7.6,
+    "mean_wer": 0.9118,
+    "mean_chrf_ci95": [
+     22.9,
+     34.13
+    ],
+    "rate_omission": 0.071,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.286,
+    "rate_repetition": 0.286,
+    "rate_truncation_candidate": 0.286,
+    "rate_substitution_dominant": 0.929,
+    "primary_repetition_loop": 2,
+    "primary_omission": 1,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.0,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.64,
+    "matched_ctrl_delta_chrf": 0.04,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.99,
+     6.77
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.39,
+     9.9
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.85,
+    "matched_ctrl_delta_wer": -0.0033,
+    "paired_delta_chrf_vs_A": -0.2,
+    "paired_delta_chrf_vs_A_ci95": [
+     -3.11,
+     2.45
+    ],
+    "paired_delta_bleu4_vs_A": 0.07,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.2,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.61,
+    "pose_sensitivity_interaction": -1.42,
+    "pose_sensitivity_interaction_ci95": [
+     -4.18,
+     1.62
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -5.4,
+     3.14
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 4.23,
+    "corpus_chrf": 24.71,
+    "pooled_wer": 0.9412,
+    "mean_chrf": 24.38,
+    "median_chrf": 23.57,
+    "mean_sentence_bleu": 5.25,
+    "mean_wer": 1.0037,
+    "mean_chrf_ci95": [
+     21.12,
+     27.62
+    ],
+    "rate_omission": 0.071,
+    "rate_over_generation": 0.071,
+    "rate_hallucination_candidate": 0.357,
+    "rate_repetition": 0.143,
+    "rate_truncation_candidate": 0.286,
+    "rate_substitution_dominant": 1.0,
+    "primary_repetition_loop": 1,
+    "primary_omission": 1,
+    "primary_hallucination": 3,
+    "primary_over_generation": 1,
+    "primary_substitution": 8,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.64,
+    "matched_ctrl_delta_chrf": 2.85,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.49,
+     8.46
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -4.73,
+     11.42
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.14,
+    "matched_ctrl_delta_wer": 0.0884,
+    "paired_delta_chrf_vs_A": -3.99,
+    "paired_delta_chrf_vs_A_ci95": [
+     -10.15,
+     1.37
+    ],
+    "paired_delta_bleu4_vs_A": -1.51
+   },
+   "B_aspect": {
+    "corpus_bleu4": 4.01,
+    "corpus_chrf": 23.63,
+    "pooled_wer": 0.9278,
+    "mean_chrf": 23.32,
+    "median_chrf": 22.84,
+    "mean_sentence_bleu": 4.99,
+    "mean_wer": 1.0127,
+    "mean_chrf_ci95": [
+     19.42,
+     27.15
+    ],
+    "rate_omission": 0.143,
+    "rate_over_generation": 0.071,
+    "rate_hallucination_candidate": 0.429,
+    "rate_repetition": 0.143,
+    "rate_truncation_candidate": 0.214,
+    "rate_substitution_dominant": 0.857,
+    "primary_repetition_loop": 1,
+    "primary_omission": 2,
+    "primary_hallucination": 4,
+    "primary_over_generation": 1,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.0,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 12,
+    "matched_ctrl_mean_abs_refwords_gap": 0.64,
+    "matched_ctrl_delta_chrf": -1.68,
+    "matched_ctrl_delta_chrf_ci95": [
+     -8.02,
+     5.36
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -10.38,
+     8.76
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.52,
+    "matched_ctrl_delta_wer": 0.1028,
+    "paired_delta_chrf_vs_A": -5.05,
+    "paired_delta_chrf_vs_A_ci95": [
+     -11.72,
+     0.14
+    ],
+    "paired_delta_bleu4_vs_A": -1.73
+   }
+  },
+  "fast_hand_motion_candidate": {
+   "n": 32,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 9.7,
+    "corpus_chrf": 31.86,
+    "pooled_wer": 0.8933,
+    "mean_chrf": 30.03,
+    "median_chrf": 29.32,
+    "mean_sentence_bleu": 8.85,
+    "mean_wer": 0.9294,
+    "mean_chrf_ci95": [
+     25.79,
+     34.31
+    ],
+    "rate_omission": 0.125,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.25,
+    "rate_repetition": 0.094,
+    "rate_truncation_candidate": 0.062,
+    "rate_substitution_dominant": 0.781,
+    "primary_repetition_loop": 1,
+    "primary_omission": 4,
+    "primary_hallucination": 5,
+    "primary_over_generation": 2,
+    "primary_substitution": 20,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 0.7,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 0.8,
+    "check_named_entity_recall": 0.5,
+    "check_fingerspelling_recall": 0.5,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 23,
+    "matched_ctrl_mean_abs_refwords_gap": 0.22,
+    "matched_ctrl_delta_chrf": -0.77,
+    "matched_ctrl_delta_chrf_ci95": [
+     -7.39,
+     5.68
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -10.52,
+     9.06
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -0.73,
+    "matched_ctrl_delta_wer": -0.0961
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 9.72,
+    "corpus_chrf": 30.4,
+    "pooled_wer": 0.9139,
+    "mean_chrf": 29.16,
+    "median_chrf": 29.07,
+    "mean_sentence_bleu": 8.85,
+    "mean_wer": 0.9666,
+    "mean_chrf_ci95": [
+     25.08,
+     33.34
+    ],
+    "rate_omission": 0.125,
+    "rate_over_generation": 0.062,
+    "rate_hallucination_candidate": 0.25,
+    "rate_repetition": 0.156,
+    "rate_truncation_candidate": 0.062,
+    "rate_substitution_dominant": 0.781,
+    "primary_repetition_loop": 2,
+    "primary_omission": 4,
+    "primary_hallucination": 5,
+    "primary_over_generation": 0,
+    "primary_substitution": 21,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.5,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.5,
+    "check_fingerspelling_recall": 0.5,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 23,
+    "matched_ctrl_mean_abs_refwords_gap": 0.22,
+    "matched_ctrl_delta_chrf": 1.9,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.59,
+     8.23
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -7.87,
+     11.28
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -0.02,
+    "matched_ctrl_delta_wer": -0.0121,
+    "paired_delta_chrf_vs_A": -0.88,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.6,
+     0.84
+    ],
+    "paired_delta_bleu4_vs_A": 0.02,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.88,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.65,
+    "pose_sensitivity_interaction": -0.77,
+    "pose_sensitivity_interaction_ci95": [
+     -2.65,
+     1.12
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.69,
+     2.21
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 7.73,
+    "corpus_chrf": 26.86,
+    "pooled_wer": 0.9064,
+    "mean_chrf": 24.37,
+    "median_chrf": 23.34,
+    "mean_sentence_bleu": 7.77,
+    "mean_wer": 0.9602,
+    "mean_chrf_ci95": [
+     19.81,
+     29.05
+    ],
+    "rate_omission": 0.156,
+    "rate_over_generation": 0.062,
+    "rate_hallucination_candidate": 0.469,
+    "rate_repetition": 0.125,
+    "rate_truncation_candidate": 0.031,
+    "rate_substitution_dominant": 0.812,
+    "primary_repetition_loop": 3,
+    "primary_omission": 5,
+    "primary_hallucination": 9,
+    "primary_over_generation": 0,
+    "primary_substitution": 15,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 23,
+    "matched_ctrl_mean_abs_refwords_gap": 0.22,
+    "matched_ctrl_delta_chrf": 4.1,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.31,
+     9.14
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -4.4,
+     11.71
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.35,
+    "matched_ctrl_delta_wer": -0.2546,
+    "paired_delta_chrf_vs_A": -5.67,
+    "paired_delta_chrf_vs_A_ci95": [
+     -9.42,
+     -1.97
+    ],
+    "paired_delta_bleu4_vs_A": -1.97
+   },
+   "B_aspect": {
+    "corpus_bleu4": 6.71,
+    "corpus_chrf": 25.48,
+    "pooled_wer": 0.9588,
+    "mean_chrf": 23.25,
+    "median_chrf": 22.19,
+    "mean_sentence_bleu": 6.68,
+    "mean_wer": 1.0204,
+    "mean_chrf_ci95": [
+     19.08,
+     27.66
+    ],
+    "rate_omission": 0.219,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.531,
+    "rate_repetition": 0.156,
+    "rate_truncation_candidate": 0.094,
+    "rate_substitution_dominant": 0.719,
+    "primary_repetition_loop": 3,
+    "primary_omission": 7,
+    "primary_hallucination": 11,
+    "primary_over_generation": 0,
+    "primary_substitution": 11,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.5,
+    "check_number_recall_broad": 0.3,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 23,
+    "matched_ctrl_mean_abs_refwords_gap": 0.22,
+    "matched_ctrl_delta_chrf": 1.4,
+    "matched_ctrl_delta_chrf_ci95": [
+     -3.89,
+     6.32
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -6.72,
+     8.41
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.62,
+    "matched_ctrl_delta_wer": 0.0186,
+    "paired_delta_chrf_vs_A": -6.79,
+    "paired_delta_chrf_vs_A_ci95": [
+     -10.67,
+     -3.06
+    ],
+    "paired_delta_bleu4_vs_A": -2.99
+   }
+  },
+  "high_hand_jitter_candidate": {
+   "n": 32,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 13.02,
+    "corpus_chrf": 35.25,
+    "pooled_wer": 0.8319,
+    "mean_chrf": 34.84,
+    "median_chrf": 31.81,
+    "mean_sentence_bleu": 12.39,
+    "mean_wer": 0.8802,
+    "mean_chrf_ci95": [
+     29.87,
+     39.7
+    ],
+    "rate_omission": 0.125,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.25,
+    "rate_repetition": 0.125,
+    "rate_truncation_candidate": 0.094,
+    "rate_substitution_dominant": 0.75,
+    "primary_repetition_loop": 1,
+    "primary_omission": 4,
+    "primary_hallucination": 6,
+    "primary_over_generation": 2,
+    "primary_substitution": 19,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 0.6,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.3,
+    "check_fingerspelling_recall": 0.167,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 19,
+    "matched_ctrl_mean_abs_refwords_gap": 0.19,
+    "matched_ctrl_delta_chrf": 7.22,
+    "matched_ctrl_delta_chrf_ci95": [
+     0.14,
+     14.35
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -3.23,
+     17.55
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.47,
+    "matched_ctrl_delta_wer": -0.05
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 12.71,
+    "corpus_chrf": 33.03,
+    "pooled_wer": 0.8423,
+    "mean_chrf": 32.16,
+    "median_chrf": 31.48,
+    "mean_sentence_bleu": 11.82,
+    "mean_wer": 0.9366,
+    "mean_chrf_ci95": [
+     27.51,
+     36.97
+    ],
+    "rate_omission": 0.125,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.281,
+    "rate_repetition": 0.188,
+    "rate_truncation_candidate": 0.094,
+    "rate_substitution_dominant": 0.688,
+    "primary_repetition_loop": 1,
+    "primary_omission": 4,
+    "primary_hallucination": 6,
+    "primary_over_generation": 1,
+    "primary_substitution": 20,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.4,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.1,
+    "check_fingerspelling_recall": 0.167,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 19,
+    "matched_ctrl_mean_abs_refwords_gap": 0.19,
+    "matched_ctrl_delta_chrf": 4.83,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.3,
+     11.97
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -6.12,
+     15.33
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 2.43,
+    "matched_ctrl_delta_wer": 0.0834,
+    "paired_delta_chrf_vs_A": -2.69,
+    "paired_delta_chrf_vs_A_ci95": [
+     -4.88,
+     -0.57
+    ],
+    "paired_delta_bleu4_vs_A": -0.31,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 2.69,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.05,
+    "pose_sensitivity_interaction": 1.64,
+    "pose_sensitivity_interaction_ci95": [
+     -0.63,
+     4.0
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.74,
+     5.27
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 7.68,
+    "corpus_chrf": 24.34,
+    "pooled_wer": 0.9497,
+    "mean_chrf": 22.41,
+    "median_chrf": 17.76,
+    "mean_sentence_bleu": 8.08,
+    "mean_wer": 1.0394,
+    "mean_chrf_ci95": [
+     17.86,
+     27.4
+    ],
+    "rate_omission": 0.219,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.531,
+    "rate_repetition": 0.188,
+    "rate_truncation_candidate": 0.094,
+    "rate_substitution_dominant": 0.75,
+    "primary_repetition_loop": 5,
+    "primary_omission": 7,
+    "primary_hallucination": 8,
+    "primary_over_generation": 0,
+    "primary_substitution": 12,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 0.6,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 19,
+    "matched_ctrl_mean_abs_refwords_gap": 0.19,
+    "matched_ctrl_delta_chrf": 2.69,
+    "matched_ctrl_delta_chrf_ci95": [
+     -2.81,
+     8.53
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -5.3,
+     11.78
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.53,
+    "matched_ctrl_delta_wer": 0.0281,
+    "paired_delta_chrf_vs_A": -12.44,
+    "paired_delta_chrf_vs_A_ci95": [
+     -17.43,
+     -7.97
+    ],
+    "paired_delta_bleu4_vs_A": -5.34
+   },
+   "B_aspect": {
+    "corpus_bleu4": 8.05,
+    "corpus_chrf": 27.23,
+    "pooled_wer": 0.87,
+    "mean_chrf": 23.66,
+    "median_chrf": 21.86,
+    "mean_sentence_bleu": 8.15,
+    "mean_wer": 0.9275,
+    "mean_chrf_ci95": [
+     19.05,
+     28.48
+    ],
+    "rate_omission": 0.281,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.5,
+    "rate_repetition": 0.156,
+    "rate_truncation_candidate": 0.062,
+    "rate_substitution_dominant": 0.719,
+    "primary_repetition_loop": 3,
+    "primary_omission": 9,
+    "primary_hallucination": 8,
+    "primary_over_generation": 1,
+    "primary_substitution": 11,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.4,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.75,
+    "check_named_entity_recall": 0.1,
+    "check_fingerspelling_recall": 0.167,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 19,
+    "matched_ctrl_mean_abs_refwords_gap": 0.19,
+    "matched_ctrl_delta_chrf": 4.27,
+    "matched_ctrl_delta_chrf_ci95": [
+     -0.84,
+     9.8
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -2.93,
+     12.54
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.34,
+    "matched_ctrl_delta_wer": -0.2171,
+    "paired_delta_chrf_vs_A": -11.18,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.05,
+     -6.75
+    ],
+    "paired_delta_bleu4_vs_A": -4.97
+   }
+  },
+  "fast_signing_text_proxy": {
+   "n": 13,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 17.33,
+    "corpus_chrf": 34.96,
+    "pooled_wer": 0.7988,
+    "mean_chrf": 30.15,
+    "median_chrf": 30.79,
+    "mean_sentence_bleu": 13.13,
+    "mean_wer": 0.8385,
+    "mean_chrf_ci95": [
+     20.03,
+     40.23
+    ],
+    "rate_omission": 0.385,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.462,
+    "rate_repetition": 0.154,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.615,
+    "primary_repetition_loop": 0,
+    "primary_omission": 5,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 0.667,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.25,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 9,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 3.11,
+    "matched_ctrl_delta_chrf_ci95": [
+     -11.21,
+     16.75
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -17.82,
+     22.99
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 7.29,
+    "matched_ctrl_delta_wer": -0.3281
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 15.02,
+    "corpus_chrf": 31.94,
+    "pooled_wer": 0.7692,
+    "mean_chrf": 27.18,
+    "median_chrf": 30.59,
+    "mean_sentence_bleu": 11.61,
+    "mean_wer": 0.8267,
+    "mean_chrf_ci95": [
+     18.23,
+     36.46
+    ],
+    "rate_omission": 0.385,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.462,
+    "rate_repetition": 0.077,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.615,
+    "primary_repetition_loop": 0,
+    "primary_omission": 5,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.25,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 9,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 1.6,
+    "matched_ctrl_delta_chrf_ci95": [
+     -9.58,
+     13.17
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -15.05,
+     18.24
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 6.5,
+    "matched_ctrl_delta_wer": -0.3583,
+    "paired_delta_chrf_vs_A": -2.96,
+    "paired_delta_chrf_vs_A_ci95": [
+     -5.11,
+     -1.11
+    ],
+    "paired_delta_bleu4_vs_A": -2.31,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 2.96,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.29,
+    "pose_sensitivity_interaction": 1.68,
+    "pose_sensitivity_interaction_ci95": [
+     -0.4,
+     4.02
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.33,
+     5.37
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 10.28,
+    "corpus_chrf": 23.44,
+    "pooled_wer": 0.858,
+    "mean_chrf": 19.74,
+    "median_chrf": 14.74,
+    "mean_sentence_bleu": 8.94,
+    "mean_wer": 0.9312,
+    "mean_chrf_ci95": [
+     13.04,
+     27.61
+    ],
+    "rate_omission": 0.385,
+    "rate_over_generation": 0.077,
+    "rate_hallucination_candidate": 0.692,
+    "rate_repetition": 0.0,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.538,
+    "primary_repetition_loop": 0,
+    "primary_omission": 5,
+    "primary_hallucination": 4,
+    "primary_over_generation": 0,
+    "primary_substitution": 4,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 9,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 3.08,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.18,
+     13.09
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -10.57,
+     17.65
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 5.29,
+    "matched_ctrl_delta_wer": -0.1716,
+    "paired_delta_chrf_vs_A": -10.41,
+    "paired_delta_chrf_vs_A_ci95": [
+     -19.75,
+     -1.94
+    ],
+    "paired_delta_bleu4_vs_A": -7.05
+   },
+   "B_aspect": {
+    "corpus_bleu4": 9.27,
+    "corpus_chrf": 24.33,
+    "pooled_wer": 0.8402,
+    "mean_chrf": 21.18,
+    "median_chrf": 17.87,
+    "mean_sentence_bleu": 8.19,
+    "mean_wer": 0.914,
+    "mean_chrf_ci95": [
+     15.14,
+     28.3
+    ],
+    "rate_omission": 0.308,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.615,
+    "rate_repetition": 0.077,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.769,
+    "primary_repetition_loop": 0,
+    "primary_omission": 4,
+    "primary_hallucination": 6,
+    "primary_over_generation": 0,
+    "primary_substitution": 3,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.5,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.25,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 9,
+    "matched_ctrl_mean_abs_refwords_gap": 0.0,
+    "matched_ctrl_delta_chrf": 6.2,
+    "matched_ctrl_delta_chrf_ci95": [
+     -0.71,
+     14.45
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -2.75,
+     20.11
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.04,
+    "matched_ctrl_delta_wer": -0.0709,
+    "paired_delta_chrf_vs_A": -8.97,
+    "paired_delta_chrf_vs_A_ci95": [
+     -18.55,
+     0.21
+    ],
+    "paired_delta_bleu4_vs_A": -8.06
+   }
+  },
+  "high_pose_disagreement_A_vs_C": {
+   "n": 34,
+   "group": "visual",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 5.11,
+    "corpus_chrf": 26.93,
+    "pooled_wer": 0.9087,
+    "mean_chrf": 29.15,
+    "median_chrf": 25.93,
+    "mean_sentence_bleu": 7.23,
+    "mean_wer": 0.9463,
+    "mean_chrf_ci95": [
+     24.98,
+     33.61
+    ],
+    "rate_omission": 0.176,
+    "rate_over_generation": 0.029,
+    "rate_hallucination_candidate": 0.382,
+    "rate_repetition": 0.118,
+    "rate_truncation_candidate": 0.147,
+    "rate_substitution_dominant": 0.824,
+    "primary_repetition_loop": 2,
+    "primary_omission": 6,
+    "primary_hallucination": 11,
+    "primary_over_generation": 1,
+    "primary_substitution": 14,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.6,
+    "check_number_recall_broad": 0.611,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 0.778,
+    "check_named_entity_recall": 0.417,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 24,
+    "matched_ctrl_mean_abs_refwords_gap": 0.44,
+    "matched_ctrl_delta_chrf": 2.09,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.53,
+     8.78
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.36,
+     12.64
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -3.66,
+    "matched_ctrl_delta_wer": -0.0322
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 4.47,
+    "corpus_chrf": 25.24,
+    "pooled_wer": 0.9478,
+    "mean_chrf": 26.71,
+    "median_chrf": 24.22,
+    "mean_sentence_bleu": 6.67,
+    "mean_wer": 1.031,
+    "mean_chrf_ci95": [
+     23.0,
+     30.75
+    ],
+    "rate_omission": 0.147,
+    "rate_over_generation": 0.118,
+    "rate_hallucination_candidate": 0.412,
+    "rate_repetition": 0.294,
+    "rate_truncation_candidate": 0.176,
+    "rate_substitution_dominant": 0.794,
+    "primary_repetition_loop": 2,
+    "primary_omission": 5,
+    "primary_hallucination": 10,
+    "primary_over_generation": 0,
+    "primary_substitution": 17,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.4,
+    "check_number_recall_broad": 0.444,
+    "check_negation_dropped": 0.667,
+    "check_question_mark_lost": 0.889,
+    "check_named_entity_recall": 0.083,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 24,
+    "matched_ctrl_mean_abs_refwords_gap": 0.44,
+    "matched_ctrl_delta_chrf": 0.87,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.83,
+     7.54
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.14,
+     10.43
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -4.14,
+    "matched_ctrl_delta_wer": 0.053,
+    "paired_delta_chrf_vs_A": -2.44,
+    "paired_delta_chrf_vs_A_ci95": [
+     -4.42,
+     -0.58
+    ],
+    "paired_delta_bleu4_vs_A": -0.64,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 2.44,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.1,
+    "pose_sensitivity_interaction": 1.34,
+    "pose_sensitivity_interaction_ci95": [
+     -0.67,
+     3.53
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.7,
+     4.59
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 3.43,
+    "corpus_chrf": 20.88,
+    "pooled_wer": 0.9974,
+    "mean_chrf": 18.49,
+    "median_chrf": 17.57,
+    "mean_sentence_bleu": 4.23,
+    "mean_wer": 1.0959,
+    "mean_chrf_ci95": [
+     15.81,
+     21.34
+    ],
+    "rate_omission": 0.235,
+    "rate_over_generation": 0.029,
+    "rate_hallucination_candidate": 0.735,
+    "rate_repetition": 0.176,
+    "rate_truncation_candidate": 0.176,
+    "rate_substitution_dominant": 0.735,
+    "primary_repetition_loop": 5,
+    "primary_omission": 8,
+    "primary_hallucination": 15,
+    "primary_over_generation": 0,
+    "primary_substitution": 6,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.2,
+    "check_number_recall_broad": 0.167,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.889,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 24,
+    "matched_ctrl_mean_abs_refwords_gap": 0.44,
+    "matched_ctrl_delta_chrf": -4.22,
+    "matched_ctrl_delta_chrf_ci95": [
+     -9.37,
+     0.48
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -12.3,
+     2.53
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -4.16,
+    "matched_ctrl_delta_wer": 0.1131,
+    "paired_delta_chrf_vs_A": -10.66,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.27,
+     -5.65
+    ],
+    "paired_delta_bleu4_vs_A": -1.68
+   },
+   "B_aspect": {
+    "corpus_bleu4": 3.06,
+    "corpus_chrf": 20.31,
+    "pooled_wer": 0.9687,
+    "mean_chrf": 18.45,
+    "median_chrf": 17.84,
+    "mean_sentence_bleu": 4.54,
+    "mean_wer": 1.0643,
+    "mean_chrf_ci95": [
+     15.86,
+     21.13
+    ],
+    "rate_omission": 0.324,
+    "rate_over_generation": 0.029,
+    "rate_hallucination_candidate": 0.647,
+    "rate_repetition": 0.176,
+    "rate_truncation_candidate": 0.235,
+    "rate_substitution_dominant": 0.735,
+    "primary_repetition_loop": 6,
+    "primary_omission": 11,
+    "primary_hallucination": 12,
+    "primary_over_generation": 0,
+    "primary_substitution": 5,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.2,
+    "check_number_recall_broad": 0.167,
+    "check_negation_dropped": 1.0,
+    "check_question_mark_lost": 0.889,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 24,
+    "matched_ctrl_mean_abs_refwords_gap": 0.44,
+    "matched_ctrl_delta_chrf": -4.93,
+    "matched_ctrl_delta_chrf_ci95": [
+     -9.79,
+     -0.43
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -12.24,
+     1.52
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -3.96,
+    "matched_ctrl_delta_wer": 0.1013,
+    "paired_delta_chrf_vs_A": -10.7,
+    "paired_delta_chrf_vs_A_ci95": [
+     -15.71,
+     -6.16
+    ],
+    "paired_delta_bleu4_vs_A": -2.05
+   }
+  },
+  "ref_length_short": {
+   "n": 45,
+   "group": "length",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 10.15,
+    "corpus_chrf": 30.36,
+    "pooled_wer": 1.0684,
+    "mean_chrf": 29.97,
+    "median_chrf": 25.22,
+    "mean_sentence_bleu": 10.43,
+    "mean_wer": 1.0911,
+    "mean_chrf_ci95": [
+     25.29,
+     34.8
+    ],
+    "rate_omission": 0.089,
+    "rate_over_generation": 0.133,
+    "rate_hallucination_candidate": 0.356,
+    "rate_repetition": 0.133,
+    "rate_truncation_candidate": 0.0,
+    "rate_substitution_dominant": 0.778,
+    "primary_repetition_loop": 4,
+    "primary_omission": 4,
+    "primary_hallucination": 12,
+    "primary_over_generation": 2,
+    "primary_substitution": 23,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.7,
+    "check_named_entity_recall": 0.156,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 7,
+    "matched_ctrl_mean_abs_refwords_gap": 4.6,
+    "matched_ctrl_delta_chrf": -0.11,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.19,
+     6.19
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.26,
+     9.39
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 3.44,
+    "matched_ctrl_delta_wer": 0.22
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 9.63,
+    "corpus_chrf": 27.98,
+    "pooled_wer": 1.1239,
+    "mean_chrf": 27.55,
+    "median_chrf": 22.88,
+    "mean_sentence_bleu": 9.94,
+    "mean_wer": 1.1593,
+    "mean_chrf_ci95": [
+     23.17,
+     32.08
+    ],
+    "rate_omission": 0.089,
+    "rate_over_generation": 0.222,
+    "rate_hallucination_candidate": 0.4,
+    "rate_repetition": 0.2,
+    "rate_truncation_candidate": 0.022,
+    "rate_substitution_dominant": 0.733,
+    "primary_repetition_loop": 6,
+    "primary_omission": 4,
+    "primary_hallucination": 12,
+    "primary_over_generation": 2,
+    "primary_substitution": 21,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 1.0,
+    "check_number_recall_broad": 1.0,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 0.8,
+    "check_named_entity_recall": 0.031,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 7,
+    "matched_ctrl_mean_abs_refwords_gap": 4.6,
+    "matched_ctrl_delta_chrf": -1.09,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.76,
+     4.7
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.31,
+     7.87
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.4,
+    "matched_ctrl_delta_wer": 0.2645,
+    "paired_delta_chrf_vs_A": -2.42,
+    "paired_delta_chrf_vs_A_ci95": [
+     -3.95,
+     -1.0
+    ],
+    "paired_delta_bleu4_vs_A": -0.52,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 2.42,
+    "pose_sensitivity_A_minus_C_chrf_outside": 0.94,
+    "pose_sensitivity_interaction": 1.48,
+    "pose_sensitivity_interaction_ci95": [
+     -0.21,
+     3.3
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.06,
+     4.1
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 4.09,
+    "corpus_chrf": 19.26,
+    "pooled_wer": 1.2201,
+    "mean_chrf": 18.45,
+    "median_chrf": 14.68,
+    "mean_sentence_bleu": 5.79,
+    "mean_wer": 1.2327,
+    "mean_chrf_ci95": [
+     15.37,
+     21.84
+    ],
+    "rate_omission": 0.111,
+    "rate_over_generation": 0.2,
+    "rate_hallucination_candidate": 0.689,
+    "rate_repetition": 0.156,
+    "rate_truncation_candidate": 0.022,
+    "rate_substitution_dominant": 0.822,
+    "primary_repetition_loop": 5,
+    "primary_omission": 5,
+    "primary_hallucination": 23,
+    "primary_over_generation": 1,
+    "primary_substitution": 11,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.667,
+    "check_number_recall_broad": 0.667,
+    "check_negation_dropped": 0.75,
+    "check_question_mark_lost": 0.8,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 7,
+    "matched_ctrl_mean_abs_refwords_gap": 4.6,
+    "matched_ctrl_delta_chrf": -1.74,
+    "matched_ctrl_delta_chrf_ci95": [
+     -4.49,
+     1.4
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -5.62,
+     3.09
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.84,
+    "matched_ctrl_delta_wer": 0.3231,
+    "paired_delta_chrf_vs_A": -11.51,
+    "paired_delta_chrf_vs_A_ci95": [
+     -16.38,
+     -6.95
+    ],
+    "paired_delta_bleu4_vs_A": -6.06
+   },
+   "B_aspect": {
+    "corpus_bleu4": 3.78,
+    "corpus_chrf": 20.07,
+    "pooled_wer": 1.1774,
+    "mean_chrf": 19.11,
+    "median_chrf": 16.27,
+    "mean_sentence_bleu": 5.82,
+    "mean_wer": 1.2096,
+    "mean_chrf_ci95": [
+     16.46,
+     22.11
+    ],
+    "rate_omission": 0.178,
+    "rate_over_generation": 0.178,
+    "rate_hallucination_candidate": 0.622,
+    "rate_repetition": 0.133,
+    "rate_truncation_candidate": 0.044,
+    "rate_substitution_dominant": 0.756,
+    "primary_repetition_loop": 5,
+    "primary_omission": 8,
+    "primary_hallucination": 22,
+    "primary_over_generation": 1,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.667,
+    "check_number_recall_broad": 0.667,
+    "check_negation_dropped": 0.75,
+    "check_question_mark_lost": 0.9,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 7,
+    "matched_ctrl_mean_abs_refwords_gap": 4.6,
+    "matched_ctrl_delta_chrf": 0.69,
+    "matched_ctrl_delta_chrf_ci95": [
+     -1.8,
+     3.43
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -2.87,
+     4.89
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.85,
+    "matched_ctrl_delta_wer": 0.2288,
+    "paired_delta_chrf_vs_A": -10.85,
+    "paired_delta_chrf_vs_A_ci95": [
+     -15.83,
+     -6.16
+    ],
+    "paired_delta_bleu4_vs_A": -6.37
+   }
+  },
+  "ref_length_long": {
+   "n": 39,
+   "group": "length",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 7.43,
+    "corpus_chrf": 27.61,
+    "pooled_wer": 0.8447,
+    "mean_chrf": 29.51,
+    "median_chrf": 28.27,
+    "mean_sentence_bleu": 8.26,
+    "mean_wer": 0.8328,
+    "mean_chrf_ci95": [
+     26.13,
+     33.06
+    ],
+    "rate_omission": 0.205,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.282,
+    "rate_repetition": 0.385,
+    "rate_truncation_candidate": 0.487,
+    "rate_substitution_dominant": 0.769,
+    "primary_repetition_loop": 9,
+    "primary_omission": 6,
+    "primary_hallucination": 5,
+    "primary_over_generation": 0,
+    "primary_substitution": 19,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.45,
+    "check_number_recall_broad": 0.535,
+    "check_negation_dropped": 0.571,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.25,
+    "check_fingerspelling_recall": 0.5,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 4,
+    "matched_ctrl_mean_abs_refwords_gap": 19.1,
+    "matched_ctrl_delta_chrf": 6.5,
+    "matched_ctrl_delta_chrf_ci95": [
+     0.47,
+     12.19
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -2.42,
+     14.91
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.6,
+    "matched_ctrl_delta_wer": -0.1276
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 6.85,
+    "corpus_chrf": 27.45,
+    "pooled_wer": 0.8534,
+    "mean_chrf": 29.07,
+    "median_chrf": 27.86,
+    "mean_sentence_bleu": 7.33,
+    "mean_wer": 0.849,
+    "mean_chrf_ci95": [
+     25.92,
+     32.31
+    ],
+    "rate_omission": 0.205,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.231,
+    "rate_repetition": 0.41,
+    "rate_truncation_candidate": 0.59,
+    "rate_substitution_dominant": 0.846,
+    "primary_repetition_loop": 7,
+    "primary_omission": 7,
+    "primary_hallucination": 2,
+    "primary_over_generation": 0,
+    "primary_substitution": 23,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.3,
+    "check_number_recall_broad": 0.423,
+    "check_negation_dropped": 0.571,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.333,
+    "check_fingerspelling_recall": 0.417,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 4,
+    "matched_ctrl_mean_abs_refwords_gap": 19.1,
+    "matched_ctrl_delta_chrf": 6.55,
+    "matched_ctrl_delta_chrf_ci95": [
+     1.24,
+     11.85
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -1.91,
+     14.45
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.99,
+    "matched_ctrl_delta_wer": -0.3107,
+    "paired_delta_chrf_vs_A": -0.44,
+    "paired_delta_chrf_vs_A_ci95": [
+     -1.76,
+     0.85
+    ],
+    "paired_delta_bleu4_vs_A": -0.58,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 0.44,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.9,
+    "pose_sensitivity_interaction": -1.47,
+    "pose_sensitivity_interaction_ci95": [
+     -3.1,
+     0.13
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.9,
+     0.99
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 5.15,
+    "corpus_chrf": 23.92,
+    "pooled_wer": 0.8902,
+    "mean_chrf": 24.84,
+    "median_chrf": 21.22,
+    "mean_sentence_bleu": 5.99,
+    "mean_wer": 0.8876,
+    "mean_chrf_ci95": [
+     21.68,
+     28.05
+    ],
+    "rate_omission": 0.205,
+    "rate_over_generation": 0.0,
+    "rate_hallucination_candidate": 0.538,
+    "rate_repetition": 0.41,
+    "rate_truncation_candidate": 0.41,
+    "rate_substitution_dominant": 0.769,
+    "primary_repetition_loop": 10,
+    "primary_omission": 8,
+    "primary_hallucination": 8,
+    "primary_over_generation": 0,
+    "primary_substitution": 13,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.1,
+    "check_number_recall_broad": 0.214,
+    "check_negation_dropped": 0.857,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.167,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 4,
+    "matched_ctrl_mean_abs_refwords_gap": 19.1,
+    "matched_ctrl_delta_chrf": 0.34,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.6,
+     5.94
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.88,
+     8.81
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.86,
+    "matched_ctrl_delta_wer": -0.053,
+    "paired_delta_chrf_vs_A": -4.68,
+    "paired_delta_chrf_vs_A_ci95": [
+     -7.2,
+     -2.32
+    ],
+    "paired_delta_bleu4_vs_A": -2.28
+   },
+   "B_aspect": {
+    "corpus_bleu4": 5.63,
+    "corpus_chrf": 25.19,
+    "pooled_wer": 0.889,
+    "mean_chrf": 26.14,
+    "median_chrf": 22.5,
+    "mean_sentence_bleu": 6.1,
+    "mean_wer": 0.89,
+    "mean_chrf_ci95": [
+     23.27,
+     29.31
+    ],
+    "rate_omission": 0.333,
+    "rate_over_generation": 0.026,
+    "rate_hallucination_candidate": 0.513,
+    "rate_repetition": 0.385,
+    "rate_truncation_candidate": 0.513,
+    "rate_substitution_dominant": 0.718,
+    "primary_repetition_loop": 7,
+    "primary_omission": 11,
+    "primary_hallucination": 9,
+    "primary_over_generation": 0,
+    "primary_substitution": 12,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.0,
+    "check_number_recall_broad": 0.164,
+    "check_negation_dropped": 0.857,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.167,
+    "check_fingerspelling_recall": 0.25,
+    "matched_ctrl_quality": "not_applicable: category is defined by the matching variable",
+    "matched_ctrl_n_unique_controls": 4,
+    "matched_ctrl_mean_abs_refwords_gap": 19.1,
+    "matched_ctrl_delta_chrf": 6.05,
+    "matched_ctrl_delta_chrf_ci95": [
+     1.38,
+     10.72
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -0.94,
+     13.19
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 4.41,
+    "matched_ctrl_delta_wer": -0.335,
+    "paired_delta_chrf_vs_A": -3.37,
+    "paired_delta_chrf_vs_A_ci95": [
+     -5.84,
+     -1.06
+    ],
+    "paired_delta_bleu4_vs_A": -1.8
+   }
+  },
+  "no_linguistic_candidate": {
+   "n": 73,
+   "group": "linguistic",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 8.28,
+    "corpus_chrf": 28.36,
+    "pooled_wer": 0.9255,
+    "mean_chrf": 29.25,
+    "median_chrf": 26.16,
+    "mean_sentence_bleu": 8.4,
+    "mean_wer": 0.9822,
+    "mean_chrf_ci95": [
+     26.27,
+     32.3
+    ],
+    "rate_omission": 0.137,
+    "rate_over_generation": 0.11,
+    "rate_hallucination_candidate": 0.288,
+    "rate_repetition": 0.274,
+    "rate_truncation_candidate": 0.151,
+    "rate_substitution_dominant": 0.767,
+    "primary_repetition_loop": 9,
+    "primary_omission": 8,
+    "primary_hallucination": 12,
+    "primary_over_generation": 4,
+    "primary_substitution": 40,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.364,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": "",
+    "check_fingerspelling_recall": "",
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 34,
+    "matched_ctrl_mean_abs_refwords_gap": 0.75,
+    "matched_ctrl_delta_chrf": -2.84,
+    "matched_ctrl_delta_chrf_ci95": [
+     -7.57,
+     1.79
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.94,
+     4.23
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -2.79,
+    "matched_ctrl_delta_wer": -0.0395
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 8.82,
+    "corpus_chrf": 27.97,
+    "pooled_wer": 0.9243,
+    "mean_chrf": 28.16,
+    "median_chrf": 27.11,
+    "mean_sentence_bleu": 8.42,
+    "mean_wer": 0.9879,
+    "mean_chrf_ci95": [
+     25.28,
+     31.11
+    ],
+    "rate_omission": 0.164,
+    "rate_over_generation": 0.096,
+    "rate_hallucination_candidate": 0.315,
+    "rate_repetition": 0.301,
+    "rate_truncation_candidate": 0.164,
+    "rate_substitution_dominant": 0.753,
+    "primary_repetition_loop": 7,
+    "primary_omission": 11,
+    "primary_hallucination": 10,
+    "primary_over_generation": 2,
+    "primary_substitution": 43,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.364,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": "",
+    "check_fingerspelling_recall": "",
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 34,
+    "matched_ctrl_mean_abs_refwords_gap": 0.75,
+    "matched_ctrl_delta_chrf": -1.65,
+    "matched_ctrl_delta_chrf_ci95": [
+     -5.83,
+     2.56
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -8.0,
+     4.53
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.49,
+    "matched_ctrl_delta_wer": -0.0766,
+    "paired_delta_chrf_vs_A": -1.09,
+    "paired_delta_chrf_vs_A_ci95": [
+     -2.23,
+     -0.0
+    ],
+    "paired_delta_bleu4_vs_A": 0.54,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 1.09,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.95,
+    "pose_sensitivity_interaction": -0.85,
+    "pose_sensitivity_interaction_ci95": [
+     -2.42,
+     0.73
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -3.24,
+     1.57
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 5.76,
+    "corpus_chrf": 23.39,
+    "pooled_wer": 0.9758,
+    "mean_chrf": 23.15,
+    "median_chrf": 20.71,
+    "mean_sentence_bleu": 6.39,
+    "mean_wer": 1.0524,
+    "mean_chrf_ci95": [
+     20.57,
+     25.88
+    ],
+    "rate_omission": 0.205,
+    "rate_over_generation": 0.096,
+    "rate_hallucination_candidate": 0.562,
+    "rate_repetition": 0.233,
+    "rate_truncation_candidate": 0.11,
+    "rate_substitution_dominant": 0.753,
+    "primary_repetition_loop": 8,
+    "primary_omission": 15,
+    "primary_hallucination": 25,
+    "primary_over_generation": 1,
+    "primary_substitution": 24,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.273,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": "",
+    "check_fingerspelling_recall": "",
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 34,
+    "matched_ctrl_mean_abs_refwords_gap": 0.75,
+    "matched_ctrl_delta_chrf": 2.2,
+    "matched_ctrl_delta_chrf_ci95": [
+     -0.87,
+     5.36
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -2.46,
+     6.87
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 1.15,
+    "matched_ctrl_delta_wer": 0.0701,
+    "paired_delta_chrf_vs_A": -6.11,
+    "paired_delta_chrf_vs_A_ci95": [
+     -8.69,
+     -3.75
+    ],
+    "paired_delta_bleu4_vs_A": -2.52
+   },
+   "B_aspect": {
+    "corpus_bleu4": 6.19,
+    "corpus_chrf": 23.67,
+    "pooled_wer": 0.9491,
+    "mean_chrf": 23.55,
+    "median_chrf": 21.23,
+    "mean_sentence_bleu": 6.56,
+    "mean_wer": 1.0091,
+    "mean_chrf_ci95": [
+     20.98,
+     26.2
+    ],
+    "rate_omission": 0.192,
+    "rate_over_generation": 0.082,
+    "rate_hallucination_candidate": 0.562,
+    "rate_repetition": 0.247,
+    "rate_truncation_candidate": 0.164,
+    "rate_substitution_dominant": 0.753,
+    "primary_repetition_loop": 12,
+    "primary_omission": 12,
+    "primary_hallucination": 26,
+    "primary_over_generation": 2,
+    "primary_substitution": 21,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": "",
+    "check_number_recall_broad": 0.273,
+    "check_negation_dropped": "",
+    "check_question_mark_lost": "",
+    "check_named_entity_recall": "",
+    "check_fingerspelling_recall": "",
+    "matched_ctrl_quality": "poor_match: not interpretable (mean ref-word gap > 2 or < 50% unique controls)",
+    "matched_ctrl_n_unique_controls": 34,
+    "matched_ctrl_mean_abs_refwords_gap": 0.75,
+    "matched_ctrl_delta_chrf": 2.43,
+    "matched_ctrl_delta_chrf_ci95": [
+     -0.34,
+     5.42
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -1.75,
+     7.03
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.96,
+    "matched_ctrl_delta_wer": 0.0332,
+    "paired_delta_chrf_vs_A": -5.7,
+    "paired_delta_chrf_vs_A_ci95": [
+     -8.2,
+     -3.33
+    ],
+    "paired_delta_bleu4_vs_A": -2.09
+   }
+  },
+  "number_candidate_broad_sensitivity": {
+   "n": 32,
+   "group": "sensitivity_secondary",
+   "exploratory_n_lt_10": false,
+   "A_official": {
+    "corpus_bleu4": 13.06,
+    "corpus_chrf": 33.73,
+    "pooled_wer": 0.8517,
+    "mean_chrf": 34.82,
+    "median_chrf": 33.81,
+    "mean_sentence_bleu": 12.47,
+    "mean_wer": 0.8904,
+    "mean_chrf_ci95": [
+     30.27,
+     39.45
+    ],
+    "rate_omission": 0.031,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.25,
+    "rate_repetition": 0.375,
+    "rate_truncation_candidate": 0.188,
+    "rate_substitution_dominant": 0.906,
+    "primary_repetition_loop": 8,
+    "primary_omission": 1,
+    "primary_hallucination": 5,
+    "primary_over_generation": 0,
+    "primary_substitution": 18,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.567,
+    "check_number_recall_broad": 0.538,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.375,
+    "check_fingerspelling_recall": 0.375,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 18,
+    "matched_ctrl_mean_abs_refwords_gap": 1.0,
+    "matched_ctrl_delta_chrf": 0.42,
+    "matched_ctrl_delta_chrf_ci95": [
+     -6.14,
+     7.29
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -9.33,
+     11.04
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": 0.9,
+    "matched_ctrl_delta_wer": 0.0711
+   },
+   "C_ours_on_official_crop": {
+    "corpus_bleu4": 10.72,
+    "corpus_chrf": 31.51,
+    "pooled_wer": 0.8822,
+    "mean_chrf": 32.72,
+    "median_chrf": 30.42,
+    "mean_sentence_bleu": 10.44,
+    "mean_wer": 0.9329,
+    "mean_chrf_ci95": [
+     28.4,
+     37.35
+    ],
+    "rate_omission": 0.031,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.125,
+    "rate_repetition": 0.438,
+    "rate_truncation_candidate": 0.375,
+    "rate_substitution_dominant": 0.875,
+    "primary_repetition_loop": 8,
+    "primary_omission": 1,
+    "primary_hallucination": 1,
+    "primary_over_generation": 0,
+    "primary_substitution": 22,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.533,
+    "check_number_recall_broad": 0.499,
+    "check_negation_dropped": 0.0,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.375,
+    "check_fingerspelling_recall": 0.375,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 18,
+    "matched_ctrl_mean_abs_refwords_gap": 1.0,
+    "matched_ctrl_delta_chrf": -2.45,
+    "matched_ctrl_delta_chrf_ci95": [
+     -8.46,
+     4.0
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -11.51,
+     7.56
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.81,
+    "matched_ctrl_delta_wer": 0.1305,
+    "paired_delta_chrf_vs_A": -2.1,
+    "paired_delta_chrf_vs_A_ci95": [
+     -3.47,
+     -0.76
+    ],
+    "paired_delta_bleu4_vs_A": -2.34,
+    "pose_sensitivity_A_minus_C_chrf_in_cat": 2.1,
+    "pose_sensitivity_A_minus_C_chrf_outside": 1.24,
+    "pose_sensitivity_interaction": 0.86,
+    "pose_sensitivity_interaction_ci95": [
+     -0.77,
+     2.51
+    ],
+    "pose_sensitivity_interaction_ci_bonferroni": [
+     -1.54,
+     3.36
+    ],
+    "pose_sensitivity_bonferroni_excludes_0": false
+   },
+   "B_ours_5p39": {
+    "corpus_bleu4": 7.09,
+    "corpus_chrf": 25.67,
+    "pooled_wer": 0.9193,
+    "mean_chrf": 25.6,
+    "median_chrf": 20.77,
+    "mean_sentence_bleu": 7.2,
+    "mean_wer": 0.9405,
+    "mean_chrf_ci95": [
+     21.54,
+     29.93
+    ],
+    "rate_omission": 0.094,
+    "rate_over_generation": 0.031,
+    "rate_hallucination_candidate": 0.531,
+    "rate_repetition": 0.531,
+    "rate_truncation_candidate": 0.188,
+    "rate_substitution_dominant": 0.844,
+    "primary_repetition_loop": 10,
+    "primary_omission": 3,
+    "primary_hallucination": 7,
+    "primary_over_generation": 0,
+    "primary_substitution": 12,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.275,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.0,
+    "check_fingerspelling_recall": 0.0,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 18,
+    "matched_ctrl_mean_abs_refwords_gap": 1.0,
+    "matched_ctrl_delta_chrf": -4.11,
+    "matched_ctrl_delta_chrf_ci95": [
+     -9.66,
+     1.65
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -12.28,
+     4.9
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -1.32,
+    "matched_ctrl_delta_wer": 0.041,
+    "paired_delta_chrf_vs_A": -9.22,
+    "paired_delta_chrf_vs_A_ci95": [
+     -13.41,
+     -5.6
+    ],
+    "paired_delta_bleu4_vs_A": -5.97
+   },
+   "B_aspect": {
+    "corpus_bleu4": 7.58,
+    "corpus_chrf": 26.61,
+    "pooled_wer": 0.9466,
+    "mean_chrf": 26.44,
+    "median_chrf": 21.67,
+    "mean_sentence_bleu": 7.04,
+    "mean_wer": 0.9718,
+    "mean_chrf_ci95": [
+     22.82,
+     30.28
+    ],
+    "rate_omission": 0.219,
+    "rate_over_generation": 0.094,
+    "rate_hallucination_candidate": 0.5,
+    "rate_repetition": 0.469,
+    "rate_truncation_candidate": 0.25,
+    "rate_substitution_dominant": 0.75,
+    "primary_repetition_loop": 10,
+    "primary_omission": 7,
+    "primary_hallucination": 5,
+    "primary_over_generation": 1,
+    "primary_substitution": 9,
+    "analysis_status": "automated first-pass / weak-label analysis; manual ASL review pending",
+    "check_number_recall": 0.267,
+    "check_number_recall_broad": 0.275,
+    "check_negation_dropped": 0.5,
+    "check_question_mark_lost": 1.0,
+    "check_named_entity_recall": 0.125,
+    "check_fingerspelling_recall": 0.125,
+    "matched_ctrl_quality": "ok",
+    "matched_ctrl_n_unique_controls": 18,
+    "matched_ctrl_mean_abs_refwords_gap": 1.0,
+    "matched_ctrl_delta_chrf": -4.52,
+    "matched_ctrl_delta_chrf_ci95": [
+     -10.06,
+     1.51
+    ],
+    "matched_ctrl_delta_chrf_ci_bonferroni": [
+     -12.89,
+     5.03
+    ],
+    "matched_ctrl_bonferroni_excludes_0": false,
+    "matched_ctrl_delta_sentence_bleu": -2.24,
+    "matched_ctrl_delta_wer": 0.1295,
+    "paired_delta_chrf_vs_A": -8.38,
+    "paired_delta_chrf_vs_A_ci95": [
+     -12.62,
+     -4.74
+    ],
+    "paired_delta_bleu4_vs_A": -5.48
+   }
+  }
+ },
+ "primary_error_type_counts": {
+  "A_official": {
+   "repetition_loop": 18,
+   "omission": 13,
+   "hallucination": 26,
+   "over_generation": 4,
+   "substitution": 67
+  },
+  "C_ours_on_official_crop": {
+   "repetition_loop": 16,
+   "omission": 15,
+   "hallucination": 20,
+   "over_generation": 3,
+   "substitution": 74
+  },
+  "B_ours_5p39": {
+   "repetition_loop": 21,
+   "omission": 20,
+   "hallucination": 42,
+   "over_generation": 1,
+   "substitution": 44
+  },
+  "B_aspect": {
+   "repetition_loop": 23,
+   "omission": 24,
+   "hallucination": 41,
+   "over_generation": 2,
+   "substitution": 38
+  }
+ },
+ "error_flag_rates": {
+  "A_official": {
+   "omission": 0.117,
+   "over_generation": 0.086,
+   "hallucination_candidate": 0.305,
+   "repetition": 0.266,
+   "truncation_candidate": 0.172,
+   "substitution_dominant": 0.797
+  },
+  "C_ours_on_official_crop": {
+   "omission": 0.125,
+   "over_generation": 0.109,
+   "hallucination_candidate": 0.289,
+   "repetition": 0.312,
+   "truncation_candidate": 0.211,
+   "substitution_dominant": 0.789
+  },
+  "B_ours_5p39": {
+   "omission": 0.156,
+   "over_generation": 0.078,
+   "hallucination_candidate": 0.555,
+   "repetition": 0.273,
+   "truncation_candidate": 0.141,
+   "substitution_dominant": 0.812
+  },
+  "B_aspect": {
+   "omission": 0.203,
+   "over_generation": 0.078,
+   "hallucination_candidate": 0.531,
+   "repetition": 0.289,
+   "truncation_candidate": 0.188,
+   "substitution_dominant": 0.773
+  }
+ },
+ "A_vs_C": {
+  "mean_dchrf": 1.46,
+  "dchrf_ci95": [
+   0.67,
+   2.26
+  ],
+  "clips_A_better_by_gt5_chrf": 25,
+  "clips_C_better_by_gt5_chrf": 6,
+  "primary_type_agreement": 99
+ },
+ "label_counts": {
+  "ALL": 128,
+  "fingerspelling_candidate": 15,
+  "named_entity_candidate": 17,
+  "number_candidate": 15,
+  "negation_candidate": 13,
+  "question_candidate": 13,
+  "long_clip_gt_256_frames": 36,
+  "hand_out_of_frame_candidate": 18,
+  "low_hand_conf_candidate": 32,
+  "hand_near_face_candidate": 14,
+  "fast_hand_motion_candidate": 32,
+  "high_hand_jitter_candidate": 32,
+  "fast_signing_text_proxy": 13,
+  "high_pose_disagreement_A_vs_C": 34,
+  "ref_length_short": 45,
+  "ref_length_long": 39,
+  "no_linguistic_candidate": 73,
+  "number_candidate_broad_sensitivity": 32
+ },
+ "manifest_vs_ours_fingerspelling": {
+  "manifest_yes": 28,
+  "ours_yes": 15,
+  "both": 13
+ },
+ "manifest_vs_ours_number": {
+  "manifest_yes": 32,
+  "ours_yes": 15,
+  "both": 15
+ },
+ "long_clip_vs_reference_length": {
+  "pearson_frames_vs_ref_words": 0.864,
+  "max_ref_words_among_le256_clips": 33,
+  "min_ref_words_among_gt256_clips": 13,
+  "bins": [
+   {
+    "ref_words": "[0,15)",
+    "n": 45,
+    "n_gt256": 1,
+    "mean_chrf_A_official_gt256": 20.11,
+    "mean_chrf_C_ours_on_official_crop_gt256": 20.14,
+    "n_le256": 44,
+    "mean_chrf_A_official_le256": 30.19,
+    "mean_chrf_C_ours_on_official_crop_le256": 27.72
+   },
+   {
+    "ref_words": "[15,25)",
+    "n": 48,
+    "n_gt256": 4,
+    "mean_chrf_A_official_gt256": 24.74,
+    "mean_chrf_C_ours_on_official_crop_gt256": 23.36,
+    "n_le256": 44,
+    "mean_chrf_A_official_le256": 31.91,
+    "mean_chrf_C_ours_on_official_crop_le256": 30.68
+   },
+   {
+    "ref_words": "[25,35)",
+    "n": 14,
+    "n_gt256": 10,
+    "mean_chrf_A_official_gt256": 34.82,
+    "mean_chrf_C_ours_on_official_crop_gt256": 31.66,
+    "n_le256": 4,
+    "mean_chrf_A_official_le256": 30.62,
+    "mean_chrf_C_ours_on_official_crop_le256": 30.59
+   },
+   {
+    "ref_words": "[35,50)",
+    "n": 11,
+    "n_gt256": 11,
+    "mean_chrf_A_official_gt256": 30.31,
+    "mean_chrf_C_ours_on_official_crop_gt256": 31.49,
+    "n_le256": 0,
+    "mean_chrf_A_official_le256": null,
+    "mean_chrf_C_ours_on_official_crop_le256": null
+   },
+   {
+    "ref_words": "[50,1000)",
+    "n": 10,
+    "n_gt256": 10,
+    "mean_chrf_A_official_gt256": 19.54,
+    "mean_chrf_C_ours_on_official_crop_gt256": 19.64,
+    "n_le256": 0,
+    "mean_chrf_A_official_le256": null,
+    "mean_chrf_C_ours_on_official_crop_le256": null
+   }
+  ]
+ },
+ "decoding_cap": {
+  "A_official": {
+   "max_pred_words": 50,
+   "median_pred_words_truncated": 34.0,
+   "n_truncated": 22,
+   "truncation_rate_ref_ge_35_words": 0.714,
+   "n_ref_ge_35_words": 21,
+   "truncation_rate_ref_lt_35_words": 0.065,
+   "mean_length_ratio_ref_ge_35_words": 0.665
+  },
+  "C_ours_on_official_crop": {
+   "max_pred_words": 50,
+   "median_pred_words_truncated": 34.0,
+   "n_truncated": 27,
+   "truncation_rate_ref_ge_35_words": 0.81,
+   "n_ref_ge_35_words": 21,
+   "truncation_rate_ref_lt_35_words": 0.093,
+   "mean_length_ratio_ref_ge_35_words": 0.691
+  }
+ },
+ "entity_token_recall_by_evidence_type": {
+  "A_official": {
+   "acronym_or_all_caps": {
+    "n_tokens": 3,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "capitalised_not_in_lowercase_dictionary": {
+    "n_tokens": 12,
+    "n_recalled": 1,
+    "recalled": [
+     "barbie"
+    ]
+   },
+   "personal_name_list": {
+    "n_tokens": 4,
+    "n_recalled": 1,
+    "recalled": [
+     "robert"
+    ]
+   },
+   "camelcase_name": {
+    "n_tokens": 2,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "single_capital_letter": {
+    "n_tokens": 8,
+    "n_recalled": 6,
+    "recalled": [
+     "d",
+     "g",
+     "v"
+    ]
+   }
+  },
+  "C_ours_on_official_crop": {
+   "acronym_or_all_caps": {
+    "n_tokens": 3,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "capitalised_not_in_lowercase_dictionary": {
+    "n_tokens": 12,
+    "n_recalled": 1,
+    "recalled": [
+     "barbie"
+    ]
+   },
+   "personal_name_list": {
+    "n_tokens": 4,
+    "n_recalled": 1,
+    "recalled": [
+     "robert"
+    ]
+   },
+   "camelcase_name": {
+    "n_tokens": 2,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "single_capital_letter": {
+    "n_tokens": 8,
+    "n_recalled": 5,
+    "recalled": [
+     "d",
+     "g"
+    ]
+   }
+  },
+  "B_ours_5p39": {
+   "acronym_or_all_caps": {
+    "n_tokens": 3,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "capitalised_not_in_lowercase_dictionary": {
+    "n_tokens": 12,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "personal_name_list": {
+    "n_tokens": 4,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "camelcase_name": {
+    "n_tokens": 2,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "single_capital_letter": {
+    "n_tokens": 8,
+    "n_recalled": 5,
+    "recalled": [
+     "d",
+     "g"
+    ]
+   }
+  },
+  "B_aspect": {
+   "acronym_or_all_caps": {
+    "n_tokens": 3,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "capitalised_not_in_lowercase_dictionary": {
+    "n_tokens": 12,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "personal_name_list": {
+    "n_tokens": 4,
+    "n_recalled": 1,
+    "recalled": [
+     "robert"
+    ]
+   },
+   "camelcase_name": {
+    "n_tokens": 2,
+    "n_recalled": 0,
+    "recalled": []
+   },
+   "single_capital_letter": {
+    "n_tokens": 8,
+    "n_recalled": 5,
+    "recalled": [
+     "d",
+     "g"
+    ]
+   }
+  }
+ },
+ "bonferroni": {
+  "n_tested_categories": 16,
+  "alpha_per_test": 0.003125,
+  "n_boot": 10000,
+  "seed": 12345
+ }
+}
