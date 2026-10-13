@@ -1,0 +1,5 @@
+condition,pose_source,timing_crop,runtime,n,bleu1,bleu2,bleu3,bleu4,rouge,bleurt
+A_official,official Uni-Sign poses,official re-aligned timing + signer crop,T4 fp16,128,32.39038109532627,19.51656987685054,12.87775850498723,9.131944073379477,29.00,0.44068175478605554
+B_ours_5p39,our pose extractor,original timestamps + full frame,T4 fp16,128,24.237892746320664,12.799910786751617,8.079871635034305,5.473511939274865,18.69,0.3766846530488692
+B_aspect,our pose extractor,original timestamps + full frame + aspect/coordinate normalization fix,T4 fp16,128,24.992738866773234,13.771975629739787,8.722096917931339,5.797295534182488,20.59,0.38492491329088807
+C_ours_on_official_crop,our pose extractor,official re-aligned timing + signer crop,T4 fp16,128,31.503828813336295,18.987116528174813,12.38097702442627,8.608170284179286,27.67,0.42474569648038596
