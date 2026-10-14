@@ -1,0 +1,43 @@
+{
+ "baseline_sha256": "d865008bc0a16ba0fb3bceb6f78f5a7153febe1d69ba756cc83f918d57300e4a",
+ "candidate_sha256": "d865008bc0a16ba0fb3bceb6f78f5a7153febe1d69ba756cc83f918d57300e4a",
+ "n_lines": {
+  "baseline": 128,
+  "candidate": 128,
+  "refs": 128,
+  "diag": 128
+ },
+ "same_clip_order": true,
+ "diag_checks": {
+  "all_max_new_tokens_100": true,
+  "all_first_id_decoder_start_0": true,
+  "n_new_tokens_le_100": true,
+  "hit_cap_iff_no_eos_and_100_tokens": true,
+  "pred_words_match_text": true,
+  "max_seq_len_le_150 (padding safeguard is a no-op)": true
+ },
+ "cap_hits": 2,
+ "eos_rate": 0.984375,
+ "identical_lines": 128,
+ "differing": [],
+ "bleu_impl": "SLRT_metrics.sableu",
+ "bleu4": {
+  "committed_csv": 9.131944073379477,
+  "committed_file_rescored": 9.131944073379477,
+  "r100": 9.131944073379477,
+  "delta_r100_minus_committed": 0.0
+ },
+ "chrf": {
+  "committed": 28.981483308626572,
+  "r100": 28.981483308626572,
+  "delta": 0.0
+ },
+ "verdict": "REPRODUCED_EXACT",
+ "proceed": true,
+ "hard_failures": [],
+ "thresholds": {
+  "max_differing_lines": 4,
+  "abs_delta_bleu4": 0.1,
+  "abs_delta_chrf": 0.2
+ }
+}
