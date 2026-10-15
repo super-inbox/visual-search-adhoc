@@ -1,0 +1,4 @@
+sample: FZbyRzy4huk_3-8-rgb_front__S2c1of2.mp4, prediction: We're cooking two cups of water and one cup of 1 tablespoon of salt.
+sample: FZbyRzy4huk_3-8-rgb_front__S2c2of2.mp4, prediction: The salt is a half tub of black pepper, and if you have any foam coming out of it, just kind of rinse it off.
+sample: FzmL8SL6Bow_1-8-rgb_front__S2c1of3.mp4, prediction: So I'm just going to take that hole in my sponge and just rub it all the way up, and then I'm going to go ahead and take this hole and just rub it all the way down.
+sample: FZbyRzy4huk_3-8-rgb_front.mp4, prediction: We're cooking 2 cups of water and 1 tablespoon of salt and 1/2 cups of black pepper and that tells you if you need any foam to go ahead and sift it.

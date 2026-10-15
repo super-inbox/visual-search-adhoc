@@ -1,0 +1,9 @@
+{
+ "baseline_sha256_ok": true,
+ "u36_lines": 128,
+ "same_order_as_R100": true,
+ "pilot36_identical": 36,
+ "pilot36_differing": [],
+ "all128_identical": 128,
+ "pass": true
+}
