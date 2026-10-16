@@ -1,0 +1,11 @@
+PASS  shapes  {"raw_mean": [33295, 207], "raw_std": [33295, 207], "raw_mad": [33295, 207], "raw_seg4": [33295, 4, 207], "fsign_mean": [33295, 1024], "fsign_std": [33295, 1024], "fsign_mad": [33295, 1024], "fsign_se
+PASS  finite  {}
+PASS  pooled_dim  {"raw": 414, "fsign": 2048, "mt5": 1536}
+PASS  one_record  {"n": 33295, "expected": 33295, "duplicates": 0, "missing": [], "extra": []}
+PASS  order  ""
+PASS  provenance  []
+PASS  frames  {"bad": [], "T_min": 1, "T_max": 256, "n_sampled_gt256": 6350}
+PASS  labels  {"mismatches": [], "n_positive_labels_checked": 23636}
+PASS  split_video_role  []
+PASS  pose_split  []
+ALL PASS

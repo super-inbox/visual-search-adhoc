@@ -1,0 +1,105 @@
+{
+ "csv_sha256": {
+  "train": "67a8f4fb6dc066f38006b89ac84c27a4b05d7fa07d5e6952f997042724d7a847",
+  "val": "1bf5d57ce90d61571776d06a179335d99648d8c94fc22b327d2abb328d26137c",
+  "test": "d1799dcbf100eda822eeb1a0e6e754d82b12b2a57756bd47073c4e4b8a02ae4d"
+ },
+ "splits": {
+  "train": {
+   "rows": 31165,
+   "video_ids": 2192,
+   "video_names": 2212,
+   "signer_proxy_values": {
+    "8": 14660,
+    "5": 12146,
+    "3": 1861,
+    "1": 893,
+    "11": 493,
+    "2": 422,
+    "4": 398,
+    "9": 292
+   },
+   "words_median": 14,
+   "duration_s_median": 5.27,
+   "duration_s_p95": 17.629999999999995
+  },
+  "val": {
+   "rows": 1741,
+   "video_ids": 115,
+   "video_names": 132,
+   "signer_proxy_values": {
+    "5": 454,
+    "8": 435,
+    "3": 306,
+    "1": 276,
+    "2": 270
+   },
+   "words_median": 14,
+   "duration_s_median": 5.700000000000003,
+   "duration_s_p95": 17.310000000000002
+  },
+  "test": {
+   "rows": 2357,
+   "video_ids": 149,
+   "video_names": 184,
+   "signer_proxy_values": {
+    "5": 627,
+    "3": 546,
+    "8": 449,
+    "10": 268,
+    "2": 243,
+    "1": 224
+   },
+   "words_median": 14,
+   "duration_s_median": 5.22999999999999,
+   "duration_s_p95": 17.5
+  }
+ },
+ "cross_split_overlap": {
+  "train-val": {
+   "video_id_overlap": 0,
+   "sentence_name_overlap": 0,
+   "signer_proxy_overlap": [
+    "1",
+    "2",
+    "3",
+    "5",
+    "8"
+   ]
+  },
+  "train-test": {
+   "video_id_overlap": 0,
+   "sentence_name_overlap": 0,
+   "signer_proxy_overlap": [
+    "1",
+    "2",
+    "3",
+    "5",
+    "8"
+   ]
+  },
+  "val-test": {
+   "video_id_overlap": 0,
+   "sentence_name_overlap": 0,
+   "signer_proxy_overlap": [
+    "1",
+    "2",
+    "3",
+    "5",
+    "8"
+   ]
+  }
+ },
+ "duplicates": {
+  "train_within_exact_duplicate_rows": 1122,
+  "test_exact_dup_of_train": 78,
+  "test_near_dup_of_train": 62,
+  "val_exact_dup_of_train": 53,
+  "val_near_dup_of_train": 39,
+  "near_dup_rule": "test/val sentence (>=6 words) shares >=50% of its word 4-grams with a single train sentence"
+ },
+ "concepts": {
+  "tierL_selected": 24,
+  "tierS_groups": 6
+ }
+}

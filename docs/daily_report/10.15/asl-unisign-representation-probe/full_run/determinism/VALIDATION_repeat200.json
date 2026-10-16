@@ -1,0 +1,130 @@
+{
+ "features": "full/features_repeat",
+ "n_clips": 200,
+ "all_pass": true,
+ "checks": {
+  "shapes": {
+   "pass": true,
+   "detail": {
+    "raw_mean": [
+     200,
+     207
+    ],
+    "raw_std": [
+     200,
+     207
+    ],
+    "raw_mad": [
+     200,
+     207
+    ],
+    "raw_seg4": [
+     200,
+     4,
+     207
+    ],
+    "fsign_mean": [
+     200,
+     1024
+    ],
+    "fsign_std": [
+     200,
+     1024
+    ],
+    "fsign_mad": [
+     200,
+     1024
+    ],
+    "fsign_seg4": [
+     200,
+     4,
+     1024
+    ],
+    "mt5_mean": [
+     200,
+     768
+    ],
+    "mt5_std": [
+     200,
+     768
+    ],
+    "mt5_mad": [
+     200,
+     768
+    ],
+    "mt5_seg4": [
+     200,
+     4,
+     768
+    ],
+    "T": [
+     200
+    ],
+    "n_frames_raw": [
+     200
+    ]
+   }
+  },
+  "finite": {
+   "pass": true,
+   "detail": {}
+  },
+  "pooled_dim": {
+   "pass": true,
+   "detail": {
+    "raw": 414,
+    "fsign": 2048,
+    "mt5": 1536
+   }
+  },
+  "one_record": {
+   "pass": true,
+   "detail": {
+    "n": 200,
+    "expected": 200,
+    "duplicates": 0,
+    "missing": [],
+    "extra": []
+   }
+  },
+  "order": {
+   "pass": true,
+   "detail": ""
+  },
+  "provenance": {
+   "pass": true,
+   "detail": []
+  },
+  "frames": {
+   "pass": true,
+   "detail": {
+    "bad": [],
+    "T_min": 9,
+    "T_max": 256,
+    "n_sampled_gt256": 42
+   }
+  },
+  "determinism": {
+   "pass": true,
+   "detail": {
+    "n_shared": 200,
+    "max_abs_diff": {
+     "raw_mean": 0.0,
+     "raw_std": 0.0,
+     "raw_mad": 0.0,
+     "raw_seg4": 0.0,
+     "fsign_mean": 0.0,
+     "fsign_std": 0.0,
+     "fsign_mad": 0.0,
+     "fsign_seg4": 0.0,
+     "mt5_mean": 0.0,
+     "mt5_std": 0.0,
+     "mt5_mad": 0.0,
+     "mt5_seg4": 0.0,
+     "T": 0.0,
+     "n_frames_raw": 0.0
+    }
+   }
+  }
+ }
+}

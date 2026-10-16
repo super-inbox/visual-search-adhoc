@@ -1,0 +1,301 @@
+lemma,train_clip_df,train_frac,train_videos,top10_video_share,forms,excluded_reason
+the,14369,0.4611,2163,0.018,the,stopword
+and,12582,0.4037,2166,0.0174,and andes,stopword
+to,11794,0.3784,2160,0.0156,to,stopword
+you,10953,0.3515,2074,0.0184,you,stopword
+a,10882,0.3492,2145,0.0182,a,stopword
+it,8751,0.2808,2025,0.0217,it,stopword
+that,8748,0.2807,2071,0.0193,that thats,stopword
+of,8048,0.2582,2048,0.0203,of,stopword
+is,8020,0.2573,2033,0.0201,is,stopword
+in,6275,0.2013,1944,0.0206,in,stopword
+so,5415,0.1738,1794,0.0238,so,stopword
+this,5262,0.1688,1757,0.0264,this,stopword
+your,5212,0.1672,1651,0.0274,your yours,stopword
+on,4294,0.1378,1673,0.0261,on,stopword
+have,3897,0.125,1604,0.0236,have having,stopword
+can,3685,0.1182,1556,0.0269,can cans canes canned caned,stopword
+i,3551,0.1139,1323,0.036,i,stopword
+with,3425,0.1099,1574,0.0277,with,stopword
+get,3301,0.1059,1416,0.0321,get got getting gets gotten,light_verb
+just,3238,0.1039,1398,0.0368,just,stopword
+want,3191,0.1024,1346,0.0392,want wanted wants wanting,light_verb
+be,3183,0.1021,1470,0.0346,be,stopword
+are,3147,0.101,1348,0.0334,are,stopword
+for,3065,0.0983,1438,0.0284,for,stopword
+do,2988,0.0959,1388,0.0335,do,stopword
+if,2837,0.091,1388,0.0307,if,stopword
+we,2837,0.091,1132,0.0493,we,stopword
+up,2568,0.0824,1251,0.0331,up,stopword
+make,2543,0.0816,1226,0.0354,make making made makes,light_verb
+or,2480,0.0796,1282,0.0323,or,stopword
+go,2360,0.0757,1191,0.0326,go going gone went,light_verb
+what,2271,0.0729,1195,0.0365,what whats,stopword
+like,2256,0.0724,1164,0.035,like likes liked liking,discourse
+there,2249,0.0722,1180,0.0391,there theres,stopword
+now,2239,0.0718,1153,0.0447,now,stopword
+one,2157,0.0692,1147,0.051,one ones,stopword
+you're,2138,0.0686,964,0.0463,you're,stopword
+use,2073,0.0665,983,0.041,use using used uses,light_verb
+out,2048,0.0657,1119,0.0366,out outs outing,stopword
+as,2008,0.0644,1158,0.0364,as,stopword
+but,1990,0.0639,1174,0.0342,but,stopword
+little,1985,0.0637,1054,0.0448,little,discourse
+here,1964,0.063,1015,0.0458,here,stopword
+i'm,1964,0.063,990,0.0463,i'm,stopword
+then,1923,0.0617,1075,0.0364,then,stopword
+about,1805,0.0579,1095,0.036,about,stopword
+not,1801,0.0578,1084,0.035,not notes noting noted,stopword
+when,1780,0.0571,1065,0.0399,when,stopword
+all,1704,0.0547,1030,0.0411,all,stopword
+we're,1674,0.0537,837,0.052,we're,stopword
+at,1550,0.0497,973,0.04,at,stopword
+how,1541,0.0494,957,0.0344,how,stopword
+take,1533,0.0492,915,0.0431,take taking takes taken took,light_verb
+will,1520,0.0488,887,0.0526,will willing,stopword
+they,1469,0.0471,794,0.0626,they,stopword
+my,1467,0.0471,761,0.0566,my,stopword
+way,1444,0.0463,893,0.0422,way ways,discourse
+right,1432,0.0459,807,0.058,right rights,discourse
+some,1421,0.0456,847,0.0486,some,stopword
+because,1388,0.0445,912,0.0425,because,stopword
+back,1385,0.0444,719,0.0643,back backing backs backed,stopword
+really,1381,0.0443,807,0.055,really,discourse
+don't,1361,0.0437,837,0.0426,don't,stopword
+down,1354,0.0434,758,0.0583,down downs downing,stopword
+from,1272,0.0408,834,0.048,from,stopword
+very,1255,0.0403,791,0.051,very,stopword
+see,1255,0.0403,777,0.0502,see seen saw seeing seed sees,light_verb
+look,1221,0.0392,709,0.0721,look looking looks looked,light_verb
+more,1177,0.0378,776,0.0501,more,stopword
+put,1164,0.0373,672,0.0679,put puts,light_verb
+our,1150,0.0369,604,0.0757,our ours,stopword
+good,1147,0.0368,698,0.0593,good goods,generic
+an,1142,0.0366,752,0.0499,an,stopword
+them,1137,0.0365,665,0.0607,them themed themes,stopword
+into,1125,0.0361,746,0.0471,into,stopword
+sure,1088,0.0349,636,0.0616,sure,discourse
+need,1065,0.0342,630,0.0808,need needs needed needing,light_verb
+also,1044,0.0335,713,0.0441,also,stopword
+bit,1012,0.0325,678,0.0534,bit bites bits biting,discourse
+know,996,0.032,617,0.0733,know knows known knowing knew,light_verb
+start,975,0.0313,641,0.0646,start started starting starts,generic
+lot,953,0.0306,654,0.0567,lot lots,discourse
+off,914,0.0293,577,0.0777,off offs,stopword
+keep,914,0.0293,557,0.0788,keep keeping keeps kept,light_verb
+kind,912,0.0293,560,0.0746,kind kinds,discourse
+these,906,0.0291,563,0.0695,these,stopword
+over,890,0.0286,624,0.0607,over,stopword
+other,889,0.0285,647,0.0472,other others,stopword
+thing,872,0.028,626,0.0459,thing,discourse
+would,864,0.0277,547,0.0845,would,stopword
+hand,849,0.0272,450,0.0966,hand hands handed handing,eligible
+which,837,0.0269,587,0.055,which,stopword
+work,835,0.0268,522,0.0707,work working works worked,eligible
+time,833,0.0267,591,0.0612,time,eligible
+where,829,0.0266,592,0.0591,where,stopword
+talk,827,0.0265,599,0.0617,talk talking talked talks,eligible
+two,805,0.0258,463,0.1255,two twos,number_word
+again,790,0.0253,558,0.0684,again,stopword
+first,778,0.025,566,0.0694,first,generic
+let,770,0.0247,521,0.0662,let letting lets,stopword
+actually,765,0.0245,501,0.0654,actually,discourse
+side,760,0.0244,442,0.0789,side sides sided siding,generic
+nice,752,0.0241,506,0.0625,nice,eligible
+come,743,0.0238,536,0.0767,come,light_verb
+any,729,0.0234,527,0.07,any,stopword
+has,728,0.0234,527,0.0618,has,stopword
+around,704,0.0226,489,0.0753,around,stopword
+things,691,0.0222,454,0.0709,things,discourse
+different,667,0.0214,460,0.075,different,generic
+give,659,0.0211,471,0.0637,give gives giving given gave,light_verb
+by,641,0.0206,488,0.0671,by,stopword
+well,640,0.0205,469,0.0813,well wells,discourse
+much,634,0.0203,487,0.0631,much,stopword
+try,625,0.0201,437,0.0688,try trying tried tries,light_verb
+through,615,0.0197,381,0.1008,through,stopword
+people,601,0.0193,398,0.0899,people peoples,eligible
+show,596,0.0191,455,0.0671,show showing showed shows,eligible
+ball,577,0.0185,161,0.2166,ball balls balled,video_concentrated
+hair,570,0.0183,116,0.2368,hair hairs haired,video_concentrated
+find,558,0.0179,369,0.1183,find found finding finds,eligible
+something,555,0.0178,406,0.0757,something,stopword
+those,550,0.0176,421,0.0673,those,stopword
+top,550,0.0176,363,0.1145,top tops topping topped,eligible
+next,547,0.0176,423,0.0676,next,generic
+important,545,0.0175,365,0.0936,important,generic
+their,535,0.0172,340,0.1215,their theirs,stopword
+three,535,0.0172,293,0.185,three threes,number_word
+com,533,0.0171,408,0.0882,comes coming com,url_artifact
+foot,529,0.017,275,0.1134,foot feet footing footed,eligible
+color,522,0.0167,212,0.2088,color colors colored coloring,video_concentrated
+line,519,0.0167,275,0.1522,line lines lined lining,eligible
+even,518,0.0166,395,0.0753,even evened,stopword
+step,517,0.0166,246,0.2089,step steps stepping stepped,video_concentrated
+once,512,0.0164,381,0.084,once,stopword
+most,504,0.0162,388,0.0734,most,stopword
+doing,497,0.0159,379,0.0805,doing,stopword
+water,493,0.0158,249,0.1481,water watering watered waters,eligible
+okay,492,0.0158,273,0.1606,okay,discourse
+help,490,0.0157,356,0.0857,help helps helping helped,eligible
+think,489,0.0157,358,0.0736,think thinking thought thinks,light_verb
+he,487,0.0156,178,0.1951,he,stopword
+call,484,0.0155,360,0.093,called call calling calls,eligible
+type,483,0.0155,318,0.1366,type types typing,eligible
+cut,469,0.015,239,0.1578,cut cutting cuts,eligible
+move,468,0.015,323,0.1047,move moving moves moved,eligible
+say,467,0.015,317,0.1285,say says saying,light_verb
+same,463,0.0149,353,0.095,same,stopword
+turn,463,0.0149,259,0.1533,turn turning turns turned,eligible
+me,460,0.0148,334,0.0957,me,stopword
+they're,458,0.0147,319,0.0917,they're,stopword
+body,457,0.0147,278,0.1313,body bodies bodied,eligible
+another,454,0.0146,372,0.0705,another,stopword
+place,453,0.0145,333,0.0927,place places placed placing,eligible
+might,453,0.0145,335,0.0883,might,stopword
+always,443,0.0142,329,0.0971,always,stopword
+part,441,0.0142,319,0.1247,part parts parting parted,generic
+her,439,0.0141,150,0.2323,her,stopword
+too,432,0.0139,343,0.088,too,stopword
+piece,425,0.0136,235,0.1294,piece pieces piecing,eligible
+before,423,0.0136,338,0.0922,before,stopword
+leg,420,0.0135,194,0.1881,leg legs legged,eligible
+pull,413,0.0133,226,0.1622,pull pulling pulled pulls,eligible
+hi,409,0.0131,398,0.0489,hi,discourse
+great,405,0.013,292,0.1037,great,generic
+add,404,0.013,259,0.1139,add adding added adds,eligible
+could,403,0.0129,287,0.1191,could,stopword
+than,402,0.0129,338,0.0746,than,stopword
+you'll,402,0.0129,297,0.0945,you'll,stopword
+feel,390,0.0125,262,0.1256,feel feels feeling felt,below_min_df
+ahead,388,0.0124,251,0.1082,ahead,below_min_df
+hold,387,0.0124,255,0.1292,hold holding holds held,below_min_df
+today,379,0.0122,309,0.0897,today todays,discourse
+you've,377,0.0121,287,0.0849,you've,stopword
+end,375,0.012,273,0.12,end ends ending ended,generic
+set,374,0.012,261,0.115,set setting sets,below_min_df
+was,368,0.0118,265,0.125,was,stopword
+bring,367,0.0118,265,0.1144,bring bringing brought brings,below_min_df
+point,361,0.0116,251,0.1717,point points pointing pointed,below_min_df
+pretty,360,0.0116,277,0.0972,pretty pretties,discourse
+left,359,0.0115,207,0.1337,left,below_min_df
+should,353,0.0113,264,0.1133,should,stopword
+head,343,0.011,238,0.1079,head heads headed heading,below_min_df
+she,336,0.0108,124,0.2351,she shed,stopword
+no,332,0.0107,273,0.1084,no,stopword
+we'll,328,0.0105,233,0.1433,we'll,stopword
+area,326,0.0105,217,0.138,area areas,generic
+open,323,0.0104,218,0.1455,open opening opens opened,below_min_df
+i've,322,0.0103,235,0.1366,i've,stopword
+may,320,0.0103,243,0.1219,may,stopword
+maybe,319,0.0102,247,0.1003,maybe,stopword
+play,315,0.0101,162,0.2063,play playing plays played,video_concentrated
+tell,314,0.0101,221,0.1752,tell telling tells told,light_verb
+long,313,0.01,239,0.1086,long,below_min_df
+done,311,0.01,246,0.1029,done,stopword
+front,310,0.0099,203,0.171,front fronts fronting,below_min_df
+name,306,0.0098,232,0.1275,name names named,below_min_df
+doesn't,306,0.0098,261,0.0882,doesn't,stopword
+able,304,0.0098,241,0.1151,able,discourse
+run,302,0.0097,205,0.1457,run running runs ran,below_min_df
+four,299,0.0096,171,0.2676,four fours,number_word
+tim,292,0.0094,242,0.1267,times tim timing timed,below_min_df
+every,290,0.0093,230,0.1207,every,stopword
+forward,289,0.0093,161,0.2042,forward forwards,video_concentrated
+clean,288,0.0092,167,0.2014,clean cleaning cleaned cleans,video_concentrated
+arm,287,0.0092,163,0.1638,arms arm,below_min_df
+hit,287,0.0092,145,0.23,hit hitting hits,video_concentrated
+many,287,0.0092,229,0.108,many,generic
+shoulder,287,0.0092,161,0.216,shoulder shoulders shouldered,video_concentrated
+only,286,0.0092,250,0.0839,only,stopword
+day,284,0.0091,202,0.1514,day days,below_min_df
+best,284,0.0091,213,0.1479,best,below_min_df
+big,282,0.009,219,0.1099,big,below_min_df
+skin,281,0.009,99,0.3523,skin skins skinned skinning,few_videos
+bottom,275,0.0088,199,0.1345,bottom bottoms,below_min_df
+straight,273,0.0088,174,0.1575,straight straights,below_min_df
+each,271,0.0087,215,0.1255,each,stopword
+inside,270,0.0087,180,0.1481,inside insides,below_min_df
+his,270,0.0087,138,0.2519,his,stopword
+face,270,0.0087,159,0.2259,face facing faces faced,video_concentrated
+does,269,0.0086,222,0.1078,does,stopword
+still,269,0.0086,227,0.119,still,discourse
+lift,268,0.0086,129,0.2799,lift lifting lifted lifts,video_concentrated
+remember,268,0.0086,206,0.1381,remember remembering remembers,below_min_df
+together,267,0.0086,192,0.1723,together,stopword
+basically,266,0.0085,204,0.1203,basically,discourse
+we've,265,0.0085,193,0.1472,we've,stopword
+sometimes,264,0.0085,211,0.1136,sometimes,stopword
+been,263,0.0084,215,0.1065,been,stopword
+after,263,0.0084,217,0.1179,after,stopword
+paint,262,0.0084,91,0.2901,paint painting painted paints,few_videos
+create,261,0.0084,176,0.2031,create creating creates created,video_concentrated
+buy,259,0.0083,153,0.2278,buy buying bought buys,video_concentrated
+eye,257,0.0082,127,0.2724,eye eyes eyed eying,video_concentrated
+probably,256,0.0082,219,0.1055,probably,discourse
+light,256,0.0082,141,0.3047,light lighting lights lighted,video_concentrated
+knee,255,0.0082,132,0.2471,knees knee,video_concentrated
+usually,253,0.0081,207,0.1186,usually,discourse
+away,251,0.0081,191,0.1474,away,stopword
+clip,250,0.008,207,0.124,clip clips clipped clipping,below_min_df
+cause,249,0.008,203,0.1124,cause causes caused causing,below_min_df
+push,247,0.0079,154,0.1903,push pushing pushed pushes,below_min_df
+ready,247,0.0079,200,0.1336,ready,below_min_df
+goes,243,0.0078,203,0.1317,goes,below_min_df
+dry,240,0.0077,151,0.2042,dry dried drying dries,video_concentrated
+draw,239,0.0077,121,0.2971,draw drawing drew drawn draws,video_concentrated
+paper,239,0.0077,111,0.2427,paper papers papered,video_concentrated
+yourself,238,0.0076,185,0.1555,yourself,stopword
+hip,238,0.0076,120,0.2521,hip hips,video_concentrated
+position,234,0.0075,147,0.2094,position positions positioned positioning,video_concentrated
+everything,234,0.0075,188,0.1325,everything,stopword
+five,234,0.0075,141,0.2564,five fives,number_word
+am,232,0.0074,166,0.1638,am,stopword
+i'll,232,0.0074,177,0.1595,i'll,stopword
+learn,231,0.0074,160,0.2078,learn learning learned learns,video_concentrated
+small,231,0.0074,176,0.1429,small,below_min_df
+second,230,0.0074,176,0.1696,second seconds,below_min_df
+pick,230,0.0074,160,0.2,pick picking picked picks,below_min_df
+anything,230,0.0074,195,0.113,anything,stopword
+sit,230,0.0074,153,0.2348,sit sitting sits sites,video_concentrated
+throw,228,0.0073,125,0.2588,throw throwing throws,video_concentrated
+easy,228,0.0073,179,0.1447,easy easies,below_min_df
+while,226,0.0073,200,0.1062,while,stopword
+him,225,0.0072,118,0.2578,him,stopword
+leave,224,0.0072,168,0.1518,leave leaves leaving,below_min_df
+edge,224,0.0072,135,0.2009,edge edges edged,video_concentrated
+roll,224,0.0072,99,0.2857,roll rolling rolls rolled,few_videos
+who,223,0.0072,165,0.2018,who,stopword
+brush,222,0.0071,98,0.3153,brush brushes brushed brushing,few_videos
+bee,221,0.0071,190,0.1222,being bee bees,below_min_df
+stay,221,0.0071,182,0.1312,stay stays staying stayed,below_min_df
+dog,220,0.0071,50,0.45,dog dogs,few_videos
+size,220,0.0071,156,0.1818,size sizes sized sizing,below_min_df
+course,219,0.007,168,0.1826,course courses,discourse
+better,218,0.007,180,0.133,better,below_min_df
+had,217,0.007,175,0.1659,had,stopword
+basic,216,0.0069,155,0.1806,basic basics,below_min_df
+close,215,0.0069,165,0.1674,close closed closing closes,below_min_df
+base,215,0.0069,142,0.2093,base based bases,video_concentrated
+person,215,0.0069,148,0.1814,person persons,below_min_df
+center,215,0.0069,127,0.2186,center centered centers centering,video_concentrated
+stick,215,0.0069,142,0.2419,stick sticks sticking,video_concentrated
+practice,213,0.0068,126,0.2394,practice practicing practiced practices,video_concentrated
+happen,212,0.0068,180,0.1179,happens happen happening happened,below_min_df
+were,211,0.0068,159,0.1659,were,stopword
+enough,210,0.0067,169,0.1476,enough,stopword
+half,210,0.0067,144,0.219,half,number_word
+couple,206,0.0066,178,0.1214,couple couples,below_min_df
+oil,205,0.0066,80,0.4829,oil oils oiled,few_videos
+number,204,0.0065,128,0.2402,number numbers numbered,video_concentrated
+white,203,0.0065,128,0.2118,white whites,video_concentrated
+high,203,0.0065,150,0.1773,high,below_min_df
+car,203,0.0065,68,0.4631,car cars cared cares,few_videos
+between,203,0.0065,170,0.133,between,stopword
+new,200,0.0064,130,0.26,new,generic
+cover,200,0.0064,133,0.2,cover covered covering covers,below_min_df
+drop,199,0.0064,109,0.3266,drop dropping drops dropped,video_concentrated
+plant,199,0.0064,58,0.4925,plant plants planted planting,few_videos
+tip,195,0.0063,129,0.2513,tip tips tipping,video_concentrated
+case,193,0.0062,157,0.1658,case cases casing,below_min_df
+finger,192,0.0062,127,0.2135,fingers finger fingering,video_concentrated

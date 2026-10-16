@@ -1,0 +1,31 @@
+concept,tier,match,forms,train_pos,train_pos_videos,train_prevalence,train_len_ratio_pos_neg,val_pos,val_pos_videos,test_pos,test_pos_videos
+HAND,L,lemma,hand handed handing hands,849,450,0.0272,1.401,34,16,105,27
+WORK,L,lemma,work worked working works,835,522,0.0268,1.533,54,34,34,25
+TIME,L,lemma,time,833,591,0.0267,1.6,45,31,78,38
+TALK,L,lemma,talk talked talking talks,827,599,0.0265,1.141,40,32,47,33
+NICE,L,lemma,nice,752,506,0.0241,1.351,33,19,49,32
+PEOPLE,L,lemma,people peoples,601,398,0.0193,1.558,33,22,30,21
+SHOW,L,lemma,show showed showing shows,596,455,0.0191,1.332,34,23,47,33
+FIND,L,lemma,find finding finds found,558,369,0.0179,1.519,28,17,49,16
+TOP,L,lemma,top topped topping tops,550,363,0.0176,1.644,25,18,58,38
+FOOT,L,lemma,feet foot footed footing,529,275,0.017,1.337,40,20,38,16
+LINE,L,lemma,line lined lines lining,519,275,0.0167,1.395,23,13,48,20
+WATER,L,lemma,water watered watering waters,493,249,0.0158,1.523,29,16,24,11
+HELP,L,lemma,help helped helping helps,490,356,0.0157,1.589,25,20,39,23
+CALL,L,lemma,call called calling calls,484,360,0.0155,1.255,32,20,31,21
+TYPE,L,lemma,type types typing,483,318,0.0155,1.528,11,7,49,24
+CUT,L,lemma,cut cuts cutting,469,239,0.015,1.401,14,7,40,15
+MOVE,L,lemma,move moved moves moving,468,323,0.015,1.415,41,24,52,18
+TURN,L,lemma,turn turned turning turns,463,259,0.0149,1.431,18,10,32,19
+BODY,L,lemma,bodied bodies body,457,278,0.0147,1.535,39,15,40,21
+PLACE,L,lemma,place placed places placing,453,333,0.0145,1.563,18,7,30,18
+PIECE,L,lemma,piece pieces piecing,425,235,0.0136,1.545,14,7,32,21
+LEG,L,lemma,leg legged legs,420,194,0.0135,1.329,39,12,32,12
+PULL,L,lemma,pull pulled pulling pulls,413,226,0.0133,1.417,11,8,34,18
+ADD,L,lemma,add added adding adds,404,259,0.013,1.422,32,14,38,21
+NUMBER,S,token_any,dozen eight eleven fifteen fifty five forty four half hundred million nine percent seven six ten thirty thousand three twelve twenty two,1975,857,0.0634,1.237,89,41,161,52
+COLOR,S,token_any,black blue brown color colored colors gray green grey orange pink purple red white yellow,1176,451,0.0377,1.286,52,22,98,38
+FOOD_COOKING,S,token_any,bake baking cook cooked cooking dish eat eating food kitchen meal oven recipe,418,193,0.0134,1.383,29,11,34,12
+BODY_PART,S,token_any,arm arms body feet finger fingers foot hand hands head hip hips knee knees leg legs shoulder shoulders,3142,1020,0.1008,1.37,207,49,283,63
+TIME_UNIT,S,token_any,day days hour hours minute minutes month months seconds week weeks year years,831,506,0.0267,1.55,36,23,72,31
+WATER_LIQUID,S,token_any,coffee juice liquid milk oil tea water wine,1035,386,0.0332,1.441,43,19,46,15

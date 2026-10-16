@@ -1,0 +1,3 @@
+source ~/p014/env.sh; cd ~/p014; rm -rf features_repeat decode_repeat
+$PY -I probe/scripts/extract_representations.py --unisign-repo $REPO --mt5 $MT5 --ckpt $CKPT --manifest probe/repeat_manifest.csv --roles probe_train,test_clean --zip $Z --out ~/p014/features_repeat --device cuda --save-seq-roles test_clean > repeat_extract.log 2>&1; echo $? > repeat_extract.exit
+$PY -I probe/scripts/decode_baseline.py --unisign-repo $REPO --mt5 $MT5 --ckpt $CKPT --manifest probe/splits/manifest.csv --roles test_clean --zip $Z --out ~/p014/decode_repeat --device cuda --limit 40 > repeat_decode.log 2>&1; echo $? > repeat_decode.exit
