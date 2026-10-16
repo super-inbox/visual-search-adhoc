@@ -1,0 +1,13 @@
+{
+ "test_clips": 2357,
+ "test_videos": 149,
+ "test_videos_with_per_clip_inspected_clip": 128,
+ "test_clips_in_videos_with_per_clip_inspected_clip": 2045,
+ "test_clips_confirmatory_eligible": 0,
+ "p15_final_clips_in_bench128": 66,
+ "p15_final_clips_in_frozen147": 73,
+ "p15_final_videos_with_per_clip_inspected_clip": 66,
+ "p15_dev_clips_in_bench128": 61,
+ "val_clips": 1741,
+ "val_videos": 115
+}
