@@ -1,0 +1,84 @@
+{
+ "seeds_tried": [
+  {
+   "seed": 15,
+   "dev_clip_share": 0.4762,
+   "min_concept_dev_pos_share": 0.3077,
+   "max_concept_dev_pos_share": 0.6818,
+   "pass": true
+  }
+ ],
+ "chosen_seed": 15,
+ "n_units": 148,
+ "merged_units": [
+  [
+   "G3di9jJTqDs",
+   "f_zna_wG3zo"
+  ]
+ ],
+ "dev": {
+  "units": 75,
+  "clips": 1052,
+  "tierL_positives": 522
+ },
+ "final": {
+  "units": 73,
+  "clips": 1157,
+  "tierL_positives": 510
+ },
+ "per_concept_dev_pos_share": {
+  "HAND": 0.4857,
+  "WORK": 0.4242,
+  "TIME": 0.6,
+  "TALK": 0.4565,
+  "NICE": 0.5106,
+  "PEOPLE": 0.4138,
+  "SHOW": 0.5952,
+  "FIND": 0.6122,
+  "TOP": 0.5714,
+  "FOOT": 0.5526,
+  "LINE": 0.4255,
+  "WATER": 0.6818,
+  "HELP": 0.3077,
+  "CALL": 0.4,
+  "TYPE": 0.4348,
+  "CUT": 0.5,
+  "MOVE": 0.6346,
+  "TURN": 0.3438,
+  "BODY": 0.5,
+  "PLACE": 0.5,
+  "PIECE": 0.4062,
+  "LEG": 0.5312,
+  "PULL": 0.5,
+  "ADD": 0.6111
+ },
+ "strata_units": {
+  "1": {
+   "dev": 8,
+   "final": 8
+  },
+  "2": {
+   "dev": 8,
+   "final": 8
+  },
+  "3": {
+   "dev": 19,
+   "final": 18
+  },
+  "5": {
+   "dev": 23,
+   "final": 23
+  },
+  "8": {
+   "dev": 17,
+   "final": 16
+  }
+ },
+ "fold_clips": [
+  211,
+  211,
+  210,
+  210,
+  210
+ ]
+}
