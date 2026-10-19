@@ -1,0 +1,1 @@
+P0-18 plan-code verdict test: 256 combinations match (1 SUPPORTED, 1 PARTIAL, 224 VOID, 30 NOT SUPPORTED)
