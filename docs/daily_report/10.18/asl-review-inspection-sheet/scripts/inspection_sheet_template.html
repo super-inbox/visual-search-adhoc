@@ -80,16 +80,20 @@ td a { color: var(--accent); }
     <label><input type="checkbox" id="fshow"> Showcase examples only</label>
     <input type="text" id="fq" placeholder="Search text / clip id" aria-label="Search">
   </div>
-  <div class="legend"><b>Prod output = B_ours_5p39, provisional:</b> the historical our-pipeline baseline (P0-18 A_old: our pose extractor, original timestamps, full frame). Not verified as the current live production system; the column will be replaced if the actual production output is identified.</div>
+  <div class="legend"><b>Both outputs come from the same public Uni-Sign checkpoint; only the input preparation differs.</b>
+    <b>Our/old output</b> (B_ours_5p39, provisional stand-in for production): our pose extractor on the full frame, cut at the original How2Sign <i>speech</i> timestamps (= P0-18 A_old); not verified as the current live production system.
+    <b>Official output</b> (A_official): the How2Sign / Uni-Sign experimental inputs, i.e. official poses from clips cut at the <i>re-aligned signing</i> timing and cropped to the signer (official signer-crop videos). Not a different model, and not preprocessing we invented.
+    Repetition loops occur in <b>both</b> outputs, including on short clips (see <code>repetition_audit.md</code>).</div>
+  <div class="legend">Workflow: play the video → compare ground truth / our output / official output → tick the verified category → set status. Videos load from <code>videos/</code> next to this page (review package) or from the repo; otherwise use <b>Load videos…</b>.</div>
   <div class="legend">
     <span class="badge auto">AUTO · unverified</span> automatic weak label from the English reference and output text; says nothing about what is signed.
     <span class="badge human">HUMAN</span> filled by a reviewer. Category boxes unlock only after name and ASL background are entered.
   </div>
 </header>
 <main>
-  <h2>Concrete examples: ground truth vs prod vs Uni-Sign</h2>
+  <h2>Concrete examples: ground truth vs our/old output vs official output</h2>
   <p class="muted">Selected automatically: up to 3 clips per initial category where all three texts differ, preferring clips where only one system loses the item. Click an ID to jump to its card.</p>
-  <div class="table-wrap"><table id="show"><thead><tr><th>Initial category (AUTO)</th><th>ID</th><th>Ground truth</th><th>Prod (B_ours_5p39, provisional)</th><th>Uni-Sign (A_official)</th><th>AUTO evidence (primary)</th></tr></thead><tbody></tbody></table></div>
+  <div class="table-wrap"><table id="show"><thead><tr><th>Initial category (AUTO)</th><th>ID</th><th>Ground truth</th><th>Our/old output (B_ours_5p39, provisional)</th><th>Official output (A_official)</th><th>AUTO evidence (primary)</th></tr></thead><tbody></tbody></table></div>
   <h2>All clips</h2>
   <div id="cards"></div>
 </main>
@@ -115,19 +119,22 @@ const unlocked = () => store.meta.reviewer.trim() && store.meta.bg.trim();
 function card(r) {
   const s = st(r.review_id);
   const others = r.initial_error_categories_all.split(';').filter(c => c && c !== r.initial_error_category);
-  const src = videoURL[r.clip_id + '.mp4'] || (D.video_root + '/' + r.video_path);
+  const own = videoURL[r.clip_id + '.mp4'];
+  const srcs = own ? [own] : [D.video_dir + '/' + r.clip_id + '.mp4', D.video_root + '/' + r.video_path];
+  const reps = [['our/old', r.auto_error_type_prod], ['official', r.auto_error_type_unisign]].filter(x => x[1] === 'repetition_loop').map(x => x[0]);
   return `<section class="card" id="${r.review_id}" data-id="${r.review_id}">
   <div class="card-h"><b>${r.review_id}</b><span>${esc(r.clip_id)}</span><span class="muted">video ${esc(r.video_id)} · ${r.duration_s}s · prod vs Uni-Sign: ${r.prod_vs_unisign}</span>
     <span class="badge auto">AUTO ${esc(r.initial_error_category)}</span>${others.map(c => `<span class="badge auto">also ${esc(c)}</span>`).join('')}
-    ${r.showcase_example ? `<span class="badge auto">showcase</span>` : ''}</div>
+    ${r.showcase_example ? `<span class="badge auto">showcase</span>` : ''}${reps.length ? `<span class="badge auto">AUTO repetition loop: ${reps.join(' + ')}</span>` : ''}</div>
   <div class="grid">
-    <div><video controls preload="none" src="${esc(src)}"></video>
+    <div><video controls playsinline preload="metadata">${srcs.map(u => `<source src="${esc(u)}" type="video/mp4">`).join('')}</video>
+      <div class="warn vmiss" hidden>Video not found in <code>videos/</code> or the repo path: use <b>Load videos…</b> and pick ${esc(r.clip_id)}.mp4</div>
       <div class="muted" style="font-size:12px">${esc(r.queue_reasons)}</div>
       ${r.visual_flags ? `<div class="muted" style="font-size:12px">AUTO visual flags: ${esc(r.visual_flags)}</div>` : ''}</div>
     <div>
       <p class="txt"><span class="lab">Ground truth (How2Sign English reference)</span>${esc(r.ground_truth)}</p>
-      <p class="txt"><span class="lab">Prod output · B_ours_5p39 (provisional: historical baseline, P0-18 A_old) · chrF ${(+r.chrf_prod).toFixed(1)} · AUTO ${r.auto_error_type_prod}</span>${mark(r.prod_output, r.ground_truth)}</p>
-      <p class="txt"><span class="lab">Uni-Sign output · A_official · chrF ${(+r.chrf_unisign).toFixed(1)} · AUTO ${r.auto_error_type_unisign}</span>${mark(r.unisign_output, r.ground_truth)}</p>
+      <p class="txt"><span class="lab">Our/old output · B_ours_5p39 (provisional) · our extractor, speech timestamps, full frame · chrF ${(+r.chrf_prod).toFixed(1)} · AUTO ${r.auto_error_type_prod}</span>${mark(r.prod_output, r.ground_truth)}</p>
+      <p class="txt"><span class="lab">Official output · A_official · official signing timing + signer-crop inputs · chrF ${(+r.chrf_unisign).toFixed(1)} · AUTO ${r.auto_error_type_unisign}</span>${mark(r.unisign_output, r.ground_truth)}</p>
       <div class="box autobox"><b style="color:var(--auto)">AUTO evidence (weak, unverified)</b>
         <ul class="ev">${r.evidence_notes.split(' || ').map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>
       <div class="box humanbox"><b style="color:var(--human)">HUMAN review</b> <span class="muted">ASL question: ${esc(r.asl_fluent_question)}</span>
@@ -146,6 +153,10 @@ function render() {
   const rows = D.rows.filter(r => (!fc || r.initial_error_category === fc) && (!fs || st(r.review_id).status === fs)
     && (!sh || r.showcase_example) && (!q || [r.clip_id, r.review_id, r.ground_truth, r.prod_output, r.unisign_output].join(' ').toLowerCase().includes(q)));
   $('#cards').innerHTML = rows.map(card).join('') || '<p class="muted">No clips match.</p>';
+  for (const v of document.querySelectorAll('#cards video')) {
+    const last = v.querySelector('source:last-of-type');
+    if (last) last.addEventListener('error', () => { v.parentElement.querySelector('.vmiss').hidden = false; });
+  }
   const done = D.rows.filter(r => st(r.review_id).status === 'reviewed').length;
   $('#progress').textContent = `${D.rows.length} clips · ${done} reviewed · showing ${rows.length}`;
 }

@@ -5,7 +5,8 @@
 #   prod_output    = B_ours_5p39  PROVISIONAL stand-in for "our production solution": the historical our-pipeline baseline
 #                  (our pose extractor, original timestamps, full frame; = P0-18 A_old). Not verified as the current live
 #                  production system; replace the column if the actual production output is identified.
-#   unisign_output = A_official   Uni-Sign with its official poses + official re-aligned timing / signer crop
+#   unisign_output = A_official   official output: the How2Sign / Uni-Sign experimental inputs (official poses from the
+#                  re-aligned signing timing + official signer-crop videos); same checkpoint, not a different model
 # Inputs : ../../10.13/asl-unisign-error-taxonomy/{manual_review/review_packet.csv, manual_review/weak_labels.csv,
 #          error_taxonomy_annotations.jsonl}, how2sign_v2/manifest.csv (source video id)
 # Outputs: ../inspection_sheet.csv, ../inspection_sheet.html
@@ -235,7 +236,8 @@ def main():
     tpl = open(os.path.join(HERE, 'inspection_sheet_template.html'), encoding='utf-8').read()
     video_rel = os.path.relpath(ROOT, OUT)
     data = {'rows': rows, 'fields': FIELDS, 'reviewer_fields': REVIEWER_FIELDS + ['review_status'],
-            'categories': REVIEWER_CATEGORIES, 'statuses': REVIEW_STATUS, 'video_root': video_rel}
+            'categories': REVIEWER_CATEGORIES, 'statuses': REVIEW_STATUS, 'video_root': video_rel,
+            'video_dir': 'videos'}  # review package: <page dir>/videos/<clip_id>.mp4 (build_review_package.py), tried first
     html = tpl.replace('/*__DATA__*/null', json.dumps(data, ensure_ascii=False).replace('</', '<\\/'))
     open(os.path.join(OUT, 'inspection_sheet.html'), 'w', encoding='utf-8').write(html)
     from collections import Counter

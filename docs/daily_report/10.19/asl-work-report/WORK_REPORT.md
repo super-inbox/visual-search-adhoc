@@ -10,11 +10,15 @@ and no confirmatory evaluation has been run.
 
 ## Executive summary
 
-- **a. Timing / crop diagnosis: done.** P0-12 showed that our old low score came mostly from **input preparation**,
-  not from our pose extractor. Using the official timing + crop recovered **≈ 86 % of the BLEU-4 gap** (5.47 → 8.61
-  vs 9.13). This used the official (oracle) inputs **as a diagnosis; it was not an automatic fix**. A later
-  exploratory split on the same 128 clips attributes most of the gain to **timing** (+3.15 BLEU-4). The crop effect
-  is small (+0.69) and its confidence interval includes zero.
+- **a. Timing / crop diagnosis: done.** All conditions use the **same public Uni-Sign checkpoint**; only the input
+  preparation differs. Our **old pipeline** used the **original How2Sign speech timestamps + full frame + our pose
+  extractor**. It did **not** use the re-aligned signing timing or the official signer crop. **"Official
+  preprocessing"** means the How2Sign / Uni-Sign experimental inputs: clips cut at the **re-aligned signing timing**
+  and the **official signer-crop videos** (dataset-author inputs, not a new model and not preprocessing we invented).
+  P0-12 showed that our old low score came mostly from this **input preparation**, not from our pose extractor: feeding
+  the official timing + crop to our extractor recovered **≈ 86 % of the BLEU-4 gap** (5.47 → 8.61 vs 9.13). This used
+  the official (oracle) inputs **as a diagnosis; it was not an automatic fix**. Most of the gain is **timing** (+3.15
+  BLEU-4 on the 128 clips; +7.4 on the full test set in P0-18); the crop effect is small.
 - **b. Representation / fusion: done, paused.** P0-14: **PARTIAL SUPPORT**, read as exploratory evidence because of a
   documented sanity-gate inconsistency. Uni-Sign's mT5 encoder states carry concept information the translation
   sometimes drops. P0-15: **NOT SUPPORTED**; a verifier could not make safe additions. **No translation improvement
@@ -33,15 +37,29 @@ and no confirmatory evaluation has been run.
     transcript/sign alignment.
 - **d. ASL-fluent reviewer: materials prepared; no recruitment recorded.** The review package and instructions exist.
   The repository has **no record that a reviewer was recruited or contacted**, and no manual ASL label exists.
-- **e. Inspection sheet: done and pushed.** It has 45 clips, 21 highlighted examples and 7 categories. All labels are
-  automatic weak labels; every reviewer field is blank. The "production" column is a provisional stand-in.
+- **e. Inspection sheet: done; review package with videos added (not yet committed).** 45 clips, 21 highlighted
+  examples, 7 categories. The **45 diagnostic videos** now ship with the sheet as a reproducible review package
+  (sha256-verified, 60 MB, kept out of git); the page plays each clip next to the ground truth, our/old output and
+  official output. All labels are automatic weak labels; every reviewer field is blank. The "production" column is a
+  provisional stand-in.
+  - **Repetition:** **official preprocessing does not eliminate repetition; repetition is not purely a long-input
+    failure.** The official output loops on **9 of the 45** clips, with official input lengths of 4.0–32.5 s (1 short,
+    3 medium, 5 long). Over the 128-clip benchmark the official loop rate rises with input length (7 % short, 12 %
+    medium, 27 % long) but is not zero on short clips. Input length / preparation may raise the risk; the Uni-Sign
+    decoder / generation also has an intrinsic repetition failure mode.
 
 ---
 
 ## a. Timing / crop diagnosis (P0-12): COMPLETED
 
 **What was done.** The Uni-Sign checkpoint, the 128 benchmark clips, the references and the evaluation code were held
-fixed. Only the pose source and the input preparation were changed: timing, crop and coordinate normalisation. The
+fixed. Only the pose source and the input preparation were changed: timing, crop and coordinate normalisation.
+- **Old pipeline (`B_ours_5p39`):** original How2Sign **speech** timestamps, **full frame**, **our pose extractor**,
+  the same Uni-Sign checkpoint. It did not use the re-aligned signing timing or the official signer crop.
+- **Official preprocessing (`A_official`, `C_ours_on_official_crop`):** the How2Sign / Uni-Sign experimental inputs,
+  i.e. clips cut at the **re-aligned signing timing** and the **official signer-crop videos** (with the official poses,
+  or with our extractor run on those videos). These are dataset-author inputs, not a new model and not something we
+  built. The
 goal was to explain why our pipeline scored far below the official one. The **official re-aligned timing and the
 official signer crop are oracle inputs**: they come from the dataset authors, not from any automatic method. P0-12 used
 them **diagnostically**, to measure how much of the gap they explain. It did **not** produce an automatic fix. Building
@@ -232,18 +250,31 @@ the frozen runner and environments can be reused.
 
 ## e. Inspection sheet: COMPLETED
 
-Committed and pushed: `5775f276` (sheet) and `c94e9c4c` (rebuild dependencies).
+Committed and pushed: `5775f276` (sheet) and `c94e9c4c` (rebuild dependencies). Review package with videos and the
+repetition audit: added locally, **not yet committed**.
 Folder: <https://github.com/super-inbox/visual-search-adhoc/tree/baobao/visual-production-research-2026-10-05/docs/daily_report/10.18/asl-review-inspection-sheet>
 
 **Contents:** 45 clips, one row each, with:
 - video id and path;
 - ground truth;
-- production output and Uni-Sign output, with chrF scores and automatic error types;
+- our/old output (`B_ours_5p39`: speech timestamps, full frame, our extractor) and official output (`A_official`:
+  re-aligned signing timing + official signer-crop inputs), both from the same Uni-Sign checkpoint, with chrF scores
+  and automatic error types;
 - an initial error category with evidence;
 - blank reviewer fields.
 
 Deliverables: `inspection_sheet.csv`, `inspection_sheet.html` (offline review page), `README.md` and a deterministic
 builder.
+
+**Videos (review package):**
+- The 45 diagnostic clips are How2Sign test clips, so they are **not committed**. `scripts/build_review_package.py`
+  copies them from the local How2Sign v2 directory after checking each against the committed How2Sign v2 manifest sha256, into
+  `videos/<clip_id>.mp4` next to the page (git-ignored), and writes `videos_manifest.csv` (sha256, size, duration,
+  source; committed).
+- `--zip` writes a self-contained, deterministic package (page, CSV, README, repetition audit, manifest, `SHA256SUMS`,
+  videos): `~/Desktop/curify/asl-review-package/asl_inspection_review_package.zip`, 60.2 MB, sha256 `b1728e39…`.
+- The page plays `videos/<clip_id>.mp4` first, then the repo path, and otherwise asks for **Load videos…**. Reviewer
+  flow: open page → play video → compare ground truth / our/old output / official output → tick the verified category.
 
 **Categories:** fingerspelling, names, numbers, negation, questions, spatial relations, general semantic.
 
@@ -257,7 +288,20 @@ builder.
 | Fingerspelling | 3 |
 | Spatial relations | 3 |
 
-**21 highlighted examples:** 3 per category, where the ground truth, prod output and Uni-Sign output all differ.
+**21 highlighted examples:** 3 per category, where the ground truth, our/old output and official output all differ.
+
+**Repetition audit** (`repetition_audit.md` / `.csv`, committed 10.13 taxonomy rule, English text only):
+
+> **Official preprocessing does not eliminate repetition; repetition is not purely a long-input failure.**
+
+- The official output (`A_official`) is a repetition loop on **9 of the 45** clips; the our/old output on 10; both on 5.
+- Official input length of the 9 (re-aligned window): **4.0–32.5 s, median 16.4 s**; 1 short (≤ 5 s), 3 medium,
+  5 long (> 10.67 s, Uni-Sign's 256-frame cap).
+- Whole 128-clip benchmark, official arm: loops on 3 / 45 short (7 %), 6 / 50 medium (12 %), 9 / 33 long (27 %) clips.
+- Conclusion: input length / preparation may raise the risk of a loop, but the Uni-Sign decoder / generation itself also
+  has an intrinsic repetition failure mode that appears on short, officially prepared clips too. Earlier reports
+  describing repetition as a long-clip problem (8.31, 10.09) describe a correlation, not the whole cause. Nothing here
+  says what was signed.
 
 **Weak vs human labels:**
 - Every category is an **automatic weak label** (`automatic_weak` / `candidate_unverified`), derived from English
@@ -273,7 +317,8 @@ builder.
 
 **Workflow:**
 1. An ASL-fluent reviewer opens the page and enters their name and ASL background.
-2. They watch each clip before reading the automatic evidence.
+2. They play each clip (from the package) before reading the automatic evidence, and compare ground truth / our/old
+   output / official output.
 3. They tick the verified categories, comment with timestamps, set the status, and export.
 4. Ideally a second reviewer works independently.
 
@@ -287,7 +332,7 @@ builder.
 | b. Representation / fusion | **Exploratory / partial**; final fusion remains P0-19 | P0-14 PARTIAL SUPPORT (exploratory, gate inconsistency documented); P0-15 NOT SUPPORTED | P0-19 not started: pre-register design and exit criteria, new reliability signal, one-shot on H19 |
 | c. Automatic preprocessing (P0-18) | **Development completed — NOT SUPPORTED; H18 remains sealed for a stronger candidate** | Final candidate crop-only on full test: BLEU-4 +0.39 [0.17, 0.62], chrF +0.48, WER −0.14, length 0.903 vs 0.900; ≈ 5 % of the Old→Oracle gap (27 % on the 128 subset); P1 fail, P2 fail, P3–P5 pass; T4 pose + decoder environment frozen (`FREEZE.json` `3bcbf271…`); H18 runner dry-run passed | Stronger timing/alignment method (learned segmenter or transcript/sign alignment), then a new candidate for the sealed H18 |
 | d. ASL-fluent reviewer | **Recruitment not yet completed** (no contact recorded) | Review package, instructions, inspection sheet | Recruit / contact a reviewer; run the review; merge verified labels |
-| e. Inspection sheet | **Completed and pushed**; human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields | ASL-fluent review; replace `prod_output` if the live production output is identified |
+| e. Inspection sheet | **Completed**; review package with videos + repetition audit added (not yet committed); human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60 MB, out of git); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips) | ASL-fluent review; replace `prod_output` if the live production output is identified |
 
 ## Next Update
 

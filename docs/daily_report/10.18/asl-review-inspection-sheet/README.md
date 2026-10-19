@@ -15,21 +15,29 @@ them, or their source videos, are in H18 / H19.
 | `inspection_sheet.html` | The same rows as a review page: video, the three texts (words that also occur in the ground truth are highlighted), AUTO evidence, HUMAN review box. Top table: concrete examples per category. Autosaves in the browser; **Export** writes `inspection_sheet.csv` with the reviewer fields filled; **Import CSV** restores an export |
 | `scripts/build_inspection_sheet.py` | Builder (`python3 -I scripts/build_inspection_sheet.py`, CPU, ~1 s, byte-identical rebuilds) |
 | `scripts/inspection_sheet_template.html` | Page layout |
+| `videos/` (**local only, git-ignored**) | The 45 diagnostic clips as `videos/<clip_id>.mp4`, placed by `scripts/build_review_package.py`. The page plays them directly |
+| `videos_manifest.csv` | Per clip: file, sha256, bytes, duration, source path (committed; the videos themselves are not) |
+| `scripts/build_review_package.py` | Copies the 45 clips from the local How2Sign v2 directory after checking each against the `video_sha256` of the committed How2Sign v2 `manifest.csv`; `--zip PATH` also writes a self-contained, deterministic review package |
+| `repetition_audit.md`, `repetition_audit.csv`, `scripts/repetition_audit.py` | Audit of the official-output repetition loops (below) |
 
 ## The two outputs
 
-Both are the **same public Uni-Sign checkpoint** (`how2sign_pose_only_slt.pth`). Only the preprocessing differs:
+Both come from the **same public Uni-Sign checkpoint** (`how2sign_pose_only_slt.pth`). Neither is a new model. Only the
+**input preparation** differs:
 
-| Column | Condition | Preprocessing |
+| Column | Condition | Input preparation |
 |---|---|---|
-| `prod_output` | `B_ours_5p39` | **provisional** "our production solution": the historical our-pipeline baseline (our pose extractor, original How2Sign timestamps, full frame; = P0-18 `A_old`) |
-| `unisign_output` | `A_official` | Uni-Sign as released: official poses, official re-aligned timing + signer crop |
+| `prod_output` ("our/old output") | `B_ours_5p39` | Our old pipeline: **our pose extractor** on the **full frame**, clips cut at the **original How2Sign speech timestamps** (= P0-18 `A_old`). **Provisional** stand-in for the production output (below) |
+| `unisign_output` ("official output") | `A_official` | The **official How2Sign / Uni-Sign experimental inputs**: official poses from clips cut at the **re-aligned signing timing** and cropped to the signer (the official signer-crop videos) |
+
+The old pipeline did **not** use the re-aligned signing timing or the official signer crop. "Official preprocessing"
+means those dataset-author inputs; it is not preprocessing we invented, and it is not a different model.
 
 **`prod_output` is provisional.** `B_ours_5p39` is the historical our-pipeline baseline (P0-18 `A_old`). It has **not**
 been verified as the current live production system and must not be presented as such unless that is separately
 confirmed. If the actual production output for these 45 clips is identified later, replace `prod_output` (and
 `prod_output_source`, `chrf_prod`, `auto_error_type_prod`) and rebuild. The same caveat is in every CSV row
-(`prod_output_source`) and in the page header. P0-18 `B_auto` outputs are not included: that run is still in progress.
+(`prod_output_source`) and in the page header. P0-18 outputs are not included (P0-18 closed at development as NOT SUPPORTED; see `../../10.16/asl-p0-18-auto-preprocessing/`).
 
 ## Columns
 
@@ -39,7 +47,7 @@ confirmed. If the actual production output for these 45 clips is identified late
 |---|---|
 | `review_id`, `clip_id` | R01–R45 (same order and IDs as the 10.13 package), How2Sign clip |
 | `video_id` | How2Sign source video (`source_video_id` in the manifest) |
-| `video_path`, `video_status` | Local mp4 (gitignored; sha256-verified in `video_availability.csv`), `AVAILABLE` for all 45 |
+| `video_path`, `video_status` | Repo-relative source mp4 (git-ignored; sha256-verified), `AVAILABLE` for all 45. The page plays `videos/<clip_id>.mp4` first |
 | `duration_s`, `queue_reasons` | Clip length; why the clip was queued in 10.13 |
 | `ground_truth` | How2Sign English reference. It is a **translation**, not a gloss of the signing |
 | `prod_output`, `unisign_output` | See above |
@@ -101,14 +109,49 @@ mean the name was fingerspelled, or even signed. A reference `?` does not mean a
 English locative does not mean signing space was used. The 45 clips are a stratified, worst-first sample (10.13), so
 counts are not rates.
 
+## Videos
+
+The 45 diagnostic clips are How2Sign test clips (third-party dataset), so they are **not committed**. They are shipped
+as a review package that is rebuilt reproducibly from the local, checksummed How2Sign v2 copies:
+
+```
+python3 -I scripts/build_review_package.py            # -> videos/<clip_id>.mp4 (git-ignored) + videos_manifest.csv
+python3 -I scripts/build_review_package.py --zip ~/Desktop/curify/asl-review-package/asl_inspection_review_package.zip
+```
+
+Every clip is checked against the `video_sha256` column of the committed How2Sign v2 manifest
+(`asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv`) before it is copied. 45 clips, 60.2 MB, H.264 1280×720 (plays in any current browser). The zip contains the page, the sheet CSV, this
+README, the repetition audit, `videos_manifest.csv`, `SHA256SUMS` and `videos/`. Share it within the How2Sign licence
+terms (CC BY-NC 4.0).
+
+The page looks for each clip at `videos/<clip_id>.mp4` next to itself first, then at the repo path
+(`asl-translator/data/public_benchmarks/how2sign_v2/videos/`). If neither exists, the card says so; **Load videos…**
+then plays files picked by hand.
+
+## Repetition: official preprocessing does not eliminate it
+
+**Official preprocessing does not eliminate repetition; repetition is not purely a long-input failure.**
+
+- The official output (`A_official`) has the automatic `repetition_loop` label on **9 of the 45** clips (committed
+  10.13 rule: a repeated word 3-gram in the output that the reference does not have, repeated-3-gram ratio ≥ 0.15). The
+  our/old output has it on 10; on 5 of the 9 clips both outputs loop.
+- The 9 official cases have official input lengths from **4.0 s to 32.5 s** (median 16.4 s): 1 short (≤ 5 s), 3 medium,
+  5 long (> 10.67 s, Uni-Sign's 256-frame input cap). Details: `repetition_audit.md`.
+- On the whole 128-clip benchmark the official arm loops on 3 / 45 short (7 %), 6 / 50 medium (12 %) and 9 / 33 long
+  (27 %) clips.
+- Reading: input length and preparation may raise the risk of a loop, but the Uni-Sign decoder / generation itself also
+  has an intrinsic repetition failure mode, which occurs on short, correctly prepared clips too.
+- These are English-text labels. They do not say whether, or why, anything was repeated in the signing.
+
 ## Review workflow
 
-1. Open `inspection_sheet.html` (Chrome / Edge / Firefox). Videos load from the repo path. Otherwise use **Load videos…**
-   and pick the 45 mp4 files.
+1. Build the package (above) or unzip it, and open `inspection_sheet.html` (Chrome / Edge / Firefox). Each card shows the
+   video next to the ground truth, the our/old output and the official output.
 2. Enter your name and **ASL background** in the header. The category boxes stay locked until both are filled.
 3. Start with the **Concrete examples** table (21 rows, 3 per category), then work through all clips. Filter by
    initial category or status as needed.
-4. Per clip: watch at 1× **before** reading the AUTO evidence. Then tick every category that applies to what is
+4. Per clip: play the video at 1× **before** reading the AUTO evidence, then compare ground truth / our/old output /
+   official output. Then tick every category that applies to what is
    **actually signed** and the outputs get wrong (`no_error` if the outputs are fine, `unclear` if the video does not
    settle it). Add timestamps and the reason in the comment, then set `review_status`.
 5. **Export** at the end of each session. Save as `labels/inspection_sheet__<reviewer>.csv`, and never overwrite the
