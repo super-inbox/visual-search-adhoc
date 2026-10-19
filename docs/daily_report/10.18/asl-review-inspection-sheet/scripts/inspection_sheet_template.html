@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASL Inspection Sheet</title>
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --surface-2: #f0f0ec; --text: #1d1d1b; --muted: #6b6b66; --border: #dcdcd6;
+  --accent: #2f5bd3; --auto: #8a6d1f; --auto-bg: #fbf4e0; --human: #1f7a4d; --human-bg: #e4f4ea;
+  --hit: #d6ecdf; --miss: #f6dcdc; --danger: #b3261e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --surface: #1f1f1d; --surface-2: #2a2a27; --text: #ecece8; --muted: #a3a39c; --border: #3a3a36;
+    --accent: #8fb0ff; --auto: #e3c46f; --auto-bg: #3a3220; --human: #7fd3a6; --human-bg: #1d3528;
+    --hit: #23402f; --miss: #4a2626; --danger: #ff8a80;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --surface: #1f1f1d; --surface-2: #2a2a27; --text: #ecece8; --muted: #a3a39c; --border: #3a3a36;
+  --accent: #8fb0ff; --auto: #e3c46f; --auto-bg: #3a3220; --human: #7fd3a6; --human-bg: #1d3528;
+  --hit: #23402f; --miss: #4a2626; --danger: #ff8a80;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; }
+h1 { font-size: 17px; margin: 0 8px 0 0; }
+h2 { font-size: 15px; margin: 24px 0 8px; }
+.row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+main { max-width: 1200px; margin: 0 auto; padding: 0 16px 48px; }
+input[type=text], select, textarea { font: inherit; color: var(--text); background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; }
+textarea { width: 100%; min-height: 56px; }
+button, .btn { font: inherit; color: var(--text); background: var(--surface-2); border: 1px solid var(--border); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+button.primary { background: var(--accent); color: var(--surface); border-color: var(--accent); }
+.legend { margin-top: 6px; color: var(--muted); font-size: 12.5px; }
+.badge { display: inline-block; border-radius: 999px; padding: 1px 8px; font-size: 12px; white-space: nowrap; }
+.auto { color: var(--auto); background: var(--auto-bg); border: 1px dashed var(--auto); }
+.human { color: var(--human); background: var(--human-bg); border: 1px solid var(--human); }
+.muted { color: var(--muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin: 12px 0; padding: 12px; }
+.card-h { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: baseline; margin-bottom: 8px; }
+.card-h b { font-size: 15px; }
+.grid { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 12px; }
+@media (max-width: 760px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+video { width: 100%; background: #000; border-radius: 6px; }
+.txt { margin: 0 0 6px; }
+.txt .lab { display: block; font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.hit { background: var(--hit); border-radius: 3px; }
+.ev { margin: 6px 0; padding-left: 18px; font-size: 13px; }
+.ev li { margin: 2px 0; overflow-wrap: anywhere; }
+.box { border-radius: 8px; padding: 8px 10px; margin-top: 8px; }
+.box.autobox { background: var(--auto-bg); border: 1px dashed var(--auto); }
+.box.humanbox { background: var(--human-bg); border: 1px solid var(--human); }
+.cats { display: flex; flex-wrap: wrap; gap: 4px 12px; margin: 4px 0 6px; }
+.cats label { white-space: nowrap; }
+.warn { color: var(--danger); font-size: 12.5px; }
+.table-wrap { overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; background: var(--surface); font-size: 13px; }
+th, td { border: 1px solid var(--border); padding: 5px 7px; text-align: left; vertical-align: top; }
+th { background: var(--surface-2); }
+td a { color: var(--accent); }
+</style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <h1>ASL Inspection Sheet</h1>
+    <span class="muted" id="progress"></span>
+    <span style="flex:1"></span>
+    <input type="text" id="reviewer" placeholder="Reviewer name" aria-label="Reviewer name">
+    <input type="text" id="bg" placeholder="ASL background (e.g. Deaf, native ASL)" aria-label="ASL background" size="30">
+    <label class="btn">Load videos…<input type="file" id="vids" accept="video/mp4" multiple hidden></label>
+    <label class="btn">Import CSV<input type="file" id="imp" accept=".csv" hidden></label>
+    <button class="primary" id="exp">Export inspection_sheet.csv</button>
+  </div>
+  <div class="row" style="margin-top:6px">
+    <select id="fcat" aria-label="Filter by initial category"><option value="">All initial categories</option></select>
+    <select id="fstat" aria-label="Filter by review status"><option value="">All statuses</option></select>
+    <label><input type="checkbox" id="fshow"> Showcase examples only</label>
+    <input type="text" id="fq" placeholder="Search text / clip id" aria-label="Search">
+  </div>
+  <div class="legend"><b>Prod output = B_ours_5p39, provisional:</b> the historical our-pipeline baseline (P0-18 A_old: our pose extractor, original timestamps, full frame). Not verified as the current live production system; the column will be replaced if the actual production output is identified.</div>
+  <div class="legend">
+    <span class="badge auto">AUTO · unverified</span> automatic weak label from the English reference and output text; says nothing about what is signed.
+    <span class="badge human">HUMAN</span> filled by a reviewer. Category boxes unlock only after name and ASL background are entered.
+  </div>
+</header>
+<main>
+  <h2>Concrete examples: ground truth vs prod vs Uni-Sign</h2>
+  <p class="muted">Selected automatically: up to 3 clips per initial category where all three texts differ, preferring clips where only one system loses the item. Click an ID to jump to its card.</p>
+  <div class="table-wrap"><table id="show"><thead><tr><th>Initial category (AUTO)</th><th>ID</th><th>Ground truth</th><th>Prod (B_ours_5p39, provisional)</th><th>Uni-Sign (A_official)</th><th>AUTO evidence (primary)</th></tr></thead><tbody></tbody></table></div>
+  <h2>All clips</h2>
+  <div id="cards"></div>
+</main>
+<script>
+const D = /*__DATA__*/null;
+const KEY = 'asl-inspection-sheet-v1';
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+const ASL_CATS = ['fingerspelling', 'names', 'numbers', 'negation', 'questions', 'spatial_relations'];
+let store = {meta: {reviewer: '', bg: ''}, rows: {}};
+try { const s = JSON.parse(localStorage.getItem(KEY) || 'null'); if (s && s.rows) store = s; } catch (e) {}
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} };
+const st = id => (store.rows[id] = store.rows[id] || {cats: [], comment: '', status: 'not_started', at: ''});
+const videoURL = {};
+
+const norm = t => t.toLowerCase().replace(/’/g, "'").replace(/[^\w'/.-]/g, '').replace(/^[.'/-]+|[.'/-]+$/g, '');
+function mark(pred, ref) {
+  const rs = new Set(ref.split(/\s+/).map(norm).filter(Boolean));
+  return pred.split(/(\s+)/).map(w => rs.has(norm(w)) && norm(w) ? `<span class="hit">${esc(w)}</span>` : esc(w)).join('');
+}
+const unlocked = () => store.meta.reviewer.trim() && store.meta.bg.trim();
+
+function card(r) {
+  const s = st(r.review_id);
+  const others = r.initial_error_categories_all.split(';').filter(c => c && c !== r.initial_error_category);
+  const src = videoURL[r.clip_id + '.mp4'] || (D.video_root + '/' + r.video_path);
+  return `<section class="card" id="${r.review_id}" data-id="${r.review_id}">
+  <div class="card-h"><b>${r.review_id}</b><span>${esc(r.clip_id)}</span><span class="muted">video ${esc(r.video_id)} · ${r.duration_s}s · prod vs Uni-Sign: ${r.prod_vs_unisign}</span>
+    <span class="badge auto">AUTO ${esc(r.initial_error_category)}</span>${others.map(c => `<span class="badge auto">also ${esc(c)}</span>`).join('')}
+    ${r.showcase_example ? `<span class="badge auto">showcase</span>` : ''}</div>
+  <div class="grid">
+    <div><video controls preload="none" src="${esc(src)}"></video>
+      <div class="muted" style="font-size:12px">${esc(r.queue_reasons)}</div>
+      ${r.visual_flags ? `<div class="muted" style="font-size:12px">AUTO visual flags: ${esc(r.visual_flags)}</div>` : ''}</div>
+    <div>
+      <p class="txt"><span class="lab">Ground truth (How2Sign English reference)</span>${esc(r.ground_truth)}</p>
+      <p class="txt"><span class="lab">Prod output · B_ours_5p39 (provisional: historical baseline, P0-18 A_old) · chrF ${(+r.chrf_prod).toFixed(1)} · AUTO ${r.auto_error_type_prod}</span>${mark(r.prod_output, r.ground_truth)}</p>
+      <p class="txt"><span class="lab">Uni-Sign output · A_official · chrF ${(+r.chrf_unisign).toFixed(1)} · AUTO ${r.auto_error_type_unisign}</span>${mark(r.unisign_output, r.ground_truth)}</p>
+      <div class="box autobox"><b style="color:var(--auto)">AUTO evidence (weak, unverified)</b>
+        <ul class="ev">${r.evidence_notes.split(' || ').map(e => `<li>${esc(e)}</li>`).join('')}</ul></div>
+      <div class="box humanbox"><b style="color:var(--human)">HUMAN review</b> <span class="muted">ASL question: ${esc(r.asl_fluent_question)}</span>
+        <div class="cats">${D.categories.map(c => `<label><input type="checkbox" data-cat="${c}" ${s.cats.includes(c) ? 'checked' : ''} ${unlocked() ? '' : 'disabled'}> ${c}</label>`).join('')}</div>
+        ${unlocked() ? '' : '<div class="warn">Enter reviewer name and ASL background in the header to set the verified category.</div>'}
+        <textarea data-f="comment" placeholder="reviewer_comment: timestamps, what is actually signed, why">${esc(s.comment)}</textarea>
+        <div class="row">review_status <select data-f="status">${D.statuses.map(v => `<option ${v === s.status ? 'selected' : ''}>${v}</option>`).join('')}</select>
+          <span class="muted" style="font-size:12px">${s.at ? 'reviewed_at ' + esc(s.at) : ''}</span></div>
+      </div>
+    </div>
+  </div></section>`;
+}
+
+function render() {
+  const fc = $('#fcat').value, fs = $('#fstat').value, sh = $('#fshow').checked, q = $('#fq').value.toLowerCase();
+  const rows = D.rows.filter(r => (!fc || r.initial_error_category === fc) && (!fs || st(r.review_id).status === fs)
+    && (!sh || r.showcase_example) && (!q || [r.clip_id, r.review_id, r.ground_truth, r.prod_output, r.unisign_output].join(' ').toLowerCase().includes(q)));
+  $('#cards').innerHTML = rows.map(card).join('') || '<p class="muted">No clips match.</p>';
+  const done = D.rows.filter(r => st(r.review_id).status === 'reviewed').length;
+  $('#progress').textContent = `${D.rows.length} clips · ${done} reviewed · showing ${rows.length}`;
+}
+
+function showcase() {
+  $('#show tbody').innerHTML = D.rows.filter(r => r.showcase_example)
+    .sort((a, b) => a.showcase_example.localeCompare(b.showcase_example) || a.review_id.localeCompare(b.review_id))
+    .map(r => `<tr><td><span class="badge auto">${esc(r.showcase_example)}</span></td><td><a href="#${r.review_id}">${r.review_id}</a></td>
+      <td>${esc(r.ground_truth)}</td><td>${mark(r.prod_output, r.ground_truth)}</td><td>${mark(r.unisign_output, r.ground_truth)}</td><td class="muted">${esc(r.evidence_notes.split(' || ')[0])}</td></tr>`).join('');
+}
+
+$('#cards').addEventListener('change', e => {
+  const c = e.target.closest('.card'); if (!c) return;
+  const s = st(c.dataset.id);
+  if (e.target.dataset.cat) {
+    s.cats = [...c.querySelectorAll('[data-cat]:checked')].map(x => x.dataset.cat);
+  } else if (e.target.dataset.f === 'status') {
+    s.status = e.target.value; s.at = s.status === 'reviewed' ? new Date().toISOString() : s.at;
+  }
+  save(); if (e.target.dataset.f === 'status') render();
+});
+$('#cards').addEventListener('input', e => {
+  if (e.target.dataset.f !== 'comment') return;
+  st(e.target.closest('.card').dataset.id).comment = e.target.value; save();
+});
+for (const [id, k] of [['#reviewer', 'reviewer'], ['#bg', 'bg']]) {
+  $(id).value = store.meta[k];
+  $(id).addEventListener('change', e => { store.meta[k] = e.target.value; save(); render(); });
+}
+$('#vids').addEventListener('change', e => {
+  for (const f of e.target.files) videoURL[f.name] = URL.createObjectURL(f);
+  render();
+});
+
+const csvCell = v => /[",\n\r]/.test(v) ? '"' + String(v).replace(/"/g, '""') + '"' : String(v);
+$('#exp').addEventListener('click', () => {
+  const lines = [D.fields.join(',')];
+  for (const r of D.rows) {
+    const s = st(r.review_id), o = {...r};
+    const touched = s.cats.length || s.comment.trim() || s.status !== 'not_started';
+    o.reviewer = touched ? store.meta.reviewer : '';
+    o.reviewer_asl_background = touched ? store.meta.bg : '';
+    o.reviewer_verified_category = s.cats.join(';');
+    o.verified_label_source = s.cats.length ? 'human_verified' : '';
+    o.reviewer_comment = s.comment; o.review_status = s.status; o.reviewed_at = s.at;
+    lines.push(D.fields.map(f => csvCell(o[f] ?? '')).join(','));
+  }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([lines.join('\r\n') + '\r\n'], {type: 'text/csv'}));
+  a.download = 'inspection_sheet.csv'; a.click();
+});
+
+function parseCSV(t) {
+  const out = []; let row = [], cell = '', q = false;
+  for (let i = 0; i < t.length; i++) {
+    const c = t[i];
+    if (q) { if (c === '"') { if (t[i + 1] === '"') { cell += '"'; i++; } else q = false; } else cell += c; }
+    else if (c === '"') q = true;
+    else if (c === ',') { row.push(cell); cell = ''; }
+    else if (c === '\n' || c === '\r') { if (c === '\r' && t[i + 1] === '\n') i++; row.push(cell); out.push(row); row = []; cell = ''; }
+    else cell += c;
+  }
+  if (cell || row.length) { row.push(cell); out.push(row); }
+  return out;
+}
+$('#imp').addEventListener('change', async e => {
+  const f = e.target.files[0]; if (!f) return;
+  const [h, ...rs] = parseCSV(await f.text()); const ix = n => h.indexOf(n);
+  if (ix('review_id') < 0 || ix('reviewer_verified_category') < 0) { $('#progress').textContent = 'Import failed: not an inspection_sheet.csv'; return; }
+  for (const r of rs) {
+    const id = r[ix('review_id')]; if (!D.rows.some(x => x.review_id === id)) continue;
+    const s = st(id);
+    s.cats = (r[ix('reviewer_verified_category')] || '').split(';').filter(c => D.categories.includes(c));
+    s.comment = r[ix('reviewer_comment')] || ''; s.status = D.statuses.includes(r[ix('review_status')]) ? r[ix('review_status')] : 'not_started';
+    s.at = r[ix('reviewed_at')] || '';
+    if (r[ix('reviewer')]) store.meta.reviewer = r[ix('reviewer')];
+    if (r[ix('reviewer_asl_background')]) store.meta.bg = r[ix('reviewer_asl_background')];
+  }
+  $('#reviewer').value = store.meta.reviewer; $('#bg').value = store.meta.bg; save(); render();
+});
+
+for (const c of [...new Set(D.rows.map(r => r.initial_error_category))].sort()) $('#fcat').insertAdjacentHTML('beforeend', `<option>${c}</option>`);
+for (const s of D.statuses) $('#fstat').insertAdjacentHTML('beforeend', `<option>${s}</option>`);
+for (const id of ['#fcat', '#fstat', '#fshow']) $(id).addEventListener('change', render);
+$('#fq').addEventListener('input', render);
+showcase(); render();
+</script>
+</body>
+</html>
