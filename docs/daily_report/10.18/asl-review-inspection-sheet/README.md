@@ -124,6 +124,14 @@ Every clip is checked against the `video_sha256` column of the committed How2Sig
 README, the repetition audit, `videos_manifest.csv`, `SHA256SUMS` and `videos/`. Share it within the How2Sign licence
 terms (CC BY-NC 4.0).
 
+**Download:** the built package is a GitHub Release asset of this (private) repository, not committed to git:
+<https://github.com/super-inbox/visual-search-adhoc/releases/download/asl-review-package-2026-10-19/asl_inspection_review_package.zip>
+(release `asl-review-package-2026-10-19`). Size **60,239,549 bytes**, SHA-256
+`b1728e39b8d139a9160bcfc813c240521f3865668700195ef76846652deea02a`; check with
+`shasum -a 256 asl_inspection_review_package.zip`. The videos are How2Sign data, **CC BY-NC 4.0** (non-commercial,
+attribution required). The README inside the released zip predates this paragraph, so a `--zip` rebuild from the
+current README gives a different SHA-256; the release asset is the reference copy.
+
 The page looks for each clip at `videos/<clip_id>.mp4` next to itself first, then at the repo path
 (`asl-translator/data/public_benchmarks/how2sign_v2/videos/`). If neither exists, the card says so; **Load videos…**
 then plays files picked by hand.

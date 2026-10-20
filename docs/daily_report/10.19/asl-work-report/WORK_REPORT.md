@@ -37,11 +37,14 @@ and no confirmatory evaluation has been run.
     transcript/sign alignment.
 - **d. ASL-fluent reviewer: materials prepared; no recruitment recorded.** The review package and instructions exist.
   The repository has **no record that a reviewer was recruited or contacted**, and no manual ASL label exists.
-- **e. Inspection sheet: done; review package with videos added (not yet committed).** 45 clips, 21 highlighted
+- **e. Inspection sheet: done; review package and repetition audit committed and pushed (`a9d00552`).** 45 clips, 21 highlighted
   examples, 7 categories. The **45 diagnostic videos** now ship with the sheet as a reproducible review package
-  (sha256-verified, 60 MB, kept out of git); the page plays each clip next to the ground truth, our/old output and
+  (sha256-verified, 60,239,549 bytes, kept out of git; GitHub Release asset `asl-review-package-2026-10-19`, see e.
+  below; How2Sign CC BY-NC 4.0); the page plays each clip next to the ground truth, our/old output and
   official output. All labels are automatic weak labels; every reviewer field is blank. The "production" column is a
-  provisional stand-in.
+  provisional stand-in. A model-generated case analysis of the 45 clips (`10.19/asl-model-case-analysis/`, local,
+  untracked) is labelled `model_review` / unverified; it is **not** ASL-fluent human verification, which is still
+  pending.
   - **Repetition:** **official preprocessing does not eliminate repetition; repetition is not purely a long-input
     failure.** The official output loops on **9 of the 45** clips, with official input lengths of 4.0–32.5 s (1 short,
     3 medium, 5 long). Over the 128-clip benchmark the official loop rate rises with input length (7 % short, 12 %
@@ -250,8 +253,10 @@ the frozen runner and environments can be reused.
 
 ## e. Inspection sheet: COMPLETED
 
-Committed and pushed: `5775f276` (sheet) and `c94e9c4c` (rebuild dependencies). Review package with videos and the
-repetition audit: added locally, **not yet committed**.
+Committed and pushed: `5775f276` (sheet) and `c94e9c4c` (rebuild dependencies). Inspection-sheet update, review
+package builder, video manifest and repetition audit: committed and pushed in
+`a9d005522aa957f7ea82ba0eae0252ffed519c4a`. The videos and the zip are not in git; the zip is a GitHub Release asset
+(see **Videos** below).
 Folder: <https://github.com/super-inbox/visual-search-adhoc/tree/baobao/visual-production-research-2026-10-05/docs/daily_report/10.18/asl-review-inspection-sheet>
 
 **Contents:** 45 clips, one row each, with:
@@ -272,7 +277,17 @@ builder.
   `videos/<clip_id>.mp4` next to the page (git-ignored), and writes `videos_manifest.csv` (sha256, size, duration,
   source; committed).
 - `--zip` writes a self-contained, deterministic package (page, CSV, README, repetition audit, manifest, `SHA256SUMS`,
-  videos): `~/Desktop/curify/asl-review-package/asl_inspection_review_package.zip`, 60.2 MB, sha256 `b1728e39…`.
+  videos): `~/Desktop/curify/asl-review-package/asl_inspection_review_package.zip`.
+- **GitHub Release asset (private repo, not in git history):**
+  - Release: <https://github.com/super-inbox/visual-search-adhoc/releases/tag/asl-review-package-2026-10-19>
+  - Direct download:
+    <https://github.com/super-inbox/visual-search-adhoc/releases/download/asl-review-package-2026-10-19/asl_inspection_review_package.zip>
+  - Tag on `a9d00552`. Size **60,239,549 bytes**, SHA-256
+    `b1728e39b8d139a9160bcfc813c240521f3865668700195ef76846652deea02a` (uploaded asset re-downloaded and verified).
+  - **The release asset is the reference copy.** The package README was edited after the zip was built, so
+    rebuilding with `--zip` now gives a different checksum.
+- The videos are **How2Sign data, licensed CC BY-NC 4.0** (non-commercial, attribution required); share the package
+  only within those terms.
 - The page plays `videos/<clip_id>.mp4` first, then the repo path, and otherwise asks for **Load videos…**. Reviewer
   flow: open page → play video → compare ground truth / our/old output / official output → tick the verified category.
 
@@ -332,7 +347,7 @@ builder.
 | b. Representation / fusion | **Exploratory / partial**; final fusion remains P0-19 | P0-14 PARTIAL SUPPORT (exploratory, gate inconsistency documented); P0-15 NOT SUPPORTED | P0-19 not started: pre-register design and exit criteria, new reliability signal, one-shot on H19 |
 | c. Automatic preprocessing (P0-18) | **Development completed — NOT SUPPORTED; H18 remains sealed for a stronger candidate** | Final candidate crop-only on full test: BLEU-4 +0.39 [0.17, 0.62], chrF +0.48, WER −0.14, length 0.903 vs 0.900; ≈ 5 % of the Old→Oracle gap (27 % on the 128 subset); P1 fail, P2 fail, P3–P5 pass; T4 pose + decoder environment frozen (`FREEZE.json` `3bcbf271…`); H18 runner dry-run passed | Stronger timing/alignment method (learned segmenter or transcript/sign alignment), then a new candidate for the sealed H18 |
 | d. ASL-fluent reviewer | **Recruitment not yet completed** (no contact recorded) | Review package, instructions, inspection sheet | Recruit / contact a reviewer; run the review; merge verified labels |
-| e. Inspection sheet | **Completed**; review package with videos + repetition audit added (not yet committed); human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60 MB, out of git); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips) | ASL-fluent review; replace `prod_output` if the live production output is identified |
+| e. Inspection sheet | **Completed**; review package builder + repetition audit committed and pushed (`a9d00552`); 45-video zip published as GitHub Release asset `asl-review-package-2026-10-19`; model case analysis is `model_review` / unverified; human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60,239,549 bytes, SHA-256 `b1728e39…a02a`, release asset, out of git history); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips) | ASL-fluent review; replace `prod_output` if the live production output is identified |
 
 ## Next Update
 
