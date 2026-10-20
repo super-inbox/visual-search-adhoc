@@ -1,6 +1,6 @@
 # ASL / Uni-Sign Work Report: tasks a–e
 
-**Date:** 2026-10-19 (updated with the final P0-18 development result) · **Branch:** `baobao/visual-production-research-2026-10-05`
+**Date:** 2026-10-19 (updated with the final P0-18 development result; model case review added 2026-10-20) · **Branch:** `baobao/visual-production-research-2026-10-05`
 **System under study:** the public Uni-Sign pose-only How2Sign checkpoint. No model was trained or modified.
 
 This report only summarises existing files. It does not change any recorded verdict. Every result in the Uni-Sign
@@ -42,9 +42,12 @@ and no confirmatory evaluation has been run.
   (sha256-verified, 60,239,549 bytes, kept out of git; GitHub Release asset `asl-review-package-2026-10-19`, see e.
   below; How2Sign CC BY-NC 4.0); the page plays each clip next to the ground truth, our/old output and
   official output. All labels are automatic weak labels; every reviewer field is blank. The "production" column is a
-  provisional stand-in. A model-generated case analysis of the 45 clips (`10.19/asl-model-case-analysis/`, local,
-  untracked) is labelled `model_review` / unverified; it is **not** ASL-fluent human verification, which is still
-  pending.
+  provisional stand-in.
+  - **Model case review: complete (two model passes; unverified).** A Claude first pass and an independent Codex blind
+    second pass each covered all 45 clips (`10.19/asl-model-case-analysis/`, see **Model case review** below).
+    Claude vs Codex coding agreement: **4 full / 28 partial / 13 disagreements**; primary categories match on
+    **21 / 45**. These are model-review consistency numbers, **not ASL accuracy**. Official-output analysis is
+    text-only for all 45 clips. **Neither model review is human ASL verification; ASL-fluent review remains pending.**
   - **Repetition:** **official preprocessing does not eliminate repetition; repetition is not purely a long-input
     failure.** The official output loops on **9 of the 45** clips, with official input lengths of 4.0–32.5 s (1 short,
     3 medium, 5 long). Over the 128-clip benchmark the official loop rate rises with input length (7 % short, 12 %
@@ -318,6 +321,41 @@ builder.
   describing repetition as a long-clip problem (8.31, 10.09) describe a correlation, not the whole cause. Nothing here
   says what was signed.
 
+**Model case review** (`10.19/asl-model-case-analysis/`; `model_review` / `codex_review`, all rows unverified):
+
+- **Claude first pass: complete** (45 / 45 cases): `model_case_analysis.csv`, `MODEL_CASE_ANALYSIS.md`,
+  `model_case_analysis.html`.
+- **Independent Codex blind second pass: complete.** Codex reviewed **all 45 cases / 80 contact sheets** under
+  `CODEX_REVIEW_PROMPT.md`: `codex_case_analysis.csv`, `CODEX_CASE_ANALYSIS.md`. Codex overall confidence:
+  **34 medium, 11 low, 0 high**.
+- **No matching official visual-input windows were established**, so the official-output analysis is **text-only for
+  all 45 cases** in both passes.
+- **Claude vs Codex coding agreement** (`MODEL_REVIEW_COMPARISON.md`, all 45 cases): **4 full / 28 partial /
+  13 disagreements**; primary categories match in **21 / 45**. These are **model-review consistency numbers, not ASL
+  accuracy**; the 13 disagreements are mostly category specificity / priority differences, not 13 proven mistakes.
+- **Repetition:**
+  - The **frozen automatic official repetition count remains 9**; the repetition audit is unchanged.
+  - Codex independently identified **11** official English-repetition cases (Claude's row text notes the same 11).
+    The two extras are **R01 and R19**.
+  - R01 and R19 exceed the output repetition threshold (rep3 ratio 0.875 and 0.152 vs 0.15), but the frozen rule
+    excludes them because **their references also contain repeated trigrams**. They stay `hallucination` in the frozen
+    data. This is a definition difference (automatic selection vs model judgment), not a reason to change the audit.
+- **Neither Claude nor Codex constitutes human ASL verification. ASL-fluent review remains pending.**
+
+**Priority cases for human review:** R26, R29, R35, R10, R23, R38, R44, R36, R09, R15; then R22, R32, R40, R41.
+
+**Protocol caveats:**
+- **R03** had prior smoke-test exposure to its repetition-audit entry (and diagnostic notes), so it is not a pristine
+  blinded case.
+- The full Codex pass did **not reopen the prohibited prior-analysis files** (Claude first pass, repetition audit)
+  until the blind review was complete.
+- Contact sheets are **still-image approximations** (sampled frames); they cannot reliably establish motion-dependent
+  ASL semantics or non-manual grammar.
+- Historical diagnostic frames **cannot be treated as matching official-input visual evidence** when the timing windows
+  differ (re-aligned official window vs original speech window).
+- Contact sheets and videos are How2Sign-derived (CC BY-NC 4.0) and are kept out of git (`contact_sheets/` is
+  git-ignored).
+
 **Weak vs human labels:**
 - Every category is an **automatic weak label** (`automatic_weak` / `candidate_unverified`), derived from English
   text only. It does not say what was signed.
@@ -347,7 +385,7 @@ builder.
 | b. Representation / fusion | **Exploratory / partial**; final fusion remains P0-19 | P0-14 PARTIAL SUPPORT (exploratory, gate inconsistency documented); P0-15 NOT SUPPORTED | P0-19 not started: pre-register design and exit criteria, new reliability signal, one-shot on H19 |
 | c. Automatic preprocessing (P0-18) | **Development completed — NOT SUPPORTED; H18 remains sealed for a stronger candidate** | Final candidate crop-only on full test: BLEU-4 +0.39 [0.17, 0.62], chrF +0.48, WER −0.14, length 0.903 vs 0.900; ≈ 5 % of the Old→Oracle gap (27 % on the 128 subset); P1 fail, P2 fail, P3–P5 pass; T4 pose + decoder environment frozen (`FREEZE.json` `3bcbf271…`); H18 runner dry-run passed | Stronger timing/alignment method (learned segmenter or transcript/sign alignment), then a new candidate for the sealed H18 |
 | d. ASL-fluent reviewer | **Recruitment not yet completed** (no contact recorded) | Review package, instructions, inspection sheet | Recruit / contact a reviewer; run the review; merge verified labels |
-| e. Inspection sheet | **Completed**; review package builder + repetition audit committed and pushed (`a9d00552`); 45-video zip published as GitHub Release asset `asl-review-package-2026-10-19`; model case analysis is `model_review` / unverified; human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60,239,549 bytes, SHA-256 `b1728e39…a02a`, release asset, out of git history); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips) | ASL-fluent review; replace `prod_output` if the live production output is identified |
+| e. Inspection sheet | **Completed**; review package builder + repetition audit committed and pushed (`a9d00552`); 45-video zip published as GitHub Release asset `asl-review-package-2026-10-19`; Claude first pass and Codex blind second pass complete (unverified model reviews); human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60,239,549 bytes, SHA-256 `b1728e39…a02a`, release asset, out of git history); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips; unchanged); model review: Claude vs Codex 4 full / 28 partial / 13 disagreements, primary match 21/45 (consistency, not accuracy); official-output analysis text-only for all 45 | ASL-fluent review, starting with priority cases R26, R29, R35, R10, R23, R38, R44, R36, R09, R15, then R22, R32, R40, R41; replace `prod_output` if the live production output is identified |
 
 ## Next Update
 
@@ -357,6 +395,7 @@ builder.
 - **b. P0-19** has not started. P0-18 is NOT SUPPORTED, so per P0-16 (HOLDOUT_PLAN §6) P0-19's input pipeline is
   official crops + our extractor.
 - **d.** Reviewer recruitment / contact still to be recorded.
+- **e.** Both model passes are done; the next step is ASL-fluent human review of the 14 priority cases, then the rest.
 
 ## Sources
 
@@ -374,3 +413,5 @@ builder.
   `dryrun3/RESULT.json` (final H18 dry run). Mac-CPU outputs (`dev/vid_all/`, `dev/dec_gpu/`, `dev/score_gpu/`) are
   cross-checks only.
 - Review: `10.13/asl-unisign-error-taxonomy/manual_review/`; `10.18/asl-review-inspection-sheet/`.
+- Model case review: `10.19/asl-model-case-analysis/` (`MODEL_CASE_ANALYSIS.md`, `CODEX_CASE_ANALYSIS.md`,
+  `MODEL_REVIEW_COMPARISON.md`, CSVs, `scripts/`; contact sheets local only).
