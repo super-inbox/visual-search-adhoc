@@ -1,6 +1,6 @@
 # ASL / Uni-Sign Work Report: tasks a–e
 
-**Date:** 2026-10-19 (updated with the final P0-18 development result; model case review added 2026-10-20) · **Branch:** `baobao/visual-production-research-2026-10-05`
+**Date:** 2026-10-19 (updated with the final P0-18 development result; model case review and P0-19 Stage 0 status added 2026-10-20) · **Branch:** `baobao/visual-production-research-2026-10-05`
 **System under study:** the public Uni-Sign pose-only How2Sign checkpoint. No model was trained or modified.
 
 This report only summarises existing files. It does not change any recorded verdict. Every result in the Uni-Sign
@@ -19,10 +19,17 @@ and no confirmatory evaluation has been run.
   the official timing + crop to our extractor recovered **≈ 86 % of the BLEU-4 gap** (5.47 → 8.61 vs 9.13). This used
   the official (oracle) inputs **as a diagnosis; it was not an automatic fix**. Most of the gain is **timing** (+3.15
   BLEU-4 on the 128 clips; +7.4 on the full test set in P0-18); the crop effect is small.
-- **b. Representation / fusion: done, paused.** P0-14: **PARTIAL SUPPORT**, read as exploratory evidence because of a
-  documented sanity-gate inconsistency. Uni-Sign's mT5 encoder states carry concept information the translation
-  sometimes drops. P0-15: **NOT SUPPORTED**; a verifier could not make safe additions. **No translation improvement
-  has been shown.** P0-19 has not started.
+- **b. Representation / fusion: P0-14 and P0-15 done; P0-19 Stage 0 prepared and frozen; GPU feasibility run
+  pending.** P0-14: **PARTIAL SUPPORT**, read as exploratory evidence because of a documented sanity-gate
+  inconsistency. Uni-Sign's mT5 encoder states carry concept information the translation sometimes drops. P0-15:
+  **NOT SUPPORTED**; a verifier could not make safe additions. **No translation improvement has been shown.**
+  - **P0-19** (the final representation/fusion follow-up) tests whether mT5 evidence can safely improve the output by
+    **confidence-gated reranking of Uni-Sign's own top-k hypotheses**, with abstention. It is **not** a lexical union
+    and never appends concepts to the translation. Uni-Sign is not retrained.
+  - **Stage 0** (headroom check: are the top-k candidates diverse and good enough for reranking to matter?) is
+    designed, implemented locally, frozen and smoke-tested. **It has not been run on the 2,209 clips.** The run
+    (≈ 1.3–2 h on one T4, decoding only) is postponed because the GPU VM was just stopped; no GPU job is running.
+  - **P0-19 is not complete and fusion is not supported.** H18 and H19 remain sealed.
 - **c. Automatic preprocessing (P0-18): Development completed — NOT SUPPORTED; H18 remains sealed for a stronger
   candidate.**
   - Final candidate: original timing + automatic signer crop. On the full test set (2,347 clips) it gives
@@ -117,7 +124,7 @@ Crop given correct timing (C_oracle − C_fullframe): +0.70 [−0.43, +1.79].
 
   H18 was not opened (P0-18 stopped at development), so there is no confirmatory split.
 
-## b. Representation / fusion (P0-14, P0-15): COMPLETED, PAUSED
+## b. Representation / fusion (P0-14, P0-15 completed; P0-19 Stage 0 prepared and frozen, GPU run pending)
 
 **P0-14 representation probe** (2,209 clean test clips, 24 lexical concepts, linear probes on frozen features):
 
@@ -160,12 +167,39 @@ Crop given correct timing (C_oracle − C_fullframe): +0.70 [−0.43, +1.79].
 - No fused sentence has been produced or measured.
 - **No sentence-translation improvement is claimed.**
 
-**Remaining for P0-19** (final fusion experiment; **not started**):
-- Pre-register the design, gates and the **explicit exit criteria** (NOT SUPPORTED or VOID on H19 closes the fusion
-  line).
-- Use the input pipeline that P0-18 freezes if P0-18 is SUPPORTED; otherwise official crops + our extractor.
-- Candidate next signal from the 10.16 recommendation: decoder confidence / sequence score. It is untested.
-- Evaluate once on **H19**. Development may use test data, and H18 only after P0-18's one-shot run.
+**P0-19: safe fusion by gated reranking. Status: P0-19 Stage 0 prepared and frozen; GPU feasibility run pending.**
+Plan: `10.20/asl-p0-19-safe-rerank/EXPERIMENT_PLAN.md` (local, not committed).
+
+- **Design.** Uni-Sign generates top-k hypotheses. A reranker may pick a different one using decoder confidence plus
+  agreement with the mT5 probe, with a repetition filter, and replaces Uni-Sign's top-1 **only above a frozen
+  margin; otherwise it abstains**. The auxiliary representation only **selects among Uni-Sign's own hypotheses**; it
+  never generates or appends words (the P0-15 failure mode). **No model is retrained.**
+- **Stage 0 (headroom check)** asks whether the top-k candidates contain enough useful diversity for any reranker to
+  matter. Official poses, the 2,209 test_clean clips, k = 4 and k = 8. **Frozen GO criteria** (all three, for k = 4
+  or for k = 8):
+  1. ≥ 10 % of clips have at least one candidate whose (Tier L) concept set differs from the top-1's;
+  2. ≥ 50 of the 498 reference concepts missed by the top-1 appear in some top-k candidate;
+  3. oracle-best-in-k corpus chrF ≥ top-1 chrF + 3.0.
+
+  **If any criterion fails:** P0-19 stops at Stage 0, verdict **development NOT SUPPORTED**, H19 stays sealed.
+  **If Stage 0 passes:** Stage 1 compares decoder-only vs representation-aware gated reranking on development data
+  (in the H19 input domain: official crops + our extractor), with its own approval and freeze. H19 is still not opened
+  during development.
+- **Sanity gates** (any failure → VOID): baseline reproduction (4-beam top-1 = stored Uni-Sign output on all clips),
+  determinism (independent 40-clip repeat), no holdout access (P0-16 guard + file tripwire; the val CSV is never
+  read), input integrity, and concept-label reproduction (exactly 498 missed concepts).
+- **Done:**
+  - experiment plan written;
+  - Stage 0 config, thresholds and k = 4 / 8 frozen (`STAGE0_FREEZE.json`);
+  - baseline reproduction, determinism, holdout guard and verdict logic implemented;
+  - verdict test passes all 2,048 gate/criterion combinations;
+  - 5-clip Mac CPU smoke test passes all gates and reproduces the baseline outputs 5/5.
+- **Not done:** Stage 0 has **not** been run on the 2,209 clips. It needs ≈ 1.3–2 h on one T4 (decoding only, no
+  training). The run is intentionally postponed because the GPU VM was just stopped (it is stopped now, and no GPU job
+  is running). It can be run directly from the frozen setup when a GPU is available again.
+- **Protocol.** H18 cannot be used for P0-19 development: P0-16 allows that only after P0-18's one-shot run on H18,
+  which never happened. H19 is P0-19's one-shot evaluation and remains sealed. NOT SUPPORTED or VOID on H19 would close
+  the fusion line. P0-18 is NOT SUPPORTED, so P0-19's holdout input pipeline is official crops + our extractor.
 
 ## c. Automatic preprocessing (P0-18): DEVELOPMENT COMPLETED — NOT SUPPORTED
 
@@ -382,7 +416,7 @@ builder.
 | Task | Status | Completed | Remaining |
 |---|---|---|---|
 | a. Timing / crop diagnosis | **Completed** | P0-12 formal result (≈ 86 % of the gap from input preparation); 128-clip factorial: timing +3.15, crop +0.69 (n.s.); P0-18 full test: oracle timing +7.43, auto crop +0.39 | None (no confirmatory split: H18 not opened) |
-| b. Representation / fusion | **Exploratory / partial**; final fusion remains P0-19 | P0-14 PARTIAL SUPPORT (exploratory, gate inconsistency documented); P0-15 NOT SUPPORTED | P0-19 not started: pre-register design and exit criteria, new reliability signal, one-shot on H19 |
+| b. Representation / fusion | **P0-19 Stage 0 prepared and frozen; GPU feasibility run pending** (P0-14/P0-15 exploratory / partial; P0-19 not complete; fusion not supported) | P0-14 PARTIAL SUPPORT (exploratory, gate inconsistency documented); P0-15 NOT SUPPORTED; P0-19 gated-reranking plan, Stage 0 config / thresholds / k = 4, 8 frozen, verdict test 2,048/2,048, 5-clip smoke test passes all gates (baseline 5/5) | Run Stage 0 on 2,209 clips (≈ 1.3–2 h, one T4); if GO → plan and freeze Stage 1 (decoder-only vs representation-aware gated reranking); if NO-GO → development NOT SUPPORTED; H19 one-shot only after a full freeze |
 | c. Automatic preprocessing (P0-18) | **Development completed — NOT SUPPORTED; H18 remains sealed for a stronger candidate** | Final candidate crop-only on full test: BLEU-4 +0.39 [0.17, 0.62], chrF +0.48, WER −0.14, length 0.903 vs 0.900; ≈ 5 % of the Old→Oracle gap (27 % on the 128 subset); P1 fail, P2 fail, P3–P5 pass; T4 pose + decoder environment frozen (`FREEZE.json` `3bcbf271…`); H18 runner dry-run passed | Stronger timing/alignment method (learned segmenter or transcript/sign alignment), then a new candidate for the sealed H18 |
 | d. ASL-fluent reviewer | **Recruitment not yet completed** (no contact recorded) | Review package, instructions, inspection sheet | Recruit / contact a reviewer; run the review; merge verified labels |
 | e. Inspection sheet | **Completed**; review package builder + repetition audit committed and pushed (`a9d00552`); 45-video zip published as GitHub Release asset `asl-review-package-2026-10-19`; Claude first pass and Codex blind second pass complete (unverified model reviews); human ASL verification still pending | 45 clips, 21 examples, 7 categories, blank reviewer fields; 45 sha256-verified videos packaged (60,239,549 bytes, SHA-256 `b1728e39…a02a`, release asset, out of git history); repetition audit: official output loops on 9/45 (4.0–32.5 s; not only long clips; unchanged); model review: Claude vs Codex 4 full / 28 partial / 13 disagreements, primary match 21/45 (consistency, not accuracy); official-output analysis text-only for all 45 | ASL-fluent review, starting with priority cases R26, R29, R35, R10, R23, R38, R44, R36, R09, R15, then R22, R32, R40, R41; replace `prod_output` if the live production output is identified |
@@ -392,8 +426,11 @@ builder.
 - **c. P0-18 is closed at development (NOT SUPPORTED).** H18 and H19 remain sealed. The next P0-18-line step is a
   stronger timing/alignment method (learned sign/no-sign segmenter or transcript/sign alignment), developed on test
   only and re-frozen before H18 is used.
-- **b. P0-19** has not started. P0-18 is NOT SUPPORTED, so per P0-16 (HOLDOUT_PLAN §6) P0-19's input pipeline is
-  official crops + our extractor.
+- **b. P0-19: Stage 0 prepared and frozen; GPU feasibility run pending.** When a T4 is available again, run Stage 0
+  from the frozen setup (≈ 1.3–2 h, decoding only). If any GO criterion fails, P0-19 stops at Stage 0 (development
+  NOT SUPPORTED) and H19 stays sealed. If all pass, plan and freeze Stage 1 for separate approval. H18 is not available
+  to P0-19. P0-18 is NOT SUPPORTED, so per P0-16 (HOLDOUT_PLAN §6) P0-19's holdout input pipeline is official crops +
+  our extractor.
 - **d.** Reviewer recruitment / contact still to be recorded.
 - **e.** Both model passes are done; the next step is ASL-fluent human review of the 14 priority cases, then the rest.
 
@@ -403,6 +440,8 @@ builder.
   `10.16/UNISIGN_P0_MANAGER_SUMMARY.md`.
 - P0-14: `10.15/asl-unisign-representation-probe/FULL_RUN_REPORT.md`. P0-15:
   `10.16/asl-unisign-high-precision-fusion/P0_15_RESULTS.md`.
+- P0-19 (local, not yet committed): `10.20/asl-p0-19-safe-rerank/` (`EXPERIMENT_PLAN.md`,
+  `config/stage0_config.json`, `STAGE0_FREEZE.json`, `scripts/`).
 - P0-16: `10.16/asl-p0-16-experimental-credibility/` (`EXPERIMENT_PROTOCOL.md`, `SANITY_GATE_POLICY.md`,
   `HOLDOUT_PLAN.md`).
 - P0-18: `10.16/asl-p0-18-auto-preprocessing/` (`P0_18_MANAGER_SUMMARY.md`, `DEVELOPMENT_RESULTS.md`,
