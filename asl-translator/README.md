@@ -1,5 +1,8 @@
 # ASL Translator
 
+- [Canonical ASL index](asl-translation-mvp-spec.md) — research progress, evaluation evidence, decisions, and next steps.
+- [Research summary — 2026-10-20 (PDF)](asl-research-retrospective-2026-10-20.pdf) — dated retrospective.
+
 Evaluation and optimization work for Curify's ASL (American Sign Language)
 translation feature. This directory consolidates the reusable corpus and
 tooling; historical daily-report writeups stay under `docs/daily_report/`.
