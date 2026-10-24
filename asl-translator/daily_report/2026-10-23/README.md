@@ -1,8 +1,10 @@
 # ASL daily report — 2026-10-23: P0-A / P0-B / P0-C setup
 
-**Status: setup and protocol only.**
-- No decoding, training, GPU or VM use.
-- H18/H19 not opened.
+**Status (updated 2026-10-24): P0-A STOP / NOT ENOUGH CANDIDATE HEADROOM. P0-B and P0-C pending.**
+- P0-A: local CPU fp32 candidate decode (45 cases × 2 domains, run twice, identical) and automatic headroom check only
+  ([RESULTS.md](p0a-candidate-rerank/RESULTS.md)). No rerank, no training, no GPU or VM use.
+- P0-B / P0-C: setup only, nothing decoded.
+- H18/H19 not opened. The frozen protocol is unchanged.
 - Historical reports stay in `docs/daily_report/` and are linked below, not moved.
 
 **Source of truth:** [2026-10-21 boss report — Uni-Sign case review and P0 plan](../2026-10-21/UNISIGN_CASE_REVIEW_AND_P0_PLAN.md).
@@ -12,11 +14,11 @@
 
 ## The three P0s
 
-| P0 | Question | Plan | Status (2026-10-23) |
+| P0 | Question | Plan | Status (2026-10-24) |
 |---|---|---|---|
-| **P0-A** (first) | Is a better sentence already among Uni-Sign's candidates but not chosen as top-1? | Candidate upper bound (≤ 5 candidates, oracle kept separate) → simple reference-free rerank (loop-aware, model score) → + P0-14 mT5 out-of-fold probe as a ranking aid only. Arms T / R1 / R2. | **Protocol frozen; provenance done** ([PROVENANCE.md](p0a-candidate-rerank/PROVENANCE.md)): 45/45 in the frozen 128, all P0-12 inputs sha256-verified, holdout guard passes. CPU decode script not yet written; no decode run. |
-| **P0-B** (parallel, feasibility) | Does hand RGB carry recoverable letters for fingerspelled names (R02, R05, R35)? | An ASL-fluent reviewer confirms spans in the matched windows (blind, then unblinded) → recognizer survey → character/name metrics → guarded local replacement. | **Blocked on an ASL-fluent reviewer.** Request and blank label sheet ready ([FEASIBILITY.md](p0b-fingerspelling-feasibility/FEASIBILITY.md)). |
-| **P0-C** (after P0-A setup) | Does a human-corrected input (rest, framing, context) recover meaning? | R10 / R26 / R29 / R35: original vs one video-defined correction, same model. | **Case sheet ready** ([CASE_SHEET.md](p0c-input-correction/CASE_SHEET.md)). R26 and R29 are ready for source checks. R10 is blocked on a timing-source conflict and rest labels. R35 is blocked on P0-B. |
+| **P0-A** (first) | Is a better sentence already among Uni-Sign's candidates but not chosen as top-1? | Candidate upper bound (≤ 5 candidates, oracle kept separate) → simple reference-free rerank (loop-aware, model score) → + P0-14 mT5 out-of-fold probe as a ranking aid only. Arms T / R1 / R2. | **STOP after headroom check: insufficient candidate upper bound** ([RESULTS.md](p0a-candidate-rerank/RESULTS.md)). The reference-based oracle-in-pool raises corpus chrF by only +2.24 (A_official, deciding) / +2.26 (B_ours_5p39), below the frozen +3.0 (§1.7 rule 1a). No simple rerank or probe rerank is run. The blinded human candidate review (`candidate_review.csv`) is optional diagnostic evidence and cannot change the verdict. |
+| **P0-B** (parallel, feasibility) | Does hand RGB carry recoverable letters for fingerspelled names (R02, R05, R35)? | An ASL-fluent reviewer confirms spans in the matched windows (blind, then unblinded) → recognizer survey → character/name metrics → guarded local replacement. | **Feasibility pending an ASL-fluent reviewer.** Request and blank label sheet ready ([FEASIBILITY.md](p0b-fingerspelling-feasibility/FEASIBILITY.md)). Nothing run. |
+| **P0-C** (after P0-A setup) | Does a human-corrected input (rest, framing, context) recover meaning? | R10 / R26 / R29 / R35: original vs one video-defined correction, same model. | **Input-correction diagnostics pending** ([CASE_SHEET.md](p0c-input-correction/CASE_SHEET.md)). R26 and R29 are ready for source checks. R10 is blocked on a timing-source conflict and rest labels. R35 is blocked on P0-B. No corrected input built, nothing decoded. |
 
 **Not done here:**
 - the P0-19 2,209-clip GPU Stage 0 (still frozen, unrun; P0-A is not a P0-19 start);
@@ -40,11 +42,17 @@
 ├── README.md
 ├── P0_PROTOCOL_FREEZE.md
 ├── p0a-candidate-rerank/
+│   ├── RESULTS.md                       # P0-A verdict: STOP / not enough candidate headroom
 │   ├── PROVENANCE.md
 │   ├── case_list.csv                    # 6 focus + R41 + 6 hash-selected ordinary controls + 32 decode-only
 │   ├── provenance/case_provenance.csv   # 45 rows: windows, P0-12 pkl paths, sha checks, frame counts
 │   ├── provenance/provenance_summary.json
-│   └── scripts/build_provenance.py
+│   ├── runs/full45/<domain>/run1/       # canonical CPU fp32 candidate decode
+│   ├── runs/full45/DETERMINISM.json     # run1 vs run2 identical 45/45 per domain (run2 kept local)
+│   ├── headroom/                        # headroom_by_case.csv, headroom_summary.json, HEADROOM_RESULTS.md
+│   ├── candidate_review.csv             # blinded human sheet (optional diagnostic; blank)
+│   └── scripts/                         # build_provenance.py, decode_candidates.py, headroom_oracle.py, determinism_summary.py
+│   (review_key/ — the unblinding key — stays local and uncommitted until the human review is filled)
 ├── p0b-fingerspelling-feasibility/
 │   ├── FEASIBILITY.md
 │   ├── asl_reviewer_request.md
