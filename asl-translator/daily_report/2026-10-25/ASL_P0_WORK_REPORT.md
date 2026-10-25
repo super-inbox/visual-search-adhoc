@@ -66,10 +66,10 @@ reference-free reranker (simple, then with the P0-14 mT5 probe) could pick it?
 - Canonical decode time: 260.7 s (A_official) and 259.2 s (B_ours_5p39). Total wall clock for both domains, both
   runs: **22.3 min** on local CPU. Cloud spend $0.
 
-### 2.3 Results (automatic metrics; oracle = reference-chosen upper bound)
+### 2.3 Results (automatic metrics; oracle = reference-chosen sentence-level selection)
 
 The **oracle** picks, per clip, the pool candidate with the highest sentence chrF **against the reference**. It is an
-**upper bound** on any reranker over this pool. It is **not a deployable system** and is not reported as one.
+sentence-level chrF maximum within this pool, **not a proven upper bound on corpus chrF**: corpus chrF aggregates n-gram statistics rather than averaging sentence scores. The frozen gate still fails, so the operational STOP stands. It is **not a deployable system** and is not reported as one.
 
 | Metric (45 clips) | Official prep. T | Official prep. oracle | Δ | Old prep. T | Old prep. oracle | Δ |
 |---|---|---|---|---|---|---|
@@ -349,3 +349,8 @@ After the labels return:
 - **P0-C:** each case either stops (R26 if the target is inside the official window; R29 if the target is inside its
   window or unclear), or one corrected input is defined from the reviewer's span. That definition is written and dated
   in `case_inputs.csv` before decoding, followed by the frozen original-vs-corrected decode.
+
+
+## Merge review — 2026-10-25
+
+See [PROGRESS_REVIEW.md](PROGRESS_REVIEW.md) for interpretation limits, outstanding protocol reporting, prioritized next steps and merge-time validation. The frozen protocol and recorded experimental artifacts are unchanged.
