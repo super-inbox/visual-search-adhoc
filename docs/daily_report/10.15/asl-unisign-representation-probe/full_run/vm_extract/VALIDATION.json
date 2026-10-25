@@ -1,0 +1,123 @@
+{
+ "features": "full/features",
+ "n_clips": 33295,
+ "all_pass": true,
+ "checks": {
+  "shapes": {
+   "pass": true,
+   "detail": {
+    "raw_mean": [
+     33295,
+     207
+    ],
+    "raw_std": [
+     33295,
+     207
+    ],
+    "raw_mad": [
+     33295,
+     207
+    ],
+    "raw_seg4": [
+     33295,
+     4,
+     207
+    ],
+    "fsign_mean": [
+     33295,
+     1024
+    ],
+    "fsign_std": [
+     33295,
+     1024
+    ],
+    "fsign_mad": [
+     33295,
+     1024
+    ],
+    "fsign_seg4": [
+     33295,
+     4,
+     1024
+    ],
+    "mt5_mean": [
+     33295,
+     768
+    ],
+    "mt5_std": [
+     33295,
+     768
+    ],
+    "mt5_mad": [
+     33295,
+     768
+    ],
+    "mt5_seg4": [
+     33295,
+     4,
+     768
+    ],
+    "T": [
+     33295
+    ],
+    "n_frames_raw": [
+     33295
+    ]
+   }
+  },
+  "finite": {
+   "pass": true,
+   "detail": {}
+  },
+  "pooled_dim": {
+   "pass": true,
+   "detail": {
+    "raw": 414,
+    "fsign": 2048,
+    "mt5": 1536
+   }
+  },
+  "one_record": {
+   "pass": true,
+   "detail": {
+    "n": 33295,
+    "expected": 33295,
+    "duplicates": 0,
+    "missing": [],
+    "extra": []
+   }
+  },
+  "order": {
+   "pass": true,
+   "detail": ""
+  },
+  "provenance": {
+   "pass": true,
+   "detail": []
+  },
+  "frames": {
+   "pass": true,
+   "detail": {
+    "bad": [],
+    "T_min": 1,
+    "T_max": 256,
+    "n_sampled_gt256": 6350
+   }
+  },
+  "labels": {
+   "pass": true,
+   "detail": {
+    "mismatches": [],
+    "n_positive_labels_checked": 23636
+   }
+  },
+  "split_video_role": {
+   "pass": true,
+   "detail": []
+  },
+  "pose_split": {
+   "pass": true,
+   "detail": []
+  }
+ }
+}

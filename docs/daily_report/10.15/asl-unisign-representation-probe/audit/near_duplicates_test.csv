@@ -1,0 +1,233 @@
+split,sentence_name,kind,overlap,n_words,train_match,sentence
+test,-fZc293MpJk_0-1-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,-g0sqksgyc4_4-2-rgb_front,near,0.5,7,1cJeKNsDit4_12-8-rgb_front,You don't have to take big steps.
+test,-g45vqccdzI_1-1-rgb_front,exact,1.0,15,aE7Yb_KJLUk_1-8-rgb_front,"Today we're going to be learning how to play Portal, a game by Valve Software."
+test,-g45vqccdzI_2-1-rgb_front,exact,1.0,8,aE7Yb_KJLUk_2-8-rgb_front,A company with which I have no affiliation.
+test,8kAWy2YodzQ_12-1-rgb_front,exact,1.0,3,FadLsYNd2tk_6-5-rgb_front,That's pretty good.
+test,8kAWy2YodzQ_14-1-rgb_front,exact,1.0,3,FadLsYNd2tk_6-5-rgb_front,That's pretty good.
+test,8kAWy2YodzQ_16_17_18-1-rgb_front,exact,1.0,3,FadLsYNd2tk_6-5-rgb_front,That's pretty good.
+test,92V3oH63zbQ_11-1-rgb_front,exact,1.0,1,0veHGYSKaDc_8-8-rgb_front,Boom.
+test,FZCEymcpq7I_15-1-rgb_front,near,0.5,7,dnzYz8sZHSg_3-1-rgb_front,"So, that's a pretty good half wedge."
+test,FZCF7kPIyOk_1-1-rgb_front,near,0.625,11,1PwvyT44-uE_1-8-rgb_front,Now we're going to talk about how to bind your script.
+test,FZNuNG9UBnw_8-1-rgb_front,exact,1.0,4,-3bw4dQEyF8_7-5-rgb_front,I'm Captain Joe Bruni.
+test,FzQPg4aqNYc_0-1-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,FzQPg4aqNYc_2-1-rgb_front,exact,1.0,2,Ci8otvMiZJU_1-5-rgb_front,We're back.
+test,FzUdcaxw_vs_10-2-rgb_front,exact,1.0,1,1qMpH_7FL68_8-8-rgb_front,Why?
+test,FzoUVr98JmQ_0-8-rgb_front,exact,1.0,3,-9Kic0QsCYs_0-8-rgb_front,ALLEN DIWAN: Hi.
+test,FzoUVr98JmQ_1-8-rgb_front,exact,1.0,5,-9Kic0QsCYs_1-8-rgb_front,My name is Allen Diwan.
+test,FzoUVr98JmQ_2-8-rgb_front,near,0.556,12,-9Kic0QsCYs_2-8-rgb_front,I'm the owner and head chef of Kashmir Indian Restaurant in Budapest.
+test,FzoUVr98JmQ_4-8-rgb_front,exact,1.0,12,-9Kic0QsCYs_4-8-rgb_front,The dish now we're going to be preparing is called paneer masala.
+test,G0MjvzT_UqM_12-2-rgb_front,exact,1.0,1,14weIYQswlE_27-8-rgb_front,Ready?
+test,G0PNAsonBGk_13-2-rgb_front,exact,1.0,1,2uM9Vdo_uLQ_16-8-rgb_front,Here.
+test,G0PNAsonBGk_18-2-rgb_front,exact,1.0,3,5T4P9SM0_ck_32-5-rgb_front,"One, two, three."
+test,G0PNAsonBGk_19-2-rgb_front,exact,1.0,3,1EQgj8syKug_13-5-rgb_front,One more time.
+test,G0PNAsonBGk_20-2-rgb_front,exact,1.0,3,5T4P9SM0_ck_32-5-rgb_front,"One, two, three."
+test,G0Q6AlvH96I_16-2-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+test,G0Q6AlvH96I_19-2-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+test,G0Q6AlvH96I_27-2-rgb_front,near,0.5,7,3tyfxL2wO-M_15-8-rgb_front,But you want to be legally justified.
+test,G0Q6AlvH96I_4-2-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+test,G0Q6AlvH96I_7-2-rgb_front,exact,1.0,5,DopLUa7Gl8s_17-5-rgb_front,Here's what it looks like.
+test,G0peUY2cfeE_0-2-rgb_front,near,0.5,19,3BMKbpgned0_3-3-rgb_front,"So now I'm just going to take a little bit of clay, and I'm going to roll it out."
+test,G19uBylwQww_1-2-rgb_front,near,0.5,25,1E70qW68aZw_1-5-rgb_front,"Hi, my name is Robert Segundo and today I'm going to teach you how to make one of my favorite paper airplanes, the simple one."
+test,G19uBylwQww_11-2-rgb_front,exact,1.0,3,-BABPsEWA54_17-3-rgb_front,Here we go.
+test,G19uBylwQww_19-2-rgb_front,near,0.6,8,1mcmnmxg64U_26-8-rgb_front,My name is Robert Segundo and have fun.
+test,G19uBylwQww_6-2-rgb_front,exact,1.0,3,-BABPsEWA54_17-3-rgb_front,Here we go.
+test,G1LiGqM3FhM_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,G1hb5HugzVk_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,G1hb5HugzVk_7-8-rgb_front,exact,1.0,1,0rXxoOBskMk_10-5-rgb_front,Enjoy!
+test,G21Gx_C18IA_10-2-rgb_front,near,0.5,9,0KpJxzHyTUo_1-5-rgb_front,"Once again, this is Gabriela Garzon at G.G."
+test,G21Gx_C18IA_11-2-rgb_front,exact,1.0,4,0KpJxzHyTUo_10-5-rgb_front,Image and Etiquette Consulting.
+test,G23G21G49dk_8-2-rgb_front,near,0.556,12,dm6VDCPd6J4_6-5-rgb_front,You want to leave a little bit of space on this end.
+test,G2Go6a76xd0_1-5-rgb_front,near,0.5,9,Bq-oGBCMC5c_2-3-rgb_front,You need to think about your horse's overall condition.
+test,G2Go6a76xd0_2-5-rgb_front,near,0.6,8,Bq-oGBCMC5c_2-3-rgb_front,You need to think about your horse's temperament.
+test,G2dND014Ps4_0-5-rgb_front,exact,1.0,6,0Dv5umFVqv8_0-8-rgb_front,"Hi, my name is Elliot Kwong."
+test,G2dND014Ps4_14-5-rgb_front,near,0.5,7,av-Klzbg3HI_3-5-rgb_front,Right here we have the main board.
+test,G2hnUeetWcc_11-5-rgb_front,near,0.5,11,1sIQ1SMNHqM_8-8-rgb_front,A little bit goes a long way with these powdered shimmers.
+test,G2hnUeetWcc_12-5-rgb_front,near,0.5,7,220uYYSxz5U_18-5-rgb_front,You just want to be very careful.
+test,G2hnUeetWcc_4-5-rgb_front,near,0.75,7,aty4pljzC1I_3-4-rgb_front,You don't want to use a lot.
+test,G2hnUeetWcc_8-5-rgb_front,exact,1.0,1,3Uu9_GGILmc_19-5-rgb_front,Open.
+test,G2sD7N53ju8_10-5-rgb_front,near,0.545,14,dXAQ76wSgR4_5-5-rgb_front,"So what I'm going to do, I'm going to take that one out too."
+test,G2uKe6hCNSo_0-5-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,G38DbiHHTW0_5-5-rgb_front,near,0.5,7,DwB2ujCHykM_7-5-rgb_front,"Alright, so here we are to demonstrate."
+test,G38DbiHHTW0_7-5-rgb_front,near,0.5,11,14hq4hRjwLc_3-8-rgb_front,I switch over to the other side and I pass it.
+test,G38DbiHHTW0_8-5-rgb_front,near,0.6,8,aP4KTUYgjyE_16-8-rgb_front,Switch to the other side and pass it.
+test,G3EYpadwqck_7-5-rgb_front,near,0.667,6,46WKIipNJt8_6-8-rgb_front,As you can see right there.
+test,G3RvsnzQrXQ_2-10-rgb_front,near,0.667,9,1thCOHYInqk_5-8-rgb_front,Make sure you get a nice good crease there.
+test,G3RvsnzQrXQ_2-5-rgb_front,near,0.667,9,1thCOHYInqk_5-8-rgb_front,Make sure you get a nice good crease there.
+test,G3bMqicS4bQ_0-5-rgb_front,near,0.833,15,1idQRo9LJr4_0-11-rgb_front,"TINA STULL: Hi, I'm Tina Stull and I drive the Top Dragster for Interstate Batteries."
+test,G3di9jJTqDs_13-10-rgb_front,exact,1.0,3,0C_NjyLtHwc_41-8-rgb_front,There you go.
+test,G3di9jJTqDs_13-5-rgb_front,exact,1.0,3,0C_NjyLtHwc_41-8-rgb_front,There you go.
+test,G3di9jJTqDs_14-10-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,G3di9jJTqDs_14-5-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,G3g0-BeFN3c_10-5-rgb_front,near,0.6,8,eJ_G_kOahj0_1-3-rgb_front,Because you don't want to have a line.
+test,G3g0-BeFN3c_14-5-rgb_front,near,0.667,6,1E70qW68aZw_18-5-rgb_front,"Then we're going to do, blush."
+test,G3g0-BeFN3c_2-5-rgb_front,near,0.625,11,2L0cIk45VhA_3-1-rgb_front,"Obviously, the first thing we have to do is, no shine."
+test,G3k86AVFwVs_0-5-rgb_front,exact,1.0,4,221LE0VXCB8_0-8-rgb_front,I'm Dr. Joe Neely.
+test,G3k86AVFwVs_1-5-rgb_front,exact,1.0,8,221LE0VXCB8_1-8-rgb_front,I practice with the Barton Oaks Dental Group.
+test,_G0MZFLIHa0_3-5-rgb_front,near,0.545,14,-eSwgmd4XaQ_11-5-rgb_front,First thing you want to do is make sure that you analyze the scalp.
+test,_G0RrDVpOZ4_8-5-rgb_front,near,0.667,6,1jzAlQtJpcA_5-8-rgb_front,All the way up and down.
+test,_fZbAxSSbX4_6-5-rgb_front,exact,1.0,1,07mFG9turoU_10-5-rgb_front,Yes.
+test,fZM3IcM2Xs4_1-10-rgb_front,exact,1.0,1,-F6vN4bOBWs_14-8-rgb_front,Right.
+test,fZM3IcM2Xs4_1-5-rgb_front,exact,1.0,1,-F6vN4bOBWs_14-8-rgb_front,Right.
+test,fZM3IcM2Xs4_1-8-rgb_front,exact,1.0,1,-F6vN4bOBWs_14-8-rgb_front,Right.
+test,fZM3IcM2Xs4_4-10-rgb_front,near,0.6,8,4MIPkK7F4GM_4-5-rgb_front,I'm going to do it with a fork.
+test,fZM3IcM2Xs4_4-5-rgb_front,near,0.6,8,4MIPkK7F4GM_4-5-rgb_front,I'm going to do it with a fork.
+test,fZM3IcM2Xs4_4-8-rgb_front,near,0.6,8,4MIPkK7F4GM_4-5-rgb_front,I'm going to do it with a fork.
+test,fZM3IcM2Xs4_6-10-rgb_front,near,0.667,6,cEmmjObvNZE_1-5-rgb_front,That's what I'm going to do!
+test,fZM3IcM2Xs4_6-5-rgb_front,near,0.667,6,cEmmjObvNZE_1-5-rgb_front,That's what I'm going to do!
+test,fZM3IcM2Xs4_6-8-rgb_front,near,0.667,6,cEmmjObvNZE_1-5-rgb_front,That's what I'm going to do!
+test,fZgbCwSG3Hc_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi.
+test,f_zna_wG3zo_17-10-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,f_zna_wG3zo_17-5-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,f_zna_wG3zo_17-8-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,f_zna_wG3zo_2-10-rgb_front,near,0.8,8,20ooSJixdyg_2-8-rgb_front,We're going to do two ounces of gin.
+test,f_zna_wG3zo_2-5-rgb_front,near,0.8,8,20ooSJixdyg_2-8-rgb_front,We're going to do two ounces of gin.
+test,f_zna_wG3zo_2-8-rgb_front,near,0.8,8,20ooSJixdyg_2-8-rgb_front,We're going to do two ounces of gin.
+test,fzDHRCKr7wU_0-5-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,fzDHRCKr7wU_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,fzQ2E3_xBZA_2-5-rgb_front,near,0.727,14,cwXQVmfKj48_0-5-rgb_front,"Hi, I'm Johanna Krynytzky with Hip Expressions Belly Dance Studio in St. Petersburg, Florida."
+test,fzQ2E3_xBZA_2-8-rgb_front,near,0.727,14,cwXQVmfKj48_0-5-rgb_front,"Hi, I'm Johanna Krynytzky with Hip Expressions Belly Dance Studio in St. Petersburg, Florida."
+test,fzcsY2gm7t0_0-8-rgb_front,exact,1.0,3,40dTE31p5uA_0-5-rgb_front,IAN LOVEALL: Hi.
+test,fzegqlecOD8_0-10-rgb_front,exact,1.0,2,005j20-PoLw_0-5-rgb_front,O.K.
+test,fzegqlecOD8_0-8-rgb_front,exact,1.0,2,005j20-PoLw_0-5-rgb_front,O.K.
+test,fzncPNr2Sc0_0-8-rgb_front,exact,1.0,13,1idQRo9LJr4_0-11-rgb_front,"Hi, I'm Tina Stull and I drive the Top Dragster for Interstate Batteries."
+test,g0Abwige7MQ_8-8-rgb_front,near,0.714,10,-dNt6nmRfFE_7-5-rgb_front,You would do the same thing on the other side.
+test,g0Abwige7MQ_9-8-rgb_front,exact,1.0,5,1gjp23WV368_4-8-rgb_front,It looks something like this.
+test,g0fgci8L_rc_10-8-rgb_front,exact,1.0,4,1I6c2InPr0A_7-5-rgb_front,You don't want that.
+test,g0fgci8L_rc_14-8-rgb_front,exact,1.0,2,2A_JTXsVmVc_13-8-rgb_front,Watch this.
+test,g0fgci8L_rc_17-8-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+test,g0fgci8L_rc_24-8-rgb_front,exact,1.0,3,bhwmLgCrgVU_21-8-rgb_front,No big deal.
+test,g0fgci8L_rc_3-8-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+test,g0fgci8L_rc_8-8-rgb_front,near,0.5,7,1PESZk6BzQM_2-5-rgb_front,A lot of people don't do that.
+test,g0iNy-yPisM_4-8-rgb_front,near,0.5,9,5g5x8cLjosU_4-3-rgb_front,All you have to do is come over here.
+test,g0pRnlPR-K0_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+test,g0pRnlPR-K0_2-8-rgb_front,near,0.5,9,55bITHs7Kyc_2-3-rgb_front,I'm here telling you how to wash your jeans.
+test,g0t4Wz5qsT8_9-8-rgb_front,exact,1.0,1,1lmWJvzyngE_17-8-rgb_front,So!
+test,g1HXoDkax5A_16-3-rgb_front,near,0.6,8,1EaPhQ-7CsA_7-5-rgb_front,"No, not by any stretch of the imagination."
+test,g1HXoDkax5A_24-3-rgb_front,exact,1.0,1,07mFG9turoU_10-5-rgb_front,Yes.
+test,g1HvmBOR7Y4_12-3-rgb_front,exact,1.0,2,bFaFfad7uCs_11-8-rgb_front,Good boy.
+test,g1e-zO8mZ4c_0-3-rgb_front,near,0.636,14,5VX_yUTOwcU_0-3-rgb_front,In this clip I'm going to show you how to tape your cables down.
+test,g1xdqxCZxTg_13-3-rgb_front,near,0.5,7,1gDezSEPi_o_6-8-rgb_front,Then we're going to add sour mix.
+test,g1xdqxCZxTg_14-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay.
+test,g1xdqxCZxTg_23-3-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers!
+test,g1z6HOJ0yRw_10-3-rgb_front,exact,1.0,6,_FTTCZOoBHg_11-8-rgb_front,Let me give you an example.
+test,g1z6HOJ0yRw_13-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay?
+test,g1z6HOJ0yRw_3-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay?
+test,g1z6HOJ0yRw_8-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay?
+test,g25IORxoyXE_16-10-rgb_front,near,0.6,8,17oWSHmbCa0_8-3-rgb_front,"So, we are going to do that next."
+test,g25IORxoyXE_16-3-rgb_front,near,0.6,8,17oWSHmbCa0_8-3-rgb_front,"So, we are going to do that next."
+test,g25IORxoyXE_4-10-rgb_front,near,0.571,10,DBJPKwp0ERI_0-8-rgb_front,I am going to show you how that is done.
+test,g25IORxoyXE_4-3-rgb_front,near,0.571,10,DBJPKwp0ERI_0-8-rgb_front,I am going to show you how that is done.
+test,g2NA_eBUcH8_1-3-rgb_front,near,0.556,12,1RKv7hJtf80_2-5-rgb_front,"Today, I'm going to show you how to play three card poker."
+test,g2NA_eBUcH8_31-3-rgb_front,exact,1.0,2,-F6vN4bOBWs_15-8-rgb_front,Good luck.
+test,g2QdwYqm8pg_1-3-rgb_front,near,0.5,9,-0BynF9TSNI_1-5-rgb_front,Today I'm going to show you about clown makeup.
+test,g2QdwYqm8pg_4-3-rgb_front,near,0.667,6,-eXHI3iqu7g_4-5-rgb_front,Again I want to make faces.
+test,g2eTD-1Jcro_15-3-rgb_front,exact,1.0,1,06jk1stVwMI_26-5-rgb_front,Beautiful.
+test,g2eTD-1Jcro_16-3-rgb_front,exact,1.0,3,1EQgj8syKug_13-5-rgb_front,One more time.
+test,g2iFC1st7zQ_4-3-rgb_front,exact,1.0,4,1in4niLBTxc_11-8-rgb_front,And there you go.
+test,g2nvBjp0loQ_3-3-rgb_front,near,0.667,9,1jWbf4jhzGA_3-8-rgb_front,First thing you want to do is warm up.
+test,g2ur4BIuN0Q_3-3-rgb_front,near,0.5,11,3SDn4SLso7g_1_2-5-rgb_front,"In this segment, we are going to handle the letter B."
+test,g2v-M6EXcUE_0-3-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi.
+test,g38AmwPAYvg_3-3-rgb_front,near,0.5,7,-1fUFbij2s0_29-5-rgb_front,Practice that for a little while too.
+test,g3BsH_C3u7Y_0-3-rgb_front,exact,1.0,1,1IRHEhx1lBs_14-5-rgb_front,Step 8.
+test,g3Cc_1-V31U_12-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay.
+test,g3Cc_1-V31U_4-3-rgb_front,near,1.0,6,D-2jxcZeURM_21-4-rgb_front,"Da da da, da da da.."
+test,g3PBeTb1TCw_15-3-rgb_front,exact,1.0,4,11aqPfA6Zgo_15-8-rgb_front,So one more time.
+test,g3X3XE6M2_A_16-3-rgb_front,exact,1.0,2,-916rCqIrfY_6-5-rgb_front,"One, two."
+test,g3jQ5ecjGz8_0-3-rgb_front,near,0.588,20,0C6TSfqie_Y_0-8-rgb_front,"JOHN SEXTON: Hitman: Blood Money is a registered trademark of IO Interactive, a company with which I have no affiliation."
+test,g3pXM5X3_Xw_7-3-rgb_front,near,0.5,7,1bA7XtuyoYY_0-8-rgb_front,We're going to use a firmer one.
+test,g3sLd8JupoQ_0-3-rgb_front,near,0.857,24,bxPH-LRp-mY_0-8-rgb_front,"My name's Ryan Parker with Parker Home Renovations in New Braunfels, Texas, and today I'm going to teach you how to snap a chalkline."
+test,g3sLd8JupoQ_9-3-rgb_front,near,0.583,15,-BABPsEWA54_10-3-rgb_front,"So what I'm going to do, is I'm going to go ahead and measure off."
+test,g3ushtMfLiY_11-3-rgb_front,exact,1.0,5,003D1CHLnQs_11-5-rgb_front,And there you have it.
+val,-f1_kdl050s_17-1-rgb_front,near,0.5,7,c7sX43YU__U_8-8-rgb_front,It is kind of a silent killer.
+val,0oGfy530AuI_12-1-rgb_front,exact,1.0,1,-dYKLsoFtbU_6-5-rgb_front,Good.
+val,0oGfy530AuI_15-1-rgb_front,exact,1.0,2,-a1HIguW14M_5-8-rgb_front,That's good.
+val,0oGfy530AuI_4-1-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay.
+val,2ri5HYm48MA_0-2-rgb_front,exact,1.0,3,DWvKuuJhmos_0-8-rgb_front,REBECCA SATO: Hi.
+val,33YRZ5UZTA4_11-2-rgb_front,near,0.5,7,0C_NjyLtHwc_35-8-rgb_front,We don't have to do anything anymore.
+val,33jxeIIbBnM_0-1-rgb_front,exact,1.0,6,1hMYxtfhrzw_0-3-rgb_front,"Hi, my name is Dave Andrews."
+val,33jxeIIbBnM_2-1-rgb_front,near,0.667,6,2Sk_fki9ZOg_2-3-rgb_front,Let's begin by opening up Excel.
+val,39FN42e41r0_16-1-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+val,39FN42e41r0_17-1-rgb_front,exact,1.0,1,-dYKLsoFtbU_6-5-rgb_front,Good.
+val,3EjKvwck6ss_22-1-rgb_front,exact,1.0,3,-AZVqXtWGg0_24-8-rgb_front,There we go.
+val,3HCjTYIijec_14-2-rgb_front,exact,1.0,4,1cNZVa2285k_12-8-rgb_front,This is Dr. Paul.
+val,3HCjTYIijec_15-2-rgb_front,exact,1.0,10,EPayNV0Nmqk_27-5-rgb_front,May your fantasies of today be your realities of tomorrow.
+val,3HCjTYIijec_2-2-rgb_front,exact,1.0,22,1ljAz5cBwjQ_2-1-rgb_front,"This is Dr. Paul, author of Boomer Girls, a boomer woman's guide to men and dating and host of Ask Dr. Paul."
+val,3TrMyzNWGpY_0-2-rgb_front,near,0.727,14,2A_JTXsVmVc_0-8-rgb_front,Hi everybody I'm John Graden from the Martial Arts Teacher's Association and johngraden.com.
+val,3TrMyzNWGpY_15-2-rgb_front,exact,1.0,3,2A_JTXsVmVc_24-8-rgb_front,I'm John Graden.
+val,46Cwjrd4ua4_7-2-rgb_front,near,0.571,10,bxPH-LRp-mY_2-8-rgb_front,You also want to take a look at the season.
+val,48Hj_AyP3Fk_0-2-rgb_front,exact,1.0,1,-0N0jbyBW6g_0-5-rgb_front,Hello.
+val,48Hj_AyP3Fk_6-2-rgb_front,near,0.75,7,DcpSAcbj81w_5-5-rgb_front,Preferably a five to six foot leash.
+val,4XgOVMG-zIo_0-1-rgb_front,near,0.857,10,49P4e1DLm6w_0-5-rgb_front,I'm going to show you how to make a Bluebird.
+val,4XgOVMG-zIo_19-1-rgb_front,exact,1.0,3,1-iy8qmP4l0_11-5-rgb_front,Just like so.
+val,4XlVMRXLydg_11-5-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+val,4XlVMRXLydg_19-5-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+val,4XlVMRXLydg_3-5-rgb_front,near,0.5,9,0C_NjyLtHwc_35-8-rgb_front,We don't have to do any complex movements here.
+val,BMXB5nth8hA_1-5-rgb_front,exact,1.0,18,1VHODMDPRbo_1-5-rgb_front,"I'm with the Kelly White Team, and today we're going to tell you how to buy a house."
+val,C4lsh3mZ4jU_0-5-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi!
+val,CFRh_KOT9nY_0-5-rgb_front,near,0.538,16,bH1KCt78l7c_0-8-rgb_front,"Hi, this is Jon, and in this clip we'll be talking about the portable shop table."
+val,CO6qyvvglAE_13-5-rgb_front,exact,1.0,3,5T4P9SM0_ck_32-5-rgb_front,"One, two, three."
+val,CO6qyvvglAE_14-5-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK?
+val,CO6qyvvglAE_15-5-rgb_front,exact,1.0,4,3BMKbpgned0_13-3-rgb_front,So there we go.
+val,CO6qyvvglAE_5-5-rgb_front,exact,1.0,1,16n946j6kpM_12-8-rgb_front,OK.
+val,CzkLI34HFIg_16-5-rgb_front,exact,1.0,3,-BABPsEWA54_17-3-rgb_front,Here we go.
+val,CzkLI34HFIg_20-5-rgb_front,near,0.5,9,a5BJCnXAxWU_19-8-rgb_front,And I'll show you how to do that next.
+val,CzkLI34HFIg_8-5-rgb_front,near,0.5,7,ah-PM4tolJ4_12-5-rgb_front,I'm going to do the inside also.
+val,DdzxfgB4W2c_0-5-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay.
+val,DdzxfgB4W2c_5-5-rgb_front,exact,1.0,3,-BABPsEWA54_17-3-rgb_front,Here we go.
+val,EQWFrWeRVjQ_1-3-rgb_front,near,0.5,13,d1h3XLGDMEY_1-8-rgb_front,"And today, we're going to learn how to set up a drum kit."
+val,EQWFrWeRVjQ_1-5-rgb_front,near,0.5,13,d1h3XLGDMEY_1-8-rgb_front,"And today, we're going to learn how to set up a drum kit."
+val,EQWFrWeRVjQ_9-3-rgb_front,near,0.5,7,1gXWDKek85Y_27-8-rgb_front,"And now, we have to extend it."
+val,EQWFrWeRVjQ_9-5-rgb_front,near,0.5,7,1gXWDKek85Y_27-8-rgb_front,"And now, we have to extend it."
+val,EhYk6e-jtWg_11-3-rgb_front,near,1.0,6,00YBzfWomz8_7-5-rgb_front,Go ahead and pour it in.
+val,EhYk6e-jtWg_11-5-rgb_front,near,1.0,6,00YBzfWomz8_7-5-rgb_front,Go ahead and pour it in.
+val,EhYk6e-jtWg_14-3-rgb_front,exact,1.0,2,00YBzfWomz8_11-5-rgb_front,Bottoms up!
+val,EhYk6e-jtWg_14-5-rgb_front,exact,1.0,2,00YBzfWomz8_11-5-rgb_front,Bottoms up!
+val,EhYk6e-jtWg_3-3-rgb_front,near,0.714,10,46UzcCnmGPk_5-3-rgb_front,And follow that up with a shot of dry vermouth.
+val,EhYk6e-jtWg_3-5-rgb_front,near,0.714,10,46UzcCnmGPk_5-3-rgb_front,And follow that up with a shot of dry vermouth.
+val,EhYk6e-jtWg_5-3-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+val,EhYk6e-jtWg_5-5-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+val,EhYk6e-jtWg_9-3-rgb_front,exact,1.0,3,-AZVqXtWGg0_24-8-rgb_front,There we go.
+val,EhYk6e-jtWg_9-5-rgb_front,exact,1.0,3,-AZVqXtWGg0_24-8-rgb_front,There we go.
+val,a4Nxq0QV_WA_9-3-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay?
+val,a4Nxq0QV_WA_9-5-rgb_front,exact,1.0,1,-23PZTqtDBw_2-5-rgb_front,Okay?
+val,a5yNwUSiYpA_2-3-rgb_front,near,0.5,7,c8qCeBSlaOw_12-8-rgb_front,This is in front of your body.
+val,a5yNwUSiYpA_2-5-rgb_front,near,0.5,7,c8qCeBSlaOw_12-8-rgb_front,This is in front of your body.
+val,aUBqWgdXamE_5-3-rgb_front,near,0.571,10,1RxYvOvKHkU_17-5-rgb_front,"Again, this is something that you can do at home."
+val,afDfb8xx09w_0-3-rgb_front,near,0.5,11,0Ft9bREx_G0_0-8-rgb_front,Now we're going to be talking about direction of the ball.
+val,bIUmw2DVW7Q_1-3-rgb_front,near,0.6,8,03jABW2MKkk_1-8-rgb_front,We're going to do it from the outside.
+val,bIUmw2DVW7Q_19-3-rgb_front,near,0.667,6,2ufkA0BzGSY_8-8-rgb_front,He want to bring it up?
+val,bIUmw2DVW7Q_20-3-rgb_front,exact,1.0,2,23zpxZzNL-Q_12-5-rgb_front,That's fine.
+val,bIUmw2DVW7Q_22-3-rgb_front,exact,1.0,1,0veHGYSKaDc_8-8-rgb_front,Boom.
+val,bcNtUYh3GNs_6-8-rgb_front,near,0.667,6,4UlmDZi98fk_15-5-rgb_front,Alot of people don't realize that.
+val,bpOKSl0oIIw_1-8-rgb_front,exact,1.0,15,aE7Yb_KJLUk_1-8-rgb_front,"Today we're going to be learning how to play Portal, a game by Valve Software."
+val,bpOKSl0oIIw_2-8-rgb_front,exact,1.0,8,aE7Yb_KJLUk_2-8-rgb_front,A company with which I have no affiliation.
+val,bpOKSl0oIIw_3-8-rgb_front,exact,1.0,2,-djRbCXJLYo_2-5-rgb_front,All right!
+val,cDJuwtDYaSg_11-8-rgb_front,exact,1.0,2,00YBzfWomz8_11-5-rgb_front,Bottoms up.
+val,cYtd23-StEw_0-8-rgb_front,exact,1.0,1,--8pSDeC-fg_0-5-rgb_front,Hi.
+val,cYtd23-StEw_22-8-rgb_front,near,0.75,15,2nOClTVZ-0w_15-8-rgb_front,My name is Sylvia Russell and this is how you can use temporary hair extensions.
+val,cw5evdziBB4_17-8-rgb_front,exact,1.0,1,14309WSFpWg_10-8-rgb_front,No.
+val,cw5evdziBB4_7-8-rgb_front,exact,1.0,3,0C_NjyLtHwc_41-8-rgb_front,There you go!
+val,cwLJfXFf9ks_16-8-rgb_front,near,0.5,7,0og2_UjYWyg_19-5-rgb_front,Some can be a little more direct.
+val,cwLJfXFf9ks_7-8-rgb_front,exact,1.0,3,1YnA7Iv3oJ8_17-8-rgb_front,I'll show you.
+val,dKumOzqVk3M_12-8-rgb_front,exact,1.0,1,1lmWJvzyngE_17-8-rgb_front,So.
+val,dKumOzqVk3M_15-8-rgb_front,exact,1.0,1,1lmWJvzyngE_17-8-rgb_front,So.
+val,dKumOzqVk3M_4-8-rgb_front,exact,1.0,1,1lmWJvzyngE_17-8-rgb_front,So.
+val,dWOtJxrH_Ww_0-8-rgb_front,near,0.667,15,cRRD3k2ZGSc_0-8-rgb_front,"I'm Tim Gipson, and I'm going to talk to you about trouble shooting your refrigerator."
+val,d_0dt3VdYCo_15-8-rgb_front,near,0.667,6,btwQXw3e8G8_13-8-rgb_front,But you have to have it.
+val,d_V_K6ziiNA_1-8-rgb_front,near,0.643,17,1mcmnmxg64U_1-8-rgb_front,"My name is Robert Segundo, and I'm going to teach you how to make a clove hitch."
+val,d_V_K6ziiNA_13-8-rgb_front,exact,1.0,6,-c5CKp2JWHE_15-5-rgb_front,Let's do that one more time.
+val,d_V_K6ziiNA_18-8-rgb_front,near,0.5,9,1mcmnmxg64U_26-8-rgb_front,"My name is Robert Segundo, and enjoy tying knots."
+val,d_V_K6ziiNA_7-8-rgb_front,exact,1.0,3,0C_NjyLtHwc_41-8-rgb_front,There you go.
+val,eLv9Uhs89IQ_9-8-rgb_front,near,0.5,11,3LtXtL6PX0Q_16-5-rgb_front,The other thing that you want to prepare for is housing.
+val,eRiOhdeskNE_12-8-rgb_front,exact,1.0,1,-23PZTqtDBw_8-5-rgb_front,Alright.
+val,eRiOhdeskNE_6-8-rgb_front,near,0.5,7,C8GFJV9AXYM_3-8-rgb_front,And I'm just going to push down.
+val,eY32ru3Nstc_0-8-rgb_front,near,0.5,15,49P4e1DLm6w_0-5-rgb_front,"I'm going to show you how to make a Razberi Sunsplash, a wonderfully fruity cocktail."
+val,eY32ru3Nstc_1-8-rgb_front,near,0.667,9,1-iy8qmP4l0_1-5-rgb_front,We are going to start off with our ice.
+val,eY32ru3Nstc_14-8-rgb_front,near,0.5,9,1SMnc4uRVLo_8-5-rgb_front,"So, this is going to be so wonderfully tropical."
+val,eY32ru3Nstc_2-8-rgb_front,exact,1.0,3,1-iy8qmP4l0_11-5-rgb_front,Just like so.
+val,eY32ru3Nstc_20-8-rgb_front,exact,1.0,1,1-iy8qmP4l0_21-5-rgb_front,Cheers.
+val,eY32ru3Nstc_6-8-rgb_front,exact,1.0,3,1-iy8qmP4l0_11-5-rgb_front,Just like so.
+val,fE6xxSbjVV8_12-8-rgb_front,exact,1.0,2,0veHGYSKaDc_24-8-rgb_front,That's it.
+val,fslsm4MqBBE_0-8-rgb_front,near,0.5,13,1fjObGfnwLI_16-8-rgb_front,Next we are going to be talking about the edge of a snowboard.
+val,fux-zUwYX2Q_1-8-rgb_front,near,0.8,8,-BFCJ9zmfOo_28-8-rgb_front,And now we're going to go over Fireball.

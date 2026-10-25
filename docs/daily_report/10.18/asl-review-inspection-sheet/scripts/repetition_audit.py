@@ -1,0 +1,106 @@
+# Repetition audit (CPU, existing data only): the official-output repetition-loop cases of the 45-clip inspection sheet,
+# with clip and source-video durations, and the same count over the whole 128-clip benchmark by input length.
+# Systems (same public Uni-Sign checkpoint, P0-12 T4/fp16 predictions, committed in the 10.13 taxonomy):
+#   A_official   official poses, official re-aligned signing timing + official signer-crop clip videos
+#   B_ours_5p39  old/our pipeline: our pose extractor, original speech timestamps, full frame
+# Repetition labels are the committed 10.13 taxonomy rules (taxonomy.py analyse), not re-derived here:
+#   repetition_loop (primary type) = a repeated word 3-gram in the output, none in the reference, rep3_ratio >= 0.15
+#   repetition (flag)              = any repeated word 3-gram in the output, none in the reference
+# Durations: official input = re-aligned window (inputs_128.jsonl segment_alignment_B_vs_official), our input = original
+# window (= sheet duration_s); source video = frames / fps of the full test video in the canonical P0-18 T4 pose
+# extraction (optional --video-poses; written to the CSV so the CSV is self-contained).
+# Length bins (fixed before looking at the cases): short <= 5 s; long > 256/24 s = 10.67 s (Uni-Sign's 256-frame input
+# cap at 24 fps, above which frames are subsampled); medium otherwise.
+# Outputs: ../repetition_audit.csv, ../repetition_audit.md
+# Usage: python3 -I repetition_audit.py [--video-poses ~/Desktop/curify/p018-work/dev/gpu_run/poses]
+import argparse, csv, json, os, sys
+from collections import Counter
+
+sys.dont_write_bytecode = True
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.dirname(HERE)
+TAX = os.path.abspath(os.path.join(OUT, '..', '..', '10.13', 'asl-unisign-error-taxonomy'))
+OFF, OURS = 'A_official', 'B_ours_5p39'
+SHORT, LONG = 5.0, 256 / 24
+
+
+def bin_(d):
+    return 'short' if d <= SHORT else ('long' if d > LONG else 'medium')
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--video-poses', default=os.path.expanduser('~/Desktop/curify/p018-work/dev/gpu_run/poses'))
+    a = ap.parse_args()
+    ann = {j['clip_id']: j for j in map(json.loads, open(os.path.join(TAX, 'error_taxonomy_annotations.jsonl')))}
+    inp = {j['clip_id']: j for j in map(json.loads, open(os.path.join(TAX, 'inputs_128.jsonl')))}
+    sheet = list(csv.DictReader(open(os.path.join(OUT, 'inspection_sheet.csv'), encoding='utf-8')))
+    assert len(ann) == 128 and set(inp) == set(ann) and len(sheet) == 45
+
+    def official_dur(c):
+        s = inp[c]['segment_alignment_B_vs_official']
+        return s['realigned_end'] - s['realigned_start']
+
+    def video_dur(vid_name):
+        p = os.path.join(a.video_poses, vid_name + '.npz')
+        if not os.path.exists(p):
+            return ''
+        import numpy as np
+        z = np.load(p)
+        return f"{len(z['n_persons']) / float(z['fps']):.1f}"
+
+    rows = []
+    for r in sheet:
+        c = r['clip_id']; sa = ann[c]['system_analysis']
+        if sa[OFF]['primary_error_type'] != 'repetition_loop':
+            continue
+        assert r['auto_error_type_unisign'] == 'repetition_loop'
+        od = official_dur(c)
+        vname = f"{r['video_id']}-{c.rsplit('-', 2)[-2]}-rgb_front"                       # How2Sign VIDEO_NAME
+        rows.append({
+            'review_id': r['review_id'], 'clip_id': c, 'source_video': vname, 'source_video_duration_s': video_dur(vname),
+            'official_input_duration_s': f'{od:.2f}', 'our_input_duration_s': r['duration_s'],
+            'official_input_length_bin': bin_(od), 'our_input_length_bin': bin_(float(r['duration_s'])),
+            'ground_truth': r['ground_truth'], 'our_output': r['prod_output'], 'official_output': r['unisign_output'],
+            'official_repetition_loop': 'yes', 'official_rep3_ratio': sa[OFF]['rep3_ratio'],
+            'our_repetition_loop': 'yes' if sa[OURS]['primary_error_type'] == 'repetition_loop' else 'no',
+            'our_repetition_flag': 'yes' if sa[OURS]['error_flags']['repetition'] else 'no',
+            'label_source': 'automatic_weak (10.13 taxonomy text rule; English output only)'})
+    fields = list(rows[0])
+    with open(os.path.join(OUT, 'repetition_audit.csv'), 'w', newline='', encoding='utf-8') as f:
+        w = csv.DictWriter(f, fields, lineterminator='\n'); w.writeheader(); w.writerows(rows)
+
+    # whole 128-clip benchmark, official arm, by official input length
+    b128 = Counter(bin_(official_dur(c)) for c in ann)
+    r128 = Counter(bin_(official_dur(c)) for c in ann if ann[c]['system_analysis'][OFF]['primary_error_type'] == 'repetition_loop')
+    f128 = Counter(bin_(official_dur(c)) for c in ann if ann[c]['system_analysis'][OFF]['error_flags']['repetition'])
+    durs = sorted(float(x['official_input_duration_s']) for x in rows)
+    md = ['# Repetition audit: official-output repetition loops', '',
+          'Generated by `scripts/repetition_audit.py` from committed 10.13 taxonomy files (automatic text rule; '
+          'nothing here says what was signed).', '',
+          f'**Inspection sheet (45 clips): {len(rows)} official-output (`A_official`) repetition-loop cases.** '
+          f'Official input length (re-aligned window): min {durs[0]:.2f} s, median {durs[len(durs) // 2]:.2f} s, '
+          f'max {durs[-1]:.2f} s; bins {dict(Counter(x["official_input_length_bin"] for x in rows))} '
+          f'(short <= 5 s, long > 10.67 s = 256 frames at 24 fps). '
+          f'The old/our output is also a repetition loop in {sum(x["our_repetition_loop"] == "yes" for x in rows)} of them.', '',
+          '| ID | clip_id | source video (s) | official input (s) | our input (s) | bin (official) | ground truth | old/our output | official output | official rep3 | our loop |',
+          '|---|---|---|---|---|---|---|---|---|---|---|']
+    cut = lambda s, n=140: (s[:n] + '…') if len(s) > n else s
+    for x in rows:
+        md.append(f"| {x['review_id']} | {x['clip_id']} | {x['source_video_duration_s'] or 'n/a'} | {x['official_input_duration_s']} | "
+                  f"{x['our_input_duration_s']} | {x['official_input_length_bin']} | {cut(x['ground_truth'])} | "
+                  f"{cut(x['our_output'])} | {cut(x['official_output'])} | {x['official_rep3_ratio']} | {x['our_repetition_loop']} |")
+    md += ['', '**Whole 128-clip benchmark, official arm, by official input length:**', '',
+           '| Input length bin | Clips | Repetition loop (primary) | Any repeated 3-gram (flag) |', '|---|---|---|---|']
+    for b in ('short', 'medium', 'long'):
+        md.append(f'| {b} | {b128[b]} | {r128[b]} ({100 * r128[b] / b128[b]:.0f} %) | {f128[b]} ({100 * f128[b] / b128[b]:.0f} %) |')
+    md.append(f'| all | {sum(b128.values())} | {sum(r128.values())} | {sum(f128.values())} |')
+    md += ['', 'Full-length texts are in `repetition_audit.csv`. Labels are English-text rules: they do not say whether, '
+               'or why, anything was repeated in the signing.', '']
+    open(os.path.join(OUT, 'repetition_audit.md'), 'w', encoding='utf-8').write('\n'.join(md))
+    print(len(rows), 'official repetition-loop cases;', dict(Counter(x['official_input_length_bin'] for x in rows)),
+          '| 128:', {b: (b128[b], r128[b], f128[b]) for b in ('short', 'medium', 'long')})
+
+
+if __name__ == '__main__':
+    main()

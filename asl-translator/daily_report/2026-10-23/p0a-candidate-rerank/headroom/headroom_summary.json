@@ -1,0 +1,214 @@
+{
+ "A_official": {
+  "canonical_decode": "asl-translator/daily_report/2026-10-23/p0a-candidate-rerank/runs/full45/A_official/run1/candidates.jsonl",
+  "canonical_decode_sha256": "aeb817641769dd79139020157964e5d39d5ba031518dd191b360bf805664f5b4",
+  "n_cases": 45,
+  "top1": {
+   "chrF": 23.7634,
+   "BLEU4": 5.7246,
+   "WER": 95.4369,
+   "mean_len_ratio": 0.9997,
+   "loop_out": 9,
+   "old_1013_flag": 7
+  },
+  "oracle": {
+   "chrF": 26.0015,
+   "BLEU4": 7.0524,
+   "WER": 93.8835,
+   "mean_len_ratio": 1.037,
+   "loop_out": 9,
+   "old_1013_flag": 7
+  },
+  "delta": {
+   "chrF": 2.2381,
+   "BLEU4": 1.3278,
+   "WER": -1.5534,
+   "mean_len_ratio": 0.0373,
+   "loop_out": 0,
+   "old_1013_flag": 0
+  },
+  "n_oracle_differs_from_top1": 36,
+  "n_top1_is_oracle": 9,
+  "oracle_differs_ids": [
+   "R01",
+   "R15",
+   "R18",
+   "R24",
+   "R42",
+   "R41",
+   "R09",
+   "R20",
+   "R22",
+   "R27",
+   "R45",
+   "R03",
+   "R05",
+   "R06",
+   "R07",
+   "R08",
+   "R10",
+   "R11",
+   "R13",
+   "R14",
+   "R17",
+   "R19",
+   "R21",
+   "R23",
+   "R25",
+   "R26",
+   "R28",
+   "R29",
+   "R30",
+   "R33",
+   "R34",
+   "R35",
+   "R37",
+   "R38",
+   "R43",
+   "R44"
+  ],
+  "pool_size_distribution": {
+   "5": 45
+  },
+  "pools_lt5": {},
+  "rule_1a_oracle_minus_top1_chrF": 2.2381,
+  "rule_1a_threshold": 3.0,
+  "rule_1a_pass": false,
+  "rule_1b": "PENDING human candidate review (>= 3 of 13 reviewed cases with a pool candidate rated strictly better than T)",
+  "loops": {
+   "top1_loop_out": 9,
+   "with_nonloop_alternative": 1,
+   "ids_with_alternative": {
+    "R23": {
+     "best_nonloop_alt_delta_chrF": 1.4118
+    }
+   },
+   "ids_without_alternative": [
+    "R01",
+    "R18",
+    "R42",
+    "R20",
+    "R03",
+    "R11",
+    "R36",
+    "R39"
+   ]
+  }
+ },
+ "B_ours_5p39": {
+  "canonical_decode": "asl-translator/daily_report/2026-10-23/p0a-candidate-rerank/runs/full45/B_ours_5p39/run1/candidates.jsonl",
+  "canonical_decode_sha256": "8c1904c4354422ddf18b4cd34cc7efe1e5b8241e4a61dd51ed0ee56d1f326818",
+  "n_cases": 45,
+  "top1": {
+   "chrF": 18.2174,
+   "BLEU4": 1.6959,
+   "WER": 99.8058,
+   "mean_len_ratio": 1.0215,
+   "loop_out": 11,
+   "old_1013_flag": 9
+  },
+  "oracle": {
+   "chrF": 20.4812,
+   "BLEU4": 2.4839,
+   "WER": 96.5049,
+   "mean_len_ratio": 0.9482,
+   "loop_out": 10,
+   "old_1013_flag": 8
+  },
+  "delta": {
+   "chrF": 2.2638,
+   "BLEU4": 0.788,
+   "WER": -3.3009,
+   "mean_len_ratio": -0.0733,
+   "loop_out": -1,
+   "old_1013_flag": -1
+  },
+  "n_oracle_differs_from_top1": 34,
+  "n_top1_is_oracle": 11,
+  "oracle_differs_ids": [
+   "R01",
+   "R15",
+   "R24",
+   "R40",
+   "R42",
+   "R04",
+   "R09",
+   "R22",
+   "R27",
+   "R02",
+   "R05",
+   "R06",
+   "R07",
+   "R08",
+   "R10",
+   "R13",
+   "R14",
+   "R16",
+   "R17",
+   "R21",
+   "R23",
+   "R26",
+   "R28",
+   "R29",
+   "R31",
+   "R32",
+   "R33",
+   "R34",
+   "R35",
+   "R36",
+   "R37",
+   "R38",
+   "R43",
+   "R44"
+  ],
+  "pool_size_distribution": {
+   "4": 1,
+   "5": 44
+  },
+  "pools_lt5": {
+   "R42": 4
+  },
+  "rule_1a_oracle_minus_top1_chrF": 2.2638,
+  "rule_1a_threshold": 3.0,
+  "rule_1a_pass": false,
+  "rule_1b": "PENDING human candidate review (>= 3 of 13 reviewed cases with a pool candidate rated strictly better than T)",
+  "loops": {
+   "top1_loop_out": 11,
+   "with_nonloop_alternative": 3,
+   "ids_with_alternative": {
+    "R15": {
+     "best_nonloop_alt_delta_chrF": 6.8254
+    },
+    "R10": {
+     "best_nonloop_alt_delta_chrF": 4.9283
+    },
+    "R16": {
+     "best_nonloop_alt_delta_chrF": 3.6387
+    }
+   },
+   "ids_without_alternative": [
+    "R24",
+    "R42",
+    "R11",
+    "R12",
+    "R21",
+    "R23",
+    "R35",
+    "R36"
+   ]
+  }
+ },
+ "meta": {
+  "protocol": "P0_PROTOCOL_FREEZE.md \u00a71.6 / \u00a71.7 rule 1",
+  "sacrebleu": "2.6.0",
+  "references": "docs/daily_report/10.13/asl-unisign-error-taxonomy/inputs_128.jsonl",
+  "references_sha256": "1c7336c493616906ef31e1d84a0a9800ff4ec6e0bd43514f074cd90fa5ccdebf",
+  "oracle": "argmax sentence chrF over the pool; ties -> earliest pool position (T)",
+  "oracle_is_system_result": false,
+  "rerank_run": false,
+  "probe_run": false,
+  "script_sha256": "b4ba450950adf41d72378e53b7555c5081a0c5c1956d2ab8d0efb283f5a7e334",
+  "holdout_guard": "PASS (45 ids)",
+  "n_review_rows": 26
+ }
+}

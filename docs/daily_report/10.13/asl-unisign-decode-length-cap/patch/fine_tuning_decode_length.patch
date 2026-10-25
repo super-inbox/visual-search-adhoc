@@ -1,0 +1,57 @@
+diff --git a/fine_tuning.py b/fine_tuning.py
+index 33aa52c..52fd232 100644
+--- a/fine_tuning.py
++++ b/fine_tuning.py
+@@ -16,6 +16,11 @@ from SLRT_metrics import translation_performance, islr_performance, wer_list
+ from transformers import get_scheduler
+ from config import *
+ 
++# [decode-length-cap] only changes vs upstream eed438bc: max_new_tokens from env (default 100 = upstream),
++# a padding safeguard for outputs longer than 150 ids, and optional per-clip decode diagnostics.
++UNISIGN_MAX_NEW_TOKENS = int(os.environ.get('UNISIGN_MAX_NEW_TOKENS', '100'))
++UNISIGN_DECODE_DIAG = os.environ.get('UNISIGN_DECODE_DIAG', '') == '1'
++
+ def main(args):
+     utils.init_distributed_mode_ds(args)
+ 
+@@ -261,7 +266,7 @@ def evaluate(args, data_loader, model, model_without_ddp, phase):
+             metric_logger.update(loss=total_loss.item())
+         
+             output = model_without_ddp.generate(stack_out, 
+-                                                max_new_tokens=100, 
++                                                max_new_tokens=UNISIGN_MAX_NEW_TOKENS, 
+                                                 num_beams = 4,
+                         )
+ 
+@@ -273,12 +278,30 @@ def evaluate(args, data_loader, model, model_without_ddp, phase):
+     tokenizer = model_without_ddp.mt5_tokenizer
+     padding_value = tokenizer.eos_token_id
+     
+-    pad_tensor = torch.ones(150-len(tgt_pres[0])).cuda() * padding_value
++    if UNISIGN_DECODE_DIAG:  # [decode-length-cap] raw generate() ids, before any padding; ids[0] is the decoder start token
++        gen_diag = []
++        for t in tgt_pres:
++            ids = t.tolist(); gen = ids[1:]
++            eos = tokenizer.eos_token_id in gen
++            n = gen.index(tokenizer.eos_token_id) if eos else len(gen)
++            gen_diag.append({'first_id': ids[0], 'seq_len': len(ids), 'eos': eos, 'n_gen_tokens': n,
++                             'n_new_tokens': n + int(eos), 'hit_cap': (not eos) and len(gen) >= UNISIGN_MAX_NEW_TOKENS,
++                             'gen_ids': gen[:n]})
++
++    # [decode-length-cap] upstream pads to a fixed 150, which fails once an output exceeds 150 ids; EOS padding is
++    # dropped by skip_special_tokens, so the target length does not affect the decoded text (identical when all <= 150)
++    pad_tensor = torch.ones(max(150, max(len(t) for t in tgt_pres))-len(tgt_pres[0])).cuda() * padding_value
+     tgt_pres[0] = torch.cat((tgt_pres[0],pad_tensor.long()),dim = 0)
+ 
+     tgt_pres = pad_sequence(tgt_pres,batch_first=True,padding_value=padding_value)
+     tgt_pres = tokenizer.batch_decode(tgt_pres, skip_special_tokens=True)
+ 
++    if UNISIGN_DECODE_DIAG and utils.is_main_process():
++        with open(args.output_dir+f'/{phase}_decode_diag.jsonl','w') as f:
++            for i, d in enumerate(gen_diag):
++                f.write(json.dumps({'sample': tgt_name[i], 'max_new_tokens': UNISIGN_MAX_NEW_TOKENS,
++                                    'pred_words': len(tgt_pres[i].split()), **d}) + '\n')
++
+     # fix mt5 tokenizer bug
+     if args.dataset == 'CSL_Daily' and args.task == "SLT":
+         tgt_pres = [' '.join(list(r.replace(" ",'').replace("\n",''))) for r in tgt_pres]

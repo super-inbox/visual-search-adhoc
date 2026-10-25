@@ -1,0 +1,86 @@
+[
+ {
+  "contrast": "official path reproduces authors on subset",
+  "variable": "path check",
+  "new": "A_official",
+  "base": "authors_released",
+  "status": "not available"
+ },
+ {
+  "contrast": "V3 pose extractor model",
+  "variable": "V3",
+  "new": "A_official",
+  "base": "C_ours_on_official_crop",
+  "status": "not available"
+ },
+ {
+  "contrast": "V1 timestamp alignment",
+  "variable": "V1",
+  "new": "C_ours_on_official_crop",
+  "base": "B_aspect",
+  "status": "not available"
+ },
+ {
+  "contrast": "V2 crop / coordinate normalization",
+  "variable": "V2",
+  "new": "B_aspect",
+  "base": "B_ours_5p39",
+  "status": "not available"
+ },
+ {
+  "contrast": "V4a batch 8 + worker RNG (our input)",
+  "variable": "V4",
+  "new": "B_ours_5p39",
+  "base": "B_ours_5p39_bs1_nw0",
+  "status": "not available"
+ },
+ {
+  "contrast": "V4b CUDA vs CPU (+ loader class), batch 1",
+  "variable": "V4",
+  "new": "B_ours_5p39_bs1_nw0",
+  "base": "ours_5p39_historical_cpu",
+  "status": "not available"
+ },
+ {
+  "contrast": "V4a batch 8 + worker RNG (official input)",
+  "variable": "V4",
+  "new": "A_official",
+  "base": "A_official_bs1_nw0",
+  "status": "not available"
+ },
+ {
+  "contrast": "seed noise 43 vs 42 (official input)",
+  "variable": "noise",
+  "new": "A_official_seed43",
+  "base": "A_official",
+  "status": "not available"
+ },
+ {
+  "contrast": "seed noise 44 vs 42 (official input)",
+  "variable": "noise",
+  "new": "A_official_seed44",
+  "base": "A_official",
+  "status": "not available"
+ },
+ {
+  "contrast": "total pipeline gap (GPU, all variables)",
+  "variable": "total",
+  "new": "A_official",
+  "base": "B_ours_5p39",
+  "status": "not available"
+ },
+ {
+  "contrast": "reference: authors vs our historical",
+  "variable": "reference",
+  "new": "authors_released",
+  "base": "ours_5p39_historical_cpu",
+  "bleu4_new": 9.59,
+  "bleu4_base": 5.39,
+  "delta": 4.2,
+  "ci95": [
+   2.42,
+   6.15
+  ],
+  "ci_excludes_0": true
+ }
+]

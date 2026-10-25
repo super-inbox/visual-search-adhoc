@@ -1,0 +1,7 @@
+review_id,clip_id,window,video_file,window_source_start_s,window_source_end_s,fs_present,fs_start_s,fs_end_s,letters_seen_blind,video_quality_for_handshape,notes,reference_name_after_unblind,matches_reference_name,notes_after_unblind,reviewer_id,asl_background,reviewed_at
+R02,G3OMdQo1zjY_0-10-rgb_front,O,R02_O.mp4,3.31,7.50,,,,,,,,,,,,
+R02,G3OMdQo1zjY_0-10-rgb_front,R,R02_R.mp4,1.43,11.69,,,,,,,,,,,,
+R05,G3VM7etNABI_0-10-rgb_front,O,R05_O.mp4,1.22,6.47,,,,,,,,,,,,
+R05,G3VM7etNABI_0-10-rgb_front,R,R05_R.mp4,0.76,8.33,,,,,,,,,,,,
+R35,G2kVb4gINSI_1-10-rgb_front,O,R35_O.mp4,6.50,12.48,,,,,,,,,,,,
+R35,G2kVb4gINSI_1-10-rgb_front,R,R35_R.mp4,13.11,16.90,,,,,,,,,,,,

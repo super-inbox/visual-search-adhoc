@@ -1,0 +1,21 @@
+{
+ "device": "cuda",
+ "dtype": "fp32",
+ "cudnn_deterministic": true,
+ "zip_parts": [
+  "/home/lbaobao462_gmail_com/p014/archive/how2sign_pose_format.zip.00",
+  "/home/lbaobao462_gmail_com/p014/archive/how2sign_pose_format.zip.01",
+  "/home/lbaobao462_gmail_com/p014/archive/how2sign_pose_format.zip.02",
+  "/home/lbaobao462_gmail_com/p014/archive/how2sign_pose_format.zip.03"
+ ],
+ "gpu": "Tesla T4",
+ "python": "3.9.25",
+ "torch": "2.1.1+cu121",
+ "transformers": "4.40.0",
+ "numpy": "1.22.4",
+ "ckpt": "/home/lbaobao462_gmail_com/training/models/how2sign_pose_only_slt.pth",
+ "mt5": "/home/lbaobao462_gmail_com/training/models/mt5-base",
+ "unisign_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+ "n_rows": 33295,
+ "seconds": 4329.301086425781
+}

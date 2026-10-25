@@ -1,0 +1,67 @@
+{
+ "train": {
+  "n_ids": 2751,
+  "n_features": 2751,
+  "n_bad": 0,
+  "bad_examples": [],
+  "raw_frames_min_median_max": [
+   2,
+   130.0,
+   2918
+  ],
+  "T_min_median_max": [
+   2,
+   130.0,
+   256
+  ],
+  "n_subsampled_to_256": 542,
+  "T_after_p02_stride_rule_max": 150,
+  "mean_frame_l2_norm": 3.2261427070001654,
+  "dim": 768,
+  "dtype_on_disk": "float16"
+ },
+ "val": {
+  "n_ids": 366,
+  "n_features": 366,
+  "n_bad": 0,
+  "bad_examples": [],
+  "raw_frames_min_median_max": [
+   6,
+   175.5,
+   1946
+  ],
+  "T_min_median_max": [
+   6,
+   175.5,
+   256
+  ],
+  "n_subsampled_to_256": 102,
+  "T_after_p02_stride_rule_max": 150,
+  "mean_frame_l2_norm": 3.204712403276579,
+  "dim": 768,
+  "dtype_on_disk": "float16",
+  "p02_prediction_file_ids_equal_ids_txt_in_order": true
+ },
+ "frozen": {
+  "n_ids": 147,
+  "n_features": 147,
+  "n_bad": 0,
+  "bad_examples": [],
+  "raw_frames_min_median_max": [
+   6,
+   171.0,
+   991
+  ],
+  "T_min_median_max": [
+   6,
+   171.0,
+   256
+  ],
+  "n_subsampled_to_256": 52,
+  "T_after_p02_stride_rule_max": 149,
+  "mean_frame_l2_norm": 3.117996919722784,
+  "dim": 768,
+  "dtype_on_disk": "float16",
+  "p02_prediction_file_ids_equal_ids_txt_in_order": true
+ }
+}

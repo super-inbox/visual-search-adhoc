@@ -1,0 +1,37 @@
+{
+ "experiment": "P0-19 Stage 0: top-k headroom (official-pose domain, exploratory)",
+ "frozen_on": "2026-10-20",
+ "stage0": {
+  "role": "test_clean",
+  "n_clips_expected": 2209,
+  "ks": [4, 8],
+  "max_new_tokens": 100,
+  "pools": {
+   "k4": "the 4 returned beams of the num_beams=4 run (rank 0 = baseline top-1, by gate G1)",
+   "k8": "baseline top-1 (the stored P0-14 prediction) followed by the 8 returned beams of the num_beams=8 run"
+  },
+  "dedup": "exact candidate text; first occurrence kept",
+  "concept_vocabulary": "P0-14 Tier L (24 concepts), frozen matcher (build_concepts.py lemmas + concept_list_v1.csv match/forms)",
+  "metrics": {
+   "C1_diversity": "fraction of the 2209 clips whose pool contains at least one candidate with a Tier L concept set different from the top-1's",
+   "C2_recovery": "number of the 498 missed cells (reference has Tier L concept c, stored top-1 does not) for which some pool candidate mentions c",
+   "C3_oracle": "corpus chrF (sacrebleu corpus_chrf, default chrF2 char_order 6 word_order 0) of the per-clip oracle candidate minus corpus chrF of the stored top-1; oracle = argmax sentence_chrf against the single reference, ties -> lowest pool position"
+  },
+  "go_thresholds": {
+   "C1_diversity_min_fraction": 0.10,
+   "C2_recovery_min_cells": 50,
+   "C3_oracle_min_delta_chrf": 3.0
+  },
+  "go_rule": "GO iff all of C1, C2, C3 pass for k=4, or all pass for k=8; Stage 1 then uses the smallest passing k. Otherwise NO-GO: P0-19 stops at Stage 0, development NOT SUPPORTED, H19 stays sealed.",
+  "gates": {
+   "G1_reproduction": "num_beams=4 rank-0 text equals the stored P0-14 prediction and its trimmed token count equals the stored n_tokens, on 2209/2209 clips",
+   "G2_determinism": "an independent second run on the first 40 test_clean clips (manifest order) gives identical candidate count, order, token ids and texts for k=4 and k=8, and |seq_score difference| <= 1e-5",
+   "G3_no_holdout": "P0-16 guard passes on every clip id; open() tripwire installed in every Stage 0 process with no refusal; every archive member read is under test-pose-rtmpose-192/; run_meta of both runs records tripwire_installed",
+   "G4_input_integrity": "per-clip pose_sha256 equals the P0-14 stored value on 2209/2209; stored predictions sha256 prefix 0116a41a; candidate file covers exactly the 2209 test_clean ids in manifest order",
+   "G5_label_reproduction": "frozen matcher reproduces the manifest's 30 concept labels for all 2209 references, gives 888 Tier L mentions in the stored predictions, and exactly 498 missed Tier L cells"
+  },
+  "gate_failure": "VOID: nothing interpreted, no re-run, no redefinition (P0-16 SANITY_GATE_POLICY section 5)",
+  "determinism_subset": "first 40 test_clean clips in manifest order",
+  "descriptive_only": ["mean unique candidates per clip", "corpus BLEU-4 of top-1 and oracle", "clips with oracle sentence chrF >= top-1 + 5", "per-k decode seconds"]
+ }
+}

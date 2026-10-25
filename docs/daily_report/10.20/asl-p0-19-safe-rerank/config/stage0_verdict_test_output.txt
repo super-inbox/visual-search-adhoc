@@ -1,0 +1,1 @@
+stage0 plan-code test PASS: 2048 combinations (5 gates x 6 criteria) + 4 selected-k / VOID checks

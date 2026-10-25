@@ -1,0 +1,14 @@
+{
+ "fsign_vs_raw": "PARTIAL SUPPORT",
+ "mt5_vs_raw": "PARTIAL SUPPORT"
+}
+{
+ "S1_shuffle_macro_auroc": 0.5301700790295815,
+ "S1_pass": false,
+ "length_macro_auroc": 0.6454408806096575,
+ "raw_macro_auroc": 0.750007762707756,
+ "raw_macro_f1": 0.1254632580830447
+}
+real 240.32
+user 239.11
+sys 0.83

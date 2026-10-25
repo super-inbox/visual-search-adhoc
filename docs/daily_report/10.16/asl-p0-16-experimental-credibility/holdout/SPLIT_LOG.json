@@ -1,0 +1,62 @@
+{
+ "val_clips": 1741,
+ "val_videos": 115,
+ "excluded_clips": 98,
+ "exclusion_reasons": {
+  "near_dup_of_train": 39,
+  "exact_dup_of_train": 53,
+  "exact_dup_of_test": 30,
+  "near_dup_of_test": 6,
+  "no_official_crop_video": 3
+ },
+ "videos_lost_entirely": 0,
+ "kept_clips": 1643,
+ "units": 115,
+ "merged_units": [],
+ "seeds_tried": [
+  {
+   "seed": 16,
+   "H18_clip_share": 0.4954,
+   "strata_on_both_sides": true,
+   "pass": true
+  }
+ ],
+ "chosen_seed": 16,
+ "H18": {
+  "units": 57,
+  "videos": 57,
+  "clips": 814,
+  "strata": {
+   "1": 9,
+   "2": 8,
+   "3": 13,
+   "5": 11,
+   "8": 16
+  }
+ },
+ "H19": {
+  "units": 58,
+  "videos": 58,
+  "clips": 829,
+  "strata": {
+   "1": 8,
+   "2": 9,
+   "3": 14,
+   "5": 11,
+   "8": 16
+  }
+ },
+ "signer_proxies_in_val": [
+  1,
+  2,
+  3,
+  5,
+  8
+ ],
+ "inputs_sha256": {
+  "how2sign_realigned_train.csv": "67a8f4fb6dc066f38006b89ac84c27a4b05d7fa07d5e6952f997042724d7a847",
+  "how2sign_realigned_val.csv": "1bf5d57ce90d61571776d06a179335d99648d8c94fc22b327d2abb328d26137c",
+  "how2sign_realigned_test.csv": "d1799dcbf100eda822eeb1a0e6e754d82b12b2a57756bd47073c4e4b8a02ae4d",
+  "crop_val_index.tsv": "cd4fe3357d1dc3929197223cf9ead62ea58ffcf83bea6a514b256bedf4e2c551"
+ }
+}

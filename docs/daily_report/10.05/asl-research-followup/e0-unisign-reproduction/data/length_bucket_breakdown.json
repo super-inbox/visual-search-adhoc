@@ -1,0 +1,27 @@
+{
+ "<=256 frames (no subsampling)": {
+  "n": 94,
+  "official": 10.54,
+  "ours": 6.22
+ },
+ ">256 frames (random subsampled to 256)": {
+  "n": 34,
+  "official": 7.71,
+  "ours": 4.3
+ },
+ "<5s": {
+  "n": 61,
+  "official": 9.6,
+  "ours": 5.79
+ },
+ "5-15s": {
+  "n": 47,
+  "official": 12.39,
+  "ours": 7.17
+ },
+ "15-31s": {
+  "n": 20,
+  "official": 4.83,
+  "ours": 2.34
+ }
+}

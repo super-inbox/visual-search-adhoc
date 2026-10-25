@@ -1,0 +1,13 @@
+{
+ "device": "cpu",
+ "dtype": "fp32",
+ "python": "3.10.13",
+ "torch": "2.1.1",
+ "transformers": "4.40.0",
+ "numpy": "2.2.6",
+ "ckpt": "/Users/baobaoli/.cache/uni_sign_checkpoints/how2sign_pose_only_slt.pth",
+ "mt5": "/Users/baobaoli/.cache/huggingface/hub/models--google--mt5-base/snapshots/2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f",
+ "unisign_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+ "n_rows": 20,
+ "seconds": 4.07408881187439
+}

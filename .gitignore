@@ -14,3 +14,11 @@ asl-translator/data/public_benchmarks/how2sign/openslt_checkpoint/
 # checksums under public_benchmarks/how2sign_v2/ are versioned and must NOT
 # be ignored.
 asl-translator/data/public_benchmarks/how2sign_v2/videos/
+
+# P0-12 prepared Uni-Sign pose inputs (512 .pkl, ~284 MB): local-only binaries.
+# MANIFEST.csv, CHECKSUMS.sha256, labels subsets, reports, scripts and data/
+# under asl-p0-12-unisign-pose-gap/ are not ignored by these rules.
+docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/artifacts/prepared_inputs/A_official/
+docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/artifacts/prepared_inputs/B_ours_5p39/
+docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/artifacts/prepared_inputs/B_aspect/
+docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/artifacts/prepared_inputs/C_ours_on_official_crop/

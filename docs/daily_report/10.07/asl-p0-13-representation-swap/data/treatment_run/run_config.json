@@ -1,0 +1,127 @@
+{
+ "argv": [
+  "~/Desktop/visual-search-adhoc/docs/daily_report/10.07/asl-p0-13-representation-swap/scripts/train_p013_unisign.py",
+  "--stage-dir",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/kaggle_input_mirror/how2sign-holistic/train/frontal",
+  "--metadata",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+  "--split-json",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+  "--raw-dir",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download",
+  "--frozen-landmarks",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/landmarks",
+  "--frozen-metadata",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/frozen_benchmark_metadata.csv",
+  "--frozen-denylist",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_denylist.json",
+  "--how2sign-v2-manifest",
+  "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+  "--feat-root",
+  "<scratchpad>/p013/features",
+  "--epochs",
+  "30",
+  "--patience",
+  "10",
+  "--output-dir",
+  "<scratchpad>/p013/runs/p013_unisign_e30"
+ ],
+ "args": {
+  "stage_dir": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/kaggle_input_mirror/how2sign-holistic/train/frontal",
+  "metadata": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/subset_metadata.csv",
+  "split_json": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/work/holdout_split.json",
+  "raw_dir": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download",
+  "frozen_landmarks": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/landmarks",
+  "frozen_metadata": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_benchmark_mediapipe_eval/frozen_benchmark_metadata.csv",
+  "frozen_denylist": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/frozen_denylist.json",
+  "how2sign_v2_manifest": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/data/public_benchmarks/how2sign_v2/manifest.csv",
+  "baseline_checkpoint": null,
+  "output_dir": "<scratchpad>/p013/runs/p013_unisign_e30",
+  "epochs": 30,
+  "patience": 10,
+  "batch_size": 8,
+  "lr": 0.0001,
+  "seed": 42,
+  "train_limit": 0,
+  "feat_root": "<scratchpad>/p013/features",
+  "feat_key": "enc"
+ },
+ "deviations_from_upstream_train_py": [
+  "num_train_epochs 1 -> up to 30 (the variable under test); linear warmup 0.1 + decay is computed by HF over the full 30-epoch step count, so epoch 1 here is still in warmup and is NOT equivalent to the old 1-epoch run (whose lr decayed to 0 within 344 steps)",
+  "save_total_limit 3 -> None: keep every epoch checkpoint so each table row has a checkpoint (~420 MB each); selection is still by eval_loss via load_best_model_at_end",
+  "set_seed(seed) before model construction: upstream builds the model before the Trainer seeds, so the old run's initial weights are unseeded and cannot be reproduced",
+  "train/val IDs are pinned to holdout_split.json (re-derived with upstream split_by_signer and asserted identical) instead of trusting a fresh split",
+  "compute_metrics extended with chrF/CER, full-reference scoring and per-sample files; the upstream truncated-label BLEU/WER are kept as legacy_* for comparison",
+  "report_to none (metrics are written to JSON/CSV instead of TensorBoard)",
+  "per-epoch greedy generation on the 147 frozen examples (diagnostic only)"
+ ],
+ "p013_deviations_from_train_p02": [
+  "input representation: 501-d MediaPipe landmarks -> 768-d frozen Uni-Sign mT5-encoder features (the variable under test); Conformer projection Linear(501,512) -> Linear(768,512)",
+  "landmark augmentation (flip, temporal drop/dup, hand dropout, 3D rotation/scale/translation) cannot be applied to cached frozen features -> treatment trains WITHOUT augmentation",
+  "frame source: official Uni-Sign RTMPose pkl (How2Sign re-aligned clips, official signer crop, <=256 frames via upstream random.sample seeded per clip) instead of Kaggle/local MediaPipe; then the same P0.2 stride rule to <=150 frames",
+  "no --baseline-checkpoint rescoring (the baseline is the existing P0.2 padfix run)"
+ ],
+ "deviations_shared_with_old_1epoch_run": [
+  "gradient_accumulation_steps 8 -> 1",
+  "logging_steps 10 -> 1",
+  "CPU (use_cpu=True)"
+ ],
+ "weights": {
+  "conformer_and_bridge": "fresh init after set_seed(42)",
+  "t5": "HF pretrained 't5-small' (encoder deleted), dropout_rate 0.1 (unchanged)",
+  "checkpoint_loaded": null,
+  "initial_state_dict_sha256": "5af0f18932c6b1876c61d006d65a73f9ce56685bf373e73824543fc5bb94dd18"
+ },
+ "n_train": 2751,
+ "n_val": 366,
+ "n_frozen": 147,
+ "augmentation": {
+  "train": false,
+  "val": false,
+  "frozen": false
+ },
+ "input_representation": {
+  "kind": "frozen Uni-Sign mT5-encoder features",
+  "dim": 768,
+  "feat_root": "<scratchpad>/p013/features",
+  "feat_key": "enc"
+ },
+ "steps_per_epoch": 344,
+ "planned_total_steps": 10320,
+ "planned_warmup_steps": 1032,
+ "early_stopping": {
+  "metric": "eval_loss (366 val)",
+  "patience_epochs": 10,
+  "frozen_set_used_for_selection": false
+ },
+ "generate_kwargs": {
+  "max_length": 30,
+  "num_beams": 1,
+  "do_sample": false
+ },
+ "effective_training_args": {
+  "gradient_accumulation_steps": "1",
+  "per_device_train_batch_size": "8",
+  "learning_rate": "0.0001",
+  "weight_decay": "0.01",
+  "warmup_ratio": "0.1",
+  "lr_scheduler_type": "SchedulerType.LINEAR",
+  "optim": "OptimizerNames.ADAFACTOR",
+  "max_grad_norm": "1.0",
+  "gradient_checkpointing": "True",
+  "seed": "42",
+  "num_train_epochs": "30",
+  "save_total_limit": "None",
+  "load_best_model_at_end": "True",
+  "metric_for_best_model": "eval_loss",
+  "dataloader_num_workers": "1",
+  "generation_max_length": "30",
+  "generation_num_beams": "1",
+  "device": "cpu"
+ },
+ "versions": {
+  "torch": "2.10.0",
+  "transformers": "4.57.6",
+  "python": "3.12.4"
+ }
+}

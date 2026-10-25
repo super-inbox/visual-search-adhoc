@@ -1,0 +1,6 @@
+[2026-10-15 20:10:28,911] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+/home/lbaobao462_gmail_com/miniconda3/envs/unisign/lib/python3.9/site-packages/torch/_utils.py:831: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+0/40 -fZc293MpJk_2-1-rgb_front T=256 2s :: The silicone ring is a controlled control ring and it's going to help pull the m
+done 40 40s

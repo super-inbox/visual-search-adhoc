@@ -1,0 +1,30 @@
+{
+ "authors_released": {
+  "n": 128,
+  "bleu1": 32.36,
+  "bleu2": 19.59,
+  "bleu3": 13.22,
+  "bleu4": 9.59,
+  "chrf": 29.07,
+  "wer": 0.9075,
+  "exact_match": 0,
+  "repeated_3gram_rate": 0.336,
+  "no_terminal_punct_rate": 0.195,
+  "unique_prediction_rate": 1.0,
+  "distinct_1": 0.254
+ },
+ "ours_5p39_historical_cpu": {
+  "n": 128,
+  "bleu1": 24.63,
+  "bleu2": 13.01,
+  "bleu3": 8.09,
+  "bleu4": 5.39,
+  "chrf": 22.75,
+  "wer": 0.9791,
+  "exact_match": 0,
+  "repeated_3gram_rate": 0.375,
+  "no_terminal_punct_rate": 0.156,
+  "unique_prediction_rate": 1.0,
+  "distinct_1": 0.255
+ }
+}

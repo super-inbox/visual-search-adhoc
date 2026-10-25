@@ -1,0 +1,70 @@
+experiment,condition,eval_set,n_clips,train_examples,representation,metric,value,ci95_low,ci95_high,source,note
+E0,authors released predictions,How2Sign test full,2349,,Uni-Sign pose-only (official),BLEU4,14.50,,,10.05/.../e0-unisign-reproduction/E0_RESULTS.md,paper 14.5; official scorer
+E0,authors released predictions,our 128 hard clips,128,,Uni-Sign pose-only (official),BLEU4,9.59,,,10.05/.../e0-unisign-reproduction/E0_RESULTS.md,
+E0,our pipeline,our 128 hard clips,128,,Uni-Sign pose-only (ours),BLEU4,5.39,,,10.05/.../e0-unisign-reproduction/E0_RESULTS.md,
+E0,authors minus ours,our 128 hard clips,128,,,BLEU4 gap,4.20,2.42,6.15,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,paired bootstrap
+P0-12,timestamp IoU=0 (authors / ours),our 128 hard clips,28,,Uni-Sign pose-only,BLEU4,8.84 / 0.71,,,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,observational
+P0-12,timestamp IoU>=0.9 (authors / ours),our 128 hard clips,16,,Uni-Sign pose-only,BLEU4,8.45 / 7.01,,,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,observational
+P0-12,ours minus authors IoU<0.5,our 128 hard clips,61,,Uni-Sign pose-only,BLEU4 delta,-7.09,-10.6,-3.9,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,observational
+P0-12,ours minus authors IoU>=0.5,our 128 hard clips,67,,Uni-Sign pose-only,BLEU4 delta,-2.25,-4.4,-0.3,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,observational
+P0-12,clips with zero overlap of signed sentence,our 128 hard clips,128,,,count,28,,,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,
+P0-12,skeleton shoulder-w/neck-h ratio ours vs official,our 128 hard clips,128,,,ratio,0.90 vs 2.06 (~0.44x),,,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,crop/normalization
+P0-12,pose extractor keypoint diff (body / hands),our 128 hard clips,128,,,% shoulder width,0.85 / 1.5-1.7,,,10.06/asl-p0-12-unisign-pose-gap/P0_12_RESULTS.md,identical frames
+P0-11,p02_ref,frozen147,147,2751,landmarks,best_val_loss,3.6415,,,10.08/asl-p0-11-data-scaling/metrics.csv,existing P0.2 run (different init)
+P0-11,p02_ref,frozen147,147,2751,landmarks,BLEU,1.02,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p02_ref,frozen147,147,2751,landmarks,chrF,11.12,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p02_ref,frozen147,147,2751,landmarks,WER,1.025,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p02_ref,frozen147,147,2751,landmarks,distinct_predictions,102,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p02_ref,frozen147,147,2751,landmarks,shuffled_video_delta_loss,0.067,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,p25,frozen147,147,6605,landmarks,best_val_loss,3.5908,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p25,frozen147,147,6605,landmarks,BLEU,1.15,-0.44 (delta),0.77 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (+0.13)
+P0-11,p25,frozen147,147,6605,landmarks,chrF,12.37,0.37 (delta),2.12 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (+1.25)
+P0-11,p25,frozen147,147,6605,landmarks,WER,1.005,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p25,frozen147,147,6605,landmarks,distinct_predictions,73,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p25,frozen147,147,6605,landmarks,shuffled_video_delta_loss,0.073,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,p50,frozen147,147,13210,landmarks,best_val_loss,3.5866,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p50,frozen147,147,13210,landmarks,BLEU,0.54,-0.97 (delta),0.10 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (-0.48)
+P0-11,p50,frozen147,147,13210,landmarks,chrF,12.25,0.34 (delta),1.95 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (+1.13)
+P0-11,p50,frozen147,147,13210,landmarks,WER,1.047,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p50,frozen147,147,13210,landmarks,distinct_predictions,35,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p50,frozen147,147,13210,landmarks,shuffled_video_delta_loss,0.066,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,p100,frozen147,147,26419,landmarks,best_val_loss,3.5760,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p100,frozen147,147,26419,landmarks,BLEU,0.52,-0.98 (delta),0.02 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (-0.51)
+P0-11,p100,frozen147,147,26419,landmarks,chrF,9.51,-2.42 (delta),-0.83 (delta),10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,CI is for delta vs p02_ref (-1.61)
+P0-11,p100,frozen147,147,26419,landmarks,WER,1.056,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p100,frozen147,147,26419,landmarks,distinct_predictions,29,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,p100,frozen147,147,26419,landmarks,shuffled_video_delta_loss,0.061,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,ref_omp4 (same-init control; partial),val366,366,2751,landmarks,val_loss at last completed eval (epoch 2 / step 688),4.9533,,,scratchpad p011/runs/ref_omp4/epoch_log.jsonl,unfinished; ended at step 1032 of 10320
+P0-11,ref_omp4 (same-init control; partial),frozen147,147,2751,landmarks,frozen_loss at last completed eval (epoch 2 / step 688),4.9845,,,scratchpad p011/runs/ref_omp4/epoch_log.jsonl,unfinished; not comparable to final runs
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,best_val_loss,3.6418,,,10.08/asl-p0-11-data-scaling/metrics.csv,"init c328ad26 = p25/p50/p100; best eval 17 (step 5,848); early-stopped at eval 27 (step 9,288)"
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,BLEU,0.80,,,10.08/asl-p0-11-data-scaling/metrics.csv,supersedes partial ref_omp4 rows above
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,chrF,10.60,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,WER,1.056,,,10.08/asl-p0-11-data-scaling/metrics.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,distinct_predictions,63,,,10.08/asl-p0-11-data-scaling/metrics.csv,top-1 share 30.6%
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,shuffled_video_delta_loss,0.048,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,
+P0-11,ref_sameinit (same-init control; complete),frozen147,147,2751,landmarks,encoder_effective_dims (participation ratio),3.84,,,10.08/asl-p0-11-data-scaling/data/diagnostics_summary.csv,p25 3.86; p50 2.38; p100 2.34
+P0-11,p25 minus ref_sameinit,frozen147,147,6605,landmarks,BLEU delta,0.36,-0.28,1.01,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p25 minus ref_sameinit,frozen147,147,6605,landmarks,chrF delta,1.78,0.96,2.61,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p50 minus ref_sameinit,frozen147,147,13210,landmarks,BLEU delta,-0.26,-0.71,0.28,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p50 minus ref_sameinit,frozen147,147,13210,landmarks,chrF delta,1.66,1.07,2.29,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p100 minus ref_sameinit,frozen147,147,26419,landmarks,BLEU delta,-0.28,-0.71,0.21,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,p100 minus ref_sameinit,frozen147,147,26419,landmarks,chrF delta,-1.08,-1.74,-0.45,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,paired bootstrap 10k; same init
+P0-11,ref_sameinit minus p02_ref (init effect),frozen147,147,2751,landmarks,BLEU delta,-0.22,-0.86,0.42,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,same data; different init only
+P0-11,ref_sameinit minus p02_ref (init effect),frozen147,147,2751,landmarks,chrF delta,-0.53,-1.45,0.39,10.08/asl-p0-11-data-scaling/data/bootstrap_frozen147.json,same data; different init only
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,BLEU,1.023,,,10.07/asl-p0-13-representation-swap/metrics.csv,same run as P0-11 p02_ref
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,chrF,11.121,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,WER,1.025,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,distinct_predictions,102,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,shuffled_video_delta_loss,0.067,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,input_mean_pairwise_cos,0.956,,,10.07/asl-p0-13-representation-swap/representation_diagnostics.csv,
+P0-13,baseline (landmarks),frozen147,147,2751,landmarks,encoder_effective_dims (participation ratio),7.7,,,10.07/asl-p0-13-representation-swap/representation_diagnostics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,BLEU,3.249,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,chrF,17.049,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,WER,0.939,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,distinct_predictions,147,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,shuffled_video_delta_loss,1.280,,,10.07/asl-p0-13-representation-swap/metrics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,input_mean_pairwise_cos,0.294,,,10.07/asl-p0-13-representation-swap/representation_diagnostics.csv,
+P0-13,treatment (frozen Uni-Sign),frozen147,147,2751,frozen Uni-Sign features,encoder_effective_dims (participation ratio),25.9,,,10.07/asl-p0-13-representation-swap/representation_diagnostics.csv,
+P0-13,treatment minus baseline,frozen147,147,2751,,BLEU delta,2.23,1.28,3.39,10.07/asl-p0-13-representation-swap/P0_13_RESULTS.md,paired bootstrap 10k
+P0-13,treatment minus baseline,frozen147,147,2751,,chrF delta,5.93,4.66,7.34,10.07/asl-p0-13-representation-swap/P0_13_RESULTS.md,paired bootstrap 10k
+P0-13,treatment minus baseline (timing-matched inputs),frozen128,128,2751,,BLEU delta,2.18,1.03,3.44,10.07/asl-p0-13-representation-swap/P0_13_RESULTS.md,robustness check

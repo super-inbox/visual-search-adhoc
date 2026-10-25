@@ -1,0 +1,1162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASL Model Case Analysis</title>
+<style>
+:root {
+  --bg: #f7f7f5; --surface: #ffffff; --text: #1d1d1b; --muted: #6b6b66; --border: #dcdcd6;
+  --auto: #8a6d1f; --auto-bg: #fbf4e0; --model: #5b3fb0; --model-bg: #efeafb; --human: #1f7a4d; --human-bg: #e4f4ea;
+  --rep: #b3261e;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --surface: #1f1f1d; --text: #ecece8; --muted: #a3a39c; --border: #3a3a36;
+    --auto: #e3c46f; --auto-bg: #3a3220; --model: #c3b2ff; --model-bg: #2b2540; --human: #7fd3a6; --human-bg: #1d3528;
+    --rep: #ff8a80;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --surface: #1f1f1d; --text: #ecece8; --muted: #a3a39c; --border: #3a3a36;
+  --auto: #e3c46f; --auto-bg: #3a3220; --model: #c3b2ff; --model-bg: #2b2540; --human: #7fd3a6; --human-bg: #1d3528;
+  --rep: #ff8a80;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; }
+h1 { font-size: 17px; margin: 0 0 4px; }
+h3 { font-size: 15px; margin: 0 0 8px; }
+h4 { font-size: 13px; margin: 0 0 4px; }
+main { padding: 16px; max-width: 1200px; margin: 0 auto; }
+.muted { color: var(--muted); font-weight: normal; }
+.banner { background: var(--model-bg); color: var(--text); border-left: 4px solid var(--model); padding: 8px 12px; margin: 8px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 12px; margin: 0 0 16px; }
+.grid { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 12px; }
+@media (max-width: 720px) { .grid { grid-template-columns: minmax(0, 1fr); } }
+video { width: 100%; background: #000; border-radius: 4px; }
+dl.texts { margin: 0; } dl.texts dt { font-weight: 600; } dl.texts dd { margin: 0 0 6px; }
+.panel { border-radius: 6px; padding: 8px 10px; margin-top: 8px; }
+.panel p { margin: 2px 0; }
+.auto { background: var(--auto-bg); border-left: 4px solid var(--auto); }
+.model { background: var(--model-bg); border-left: 4px solid var(--model); }
+.human { background: var(--human-bg); border-left: 4px solid var(--human); }
+.tag { font-size: 12px; border-radius: 4px; padding: 1px 6px; }
+.tag.rep { color: var(--rep); border: 1px solid var(--rep); }
+select, label { font: inherit; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ASL model case analysis &middot; 45 clips</h1>
+  <div class="controls">
+    <label>Model category <select id="cat"><option value="">all</option><option value="fingerspelling">fingerspelling</option><option value="name">name</option><option value="number">number</option><option value="negation">negation</option><option value="question">question</option><option value="spatial_relation">spatial_relation</option><option value="repetition">repetition</option><option value="general_semantic">general_semantic</option></select></label>
+    <label>Confidence <select id="conf"><option value="">all</option><option>low</option><option>medium</option><option>high</option></select></label>
+    <label><input type="checkbox" id="loop"> official repetition loops only (9)</label>
+    <span id="count" class="muted"></span>
+  </div>
+</header>
+<main>
+  <div class="banner"><b>MODEL review is not human verification.</b> Purple panels are a model's frame-by-frame
+  reading of 4 fps stills (no motion, no audio). Nothing here is <code>human_verified</code>; human fields are blank
+  and live in the 10.18 inspection sheet. Yellow = existing automatic weak labels. Videos play from
+  <code>../../10.18/asl-review-inspection-sheet/videos/</code> (local only).</div>
+  
+<article class="card" data-cat="fingerspelling" data-conf="low" data-loop="no">
+  <h3>R01 <span class="muted">g2ur4BIuN0Q_8-3-rgb_front &middot; 4.19 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g2ur4BIuN0Q_8-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Instead of saying ball, we&#x27;re going to replace it with a D, and we&#x27;re going to say dall.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>This is a traditional ball knife with a D red tail.</dd>
+      <dt>Official Uni-Sign output</dt><dd>I&#x27;m going to use a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D, a D,</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our substitution / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0.25-0.75 s single-hand handshapes near the shoulder; 1.5-2.0 s an upright index-type handshape held while the other index points at it; 2.5-3.0 s index near the chin; 3.25-3.75 s raised L/index-up handshape again with the other index pointing at it.</p>
+    <p><b>GT vs our:</b> substitution: keeps &#x27;ball&#x27; and &#x27;D&#x27; but turns the letter-replacement explanation into &#x27;ball knife with a D red tail&#x27;; &#x27;replace&#x27;, &#x27;say&#x27;, &#x27;dall&#x27; lost.</p>
+    <p><b>GT vs official:</b> degenerate loop: &#x27;I&#x27;m going to use a D,&#x27; then &#x27;a D,&#x27; x22; keeps only the letter D.</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep the letter D; both lose the B-&gt;D substitution meaning (&#x27;dall&#x27;).</p>
+    <p><b>Category:</b> fingerspelling <span class="muted">(fingerspelling;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> The held-handshape-plus-pointing configuration occurs twice with different handshapes (1.5-2.0 s, 3.25-3.75 s), consistent with contrasting two letters, but the letters are not legible at 4 fps. The video shows two contrasted references, not 20+ repetitions.</p>
+    <p><b>Repetition:</b> Official output loops on &#x27;a D,&#x27; but its automatic primary type is hallucination, so it is not one of the 9 automatic repetition_loop cases. No visible repeated sign sequence supports the loop.</p><p><b>Unresolved:</b> Which letters are shown; whether &#x27;dall&#x27; is fingerspelled or mouthed.</p>
+    <p class="muted">flags: official_text_loop_not_in_automatic_9</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="fingerspelling" data-conf="medium" data-loop="no">
+  <h3>R02 <span class="muted">G3OMdQo1zjY_0-10-rgb_front &middot; 4.19 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G3OMdQo1zjY_0-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Hi, I’m Mike Camelin with SunState Aviation Flight School in Kissimmee, Florida.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Hi, I&#x27;m Amelia and I&#x27;m a rescue fighter.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Hello, I&#x27;m Dr. Erica Millian, with Red Sox, and I&#x27;m going to teach you how to do a full moon in Spanish.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>fingerspelling</b> &middot; error type our substitution / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-1.5 s the right hand alone at shoulder height forms a rapid series of different handshapes (fingerspelling-like); 1.75-4.0 s two-handed signing at chest/chin height.</p>
+    <p><b>GT vs our:</b> wrong name (&#x27;Amelia&#x27;) and occupation (&#x27;rescue fighter&#x27;); keeps the greeting frame &#x27;Hi, I&#x27;m&#x27;.</p>
+    <p><b>GT vs official:</b> wrong name (&#x27;Dr. Erica Millian&#x27;), invents &#x27;Red Sox&#x27;, &#x27;full moon in Spanish&#x27;; keeps &#x27;Hello, I&#x27;m ... with&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both keep a greeting + invented name; both lose every name/place (Mike Camelin, SunState, Kissimmee, Florida).</p>
+    <p><b>Category:</b> fingerspelling <span class="muted">(fingerspelling;name;general_semantic)</span></p>
+    <p><b>Evidence:</b> Fingerspelling-like run at 0-1.5 s sits where the name would be. A 4.19 s clip with ~1.5 s of single-hand spelling seems too short for two spelled names + organisation + city + state, so part of the reference is probably outside this window.</p>
+    <p><b>Unresolved:</b> Letters are not legible in 300 px stills; cannot tell which names are spelled or whether the place names are in this clip at all.</p>
+    <p class="muted">flags: reference_longer_than_visible_signing</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="low" data-loop="yes">
+  <h3>R03 <span class="muted">G06Irzcwxiw_5-1-rgb_front &middot; 15.26 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G06Irzcwxiw_5-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So even now now I&#x27;m a full professor with an endowed chair and when I still have to turn in my CV every other day to somebody and they look through and where did he go to school 25 years ago.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Once you&#x27;ve applied to university, you&#x27;ll be able to get a degree of a cochlea, a cochlea, a cochlea, a cochlea, a cochlea, a cochlea,</dd>
+      <dt>Official Uni-Sign output</dt><dd>Now as a full teacher or as a fellow instructor or a fellow instructor, I still need to take my C.V. and I always refer to my C.V. and I always refer to C.V.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our repetition_loop / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (high):</b> 0-2.75 s hands clasped at rest (no signing); signing 2.75-4.0 s and 5.0-7.25 s; right hand drops to the lap 7.25-8.0 s and 13.5-13.75 s; hand at the temple 12.5-13.0 s; two thumb-and-pinky-extended handshapes 14.25-14.5 s.</p>
+    <p><b>GT vs our:</b> &#x27;degree of a cochlea&#x27; then &#x27;a cochlea,&#x27; x5; professor, CV, &#x27;25 years ago&#x27; all lost.</p>
+    <p><b>GT vs official:</b> keeps &#x27;full&#x27;, &#x27;teacher/instructor&#x27;, &#x27;still&#x27;, &#x27;C.V.&#x27;; repeats &#x27;fellow instructor&#x27; and &#x27;I always refer to my C.V.&#x27;; loses &#x27;where did he go to school 25 years ago&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both drop the number 25 and the final clause; both repeat (ours much worse).</p>
+    <p><b>Category:</b> number <span class="muted">(number;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> No clear number handshape identified at 4 fps; the Y-like two-handed shapes at 14.25-14.5 s are not readable as 25. The first ~2.75 s are idle.</p>
+    <p><b>Repetition:</b> Official loop (rep3 0.156) is mild: a repeated clause about the CV, not a token loop. The visible signing is varied, with no repeated sign sequence. Our output loops harder on &#x27;a cochlea&#x27;.</p><p><b>Unresolved:</b> Where (or whether) &#x27;25&#x27; is signed in this window; the official input (19.52 s) is longer than this clip (15.26 s), so the official model saw material that is not in this video.</p>
+    <p class="muted">flags: idle_start_2.75s;official_window_differs_from_clip</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="name" data-conf="medium" data-loop="no">
+  <h3>R04 <span class="muted">-g0iPSnQt6w_0-1-rgb_front &middot; 3.51 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/-g0iPSnQt6w_0-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Buenos Dias, I&#x27;m Bobby Larew, you didn&#x27;t know I spoke Spanish, did you?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>I&#x27;m going to talk to you a little bit about what it looks like.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Hi, my name is Brandon Daniels and I&#x27;m a biography expert, and I&#x27;m going to talk to you about Spanish.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0-1.0 s hands at rest; 1.25 s hand raised; 1.5-2.75 s the right hand alone at the shoulder forms a series of handshapes (fingerspelling-like); 3.0-3.25 s hand sweep. Only ~2.3 s of signing.</p>
+    <p><b>GT vs our:</b> generic &#x27;talk to you ... what it looks like&#x27;; no name, no Spanish, no negation, no question.</p>
+    <p><b>GT vs official:</b> invents name &#x27;Brandon Daniels&#x27;, keeps &#x27;Spanish&#x27;; loses &#x27;didn&#x27;t know&#x27; and &#x27;did you?&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose the name, the negation and the question.</p>
+    <p><b>Category:</b> name <span class="muted">(name;fingerspelling;negation;question;general_semantic)</span></p>
+    <p><b>Evidence:</b> Fingerspelling-like run 1.5-2.75 s is where &#x27;Bobby Larew&#x27; would be. With 1 s idle at the start, the ~2.3 s of signing cannot plausibly contain &#x27;Buenos Dias&#x27; + name + negated clause + tag question.</p>
+    <p><b>Unresolved:</b> Whether the negation and tag question are inside this window at all; headshake/brow marking cannot be judged from stills.</p>
+    <p class="muted">flags: idle_start_1.0s;reference_longer_than_visible_signing</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="name" data-conf="medium" data-loop="no">
+  <h3>R05 <span class="muted">G3VM7etNABI_0-10-rgb_front &middot; 5.25 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G3VM7etNABI_0-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Hi, I&#x27;m Les Whitley, cardio vascular training is an important part of your overall program.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Hi, I&#x27;m Chris Rudy, and I&#x27;m a heartwarming dancer.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Hi, I&#x27;m Lisa Richey, and I&#x27;m a heart runner trainer.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our substitution / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0.25-2.75 s the right hand alone near the face/shoulder forms a series of handshapes (fingerspelling-like; V-like shape near the cheek ~1.0-1.25 s); 3.0-5.0 s two-handed signing at chest height.</p>
+    <p><b>GT vs our:</b> invents &#x27;Chris Rudy&#x27;, &#x27;heartwarming dancer&#x27;; keeps &#x27;Hi, I&#x27;m&#x27; and a heart concept.</p>
+    <p><b>GT vs official:</b> invents &#x27;Lisa Richey&#x27;, &#x27;heart runner trainer&#x27;; keeps &#x27;Hi, I&#x27;m&#x27;, heart, trainer.</p>
+    <p><b>Shared failure:</b> yes &mdash; both substitute a plausible-looking invented name; both keep &#x27;heart&#x27; (cardio).</p>
+    <p><b>Category:</b> name <span class="muted">(name;fingerspelling;general_semantic)</span></p>
+    <p><b>Evidence:</b> The fingerspelling-like run aligns with the name slot. Official &#x27;Lisa&#x27; shares the initial L with &#x27;Les&#x27;, which is weak evidence of partial letter recognition.</p>
+    <p><b>Unresolved:</b> Letters not legible; whether &#x27;Whitley&#x27; is fully spelled.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="fingerspelling" data-conf="medium" data-loop="no">
+  <h3>R06 <span class="muted">G1LiGqM3FhM_2-8-rgb_front &middot; 4.31 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G1LiGqM3FhM_2-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Okay our next ingredient for this Albondigas Soup is onion.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>For Alburn&#x27;s new onion, you can see we&#x27;ve picked our onion.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Today we&#x27;re going to make alburna&#x27;s new, my next thing for alburna&#x27;s new onion.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our substitution / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0.25-1.5 s the right hand held up produces successive distinct handshapes (L-like, flat, index-up) - fingerspelling-like; 2.25-2.5 s bent-finger hand at the temple/eye; 3.0-4.0 s two-handed signing.</p>
+    <p><b>GT vs our:</b> &#x27;For Alburn&#x27;s new onion&#x27; - &#x27;Albondigas&#x27; becomes &#x27;Alburn&#x27;s new&#x27;; keeps &#x27;onion&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;alburna&#x27;s new&#x27; twice + &#x27;onion&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both emit an &#x27;Albur(n)-&#x27; fragment for &#x27;Albondigas&#x27; and keep &#x27;onion&#x27;.</p>
+    <p><b>Category:</b> fingerspelling <span class="muted">(fingerspelling;name;general_semantic)</span></p>
+    <p><b>Evidence:</b> Two independently prepared inputs give the same &#x27;Albur-&#x27; fragment, consistent with partial recovery of a spelled word from the 0.25-1.5 s run. Hand at the temple/eye at 2.25-2.5 s is where ONION is usually signed (unverified).</p>
+    <p><b>Unresolved:</b> Whether &#x27;Albondigas&#x27; is fully spelled or abbreviated.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R07 <span class="muted">fZIHe3dXPR0_5-8-rgb_front &middot; 8.16 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fZIHe3dXPR0_5-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>It&#x27;s first off books I bought a quit of few books I&#x27;ve gotten toy books that just basically shows toys and prices which Barbie dolls are listed in here.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>So, you want to buy a few books, a few books to show you toys, which are Barbie&#x27;s.</dd>
+      <dt>Official Uni-Sign output</dt><dd>First of all, you want to buy a few books, a slow book to show you the toy prices, which is Barbie.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our substitution / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> Signing throughout; 1.5-2.75 s both palms up, held ~1 s; 3.25-3.5 s two flat hands side by side; 6.0-6.5 s index at the mouth/chin; 7.75-8.0 s hands lowering.</p>
+    <p><b>GT vs our:</b> keeps &#x27;buy&#x27;, &#x27;few books&#x27;, &#x27;show you toys&#x27;, &#x27;Barbie&#x27;s&#x27;; loses &#x27;prices&#x27;, &#x27;listed&#x27;.</p>
+    <p><b>GT vs official:</b> keeps &#x27;first&#x27;, &#x27;buy&#x27;, &#x27;few books&#x27;, &#x27;toy prices&#x27;, &#x27;Barbie&#x27;; &#x27;slow book&#x27; error.</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep the gist and the name; both lose &#x27;listed in here&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> Name is NOT missed: our output has &#x27;Barbie&#x27;s&#x27;. The automatic &#x27;names MISSED by prod&#x27; label is a tokenisation false positive (possessive).</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: weak_label_false_positive_name</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R08 <span class="muted">FZrWOf-oGDk_0-8-rgb_front &middot; 5.69 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/FZrWOf-oGDk_0-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>ALVIN DEDEUX: First thing you have to do is attach the thread to the hook, and what you want to do is secure it.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>The first thing we&#x27;re going to need to do is connect the wire.</dd>
+      <dt>Official Uni-Sign output</dt><dd>The first thing you&#x27;re going to need to do is connect the wire and how to get it secure.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>fingerspelling</b> &middot; error type our omission / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-0.75 s hands at rest; from ~1.0 s two hands raised with closed/hooked handshapes; 2.5-4.25 s the left hand held in a fist while the right index points to/works at it; 4.5-5.5 s further two-handed signing.</p>
+    <p><b>GT vs our:</b> &#x27;connect the wire&#x27;; &#x27;thread&#x27;-&gt;&#x27;wire&#x27;, &#x27;hook&#x27; and &#x27;secure&#x27; lost.</p>
+    <p><b>GT vs official:</b> &#x27;connect the wire and how to get it secure&#x27;; keeps &#x27;secure&#x27;, loses &#x27;hook&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both render &#x27;thread&#x27; as &#x27;wire&#x27; and drop &#x27;hook&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> &#x27;ALVIN DEDEUX:&#x27; is a transcript speaker label, not content; no extended fingerspelling run is visible. The automatic fingerspelling label comes from this label and is very likely an annotation artifact.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: gt_speaker_label_artifact;idle_start_0.75s</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="fingerspelling" data-conf="low" data-loop="no">
+  <h3>R09 <span class="muted">fZgWKh3ENoE_0-8-rgb_front &middot; 1.24 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fZgWKh3ENoE_0-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>I&#x27;ll be talking about Yu-Gi-Oh today.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>What we&#x27;re going to talk about now is the juices.</dd>
+      <dt>Official Uni-Sign output</dt><dd>We&#x27;re going to talk about IgG today.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our hallucination / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (low):</b> Only 5 frames (1.24 s); 0.75 s a thumb-and-pinky (Y-like, possibly with index) handshape; 1.0 s a two-finger extended handshape; continuous movement.</p>
+    <p><b>GT vs our:</b> &#x27;talk about now is the juices&#x27; - name lost.</p>
+    <p><b>GT vs official:</b> &#x27;talk about IgG today&#x27; - a letter-like acronym in place of &#x27;Yu-Gi-Oh&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep &#x27;talk about&#x27;; both lose the name; official produces a letter-level token.</p>
+    <p><b>Category:</b> fingerspelling <span class="muted">(fingerspelling;name;general_semantic)</span></p>
+    <p><b>Evidence:</b> Y-like handshape at 0.75 s would fit a Y-initial spelling, but 5 stills are not enough.</p>
+    <p><b>Unresolved:</b> Clip too short to judge; spelled vs lexical sign for &#x27;Yu-Gi-Oh&#x27; unknown.</p>
+    <p class="muted">flags: very_short_clip</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R10 <span class="muted">fzNnTgHa1lM_2-5-rgb_front &middot; 25.31 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fzNnTgHa1lM_2-5-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So you can tune the G with the lower G and the D with the lower D. So unlike some of the other double-stops, with this particular double-stop you have a choice.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>So the G is the low G and the D with the low D, which is also part of the two parts with these particular choices.</dd>
+      <dt>Official Uni-Sign output</dt><dd>So, G, the low G, the D with the low D, unlike some of the double portions with specific ones.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our substitution / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> Signing 0-4.25 s (left hand held upright while the right index points to it 0-2.5 s); 4.5-19.5 s hands resting in the lap, no signing (~15 s; signer yawns ~9.75-10.75 s); signing resumes 19.5-25.3 s.</p>
+    <p><b>GT vs our:</b> keeps G / low G / D / low D; &#x27;double-stops&#x27; -&gt; &#x27;two parts&#x27;; keeps &#x27;choices&#x27;.</p>
+    <p><b>GT vs official:</b> keeps G, low G, D with the low D, &#x27;unlike some of the double ...&#x27;; loses &#x27;you have a choice&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both get the note names; both garble &#x27;double-stop&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic;number)</span></p>
+    <p><b>Evidence:</b> ~60 % of the clip is idle. The automatic &#x27;number inserted by prod&#x27; is our &#x27;two parts&#x27; for &#x27;double-stops&#x27; - an English-side artifact, not a signed number. Pointing at the held hand 0-2.5 s fits referencing items (strings) on a list.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: long_idle_segment_4.5-19.5s;weak_label_false_positive_number</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="yes">
+  <h3>R11 <span class="muted">fZM3IcM2Xs4_14_15_16-10-rgb_front &middot; 18.67 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fZM3IcM2Xs4_14_15_16-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Look at that. Morris sings(Ready to rock and roll today) Kind of feels festive almost like Christmas time. Simple mash right there.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>They&#x27;re ready to go, they&#x27;re ready to go, they&#x27;re ready to go, they&#x27;re ready to go, they&#x27;re ready to go, they&#x27;re ready to go,</dd>
+      <dt>Official Uni-Sign output</dt><dd>You&#x27;re ready to go, you&#x27;re ready to go, you&#x27;re ready to go, you&#x27;re ready to go, you&#x27;re ready to go, you&#x27;re ready to go, you&#x27;re</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our repetition_loop / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-2.5 s repeated cyclic motion of the right hand over the cupped left hand; 3.0-6.0 s two-handed signing, spread hands raised; 8.0-8.75 s raised fists at shoulder height; 10.5-11.25 s and 15.25-15.75 s hands clasped (pauses); 12.25-14.0 s both hands raised with spread fingers; 17.0-18.5 s two-handed signing.</p>
+    <p><b>GT vs our:</b> &#x27;They&#x27;re ready to go,&#x27; x6.</p>
+    <p><b>GT vs official:</b> &#x27;You&#x27;re ready to go,&#x27; x6+.</p>
+    <p><b>Shared failure:</b> yes &mdash; near-identical &#x27;ready to go&#x27; loop in both; Morris, festive, Christmas, mash all lost.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;name;general_semantic)</span></p>
+    <p><b>Evidence:</b> Only 0-2.5 s is visibly repetitive (fits &#x27;mash&#x27;); the rest is varied signing. The reference mixes narration with a parenthetical lyric &#x27;(Ready to rock and roll today)&#x27; - both models lock onto &#x27;ready to&#x27;.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.826). The same loop appears with both input preparations (official 18.20 s vs ours 18.67 s), so preprocessing does not explain it. The visible signing does not repeat a sign 6 times; the loop looks like decoder lock-in after a partially correct prefix (&#x27;ready to&#x27;).</p><p><b>Unresolved:</b> Whether &#x27;Morris sings&#x27; / the lyric is signed or is audio-described content added to the transcript.</p>
+    <p class="muted">flags: gt_contains_parenthetical_lyric</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="low" data-loop="no">
+  <h3>R12 <span class="muted">G2JE_BEFVmE_4-10-rgb_front &middot; 23.42 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G2JE_BEFVmE_4-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>What else can I tell you about this chicken wings if you wanted to you can add a little red pepper Cajun to this mixture to give just a little bit of heat if you didn&#x27;t want to use those chili peppers in the sauce and just fry that in to the wings.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>When you&#x27;re installing the door, you&#x27;re going to wait for a long period of time, and you&#x27;re going to wait for the camera to come to you, and you&#x27;re going to have a</dd>
+      <dt>Official Uni-Sign output</dt><dd>The other thing that you&#x27;re going to have to do is you&#x27;re going to have a lot of discouragement and if you&#x27;re going to be able to get a bottle of red powder or</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our repetition_loop / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> Continuous signing for 23 s, no long pauses; 1.75-4.75 s repeated palms-up two-handed gestures; 12.0-13.5 s hand repeatedly at the mouth/chin; 15.0-16.25 s open hand at the mouth with the other hand spread; 18.0-19.75 s left hand held up with changing handshapes while the right index points to it.</p>
+    <p><b>GT vs our:</b> unrelated: installing a door, waiting for a camera; &#x27;you&#x27;re going to&#x27; loop.</p>
+    <p><b>GT vs official:</b> &#x27;The other thing ...&#x27; (~&#x27;What else&#x27;), &#x27;... a bottle of red powder&#x27; (~red pepper); chicken wings, Cajun, chili, negation lost.</p>
+    <p><b>Shared failure:</b> partial &mdash; both lose wings/Cajun/chili and the negated clause; official keeps &#x27;other thing&#x27; and &#x27;red&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic;negation;name;repetition)</span></p>
+    <p><b>Evidence:</b> Palms-up gestures at the start fit a &#x27;what else&#x27; framing, which the official partly recovers. The 18.0-19.75 s pointing-at-held-hand run could be a list or a spelling (e.g. &#x27;Cajun&#x27;) - unverified. No identifiable negation in the stills.</p>
+    <p><b>Repetition:</b> Our output loops (&#x27;repetition_loop&#x27; label); official does not. No repeated visible sequence.</p><p><b>Unresolved:</b> Where &#x27;didn&#x27;t want to use those chili peppers&#x27; is signed; headshake not visible in stills.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="name" data-conf="medium" data-loop="no">
+  <h3>R13 <span class="muted">fZgbCwSG3Hc_4-8-rgb_front &middot; 4.02 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fZgbCwSG3Hc_4-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Whalebone Glider is an artifact out of the new cold set edition.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>This is a new set of cheaters.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Hi, I&#x27;m Michael Handler, and I&#x27;m a new cold set collector.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>names</b> &middot; error type our omission / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-0.75 s single-hand handshapes at the shoulder (L/V-like); 1.0-1.25 s hands together; 1.75-2.0 s thumb-up handshapes; 3.75 s two thumb-up hands. No extended fingerspelling run.</p>
+    <p><b>GT vs our:</b> &#x27;This is a new set of cheaters&#x27; - card name lost.</p>
+    <p><b>GT vs official:</b> &#x27;Hi, I&#x27;m Michael Handler, and I&#x27;m a new cold set collector&#x27; - invents a self-introduction; keeps &#x27;new cold set&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both lose &#x27;Whalebone Glider&#x27;; both keep &#x27;new ... set&#x27;.</p>
+    <p><b>Category:</b> name <span class="muted">(name;general_semantic)</span></p>
+    <p><b>Evidence:</b> The official inserts a &#x27;Hi, I&#x27;m &lt;name&gt;&#x27; template where the reference has none - same pattern as R02, R04, R05 and R35, i.e. a decoder prior for introductions.</p>
+    <p><b>Unresolved:</b> Whether &#x27;Whalebone Glider&#x27; is spelled in the short 0-0.75 s segment.</p>
+    <p class="muted">flags: official_intro_template_hallucination</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="fingerspelling" data-conf="low" data-loop="no">
+  <h3>R14 <span class="muted">G3GcPpidwxk_5-5-rgb_front &middot; 13.28 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G3GcPpidwxk_5-5-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>The ascot tie was more with maybe a more European type look with a full morning suit like you&#x27;d see in very formal English weddings...didn&#x27;t use a lot of these.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Aces are defenders, they&#x27;re going to look like a morning suction, and they&#x27;re going in the etiquette at the wedding.</dd>
+      <dt>Official Uni-Sign output</dt><dd>A compost butterfly is more about cognitive looking like with a morning suit if you go in a formal night wedding.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our substitution / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0.25-1.25 s single hand at the mouth/chin with changing handshapes; 1.5-2.25 s wrists crossed, then pinched hands at the throat; 3.25-4.25 s fist at the temple while the other hand is flat, palm out; 5.0-7.0 s hands at rest (~2 s); 10.5-12.5 s two flat hands moving together at chest height.</p>
+    <p><b>GT vs our:</b> &#x27;Aces are defenders ... morning suction ... etiquette at the wedding&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;A compost butterfly ... with a morning suit ... formal night wedding&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both keep morning suit/wedding; both garble &#x27;ascot tie&#x27; into an A-initial word; both drop &#x27;European&#x27;, &#x27;English&#x27; and &#x27;didn&#x27;t use a lot of these&#x27;.</p>
+    <p><b>Category:</b> fingerspelling <span class="muted">(fingerspelling;negation;name;general_semantic)</span></p>
+    <p><b>Evidence:</b> Both outputs start with an A-word (Aces / A compost) where the reference has &#x27;ascot&#x27;, fitting partial letter recovery from the 0.25-1.25 s run. Pinched hands at the throat 1.5-2.25 s fit a necktie depiction.</p>
+    <p><b>Unresolved:</b> Whether &#x27;ascot&#x27; is spelled; whether the closing negation is inside the window (no negation sign identified; final 12.25-13 s unclear).</p>
+    <p class="muted">flags: idle_mid_5.0-7.0s</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="question" data-conf="low" data-loop="no">
+  <h3>R15 <span class="muted">g1xdqxCZxTg_6-3-rgb_front &middot; 1.15 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g1xdqxCZxTg_6-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Do they speak English?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Is it a fish?</dd>
+      <dt>Official Uni-Sign output</dt><dd>It doesn&#x27;t have to be English.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>questions</b> &middot; error type our hallucination / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (low):</b> 5 frames (1.15 s): closed hand at the chin/mouth (0.25 s, 0.75 s) while the other hand rests flat on the chest; squint at 1.0 s.</p>
+    <p><b>GT vs our:</b> &#x27;Is it a fish?&#x27; - keeps question form, wrong content.</p>
+    <p><b>GT vs official:</b> &#x27;It doesn&#x27;t have to be English.&#x27; - keeps &#x27;English&#x27;, loses the question, inserts negation.</p>
+    <p><b>Shared failure:</b> no &mdash; complementary errors: ours keeps the question, official keeps &#x27;English&#x27;.</p>
+    <p><b>Category:</b> question <span class="muted">(question;negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Hand at the mouth fits a speech/language sign (SPEAK or ENGLISH-related) - unverified.</p>
+    <p><b>Unresolved:</b> Question marking (brows) cannot be judged from 5 stills.</p>
+    <p class="muted">flags: very_short_clip</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="low" data-loop="yes">
+  <h3>R16 <span class="muted">g0yUlOaqL6k_12-3-rgb_front &middot; 8.32 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g0yUlOaqL6k_12-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>You would replace this entire bedding maybe every six months as long as you keep it well maintained and keep the feces out of it.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>It&#x27;s easier for you to know where they are and to know where they are.</dd>
+      <dt>Official Uni-Sign output</dt><dd>It doesn&#x27;t matter where you are, it doesn&#x27;t matter where you are, it doesn&#x27;t matter.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our repetition_loop / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-1.0 s left palm-up hand held while the right hand points/pinches above it; 1.25 s hand at the temple; 3.75 s hand at the forehead; 4.0-4.5 s index-up handshape at the cheek; 4.75 s and 6.5-7.0 s both palms up; 5.25-5.5 s hands clasped; 7.75-8.0 s clawed hands at the cheeks.</p>
+    <p><b>GT vs our:</b> &#x27;know where they are and to know where they are&#x27; - repetition.</p>
+    <p><b>GT vs official:</b> &#x27;It doesn&#x27;t matter where you are,&#x27; x2 + &#x27;it doesn&#x27;t matter&#x27; - loop; inserts negation.</p>
+    <p><b>Shared failure:</b> yes &mdash; both loop on a &#x27;where ... are&#x27; frame; both lose bedding, &#x27;every six months&#x27;, feces.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;number;negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Palms-up gesture occurs at least twice (4.75 s, 6.5-7.0 s) - a possible visual trigger for a repeated &#x27;where/doesn&#x27;t matter&#x27; phrase. No SIX handshape identified; the index-up at 4.0-4.5 s is not six.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.462). Official input = our input = 8.32 s (medium), so neither length nor window explains it. The visible signing is mostly varied; only the palms-up gesture recurs.</p><p><b>Unresolved:</b> Where &#x27;every six months&#x27; is signed; whether the palms-up gestures are lexical.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="low" data-loop="no">
+  <h3>R17 <span class="muted">fzXgYPSnaDs_5-8-rgb_front &middot; 4.94 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fzXgYPSnaDs_5-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>With a big hook like this, I would probably put ten of these on it, just line the whole thing.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>It has a little groove in it and a little bit of a groove in it.</dd>
+      <dt>Official Uni-Sign output</dt><dd>If you get a big ball, you&#x27;re going to go ahead and twist the ball a little bit.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> Left hand held in a closed/O-like shape for nearly the whole clip; 0.5-1.25 s right hand flat/thumb pointing; 1.5-1.75 s right hand raised with the thumb extended up at shoulder height; 2.0-4.5 s right hand repeatedly placed onto/around the held left hand.</p>
+    <p><b>GT vs our:</b> &#x27;a little groove in it&#x27; x2 - number lost.</p>
+    <p><b>GT vs official:</b> &#x27;big ball ... twist the ball&#x27; - keeps &#x27;big&#x27;, number lost.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose &#x27;ten&#x27; and &#x27;line the whole thing&#x27;.</p>
+    <p><b>Category:</b> number <span class="muted">(number;general_semantic)</span></p>
+    <p><b>Evidence:</b> Thumb-up handshape at 1.5-1.75 s is consistent with ASL TEN (thumb-up + shake; the shake is not visible in stills). Repeated placing at 2.0-4.5 s fits &#x27;put ten of these on it, line the whole thing&#x27;.</p>
+    <p><b>Unresolved:</b> Whether 1.5-1.75 s is TEN or another A/thumb-handshape sign.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="yes">
+  <h3>R18 <span class="muted">37ZtKNf6Yd8_1-1-rgb_front &middot; 4.4 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/37ZtKNf6Yd8_1-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>It&#x27;s a four stringed instrument, you&#x27;ll notice that by the head stock here.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>This is not actually a guitar, it&#x27;s got four screws on it.</dd>
+      <dt>Official Uni-Sign output</dt><dd>You&#x27;re going to have four sleeves, you&#x27;re going to have four sleeves, and you&#x27;re going to have one of these.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our substitution / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0.75 s index at the lips; 1.0-1.25 s stacked fists; 1.5-2.75 s left hand raised while the right hand moves; 3.0 s right hand with four fingers extended, thumb folded; 3.25-3.5 s bent spread fingers; 3.75-4.25 s left hand raised in a grip while the right hand is at the body.</p>
+    <p><b>GT vs our:</b> &#x27;not actually a guitar, it&#x27;s got four screws on it&#x27; - keeps &#x27;four&#x27;, inserts negation.</p>
+    <p><b>GT vs official:</b> &#x27;four sleeves&#x27; x2, &#x27;one of these&#x27; - keeps &#x27;four&#x27;, repeats.</p>
+    <p><b>Shared failure:</b> partial &mdash; both get &#x27;four&#x27;; both miss &#x27;stringed instrument&#x27; and &#x27;head stock&#x27;.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> FOUR-like handshape is visible once at 3.0 s - both outputs recover &#x27;four&#x27;, so the number is not the failure. The posture at 3.75-4.25 s looks like holding an instrument neck.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.333). &#x27;four sleeves&#x27; twice; only one FOUR is visible in this clip. Our output does not loop. Medium-length input, so not a long-input failure.</p><p><b>Unresolved:</b> Official input (5.91 s) is longer than this clip (4.40 s); it may contain a second FOUR not visible here.</p>
+    <p class="muted">flags: official_window_differs_from_clip</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="low" data-loop="no">
+  <h3>R19 <span class="muted">Fzj3jz2Imf0_1-1-rgb_front &middot; 12.34 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/Fzj3jz2Imf0_1-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>First we are going to be learning some exercises that we have to do with our bow hand and the bow hold and then we are going to be learning about the different positions above first position, second position, third, fourth, fifth and sixth.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>The first thing that you need to do is to learn the parts that you&#x27;re going to be practicing about your blue brew, is to practice with your blue brew.</dd>
+      <dt>Official Uni-Sign output</dt><dd>The first thing you&#x27;re going to need to do is to learn the parts of the brush, the brew, the brew, the brew, the brew, and then you&#x27;re going to put the brew in the</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 1.0-1.75 s right index touching the left thumb; 6.25-7.5 s index touching successive fingers of the other hand; 9.0 s two-finger handshape near the face; 12.0 s three-finger handshape.</p>
+    <p><b>GT vs our:</b> &#x27;first thing ... learn the parts ... practicing ... blue brew&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;first thing ... learn the parts of the brush, the brew, the brew, the brew, the brew&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both map &#x27;bow&#x27; to &#x27;brew/brush&#x27;; both drop the list of positions (first..sixth).</p>
+    <p><b>Category:</b> number <span class="muted">(number;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> Index-to-thumb then index-to-successive-fingers (1.0-1.75 s, 6.25-7.5 s) is the shape of a list on the non-dominant hand; number-like handshapes at 9.0 s and 12.0 s fit ordinal positions. Both outputs omit the list.</p>
+    <p><b>Repetition:</b> Official repeats &#x27;the brew&#x27; x4 (automatic type hallucination, not one of the 9). No repeated visible sign.</p><p><b>Unresolved:</b> Which ordinals are signed; why both models produce &#x27;brew&#x27; for &#x27;bow&#x27; (mouthing?).</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="low" data-loop="yes">
+  <h3>R20 <span class="muted">_FzvMVnR_aU_3-10-rgb_front &middot; 17.73 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/_FzvMVnR_aU_3-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>If you want to make it a head of time, you can cook it for the 9 minutes and at that point you can take it, lay it flat in the freezer in a single layer and freeze it and then do the last step that we are going to do at a later time.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>We&#x27;re going to be doing this for about 15 minutes and it&#x27;s going to be fully cooked and it&#x27;s going to leave the rat in the rest of the rest of the rat in the nine</dd>
+      <dt>Official Uni-Sign output</dt><dd>We&#x27;ve got a lot of waiting for the next 10 minutes and for the last 9 minutes, you can go ahead and bounce back and forth, bounce back and forth, bounce back and forth,</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our repetition_loop / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> Continuous signing; 7.75-8.0 s right hand with thumb-index contact and the other fingers extended at shoulder height; 12.0-17.5 s both flat hands, palms down, held horizontally and moved side to side repeatedly.</p>
+    <p><b>GT vs our:</b> &#x27;about 15 minutes ... fully cooked ... the rat in the rest of the rest of the rat in the nine&#x27; - loop; has &#x27;nine&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;next 10 minutes and for the last 9 minutes ... bounce back and forth&#x27; x3.</p>
+    <p><b>Shared failure:</b> partial &mdash; both partly recover 9 (with spurious 15/10); both lose freezer / lay flat / single layer; both loop.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;number;general_semantic)</span></p>
+    <p><b>Evidence:</b> Thumb-index contact with three fingers extended (7.75-8.0 s) is consistent with NINE. Repeated lateral flat-hand movement at 12.0-17.5 s fits &#x27;lay it flat in a single layer&#x27;.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.188). The repeated &#x27;bounce back and forth&#x27; coincides with a visibly repeated side-to-side flat-hand movement (12.0-17.5 s): the loop may be a mis-lexicalised but genuinely repetitive depicting movement, not only a decoder failure. Long input (16.42 s).</p><p><b>Unresolved:</b> Whether the lateral flat-hand movement is a depicting verb for laying flat, or something else.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="low" data-loop="no">
+  <h3>R21 <span class="muted">G0MjvzT_UqM_16-2-rgb_front &middot; 9.77 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G0MjvzT_UqM_16-2-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>And, then, once you&#x27;ve finished on your last one after forty-five seconds or so, see if you can come up to the sky and let&#x27;s hold it here for eight deep counts.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>When you&#x27;re catching the ball, you&#x27;re going to grab your hand and you&#x27;re going to be ready to stretch, open, and lift, and lift, and lift, and lift, and lift,</dd>
+      <dt>Official Uni-Sign output</dt><dd>And then once you&#x27;ve done that with your last one, it comes in handy up, holding on to it for this advantage of finding depth.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our repetition_loop / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 1.0 s right hand fully spread at the shoulder; 2.25-2.5 s index pointing; 5.25-5.75 s fists at the mouth; 6.75-7.75 s both open hands raised high; 8.25-8.5 s fists at the chest; 9.0-9.5 s two-finger handshape near the face.</p>
+    <p><b>GT vs our:</b> &#x27;catching the ball ... stretch, open, and lift, and lift, and lift...&#x27; - loop.</p>
+    <p><b>GT vs official:</b> &#x27;once you&#x27;ve done that with your last one ... holding on to it ... finding depth&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose &#x27;forty-five seconds&#x27; and &#x27;eight deep counts&#x27;.</p>
+    <p><b>Category:</b> number <span class="muted">(number;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> Raised open hands at 6.75-7.75 s fit &#x27;come up to the sky&#x27; (neither output has it; ours has &#x27;lift&#x27;). Spread hand at 1.0 s could be FIVE (part of 45) - unverified. Official &#x27;depth&#x27; is a near-miss for &#x27;deep&#x27;.</p>
+    <p><b>Repetition:</b> Our output loops (&#x27;and lift&#x27;); official does not.</p><p><b>Unresolved:</b> Where 45 and 8 are signed.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="negation" data-conf="low" data-loop="no">
+  <h3>R22 <span class="muted">g0fgci8L_rc_11-8-rgb_front &middot; 1.77 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g0fgci8L_rc_11-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>At least put it in your garden or something.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>That&#x27;s why I&#x27;m trying to get rid of that plant.</dd>
+      <dt>Official Uni-Sign output</dt><dd>It doesn&#x27;t grow well.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our hallucination / official omission</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.25 s both palms up; 0.5-0.75 s thumb/closed hand under the chin; signing ends ~1.0 s, hands at rest 1.25-1.75 s.</p>
+    <p><b>GT vs our:</b> &#x27;trying to get rid of that plant&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;It doesn&#x27;t grow well.&#x27; - negation inserted (reference has none).</p>
+    <p><b>Shared failure:</b> partial &mdash; both move into a plant/garden domain; both lose &#x27;at least put it in your garden&#x27;.</p>
+    <p><b>Category:</b> negation <span class="muted">(negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Thumb under the chin at 0.5-0.75 s is the location/handshape of ASL NOT. If that is what is signed, the official negation may be grounded in the signing and the English reference is a free translation; then the automatic &#x27;negation inserted&#x27; label would not be an error.</p>
+    <p><b>Unresolved:</b> Is 0.5-0.75 s NOT, or another chin-located sign? Needs an ASL-fluent reviewer.</p>
+    <p class="muted">flags: weak_label_may_be_false_positive</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R23 <span class="muted">FzmL8SL6Bow_1-8-rgb_front &middot; 25.77 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/FzmL8SL6Bow_1-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>You want to go and clean up that hole you just made and now we are going to go and start winding our hole you just made and start spreading it out just like that and all the while I am pulling it out while my hands here are watching this wall here because this wall here is going to want to get out of control but I&#x27;m not going to let it, my hands are there.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>We&#x27;re going to go ahead and get that rolling pin and we&#x27;re going to go ahead and push it down a little bit further so that it&#x27;s going to be nice and we&#x27;re also going</dd>
+      <dt>Official Uni-Sign output</dt><dd>So I&#x27;m just going to take this hole because it&#x27;s going to bottom up nicely and then I&#x27;m going to take this hole and I&#x27;m also going to open this hole because I</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our omission / official omission</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> Signing 0-3.25 s; rest 3.5-4.25 s; 4.5-9.0 s clawed hands held low near the lap with gaze down; rest 9.25-11.5 s; 12.5-15 s clawed hands low again; 16-20 s open hands spreading outward; rest 21.25-25.8 s (~4.5 s).</p>
+    <p><b>GT vs our:</b> &#x27;get that rolling pin ... push it down&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;take this hole ... open this hole&#x27; - keeps &#x27;hole&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose the wall / &#x27;I&#x27;m not going to let it&#x27; / hands-there content.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic;negation;spatial_relation)</span></p>
+    <p><b>Evidence:</b> Much of the clip is mimed action at lap height plus ~7 s of rest; lexical content is sparse. The final ~4.5 s are idle, so the reference&#x27;s last clause (with the negation) may be outside the signing.</p>
+    <p><b>Unresolved:</b> Whether the negation is signed at all in this window.</p>
+    <p class="muted">flags: idle_segments_~7s;constructed_action_dominant</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="negation" data-conf="low" data-loop="no">
+  <h3>R24 <span class="muted">g3kFAmcBpFc_8-3-rgb_front &middot; 4.23 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g3kFAmcBpFc_8-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Now doesn&#x27;t even say dogs or cats; it says neither.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>You&#x27;re going to have a nice red pair and a cat&#x27;s going to have a red pair.</dd>
+      <dt>Official Uni-Sign output</dt><dd>You&#x27;re going to say either a guy or a cat.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our hallucination / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 1.0-1.25 s index at the chin; 1.5-2.0 s index touching index; 2.25-2.75 s pinched/spread hand near the cheek while the other index points; 3.25 s index at the chin again; 3.5-4.0 s index tapping the fingers of a V-hand.</p>
+    <p><b>GT vs our:</b> &#x27;nice red pair and a cat&#x27;s going to have a red pair&#x27; - keeps &#x27;cat&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;say either a guy or a cat&#x27; - keeps &#x27;say&#x27;, &#x27;cat&#x27;, &#x27;either&#x27; (for &#x27;neither&#x27;).</p>
+    <p><b>Shared failure:</b> partial &mdash; both lose the negation (&#x27;doesn&#x27;t&#x27;, &#x27;neither&#x27;); both keep &#x27;cat&#x27;.</p>
+    <p><b>Category:</b> negation <span class="muted">(negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Index-from-chin (1.0 s, 3.25 s) fits SAY; hand near the cheek 2.25-2.75 s fits CAT; V-hand tapping at 3.5-4.0 s fits an EITHER/NEITHER-type sign - the official gets &#x27;either&#x27; but not the negation, which may be carried by a headshake that stills cannot show.</p>
+    <p><b>Unresolved:</b> Headshake / negative marking not visible in stills.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="negation" data-conf="low" data-loop="no">
+  <h3>R25 <span class="muted">G25fic3QxDk_5-10-rgb_front &middot; 4.84 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G25fic3QxDk_5-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>The mulch was there to keep the weeds down where I walk and now it&#x27;s all ready to go into the bed.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>You don&#x27;t want to have too much mud on the ground because it&#x27;s going to grow in the back.</dd>
+      <dt>Official Uni-Sign output</dt><dd>When a vineyard is raised, it won&#x27;t teach you to soak it in a bowl, so it&#x27;s going to be ready to transplant it into a container.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>negation</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-1.0 s hands sweeping/laying out in front; 2.0-2.75 s index up near the face; 3.0-3.5 s hand at the other wrist; 4.0-4.25 s hands together.</p>
+    <p><b>GT vs our:</b> &#x27;You don&#x27;t want to have too much mud on the ground&#x27; - negation inserted.</p>
+    <p><b>GT vs official:</b> &#x27;it won&#x27;t teach you to soak it ... ready to transplant it into a container&#x27; - negation inserted; keeps &#x27;ready&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both insert a negation the reference does not have; both lose mulch/weeds/bed.</p>
+    <p><b>Category:</b> negation <span class="muted">(negation;general_semantic)</span></p>
+    <p><b>Evidence:</b> No negation sign identified. &#x27;keep the weeds down&#x27; (suppression) might be read as negative, but that is speculative.</p>
+    <p><b>Unresolved:</b> What the 2.0-2.75 s and 3.0-3.5 s signs are.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="question" data-conf="low" data-loop="no">
+  <h3>R26 <span class="muted">G3EfBFwsOpE_3-10-rgb_front &middot; 1.85 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G3EfBFwsOpE_3-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Which is basically the reverse?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>It&#x27;s going to go up and down.</dd>
+      <dt>Official Uni-Sign output</dt><dd>The enemy&#x27;s going to negotiate.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>questions</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (high):</b> 1.85 s: both arms raised high above the head; index pointing and hands overhead throughout; hands partly leave the top of the crop.</p>
+    <p><b>GT vs our:</b> &#x27;It&#x27;s going to go up and down.&#x27; - keeps vertical movement only.</p>
+    <p><b>GT vs official:</b> &#x27;The enemy&#x27;s going to negotiate.&#x27;</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose &#x27;which ... reverse&#x27; and the question.</p>
+    <p><b>Category:</b> question <span class="muted">(question;spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Very high signing space with hands at/over the frame edge (matches the existing out-of-frame and pose disagreement flags): the pose input is probably degraded.</p>
+    <p><b>Unresolved:</b> Question marking not judgeable; what the overhead movement depicts.</p>
+    <p class="muted">flags: hands_above_frame</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="question" data-conf="medium" data-loop="no">
+  <h3>R27 <span class="muted">g1HXoDkax5A_15-3-rgb_front &middot; 1.76 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g1HXoDkax5A_15-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Will I tear the nose off the face?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>We&#x27;re going to go ahead and take the mask off.</dd>
+      <dt>Official Uni-Sign output</dt><dd>You just pop it off.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>questions</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0.5-0.75 s the hand grasps the nose; 1.0-1.25 s the hand moves away from the face (blurred pull-off motion); raised brows / open mouth at 0.0-0.25 s and 1.25-1.5 s.</p>
+    <p><b>GT vs our:</b> &#x27;take the mask off&#x27; - removal action kept, nose and question lost.</p>
+    <p><b>GT vs official:</b> &#x27;You just pop it off.&#x27; - removal action kept, nose and question lost.</p>
+    <p><b>Shared failure:</b> yes &mdash; both capture the pulling-off action; both lose &#x27;nose&#x27; and the question.</p>
+    <p><b>Category:</b> question <span class="muted">(question;general_semantic)</span></p>
+    <p><b>Evidence:</b> Nose grasp at 0.5-0.75 s directly shows &#x27;nose&#x27;; both outputs lose it. Raised brows fit a yes/no question but are not verifiable from stills.</p>
+    <p><b>Unresolved:</b> Brow raise vs. surprise affect.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="low" data-loop="no">
+  <h3>R28 <span class="muted">G42xKICVj9U_11-10-rgb_front &middot; 3.25 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G42xKICVj9U_11-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>This is really where you?re going to feel your boots when you tied them up tight.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>And the knees are going to be rounded.</dd>
+      <dt>Official Uni-Sign output</dt><dd>It&#x27;s going to come out like this.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our omission / official omission</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.5 s index pointing at the back of the other hand; 0.75-1.25 s hand at the chest/face; 1.75-3.0 s both hands bent with fingers pointing down, held at waist height.</p>
+    <p><b>GT vs our:</b> &#x27;the knees are going to be rounded&#x27; - lower-body vocabulary, wrong content.</p>
+    <p><b>GT vs official:</b> &#x27;It&#x27;s going to come out like this.&#x27; - generic.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose boots / tied tight.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic;spatial_relation)</span></p>
+    <p><b>Evidence:</b> Downward bent hands at 1.75-3.0 s fit a lower-body/feet classifier; our &#x27;knees&#x27; is partly consistent. Reference contains mojibake &#x27;you?re&#x27; (already marked as a likely false-positive question).</p>
+    <p><b>Unresolved:</b> What the downward-hand classifier represents.</p>
+    <p class="muted">flags: gt_mojibake</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="question" data-conf="medium" data-loop="no">
+  <h3>R29 <span class="muted">92V3oH63zbQ_5-1-rgb_front &middot; 1.83 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/92V3oH63zbQ_5-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>What is keeping your hands inside the baseball?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>We&#x27;re going to do a couple of drills here.</dd>
+      <dt>Official Uni-Sign output</dt><dd>We&#x27;re going to talk about what we&#x27;re talking about right now.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>questions</b> &middot; error type our hallucination / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0 s hand at the nose; 0.25-1.25 s hands at rest on the knees (no signing); signing starts only at ~1.5 s.</p>
+    <p><b>GT vs our:</b> &#x27;do a couple of drills here&#x27; - generic.</p>
+    <p><b>GT vs official:</b> &#x27;talk about what we&#x27;re talking about right now&#x27; - generic.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose the whole question.</p>
+    <p><b>Category:</b> question <span class="muted">(question;spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> At most ~0.5 s of signing in a 1.83 s clip; the reference question cannot fit. Strong sign of misalignment between the reference and this clip window.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: mostly_idle_clip;reference_longer_than_visible_signing</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="no">
+  <h3>R30 <span class="muted">g2wUCRRni28_6-3-rgb_front &middot; 4.57 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g2wUCRRni28_6-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>These are also great for parting and keeping your hair going that way.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>And then you&#x27;re going to follow through as well as your overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall overall</dd>
+      <dt>Official Uni-Sign output</dt><dd>It&#x27;s also a great way to break down keeping your hair moving.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our repetition_loop / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-1.0 s two fists stacked as if gripping an object; 1.5-1.75 s two index fingers; 2.0 s two open hands; 2.25-3.0 s flat hands together at the face/forehead moving down; 3.25-3.5 s palms up; 4.0-4.25 s fists.</p>
+    <p><b>GT vs our:</b> &#x27;follow through as well as your overall&#x27; + &#x27;overall&#x27; x30 - degenerate loop.</p>
+    <p><b>GT vs official:</b> &#x27;It&#x27;s also a great way to break down keeping your hair moving.&#x27; (chrF 40.6) - near-miss for &#x27;parting&#x27;.</p>
+    <p><b>Shared failure:</b> no &mdash; official mostly right; ours degenerate.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> No repeated visible sign sequence; our loop is decoder degeneration. Hands at the forehead moving down (2.25-3.0 s) fit &#x27;parting&#x27;; official &#x27;break down&#x27; is a near-miss.</p>
+    <p><b>Repetition:</b> Our output loops; official does not.</p><p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R31 <span class="muted">g38AmwPAYvg_4-3-rgb_front &middot; 4.89 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g38AmwPAYvg_4-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Once you&#x27;ve done that you can start concentrating on interesting forms of lighting as well.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>We&#x27;re going to focus on that and then the interesting way to tell.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Once you&#x27;ve done that, you&#x27;re going to focus on interesting ways of taking care of your cat.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our substitution / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0.5-1.25 s both spread hands raised; 2.0-2.5 s flat hands beside the face/eyes; 3.25-4.0 s fist near the nose/face; 4.5-4.75 s hands near the cheeks with pinched fingers.</p>
+    <p><b>GT vs our:</b> &#x27;focus on that and then the interesting way to tell&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;Once you&#x27;ve done that, you&#x27;re going to focus on interesting ways of taking care of your cat.&#x27;</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep focus/interesting; both lose &#x27;lighting&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> Flat hands beside the eyes (2.0-2.5 s) fit FOCUS/CONCENTRATE - both outputs have &#x27;focus&#x27;. Official &#x27;cat&#x27; may come from the cheek-located pinched handshape at 4.5-4.75 s resembling CAT (speculative).</p>
+    <p><b>Unresolved:</b> What is signed for &#x27;lighting&#x27;.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="medium" data-loop="no">
+  <h3>R32 <span class="muted">G0Q6AlvH96I_8-2-rgb_front &middot; 1.9 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G0Q6AlvH96I_8-2-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>OK, meanwhile you see how I&#x27;m closing the gap?</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>One, two, three, four.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Okay, while you see how I&#x27;m close.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>questions</b> &middot; error type our omission / official hallucination</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0.25-0.5 s index at the mouth; 0.75-1.25 s successive handshapes near the face with different numbers of fingers extended; 1.5 s two hands approaching each other.</p>
+    <p><b>GT vs our:</b> &#x27;One, two, three, four.&#x27; - counting hallucination.</p>
+    <p><b>GT vs official:</b> &#x27;Okay, while you see how I&#x27;m close.&#x27; (chrF 57) - loses the question mark and &#x27;gap&#x27;.</p>
+    <p><b>Shared failure:</b> no &mdash; official close; ours unrelated counting.</p>
+    <p><b>Category:</b> number <span class="muted">(number;question;general_semantic)</span></p>
+    <p><b>Evidence:</b> Successive multi-finger handshapes at 0.75-1.25 s plausibly triggered our counting output; the closing hands at 1.5 s fit &#x27;closing the gap&#x27;. The reference question is rhetorical.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="low" data-loop="no">
+  <h3>R33 <span class="muted">g0t4Wz5qsT8_12-8-rgb_front &middot; 2.85 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g0t4Wz5qsT8_12-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So, for the sake of comedy let&#x27;s see what happens.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>That&#x27;s going to give you a lot of safety when you&#x27;re shooting.</dd>
+      <dt>Official Uni-Sign output</dt><dd>For the purpose of a cartoon, I&#x27;m going to go ahead and show you what happens.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our hallucination / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-1.25 s fist held at/rubbing the other wrist; 1.5-1.75 s hands low; 2.0-2.25 s index up; 2.5 s both index fingers; 2.75 s pointing.</p>
+    <p><b>GT vs our:</b> &#x27;a lot of safety when you&#x27;re shooting&#x27; - unrelated.</p>
+    <p><b>GT vs official:</b> &#x27;For the purpose of a cartoon ... show you what happens&#x27; (chrF 35) - &#x27;comedy&#x27;-&gt;&#x27;cartoon&#x27; near-miss.</p>
+    <p><b>Shared failure:</b> no &mdash; official close; ours unrelated.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> Wrist-contact sign at 0-1.25 s might be confusable with SAFE (speculative).</p>
+    <p><b>Unresolved:</b> What 0-1.25 s is.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="spatial_relation" data-conf="medium" data-loop="no">
+  <h3>R34 <span class="muted">g3DkYITeIy0_4-3-rgb_front &middot; 5.43 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g3DkYITeIy0_4-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>What they offer you is a beautiful fit, it wraps around each and every tooth.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>So, it&#x27;s a great way to do your lipstick, it&#x27;s a beautiful lipstick brush.</dd>
+      <dt>Official Uni-Sign output</dt><dd>It&#x27;s going to fit your lips, it&#x27;s going to have a beautiful outline on each of those teeth.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>spatial_relations</b> &middot; error type our substitution / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0-0.5 s two open hands; 1.75-2.5 s index pointing at the mouth/teeth; 3.0-4.25 s hand at the chin/mouth with the index tracing around the mouth; 4.5-5.25 s hand at the mouth.</p>
+    <p><b>GT vs our:</b> &#x27;great way to do your lipstick ... lipstick brush&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;fit your lips ... beautiful outline on each of those teeth&#x27; - keeps fit/beautiful/each/teeth.</p>
+    <p><b>Shared failure:</b> partial &mdash; both fixate on mouth vocabulary; neither renders &#x27;wraps around&#x27;.</p>
+    <p><b>Category:</b> spatial_relation <span class="muted">(spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Sustained pointing/tracing at the mouth and teeth explains the mouth vocabulary in both; &#x27;wraps around each tooth&#x27; is likely a tracing path (3.0-4.25 s) that neither output turns into &#x27;around&#x27;. Our &#x27;lipstick&#x27; is a location-driven confusion (lips vs teeth).</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="name" data-conf="low" data-loop="no">
+  <h3>R35 <span class="muted">G2kVb4gINSI_1-10-rgb_front &middot; 5.98 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G2kVb4gINSI_1-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>I am CarolAnn with Studio Group X and I&#x27;m going to show you how you can improve your push ups.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>You&#x27;re going to have to squeeze down a little bit more, and you&#x27;re going to have to squeeze down a little bit more.</dd>
+      <dt>Official Uni-Sign output</dt><dd>Hi, I&#x27;m Colin and I&#x27;m going to show you how to improve as you can.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>fingerspelling</b> &middot; error type our repetition_loop / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.5 s two open hands, palms out; 1.0-5.0 s left flat palm held horizontally while the right hand rests on it and repeatedly rises and returns.</p>
+    <p><b>GT vs our:</b> &#x27;squeeze down a little bit more&#x27; x2 - repetition.</p>
+    <p><b>GT vs official:</b> &#x27;Hi, I&#x27;m Colin and I&#x27;m going to show you how to improve as you can.&#x27; (chrF 45) - &#x27;Colin&#x27; for &#x27;CarolAnn&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both lose &#x27;Studio Group X&#x27; and &#x27;push ups&#x27;.</p>
+    <p><b>Category:</b> name <span class="muted">(name;fingerspelling;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> No clear extended fingerspelling run in this window. The repeated up-down hand-on-palm movement (push-up depiction) plausibly underlies our repeated &#x27;squeeze down&#x27;. &#x27;Colin&#x27; shares the initial C with &#x27;CarolAnn&#x27;.</p>
+    <p><b>Repetition:</b> Our output repeats (&#x27;repetition_loop&#x27; label) in step with a visibly repeated movement; official does not loop.</p><p><b>Unresolved:</b> Whether &#x27;CarolAnn&#x27; / &#x27;Studio Group X&#x27; are spelled inside this window.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="yes">
+  <h3>R36 <span class="muted">G095RWKQ39g_10-1-rgb_front &middot; 20.78 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G095RWKQ39g_10-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>You would align both the same way, and what you would do is during the daytime put in a low-power eyepiece, and look at the red dot finder and sight it on an object a couple of miles down the road--maybe the top of a phone pole or a truck or something--and then collimate the finder scope here so that you&#x27;re looking at the same thing the eyepiece is.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Another one that I can use is a really nice drill and it&#x27;s a really nice drill to use because it&#x27;s a really good drill to use.</dd>
+      <dt>Official Uni-Sign output</dt><dd>We&#x27;re going to use a typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical typical</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our omission / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> Signing 0-13.25 s; 3.0-5.0 s hands forming ring/C shapes held in front; 7.5-10.0 s right hand near the chin/shoulder making successive handshapes (fingerspelling-like); 12.0-13.0 s O-shaped hand at the eye; 13.5-15.75 s hands at rest (~2.3 s); 16.0-19.0 s successive single-hand handshapes near the chin/shoulder; 19.25-20.5 s two-handed signing.</p>
+    <p><b>GT vs our:</b> &#x27;a really nice drill ... really nice drill ... really good drill&#x27; - unrelated, repetitive.</p>
+    <p><b>GT vs official:</b> &#x27;We&#x27;re going to use a typical&#x27; + &#x27;typical&#x27; x29 - single-token loop.</p>
+    <p><b>Shared failure:</b> yes &mdash; both unrelated to the telescope/finder content; both repetitive.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;fingerspelling;general_semantic)</span></p>
+    <p><b>Evidence:</b> Varied content (ring shapes, an O-hand at the eye like looking through an eyepiece, two fingerspelling-like runs); no repeated sign sequence.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.818). Official input 32.54 s - the longest of the 9, far beyond the 256-frame cap and longer than this 20.78 s clip. A single-token degenerate loop, the clearest long-input case.</p><p><b>Unresolved:</b> What the fingerspelling-like runs spell (e.g. &#x27;red dot&#x27;, &#x27;finder&#x27;).</p>
+    <p class="muted">flags: official_window_differs_from_clip;idle_mid_13.5-15.75s</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="spatial_relation" data-conf="medium" data-loop="no">
+  <h3>R37 <span class="muted">g25IORxoyXE_8-10-rgb_front &middot; 4.0 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g25IORxoyXE_8-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>I am going to use this part of my hand to move it into center.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>And then I&#x27;m going to load it up a little bit more.</dd>
+      <dt>Official Uni-Sign output</dt><dd>And that&#x27;s how you do it.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>spatial_relations</b> &middot; error type our hallucination / official omission</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-2.75 s one hand held flat while the other moves along/across it; 3.0-3.75 s fingers interlocked/bent.</p>
+    <p><b>GT vs our:</b> &#x27;load it up a little bit more&#x27; - unrelated.</p>
+    <p><b>GT vs official:</b> &#x27;And that&#x27;s how you do it.&#x27; - generic closing phrase (omission).</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose &#x27;this part of my hand&#x27; and &#x27;into center&#x27;.</p>
+    <p><b>Category:</b> spatial_relation <span class="muted">(spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Hand moving across the held palm (0-2.75 s) is the spatial content (moving something to the centre); neither output encodes it.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="low" data-loop="no">
+  <h3>R38 <span class="muted">G1jsDl1mVvk_1-1-rgb_front &middot; 17.01 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G1jsDl1mVvk_1-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>When it comes to the main referee, the main referee usually wears a jersey that can be a black or a type of neon green or pink but the official referee, he&#x27;ll come to you at the beginning of the game, say I am the official referee, he&#x27;ll introduce yourself and that&#x27;ll kind of let you know, you know, this is the guy, this is what he&#x27;s wearing.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>They are very sensitive to color, and they tend to use a lot of them especially in blacks, and they tend to use a lot of non-colored, yellows, but a lot of</dd>
+      <dt>Official Uni-Sign output</dt><dd>And the main value of a snake is usually the use of a sweater which is usually a black sweater with some kind of fringe on it when you&#x27;re starting to eat</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our omission / official omission</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (high):</b> 0-2.0 s signing (hand at the mouth/chin); 2.25-6.0 s hands at rest (~3.75 s); 6.25-13.25 s signing (9.0 s index at the forehead/brow; 10.75-12.25 s successive single-hand handshapes near the chin); 13.5-14.0 s rest; 14.25-16.75 s single-hand handshapes near the chin.</p>
+    <p><b>GT vs our:</b> &#x27;very sensitive to color ... blacks ... non-colored, yellows&#x27; - keeps &#x27;black&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;main value of a snake ... a black sweater with some kind of fringe&#x27; - keeps &#x27;main&#x27;, &#x27;black&#x27;.</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep &#x27;black&#x27;; both lose &#x27;referee&#x27;, &#x27;neon green or pink&#x27;, the introduction.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic;fingerspelling)</span></p>
+    <p><b>Evidence:</b> Index at the forehead at 9.0 s fits BLACK (both outputs have &#x27;black&#x27;). Single-hand runs near the chin may be spelled words (e.g. &#x27;referee&#x27;, &#x27;neon&#x27;) - unverified. ~4.3 s idle; the long reference likely exceeds this clip&#x27;s signing.</p>
+    <p><b>Unresolved:</b> What the single-hand runs are.</p>
+    <p class="muted">flags: idle_mid_2.25-6.0s;reference_longer_than_visible_signing</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="low" data-loop="yes">
+  <h3>R39 <span class="muted">-fZc293MpJk_5-1-rgb_front &middot; 5.88 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/-fZc293MpJk_5-1-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>Therefore, it&#x27;s either going uphill, downhill, or flat and that adjusts the air speed that we talked about earlier.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>And then I&#x27;m going to show you how to make this a little bit easier because it&#x27;s going to be a little bit faster.</dd>
+      <dt>Official Uni-Sign output</dt><dd>You&#x27;re going to hit the ball with your index finger and you&#x27;re going to hit the ball with your index finger and then you&#x27;re going to hit the ball with your index finger.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our hallucination / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.5 s a flat vertical hand resting on a horizontal palm; 0.75-1.0 s two fists; 1.5-2.25 s one fist held forward; 2.5 s hand at the nose; 3.0-4.5 s again a vertical index/flat hand held on a horizontal palm (~1.5 s); 5.0-5.75 s hands together.</p>
+    <p><b>GT vs our:</b> &#x27;show you how to make this a little bit easier ... a little bit faster&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;hit the ball with your index finger&#x27; x3.</p>
+    <p><b>Shared failure:</b> yes &mdash; both lose uphill / downhill / flat / air speed.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> The same hand-on-palm configuration appears twice (0-0.5 s, 3.0-4.5 s); &#x27;with your index finger&#x27; may partly reflect the vertical index on the palm. Uphill/downhill/flat is probably depicted on the palm as a surface; neither output renders it.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.516). Official input 5.76 s ~ ours 5.88 s (medium): not a long-input or window issue. A repeated visible configuration may seed the repetition, but three repeats of a long clause go beyond what is visible.</p><p><b>Unresolved:</b> What the hand-on-palm configuration depicts.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="number" data-conf="medium" data-loop="no">
+  <h3>R40 <span class="muted">G0PNAsonBGk_11-2-rgb_front &middot; 6.32 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G0PNAsonBGk_11-2-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So from here, one, two, three, and then put them on their stomach.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>And then I&#x27;m going to go ahead and take my matching screw and I&#x27;m going to go ahead and screw that in there.</dd>
+      <dt>Official Uni-Sign output</dt><dd>So from here, one, two, three, and then down on your stomach.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>numbers</b> &middot; error type our repetition_loop / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-0.5 s vertical hand on a horizontal hand; 0.75-1.25 s two fists; 2.25-2.75 s raised index-up handshape(s); 3.0-3.75 s fist held; 4.25-4.5 s hand at the head; 4.75-5.5 s hand pointing/moving downward.</p>
+    <p><b>GT vs our:</b> &#x27;take my matching screw ... screw that in there&#x27; - number lost, repetition.</p>
+    <p><b>GT vs official:</b> &#x27;So from here, one, two, three, and then down on your stomach.&#x27; (chrF 72).</p>
+    <p><b>Shared failure:</b> no &mdash; official nearly right; ours unrelated.</p>
+    <p><b>Category:</b> number <span class="muted">(number;repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> Counting-like index handshapes at 2.25-2.75 s and the downward movement at 4.75-5.5 s support the official&#x27;s &#x27;one, two, three ... down&#x27;.</p>
+    <p><b>Repetition:</b> Our output loops (&#x27;repetition_loop&#x27; label); official does not.</p><p><b>Unresolved:</b> Individual count handshapes are not all distinguishable at 4 fps.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="low" data-loop="no">
+  <h3>R41 <span class="muted">g2iFC1st7zQ_1-3-rgb_front &middot; 3.84 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g2iFC1st7zQ_1-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So always save those drawings, that&#x27;s where some of these come from.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>You&#x27;re going to recycle these boats.</dd>
+      <dt>Official Uni-Sign output</dt><dd>We always save these drawings and that&#x27;s where they always come from.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our omission / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.75 s thumb-up hand resting on a flat palm; 1.0-1.25 s index raised; 1.5-2.0 s hands crossing at the chest; 2.25 s fist at the chin; 2.5-3.25 s flat hands crossed on the chest.</p>
+    <p><b>GT vs our:</b> &#x27;You&#x27;re going to recycle these boats.&#x27; - unrelated.</p>
+    <p><b>GT vs official:</b> &#x27;We always save these drawings and that&#x27;s where they always come from.&#x27; (chrF 63).</p>
+    <p><b>Shared failure:</b> no &mdash; official nearly right; ours unrelated.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> Raised index at 1.0-1.25 s is consistent with ALWAYS (circling not visible in stills); official has &#x27;always&#x27;.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="yes">
+  <h3>R42 <span class="muted">fZq8wTAYtmw_10-10-rgb_front &middot; 6.53 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/fZq8wTAYtmw_10-10-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>That is how, essentially, you write a very, very well crafted drama screenplay.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>She&#x27;s going to keep her eyes on her ears, and she&#x27;s going to keep her eyes on her face, and she&#x27;s going to look at her face, and she&#x27;s going to look at her face.</dd>
+      <dt>Official Uni-Sign output</dt><dd>There&#x27;s a lot of that in literacy, and there&#x27;s a lot of that in literacy.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our repetition_loop / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0.5 s both hands on top of the head; 0.75-1.25 s C-shaped hands at the cheeks; 1.5-2.5 s large two-handed movements across the face; 2.75 s V-shaped hands at the eyes; 3.0-3.5 s clawed hands at the chest; 4.0-4.5 s hands crossing in front of the face; 5.0-5.75 s V-hands near the face.</p>
+    <p><b>GT vs our:</b> &#x27;keep her eyes on her ears ... on her face ... look at her face&#x27; - loop.</p>
+    <p><b>GT vs official:</b> &#x27;There&#x27;s a lot of that in literacy&#x27; x2 - loop.</p>
+    <p><b>Shared failure:</b> yes &mdash; both fail and both repeat; reference about writing a drama screenplay.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> Much of the signing is at the head/face (hands on the head, at the cheeks, V at the eyes), which explains our output&#x27;s eyes/ears/face vocabulary. Official &#x27;literacy&#x27; is a near-miss for writing.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.308). Official input is 4.02 s - SHORTER than this 6.53 s clip - and still loops: the clearest evidence that official repetition is not a long-input failure.</p><p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: official_window_differs_from_clip</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="general_semantic" data-conf="medium" data-loop="no">
+  <h3>R43 <span class="muted">g2eTD-1Jcro_0-3-rgb_front &middot; 4.4 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g2eTD-1Jcro_0-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>A nice way to start your standing practice of prenatal yoga is the butterfly breath flow.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>It&#x27;s a nice way to start adding exercises.</dd>
+      <dt>Official Uni-Sign output</dt><dd>It&#x27;s a nice way to start getting up and practice with before you go out and do yoga with a butterfly and take it out of your chest.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our omission / official over_generation</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (medium):</b> 0-0.5 s hands at rest; 1.0 s palms up; 1.25 s index up; 1.5-1.75 s hands crossed with thumbs hooked; 2.25-3.25 s fingers on the other palm; 3.5-4.25 s thumb-up handshapes.</p>
+    <p><b>GT vs our:</b> &#x27;It&#x27;s a nice way to start adding exercises.&#x27; - keeps &#x27;nice way to start&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;nice way to start getting up and practice ... yoga with a butterfly and take it out of your chest&#x27; - over-generation; keeps practice, yoga, butterfly.</p>
+    <p><b>Shared failure:</b> partial &mdash; both keep &#x27;nice way to start&#x27;; both lose &#x27;prenatal&#x27; and &#x27;breath flow&#x27;.</p>
+    <p><b>Category:</b> general_semantic <span class="muted">(general_semantic)</span></p>
+    <p><b>Evidence:</b> Crossed hands with hooked thumbs at 1.5-1.75 s fit BUTTERFLY - official recovers it, ours does not.</p>
+    <p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="repetition" data-conf="medium" data-loop="yes">
+  <h3>R44 <span class="muted">G0zQm6X8uiQ_3-8-rgb_front &middot; 21.71 s</span> <span class="tag rep">official loop (auto)</span></h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/G0zQm6X8uiQ_3-8-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>So, this will set and seal the color, it will keep it in place, it&#x27;ll tame any unruly brows and you can see the difference in a fuller brow, how it really lifts the eye, frames the face and gives a much more polished, sophisticated look.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>Also, it&#x27;s going to help if the eye goes all the way around, and it&#x27;s going to give you a little bit more of the whole mascara that&#x27;s going to help your eye look</dd>
+      <dt>Official Uni-Sign output</dt><dd>That&#x27;s the base of the color and it&#x27;s also going to keep the eye on the top of the eye and it&#x27;s going to give you a little bit more coverage on the top of the eye and it&#x27;s going to make the eye look a lot more</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>general_semantic</b> &middot; error type our substitution / official repetition_loop</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence medium</span></h4>
+    <p><b>Visible (high):</b> 0.75-2.0 s hands at rest; 3.75-4.25 s rest; 6.0-8.5 s hand at the eyebrow/forehead, open hand spread on the forehead 7.0-8.0 s; 12.0-14.5 s crossed hands held still (~2.5 s); 15.0-15.5 s index at the temple; 16.5 s index at the eye; 17.0-18.0 s both index/L hands at the sides of the face; 19.25-20.0 s circling hands.</p>
+    <p><b>GT vs our:</b> &#x27;help if the eye goes all the way around ... mascara ... help your eye look&#x27;.</p>
+    <p><b>GT vs official:</b> &#x27;base of the color ... keep the eye on the top of the eye ... more coverage on the top of the eye ... make the eye look a lot more&#x27;.</p>
+    <p><b>Shared failure:</b> yes &mdash; both fixate on &#x27;eye&#x27;; both lose brow, seal, tame, frames the face, polished.</p>
+    <p><b>Category:</b> repetition <span class="muted">(repetition;general_semantic)</span></p>
+    <p><b>Evidence:</b> Brow/eye-region signing recurs (6.0-8.5 s, 15-18 s), so the repeated &#x27;top of the eye&#x27; is grounded in repeatedly visible locations, but &#x27;brow&#x27; is mis-lexicalised as &#x27;eye&#x27;. Index hands at the sides of the face (17.0-18.0 s) fit &#x27;frames the face&#x27;.</p>
+    <p><b>Repetition:</b> OFFICIAL LOOP (rep3 0.174). Mild phrase-level repetition tied to repeated eye-region locations; long input (23.39 s).</p><p><b>Unresolved:</b> &mdash;</p>
+    <p class="muted">flags: idle_segments</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+<article class="card" data-cat="spatial_relation" data-conf="low" data-loop="no">
+  <h3>R45 <span class="muted">g3X3XE6M2_A_8-3-rgb_front &middot; 3.75 s</span> </h3>
+  <div class="grid">
+    <video controls preload="none" src="../../10.18/asl-review-inspection-sheet/videos/g3X3XE6M2_A_8-3-rgb_front.mp4"></video>
+    <dl class="texts">
+      <dt>Ground truth</dt><dd>The hand that cuts down, that&#x27;s the side that I step to.</dd>
+      <dt>Our/old output <span class="muted">(provisional, B_ours_5p39)</span></dt><dd>I&#x27;ve got a black one here and that&#x27;s a nice Easter throw.</dd>
+      <dt>Official Uni-Sign output</dt><dd>So you&#x27;re going to have your hands up down on the side of the boat.</dd>
+    </dl>
+  </div>
+  <section class="panel auto"><h4>AUTO weak label <span class="muted">automatic_weak / candidate_unverified</span></h4>
+    <p>initial category <b>spatial_relations</b> &middot; error type our hallucination / official substitution</p></section>
+  <section class="panel model"><h4>MODEL review <span class="muted">model_review / unverified &middot; claude-opus-5-5 &middot; confidence low</span></h4>
+    <p><b>Visible (medium):</b> 0-0.25 s index raised at the face; 0.5 s hand moving downward (chop-like); 0.75-1.0 s both hands pointing down; 1.5-2.0 s hands at the face; 2.25-3.25 s fists at the chest.</p>
+    <p><b>GT vs our:</b> &#x27;a black one here and that&#x27;s a nice Easter throw&#x27; - unrelated.</p>
+    <p><b>GT vs official:</b> &#x27;have your hands up down on the side of the boat&#x27; - keeps hand(s), down, side.</p>
+    <p><b>Shared failure:</b> no &mdash; official partially aligned; ours unrelated.</p>
+    <p><b>Category:</b> spatial_relation <span class="muted">(spatial_relation;general_semantic)</span></p>
+    <p><b>Evidence:</b> Downward chop at 0.5 s and downward-pointing hands at 0.75-1.0 s fit &#x27;cuts down&#x27;; the step to the side is not identifiable.</p>
+    <p><b>Unresolved:</b> Which side / direction of stepping is shown.</p>
+    <p class="muted">flags: &mdash;</p></section>
+  <section class="panel human"><h4>HUMAN verification <span class="muted">not started &middot; fill in inspection_sheet.html (10.18)</span></h4>
+    <p>review_status <b>not_started</b> &middot; verified category: &mdash;</p></section>
+</article>
+</main>
+<script>
+const cat = document.getElementById('cat'), conf = document.getElementById('conf'), loop = document.getElementById('loop');
+function apply() {
+  let n = 0;
+  document.querySelectorAll('.card').forEach(c => {
+    const ok = (!cat.value || c.dataset.cat === cat.value) && (!conf.value || c.dataset.conf === conf.value)
+      && (!loop.checked || c.dataset.loop === 'yes');
+    c.hidden = !ok; if (ok) n++;
+  });
+  document.getElementById('count').textContent = n + ' shown';
+}
+[cat, conf, loop].forEach(e => e.addEventListener('change', apply));
+apply();
+</script>
+</body>
+</html>

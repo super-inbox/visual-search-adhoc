@@ -1,0 +1,155 @@
+{
+ "experiment": "P0-13 representation swap: P0.2 recipe with frozen Uni-Sign encoder features vs landmarks, same 2,751/366/147 examples",
+ "date": "2026-10-07",
+ "status": "COMPLETE",
+ "repo": {
+  "path": "visual-search-adhoc",
+  "branch": "baobao/visual-production-research-2026-10-05",
+  "head_at_start": "b98279be39aa416664054ebf349f88475866a373",
+  "committed": false,
+  "pushed": false
+ },
+ "hardware": {
+  "machine": "Apple M3 Pro, 18 GiB, macOS 14.1",
+  "cuda": false,
+  "device_used": "CPU for training, diagnostics and Uni-Sign feature extraction"
+ },
+ "downstream_code": {
+  "repo": "~/Desktop/curify/gloss-free-asl-translation",
+  "commit": "390669904053ef5189d45283429c1a0628aa282c",
+  "python": "3.12.4 (.venv)",
+  "torch": "2.10.0",
+  "transformers": "4.57.6",
+  "sacrebleu": "2.6.0",
+  "baseline_script": "scripts/train_p02.py (unchanged)",
+  "treatment_script": "docs/.../scripts/train_p013_unisign.py (copy of train_p02.py, 65 diff lines)"
+ },
+ "data": {
+  "ids_sha256": {
+   "train_ids.txt": "6529f2ed12e7c5bbc7f1963c9229f33555f6134d3f70e985a83469971df560fd",
+   "val_ids.txt": "6814f0aa6d4dfee2787a271fffd60f925a34bd3ba5d014d4a451032fb1b17912",
+   "frozen_ids.txt": "5a29f307fc5897d5ba72ab2db8e28cb4ec8137f06054805ffe6e10877c4286d9"
+  },
+  "n_train": 2751,
+  "n_val": 366,
+  "n_frozen": 147,
+  "train_val_landmarks": "~/Desktop/curify/visual-search-adhoc-asl-task-c/.../local_run_10pct/kaggle_input_mirror/how2sign-holistic/train/frontal (3,117 files; the work/stage symlinks point to the pre-move path, so the mirror was passed as --stage-dir directly)",
+  "metadata": "local_run_10pct/work/subset_metadata.csv; frozen_benchmark_mediapipe_eval/frozen_benchmark_metadata.csv",
+  "split_json": "local_run_10pct/work/holdout_split.json (re-derived by upstream split_by_signer and asserted identical at run start)"
+ },
+ "unisign": {
+  "repo_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+  "checkpoint": "how2sign_pose_only_slt.pth",
+  "checkpoint_sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+  "mt5_base_snapshot": "2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f",
+  "env": "conda unisign-cpu-arm64: python 3.10.13, torch 2.1.1, transformers 4.40.0",
+  "pose_source": "HF ZechengLi19/Uni-Sign how2sign_pose_format.zip.00-.03, 3,264 entries range-fetched, CRC-32 verified (train-pose-rtmpose-192: 3,117; test-pose-rtmpose-192: 147)",
+  "feature": "mT5-Base encoder last_hidden_state at pose positions (prefix rows dropped), [T<=256, 768], float16 on disk",
+  "precision": "fp32 (official eval uses bf16; bf16 ~20 s/clip vs fp32 0.4 s/clip on CPU; drift mean per-frame cos 0.9994)",
+  "frame_sampling": "upstream random.sample when >256 frames, random seeded per clip with int(sha256(clip_id)[:8],16)",
+  "leakage": {
+   "train_in_unisign_labels_train": 2751,
+   "val_in_unisign_labels_train": 366,
+   "frozen_in_unisign_labels_test": 147
+  }
+ },
+ "training": {
+  "epochs_planned": 30,
+  "patience": 10,
+  "batch_size": 8,
+  "lr": 0.0001,
+  "optimizer": "Adafactor (T5 groups lr x0.1)",
+  "warmup_ratio": 0.1,
+  "seed": 42,
+  "treatment_epochs_run": 20,
+  "treatment_best_epoch": 10,
+  "treatment_best_val_loss": 3.2739,
+  "treatment_wall_clock_s": 9591.2,
+  "treatment_initial_state_sha256_prefix": "5af0f18932c6",
+  "baseline_epochs_run": 30,
+  "baseline_best_epoch": 20,
+  "baseline_best_val_loss": 3.6415
+ },
+ "checkpoints": {
+  "baseline_best": {
+   "path": "gloss-free-asl-translation/results/p02_padfix_10pct_e30/checkpoints/checkpoint-6880/model.safetensors",
+   "sha256": "0d087522e12d8225434dbf4a591da8cd1eaada92747c51e46ef023d8264ca5ec"
+  },
+  "treatment_best": {
+   "path": "<scratchpad>/p013/runs/p013_unisign_e30/checkpoints/checkpoint-3440/model.safetensors (not in repo)",
+   "sha256": "cfbcf06e50c4e882c6ed01b708b94e2290df135afea1c77b83dd549fb246423a"
+  }
+ },
+ "generation": {
+  "max_length": 30,
+  "num_beams": 1,
+  "do_sample": false
+ },
+ "statistics": {
+  "bootstrap": "paired over clips, corpus BLEU/chrF, 10k resamples (2k-4k for subsets), numpy default_rng(0)",
+  "shuffle": "5 fixed-seed derangements (seeds 1-5) of inputs; texts stay with their own sample"
+ },
+ "headline": {
+  "frozen147_val_selected": {
+   "baseline": {
+    "bleu": 1.02,
+    "chrf": 11.12,
+    "wer": 1.0248
+   },
+   "treatment": {
+    "bleu": 3.25,
+    "chrf": 17.05,
+    "wer": 0.9386
+   },
+   "delta_bleu": 2.23,
+   "delta_bleu_ci95": [
+    1.28,
+    3.39
+   ],
+   "delta_chrf": 5.93,
+   "delta_chrf_ci95": [
+    4.66,
+    7.34
+   ]
+  },
+  "frozen128_timing_matched": {
+   "delta_bleu": 2.18,
+   "delta_bleu_ci95": [
+    1.03,
+    3.44
+   ],
+   "delta_chrf": 3.96,
+   "delta_chrf_ci95": [
+    2.52,
+    5.4
+   ]
+  },
+  "shuffled_delta_loss_frozen": {
+   "baseline": 0.067,
+   "treatment": 1.28
+  }
+ },
+ "scripts_sha256": {
+  "compare_arms.py": "fbf72fc8dc874a932dc4be988a12d39174a6b3b2087bc4cde57737a5cddab89e",
+  "diagnose_p013.py": "d899fbb46b3c76ab5dd06bc31ec92d8f30c2b51f69df01272e2583f16a9e9268",
+  "extract_unisign_features.py": "92cd835663487890550d5a6694856f4ba8f7ce31aa8ae176a038f01fc4480854",
+  "fetch_entries_retry.py": "b50d2cb74c29be841d6387ece04c214d7f71f67b2bc89c5a0512cd70fcfa292d",
+  "train_p013_unisign.py": "96adf5e9975179aa51b6383b8009c35f31bf2381c5054140a5d20f12c1f0e4be",
+  "unisign_own_decoder_reference.py": "d1995f68bf2fd9c8391c0656bb0c6a6454efd47f893bf274b7976c1eea2a48b4",
+  "validate_feature_interface.py": "14297903b146650c3dc39331164c6a4f5007caab355c103631bf8b7a7b2d6bc4",
+  "verify_features.py": "8d221286201c78c890e92c37261fd4a9f765bca392b97852de6dc4fff84c8303"
+ },
+ "not_in_repo": [
+  "Uni-Sign pose pkls (1.5 GB)",
+  "cached features (1.4 GB)",
+  "treatment checkpoints (8.2 GB)"
+ ],
+ "not_done": [
+  "P0-11",
+  "any change to P0-12",
+  "extra supervised data",
+  "random-init Uni-Sign control (E1 arm C)",
+  "multiple seeds",
+  "commit/push"
+ ]
+}

@@ -1,0 +1,123 @@
+{
+ "features": "/Users/baobaoli/Desktop/curify/p014-work/features_smoke",
+ "n_clips": 128,
+ "all_pass": true,
+ "checks": {
+  "shapes": {
+   "pass": true,
+   "detail": {
+    "raw_mean": [
+     128,
+     207
+    ],
+    "raw_std": [
+     128,
+     207
+    ],
+    "raw_mad": [
+     128,
+     207
+    ],
+    "raw_seg4": [
+     128,
+     4,
+     207
+    ],
+    "fsign_mean": [
+     128,
+     1024
+    ],
+    "fsign_std": [
+     128,
+     1024
+    ],
+    "fsign_mad": [
+     128,
+     1024
+    ],
+    "fsign_seg4": [
+     128,
+     4,
+     1024
+    ],
+    "mt5_mean": [
+     128,
+     768
+    ],
+    "mt5_std": [
+     128,
+     768
+    ],
+    "mt5_mad": [
+     128,
+     768
+    ],
+    "mt5_seg4": [
+     128,
+     4,
+     768
+    ],
+    "T": [
+     128
+    ],
+    "n_frames_raw": [
+     128
+    ]
+   }
+  },
+  "finite": {
+   "pass": true,
+   "detail": {}
+  },
+  "pooled_dim": {
+   "pass": true,
+   "detail": {
+    "raw": 414,
+    "fsign": 2048,
+    "mt5": 1536
+   }
+  },
+  "one_record": {
+   "pass": true,
+   "detail": {
+    "n": 128,
+    "expected": 128,
+    "duplicates": 0,
+    "missing": [],
+    "extra": []
+   }
+  },
+  "order": {
+   "pass": true,
+   "detail": ""
+  },
+  "provenance": {
+   "pass": true,
+   "detail": []
+  },
+  "frames": {
+   "pass": true,
+   "detail": {
+    "bad": [],
+    "T_min": 6,
+    "T_max": 256,
+    "n_sampled_gt256": 36
+   }
+  },
+  "labels": {
+   "pass": true,
+   "detail": {
+    "mismatches": [],
+    "n_positive_labels_checked": 120
+   }
+  },
+  "split_video_role": {
+   "pass": true,
+   "detail": []
+  },
+  "pose_split": {
+   "pass": true,
+   "detail": []
+  }
+ }
+}

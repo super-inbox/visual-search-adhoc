@@ -1,0 +1,7 @@
+series,condition,train_examples,pct_of_pool,pct_of_official_train,frozen_bleu,frozen_chrf,frozen_wer,val_bleu,best_val_loss,shuffle_loss_delta,note
+supervised scaling (baseline landmarks),p02_ref,2751,10.41,8.83,1.02,11.12,1.0248,0.99,3.6415,0.0673,existing P0.2 run (different init)
+supervised scaling (baseline landmarks),ref_sameinit,2751,10.41,8.83,0.8,10.6,1.0558,0.9,3.6418,0.0485,"2,751 re-run, same init as P0-11 runs"
+supervised scaling (baseline landmarks),p25,6605,25.0,21.19,1.15,12.37,1.0047,1.04,3.5908,0.0726,P0-11 run
+supervised scaling (baseline landmarks),p50,13210,50.0,42.39,0.54,12.25,1.0472,0.98,3.5866,0.0656,P0-11 run
+supervised scaling (baseline landmarks),p100,26419,100.0,84.77,0.52,9.51,1.0561,0.72,3.576,0.061,P0-11 run
+P0-13 representation swap (reference),p013_unisign,2751,10.41,8.83,3.25,17.05,0.9386,,,1.28,frozen only; P0-13 val is contaminated

@@ -1,0 +1,15 @@
+arm,checkpoint,set,n,measurement_point,mean_pairwise_cos,min_pairwise_cos,p05_pairwise_cos,shared_component_energy,pc1_var_ratio_centred,participation_ratio_centred,mean_abs_centred_cos,shuffled_delta_loss_mean,shuffled_delta_loss_min
+baseline,"P0.2 padfix best (epoch 20, val-selected)",val366,366,input features (mean-pooled per clip),0.9501,0.7123,0.8537,0.9374,0.5288,2.8105,0.4628,0.0953,0.087
+baseline,"P0.2 padfix best (epoch 20, val-selected)",val366,366,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9982,0.9765,0.9948,0.9982,0.3024,7.7063,0.2657,0.0953,0.087
+baseline,"P0.2 padfix best (epoch 20, val-selected)",frozen147,147,input features (mean-pooled per clip),0.9559,0.7781,0.8837,0.9456,0.5538,2.7852,0.4781,0.0673,0.0521
+baseline,"P0.2 padfix best (epoch 20, val-selected)",frozen147,147,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9984,0.9913,0.9958,0.9984,0.2835,7.7157,0.263,0.0673,0.0521
+treatment,"P0-13 Uni-Sign best (epoch 10, val-selected)",val366,366,input features (mean-pooled per clip),0.2838,-0.1097,0.098,0.2625,0.0618,65.3184,0.0875,1.7103,1.6679
+treatment,"P0-13 Uni-Sign best (epoch 10, val-selected)",val366,366,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.987,0.9594,0.9801,0.987,0.0965,34.5532,0.1258,1.7103,1.6679
+treatment,"P0-13 Uni-Sign best (epoch 10, val-selected)",frozen147,147,input features (mean-pooled per clip),0.2944,-0.0162,0.1098,0.2706,0.0657,46.2364,0.0954,1.2796,1.2337
+treatment,"P0-13 Uni-Sign best (epoch 10, val-selected)",frozen147,147,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9879,0.9734,0.9817,0.9879,0.1326,25.9316,0.1409,1.2796,1.2337
+treatment,"P0-13 Uni-Sign last trained (epoch 20, early stop)",val366,366,input features (mean-pooled per clip),0.2838,-0.1097,0.098,0.2625,0.0618,65.3184,0.0875,2.4785,2.4785
+treatment,"P0-13 Uni-Sign last trained (epoch 20, early stop)",val366,366,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9794,0.9258,0.9694,0.9794,0.0737,53.6273,0.0961,2.4785,2.4785
+treatment,"P0-13 Uni-Sign last trained (epoch 20, early stop)",frozen147,147,input features (mean-pooled per clip),0.2944,-0.0162,0.1098,0.2706,0.0657,46.2364,0.0954,1.7557,1.7557
+treatment,"P0-13 Uni-Sign last trained (epoch 20, early stop)",frozen147,147,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9802,0.9597,0.972,0.9803,0.0982,38.8865,0.1081,1.7557,1.7557
+treatment,"P0-13 Uni-Sign best (epoch 10), timing-matched inputs",frozen147,128,input features (mean-pooled per clip),0.29,-0.0121,0.1344,0.2742,0.0681,44.6433,0.0909,0.8278,0.8278
+treatment,"P0-13 Uni-Sign best (epoch 10), timing-matched inputs",frozen147,128,encoder output after bridge (what T5 decoder attends to; mean-pooled),0.9889,0.9726,0.9827,0.9889,0.1041,30.067,0.1239,0.8278,0.8278

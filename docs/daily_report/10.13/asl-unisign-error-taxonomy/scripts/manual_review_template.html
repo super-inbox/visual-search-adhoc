@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uni-Sign Manual Review</title>
+<style>
+:root {
+  --bg: #f7f7f5; --panel: #ffffff; --ink: #1d1d1b; --muted: #6b6b66; --line: #e2e1dc;
+  --accent: #2f5fd0; --accent-ink: #ffffff; --ok: #2e7d4f; --warn: #b26a00; --bad: #b3261e;
+  --ref: #eef4ec; --a: #eef1fb; --c: #f8f0f6; --chip: #efeee9;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
+    --accent: #7ea2ff; --accent-ink: #10131c; --ok: #6cc893; --warn: #f0b056; --bad: #ff8a80;
+    --ref: #1f2a1f; --a: #1d2233; --c: #2c1f29; --chip: #2a2a27;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161615; --panel: #1f1f1d; --ink: #ecebe6; --muted: #a09f98; --line: #34332f;
+  --accent: #7ea2ff; --accent-ink: #10131c; --ok: #6cc893; --warn: #f0b056; --bad: #ff8a80;
+  --ref: #1f2a1f; --a: #1d2233; --c: #2c1f29; --chip: #2a2a27;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 14px/1.45 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { position: sticky; top: 0; z-index: 5; background: var(--panel); border-bottom: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; padding: 10px 16px; }
+header h1 { font-size: 15px; margin: 0 8px 0 0; }
+.progress { color: var(--muted); font-variant-numeric: tabular-nums; }
+button, .btn { font: inherit; border: 1px solid var(--line); background: var(--panel); color: var(--ink);
+  border-radius: 6px; padding: 5px 10px; cursor: pointer; }
+button.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+input[type=text], textarea, select { font: inherit; color: var(--ink); background: var(--bg); border: 1px solid var(--line); border-radius: 6px; padding: 5px 8px; }
+.wrap { display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 16px; padding: 16px; max-width: 1500px; margin: 0 auto; }
+nav { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 8px; align-self: start;
+  position: sticky; top: 64px; max-height: calc(100vh - 80px); overflow: auto; }
+nav select { width: 100%; margin-bottom: 6px; }
+nav a { display: flex; gap: 8px; align-items: center; padding: 4px 6px; border-radius: 5px; color: var(--ink); text-decoration: none; font-variant-numeric: tabular-nums; }
+nav a.cur { background: var(--chip); font-weight: 600; }
+nav a small { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.dot { width: 9px; height: 9px; border-radius: 50%; flex: none; border: 1.5px solid var(--muted); }
+.dot.partial { background: var(--warn); border-color: var(--warn); }
+.dot.done { background: var(--ok); border-color: var(--ok); }
+main { min-width: 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; margin-bottom: 14px; }
+.top { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 16px; }
+h2 { font-size: 17px; margin: 0 0 4px; overflow-wrap: anywhere; }
+h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); margin: 14px 0 6px; }
+.meta { color: var(--muted); font-size: 12.5px; overflow-wrap: anywhere; }
+video { width: 100%; max-height: 52vh; background: #000; border-radius: 6px; display: block; }
+.vctl { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-top: 6px; }
+.vctl button.on { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.vmissing { display: none; padding: 12px; border: 1px dashed var(--bad); color: var(--bad); border-radius: 6px; margin-top: 6px; overflow-wrap: anywhere; }
+.txt { border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; }
+.txt b { display: block; font-size: 12px; color: var(--muted); font-weight: 600; margin-bottom: 2px; }
+.txt.ref { background: var(--ref); } .txt.a { background: var(--a); } .txt.c { background: var(--c); }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { background: var(--chip); border-radius: 999px; padding: 2px 9px; font-size: 12px; }
+.chip.sev { font-weight: 600; }
+details { margin-top: 6px; } summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+details ul { margin: 6px 0 0; padding-left: 18px; font-size: 12.5px; overflow-wrap: anywhere; }
+table.m { border-collapse: collapse; font-variant-numeric: tabular-nums; font-size: 13px; }
+table.m td, table.m th { border-bottom: 1px solid var(--line); padding: 3px 10px 3px 0; text-align: left; }
+.form .q { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--line); }
+.form .q label.name { font-weight: 600; }
+.form .q1 { padding: 7px 0; border-bottom: 1px solid var(--line); } .form .q .hint { color: var(--muted); font-size: 12.5px; grid-column: 1; }
+.opts { display: flex; flex-wrap: wrap; gap: 4px; grid-row: 1 / span 2; grid-column: 2; justify-content: flex-end; }
+.opts label { border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; cursor: pointer; user-select: none; }
+.opts input { position: absolute; opacity: 0; pointer-events: none; }
+.opts input:checked + span { font-weight: 700; }
+.opts label:has(input:checked) { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.opts label:has(input:focus-visible) { outline: 2px solid var(--accent); }
+.clear { color: var(--muted); font-size: 12px; background: none; border: none; padding: 3px 4px; }
+textarea { width: 100%; min-height: 70px; margin-top: 6px; }
+.navbtns { display: flex; gap: 8px; justify-content: space-between; margin-top: 10px; }
+.note { font-size: 12.5px; color: var(--muted); }
+.banner { background: var(--chip); border-radius: 6px; padding: 8px 10px; font-size: 12.5px; margin-bottom: 14px; }
+.roles { display: inline-flex; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+.roles button { border: none; border-radius: 0; }
+.roles button + button { border-left: 1px solid var(--line); }
+.roles button.on { background: var(--accent); color: var(--accent-ink); }
+.status { font-size: 12.5px; color: var(--muted); }
+.status.err { color: var(--bad); font-weight: 600; }
+.banner.roleA { border-left: 4px solid var(--accent); }
+.banner.roleB { border-left: 4px solid var(--warn); }
+.weak { border: 1px dashed var(--line); border-radius: 6px; padding: 4px 10px 8px; margin-top: 12px; }
+.weak > summary { font-weight: 600; }
+.chooser { max-width: 760px; margin: 24px auto; }
+.chooser .opt { display: grid; gap: 6px; border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin-top: 10px; }
+.chooser .opt button { justify-self: start; }
+fieldset { border: none; padding: 0; margin: 0; min-width: 0; }
+fieldset:disabled .opts label { opacity: .45; cursor: not-allowed; }
+.gate { border: 1px solid var(--warn); color: var(--warn); border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; font-size: 13px; }
+.formtitle { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+.formtitle h2 { margin: 0; }
+@media (max-width: 900px) {
+  .wrap { grid-template-columns: 1fr; padding: 12px 16px; }
+  nav { position: static; max-height: 220px; }
+  .top { grid-template-columns: 1fr; }
+  .form .q { grid-template-columns: 1fr; } .opts { grid-row: auto; grid-column: 1; justify-content: flex-start; }
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Uni-Sign manual review</h1>
+  <div class="roles" role="tablist" aria-label="Reviewer role">
+    <button data-role="translation_error" role="tab">A · Translation errors</button>
+    <button data-role="asl_linguistic" role="tab">B · ASL linguistics (ASL-fluent only)</button>
+  </div>
+  <span class="progress" id="progress"></span>
+  <label>Reviewer <input type="text" id="reviewer" size="12" autocomplete="off"></label>
+  <label id="bgwrap" hidden>ASL background <input type="text" id="asl_bg" size="22" autocomplete="off" placeholder="e.g. Deaf native signer, CODA, certified interpreter"></label>
+  <button class="primary" id="export">Export CSV</button>
+  <label class="btn">Import CSV<input type="file" id="import" accept=".csv,text/csv" hidden></label>
+  <label class="btn" title="Use this if the videos do not play from the repo path">Load videos…<input type="file" id="vids" accept="video/mp4" multiple hidden></label>
+  <span class="status" id="status" role="status"></span>
+</header>
+<div class="wrap">
+  <nav>
+    <select id="filter" aria-label="Filter clips">
+      <option value="all">All clips</option><option value="todo">Not complete</option><option value="done">Complete</option>
+    </select>
+    <div id="list"></div>
+  </nav>
+  <main id="main"></main>
+</div>
+<script>
+const DATA = /*__DATA__*/null;
+const KEY = DATA.storage_key, ROLE_IDS = Object.keys(DATA.roles);
+// Each role has its own storage, form and export. A role never sees or writes the other role's labels.
+let role = null, R = null, CHOICE = [], labels = {}, meta = {}, cur = 0, blobs = {};
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const sk = r => `${KEY}:${r}`;
+function setStatus(msg, err) { const e = $('status'); e.textContent = msg || ''; e.className = 'status' + (err ? ' err' : ''); }
+function load() {
+  try { const s = JSON.parse(localStorage.getItem(sk(role)) || '{}'); labels = s.labels || {}; meta = s.meta || {}; } catch (e) { labels = {}; meta = {}; }
+  try { cur = Math.min(+(localStorage.getItem(sk(role) + ':cur') || 0), DATA.clips.length - 1); } catch (e) { cur = 0; }
+  $('reviewer').value = meta.reviewer || ''; $('asl_bg').value = meta.reviewer_asl_background || '';
+}
+function save() {
+  meta.reviewer = $('reviewer').value; if (role === 'asl_linguistic') meta.reviewer_asl_background = $('asl_bg').value;
+  try { localStorage.setItem(sk(role), JSON.stringify({ labels, meta })); } catch (e) {}
+}
+const L = id => (labels[id] = labels[id] || {});
+const state = id => { const l = labels[id] || {}; const n = CHOICE.filter(f => l[f.name]).length; return n === CHOICE.length ? 'done' : n ? 'partial' : ''; };
+const gated = () => role === 'asl_linguistic' && !$('asl_bg').value.trim();
+
+function setRole(r) {
+  if (!DATA.roles[r]) { role = null; return chooser(); }
+  role = r; R = DATA.roles[r]; CHOICE = R.fields.filter(f => f.options);
+  try { localStorage.setItem(KEY + ':role', r); } catch (e) {}
+  if (location.hash !== '#role=' + r) history.replaceState(null, '', '#role=' + r);
+  document.querySelectorAll('.roles button').forEach(b => b.classList.toggle('on', b.dataset.role === r));
+  $('bgwrap').hidden = r !== 'asl_linguistic';
+  $('export').textContent = `Export ${R.file}`;
+  setStatus(''); load(); render();
+}
+
+function chooser() {
+  document.querySelectorAll('.roles button').forEach(b => b.classList.remove('on'));
+  $('list').innerHTML = ''; $('progress').textContent = '';
+  $('main').innerHTML = `<div class="card chooser"><h2>Choose your review role</h2>
+    <p class="note">The two roles label different things and export different files. Pick the one you were asked to do.</p>
+    <div class="opt"><b>${esc(DATA.roles.translation_error.title)}</b>
+      <span>Compare the English reference with the A_official prediction: main error type, critical-information errors, and
+      obvious repetition / truncation / hallucination / omission / substitution. <b>No ASL knowledge needed.</b>
+      Exports <code>${esc(DATA.roles.translation_error.file)}</code>.</span>
+      <button class="primary" data-role="translation_error">Start Role A</button></div>
+    <div class="opt"><b>${esc(DATA.roles.asl_linguistic.title)}</b>
+      <span>Judge from the video whether fingerspelling, number signs, named entities, negation and question non-manual
+      markers, spatial relations and classifiers actually occur. <b>Requires an ASL-fluent annotator.</b>
+      Exports <code>${esc(DATA.roles.asl_linguistic.file)}</code>.</span>
+      <button class="primary" data-role="asl_linguistic">Start Role B</button></div></div>`;
+  $('main').querySelectorAll('button[data-role]').forEach(b => b.onclick = () => setRole(b.dataset.role));
+}
+
+function renderList() {
+  const f = $('filter').value;
+  $('list').innerHTML = DATA.clips.map((c, i) => {
+    const s = state(c.clip_id);
+    if ((f === 'done' && s !== 'done') || (f === 'todo' && s === 'done')) return '';
+    return `<a href="#" data-i="${i}" class="${i === cur ? 'cur' : ''}"><span class="dot ${s}"></span>${c.review_id}<small>${esc(c.clip_id)}</small></a>`;
+  }).join('');
+  const done = DATA.clips.filter(c => state(c.clip_id) === 'done').length;
+  $('progress').textContent = `${done} / ${DATA.clips.length} complete`;
+}
+
+function detail(s) { return s ? '<ul>' + s.split(' | ').map(x => `<li>${esc(x)}</li>`).join('') + '</ul>' : ''; }
+function chips(s, empty) { return s ? s.split(';').map(x => `<span class="chip">${esc(x)}</span>`).join('') : `<span class="note">${empty}</span>`; }
+
+function videoBlock(c, src) {
+  return `<h2>${c.review_id} · ${esc(c.clip_id)}</h2>
+      <div class="meta">${esc(c.expected_video_path)} · ${c.duration_s}s · ${c.video_status}</div>
+      <video id="v" controls preload="metadata" src="${esc(src)}"></video>
+      <div class="vmissing" id="vmiss">Video not found at <code>${esc(c.expected_video_path)}</code>. Restore it (see manual_review/README.md) or use “Load videos…”.</div>
+      <div class="vctl" id="speeds">Speed
+        ${[0.25, 0.5, 0.75, 1].map(r => `<button data-r="${r}" class="${r === 1 ? 'on' : ''}">${r}×</button>`).join('')}
+        <label><input type="checkbox" id="loop"> loop</label>
+        <button id="back2">−2 s</button>
+      </div>`;
+}
+const predA = c => `<div class="txt a"><b>A_official · chrF ${c.chrf_A} · WER ${c.wer_A}</b>${esc(c.pred_A_official)}</div>`;
+const predC = c => `<div class="txt c"><b>C_ours_on_official_crop · chrF ${c.chrf_C} · WER ${c.wer_C}</b>${esc(c.pred_C_ours_on_official_crop)}</div>`;
+// Automatic weak labels are always shown apart from the form, collapsed, and never prefill a manual answer.
+function weakBlock(c, open, summary) {
+  return `<details class="weak" ${open ? 'open' : ''}><summary>${summary}</summary>
+    <p class="note">Automatic, unverified. Reference-text heuristics and pose proxies, not ASL evidence. They never fill a manual field.</p>
+    <h3>Why queued</h3><div class="chips">${chips(c.queue_reasons.replaceAll(' | ', ';'))}</div>
+    <h3>Weak linguistic tags (text heuristics)</h3><div class="chips">${chips(c.weak_linguistic_tags_true, 'none')}</div>
+    <details><summary>evidence</summary>${detail(c.weak_linguistic_tags_detail)}${detail(c.manifest_heuristics)}</details>
+    <h3>Visual-condition flags (pose proxies)</h3><div class="chips">${chips(c.visual_flags_true, 'none')}</div>
+    <details><summary>evidence</summary>${detail(c.visual_flags_detail)}</details>
+    <h3>Automatic error analysis (A_official)</h3>
+    <div class="chips"><span class="chip sev">${esc(c.auto_severity_A)}</span><span class="chip">primary: ${esc(c.auto_primary_error_A)}</span>${chips(c.auto_error_flags_A, '')}</div>
+    <table class="m"><tr><th></th><th>chrF</th><th>WER</th><th>sBLEU</th></tr>
+      <tr><td>A</td><td>${c.chrf_A}</td><td>${c.wer_A}</td><td>${c.sentence_bleu_A}</td></tr>
+      <tr><td>C</td><td>${c.chrf_C}</td><td>${c.wer_C}</td><td>${c.sentence_bleu_C}</td></tr></table>
+    <div class="note">A content recall ${c.auto_content_recall_A} · length ratio ${c.auto_length_ratio_A} · C auto primary: ${esc(c.auto_primary_error_C)}</div>
+    ${c.representative_failure ? `<h3>Representative failure</h3><div class="note">${esc(c.representative_failure).replaceAll(' || ', '<br>')}</div>` : ''}
+  </details>`;
+}
+
+function render() {
+  const c = DATA.clips[cur], l = L(c.clip_id), src = blobs[c.video_filename] || DATA.video_prefix + c.expected_video_path;
+  const A = role === 'translation_error';
+  const banner = A
+    ? `<div class="banner roleA"><b>Role A · translation errors.</b> Compare the <b>English reference</b> with the <b>A_official</b> prediction.
+       No ASL knowledge is needed or assumed. ASL-linguistic labels (fingerspelling, number signs, named-entity signing,
+       non-manual markers, signing space, classifiers) belong to Role B and are not part of this form.</div>`
+    : `<div class="banner roleB"><b>Role B · ASL linguistics. ASL-fluent annotators only.</b> Answer from what is <b>produced in the video</b>,
+       not from the English reference. Watch at 1× first, then slow down. Use <b>unclear</b> whenever the video does not settle it.
+       The automatic tags below the video are text heuristics; leave them closed until you have answered.</div>`;
+  const ctx = A
+    ? `<div class="txt ref"><b>Reference (English)</b>${esc(c.reference)}</div>${predA(c)}${predC(c)}`
+    : `<div class="txt ref"><b>Reference (English translation, for orientation only)</b>${esc(c.reference)}</div>
+       <details><summary>System predictions (not needed for Role B)</summary>${predA(c)}${predC(c)}</details>`;
+  const weak = A ? weakBlock(c, false, 'Automatic weak labels and metrics (context only)')
+                 : weakBlock(c, false, 'Automatic weak labels (open only after answering)');
+  $('main').innerHTML = `${banner}
+  <div class="card top">
+    <div>${videoBlock(c, src)}${A ? '' : weak}</div>
+    <div>${ctx}${A ? weak : ''}</div>
+  </div>
+  <div class="card form">
+    <div class="formtitle"><h2>${esc(R.title)}</h2><span class="note">exports to <code>${esc(R.file)}</code></span></div>
+    ${gated() ? '<div class="gate">Enter your name and your ASL background in the header to enable this form. Role B labels are only accepted from ASL-fluent annotators.</div>' : ''}
+    <fieldset ${gated() ? 'disabled' : ''}>
+    ${R.fields.map(f => f.options ? `
+      <div class="q" role="radiogroup" aria-label="${f.name}"><label class="name">${f.name}</label>
+        <div class="opts">${f.options.map(o => `<label><input type="radio" name="${f.name}" value="${o}" ${l[f.name] === o ? 'checked' : ''}><span>${o}</span></label>`).join('')}
+          <button class="clear" data-clear="${f.name}" title="clear">clear</button></div>
+        <div class="hint">${esc(f.question)}</div></div>` : `
+      <div class="q1"><label class="name" for="f_${f.name}"><b>${f.name}</b></label> <span class="note">${esc(f.question)}</span>
+        <textarea id="f_${f.name}" data-f="${f.name}">${esc(l[f.name] || '')}</textarea></div>`).join('')}
+    </fieldset>
+    <div class="navbtns"><button id="prev">← Previous</button><span class="note">Saved in this browser for this role. Export the CSV to keep it.</span><button id="next" class="primary">Next →</button></div>
+  </div>`;
+  const v = $('v');
+  v.addEventListener('error', () => { $('vmiss').style.display = 'block'; });
+  $('speeds').addEventListener('click', e => {
+    const r = e.target.dataset.r; if (r) { v.playbackRate = +r; document.querySelectorAll('#speeds button[data-r]').forEach(b => b.classList.toggle('on', b === e.target)); }
+  });
+  $('loop').onchange = e => { v.loop = e.target.checked; };
+  $('back2').onclick = () => { v.currentTime = Math.max(0, v.currentTime - 2); };
+  document.querySelectorAll('.form input[type=radio]').forEach(inp => inp.onchange = () => { L(c.clip_id)[inp.name] = inp.value; touch(); });
+  document.querySelectorAll('.form [data-clear]').forEach(b => b.onclick = () => { delete L(c.clip_id)[b.dataset.clear]; render(); touch(); });
+  document.querySelectorAll('.form textarea').forEach(t => t.oninput = () => { L(c.clip_id)[t.dataset.f] = t.value; touch(); });
+  $('prev').onclick = () => go(cur - 1);
+  $('next').onclick = () => go(cur + 1);
+  renderList();
+}
+function touch() { save(); renderList(); }
+function go(i) { if (i < 0 || i >= DATA.clips.length) return; cur = i; try { localStorage.setItem(sk(role) + ':cur', i); } catch (e) {} render(); window.scrollTo(0, 0); }
+
+const q = s => /[",\n\r]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+$('export').onclick = () => {
+  if (!role) return;
+  const who = $('reviewer').value.trim(), bg = $('asl_bg').value.trim(), ts = new Date().toISOString();
+  if (!who) return setStatus('Enter your name in Reviewer before exporting.', true);
+  if (role === 'asl_linguistic' && !bg) return setStatus('Enter your ASL background before exporting Role B labels.', true);
+  const rows = DATA.clips.map(c => { const l = labels[c.clip_id] || {};
+    const row = { review_id: c.review_id, clip_id: c.clip_id, review_role: role, reviewer: who, reviewer_asl_background: bg,
+                  review_complete: state(c.clip_id) === 'done' ? 'yes' : 'no', exported_at: ts };
+    R.fields.forEach(f => { row[f.name] = l[f.name] || ''; });
+    return R.columns.map(k => row[k] ?? ''); });
+  const csv = [R.columns, ...rows].map(r => r.map(x => q(String(x))).join(',')).join('\n') + '\n';
+  const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' }));
+  a.download = R.file; a.click();
+  setStatus(`Exported ${R.file} (${DATA.clips.filter(c => state(c.clip_id) === 'done').length}/45 complete).`);
+};
+function parseCSV(t) {
+  const rows = []; let row = [], f = '', i = 0, inq = false;
+  for (; i < t.length; i++) { const ch = t[i];
+    if (inq) { if (ch === '"') { if (t[i + 1] === '"') { f += '"'; i++; } else inq = false; } else f += ch; }
+    else if (ch === '"') inq = true; else if (ch === ',') { row.push(f); f = ''; }
+    else if (ch === '\n' || ch === '\r') { if (ch === '\r' && t[i + 1] === '\n') i++; row.push(f); rows.push(row); row = []; f = ''; }
+    else f += ch; }
+  if (f || row.length) { row.push(f); rows.push(row); }
+  return rows;
+}
+$('import').onchange = async e => {
+  const file = e.target.files[0]; e.target.value = ''; if (!file || !role) return;
+  const [h, ...rows] = parseCSV(await file.text()), ix = Object.fromEntries(h.map((k, i) => [k.trim(), i]));
+  // only a file of the current role is accepted, so one role's labels can never land in the other role's form
+  const roles = new Set(rows.map(r => (r[ix.review_role] || '').trim()).filter(Boolean));
+  if (ix.review_role === undefined || roles.size !== 1 || !roles.has(role))
+    return setStatus(`Not imported: ${file.name} is not a ${R.file} export (review_role must be "${role}").`, true);
+  const ids = new Set(DATA.clips.map(c => c.clip_id)); let n = 0;
+  for (const r of rows) { const id = r[ix.clip_id]; if (!ids.has(id)) continue; n++;
+    const l = L(id); for (const f of R.fields) { const v = (r[ix[f.name]] || '').trim(); if (v && (!f.options || f.options.includes(v))) l[f.name] = v; }
+    if (r[ix.reviewer] && !$('reviewer').value) $('reviewer').value = r[ix.reviewer];
+    if (ix.reviewer_asl_background !== undefined && r[ix.reviewer_asl_background] && !$('asl_bg').value) $('asl_bg').value = r[ix.reviewer_asl_background]; }
+  save(); render(); setStatus(`Imported ${n} rows from ${file.name}.`);
+};
+$('vids').onchange = e => { for (const f of e.target.files) blobs[f.name] = URL.createObjectURL(f); if (role) render(); };
+$('reviewer').oninput = save;
+$('asl_bg').oninput = () => { const g = gated(); save(); if (g !== !!document.querySelector('.form fieldset:disabled')) render(); };
+$('filter').onchange = () => role && renderList();
+$('list').onclick = e => { const a = e.target.closest('a'); if (a) { e.preventDefault(); go(+a.dataset.i); } };
+document.querySelectorAll('.roles button').forEach(b => b.onclick = () => setRole(b.dataset.role));
+document.addEventListener('keydown', e => {
+  if (!role || /INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)) return;
+  if (e.key === ']') go(cur + 1); else if (e.key === '[') go(cur - 1);
+  else if (e.key === ' ') { const v = $('v'); if (v) { e.preventDefault(); v.paused ? v.play() : v.pause(); } }
+});
+// role from the link (#role=asl_linguistic / #role=translation_error), else the last one used here, else ask
+const hashRole = (location.hash.match(/role=(\w+)/) || [])[1];
+let lastRole = null; try { lastRole = localStorage.getItem(KEY + ':role'); } catch (e) {}
+setRole(DATA.roles[hashRole] ? hashRole : lastRole);
+</script>
+</body>
+</html>

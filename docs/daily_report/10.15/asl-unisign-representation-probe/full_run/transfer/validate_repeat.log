@@ -1,0 +1,9 @@
+PASS  shapes  {"raw_mean": [200, 207], "raw_std": [200, 207], "raw_mad": [200, 207], "raw_seg4": [200, 4, 207], "fsign_mean": [200, 1024], "fsign_std": [200, 1024], "fsign_mad": [200, 1024], "fsign_seg4": [200, 4, 
+PASS  finite  {}
+PASS  pooled_dim  {"raw": 414, "fsign": 2048, "mt5": 1536}
+PASS  one_record  {"n": 200, "expected": 200, "duplicates": 0, "missing": [], "extra": []}
+PASS  order  ""
+PASS  provenance  []
+PASS  frames  {"bad": [], "T_min": 9, "T_max": 256, "n_sampled_gt256": 42}
+PASS  determinism  {"n_shared": 200, "max_abs_diff": {"raw_mean": 0.0, "raw_std": 0.0, "raw_mad": 0.0, "raw_seg4": 0.0, "fsign_mean": 0.0, "fsign_std": 0.0, "fsign_mad": 0.0, "fsign_seg4": 0.0, "mt5_mean": 0.0, "mt5_std
+ALL PASS

@@ -1,0 +1,101 @@
+{
+ "gate": "G3 determinism (P0_PROTOCOL_FREEZE.md \u00a71.5), run on all 45 cases (protocol minimum: first 5)",
+ "tolerance_abs_score": 1e-05,
+ "ignored_fields": [
+  "sec_T",
+  "sec_beam5",
+  "sec_clip",
+  "sec_forward"
+ ],
+ "domains": {
+  "A_official": {
+   "run1_candidates_sha256": "aeb817641769dd79139020157964e5d39d5ba031518dd191b360bf805664f5b4",
+   "run2_candidates_sha256": "087c2bc043559b95856a9222a9c535984cebdbe88eb536e1dfd1b431579ea327",
+   "n_run1": 45,
+   "n_run2": 45,
+   "order_equals_case_list": true,
+   "n_clips_identical": 45,
+   "mismatches": [],
+   "max_abs_score_diff": 0.0,
+   "subsampled_gt256": [
+    "R04",
+    "R20",
+    "R03",
+    "R10",
+    "R11",
+    "R12",
+    "R14",
+    "R19",
+    "R21",
+    "R23",
+    "R36",
+    "R38",
+    "R39",
+    "R44"
+   ],
+   "frame_idx_and_model_input_hashes_identical": true,
+   "same_script_sha256": true,
+   "script_sha256": "a00ae679197946daab04c2c492464aaa7c67ca15ae3737d7fcb83aaf2a57d123",
+   "device_precision": [
+    "cpu",
+    "fp32",
+    "cpu",
+    "fp32"
+   ],
+   "holdout_guard_ids": [
+    45,
+    45
+   ],
+   "tripwires_installed": true,
+   "decode_loop_seconds": [
+    260.72,
+    479.91
+   ],
+   "PASS": true
+  },
+  "B_ours_5p39": {
+   "run1_candidates_sha256": "8c1904c4354422ddf18b4cd34cc7efe1e5b8241e4a61dd51ed0ee56d1f326818",
+   "run2_candidates_sha256": "4991ebedaaa870208cb9a311b553f9d9f69c1931fe04173ea301d4afedbf3e4b",
+   "n_run1": 45,
+   "n_run2": 45,
+   "order_equals_case_list": true,
+   "n_clips_identical": 45,
+   "mismatches": [],
+   "max_abs_score_diff": 0.0,
+   "subsampled_gt256": [
+    "R20",
+    "R03",
+    "R10",
+    "R11",
+    "R12",
+    "R14",
+    "R19",
+    "R21",
+    "R23",
+    "R36",
+    "R38",
+    "R39",
+    "R44"
+   ],
+   "frame_idx_and_model_input_hashes_identical": true,
+   "same_script_sha256": true,
+   "script_sha256": "a00ae679197946daab04c2c492464aaa7c67ca15ae3737d7fcb83aaf2a57d123",
+   "device_precision": [
+    "cpu",
+    "fp32",
+    "cpu",
+    "fp32"
+   ],
+   "holdout_guard_ids": [
+    45,
+    45
+   ],
+   "tripwires_installed": true,
+   "decode_loop_seconds": [
+    259.18,
+    275.33
+   ],
+   "PASS": true
+  }
+ }
+}

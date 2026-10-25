@@ -1,0 +1,140 @@
+{
+ "tier": "L",
+ "n_clips": 2209,
+ "n_concepts": 24,
+ "n_positive_cells": 1032,
+ "translation": {
+  "hit": 534,
+  "missed": 498,
+  "false_mentions": 354
+ },
+ "probes": {
+  "p10": {
+   "raw": {
+    "recovered": 94.6,
+    "recovered_frac_of_missed": 0.18995983935742972,
+    "false_adds": 5605.6,
+    "precision_of_adds": 0.016595908915476645,
+    "n_draws": 5
+   },
+   "fsign": {
+    "recovered": 71.6,
+    "recovered_frac_of_missed": 0.1437751004016064,
+    "false_adds": 2543.0,
+    "precision_of_adds": 0.027384685994033504,
+    "n_draws": 5
+   },
+   "mt5": {
+    "recovered": 88.8,
+    "recovered_frac_of_missed": 0.1783132530120482,
+    "false_adds": 995.6,
+    "precision_of_adds": 0.0818886019918849,
+    "n_draws": 5
+   },
+   "length": {
+    "recovered": 132.0,
+    "recovered_frac_of_missed": 0.26506024096385544,
+    "false_adds": 7803.2,
+    "precision_of_adds": 0.016634741405383607,
+    "n_draws": 5
+   }
+  },
+  "p25": {
+   "raw": {
+    "recovered": 74.2,
+    "recovered_frac_of_missed": 0.14899598393574298,
+    "false_adds": 3104.0,
+    "precision_of_adds": 0.02334654836070732,
+    "n_draws": 5
+   },
+   "fsign": {
+    "recovered": 60.4,
+    "recovered_frac_of_missed": 0.121285140562249,
+    "false_adds": 1425.0,
+    "precision_of_adds": 0.040662447825501546,
+    "n_draws": 5
+   },
+   "mt5": {
+    "recovered": 91.2,
+    "recovered_frac_of_missed": 0.18313253012048195,
+    "false_adds": 825.0,
+    "precision_of_adds": 0.09954158480681073,
+    "n_draws": 5
+   },
+   "length": {
+    "recovered": 124.2,
+    "recovered_frac_of_missed": 0.2493975903614458,
+    "false_adds": 6883.4,
+    "precision_of_adds": 0.01772361436155032,
+    "n_draws": 5
+   }
+  },
+  "p50": {
+   "raw": {
+    "recovered": 75.0,
+    "recovered_frac_of_missed": 0.15060240963855423,
+    "false_adds": 2705.0,
+    "precision_of_adds": 0.02697841726618705,
+    "n_draws": 3
+   },
+   "fsign": {
+    "recovered": 65.33333333333333,
+    "recovered_frac_of_missed": 0.13119143239625167,
+    "false_adds": 1181.3333333333333,
+    "precision_of_adds": 0.052406417112299465,
+    "n_draws": 3
+   },
+   "mt5": {
+    "recovered": 92.66666666666667,
+    "recovered_frac_of_missed": 0.18607764390896922,
+    "false_adds": 750.3333333333334,
+    "precision_of_adds": 0.1099248714907078,
+    "n_draws": 3
+   },
+   "length": {
+    "recovered": 121.0,
+    "recovered_frac_of_missed": 0.2429718875502008,
+    "false_adds": 6164.0,
+    "precision_of_adds": 0.019252187748607798,
+    "n_draws": 3
+   }
+  },
+  "p100": {
+   "raw": {
+    "recovered": 74.0,
+    "recovered_frac_of_missed": 0.14859437751004015,
+    "false_adds": 1981.0,
+    "precision_of_adds": 0.03600973236009732,
+    "n_draws": 1
+   },
+   "fsign": {
+    "recovered": 82.0,
+    "recovered_frac_of_missed": 0.1646586345381526,
+    "false_adds": 1030.0,
+    "precision_of_adds": 0.0737410071942446,
+    "n_draws": 1
+   },
+   "mt5": {
+    "recovered": 90.0,
+    "recovered_frac_of_missed": 0.18072289156626506,
+    "false_adds": 581.0,
+    "precision_of_adds": 0.13412816691505217,
+    "n_draws": 1
+   },
+   "length": {
+    "recovered": 123.0,
+    "recovered_frac_of_missed": 0.2469879518072289,
+    "false_adds": 7151.0,
+    "precision_of_adds": 0.01690954083035469,
+    "n_draws": 1
+   }
+  }
+ },
+ "p100_overlap": {
+  "recovered_by_any_of_raw_fsign_mt5": 157,
+  "mt5_only": 36,
+  "fsign_only": 24,
+  "raw_only": 31,
+  "mt5_and_fsign": 46
+ }
+}

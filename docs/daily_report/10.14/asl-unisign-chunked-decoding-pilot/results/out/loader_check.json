@@ -1,0 +1,46 @@
+{
+ "arms": {
+  "S1": {
+   "chunks": 72,
+   "chunks_gt256": 32,
+   "random_sample_called": 32,
+   "body_scale_ratio_chunk_over_full_min_p10_median_p90_max": [
+    0.685,
+    0.818,
+    0.979,
+    1.0,
+    1.0
+   ],
+   "chunks_scale_ratio_lt_0.8": 6
+  },
+  "S2": {
+   "chunks": 91,
+   "chunks_gt256": 0,
+   "random_sample_called": 0,
+   "body_scale_ratio_chunk_over_full_min_p10_median_p90_max": [
+    0.685,
+    0.808,
+    0.961,
+    1.0,
+    1.0
+   ],
+   "chunks_scale_ratio_lt_0.8": 8
+  },
+  "S3": {
+   "chunks": 91,
+   "chunks_gt256": 0,
+   "random_sample_called": 0,
+   "body_scale_ratio_chunk_over_full_min_p10_median_p90_max": [
+    0.685,
+    0.805,
+    0.961,
+    1.0,
+    1.0
+   ],
+   "chunks_scale_ratio_lt_0.8": 9
+  }
+ },
+ "U36_pkls": 128,
+ "fails": [],
+ "pass": true
+}

@@ -1,0 +1,243 @@
+{
+ "experiment": "P0-18 automatic preprocessing (timing + signer crop) for Uni-Sign",
+ "primary_arm": "B_crop_only",
+ "interval": {
+  "smooth_s": 0.2,
+  "up_scale": 1.0,
+  "speed_scale": 1.0,
+  "valid_min": 0.3,
+  "thr_on": 0.55,
+  "thr_off": 0.25,
+  "max_gap_s": 0.6,
+  "min_seg_s": 0.3,
+  "margin_lag": 9.0,
+  "margin_warp": 9.0,
+  "lag_min_r": -1.0,
+  "lag_start": 0.5,
+  "lag_end": 2.0,
+  "snap_s": 2.0,
+  "min_dur_s": 1.0,
+  "lag_hz": 5.0,
+  "lag_min": -10.0,
+  "lag_max": 50.0,
+  "slope_grid": [
+   0.95,
+   0.96,
+   0.97,
+   0.98,
+   0.99,
+   1.0,
+   1.01,
+   1.02,
+   1.03,
+   1.04,
+   1.05,
+   1.06,
+   1.07,
+   1.08,
+   1.09,
+   1.1,
+   1.11,
+   1.12,
+   1.13,
+   1.14,
+   1.15,
+   1.16,
+   1.17,
+   1.18,
+   1.19,
+   1.2,
+   1.21,
+   1.22,
+   1.23,
+   1.24,
+   1.25,
+   1.26,
+   1.27,
+   1.28,
+   1.29,
+   1.3,
+   1.31,
+   1.32,
+   1.33,
+   1.34,
+   1.35,
+   1.36,
+   1.37,
+   1.38,
+   1.39,
+   1.4,
+   1.41,
+   1.42,
+   1.43,
+   1.44,
+   1.45
+  ]
+ },
+ "crop": {
+  "pct": 1,
+  "margin_x": 0.25,
+  "margin_top": 0.5,
+  "margin_bottom": 0.0,
+  "to_bottom": true
+ },
+ "pose_env": {
+  "onnxruntime": "1.23.2",
+  "ort_device": "GPU",
+  "rtmlib": "0.0.13",
+  "opencv": "4.10.0",
+  "numpy": "1.22.4",
+  "models_sha256": {
+   "det": "ceb11c07298f95c50d7c5abeb906d03340c85f23aa79e3e66966e7fb6c307250",
+   "pose": "68db326c5c6f3273456f803eae0faf5440478369f2c3ee67258d2f36512e8d76"
+  },
+  "cuda_ep": [
+   "CUDAExecutionProvider",
+   {
+    "device_id": 0,
+    "cudnn_conv_algo_search": "HEURISTIC"
+   }
+  ],
+  "deterministic_compute": true,
+  "workers": 4,
+  "chunk": 256,
+  "ffmpeg": [
+   "YES",
+   "avcodec:",
+   "YES",
+   "(59.37.100)",
+   "avformat:",
+   "YES",
+   "(59.27.100)",
+   "avutil:",
+   "YES",
+   "(57.28.100)"
+  ],
+  "gpu": "Tesla T4, 580.178.04"
+ },
+ "decode": {
+  "host": "baobao-training-t4",
+  "device": "cuda",
+  "procs": 2,
+  "threads": 2,
+  "env_file": "~/p018/decode_env.sh"
+ },
+ "decode_env": {
+  "python": "3.9.25",
+  "torch": "2.1.1+cu121",
+  "torch_cuda": "12.1",
+  "cudnn": 8902,
+  "transformers": "4.40.0",
+  "numpy": "1.22.4",
+  "cuda_available": true,
+  "gpu": "Tesla T4",
+  "unisign_commit": "eed438bcb49e30405cd6ccdfcccca330c134e830",
+  "unisign_tracked_content_sha256": "890edc738bb048b93fb91b86ac3af64026d358d51a8a396f8e76de69b50eb7fe",
+  "checkpoint_sha256": "1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d",
+  "mt5_sha256": {
+   "config.json": "7ce360bdccf5b665dbb8c32f6912f1d8fd394aa553c133863283a16503d6d550",
+   "generation_config.json": "f5a1c7e2be8092018d8835128987edf0111637dd98e90599cc80310fef75d95a",
+   "pytorch_model.bin": "180573b534144580f04af026da62bf71bc976ee1b7eb311b8945e2fefde8d614",
+   "special_tokens_map.json": "09059cedc26bc46bc09a52f05b92d4922e11917e87f3b92059bb1a63a59ab2c4",
+   "spiece.model": "ef78f86560d809067d12bac6c09f19a462cb3af3f54d2b8acbba26e1433125d6",
+   "tokenizer_config.json": "3be4bbd24c65845b1dc86186f3c7d1d61ac2e29154cb0d71133753562f8d1959"
+  },
+  "decoding": {
+   "device": "cuda",
+   "dtype": "fp32",
+   "num_beams": 4,
+   "max_new_tokens": 100,
+   "batch_size": 1,
+   "set_seed": 42,
+   "frame_sampling_seed": "int(sha256(clip_id)[:8], 16)",
+   "max_frames": 256,
+   "cudnn_deterministic": true,
+   "cudnn_benchmark": false
+  }
+ },
+ "env": {
+  "UNISIGN_REPO": "~/Desktop/curify/p014-work/Uni-Sign"
+ },
+ "inputs": {
+  "dryrun": {
+   "original_csv": {
+    "path": "~/Desktop/curify/p018-work/downloads/how2sign_test.csv",
+    "sha256": "ecc73526d01bfc56839c1ad09f804d1aa21c2616b42cffc066d03d01d67afc3e"
+   },
+   "videos_zip": {
+    "path": "~/Desktop/curify/p018-work/downloads/test_raw_videos.zip",
+    "sha256": "3755f06d7bdf903dcf67c13d425823587bbb9bdae9242e9a1398d09f5eb7c3b8",
+    "url": "https://huggingface.co/datasets/aipieces/How2Sign/resolve/1231830fc1e8d77555a245ca22353b144e168111/original/green-screen-rgb-videos-frontal-view/test_raw_videos.zip"
+   },
+   "realigned_csv": {
+    "path": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download/how2sign_realigned_test.csv",
+    "sha256": "d1799dcbf100eda822eeb1a0e6e754d82b12b2a57756bd47073c4e4b8a02ae4d"
+   },
+   "crop_index": {
+    "path": "~/Desktop/curify/p018-work/dev/crop_test_index.tsv",
+    "sha256": "92b0e2ffaea679dae912de2177786040909947cb16adcc4b2672c87521ef8bbc"
+   }
+  },
+  "h18": {
+   "original_csv": {
+    "path": "~/Desktop/curify/p018-work/downloads/how2sign_val.csv",
+    "sha256": "f6f0cef01c3f891ca624a45c71eb7f7748b77362d7418c47567a984384f1537c"
+   },
+   "videos_zip": {
+    "path": "~/Desktop/curify/p018-work/downloads/val_raw_videos.zip",
+    "sha256": "c6c3caf16f8ae610bcb5f36deb798f65221af07ed429953055976af80799b939",
+    "url": "https://huggingface.co/datasets/aipieces/How2Sign/resolve/1231830fc1e8d77555a245ca22353b144e168111/original/green-screen-rgb-videos-frontal-view/val_raw_videos.zip"
+   },
+   "realigned_csv": {
+    "path": "~/Desktop/curify/visual-search-adhoc-asl-task-c/asl-translator/evaluation/experiments/landmark_t5_1pct/local_run_10pct/raw_download/how2sign_realigned_val.csv",
+    "sha256": "1bf5d57ce90d61571776d06a179335d99648d8c94fc22b327d2abb328d26137c"
+   },
+   "crop_index": {
+    "path": "~/Desktop/visual-search-adhoc/docs/daily_report/10.16/asl-p0-16-experimental-credibility/holdout/crop_val_index.tsv",
+    "sha256": "cd4fe3357d1dc3929197223cf9ead62ea58ffcf83bea6a514b256bedf4e2c551"
+   }
+  },
+  "common": {
+   "g1_videos_zip": {
+    "path": "~/Desktop/curify/p018-work/downloads/test_raw_videos.zip",
+    "sha256": "3755f06d7bdf903dcf67c13d425823587bbb9bdae9242e9a1398d09f5eb7c3b8",
+    "url": "https://huggingface.co/datasets/aipieces/How2Sign/resolve/1231830fc1e8d77555a245ca22353b144e168111/original/green-screen-rgb-videos-frontal-view/test_raw_videos.zip"
+   }
+  }
+ },
+ "gates": {
+  "G1": {
+   "pkl_dir": "ref/g1/pkl",
+   "ids": "ref/g1/ids.txt",
+   "predictions": "ref/g1/predictions.jsonl",
+   "pose_video": "_fZbAxSSbX4-5-rgb_front",
+   "pose_sha256": "b796a84f7124085ef14efdbdc7de58c4f77d3a04c761b3d5ebacbed5512ce0a3"
+  },
+  "G2": {
+   "n": 16
+  },
+  "G3": {
+   "max_input_missing_rate": 0.05
+  }
+ },
+ "scoring": {
+  "B": 2000,
+  "seed": 20261016
+ },
+ "h18_expected": {
+  "clips": 814,
+  "videos": 57
+ },
+ "thresholds": {
+  "P1_min_delta_bleu4": 0.5,
+  "P2_min_gap_bleu4": 1.0,
+  "P2_min_recovery": 0.33,
+  "P3_max_failure_rate": 0.05,
+  "P4_max_preproc_s_per_clip": 15.0,
+  "P5_len_ratio": [
+   0.8,
+   1.2
+  ],
+  "P5_max_wer_increase_ci_upper": 5.0
+ }
+}
