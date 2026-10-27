@@ -1,0 +1,2062 @@
+{
+ "R10": {
+  "review_id": "R10",
+  "clip_id": "fzNnTgHa1lM_2-5-rgb_front",
+  "source_video": "raw_videos/fzNnTgHa1lM-5-rgb_front.mp4",
+  "source_video_sha256": "df24c8fb004df8de09845bbcfbf7f6bf692f39bef7907f598ada6243ea5b232f",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2107,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 608,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "f1887acb1666ebb7af012cb033788700892294620c3666e90646b453a1d2519d",
+  "raw_thumb_frames": 2107,
+  "clip_thumb_frames": 608,
+  "best_offset_frames": 749,
+  "best_offset_norm_mae": 749,
+  "norm_mae_best": 0.0308,
+  "norm_mae_median": 0.2041,
+  "motion_r_best": 0.9942,
+  "motion_r_next_outside_5": 0.617,
+  "plain_mae_at_best": 7.1938,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 561,
+    "norm_mae": 0.1796,
+    "motion_r": 0.09
+   },
+   "realigned_start": {
+    "offset_frames": 745,
+    "norm_mae": 0.0578,
+    "motion_r": 0.6974
+   }
+  },
+  "slice_start_s": 31.2083,
+  "slice_end_s": 56.5417,
+  "sec": 10.9
+ },
+ "R14": {
+  "review_id": "R14",
+  "clip_id": "G3GcPpidwxk_5-5-rgb_front",
+  "source_video": "raw_videos/G3GcPpidwxk-5-rgb_front.mp4",
+  "source_video_sha256": "8d9392d662de8f7e3e1e7d2c80b1761f3f9717e152faa035cbcf12f09c5e7b9e",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 3934,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 397,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "f9221d4324aed8b4c817eb0d76e97253aec0fb4c52993c06b95c6e09271e9293",
+  "raw_thumb_frames": 3934,
+  "clip_thumb_frames": 397,
+  "best_offset_frames": 1048,
+  "best_offset_norm_mae": 1048,
+  "norm_mae_best": 0.0312,
+  "norm_mae_median": 0.2124,
+  "motion_r_best": 0.9994,
+  "motion_r_next_outside_5": 0.4078,
+  "plain_mae_at_best": 7.1075,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 786,
+    "norm_mae": 0.2086,
+    "motion_r": -0.0757
+   },
+   "realigned_start": {
+    "offset_frames": 1058,
+    "norm_mae": 0.1265,
+    "motion_r": 0.1752
+   }
+  },
+  "slice_start_s": 34.9333,
+  "slice_end_s": 48.1667,
+  "sec": 16.2
+ },
+ "R01": {
+  "review_id": "R01",
+  "clip_id": "g2ur4BIuN0Q_8-3-rgb_front",
+  "source_video": "raw_videos/g2ur4BIuN0Q-3-rgb_front.mp4",
+  "source_video_sha256": "3d0936b58c8cf0bd399abe7c8c4cab3451f5828e922ba793bce211e278e2b7b8",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2784,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 100,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "046d536fa9fc595aaf60e5cb3257ebb167e75888ff10973dc02ba6d91a5a9612",
+  "raw_thumb_frames": 2784,
+  "clip_thumb_frames": 100,
+  "best_offset_frames": 1247,
+  "best_offset_norm_mae": 1247,
+  "norm_mae_best": 0.0519,
+  "norm_mae_median": 0.1759,
+  "motion_r_best": 0.9344,
+  "motion_r_next_outside_5": 0.5967,
+  "plain_mae_at_best": 7.3447,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1246,
+    "norm_mae": 0.0604,
+    "motion_r": 0.8259
+   },
+   "realigned_start": {
+    "offset_frames": 1242,
+    "norm_mae": 0.0918,
+    "motion_r": 0.4133
+   }
+  },
+  "slice_start_s": 51.9583,
+  "slice_end_s": 56.125,
+  "sec": 13.9
+ },
+ "R02": {
+  "review_id": "R02",
+  "clip_id": "G3OMdQo1zjY_0-10-rgb_front",
+  "source_video": "raw_videos/G3OMdQo1zjY-10-rgb_front.mp4",
+  "source_video_sha256": "fc105c218a425e47e9ac2e4a2a715b82ce73258942aa0dbb2a3b7a36886c0b52",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 791,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 100,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "0b69daa4c6673ad98061428d95ae04a0016e42ce6c3a222bb330432f6668f66a",
+  "raw_thumb_frames": 791,
+  "clip_thumb_frames": 100,
+  "best_offset_frames": 80,
+  "best_offset_norm_mae": 80,
+  "norm_mae_best": 0.058,
+  "norm_mae_median": 0.2688,
+  "motion_r_best": 0.9598,
+  "motion_r_next_outside_5": 0.5089,
+  "plain_mae_at_best": 7.1105,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 79,
+    "norm_mae": 0.0706,
+    "motion_r": 0.8464
+   },
+   "realigned_start": {
+    "offset_frames": 34,
+    "norm_mae": 0.2397,
+    "motion_r": 0.178
+   }
+  },
+  "slice_start_s": 3.3333,
+  "slice_end_s": 7.5,
+  "sec": 4.0
+ },
+ "R03": {
+  "review_id": "R03",
+  "clip_id": "G06Irzcwxiw_5-1-rgb_front",
+  "source_video": "raw_videos/G06Irzcwxiw-1-rgb_front.mp4",
+  "source_video_sha256": "afc1421f60c4114913d6815e24e728dac9e66c6f97f04561c0f377841e9cf772",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 7317,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 457,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "76b1f143adf60fc064c3e83ef865abd0a3e0135011dd01e39f1df94e84b4d286",
+  "raw_thumb_frames": 7317,
+  "clip_thumb_frames": 457,
+  "best_offset_frames": 1077,
+  "best_offset_norm_mae": 1077,
+  "norm_mae_best": 0.0475,
+  "norm_mae_median": 0.2382,
+  "motion_r_best": 0.9994,
+  "motion_r_next_outside_5": 0.3765,
+  "plain_mae_at_best": 7.2157,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1076,
+    "norm_mae": 0.0688,
+    "motion_r": -0.131
+   },
+   "realigned_start": {
+    "offset_frames": 1500,
+    "norm_mae": 0.2361,
+    "motion_r": 0.0351
+   }
+  },
+  "slice_start_s": 35.9,
+  "slice_end_s": 51.1333,
+  "sec": 30.2
+ },
+ "R04": {
+  "review_id": "R04",
+  "clip_id": "-g0iPSnQt6w_0-1-rgb_front",
+  "source_video": "raw_videos/-g0iPSnQt6w-1-rgb_front.mp4",
+  "source_video_sha256": "19f185832f9a3fe329c9ffb1488a11a1c7350f881f49a708493d215ad34b2ef5",
+  "raw_probe": {
+   "fps": 50.0,
+   "r_frame_rate": "50/1",
+   "avg_frame_rate": "50/1",
+   "frames": 5522,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 50.0,
+   "r_frame_rate": "50/1",
+   "avg_frame_rate": "50/1",
+   "frames": 175,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "dfdc64ba19f876d3da870cf4c2591c74fa1b85e1bf5220d197fe9e234a70445d",
+  "raw_thumb_frames": 5522,
+  "clip_thumb_frames": 175,
+  "best_offset_frames": 42,
+  "best_offset_norm_mae": 42,
+  "norm_mae_best": 0.0525,
+  "norm_mae_median": 0.2457,
+  "motion_r_best": 0.9978,
+  "motion_r_next_outside_5": 0.7462,
+  "plain_mae_at_best": 7.2385,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 42,
+    "norm_mae": 0.0525,
+    "motion_r": 0.9978
+   },
+   "realigned_start": {
+    "offset_frames": 106,
+    "norm_mae": 0.1447,
+    "motion_r": -0.1124
+   }
+  },
+  "slice_start_s": 0.84,
+  "slice_end_s": 4.34,
+  "sec": 15.7
+ },
+ "R05": {
+  "review_id": "R05",
+  "clip_id": "G3VM7etNABI_0-10-rgb_front",
+  "source_video": "raw_videos/G3VM7etNABI-10-rgb_front.mp4",
+  "source_video_sha256": "3689297fef96f3caf37bbbfdd04b03968e93b4789b2a17d1cfc4bfc5a08035a8",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2953,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 125,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "14c9f41dd0f46f55835166737830810dad3ef9c43acbf962e4540bab6f6d09d0",
+  "raw_thumb_frames": 2953,
+  "clip_thumb_frames": 125,
+  "best_offset_frames": 30,
+  "best_offset_norm_mae": 30,
+  "norm_mae_best": 0.0579,
+  "norm_mae_median": 0.2579,
+  "motion_r_best": 0.9627,
+  "motion_r_next_outside_5": 0.5629,
+  "plain_mae_at_best": 7.1731,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 29,
+    "norm_mae": 0.0743,
+    "motion_r": 0.8627
+   },
+   "realigned_start": {
+    "offset_frames": 18,
+    "norm_mae": 0.1595,
+    "motion_r": 0.1332
+   }
+  },
+  "slice_start_s": 1.25,
+  "slice_end_s": 6.4583,
+  "sec": 14.4
+ },
+ "R06": {
+  "review_id": "R06",
+  "clip_id": "G1LiGqM3FhM_2-8-rgb_front",
+  "source_video": "raw_videos/G1LiGqM3FhM-8-rgb_front.mp4",
+  "source_video_sha256": "acb1f4407b06f8fff9b9e97dab64205bde3d8f54f464123c49a54c005b07982a",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2112,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 103,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "737c00cfef85da8e31f4739536fcc54c87f4883da53e5257039276513f99c2e5",
+  "raw_thumb_frames": 2112,
+  "clip_thumb_frames": 103,
+  "best_offset_frames": 188,
+  "best_offset_norm_mae": 188,
+  "norm_mae_best": 0.0359,
+  "norm_mae_median": 0.2452,
+  "motion_r_best": 0.9556,
+  "motion_r_next_outside_5": 0.5826,
+  "plain_mae_at_best": 7.2773,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 187,
+    "norm_mae": 0.0611,
+    "motion_r": 0.8299
+   },
+   "realigned_start": {
+    "offset_frames": 90,
+    "norm_mae": 0.2046,
+    "motion_r": 0.2675
+   }
+  },
+  "slice_start_s": 7.8333,
+  "slice_end_s": 12.125,
+  "sec": 10.6
+ },
+ "R07": {
+  "review_id": "R07",
+  "clip_id": "fZIHe3dXPR0_5-8-rgb_front",
+  "source_video": "raw_videos/fZIHe3dXPR0-8-rgb_front.mp4",
+  "source_video_sha256": "2333695657f0fe0d225b46f1f293adf647351269be9073e9f2a4dacc1fcc3a9f",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2783,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 195,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "afc5212920af25a9848d76bc13cf6a0390fd759be84862b6987336575a02848a",
+  "raw_thumb_frames": 2783,
+  "clip_thumb_frames": 195,
+  "best_offset_frames": 918,
+  "best_offset_norm_mae": 918,
+  "norm_mae_best": 0.0392,
+  "norm_mae_median": 0.2406,
+  "motion_r_best": 0.9937,
+  "motion_r_next_outside_5": 0.4049,
+  "plain_mae_at_best": 7.285,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 917,
+    "norm_mae": 0.0673,
+    "motion_r": 0.7961
+   },
+   "realigned_start": {
+    "offset_frames": 906,
+    "norm_mae": 0.1844,
+    "motion_r": 0.121
+   }
+  },
+  "slice_start_s": 38.25,
+  "slice_end_s": 46.375,
+  "sec": 14.0
+ },
+ "R08": {
+  "review_id": "R08",
+  "clip_id": "FZrWOf-oGDk_0-8-rgb_front",
+  "source_video": "raw_videos/FZrWOf-oGDk-8-rgb_front.mp4",
+  "source_video_sha256": "c405dea34db6def2f360912661a0b47f3a0938770861e9a957837b6ed65d7b1c",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1722,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 137,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "94a081abce2a97bb6ed1d90b0df60d3d5413b63edeb12f8538fc73becdd69390",
+  "raw_thumb_frames": 1722,
+  "clip_thumb_frames": 137,
+  "best_offset_frames": 7,
+  "best_offset_norm_mae": 7,
+  "norm_mae_best": 0.0337,
+  "norm_mae_median": 0.2177,
+  "motion_r_best": 0.9994,
+  "motion_r_next_outside_5": 0.68,
+  "plain_mae_at_best": 7.2977,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 7,
+    "norm_mae": 0.0337,
+    "motion_r": 0.9994
+   },
+   "realigned_start": {
+    "offset_frames": 24,
+    "norm_mae": 0.1749,
+    "motion_r": -0.0648
+   }
+  },
+  "slice_start_s": 0.2917,
+  "slice_end_s": 6.0,
+  "sec": 8.7
+ },
+ "R09": {
+  "review_id": "R09",
+  "clip_id": "fZgWKh3ENoE_0-8-rgb_front",
+  "source_video": "raw_videos/fZgWKh3ENoE-8-rgb_front.mp4",
+  "source_video_sha256": "f8c0c4a160cef26b8ad33abfe9b248d3277c0a8e861803724543fe87525f1c46",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2294,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 30,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "9bd40463175cb888fab5c4cf718652c6ffd0ff2d5d652261323f2ca7dadc807e",
+  "raw_thumb_frames": 2294,
+  "clip_thumb_frames": 30,
+  "best_offset_frames": 17,
+  "best_offset_norm_mae": 17,
+  "norm_mae_best": 0.0553,
+  "norm_mae_median": 0.235,
+  "motion_r_best": 0.9446,
+  "motion_r_next_outside_5": 0.7535,
+  "plain_mae_at_best": 7.1519,
+  "unique_match": false,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 17,
+    "norm_mae": 0.0553,
+    "motion_r": 0.9446
+   },
+   "realigned_start": {
+    "offset_frames": 19,
+    "norm_mae": 0.1415,
+    "motion_r": 0.4361
+   }
+  },
+  "slice_start_s": 0.7083,
+  "slice_end_s": 1.9583,
+  "sec": 11.0
+ },
+ "R11": {
+  "review_id": "R11",
+  "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+  "source_video": "raw_videos/fZM3IcM2Xs4-10-rgb_front.mp4",
+  "source_video_sha256": "65a1c3d7ea54fdcf904ffbccd86c84ca18cb138c9689ce7c8b51e73dc58d4223",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2143,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 448,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "f9828765e89dce9b95dd964bf467e77fb99c09f212c6e8abae69087b6c0dd192",
+  "raw_thumb_frames": 2143,
+  "clip_thumb_frames": 448,
+  "best_offset_frames": 1528,
+  "best_offset_norm_mae": 1528,
+  "norm_mae_best": 0.0551,
+  "norm_mae_median": 0.2385,
+  "motion_r_best": 0.993,
+  "motion_r_next_outside_5": 0.3595,
+  "plain_mae_at_best": 7.1485,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1527,
+    "norm_mae": 0.084,
+    "motion_r": 0.8109
+   },
+   "realigned_start": {
+    "offset_frames": 1605,
+    "norm_mae": 0.232,
+    "motion_r": 0.0011
+   }
+  },
+  "slice_start_s": 63.6667,
+  "slice_end_s": 82.3333,
+  "sec": 11.1
+ },
+ "R12": {
+  "review_id": "R12",
+  "clip_id": "G2JE_BEFVmE_4-10-rgb_front",
+  "source_video": "raw_videos/G2JE_BEFVmE-10-rgb_front.mp4",
+  "source_video_sha256": "a702b0ed91b05283714c10c21c543c390822c6b6815d2cd6a507680f64ad811d",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2376,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 563,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "1a5049e48080c1c27b3d238b61951acb3103df6c7cd0429622532cd3837dd191",
+  "raw_thumb_frames": 2376,
+  "clip_thumb_frames": 563,
+  "best_offset_frames": 1466,
+  "best_offset_norm_mae": 1466,
+  "norm_mae_best": 0.0554,
+  "norm_mae_median": 0.2473,
+  "motion_r_best": 0.9927,
+  "motion_r_next_outside_5": 0.4385,
+  "plain_mae_at_best": 7.1489,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1466,
+    "norm_mae": 0.0554,
+    "motion_r": 0.9927
+   },
+   "realigned_start": {
+    "offset_frames": 1527,
+    "norm_mae": 0.2208,
+    "motion_r": 0.0119
+   }
+  },
+  "slice_start_s": 61.0833,
+  "slice_end_s": 84.5417,
+  "sec": 12.4
+ },
+ "R13": {
+  "review_id": "R13",
+  "clip_id": "fZgbCwSG3Hc_4-8-rgb_front",
+  "source_video": "raw_videos/fZgbCwSG3Hc-8-rgb_front.mp4",
+  "source_video_sha256": "54ee13573e13b44e36fbe701463cdacbbb7515d83b3efda14c6e274891954f5e",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1792,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 96,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "3f456b5aa1299aa82d5c951eb3995ad1e5801a3a24e21b7bf0ad28dafbe65e30",
+  "raw_thumb_frames": 1792,
+  "clip_thumb_frames": 96,
+  "best_offset_frames": 213,
+  "best_offset_norm_mae": 213,
+  "norm_mae_best": 0.0545,
+  "norm_mae_median": 0.2327,
+  "motion_r_best": 0.9966,
+  "motion_r_next_outside_5": 0.6602,
+  "plain_mae_at_best": 7.2096,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 212,
+    "norm_mae": 0.0825,
+    "motion_r": 0.8609
+   },
+   "realigned_start": {
+    "offset_frames": 197,
+    "norm_mae": 0.177,
+    "motion_r": 0.1932
+   }
+  },
+  "slice_start_s": 8.875,
+  "slice_end_s": 12.875,
+  "sec": 9.0
+ },
+ "R15": {
+  "review_id": "R15",
+  "clip_id": "g1xdqxCZxTg_6-3-rgb_front",
+  "source_video": "raw_videos/g1xdqxCZxTg-3-rgb_front.mp4",
+  "source_video_sha256": "85b08cf49c472766d97d38bf43a53d846af5a1ff0a6377e037e6eca1dc4ce794",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1607,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 27,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "2ce57328815aa85e1dafc6032082ab09ccc73ae444dd9ccbad5c319a51389dd4",
+  "raw_thumb_frames": 1607,
+  "clip_thumb_frames": 27,
+  "best_offset_frames": 319,
+  "best_offset_norm_mae": 319,
+  "norm_mae_best": 0.0524,
+  "norm_mae_median": 0.2573,
+  "motion_r_best": 0.915,
+  "motion_r_next_outside_5": 0.5936,
+  "plain_mae_at_best": 7.3148,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 318,
+    "norm_mae": 0.0661,
+    "motion_r": 0.5309
+   },
+   "realigned_start": {
+    "offset_frames": 357,
+    "norm_mae": 0.2451,
+    "motion_r": -0.2366
+   }
+  },
+  "slice_start_s": 13.2917,
+  "slice_end_s": 14.4167,
+  "sec": 7.9
+ },
+ "R16": {
+  "review_id": "R16",
+  "clip_id": "g0yUlOaqL6k_12-3-rgb_front",
+  "source_video": "raw_videos/g0yUlOaqL6k-3-rgb_front.mp4",
+  "source_video_sha256": "e03cd17a620476457abc75d70c4c57857486610fc5af5ce0698f9fc586a7b6f1",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 3242,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 200,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "5192cef7708ae29060744f56176bbd446bb95fa8edc47556a91899eab5d08979",
+  "raw_thumb_frames": 3242,
+  "clip_thumb_frames": 200,
+  "best_offset_frames": 2388,
+  "best_offset_norm_mae": 2388,
+  "norm_mae_best": 0.05,
+  "norm_mae_median": 0.1954,
+  "motion_r_best": 0.9974,
+  "motion_r_next_outside_5": 0.5422,
+  "plain_mae_at_best": 7.3283,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 2388,
+    "norm_mae": 0.05,
+    "motion_r": 0.9974
+   },
+   "realigned_start": {
+    "offset_frames": 2388,
+    "norm_mae": 0.05,
+    "motion_r": 0.9974
+   }
+  },
+  "slice_start_s": 99.5,
+  "slice_end_s": 107.8333,
+  "sec": 16.2
+ },
+ "R17": {
+  "review_id": "R17",
+  "clip_id": "fzXgYPSnaDs_5-8-rgb_front",
+  "source_video": "raw_videos/fzXgYPSnaDs-8-rgb_front.mp4",
+  "source_video_sha256": "664d7fd596b360c208d380098d4d721e25979e945bb81765296e6ef7ef8612d0",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1478,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 119,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "ce6ae6929602c4826a49b6e63b61a3607def2d209869dc5018a179c817ab364c",
+  "raw_thumb_frames": 1478,
+  "clip_thumb_frames": 119,
+  "best_offset_frames": 940,
+  "best_offset_norm_mae": 940,
+  "norm_mae_best": 0.0477,
+  "norm_mae_median": 0.2378,
+  "motion_r_best": 0.994,
+  "motion_r_next_outside_5": 0.5414,
+  "plain_mae_at_best": 7.2429,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 940,
+    "norm_mae": 0.0477,
+    "motion_r": 0.994
+   },
+   "realigned_start": {
+    "offset_frames": 921,
+    "norm_mae": 0.1515,
+    "motion_r": 0.1974
+   }
+  },
+  "slice_start_s": 39.1667,
+  "slice_end_s": 44.125,
+  "sec": 7.6
+ },
+ "R18": {
+  "review_id": "R18",
+  "clip_id": "37ZtKNf6Yd8_1-1-rgb_front",
+  "source_video": "raw_videos/37ZtKNf6Yd8-1-rgb_front.mp4",
+  "source_video_sha256": "1c3e561426e904407230466f9478af96734dfc5bff92ff25d9fde3fcd1f081e4",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2325,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 106,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "ad8d1e42aa8a2638083f1987244fe7491309edc5ecfdfb6c52f116a42c68b6c8",
+  "raw_thumb_frames": 2325,
+  "clip_thumb_frames": 106,
+  "best_offset_frames": 259,
+  "best_offset_norm_mae": 259,
+  "norm_mae_best": 0.046,
+  "norm_mae_median": 0.2229,
+  "motion_r_best": 0.9982,
+  "motion_r_next_outside_5": 0.7045,
+  "plain_mae_at_best": 7.3031,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 259,
+    "norm_mae": 0.046,
+    "motion_r": 0.9982
+   },
+   "realigned_start": {
+    "offset_frames": 312,
+    "norm_mae": 0.2312,
+    "motion_r": 0.0833
+   }
+  },
+  "slice_start_s": 10.7917,
+  "slice_end_s": 15.2083,
+  "sec": 11.7
+ },
+ "R19": {
+  "review_id": "R19",
+  "clip_id": "Fzj3jz2Imf0_1-1-rgb_front",
+  "source_video": "raw_videos/Fzj3jz2Imf0-1-rgb_front.mp4",
+  "source_video_sha256": "e14401e6e5fe98a5640d04d5600addabea5865da2cee526996751b08f85fc07f",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 2422,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 371,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "fc04da2f8ddd8fd7aeb0b7d3dbec7833d90c1cd6829669578cbb2b8ff1e10b14",
+  "raw_thumb_frames": 2422,
+  "clip_thumb_frames": 371,
+  "best_offset_frames": 179,
+  "best_offset_norm_mae": 179,
+  "norm_mae_best": 0.0465,
+  "norm_mae_median": 0.2203,
+  "motion_r_best": 0.9948,
+  "motion_r_next_outside_5": 0.5912,
+  "plain_mae_at_best": 7.2422,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 179,
+    "norm_mae": 0.0465,
+    "motion_r": 0.9948
+   },
+   "realigned_start": {
+    "offset_frames": 280,
+    "norm_mae": 0.2152,
+    "motion_r": 0.0056
+   }
+  },
+  "slice_start_s": 5.9667,
+  "slice_end_s": 18.3333,
+  "sec": 10.7
+ },
+ "R20": {
+  "review_id": "R20",
+  "clip_id": "_FzvMVnR_aU_3-10-rgb_front",
+  "source_video": "raw_videos/_FzvMVnR_aU-10-rgb_front.mp4",
+  "source_video_sha256": "971877df7ba5416b47f99871f83dc2f25f61269ca12b4f4e6b227cbabd41c2eb",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1556,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 425,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "ff11cf297ab3fe16d2552111d6c9da7d6e2a48b2bcf16b3aef3d3ad8932d41da",
+  "raw_thumb_frames": 1556,
+  "clip_thumb_frames": 425,
+  "best_offset_frames": 1036,
+  "best_offset_norm_mae": 1036,
+  "norm_mae_best": 0.0557,
+  "norm_mae_median": 0.2814,
+  "motion_r_best": 0.99,
+  "motion_r_next_outside_5": 0.2175,
+  "plain_mae_at_best": 7.0644,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1035,
+    "norm_mae": 0.0882,
+    "motion_r": 0.7852
+   }
+  },
+  "slice_start_s": 43.1667,
+  "slice_end_s": 60.875,
+  "sec": 8.6
+ },
+ "R21": {
+  "review_id": "R21",
+  "clip_id": "G0MjvzT_UqM_16-2-rgb_front",
+  "source_video": "raw_videos/G0MjvzT_UqM-2-rgb_front.mp4",
+  "source_video_sha256": "b9d04289336a65e124997f7add6852f2a6676a9ce3278a7a6358ba315ae44308",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 4643,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 293,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "b2f66253f89cb78ca54d575387a316a6eda9ea9634bb59b655f84a35a5d39c82",
+  "raw_thumb_frames": 4643,
+  "clip_thumb_frames": 293,
+  "best_offset_frames": 2352,
+  "best_offset_norm_mae": 2352,
+  "norm_mae_best": 0.1502,
+  "norm_mae_median": 0.2962,
+  "motion_r_best": 0.9753,
+  "motion_r_next_outside_5": 0.6684,
+  "plain_mae_at_best": 7.7922,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 2351,
+    "norm_mae": 0.1551,
+    "motion_r": 0.2047
+   },
+   "realigned_start": {
+    "offset_frames": 3155,
+    "norm_mae": 0.2991,
+    "motion_r": -0.0701
+   }
+  },
+  "slice_start_s": 78.4,
+  "slice_end_s": 88.1667,
+  "sec": 19.6
+ },
+ "R22": {
+  "review_id": "R22",
+  "clip_id": "g0fgci8L_rc_11-8-rgb_front",
+  "source_video": "raw_videos/g0fgci8L_rc-8-rgb_front.mp4",
+  "source_video_sha256": "bb6ca1456a3cfc737aa9c6ba21d765227c827840296f2ad4ea56edba9d7d4db9",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2709,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 43,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "5b1eede7adaf710a46cfa2b8efdde9c12bd66aff16c011dcabce8a1e18587481",
+  "raw_thumb_frames": 2709,
+  "clip_thumb_frames": 43,
+  "best_offset_frames": 1501,
+  "best_offset_norm_mae": 1501,
+  "norm_mae_best": 0.1295,
+  "norm_mae_median": 0.2838,
+  "motion_r_best": 0.9616,
+  "motion_r_next_outside_5": 0.8489,
+  "plain_mae_at_best": 7.6595,
+  "unique_match": false,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1501,
+    "norm_mae": 0.1295,
+    "motion_r": 0.9616
+   },
+   "realigned_start": {
+    "offset_frames": 1501,
+    "norm_mae": 0.1295,
+    "motion_r": 0.9616
+   }
+  },
+  "slice_start_s": 62.5417,
+  "slice_end_s": 64.3333,
+  "sec": 13.1
+ },
+ "R23": {
+  "review_id": "R23",
+  "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+  "source_video": "raw_videos/FzmL8SL6Bow-8-rgb_front.mp4",
+  "source_video_sha256": "7045977ff9d9bc4ba8693455dbca1991efcbd2c468731c6b98aeec043659bf23",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1913,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 618,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "7f42f568273086e6812ae48b03ed8a533c4d49be610aaecf291a71f58c03817f",
+  "raw_thumb_frames": 1913,
+  "clip_thumb_frames": 618,
+  "best_offset_frames": 965,
+  "best_offset_norm_mae": 965,
+  "norm_mae_best": 0.0321,
+  "norm_mae_median": 0.224,
+  "motion_r_best": 0.9992,
+  "motion_r_next_outside_5": 0.5263,
+  "plain_mae_at_best": 7.3478,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 964,
+    "norm_mae": 0.0482,
+    "motion_r": 0.9081
+   },
+   "realigned_start": {
+    "offset_frames": 958,
+    "norm_mae": 0.1035,
+    "motion_r": 0.4999
+   }
+  },
+  "slice_start_s": 40.2083,
+  "slice_end_s": 65.9583,
+  "sec": 10.4
+ },
+ "R24": {
+  "review_id": "R24",
+  "clip_id": "g3kFAmcBpFc_8-3-rgb_front",
+  "source_video": "raw_videos/g3kFAmcBpFc-3-rgb_front.mp4",
+  "source_video_sha256": "2e787d6bf799cfc9f0b7133169b97e7a69e4c109dcdfdbb4c3c9499e6c5f8881",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 3311,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 101,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "1be24e3e80581eb84680c82b3846510091d120a0d00f234880aa30190e7e7b64",
+  "raw_thumb_frames": 3311,
+  "clip_thumb_frames": 101,
+  "best_offset_frames": 1261,
+  "best_offset_norm_mae": 1261,
+  "norm_mae_best": 0.0493,
+  "norm_mae_median": 0.1828,
+  "motion_r_best": 0.9534,
+  "motion_r_next_outside_5": 0.579,
+  "plain_mae_at_best": 7.4335,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1260,
+    "norm_mae": 0.0581,
+    "motion_r": 0.8206
+   },
+   "realigned_start": {
+    "offset_frames": 1282,
+    "norm_mae": 0.1519,
+    "motion_r": 0.0846
+   }
+  },
+  "slice_start_s": 52.5417,
+  "slice_end_s": 56.75,
+  "sec": 16.4
+ },
+ "R25": {
+  "review_id": "R25",
+  "clip_id": "G25fic3QxDk_5-10-rgb_front",
+  "source_video": "raw_videos/G25fic3QxDk-10-rgb_front.mp4",
+  "source_video_sha256": "95f7e41b9a72b3498d842cd329d7677be55d23aab7279a3c77ab8e50a9dee90f",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1741,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 117,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "94341f04c41802d38bc7d75c863f0d54365c93c40e47c7157c82dd5c74751e87",
+  "raw_thumb_frames": 1741,
+  "clip_thumb_frames": 117,
+  "best_offset_frames": 678,
+  "best_offset_norm_mae": 678,
+  "norm_mae_best": 0.0549,
+  "norm_mae_median": 0.2443,
+  "motion_r_best": 0.9683,
+  "motion_r_next_outside_5": 0.5018,
+  "plain_mae_at_best": 7.1475,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 678,
+    "norm_mae": 0.0549,
+    "motion_r": 0.9683
+   },
+   "realigned_start": {
+    "offset_frames": 723,
+    "norm_mae": 0.2248,
+    "motion_r": -0.0695
+   }
+  },
+  "slice_start_s": 28.25,
+  "slice_end_s": 33.125,
+  "sec": 8.8
+ },
+ "R26": {
+  "review_id": "R26",
+  "clip_id": "G3EfBFwsOpE_3-10-rgb_front",
+  "source_video": "raw_videos/G3EfBFwsOpE-10-rgb_front.mp4",
+  "source_video_sha256": "910f3918a908fc0353957906df08ef86e0cd5caa753e849800f2c8a0fa58d6e4",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1602,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 45,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "cde75b3ff664d669f8321c899f909bb5759b93dfbbe9ee7b765a41b4e8a2dc75",
+  "raw_thumb_frames": 1602,
+  "clip_thumb_frames": 45,
+  "best_offset_frames": 316,
+  "best_offset_norm_mae": 316,
+  "norm_mae_best": 0.054,
+  "norm_mae_median": 0.4896,
+  "motion_r_best": 0.9849,
+  "motion_r_next_outside_5": 0.6787,
+  "plain_mae_at_best": 6.8019,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 316,
+    "norm_mae": 0.054,
+    "motion_r": 0.9849
+   },
+   "realigned_start": {
+    "offset_frames": 364,
+    "norm_mae": 0.474,
+    "motion_r": 0.2018
+   }
+  },
+  "slice_start_s": 13.1667,
+  "slice_end_s": 15.0417,
+  "sec": 7.9
+ },
+ "R27": {
+  "review_id": "R27",
+  "clip_id": "g1HXoDkax5A_15-3-rgb_front",
+  "source_video": "raw_videos/g1HXoDkax5A-3-rgb_front.mp4",
+  "source_video_sha256": "2633db7eb4245024e581c64e1b0da07898f060bc3afe7922ed94fffb979c3bdc",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2133,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 43,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "89420e624f585a9fabd6d16cb967178dd829d201c8469622137f4b91644458a4",
+  "raw_thumb_frames": 2133,
+  "clip_thumb_frames": 43,
+  "best_offset_frames": 1250,
+  "best_offset_norm_mae": 1250,
+  "norm_mae_best": 0.0512,
+  "norm_mae_median": 0.2009,
+  "motion_r_best": 0.9879,
+  "motion_r_next_outside_5": 0.7843,
+  "plain_mae_at_best": 7.3257,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1250,
+    "norm_mae": 0.0512,
+    "motion_r": 0.9879
+   },
+   "realigned_start": {
+    "offset_frames": 1262,
+    "norm_mae": 0.1795,
+    "motion_r": -0.0012
+   }
+  },
+  "slice_start_s": 52.0833,
+  "slice_end_s": 53.875,
+  "sec": 10.5
+ },
+ "R28": {
+  "review_id": "R28",
+  "clip_id": "G42xKICVj9U_11-10-rgb_front",
+  "source_video": "raw_videos/G42xKICVj9U-10-rgb_front.mp4",
+  "source_video_sha256": "499de99696c0d5bd5f47039cf0024b6cd97482cff4f76ca475ac884acf28b239",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2263,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 77,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "ba30be7171d673b7408cc9bf98e2325cca09a7e65424cb75f6c49dc7c4a5f443",
+  "raw_thumb_frames": 2263,
+  "clip_thumb_frames": 77,
+  "best_offset_frames": 1096,
+  "best_offset_norm_mae": 1096,
+  "norm_mae_best": 0.0553,
+  "norm_mae_median": 0.3448,
+  "motion_r_best": 0.9901,
+  "motion_r_next_outside_5": 0.7889,
+  "plain_mae_at_best": 6.8855,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1095,
+    "norm_mae": 0.084,
+    "motion_r": 0.8811
+   },
+   "realigned_start": {
+    "offset_frames": 1292,
+    "norm_mae": 0.3466,
+    "motion_r": 0.3544
+   }
+  },
+  "slice_start_s": 45.6667,
+  "slice_end_s": 48.875,
+  "sec": 11.2
+ },
+ "R29": {
+  "review_id": "R29",
+  "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+  "source_video": "raw_videos/92V3oH63zbQ-1-rgb_front.mp4",
+  "source_video_sha256": "3179e17ab72e018292449c9a990e907f8bc5259acc0884364049a55d38e858c7",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 3675,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 55,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "1c34f208492521d7c0e69f56b9d81ad6f3b3dfb65a23a39cdfba047d89163a21",
+  "raw_thumb_frames": 3675,
+  "clip_thumb_frames": 55,
+  "best_offset_frames": 301,
+  "best_offset_norm_mae": 301,
+  "norm_mae_best": 0.0466,
+  "norm_mae_median": 0.2503,
+  "motion_r_best": 0.9983,
+  "motion_r_next_outside_5": 0.8274,
+  "plain_mae_at_best": 7.336,
+  "unique_match": false,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 301,
+    "norm_mae": 0.0466,
+    "motion_r": 0.9983
+   },
+   "realigned_start": {
+    "offset_frames": 301,
+    "norm_mae": 0.0466,
+    "motion_r": 0.9983
+   }
+  },
+  "slice_start_s": 10.0333,
+  "slice_end_s": 11.8667,
+  "sec": 15.4
+ },
+ "R30": {
+  "review_id": "R30",
+  "clip_id": "g2wUCRRni28_6-3-rgb_front",
+  "source_video": "raw_videos/g2wUCRRni28-3-rgb_front.mp4",
+  "source_video_sha256": "d16f8880599779aa7a87c455ed63dce6675f8840ba19699d0e888652a8b66648",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1523,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 109,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "52e7e780e25e621106eca6edd10bc39da8c1c90ce86d5d9edf2dcb031940dea3",
+  "raw_thumb_frames": 1523,
+  "clip_thumb_frames": 109,
+  "best_offset_frames": 1187,
+  "best_offset_norm_mae": 1187,
+  "norm_mae_best": 0.0493,
+  "norm_mae_median": 0.1891,
+  "motion_r_best": 0.988,
+  "motion_r_next_outside_5": 0.5207,
+  "plain_mae_at_best": 7.3995,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1186,
+    "norm_mae": 0.0605,
+    "motion_r": 0.8378
+   },
+   "realigned_start": {
+    "offset_frames": 1224,
+    "norm_mae": 0.1652,
+    "motion_r": -0.1429
+   }
+  },
+  "slice_start_s": 49.4583,
+  "slice_end_s": 54.0,
+  "sec": 7.7
+ },
+ "R31": {
+  "review_id": "R31",
+  "clip_id": "g38AmwPAYvg_4-3-rgb_front",
+  "source_video": "raw_videos/g38AmwPAYvg-3-rgb_front.mp4",
+  "source_video_sha256": "b83e3eb7e68852e788ac9c34e93515bf8bee7683e4121d6c466f08d0e090e9b7",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1515,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 117,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "2bda60c48eab25c59a6186b49a2ccc9622fce6ae7ba56f7bbfff85bc458c8ac5",
+  "raw_thumb_frames": 1515,
+  "clip_thumb_frames": 117,
+  "best_offset_frames": 849,
+  "best_offset_norm_mae": 849,
+  "norm_mae_best": 0.052,
+  "norm_mae_median": 0.2083,
+  "motion_r_best": 0.9947,
+  "motion_r_next_outside_5": 0.4257,
+  "plain_mae_at_best": 7.345,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 848,
+    "norm_mae": 0.0677,
+    "motion_r": 0.7936
+   },
+   "realigned_start": {
+    "offset_frames": 856,
+    "norm_mae": 0.1489,
+    "motion_r": -0.2218
+   }
+  },
+  "slice_start_s": 35.375,
+  "slice_end_s": 40.25,
+  "sec": 7.8
+ },
+ "R32": {
+  "review_id": "R32",
+  "clip_id": "G0Q6AlvH96I_8-2-rgb_front",
+  "source_video": "raw_videos/G0Q6AlvH96I-2-rgb_front.mp4",
+  "source_video_sha256": "35d187a3e9ac195049107a27548dde8611f0b45655096da710ab9bc36fc4470b",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 5006,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 56,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "3c397ef25828a52be593712fb1ab1aec5496b8dce080709b88058639eea236de",
+  "raw_thumb_frames": 5006,
+  "clip_thumb_frames": 56,
+  "best_offset_frames": 4780,
+  "best_offset_norm_mae": 1045,
+  "norm_mae_best": 0.1302,
+  "norm_mae_median": 0.2446,
+  "motion_r_best": 0.8552,
+  "motion_r_next_outside_5": 0.8388,
+  "plain_mae_at_best": 10.478,
+  "unique_match": false,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1044,
+    "norm_mae": 0.1396,
+    "motion_r": -0.0527
+   },
+   "realigned_start": {
+    "offset_frames": 1300,
+    "norm_mae": 0.2368,
+    "motion_r": 0.6626
+   }
+  },
+  "slice_start_s": 159.3333,
+  "slice_end_s": 161.2,
+  "sec": 20.8
+ },
+ "R33": {
+  "review_id": "R33",
+  "clip_id": "g0t4Wz5qsT8_12-8-rgb_front",
+  "source_video": "raw_videos/g0t4Wz5qsT8-8-rgb_front.mp4",
+  "source_video_sha256": "5b0fb394d3e27a6daaf0f0d254f5cc0f8fbb904363952453ea4d58f08fb10682",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 3145,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 69,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "f32e1f2e6f019aa71e6a41ce7d770c71c68a8839e5dac1eafd55f66c9d87418d",
+  "raw_thumb_frames": 3145,
+  "clip_thumb_frames": 69,
+  "best_offset_frames": 2491,
+  "best_offset_norm_mae": 2491,
+  "norm_mae_best": 0.1167,
+  "norm_mae_median": 0.2285,
+  "motion_r_best": 0.9673,
+  "motion_r_next_outside_5": 0.5853,
+  "plain_mae_at_best": 7.6466,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 2491,
+    "norm_mae": 0.1167,
+    "motion_r": 0.9673
+   },
+   "realigned_start": {
+    "offset_frames": 2541,
+    "norm_mae": 0.2117,
+    "motion_r": -0.1751
+   }
+  },
+  "slice_start_s": 103.7917,
+  "slice_end_s": 106.6667,
+  "sec": 15.5
+ },
+ "R34": {
+  "review_id": "R34",
+  "clip_id": "g3DkYITeIy0_4-3-rgb_front",
+  "source_video": "raw_videos/g3DkYITeIy0-3-rgb_front.mp4",
+  "source_video_sha256": "2098a409dc021c11f26264a6752f6d192040f083d546e1baadaf2f7c5c91d580",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2493,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 130,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "5cb347fbe723145ebf56fd60e8ac56e11f93be8f6c4dd25dab40a28822b42065",
+  "raw_thumb_frames": 2493,
+  "clip_thumb_frames": 130,
+  "best_offset_frames": 1045,
+  "best_offset_norm_mae": 1045,
+  "norm_mae_best": 0.0506,
+  "norm_mae_median": 0.1853,
+  "motion_r_best": 0.9535,
+  "motion_r_next_outside_5": 0.3892,
+  "plain_mae_at_best": 7.3858,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1044,
+    "norm_mae": 0.0645,
+    "motion_r": 0.6395
+   },
+   "realigned_start": {
+    "offset_frames": 1061,
+    "norm_mae": 0.1471,
+    "motion_r": -0.075
+   }
+  },
+  "slice_start_s": 43.5417,
+  "slice_end_s": 48.9583,
+  "sec": 12.4
+ },
+ "R35": {
+  "review_id": "R35",
+  "clip_id": "G2kVb4gINSI_1-10-rgb_front",
+  "source_video": "raw_videos/G2kVb4gINSI-10-rgb_front.mp4",
+  "source_video_sha256": "98981c97de2d5642ae304084394277fe074a5a591929eaeb708f647b6d386ba8",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2031,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 144,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "061e0bbae2ecf7c98cec5cdaa9f5ea2ec140e4855590fec8f7fc4685cacc94ab",
+  "raw_thumb_frames": 2031,
+  "clip_thumb_frames": 144,
+  "best_offset_frames": 156,
+  "best_offset_norm_mae": 156,
+  "norm_mae_best": 0.0555,
+  "norm_mae_median": 0.3118,
+  "motion_r_best": 0.9653,
+  "motion_r_next_outside_5": 0.4708,
+  "plain_mae_at_best": 6.9831,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 156,
+    "norm_mae": 0.0555,
+    "motion_r": 0.9653
+   },
+   "realigned_start": {
+    "offset_frames": 315,
+    "norm_mae": 0.31,
+    "motion_r": 0.1949
+   }
+  },
+  "slice_start_s": 6.5,
+  "slice_end_s": 12.5,
+  "sec": 10.4
+ },
+ "R36": {
+  "review_id": "R36",
+  "clip_id": "G095RWKQ39g_10-1-rgb_front",
+  "source_video": "raw_videos/G095RWKQ39g-1-rgb_front.mp4",
+  "source_video_sha256": "8e74e3b6902e9e4e1a2cd58e436a50a9579c6b1777be25f770ef66a5811a5328",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 5473,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 623,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "5b8adae29960b864eaffa0b2835a5b9c0dbf6717205481d0d896b220b9b69517",
+  "raw_thumb_frames": 5473,
+  "clip_thumb_frames": 623,
+  "best_offset_frames": 1977,
+  "best_offset_norm_mae": 1977,
+  "norm_mae_best": 0.0469,
+  "norm_mae_median": 0.2767,
+  "motion_r_best": 0.9951,
+  "motion_r_next_outside_5": 0.5021,
+  "plain_mae_at_best": 7.2612,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1976,
+    "norm_mae": 0.0623,
+    "motion_r": 0.2492
+   },
+   "realigned_start": {
+    "offset_frames": 2650,
+    "norm_mae": 0.2552,
+    "motion_r": 0.0098
+   }
+  },
+  "slice_start_s": 65.9,
+  "slice_end_s": 86.6667,
+  "sec": 24.4
+ },
+ "R37": {
+  "review_id": "R37",
+  "clip_id": "g25IORxoyXE_8-10-rgb_front",
+  "source_video": "raw_videos/g25IORxoyXE-10-rgb_front.mp4",
+  "source_video_sha256": "8ee4ad599876f4ebea49bddc5a49b49cc0846e4dd259da8e39990fd1ffff09aa",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 3448,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 95,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "1d7ab38096e37bd89e3924949b57917af12419573ff98bc4aed74baf2dba1c70",
+  "raw_thumb_frames": 3448,
+  "clip_thumb_frames": 95,
+  "best_offset_frames": 1235,
+  "best_offset_norm_mae": 1235,
+  "norm_mae_best": 0.055,
+  "norm_mae_median": 0.2554,
+  "motion_r_best": 0.9862,
+  "motion_r_next_outside_5": 0.5491,
+  "plain_mae_at_best": 7.0964,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1234,
+    "norm_mae": 0.0834,
+    "motion_r": 0.8314
+   },
+   "realigned_start": {
+    "offset_frames": 1299,
+    "norm_mae": 0.2812,
+    "motion_r": 0.072
+   }
+  },
+  "slice_start_s": 51.4583,
+  "slice_end_s": 55.4167,
+  "sec": 17.0
+ },
+ "R38": {
+  "review_id": "R38",
+  "clip_id": "G1jsDl1mVvk_1-1-rgb_front",
+  "source_video": "raw_videos/G1jsDl1mVvk-1-rgb_front.mp4",
+  "source_video_sha256": "68f727ec7c14bc68b0471690d3cbf3a10c4b9ee448033ea3dd85420376d24481",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 2283,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 510,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "aee3ea7b808c8643d89a5eaa39f6ed5ed2595b3fbcbcc4c9901a9b0937b6a626",
+  "raw_thumb_frames": 2283,
+  "clip_thumb_frames": 510,
+  "best_offset_frames": 291,
+  "best_offset_norm_mae": 291,
+  "norm_mae_best": 0.0492,
+  "norm_mae_median": 0.2325,
+  "motion_r_best": 0.9971,
+  "motion_r_next_outside_5": 0.514,
+  "plain_mae_at_best": 7.2765,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 290,
+    "norm_mae": 0.0641,
+    "motion_r": 0.5011
+   },
+   "realigned_start": {
+    "offset_frames": 263,
+    "norm_mae": 0.1826,
+    "motion_r": 0.0844
+   }
+  },
+  "slice_start_s": 9.7,
+  "slice_end_s": 26.7,
+  "sec": 10.3
+ },
+ "R39": {
+  "review_id": "R39",
+  "clip_id": "-fZc293MpJk_5-1-rgb_front",
+  "source_video": "raw_videos/-fZc293MpJk-1-rgb_front.mp4",
+  "source_video_sha256": "f233ae75ab54b2d0688523e2c688771f8120d1ed08fb88c8934b67b49b6e7d8e",
+  "raw_probe": {
+   "fps": 50.0,
+   "r_frame_rate": "50/1",
+   "avg_frame_rate": "50/1",
+   "frames": 3626,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 50.0,
+   "r_frame_rate": "50/1",
+   "avg_frame_rate": "50/1",
+   "frames": 294,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "e531eb365e239822dd841e1d1bcaf981d180ace3724f8cabd3545c3c5094aa42",
+  "raw_thumb_frames": 3626,
+  "clip_thumb_frames": 294,
+  "best_offset_frames": 1815,
+  "best_offset_norm_mae": 1815,
+  "norm_mae_best": 0.0497,
+  "norm_mae_median": 0.2584,
+  "motion_r_best": 0.996,
+  "motion_r_next_outside_5": 0.8464,
+  "plain_mae_at_best": 7.2002,
+  "unique_match": false,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1815,
+    "norm_mae": 0.0497,
+    "motion_r": 0.996
+   },
+   "realigned_start": {
+    "offset_frames": 2334,
+    "norm_mae": 0.278,
+    "motion_r": 0.3433
+   }
+  },
+  "slice_start_s": 36.3,
+  "slice_end_s": 42.18,
+  "sec": 10.6
+ },
+ "R40": {
+  "review_id": "R40",
+  "clip_id": "G0PNAsonBGk_11-2-rgb_front",
+  "source_video": "raw_videos/G0PNAsonBGk-2-rgb_front.mp4",
+  "source_video_sha256": "268e089f73a1f99107c22647702102037e8be364966ba42f352c9373a8711289",
+  "raw_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 4727,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 30.0,
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "frames": 190,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "b050effff9ffb0c1e9661ead0cf1ba02dfaacdf717652d32dba0bc1445e36967",
+  "raw_thumb_frames": 4727,
+  "clip_thumb_frames": 190,
+  "best_offset_frames": 1590,
+  "best_offset_norm_mae": 1590,
+  "norm_mae_best": 0.1411,
+  "norm_mae_median": 0.2999,
+  "motion_r_best": 0.9967,
+  "motion_r_next_outside_5": 0.75,
+  "plain_mae_at_best": 7.8114,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1590,
+    "norm_mae": 0.1411,
+    "motion_r": 0.9967
+   },
+   "realigned_start": {
+    "offset_frames": 2124,
+    "norm_mae": 0.3037,
+    "motion_r": -0.0549
+   }
+  },
+  "slice_start_s": 53.0,
+  "slice_end_s": 59.3333,
+  "sec": 19.8
+ },
+ "R41": {
+  "review_id": "R41",
+  "clip_id": "g2iFC1st7zQ_1-3-rgb_front",
+  "source_video": "raw_videos/g2iFC1st7zQ-3-rgb_front.mp4",
+  "source_video_sha256": "9f2c50f2d0c40f1583488e2846cf9d9b3de3fee303ed2d3bf6c56fefe399b684",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 1858,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 92,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "617f03316151c17de59fc6430fcbee0ef3ccd67e298e4a1966a8cb918c0e3bac",
+  "raw_thumb_frames": 1858,
+  "clip_thumb_frames": 92,
+  "best_offset_frames": 482,
+  "best_offset_norm_mae": 482,
+  "norm_mae_best": 0.0517,
+  "norm_mae_median": 0.1969,
+  "motion_r_best": 0.9615,
+  "motion_r_next_outside_5": 0.5553,
+  "plain_mae_at_best": 7.3739,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 481,
+    "norm_mae": 0.0637,
+    "motion_r": 0.856
+   },
+   "realigned_start": {
+    "offset_frames": 507,
+    "norm_mae": 0.1654,
+    "motion_r": -0.094
+   }
+  },
+  "slice_start_s": 20.0833,
+  "slice_end_s": 23.9167,
+  "sec": 9.5
+ },
+ "R42": {
+  "review_id": "R42",
+  "clip_id": "fZq8wTAYtmw_10-10-rgb_front",
+  "source_video": "raw_videos/fZq8wTAYtmw-10-rgb_front.mp4",
+  "source_video_sha256": "8d8bdefe58bab44044cf3ba6513a0a9928b5f3bb7d3aecbfeeb923229849ae30",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2595,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 157,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "6fbbf9c7a360133977351180be322284553dbfe0c73e3a3541bc09243c9cdb7c",
+  "raw_thumb_frames": 2595,
+  "clip_thumb_frames": 157,
+  "best_offset_frames": 2316,
+  "best_offset_norm_mae": 2316,
+  "norm_mae_best": 0.0548,
+  "norm_mae_median": 0.3255,
+  "motion_r_best": 0.9969,
+  "motion_r_next_outside_5": 0.7343,
+  "plain_mae_at_best": 6.944,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 2316,
+    "norm_mae": 0.0548,
+    "motion_r": 0.9969
+   }
+  },
+  "slice_start_s": 96.5,
+  "slice_end_s": 103.0417,
+  "sec": 13.0
+ },
+ "R43": {
+  "review_id": "R43",
+  "clip_id": "g2eTD-1Jcro_0-3-rgb_front",
+  "source_video": "raw_videos/g2eTD-1Jcro-3-rgb_front.mp4",
+  "source_video_sha256": "e0788200edbcd7b0683c0a868534c2e1036de0d5c21a55b73eee52afdda4dcf5",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2015,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 106,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "dbb7fdb5a84dfdc352babb666f6f2a6b24294feea3c34f84a76a929db9ee4233",
+  "raw_thumb_frames": 2015,
+  "clip_thumb_frames": 106,
+  "best_offset_frames": 3,
+  "best_offset_norm_mae": 3,
+  "norm_mae_best": 0.0495,
+  "norm_mae_median": 0.1854,
+  "motion_r_best": 0.9986,
+  "motion_r_next_outside_5": 0.7107,
+  "plain_mae_at_best": 7.3503,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 3,
+    "norm_mae": 0.0495,
+    "motion_r": 0.9986
+   },
+   "realigned_start": {
+    "offset_frames": 19,
+    "norm_mae": 0.1434,
+    "motion_r": 0.0067
+   }
+  },
+  "slice_start_s": 0.125,
+  "slice_end_s": 4.5417,
+  "sec": 10.2
+ },
+ "R44": {
+  "review_id": "R44",
+  "clip_id": "G0zQm6X8uiQ_3-8-rgb_front",
+  "source_video": "raw_videos/G0zQm6X8uiQ-8-rgb_front.mp4",
+  "source_video_sha256": "5ec8287c62e677b0a3b4a9972893d3c217b3e35534da6df256e769dcd6826dc9",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2594,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 522,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "1ae6e45f0ba0b09b06d9f5aefb11d6badbe9091541de0d28644405b5eb38205b",
+  "raw_thumb_frames": 2594,
+  "clip_thumb_frames": 522,
+  "best_offset_frames": 1210,
+  "best_offset_norm_mae": 1210,
+  "norm_mae_best": 0.0408,
+  "norm_mae_median": 0.253,
+  "motion_r_best": 0.9934,
+  "motion_r_next_outside_5": 0.3026,
+  "plain_mae_at_best": 7.3052,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 1210,
+    "norm_mae": 0.0408,
+    "motion_r": 0.9934
+   },
+   "realigned_start": {
+    "offset_frames": 1154,
+    "norm_mae": 0.2419,
+    "motion_r": -0.0133
+   }
+  },
+  "slice_start_s": 50.4167,
+  "slice_end_s": 72.1667,
+  "sec": 13.6
+ },
+ "R45": {
+  "review_id": "R45",
+  "clip_id": "g3X3XE6M2_A_8-3-rgb_front",
+  "source_video": "raw_videos/g3X3XE6M2_A-3-rgb_front.mp4",
+  "source_video_sha256": "ec0b974f5fda2f3c1c190c5cbb0886a8481935446ea77f2392f2b4d06cc07b91",
+  "raw_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 2167,
+   "w_h": "1280x720"
+  },
+  "clip_probe": {
+   "fps": 24.0,
+   "r_frame_rate": "24/1",
+   "avg_frame_rate": "24/1",
+   "frames": 90,
+   "w_h": "1280x720"
+  },
+  "clip_sha256": "c5f5e25e79b567d52631c6fdacdf7fb4313732a7237456af93ed5fa2e9888362",
+  "raw_thumb_frames": 2167,
+  "clip_thumb_frames": 90,
+  "best_offset_frames": 678,
+  "best_offset_norm_mae": 678,
+  "norm_mae_best": 0.0492,
+  "norm_mae_median": 0.1953,
+  "motion_r_best": 0.9944,
+  "motion_r_next_outside_5": 0.6213,
+  "plain_mae_at_best": 7.3578,
+  "unique_match": true,
+  "at_annotations": {
+   "original_start": {
+    "offset_frames": 678,
+    "norm_mae": 0.0492,
+    "motion_r": 0.9944
+   },
+   "realigned_start": {
+    "offset_frames": 763,
+    "norm_mae": 0.1885,
+    "motion_r": -0.189
+   }
+  },
+  "slice_start_s": 28.25,
+  "slice_end_s": 32.0,
+  "sec": 10.8
+ }
+}
