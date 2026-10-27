@@ -122,3 +122,77 @@ This is a method defect, not a data finding.
    - Otherwise the B slice is UNRESOLVED.
 4. **Unchanged:** the raw-intensity MAE is still recorded for transparency, and rules (a), (b), (d) and (e) and the
    0.20 s tolerance are unchanged.
+
+## Amendment 2 (2026-10-27, Task 2 Step 2, written before any Step 2 download or measurement)
+
+**Scope.** Only the 19 rows that are UNRESOLVED after Amendment 1:
+- 14 `A_official` rows: R09, R15, R21, R22, R26, R28, R29, R32, R35, R36, R39, R40, R42, R45;
+- 5 `B_ours_5p39` rows: R09, R22, R29, R32, R39.
+
+Rows already VERIFIED or MISMATCH keep their Amendment 1 evidence and status. R10/R14 are not re-measured.
+
+**Why it is needed.**
+- A: the derived path (B start + P0-12 B↔C offset) cannot reach 14 rows. In 9 of them the A and B windows do not
+  overlap. In 2 the B↔C residual is too high. In the remaining 5 the B row is itself UNRESOLVED (R32 also lacks overlap).
+  The only direct evidence is the official crop clip, which is not stored locally.
+- B: the 5 rows fail only the motion-margin test. Scalar full-frame motion energy says *how much* moves, not *where*,
+  so a repeated gesture produces near-duplicate signatures. A signature that separates left/right and high/low motion
+  in the signer region addresses exactly this failure without touching any threshold.
+
+**Unchanged:** Amendment 1, rules (a), (b), (d), (e), the 0.20 s tolerance, and the "worse of two rows" case rule.
+Reference text is never used to locate an interval.
+
+### A2.1 Official crop retrieval (A rows)
+
+- Source: the same release P0-12 already used: HF `ZechengLi19/Uni-Sign`, `how2sign_rgb_format.zip.*` (split zip),
+  entry `crop_test/<clip>.mp4`, addressed by P0-12 `data/official_rgb_index_128.json`.
+- Range-fetch with the P0-12 `fetch_entries.py` logic (local-header parse, inflate, CRC32 against the zip central
+  directory). Only the 14 entries above are fetched.
+- Record the HF repo commit (`X-Repo-Commit` header), part URL, byte range, size, CRC32 and sha256.
+- The fetched clip must match P0-12 `official_crop_ffprobe.csv` (w_h, fps, frame count) and the A pose frame count.
+  Otherwise the row stays UNRESOLVED.
+- Clips live in scratch only and are never committed.
+
+### A2.2 Crop-box localization (spatial, A rows only)
+
+- Gray frames at half resolution (raw 640×360; crop clip scaled ×0.5).
+- Template: mean of all crop-clip frames. Search image: mean of raw frames sampled at 2 fps over the whole raw video.
+- Zero-mean normalized cross-correlation (NCC) at every integer position with the template fully inside. Scale is
+  fixed at 1.0 (the crop is assumed to be an unscaled pixel crop).
+- **Box accepted** if NCC_best ≥ 0.70 **and** the best NCC more than 8 half-res px (16 px full-res) from the winner is
+  ≤ NCC_best − 0.05. Otherwise the A row stays UNRESOLVED.
+- The box is a nuisance parameter. The decisive test is A2.3, which fails if the box is wrong.
+
+### A2.3 Temporal match of the crop clip (A rows)
+
+- Raw frames are cropped to the A2.2 box (full-res coordinates). Raw and crop-clip frames are both scaled to 64×64 gray.
+- Same two cues as Amendment 1, on this region:
+  1. per-frame z-normalized MAE over 64 evenly spaced clip frames;
+  2. **region motion signature:** mean |Δ| per cell of a 4×4 grid (16 values per frame). Each cell's series is
+     centered over the window, and the Pearson r is taken over the flattened frames × 16 array.
+- **Unique match: the same frozen Amendment 1 thresholds.**
+  - the two cues agree on the best offset within ±1 frame;
+  - r_best ≥ 0.90;
+  - r_best − (best r more than 5 frames away) ≥ 0.20.
+- Scalar (Amendment 1) motion r is recorded alongside for transparency. It is not used for status.
+- Rule (c) for A is satisfied by this direct measurement:
+  - A slice = [off/fps_raw, (off + n_crop)/fps_raw];
+  - rule (e) is checked against the declared realigned timing.
+
+### A2.4 Signer-region match (B rows R09, R22, R29, R32, R39)
+
+- **Region:** the bounding box of the B pose keypoints for that clip (`B_ours_5p39` PKL, keypoints × (1280, 720)).
+  - Points: body 0–10, face 23–90, hands 91–132; score ≥ 0.3; union over all clip frames.
+  - Padded by 15 % of the box size on each side and clamped to the frame.
+  - The B pose is extracted from the B clip itself, so no download is involved.
+- The same box is cropped from the B clip and the raw video (same 1280×720 geometry). The cues and the **unique-match
+  thresholds are identical to A2.3**.
+- **Positive control (pre-specified, run first):** A2.4 on R01–R05, which Amendment 1 VERIFIED.
+  - Each must give a unique match at exactly the Amendment 1 offset.
+  - If any control fails, A2.4 is declared invalid, is not applied, and the 5 B rows stay UNRESOLVED.
+
+### A2.5 What does not change status
+
+- No threshold above is changed after results are seen.
+- A row that fails A2.2, A2.3 or A2.4 stays UNRESOLVED with the measured values recorded.
+- A row that passes uniqueness but misses its declared timing is MISMATCH, never VERIFIED.

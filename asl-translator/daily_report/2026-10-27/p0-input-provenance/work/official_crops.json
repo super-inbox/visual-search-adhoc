@@ -1,0 +1,492 @@
+{
+ "R09": {
+  "review_id": "R09",
+  "clip_id": "fZgWKh3ENoE_0-8-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/fZgWKh3ENoE_0-8-rgb_front.mp4",
+  "zip_local_header_offset": 1198365232,
+  "compressed_size": 209056,
+  "size_bytes": 209884,
+  "crc32": "18b511d9",
+  "crc32_matches_central_directory": true,
+  "sha256": "e9c38b1beac6db0d25f1f5cbd46eb66af34a4273323aaa26eb5e91041f64390c",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1198365232-1198365261"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1198365329-1198574384"
+   }
+  ],
+  "probe": {
+   "w_h": "434x572",
+   "r_frame_rate": "24/1",
+   "frames": 57
+  },
+  "p012_ffprobe": {
+   "w_h": "434x572",
+   "r_frame_rate": "24/1",
+   "frames": 57
+  },
+  "a_pose_frames": 57,
+  "probe_matches_p012_and_pose": true
+ },
+ "R15": {
+  "review_id": "R15",
+  "clip_id": "g1xdqxCZxTg_6-3-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/g1xdqxCZxTg_6-3-rgb_front.mp4",
+  "zip_local_header_offset": 1223963553,
+  "compressed_size": 53807,
+  "size_bytes": 54326,
+  "crc32": "1fbd9e89",
+  "crc32_matches_central_directory": true,
+  "sha256": "13fe69be53edcfa808e79e47e14d505bcbf95608dad224c5c19b3fce925f5729",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1223963553-1223963582"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1223963650-1224017456"
+   }
+  ],
+  "probe": {
+   "w_h": "346x622",
+   "r_frame_rate": "24/1",
+   "frames": 19
+  },
+  "p012_ffprobe": {
+   "w_h": "346x622",
+   "r_frame_rate": "24/1",
+   "frames": 19
+  },
+  "a_pose_frames": 19,
+  "probe_matches_p012_and_pose": true
+ },
+ "R21": {
+  "review_id": "R21",
+  "clip_id": "G0MjvzT_UqM_16-2-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G0MjvzT_UqM_16-2-rgb_front.mp4",
+  "zip_local_header_offset": 168089008,
+  "compressed_size": 1114196,
+  "size_bytes": 1118089,
+  "crc32": "6b0e6358",
+  "crc32_matches_central_directory": true,
+  "sha256": "87f0c3d43d978bdcefa14d2ccc9b0403266121329c13025a226b58ea930e96b2",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "168089008-168089037"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "168089106-169203301"
+   }
+  ],
+  "probe": {
+   "w_h": "492x518",
+   "r_frame_rate": "30/1",
+   "frames": 426
+  },
+  "p012_ffprobe": {
+   "w_h": "492x518",
+   "r_frame_rate": "30/1",
+   "frames": 426
+  },
+  "a_pose_frames": 426,
+  "probe_matches_p012_and_pose": true
+ },
+ "R22": {
+  "review_id": "R22",
+  "clip_id": "g0fgci8L_rc_11-8-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/g0fgci8L_rc_11-8-rgb_front.mp4",
+  "zip_local_header_offset": 942811870,
+  "compressed_size": 148980,
+  "size_bytes": 149682,
+  "crc32": "f404a26c",
+  "crc32_matches_central_directory": true,
+  "sha256": "f81cf88e64f3ac60a0be80366e804de47fba420197f9691d0ae3e66fda9869cb",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "942811870-942811899"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "942811968-942960947"
+   }
+  ],
+  "probe": {
+   "w_h": "410x556",
+   "r_frame_rate": "24/1",
+   "frames": 44
+  },
+  "p012_ffprobe": {
+   "w_h": "410x556",
+   "r_frame_rate": "24/1",
+   "frames": 44
+  },
+  "a_pose_frames": 44,
+  "probe_matches_p012_and_pose": true
+ },
+ "R26": {
+  "review_id": "R26",
+  "clip_id": "G3EfBFwsOpE_3-10-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G3EfBFwsOpE_3-10-rgb_front.mp4",
+  "zip_local_header_offset": 390422,
+  "compressed_size": 244560,
+  "size_bytes": 245175,
+  "crc32": "12334436",
+  "crc32_matches_central_directory": true,
+  "sha256": "38988702a8a0a95ff36bd7b4220310c8b78af607815e07de36c1cc206c5d60ee",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "390422-390451"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "390520-635079"
+   }
+  ],
+  "probe": {
+   "w_h": "698x598",
+   "r_frame_rate": "24/1",
+   "frames": 36
+  },
+  "p012_ffprobe": {
+   "w_h": "698x598",
+   "r_frame_rate": "24/1",
+   "frames": 36
+  },
+  "a_pose_frames": 36,
+  "probe_matches_p012_and_pose": true
+ },
+ "R28": {
+  "review_id": "R28",
+  "clip_id": "G42xKICVj9U_11-10-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G42xKICVj9U_11-10-rgb_front.mp4",
+  "zip_local_header_offset": 271839830,
+  "compressed_size": 253691,
+  "size_bytes": 254354,
+  "crc32": "2b2535fc",
+  "crc32_matches_central_directory": true,
+  "sha256": "977446bcd1cce07d53d68be8f6bced92457e4f88b1d5158d43a8abc4b16ae38f",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "271839830-271839859"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "271839929-272093619"
+   }
+  ],
+  "probe": {
+   "w_h": "736x614",
+   "r_frame_rate": "24/1",
+   "frames": 41
+  },
+  "p012_ffprobe": {
+   "w_h": "736x614",
+   "r_frame_rate": "24/1",
+   "frames": 41
+  },
+  "a_pose_frames": 41,
+  "probe_matches_p012_and_pose": true
+ },
+ "R29": {
+  "review_id": "R29",
+  "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/92V3oH63zbQ_5-1-rgb_front.mp4",
+  "zip_local_header_offset": 221418424,
+  "compressed_size": 119545,
+  "size_bytes": 120310,
+  "crc32": "71c7a619",
+  "crc32_matches_central_directory": true,
+  "sha256": "877a7e6950b455f53818c5c390fe022b3ff3a77095b61bfa1fff0dfe3e880874",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "221418424-221418453"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "221418521-221538065"
+   }
+  ],
+  "probe": {
+   "w_h": "412x578",
+   "r_frame_rate": "30/1",
+   "frames": 55
+  },
+  "p012_ffprobe": {
+   "w_h": "412x578",
+   "r_frame_rate": "30/1",
+   "frames": 55
+  },
+  "a_pose_frames": 55,
+  "probe_matches_p012_and_pose": true
+ },
+ "R32": {
+  "review_id": "R32",
+  "clip_id": "G0Q6AlvH96I_8-2-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G0Q6AlvH96I_8-2-rgb_front.mp4",
+  "zip_local_header_offset": 580897103,
+  "compressed_size": 212167,
+  "size_bytes": 213082,
+  "crc32": "5446eabb",
+  "crc32_matches_central_directory": true,
+  "sha256": "4f8282dc3efc29021abb7fc25559ded5ce5fe50506a4e153fb2872b7f1eb1378",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "580897103-580897132"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "580897200-581109366"
+   }
+  ],
+  "probe": {
+   "w_h": "372x536",
+   "r_frame_rate": "30/1",
+   "frames": 70
+  },
+  "p012_ffprobe": {
+   "w_h": "372x536",
+   "r_frame_rate": "30/1",
+   "frames": 70
+  },
+  "a_pose_frames": 70,
+  "probe_matches_p012_and_pose": true
+ },
+ "R35": {
+  "review_id": "R35",
+  "clip_id": "G2kVb4gINSI_1-10-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G2kVb4gINSI_1-10-rgb_front.mp4",
+  "zip_local_header_offset": 1109967457,
+  "compressed_size": 443955,
+  "size_bytes": 445027,
+  "crc32": "8f8736fe",
+  "crc32_matches_central_directory": true,
+  "sha256": "5dd4816136f5a47ef51564e64031c20f585b5a2fc70cf6773809e2f1e7fba39e",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1109967457-1109967486"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1109967555-1110411509"
+   }
+  ],
+  "probe": {
+   "w_h": "522x578",
+   "r_frame_rate": "24/1",
+   "frames": 93
+  },
+  "p012_ffprobe": {
+   "w_h": "522x578",
+   "r_frame_rate": "24/1",
+   "frames": 93
+  },
+  "a_pose_frames": 93,
+  "probe_matches_p012_and_pose": true
+ },
+ "R36": {
+  "review_id": "R36",
+  "clip_id": "G095RWKQ39g_10-1-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G095RWKQ39g_10-1-rgb_front.mp4",
+  "zip_local_header_offset": 1112498505,
+  "compressed_size": 2696186,
+  "size_bytes": 2704909,
+  "crc32": "7fd72abd",
+  "crc32_matches_central_directory": true,
+  "sha256": "b70cdb7b9cb00b00b9f7284e37149dad85cdd480f65cfe32a787e7218b4171cd",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1112498505-1112498534"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1112498603-1115194788"
+   }
+  ],
+  "probe": {
+   "w_h": "600x586",
+   "r_frame_rate": "30/1",
+   "frames": 978
+  },
+  "p012_ffprobe": {
+   "w_h": "600x586",
+   "r_frame_rate": "30/1",
+   "frames": 978
+  },
+  "a_pose_frames": 978,
+  "probe_matches_p012_and_pose": true
+ },
+ "R39": {
+  "review_id": "R39",
+  "clip_id": "-fZc293MpJk_5-1-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/-fZc293MpJk_5-1-rgb_front.mp4",
+  "zip_local_header_offset": 1063442576,
+  "compressed_size": 519110,
+  "size_bytes": 521998,
+  "crc32": "4a322be8",
+  "crc32_matches_central_directory": true,
+  "sha256": "00b9c24af58d37da5ce7c2acda398fa62cb0486fa9f43bd88d324ac081d9f5bc",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1063442576-1063442605"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "1063442673-1063961782"
+   }
+  ],
+  "probe": {
+   "w_h": "512x580",
+   "r_frame_rate": "50/1",
+   "frames": 288
+  },
+  "p012_ffprobe": {
+   "w_h": "512x580",
+   "r_frame_rate": "50/1",
+   "frames": 288
+  },
+  "a_pose_frames": 288,
+  "probe_matches_p012_and_pose": true
+ },
+ "R40": {
+  "review_id": "R40",
+  "clip_id": "G0PNAsonBGk_11-2-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/G0PNAsonBGk_11-2-rgb_front.mp4",
+  "zip_local_header_offset": 225019378,
+  "compressed_size": 421715,
+  "size_bytes": 423414,
+  "crc32": "77c6b5b6",
+  "crc32_matches_central_directory": true,
+  "sha256": "afbc4dc839eb76c5da4116e39d74a61e402516c997e4233f82859600d7c491bf",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "225019378-225019407"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "225019476-225441190"
+   }
+  ],
+  "probe": {
+   "w_h": "418x512",
+   "r_frame_rate": "30/1",
+   "frames": 162
+  },
+  "p012_ffprobe": {
+   "w_h": "418x512",
+   "r_frame_rate": "30/1",
+   "frames": 162
+  },
+  "a_pose_frames": 162,
+  "probe_matches_p012_and_pose": true
+ },
+ "R42": {
+  "review_id": "R42",
+  "clip_id": "fZq8wTAYtmw_10-10-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/fZq8wTAYtmw_10-10-rgb_front.mp4",
+  "zip_local_header_offset": 677973284,
+  "compressed_size": 417530,
+  "size_bytes": 418678,
+  "crc32": "69ba0bbf",
+  "crc32_matches_central_directory": true,
+  "sha256": "d79253b3d777d395aeb05cf80428af1c48c9b5849d0076d188faa0040f93ba31",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "677973284-677973313"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "677973383-678390912"
+   }
+  ],
+  "probe": {
+   "w_h": "444x584",
+   "r_frame_rate": "24/1",
+   "frames": 99
+  },
+  "p012_ffprobe": {
+   "w_h": "444x584",
+   "r_frame_rate": "24/1",
+   "frames": 99
+  },
+  "a_pose_frames": 99,
+  "probe_matches_p012_and_pose": true
+ },
+ "R45": {
+  "review_id": "R45",
+  "clip_id": "g3X3XE6M2_A_8-3-rgb_front",
+  "hf_repo": "ZechengLi19/Uni-Sign",
+  "hf_repo_commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+  "zip_entry": "crop_test/g3X3XE6M2_A_8-3-rgb_front.mp4",
+  "zip_local_header_offset": 485543121,
+  "compressed_size": 262718,
+  "size_bytes": 263791,
+  "crc32": "7276b313",
+  "crc32_matches_central_directory": true,
+  "sha256": "39fe85f8032614d2ced247dd41fea6d893bdc3242c5c825a91cbff606c5c9fad",
+  "byte_ranges": [
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "485543121-485543150"
+   },
+   {
+    "url": "https://huggingface.co/ZechengLi19/Uni-Sign/resolve/main/how2sign_rgb_format.zip.aa",
+    "range": "485543218-485805935"
+   }
+  ],
+  "probe": {
+   "w_h": "358x618",
+   "r_frame_rate": "24/1",
+   "frames": 90
+  },
+  "p012_ffprobe": {
+   "w_h": "358x618",
+   "r_frame_rate": "24/1",
+   "frames": 90
+  },
+  "a_pose_frames": 90,
+  "probe_matches_p012_and_pose": true
+ }
+}

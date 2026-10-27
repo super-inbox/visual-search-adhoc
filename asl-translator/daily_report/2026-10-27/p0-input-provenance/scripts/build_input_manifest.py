@@ -1,7 +1,9 @@
 """P0-1: assemble the 45-case x 2-domain input provenance manifest and apply the frozen status rules
-(INPUT_PROVENANCE_PLAN.md + Amendment 1). Reads only already-produced evidence; no model, no video decoding.
+(INPUT_PROVENANCE_PLAN.md + Amendments 1 and 2). Reads only already-produced evidence; no model, no video decoding.
 
-Inputs: work/located_clips.json (locate_clips.py), work/sampling.jsonl (reproduce_sampling.py), How2Sign test CSVs,
+Inputs: work/located_clips.json (locate_clips.py), work/sampling.jsonl (reproduce_sampling.py),
+work/official_crops.json (fetch_official_crops.py), work/located_amendment2.json (locate_amendment2.py; used only for
+rows Amendment 1 left without a slice), How2Sign test CSVs,
 how2sign_v2 subset TSVs, P0-12 official_crop_ffprobe.csv / segment_alignment_128.json /
 crossframe_alignment_B_vs_C.json, P0-A case_provenance.csv.
 Outputs: input_manifest_45.csv, selected_frames.jsonl, provenance_summary.json.
@@ -53,6 +55,8 @@ def rel(p):
 
 def main():
     loc = json.load(open(os.path.join(WORK, "located_clips.json")))
+    a2 = json.load(open(os.path.join(WORK, "located_amendment2.json")))
+    crops = json.load(open(os.path.join(WORK, "official_crops.json")))
     samp = {(r["review_id"], r["domain"]): r for r in map(json.loads, open(os.path.join(WORK, "sampling.jsonl")))}
     prov = list(csv.DictReader(open(P0A_PROV)))
     orig, real = tsv(ORIG_CSV, "START", "END"), tsv(REAL_CSV, "START_REALIGNED", "END_REALIGNED")
@@ -93,6 +97,12 @@ def main():
                 vid_frames, eff_fps = cr.get("frames"), cr.get("fps")
                 input_video = f"official crop clip crop_test/{cid}.mp4 (HF zip entry; not stored locally)"
                 input_video_sha = ""; input_w_h = cr.get("w_h", "")
+                if rid in crops:
+                    input_video = (f"official crop clip crop_test/{cid}.mp4 (HF ZechengLi19/Uni-Sign @ "
+                                   f"{crops[rid]['hf_repo_commit'][:12]}, range-fetched to scratch, CRC32 ok; not committed)")
+                    input_video_sha = crops[rid]["sha256"]
+                    if not crops[rid]["probe_matches_p012_and_pose"]:
+                        reasons.append("fetched official crop clip probe differs from P0-12 ffprobe / pose frames")
             frames_ok = vid_frames == n
             if not frames_ok:
                 reasons.append(f"pose frames {n} != input video frames {vid_frames}")
@@ -125,6 +135,38 @@ def main():
                     evidence = (f"C index = B index + {sh} (shift) + {x['offset_frames']} (best offset) -> A frame 0 = B frame "
                                 f"{-k}; resid_body {x['resid_body']:.4f}, resid_hands {x['resid_hands']:.4f} shoulder widths, "
                                 f"{x['n_frames']} frames compared")
+            # Amendment 2: only for rows Amendment 1 could not place
+            r2 = a2.get(f"{rid}:{dom}")
+            if start is None and r2 is not None:
+                if dom == "B_ours_5p39":
+                    method = "measured: signer-region pixel match of the input clip inside the raw source (Amendment 2, A2.4)"
+                else:
+                    method = ("measured: official crop clip located in the raw source (Amendment 2, A2.2 box + A2.3 "
+                              "temporal match)")
+                ev = []
+                if r2.get("ncc_best") is not None:
+                    ev.append(f"box {r2['box_xywh']} NCC {r2['ncc_best']} (next >16 px: {r2['ncc_next_outside_8px_half']}; "
+                              f"accepted={r2['box_accepted']})")
+                else:
+                    ev.append(f"B-pose box {r2['box_xywh']}")
+                if r2.get("best_offset_frames") is not None:
+                    ev.append(f"offset {r2['best_offset_frames']} fr; grid motion r {r2['grid_motion_r_best']} (next outside "
+                              f"±5: {r2['grid_motion_r_next_outside_5']}); norm MAE {r2['norm_mae_best']} (median "
+                              f"{r2['norm_mae_median']}); norm-MAE offset {r2['best_offset_norm_mae']}; unique={r2['unique_match']}")
+                evidence = "; ".join(ev) + (f" || Amendment 1: {evidence}" if evidence else "")
+                a1_slice = lambda x: x == "B clip location not unique" or x.startswith(
+                    ("no B-vs-C", "B slice unresolved", "B-vs-C alignment residual"))
+                old_reasons = [x for x in reasons if a1_slice(x)]
+                reasons = [x for x in reasons if not a1_slice(x)]
+                if not r2["box_accepted"]:
+                    reasons.append("Amendment 2: crop box not unique (NCC margin < 0.05)")
+                elif not r2["unique_match"]:
+                    reasons.append("Amendment 2: region match not unique")
+                else:
+                    start = r2["best_offset_frames"] / fps
+                    assert abs(start + n / fps - r2["slice_end_s"]) < 1e-3 and r2["clip_frames"] == n
+                if start is None:
+                    reasons.append("Amendment 1: " + "; ".join(x for x in old_reasons))
             end = start + n / fps if start is not None else None
             d = {}
             for lab, iv in (("original", o), ("realigned", rl)):
