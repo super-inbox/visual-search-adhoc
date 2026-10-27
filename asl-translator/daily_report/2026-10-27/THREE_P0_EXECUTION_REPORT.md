@@ -1,4 +1,4 @@
-# 三个 P0 执行报告
+# ASL 三个 P0 执行结果与 Baobao 接续任务
 
 2026-10-27。代码与原始记录位于 [实验目录](../../experiments/p0-2026-10-27/README.md)。本轮没有上线，没有训练，没有获得新的翻译质量提升结论。
 
@@ -56,3 +56,45 @@ OpenFS 代码及 checkpoint 的官方许可限非商业研究。本次仅研究�
 ## 验证
 
 6 项采样测试通过（空/短片、非法输入、静止、预算与顺序、全局覆盖、单帧尖峰）；45 例/135 臂的预算、去重、顺序和 PTS 映射检查通过。specialist 完成真实 CPU 前向与生成。防重复仅完成脚本语法与缺失资产预检，未完成模型级验证。
+
+
+## 给 Baobao 的接续任务
+
+本日报对应分支 `codex/asl-three-p0-20261027`，实验代码及首批结果提交为 `2a84dd0`。先阅读本报告，再按 [实验 README](../../experiments/p0-2026-10-27/README.md) 复现。当前交付是研究分支，尚未合并 main，也未改线上。
+
+### 先恢复匹配的实验资产
+
+请在原实验机定位并记录以下资产的绝对路径、版本和哈希；二进制留在本地或现有共享存储，不提交到 Git：
+
+- Uni-Sign checkout：`eed438bcb49e30405cd6ccdfcccca330c134e830`。
+- `how2sign_pose_only_slt.pth`：SHA256 `1bfd5f3312f04e4736f0a52f4ef9535916e6de9676a2a0d00c708748683fb00d`。
+- mT5 snapshot：`2eb15465c5dd7f72a8f7984306ad05ebc3dd1e1f`。
+- P0-12 A_official 的 45 个 pose 文件，以及对应原视频窗口。输入哈希可对照 [canonical candidates](../2026-10-23/p0a-candidate-rerank/runs/full45/A_official/run1/candidates.jsonl)。
+
+先执行 `decode_repetition.py --preflight-only`，具体参数见实验 README。若本机路径不同，传入真实路径，不要创建空文件绕过检查。缺失项目见 [预检记录](../../experiments/p0-2026-10-27/results/repetition_preflight.json)。
+
+### 任务一 防重复配对解码
+
+资产齐备后优先执行，这是已有 runner、最容易闭环的模型实验。去掉 `--preflight-only`，运行 control 与固定的 token-trigram 约束两臂。保持模型、输入、seed、beam 和长度限制一致；control 与已保存 CPU 输出不匹配时先排查，不能继续宣布 treatment 有效。
+
+交付：45 例配对输出、chrF/WER、重复率、截断情况、R01 和 R41 的逐句比较。所有案例均保留，包括变差案例。人工语义标签尚缺时写 pending，不以自动分数代替 wrong→right / right→wrong 判断。
+
+### 任务二 同域采样质量实验
+
+现有 `sampling.py` 已可运行，但 `run_sampling.py` 的结果来自压缩 OLD 视频；它还不是 Uni-Sign pose loader 的完整适配。先建立同域视频 PTS→pose 帧映射，再将 sampler 接入研究 loader，保留所选索引及输入哈希。不要把 OLD 视频索引直接套到 official pose。
+
+首先解决 R10 的 23.38–42.38 与 31.03–56.34 时间来源冲突；追溯实际文件与切片命令，不凭时长猜测。之后在固定的匹配输入上比较 random、uniform、coverage_motion 三臂，使用相同解码设置。每个实验前写清输入域和对照；不覆盖 10 月 23 日冻结结果。
+
+交付：映射验证、三臂配对译文与指标、长片子集及正常对照的退化情况。线上 Gemini 与可选 Uni-Sign wrapper 是不同路径；在研究收益确认前，不改默认采样或切片策略。
+
+### 任务三 拼写检测与识别
+
+先复现 [OpenFS 原始结果](../../experiments/p0-2026-10-27/results/specialist.json)，再取得 R02/R05 的匹配 official 原分辨率视频，按原样保存识别输出，不提供 reference 姓名或词典。R35 旧窗口与 official 完全不重叠，必须分别标记。
+
+并行评估 FS-Detection 的预训练 temporal detector 能否在现有环境运行：记录 checkpoint 来源、代码版本、依赖适配及许可。它若不能运行，交付具体报错和所需移植范围；不要把固定滑窗、手部运动或识别器 token probability 改名为检测置信度。
+
+交付：每个视频的候选 start/end、时间基准、区间来源（detector / fixed_window / human）、字母串和模型版本。没有可靠字符对齐时，字符时间戳保持 null。未经盲评，`fs_present` 保持 unknown；不自动替换 Uni-Sign 句子。获得人工标签后，分别评估区间定位、字母识别和整句融合损伤。
+
+### 下一次日报的统一格式
+
+每个 P0 分别列出：本次改动、实际执行命令、输入和模型版本、结果文件、相对 control 的改善与退化、未完成项、下一步。明确区分“可运行”“诊断信号”“翻译质量提升”。当前的 45 例为开发诊断集，不能反复调参后当成独立验证集。
