@@ -1,0 +1,11 @@
+{
+  "n_cases": 45,
+  "long_cases": 13,
+  "short_cases_unchanged": 32,
+  "long_case_mean_max_gap_s": {
+    "random": 0.3074360769230772,
+    "uniform": 0.08769253846153911,
+    "coverage_motion": 0.14820546153846217
+  },
+  "translation_quality_measured": false
+}

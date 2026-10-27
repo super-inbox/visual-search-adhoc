@@ -1,0 +1,12 @@
+{
+  "files": {
+    "decode_repetition.py": "707a69c8c004405ebe1b29cf3e7ac9a11966823e27a877ccfd7dfac16ce1f705",
+    "run_sampling.py": "040a746b9aae78d8051d79795e28dc4b8a7fbb6bdaf495f92ba64b84c8fe1216",
+    "sampling.py": "f88950ca95bfece80cc755c7b92f75fdc050e923e0b7f2e8f38e7c45b664d041",
+    "specialist.py": "d5354024f69712e7961bfad96a164d98582b61d785a84e3ac165f7fac490800d",
+    "test_sampling.py": "b8d68665f441c3b0ebffb1b89122e4f9a0eebcdad889a6c35560de4e1f343dea"
+  },
+  "sampling_validation": "45 cases, 135 arms, exact budget/order/PTS verified",
+  "specialist_validation": "4 videos, 18 unverified window outputs; original frame index bounds verified",
+  "repetition": "missing assets, no generation"
+}
