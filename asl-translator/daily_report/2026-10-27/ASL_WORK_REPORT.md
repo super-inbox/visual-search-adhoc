@@ -1,12 +1,13 @@
 # ASL Work Report — 2026-10-27
 
 **Scope:** ASL research work completed through 2026-10-27. That covers the follow-up to the boss's 10/27 handoff
-(Tasks 1–3), set against the earlier P0 work. No new experiment was run to write this report.
+(Tasks 1–3), set against the earlier P0 work, plus the production-model 45-case evaluation. No new experiment was
+run to write this report.
 
 **Source of truth:** the committed result files and git history on `baobao/visual-production-research-2026-10-05`.
 
 **All 45 cases** (R01–R45) are a P0-16 *exploratory* development set. Every number below is diagnostic, not a
-population-level or production claim.
+population-level claim.
 
 > This report is intentionally a living work report. Sections under Open Items will be updated when those tasks are
 > completed.
@@ -24,7 +25,8 @@ population-level or production claim.
    - check whether the FS-Detection temporal detector can run.
 
 **What is now complete:** all three tasks, in 5 commits. Every task finished with a measured result, and none
-produced a translation-quality improvement.
+produced a translation-quality improvement. The production-model 45-case evaluation is also complete (commit
+`6a73e1cf`).
 
 **Main conclusions:**
 - Anti-repetition removes loops but rewrites normal sentences.
@@ -32,8 +34,11 @@ produced a translation-quality improvement.
 - Changing the sampler gives no stable gain.
 - The fingerspelling recognizers produce technical output that cannot be trusted without ASL-fluent blind labels.
 
-**Still open:** the production-model 45-case evaluation, the ASL reviewer follow-up, and the P0-A R1/R2 descriptive
-gap.
+- **Current production** (`gemini-2.5-flash`, adaptive frames) scores corpus chrF **9.27** on the 45 cases, against
+  **18.22** for Uni-Sign B and **23.76** for Uni-Sign A (P0-A CPU). Its outputs are much shorter (length ratio 0.38)
+  and it has no repetition loops. Automatic metrics only.
+
+**Still open:** the ASL reviewer follow-up and the P0-A R1/R2 descriptive gap.
 
 | Item | Status | Basis |
 |---|---|---|
@@ -43,7 +48,7 @@ gap.
 | Task 2 sampling quality | **COMPLETE / NO STABLE GAIN** | A mildly positive, B mildly negative; no paired test convincing (p ≥ 0.23) |
 | Task 3 fingerspelling specialist | **COMPLETE / DIAGNOSTIC ONLY** | OpenFS partially reproduced (10/18 windows); official outputs recorded; FS-Detection runs only with shims |
 | ASL reviewer package | **BLOCKED ON HUMAN REVIEW** | Built and checksummed, not yet sent; labels blank |
-| Production-model 45-case evaluation | **OPEN / NOT YET RUN** | — |
+| Production-model 45-case evaluation | **COMPLETE / DIAGNOSTIC ONLY** | gemini-2.5-flash chrF 9.27 vs Uni-Sign B 18.22 / A 23.76 (P0-A CPU); much shorter outputs; 0 loops; automatic metrics only |
 | P0-A R1/R2 descriptive gap | **OPEN / NOT YET RUN** | Frozen descriptive arms never reported (boss review) |
 
 ## 2. Context and Boss Handoff
@@ -206,13 +211,95 @@ Source: [TASK3_FINGERSPELLING_RESULT.md](TASK3_FINGERSPELLING_RESULT.md) (commit
 
 **Conclusion:** the remaining evidence bottleneck is **ASL-fluent blind labels**, not another recognizer run.
 
-## 7. Earlier P0 Status
+## 7. Production Model — 45-Case Evaluation
+
+Source: [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md) (commit `6a73e1cf`). Automatic metrics only;
+human semantic labels are pending.
+
+### Production path
+
+- curify-studio `origin/main` commit `4220e03c` (2026-10-26). The **real production `transcribe_asl`** was called,
+  loaded from a read-only export. Only the Gemini client accessor was stubbed, built the same way production builds
+  it.
+- `gemini-2.5-flash`, temperature 0, JSON response.
+- Adaptive motion-probed frame selection: a 2 frames/s budget clamped to 24–240 frames, sent as 512 px JPEGs with
+  timestamp labels, 24 per call.
+- No production code was modified, and nothing was deployed.
+- The historical offline runner (`production_2026_08_29`) still passes its production-parity tests, but the real code
+  path was used.
+
+### Coverage
+
+- 45/45 cases (R01–R45) were processed on the inspection-sheet videos (B window, full frame).
+- 57 Gemini calls, 1,233 frames, 457,707 total tokens.
+- Case latency: median 11.1 s, maximum 43.5 s.
+- 0 transport retries or errors.
+
+**45 processed is not 45 clean transcripts:**
+- 44 cases produced transcript text.
+- **R29 is EMPTY / `no_signing_detected`:** the model returned no segments, and production would show "no signing
+  detected".
+- **R03 is PARTIAL:** one of its two Gemini batches returned malformed JSON, production's real parser dropped it, and
+  only "I know now." remains.
+- Neither case was re-run or repaired.
+
+### Corpus metrics
+
+| System | chrF | BLEU-4 | WER | len ratio | loops | empty |
+|---|---|---|---|---|---|---|
+| **Production** (gemini-2.5-flash) | **9.27** | 0.17 | 98.25 | 0.38 | 0 | 1 |
+| Uni-Sign B, P0-A CPU | 18.22 | 1.70 | 99.81 | 1.02 | 11 | 0 |
+| Uni-Sign B, historical T4/fp16 (sheet) | 18.35 | 2.25 | 99.61 | 0.98 | 12 | 0 |
+| Uni-Sign A, P0-A CPU | 23.76 | 5.72 | 95.44 | 1.00 | 9 | 0 |
+| Uni-Sign A, historical T4/fp16 (sheet) | 23.58 | 5.92 | 96.70 | 1.01 | 11 | 0 |
+
+**Production sentence chrF is lower in:**
+- 41/45 cases vs B P0-A CPU;
+- 40/45 vs B historical;
+- 44/45 vs A P0-A CPU;
+- 42/45 vs A historical.
+
+Production and Uni-Sign B see the same video window. A uses the official re-aligned window and crop.
+
+### Failure patterns
+
+- The median production output is 5 words, against 15 in the reference.
+- **17 cases have ≤ 3 output words** (R29 empty).
+- Outputs are often short, generic and question-heavy: 13 contain "?" while 7 references do.
+- Names and fingerspelling often become letter strings or unrelated names, e.g. R02 "NSD DEF", R10
+  "L.P.Q.G.N.D.F.P.P.D.". These are not compared with the reference names.
+- The model's self-reported confidence was "high" on 47/57 calls despite median sentence chrF 6.0, so it is not
+  reliable evidence.
+- **No repetition-loop problem was observed** (0 loops, 0 degenerate-repetition flags).
+
+Production WER can look superficially competitive because very short outputs create fewer insertion errors. That is
+not evidence of better translation.
+
+### Notable cases (descriptive)
+
+- **R11** is the only case where production beats both main Uni-Sign outputs (P0-A CPU) by chrF: +5.99 vs B, +7.46
+  vs A. Uni-Sign loops there.
+- **R29** is empty / no-signing. **R03** is partial.
+- The strongest regressions are R40 (−59.04), R32 (−50.93), R41 (−46.09) and R35 (−40.36) against A, and R43
+  (−22.91) against B.
+- No semantic improvement is claimed.
+
+### Inspection sheet
+
+- The original `inspection_sheet.csv` remains **unchanged**.
+- An augmented copy,
+  [`inspection_sheet_with_production.csv`](../../../docs/daily_report/10.18/asl-review-inspection-sheet/inspection_sheet_with_production.csv),
+  keeps all 45 original rows and all 32 columns value for value, with 6 `production_*` columns appended.
+- The historical `prod_output` column remains the **provisional Uni-Sign B stand-in**. It is **not** current
+  production output.
+
+## 8. Earlier P0 Status
 
 - **P0-A:**
   - The STOP remains valid; candidate headroom is insufficient against the frozen +3.0 gate.
   - Per the boss's correction, the "oracle" is described as a **sentence-level maximum / descriptive selection**, not
     an upper bound.
-  - The frozen R1/R2 descriptive arms remain an **open protocol/report gap** (§11.C).
+  - The frozen R1/R2 descriptive arms remain an **open protocol/report gap** (§12.C).
 - **P0-B and P0-C:**
   - The feasibility survey and the R26/R29 source diagnostics remain useful background.
   - The "nothing run" part of P0-B is superseded by the actual OpenFS execution in Task 3.
@@ -220,7 +307,7 @@ Source: [TASK3_FINGERSPELLING_RESULT.md](TASK3_FINGERSPELLING_RESULT.md) (commit
     - P0-B: whether fingerspelling is present, its spans and letters;
     - P0-C: corrected windows.
 
-## 8. Experimental Integrity
+## 9. Experimental Integrity
 
 These statements are supported by the committed result files:
 
@@ -230,7 +317,7 @@ These statements are supported by the committed result files:
   - Task 1: 90 `generate` calls on CPU;
   - Task 2: 283 calls on CPU, one parameter set;
   - Task 3: OpenFS and the FS-Detection smoke test ran on CPU.
-- **No production/Gemini calls** in Tasks 1–3.
+- **No production/Gemini calls** in Tasks 1–3. Gemini was called only in the separate production evaluation (§7).
 - **No reference names supplied to any recognizer.** The OpenFS run manifests carry only case id, video and domain.
   References were used only for scoring in Tasks 1–2.
 - **Automatic metrics are kept separate from human semantic judgement.** Human labels are `pending`;
@@ -240,8 +327,15 @@ These statements are supported by the committed result files:
   `specialist.py`, `sampling.py`, `run_sampling.py`, `PROTOCOL.md`.
 - **No downloaded videos or checkpoints are committed:** official crop clips, raw videos, OpenFS/FS-Detection code
   and weights stayed in scratch only.
+- **Production evaluation:**
+  - the real current production path (`transcribe_asl`, `origin/main` `4220e03c`) was called;
+  - no production code was modified, and nothing was deployed;
+  - no reference text was sent to Gemini;
+  - the API key was loaded into the wrapper process only and is not persisted in any file or log;
+  - the P0-16 holdout guard passed on R01–R45;
+  - it is an end-to-end comparison, not a controlled ablation: production and Uni-Sign preprocessing differ.
 
-## 9. Deliverables and Commits
+## 10. Deliverables and Commits
 
 | Commit | Description | Key report |
 |---|---|---|
@@ -250,11 +344,12 @@ These statements are supported by the committed result files:
 | `59b13d4814ef8f2fe74042551aaa9937df4df270` | Task 2 Step 2: Amendment 2, 9 of 14 unresolved cases anchored | [p0-input-provenance/README.md](p0-input-provenance/README.md) |
 | `40cf0481503034a9016194233170dfb301653d2c` | Task 2 Step 3: same-domain sampling-quality decode and scoring | [TASK2_SAMPLING_QUALITY_RESULT.md](TASK2_SAMPLING_QUALITY_RESULT.md) |
 | `ad5747235893c895ce52a1a43b0faff30f523d37` | Task 3: OpenFS reproduction / official runs, FS-Detection feasibility | [TASK3_FINGERSPELLING_RESULT.md](TASK3_FINGERSPELLING_RESULT.md) |
+| `6a73e1cf2a2584cd6278febfb0e061177a140dab` | docs: evaluate current production ASL model on 45 cases | [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md) |
 
-Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experiments/p0-2026-10-27/results/) and
-[`p0-input-provenance/`](p0-input-provenance/).
+Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experiments/p0-2026-10-27/results/),
+[`p0-input-provenance/`](p0-input-provenance/) and [`asl-eval/production_45/`](../../asl-eval/production_45/).
 
-## 10. Current Conclusions
+## 11. Current Conclusions
 
 1. **Anti-repetition** removes loops but is too blunt to recommend as default decoding.
 2. **Input provenance:** R10 is resolved. Most of the 45-case provenance is now anchored, and all model inputs
@@ -262,15 +357,18 @@ Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experi
 3. **Sampling:** changing the 256-frame sampler does not produce a stable translation-quality gain.
 4. **Fingerspelling:** current recognizers give technical outputs, but those are not trustworthy evidence without
    ASL-fluent blind labels.
-5. **The remaining work is no longer another large Uni-Sign model experiment.**
+5. **Production:** current production Gemini substantially underperforms Uni-Sign on this 45-case automatic-metric
+   evaluation. Its dominant failure mode is short/generic or missing content rather than repetition. This remains
+   diagnostic only and requires human semantic review for correctness claims.
+6. **The remaining work is no longer another large Uni-Sign model experiment.**
 
-## 11. Open Items / Next Work
+## 12. Open Items / Next Work
 
-### A. Production-model 45-case evaluation — OPEN / NOT YET RUN
+### A. Production-model 45-case evaluation — COMPLETE
 
-- Run the actual current production model on the same 45 videos.
-- Add a real production-output column to the inspection sheet.
-- Compare it against the Uni-Sign old/official outputs.
+- Done (commit `6a73e1cf`): see §7 and [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md).
+- Production output columns are in the augmented inspection-sheet copy.
+- Semantic correctness still needs human review (item B).
 
 ### B. ASL reviewer follow-up — HUMAN-DEPENDENT
 
