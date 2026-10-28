@@ -1,0 +1,631 @@
+{
+ "inputs": {
+  "r03_raw": "asl-translator/asl-eval/production_45/raw/R03.json",
+  "r03_raw_sha256": "e94dbe1b8d8035c2c59264b8016e2d59022769148488ee8d0ea1613ecfdaae4a",
+  "r03_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G06Irzcwxiw_5-1-rgb_front.mp4",
+  "r03_video_sha256": "76b1f143adf60fc064c3e83ef865abd0a3e0135011dd01e39f1df94e84b4d286",
+  "production_file": "curify-studio 4220e03c curify_background/app/utils/asl_utils.py",
+  "production_file_sha256": "90df95635fcb3297e2c2b0cd6bf15061d398f9ae2ea3c66543b982487c59ffa5",
+  "pipeline_file": "curify-studio 4220e03c curify_background/app/pipelines/asl_pipeline.py",
+  "pipeline_file_sha256": "b21b0331ee305de8c4208220015ffce184cf11209952cc5083b567c27bf3c6de",
+  "quota_classifier": "mirror of production imagen_service.is_quota_exhausted from the 10/27 wrapper: substring match on ['RESOURCE_EXHAUSTED', '429', 'spend cap', 'quota', 'QUOTA']",
+  "model_calls": 0
+ },
+ "parser_replay": [
+  {
+   "batch": 0,
+   "n_images": 24,
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6663,
+    "candidates_token_count": 189,
+    "thoughts_token_count": 3694,
+    "total_token_count": 10546
+   },
+   "latency_s": 17.285,
+   "outcome": "raised",
+   "exception": "JSONDecodeError",
+   "message": "Expecting property name enclosed in double quotes: line 8 column 5 (char 110)",
+   "regex_fallback_span_is_whole_text": true
+  },
+  {
+   "batch": 1,
+   "n_images": 6,
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 1853,
+    "candidates_token_count": 62,
+    "thoughts_token_count": 1407,
+    "total_token_count": 3322
+   },
+   "latency_s": 7.697,
+   "outcome": "parsed",
+   "n_segments": 1
+  }
+ ],
+ "malformed_condition": {
+  "batch": 0,
+  "error_line": 8,
+  "error_col": 5,
+  "error_char": 110,
+  "context_lines_4_to_9": [
+   "      \"start\": 3.21,",
+   "      \"end\": 4.04,",
+   "      \"text\": \"Support each other.\"",
+   "    ,",
+   "    {",
+   "      \"start\": 5.44,"
+  ],
+  "description": "first segment object is never closed: after its last value (\"text\": \"Support each other.\") the next line is ',' and then '{' opens the second segment, so the parser, still inside object 1, expects a property name and finds '{'"
+ },
+ "e2e_replay_current_production": {
+  "calls": 2,
+  "batch_sizes": [
+   24,
+   6
+  ],
+  "text": "I know now.",
+  "n_segments": 1,
+  "error": null,
+  "had_transport_error": false,
+  "quota_exhausted": false,
+  "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)",
+  "timestamps_equal_recorded": true,
+  "batch_sizes_equal_recorded": true,
+  "text_equals_recorded": true
+ },
+ "current_production_scenarios": {
+  "S1_all_parse": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "SYNTHETIC A SYNTHETIC B",
+   "n_segments": 2,
+   "error": null,
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)"
+  },
+  "S2_R03_recorded": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "I know now.",
+   "n_segments": 1,
+   "error": null,
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)"
+  },
+  "S3_all_malformed": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "",
+   "n_segments": 0,
+   "error": "batch 0: JSONDecodeError: Expecting property name enclosed in double quotes: line 8 column 5 (char 110); batch 1: JSONDecodeError: Expecting property name enclosed in double quotes: line 8 column 5 (char 110)",
+   "had_transport_error": true,
+   "quota_exhausted": false,
+   "pipeline": "generic Exception -> job-queue retry of the whole video"
+  },
+  "S4_valid_no_signing_with_notes": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "",
+   "n_segments": 0,
+   "error": "SYNTHETIC: no signing visible; SYNTHETIC: no signing visible",
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "NoSigningDetectedError (no retry)"
+  },
+  "S4b_valid_no_signing_without_notes": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "",
+   "n_segments": 0,
+   "error": null,
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "NoSigningDetectedError (no retry)"
+  },
+  "S5_all_transport": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "",
+   "n_segments": 0,
+   "error": "batch 0: ConnectionError: SYNTHETIC connection reset; batch 1: TimeoutError: SYNTHETIC timeout",
+   "had_transport_error": true,
+   "quota_exhausted": false,
+   "pipeline": "generic Exception -> job-queue retry of the whole video"
+  },
+  "S5b_one_transport_one_valid": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "SYNTHETIC B",
+   "n_segments": 1,
+   "error": null,
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)"
+  },
+  "S6_top_level_array": {
+   "calls": 1,
+   "batch_sizes": [
+    24
+   ],
+   "crashed": "AttributeError: 'list' object has no attribute 'get'",
+   "pipeline": "unhandled exception escapes transcribe_asl -> job-queue failure/retry"
+  },
+  "S7_parse_error_message_contains_429": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "",
+   "n_segments": 0,
+   "error": "batch 0: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 430 (char 429); batch 1: JSONDecodeError: Expecting property name enclosed in double quotes: line 1 column 430 (char 429)",
+   "had_transport_error": true,
+   "quota_exhausted": true,
+   "pipeline": "GenerationQuotaExhaustedError (no queue retry)"
+  },
+  "S8_segment_missing_end": {
+   "calls": 2,
+   "batch_sizes": [
+    24,
+    6
+   ],
+   "text": "SYNTHETIC B SYNTHETIC kept",
+   "n_segments": 2,
+   "error": null,
+   "had_transport_error": false,
+   "quota_exhausted": false,
+   "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)"
+  }
+ },
+ "repair_search": {
+  "single_edit_variants_tested": 87318,
+  "grammar_valid_variants": 16,
+  "grammar_valid_distinct_trees": 2,
+  "grammar_valid_trees": [
+   {
+    "n_edits": 11,
+    "example_edit": [
+     "insert",
+     99,
+     "}"
+    ],
+    "n_segments": 4,
+    "segment_texts": [
+     [
+      "Support each other."
+     ],
+     [
+      "The community helps people."
+     ],
+     [
+      "You are welcome to join."
+     ],
+     [
+      "I want to include you, you know."
+     ]
+    ],
+    "segments_with_duplicate_keys": 0
+   },
+   {
+    "n_edits": 5,
+    "example_edit": [
+     "delete",
+     110,
+     "{"
+    ],
+    "n_segments": 3,
+    "segment_texts": [
+     [
+      "Support each other.",
+      "The community helps people."
+     ],
+     [
+      "You are welcome to join."
+     ],
+     [
+      "I want to include you, you know."
+     ]
+    ],
+    "segments_with_duplicate_keys": 1
+   }
+  ],
+  "schema_valid_distinct_trees": 1,
+  "schema_valid_edits": [
+   [
+    "insert",
+    "}"
+   ],
+   [
+    "substitute",
+    "}"
+   ]
+  ],
+  "schema_valid_insert_positions": [
+   99,
+   99,
+   100,
+   100,
+   101,
+   101,
+   102,
+   102,
+   103,
+   103,
+   104
+  ],
+  "positions_span_text": "\n    ",
+  "recovered": {
+   "segments": [
+    {
+     "start": 3.21,
+     "end": 4.04,
+     "text": "Support each other."
+    },
+    {
+     "start": 5.44,
+     "end": 7.56,
+     "text": "The community helps people."
+    },
+    {
+     "start": 8.65,
+     "end": 10.43,
+     "text": "You are welcome to join."
+    },
+    {
+     "start": 10.73,
+     "end": 12.82,
+     "text": "I want to include you, you know."
+    }
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  "all_recovered_strings_verbatim_in_raw": true,
+  "all_recovered_numbers_verbatim_in_raw": true,
+  "structural_rule_result": 1
+ },
+ "policy_tests": {
+  "T1_all_batches_parse": {
+   "expected": "success",
+   "got": "success",
+   "pass": true,
+   "batches_succeeded": 2,
+   "batches_failed": 0,
+   "retry_calls": 0,
+   "quota_exhausted": false
+  },
+  "T2_one_of_two_fails_no_retry_budget": {
+   "expected": "partial",
+   "got": "partial",
+   "pass": true,
+   "batches_succeeded": 1,
+   "batches_failed": 1,
+   "retry_calls": 0,
+   "quota_exhausted": false
+  },
+  "T3_all_batches_fail_parsing": {
+   "expected": "parse_failure",
+   "got": "parse_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 2,
+   "retry_calls": 2,
+   "quota_exhausted": false
+  },
+  "T4_valid_no_signing": {
+   "expected": "no_signing_detected",
+   "got": "no_signing_detected",
+   "pass": true,
+   "batches_succeeded": 2,
+   "batches_failed": 0,
+   "retry_calls": 0,
+   "quota_exhausted": false
+  },
+  "T5_transport_failure": {
+   "expected": "transport_failure",
+   "got": "transport_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 2,
+   "retry_calls": 2,
+   "quota_exhausted": false
+  },
+  "T6_retry_succeeds": {
+   "expected": "success",
+   "got": "success",
+   "pass": true,
+   "batches_succeeded": 2,
+   "batches_failed": 0,
+   "retry_calls": 1,
+   "quota_exhausted": false
+  },
+  "T7_retry_fails_again": {
+   "expected": "partial",
+   "got": "partial",
+   "pass": true,
+   "batches_succeeded": 1,
+   "batches_failed": 1,
+   "retry_calls": 1,
+   "quota_exhausted": false
+  },
+  "T8_quota_not_retried": {
+   "expected": "transport_failure",
+   "got": "transport_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 2,
+   "retry_calls": 0,
+   "quota_exhausted": true
+  },
+  "T9_parse_error_text_429_is_not_quota": {
+   "expected": "parse_failure",
+   "got": "parse_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 2,
+   "retry_calls": 2,
+   "quota_exhausted": false
+  },
+  "T10_top_level_array_no_crash": {
+   "expected": "partial",
+   "got": "partial",
+   "pass": true,
+   "batches_succeeded": 1,
+   "batches_failed": 1,
+   "retry_calls": 1,
+   "quota_exhausted": false
+  },
+  "T11_rejected_segment_is_partial": {
+   "expected": "partial",
+   "got": "partial",
+   "pass": true,
+   "batches_succeeded": 2,
+   "batches_failed": 0,
+   "retry_calls": 0,
+   "quota_exhausted": false
+  },
+  "T12_mixed_parse_and_transport": {
+   "expected": "transport_failure",
+   "got": "transport_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 2,
+   "retry_calls": 2,
+   "quota_exhausted": false
+  },
+  "T13_truncated_max_tokens_retried": {
+   "expected": "success",
+   "got": "success",
+   "pass": true,
+   "batches_succeeded": 2,
+   "batches_failed": 0,
+   "retry_calls": 1,
+   "quota_exhausted": false
+  },
+  "T14_video_retry_cap": {
+   "expected": "parse_failure",
+   "got": "parse_failure",
+   "pass": true,
+   "batches_succeeded": 0,
+   "batches_failed": 3,
+   "retry_calls": 2,
+   "quota_exhausted": false
+  }
+ },
+ "r03_under_policies": {
+  "A_current": {
+   "status_reported": "none (indistinguishable from a full success)",
+   "text": "I know now.",
+   "error": null,
+   "had_transport_error": false,
+   "pipeline": "proceeds as a normal completed transcript (no partial flag; asl_low_confidence only from density/repetition)"
+  },
+  "B_C_explicit_status_no_retry": {
+   "status": "partial",
+   "quota_exhausted": false,
+   "batches_total": 2,
+   "batches_succeeded": 1,
+   "batches_failed": 1,
+   "retry_calls": 0,
+   "rejected_segments": 0,
+   "failures": [
+    {
+     "batch": 0,
+     "final": "parse_failure",
+     "attempts": [
+      {
+       "attempt": 0,
+       "outcome": "parse_failure",
+       "detail": {
+        "kind": "malformed_json",
+        "retryable": true,
+        "message": "Expecting property name enclosed in double quotes: line 8 column 5 (char 110)",
+        "pos": 110,
+        "raw_len": 445
+       },
+       "usage": {
+        "tokens": 10546,
+        "latency_s": 17.285
+       }
+      }
+     ]
+    }
+   ],
+   "segments": [
+    {
+     "start": 13.11,
+     "end": 14.6,
+     "text": "I know now.",
+     "batch": 1,
+     "recovered_by_repair": false
+    }
+   ],
+   "text": "I know now."
+  },
+  "D_repair_fallback": {
+   "status": "partial",
+   "quota_exhausted": false,
+   "batches_total": 2,
+   "batches_succeeded": 1,
+   "batches_failed": 1,
+   "retry_calls": 0,
+   "rejected_segments": 0,
+   "failures": [
+    {
+     "batch": 0,
+     "final": "recovered_by_repair",
+     "attempts": [
+      {
+       "attempt": 0,
+       "outcome": "parse_failure",
+       "detail": {
+        "kind": "malformed_json",
+        "retryable": true,
+        "message": "Expecting property name enclosed in double quotes: line 8 column 5 (char 110)",
+        "pos": 110,
+        "raw_len": 445
+       },
+       "usage": {
+        "tokens": 10546,
+        "latency_s": 17.285
+       }
+      }
+     ],
+     "repair": {
+      "applied": true,
+      "schema_valid_trees_at_distance_1": 1
+     }
+    }
+   ],
+   "segments": [
+    {
+     "start": 3.21,
+     "end": 4.04,
+     "text": "Support each other.",
+     "batch": 0,
+     "recovered_by_repair": true
+    },
+    {
+     "start": 5.44,
+     "end": 7.56,
+     "text": "The community helps people.",
+     "batch": 0,
+     "recovered_by_repair": true
+    },
+    {
+     "start": 8.65,
+     "end": 10.43,
+     "text": "You are welcome to join.",
+     "batch": 0,
+     "recovered_by_repair": true
+    },
+    {
+     "start": 10.73,
+     "end": 12.82,
+     "text": "I want to include you, you know.",
+     "batch": 0,
+     "recovered_by_repair": true
+    },
+    {
+     "start": 13.11,
+     "end": 14.6,
+     "text": "I know now.",
+     "batch": 1,
+     "recovered_by_repair": false
+    }
+   ],
+   "text": "Support each other. The community helps people. You are welcome to join. I want to include you, you know. I know now."
+  }
+ },
+ "cost_latency": {
+  "n_cases": 45,
+  "n_calls": 57,
+  "parse_failures": 1,
+  "parse_failure_rate": 0.0175,
+  "total_tokens_45": 457707,
+  "r03_calls": [
+   {
+    "batch": 0,
+    "tokens": 10546,
+    "prompt": 6663,
+    "output": 189,
+    "thoughts": 3694,
+    "latency_s": 17.285
+   },
+   {
+    "batch": 1,
+    "tokens": 3322,
+    "prompt": 1853,
+    "output": 62,
+    "thoughts": 1407,
+    "latency_s": 7.697
+   }
+  ],
+  "r03_case_latency_s": 27.658,
+  "estimate_r03_batch_retry": {
+   "extra_calls": 1,
+   "extra_tokens_if_like_original": 10546,
+   "extra_latency_s_if_like_original": 17.285,
+   "whole_video_retry_tokens": 13868
+  },
+  "estimate_45_case_run_overhead_tokens_pct": 2.3
+ },
+ "score_sensitivity_descriptive_only": {
+  "reported_corpus": {
+   "n": 45,
+   "chrF": 9.2733,
+   "BLEU4": 0.1694,
+   "WER": 98.2524,
+   "mean_len_ratio": 0.3763,
+   "loop_out": 0,
+   "empty": 1
+  },
+  "hypothetical_r03_text_if_recovered_batch_kept": "Support each other. The community helps people. You are welcome to join. I want to include you, you know. I know now.",
+  "r03_sentence_reported": {
+   "chrF": 3.3043,
+   "WER": 97.561,
+   "words": 3,
+   "loop_out": false
+  },
+  "r03_sentence_hypothetical": {
+   "chrF": 15.4298,
+   "WER": 95.122,
+   "words": 22,
+   "loop_out": false
+  },
+  "hypothetical_corpus": {
+   "n": 45,
+   "chrF": 9.6986,
+   "BLEU4": 0.1781,
+   "WER": 98.1553,
+   "mean_len_ratio": 0.3866,
+   "loop_out": 0,
+   "empty": 1
+  },
+  "note": "what production actually returned stays the scored output; this only sizes the policy's effect"
+ }
+}
