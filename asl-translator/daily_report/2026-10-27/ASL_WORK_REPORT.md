@@ -38,7 +38,8 @@ produced a translation-quality improvement. The production-model 45-case evaluat
   **18.22** for Uni-Sign B and **23.76** for Uni-Sign A (P0-A CPU). Its outputs are much shorter (length ratio 0.38)
   and it has no repetition loops. Automatic metrics only.
 
-**Still open:** the ASL reviewer follow-up and the P0-A R1/R2 descriptive gap.
+**Still open:** collecting human labels with the now-finalized reviewer package (external: an ASL-fluent reviewer
+must be recruited), and the P0-A R1/R2 descriptive gap.
 
 | Item | Status | Basis |
 |---|---|---|
@@ -47,7 +48,7 @@ produced a translation-quality improvement. The production-model 45-case evaluat
 | Task 2 input provenance | **COMPLETE / DIAGNOSTIC ONLY** | R10 resolved; 38/45 cases VERIFIED, 2 MISMATCH, 5 UNRESOLVED; all 90 model-input hashes reproduce |
 | Task 2 sampling quality | **COMPLETE / NO STABLE GAIN** | A mildly positive, B mildly negative; no paired test convincing (p ≥ 0.23) |
 | Task 3 fingerspelling specialist | **COMPLETE / DIAGNOSTIC ONLY** | OpenFS partially reproduced (10/18 windows); official outputs recorded; FS-Detection runs only with shims |
-| ASL reviewer package | **BLOCKED ON HUMAN REVIEW** | Built and checksummed, not yet sent; labels blank |
+| ASL reviewer package | **PACKAGE FINALIZED / HUMAN LABELS PENDING** | Technical package complete (commit `bac67ec0`): Step 1 blind, Step 2 explicitly reference-conditioned; not yet sent; no reviewer labels collected |
 | Production-model 45-case evaluation | **COMPLETE / DIAGNOSTIC ONLY** | gemini-2.5-flash chrF 9.27 vs Uni-Sign B 18.22 / A 23.76 (P0-A CPU); much shorter outputs; 0 loops; automatic metrics only |
 | P0-A R1/R2 descriptive gap | **OPEN / NOT YET RUN** | Frozen descriptive arms never reported (boss review) |
 
@@ -293,21 +294,74 @@ not evidence of better translation.
 - The historical `prod_output` column remains the **provisional Uni-Sign B stand-in**. It is **not** current
   production output.
 
-## 8. Earlier P0 Status
+## 8. ASL Reviewer Package
+
+Source: [asl-reviewer-followup/](../2026-10-23/asl-reviewer-followup/) (commit `bac67ec0`), with
+[README.md](../2026-10-23/asl-reviewer-followup/README.md) and
+[REVIEWER_PACKAGE_MANIFEST.md](../2026-10-23/asl-reviewer-followup/REVIEWER_PACKAGE_MANIFEST.md).
+
+**Status:**
+- **The technical package is complete; human labels are pending.** It has not been sent, and no reviewer labels have
+  been collected.
+- It was restructured after the boss's review: the earlier Step 2 located targets after showing the reference text.
+
+### Final reviewer structure
+
+**Step 1 — blind ASL review** (sent first):
+- The reviewer gets clips only.
+- No reference text, no target names or letters, no model outputs, and no target spans selected from the reference.
+- For each fingerspelling-check clip it asks:
+  - is fingerspelling present (yes / no / unsure);
+  - start and end;
+  - letters or word, with `?` for an unreadable letter;
+  - confidence;
+  - optional type, hand visibility, issues and notes.
+- For the context clips it asks for utterance boundaries and confidence.
+- Step 1 can support independent human labels.
+
+**Step 2 — REFERENCE-CONDITIONED FOLLOW-UP** (sent only after the Step 1 file is returned):
+- It shows targets that the team selected after consulting the English reference.
+- It is intended for annotation refinement only: is the target signed, corrected span and letters.
+- It **cannot** support any claim of blind or reference-free localization.
+- Step 2 answers are kept separate from Step 1.
+
+**Cases (8 clips):**
+- R02 old / official;
+- R05 old / official;
+- R35 old / official;
+- R26 context;
+- R29 context.
+
+**R35 caveat:**
+- The official-input timing remains UNRESOLVED. The R35-official clip is the annotation-defined realigned window, not
+  a verified official alignment.
+- The old and official windows do not overlap and are **not** treated as the same event.
+
+### Package validation
+
+- All 8 clips match their checksums, and both send folders pass checksum validation.
+- A browser export/import round-trip passed: fill, export, re-import into a fresh profile, values identical, dummy data
+  discarded.
+- The Step 1 leakage scan passed: no reference text, names, target sentences, model outputs, OpenFS strings or model
+  vocabulary.
+- Step 2 contains no model outputs.
+- No reviewer answers were pre-filled.
+
+## 9. Earlier P0 Status
 
 - **P0-A:**
   - The STOP remains valid; candidate headroom is insufficient against the frozen +3.0 gate.
   - Per the boss's correction, the "oracle" is described as a **sentence-level maximum / descriptive selection**, not
     an upper bound.
-  - The frozen R1/R2 descriptive arms remain an **open protocol/report gap** (§12.C).
+  - The frozen R1/R2 descriptive arms remain an **open protocol/report gap** (§13.D).
 - **P0-B and P0-C:**
   - The feasibility survey and the R26/R29 source diagnostics remain useful background.
   - The "nothing run" part of P0-B is superseded by the actual OpenFS execution in Task 3.
-  - Reviewer-dependent conclusions remain blocked:
+  - Reviewer-dependent conclusions remain blocked until labels return (the package itself is finalized, §8):
     - P0-B: whether fingerspelling is present, its spans and letters;
     - P0-C: corrected windows.
 
-## 9. Experimental Integrity
+## 10. Experimental Integrity
 
 These statements are supported by the committed result files:
 
@@ -335,7 +389,7 @@ These statements are supported by the committed result files:
   - the P0-16 holdout guard passed on R01–R45;
   - it is an end-to-end comparison, not a controlled ablation: production and Uni-Sign preprocessing differ.
 
-## 10. Deliverables and Commits
+## 11. Deliverables and Commits
 
 | Commit | Description | Key report |
 |---|---|---|
@@ -345,11 +399,12 @@ These statements are supported by the committed result files:
 | `40cf0481503034a9016194233170dfb301653d2c` | Task 2 Step 3: same-domain sampling-quality decode and scoring | [TASK2_SAMPLING_QUALITY_RESULT.md](TASK2_SAMPLING_QUALITY_RESULT.md) |
 | `ad5747235893c895ce52a1a43b0faff30f523d37` | Task 3: OpenFS reproduction / official runs, FS-Detection feasibility | [TASK3_FINGERSPELLING_RESULT.md](TASK3_FINGERSPELLING_RESULT.md) |
 | `6a73e1cf2a2584cd6278febfb0e061177a140dab` | docs: evaluate current production ASL model on 45 cases | [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md) |
+| `bac67ec0098b7bef15c2acb9167f48c31273ca12` | docs: finalize blind ASL reviewer package | [README.md](../2026-10-23/asl-reviewer-followup/README.md), [REVIEWER_PACKAGE_MANIFEST.md](../2026-10-23/asl-reviewer-followup/REVIEWER_PACKAGE_MANIFEST.md), `reviewer_instructions.md`, `reviewer_instructions_step2.md`, `blind_review.csv`, `reference_conditioned_followup.csv`, `review_blind.html`, `review_reference_conditioned.html` |
 
 Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experiments/p0-2026-10-27/results/),
 [`p0-input-provenance/`](p0-input-provenance/) and [`asl-eval/production_45/`](../../asl-eval/production_45/).
 
-## 11. Current Conclusions
+## 12. Current Conclusions
 
 1. **Anti-repetition** removes loops but is too blunt to recommend as default decoding.
 2. **Input provenance:** R10 is resolved. Most of the 45-case provenance is now anchored, and all model inputs
@@ -360,24 +415,31 @@ Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experi
 5. **Production:** current production Gemini substantially underperforms Uni-Sign on this 45-case automatic-metric
    evaluation. Its dominant failure mode is short/generic or missing content rather than repetition. This remains
    diagnostic only and requires human semantic review for correctness claims.
-6. **The remaining work is no longer another large Uni-Sign model experiment.**
+6. **Reviewer package:** the reviewer package is technically ready to send. The remaining reviewer dependency is
+   external: recruit an ASL-fluent reviewer and collect blind Step 1 labels before using any human-based accuracy or
+   semantic claims.
+7. **The remaining work is no longer another large Uni-Sign model experiment.**
 
-## 12. Open Items / Next Work
+## 13. Open Items / Next Work
 
 ### A. Production-model 45-case evaluation — COMPLETE
 
 - Done (commit `6a73e1cf`): see §7 and [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md).
 - Production output columns are in the augmented inspection-sheet copy.
-- Semantic correctness still needs human review (item B).
+- Semantic correctness still needs human review (item C).
 
-### B. ASL reviewer follow-up — HUMAN-DEPENDENT
+### B. ASL reviewer package cleanup — COMPLETE
 
-- Fix the reviewer Step 2 wording/interpretation, so that reference-conditioned boundaries are not treated as
-  reference-free evidence.
-- Send the Step 1 blind package.
-- Score OpenFS / fingerspelling only after blind labels return.
+- Done (commit `bac67ec0`): see §8. Step 1 is blind, and Step 2 is explicitly reference-conditioned and kept separate.
 
-### C. P0-A R1/R2 descriptive gap — OPEN SMALL FOLLOW-UP
+### C. Human labels — PENDING / external dependency (HUMAN-DEPENDENT)
+
+- Recruit an ASL-fluent reviewer.
+- Send the Step 1 blind package, and send Step 2 only after the Step 1 file is returned.
+- Score OpenFS, FS-Detection and the translation outputs only after the blind labels return. Step 2 results count as
+  reference-conditioned refinement only.
+
+### D. P0-A R1/R2 descriptive gap — OPEN SMALL FOLLOW-UP
 
 - The boss noted that these frozen descriptive arms were never reported.
 - No new decode is expected if the existing candidate/probe outputs are sufficient. Otherwise, mark it explicitly as
