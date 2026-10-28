@@ -1,109 +1,127 @@
-# ASL-fluent reviewer follow-up — P0-B and P0-C blockers (2026-10-24)
+# ASL reviewer package — fingerspelling (R02/R05/R35) and utterance context (R26/R29)
 
-**Status: package built locally and not yet sent. All reviewer fields are blank.** Claude does not infer or fill ASL answers.
-Protocol: [P0_PROTOCOL_FREEZE.md](../P0_PROTOCOL_FREEZE.md) §2–§3 (unchanged). Background:
-[P0-B FEASIBILITY.md](../p0b-fingerspelling-feasibility/FEASIBILITY.md), [P0-C source_check.md](../p0c-input-correction/source_check.md).
+**INTERNAL. Do not send this file.** It names targets, windows and model results that the reviewer must not see.
+Read [REVIEWER_PACKAGE_MANIFEST.md](REVIEWER_PACKAGE_MANIFEST.md) for exactly what to send.
 
-This team-facing file is **not** sent to the reviewer. It names hypotheses and windows that the reviewer must not see.
+**Status (2026-10-27):** finalized for sending; **not yet sent**. All reviewer fields are blank. No ASL answer was
+inferred or filled by us.
+- The 2026-10-24 version was restructured after the boss's review ([PROGRESS_REVIEW.md](../../2026-10-25/PROGRESS_REVIEW.md)
+  §3): its Step 2 located targets **after showing the reference text**.
+- The clips are unchanged: the same 8 files with the same sha256.
 
-## Files
+## 1. Purpose
 
-| File | Tracked | Sent to reviewer | Purpose |
-|---|---|---|---|
-| `README.md` | yes | **no** | This file |
-| `reviewer_instructions.md` | yes | yes (step 1) | The exact questions |
-| `reviewer_labels.csv` | yes (blank template) | yes (step 1) | The answer sheet: 8 rows, provenance pre-filled, reviewer columns blank |
-| `reviewer_package_manifest.csv` | yes | yes (step 1) | Per clip: source video, domain, source span, frames, source and clip sha256, P0-12 model-input pkl and sha256 |
-| `build_reviewer_package.py` | yes | no | Rebuilds everything below. Refuses to overwrite a label sheet that has answers. `derive` mode for R26 after the review |
-| `package_local/` | **no** (`.git/info/exclude`) | yes | `step1_blind/` (+ `.zip`): 8 clips, instructions, blank labels, manifest, `SHA256SUMS`. `step2_unblind/` (+ `.zip`): `UNBLIND_REFERENCES.md` |
+Independent human ASL annotation of the clips behind the open fingerspelling question (R02, R05, R35) and the
+utterance-timing question (R26, R29).
 
-Rebuild: `python -I build_reviewer_package.py build` (local CPU; extracts 5 test raw videos from
-`p018-work/downloads/test_raw_videos.zip` to a temporary folder and deletes them afterwards). It opens only test files.
-The holdout guard runs on all 5 clip IDs, and any path containing val/H18/H19 is refused.
+The returned labels are the evidence that the saved Task 3 outputs (OpenFS letter strings, FS-Detection spans) and the
+translation outputs can later be scored against. Those model outputs stay hidden from the reviewer.
 
-## Reviewer rows (8 clips)
+## 2. Blind vs reference-conditioned
 
-| row_id | Clip ID | Domain | Source span (s) | Clip |
+| Stage | What the reviewer sees | What it can support |
+|---|---|---|
+| **Step 1: blind** | Clips only. Each row has a clip file, its duration and a row type ("fingerspelling check" / "utterance boundaries") | **Independent human labels:** fingerspelling present, span, letters read, confidence, visibility; utterance boundaries |
+| **Step 2: REFERENCE-CONDITIONED FOLLOW-UP** | A target the team selected **after consulting the English reference** (R02/R05/R35: the person name and reference sentence; R26/R29: the target sentence plus the sentences said before and after it) | **Annotation refinement only:** is the target actually signed, corrected span and letters. **Cannot** support any claim of blind detection, reference-free localization, or that an automatic system could find the span |
+
+- Step 1 answers are never overwritten by Step 2.
+- The two stages are separate files, separate pages and separate packages. Step 2 is sent only after the Step 1 file is
+  returned.
+
+## 3. Cases (8 clips, unchanged since 2026-10-24)
+
+| row_id | Case / clip | Source span (s) | Window: what it is (internal) | Provenance (Task 2) |
 |---|---|---|---|---|
-| R02-old | `G3OMdQo1zjY_0-10-rgb_front` | B_ours_5p39, old preprocessing (original timing) | 3.31–7.50 | 100 fr @24 |
-| R02-official | same | A_official, official preprocessing (realigned timing) | 1.43–11.69 | 246 fr @24 |
-| R05-old | `G3VM7etNABI_0-10-rgb_front` | B_ours_5p39 | 1.22–6.47 | 125 fr @24 |
-| R05-official | same | A_official | 0.76–8.33 | 181 fr @24 |
-| R35-old | `G2kVb4gINSI_1-10-rgb_front` | B_ours_5p39 | 6.50–12.48 | 144 fr @24 |
-| R35-official | same | A_official | 13.11–16.90 (no overlap with old) | 91 fr @24 |
-| R26-context | `G3EfBFwsOpE_3-10-rgb_front` | full-frame source context | 11.75–16.75 | 120 fr @24 |
-| R29-context | `92V3oH63zbQ_5-1-rgb_front` | full-frame source context | 5.00–25.80 (one continuous clip covering ~5–10 and ~11.6–25.8 s, plus the target window between them) | 624 fr @30 |
+| R02-old | R02 `G3OMdQo1zjY_0-10-rgb_front` | 3.31–7.50 (100 fr @24) | original-timing window = the B_ours_5p39 model-input window, full frame | B VERIFIED 3.333–7.500 (same 100 frames) |
+| R02-official | same | 1.43–11.69 (246 fr) | realigned window = A_official window, **shown full frame** (not the official crop) | A VERIFIED 1.458–11.708 (246 frames) |
+| R05-old | R05 `G3VM7etNABI_0-10-rgb_front` | 1.22–6.47 (125 fr) | B window, full frame | B VERIFIED 1.250–6.458 (125) |
+| R05-official | same | 0.76–8.33 (181 fr) | A window, full frame | A VERIFIED 0.792–8.375 (182; the cut is 1 frame shorter) |
+| R35-old | R35 `G2kVb4gINSI_1-10-rgb_front` | 6.50–12.48 (144 fr) | B window, full frame | B VERIFIED 6.500–12.500 (144) |
+| R35-official | same | 13.11–16.90 (91 fr) | **annotation-defined realigned window**, full-frame cut of the raw video. Not the official crop clip | **A UNRESOLVED**: the official crop clip (93 frames) could not be uniquely placed in the source (Amendment 2 box margin 0.034 < 0.05) |
+| R26-context | `G3EfBFwsOpE_3-10-rgb_front` | 11.75–16.75 (120 fr) | full-frame source context | — |
+| R29-context | `92V3oH63zbQ_5-1-rgb_front` | 5.00–25.80 (624 fr @30) | one continuous clip, so a gap cannot hint at the target window | — |
 
-All clips are full frame at native 1280×720 and native fps, H.264 CRF 18, no audio and no overlays. The start is frame-accurate
-to ±1 frame. A_official clips are shown full frame because the official crop is not available as video. The reviewer
-answers in **clip seconds**. Source time = `source_start_s` + clip time.
+All clips are cut from How2Sign **test** raw videos: native 1280×720 and fps, H.264 CRF 18, no audio, no overlays. The
+holdout guard passed; there is no H18/H19 material. Source time = `source_start_s` (internal manifest) + clip time.
 
-**R29 design choice.** The two requested spans (~5–10 s, ~11.6–25.8 s) are delivered as **one continuous clip** that
-also contains 10.03–11.86. Two separate clips with a gap would mark the target window and hint at our hypothesis.
+**R35 caveat:**
+- The old (6.50–12.48) and official (13.11–16.90) windows **do not overlap**. They are separate events and must never
+  be compared as the same signing.
+- The official clip's timing is the realigned **annotation**. It is not a verified original-source alignment of the
+  official input.
+- If labels are later compared with outputs from the official crop clip (Task 3 ran OpenFS on both), that comparison
+  is descriptive only.
 
-## Blinding
+## 4. Files
 
-- **Step 1 (blind):** clips only. No English text, no reference names, no target sentence, no window hypotheses.
-- **Step 2 (unblind, sent after step-1 answers are returned):** P0-B reference sentences (names), and the P0-C target
-  sentence with the English sentences said immediately before and after it, as **text only**. No timestamps.
-- **Never shown to the reviewer:**
-  - the R26 official window 15.15–16.62 s and our framing finding;
-  - R29's realigned neighbour boundaries (`_4` 11.70–16.51, `_6` 16.59–25.81) and the "realigned == original" observation;
-  - any model output.
-- **P0-C note.** Locating a sentence needs its English text, so the P0-C target is given only in step 2. Step 1 records
-  blind utterance boundaries first, so the target placement can be checked against a reference-free segmentation.
-- **R26 containment** in the official window is **not asked**, because asking would reveal the window. It is derived after the
-  review: `python -I build_reviewer_package.py derive reviewer_labels.csv` prints the target source span, `fully_contained`
-  and the overlap with 15.15–16.62 s.
+| File | Tracked | Send | What it is |
+|---|---|---|---|
+| `reviewer_instructions.md` | yes | **Step 1** | Short blind instructions. No targets, no model, no Step 2 content |
+| `blind_review.csv` | yes (blank) | **Step 1** | Step 1 answer sheet: clip file, duration, row type; reviewer columns blank |
+| `review_blind.html` | yes | **Step 1** | Step 1 form (loads clips locally, autosaves, exports `blind_review.csv`) |
+| `package_local/clips/*.mp4` | no (excluded) | **Step 1** | The 8 clips |
+| `package_local/send_step1_blind/` (+ `.zip`) | no | **Step 1** | Assembled Step 1: the 3 files above + `clips/` + `SHA256SUMS` |
+| `reviewer_instructions_step2.md` | yes | **Step 2 only, after Step 1 returns** | Reference-conditioned instructions with the mandatory warning |
+| `reference_conditioned_followup.csv` | yes (blank) | Step 2 only | Step 2 sheet: target + reference text pre-filled; reviewer columns blank |
+| `review_reference_conditioned.html` | yes | Step 2 only | Step 2 form with a REFERENCE-CONDITIONED FOLLOW-UP banner |
+| `package_local/send_step2_reference_conditioned/` (+ `.zip`) | no | Step 2 only | Assembled Step 2 + `SHA256SUMS` (no clips; the reviewer reuses Step 1's) |
+| `README.md` | yes | **never** | This file |
+| `REVIEWER_PACKAGE_MANIFEST.md` | yes | never | Send / internal list |
+| `reviewer_package_manifest.csv` | yes | **never** (sent in the 2026-10-24 version; now internal) | Source spans, domains, source and clip sha256, P0-12 model-input paths |
+| `reviewer_labels.csv` | yes | **never** (superseded) | 2026-10-24 combined sheet. It mixed Step 2 columns into Step 1. Kept blank for the record |
+| `build_reviewer_package.py` | yes | never | `build` (cut clips + manifest), `package` (assemble both stages from sha-verified clips; byte-identical rebuilds), `derive` |
+| `package_local/_superseded_2026-10-24/` | no | **never** | The previous local package, moved aside, not deleted |
 
-## Exact reviewer questions
+## 5. What the evidence can and cannot support
 
-P0-B rows (each clip separately, blind):
-1. `fs_present`: Is there fingerspelling in this clip? `yes` / `no` / `unsure`
-2. `fs_start_s`: exact start time (clip seconds)
-3. `fs_end_s`: exact end time (clip seconds)
-4. `letters_seen_blind`: blind letter reading, `?` for unreadable letters, no guess-completion
-5. `fs_type`: `fingerspelling` / `name sign` / `lexicalized fingerspelling` / `unsure`
-6. `hand_visibility`: `good` / `partial` / `poor`
+**Step 1 can support** independent human labels per clip:
+- `fs_present`;
+- span (`fs_start_s` / `fs_end_s`);
+- letters read (`fs_letters_or_word`, `?` = unreadable);
+- `fs_confidence`, `fs_type`, `hand_visibility`, `issue_flags`;
+- R26/R29 utterance boundaries.
 
-Plus `notes_blind`. Several spans go on extra rows (`span_no`). Unblinded: `reference_name_after_unblind`,
-`matches_reference_name` (`yes` / `partly` / `no` / `cant_tell`), `notes_after_unblind`.
+These can serve as ground truth for scoring recognizers and detectors.
 
-P0-C rows:
-- Blind: `utterance_boundaries_blind_s` (sentence/utterance boundary times), optional gloss in `notes_blind`.
-- Unblinded:
-  - `target_found` (`yes` / `partly` / `no` / `unsure`);
-  - `target_start_s` and `target_end_s` (clip seconds);
-  - `target_confidence` (`high` / `medium` / `low`).
+**Step 2 can support** annotation refinement only:
+- is the reference-selected target actually signed;
+- the corrected span and letters.
 
-Reviewer: `reviewer_id`, `asl_background`, `step1_completed_at`, `step2_completed_at`.
+**Step 2 cannot support:**
+- a claim that the span is recoverable without the reference;
+- that a detector or any automatic method found it;
+- that fingerspelling was detected blind.
 
-## Decisions that become possible after the review
+R26/R29 target spans and the `derive` output are reference-conditioned diagnostics. Any input correction defined from
+them must be labelled "human, reference-conditioned".
 
-**P0-B (protocol §2 exits are applied in order):**
-- `fs_present = no` in both windows, or only a name sign → the case **exits** ("not fingerspelled").
-- Fingerspelling only in the window the model did *not* use → that domain exits ("name not in matched window"). R35
-  matters most, because its windows do not overlap.
-- `hand_visibility = poor` → exit ("frames insufficient").
-- Otherwise the confirmed spans become recognizer input:
-  - A tiny install check on the repos' own samples comes first.
-  - Then OpenFS and HandReader-KP run on MediaPipe re-extractions of exactly those spans.
-  - Character error rate is scored against `letters_seen_blind`, and separately against the reference name.
-- If no case survives, **P0-B stops** with no recognizer run.
-- The answers are copied verbatim into `../p0b-fingerspelling-feasibility/interval_labels.csv` by script. That file stays
-  blank until then.
+## 6. Scoring after labels return (internal; not run yet)
 
-**P0-C:**
-- **R26.** Compare the target span with the official window (`derive`).
-  - Fully inside 15.15–16.62: the official input already covers it and framing is ruled out, so **R26 stops** with no correction.
-  - Outside or partly outside: a single timing correction can be defined from the reviewer's span (not from official
-    boundaries), written and dated in `case_inputs.csv`, then decoded once (protocol §1.3 T settings).
-  - `target_found = no/unsure`: R26 stops.
-- **R29.**
-  - If the reviewer places the target outside 10.03–11.86: one corrected window = the reviewer's span, written and dated
-    in `case_inputs.csv` before decode.
-  - If it is inside, or `unsure`: R29 stops with no correction.
-  - The blind boundaries show whether the span is recoverable without reference text, which is the "could this be
-    automated" question in §3.
-- **Either case.** A corrected decode still needs the P0-18 `pose_extract.py` CPU extraction of the corrected window.
-  Results are reported with the §1.6 outcome labels plus recovered / omitted key content.
+Time base: reviewer clip seconds. Add `source_start_s` from `reviewer_package_manifest.csv` for source seconds.
+
+- **OpenFS** (`experiments/p0-2026-10-27/results/specialist_openfs_{official,reproduction}.json`):
+  - The official R02/R05/R35 runs used **these exact reviewer clips** (same sha256), so the time base is the same.
+  - The old-window runs used the How2Sign v2 B clips: same window, start within 0.03 s.
+  - Score the character error rate of the window strings overlapping a Step 1 span against `fs_letters_or_word`.
+  - Report separately against Step 2 `corrected_letters`, labelled reference-conditioned.
+- **FS-Detection** (`experiments/p0-2026-10-27/results/fs_detection_feasibility.json`, R02/R05 official):
+  - Its `clip_start_s` / `clip_end_s` are seconds in the same reviewer clips (resampled to 29.97 fps).
+  - Score temporal IoU and hit@0.5 against Step 1 spans. Step 1 is the only valid ground truth for a detector.
+- **Translation outputs:**
+  - Uni-Sign (P0-A candidates, inspection sheet) and production (`inspection_sheet_with_production.csv`).
+  - Whether a Step 1-read name or letters appear in the output is descriptive only. Matching against the reference
+    name uses Step 2 and is reference-conditioned.
+- The labels go into `../p0b-fingerspelling-feasibility/interval_labels.csv` by script:
+  - Step 1 → blind fields;
+  - Step 2 → `*_after_unblind` fields.
+- With one reviewer, report agreement as not available.
+- `fs_present` stays unknown for any clip without a returned label.
+
+## 7. Rebuild
+
+```bash
+python -I build_reviewer_package.py package   # from package_local/clips (sha256-verified against the manifest)
+python -I build_reviewer_package.py build     # only to re-cut clips from p018-work/downloads/test_raw_videos.zip
+```
+
+Both refuse to overwrite a sheet that already holds reviewer answers.

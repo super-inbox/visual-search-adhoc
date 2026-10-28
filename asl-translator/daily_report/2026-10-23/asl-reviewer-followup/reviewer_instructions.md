@@ -1,77 +1,58 @@
-# ASL reviewer instructions — 8 short clips, 5 cases
+# ASL review — Step 1 (blind)
 
-Thank you for helping. Our sign-language-to-English model makes mistakes on these clips. Before we change anything, we
-need an ASL-fluent person to tell us **what is actually in the video and when**. Please answer only from what you see.
-There are no right answers we are hoping for.
+Thank you for helping. We need an ASL-fluent person to annotate **what is actually signed in 8 short video clips**,
+especially any fingerspelling. Your annotations are independent human labels. **There are no expected answers.**
 
-The work has **two steps**. Step 2 is a separate file that you open **only after Step 1 is finished and saved**.
+## What you receive now
 
-## What you receive
+- `clips/`: 8 short clips, no sound, full camera frame.
+- `review_blind.html`: the form (Chrome, Edge or Firefox; no internet needed). Click **Load clips…** and select the 8
+  `.mp4` files.
+- `blind_review.csv`: the same form as a spreadsheet, if you prefer not to use the page.
+- `SHA256SUMS`: file checksums, for our records.
 
-`step1_blind/`:
-- `clips/` — 8 short video clips (no sound, full camera frame, original resolution).
-- `reviewer_labels.csv` — the answer sheet. One row per clip. The first columns (up to `clip_sha256`) are already
-  filled in for our records. Please leave them unchanged.
-- `reviewer_package_manifest.csv`, `SHA256SUMS` — file checksums, for our records.
+**A second step will follow later.** Please do not ask for it, and do not look for any other material, until Step 1 is
+finished and returned.
 
-`step2_unblind/` (sent separately, or open only when Step 1 is done): `UNBLIND_REFERENCES.md`.
+## How to annotate
 
-**Times:** give all times in **seconds from the start of the clip file you are watching**, to 0.1 s (e.g. `2.4`). A
-player that shows tenths of a second helps (VLC, mpv or QuickTime with frame stepping). If a span starts before the clip or
-runs past its end, write `0` or the clip length and say so in the notes.
+- Watch each clip at normal speed first, then slow down as needed (0.5× / 0.25× buttons on the page).
+- Annotate **only what is visible and signed**. Do not infer letters or words from context or from what the person
+  might be saying.
+- Mark **unsure** whenever you are not certain. An honest "unsure" is more useful than a guess.
+- Times are **seconds from the start of the clip**, to about 0.1 s. Approximate to the nearest visible signing boundary
+  is fine. The page's "start = now" / "end = now" buttons fill the current playback time.
+- Answer each clip on its own. Two clips from the same case may show different, partly overlapping or unrelated
+  moments.
 
-**Several spans in one clip:** copy the row, keep the first 12 columns, and set `span_no` to 2, 3 and so on.
+### Rows marked "fingerspelling check" (R02-*, R05-*, R35-*)
 
-## Step 1 — blind (do not open Step 2 yet)
+1. **Is fingerspelling present?** `yes` / `no` / `unsure`
+2. If yes: **start** and **end** time.
+3. **Letters or word fingerspelled.** Free text. Write `?` for each letter you cannot read (e.g. `M?KE`), or `unsure`.
+   Do not complete a partial word by guessing.
+4. **Confidence** in your answer: `high` / `medium` / `low`
+5. Optional:
+   - **type**: fingerspelling / name sign / lexicalized fingerspelling / unsure;
+   - **hand visibility**: good / partial / poor;
+   - **issues**: occlusion, hand out of frame, fast signing, unclear letter, other;
+   - **notes**.
 
-### Rows R02-old, R02-official, R05-old, R05-official, R35-old, R35-official
+If there is more than one fingerspelled span in a clip, use **+ span** on the page (or copy the row in the CSV and set
+`span_no` to 2, 3, …).
 
-Each case has two clips, called `old` and `official`, cut from the same source video. They may overlap, partly overlap or
-not overlap at all. Please answer each clip on its own.
+### Rows marked "utterance boundaries" (R26-context, R29-context)
 
-| Column | Question | Allowed answers |
-|---|---|---|
-| `fs_present` | 1. Is there fingerspelling in this clip? | `yes` / `no` / `unsure` |
-| `fs_start_s` | 2. Exact start time of the fingerspelling | seconds from clip start |
-| `fs_end_s` | 3. Exact end time of the fingerspelling | seconds from clip start |
-| `letters_seen_blind` | 4. Blind letter reading: the letters you read, in order. Use `?` for each letter you cannot read. Please do not guess letters to complete a word. | e.g. `M?KE` |
-| `fs_type` | 5. Type of what you see in that span | `fingerspelling` / `name sign` / `lexicalized fingerspelling` / `unsure` |
-| `hand_visibility` | 6. Hand visibility during that span | `good` / `partial` (blurred, cut off or occluded) / `poor` |
-| `notes_blind` | anything else (e.g. the hand leaves the frame, a name sign follows the spelling) | free text |
+These are longer clips of continuous signing.
 
-If `fs_present` is `no`, leave questions 2–6 empty, or use them for a `name sign` span if you see one.
+- **Boundaries:** list the times where one sentence or utterance ends and the next begins, e.g. `1.2; 3.8; 7.5`.
+- **Confidence:** `high` / `medium` / `low`.
+- **Notes (optional):** a rough gloss or summary of each part, in your own words.
 
-### Rows R26-context, R29-context
+## When you finish Step 1
 
-These are longer clips of continuous signing. Without any English text yet:
-
-| Column | Question | Answer |
-|---|---|---|
-| `utterance_boundaries_blind_s` | Where does one sentence or utterance end and the next begin? List the boundary times you see. | e.g. `1.2; 3.8; 7.5` |
-| `notes_blind` | Optional: a rough gloss or summary of each part, in your own words | free text |
-
-When Step 1 is complete for all 8 rows, fill `step1_completed_at` (date and time), and save the sheet. If possible,
-send a copy to us before you open Step 2.
-
-## Step 2 — unblinded
-
-Open `step2_unblind/UNBLIND_REFERENCES.md`. **Do not change any Step 1 answer.** Put any second thoughts in
-`notes_after_unblind`.
-
-- **R02 / R05 / R35 rows:** `reference_name_after_unblind` = the person's name in the English reference sentence;
-  `matches_reference_name` = does what you saw in Step 1 match that name? `yes` / `partly` / `no` / `cant_tell`.
-- **R26 / R29 rows:** the file shows one **target** English sentence (and, for orientation, the sentences said just
-  before and after it).
-  - `target_found`: is the target sentence signed in this clip? `yes` / `partly` / `no` / `unsure`
-  - `target_start_s`, `target_end_s`: where its signing starts and ends (seconds from clip start)
-  - `target_confidence`: `high` / `medium` / `low`
-
-Then fill `step2_completed_at`.
-
-## About you (once, on any row)
-
-`reviewer_id` (initials are fine), `asl_background` (e.g. Deaf native signer, CODA, certified interpreter, years of
-use).
+Fill in your reviewer ID (initials are fine) and ASL background, for example "Deaf native signer", "CODA" or "certified
+interpreter, 10 yrs". Then click **Export** (or save the CSV) and send the file back to us. Partial files are fine.
 
 ## Use of the videos
 
