@@ -1,0 +1,137 @@
+{
+ "review_id": "R11",
+ "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/fZM3IcM2Xs4_14_15_16-10-rgb_front.mp4",
+ "input_video_sha256": "f9828765e89dce9b95dd964bf467e77fb99c09f212c6e8abae69087b6c0dd192",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:15:31+00:00",
+ "status": "ok",
+ "output_text_raw": "Let's discuss. Are you ready? What should we do? How do we interact? What is it we need to apply together? Wow, my celebration! I want to share. Interpreter.",
+ "segments": [
+  {
+   "start": 2.15,
+   "end": 6.1,
+   "text": "Let's discuss. Are you ready? What should we do?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 6.4,
+   "end": 10.35,
+   "text": "How do we interact? What is it we need to apply together?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 12.42,
+   "end": 13.08,
+   "text": "Wow, my celebration!",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 14.31,
+   "end": 15.06,
+   "text": "I want to share.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 17.06,
+   "end": 18.19,
+   "text": "Interpreter.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 37,
+ "frame_budget_used": 37,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 74,
+ "n_runs": 15,
+ "n_active_runs": 7,
+ "latency_s": 38.196,
+ "timestamps_sent_s": [
+  2.152,
+  2.455,
+  2.759,
+  3.366,
+  3.67,
+  3.973,
+  4.277,
+  4.58,
+  4.884,
+  5.188,
+  5.795,
+  6.098,
+  6.402,
+  6.705,
+  7.009,
+  7.616,
+  7.92,
+  8.223,
+  8.527,
+  8.83,
+  9.134,
+  9.438,
+  10.045,
+  10.348,
+  12.417,
+  12.75,
+  13.083,
+  14.312,
+  14.688,
+  15.062,
+  16.562,
+  16.688,
+  17.062,
+  17.188,
+  17.688,
+  18.062,
+  18.188
+ ],
+ "n_timestamps": 37,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 16.469,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "22jhaqy-PMjVjMcP6ta0EA",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6655,
+    "candidates_token_count": 123,
+    "thoughts_token_count": 3077,
+    "total_token_count": 9855
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 2.15,\n      \"end\": 6.10,\n      \"text\": \"Let's discuss. Are you ready? What should we do?\"\n    },\n    {\n      \"start\": 6.40,\n      \"end\": 10.35,\n      \"text\": \"How do we interact? What is it we need to apply together?\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 27,
+   "n_images": 13,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 15.454,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "62jhapbBDfLSjMcP8_Ps6A8",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 3729,
+    "candidates_token_count": 142,
+    "thoughts_token_count": 3119,
+    "total_token_count": 6990
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 12.42,\n   \"end\": 13.08,\n   \"text\": \"Wow, my celebration!\"\n  },\n  {\n   \"start\": 14.31,\n   \"end\": 15.06,\n   \"text\": \"I want to share.\"\n  },\n  {\n   \"start\": 17.06,\n   \"end\": 18.19,\n   \"text\": \"Interpreter.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

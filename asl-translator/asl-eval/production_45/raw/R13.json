@@ -1,0 +1,86 @@
+{
+ "review_id": "R13",
+ "clip_id": "fZgbCwSG3Hc_4-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/fZgbCwSG3Hc_4-8-rgb_front.mp4",
+ "input_video_sha256": "3f456b5aa1299aa82d5c951eb3995ad1e5801a3a24e21b7bf0ad28dafbe65e30",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:16:53+00:00",
+ "status": "ok",
+ "output_text_raw": "Help ASL. We need two.",
+ "segments": [
+  {
+   "start": 0.92,
+   "end": 2.19,
+   "text": "Help ASL.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.55,
+   "end": 3.7,
+   "text": "We need two.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 6.4,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 15,
+ "n_runs": 7,
+ "n_active_runs": 3,
+ "latency_s": 19.206,
+ "timestamps_sent_s": [
+  0.806,
+  0.917,
+  1.028,
+  1.139,
+  1.25,
+  1.361,
+  1.472,
+  1.583,
+  1.694,
+  2.062,
+  2.188,
+  2.548,
+  2.644,
+  2.74,
+  2.837,
+  2.933,
+  3.029,
+  3.125,
+  3.221,
+  3.317,
+  3.413,
+  3.51,
+  3.606,
+  3.702
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 17.448,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "J2nhaoPQOcnSjMcP7-eCwAg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 102,
+    "thoughts_token_count": 3315,
+    "total_token_count": 10070
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.92,\n      \"end\": 2.19,\n      \"text\": \"Help ASL.\"\n    },\n    {\n      \"start\": 2.55,\n      \"end\": 3.70,\n      \"text\": \"We need two.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

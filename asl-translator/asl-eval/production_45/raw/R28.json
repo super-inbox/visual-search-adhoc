@@ -1,0 +1,80 @@
+{
+ "review_id": "R28",
+ "clip_id": "G42xKICVj9U_11-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G42xKICVj9U_11-10-rgb_front.mp4",
+ "input_video_sha256": "ba30be7171d673b7408cc9bf98e2325cca09a7e65424cb75f6c49dc7c4a5f443",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:20:40+00:00",
+ "status": "ok",
+ "output_text_raw": "People.",
+ "segments": [
+  {
+   "start": 0.29,
+   "end": 2.21,
+   "text": "People.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 8.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 12,
+ "n_runs": 2,
+ "n_active_runs": 1,
+ "latency_s": 5.811,
+ "timestamps_sent_s": [
+  0.292,
+  0.375,
+  0.458,
+  0.542,
+  0.625,
+  0.708,
+  0.792,
+  0.875,
+  0.958,
+  1.042,
+  1.125,
+  1.208,
+  1.292,
+  1.375,
+  1.458,
+  1.542,
+  1.625,
+  1.708,
+  1.792,
+  1.875,
+  1.958,
+  2.042,
+  2.125,
+  2.208
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 4.286,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "CmrhapjKO8i11MkP-8_AsQs",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 58,
+    "thoughts_token_count": 605,
+    "total_token_count": 7316
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.29,\n   \"end\": 2.21,\n   \"text\": \"People.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

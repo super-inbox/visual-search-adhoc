@@ -1,0 +1,171 @@
+{
+ "review_id": "R23",
+ "clip_id": "FzmL8SL6Bow_1-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/FzmL8SL6Bow_1-8-rgb_front.mp4",
+ "input_video_sha256": "7f42f568273086e6812ae48b03ed8a533c4d49be610aaecf291a71f58c03817f",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:19:31+00:00",
+ "status": "ok",
+ "output_text_raw": "Wow, look at this, I have. What can I offer? What to do? What to do? Sit? What?",
+ "segments": [
+  {
+   "start": 0.4,
+   "end": 3.38,
+   "text": "Wow, look at this, I have.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.86,
+   "end": 7.69,
+   "text": "What can I offer?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 12.41,
+   "end": 13.28,
+   "text": "What to do?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 15.22,
+   "end": 18.69,
+   "text": "What to do?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 19.64,
+   "end": 20.9,
+   "text": "Sit? What?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 51,
+ "frame_budget_used": 51,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 102,
+ "n_runs": 10,
+ "n_active_runs": 5,
+ "latency_s": 30.956,
+ "timestamps_sent_s": [
+  0.399,
+  0.696,
+  0.994,
+  1.292,
+  1.589,
+  1.887,
+  2.185,
+  2.482,
+  2.78,
+  3.077,
+  3.375,
+  3.673,
+  3.97,
+  4.268,
+  4.565,
+  4.863,
+  5.161,
+  5.458,
+  5.756,
+  6.054,
+  6.351,
+  7.562,
+  7.688,
+  9.0,
+  9.5,
+  12.406,
+  12.844,
+  13.281,
+  14.908,
+  15.223,
+  15.538,
+  15.853,
+  16.168,
+  16.484,
+  16.799,
+  17.114,
+  17.429,
+  17.745,
+  18.06,
+  18.375,
+  18.69,
+  19.005,
+  19.321,
+  19.636,
+  19.951,
+  20.266,
+  20.582,
+  20.897,
+  21.212,
+  21.527,
+  21.842
+ ],
+ "n_timestamps": 51,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 12.35,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "yGnharLmE4KZ_uMP27Pm2QQ",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 104,
+    "thoughts_token_count": 2371,
+    "total_token_count": 9128
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.40,\n   \"end\": 3.38,\n   \"text\": \"Wow, look at this, I have.\"\n  },\n  {\n   \"start\": 4.86,\n   \"end\": 7.69,\n   \"text\": \"What can I offer?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 11.209,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "1GnhasrEI5PR_PUP6JHp2Q0",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6676,
+    "candidates_token_count": 142,
+    "thoughts_token_count": 2226,
+    "total_token_count": 9044
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 12.41,\n   \"end\": 13.28,\n   \"text\": \"What to do?\"\n  },\n  {\n   \"start\": 15.22,\n   \"end\": 18.69,\n   \"text\": \"What to do?\"\n  },\n  {\n   \"start\": 19.64,\n   \"end\": 20.90,\n   \"text\": \"Sit? What?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 7,
+   "n_images": 3,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 2.802,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "32nhaoDnMdTv-sAPv_HD2Qg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 1049,
+    "candidates_token_count": 47,
+    "thoughts_token_count": 375,
+    "total_token_count": 1471
+   },
+   "raw_text": "{\n  \"segments\": [],\n  \"confidence\": \"high\",\n  \"notes\": \"No discernible ASL signs were observed in the provided frames. The signer's hands remained in a resting position throughout.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

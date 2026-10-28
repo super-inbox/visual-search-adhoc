@@ -1,0 +1,86 @@
+{
+ "review_id": "R31",
+ "clip_id": "g38AmwPAYvg_4-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g38AmwPAYvg_4-3-rgb_front.mp4",
+ "input_video_sha256": "2bda60c48eab25c59a6186b49a2ccc9622fce6ae7ba56f7bbfff85bc458c8ac5",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:21:00+00:00",
+ "status": "ok",
+ "output_text_raw": "Alright. First, focus on joining and supporting.",
+ "segments": [
+  {
+   "start": 1.06,
+   "end": 1.31,
+   "text": "Alright.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 1.44,
+   "end": 3.94,
+   "text": "First, focus on joining and supporting.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 5.053,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 19,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 12.008,
+ "timestamps_sent_s": [
+  1.062,
+  1.188,
+  1.312,
+  1.438,
+  1.562,
+  1.688,
+  1.812,
+  1.938,
+  2.062,
+  2.188,
+  2.312,
+  2.438,
+  2.562,
+  2.688,
+  2.812,
+  2.938,
+  3.062,
+  3.188,
+  3.312,
+  3.438,
+  3.562,
+  3.688,
+  3.812,
+  3.938
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 10.384,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "Hmrhat3EHO_SjMcP7dCR0Ag",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 100,
+    "thoughts_token_count": 1983,
+    "total_token_count": 8736
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.06,\n   \"end\": 1.31,\n   \"text\": \"Alright.\"\n  },\n  {\n   \"start\": 1.44,\n   \"end\": 3.94,\n   \"text\": \"First, focus on joining and supporting.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

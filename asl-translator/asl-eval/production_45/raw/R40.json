@@ -1,0 +1,86 @@
+{
+ "review_id": "R40",
+ "clip_id": "G0PNAsonBGk_11-2-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G0PNAsonBGk_11-2-rgb_front.mp4",
+ "input_video_sha256": "b050effff9ffb0c1e9661ead0cf1ba02dfaacdf717652d32dba0bc1445e36967",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:23:07+00:00",
+ "status": "ok",
+ "output_text_raw": "First, connect. Understand your friend.",
+ "segments": [
+  {
+   "start": 1.38,
+   "end": 3.9,
+   "text": "First, connect.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.05,
+   "end": 5.68,
+   "text": "Understand your friend.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 4.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 24,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 13.72,
+ "timestamps_sent_s": [
+  1.375,
+  1.625,
+  2.574,
+  2.722,
+  2.869,
+  3.017,
+  3.165,
+  3.312,
+  3.46,
+  3.608,
+  3.756,
+  3.903,
+  4.051,
+  4.199,
+  4.347,
+  4.494,
+  4.642,
+  4.79,
+  4.938,
+  5.085,
+  5.233,
+  5.381,
+  5.528,
+  5.676
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 11.851,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "nmrhaoXwBtDb_uMP-6ugiQY",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 98,
+    "thoughts_token_count": 2300,
+    "total_token_count": 9051
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.38,\n   \"end\": 3.90,\n   \"text\": \"First, connect.\"\n  },\n  {\n   \"start\": 4.05,\n   \"end\": 5.68,\n   \"text\": \"Understand your friend.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

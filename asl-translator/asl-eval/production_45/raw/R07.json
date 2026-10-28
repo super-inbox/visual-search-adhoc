@@ -1,0 +1,86 @@
+{
+ "review_id": "R07",
+ "clip_id": "fZIHe3dXPR0_5-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/fZIHe3dXPR0_5-8-rgb_front.mp4",
+ "input_video_sha256": "afc5212920af25a9848d76bc13cf6a0390fd759be84862b6987336575a02848a",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:14:34+00:00",
+ "status": "ok",
+ "output_text_raw": "What are the rules? First, people need to write.",
+ "segments": [
+  {
+   "start": 0.62,
+   "end": 1.38,
+   "text": "What are the rules?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.86,
+   "end": 7.68,
+   "text": "First, people need to write.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 3.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 32,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 10.304,
+ "timestamps_sent_s": [
+  0.625,
+  0.875,
+  1.125,
+  1.375,
+  3.856,
+  4.069,
+  4.281,
+  4.494,
+  4.706,
+  4.919,
+  5.131,
+  5.344,
+  5.556,
+  5.769,
+  5.981,
+  6.194,
+  6.406,
+  6.619,
+  6.831,
+  7.044,
+  7.256,
+  7.469,
+  7.681,
+  7.894
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 8.345,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "nWjhatboGJLSjMcPhOGC6As",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 106,
+    "thoughts_token_count": 1506,
+    "total_token_count": 8265
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.62,\n      \"end\": 1.38,\n      \"text\": \"What are the rules?\"\n    },\n    {\n      \"start\": 3.86,\n      \"end\": 7.68,\n      \"text\": \"First, people need to write.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

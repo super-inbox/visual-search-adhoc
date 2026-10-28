@@ -1,0 +1,114 @@
+{
+ "review_id": "R14",
+ "clip_id": "G3GcPpidwxk_5-5-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G3GcPpidwxk_5-5-rgb_front.mp4",
+ "input_video_sha256": "f9221d4324aed8b4c817eb0d76e97253aec0fb4c52993c06b95c6e09271e9293",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:17:12+00:00",
+ "status": "ok",
+ "output_text_raw": "At free connect, know five. Remember to help if you need advice. Including many.",
+ "segments": [
+  {
+   "start": 1.31,
+   "end": 4.98,
+   "text": "At free connect, know five.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 7.91,
+   "end": 12.22,
+   "text": "Remember to help if you need advice.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 12.53,
+   "end": 12.84,
+   "text": "Including many.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 26,
+ "frame_budget_used": 26,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 52,
+ "n_runs": 11,
+ "n_active_runs": 5,
+ "latency_s": 30.751,
+ "timestamps_sent_s": [
+  1.312,
+  1.438,
+  1.875,
+  2.125,
+  2.922,
+  3.266,
+  3.609,
+  4.297,
+  4.641,
+  4.984,
+  5.328,
+  7.906,
+  8.219,
+  8.531,
+  8.844,
+  9.406,
+  9.719,
+  10.031,
+  10.344,
+  10.969,
+  11.281,
+  11.594,
+  11.906,
+  12.219,
+  12.531,
+  12.844
+ ],
+ "n_timestamps": 26,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 23.611,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "O2nhauD1FOSj_PUPk86x0Q4",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6660,
+    "candidates_token_count": 133,
+    "thoughts_token_count": 4467,
+    "total_token_count": 11260
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.31,\n   \"end\": 4.98,\n   \"text\": \"At free connect, know five.\"\n  },\n  {\n   \"start\": 7.91,\n   \"end\": 12.22,\n   \"text\": \"Remember to help if you need advice.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The interpretation of the first segment is limited by the brevity of the initial sign and the lack of context for the phrase 'know five'.\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 5,
+   "n_images": 2,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 5.07,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "UmnhapTZOZOi_PUP5sSW0A4",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 781,
+    "candidates_token_count": 82,
+    "thoughts_token_count": 806,
+    "total_token_count": 1669
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 12.53,\n   \"end\": 12.84,\n   \"text\": \"Including many.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The translation is based on two distinct signs in close succession; broader context would refine the exact English phrasing.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

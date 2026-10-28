@@ -1,0 +1,86 @@
+{
+ "review_id": "R19",
+ "clip_id": "Fzj3jz2Imf0_1-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/Fzj3jz2Imf0_1-1-rgb_front.mp4",
+ "input_video_sha256": "fc04da2f8ddd8fd7aeb0b7d3dbec7833d90c1cd6829669578cbb2b8ff1e10b14",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:18:22+00:00",
+ "status": "ok",
+ "output_text_raw": "First, what happened? It's finished. What's the one thing? What about it?",
+ "segments": [
+  {
+   "start": 1.93,
+   "end": 3.33,
+   "text": "First, what happened?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 6.19,
+   "end": 10.38,
+   "text": "It's finished. What's the one thing? What about it?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 48,
+ "n_runs": 11,
+ "n_active_runs": 5,
+ "latency_s": 23.601,
+ "timestamps_sent_s": [
+  0.625,
+  0.875,
+  1.925,
+  2.275,
+  2.625,
+  2.975,
+  3.325,
+  6.188,
+  6.562,
+  6.938,
+  7.312,
+  7.938,
+  8.312,
+  8.898,
+  9.193,
+  9.489,
+  9.784,
+  10.08,
+  10.375,
+  10.67,
+  10.966,
+  11.261,
+  11.557,
+  11.852
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 21.76,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "gWnhapCqB6eV_uMPnsHFkA8",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6660,
+    "candidates_token_count": 151,
+    "thoughts_token_count": 4583,
+    "total_token_count": 11394
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.93,\n   \"end\": 3.33,\n   \"text\": \"First, what happened?\"\n  },\n  {\n   \"start\": 6.19,\n   \"end\": 10.38,\n   \"text\": \"It's finished. What's the one thing? What about it?\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The final finger-spelled word is incomplete. The sequence of 'WHAT' signs in the second segment was somewhat repetitive, making the exact nuance of the question challenging to translate with high confidence.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

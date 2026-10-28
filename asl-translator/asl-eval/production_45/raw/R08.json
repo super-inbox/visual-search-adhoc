@@ -1,0 +1,92 @@
+{
+ "review_id": "R08",
+ "clip_id": "FZrWOf-oGDk_0-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/FZrWOf-oGDk_0-8-rgb_front.mp4",
+ "input_video_sha256": "94a081abce2a97bb6ed1d90b0df60d3d5413b63edeb12f8538fc73becdd69390",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:14:45+00:00",
+ "status": "ok",
+ "output_text_raw": "What is it? How do they connect, and how are they different? What is different?",
+ "segments": [
+  {
+   "start": 0.7,
+   "end": 1.25,
+   "text": "What is it?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 1.52,
+   "end": 3.43,
+   "text": "How do they connect, and how are they different?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.56,
+   "end": 5.19,
+   "text": "What is different?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 4.364,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 22,
+ "n_runs": 7,
+ "n_active_runs": 3,
+ "latency_s": 12.431,
+ "timestamps_sent_s": [
+  0.568,
+  0.705,
+  0.841,
+  0.977,
+  1.114,
+  1.25,
+  1.523,
+  1.659,
+  1.795,
+  1.932,
+  2.068,
+  2.205,
+  2.341,
+  2.477,
+  2.614,
+  2.75,
+  2.886,
+  3.023,
+  3.295,
+  3.432,
+  4.562,
+  4.688,
+  5.062,
+  5.188
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 10.8,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "p2jhavTnGofbjMcPy8i4wAw",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 147,
+    "thoughts_token_count": 2022,
+    "total_token_count": 8822
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.70,\n      \"end\": 1.25,\n      \"text\": \"What is it?\"\n    },\n    {\n      \"start\": 1.52,\n      \"end\": 3.43,\n      \"text\": \"How do they connect, and how are they different?\"\n    },\n    {\n      \"start\": 4.56,\n      \"end\": 5.19,\n      \"text\": \"What is different?\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

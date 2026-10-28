@@ -1,0 +1,80 @@
+{
+ "review_id": "R39",
+ "clip_id": "-fZc293MpJk_5-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/-fZc293MpJk_5-1-rgb_front.mp4",
+ "input_video_sha256": "e531eb365e239822dd841e1d1bcaf981d180ace3724f8cabd3545c3c5094aa42",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:22:51+00:00",
+ "status": "ok",
+ "output_text_raw": "How will it be?",
+ "segments": [
+  {
+   "start": 0.57,
+   "end": 4.69,
+   "text": "How will it be?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 4.174,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 23,
+ "n_runs": 7,
+ "n_active_runs": 3,
+ "latency_s": 16.122,
+ "timestamps_sent_s": [
+  0.574,
+  0.722,
+  0.869,
+  1.017,
+  1.165,
+  1.312,
+  1.608,
+  1.756,
+  1.903,
+  2.051,
+  2.199,
+  2.347,
+  2.494,
+  2.642,
+  2.79,
+  2.938,
+  3.085,
+  3.233,
+  3.528,
+  3.676,
+  4.062,
+  4.188,
+  4.562,
+  4.688
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 14.357,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "jWrhasDdPKfX_uMPgLWm-A4",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 115,
+    "thoughts_token_count": 3061,
+    "total_token_count": 9829
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.57,\n   \"end\": 4.69,\n   \"text\": \"How will it be?\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The frames are sparse, and an ambiguous movement (an 'S' handshape moving slightly) between the first 'HOW' and 'WILL' was omitted as non-lexical. The repetition of 'HOW' at the end is interpreted as emphasis for the question.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

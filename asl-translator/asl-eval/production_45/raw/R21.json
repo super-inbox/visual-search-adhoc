@@ -1,0 +1,92 @@
+{
+ "review_id": "R21",
+ "clip_id": "G0MjvzT_UqM_16-2-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G0MjvzT_UqM_16-2-rgb_front.mp4",
+ "input_video_sha256": "b2f66253f89cb78ca54d575387a316a6eda9ea9634bb59b655f84a35a5d39c82",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:19:12+00:00",
+ "status": "ok",
+ "output_text_raw": "Let's really connect and talk. Give me something precious to look at, and open it up. I will give it to you.",
+ "segments": [
+  {
+   "start": 0.62,
+   "end": 1.88,
+   "text": "Let's really connect and talk.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.81,
+   "end": 6.86,
+   "text": "Give me something precious to look at, and open it up.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 8.38,
+   "end": 9.12,
+   "text": "I will give it to you.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 2.526,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 38,
+ "n_runs": 13,
+ "n_active_runs": 6,
+ "latency_s": 14.555,
+ "timestamps_sent_s": [
+  0.625,
+  0.875,
+  1.125,
+  1.375,
+  1.875,
+  2.812,
+  2.938,
+  3.312,
+  3.438,
+  3.812,
+  3.938,
+  4.388,
+  4.938,
+  5.213,
+  5.487,
+  5.763,
+  6.037,
+  6.312,
+  6.588,
+  6.862,
+  8.375,
+  8.625,
+  8.875,
+  9.125
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 12.398,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "s2nhaungDvSc_uMP0cGuoQM",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 152,
+    "thoughts_token_count": 2419,
+    "total_token_count": 9224
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.62,\n   \"end\": 1.88,\n   \"text\": \"Let's really connect and talk.\"\n  },\n  {\n   \"start\": 2.81,\n   \"end\": 6.86,\n   \"text\": \"Give me something precious to look at, and open it up.\"\n  },\n  {\n   \"start\": 8.38,\n   \"end\": 9.12,\n   \"text\": \"I will give it to you.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

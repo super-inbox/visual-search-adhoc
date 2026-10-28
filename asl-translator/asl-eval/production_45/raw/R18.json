@@ -1,0 +1,86 @@
+{
+ "review_id": "R18",
+ "clip_id": "37ZtKNf6Yd8_1-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/37ZtKNf6Yd8_1-1-rgb_front.mp4",
+ "input_video_sha256": "ad8d1e42aa8a2638083f1987244fe7491309edc5ecfdfb6c52f116a42c68b6c8",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:18:08+00:00",
+ "status": "ok",
+ "output_text_raw": "I am Deaf and I work. I have worked for four years.",
+ "segments": [
+  {
+   "start": 0.55,
+   "end": 1.95,
+   "text": "I am Deaf and I work.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.81,
+   "end": 3.94,
+   "text": "I have worked for four years.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 5.647,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 17,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 14.449,
+ "timestamps_sent_s": [
+  0.554,
+  0.661,
+  0.768,
+  0.875,
+  0.982,
+  1.089,
+  1.196,
+  1.304,
+  1.411,
+  1.518,
+  1.625,
+  1.732,
+  1.839,
+  1.946,
+  2.812,
+  2.938,
+  3.062,
+  3.188,
+  3.312,
+  3.438,
+  3.562,
+  3.688,
+  3.812,
+  3.938
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 12.867,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "cmnhao3hFv_K_uMPp8Sv4Q4",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 104,
+    "thoughts_token_count": 2369,
+    "total_token_count": 9126
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.55,\n   \"end\": 1.95,\n   \"text\": \"I am Deaf and I work.\"\n  },\n  {\n   \"start\": 2.81,\n   \"end\": 3.94,\n   \"text\": \"I have worked for four years.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

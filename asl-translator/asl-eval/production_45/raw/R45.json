@@ -1,0 +1,92 @@
+{
+ "review_id": "R45",
+ "clip_id": "g3X3XE6M2_A_8-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g3X3XE6M2_A_8-3-rgb_front.mp4",
+ "input_video_sha256": "c5f5e25e79b567d52631c6fdacdf7fb4313732a7237456af93ed5fa2e9888362",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:24:29+00:00",
+ "status": "ok",
+ "output_text_raw": "It's the same. But different. Together.",
+ "segments": [
+  {
+   "start": 0.8,
+   "end": 1.45,
+   "text": "It's the same.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 1.55,
+   "end": 2.11,
+   "text": "But different.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.2,
+   "end": 2.95,
+   "text": "Together.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 6.857,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 14,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 9.376,
+ "timestamps_sent_s": [
+  0.797,
+  0.891,
+  0.984,
+  1.078,
+  1.172,
+  1.266,
+  1.359,
+  1.453,
+  1.547,
+  1.641,
+  1.734,
+  1.828,
+  1.922,
+  2.016,
+  2.109,
+  2.203,
+  2.297,
+  2.391,
+  2.484,
+  2.578,
+  2.672,
+  2.766,
+  2.859,
+  2.953
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 7.844,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "72rhat3RBKPb_uMPx-G1wQ8",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 135,
+    "thoughts_token_count": 1382,
+    "total_token_count": 8170
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.80,\n   \"end\": 1.45,\n   \"text\": \"It's the same.\"\n  },\n  {\n   \"start\": 1.55,\n   \"end\": 2.11,\n   \"text\": \"But different.\"\n  },\n  {\n   \"start\": 2.20,\n   \"end\": 2.95,\n   \"text\": \"Together.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

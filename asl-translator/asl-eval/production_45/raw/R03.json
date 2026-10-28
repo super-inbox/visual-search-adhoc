@@ -1,0 +1,106 @@
+{
+ "review_id": "R03",
+ "clip_id": "G06Irzcwxiw_5-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G06Irzcwxiw_5-1-rgb_front.mp4",
+ "input_video_sha256": "76b1f143adf60fc064c3e83ef865abd0a3e0135011dd01e39f1df94e84b4d286",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:13:47+00:00",
+ "status": "ok",
+ "output_text_raw": "I know now.",
+ "segments": [
+  {
+   "start": 13.11,
+   "end": 14.6,
+   "text": "I know now.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 30,
+ "frame_budget_used": 30,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 60,
+ "n_runs": 9,
+ "n_active_runs": 4,
+ "latency_s": 27.658,
+ "timestamps_sent_s": [
+  3.208,
+  3.625,
+  4.042,
+  5.438,
+  5.812,
+  6.438,
+  6.812,
+  7.188,
+  7.562,
+  8.649,
+  8.946,
+  9.244,
+  9.542,
+  9.839,
+  10.137,
+  10.435,
+  10.732,
+  11.03,
+  11.327,
+  11.625,
+  11.923,
+  12.22,
+  12.518,
+  12.815,
+  13.113,
+  13.411,
+  13.708,
+  14.006,
+  14.304,
+  14.601
+ ],
+ "n_timestamps": 30,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 17.285,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "bmjhaqLsIpLSjMcPhOGC6As",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6663,
+    "candidates_token_count": 189,
+    "thoughts_token_count": 3694,
+    "total_token_count": 10546
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 3.21,\n      \"end\": 4.04,\n      \"text\": \"Support each other.\"\n    ,\n    {\n      \"start\": 5.44,\n      \"end\": 7.56,\n      \"text\": \"The community helps people.\"\n    },\n    {\n      \"start\": 8.65,\n      \"end\": 10.43,\n      \"text\": \"You are welcome to join.\"\n    },\n    {\n      \"start\": 10.73,\n      \"end\": 12.82,\n      \"text\": \"I want to include you, you know.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 13,
+   "n_images": 6,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 7.697,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "f2jhatyAMtb3-sAP9YKo4Qs",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 1853,
+    "candidates_token_count": 62,
+    "thoughts_token_count": 1407,
+    "total_token_count": 3322
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 13.11,\n   \"end\": 14.60,\n   \"text\": \"I know now.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

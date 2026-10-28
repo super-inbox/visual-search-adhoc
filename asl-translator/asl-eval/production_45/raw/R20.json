@@ -1,0 +1,135 @@
+{
+ "review_id": "R20",
+ "clip_id": "_FzvMVnR_aU_3-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/_FzvMVnR_aU_3-10-rgb_front.mp4",
+ "input_video_sha256": "ff11cf297ab3fe16d2552111d6c9da7d6e2a48b2bcf16b3aef3d3ad8932d41da",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:18:46+00:00",
+ "status": "ok",
+ "output_text_raw": "We'll start here and finish. Many are finished. First, then, those groups: some, many, and few. There was a widespread flood. It rained everywhere.",
+ "segments": [
+  {
+   "start": 1.16,
+   "end": 2.09,
+   "text": "We'll start here and finish.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.19,
+   "end": 5.31,
+   "text": "Many are finished.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 5.92,
+   "end": 8.33,
+   "text": "First, then, those groups: some, many, and few.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 10.9,
+   "end": 13.0,
+   "text": "There was a widespread flood.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 13.3,
+   "end": 17.12,
+   "text": "It rained everywhere.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 35,
+ "frame_budget_used": 35,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 70,
+ "n_runs": 13,
+ "n_active_runs": 6,
+ "latency_s": 25.97,
+ "timestamps_sent_s": [
+  1.156,
+  1.469,
+  1.781,
+  2.094,
+  4.188,
+  4.562,
+  4.938,
+  5.312,
+  5.922,
+  6.266,
+  6.609,
+  6.953,
+  7.297,
+  7.641,
+  7.984,
+  8.328,
+  10.9,
+  11.2,
+  11.5,
+  11.8,
+  12.1,
+  12.4,
+  12.7,
+  13.0,
+  13.3,
+  13.6,
+  14.161,
+  14.482,
+  14.804,
+  15.125,
+  15.446,
+  15.768,
+  16.089,
+  16.875,
+  17.125
+ ],
+ "n_timestamps": 35,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 17.141,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "mWnhaoPqOfTb_uMP4cLviQs",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6661,
+    "candidates_token_count": 196,
+    "thoughts_token_count": 3368,
+    "total_token_count": 10225
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 1.16,\n      \"end\": 2.09,\n      \"text\": \"We'll start here and finish.\"\n    },\n    {\n      \"start\": 4.19,\n      \"end\": 5.31,\n      \"text\": \"Many are finished.\"\n    },\n    {\n      \"start\": 5.92,\n      \"end\": 8.33,\n      \"text\": \"First, then, those groups: some, many, and few.\"\n    },\n    {\n      \"start\": 10.90,\n      \"end\": 13.00,\n      \"text\": \"There was a widespread flood.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 23,
+   "n_images": 11,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 5.753,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "q2nhap7QE62I_uMP47jNwQc",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 3193,
+    "candidates_token_count": 66,
+    "thoughts_token_count": 953,
+    "total_token_count": 4212
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 13.30,\n      \"end\": 17.12,\n      \"text\": \"It rained everywhere.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

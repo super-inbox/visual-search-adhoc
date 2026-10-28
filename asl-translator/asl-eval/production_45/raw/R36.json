@@ -1,0 +1,141 @@
+{
+ "review_id": "R36",
+ "clip_id": "G095RWKQ39g_10-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G095RWKQ39g_10-1-rgb_front.mp4",
+ "input_video_sha256": "5b8adae29960b864eaffa0b2835a5b9c0dbf6717205481d0d896b220b9b69517",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:21:43+00:00",
+ "status": "ok",
+ "output_text_raw": "We are connected. What? Why? First, I want to tell you. I can help.",
+ "segments": [
+  {
+   "start": 2.33,
+   "end": 6.33,
+   "text": "We are connected.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 7.21,
+   "end": 7.62,
+   "text": "What?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 10.89,
+   "end": 11.46,
+   "text": "Why?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 11.75,
+   "end": 13.46,
+   "text": "First, I want to tell you.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 16.06,
+   "end": 20.34,
+   "text": "I can help.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 41,
+ "frame_budget_used": 41,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 82,
+ "n_runs": 11,
+ "n_active_runs": 5,
+ "latency_s": 23.26,
+ "timestamps_sent_s": [
+  0.667,
+  1.0,
+  1.333,
+  1.667,
+  2.0,
+  2.333,
+  2.667,
+  3.0,
+  3.333,
+  3.667,
+  4.0,
+  4.333,
+  4.667,
+  5.0,
+  5.333,
+  5.667,
+  6.0,
+  6.333,
+  7.208,
+  7.625,
+  8.042,
+  10.893,
+  11.179,
+  11.464,
+  11.75,
+  12.036,
+  12.321,
+  12.607,
+  12.893,
+  13.179,
+  13.464,
+  13.75,
+  14.036,
+  14.321,
+  14.607,
+  15.688,
+  16.062,
+  19.406,
+  19.719,
+  20.031,
+  20.344
+ ],
+ "n_timestamps": 41,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 14.331,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "S2rhao6sIaT6-sAPuO3p2Aw",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6656,
+    "candidates_token_count": 173,
+    "thoughts_token_count": 3056,
+    "total_token_count": 9885
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 2.33,\n   \"end\": 6.33,\n   \"text\": \"We are connected.\"\n  },\n  {\n   \"start\": 7.21,\n   \"end\": 7.62,\n   \"text\": \"What?\"\n  },\n  {\n   \"start\": 10.89,\n   \"end\": 11.46,\n   \"text\": \"Why?\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The first segment translates a sequence of signs (HAVE, CONNECT, TOGETHER) into a natural English phrase. The individual signs are clear, but the exact phrasing can vary without broader context.\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 35,
+   "n_images": 17,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 5.733,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "WWrhap-gOoKZ_uMP27Pm2QQ",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 4801,
+    "candidates_token_count": 110,
+    "thoughts_token_count": 997,
+    "total_token_count": 5908
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 11.75,\n      \"end\": 13.46,\n      \"text\": \"First, I want to tell you.\"\n    },\n    {\n      \"start\": 16.06,\n      \"end\": 20.34,\n      \"text\": \"I can help.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}
