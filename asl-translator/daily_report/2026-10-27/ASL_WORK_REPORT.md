@@ -38,8 +38,8 @@ produced a translation-quality improvement. The production-model 45-case evaluat
   **18.22** for Uni-Sign B and **23.76** for Uni-Sign A (P0-A CPU). Its outputs are much shorter (length ratio 0.38)
   and it has no repetition loops. Automatic metrics only.
 
-**Still open:** collecting human labels with the now-finalized reviewer package (external: an ASL-fluent reviewer
-must be recruited), and the P0-A R1/R2 descriptive gap.
+**Still open:** only human ASL labels, collected with the now-finalized reviewer package. This is an external
+dependency: an ASL-fluent reviewer must be recruited. The P0-A R1/R2 descriptive gap is closed (commit `a060d6eb`).
 
 | Item | Status | Basis |
 |---|---|---|
@@ -50,7 +50,7 @@ must be recruited), and the P0-A R1/R2 descriptive gap.
 | Task 3 fingerspelling specialist | **COMPLETE / DIAGNOSTIC ONLY** | OpenFS partially reproduced (10/18 windows); official outputs recorded; FS-Detection runs only with shims |
 | ASL reviewer package | **PACKAGE FINALIZED / HUMAN LABELS PENDING** | Technical package complete (commit `bac67ec0`): Step 1 blind, Step 2 explicitly reference-conditioned; not yet sent; no reviewer labels collected |
 | Production-model 45-case evaluation | **COMPLETE / DIAGNOSTIC ONLY** | gemini-2.5-flash chrF 9.27 vs Uni-Sign B 18.22 / A 23.76 (P0-A CPU); much shorter outputs; 0 loops; automatic metrics only |
-| P0-A R1/R2 descriptive gap | **OPEN / NOT YET RUN** | Frozen descriptive arms never reported (boss review) |
+| P0-A R1/R2 descriptive gap | **COMPLETE / DESCRIPTIVE ONLY** | Closed from existing frozen artifacts, no new model inference (commit `a060d6eb`): R1 +0.09 / R2 −0.05 corpus chrF on official input; P0-A STOP unchanged |
 
 ## 2. Context and Boss Handoff
 
@@ -353,7 +353,45 @@ Source: [asl-reviewer-followup/](../2026-10-23/asl-reviewer-followup/) (commit `
   - The STOP remains valid; candidate headroom is insufficient against the frozen +3.0 gate.
   - Per the boss's correction, the "oracle" is described as a **sentence-level maximum / descriptive selection**, not
     an upper bound.
-  - The frozen R1/R2 descriptive arms remain an **open protocol/report gap** (§13.D).
+  - The frozen R1/R2 descriptive arms are now reported (below; commit `a060d6eb`), closing the gap the boss noted.
+
+### P0-A R1/R2 descriptive arms
+
+Source: [P0A_R1_R2_DESCRIPTIVE_RESULT.md](P0A_R1_R2_DESCRIPTIVE_RESULT.md) (commit `a060d6eb`). These are frozen
+§1.4 selection rules applied to the existing candidate pools and scored with the frozen §1.6 automatic metrics. **No
+new model inference was run.**
+
+**R1** (frozen rule: keep T when it does not loop; otherwise choose the highest beam-5-score non-looping pool
+candidate; if none exists, keep T):
+
+| Input | chrF | WER | repetition loops | cases changed |
+|---|---|---|---|---|
+| Official (deciding) | 23.76 → 23.85 (+0.09) | 95.44 → 95.34 | 9 → 8 | only R23 |
+| Old | 18.22 → 18.52 (+0.30) | 99.81 → 97.67 | 11 → 8 | R15, R10, R16 |
+
+On the old input the length ratio moves −10.4 %. That is descriptive only.
+
+**R2** (official input only; starts from R1 and switches only when frozen P0-14 Tier-L concept support improves by
+≥ 1):
+- Corpus chrF 23.72: −0.05 against T, and below R1.
+- Only **R12** switches: support −2 → −1, sentence chrF 20.63 → 17.65.
+- In the other cases, 36 keep R1's choice and 8 have no non-looping candidate.
+- Probe seed r2 produces no switch, so R2 equals R1. Seed r1 matches the frozen-seed behaviour.
+- There is no descriptive evidence that the frozen concept probe adds useful selection signal.
+
+**Interpretation (boss-corrected):**
+- R1 and R2 are **descriptive only**, because P0-A stopped at the candidate-headroom gate.
+- They do **not** reopen rules 2–4, and they do **not** change the STOP decision.
+- Their effect is very small, about ±0.1 corpus chrF on the deciding official input.
+- The reference-chosen comparison (+2.24) remains a **sentence-level maximum / descriptive selection**, not an upper
+  bound.
+- The human parts of rules 2–4 cannot be evaluated because no human labels exist.
+
+**Reproducibility:**
+- R1 can be reproduced from committed artifacts.
+- R2 also requires the matching frozen P0-14 probe files, identified by their recorded SHA256 hashes in the result
+  JSON and script. Those files are not committed here.
+
 - **P0-B and P0-C:**
   - The feasibility survey and the R26/R29 source diagnostics remain useful background.
   - The "nothing run" part of P0-B is superseded by the actual OpenFS execution in Task 3.
@@ -381,6 +419,8 @@ These statements are supported by the committed result files:
   `specialist.py`, `sampling.py`, `run_sampling.py`, `PROTOCOL.md`.
 - **No downloaded videos or checkpoints are committed:** official crop clips, raw videos, OpenFS/FS-Detection code
   and weights stayed in scratch only.
+- **P0-A R1/R2:** no new model inference. They are frozen selection rules applied to existing candidate pools; the
+  holdout guard and open() tripwire passed; human-review case texts stay withheld.
 - **Production evaluation:**
   - the real current production path (`transcribe_asl`, `origin/main` `4220e03c`) was called;
   - no production code was modified, and nothing was deployed;
@@ -400,6 +440,7 @@ These statements are supported by the committed result files:
 | `ad5747235893c895ce52a1a43b0faff30f523d37` | Task 3: OpenFS reproduction / official runs, FS-Detection feasibility | [TASK3_FINGERSPELLING_RESULT.md](TASK3_FINGERSPELLING_RESULT.md) |
 | `6a73e1cf2a2584cd6278febfb0e061177a140dab` | docs: evaluate current production ASL model on 45 cases | [PRODUCTION_45_CASE_EVAL.md](PRODUCTION_45_CASE_EVAL.md) |
 | `bac67ec0098b7bef15c2acb9167f48c31273ca12` | docs: finalize blind ASL reviewer package | [README.md](../2026-10-23/asl-reviewer-followup/README.md), [REVIEWER_PACKAGE_MANIFEST.md](../2026-10-23/asl-reviewer-followup/REVIEWER_PACKAGE_MANIFEST.md), `reviewer_instructions.md`, `reviewer_instructions_step2.md`, `blind_review.csv`, `reference_conditioned_followup.csv`, `review_blind.html`, `review_reference_conditioned.html` |
+| `a060d6ebe39078f4eea304996657653198aeed0e` | docs: close P0-A R1 R2 descriptive reporting gap | [P0A_R1_R2_DESCRIPTIVE_RESULT.md](P0A_R1_R2_DESCRIPTIVE_RESULT.md) |
 
 Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experiments/p0-2026-10-27/results/),
 [`p0-input-provenance/`](p0-input-provenance/) and [`asl-eval/production_45/`](../../asl-eval/production_45/).
@@ -418,7 +459,9 @@ Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experi
 6. **Reviewer package:** the reviewer package is technically ready to send. The remaining reviewer dependency is
    external: recruit an ASL-fluent reviewer and collect blind Step 1 labels before using any human-based accuracy or
    semantic claims.
-7. **The remaining work is no longer another large Uni-Sign model experiment.**
+7. **P0-A:** the previously missing R1/R2 descriptive arms do not reveal meaningful additional reranking headroom and
+   do not alter the P0-A STOP decision.
+8. **The remaining work is no longer another large Uni-Sign model experiment.**
 
 ## 13. Open Items / Next Work
 
@@ -432,18 +475,21 @@ Structured outputs are under [`experiments/p0-2026-10-27/results/`](../../experi
 
 - Done (commit `bac67ec0`): see §8. Step 1 is blind, and Step 2 is explicitly reference-conditioned and kept separate.
 
-### C. Human labels — PENDING / external dependency (HUMAN-DEPENDENT)
+### C. Human ASL labels — PENDING / EXTERNAL DEPENDENCY
 
+**This is the only remaining open item.**
+
+- The reviewer package is finalized (§8). An ASL-fluent reviewer still needs to be recruited.
+- No human semantic or fingerspelling-accuracy claim can be finalized until blind Step 1 labels return.
 - Recruit an ASL-fluent reviewer.
 - Send the Step 1 blind package, and send Step 2 only after the Step 1 file is returned.
 - Score OpenFS, FS-Detection and the translation outputs only after the blind labels return. Step 2 results count as
   reference-conditioned refinement only.
 
-### D. P0-A R1/R2 descriptive gap — OPEN SMALL FOLLOW-UP
+### D. P0-A R1/R2 descriptive gap — COMPLETE
 
-- The boss noted that these frozen descriptive arms were never reported.
-- No new decode is expected if the existing candidate/probe outputs are sufficient. Otherwise, mark it explicitly as
-  incomplete.
+- Done (commit `a060d6eb`): see §9 and [P0A_R1_R2_DESCRIPTIVE_RESULT.md](P0A_R1_R2_DESCRIPTIVE_RESULT.md).
+- Closed from existing frozen artifacts, with no new model inference. Descriptive only; P0-A STOP unchanged.
 
 This report is intentionally a living work report. Sections under Open Items will be updated when those tasks are
 completed.
