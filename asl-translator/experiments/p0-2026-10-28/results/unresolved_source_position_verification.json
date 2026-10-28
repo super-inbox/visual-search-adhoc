@@ -1,0 +1,472 @@
+{
+ "task": "2026-10-28 PROGRESS_REVIEW item 3: verify 5 unresolved source positions",
+ "status_definition": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR = the source time is supported by a unique visual match judged by the AI assistant running the session. It is additional visual evidence only: not human verification, not independent second-rater confirmation, not a replacement for the frozen automatic provenance result, and not evidence that the automatic thresholds passed. provenance_status_auto is unchanged (UNRESOLVED for all 5). Human confirmation or an independent second-rater check would be required before treating these visual anchors as human-verified provenance.",
+ "summary": {
+  "VERIFIED_BY_METADATA": 0,
+  "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR": 5,
+  "still_without_source_time_evidence": 0,
+  "provenance_status_auto": "UNRESOLVED for all 5 (unchanged)",
+  "visual_anchor_judge_type": "AI assistant",
+  "judge_count": 1,
+  "second_rater": false,
+  "blinding_wrt_expected_time": {
+   "FULL": [
+    "R28 A_official",
+    "R42 A_official"
+   ],
+   "PARTIAL": [
+    "R26 A_official",
+    "R35 A_official",
+    "R32 B_ours_5p39"
+   ]
+  },
+  "crop_box_source_position_A_rows": "UNKNOWN (4/4)",
+  "official_timing_map": "the four previously unanchored A rows have AI visual-anchor evidence consistent with re-aligned timing, alongside the 41 rows previously supported by the frozen provenance procedure; different evidence standards, not a single VERIFIED count"
+ },
+ "frozen_thresholds_changed": false,
+ "amendment_3_created": false,
+ "manifest_modified": false,
+ "models_run": [],
+ "reference_text_used": false,
+ "model_predictions_used": false,
+ "tier1_metadata": {
+  "hf_release": {
+   "repo": "ZechengLi19/Uni-Sign",
+   "commit": "eab251b7fe7e8521afc0e67be98add670ea40a0d",
+   "repo_files": "weights (.pth), *_pose_format.zip*, how2sign_rgb_format.zip.aa-ae, wlasl_video_format.zip, README.md, .gitattributes; no crop/metadata file",
+   "rgb_zip_central_directory": {
+    "part": "how2sign_rgb_format.zip.ae",
+    "range": "3006690560-3010900088",
+    "sha256": "643d5e6e3f335a43a659099f1e8c88e32a1aa5ad6ab7e211385fad0b3531a4ed",
+    "entries": 35176,
+    "top_level": {
+     "crop_train": 31087,
+     "crop_test": 2350,
+     "crop_val": 1739
+    },
+    "non_mp4_entries": 0,
+    "directories": 3
+   },
+   "readme": "model weights and pose files; no crop or cutting description"
+  },
+  "crop_clip_container": "all 4 official crop clips: start_time 0, start_pts 0, encoder Lavf58.29.100, handler 'Mainconcept Video Media Handler'; no timecode, offset or comment tags",
+  "b_clip_container": "R32 B clip: start_pts 507 at 1/15360 (0.033 s, encoder delay), encoder Lavf57.83.100; no source offset tag",
+  "uni_sign_repo": "eed438bc: no crop/cut script; config.py points to dataset/How2Sign/rgb_format; labels.test holds name, video path, text only (no start/end, no box)",
+  "pose_files": "official pkl = keypoints, scores, w_h only (crop coordinates; no source frame index)",
+  "how2sign_annotations": "original and re-aligned CSVs give per-sentence START/END only: they are the expected times, not a record of how a file was cut (R10/R14 show archive clips can follow either CSV with frame offsets)",
+  "p012_records": "official_rgb_index_128.json / official_pkl_index_128.json are zip offsets only; crossframe_alignment_B_vs_C is a derived measurement (R42 residual 0.137 failed), not metadata",
+  "result": "no row VERIFIED_BY_METADATA"
+ },
+ "tier2_method": {
+  "helper": "asl-translator/experiments/p0-2026-10-28/blind_anchor.py",
+  "coarse": "whole raw video, 2 frames per second, fixed central 720x720 signer region (not the crop box), sheets of 60 cells with one-row overlap, random 3-letter sheet codes shown in random order, no times or indices",
+  "fine": "full frame rate around FIRST / MID / LAST query frames, +-13 frames, opaque letter labels",
+  "decisions_recorded_before_unblinding": true,
+  "decisions_all_sha256": "3de2c2cb407bc2310a23e60b523b8db8d7ab4c2850089744ccc3d0a87d07ba00",
+  "prior_exposure_note": "expected times for R26 (reviewer context window), R32 (earlier automatic offset) and R35 (re-aligned window) were seen earlier in the session; R28 and R42 were not; one R26 reference sentence appeared in terminal output during the Tier 1 label-file check"
+ },
+ "cases": {
+  "R26 A_official": {
+   "source_time_evidence_status": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR",
+   "provenance_status_auto": "UNRESOLVED",
+   "visual_anchor_judge_type": "AI assistant",
+   "judge_count": 1,
+   "second_rater": false,
+   "human_verified": false,
+   "blinding_level": "PARTIAL",
+   "prior_expected_time_exposure": true,
+   "reference_text_exposure": true,
+   "crop_box_source_position": "UNKNOWN",
+   "input_clip_sha256": "38988702a8a0a95ff36bd7b4220310c8b78af607815e07de36c1cc206c5d60ee",
+   "input_frames": 36,
+   "input_fps": 24.0,
+   "input_w_h": "698x598",
+   "source_video": "raw_videos/G3EfBFwsOpE-10-rgb_front.mp4",
+   "source_sha256": "910f3918a908fc0353957906df08ef86e0cd5caa753e849800f2c8a0fa58d6e4",
+   "source_fps": 24.0,
+   "source_frames": 1602,
+   "chosen_first_frame": 364,
+   "chosen_last_frame": 399,
+   "chosen_span_frames": 36,
+   "mid_check": {
+    "source_frame": 382,
+    "expected": 382
+   },
+   "source_frame_interval": [
+    364,
+    399
+   ],
+   "source_time_s": [
+    15.167,
+    16.667
+   ],
+   "uncertainty_frames": 1,
+   "uncertainty_s": 0.042,
+   "cues": "Q00-Q05 both hands sweep down from forehead to mouth with elbows out (F-SF..F-UN); Q06-Q17 hands open to the sides, left hand low and out, right fist at shoulder (M-HS..M-NY); Q18 blurred inward sweep (M-OY); Q30-Q35 fists converge and close together at chest, head tilts up (L-JX..L-NK)",
+   "competitors_examined": [
+    {
+     "token": "d3b72e",
+     "from": "BNP cell 45",
+     "rejected_because": "raised hands use pointing index handshape, not bent fists; LAST block shows crossed hands with index at lips, not fists together at chest"
+    }
+   ],
+   "coarse_scan_notes": "RFK: no both-hands-at-sides pose; PRQ 22-31 arms above head (different); PRQ 32-34 only sequence matching sides -> chin/chest -> fists at chest; BNP 44-46 rejected at fine level",
+   "fine_render_token": "5aaba9",
+   "labels": {
+    "first": "F-SF",
+    "mid": "M-OY",
+    "last": "L-NK"
+   },
+   "post_unblind_comparison": {
+    "annotation": "realigned",
+    "annotation_s": [
+     15.15,
+     16.62
+    ],
+    "delta_start_s": 0.017,
+    "delta_end_s": 0.047,
+    "within_0p20s": true,
+    "other_annotation": {
+     "original_s": [
+      13.16,
+      15.01
+     ]
+    },
+    "prior_automatic_evidence": {
+     "ncc_best": 0.8937,
+     "ncc_next": 0.8714,
+     "temporal_match_run": false
+    }
+   },
+   "interpretation": "source time visually supported (AI judge); partial blinding; incidental reference-text exposure (not used); crop-box source position unknown"
+  },
+  "R28 A_official": {
+   "source_time_evidence_status": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR",
+   "provenance_status_auto": "UNRESOLVED",
+   "visual_anchor_judge_type": "AI assistant",
+   "judge_count": 1,
+   "second_rater": false,
+   "human_verified": false,
+   "blinding_level": "FULL",
+   "prior_expected_time_exposure": false,
+   "reference_text_exposure": false,
+   "crop_box_source_position": "UNKNOWN",
+   "input_clip_sha256": "977446bcd1cce07d53d68be8f6bced92457e4f88b1d5158d43a8abc4b16ae38f",
+   "input_frames": 41,
+   "input_fps": 24.0,
+   "input_w_h": "736x614",
+   "source_video": "raw_videos/G42xKICVj9U-10-rgb_front.mp4",
+   "source_sha256": "499de99696c0d5bd5f47039cf0024b6cd97482cff4f76ca475ac884acf28b239",
+   "source_fps": 24.0,
+   "source_frames": 2263,
+   "chosen_first_frame": 1293,
+   "chosen_last_frame": 1333,
+   "chosen_span_frames": 41,
+   "mid_check": {
+    "source_frame": 1313,
+    "expected": 1313
+   },
+   "source_frame_interval": [
+    1293,
+    1333
+   ],
+   "source_time_s": [
+    53.875,
+    55.583
+   ],
+   "uncertainty_frames": 2,
+   "uncertainty_s": 0.083,
+   "cues": "Q00-Q02 both forearms horizontal, bent hands with fingertips together (F-IZ..F-KT); Q03 one hand drops flat palm-up under the other forearm (F-LP); Q16-Q19 hand rises blurred to chin, index at chin while forearm stays horizontal (M-ED..M-GH); Q30-Q33 hand leaves chin and returns under forearm (M-WC..M-WY); Q40 flat hand under forearm, before the grimace with teeth visible (L-QB)",
+   "competitors_examined": [
+    {
+     "token": "89057d",
+     "from": "SVO cell 45",
+     "rejected_because": "hands hang down palms-in instead of fingertips together; hand at mouth is a fist; end pose is both hands hanging, not flat hand under forearm"
+    },
+    {
+     "token": "eade3c",
+     "from": "AFC cell 44",
+     "rejected_because": "hands hang palms-in; raised hand is at the shoulder with an F/O handshape, not at the chin; end pose is two open vertical palms"
+    }
+   ],
+   "coarse_scan_notes": "long stretch of both-forearms-horizontal pose across SVO 46-60 / PUU 1-9 (overlapping sheets); only PUU 8-12 continues into flat-hand-under -> hand-to-chin -> flat-hand-under; CAS 16-18 has a hand under a forearm but no chin movement",
+   "fine_render_token": "254498",
+   "labels": {
+    "first": "F-IZ",
+    "mid": "M-HW",
+    "last": "L-QB"
+   },
+   "post_unblind_comparison": {
+    "annotation": "realigned",
+    "annotation_s": [
+     53.82,
+     55.52
+    ],
+    "delta_start_s": 0.055,
+    "delta_end_s": 0.063,
+    "within_0p20s": true,
+    "other_annotation": {
+     "original_s": [
+      45.63,
+      48.88
+     ]
+    },
+    "prior_automatic_evidence": {
+     "ncc_best": 0.8649,
+     "ncc_next": 0.8453,
+     "temporal_match_run": false
+    }
+   },
+   "interpretation": "source time visually supported (AI judge); full blinding; crop-box source position unknown"
+  },
+  "R32 B_ours_5p39": {
+   "source_time_evidence_status": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR",
+   "provenance_status_auto": "UNRESOLVED",
+   "visual_anchor_judge_type": "AI assistant",
+   "judge_count": 1,
+   "second_rater": false,
+   "human_verified": false,
+   "blinding_level": "PARTIAL",
+   "prior_expected_time_exposure": true,
+   "reference_text_exposure": false,
+   "crop_box_source_position": "NOT_APPLICABLE (full-frame B clip)",
+   "input_clip_sha256": "3c397ef25828a52be593712fb1ab1aec5496b8dce080709b88058639eea236de",
+   "input_frames": 56,
+   "input_fps": 30.0,
+   "input_w_h": "1280x720",
+   "source_video": "raw_videos/G0Q6AlvH96I-2-rgb_front.mp4",
+   "source_sha256": "35d187a3e9ac195049107a27548dde8611f0b45655096da710ab9bc36fc4470b",
+   "source_fps": 30.0,
+   "source_frames": 5006,
+   "chosen_first_frame": 1046,
+   "chosen_last_frame": 1101,
+   "chosen_span_frames": 56,
+   "mid_check": {
+    "source_frame": 1074,
+    "expected": 1074
+   },
+   "source_frame_interval": [
+    1046,
+    1101
+   ],
+   "source_time_s": [
+    34.867,
+    36.733
+   ],
+   "uncertainty_frames": 3,
+   "uncertainty_s": 0.1,
+   "cues": "Q00-Q09 both hands at chest, one lower, mouth wide open (F-OZ..F-UB); Q10-Q20 hand rises to mouth/nose (M-BZ..M-HJ); Q21-Q29 spread fingers at the face beside the chin (M-IU..M-LZ); Q30-Q42 open 5-hand raised beside the face (M-OU..M-RI); Q43-Q55 both fists raised at chest, mouth open (L-OA..L-QL)",
+   "competitors_examined": [
+    {
+     "token": "e8fa08",
+     "from": "TSV cell 19",
+     "rejected_because": "start has one palm extended out to the side; mid has hands low, not at the face; end has a hand raised at the side, not fists at chest"
+    },
+    {
+     "token": "7f1f45",
+     "from": "AVJ cell 27",
+     "rejected_because": "start is a raised fist at the shoulder; end is a flat hand at the mouth"
+    },
+    {
+     "token": "47c780",
+     "from": "ZTJ cell 11",
+     "rejected_because": "start is both hands flapping at the sides; end has raised open hands"
+    },
+    {
+     "token": "31f694",
+     "from": "KTL cell 19",
+     "rejected_because": "mid is a raised fist beside the head; end is a hand at the chin, not fists at chest"
+    }
+   ],
+   "coarse_scan_notes": "RQD 20-26 is the only stretch with chest -> hand at mouth -> spread fingers at face -> raised 5-hand -> fists at chest; other stretches with a hand at the mouth (ARF 41-49, AVJ 1-10, EBE 41-47, ZTJ 37-41) continue differently",
+   "offset_reconciliation": "all three blocks agree on the same offset (one frame after each block centre); the end check is therefore not independent of the start choice; static stretches limit precision to about +-3 frames (+-0.1 s)",
+   "fine_render_token": "365c76",
+   "labels": {
+    "first": "F-OZ",
+    "mid": "M-LZ",
+    "last": "L-PN"
+   },
+   "post_unblind_comparison": {
+    "annotation": "original",
+    "annotation_s": [
+     34.81,
+     36.71
+    ],
+    "delta_start_s": 0.057,
+    "delta_end_s": 0.023,
+    "within_0p20s": true,
+    "other_annotation": {
+     "realigned_s": [
+      43.35,
+      45.68
+     ]
+    },
+    "prior_automatic_evidence": {
+     "best_offset_frames": 1045,
+     "grid_motion_r_best": 0.8963,
+     "delta_frames_vs_blind": 1
+    }
+   },
+   "interpretation": "source time visually supported (AI judge); partial blinding; consistent with the original annotation and the earlier best automatic offset, but the frozen automatic criterion remains failed (grid motion r 0.896 < 0.90; not rounded or reinterpreted)"
+  },
+  "R35 A_official": {
+   "source_time_evidence_status": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR",
+   "provenance_status_auto": "UNRESOLVED",
+   "visual_anchor_judge_type": "AI assistant",
+   "judge_count": 1,
+   "second_rater": false,
+   "human_verified": false,
+   "blinding_level": "PARTIAL",
+   "prior_expected_time_exposure": true,
+   "reference_text_exposure": false,
+   "crop_box_source_position": "UNKNOWN",
+   "input_clip_sha256": "5dd4816136f5a47ef51564e64031c20f585b5a2fc70cf6773809e2f1e7fba39e",
+   "input_frames": 93,
+   "input_fps": 24.0,
+   "input_w_h": "522x578",
+   "source_video": "raw_videos/G2kVb4gINSI-10-rgb_front.mp4",
+   "source_sha256": "98981c97de2d5642ae304084394277fe074a5a591929eaeb708f647b6d386ba8",
+   "source_fps": 24.0,
+   "source_frames": 2031,
+   "chosen_first_frame": 315,
+   "chosen_last_frame": 407,
+   "chosen_span_frames": 93,
+   "mid_check": {
+    "source_frame": 361,
+    "expected": 361
+   },
+   "source_frame_interval": [
+    315,
+    407
+   ],
+   "source_time_s": [
+    13.125,
+    17.0
+   ],
+   "uncertainty_frames": 2,
+   "uncertainty_s": 0.083,
+   "cues": "Q00-Q34 dominant hand raised at shoulder cycling C / L handshapes while the other forearm rests low at the waist (F-ND onward); Q36-Q39 hand sweeps down blurred; Q41-Q48 hands cross low with pointing (M-JP..M-MS); Q50 mouth opens (M-PQ), Q51 hands spread blurred (M-QX), Q53-Q56 open hands raised (M-SH..M-UT); Q78-Q81 diagonal forearm crossing (L-DS); Q83-Q87 hands rise blurred to chin, fist at chin (L-GA..L-KA); Q89-Q90 fists at chest (L-KX..L-OE); Q92 fists start to open, blurred (L-OZ)",
+   "competitors_examined": [
+    {
+     "token": "772cd8",
+     "from": "WXG cell 17",
+     "rejected_because": "start shows index at chin with other hand low, not raised C/L hand; mid shows raised open palm, not low crossed hands; ends in rest pose with hands in lap"
+    },
+    {
+     "token": "485b82",
+     "from": "WXG cell 5",
+     "rejected_because": "start shows both hands stacked horizontally at chest; mid shows raised index at shoulder; end shows hands at chin, no forearm crossing or fists at chest"
+    }
+   ],
+   "coarse_scan_notes": "JFO 28-36 is the only stretch with raised fingerspelling hand -> low crossed hands -> chin clasp -> diagonal forearm crossing -> fists at chest; QRD/PTR have raised-hand and forearm-stack poses but not this order; QRD 51-60 = WXG 1-10 (overlapping sheets)",
+   "fine_render_token": "2dbc3a",
+   "labels": {
+    "first": "F-ND",
+    "mid": "M-KD",
+    "last": "L-OZ"
+   },
+   "post_unblind_comparison": {
+    "annotation": "realigned",
+    "annotation_s": [
+     13.11,
+     16.9
+    ],
+    "delta_start_s": 0.015,
+    "delta_end_s": 0.1,
+    "within_0p20s": true,
+    "other_annotation": {
+     "original_s": [
+      6.5,
+      12.48
+     ]
+    },
+    "prior_automatic_evidence": {
+     "ncc_best": 0.9497,
+     "ncc_next": 0.9158,
+     "temporal_match_run": false
+    }
+   },
+   "interpretation": "source time visually supported (AI judge); partial blinding; official and old windows remain separate signing events; crop-box source position unknown"
+  },
+  "R42 A_official": {
+   "source_time_evidence_status": "SOURCE_TIME_SUPPORTED_BY_AI_VISUAL_ANCHOR",
+   "provenance_status_auto": "UNRESOLVED",
+   "visual_anchor_judge_type": "AI assistant",
+   "judge_count": 1,
+   "second_rater": false,
+   "human_verified": false,
+   "blinding_level": "FULL",
+   "prior_expected_time_exposure": false,
+   "reference_text_exposure": false,
+   "crop_box_source_position": "UNKNOWN",
+   "input_clip_sha256": "d79253b3d777d395aeb05cf80428af1c48c9b5849d0076d188faa0040f93ba31",
+   "input_frames": 99,
+   "input_fps": 24.0,
+   "input_w_h": "444x584",
+   "source_video": "raw_videos/fZq8wTAYtmw-10-rgb_front.mp4",
+   "source_sha256": "8d8bdefe58bab44044cf3ba6513a0a9928b5f3bb7d3aecbfeeb923229849ae30",
+   "source_fps": 24.0,
+   "source_frames": 2595,
+   "chosen_first_frame": 2470,
+   "chosen_last_frame": 2567,
+   "chosen_span_frames": 98,
+   "mid_check": {
+    "source_frame": 2518,
+    "expected": 2519
+   },
+   "source_frame_interval": [
+    2470,
+    2568
+   ],
+   "source_time_s": [
+    102.917,
+    107.042
+   ],
+   "uncertainty_frames": 3,
+   "uncertainty_s": 0.125,
+   "cues": "Q00-Q08 claw hands at chest closing toward each other; Q10-Q15 flat palms together vertical (F-QB..F-SL); Q16-Q17 one hand rises blurred to the side (F-VW..F-WU); Q23-Q49 fist beside flat vertical hand, repeated (M-BW..M-KG); Q50-Q53 open hands cross and overlap (M-MC..M-NI); Q88 raised index (L-AH); Q91-Q96 palms open and spread upward (L-EC..L-HC); Q98 hands spread and start to drop, blurred (L-JW)",
+   "competitors_examined": [
+    {
+     "token": "998d29",
+     "from": "NVZ cell 18",
+     "rejected_because": "mid shows both palms raised forward at shoulder height, not hands overlapping at chest; end shows pushing palms, no palms-up spread"
+    },
+    {
+     "token": "a0c4a0",
+     "from": "ZMZ cell 6",
+     "rejected_because": "hand on chest with other palm out for the whole mid block; end shows fists raised at shoulders, not palms-up spread"
+    }
+   ],
+   "coarse_scan_notes": "KKW 6-15 (= NVZ 56-60 overlap) is the only stretch with claw -> palms together -> side raise -> fist+flat -> overlapping open hands -> raised index -> palms-up spread; OLQ 9-10 and ZMZ 1-8 have chest crossings but different continuations",
+   "offset_reconciliation": "FIRST block alone suggests start 5 frames before the coarse-implied start, MID 2, LAST 3-4; the claw-hand opening is nearly static so FIRST is the weakest; chosen 3 frames before, +-3",
+   "fine_render_token": "13cef3",
+   "labels": {
+    "first": "F-KO",
+    "mid": "M-KC",
+    "last": "L-JW"
+   },
+   "post_unblind_comparison": {
+    "annotation": "realigned",
+    "annotation_s": [
+     102.86,
+     106.88
+    ],
+    "delta_start_s": 0.057,
+    "delta_end_s": 0.162,
+    "within_0p20s": true,
+    "other_annotation": {
+     "original_s": [
+      96.49,
+      103.02
+     ]
+    },
+    "prior_automatic_evidence": {
+     "ncc_best": 0.9072,
+     "ncc_next": 0.8863,
+     "temporal_match_run": false
+    }
+   },
+   "interpretation": "source time visually supported (AI judge); full blinding; crop-box source position unknown"
+  }
+ }
+}
