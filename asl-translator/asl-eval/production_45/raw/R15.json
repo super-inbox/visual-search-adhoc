@@ -1,0 +1,80 @@
+{
+ "review_id": "R15",
+ "clip_id": "g1xdqxCZxTg_6-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g1xdqxCZxTg_6-3-rgb_front.mp4",
+ "input_video_sha256": "2ce57328815aa85e1dafc6032082ab09ccc73ae444dd9ccbad5c319a51389dd4",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:17:43+00:00",
+ "status": "ok",
+ "output_text_raw": "A sweet secret.",
+ "segments": [
+  {
+   "start": 0.76,
+   "end": 0.99,
+   "text": "A sweet secret.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 24.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 4,
+ "n_runs": 2,
+ "n_active_runs": 1,
+ "latency_s": 8.253,
+ "timestamps_sent_s": [
+  0.755,
+  0.766,
+  0.776,
+  0.786,
+  0.797,
+  0.807,
+  0.818,
+  0.828,
+  0.839,
+  0.849,
+  0.859,
+  0.87,
+  0.88,
+  0.891,
+  0.901,
+  0.911,
+  0.922,
+  0.932,
+  0.943,
+  0.953,
+  0.964,
+  0.974,
+  0.984,
+  0.995
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 6.853,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "WWnhaoXqGd6J_uMPttyCqAc",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 60,
+    "thoughts_token_count": 1183,
+    "total_token_count": 7896
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.76,\n   \"end\": 0.99,\n   \"text\": \"A sweet secret.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

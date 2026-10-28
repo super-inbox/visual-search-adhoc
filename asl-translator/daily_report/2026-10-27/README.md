@@ -1,9 +1,6 @@
 # ASL 日报 2026-10-27
 
-[三个 P0 执行结果与 Baobao 接续任务](THREE_P0_EXECUTION_REPORT.md)
-
-- 已执行：45 例三臂采样诊断；4 段视频、18 个窗口的 OpenFS 推理。
-- 未完成：配对解码质量验证、自动 fingerspelling 区间检测；防重复解码等待原实验机资产。
-- [代码、复现命令与原始结果](../../experiments/p0-2026-10-27/README.md)。
-
-报告末尾列出了 Baobao 的资产检查、执行顺序和交付验收条件。当前没有上线变更，也没有已验证的翻译质量增益。
+- [最新 Work Report](ASL_WORK_REPORT.md)：三项 P0 后续实测、生产 Gemini 对照、reviewer package 与 R1/R2 结果。
+- [10 月 28 日进展评审](../2026-10-28/PROGRESS_REVIEW.md)：结果解释、产品限制和下一步优先级。
+- [最初执行结果与 Baobao 交接](THREE_P0_EXECUTION_REPORT.md)：历史交接状态，后续进度以 Work Report 为准。
+- [代码与结果](../../experiments/p0-2026-10-27/README.md)。

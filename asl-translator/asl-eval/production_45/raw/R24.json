@@ -1,0 +1,80 @@
+{
+ "review_id": "R24",
+ "clip_id": "g3kFAmcBpFc_8-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g3kFAmcBpFc_8-3-rgb_front.mp4",
+ "input_video_sha256": "1be24e3e80581eb84680c82b3846510091d120a0d00f234880aa30190e7e7b64",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:20:02+00:00",
+ "status": "ok",
+ "output_text_raw": "Sweet Fachite",
+ "segments": [
+  {
+   "start": 0.55,
+   "end": 3.7,
+   "text": "Sweet Fachite",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 6.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 16,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 15.481,
+ "timestamps_sent_s": [
+  0.55,
+  0.65,
+  0.75,
+  0.85,
+  0.95,
+  1.05,
+  1.15,
+  1.25,
+  1.35,
+  1.45,
+  2.304,
+  2.411,
+  2.518,
+  2.625,
+  2.732,
+  2.839,
+  2.946,
+  3.054,
+  3.161,
+  3.268,
+  3.375,
+  3.482,
+  3.589,
+  3.696
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 13.899,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "5GnhaqyiDe3TjMcPqqXCyQg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 137,
+    "thoughts_token_count": 2728,
+    "total_token_count": 9518
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.55,\n      \"end\": 3.70,\n      \"text\": \"Sweet Fachite\"\n    }\n  ],\n  \"confidence\": \"medium\",\n  \"notes\": \"The first sign is clearly 'SWEET' (or 'CANDY'). The subsequent fingerspelling is clearly 'F-C-H-I-T-E', which spells 'Fachite'. As 'Fachite' is not a common English word, the overall meaning or context of the phrase 'Sweet Fachite' is ambiguous without additional information.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

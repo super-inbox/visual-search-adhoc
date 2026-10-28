@@ -1,0 +1,86 @@
+{
+ "review_id": "R16",
+ "clip_id": "g0yUlOaqL6k_12-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g0yUlOaqL6k_12-3-rgb_front.mp4",
+ "input_video_sha256": "5192cef7708ae29060744f56176bbd446bb95fa8edc47556a91899eab5d08979",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:17:51+00:00",
+ "status": "ok",
+ "output_text_raw": "I thought about calling, but it was raining. I don't know where anything is.",
+ "segments": [
+  {
+   "start": 1.36,
+   "end": 3.33,
+   "text": "I thought about calling, but it was raining.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.55,
+   "end": 6.39,
+   "text": "I don't know where anything is.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 3.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 32,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 11.013,
+ "timestamps_sent_s": [
+  1.359,
+  1.578,
+  1.797,
+  2.016,
+  2.234,
+  2.453,
+  2.672,
+  2.891,
+  3.109,
+  3.328,
+  3.547,
+  3.766,
+  3.984,
+  4.203,
+  4.422,
+  4.641,
+  4.859,
+  5.078,
+  5.297,
+  5.516,
+  5.734,
+  5.953,
+  6.172,
+  6.391
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 9.199,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "YmnhaqL-DI-d_uMPq4TrkQc",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 109,
+    "thoughts_token_count": 1785,
+    "total_token_count": 8547
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.36,\n   \"end\": 3.33,\n   \"text\": \"I thought about calling, but it was raining.\"\n  },\n  {\n   \"start\": 3.55,\n   \"end\": 6.39,\n   \"text\": \"I don't know where anything is.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

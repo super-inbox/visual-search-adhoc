@@ -1,0 +1,28 @@
+{
+ "production_repo": "curify-studio",
+ "production_ref": "origin/main",
+ "production_commit": "4220e03c0c0c5c4010ddc6ffc8c0d5379d0dc48b",
+ "production_file": "curify_background/app/utils/asl_utils.py",
+ "production_file_sha256": "90df95635fcb3297e2c2b0cd6bf15061d398f9ae2ea3c66543b982487c59ffa5",
+ "entry_point": "transcribe_asl(video_path) with production defaults (provider='gemini', frame_budget=None)",
+ "model": "gemini-2.5-flash",
+ "temperature": 0.0,
+ "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+ "sampling": {
+  "PROBE_FPS": 4.0,
+  "PROBE_WIDTH": 160,
+  "TARGET_FRAMES_PER_SEC": 2.0,
+  "MIN_FRAME_BUDGET": 24,
+  "MAX_FRAME_BUDGET": 240,
+  "DENSITY_FLOOR_FPS": 1.0,
+  "KEYFRAME_WIDTH": 512,
+  "MIN_FRAMES_PER_RUN": 2,
+  "BATCH_SIZE": 24,
+  "IDLE_QUANTILE": 0.35,
+  "ABS_MOTION_FLOOR": 2.0,
+  "DEDUP_MAX_GAP_S": 1.0,
+  "DEGENERATE_REPEAT_COUNT": 3
+ },
+ "stubbed": "app.services.imagen_service (get_gemini_client mirrored: GEMINI_API_KEY, HttpOptions timeout 60000 ms; is_quota_exhausted mirrored)",
+ "dry_run": false
+}

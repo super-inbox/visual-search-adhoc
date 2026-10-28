@@ -1,0 +1,67 @@
+review_id,part,domain,model,source_span_start_s,source_span_end_s,window_start_s,window_end_s,interval_source,letters,boss_letters,exact_match_boss,score_uncalibrated,fs_present,character_timestamps,status
+R02,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,3.3333,7.5,0.0,4.207682999999999,whole_clip,cammilian surtite,camilian surtite,False,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,3.3333,7.5,0.0,2.0,fixed_window,camilian,camilian,True,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,3.3333,7.5,1.0,3.0,fixed_window,linsusti,linsusti,True,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,3.3333,7.5,2.0,4.0,fixed_window,sustie,sustitie,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,1.25,6.4583,0.0,5.2493490000000005,whole_clip,liswithey gurer,liswithey guor,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,1.25,6.4583,0.0,2.0,fixed_window,lisw hill,lisw hill,True,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,1.25,6.4583,1.0,3.0,fixed_window,whattey,whailey,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,1.25,6.4583,2.0,4.0,fixed_window,eygu,eygu,True,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,1.25,6.4583,3.0,5.0,fixed_window,revitor,viter,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,0.0,6.0,whole_clip,pig,bag yoga,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,0.0,2.0,fixed_window,back,back,True,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,1.0,3.0,fixed_window,if,is,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,2.0,4.0,fixed_window,if,if,True,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,3.0,5.0,fixed_window,mare,so,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,6.5,12.5,4.0,6.0,fixed_window,fo,fo,True,,unknown,null,unverified_proposal
+R41,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,20.0833,23.9167,0.0,3.874349,whole_clip,ship,ship,True,,unknown,null,unverified_proposal
+R41,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,20.0833,23.9167,0.0,2.0,fixed_window,bs,bs,True,,unknown,null,unverified_proposal
+R41,A_reproduction,old_window_B_clip_how2sign_v2,OpenFS recognizer Chicago,20.0833,23.9167,1.0,3.0,fixed_window,shi,shi,True,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,3.31,7.5,0.0,4.207682999999999,whole_clip,cammilian surtitie,camilian surtite,False,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,3.31,7.5,0.0,2.0,fixed_window,camilian,camilian,True,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,3.31,7.5,1.0,3.0,fixed_window,linsusti,linsusti,True,,unknown,null,unverified_proposal
+R02,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,3.31,7.5,2.0,4.0,fixed_window,sustie,sustitie,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,1.22,6.47,0.0,5.2493490000000005,whole_clip,liswithey gror,liswithey guor,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,1.22,6.47,0.0,2.0,fixed_window,lisw hill,lisw hill,True,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,1.22,6.47,1.0,3.0,fixed_window,whattey,whailey,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,1.22,6.47,2.0,4.0,fixed_window,eygar,eygu,False,,unknown,null,unverified_proposal
+R05,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,1.22,6.47,3.0,5.0,fixed_window,revitor,viter,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,0.0,6.0,whole_clip,back hig,bag yoga,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,0.0,2.0,fixed_window,back,back,True,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,1.0,3.0,fixed_window,if,is,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,2.0,4.0,fixed_window,if,if,True,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,3.0,5.0,fixed_window,mare,so,False,,unknown,null,unverified_proposal
+R35,A_reproduction,old_window_reviewer_package_raw_cut,OpenFS recognizer Chicago,6.5,12.48,4.0,6.0,fixed_window,fo,fo,True,,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,0.0,10.291016,whole_clip,gnikcal mannnyestile filllba,,,0.38473524366106304,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,0.0,2.0,fixed_window,gnikc,,,0.5218348145484925,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,1.0,3.0,fixed_window,mile camel,,,0.6934277057647705,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,2.0,4.0,fixed_window,camilians,,,0.824215809504191,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,3.0,5.0,fixed_window,ynosuretive,,,0.5687065693465146,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,4.0,6.0,fixed_window,stie,,,0.49486421048641205,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,5.0,7.0,fixed_window,elity,,,0.6251806616783142,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,6.0,8.0,fixed_window,yllib back,,,0.5678489059209824,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,7.0,9.0,fixed_window,app,,,0.29999786118666333,unknown,null,unverified_proposal
+R02,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,1.43,11.69,8.0,10.0,fixed_window,kcaf,,,0.5656433925032616,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,0.0,7.582682999999999,whole_clip,blisswity grourt,,,0.5249749794602394,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,0.0,2.0,fixed_window,lisw,,,0.6265409104526043,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,1.0,3.0,fixed_window,swhattey,,,0.7637075483798981,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,2.0,4.0,fixed_window,tiley,,,0.6651060700416564,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,3.0,5.0,fixed_window,gunits,,,0.5363854418198267,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,4.0,6.0,fixed_window,volor,,,0.5235497117042541,unknown,null,unverified_proposal
+R05,B_official,official_window_fullframe_reviewer_package,OpenFS recognizer Chicago,0.76,8.33,5.0,7.0,fixed_window,rt,,,0.651041105389595,unknown,null,unverified_proposal
+R35,B_official,official_crop_clip_model_input_span_UNRESOLVED,OpenFS recognizer Chicago,,,0.0,3.875,whole_clip,linling gos,,,0.575824650851163,unknown,null,unverified_proposal
+R35,B_official,official_crop_clip_model_input_span_UNRESOLVED,OpenFS recognizer Chicago,,,0.0,2.0,fixed_window,fillion,,,0.7198330419404166,unknown,null,unverified_proposal
+R35,B_official,official_crop_clip_model_input_span_UNRESOLVED,OpenFS recognizer Chicago,,,1.0,3.0,fixed_window,lingo,,,0.8257814884185791,unknown,null,unverified_proposal
+R35,B_official,official_window_fullframe_reviewer_package_annotation_span_not_provenance_verified,OpenFS recognizer Chicago,13.11,16.9,0.0,3.791667,whole_clip,linling,,,0.6673969583851951,unknown,null,unverified_proposal
+R35,B_official,official_window_fullframe_reviewer_package_annotation_span_not_provenance_verified,OpenFS recognizer Chicago,13.11,16.9,0.0,2.0,fixed_window,fillion,,,0.7223057193415505,unknown,null,unverified_proposal
+R35,B_official,official_window_fullframe_reviewer_package_annotation_span_not_provenance_verified,OpenFS recognizer Chicago,13.11,16.9,1.0,3.0,fixed_window,ling,,,0.8984176069498062,unknown,null,unverified_proposal
+R02,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),3.494,5.195,2.035,3.737,detector,,,,0.9997,unknown,null,unverified_proposal
+R02,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),3.26,5.729,1.802,4.271,detector,,,,0.999,unknown,null,unverified_proposal
+R02,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),3.127,4.728,1.668,3.27,detector,,,,0.9989,unknown,null,unverified_proposal
+R02,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),2.559,3.427,1.101,1.969,detector,,,,0.9984,unknown,null,unverified_proposal
+R02,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),10.801,11.669,9.343,10.21,detector,,,,0.9974,unknown,null,unverified_proposal
+R05,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),1.759,3.595,0.968,2.803,detector,,,,0.9995,unknown,null,unverified_proposal
+R05,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),1.526,4.195,0.734,3.403,detector,,,,0.9991,unknown,null,unverified_proposal
+R05,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),2.193,3.895,1.401,3.103,detector,,,,0.9987,unknown,null,unverified_proposal
+R05,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),1.526,2.594,0.734,1.802,detector,,,,0.9979,unknown,null,unverified_proposal
+R05,C_fs_detection_smoke,official_window_fullframe_reviewer_package,FS-Detection ChicagoFSWild+ (CPU-shimmed smoke),1.526,3.094,0.734,2.302,detector,,,,0.9976,unknown,null,unverified_proposal

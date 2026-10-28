@@ -1,0 +1,86 @@
+{
+ "review_id": "R06",
+ "clip_id": "G1LiGqM3FhM_2-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G1LiGqM3FhM_2-8-rgb_front.mp4",
+ "input_video_sha256": "737c00cfef85da8e31f4739536fcc54c87f4883da53e5257039276513f99c2e5",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:14:27+00:00",
+ "status": "ok",
+ "output_text_raw": "Can you help me? I'm confused.",
+ "segments": [
+  {
+   "start": 1.55,
+   "end": 2.18,
+   "text": "Can you help me?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.28,
+   "end": 3.95,
+   "text": "I'm confused.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 6.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 16,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 7.075,
+ "timestamps_sent_s": [
+  1.552,
+  1.656,
+  1.76,
+  1.865,
+  1.969,
+  2.073,
+  2.177,
+  2.281,
+  2.385,
+  2.49,
+  2.594,
+  2.698,
+  2.802,
+  2.906,
+  3.01,
+  3.115,
+  3.219,
+  3.323,
+  3.427,
+  3.531,
+  3.635,
+  3.74,
+  3.844,
+  3.948
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 5.394,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "lmjhatD2B7rSjMcP04rtEA",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 100,
+    "thoughts_token_count": 812,
+    "total_token_count": 7565
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.55,\n   \"end\": 2.18,\n   \"text\": \"Can you help me?\"\n  },\n  {\n   \"start\": 2.28,\n   \"end\": 3.95,\n   \"text\": \"I'm confused.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

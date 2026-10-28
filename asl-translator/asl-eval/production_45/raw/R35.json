@@ -1,0 +1,92 @@
+{
+ "review_id": "R35",
+ "clip_id": "G2kVb4gINSI_1-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G2kVb4gINSI_1-10-rgb_front.mp4",
+ "input_video_sha256": "061e0bbae2ecf7c98cec5cdaa9f5ea2ec140e4855590fec8f7fc4685cacc94ab",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:21:34+00:00",
+ "status": "ok",
+ "output_text_raw": "Squeeze. Keep squeezing. Then release.",
+ "segments": [
+  {
+   "start": 0.82,
+   "end": 1.43,
+   "text": "Squeeze.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.58,
+   "end": 5.11,
+   "text": "Keep squeezing.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 5.26,
+   "end": 5.42,
+   "text": "Then release.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 4.174,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 23,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 8.907,
+ "timestamps_sent_s": [
+  0.825,
+  0.975,
+  1.125,
+  1.275,
+  1.425,
+  2.579,
+  2.737,
+  2.895,
+  3.053,
+  3.211,
+  3.368,
+  3.526,
+  3.684,
+  3.842,
+  4.0,
+  4.158,
+  4.316,
+  4.474,
+  4.632,
+  4.789,
+  4.947,
+  5.105,
+  5.263,
+  5.421
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 7.091,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "QWrharvbD_3TjMcP6KnVAQ",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 133,
+    "thoughts_token_count": 1284,
+    "total_token_count": 8070
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.82,\n   \"end\": 1.43,\n   \"text\": \"Squeeze.\"\n  },\n  {\n   \"start\": 2.58,\n   \"end\": 5.11,\n   \"text\": \"Keep squeezing.\"\n  },\n  {\n   \"start\": 5.26,\n   \"end\": 5.42,\n   \"text\": \"Then release.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

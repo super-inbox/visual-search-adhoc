@@ -1,0 +1,86 @@
+{
+ "review_id": "R33",
+ "clip_id": "g0t4Wz5qsT8_12-8-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g0t4Wz5qsT8_12-8-rgb_front.mp4",
+ "input_video_sha256": "f32e1f2e6f019aa71e6a41ce7d770c71c68a8839e5dac1eafd55f66c9d87418d",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:21:17+00:00",
+ "status": "ok",
+ "output_text_raw": "It hurts. Deaf.",
+ "segments": [
+  {
+   "start": 0.79,
+   "end": 1.44,
+   "text": "It hurts.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.03,
+   "end": 2.46,
+   "text": "Deaf.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 8.727,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 11,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 4.7,
+ "timestamps_sent_s": [
+  0.786,
+  0.859,
+  0.932,
+  1.005,
+  1.078,
+  1.151,
+  1.224,
+  1.297,
+  1.37,
+  1.443,
+  1.516,
+  1.589,
+  1.661,
+  1.734,
+  1.807,
+  1.88,
+  1.953,
+  2.026,
+  2.099,
+  2.172,
+  2.245,
+  2.318,
+  2.391,
+  2.464
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 3.185,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "L2rhaozmCPyNjMcPu8_7mAw",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 96,
+    "thoughts_token_count": 367,
+    "total_token_count": 7116
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.79,\n   \"end\": 1.44,\n   \"text\": \"It hurts.\"\n  },\n  {\n   \"start\": 2.03,\n   \"end\": 2.46,\n   \"text\": \"Deaf.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

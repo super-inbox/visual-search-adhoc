@@ -1,0 +1,134 @@
+{
+ "review_id": "R38",
+ "clip_id": "G1jsDl1mVvk_1-1-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G1jsDl1mVvk_1-1-rgb_front.mp4",
+ "input_video_sha256": "aee3ea7b808c8643d89a5eaa39f6ed5ed2595b3fbcbcc4c9901a9b0937b6a626",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:22:13+00:00",
+ "status": "ok",
+ "output_text_raw": "Let me explain something nice. One feeling, use to explain how the body feels. Just one, just five, fit, NGSH. Go tell S-I-F-C-F",
+ "segments": [
+  {
+   "start": 0.42,
+   "end": 1.08,
+   "text": "Let me explain something nice.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 6.39,
+   "end": 8.59,
+   "text": "One feeling, use to explain how the body feels.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 8.86,
+   "end": 11.61,
+   "text": "Just one, just five, fit, NGSH.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 12.18,
+   "end": 12.91,
+   "text": "Go tell",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 14.36,
+   "end": 15.82,
+   "text": "S-I-F-C-F",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 34,
+ "frame_budget_used": 34,
+ "sampling_density_fps": 2.03,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 67,
+ "n_runs": 8,
+ "n_active_runs": 4,
+ "latency_s": 38.404,
+ "timestamps_sent_s": [
+  0.417,
+  0.75,
+  1.083,
+  2.062,
+  2.188,
+  6.388,
+  6.662,
+  6.938,
+  7.213,
+  7.763,
+  8.037,
+  8.312,
+  8.588,
+  8.863,
+  9.137,
+  9.412,
+  9.688,
+  9.963,
+  10.238,
+  10.512,
+  10.787,
+  11.062,
+  11.338,
+  11.613,
+  12.182,
+  12.909,
+  13.273,
+  13.636,
+  14.0,
+  14.364,
+  14.727,
+  15.091,
+  15.455,
+  15.818
+ ],
+ "n_timestamps": 34,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 22.414,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "aGrhao-8GvnWjMcPw6jH0Qg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6659,
+    "candidates_token_count": 204,
+    "thoughts_token_count": 4688,
+    "total_token_count": 11551
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.42,\n   \"end\": 1.08,\n   \"text\": \"Let me explain something nice.\"\n  },\n  {\n   \"start\": 6.39,\n   \"end\": 8.59,\n   \"text\": \"One feeling, use to explain how the body feels.\"\n  },\n  {\n   \"start\": 8.86,\n   \"end\": 11.61,\n   \"text\": \"Just one, just five, fit, NGSH.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The fingerspelled sequence 'NGSH' is incomplete and its meaning is unclear. The repeated signs for 'ONE' and 'FIVE' are interpreted as emphasis ('just one', 'just five') but their specific contextual meaning is ambiguous without further information.\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 21,
+   "n_images": 10,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 13.207,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "fmrhaqbgM-XM-sAPl6zQcA",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 2925,
+    "candidates_token_count": 143,
+    "thoughts_token_count": 2731,
+    "total_token_count": 5799
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 12.18,\n      \"end\": 12.91,\n      \"text\": \"Go tell\"\n    },\n    {\n      \"start\": 14.36,\n      \"end\": 15.82,\n      \"text\": \"S-I-F-C-F\"\n    }\n  ],\n  \"confidence\": \"medium\",\n  \"notes\": \"The fingerspelled sequence 'S-I-F-C-F' is clearly transcribed, but its specific meaning or reference is unclear without additional context.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

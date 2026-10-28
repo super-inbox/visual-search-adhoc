@@ -1,0 +1,9 @@
+row_id,video_file,clip_duration_s,row_type,span_no,fs_present,fs_start_s,fs_end_s,fs_letters_or_word,fs_confidence,fs_type,hand_visibility,issue_flags,utterance_boundaries_s,boundaries_confidence,notes,reviewer_id,asl_background,step1_completed_at
+R02-old,clips/R02-old.mp4,4.167,fingerspelling_check,1,,,,,,,,,,,,,,
+R02-official,clips/R02-official.mp4,10.250,fingerspelling_check,1,,,,,,,,,,,,,,
+R05-old,clips/R05-old.mp4,5.208,fingerspelling_check,1,,,,,,,,,,,,,,
+R05-official,clips/R05-official.mp4,7.542,fingerspelling_check,1,,,,,,,,,,,,,,
+R35-old,clips/R35-old.mp4,6.000,fingerspelling_check,1,,,,,,,,,,,,,,
+R35-official,clips/R35-official.mp4,3.792,fingerspelling_check,1,,,,,,,,,,,,,,
+R26-context,clips/R26-context.mp4,5.000,utterance_boundaries,1,,,,,,,,,,,,,,
+R29-context,clips/R29-context.mp4,20.800,utterance_boundaries,1,,,,,,,,,,,,,,

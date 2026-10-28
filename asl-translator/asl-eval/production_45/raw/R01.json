@@ -1,0 +1,92 @@
+{
+ "review_id": "R01",
+ "clip_id": "g2ur4BIuN0Q_8-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g2ur4BIuN0Q_8-3-rgb_front.mp4",
+ "input_video_sha256": "046d536fa9fc595aaf60e5cb3257ebb167e75888ff10973dc02ba6d91a5a9612",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:13:31+00:00",
+ "status": "ok",
+ "output_text_raw": "Would you list",
+ "segments": [
+  {
+   "start": 0.55,
+   "end": 1.45,
+   "text": "Would",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 1.55,
+   "end": 2.45,
+   "text": "you",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.81,
+   "end": 3.19,
+   "text": "list",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 6.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 16,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 6.583,
+ "timestamps_sent_s": [
+  0.55,
+  0.65,
+  0.75,
+  0.85,
+  0.95,
+  1.05,
+  1.15,
+  1.25,
+  1.35,
+  1.45,
+  1.55,
+  1.65,
+  1.75,
+  1.85,
+  1.95,
+  2.05,
+  2.15,
+  2.25,
+  2.35,
+  2.45,
+  2.812,
+  2.938,
+  3.062,
+  3.188
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 3.9,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "XmjhaqHnOZbTjMcP_K6A2Ag",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 130,
+    "thoughts_token_count": 376,
+    "total_token_count": 7159
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.55,\n   \"end\": 1.45,\n   \"text\": \"Would\"\n  },\n  {\n   \"start\": 1.55,\n   \"end\": 2.45,\n   \"text\": \"you\"\n  },\n  {\n   \"start\": 2.81,\n   \"end\": 3.19,\n   \"text\": \"list\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

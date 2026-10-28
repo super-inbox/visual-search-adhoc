@@ -1,0 +1,86 @@
+{
+ "review_id": "R43",
+ "clip_id": "g2eTD-1Jcro_0-3-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/g2eTD-1Jcro_0-3-rgb_front.mp4",
+ "input_video_sha256": "dbb7fdb5a84dfdc352babb666f6f2a6b24294feea3c34f84a76a929db9ee4233",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:23:33+00:00",
+ "status": "ok",
+ "output_text_raw": "Welcome to this first class. About with...",
+ "segments": [
+  {
+   "start": 0.56,
+   "end": 2.44,
+   "text": "Welcome to this first class.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.56,
+   "end": 4.19,
+   "text": "About with...",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 5.647,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 17,
+ "n_runs": 5,
+ "n_active_runs": 2,
+ "latency_s": 13.089,
+ "timestamps_sent_s": [
+  0.556,
+  0.667,
+  0.778,
+  0.889,
+  1.0,
+  1.111,
+  1.222,
+  1.333,
+  1.444,
+  1.556,
+  1.667,
+  1.778,
+  1.889,
+  2.0,
+  2.111,
+  2.222,
+  2.333,
+  2.444,
+  3.562,
+  3.688,
+  3.812,
+  3.938,
+  4.062,
+  4.188
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 11.559,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "t2rhar_cGP-U_uMPyPeH2A4",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 118,
+    "thoughts_token_count": 2405,
+    "total_token_count": 9176
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.56,\n   \"end\": 2.44,\n   \"text\": \"Welcome to this first class.\"\n  },\n  {\n   \"start\": 3.56,\n   \"end\": 4.19,\n   \"text\": \"About with...\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The second segment is an incomplete thought, ending abruptly with 'with' as the video concludes.\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

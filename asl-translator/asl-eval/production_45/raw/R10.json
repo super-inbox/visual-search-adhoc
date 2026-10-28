@@ -1,0 +1,158 @@
+{
+ "review_id": "R10",
+ "clip_id": "fzNnTgHa1lM_2-5-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/fzNnTgHa1lM_2-5-rgb_front.mp4",
+ "input_video_sha256": "f1887acb1666ebb7af012cb033788700892294620c3666e90646b453a1d2519d",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:15:06+00:00",
+ "status": "ok",
+ "output_text_raw": "What time is L.P.Q.G.N.D.F.P.P.D.? All of my past life. First, two",
+ "segments": [
+  {
+   "start": 0.34,
+   "end": 4.45,
+   "text": "What time is L.P.Q.G.N.D.F.P.P.D.?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 19.62,
+   "end": 24.12,
+   "text": "All of my past life.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 24.62,
+   "end": 24.88,
+   "text": "First, two",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 50,
+ "frame_budget_used": 50,
+ "sampling_density_fps": 2.0,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 100,
+ "n_runs": 3,
+ "n_active_runs": 2,
+ "latency_s": 25.427,
+ "timestamps_sent_s": [
+  0.339,
+  0.518,
+  0.696,
+  0.875,
+  1.054,
+  1.232,
+  1.411,
+  1.589,
+  1.768,
+  1.946,
+  2.125,
+  2.304,
+  2.482,
+  2.661,
+  2.839,
+  3.018,
+  3.196,
+  3.375,
+  3.554,
+  3.732,
+  3.911,
+  4.089,
+  4.268,
+  4.446,
+  4.625,
+  4.804,
+  4.982,
+  5.161,
+  19.625,
+  19.875,
+  20.125,
+  20.375,
+  20.625,
+  20.875,
+  21.125,
+  21.375,
+  21.625,
+  21.875,
+  22.125,
+  22.375,
+  22.625,
+  22.875,
+  23.125,
+  23.375,
+  23.625,
+  23.875,
+  24.125,
+  24.375,
+  24.625,
+  24.875
+ ],
+ "n_timestamps": 50,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 10.759,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "vmjhavOSPNSpjMcPu73A0Qg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 80,
+    "thoughts_token_count": 2138,
+    "total_token_count": 8871
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.34,\n   \"end\": 4.45,\n   \"text\": \"What time is L.P.Q.G.N.D.F.P.P.D.?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 7.627,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "yWjhaqn5FazcjMcPo6SV0Qg",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6673,
+    "candidates_token_count": 64,
+    "thoughts_token_count": 1423,
+    "total_token_count": 8160
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 19.62,\n   \"end\": 24.12,\n   \"text\": \"All of my past life.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  },
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 5,
+   "n_images": 2,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 3.418,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "0Gjhao_xN-LDjMcPtMquEA",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 781,
+    "candidates_token_count": 62,
+    "thoughts_token_count": 434,
+    "total_token_count": 1277
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 24.62,\n   \"end\": 24.88,\n   \"text\": \"First, two\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

@@ -1,0 +1,86 @@
+{
+ "review_id": "R25",
+ "clip_id": "G25fic3QxDk_5-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G25fic3QxDk_5-10-rgb_front.mp4",
+ "input_video_sha256": "94341f04c41802d38bc7d75c863f0d54365c93c40e47c7157c82dd5c74751e87",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:20:17+00:00",
+ "status": "ok",
+ "output_text_raw": "apply massage",
+ "segments": [
+  {
+   "start": 0.55,
+   "end": 2.2,
+   "text": "apply",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.08,
+   "end": 4.42,
+   "text": "massage",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 5.053,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 19,
+ "n_runs": 7,
+ "n_active_runs": 3,
+ "latency_s": 8.092,
+ "timestamps_sent_s": [
+  0.555,
+  0.664,
+  0.773,
+  0.883,
+  0.992,
+  1.102,
+  1.211,
+  1.32,
+  1.43,
+  1.539,
+  1.648,
+  1.758,
+  1.867,
+  1.977,
+  2.086,
+  2.195,
+  3.083,
+  3.25,
+  3.417,
+  3.825,
+  3.975,
+  4.125,
+  4.275,
+  4.425
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 6.472,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "9GnhauiJDZ3K-sAPstmXWQ",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 98,
+    "thoughts_token_count": 959,
+    "total_token_count": 7710
+   },
+   "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.55,\n      \"end\": 2.20,\n      \"text\": \"apply\"\n    },\n    {\n      \"start\": 3.08,\n      \"end\": 4.42,\n      \"text\": \"massage\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}

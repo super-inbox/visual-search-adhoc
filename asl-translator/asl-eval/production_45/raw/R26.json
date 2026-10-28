@@ -1,0 +1,80 @@
+{
+ "review_id": "R26",
+ "clip_id": "G3EfBFwsOpE_3-10-rgb_front",
+ "input_video": "docs/daily_report/10.18/asl-review-inspection-sheet/videos/G3EfBFwsOpE_3-10-rgb_front.mp4",
+ "input_video_sha256": "cde75b3ff664d669f8321c899f909bb5759b93dfbbe9ee7b765a41b4e8a2dc75",
+ "input_domain": "inspection-sheet video = How2Sign v2 clip (B_ours_5p39 window)",
+ "started_utc": "2026-10-28T03:20:25+00:00",
+ "status": "ok",
+ "output_text_raw": "Various things",
+ "segments": [
+  {
+   "start": 0.52,
+   "end": 1.48,
+   "text": "Various things",
+   "speaker": "SIGNER"
+  }
+ ],
+ "error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "frames_sampled": 24,
+ "frame_budget_used": 24,
+ "sampling_density_fps": 13.714,
+ "low_density": false,
+ "degenerate_repetition": false,
+ "frames_uniform_equivalent": 7,
+ "n_runs": 3,
+ "n_active_runs": 1,
+ "latency_s": 7.828,
+ "timestamps_sent_s": [
+  0.521,
+  0.562,
+  0.604,
+  0.646,
+  0.688,
+  0.729,
+  0.771,
+  0.812,
+  0.854,
+  0.896,
+  0.938,
+  0.979,
+  1.021,
+  1.062,
+  1.104,
+  1.146,
+  1.188,
+  1.229,
+  1.271,
+  1.312,
+  1.354,
+  1.396,
+  1.438,
+  1.479
+ ],
+ "n_timestamps": 24,
+ "api_calls": [
+  {
+   "requested_model": "gemini-2.5-flash",
+   "n_parts": 49,
+   "n_images": 24,
+   "config": {
+    "response_mime_type": "application/json",
+    "temperature": 0.0
+   },
+   "latency_s": 6.347,
+   "model_version": "gemini-2.5-flash",
+   "response_id": "-2nhaoLRK7GMjMcP79KN4Ag",
+   "finish_reason": "FinishReason.STOP",
+   "usage": {
+    "prompt_token_count": 6653,
+    "candidates_token_count": 59,
+    "thoughts_token_count": 957,
+    "total_token_count": 7669
+   },
+   "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.52,\n   \"end\": 1.48,\n   \"text\": \"Various things\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+  }
+ ],
+ "retry_count": 0
+}
