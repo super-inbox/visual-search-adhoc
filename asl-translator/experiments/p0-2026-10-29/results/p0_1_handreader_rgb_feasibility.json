@@ -1,0 +1,151 @@
+{
+ "stage": "P0-1 Stage A HandReader_RGB feasibility (technical only; no accuracy; synthetic input)",
+ "date": "2026-10-29",
+ "upstream": {
+  "repo_url": "https://github.com/ai-forever/HandReader",
+  "commit": "77d390d0650a63b917087b78ab36e1eeb4e0ae3b",
+  "commit_date": "2026-10-18T01:02:50+03:00",
+  "n_commits": 2,
+  "code_license": "Apache-2.0",
+  "license_file_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "checkpoint_terms": "the checkpoint is trained on ChicagoFSWild+; its use remains subject to the relevant dataset/checkpoint terms and is not necessarily covered by the code's Apache-2.0 licence",
+  "paper": "arXiv 2505.10267, HandReader: Advanced Techniques for Efficient Fingerspelling Recognition",
+  "config": "configs/rgb_chicago.yaml",
+  "config_sha256": "3ccc1c1bf23eea2b63e934d835a6f182231bedef249a87e734a11a419d2c7358"
+ },
+ "checkpoint": {
+  "archive": "HandReader_ChicagoFSWild+.zip (README link, Sber Cloud OBS)",
+  "archive_sha256": "f66a5c779c92659cb6554fd9821ab81ec60ccb5641c81e1118983bd0c6875a3f",
+  "archive_bytes": 451577040,
+  "file": "chicago+/rgb/best.pt",
+  "sha256": "fa92e90db23a467c59d47e718f07233b94d73c1bff8dfdf3a2248ed4f3c9ad0a",
+  "bytes": 217779153,
+  "variant": "HandReader_RGB (TSM ResNet-34 + 2-layer BiGRU head, CTC)",
+  "training_data": "ChicagoFSWild+ (dataset terms apply)",
+  "binary_committed": false
+ },
+ "environment": {
+  "python": "3.11.7",
+  "machine": "x86_64",
+  "platform": "macOS-10.16-x86_64-i386-64bit",
+  "torch": "2.0.1",
+  "torchvision": "0.15.2",
+  "numpy": "1.26.3",
+  "albumentations": "1.4.8",
+  "hydra": "1.3.2",
+  "env": "isolated venv in the session scratch directory (not in the repo)",
+  "cuda_available": false,
+  "threads": 6,
+  "python_interpreter": "anaconda Python 3.11.7 x86_64 under Rosetta on Apple Silicon (same platform as the OpenFS baseline runs)",
+  "install_deviations": [
+   "repo pins opencv-python(-headless) 4.10.0.82: no x86_64 macOS wheel for this Python; opencv-python-headless 4.9.0.80 used (albumentations Resize uses cv2)",
+   "repo installs torch 2.0.1 from the cu118 index; the CPU macOS wheels of torch 2.0.1 / torchvision 0.15.2 from PyPI used",
+   "only packages needed by the RGB inference path installed (no turbojpeg, decord, face_recognition, mediapipe, h5py)",
+   "antlr4-python3-runtime 4.9.3 (hydra/omegaconf dependency) installed from its pure-Python sdist",
+   "pip check: no broken requirements"
+  ]
+ },
+ "model": {
+  "target": "src.models.RGB.models.TSM_Resnet",
+  "encoder": "resnet34",
+  "unidirection": true,
+  "head": {
+   "input_dim": 1024,
+   "hidden_dim": 1024,
+   "num_layers": 2,
+   "bidirectional": true
+  },
+  "num_classes": 32,
+  "checkpoint_object": "OrderedDict",
+  "tensors": 241,
+  "load_state_dict_strict": "PASS (0 missing, 0 unexpected)",
+  "parameters": 54408032
+ },
+ "vocabulary": {
+  "chars_ctc": "_ &'.@abcdefghijklmnopqrstuvwxyz",
+  "blank_index": 0,
+  "blank_symbol": "_",
+  "letters": "a-z plus space, & ' . @",
+  "size_including_blank": 32
+ },
+ "preprocessing": {
+  "upstream_input": "a directory of pre-cropped hand JPEG frames per clip (ChicagoFSWild+ crops from the Shi et al. 2019 hand localizer, per the paper); the repo contains NO crop-generation code",
+  "eval_transform": "BGR->RGB, albumentations Normalize(mean=(0.485,0.456,0.406), std=(0.229,0.224,0.225)) THEN Resize(224,224), ToTensorV2 (exactly transfomrs_val in src/data/RGB/datasets.py)",
+  "batching": "frames of all clips concatenated along dim 0 (sum T, 3, 224, 224) with input_lengths; TSAM shifts per clip using those lengths",
+  "frame_rate": "no resampling in eval (temporal_resample_prob 0)",
+  "stage_a_consequence": "Stage A must supply its own hand crops (frozen MediaPipe pipeline); this is a crop-source shift vs training and must be reported as such"
+ },
+ "synthetic_forward": {
+  "input": "24 synthetic 224x224 RGB frames (white canvas, moving dark rectangle, red disc); no benchmark, reviewer or real-world content",
+  "input_shape": [
+   24,
+   3,
+   224,
+   224
+  ],
+  "input_lengths": [
+   24
+  ],
+  "output_shape": [
+   1,
+   24,
+   32
+  ],
+  "device": "cpu",
+  "forward_s": [
+   3.629,
+   3.419
+  ],
+  "deterministic_two_runs": true,
+  "finite": true,
+  "decoding": {
+   "greedy_decode": {
+    "ran": true,
+    "length": 2
+   },
+   "beam_decode_beam5_no_lm": {
+    "ran": true,
+    "length": 2
+   },
+   "decoded_strings": "not recorded as results: synthetic input, semantically meaningless"
+  }
+ },
+ "decoding_notes": {
+  "tester_default": "RGBTester computes both greedy and beam (beam 5, lm_beta 0.4, ins_gamma 1.2); with scorer=None, lm_beta and ins_gamma have no effect, so beam is plain CTC prefix merging",
+  "greedy_quirk": "upstream greedy_decode skips a letter equal to the previous emitted letter whenever 2+ letters are already emitted, even across a blank, so legitimate double letters (e.g. 'll') can be suppressed; beam_decode has no such rule",
+  "frozen_for_stage_a": {
+   "primary": "CTC beam search, beam 5, no language model (beam_decode, scorer None)",
+   "secondary": "greedy_decode, diagnostic only",
+   "not_claimed": "beam is not claimed to be more accurate on our data",
+   "statement": "This decoder choice was frozen before any Stage A evaluation output was produced and therefore was not selected based on benchmark accuracy."
+  }
+ },
+ "portability_patches": [
+  {
+   "id": "P1",
+   "what": "make_resnet(pretrained=True) -> constructed without the ImageNet download",
+   "why": "avoid a network fetch; those weights are overwritten by the strict checkpoint load",
+   "changes_model_logic": false,
+   "upstream_file_edited": false
+  },
+  {
+   "id": "P2",
+   "what": "torch.Tensor.cuda() returns the tensor unchanged (stays on CPU)",
+   "why": "src/models/modules/tsm_resnet.py:452 allocates the zero padding buffer with a hard-coded .cuda(); the only CUDA call on the RGB inference path",
+   "changes_model_logic": false,
+   "upstream_file_edited": false
+  }
+ ],
+ "verdict": {
+  "weights_load": true,
+  "cpu_forward": true,
+  "decoding": true,
+  "technically_viable_for_stage_a": true,
+  "caveats": [
+   "no crop-generation code upstream: our MediaPipe crops differ from the training crops",
+   "only 2 public commits; training/eval csv layout undocumented",
+   "CPU under Rosetta x86_64 (torch 2.0.1)",
+   "ChicagoFSWild+ domain vs How2Sign"
+  ]
+ }
+}

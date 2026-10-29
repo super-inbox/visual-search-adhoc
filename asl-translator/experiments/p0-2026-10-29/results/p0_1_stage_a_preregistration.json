@@ -1,0 +1,187 @@
+{
+ "stage": "P0-1 Stage A pre-registration (frozen before any Stage A label or prediction exists)",
+ "date": "2026-10-29",
+ "source_of_truth": [
+  "2026-10-28 NEXT_P0_PLAN.md (origin/codex/asl-next-p0-20261028) P0-1",
+  "2026-10-28 PROGRESS_REVIEW.md"
+ ],
+ "question": "On independently human-confirmed fingerspelling spans, can the letters be read, and does a hand-RGB recognizer add information over the existing keypoint recognizer? Diagnostic only; reported separately from automatic localization (Stage B) and fusion (Stage C).",
+ "recognizers": {
+  "keypoint_baseline": {
+   "name": "OpenFS recognizer (CVPR 2026, AIRC-KETI)",
+   "repo_commit": "0d6fa3fa9b5aeaf99171e8c77e89531a22a6fd27",
+   "checkpoint": "recognizer/best_model.pth sha256 c8e4c227ea9cf02a0574518cd01bd6f56fd9d390cc0aa05404eedfafbf642925 (recognizer.zip b7a562e1...; Google Drive 1Ox2sIOtDsafn1TcVg6LQlt7m-gq9xVuq)",
+   "architecture": "EncoderDecoderTransformer, input_dim 42 (21 hand points x 2D), d_model 256, 8 heads, 3 layers, ff 2048",
+   "preprocessing": "MediaPipe Holistic 0.10.9 (model_complexity 1, full frame, single signer, no YOLO crop); a hand is kept on a frame only if its wrist is above its elbow; per-hand upstream normalize(.5); compact per-hand frame indices",
+   "decoding": "greedy, max 32 tokens, open vocabulary over '$abcdefghijklmnopqrstuvwxyz .&\\'@'; no lexicon, no language model",
+   "abstain": "fewer than 8 hand observations in the span -> abstain (insufficient_hand_observations); an empty decoded string also counts as abstain",
+   "runner": "asl-translator/experiments/p0-2026-10-27/specialist.py model path, unchanged, with the span taken from the human label instead of fixed windows",
+   "platform": "Apple M3 Pro, Python 3.11.7 x86_64 (Rosetta), torch 2.2.2 CPU, mediapipe 0.10.9, numpy 1.26.4, 2 threads; known platform/encode sensitivity (boss strings reproduce 10/18)",
+   "is_rgb": false,
+   "note": "never to be described as hand-RGB fusion"
+  },
+  "rgb_primary": {
+   "name": "HandReader_RGB (ai-forever/HandReader, arXiv 2505.10267)",
+   "repo": "https://github.com/ai-forever/HandReader @ 77d390d0650a63b917087b78ab36e1eeb4e0ae3b",
+   "licence": "code: Apache-2.0 (LICENSE sha256 c71d239d...). checkpoint: trained on ChicagoFSWild+; checkpoint and data use remain subject to the relevant dataset/checkpoint terms, not necessarily covered by the code licence",
+   "variant": "RGB: TSM ResNet-34 (unidirectional shift) + 2-layer BiGRU head (1024), CTC, configs/rgb_chicago.yaml (sha256 3ccc1c1b...)",
+   "checkpoint": "HandReader_ChicagoFSWild+.zip (sha256 f66a5c77...) -> chicago+/rgb/best.pt sha256 fa92e90db23a467c59d47e718f07233b94d73c1bff8dfdf3a2248ed4f3c9ad0a (strict load: 241 tensors, 0 missing, 0 unexpected)",
+   "alphabet": "chars_ctc '_ &'.@abcdefghijklmnopqrstuvwxyz', blank index 0 ('_'), 32 classes",
+   "input": "per-frame RGB hand crops; eval transform Normalize(ImageNet mean/std) then Resize(224,224), ToTensorV2; frames concatenated with per-clip lengths; no temporal resampling. Upstream ships no crop code (training crops came from the Shi et al. 2019 localizer); Stage A uses the shared MediaPipe crop pipeline below",
+   "decoding": {
+    "primary": "CTC beam search, beam size 5, no language model, no lexicon (upstream beam_decode, scorer None, so lm_beta/ins_gamma are inactive)",
+    "secondary": "upstream greedy_decode, diagnostic only; never used for a metric or gate",
+    "why": "the upstream greedy decoder can collapse a legitimate repeated letter: after 2+ emitted characters it skips a letter equal to the previous emitted letter, even across a blank",
+    "not_claimed": "beam decoding is not claimed to be more accurate on our data",
+    "freeze_statement": "This decoder choice was frozen before any Stage A evaluation output was produced and therefore was not selected based on benchmark accuracy."
+   },
+   "runtime": "CPU, Python 3.11.7 x86_64 (Rosetta), torch 2.0.1, torchvision 0.15.2; runtime patches P1 (no ImageNet download at construction) and P2 (Tensor.cuda no-op on CPU), no model logic change; see results/p0_1_handreader_rgb_feasibility.json",
+   "status": "feasibility PASSED 2026-10-29 on a synthetic input; NOT run on any Stage A item",
+   "risks": [
+    "crop-source shift (MediaPipe crops vs the training localizer)",
+    "only 2 public commits",
+    "ChicagoFSWild+ domain vs How2Sign studio video",
+    "x86_64 Rosetta CPU platform"
+   ]
+  },
+  "rgb_fallback": {
+   "name": "MiCT-RANet (fmahoudeau/MiCT-RANet-ASL-FingerSpelling), ChicagoFSWild+ weights",
+   "input": "full RGB frames (224/256p) plus Farneback optical flow; attention finds the hand, no crop",
+   "checkpoint": "released (Proton Drive): MiCT-RANet34.pth (V1) and MiCT-RANet18 ChicagoFS large (V2)",
+   "licence": "NOT stated on the repo page: research use must be confirmed before use",
+   "decoding": "CTC beam search, beam 5, no language model",
+   "status": "NOT installed, NOT run",
+   "use_if": "HandReader cannot be installed or run on CPU, or its checkpoint cannot be verified"
+  }
+ },
+ "spans": {
+  "positives": "human-confirmed span(s) from blind Step 1 (fingerspelling_present = yes, letters given, letters_confidence high or medium); both recognizers get exactly the same span",
+  "negatives": "items labelled fingerspelling_present = no; both recognizers get the frozen probe window from the input-side screen (no human span exists)",
+  "uncertain": "excluded from primary metrics; counted and reported",
+  "per_letter_timing": "not collected; stays blank",
+  "localization": "none: Stage A never uses a detector for the temporal span"
+ },
+ "pipeline": {
+  "timing": "ffprobe best_effort_timestamp_time per decoded frame of the frozen clip; frame_index, clip_time_s (PTS) and source_time_s (How2Sign START + PTS) logged separately; no resampling",
+  "span_frames": "frames with start <= clip PTS < end",
+  "landmarks": "one MediaPipe Holistic 0.10.9 pass (complexity 1) over the span frames, shared by both recognizers",
+  "hand_side": "human-labelled signing hand when left/right; otherwise the hand with more valid raised frames in the span (tie: right); same hand for both recognizers",
+  "keypoint_input": "OpenFS path unchanged (both raised hands, as upstream), frames with detected landmarks",
+  "rgb_crop": "selected hand; square box centred on the landmark bbox, side 1.6 x max(w,h), min 64 px; centred median over 5 detected frames; gaps <= 4 frames linearly interpolated (status interpolated); longer gaps -> hand_missing, frame dropped from RGB input; box shifted (not shrunk) inside the frame; resized to the recognizer's input size",
+  "missing_hand": "logged per frame; if fewer than 8 usable frames remain, the recognizer abstains",
+  "logged_per_item": [
+   "blind_id",
+   "source_video_id",
+   "video_sha256",
+   "span clip/source times",
+   "frame_index list",
+   "clip_time_s list",
+   "source_time_s list",
+   "hand side and rule",
+   "crop box per frame + status",
+   "landmark detection flags",
+   "raw letter string",
+   "candidates (if the recognizer returns n-best)",
+   "abstain reason",
+   "runtime_s",
+   "model/commit/checkpoint sha"
+  ],
+  "naming": "files and metadata carry blind_id only; no reference text, name or clip title",
+  "implemented_in": "p0_1_stage_a_prepare.py frame_table / span_frames / choose_hand / crop_boxes"
+ },
+ "label_schema": {
+  "blind_id": "FSA-### only; no clip ID, case ID or source name is shown",
+  "video_file": "blind-named copy of the frozen clip; clip time = file time",
+  "span_no": "1, 2, ... one row per fingerspelling span; one row with span_no 1 if none",
+  "fingerspelling_present": "yes | no | uncertain (whole clip)",
+  "span_start_s / span_end_s": "clip seconds (file time), span level only; per-letter times are NOT collected",
+  "letters": "letters seen, a-z, as signed (no correction to an English word); '?' for an unreadable letter; blank if not readable",
+  "letters_confidence": "high | medium | low",
+  "signing_hand": "left | right | both | unclear",
+  "visibility_issue": "none | motion_blur | out_of_frame | low_resolution | lighting | other",
+  "occlusion_issue": "none | other_hand | body | object | other",
+  "multiple_spans_in_clip": "yes | no",
+  "notes": "free text",
+  "not_shown_in_step1": [
+   "reference sentence",
+   "expected name or word",
+   "OpenFS output",
+   "RGB output",
+   "Uni-Sign / Gemini output",
+   "selection tier or screen window",
+   "clip/source ID"
+  ]
+ },
+ "label_fields": [
+  "blind_id",
+  "video_file",
+  "span_no",
+  "fingerspelling_present",
+  "span_start_s",
+  "span_end_s",
+  "letters",
+  "letters_confidence",
+  "signing_hand",
+  "visibility_issue",
+  "occlusion_issue",
+  "multiple_spans_in_clip",
+  "notes",
+  "reviewer_id",
+  "asl_background",
+  "labelled_at"
+ ],
+ "label_procedure": "Step 1 blind: the reviewer sees only the blind-named clip. Step 2 (reference-conditioned) is not part of Stage A scoring.",
+ "candidate_set": {
+  "file": "results/p0_1_stage_a_candidate_set.json",
+  "items": 36,
+  "tier_counts": {
+   "candidate_positive": 16,
+   "candidate_easy_negative": 12,
+   "random": 8
+  }
+ },
+ "metrics": {
+  "normalisation": "lowercase; keep a-z only (spaces, punctuation, digits removed) for both label and output; a human '?' letter is kept as a wildcard that matches any single letter",
+  "primary": {
+   "CER": "sum of Levenshtein edits / sum of human letters over positive spans; an abstain is scored as the empty string (all deletions)",
+   "word_exact": "fraction of positive spans whose normalised output equals the normalised human letters"
+  },
+  "secondary": {
+   "abstain_rate": "abstains / spans (positives and negatives reported separately)",
+   "fpr_negatives": "fraction of negative items where the recognizer emits >= 2 letters on the probe window",
+   "coverage": "spans with a non-abstain output / spans",
+   "per_letter_confusion": "substitution pairs from the Levenshtein alignment",
+   "runtime_per_span_s": "median and max wall time per span"
+  },
+  "paired": "per-span CER difference (RGB - keypoint); wins / losses / ties (tie if |delta| < 0.05); 95 % bootstrap CI of the mean per-span difference, clustered by source video, 10,000 resamples, seed 20261029",
+  "subgroups": [
+   "Uni-Sign already-correct controls (human letters appear as a token in the Uni-Sign A_official output, derived after labelling)",
+   "dev45 vs non-dev",
+   "selection tier"
+  ],
+  "control_subgroup_rule": "The 36-item selection does NOT use Uni-Sign output. After blind human labels return, an 'already-correct Uni-Sign control' subgroup may be defined by comparing the blinded human-confirmed letters against the previously saved Uni-Sign A_official output. The subgroup is analysis-only after labelling and cannot affect which 36 items were selected.",
+  "not_used": "model self-confidence is never used as correctness or for abstain decisions"
+ },
+ "gates": {
+  "G0_validity": "at least 12 positive spans with letters (confidence high/medium) and at least 8 negatives; otherwise no verdict (insufficient labels)",
+  "rgb_adds_value_all_of": {
+   "G1_cer": "RGB corpus CER <= keypoint CER - 0.10 (absolute) AND the upper bound of the 95 % cluster-bootstrap CI of the mean per-span CER difference (RGB - keypoint) < 0",
+   "G2_word": "RGB whole-word exact accuracy >= keypoint whole-word exact accuracy",
+   "G3_false_positives": "RGB FPR on negatives <= keypoint FPR + 0.10",
+   "G4_breadth": "after removing the 2 spans with the largest RGB gain, RGB corpus CER is still < keypoint CER, AND per-span wins >= 1.5 x losses"
+  },
+  "readable_at_known_spans": "the better recognizer reaches CER <= 0.35 AND whole-word exact >= 0.30 on positives; otherwise Stage A says: improve the recognizer first, postpone Stage B and fusion",
+  "outcomes": {
+   "RGB_ADDS_VALUE": "G0 and G1-G4 pass",
+   "NO_RGB_GAIN": "G0 passes and any of G1-G4 fails",
+   "INSUFFICIENT_LABELS": "G0 fails"
+  },
+  "fixed_before_results": "thresholds are fixed here, before any Stage A label or prediction exists, and must not change after results are seen"
+ },
+ "expansion_rule": "if Step-1 labels leave G0 unmet, label further items in this fixed order, in batches of 8: remaining eligible clips by descending screen score (eligible_screen_table), each batch taking up to 6 by score and 2 by salted hash; stop as soon as G0 is met or the 61-clip pool is exhausted. Beyond that, a How2Sign test raw-video pool (outside the 128) needs new keypoints and a separate approval. Items added this way are flagged expansion = true.",
+ "blocked_on": [
+  "blind Step-1 labels for the candidate set",
+  "approval to install HandReader (and MiCT-RANet if needed) in an isolated research venv",
+  "approval to run both recognizers on the confirmed spans"
+ ]
+}

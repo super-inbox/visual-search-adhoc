@@ -1,0 +1,68 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fingerspelling check · Step 1</title><style>
+:root{--bg:#fff;--fg:#1d1d1f;--mut:#666;--line:#ddd;--acc:#0b57d0;--card:#fafafa}
+@media (prefers-color-scheme:dark){:root{--bg:#141414;--fg:#eee;--mut:#aaa;--line:#333;--acc:#8ab4f8;--card:#1c1c1c}}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,sans-serif}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;z-index:2}
+main{max-width:980px;margin:0 auto;padding:12px 16px}.card{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:12px;margin:14px 0}
+video{width:100%;max-height:360px;background:#000;border-radius:6px}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:flex-end;margin:6px 0}
+label{display:inline-flex;flex-direction:column;font-size:12.5px;color:var(--mut)}label>*{color:var(--fg);font-size:14px}
+textarea{width:100%;min-height:38px}.t{font-variant-numeric:tabular-nums;color:var(--mut)}button{cursor:pointer}
+.span{border-top:1px dashed var(--line);padding-top:6px}.note{color:var(--mut);font-size:12.5px}
+</style></head><body><header><b>Fingerspelling check · Step 1</b>
+<div class="row"><label>Reviewer ID<input id="rid" type="text"></label><label>ASL background<input id="bg" type="text" size="28"></label>
+<label>Load clips<input id="files" type="file" accept="video/mp4" multiple></label>
+<button id="exp">Export blind_review.csv</button><label>Import CSV<input id="imp" type="file" accept=".csv"></label></div>
+<div class="note">Answers are saved in this browser as you type. See reviewer_instructions.md.</div></header>
+<main id="m"></main><script>
+const D={"key": "p0_1_stage_a_step1_v1", "csv": "blind_review.csv", "cols": ["blind_id", "video_file", "span_no", "fingerspelling_present", "span_start_s", "span_end_s", "letters", "letters_confidence", "signing_hand", "visibility_issue", "occlusion_issue", "multiple_spans_in_clip", "notes", "reviewer_id", "asl_background", "labelled_at"], "items": [{"blind_id": "FSA-001", "video_file": "clips/FSA-001.mp4", "duration_s": 5.37}, {"blind_id": "FSA-002", "video_file": "clips/FSA-002.mp4", "duration_s": 4.62}, {"blind_id": "FSA-003", "video_file": "clips/FSA-003.mp4", "duration_s": 4.72}, {"blind_id": "FSA-004", "video_file": "clips/FSA-004.mp4", "duration_s": 18.67}, {"blind_id": "FSA-005", "video_file": "clips/FSA-005.mp4", "duration_s": 15.49}, {"blind_id": "FSA-006", "video_file": "clips/FSA-006.mp4", "duration_s": 3.77}, {"blind_id": "FSA-007", "video_file": "clips/FSA-007.mp4", "duration_s": 9.81}, {"blind_id": "FSA-008", "video_file": "clips/FSA-008.mp4", "duration_s": 13.61}, {"blind_id": "FSA-009", "video_file": "clips/FSA-009.mp4", "duration_s": 4.0}, {"blind_id": "FSA-010", "video_file": "clips/FSA-010.mp4", "duration_s": 5.17}, {"blind_id": "FSA-011", "video_file": "clips/FSA-011.mp4", "duration_s": 1.61}, {"blind_id": "FSA-012", "video_file": "clips/FSA-012.mp4", "duration_s": 6.76}, {"blind_id": "FSA-013", "video_file": "clips/FSA-013.mp4", "duration_s": 5.29}, {"blind_id": "FSA-014", "video_file": "clips/FSA-014.mp4", "duration_s": 4.53}, {"blind_id": "FSA-015", "video_file": "clips/FSA-015.mp4", "duration_s": 3.75}, {"blind_id": "FSA-016", "video_file": "clips/FSA-016.mp4", "duration_s": 6.53}, {"blind_id": "FSA-017", "video_file": "clips/FSA-017.mp4", "duration_s": 5.6}, {"blind_id": "FSA-018", "video_file": "clips/FSA-018.mp4", "duration_s": 8.8}, {"blind_id": "FSA-019", "video_file": "clips/FSA-019.mp4", "duration_s": 23.62}, {"blind_id": "FSA-020", "video_file": "clips/FSA-020.mp4", "duration_s": 20.78}, {"blind_id": "FSA-021", "video_file": "clips/FSA-021.mp4", "duration_s": 5.35}, {"blind_id": "FSA-022", "video_file": "clips/FSA-022.mp4", "duration_s": 6.35}, {"blind_id": "FSA-023", "video_file": "clips/FSA-023.mp4", "duration_s": 6.52}, {"blind_id": "FSA-024", "video_file": "clips/FSA-024.mp4", "duration_s": 20.62}, {"blind_id": "FSA-025", "video_file": "clips/FSA-025.mp4", "duration_s": 1.66}, {"blind_id": "FSA-026", "video_file": "clips/FSA-026.mp4", "duration_s": 4.4}, {"blind_id": "FSA-027", "video_file": "clips/FSA-027.mp4", "duration_s": 4.87}, {"blind_id": "FSA-028", "video_file": "clips/FSA-028.mp4", "duration_s": 4.51}, {"blind_id": "FSA-029", "video_file": "clips/FSA-029.mp4", "duration_s": 4.23}, {"blind_id": "FSA-030", "video_file": "clips/FSA-030.mp4", "duration_s": 5.47}, {"blind_id": "FSA-031", "video_file": "clips/FSA-031.mp4", "duration_s": 1.83}, {"blind_id": "FSA-032", "video_file": "clips/FSA-032.mp4", "duration_s": 4.57}, {"blind_id": "FSA-033", "video_file": "clips/FSA-033.mp4", "duration_s": 4.62}, {"blind_id": "FSA-034", "video_file": "clips/FSA-034.mp4", "duration_s": 4.0}, {"blind_id": "FSA-035", "video_file": "clips/FSA-035.mp4", "duration_s": 4.77}, {"blind_id": "FSA-036", "video_file": "clips/FSA-036.mp4", "duration_s": 2.27}], "item_fields": [{"name": "fingerspelling_present", "label": "Is fingerspelling present?", "options": ["yes", "no", "uncertain"]}, {"name": "multiple_spans_in_clip", "label": "More than one span?", "options": ["yes", "no"]}, {"name": "notes", "label": "Notes (if uncertain: why)", "area": true}], "span_fields": [{"name": "span_start_s", "label": "start (s)", "time": true}, {"name": "span_end_s", "label": "end (s)", "time": true}, {"name": "letters", "label": "letters (a\u2013z, ? = unreadable)", "size": 18}, {"name": "letters_confidence", "label": "confidence", "options": ["high", "medium", "low"]}, {"name": "signing_hand", "label": "signing hand", "options": ["left", "right", "both", "unclear"]}, {"name": "visibility_issue", "label": "visibility", "options": ["none", "motion_blur", "out_of_frame", "low_resolution", "lighting", "other"]}, {"name": "occlusion_issue", "label": "occlusion", "options": ["none", "other_hand", "body", "object", "other"]}]}, KEY=D.key, urls={};
+let S={};try{S=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){S={}}
+const $=s=>document.querySelector(s), esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
+S.__meta=S.__meta||{};
+function meta(){$('#rid').value=S.__meta.reviewer_id||'';$('#bg').value=S.__meta.asl_background||''}
+$('#rid').oninput=e=>{S.__meta.reviewer_id=e.target.value;save()};$('#bg').oninput=e=>{S.__meta.asl_background=e.target.value;save()};
+function field(id,f){const v=S[id]??'';
+ if(f.options)return `<label>${esc(f.label)}<select data-id="${id}"><option value=""></option>${f.options.map(o=>`<option ${o===v?'selected':''}>${o}</option>`).join('')}</select></label>`;
+ if(f.time)return `<label>${esc(f.label)}<span><input type="text" size="6" data-id="${id}" value="${esc(v)}"> <button data-now="${id}">= now</button></span></label>`;
+ if(f.area)return `<label style="flex:1 1 100%">${esc(f.label)}<textarea data-id="${id}">${esc(v)}</textarea></label>`;
+ return `<label>${esc(f.label)}<input type="text" data-id="${id}" value="${esc(v)}" size="${f.size||14}"></label>`}
+function nspans(b){return S['spans|'+b]||1}
+function render(){$('#m').innerHTML=D.items.map(it=>{const b=it.blind_id;let sp='';
+ for(let k=1;k<=nspans(b);k++)sp+=`<div class="row span"><b>span ${k}</b>${D.span_fields.map(f=>field(b+'|'+k+'|'+f.name,f)).join('')}</div>`;
+ return `<div class="card" id="c-${b}"><div class="row"><b>${b}</b><span class="t">${esc(it.video_file)} · ${it.duration_s} s</span></div>
+ <video id="v-${b}" controls preload="metadata" ${urls[it.video_file.split('/').pop()]?`src="${urls[it.video_file.split('/').pop()]}"`:''}></video>
+ <div class="row"><span class="t" id="t-${b}">0.0 s</span>${[1,0.5,0.25].map(x=>`<button data-rate="${x}" data-v="${b}">${x}×</button>`).join('')}
+ <button data-back="${b}">−2 s</button><button data-addspan="${b}">+ span</button>${nspans(b)>1?`<button data-delspan="${b}">− last span</button>`:''}</div>
+ <div class="row">${D.item_fields.map(f=>field(b+'|0|'+f.name,f)).join('')}</div>${sp}</div>`}).join('');
+ document.querySelectorAll('video').forEach(v=>v.ontimeupdate=()=>{$('#t-'+v.id.slice(2)).textContent=v.currentTime.toFixed(1)+' s'});}
+document.addEventListener('input',e=>{const id=e.target.dataset.id;if(id){S[id]=e.target.value;save()}});
+document.addEventListener('change',e=>{const id=e.target.dataset.id;if(id){S[id]=e.target.value;save()}});
+document.addEventListener('click',e=>{const d=e.target.dataset;
+ if(d.rate)document.getElementById('v-'+d.v).playbackRate=+d.rate;
+ if(d.back){const v=document.getElementById('v-'+d.back);v.currentTime=Math.max(0,v.currentTime-2)}
+ if(d.now){const b=d.now.split('|')[0],v=document.getElementById('v-'+b);S[d.now]=v.currentTime.toFixed(1);save();render()}
+ if(d.addspan){S['spans|'+d.addspan]=nspans(d.addspan)+1;save();render()}
+ if(d.delspan){const b=d.delspan,n=nspans(b);for(const f of D.span_fields)delete S[b+'|'+n+'|'+f.name];S['spans|'+b]=n-1;save();render()}});
+$('#files').onchange=e=>{for(const f of e.target.files)urls[f.name]=URL.createObjectURL(f);render()};
+const cell=v=>/[",\r\n]/.test(v=String(v??''))?'"'+v.replace(/"/g,'""')+'"':v;
+function exportCSV(stamp){const L=[D.cols.join(',')],now=stamp||new Date().toISOString();
+ for(const it of D.items){const b=it.blind_id;for(let k=1;k<=nspans(b);k++){const o={blind_id:b,video_file:it.video_file,span_no:k};
+  for(const f of D.item_fields)o[f.name]=S[b+'|0|'+f.name]??'';for(const f of D.span_fields)o[f.name]=S[b+'|'+k+'|'+f.name]??'';
+  o.reviewer_id=S.__meta.reviewer_id||'';o.asl_background=S.__meta.asl_background||'';o.labelled_at=now;
+  L.push(D.cols.map(c=>cell(o[c])).join(','))}}return L.join('\r\n')+'\r\n'}
+function parseCSV(t){const rows=[];let row=[],c='',q=false;
+ for(let i=0;i<t.length;i++){const ch=t[i];if(q){if(ch=='"'&&t[i+1]=='"'){c+='"';i++}else if(ch=='"')q=false;else c+=ch}
+  else if(ch=='"')q=true;else if(ch==','){row.push(c);c=''}else if(ch=='\n'){row.push(c.replace(/\r$/,''));rows.push(row);row=[];c=''}else c+=ch}
+ if(c!==''||row.length){row.push(c);rows.push(row)}return rows}
+function importCSV(t){const rows=parseCSV(t),h=rows.shift();const N={__meta:{}};
+ for(const r of rows){if(r.length<h.length)continue;const o={};h.forEach((k,i)=>o[k]=r[i]);const b=o.blind_id,k=+o.span_no||1;
+  if(!D.items.some(it=>it.blind_id===b))continue;N['spans|'+b]=Math.max(N['spans|'+b]||1,k);
+  for(const f of D.item_fields)if(o[f.name])N[b+'|0|'+f.name]=o[f.name];for(const f of D.span_fields)if(o[f.name])N[b+'|'+k+'|'+f.name]=o[f.name];
+  if(o.reviewer_id)N.__meta.reviewer_id=o.reviewer_id;if(o.asl_background)N.__meta.asl_background=o.asl_background}
+ S=N;save();meta();render()}
+window.stageA={exportCSV,importCSV,clear:()=>{S={__meta:{}};save();meta();render()}};
+$('#exp').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([exportCSV()],{type:'text/csv'}));a.download=D.csv;a.click()};
+$('#imp').onchange=async e=>{importCSV(await e.target.files[0].text())};
+meta();render();
+</script></body></html>

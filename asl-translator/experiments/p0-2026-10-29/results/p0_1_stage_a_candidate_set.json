@@ -1,0 +1,1657 @@
+{
+ "stage": "P0-1 Stage A expanded blind label set (selection only; no label, no prediction)",
+ "salt": "P0-1-StageA-2026-10-29",
+ "pool": {
+  "benchmark": "How2Sign v2 frozen 128 (test split; FREEZE.sha256 16c41282b21928e3...)",
+  "clips": 128,
+  "eligible": 61,
+  "excluded": {
+   "p0_15_sealed_final": 66,
+   "legacy_step1_package": 1,
+   "video_not_verified": 0
+  },
+  "eligible_dev45": 14,
+  "eligible_raised_fraction_median": 1.0,
+  "clean_untouched": false,
+  "exposure_note": "every clip has prior Uni-Sign and Gemini exposure; no clip in the selected set has been run through OpenFS, FS-Detection or an RGB fingerspelling recognizer"
+ },
+ "screen": {
+  "keypoints": "P0-12 B_ours_5p39 RTMPose wholebody (rtmlib 0.0.13 lightweight), every frame of the frozen v2 video, coordinates normalised by (W,H); first detected person per frame",
+  "hand_valid": "mean score of the 21 hand keypoints >= 0.5",
+  "raised": "hand wrist y above the same-side elbow y (image y grows downward); the OpenFS hand filter",
+  "shape": "21 hand points minus the hand wrist point, divided by the max wrist-to-point distance",
+  "articulation_rate": "L2 norm of the shape change between consecutive valid frames / dt (dt from frame PTS)",
+  "wrist_speed": "hand-wrist displacement / shoulder width / dt",
+  "window_s": 1.0,
+  "window_score": "r * median(articulation_rate) / (1 + median(wrist_speed)); r = fraction of window frames where the hand is valid and raised; computed per hand; windows with fewer than 6 valid raised frames score 0",
+  "clip_score": "max over windows and both hands",
+  "probe_window": "2.0 s centred on the best window, clamped to the clip; used only as the recognizer input span for confirmed-negative items (no human span exists there)",
+  "clip_raised_fraction": "fraction of frames where either hand is valid and raised",
+  "not_used": [
+   "reference text",
+   "names",
+   "any model letter output",
+   "detector proposals or scores",
+   "Uni-Sign / Gemini output or score",
+   "whether a case previously succeeded"
+  ]
+ },
+ "tiers": {
+  "candidate_positive": 16,
+  "candidate_easy_negative": 12,
+  "random": 8
+ },
+ "signer_cap": 12,
+ "tier_counts": {
+  "candidate_positive": 16,
+  "candidate_easy_negative": 12,
+  "random": 8
+ },
+ "signer_counts": {
+  "1": 6,
+  "2": 6,
+  "3": 9,
+  "8": 8,
+  "10": 7
+ },
+ "dev45_in_set": 9,
+ "legacy_package_separate": {
+  "R02": "G3OMdQo1zjY_0-10-rgb_front",
+  "R05": "G3VM7etNABI_0-10-rgb_front",
+  "R35": "G2kVb4gINSI_1-10-rgb_front"
+ },
+ "items": [
+  {
+   "blind_id": "FSA-001",
+   "clip_id": "fzncPNr2Sc0_10-8-rgb_front",
+   "source_video_id": "fzncPNr2Sc0",
+   "video_sha256": "2302e684e86383dd35e5180022d1d5157f90f86feb7a598ed6b75e3ffa674781",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.37,
+    "n_frames": 128
+   },
+   "source_offset_s": 66.05,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 12.547028,
+    "hand": "right",
+    "window_clip_s": [
+     4.833,
+     5.333
+    ],
+    "clip_raised_fraction": 0.9688
+   },
+   "probe_window_clip_s": [
+    3.333,
+    5.333
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-002",
+   "clip_id": "g3PBeTb1TCw_6-3-rgb_front",
+   "source_video_id": "g3PBeTb1TCw",
+   "video_sha256": "af23a965748f87e2d46faeb56c7d93f12acdc2c9bff506a904f3efa119e81e1f",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.62,
+    "n_frames": 110
+   },
+   "source_offset_s": 26.96,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.848576,
+    "hand": "right",
+    "window_clip_s": [
+     4.166,
+     4.583
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.583,
+    4.583
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-003",
+   "clip_id": "g3Cc_1-V31U_14-3-rgb_front",
+   "source_video_id": "g3Cc_1-V31U",
+   "video_sha256": "5d990c05aed5ee2d3df350964fba0e142f0e86b8c9c23256714a53836d428735",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.72,
+    "n_frames": 114
+   },
+   "source_offset_s": 78.74,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 14.815174,
+    "hand": "right",
+    "window_clip_s": [
+     4.5,
+     4.708
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.708,
+    4.708
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-004",
+   "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+   "source_video_id": "fZM3IcM2Xs4",
+   "video_sha256": "f9828765e89dce9b95dd964bf467e77fb99c09f212c6e8abae69087b6c0dd192",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 18.67,
+    "n_frames": 448
+   },
+   "source_offset_s": 63.63,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 11.332377,
+    "hand": "right",
+    "window_clip_s": [
+     3.749,
+     4.749
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    3.249,
+    5.249
+   ],
+   "dev45_review_id": "R11",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-005",
+   "clip_id": "G23G21G49dk_14-2-rgb_front",
+   "source_video_id": "G23G21G49dk",
+   "video_sha256": "6cdcdb68e3fae84f7ebd514632d642fd4d64bc93861ec25c5f98ce53f2c70f84",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 15.49,
+    "n_frames": 465
+   },
+   "source_offset_s": 84.22,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.299679,
+    "hand": "right",
+    "window_clip_s": [
+     9.167,
+     10.133
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    8.65,
+    10.65
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-006",
+   "clip_id": "FzWvE__PamM_7-2-rgb_front",
+   "source_video_id": "FzWvE__PamM",
+   "video_sha256": "c60c48bf6fcf2d1f8d164af34918f708258b412a8b174d05db0f65f859a3bd54",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 3.77,
+    "n_frames": 113
+   },
+   "source_offset_s": 36.65,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 6.917802,
+    "hand": "right",
+    "window_clip_s": [
+     2.0,
+     2.966
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    1.483,
+    3.483
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-007",
+   "clip_id": "FZCEymcpq7I_14-1-rgb_front",
+   "source_video_id": "FZCEymcpq7I",
+   "video_sha256": "36d8e26df72f9d17d11698ee2ec46a04513f41934ff85a0520d31b41e59db8ec",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 9.81,
+    "n_frames": 294
+   },
+   "source_offset_s": 70.55,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 9.068997,
+    "hand": "left",
+    "window_clip_s": [
+     4.633,
+     5.6
+    ],
+    "clip_raised_fraction": 0.6667
+   },
+   "probe_window_clip_s": [
+    4.116,
+    6.116
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-008",
+   "clip_id": "g3BsH_C3u7Y_2-3-rgb_front",
+   "source_video_id": "g3BsH_C3u7Y",
+   "video_sha256": "686e6fd2eef2344b5dae40014b79d4fbe58d76bb60714f370f6c17bf68b4d841",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 13.61,
+    "n_frames": 327
+   },
+   "source_offset_s": 13.12,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 8.461781,
+    "hand": "right",
+    "window_clip_s": [
+     6.375,
+     7.333
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    5.854,
+    7.854
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-009",
+   "clip_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "source_video_id": "fzcsY2gm7t0",
+   "video_sha256": "5fb5f9f9e2ae9e06d575562bc4a033e248248e79c0ff5540e7fb918d5a28acc6",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.0,
+    "n_frames": 95
+   },
+   "source_offset_s": 43.27,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 5.715384,
+    "hand": "left",
+    "window_clip_s": [
+     3.499,
+     3.958
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    1.958,
+    3.958
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-010",
+   "clip_id": "g0iNy-yPisM_19-8-rgb_front",
+   "source_video_id": "g0iNy-yPisM",
+   "video_sha256": "bc615b58acabc18fbaa9710feffe63b134c1742be8ac7963d8d483e5a3f81511",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.17,
+    "n_frames": 125
+   },
+   "source_offset_s": 105.78,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 12.735187,
+    "hand": "right",
+    "window_clip_s": [
+     4.875,
+     5.167
+    ],
+    "clip_raised_fraction": 0.992
+   },
+   "probe_window_clip_s": [
+    3.167,
+    5.167
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-011",
+   "clip_id": "fzQ2E3_xBZA_1-8-rgb_front",
+   "source_video_id": "fzQ2E3_xBZA",
+   "video_sha256": "f6b235afe9a6f5f6b73125b0afe583a95bcfe53e5845ed984f2623e0ff40bba0",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 1.61,
+    "n_frames": 38
+   },
+   "source_offset_s": 2.02,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 7.059009,
+    "hand": "left",
+    "window_clip_s": [
+     0.166,
+     1.124
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.0,
+    1.583
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-012",
+   "clip_id": "G2VzB5-JkRA_1-10-rgb_front",
+   "source_video_id": "G2VzB5-JkRA",
+   "video_sha256": "b738b23e9d80de14ea6d206224909ed2f3d4b697f372f371ff5f6f88ca73fd81",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 6.76,
+    "n_frames": 162
+   },
+   "source_offset_s": 10.88,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 8.889419,
+    "hand": "left",
+    "window_clip_s": [
+     6.541,
+     6.749
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    4.749,
+    6.749
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-013",
+   "clip_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "source_video_id": "G3FhmHz_7hs",
+   "video_sha256": "841ae618a836fad6c542302711aab45a2cc88b60c22729ff936c31123dda890e",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.29,
+    "n_frames": 126
+   },
+   "source_offset_s": 133.01,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.10835,
+    "hand": "right",
+    "window_clip_s": [
+     1.666,
+     2.624
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    1.145,
+    3.145
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-014",
+   "clip_id": "G19uBylwQww_1-2-rgb_front",
+   "source_video_id": "G19uBylwQww",
+   "video_sha256": "ea92352c2b3b15e86f2fede0d04f310af04ec26fc696a5281e4f9b8c12678941",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.53,
+    "n_frames": 136
+   },
+   "source_offset_s": 6.33,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 9.179982,
+    "hand": "right",
+    "window_clip_s": [
+     4.233,
+     4.5
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.5,
+    4.5
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-015",
+   "clip_id": "g3X3XE6M2_A_8-3-rgb_front",
+   "source_video_id": "g3X3XE6M2_A",
+   "video_sha256": "c5f5e25e79b567d52631c6fdacdf7fb4313732a7237456af93ed5fa2e9888362",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 3.75,
+    "n_frames": 90
+   },
+   "source_offset_s": 28.23,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.434995,
+    "hand": "left",
+    "window_clip_s": [
+     3.208,
+     3.708
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    1.708,
+    3.708
+   ],
+   "dev45_review_id": "R45",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-016",
+   "clip_id": "fZq8wTAYtmw_10-10-rgb_front",
+   "source_video_id": "fZq8wTAYtmw",
+   "video_sha256": "6fbbf9c7a360133977351180be322284553dbfe0c73e3a3541bc09243c9cdb7c",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 6.53,
+    "n_frames": 157
+   },
+   "source_offset_s": 96.49,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 6.439208,
+    "hand": "right",
+    "window_clip_s": [
+     4.542,
+     5.5
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    4.021,
+    6.021
+   ],
+   "dev45_review_id": "R42",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-017",
+   "clip_id": "g1HvmBOR7Y4_15-3-rgb_front",
+   "source_video_id": "g1HvmBOR7Y4",
+   "video_sha256": "d5b34ad1cbda00c71e526e25a50c8b63f12b634a8e229f584fdce90c880b0b1c",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.6,
+    "n_frames": 134
+   },
+   "source_offset_s": 68.06,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 17.561022,
+    "hand": "right",
+    "window_clip_s": [
+     5.208,
+     5.583
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    3.583,
+    5.583
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-018",
+   "clip_id": "FzoUVr98JmQ_6-8-rgb_front",
+   "source_video_id": "FzoUVr98JmQ",
+   "video_sha256": "370bc815457946e539ffa3ee683a4f14c70ae0fea466b471c546ee9b1b3805a2",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 8.8,
+    "n_frames": 212
+   },
+   "source_offset_s": 13.9,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.541816,
+    "hand": "right",
+    "window_clip_s": [
+     7.833,
+     8.792
+    ],
+    "clip_raised_fraction": 0.6698
+   },
+   "probe_window_clip_s": [
+    6.792,
+    8.792
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-019",
+   "clip_id": "fzOH00UZg84_30-8-rgb_front",
+   "source_video_id": "fzOH00UZg84",
+   "video_sha256": "09b4915d50dde5a5cbf466a07eb430ef9c7e6296ab5c152f8515a954a008b22a",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 23.62,
+    "n_frames": 567
+   },
+   "source_offset_s": 199.45,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 9.175867,
+    "hand": "right",
+    "window_clip_s": [
+     8.625,
+     9.583
+    ],
+    "clip_raised_fraction": 0.9788
+   },
+   "probe_window_clip_s": [
+    8.104,
+    10.104
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-020",
+   "clip_id": "G095RWKQ39g_10-1-rgb_front",
+   "source_video_id": "G095RWKQ39g",
+   "video_sha256": "5b8adae29960b864eaffa0b2835a5b9c0dbf6717205481d0d896b220b9b69517",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 20.78,
+    "n_frames": 623
+   },
+   "source_offset_s": 65.87,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 8.551177,
+    "hand": "right",
+    "window_clip_s": [
+     19.1,
+     20.066
+    ],
+    "clip_raised_fraction": 0.878
+   },
+   "probe_window_clip_s": [
+    18.583,
+    20.583
+   ],
+   "dev45_review_id": "R36",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-021",
+   "clip_id": "-g0sqksgyc4_3-2-rgb_front",
+   "source_video_id": "-g0sqksgyc4",
+   "video_sha256": "d1bf94c9d778261468510b469c5811beee117bf854476a68f7fd99d6ac1c943a",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.35,
+    "n_frames": 129
+   },
+   "source_offset_s": 32.9,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 6.480349,
+    "hand": "left",
+    "window_clip_s": [
+     1.583,
+     2.542
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    1.062,
+    3.062
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-022",
+   "clip_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "source_video_id": "FzQPg4aqNYc",
+   "video_sha256": "084908104738b858ae6cd4857b7cca32fd60a2e807e44210a94c8181c733cbd2",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 6.35,
+    "n_frames": 153
+   },
+   "source_offset_s": 48.49,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 8.549542,
+    "hand": "left",
+    "window_clip_s": [
+     5.833,
+     6.333
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    4.333,
+    6.333
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-023",
+   "clip_id": "-g45vqccdzI_6-1-rgb_front",
+   "source_video_id": "-g45vqccdzI",
+   "video_sha256": "b52a635ebb24eddaad717422fd6ee7a132255ac3832ee41cf79b51d6a8bcda97",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 6.52,
+    "n_frames": 157
+   },
+   "source_offset_s": 23.5,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 7.690192,
+    "hand": "right",
+    "window_clip_s": [
+     1.0,
+     1.958
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.479,
+    2.479
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-024",
+   "clip_id": "G21Gx_C18IA_2_3-2-rgb_front",
+   "source_video_id": "G21Gx_C18IA",
+   "video_sha256": "008aad6859712aa422ac4b8a63f45417f9bb55f260e8c73b1d55afab0b8cf57a",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 20.62,
+    "n_frames": 619
+   },
+   "source_offset_s": 7.43,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.550397,
+    "hand": "right",
+    "window_clip_s": [
+     7.2,
+     8.167
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    6.683,
+    8.683
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-025",
+   "clip_id": "g0QHEtNjZhI_21-10-rgb_front",
+   "source_video_id": "g0QHEtNjZhI",
+   "video_sha256": "9d590da1ee9e0d24881a75fd45232e1f80989d5ee5f71ac2291b3449b9f1ab6b",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 1.66,
+    "n_frames": 40
+   },
+   "source_offset_s": 98.54,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.181418,
+    "hand": "right",
+    "window_clip_s": [
+     0.458,
+     1.417
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.0,
+    1.625
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 reserve",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-026",
+   "clip_id": "37ZtKNf6Yd8_1-1-rgb_front",
+   "source_video_id": "37ZtKNf6Yd8",
+   "video_sha256": "ad8d1e42aa8a2638083f1987244fe7491309edc5ecfdfb6c52f116a42c68b6c8",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.4,
+    "n_frames": 106
+   },
+   "source_offset_s": 10.78,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 11.21346,
+    "hand": "right",
+    "window_clip_s": [
+     1.5,
+     2.458
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.979,
+    2.979
+   ],
+   "dev45_review_id": "R18",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-027",
+   "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "source_video_id": "g2ELiaFjKfs",
+   "video_sha256": "10bb41f766fdbebcf092bdaf6e16bb672c070bbe51314c2c14dd5b05d8337d7d",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.87,
+    "n_frames": 116
+   },
+   "source_offset_s": 20.93,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 6.806484,
+    "hand": "right",
+    "window_clip_s": [
+     2.749,
+     3.708
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.229,
+    4.229
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-028",
+   "clip_id": "g0Abwige7MQ_2-8-rgb_front",
+   "source_video_id": "g0Abwige7MQ",
+   "video_sha256": "d869220889c0c10d508cdc9481ba5f5799bd59ffc79d188833b8b7fc0a425115",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.51,
+    "n_frames": 108
+   },
+   "source_offset_s": 12.85,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.916107,
+    "hand": "left",
+    "window_clip_s": [
+     1.333,
+     2.291
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.812,
+    2.812
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-029",
+   "clip_id": "g3kFAmcBpFc_8-3-rgb_front",
+   "source_video_id": "g3kFAmcBpFc",
+   "video_sha256": "1be24e3e80581eb84680c82b3846510091d120a0d00f234880aa30190e7e7b64",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.23,
+    "n_frames": 101
+   },
+   "source_offset_s": 52.52,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 5.180921,
+    "hand": "left",
+    "window_clip_s": [
+     0.208,
+     1.166
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    0.0,
+    2.0
+   ],
+   "dev45_review_id": "R24",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-030",
+   "clip_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "source_video_id": "g3jQ5ecjGz8",
+   "video_sha256": "cb122d0de61b79fff6314809e69491a0f12e943f1346ab714d8737928d25e978",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 5.47,
+    "n_frames": 131
+   },
+   "source_offset_s": 24.1,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 10.897453,
+    "hand": "right",
+    "window_clip_s": [
+     4.833,
+     5.458
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    3.458,
+    5.458
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-031",
+   "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+   "source_video_id": "92V3oH63zbQ",
+   "video_sha256": "1c34f208492521d7c0e69f56b9d81ad6f3b3dfb65a23a39cdfba047d89163a21",
+   "signer_proxy": "1",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 1.83,
+    "n_frames": 55
+   },
+   "source_offset_s": 10.03,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 3.417808,
+    "hand": "right",
+    "window_clip_s": [
+     1.567,
+     1.8
+    ],
+    "clip_raised_fraction": 0.3455
+   },
+   "probe_window_clip_s": [
+    0.0,
+    1.8
+   ],
+   "dev45_review_id": "R29",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-032",
+   "clip_id": "g2wUCRRni28_6-3-rgb_front",
+   "source_video_id": "g2wUCRRni28",
+   "video_sha256": "52e7e780e25e621106eca6edd10bc39da8c1c90ce86d5d9edf2dcb031940dea3",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.57,
+    "n_frames": 109
+   },
+   "source_offset_s": 49.43,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 7.134954,
+    "hand": "left",
+    "window_clip_s": [
+     3.999,
+     4.541
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.541,
+    4.541
+   ],
+   "dev45_review_id": "R30",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-033",
+   "clip_id": "FzAIlhumvMA_4-2-rgb_front",
+   "source_video_id": "FzAIlhumvMA",
+   "video_sha256": "f660f7fe6b2d6058d3935c8140fff483a30f6ada1c95d5bd3ed6a48806450153",
+   "signer_proxy": "2",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.62,
+    "n_frames": 110
+   },
+   "source_offset_s": 47.51,
+   "selection_tier": "candidate_positive",
+   "category_rule": "top-16 screen score (signer cap 12)",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 23.149263,
+    "hand": "right",
+    "window_clip_s": [
+     4.374,
+     4.583
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.583,
+    4.583
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-034",
+   "clip_id": "g25IORxoyXE_8-10-rgb_front",
+   "source_video_id": "g25IORxoyXE",
+   "video_sha256": "1d7ab38096e37bd89e3924949b57917af12419573ff98bc4aed74baf2dba1c70",
+   "signer_proxy": "10",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.0,
+    "n_frames": 95
+   },
+   "source_offset_s": 51.43,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 4.692011,
+    "hand": "left",
+    "window_clip_s": [
+     0.874,
+     1.833
+    ],
+    "clip_raised_fraction": 0.8632
+   },
+   "probe_window_clip_s": [
+    0.354,
+    2.354
+   ],
+   "dev45_review_id": "R37",
+   "p0_2_role": null,
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-035",
+   "clip_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "source_video_id": "g1vUH8Iy4vw",
+   "video_sha256": "28dcb533b6e827cd98f91dbac44b373eb8e4ec964260825561a2dbd2034fe4fe",
+   "signer_proxy": "3",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 4.77,
+    "n_frames": 114
+   },
+   "source_offset_s": 46.67,
+   "selection_tier": "candidate_easy_negative",
+   "category_rule": "clip raised-hand fraction >= eligible median and screen score in the eligible bottom half; first 12 by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 6.552759,
+    "hand": "right",
+    "window_clip_s": [
+     2.916,
+     3.874
+    ],
+    "clip_raised_fraction": 1.0
+   },
+   "probe_window_clip_s": [
+    2.395,
+    4.395
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  },
+  {
+   "blind_id": "FSA-036",
+   "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "source_video_id": "Fz-N1S0swh8",
+   "video_sha256": "1dfbc01cc6e879552e2f6d28b685b688f6e1873162d0ced6305d0a7dd1a59f30",
+   "signer_proxy": "8",
+   "clip_window": {
+    "time_base": "clip PTS seconds of the frozen v2 video",
+    "start_s": 0.0,
+    "end_s": 2.27,
+    "n_frames": 54
+   },
+   "source_offset_s": 10.59,
+   "selection_tier": "random",
+   "category_rule": "first 8 of the remainder by salted hash",
+   "final_category": "assigned only from blind Step-1 labels (positive / negative / uncertain); Uni-Sign already-correct control status is derived after labelling",
+   "screen": {
+    "score": 7.548956,
+    "hand": "left",
+    "window_clip_s": [
+     0.374,
+     1.333
+    ],
+    "clip_raised_fraction": 0.7222
+   },
+   "probe_window_clip_s": [
+    0.0,
+    2.0
+   ],
+   "dev45_review_id": null,
+   "p0_2_role": "P0-2 pilot",
+   "reviewer_sees_reference_text": false,
+   "reviewer_sees_screen_or_tier": false
+  }
+ ],
+ "eligible_screen_table": [
+  {
+   "clip_id": "FZbyRzy4huk_3-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.541779,
+   "clip_raised_fraction": 0.9072
+  },
+  {
+   "clip_id": "G-0gYel1YA8_1-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 8.529,
+   "clip_raised_fraction": 0.9378
+  },
+  {
+   "clip_id": "G05uFub3YFc_9-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 8.793524,
+   "clip_raised_fraction": 0.9165
+  },
+  {
+   "clip_id": "G095RWKQ39g_10-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 8.551177,
+   "clip_raised_fraction": 0.878
+  },
+  {
+   "clip_id": "G0zQm6X8uiQ_3-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 7.066885,
+   "clip_raised_fraction": 0.8793
+  },
+  {
+   "clip_id": "G1hb5HugzVk_2-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.744703,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "G21Gx_C18IA_2_3-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 10.550397,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "G23G21G49dk_14-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 10.299679,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 7.888846,
+   "clip_raised_fraction": 0.9683
+  },
+  {
+   "clip_id": "fZM3IcM2Xs4_14_15_16-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 11.332377,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "-g0iPSnQt6w_0-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 4.059895,
+   "clip_raised_fraction": 0.68
+  },
+  {
+   "clip_id": "-g0sqksgyc4_3-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 6.480349,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "92V3oH63zbQ_5-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 3.417808,
+   "clip_raised_fraction": 0.3455
+  },
+  {
+   "clip_id": "-g45vqccdzI_6-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 7.690192,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "37ZtKNf6Yd8_1-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 11.21346,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "8kAWy2YodzQ_10-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 8.231637,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "FZCEymcpq7I_14-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 9.068997,
+   "clip_raised_fraction": 0.6667
+  },
+  {
+   "clip_id": "FZd8Iv9ACVw_12-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 8.049981,
+   "clip_raised_fraction": 0.7105
+  },
+  {
+   "clip_id": "G19uBylwQww_1-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 9.179982,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 7.548956,
+   "clip_raised_fraction": 0.7222
+  },
+  {
+   "clip_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "signer_proxy": "1",
+   "screen_score": 8.549542,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "G2VzB5-JkRA_1-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 8.889419,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "FzWvE__PamM_7-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 6.917802,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "fzrJBu2qsM8_5-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 6.167172,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g0Abwige7MQ_2-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 10.916107,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g0QHEtNjZhI_21-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 10.181418,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "FzAIlhumvMA_4-2-rgb_front",
+   "signer_proxy": "2",
+   "screen_score": 23.149263,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 10.10835,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "fZq8wTAYtmw_10-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 6.439208,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 5.715384,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "fzncPNr2Sc0_10-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 12.547028,
+   "clip_raised_fraction": 0.9688
+  },
+  {
+   "clip_id": "fzueHkUDyhE_1-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.491491,
+   "clip_raised_fraction": 0.797
+  },
+  {
+   "clip_id": "g0S7FAqIweA_1-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.056592,
+   "clip_raised_fraction": 0.4557
+  },
+  {
+   "clip_id": "g0TkUiO7t4I_6-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.162909,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g0iNy-yPisM_19-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 12.735187,
+   "clip_raised_fraction": 0.992
+  },
+  {
+   "clip_id": "g0pRnlPR-K0_7-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.102716,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g0t4Wz5qsT8_12-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 4.894094,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g13Jo_kFliM_0-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 8.676043,
+   "clip_raised_fraction": 0.9009
+  },
+  {
+   "clip_id": "g1HvmBOR7Y4_15-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 17.561022,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g1e-zO8mZ4c_1-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 5.957935,
+   "clip_raised_fraction": 0.8077
+  },
+  {
+   "clip_id": "g1uA0f9I0Sg_7-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 9.797365,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 6.552759,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g1z6HOJ0yRw_2-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 9.621267,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g25IORxoyXE_8-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 4.692011,
+   "clip_raised_fraction": 0.8632
+  },
+  {
+   "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "signer_proxy": "10",
+   "screen_score": 6.806484,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g2QdwYqm8pg_13-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 4.693708,
+   "clip_raised_fraction": 0.8584
+  },
+  {
+   "clip_id": "g2ur4BIuN0Q_8-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 7.169808,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g2wUCRRni28_6-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 7.134954,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3BsH_C3u7Y_2-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 8.461781,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3Cc_1-V31U_14-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 14.815174,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3PBeTb1TCw_6-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 10.848576,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3X3XE6M2_A_8-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 10.434995,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3ZluRtRXVc_0-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 7.762982,
+   "clip_raised_fraction": 0.8264
+  },
+  {
+   "clip_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 10.897453,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3kFAmcBpFc_8-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 5.180921,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "g3ushtMfLiY_2-3-rgb_front",
+   "signer_proxy": "3",
+   "screen_score": 10.082449,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "_g0fpC8aiME_1-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 7.509682,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "fzOH00UZg84_30-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.175867,
+   "clip_raised_fraction": 0.9788
+  },
+  {
+   "clip_id": "fzQ2E3_xBZA_1-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 7.059009,
+   "clip_raised_fraction": 1.0
+  },
+  {
+   "clip_id": "FzoUVr98JmQ_6-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 10.541816,
+   "clip_raised_fraction": 0.6698
+  },
+  {
+   "clip_id": "fZIHe3dXPR0_5-8-rgb_front",
+   "signer_proxy": "8",
+   "screen_score": 9.344469,
+   "clip_raised_fraction": 1.0
+  }
+ ]
+}

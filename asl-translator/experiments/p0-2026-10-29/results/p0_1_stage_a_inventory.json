@@ -1,0 +1,144 @@
+{
+ "stage": "P0-1 Stage A inventory of existing fingerspelling artifacts (no model run)",
+ "artifacts": [
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/specialist.py",
+   "exists": true,
+   "sha256": "d5354024f69712e7961bfad96a164d98582b61d785a84e3ac165f7fac490800d",
+   "role": "OpenFS CPU runner (boss's adapter): MediaPipe Holistic -> raised-hand filter -> OpenFS greedy letters on whole clip + fixed 2 s windows",
+   "modality": "keypoint",
+   "reproducibility": "same commit/checkpoint as boss; deterministic run-to-run here; boss strings reproduce 10/18 windows (input encode + platform sensitivity)",
+   "reuse_for_stage_a": "yes as the keypoint baseline runner, with the span taken from human labels instead of fixed windows (same model call)",
+   "limitations": "no abstain except < 8 hand frames; greedy decoding amplifies landmark jitter; x86 Rosetta platform; non-commercial licence"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/results/specialist_openfs_official.json",
+   "exists": true,
+   "sha256": "10119c85ce4a035f40489738d482139c6d065d3d45638d65dbda6ad8df6e0402",
+   "role": "OpenFS outputs on R02/R05 official windows (+ R35 separate)",
+   "modality": "keypoint",
+   "reproducibility": "re-runnable from specialist.py",
+   "reuse_for_stage_a": "no for scoring the expanded set (different items, fixed windows); legacy package only",
+   "limitations": "unverified_proposal; fs_present unknown; R35 official span UNRESOLVED"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/results/specialist_openfs_reproduction.json",
+   "exists": true,
+   "sha256": "8fb1d03a603715a4f2c3d73a54866e462c7461a0bce41e8bda4b9b12fed4195c",
+   "role": "boss-vs-ours OpenFS reproduction, determinism repeat",
+   "modality": "keypoint",
+   "reproducibility": "documented",
+   "reuse_for_stage_a": "evidence of platform sensitivity only",
+   "limitations": "old windows; boss inputs not local"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/results/specialist.json",
+   "exists": true,
+   "sha256": "3598395c0310cc0f6b2224039fcb56bbe8222c92b0169f90a7c7d2adeab5dae3",
+   "role": "boss's original OpenFS run (old windows)",
+   "modality": "keypoint",
+   "reproducibility": "partial (10/18)",
+   "reuse_for_stage_a": "no",
+   "limitations": "not modified"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/results/specialist_cases.csv",
+   "exists": true,
+   "sha256": "b24ad72326233a6256f94639fa354294223b2a758bb1596a8b4931ef42eb8054",
+   "role": "one row per OpenFS window / FS-Detection proposal",
+   "modality": "keypoint + detector",
+   "reproducibility": "derived",
+   "reuse_for_stage_a": "no",
+   "limitations": "unvalidated"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/fs_detection_smoke.py",
+   "exists": true,
+   "sha256": "d0708868be42cd6eaa2747238e4e157581c011512a70e006dd472efd19792c7d",
+   "role": "FS-Detection stage-1 CPU smoke (3 shims)",
+   "modality": "detector-only (RGB + flow input)",
+   "reproducibility": "CPU/torch-2.2 equivalence to published GPU outputs NOT verified",
+   "reuse_for_stage_a": "no: Stage A uses human spans; reserved for Stage B (automatic localization)",
+   "limitations": "no LICENSE file; trained on ChicagoFSWild+; stage-2, NMS not ported"
+  },
+  {
+   "path": "asl-translator/experiments/p0-2026-10-27/results/fs_detection_feasibility.json",
+   "exists": true,
+   "sha256": "d3184d7ef96755173fafbfb6469b2d10f492033acd4807b7b9fc6470d3d1cf16",
+   "role": "FS-Detection top-50 proposals R02/R05 + setup log",
+   "modality": "detector-only",
+   "reproducibility": "documented",
+   "reuse_for_stage_a": "no (Stage B only)",
+   "limitations": "uncalibrated scores; unvalidated proposals"
+  },
+  {
+   "path": "asl-translator/daily_report/2026-10-27/TASK3_FINGERSPELLING_RESULT.md",
+   "exists": true,
+   "sha256": "180a5f411b182c913f617c22495904fd1ad6ee61c7e93abf4c24f4c0be448cde",
+   "role": "Task 3 report (OpenFS + FS-Detection)",
+   "modality": "report",
+   "reproducibility": "n/a",
+   "reuse_for_stage_a": "source of facts",
+   "limitations": "no accuracy claim"
+  },
+  {
+   "path": "asl-translator/daily_report/2026-10-23/asl-reviewer-followup/blind_review.csv",
+   "exists": true,
+   "sha256": "e2b7f14991e72df1220b5b69861fe41c9d014228fd6a3d484342bc3d4d43a509",
+   "role": "existing Step-1 blind package rows (R02/R05/R35 FS check, R26/R29 context)",
+   "modality": "human-label template",
+   "reproducibility": "build_reviewer_package.py",
+   "reuse_for_stage_a": "schema basis; its 3 FS cases stay a separate legacy stratum",
+   "limitations": "3 FS cases only; reviewer labels still empty"
+  },
+  {
+   "path": "asl-translator/daily_report/2026-10-23/p0b-fingerspelling-feasibility/interval_labels.csv",
+   "exists": true,
+   "sha256": "cd72c0626ce0e7429c2fbfc9a5d5609e32eb7723696761abf1ac9561ded8d666",
+   "role": "earlier interval-label sheet for R02/R05/R35 (old + realigned windows)",
+   "modality": "human-label template",
+   "reproducibility": "n/a",
+   "reuse_for_stage_a": "superseded by the Stage A schema",
+   "limitations": "unfilled"
+  },
+  {
+   "path": "asl-translator/data/public_benchmarks/how2sign_v2/validation/review_proper_noun_fingerspelling.csv",
+   "exists": true,
+   "sha256": "86d2ac486a9cb8c3a3e2526fead16d511637f8525a12a86f5e7f68074b02925d",
+   "role": "proper-noun / fingerspelling candidate review",
+   "modality": "reference-text derived",
+   "reproducibility": "n/a",
+   "reuse_for_stage_a": "NO for selection: derived from reference text",
+   "limitations": "reference-derived"
+  },
+  {
+   "path": "docs/daily_report/10.06/asl-p0-12-unisign-pose-gap/artifacts/prepared_inputs/B_ours_5p39/",
+   "exists": true,
+   "role": "per-frame RTMPose wholebody keypoints of the frozen v2 videos (local, git-ignored)",
+   "modality": "keypoint (input-side)",
+   "reproducibility": "P0-12 scripts",
+   "reuse_for_stage_a": "yes: letter-free selection screen only",
+   "limitations": "rtmlib lightweight; not the OpenFS keypoint path"
+  },
+  {
+   "path": "<local scratch> OpenFS @ 0d6fa3fa + recognizer/best_model.pth (c8e4c227...2925)",
+   "exists": true,
+   "role": "keypoint recognizer code + checkpoint (not committed; licence)",
+   "modality": "keypoint",
+   "reproducibility": "re-downloadable (download_ckpts.sh)",
+   "reuse_for_stage_a": "yes",
+   "limitations": "non-commercial research licence"
+  },
+  {
+   "path": "<local scratch> FS-Detection @ b386f04d + fswild-plus best-dev.pth (004d4abc...)",
+   "exists": true,
+   "role": "detector code + checkpoint (not committed)",
+   "modality": "detector-only",
+   "reproducibility": "re-downloadable",
+   "reuse_for_stage_a": "no (Stage B)",
+   "limitations": "no licence"
+  }
+ ],
+ "rgb_recognizer_present_locally": false,
+ "summary": "Only a keypoint recognizer (OpenFS) and a detector (FS-Detection) exist locally. No hand-RGB recognizer exists in the repo or the local environment."
+}
