@@ -1,0 +1,2377 @@
+{
+ "inputs": {
+  "task1_decode": "asl-translator/experiments/p0-2026-10-27/results/repetition_paired_decode_local_arm64.json",
+  "task1_decode_sha256": "9de31696de1634390715ce6d5ac59b025ab466de02d5e2a48b2f21c6e362e6e6",
+  "references": "docs/daily_report/10.13/asl-unisign-error-taxonomy/inputs_128.jsonl",
+  "references_sha256": "1c7336c493616906ef31e1d84a0a9800ff4ec6e0bd43514f074cd90fa5ccdebf",
+  "canonical_T": "asl-translator/daily_report/2026-10-23/p0a-candidate-rerank/runs/full45/A_official/run1/candidates.jsonl",
+  "canonical_T_sha256": "aeb817641769dd79139020157964e5d39d5ba031518dd191b360bf805664f5b4",
+  "domain": "A_official (the Task 1 decode domain)",
+  "n_cases": 45
+ },
+ "preregistered_trigger": {
+  "rule": "loop_out(control), P0_PROTOCOL_FREEZE \u00a71.4",
+  "normalization": "lowercase",
+  "tokenizer": "regex [a-z0-9']+",
+  "ngram": "word 3-grams over consecutive tokens",
+  "statistic": "1 - distinct/total 3-grams",
+  "threshold": 0.15,
+  "uses_reference": false
+ },
+ "trigger": {
+  "fired": 9,
+  "rate": 0.2,
+  "fired_ids": [
+   "R01",
+   "R03",
+   "R11",
+   "R18",
+   "R20",
+   "R23",
+   "R36",
+   "R39",
+   "R42"
+  ],
+  "fired_with_old_1013_flag": [
+   "R03",
+   "R11",
+   "R18",
+   "R20",
+   "R36",
+   "R39",
+   "R42"
+  ],
+  "fired_hits_max": [
+   "R36"
+  ],
+  "task1_loop_cases": [
+   "R01",
+   "R03",
+   "R11",
+   "R18",
+   "R20",
+   "R23",
+   "R36",
+   "R39",
+   "R42"
+  ]
+ },
+ "loops": {
+  "before": 9,
+  "after_conditional": 0,
+  "after_global": 0,
+  "triggered_eliminated": 9,
+  "triggered_remaining": 0
+ },
+ "non_triggered_byte_identical": "36/36",
+ "corpus": {
+  "control": {
+   "chrF": 23.7634,
+   "BLEU4": 5.7246,
+   "WER": 95.4369,
+   "mean_len_ratio": 0.9997,
+   "loop_out": 9,
+   "old_1013_flag": 7
+  },
+  "conditional": {
+   "chrF": 24.9343,
+   "BLEU4": 5.8315,
+   "WER": 92.8155,
+   "mean_len_ratio": 0.9649,
+   "loop_out": 0,
+   "old_1013_flag": 0
+  },
+  "global_no_repeat_3": {
+   "chrF": 25.4893,
+   "BLEU4": 5.9436,
+   "WER": 92.9126,
+   "mean_len_ratio": 0.9714,
+   "loop_out": 0,
+   "old_1013_flag": 0
+  }
+ },
+ "changed": {
+  "conditional": [
+   "R01",
+   "R03",
+   "R11",
+   "R18",
+   "R20",
+   "R23",
+   "R36",
+   "R39",
+   "R42"
+  ],
+  "conditional_n": 9,
+  "global_n": 24,
+  "global_non_loop_changed": [
+   "R02",
+   "R04",
+   "R05",
+   "R06",
+   "R07",
+   "R10",
+   "R12",
+   "R13",
+   "R16",
+   "R17",
+   "R19",
+   "R34",
+   "R35",
+   "R38",
+   "R44"
+  ],
+  "conditional_non_loop_changed": []
+ },
+ "negative_controls": [
+  {
+   "review_id": "R02",
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "trigger_fired": false,
+   "conditional_changed": false,
+   "global_changed": true,
+   "repetition_ratio": 0.0
+  },
+  {
+   "review_id": "R03",
+   "im_count": {
+    "control": 3,
+    "conditional": 0,
+    "global": 0
+   },
+   "trigger_fired": true,
+   "conditional_changed": true,
+   "global_changed": true,
+   "repetition_ratio": 0.4583
+  },
+  {
+   "review_id": "R04",
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "trigger_fired": false,
+   "conditional_changed": false,
+   "global_changed": true,
+   "repetition_ratio": 0.0
+  },
+  {
+   "review_id": "R05",
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "trigger_fired": false,
+   "conditional_changed": false,
+   "global_changed": true,
+   "repetition_ratio": 0.0
+  },
+  {
+   "review_id": "R13",
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "trigger_fired": false,
+   "conditional_changed": false,
+   "global_changed": true,
+   "repetition_ratio": 0.0
+  },
+  {
+   "review_id": "R23",
+   "im_count": {
+    "control": 3,
+    "conditional": 1,
+    "global": 1
+   },
+   "trigger_fired": true,
+   "conditional_changed": true,
+   "global_changed": true,
+   "repetition_ratio": 0.1935
+  },
+  {
+   "review_id": "R35",
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "trigger_fired": false,
+   "conditional_changed": false,
+   "global_changed": true,
+   "repetition_ratio": 0.0
+  }
+ ],
+ "triggered_damage_proxies": {
+  "pre_loop_altered": [
+   "R01",
+   "R03",
+   "R11",
+   "R20",
+   "R23",
+   "R36",
+   "R42"
+  ],
+  "regress_candidate": [
+   "R42"
+  ],
+  "chrF_down": [
+   "R01",
+   "R20",
+   "R42"
+  ],
+  "im_lost_inside_triggered": [
+   "R03",
+   "R23"
+  ]
+ },
+ "cost": {
+  "incremental_model_calls": 0,
+  "incremental_api_cost": 0,
+  "note": "built from saved outputs; a real triggered-only regeneration would add one decode per triggered case (Task 1 recorded ~2.7 s CPU per no_repeat decode on this machine)",
+  "task1_no_repeat_decode_seconds_45": 123.0
+ },
+ "review_case_texts": "withheld (P0-A convention); this file holds no output or reference text",
+ "cases": [
+  {
+   "review_id": "R01",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 32,
+    "n_distinct": 15,
+    "repeated_trigram_occurrences": 17,
+    "ratio": 0.5312
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 1,
+    "conditional": 1,
+    "global": 1
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 34,
+    "conditional": 23,
+    "global": 23
+   },
+   "sentence": {
+    "control": {
+     "chrF": 28.1869,
+     "WER": 172.2222,
+     "len_ratio": 1.8889
+    },
+    "conditional": {
+     "chrF": 26.5493,
+     "WER": 116.6667,
+     "len_ratio": 1.2778
+    }
+   },
+   "delta_chrF": -1.6376,
+   "delta_WER": -55.5555,
+   "triggered_detail": {
+    "first_repeat_word": 15,
+    "common_prefix_words": 4,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 5,
+    "auto_bin": "small_change"
+   }
+  },
+  {
+   "review_id": "R02",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 20,
+    "n_distinct": 20,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 22,
+    "conditional": 22,
+    "global": 25
+   },
+   "sentence": {
+    "control": {
+     "chrF": 17.0309,
+     "WER": 175.0,
+     "len_ratio": 1.8333
+    },
+    "conditional": {
+     "chrF": 17.0309,
+     "WER": 175.0,
+     "len_ratio": 1.8333
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R03",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 24,
+    "n_distinct": 13,
+    "repeated_trigram_occurrences": 11,
+    "ratio": 0.4583
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 3,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 26,
+    "conditional": 36,
+    "global": 36
+   },
+   "sentence": {
+    "control": {
+     "chrF": 14.165,
+     "WER": 87.8049,
+     "len_ratio": 0.6341
+    },
+    "conditional": {
+     "chrF": 20.9675,
+     "WER": 90.2439,
+     "len_ratio": 0.878
+    }
+   },
+   "delta_chrF": 6.8025,
+   "delta_WER": 2.439,
+   "triggered_detail": {
+    "first_repeat_word": 11,
+    "common_prefix_words": 2,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 1,
+    "auto_bin": "improve_candidate"
+   }
+  },
+  {
+   "review_id": "R04",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 11,
+    "n_distinct": 11,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 13,
+    "conditional": 13,
+    "global": 15
+   },
+   "sentence": {
+    "control": {
+     "chrF": 27.5305,
+     "WER": 92.3077,
+     "len_ratio": 1.0
+    },
+    "conditional": {
+     "chrF": 27.5305,
+     "WER": 92.3077,
+     "len_ratio": 1.0
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R05",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 8,
+    "n_distinct": 8,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 10,
+    "conditional": 10,
+    "global": 14
+   },
+   "sentence": {
+    "control": {
+     "chrF": 20.5409,
+     "WER": 86.6667,
+     "len_ratio": 0.6667
+    },
+    "conditional": {
+     "chrF": 20.5409,
+     "WER": 86.6667,
+     "len_ratio": 0.6667
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R06",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 12,
+    "n_distinct": 12,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 14,
+    "conditional": 14,
+    "global": 14
+   },
+   "sentence": {
+    "control": {
+     "chrF": 24.5177,
+     "WER": 130.0,
+     "len_ratio": 1.4
+    },
+    "conditional": {
+     "chrF": 24.5177,
+     "WER": 130.0,
+     "len_ratio": 1.4
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R07",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 20,
+    "n_distinct": 20,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 22,
+    "conditional": 22,
+    "global": 19
+   },
+   "sentence": {
+    "control": {
+     "chrF": 26.4295,
+     "WER": 89.6552,
+     "len_ratio": 0.7586
+    },
+    "conditional": {
+     "chrF": 26.4295,
+     "WER": 89.6552,
+     "len_ratio": 0.7586
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R08",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 17,
+    "n_distinct": 17,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 19,
+    "conditional": 19,
+    "global": 19
+   },
+   "sentence": {
+    "control": {
+     "chrF": 29.4712,
+     "WER": 75.0,
+     "len_ratio": 0.7917
+    },
+    "conditional": {
+     "chrF": 29.4712,
+     "WER": 75.0,
+     "len_ratio": 0.7917
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R09",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 7,
+    "n_distinct": 7,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 8,
+    "conditional": 8,
+    "global": 8
+   },
+   "sentence": {
+    "control": {
+     "chrF": 30.3199,
+     "WER": 100.0,
+     "len_ratio": 1.3333
+    },
+    "conditional": {
+     "chrF": 30.3199,
+     "WER": 100.0,
+     "len_ratio": 1.3333
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R10",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 26,
+    "n_distinct": 25,
+    "repeated_trigram_occurrences": 1,
+    "ratio": 0.0385
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 28,
+    "conditional": 28,
+    "global": 26
+   },
+   "sentence": {
+    "control": {
+     "chrF": 37.0821,
+     "WER": 62.5,
+     "len_ratio": 0.875
+    },
+    "conditional": {
+     "chrF": 37.0821,
+     "WER": 62.5,
+     "len_ratio": 0.875
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R11",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 30,
+    "n_distinct": 4,
+    "repeated_trigram_occurrences": 26,
+    "ratio": 0.8667
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 32,
+    "conditional": 35,
+    "global": 35
+   },
+   "sentence": {
+    "control": {
+     "chrF": 10.3242,
+     "WER": 140.9091,
+     "len_ratio": 1.4545
+    },
+    "conditional": {
+     "chrF": 19.1383,
+     "WER": 150.0,
+     "len_ratio": 1.5909
+    }
+   },
+   "delta_chrF": 8.8141,
+   "delta_WER": 9.0909,
+   "triggered_detail": {
+    "first_repeat_word": 4,
+    "common_prefix_words": 1,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 0,
+    "auto_bin": "improve_candidate"
+   }
+  },
+  {
+   "review_id": "R12",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 32,
+    "n_distinct": 31,
+    "repeated_trigram_occurrences": 1,
+    "ratio": 0.0312
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 34,
+    "conditional": 34,
+    "global": 37
+   },
+   "sentence": {
+    "control": {
+     "chrF": 20.6327,
+     "WER": 84.9057,
+     "len_ratio": 0.6415
+    },
+    "conditional": {
+     "chrF": 20.6327,
+     "WER": 84.9057,
+     "len_ratio": 0.6415
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R13",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 9,
+    "n_distinct": 9,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 11,
+    "conditional": 11,
+    "global": 12
+   },
+   "sentence": {
+    "control": {
+     "chrF": 24.7163,
+     "WER": 75.0,
+     "len_ratio": 0.9167
+    },
+    "conditional": {
+     "chrF": 24.7163,
+     "WER": 75.0,
+     "len_ratio": 0.9167
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R14",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 24,
+    "n_distinct": 24,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 26,
+    "conditional": 26,
+    "global": 26
+   },
+   "sentence": {
+    "control": {
+     "chrF": 32.8058,
+     "WER": 83.3333,
+     "len_ratio": 0.8667
+    },
+    "conditional": {
+     "chrF": 32.8058,
+     "WER": 83.3333,
+     "len_ratio": 0.8667
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R15",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 4,
+    "n_distinct": 4,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 6,
+    "conditional": 6,
+    "global": 6
+   },
+   "sentence": {
+    "control": {
+     "chrF": 31.3656,
+     "WER": 150.0,
+     "len_ratio": 1.5
+    },
+    "conditional": {
+     "chrF": 31.3656,
+     "WER": 150.0,
+     "len_ratio": 1.5
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R16",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 19,
+    "n_distinct": 19,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 21,
+    "conditional": 21,
+    "global": 21
+   },
+   "sentence": {
+    "control": {
+     "chrF": 18.1279,
+     "WER": 96.0,
+     "len_ratio": 0.84
+    },
+    "conditional": {
+     "chrF": 18.1279,
+     "WER": 96.0,
+     "len_ratio": 0.84
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R17",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 16,
+    "n_distinct": 16,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 18,
+    "conditional": 18,
+    "global": 16
+   },
+   "sentence": {
+    "control": {
+     "chrF": 13.8524,
+     "WER": 100.0,
+     "len_ratio": 0.9
+    },
+    "conditional": {
+     "chrF": 13.8524,
+     "WER": 100.0,
+     "len_ratio": 0.9
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R18",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 18,
+    "n_distinct": 12,
+    "repeated_trigram_occurrences": 6,
+    "ratio": 0.3333
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 20,
+    "conditional": 17,
+    "global": 17
+   },
+   "sentence": {
+    "control": {
+     "chrF": 20.2355,
+     "WER": 146.1538,
+     "len_ratio": 1.5385
+    },
+    "conditional": {
+     "chrF": 25.5458,
+     "WER": 123.0769,
+     "len_ratio": 1.3077
+    }
+   },
+   "delta_chrF": 5.3103,
+   "delta_WER": -23.0769,
+   "triggered_detail": {
+    "first_repeat_word": 6,
+    "common_prefix_words": 6,
+    "pre_loop_altered": false,
+    "lost_word_types_n": 2,
+    "auto_bin": "improve_candidate"
+   }
+  },
+  {
+   "review_id": "R19",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 29,
+    "n_distinct": 27,
+    "repeated_trigram_occurrences": 2,
+    "ratio": 0.069
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 31,
+    "conditional": 31,
+    "global": 39
+   },
+   "sentence": {
+    "control": {
+     "chrF": 23.0768,
+     "WER": 88.6364,
+     "len_ratio": 0.7045
+    },
+    "conditional": {
+     "chrF": 23.0768,
+     "WER": 88.6364,
+     "len_ratio": 0.7045
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R20",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 38,
+    "n_distinct": 28,
+    "repeated_trigram_occurrences": 10,
+    "ratio": 0.2632
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 40,
+    "conditional": 39,
+    "global": 39
+   },
+   "sentence": {
+    "control": {
+     "chrF": 25.7687,
+     "WER": 85.4545,
+     "len_ratio": 0.7273
+    },
+    "conditional": {
+     "chrF": 23.0657,
+     "WER": 87.2727,
+     "len_ratio": 0.7091
+    }
+   },
+   "delta_chrF": -2.703,
+   "delta_WER": 1.8182,
+   "triggered_detail": {
+    "first_repeat_word": 28,
+    "common_prefix_words": 12,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 1,
+    "auto_bin": "small_change"
+   }
+  },
+  {
+   "review_id": "R21",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 21,
+    "n_distinct": 21,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 23,
+    "conditional": 23,
+    "global": 23
+   },
+   "sentence": {
+    "control": {
+     "chrF": 31.2529,
+     "WER": 87.5,
+     "len_ratio": 0.7188
+    },
+    "conditional": {
+     "chrF": 31.2529,
+     "WER": 87.5,
+     "len_ratio": 0.7188
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R22",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 2,
+    "n_distinct": 2,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 4,
+    "conditional": 4,
+    "global": 4
+   },
+   "sentence": {
+    "control": {
+     "chrF": 6.6872,
+     "WER": 88.8889,
+     "len_ratio": 0.4444
+    },
+    "conditional": {
+     "chrF": 6.6872,
+     "WER": 88.8889,
+     "len_ratio": 0.4444
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R23",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 31,
+    "n_distinct": 25,
+    "repeated_trigram_occurrences": 6,
+    "ratio": 0.1935
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 3,
+    "conditional": 1,
+    "global": 1
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 33,
+    "conditional": 37,
+    "global": 37
+   },
+   "sentence": {
+    "control": {
+     "chrF": 21.6842,
+     "WER": 87.013,
+     "len_ratio": 0.4286
+    },
+    "conditional": {
+     "chrF": 22.0322,
+     "WER": 88.3117,
+     "len_ratio": 0.4805
+    }
+   },
+   "delta_chrF": 0.348,
+   "delta_WER": 1.2987,
+   "triggered_detail": {
+    "first_repeat_word": 21,
+    "common_prefix_words": 13,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 3,
+    "auto_bin": "small_change"
+   }
+  },
+  {
+   "review_id": "R24",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 8,
+    "n_distinct": 8,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 10,
+    "conditional": 10,
+    "global": 10
+   },
+   "sentence": {
+    "control": {
+     "chrF": 20.3876,
+     "WER": 90.0,
+     "len_ratio": 1.0
+    },
+    "conditional": {
+     "chrF": 20.3876,
+     "WER": 90.0,
+     "len_ratio": 1.0
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R25",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 25,
+    "n_distinct": 25,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 27,
+    "conditional": 27,
+    "global": 27
+   },
+   "sentence": {
+    "control": {
+     "chrF": 21.3763,
+     "WER": 104.5455,
+     "len_ratio": 1.2273
+    },
+    "conditional": {
+     "chrF": 21.3763,
+     "WER": 104.5455,
+     "len_ratio": 1.2273
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R26",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 5,
+    "n_distinct": 5,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 7,
+    "conditional": 7,
+    "global": 7
+   },
+   "sentence": {
+    "control": {
+     "chrF": 8.3774,
+     "WER": 140.0,
+     "len_ratio": 1.4
+    },
+    "conditional": {
+     "chrF": 8.3774,
+     "WER": 140.0,
+     "len_ratio": 1.4
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R27",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 3,
+    "n_distinct": 3,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 5,
+    "conditional": 5,
+    "global": 5
+   },
+   "sentence": {
+    "control": {
+     "chrF": 7.5082,
+     "WER": 100.0,
+     "len_ratio": 0.625
+    },
+    "conditional": {
+     "chrF": 7.5082,
+     "WER": 100.0,
+     "len_ratio": 0.625
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R28",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 5,
+    "n_distinct": 5,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 7,
+    "conditional": 7,
+    "global": 7
+   },
+   "sentence": {
+    "control": {
+     "chrF": 14.6259,
+     "WER": 87.5,
+     "len_ratio": 0.4375
+    },
+    "conditional": {
+     "chrF": 14.6259,
+     "WER": 87.5,
+     "len_ratio": 0.4375
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R29",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 8,
+    "n_distinct": 8,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 10,
+    "conditional": 10,
+    "global": 10
+   },
+   "sentence": {
+    "control": {
+     "chrF": 15.206,
+     "WER": 125.0,
+     "len_ratio": 1.25
+    },
+    "conditional": {
+     "chrF": 15.206,
+     "WER": 125.0,
+     "len_ratio": 1.25
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R30",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 11,
+    "n_distinct": 11,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 13,
+    "conditional": 13,
+    "global": 13
+   },
+   "sentence": {
+    "control": {
+     "chrF": 30.2694,
+     "WER": 92.3077,
+     "len_ratio": 1.0
+    },
+    "conditional": {
+     "chrF": 30.2694,
+     "WER": 92.3077,
+     "len_ratio": 1.0
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R31",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 14,
+    "n_distinct": 14,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 16,
+    "conditional": 16,
+    "global": 16
+   },
+   "sentence": {
+    "control": {
+     "chrF": 46.8277,
+     "WER": 66.6667,
+     "len_ratio": 1.0667
+    },
+    "conditional": {
+     "chrF": 46.8277,
+     "WER": 66.6667,
+     "len_ratio": 1.0667
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R32",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 5,
+    "n_distinct": 5,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 1,
+    "conditional": 1,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 7,
+    "conditional": 7,
+    "global": 7
+   },
+   "sentence": {
+    "control": {
+     "chrF": 56.9615,
+     "WER": 55.5556,
+     "len_ratio": 0.7778
+    },
+    "conditional": {
+     "chrF": 56.9615,
+     "WER": 55.5556,
+     "len_ratio": 0.7778
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R33",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 14,
+    "n_distinct": 14,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 1,
+    "conditional": 1,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 16,
+    "conditional": 16,
+    "global": 16
+   },
+   "sentence": {
+    "control": {
+     "chrF": 18.1632,
+     "WER": 140.0,
+     "len_ratio": 1.6
+    },
+    "conditional": {
+     "chrF": 18.1632,
+     "WER": 140.0,
+     "len_ratio": 1.6
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R34",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 15,
+    "n_distinct": 14,
+    "repeated_trigram_occurrences": 1,
+    "ratio": 0.0667
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 17,
+    "conditional": 17,
+    "global": 13
+   },
+   "sentence": {
+    "control": {
+     "chrF": 28.4067,
+     "WER": 113.3333,
+     "len_ratio": 1.1333
+    },
+    "conditional": {
+     "chrF": 28.4067,
+     "WER": 113.3333,
+     "len_ratio": 1.1333
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R35",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 13,
+    "n_distinct": 13,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 2,
+    "conditional": 2,
+    "global": 1
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 15,
+    "conditional": 15,
+    "global": 11
+   },
+   "sentence": {
+    "control": {
+     "chrF": 45.3687,
+     "WER": 60.0,
+     "len_ratio": 0.75
+    },
+    "conditional": {
+     "chrF": 45.3687,
+     "WER": 60.0,
+     "len_ratio": 0.75
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R36",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 33,
+    "n_distinct": 6,
+    "repeated_trigram_occurrences": 27,
+    "ratio": 0.8182
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": true,
+   "words": {
+    "control": 35,
+    "conditional": 34,
+    "global": 34
+   },
+   "sentence": {
+    "control": {
+     "chrF": 7.9833,
+     "WER": 98.5507,
+     "len_ratio": 0.5072
+    },
+    "conditional": {
+     "chrF": 18.5406,
+     "WER": 91.3043,
+     "len_ratio": 0.4928
+    }
+   },
+   "delta_chrF": 10.5573,
+   "delta_WER": -7.2464,
+   "triggered_detail": {
+    "first_repeat_word": 6,
+    "common_prefix_words": 3,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 2,
+    "auto_bin": "improve_candidate"
+   }
+  },
+  {
+   "review_id": "R37",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 4,
+    "n_distinct": 4,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 6,
+    "conditional": 6,
+    "global": 6
+   },
+   "sentence": {
+    "control": {
+     "chrF": 9.5201,
+     "WER": 100.0,
+     "len_ratio": 0.4
+    },
+    "conditional": {
+     "chrF": 9.5201,
+     "WER": 100.0,
+     "len_ratio": 0.4
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R38",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 24,
+    "n_distinct": 21,
+    "repeated_trigram_occurrences": 3,
+    "ratio": 0.125
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 26,
+    "conditional": 26,
+    "global": 28
+   },
+   "sentence": {
+    "control": {
+     "chrF": 13.8207,
+     "WER": 89.7059,
+     "len_ratio": 0.3824
+    },
+    "conditional": {
+     "chrF": 13.8207,
+     "WER": 89.7059,
+     "len_ratio": 0.3824
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R39",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 32,
+    "n_distinct": 12,
+    "repeated_trigram_occurrences": 20,
+    "ratio": 0.625
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 34,
+    "conditional": 20,
+    "global": 20
+   },
+   "sentence": {
+    "control": {
+     "chrF": 19.9566,
+     "WER": 168.4211,
+     "len_ratio": 1.7895
+    },
+    "conditional": {
+     "chrF": 22.2232,
+     "WER": 105.2632,
+     "len_ratio": 1.0526
+    }
+   },
+   "delta_chrF": 2.2666,
+   "delta_WER": -63.1579,
+   "triggered_detail": {
+    "first_repeat_word": 12,
+    "common_prefix_words": 13,
+    "pre_loop_altered": false,
+    "lost_word_types_n": 0,
+    "auto_bin": "small_change"
+   }
+  },
+  {
+   "review_id": "R40",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 10,
+    "n_distinct": 10,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 12,
+    "conditional": 12,
+    "global": 12
+   },
+   "sentence": {
+    "control": {
+     "chrF": 72.1185,
+     "WER": 23.0769,
+     "len_ratio": 0.9231
+    },
+    "conditional": {
+     "chrF": 72.1185,
+     "WER": 23.0769,
+     "len_ratio": 0.9231
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R41",
+   "p0a_role": "named_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 9,
+    "n_distinct": 9,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 11,
+    "conditional": 11,
+    "global": 11
+   },
+   "sentence": {
+    "control": {
+     "chrF": 63.7385,
+     "WER": 58.3333,
+     "len_ratio": 0.9167
+    },
+    "conditional": {
+     "chrF": 63.7385,
+     "WER": 58.3333,
+     "len_ratio": 0.9167
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R42",
+   "p0a_role": "focus",
+   "trigger": {
+    "fired": true,
+    "n_trigrams": 13,
+    "n_distinct": 8,
+    "repeated_trigram_occurrences": 5,
+    "ratio": 0.3846
+   },
+   "conditional_source": "treatment",
+   "byte_identical_to_control": false,
+   "changed": true,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": true,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": true,
+   "hits_max_control": false,
+   "words": {
+    "control": 15,
+    "conditional": 10,
+    "global": 10
+   },
+   "sentence": {
+    "control": {
+     "chrF": 16.9232,
+     "WER": 115.3846,
+     "len_ratio": 1.1538
+    },
+    "conditional": {
+     "chrF": 10.9561,
+     "WER": 100.0,
+     "len_ratio": 0.7692
+    }
+   },
+   "delta_chrF": -5.9671,
+   "delta_WER": -15.3846,
+   "triggered_detail": {
+    "first_repeat_word": 8,
+    "common_prefix_words": 0,
+    "pre_loop_altered": true,
+    "lost_word_types_n": 2,
+    "auto_bin": "regress_candidate"
+   }
+  },
+  {
+   "review_id": "R43",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 26,
+    "n_distinct": 26,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 28,
+    "conditional": 28,
+    "global": 28
+   },
+   "sentence": {
+    "control": {
+     "chrF": 44.2594,
+     "WER": 125.0,
+     "len_ratio": 1.75
+    },
+    "conditional": {
+     "chrF": 44.2594,
+     "WER": 125.0,
+     "len_ratio": 1.75
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R44",
+   "p0a_role": "decode_only",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 34,
+    "n_distinct": 34,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": true,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 36,
+    "conditional": 36,
+    "global": 36
+   },
+   "sentence": {
+    "control": {
+     "chrF": 23.9393,
+     "WER": 93.4783,
+     "len_ratio": 0.7826
+    },
+    "conditional": {
+     "chrF": 23.9393,
+     "WER": 93.4783,
+     "len_ratio": 0.7826
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  },
+  {
+   "review_id": "R45",
+   "p0a_role": "ordinary_control",
+   "trigger": {
+    "fired": false,
+    "n_trigrams": 13,
+    "n_distinct": 13,
+    "repeated_trigram_occurrences": 0,
+    "ratio": 0.0
+   },
+   "conditional_source": "control",
+   "byte_identical_to_control": true,
+   "changed": false,
+   "global_treatment_changed": false,
+   "im_count": {
+    "control": 0,
+    "conditional": 0,
+    "global": 0
+   },
+   "loop_out": {
+    "control": false,
+    "conditional": false,
+    "global": false
+   },
+   "old_1013_flag_control": false,
+   "hits_max_control": false,
+   "words": {
+    "control": 15,
+    "conditional": 15,
+    "global": 15
+   },
+   "sentence": {
+    "control": {
+     "chrF": 24.575,
+     "WER": 116.6667,
+     "len_ratio": 1.25
+    },
+    "conditional": {
+     "chrF": 24.575,
+     "WER": 116.6667,
+     "len_ratio": 1.25
+    }
+   },
+   "delta_chrF": 0.0,
+   "delta_WER": 0.0
+  }
+ ]
+}
