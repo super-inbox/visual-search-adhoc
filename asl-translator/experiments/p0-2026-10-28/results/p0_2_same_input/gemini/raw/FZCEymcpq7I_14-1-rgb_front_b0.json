@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.88,\n   \"end\": 2.38,\n   \"text\": \"Let's plan to develop this together.\"\n  },\n  {\n   \"start\": 4.38,\n   \"end\": 8.62,\n   \"text\": \"What to do? Get ready for a good dropoff.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"The initial 'L' handshape at t=0.88s was interpreted as part of the sign 'PLAN'. While the full sign often involves the non-dominant hand, the movement and context strongly suggest this meaning. All other signs and fingerspelling were clearly identifiable.\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 0.88,\n   \"end\": 2.38,\n   \"text\": \"Let's plan to develop this together.\"\n  },\n  {\n   \"start\": 4.38,\n   \"end\": 8.62,\n   \"text\": \"What to do? Get ready for a good dropoff.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"The initial 'L' handshape at t=0.88s was interpreted as part of the sign 'PLAN'. While the full sign often involves the non-dominant hand, the movement and context strongly suggest this meaning. All other signs and fingerspelling were clearly identifiable.\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "QwTjavenHauj_uMP1ZbI8QE",
+  "usage_metadata": {
+   "candidates_token_count": 168,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 3936,
+   "total_token_count": 10757
+  }
+ }
+}

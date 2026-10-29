@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.83,\n   \"end\": 3.33,\n   \"text\": \"Continue to be involved.\"\n  },\n  {\n   \"start\": 4.58,\n   \"end\": 5.92,\n   \"text\": \"Now, voting is finished.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 1.83,\n   \"end\": 3.33,\n   \"text\": \"Continue to be involved.\"\n  },\n  {\n   \"start\": 4.58,\n   \"end\": 5.92,\n   \"text\": \"Now, voting is finished.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "_ATjao2RBfWs1MkPz56SsQY",
+  "usage_metadata": {
+   "candidates_token_count": 101,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 1286,
+   "total_token_count": 8040
+  }
+ }
+}

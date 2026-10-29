@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read the signing confidently enough to produce a reliable translation. The handshapes and movements are ambiguous in these frames, and I could not establish enough context to resolve them.\"}",
+ "raw_response": {
+  "id": "resp_020d23f3c00aacf0016ae304e6c69c87d18b7265ddc8303098",
+  "created_at": 1793262822.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_020d23f3c00aacf0016ae304e8d73087d19b0d8e84c96da56a",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wT7L-22FxY6aj3wQsSa47KPSXeey-fMaI8NteJmEt4Cc-FPgnW2g27Wzxg3Z005SYB_XkTLMY3B8vsH7GmV-dN0Uwhm2WvcPdUZpacLVzBB4KljAG4a0_rtdHvY3K7jCRp1KSgbEZ9wxLy91lT8_YS5g0MDJ0pXY0TBtBKlYogTNtlHdJ5ILvTOvuoTotqycufm9veMV5brU9axJdg9QNJttFmaqzefZBZZd4S6y1jMULS8oUMRSDDuhuYHhLaijAROR3gTY6uQcBSJ8f9yqnyp-_mf_leVFGcYhtY8oea7sGEgZZGAIFSQ1y-okmMCmBlrACUm606XFomQyAYwmlNTGwpITKOuH9bpJFvmR3to9D95bFqk7E7E1pA1CBWMf36jSwxRYp_N3nUjZlKJcIGHdzCXpaCF1SZYVpQqCLPJ-zYS5bxAmzUh4blVTiMwT6d3eCDskcVUAR0wdiCTDyotGlryr2tz3cH0MMTe1z3D7xSecaL5ixGhcdB7XwmAOwdZKpP1-MXHyAJvDPJnuUzBiyg_UA109npZcfW5az7Dke0bnPjDLpvbzt1Lna_HshCwFkigLFGu_xdxfXE4pWCiKUSU5IqL4lKfvwH9hch9zKx_B_PB7v3nh29-4OLJRtWPe8Zxx7pTMrlIRQB40BM2yWoOL1MKqH5UVBcODv-E2FIxCBK2CYGTvF7gnMK0bGkccr73jTIqHIbnazpcOvVsxSiAcHUEb1J0y2o6cQL1NOtb4TYbSBJSdAheMITNlQAXF2uF2I6W__bpMat0_ePaMEgwHiOjQsJlMkgt2OFVhSDvhpf4513H-Xo7PIGGC8qolwpcfx56prvpt0bU5M0Qj9Z79C8F_xOXgWjgyhTnxhU-6H4BjNlMLYin-eKYb76aEv_kyuNb58jZX4NeUD4coUgYfVzNty5tGNYIpiyqKLDzUf7L7aW38-W_bHJonT7hUENfjSo7Nenk0EXU6_oImFreWdW4hyXRaHD3uPfHPX_jj6kQyy8Rw6epmjhDLBsR0hfs6eGvOpoRH02ZAIofF_8QM63GBNdNEu3ohBWXkxXGHY3RCmeLIVDFy7hdyvvrYVDbNa5sxzWxXAgabgQX5dJaJtBkhyxucZAl06JjxDKKAxGVp36G4fYjmVRVKiAEtM2AzaLFo9hszyDxPkUfL2_-CUS8Wb4PS9FJMmvCrTeVLWAebA4o7QaoQg112X14hu3RYJ9lyi534fZx5J_6jEy2cLC0hsEbHfZ_o4cgzXhFC49oMtGvSrhw34HRXjdKswps0T9ism1xz8T4j5t5zY3CQtwJcr-njkjE6YpEhN4CAmCUy2prgG3snUEeXl7pJJ6m_NQIm7ChAtxywQjpwPkdYkkpRhG5a_viS1IYfnviNvfcNIgWMuz9IIzRt3Pmy8P5GSvygYviigwMhh-npLtUlv-bV-eOyNb55CqA1RW2apb9AUljEvDeEncWFfheTuYAanVc8aigwSiaIorZnOyNBdpFLARY9dNX6Shi-xAYE1x1zzRDu43JycleCv_ZXEbENCuZXpwv13VQx1fuZcaYF6K6raHBzTdzLrBBt3rXqkVBfZaJSaiG6AEyEXxzdXis2ImBxfV4iXQMTWIoNu18LHmmAF0h0fJsf0ORWoyhX0Mtjf1UTAcVrcgQLxqf73o1jrXRLcJ8GBPSpnI-55WziPRpJZU17Dkc2R5XV62WRH9vWkFbVcgUYNr-DL1e-bUCJsB39PFmwKAYnnQ_E69bQ_DgY3JZvm2jVor_L3nxQJtlQi677FaRwL_uC4IwUSOAkVS2GjjLkDmCbYA6iGHVUItX2r6Pn7njbgfTTo4tcRt2I7Bf4Iq5Hy5KlL4OVXElSlw26ZOl0r86ciX8pX6NBJHGomJNgsYJfFIYBfDE2wBqyqel9g5kkDu2iOGtgVrrSzf6BGrvI-X9Mk1GEhJaC5n5JVnQfpW8VFd8CoYkwSfDYrKQ0RT6MOfjsBskK7ypPDQCIEA9Hy4PBXLZAk0YD-Nbq89BAfXJ-uh9mP7A__drigbLJD4looo1lJmwy8z43d3ptKdZude4KcdptnbKiPt0vHkw4hynZqvqZs0TsF5_B_oP9mB-kCp-qq0FjJfMTpiz3zkWeW8dBafUFWwzD8V52pEifjh0N2Q4Dy33ac3dU-RapBe1c1mbWmdZr2Pk_pE-osmp9kQERC5Tp7lZTuKYTtY-WAmtAxkdZ8cKG09tc3Lc0NVTmXHzLwOHTZJFY6_7T9W8V_hsMnWF-9WGU_h2r8dIh8QDVefwtpWV8Elf-tSBBshYyXaOmA74e8dmM_GcyRpi81xYoQyy_U6ZBo8_p94Bw1DfETMv_WwM_mFW7CBkdmW0uNiD0HvNJzoDCioof9ihAMwr5K9du12LP_LihesEoBDva0ql9KAO5vNGSQMR6TJX8eB0zutUKIH7R5fNa53dM5qz5DYO9qS0ysszAk5KKy3QPQCmU2gIv1NK9orQpQzNhio3KVwjinNaRgzKZFQuDZizQ6exdssHnp_sFz6rL5YF2UAZdC1bExpqSmtvpQZIWSlU2pwgytMVUEozXulIodAKeVntlJDQz1FLeW4bHIjzALIBJX4wjI-lEcGqeFCuUe8QqQ5M-FEqEVyjDhhFr5oWa-Et4_O5DGSl-2Nma3lLVI4Z2czaSRaLJ9Fji3_N6qjCRODXPWbFWcYksnLIiGLc3KJU6tQjsRaUG6MV6nGBtfSo_Q8E59A1TFtRqGfAz1SPcxVz_RBQ2zpixqGE5ztmMxL3E9jZsDgzDPbg2GJkpQBRP-J8EvJJhoKb5Bs8SFse2sWxz1m25YvP_6X4F8Qv9ZSgokImuAGfMUdL9z4bbpsNDtkXKLA1w_VcHb_sZG1hqjHRyJfL8yeG690aGBsGkdsksXwQwCXteAkvOgUOnTYb7WTkR7DRyQqwL1nYPAVfAUeola9roDW0ZMfg-_JLW_gkaqgtoYOm8sNX8Z8Mi7mp_VKKzlQXBiR8lW79n-gBMGM5OkDL-AA3suQtOiZ7lJOdy58CJw1Krof4xjpeuks3ZC2Fol6Vo35BpOBUPHafooF0olh6isHw5I4tVBE8Dhr-y5uNc3INouJH13CkJdsS72SuU3zDIOK3QHQEj3MXJWPaB3Ko4orFJjMJOexM9H7hf9WAjJtQ-83JhtN_HpB9b7NTT0AwtNAvgi2Ffx8R9Iv1F6ct4K1RsFqYQ-9VQSgoZKSv3PFfqusOvSY3zLeVYi91hALqTd9gN2BATwk1oko2VTzoJB7v2V6Aoz5xxKwWHs-fRYIUDdNuwhTVHcOfUZC27hj4TzyGFtD-rlBXQ1hQimQ6OWOl4BL1QZvoSt3f93R89lFvC14ef8YyoJ5oWzhZOzxv7AEI7VPX4QXprlxvY_BXo3RO3dDaiMUwGvjCPNpjAD0CHqPFA0x7_fYGuP22o2ZWVZQYdP0BtAoXv43jBJFVChQS8tEvoHVIQkEoVmUas5UrIyMroxWYoaanIgYvZ17Xsobqp5xdO6UNZ_GjWzI2M0j6F2XelRp17ad1Re-kjkWm4rGuZyx01IFHq42DvQ_9SQ081uA9xF4Weo45ogm8emXUEq0AdYK2VLKYX-vtpNefUviBIAzh_VN5ncxsIdbYJGinhSEX1Ku-qmrT0BP2uOXXcKFzXlsmh3uvJSeTagkHaaF4XVMIhnv0hGjVBfv3Tw6BuoyJ1nz-RJyE6IUQY6_wFSpg5M8l4XYjsAGU91NVNDx_7w3R05SzRMcCV_hnt2LVoR5ykr6u4b94LCi1qIKV8oCTqaTT5BxDHUM2GVEbYIVKl3hFoX_0K9xEZp41rqbvtdwN37canzj1cuLzwf5-qGjFC97BvD_Qqf_A2a0WGxFoGS1tVOQDrgfZXmvrfx1mJW-qx6ynQZsM6ULID7oagBqp4jDGZAjMSKrsdwc9uWjXNLS0ZWyp9ydIuv8aYkKQg32_YJP_Q8a_0d25fCj-rF99C2vRcKwhuwjSY-_2nMvtP7Gjg84NjzBBhhCv_8FjuWhPdei18j5_8k_rHyzB-30NZfxZQN8wctRendRfVkVQrRWR8LspyMzCw19zZRWn0Bc6N8S4onSSZ3Og-o0iCrtlfbO2Aud71g7JKhAGy7Kvd1Pansi8mp6vWf6Bs-z58rlAEfwxcub8NJBwznrigsiX6J6A9jZqaShn8WI60UC_9u_58hb5QHYhwoyDSyNR9w_rlmSh9k1RRUxoIdxtZ-HcNEFstBAr6sps19IzacRZH3KMrTxVVU_A6w-p2DePXArqK06GMNCul9MhP0p6Daw_kNIU99cXum3zOv5-F3tc-cJ0rGCULL03bp4zNe_-t7AYKimv4j_WSHGs3JLWh__Ez85Erp0AOEQNDwnalZKzcjEhWAa8rMaetf_LPbLg6p0zqtr8RGPEr38ws5s-Vw5ml7pp03l2a3u5YFeLRrFocpnMwBLPbAGku6RrdAODSnl0tU9a0J6zpnLWjx3BkDiUsushDylypDRoRNTFe-QTzI-n3j1caqVwQqPEugpM-fwidABK2z5MWAVMBXGZgO20xmZMDP9VSIbHvSgHx0mWa7MG-__TpfBaTf6SuwcaJexN2_Qxr5ZhMoU-_-D5cLAKkxPZbOL0TiVYiU0n_HWAv8PkJeoHbdiXC0pAfQGgpFKmY_lluLaajCu4ZkE6jSLQ1HxgE9fb25r7TM-OzigNjo6gomkzoHS72BXzxSJQM4fuCUAKnPnB6-UuyS8jpqTUgGBLip7USUmCa7CSDa4vNuwTY7m57vrSg5hzlCVNyaEciizf7c8W2HExGwYAo7XOgq4rRE_4vyiGXB7v15INm-aDUUi5OY6dx_spsc5935GStxw2cUVBjJrw9t2ruMnfEg4NGLptvn44Vn_f3BTOYE6DzktNu1oVr3hoQSYKBShYRzSdpjJxUBIN1Ukawu9m-PXDLC1H3okPiAHzrt9AODaZi0gLlYf7LAd5Q0UU2qccKQlZZ-tY4esPXmiyVFgNXNBCS8XDw-xuzxQmJj-C5TPz6pyR2bkpRuPfv1r6LyL6zTi2c5RkwsjNdwS_R0zLq0KOhYGk8uxjvpFnPmzabXdTdLtrC7Itz9oVaDo9OOaDeTyfzQXIhe5TR98mLPcmCMGxRNLDTz3Da-tSrusUqOkvQLNCPrFq2JzlayG8zcEiXevoK6SAeVnRTIw3Ex4IH6xj_w1HmMG1l1QXRMXUcurMByLwtqCvlviwRz6Wmn-oNTp6UfDEo4YtzKkh8IPLdfonmj4YtHHcoZq8f9fEL8mHmOPBk7pchYmSVrUbjloUDbWaoPJuujUTV8LqYo877i2GpvzyRc6BmlodEvl_oOdDPBFVm77uvpIY5-qHNl2OSQVdFUgI1On6J6PrlgxmjaOWDi3CfmXOUWiTduEi9hDCkJnOwGvNveZFLQ2scD7zoZDVnEQjWs_oSjMy7AXvQYVenjtCZpku49PCJ0WPi2V5vqsZ1ARKHMa0wEmUifXcngiLZP0Tzl-ajkZfjWpnUCG6HPX597AtuSRTCiwYS1p3Z6y7yeAGRV5GhctTdE5uu_HsMxWr5uxN0-286bIwswj8Dx24Db3jOWqHGXVV3OKy82ktLB8GWScv7tAi2YZSAcjj3JsVPBk6h2jQi1h9jlX61qrx7KcRWxaXlezZrt8xSjclBca87c0-jfbTdkdjP0kwcTcCod_Y9gageAi3udOJChOel_O1sG5R2pVE59mJhT3EyKZUUgYq4gQkir5gTjrk9OxgK0VPIszKZsyZXUJJVBr8lDh63kAyx4BKD7PHlXRJ2D2_CdNaNKtSJstiS1uh84LSkgAKrPERcqU5kJgogk0BkBav0rlehFjZjLGYxYRDJ0VfPquSgfV4uyFJZFQw5ezwIae4AfXvHN2hyLaatXRKG4gZ-y6vAxmvThEmGRDOsCnUx4HvzH1uUk0r36zgkBWh91e_8cqOVAgPz0bjjM-WbnYyslaTnx2zLHg_gGSsql-aTtNFAmhaHDM27HPraFxW0qBoIFdJ2id1cNQl29TKZHWLQ4u7bSyB5Us_wEd-DZUCj-slNUrJOS7MXCISzeowUY9Y5cQ5JSPUOWfHn6_omJ9ndOc921KgIM9_eypE3r-wcRzYFQNvTFqejPA51tYoRLO3r7qhlUzYuVaBrWEXvXO7V7oM1uKYxaodLHR553SwjJWR8m5lzTOC6X3P1CUv2puxhGILcUiUNOFAl4fqgpRz6XxP4kgdIOddIfsuSh4wGWFv4GK4Od2_9gmtuYFV4UvN7MuWW5yWzv4MTKqxmi74CfAjv7wZNPj4KnuDRp2eOyG_palFsxmH_K4kUJE2yyFIu4iE3TFpI7LH2D1clk_2NVZ4T4n2o0QhwZyrVNBvWkjyYrjCQgVpOAW9kWfDCLRODT10Y58PfKwdvh7upiswN0CVXWBytB1rPM0_g822B3Ybj2acm16WzpsD6pYO0NKhvUQU1cSr4zGn0qFzbFG1H_MxAWQytGmyTZZGy2dciVLQgpLS7IWhs6RJpYpc5fiU7CRDESaohQ-3z9xFuGg20s8NULWbuTgQU_9kD_zMdtZ4k9hSmBVHGydS-DO1ei0nxPNUhAp9LknN7hDXFUJCbE4egc_C767WqHg6KoAU1lYDa50P3HgCDPOV6Uk84T4Oel0v2Myu88J69ipW1eqNgsxZSONSL7NCON7YuaH3pw8UeUV9fvlSu7SFxsZ87igmtuQwOEEiM5_0tMlQt59gDYf-xtBa9UZfCLlhTD7R2E6kmUuzPw2vONhvxv8U8LIzNUBVMo2DVV14oAz9ckc23pvVGc1j-Ly2Jry6-caduI0vsv7d2ctxiO-7FI3dNN3trnApzxIz3j4uve5YBYDZj6578aqLT25gr4TW3t0i5TYSl47qXNy-qa22uNN3W6stPFAKkChOWL1_d7CTTL_VTd4-NLJcx37T59CRy590oF6zWAj6v1H7loYITZfxemt3wHBKKETu2pQ0F6lYetRRmLLkJoYxA0kDxJpDACux9N72K8LncwbK130KutPYeGcT5l9XIJvCgF8VL1aUik39D2tIsdXSrfNokwzXrXPTLtnhobQH-NMhzNdb3hXmU5i38211gbl-t2mV-Q9BQIk_U5RsIGF2grdG4ZeYDCMjnZjxMnkwePRznqgS7sp-"
+   },
+   {
+    "id": "msg_020d23f3c00aacf0016ae304fa40a087d19d1b2ca40fc3f168",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read the signing confidently enough to produce a reliable translation. The handshapes and movements are ambiguous in these frames, and I could not establish enough context to resolve them.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793262843.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 4559,
+   "input_tokens_details": {
+    "cache_write_tokens": 4556,
+    "cached_tokens": 0
+   },
+   "output_tokens": 519,
+   "output_tokens_details": {
+    "reasoning_tokens": 462
+   },
+   "total_tokens": 5078
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

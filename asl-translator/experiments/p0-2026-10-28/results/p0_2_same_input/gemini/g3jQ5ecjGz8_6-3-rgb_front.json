@@ -1,0 +1,103 @@
+{
+ "clip_id": "g3jQ5ecjGz8_6-3-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 23.019,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "cd4263a0f0aa95941a90a45ae7801c26b590e9ce671698b6e2bcce96c3995f97",
+    "02d1a18754c122b70674f7abb293010b64a4b0b5399149c2ee15b0ac7f1c0e29",
+    "9284492aa89fc65b135140768fb8462bb620384a045a7ec1e7343c71a55423fd",
+    "3259d3180b967696d3e403116d5dadd876b9d9d52dee50c8aeccc45ea90e20c9",
+    "49ae95022f65cd1963f76be46c4c550a9dd748536ace498f012ba82f9077fe7d",
+    "bd0167851a2388f38d8c3fe4a156b02954c8e51345063f292ee9e318864aa0a9",
+    "d48a1883b8477e8a3a9f763a3f66afe338b5df5895852ed1d9efc8b1ab530bd4",
+    "1f6459c295a013ee8f6a990cf17a2369f91e226a5b02e658df215e0fd7e202f4",
+    "10e42e8d93b315bcf370a7890e3d2111995550bb649b25f898f390fe6bc515cd",
+    "78731297fe79abdd0e2b4bb0cc09053a1bfdeee2edca4b6c3590b6ac6c8a5721",
+    "38b16c543ab39f303e033ed05a870f58c2e5aa4b1f98b850ef9a1cce9d55f088",
+    "012df36cdcfa2a16d3e39df938e1fa40a94b95c29251c00330f912224700d401",
+    "d81569d639d8d3a4bacb09a0d2d06b069dd917a2796698757a0e9da5e974481b",
+    "777beeaf664ad335e5f620eee9736b1120158399b519677f92a02e480bc6be0e",
+    "edc893bb6476fc153744827beae44f698a69d24f100591bbc89fe7aa9b1dde4c",
+    "255ac658d7e9cdacda13ba4557845240140ac38b5d7b580b4875bfaacb7d8a69",
+    "9934035fc93105b2d095104132eed7511fdfb642190a2c23374bb7cc24118cc8",
+    "6cfdf37ed79828e8e7fd77aa1a445fd23ecd7dde40cf6825f93e60dea02d2dd1",
+    "0fe110f2ab4b1d7436e6e3dd1b7e142da03fd86fe8fe6277693702309421878d",
+    "9cd9ec36dfee5579333a10e384eeb255c12eaa89251c69bc06ebbe1fe5834a05",
+    "152bbfcba16db497b9dc0c48fe60cdbe50c354878805a5f2011035dfd79bc7d3",
+    "e657b427e6c1fecb68c72231177d50b5a66085415a4d0434d5dcf9fbb9ccc497",
+    "11c56244e2788314d8684a2583c915c497177a0fd0557f882ac71a79b3e912fd",
+    "ed8a699feac3f4ae8f19e2c4dfeb198f4efd000f8771a6deac15f50bfca4dd6c"
+   ],
+   "batch_input_sha256": "a37b455b36e6ac7fc3c3295b44d1dd5904164eb3ce4802008f8905ff2bc7e1ea",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 173,
+    "reasoning_tokens": 4487,
+    "total_tokens": 11313
+   },
+   "latency_s": 22.832,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:46:22.828+00:00",
+   "response_id": "3wfjar_kBfn5-sAPrYzSyAM",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 3,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Can motor failure I S.T.",
+ "segments": [
+  {
+   "start": 0.81,
+   "end": 0.94,
+   "text": "Can",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.07,
+   "end": 4.02,
+   "text": "motor failure",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.28,
+   "end": 4.8,
+   "text": "I S.T.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

@@ -1,0 +1,103 @@
+{
+ "clip_id": "g1vUH8Iy4vw_8-3-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 14.664,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "b541ec4e84768371028683cabf2477aa60d6fe150391a374a7ea61222dcdbfbb",
+    "a093ff24c121066a52657c6b85d1836c1080da62a10108d7d393a755a885b378",
+    "9ebfac9960812d3696ffd94dd57b0976d858be54112abbfd88570d136bbb3be1",
+    "732797b2cfd232c720f6ffab8e3ededd15597f0eddb5e42998e499952da616aa",
+    "fc3a7b3d96794d6c99c6314dc7ef30a73c41b230f59ab67253b32b632876976a",
+    "2527ae658bc1404148c07dbbcbfbefc70a293245d32aa7e07bcddfb8e5be025b",
+    "a6a6538db655fdc0040f9afdf64c6dda6b1c1d6b1bdb29ac52ee3ed80ab2c51b",
+    "4409a31b44f29e7f115afeb63deaa349f73c5f60265588394344803590d70c57",
+    "222610731e5106e456635253f5d38e9cbda334d5d5219499fc44c531df40c766",
+    "74841dd260b4fb7638bc02bc55ed6a28b6239e04fe5b8aa3835ec5df74fa5ca3",
+    "527f11e84a1c80d190ab04c323850a765c1d49e0b9719c3398c9f704cc807a15",
+    "b61d03d7f103130347ff214e8c90ba09fecae8dbd0f4c7f10d15ac32b09331ac",
+    "7efdbba4219caedd27b97dafbdebb146f67a97340f01d469f267d5f466632ff0",
+    "fe619c5ab33235b833713777d5169c1c29591a280101373997a6e987d6107c85",
+    "3e5db9069948999da19e7986268b9f589f25d1dd906700208182aacf551314aa",
+    "475ee4570a8f56ca6eec9140330008490057fc60d95179050b2a09378d2d047d",
+    "ea26f226b1b44a9546b493ae0eff3bad0c1e53dece5b4f48f438a7ea042de8cb",
+    "8611edca65de3b75b0a155f84e9b188b1620d087684ce938da0d2fa37f5ea3f2",
+    "c47c5537b01b123cb9ef10dc3d3c7fab1d45448ea392ebab8bb413b671344059",
+    "9a07be06dd732b39e033922ece1d10251e8d3559516ad39786a72bb2378f3d44",
+    "60f1f6764d4ed6662423a02ea9436857f85f78e67ef21f1d6f0bddcafe628414",
+    "0a7c33305708b5c91e30b555d3e927130bdffcdd38c290bc81b0eb6a03b11326",
+    "8e9d7dcfd052500bc1520dc5d2076c5a3636e3755f81990114444e51dc71766a",
+    "df388ec28adecee097d92bed7a444bd3aab8a1c97f2fbd806326add35d06a2ea"
+   ],
+   "batch_input_sha256": "829ee0e066ab1971d10d8220a92a1e46c4f2a903ff09251544ae7e3856991131",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 163,
+    "reasoning_tokens": 2729,
+    "total_tokens": 9545
+   },
+   "latency_s": 14.482,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:44:24.301+00:00",
+   "response_id": "aAfjau76JKi-jMcPq7Dz-Qw",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 3,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "What about my stomach? Do you know what happened? Go.",
+ "segments": [
+  {
+   "start": 0.56,
+   "end": 1.39,
+   "text": "What about my stomach?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 1.51,
+   "end": 2.94,
+   "text": "Do you know what happened?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.83,
+   "end": 4.17,
+   "text": "Go.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

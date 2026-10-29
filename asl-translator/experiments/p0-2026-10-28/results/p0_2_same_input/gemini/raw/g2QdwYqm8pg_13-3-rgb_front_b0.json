@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.78,\n   \"end\": 1.97,\n   \"text\": \"I'm going to talk about\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 0.78,\n   \"end\": 1.97,\n   \"text\": \"I'm going to talk about\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "wwfjarmCIqWujMcPrtXfkQo",
+  "usage_metadata": {
+   "candidates_token_count": 64,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 869,
+   "total_token_count": 7586
+  }
+ }
+}

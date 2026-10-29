@@ -1,0 +1,53 @@
+{
+ "test": "P0-2 one-image synthetic capability smoke test",
+ "synthetic_image_only": true,
+ "image": {
+  "source": "generated locally with PIL: white 512x288 canvas, one red rectangle, one blue ellipse; no photo, no ASL, no benchmark content",
+  "w": 512,
+  "h": 288,
+  "sha256": "469dfe9504db9ae47e537dd55ed1e0a80e3e7b7eb17c7357065c04500533df8f"
+ },
+ "requested_model": "gpt-6.1-sol",
+ "detail": "high",
+ "endpoint": "POST /v1/responses",
+ "request_structure": {
+  "messages": "one user message: input_text instruction, input_text label, input_image data URL",
+  "text_format": "json_object",
+  "store": false,
+  "temperature": "omitted",
+  "reasoning": "omitted (model default)",
+  "sdk_max_retries": 0,
+  "timeout_s": 60
+ },
+ "sdk": {
+  "openai": "3.41.0",
+  "python": "3.11.7"
+ },
+ "n_inference_calls": 1,
+ "call_utc": "2026-10-29T08:04:00+00:00",
+ "latency_s": 3.761,
+ "model_returned": "gpt-6.1-sol",
+ "response_status": "completed",
+ "incomplete_reason": null,
+ "reasoning_effort": "medium",
+ "usage": {
+  "input_tokens": 205,
+  "cached_input_tokens": 0,
+  "output_tokens": 13,
+  "reasoning_tokens": 0,
+  "total_tokens": 218
+ },
+ "est_cost_usd": 0.00054,
+ "est_cost_label": "ESTIMATE ONLY: docs prices read 2026-10-29",
+ "checks": {
+  "request_accepted": true,
+  "model_id_exact": true,
+  "response_completed": true,
+  "json_object_parsed": true,
+  "no_refusal": true,
+  "usage_fields_available": true,
+  "no_retry": true
+ },
+ "status": "verified",
+ "answer_text": "not stored (only JSON-object validity was checked)"
+}

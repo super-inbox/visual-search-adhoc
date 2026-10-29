@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 15.97,\n   \"end\": 16.59,\n   \"text\": \"different\"\n  },\n  {\n   \"start\": 17.89,\n   \"end\": 19.04,\n   \"text\": \"explain\"\n  },\n  {\n   \"start\": 19.33,\n   \"end\": 19.91,\n   \"text\": \"but\"\n  },\n  {\n   \"start\": 20.19,\n   \"end\": 22.78,\n   \"text\": \"spread out\"\n  },\n  {\n   \"start\": 23.07,\n   \"end\": 23.36,\n   \"text\": \"or\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 15.97,\n   \"end\": 16.59,\n   \"text\": \"different\"\n  },\n  {\n   \"start\": 17.89,\n   \"end\": 19.04,\n   \"text\": \"explain\"\n  },\n  {\n   \"start\": 19.33,\n   \"end\": 19.91,\n   \"text\": \"but\"\n  },\n  {\n   \"start\": 20.19,\n   \"end\": 22.78,\n   \"text\": \"spread out\"\n  },\n  {\n   \"start\": 23.07,\n   \"end\": 23.36,\n   \"text\": \"or\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "NgbjaruFHMGijrEPiL3DmQc",
+  "usage_metadata": {
+   "candidates_token_count": 213,
+   "prompt_token_count": 6409,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 475
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 5934
+    }
+   ],
+   "thoughts_token_count": 1407,
+   "total_token_count": 8029
+  }
+ }
+}

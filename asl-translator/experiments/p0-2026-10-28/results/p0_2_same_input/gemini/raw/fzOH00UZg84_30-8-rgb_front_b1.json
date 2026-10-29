@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 8.45,\n   \"end\": 9.42,\n   \"text\": \"I'm trying to understand.\"\n  },\n  {\n   \"start\": 10.40,\n   \"end\": 11.37,\n   \"text\": \"More.\"\n  },\n  {\n   \"start\": 11.69,\n   \"end\": 13.32,\n   \"text\": \"What?\"\n  },\n  {\n   \"start\": 13.64,\n   \"end\": 15.59,\n   \"text\": \"Ask Pat.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 8.45,\n   \"end\": 9.42,\n   \"text\": \"I'm trying to understand.\"\n  },\n  {\n   \"start\": 10.40,\n   \"end\": 11.37,\n   \"text\": \"More.\"\n  },\n  {\n   \"start\": 11.69,\n   \"end\": 13.32,\n   \"text\": \"What?\"\n  },\n  {\n   \"start\": 13.64,\n   \"end\": 15.59,\n   \"text\": \"Ask Pat.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "eAbjasnaEuaj_uMPzvKxuAI",
+  "usage_metadata": {
+   "candidates_token_count": 178,
+   "prompt_token_count": 6404,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 470
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 5934
+    }
+   ],
+   "thoughts_token_count": 1520,
+   "total_token_count": 8102
+  }
+ }
+}

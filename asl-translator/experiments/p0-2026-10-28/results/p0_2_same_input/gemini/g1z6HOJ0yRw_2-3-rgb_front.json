@@ -1,0 +1,91 @@
+{
+ "clip_id": "g1z6HOJ0yRw_2-3-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 4.662,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "g1z6HOJ0yRw_2-3-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "7135b1e2ddf6031bd4410b1b1bd71cca93b308f771653251571258d2b45b4263",
+    "0485bbcccb59f5669cd87090389626a31c30db984fc1c21b8f2cfebaa2356ea2",
+    "600f418be3fa5cb13e2e8c831ce58fce6541042d0ffaec002a0d9255b22673e0",
+    "6a5494e16e3d9acfada88218d3b133eaf944228f9640fea2413149483e52cb8d",
+    "1498b35eab394acbf59208da4ca9045152bbfc46adac916aec801f4382bf5057",
+    "3822583ff72da14ad4f5070e9ec9d8f1f7231668a9598898228f60eeb411263e",
+    "5cb46f1d94c603227bebb52bfc05bcd6890a99726b16321960cc799e2d07d327",
+    "744399e1459b9ab34e63b7eabaede173a84f01b8476813b6224829302a690e1c",
+    "72db9d0d3efbdcba8b2d80cfa3afa5ee38ac70b7e975b65613118374df34bfbb",
+    "c1c55266791c57a28c3490e9dde7e2d9e410bacc158c271fcbc76013abc7e998",
+    "0cbe5de5a815f57f9c74c4eb9639f13f2b3c47d94a58fb9ad779f744184ac61f",
+    "f714e0b67930c8c91247050e951422d7890859732fb29f2e8fa79437b90be3f6",
+    "3555556ef91366bc42e6c1f0932c407dc47411c63e699aa799c5d1b637e7e4cf",
+    "213e362cd1801ca35682aa1abca969c2071eb2ffb6e2d06e1785d0429ae93b06",
+    "3eb58e558a296778ea4a374c5c31ae7fb3fdb00f5a6155554df7aa95c322dcd0",
+    "cd5e680f6174eb52ed4656420f67d1c7e66c07cfd9e4c18ae05b9175b066ff9e",
+    "81e8b723b3779c7c8621efe657f7c3d7da5c24394c78d925a3fef7b078f9404e",
+    "93e11095703c2de40470a9843d9660d5dbc76a96f69aa504072b59228dd6b2a0",
+    "6b5442250d7ac8829a47b2bddd7a981e97ca85ceeaf807d44a86f316b0de4b0f",
+    "b7237a5c26b1deb71baf06d66cc7813baeba31471eda646e8af0e393f4420b43",
+    "00f54d0d310647ba443eb1ae1b34ecd103f2bff1f10756f198fbc95ba4a8b400",
+    "04924de11f2e881f1d69aba091abe9e37e7bd52462beac9396c5792280d43f02",
+    "2807436671ba7d4bd713614e53061202d67dccec7d31649ce9b308d79c9fe1d3",
+    "1b2abebb5824029aff3dfb614a8a26c963b2b458423403fec60d37e6f1bfbaee"
+   ],
+   "batch_input_sha256": "1853c778e8b2b2512503ebbee6bd32bf810aa5ad7705cf0884cb26ed49585d42",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 62,
+    "reasoning_tokens": 745,
+    "total_tokens": 7460
+   },
+   "latency_s": 4.471,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:45:05.245+00:00",
+   "response_id": "kQfjapTHINiu9MoP-_al0QU",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 1,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "The tall building is strong.",
+ "segments": [
+  {
+   "start": 1.56,
+   "end": 4.19,
+   "text": "The tall building is strong.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

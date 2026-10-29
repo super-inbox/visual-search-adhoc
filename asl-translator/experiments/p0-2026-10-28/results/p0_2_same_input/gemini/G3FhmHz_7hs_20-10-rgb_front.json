@@ -1,0 +1,91 @@
+{
+ "clip_id": "G3FhmHz_7hs_20-10-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 17.152,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "b5cc38122eec4c46bd35643bd092264cf15450252a0190debab967d898219a3f",
+    "4e7f9a1ea57ca6345b7eebb5599155d65c221650dc46da3b80f52316d64b7e38",
+    "1c1f64d06cf2283df6a1570c7f9fdfac8c1a9a22653f911495d0f4512a1855e8",
+    "e7da9fe9c4c8c385953b01ba4544de519134cfc1916a2635526a78895ab80293",
+    "69383fdad93132fdac64c7eb7fe3b7bab0b9df5140c2f1a0e9543ff99615f684",
+    "2612b84703aa05959987a46dd0c8795b0e10debc30ab86736f401247c747e89a",
+    "18b982aa645d7163ca3d6353d89437e63e9dd2f52afb93ebe481c8c410b8ed5e",
+    "9d3f9fdee9bcc1c4c6c71828fd9b5656e2390ea2cb688d15b0a64c32eb9586bd",
+    "3beb7ddd5fb2ad6c327ad8705f4c91cbeeeb9b1aad9ad6bc835b47d93ed31255",
+    "69a299c70ea25bf934710a4bd1315da2bba7403f50ff48012508cef97528e332",
+    "c8f2696d2cf9546372b856d21be67a31a500b5d760bdf862441c159f25a85e97",
+    "bc12885d356f2a549c85b52704a70c66adeeb5965cfd4e14e5fe6a5a028f6059",
+    "bd64e29c51d879e8aa9673d8fa0fa903b97b26a1be92ca9a5cd198af23fa0cf9",
+    "e650e4ddbfff4ab4bdc3ecf67a1366483b191b7ec2578216e83e91b0bc1e339e",
+    "ab805f79967906e50262636b17633bbbb7c9237cf4065c5ed2290500574e9725",
+    "15489bbd36f217bd9531175f38845ff0e811bca730c7dec43e99ca0dcfedc477",
+    "9941d1b5d23390ab9f5c8e61e6392c78f9c5875b03b0d8ac058ec926321fbc4c",
+    "2bfb05e5288ba9774c3b9a0adc0b9f43d1963842356390590c2bc8c4c5964f6d",
+    "bfacbceff57eead4a2b3dbf13c4c296310b9f902c57d9fe1bb7c98247b538942",
+    "c54705ed3b160ed9b27a6ae51b3d0be6cfc963f071d4bbcd158426b6e7fb185d",
+    "457a02d1279dca74332a6a7ce43817789de2d40a1a69c80b759665885aa31a34",
+    "d41555be1caa28bbd5a6657c40f02f50e1ab32b4cce50968102cf515dd2510d2",
+    "d5cad2aaea0fc5828d2c2853297ddf3e66fdb0043cba48c95cdb1790ac6ea4bb",
+    "15c8aad17b4961f6298dbc770c622a66ba70e0726f8bff567d6d1c9e812299ac"
+   ],
+   "batch_input_sha256": "7df8d17e3c19e9da94e5af432c7cc698a33c7debcb282128ce6e69e0455220ca",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 64,
+    "reasoning_tokens": 3293,
+    "total_tokens": 10010
+   },
+   "latency_s": 16.94,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:39:54.067+00:00",
+   "response_id": "WgbjaqqEF7uZ_uMPtb-okAI",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 1,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Why is it important to stop money?",
+ "segments": [
+  {
+   "start": 1.57,
+   "end": 4.68,
+   "text": "Why is it important to stop money?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

@@ -1,0 +1,546 @@
+{
+ "stage": "P0-2 Round 1 pre-registration (no API call made)",
+ "date": "2026-10-28",
+ "production": {
+  "repo": "curify-studio",
+  "commit": "4220e03c0c0c5c4010ddc6ffc8c0d5379d0dc48b",
+  "file": "curify_background/app/utils/asl_utils.py",
+  "file_sha256": "90df95635fcb3297e2c2b0cd6bf15061d398f9ae2ea3c66543b982487c59ffa5",
+  "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+  "gemini_model": "gemini-2.5-flash",
+  "temperature": 0.0,
+  "dormant_openai_model_in_production": "gpt-4o"
+ },
+ "ffmpeg": "ffmpeg version 8.1.1 Copyright (c) 2000-2026 the FFmpeg developers",
+ "recipe": {
+  "PROBE_FPS": 4.0,
+  "PROBE_WIDTH": 160,
+  "TARGET_FRAMES_PER_SEC": 2.0,
+  "MIN_FRAME_BUDGET": 24,
+  "MAX_FRAME_BUDGET": 240,
+  "DENSITY_FLOOR_FPS": 1.0,
+  "KEYFRAME_WIDTH": 512,
+  "MIN_FRAMES_PER_RUN": 2,
+  "BATCH_SIZE": 24,
+  "IDLE_QUANTILE": 0.35,
+  "ABS_MOTION_FLOOR": 2.0,
+  "DEDUP_MAX_GAP_S": 1.0,
+  "DEGENERATE_REPEAT_COUNT": 3
+ },
+ "pool": {
+  "benchmark_clips": 128,
+  "benchmark_freeze_sha256": "16c41282b21928e36e4c5481d8c3de48d56794accbb091fde67698dd2963411a",
+  "dev45": 45,
+  "outside_dev45": 83,
+  "outside_dev45_in_p0_15_sealed_final": 36,
+  "h18_h19_blocked": 0,
+  "eligible": 47,
+  "local_videos_verified": 128,
+  "eligible_prior_exposure": {
+   "gemini_curify_2026_09_04_all128": 47,
+   "unisign_any": 47,
+   "p0_12": 47,
+   "p0_13": 47,
+   "p0_15_fusion_dev_fitted": 47,
+   "manual_signcaption_or_human_review": 5
+  },
+  "clean_untouched_holdout": false
+ },
+ "selection": {
+  "rule": "sort the eligible pool by (signer proxy ascending, multi-batch after single-batch, sha256('P0-2-R1-2026-10-28|'+clip_id)); take positions 0,2,4,... as pilot and 1,3,5,... as reserve; one draw, no redraw",
+  "rule_revision_before_freeze": "a first rule (batch-count strata only) gave signer proxy 8 11 pilot vs 5 reserve; replaced once, before any model call and using input-side fields only, by the signer x batch rule",
+  "inputs_used": "production preprocessing only (duration, budget, frames, batches); no model output, no reference text, no text-derived heuristic tag",
+  "pilot_ids": [
+   "-g0sqksgyc4_3-2-rgb_front",
+   "FZCEymcpq7I_14-1-rgb_front",
+   "FZd8Iv9ACVw_12-8-rgb_front",
+   "Fz-N1S0swh8_2-8-rgb_front",
+   "FzAIlhumvMA_4-2-rgb_front",
+   "FzQPg4aqNYc_13-1-rgb_front",
+   "FzoUVr98JmQ_6-8-rgb_front",
+   "G05uFub3YFc_9-2-rgb_front",
+   "G1hb5HugzVk_2-8-rgb_front",
+   "G23G21G49dk_14-2-rgb_front",
+   "G2T2WCuU39Y_5-10-rgb_front",
+   "G3FhmHz_7hs_20-10-rgb_front",
+   "fzOH00UZg84_30-8-rgb_front",
+   "fzcsY2gm7t0_8-8-rgb_front",
+   "fzrJBu2qsM8_5-10-rgb_front",
+   "fzueHkUDyhE_1-8-rgb_front",
+   "g0Abwige7MQ_2-8-rgb_front",
+   "g1HvmBOR7Y4_15-3-rgb_front",
+   "g1vUH8Iy4vw_8-3-rgb_front",
+   "g1z6HOJ0yRw_2-3-rgb_front",
+   "g2ELiaFjKfs_3-10-rgb_front",
+   "g2QdwYqm8pg_13-3-rgb_front",
+   "g3jQ5ecjGz8_6-3-rgb_front",
+   "g3ushtMfLiY_2-3-rgb_front"
+  ],
+  "reserve_ids": [
+   "-g45vqccdzI_6-1-rgb_front",
+   "8kAWy2YodzQ_10-1-rgb_front",
+   "FZbyRzy4huk_3-8-rgb_front",
+   "FzWvE__PamM_7-2-rgb_front",
+   "G-0gYel1YA8_1-2-rgb_front",
+   "G19uBylwQww_1-2-rgb_front",
+   "G21Gx_C18IA_2_3-2-rgb_front",
+   "G2VzB5-JkRA_1-10-rgb_front",
+   "_g0fpC8aiME_1-8-rgb_front",
+   "fzQ2E3_xBZA_1-8-rgb_front",
+   "fzncPNr2Sc0_10-8-rgb_front",
+   "g0QHEtNjZhI_21-10-rgb_front",
+   "g0S7FAqIweA_1-8-rgb_front",
+   "g0TkUiO7t4I_6-8-rgb_front",
+   "g0iNy-yPisM_19-8-rgb_front",
+   "g0pRnlPR-K0_7-8-rgb_front",
+   "g13Jo_kFliM_0-10-rgb_front",
+   "g1e-zO8mZ4c_1-3-rgb_front",
+   "g1uA0f9I0Sg_7-3-rgb_front",
+   "g3BsH_C3u7Y_2-3-rgb_front",
+   "g3Cc_1-V31U_14-3-rgb_front",
+   "g3PBeTb1TCw_6-3-rgb_front",
+   "g3ZluRtRXVc_0-3-rgb_front"
+  ],
+  "pilot_balance": {
+   "n": 24,
+   "probe_duration_s": {
+    "min": 1.0,
+    "median": 5.25,
+    "max": 23.5
+   },
+   "planned_frames": {
+    "min": 24,
+    "median": 24.0,
+    "max": 47
+   },
+   "n_batches": {
+    "1": 19,
+    "2": 5
+   },
+   "active_ratio": {
+    "min": 0.2353,
+    "median": 0.648,
+    "max": 0.6667
+   },
+   "mean_motion": {
+    "min": 1.987,
+    "median": 3.7775499999999997,
+    "max": 8.192
+   },
+   "signer_proxy_counts": {
+    "1": 2,
+    "10": 4,
+    "2": 4,
+    "3": 6,
+    "8": 8
+   },
+   "total_calls_per_arm": 29
+  },
+  "reserve_balance": {
+   "n": 23,
+   "probe_duration_s": {
+    "min": 1.25,
+    "median": 5.0,
+    "max": 20.5
+   },
+   "planned_frames": {
+    "min": 24,
+    "median": 24,
+    "max": 40
+   },
+   "n_batches": {
+    "1": 18,
+    "2": 5
+   },
+   "active_ratio": {
+    "min": 0.4,
+    "median": 0.6429,
+    "max": 0.6667
+   },
+   "mean_motion": {
+    "min": 2.3608,
+    "median": 3.5889,
+    "max": 6.4228
+   },
+   "signer_proxy_counts": {
+    "1": 2,
+    "10": 3,
+    "2": 4,
+    "3": 6,
+    "8": 8
+   },
+   "total_calls_per_arm": 28
+  },
+  "eligible_balance": {
+   "n": 47,
+   "probe_duration_s": {
+    "min": 1.0,
+    "median": 5.25,
+    "max": 23.5
+   },
+   "planned_frames": {
+    "min": 24,
+    "median": 24,
+    "max": 47
+   },
+   "n_batches": {
+    "1": 37,
+    "2": 10
+   },
+   "active_ratio": {
+    "min": 0.2353,
+    "median": 0.6471,
+    "max": 0.6667
+   },
+   "mean_motion": {
+    "min": 1.987,
+    "median": 3.7422,
+    "max": 8.192
+   },
+   "signer_proxy_counts": {
+    "1": 4,
+    "10": 7,
+    "2": 8,
+    "3": 12,
+    "8": 16
+   },
+   "total_calls_per_arm": 57
+  }
+ },
+ "estimates": {
+  "pilot_cases": 24,
+  "pilot_frames": 656,
+  "frame_size_px": [
+   512,
+   288
+  ],
+  "openai_calls_primary": 29,
+  "gemini_calls_primary": 29,
+  "gemini_calls_optional_noise_floor_repeat": 29,
+  "max_extra_calls_if_every_batch_transport_retried_once": 29,
+  "gemini_observed_production_45": {
+   "calls_with_usage": 57,
+   "full_24_frame_calls": 47,
+   "median_prompt_tokens_24_frames": 6653,
+   "median_output_tokens": 102,
+   "median_thinking_tokens": 1506,
+   "median_total_tokens": 8160
+  },
+  "gemini_est_prompt_tokens_pilot": 181849,
+  "openai_image_tokens_per_frame_by_family_docs_2026_10_28": {
+   "patch_based_multiplier_1.2": 173,
+   "tile_based_gpt_4o_4.1_high": 255,
+   "tile_based_gpt_5.1_high": 210,
+   "note": "512x288 = 144 patches of 32 px, or 1 tile of 512 px; not verified by an API call"
+  },
+  "dollar_cost": "see openai_cost_estimate (ESTIMATE ONLY)",
+  "openai_cost_estimate": {
+   "label": "ESTIMATE ONLY: docs prices read 2026-10-29, account pricing and tokenizer unverified, no call made",
+   "assumptions": {
+    "image_tokens_per_frame": 173,
+    "text_tokens_per_call": 500,
+    "output_plus_reasoning_tokens_per_call_low": 1608,
+    "output_plus_reasoning_tokens_per_call_high": 8040,
+    "low_basis": "Gemini production_45 median output + thinking tokens per call",
+    "high_basis": "5x the low value (default medium reasoning may think more)",
+    "no_cached_input": true,
+    "primary_calls": 29
+   },
+   "input_tokens": 127988,
+   "output_tokens_low": 46632,
+   "output_tokens_high": 233160,
+   "gpt-6.1-sol": {
+    "price_per_1M_input_output": [
+     2.0,
+     10.0
+    ],
+    "primary_usd_low": 0.72,
+    "primary_usd_high": 2.59,
+    "worst_case_with_one_retry_per_batch_usd": 5.18
+   },
+   "gpt-6-astra": {
+    "price_per_1M_input_output": [
+     10.0,
+     50.0
+    ],
+    "primary_usd_low": 3.61,
+    "primary_usd_high": 12.94,
+    "worst_case_with_one_retry_per_batch_usd": 25.88
+   }
+  }
+ },
+ "protocol": {
+  "arms": {
+   "G": "production Gemini: asl_utils._call_vlm unchanged (gemini-2.5-flash, temperature 0, response_mime_type application/json, no thinking config = model default), fed the frozen frames",
+   "O": "OpenAI: the same frozen frames, prompt, labels, batch partition and post-processing; only the model call differs (see openai_request)",
+   "G_repeat_optional": "second Gemini pass on the same frames, for a run-to-run noise floor (needs approval)"
+  },
+  "harness": "load production asl_utils (sha-checked) read-only; replace only _extract_frames (returns copies of the frozen JPEGs under production's own file names, asserting the timestamps match) and, for O, _call_vlm_openai; everything else in transcribe_asl (batch loop, segment parsing, empty filter, sort, _merge_adjacent_duplicates, _has_degenerate_repetition) runs unchanged for both arms; per-batch outcomes are recorded by a pass-through wrapper (R03-aware status, production result unchanged)",
+  "openai_model": {
+   "status": "FROZEN",
+   "model_id": "gpt-6.1-sol",
+   "frozen_on": "2026-10-29",
+   "verification": "models.retrieve('gpt-6.1-sol') succeeded 2026-10-29T07:19:51Z; returned id 'gpt-6.1-sol'",
+   "preferred": "gpt-6.1-sol",
+   "fallback": "gpt-6-astra (untested, not selected: the preferred model succeeded, so no fallback check was made)",
+   "excluded_as_primary": "gpt-4o",
+   "snapshot_caveat": "the docs list no dated snapshot; 'gpt-6.1-sol' is the exact id returned, but whether it is a fixed version or an alias is not stated",
+   "requirements": [
+    "exact model ID returned in the response equals the requested ID on every call, or the run is invalid",
+    "image input",
+    "JSON-object output",
+    "Responses API endpoint",
+    "id and call date recorded per request"
+   ],
+   "credential_source": "OPENAI_API_KEY from the user-approved local env file outside the repo (approved 2026-10-29; path not committed; only that variable is loaded; value never printed or stored)",
+   "production_dormant_default": "gpt-4o (asl_utils.OPENAI_ASL_MODEL), detail 'low', Chat Completions, openai==1.63.2"
+  },
+  "openai_verification_2026_10_29": {
+   "sdk": {
+    "research_env": "isolated venv outside the repo (temporary session directory); production dependencies untouched",
+    "python": "3.11.7",
+    "openai": "3.41.0 (pinned: openai==3.41.0)",
+    "has_responses_create": true,
+    "has_models_retrieve": true,
+    "production_pin": "openai==1.63.2 (curify_background/requirements.txt; predates the Responses API)"
+   },
+   "account_access": {
+    "method": "client.models.retrieve only (metadata; no generation, no images, no benchmark data); max_retries=0, timeout 30 s",
+    "gpt-6.1-sol": {
+     "requested": "gpt-6.1-sol",
+     "returned_id": "gpt-6.1-sol",
+     "result": "success",
+     "owned_by": "system",
+     "created": 1790552874,
+     "verified_at_utc": "2026-10-29T07:19:51+00:00"
+    },
+    "gpt-6-astra": "NOT CHECKED (fallback only on a model-unavailable error; not needed)"
+   },
+   "no_generation_check_limits": "models.retrieve returns only id, created, owned_by: it can confirm access and the exact id, not image input, detail behaviour, temperature or usage fields; those are from the docs until the first real call",
+   "docs_read": [
+    "models/gpt-6.1-sol",
+    "models/gpt-6-astra",
+    "models",
+    "guides/images-vision",
+    "guides/reasoning",
+    "guides/structured-outputs"
+   ],
+   "gpt-6.1-sol": {
+    "snapshot": "only 'gpt-6.1-sol' listed; no dated snapshot; alias vs fixed not stated",
+    "image_input": "yes (text + image in, text out)",
+    "multiple_images": "yes per the vision guide (up to 1,500 images, 512 MB per request)",
+    "responses_api": "supported",
+    "chat_completions": "supported",
+    "batch": "supported",
+    "structured_outputs": "listed; JSON mode not mentioned on the model page",
+    "detail_values": "NOT documented for this model (the vision guide's sizing table does not list gpt-6.1-sol)",
+    "temperature": "not documented",
+    "reasoning_effort": "low, medium, high, xhigh, max; default medium; no 'none'",
+    "context": "1,050,000 (max input 922,000), max output 128,000",
+    "price_per_1M": {
+     "input": 2.0,
+     "cached_input": 0.1,
+     "output": 10.0
+    }
+   },
+   "gpt-6-astra": {
+    "snapshot": "only 'gpt-6-astra' listed; no dated snapshot; alias vs fixed not stated",
+    "image_input": "yes",
+    "multiple_images": "yes (same guide limits)",
+    "responses_api": "supported",
+    "chat_completions": "supported",
+    "structured_outputs": "listed; JSON mode not mentioned on the model page",
+    "detail_values": "low (fits 512x512), high (<= 2,500 patches, 65,535 px max), original, auto (= original); 32 px patches, multiplier 1.2",
+    "temperature": "not documented",
+    "reasoning_effort": "low, medium, high, xhigh, max; 'none' returns HTTP 400; default not stated",
+    "context": "1,050,000 (max input 922,000), max output 128,000",
+    "price_per_1M": {
+     "input": 10.0,
+     "cached_input": 1.0,
+     "output": 50.0
+    }
+   },
+   "usage_fields_responses_api": [
+    "usage.input_tokens",
+    "usage.input_tokens_details.cached_tokens",
+    "usage.output_tokens",
+    "usage.output_tokens_details.reasoning_tokens",
+    "usage.total_tokens"
+   ],
+   "reasoning_tokens_billed_as": "output tokens"
+  },
+  "openai_request": {
+   "endpoint": "Responses API, POST /v1/responses (client.responses.create); changed from the production dormant path's Chat Completions at the user's direction (2026-10-29)",
+   "messages": "input = one user message; content = [input_text: production _PROMPT verbatim] + per frame [input_text: '[t=X.XXs]', input_image: image_url data:image/jpeg;base64,<frozen frame bytes>, detail 'high']",
+   "detail": "high (FROZEN 2026-10-29, verified by the capability smoke test): a 512x288 frame (144 patches) is within every documented 'high' budget and is sent unresized; production's dormant 'low' would collapse each frame to the base tokens of tile-based models",
+   "capability_smoke_2026_10_29": {
+    "result": "PASS",
+    "call_utc": "2026-10-29T08:04:00+00:00",
+    "n_inference_calls": 1,
+    "retries": 0,
+    "image": "locally generated synthetic 512x288 JPEG (white canvas, one rectangle, one ellipse); no photo, no ASL, no pilot/reserve/benchmark content; sha256 469dfe95...",
+    "request": "POST /v1/responses; model gpt-6.1-sol; one user message [input_text instruction, input_text '[t=0.00s]', input_image data URL detail 'high']; text.format json_object; store false; temperature and reasoning omitted; SDK openai==3.41.0, max_retries 0, timeout 60 s",
+    "verified": {
+     "request_accepted": true,
+     "model_returned": "gpt-6.1-sol",
+     "image_input": true,
+     "detail_high_accepted": true,
+     "status": "completed",
+     "json_object_output_parsed": true,
+     "refusal": false,
+     "reasoning_effort_reported": "medium"
+    },
+    "usage": {
+     "input_tokens": 205,
+     "cached_input_tokens": 0,
+     "output_tokens": 13,
+     "reasoning_tokens": 0,
+     "total_tokens": 218
+    },
+    "usage_fields_verified": [
+     "usage.input_tokens",
+     "usage.input_tokens_details.cached_tokens",
+     "usage.output_tokens",
+     "usage.output_tokens_details.reasoning_tokens",
+     "usage.total_tokens"
+    ],
+    "image_token_note": "205 input tokens is consistent with ~173 image tokens (144 patches x 1.2) plus ~30 text tokens; the API does not report image tokens separately",
+    "latency_s": 3.761,
+    "est_cost_usd": 0.00054,
+    "est_cost_label": "ESTIMATE ONLY: docs prices read 2026-10-29",
+    "answer": "not stored; only JSON-object validity was checked",
+    "record": "results/p0_2_same_input/capability_smoke.json"
+   },
+   "response_format": "text.format = {type: json_object} (Responses equivalent of JSON mode; no schema, as Gemini's application/json mode); the prompt already says 'STRICT JSON'",
+   "temperature": "omitted: neither candidate documents temperature support and both are reasoning-only (no 'none' effort); recorded as a difference from Gemini's temperature 0",
+   "reasoning_effort": "not set (model default; documented as medium for gpt-6.1-sol, not stated for gpt-6-astra), as production sets no Gemini thinking config; the effective value is recorded from the response",
+   "not_set": [
+    "instructions / system message",
+    "max_output_tokens",
+    "seed",
+    "tools",
+    "top_p",
+    "previous response id"
+   ],
+   "store": false,
+   "incomplete": "status 'incomplete' is recorded with incomplete_details.reason; any returned text is parsed as usual, no text = parse_failure",
+   "timeout_s": 60,
+   "parser": "production _call_vlm parsing for both arms: json.loads, else the first {...} span, else parse failure (the dormant _call_vlm_openai uses json.loads only)",
+   "refusal": "a refusal or null content is a parse_failure, with the refusal flag recorded"
+  },
+  "unavoidable_api_differences": [
+   "different provider, model family, tokenizer and image encoder",
+   "Gemini Part.from_text / Part.from_bytes vs OpenAI Responses input_text / input_image data-URL parts (same order and content)",
+   "JSON mode: Gemini response_mime_type application/json vs OpenAI text.format json_object; neither imposes a schema",
+   "image tokens per frame differ (Gemini ~258 observed via usage; OpenAI ~173 documented for 1.2x patch models) at the same pixels",
+   "Gemini temperature 0 with default dynamic thinking; OpenAI temperature omitted with default reasoning effort (no non-reasoning mode on either candidate)",
+   "neither provider guarantees determinism at temperature 0"
+  ],
+  "no_extra_information": [
+   "no reference text",
+   "no target answer",
+   "no Uni-Sign prediction",
+   "no clip or video name",
+   "no ground-truth name",
+   "no scoring hint",
+   "no audio",
+   "no system message"
+  ],
+  "batch_outcomes": {
+   "ok": "parsed dict with at least one valid non-empty segment",
+   "valid_empty": "parsed dict with no valid non-empty segment",
+   "parse_failure": "response received, not parseable by the production parser (includes refusal/null content)",
+   "transport_failure": "the call raised (timeout, connection, 5xx, 429 rate limit)",
+   "run_blocking": "auth error, model not found, insufficient quota or spend cap, or HTTP 400/422 request configuration error: halt the whole run"
+  },
+  "case_status": {
+   "success": "every batch ok or valid_empty, and at least one segment",
+   "no_signing_detected": "every batch valid_empty",
+   "partial": "at least one failed batch and at least one segment (never counted as success)",
+   "parse_failure": "no segment, and at least one batch parse_failure",
+   "transport_failure": "no segment, and every failed batch transport_failure"
+  },
+  "denominator": "all 24 pilot cases in every arm; a case without text is scored as the empty string",
+  "retries": {
+   "primary": "none: one attempt per batch, as production transcribe_asl",
+   "secondary_view": "after the full pass, each transport_failure batch may be retried once after >= 60 s; reported only as a separate 'transport-retried' view; retry calls, tokens and latency count in cost and latency",
+   "never_retried": [
+    "parse_failure",
+    "valid_empty",
+    "no_signing_detected",
+    "ok"
+   ],
+   "run_blocking": "halt; no scoring of an incomplete arm; resume only with user approval; resumed cases flagged"
+  },
+  "call_order": "for each pilot case in clip-id order, both arms back to back; which arm goes first = parity of sha256('P0-2-R1-2026-10-28|order|'+clip_id)",
+  "harness_choices_frozen_2026_10_29": {
+   "status": "FROZEN before execution (user-approved harness review, 2026-10-29); must not change after any output is seen",
+   "harness": "p0_2_same_input_comparison.py",
+   "call_order": "even parity of sha256('P0-2-R1-2026-10-28|order|'+clip_id) -> Gemini first, odd -> OpenAI first; 12 cases Gemini-first, 12 OpenAI-first",
+   "http_400_422": "run_blocking configuration error (request format/config): halt the run immediately; never counted as transport_failure; no further calls are spent",
+   "non_json_object_response": "a reply that parses but is not a JSON object is a parse_failure; the case stays in the denominator and the run continues with the next batch/case; the batch records production_would_crash = true when the current production parser would crash on it (transcribe_asl calls data.get on the parsed value)"
+  },
+  "request_log_fields": [
+   "arm",
+   "requested_model",
+   "returned_model",
+   "call_utc",
+   "clip_id",
+   "batch_index",
+   "n_images",
+   "batch_input_sha256",
+   "input_tokens",
+   "cached_input_tokens",
+   "output_tokens",
+   "reasoning_or_thinking_tokens",
+   "total_tokens",
+   "latency_s",
+   "finish_reason",
+   "response_id",
+   "attempt",
+   "batch_outcome",
+   "error_class",
+   "error_message_200",
+   "raw_response_text"
+  ],
+  "metrics": {
+   "automatic": [
+    "corpus chrF (primary)",
+    "corpus BLEU-4",
+    "WER (lowercase whitespace, x100)",
+    "mean output/reference word-length ratio",
+    "loop_out count (P0-A §1.4)",
+    "degenerate_repetition count",
+    "success / partial / no_signing_detected / parse_failure / transport_failure counts",
+    "empty-output count"
+   ],
+   "implementation": "the P0-A frozen functions (score_repetition.py / production_45_tools.py), sacrebleu defaults",
+   "paired": "per-case sentence chrF and WER, O minus G; mean, median, wins/losses/ties (|delta chrF| < 1 = tie); 95 % paired bootstrap CI of mean delta sentence chrF, 10,000 resamples, seed 20261028, case-level (one clip per source video); sensitivity: signer-proxy cluster bootstrap",
+   "regression_gain": "regression = O sentence chrF <= G - 10; gain = O >= G + 10",
+   "content_review": {
+    "labels": [
+     "omission of key content",
+     "key-content error (entity, number, action)",
+     "generic or hallucinated filler",
+     "fingerspelling/name/number rendered correctly (yes/partial/no/NA)"
+    ],
+    "procedure": "blind sheet: reference plus the two outputs as X/Y in seeded random order; arm names hidden until labels are locked",
+    "who": "human reviewer; AI pre-annotation, if any, is labelled AI and cannot support verdict A",
+    "automatic_proxy": "an output repeated verbatim on 2+ different clips within an arm (descriptive)"
+   },
+   "uni_sign": "committed Uni-Sign predictions for these clips are reported as a separate reference column, labelled not input-matched; never paired as 'only the model changed'",
+   "not_claimed": "no semantic superiority from automatic metrics; Round 1 can name a candidate, not prove semantic correctness (the 2x2 correctness table needs reliable labels)"
+  },
+  "decision_rule": {
+   "gate_R_reliability": "non-answers (empty + no_signing_detected + parse_failure + transport_failure) O <= G + 1, and partial O <= G + 1",
+   "gate_Q_quality": "corpus chrF O - G >= +2.0, and paired bootstrap 95 % CI lower bound of mean delta sentence chrF > 0, and corpus WER O <= G; if G_repeat ran, also corpus chrF gain > |G_repeat - G|",
+   "gate_S_safety": "regressions <= gains, and generic/hallucinated outputs O <= G (blind review; automatic proxy only if review is absent, which makes the verdict provisional)",
+   "gate_C_cost_latency": "median per-call latency O <= 2x G, and total cost O <= 3x G; cost uses token counts and prices verified at run time; unverifiable prices leave C unresolved",
+   "A_replacement_candidate": "R, Q, S and C all pass, and blind-review key-content errors O <= G; without human review it is 'A provisional'",
+   "B_local_specialist_candidate": "not A, R passes, and in at least one pre-specified stratum with >= 5 cases (multi-batch clips; one signer proxy; Gemini non-answer/loop/degenerate cases; Uni-Sign loop_out or empty cases) O has mean delta sentence chrF >= +5 against the stratum's comparator and wins >= 2/3 of its cases",
+   "C_pause": "anything else, including any R failure whatever the quality numbers",
+   "continue_to_round_2": "A or B only. A -> confirm on the 23 reserve cases with the same frozen recipe plus blind review; B -> Round 2 input work limited to that stratum. No production change in any case",
+   "fixed_before_outputs": "thresholds are fixed here and must not change after any output is seen"
+  }
+ }
+}

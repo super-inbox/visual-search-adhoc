@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.95,\n      \"end\": 2.93,\n      \"text\": \"If you go and come back, I will give you something good.\"\n    },\n    {\n      \"start\": 4.32,\n      \"end\": 5.18,\n      \"text\": \"Keep it down.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n  \"segments\": [\n    {\n      \"start\": 0.95,\n      \"end\": 2.93,\n      \"text\": \"If you go and come back, I will give you something good.\"\n    },\n    {\n      \"start\": 4.32,\n      \"end\": 5.18,\n      \"text\": \"Keep it down.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "RgfjaobeMYH0jMcPydjauQ0",
+  "usage_metadata": {
+   "candidates_token_count": 112,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 3047,
+   "total_token_count": 9812
+  }
+ }
+}

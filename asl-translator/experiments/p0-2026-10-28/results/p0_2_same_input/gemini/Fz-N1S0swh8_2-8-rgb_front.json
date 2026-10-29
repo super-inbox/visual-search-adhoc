@@ -1,0 +1,97 @@
+{
+ "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 6.359,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "9d36b06a2481ae78beea1381d29d45e0f5ec0c87355b8d9b0dbdeb898a1aad96",
+    "a754689053aac592af3517d5ad85c962d560ed23cee4e3636c14d36852fe6106",
+    "abffff75bf64bd469c9c5bf4b4e86476632e75648b9d4d02eaad917454428b3f",
+    "a95350a9d65685ff6ba27361fe4284232b2c9537492059d730937437c312434d",
+    "6a31dcc5d02f3eab546ce62add84289f1057a9f7f19e328f57afa521b6b89c97",
+    "c499b10d3e1fa5abca2c511180d22d45dce83acc8a0c5cf00d3588c9aa12d771",
+    "4f9667400d96773efe42cc0c2c901dd33b3b8d45d083eb2d702396d781e6052c",
+    "15525f2ee8ed196ee671173aa37b1bfb3d9b3e5581856d2cbfdb6264c5603e95",
+    "48c84b9fac31cdcbaea06c212d7f9efaf32c6aaf561877a2e7cc70a5567a4f54",
+    "5278cc47aeae8c5cbf7d504c83b61308c21e1cf8dd4bbd304fbb95c12e80d213",
+    "708c082f7b5fdce4686f93abc6c6962cc05ad75ff58064fcf0a82d29d8ba8866",
+    "52945bab4aa7714e64a4029d895f56da64adf5e6e8772d4e82f69818c8b1f9c0",
+    "0017a0e7231138b0a72747898ba2fdc313074691aa95300c0bc32e8360d7aab4",
+    "a803ec8462afbd989920a1cbaf7ae505d04fe105e95ccd61415a9ac1b7602c49",
+    "d093ddc85e797ce79ff25b0a240f8331feb61ae18378bccabd947779bf183f72",
+    "d65aab6f8e80ad7b3b451a6f62f3523a7e11b6e67b939830eed4d8ed11f3dedf",
+    "e5bd27949f0af7c690a77ef46e284b639ea9f757c0c15a8aa786d3af484e78ab",
+    "8dcb5f7ed4ba2bc68098429097d169c9c7b38b4f73d23751a36e36081f7f3889",
+    "a50d73fcb707f720fb2294f37432618e4fca3c0268940835a3138c67196f8aa5",
+    "f8e4727ba88fa7327465ccdc5faa4101b557bb9f6db783dd58ed481226fe2764",
+    "20e23c16456b5dd8d9cd824c48d9b59b944a4c2023cac4bf589fa921715075c1",
+    "b6fe5fb6de55e87df13a9fcf2be452158fc82ec9e079d33215de8f2f0750defa",
+    "7ea2ef61f06790857a128f93b12c983c7ad96c4130e689da916f08f382b45699",
+    "6c7983574bb01091dd59f3bff40bc4c6ed6f7179598706785d721fb4800ab4f3"
+   ],
+   "batch_input_sha256": "6fb8cb2644ee5b5eab23b854e9e8438b9c3b891e308f28af36947d2a992303b5",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 105,
+    "reasoning_tokens": 999,
+    "total_tokens": 7757
+   },
+   "latency_s": 6.193,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:32:33.072+00:00",
+   "response_id": "oQTjava1GO3E1MkPgtWh4A8",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 2,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Do you use a lot? Or just a little?",
+ "segments": [
+  {
+   "start": 0.53,
+   "end": 0.89,
+   "text": "Do you use a lot?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 0.94,
+   "end": 1.62,
+   "text": "Or just a little?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

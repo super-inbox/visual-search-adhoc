@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 14.88,\n   \"end\": 15.88,\n   \"text\": \"gathering\"\n  },\n  {\n   \"start\": 17.40,\n   \"end\": 18.62,\n   \"text\": \"many things mixed together\"\n  },\n  {\n   \"start\": 18.92,\n   \"end\": 21.35,\n   \"text\": \"to say and explain how to include them.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 14.88,\n   \"end\": 15.88,\n   \"text\": \"gathering\"\n  },\n  {\n   \"start\": 17.40,\n   \"end\": 18.62,\n   \"text\": \"many things mixed together\"\n  },\n  {\n   \"start\": 18.92,\n   \"end\": 21.35,\n   \"text\": \"to say and explain how to include them.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "hQXjavnHGuze_uMP5tyy-Q8",
+  "usage_metadata": {
+   "candidates_token_count": 146,
+   "prompt_token_count": 5337,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 435
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 4902
+    }
+   ],
+   "thoughts_token_count": 3009,
+   "total_token_count": 8492
+  }
+ }
+}

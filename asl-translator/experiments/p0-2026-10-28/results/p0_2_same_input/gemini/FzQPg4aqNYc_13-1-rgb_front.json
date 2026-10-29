@@ -1,0 +1,97 @@
+{
+ "clip_id": "FzQPg4aqNYc_13-1-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 7.707,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "65039141228b5349cb684375ca58a110a2af94eee2d45d20b3eab451919885b6",
+    "251136d66a03ca4825c847938fa1eea90f97479b4e3aaf7f48821cccb899ae90",
+    "cec58ad4e186b220637ca638c2ce3022a2bbbf5baefbffe5c3abcf2adaa01f70",
+    "cd49a5b201a8cce6866dd4fe35b8e1320871da519f899017b2e85a9012a83f9b",
+    "0e45edc9a767d08bc23a859b2bbda6f5b7d6d7b41057f61ac778371c6fde55e4",
+    "d4801c35c77aef766b2d7e156cf15f723c5ea5ea7cfe8f494986e0f73c4050a6",
+    "cf10d64d9b9b36e43df5436ee4a17078fcb1f3badaa0b9a8257342cb65202b13",
+    "550962f2b7187dcd932bda0400f9db7891f3ad041f006f33f50ac1be8b034895",
+    "4873c8f07ed6b18c1aaebf4b83461d4e23e920fab6328edcaa1200745f8b4061",
+    "171a1a8b4aa8c624b7ae9a3bff1767adfb8a90080c933af648818b46409e3df9",
+    "50d0aedda5a891d45e08a0bc8ae0b5ec4344d99c48f6c1e700a8fc9e1b8591d9",
+    "23f5e0d47e23fdddd104ec104bb735ffe0fde5f670f19c7492d17bec37b518b2",
+    "0a60813319be679e571629023c636cea5886642de39f344561485460da1191fd",
+    "c5b2d0c5e3c99e85cccb38b31acf5cb318adb2c57812fed8431d5a1f2a0ba0fb",
+    "d496e187a50d1a36892126ff5a6a9fa3419ff534fcafd073f452c6261c1d8e21",
+    "656fca55fdc2bab3e3f5bb1af5902d50f9e88d33c2b08650752df9d04220b7e5",
+    "3abde6493b802b511303a4849665981514f3d6a48bbd7d9c374f9852b1bf2a62",
+    "283b215ff064b920207d53a383d1999ac4a43c81c2210210d319e104df6289b1",
+    "4580c4e0c19051a508c962f8fb7797ca932a0274b61959279d7eeb30b0a52c19",
+    "d34cf1c6a4eba485360f1e3b3096dc3c8e5faa88cad164c3b57eb163a3c908bb",
+    "56a5b5beae616fedc2323f2a1d17ff49a73a3fd4d8cda99f23ceb28538a2ee2b",
+    "c0246c3e182268b4c37a37f4553f235dfc9dafff53c58f36dc51f6cd7250cb86",
+    "ef38458e1f88c56626e6c38cd01a877e78e908979205f93eee4b43e34eb777c6",
+    "2fbae2a193a80bc45cc129fd80185632b28c50ff4ff1781706d482797f140f39"
+   ],
+   "batch_input_sha256": "aa556396175412ba3f27ac3041ca23dbc18e68d488cc1bfa93f9671546321310",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 101,
+    "reasoning_tokens": 1286,
+    "total_tokens": 8040
+   },
+   "latency_s": 7.51,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:34:03.749+00:00",
+   "response_id": "_ATjao2RBfWs1MkPz56SsQY",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 2,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Continue to be involved. Now, voting is finished.",
+ "segments": [
+  {
+   "start": 1.83,
+   "end": 3.33,
+   "text": "Continue to be involved.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.58,
+   "end": 5.92,
+   "text": "Now, voting is finished.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

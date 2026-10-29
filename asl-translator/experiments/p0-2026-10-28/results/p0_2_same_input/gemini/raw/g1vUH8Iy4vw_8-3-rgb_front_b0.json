@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.56,\n      \"end\": 1.39,\n      \"text\": \"What about my stomach?\"\n    },\n    {\n      \"start\": 1.51,\n      \"end\": 2.94,\n      \"text\": \"Do you know what happened?\"\n    },\n    {\n      \"start\": 3.83,\n      \"end\": 4.17,\n      \"text\": \"Go.\"\n    }\n  ],\n  \"confidence\": \"medium\",\n  \"notes\": \"The individual signs are clear, but the context for the final 'Go' sign is ambiguous without further information.\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n  \"segments\": [\n    {\n      \"start\": 0.56,\n      \"end\": 1.39,\n      \"text\": \"What about my stomach?\"\n    },\n    {\n      \"start\": 1.51,\n      \"end\": 2.94,\n      \"text\": \"Do you know what happened?\"\n    },\n    {\n      \"start\": 3.83,\n      \"end\": 4.17,\n      \"text\": \"Go.\"\n    }\n  ],\n  \"confidence\": \"medium\",\n  \"notes\": \"The individual signs are clear, but the context for the final 'Go' sign is ambiguous without further information.\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "aAfjau76JKi-jMcPq7Dz-Qw",
+  "usage_metadata": {
+   "candidates_token_count": 163,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 2729,
+   "total_token_count": 9545
+  }
+ }
+}

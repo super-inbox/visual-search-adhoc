@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n  \"segments\": [\n    {\n      \"start\": 0.94,\n      \"end\": 5.58,\n      \"text\": \"Together, I'd like to offer a choice, but...\"\n    },\n    {\n      \"start\": 8.44,\n      \"end\": 13.28,\n      \"text\": \"I can help, I offer to be included.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n  \"segments\": [\n    {\n      \"start\": 0.94,\n      \"end\": 5.58,\n      \"text\": \"Together, I'd like to offer a choice, but...\"\n    },\n    {\n      \"start\": 8.44,\n      \"end\": 13.28,\n      \"text\": \"I can help, I offer to be included.\"\n    }\n  ],\n  \"confidence\": \"high\",\n  \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "twXjavvGEMWMjMcPn56u8Qs",
+  "usage_metadata": {
+   "candidates_token_count": 118,
+   "prompt_token_count": 6661,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 469
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 2119,
+   "total_token_count": 8898
+  }
+ }
+}

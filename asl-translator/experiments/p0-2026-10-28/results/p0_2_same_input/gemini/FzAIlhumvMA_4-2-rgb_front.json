@@ -1,0 +1,97 @@
+{
+ "clip_id": "FzAIlhumvMA_4-2-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 3.117,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "FzAIlhumvMA_4-2-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "ffdb2fcbfc91026199a18e6687e1f1d9d88880ac6b0d82d4d3cc614276735d4b",
+    "88e81bf0f717f4e9b70718d915c664a4eaa7ed0398ba93c95240a0be31f6329d",
+    "6427d30de59d19b38e9e0d0aa9f74fa8a4332c0a40ae9c2215483482c8372477",
+    "9bf789d634860fe60887123007c920c8d11fce406b141fec807b6b12d12340ff",
+    "84385db26a5a9b89c371a59fcc97a9e754fb0e7a89b803a7ce27f44cd3269e5a",
+    "43ed15b2318410566c50e5a7ca0f1a4ba41397aa600a21a6034ee0cfbd2875f2",
+    "0f2fcb679bbb42489243513d3cc0e7af0d2bbba55cf3ca9fb310bdf74228d46b",
+    "875845d17bff4607346a2c11fc1b30efb3e035fd019d283d7639773b4f5cff50",
+    "9a3ee6d3048b0dd9e97987791add90f795e66c581db974c8553b268b83f2a878",
+    "0d932b8556a2ae2c6f0dd5ad97a20326cdf785103f36785737a5300f04a5bcea",
+    "d009ca9dc241787974bff0edf275f1737736c7f6aeed5ef62cb4a55ea56052c2",
+    "c6b543016953dcdb9ae324bc90d9250b2a667049db89e07e1805dc44a6b52c99",
+    "c8ab5cdf981bf3e3d286d9c42f715381bf7adae4d8b2936b9d0c4c15f54335f4",
+    "295478e0027dca0e6b673102634e11c48c077ea0d001357efc7453de79ab666f",
+    "0bcc7095960c9a1d85adaac18c1a60c8bcdfc6f9c3c7d468345408dd5df8565e",
+    "3e066005ddfdb023362e1befa90b95925d3f298198892f3f3d1ce9eab992adb7",
+    "05e4359935b508c10b2d73638b73ac3a9bd6385bcde7cef4d752d3f594184b5e",
+    "5d81f3c532886ad423af07d089837ba02ef404370470e4cdbdcbbe5462e27403",
+    "a5f55a3f590e6f6a39876029b608590bb7385750b7170f466955a3e50eeb6da6",
+    "0b52dd838518df60fac9af4c35b3e817382b8f00e6b28cdcf94003dcdca91253",
+    "de0de922a2eb9926865810d3e15f1ba642a86d0c886b8f23802b085709b67107",
+    "e012b9be8e8115244cfd22941a9a7e68b04f4f2dc0c318eda23f425f384e49b1",
+    "99cf87fd9b816b0fb249bb76338ba48cc5d5a6db2eac2807aec4430a7dd4f004",
+    "12edcd6052ed83a3ce1a3a3e669cc0d43904680a347ef41c3233320d5f21f8e8"
+   ],
+   "batch_input_sha256": "d2d3aa57788ebe0136b84a670df5ee71da0ada48ba39e0e07a5885011061e5ee",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 94,
+    "reasoning_tokens": 348,
+    "total_tokens": 7095
+   },
+   "latency_s": 2.928,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:33:39.468+00:00",
+   "response_id": "4wTjasGcLaH5-sAPkKuv4A0",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 2,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "strong protection",
+ "segments": [
+  {
+   "start": 0.27,
+   "end": 0.73,
+   "text": "strong",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 0.81,
+   "end": 1.23,
+   "text": "protection",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

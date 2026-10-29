@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 13.59,\n   \"end\": 14.84,\n   \"text\": \"What happened when it fell?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 13.59,\n   \"end\": 14.84,\n   \"text\": \"What happened when it fell?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "wgXjapLGD9b8-sAPz8zJiQE",
+  "usage_metadata": {
+   "candidates_token_count": 64,
+   "prompt_token_count": 1585,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 295
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 1290
+    }
+   ],
+   "thoughts_token_count": 1805,
+   "total_token_count": 3454
+  }
+ }
+}

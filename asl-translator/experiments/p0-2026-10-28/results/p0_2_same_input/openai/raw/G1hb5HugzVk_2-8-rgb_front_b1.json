@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read a coherent phrase with reasonable confidence from these sampled frames. Several handshapes are visible, but their movements and transitions are too ambiguous for a reliable translation.\"}",
+ "raw_response": {
+  "id": "resp_04cf115c9ce2b91d016ae305acb92087d180b39dc612b2bf42",
+  "created_at": 1793263020.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_04cf115c9ce2b91d016ae305ae8b5487d1995d8280317ddea8",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wW2kwan0A_ivWBmV2SqSvfdyzMThIoTn3Vk6U_SKyMGAw4dnbbAz3UIANsQ2ikgmNlTYPEzMRMe-9bFaFIpxQpld8gObhb3VfhbFyBszLJKYk9MZ1w-975d4pbSO-UJIbShGmCLhCCtA1KVIxYoSCma0J0BLeTCUdMpi8x2Gzizgk2EsyuJz3bCMmJ6qilJS2sE9C9Guof1nnCzCJPeHqltyPsb5YXBPCRsnUMj6UvSOBIp0sztCQaionH7PekwGs4zxkMhppFZ5Ts9ceXeBga32IMU1YQmB7SNhsMhhfa7Q_5S04Id2_Ycx80m8uUWUwBSI9tXQrRHuRXNDG0m_r-g5AFi-xTMl6x8uRvgBaTfsFPtLTDPW-xggkbg6Z1A3rkAr56TKHBsG585BW6mna226TWYLxiii6sIXtYjFN5Exk-Mq6j4v_c90vIx4nsBwwQIRxrqwlEfCE45TX9NhwV5F-d-tF4bDNKE0gSB9tRBI-PqiDLYDa3zSC6-_0W4ROWY_4unCAPnaMecmSIiHlFY4h2VaqdR74xRe5_KY_Ptzc_n5z1Ds7u1wJ-AIrteqXTAL0BPv6KwVcKzx1ssTMPZkkbEKUlmEKG-83bCWTdBBmDZgS2yFZMV4dHNHpmQzzEfq1h1ww6Qp8FZcT3ENGvIQ6pMdnl4jv1IE1ruXuQsE6FF4PDFN3gPIjHocFanDdYnJkDEFwyBjA1NKd6248G7ZHeOe9pFPbVznv-q35-ScqkS1QfjxMhkRrTz8lga5oBgKo3IFGgZaN7gHnqY8b4FguigcsFRXkDqUH4MXGFUqA9NKI4KE0dp0u3sKWfVFJH3u2CBWD0jmCl-aiUTVsChiq6cr0IK0XLS1JJtHoJ4YXqnfNyr1Kf2s9E_5-IrBjTgKIfUS14GdRT6kQd1U0eL8090FtJOlJ4AZP8ElzbN4-P7VmbouUm2akFSXZaD0dTL0VBPlygPqIMYWNEhp-AaqahFNwwzhaCzPJAM0DPYy1llgWvvO_dfHfFwSTAbB-KuaA4voo1ni0OrVx3hIoxTrpbTL-tzMETCvh4lj4hsGXa1OiPrBUTAfwrD8h87TleE6aXYY4oPqYsmZ3j4JXU-q5aMhPsIXoXRY3eRcQfuN4rl6LUabDPbyqaGUOvopfoQlVpGADU0TPv0600-F-KMT6hM_HZFWOOWHYd2La0DgNWSdWgGxcfnhZy-wIUbwlgLEEgaAwMaBRW64lwpPQvVmeai_wV2ReGoOOGzr1DPrPA2am11BNskxO1Nyxv8O9AHbRVuBXUGZ-sugJVG54_NuAhNMWj9eOcDKzVQmjRjN7ozp-AWBskwNM9LTvpH0alD3QIOE4H7cmEDwbDdKFQF7M6sEdoYWDcdvMWoJnyLwZvT3Sm_fL0-2T8nP4hzfox5006b17B16TQVJo5nnvDnP27B7OEbVHQm2zwygbba_p1-tauqrq_WKMi67ImlOB3F_VVMB3_A0LGLGqXH1vd9XlTbg1SM9-ZYihoP4fcqTzlQKr00Tf_bJ9vd24tDiUjYPAUuU1_Rd3u7-vQjQazMS1dqx6QtMuMv1H4XK7LF249eDZ1Fd1TP1zMX1_GCHO-Y8bidz4IZ_erOS9lYI-W-uLo2UFLigKK-krF0UpisZpsq9PTmgOojmLZilJYZ31JRa7FV8MnJE7URA_iPtqF-AvMFJauNeiqu7zk81YoXFNu6TqQtag-3ilS7rT9sRGwxUkSU8Ssx-iPFolq6llxLquscVMUM4qIksRf1nklR1KBSTSCvBPV35_dfiBqvkRgx0pNfI-bbBSfBhrbBpVWhkquPkSyHw9TFlv10uK1gjHvy3h_KHPYRk24Rea9TJhHkO1mPOPBpIVu1PWiWBaL1l8tV8pBy3_UgnwvHKqD6YultIhGrspnqXQ0tyX00BY2Nec2V5-c0EG-52M9lP4WX2hYgzcuSVgVSAwirae77t-HHGmWHiK3NjYcfpJqivctDPtz4xW6u6-AhgyHZ-ntPJX3EJli1bnyRCCeNdi8DuiEvxEBK7i0HtgGA4hg9Y6AtRG4gujmdthSIBxEDbHN_CHXtaUjBZbX25TVZM-hrteDRQOcKtxUeVvKqQC8Jhp4yFomK8YKrERHrGewuxQwjneMvMQk9Acva9K2-pAzA8Z3mhqcyUBObMKuhAtQPZpJGr8dIJusbx_csPYarf3lDC38pjlZDYEFXnpxY3m-UoiGIrWN8s8kIgZplfswM8Zw50MBWlFcsNtUTQOT2MlzjlXMRc2jW_CAGMziJqxgheZYp9NS9KiAcgG5r6DPLUB4wHfPMvG3wPtjDrHzd4rg1Atv4i6_GHPLzazxJLzeNa8lz_DJzeMpJcWpumifLIzEWyuZqk-MQMyrIoVygSi1Wy0Z9Bb-F1W9mNuR56EiZ3ExX8RM1JryXlV9yuuKxNP-kqD51MNaBEJi7I4vfxX8BIzPngxc6Sz6h-DBvjHr76LrKI9MjLPJDgqiq1XJZsNNqRhoCrlx7pJM6JUsinbpCuY3KzyA0ZKgN_uolE9Waf4cUgNIQca2zkwlq0z-Q4icoxzc5uViU__bJy6XShQOskpbstcYovQ_ynz7q1y5f_8zKVomiv-PUKDMZ4qmUYT6FHTB4dsC3Uusra4Q8Lb4WXEauDrlUa-WoR6eY3hTfaj4WGkc69gTcQ_eMIoyi-ek44k-L-40OHrt6XOvGxigOeYKOorLTe-QtN4_vHukmYpo1l_E8uctkNizCq8tgOBIgkvIyTQJZaeKyIaa9d67CwThSILODAMH8OG-cfP2O989AsqMfGiOXR6JiICg5C8K64HwtPb8QKWK9-r5r2GEjF1t-jvqdez3QTrXKJ6uOGn2f9Szle9VKCfIKXL2qSvtHwtTqxnrMonqWnWpMPmBYvOsDojDa5YHsy3uS-cEolBFXG1ylGO_As2p_-xV4_RCvCJablJxtLbPPnel35CVezTen9CZSMZ5ihN4qYsfw8ZpEAVtNvWJ8vfsFAweLcAeNFVFbia3V3NRfdjlgDe5tK7xC_7bT1rpcweNBW_nkJHbOpycJKvjRUN0g9tbaABshw5CESwzayebCVizk4PYqbjyD0vnEIlQ2DhVAIdgsSL5sf7eXlz1ay_oqq_QKoPpJZZCVetHZ5P8PvU_cH7qImANgLyVaqHOeffyI6bNiitaOanZVsijmyXOaQA_yym5ej0IsOyQq9a_Zyo4uGJ35lhbI24onSZRCooG8lju7wR95B7WktlVkYzis_eP3l_yVgrWqA0Ev4Dhx554jTL-FWdUmZLYmWOfXHofUdpqw9ze1g_jRovgi_3mU1mR6_rMQ6aPyctwuIj4YzVyUfN3R0XZZLDVnVPFxKnCYxyfKQAWg3j_UHudN6KrFobOYRVjH7TWoKSdBovRhMyy-qXTVWFy7jxXun2GrqUT2jikpjfIzuHtnoflfQgx8rZTCMyGBO7u1eT-3y7o28D73166jUYliJQI2YoTmwpHAqvnbSXhGqHDEfPk9J1HNJLAXaQvemr9KXdsc9usOLpZOB6dDtUc9_H5n7xcTQ-SPySb0LO7GyvxyLGPzgTc8mocBfgLvtkjAjgWqicegmTLx2fqRKmrJ1X86IumYffgbPFDVUzxEjqYROcSl7Rdv-k5lebPXco1w2CNsWY3_tkaHFXXxo85jSo9j5i5j-Qa5GQFPcuCQKJCei1s88PS1QNycWYs3kI_JzuLyn8m5fcP7xjYxXdW-8p-GYiwjElbxf08ET-lt1fNeej7G3hCQRAwHplyoFC5A7GbhENORVO6PcV8t5ptHB2KmOhRHSPvGlDX5-SC1AwPi4FNNzdlIj7pdp5i6Y2K2Be9I1wngsX1cU54SV_BKAcHLu2zesMlxq8FadUejlSlc6d5rLUfDSSjrFNYB16i8klXE30lPZW_wD87khl6bNTg5sndTWVfXGdjMfvvA5akgfKnwl3ESElLlotG5rZsEPywa3BwCVpJJDOAqrg8tVQkjScu_-0NDJX6a2f9K7SlNlU_WBtnRl32nZY_I"
+   },
+   {
+    "id": "msg_04cf115c9ce2b91d016ae305b51e6887d1b9c06285ff23b303",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read a coherent phrase with reasonable confidence from these sampled frames. Several handshapes are visible, but their movements and transitions are too ambiguous for a reliable translation.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793263030.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 3659,
+   "input_tokens_details": {
+    "cache_write_tokens": 3656,
+    "cached_tokens": 0
+   },
+   "output_tokens": 280,
+   "output_tokens_details": {
+    "reasoning_tokens": 225
+   },
+   "total_tokens": 3939
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

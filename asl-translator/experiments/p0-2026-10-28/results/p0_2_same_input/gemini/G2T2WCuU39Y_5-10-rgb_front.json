@@ -1,0 +1,202 @@
+{
+ "clip_id": "G2T2WCuU39Y_5-10-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 2,
+ "n_batches_called": 2,
+ "wall_s": 25.677,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "84c83e87bb63ac9002d226cd66087f95f1e0160785099d60de3c6dba19e56dad",
+    "6c7b4e7fdb4afb081890e5a0ccf3153cf6c9b016b3db45cf83234909920a5467",
+    "5c1f33eeaa8cc6ff94b2dd2aae16eb41e21d58a5038aff66e1a02ee6554cc2c8",
+    "c9d872f95b944f507091ebff73ab0ebca4c92c84219043263e16e575b89ca0bd",
+    "7f8a0a4cce637452cd7a65a37989649d27a0361d5f6ae0b912fea3b552dcb4ac",
+    "d47145ea466994578553f7e089b01419b40c657148c1cea8fa535570e2ded1fa",
+    "62740b34ac4d5005a00b928b844cc2f5d6ba4d4e730fdf8de9adc1d334b81394",
+    "f4d718f88bb5ff2e3ffc1f056a4667b0240d974293a7ad049528e9ca3e7c0f2e",
+    "39caa4e2fc82e5baf50ebeaa6dced4777e5998a0ba50c783e70ae4fa039de97c",
+    "60ba64f5b11390420a767b982efdc9cb24994b2985b2ff884e7cee911d34f7b0",
+    "be0f2c1bffd4474f47f091f7f5238501fd7151a08f844bcca2c9b9ba63021c3a",
+    "f494d67516ef2bc6b5169e0370e531784a27fb5b49a14cf1ef9dafab099fdcf6",
+    "26f3c8ef90cf0bfc28d0fe82eebbc0528b6cfa6e64228c2d4fb82d01325b97d6",
+    "8fac2a7c63870613abc7ec85251e7afbfa36a8cf033e483e84a8923a970eedbe",
+    "84a64c682b0f8b99af6e2959a3f9868f817e8ff02817095c234fb810365653a3",
+    "effb1493e0775ad1984b84f7c839deab36e6642eb2c250ce89f44899ee941527",
+    "1f39100e489581a2774250bd081f509adf0dcd8a7c7ba7ac120a87ee12d84e68",
+    "a5ee9496b866c52827c1a9e8d402b8649af069d40f1461c60bf39a90bc87ee45",
+    "1176cb4473af3b654fc0081419dc133339a4951e00896d75d0b3541e330f6487",
+    "035e67f664908a7991e9c3b75a61d7c1b5265c9419871fc669188f7e7f7e2bc2",
+    "c3e90a647d27b7bc9e857617871e2374d7e59074d5d089b1a08697008b897d7b",
+    "562cba95fda8fd1a1530055e32cce9a2cb2925f0906d59ae534c7f2a25b53f25",
+    "cf8ff9cd117a3709a5528a62a2b23f2fb67a396f34d0be19f210011825e32fff",
+    "c1e8aa686af8914a8d1da11f086c20900f120205a0c6b6d50005cb1ec0fbd2bc"
+   ],
+   "batch_input_sha256": "f5ec038d0f306c8a49b6405383db949b7fb91f0dcdbceb317cad7ccdfe821037",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6663,
+    "cached_input_tokens": null,
+    "output_tokens": 275,
+    "reasoning_tokens": 3440,
+    "total_tokens": 10378
+   },
+   "latency_s": 17.765,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:39:00.460+00:00",
+   "response_id": "JAbjaovzOLGw1MkPg7f_2AY",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 4,
+   "n_rejected_segments": 0
+  },
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "batch_index": 1,
+   "n_frames": 23,
+   "frame_sha256": [
+    "9ed79ba5e1c695e996707ab1878e99c3919c93bf786e5d386e9c1db4bcf509ab",
+    "f17879b4f07a90d454a27987e19fc4513c9c9a314c615d06a631503ed950eacf",
+    "3b348b3aeafeb793005eeb441dfc270abc8a7ef6e9f775e5a2a237b39fd3ac73",
+    "09e713a52c5ad022f45acec84d1f342f2304e77e934a4be0555847e41c6f6279",
+    "e9c5db378e005a60d96044274f1fde0469277b31a8c649834f06aa48800f6045",
+    "3ed6544e1ebc9d8d6de5ab4ec79857e0d627029e561a86a1d47d6a3008a13867",
+    "0dc1c45639793acfcb4b5329c97f189bb164cd670d8988aa8253c3bf2348ee41",
+    "f6ed1df17cab72e81c459104ef5624ca04dc471e84c8180f0fc6d51a6252f691",
+    "206de9d002decc046b99f29ddc3d5526b061423ba59eff66a509ef08d8444079",
+    "8b83ef4406e8144ce73594fcaa262b381b2afdd915c9b3f92afbd4769412fb69",
+    "4a9667048a3fb52d8628db95ab046c5725a73ffb57708faeb79b7c515681dbba",
+    "270a3132bf1b32043993a8fd14f7440692745ac8db1265273c57e3051b7e039a",
+    "0b262229b94d43a1ae42ed5ec51590bc53fdb4363b598d8faba8d02d9e9a9169",
+    "68726ab041e1e1c1aebbadc9a580a692c5d97431d9c6263ee686b9b89473f5ad",
+    "d094ec8a246a6c0d3cb1bdc41f24e8ba1a2cd778c3e121197ad17c53757edc45",
+    "f1fdf3a8485c5343141c0e340595878a943a56e17ab019cf9a1464fb0605696c",
+    "ddf3d0532a65ac270ff8361fc54246bd4d917227fc2563fab07f8c952b8e7886",
+    "fbeed9b430d0d97eed352bc6edf6ce7724c6a3b39d946863c3e8bb937838cc10",
+    "24d9282d0ee67bc408bb4015eee3ddd8d3f385435d14512be05a1e4a94f62c1a",
+    "6a9ac45b4c2c43fea348ca9524f8648bdb24a6a415c3cf270db99a59539b33c2",
+    "b3e53f4f422a1078f61299de161d5fe9c0df816903fd611580654840b6316159",
+    "7aeca41e112c7c96c11b6432fdf2d3ad58f3c860e23aa990ab12c4f780c7e0b5",
+    "8d02bcc681e1282b04f001342df0fc280d0c6b6e2995cab16585cb1b9a8e305e"
+   ],
+   "batch_input_sha256": "af31c87e9f38fc809af91c200d9a77b98ae6d150d55d712a7abb647c181e46cc",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6409,
+    "cached_input_tokens": null,
+    "output_tokens": 213,
+    "reasoning_tokens": 1407,
+    "total_tokens": 8029
+   },
+   "latency_s": 7.587,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 47,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:39:18.237+00:00",
+   "response_id": "NgbjaruFHMGijrEPiL3DmQc",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 5,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Today, we'll discuss dreams. What are they? There are different kinds of dreams, not just sleeping dreams, but also future and family dreams. What drives our goals? How do you achieve your dreams? different explain but spread out or",
+ "segments": [
+  {
+   "start": 4.16,
+   "end": 6.34,
+   "text": "Today, we'll discuss dreams. What are they?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 7.94,
+   "end": 9.81,
+   "text": "There are different kinds of dreams, not just sleeping dreams, but also future and family dreams.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 11.44,
+   "end": 12.56,
+   "text": "What drives our goals?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 13.45,
+   "end": 15.66,
+   "text": "How do you achieve your dreams?",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 15.97,
+   "end": 16.59,
+   "text": "different",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 17.89,
+   "end": 19.04,
+   "text": "explain",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 19.33,
+   "end": 19.91,
+   "text": "but",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 20.19,
+   "end": 22.78,
+   "text": "spread out",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 23.07,
+   "end": 23.36,
+   "text": "or",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 47,
+ "resumed": false
+}

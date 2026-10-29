@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.81,\n   \"end\": 0.94,\n   \"text\": \"Can\"\n  },\n  {\n   \"start\": 2.07,\n   \"end\": 4.02,\n   \"text\": \"motor failure\"\n  },\n  {\n   \"start\": 4.28,\n   \"end\": 4.80,\n   \"text\": \"I S.T.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The meaning of 'S.T.' as an abbreviation or part of a larger word is unclear in this context, and its relation to the preceding 'I' (pronoun) is ambiguous.\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 0.81,\n   \"end\": 0.94,\n   \"text\": \"Can\"\n  },\n  {\n   \"start\": 2.07,\n   \"end\": 4.02,\n   \"text\": \"motor failure\"\n  },\n  {\n   \"start\": 4.28,\n   \"end\": 4.80,\n   \"text\": \"I S.T.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The meaning of 'S.T.' as an abbreviation or part of a larger word is unclear in this context, and its relation to the preceding 'I' (pronoun) is ambiguous.\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "3wfjar_kBfn5-sAPrYzSyAM",
+  "usage_metadata": {
+   "candidates_token_count": 173,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 4487,
+   "total_token_count": 11313
+  }
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I cannot confidently translate this sequence from the sampled frames. The arm and underarm gestures are visible, but their linguistic meaning and the surrounding signs are unclear.\"}",
+ "raw_response": {
+  "id": "resp_0534175a0b87c410016ae30569bd6087d1a35630e60d19cfe2",
+  "created_at": 1793262953.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_0534175a0b87c410016ae3056af67087d1a054480814460b5c",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wV1SdHmcm_t9q0zzubICm8FK2YHGDG5J6qTykusW66UrnS4RXfwuLry2-RPRecpk5EdGgxTkCLGpjBzbo4qKzc58jzFMvy4KD4ljni4PxSkJ9-crSxDI08CVWLzYQIDxcN7OMMXzt57neATW8bXugZcOe-db4FaZEg2kAN9HcHp3wfZzcCnVro5KjpKLJ7TJEeJvA2i_xijnaaUzcwCCThX2LKiagtocTIOYhlMoUKknPIaQCQaRbmqzZgDImKmiJ_yXPgroj50GOQeX01bVkBJUOwOk8UCllXRjaDnBMfosce6A17unMOtAxSNAinC9OR-2gv6hU8clCHQqtNPkTYWGrrzJUb_M1qNQF8K9P_PkoMFRSEMQv8iYZ-MfAOsOI8eTbrUGaiirCf_2jZXUT3UpuEpRN4nr_d0MJTuMYtu4nkCb-ntYtIcpT99gUd3_sfgqgGkN8uwtDXa_mhdQaBMq_C-kep2N9adfH6QJnt9kHBW2FJy0dEwuwv3P9L-NVSwHcjlnNsXNeJUzoGqaDEB-UUI3qsdufOojTyPWdeQjak_xQnj3WU8PThrblT62Cg38wHZ3uAolOEMVArym8TgVKM4kOgbe6ql_xQA7AdKOvIpQDWTyaSlBnXP4J3JgZcEizXRV1CAE1exkeNVZfr-s9e_Pg0_uFc2FyfD4uqUyf65oVAMwtLnfKiay8Aloi_8CvT8CivXVKOfGsJYYwVG4JXM9i5V3kZgSzJMUitkR0m9Zvy0p5RKd3qu7vrMgdHgP1ekYYw0HhHCquDaBfjMyW8WpA24D14PTIrBPE9QKG4fNs9mkpt4Ug9SfO8PwEBsK41Fwd_1JXsT-hAUDtpqr7_YqZI4bys5_9T8pI7GYiQVWPomtyeHCaoCTD9VGYOQPq3XjO6PBT1ZJvz8kL_LBCIK99yOIuzjkgDmgSSttK_oIn2EfgdMvSQqOmShxdvRq0z2bH9HdWYGlsdlQoL_NayJLTAwIC8DFmNYINn-3HxOlbqZSg4CuHdynJFlOQCpEl9rLI2uJwIhtzxq_aceE0Lh8fhyIlVORQkwTQ-getXo8vm_pYbxJJ3-CX283_iSYJ61uhrTP51ihbzwO0SFbpf7eZXXnzU3iWP7T3mYJgxiUw0GVWdzYndQLeNI6kRVWM-ijiutbJHOrwYd-FFJyF0HVN_k5UTxdpMatQUTd3c409ehcQ0hRMGsiGw5rOb_bTR5oxaiaMupc3qZaXy0IyXokqGk9o_3fSb_TRNbZC5dXWJTlQdwAF9nZ9CjqPA6r6OENghAp7G9OoqkAQezWWZOMZaKlanSVfkcM_zR_0lupEWmQE7EgD2bwuaXKNvMAmEYcxSx5Fk6mKcrbbaI-4vIMKgIjLNAsICI7zFgDVl8iwTn7gh4hUWmDB9B7UvTt5LR_t3ukOI_EpwAxsgrQ-_5bcff7_rQlrTMTPgn38rmUh9qLive2YZuRTCcqTcQIqFrla3I1f9FZ2DJDCkW_FsKztk58RlxBmAdmZA9YsH5bq593RR3DzrI7lybsAE0zn93S0qcOlgL3KccJkB5F6PYMrr-kDL8n0DUA5HOsnsS7VTGPHGrD-pDgxY8mmvITMKQslP3abk9W7LL_rWnH8rG7YpN9DBDcg3l3pDUXWprYTSj1OONMNr__wHYbT3QqAkRCyvhVyBO9Swxdv9rQkFk3g0qm5uj2_IN-Ov_2XILCCXHRLjcOKlOxMw2cZh8qf12q7SWODP6lNKLl03fY12w7wjPVT7c7VzpMP1CHUq6cduSqiZuG2tZvoNaKufAnbMB1G-j5nnbEB8X00vcD0EsNtsuXDYtGGkaD8R7Vxse1N30OaQLIi24yxsjAi2uwE3QRGopuzIeNR0hyGqyYXJfIgCkF7t2Wpgy6zpmSRdfDvtkLyVa8RwhhyudGWEE_QO_5Bs7ONGKkZd4Fuu3NKFT1WoYAY0cf9QQzjQLEwTjsEnetOJJPZ3pxg50UVlz6iDrsLnS2rtfsfQ_CJDxzFTydk1BICwjGjv8pxLEJE3yuXSyWog35s0MyOuMAj-Mi3VTvr8uW-P363tcbxWv-mDlA3JRXULkP3cXu2TNwGaQMYLONfbZJXHfwBenBuUeIoZ3MTCbPHJIlpjT0TXHumASZ6KT_dGp8R6Rk0aJ5QO0ociL3Fi2P6o0nGx74XALsmbn5kaGxBcAZo1tbIoI4XuzIkJdcUgkfpDwLPrTR-1XT3VmSeshLdHfhbfTWi0-tJAokW5kevYnx8hamZKANpI8WjVdTwM9NEI7TRcQXzaz8TNFwFPnZBAKlzwq0yHTKhdTdvMK2kDz0fTV3QtwV9RlIraIJw8AzsTyCsVnSjs-JMwz4hymZoukx3icWCmy--xuEr-2iLhzOyGbeXAJzsdk75oLFEKlf7wdzJG-zEZr5bm1RGPdDJYeLeu0_FsypLRNNqNAUpRRJuYqNfsB3BaxPk1ZyS6FCfvr5ekbVmhAZ4Zephv23t5UZAXOKkkueTaGIjWJk4P2ZrwpQv-RWMxyL1tBAromt-UgbzR4uKc6hoaxzbrbe6MqCCjuVdnmBY70kKhgAGN1MaQ6y344I22wp4TVv7qtLMejx73cr-KKgMntwZkTplDMj8fUMKoC4CCSZYYJ9w-Ya1-nL00Srg1dmuF4M95yLAHb_Zt6akJ9zQvJ3jiCLP2ywfATU6IkOSf3T_l9BaZR9ypSkqqzRthnYfVz4aJ9cekBFWYkWeYeqjroV73Wmc6Sjqmi--i935uazhHaVYY1xzy43Ix-yt9ZU0SkOI3ab259FCg5WPI2tfZXsL_Gx-GZ8_OJm2v8JXMyzG7HFPbUuc9M6gBBlKgjxwbOewpYY3D4p9Y3XnAx8--IWmifn-SifFGpm6XYgapUD79z-Y7p29NZoCRKTssRMyDds7DqV7JrPBUTnq36K-6dhDJzZWKV5HkmbBWzuxyk_oJEtahN3XsOnNrzPk1CVhq3JvnUF2xL3E3vuh01cHtV0V8nVqJVDOZvhNdUuhPo6bvW-ScwN1Om-FRnzQgEA0HvyPMKWYzyYI-H4DlcmqoJxOc3M7cbNVbkahgr4rp1equ5HVYh4AUThj1f7Kk3P72J4n0y4XUr-RW-yq3hBZE2cE7m8OV-X6xd0cw0LZPWjrx9lkMSaJgHzEMZpYOGbw222WTenjWHLwWXkeUvPHQb1yRe3Z46f4vex_TmWHI3tSLieYG4l104I8QtoiH1_venZ882zWimBsacFbINjgyUItGW5nSuOX6AIEhLNMHS_tNj3YXdYz9v3qqmEXy55MJ53QixOwCkTsmkbtLUm1kCldCnAHeabbkmFTXG55B8S8Zk-DEAiCJ-TwtYPX1EQR285Je0lIzuUEGViLSpTZn_aS1pCWfVioUH39cmGoI6H2wP3miq2ZtWvANYPyIv1nlZBwx9k5TWwWGyXRuA4myAoN6V4Cjtlo0WV2hheV2M-0nMn_WJi_2GiyfbZoJABHvR3LB0nJRaCz1qByDtwZORbt2otDhO-qgInBsS4RUcvWCbAR-CEnCYsHnoWUtNUQF9VKV82wb0LEOCtiTO_e6lsQ5wjrXax-MvDgn9vmOZddc2cyiGwIhliOdu7OUvWu0tnjg2KFkUtFeccNh82cNYZQ5lUtj6lC1ZwlbIhnIZbYr4yK-VhztGbpH-7Zhtwk7cAcQOqKFksvfl8CZoCsb1o8Qqv3kI-0XYHOhxoJGLpc39ZJV_Vtq6SYoafSoM0Iu2nFa0S7mJK10vXt9WcLmPcFlrNK6u7inDWUtmmemnUygcvu1vfa_DXf4FlPbcbq2cBxyBA2JwNAxADXsrcKlzvxy-fcQIuH9lGDyfPWkzfjnbY11-9SVHEGo6Tec0r4einizxvx0HjVcwFN-I72hMCqfoGJAIgWqBw6s9rxwnxo-qlrC0wKu6Qe69WPaVaNU8F3WGfGUDJCggup7GBPQXgPosZmYHeYhRbSxIXC2Iw5tyDkarJLMvYJ7utvF4RZkH-eCs9ZkQCR9jLtS9vTIjtUWoWQsUVQhw41Sxun6NgDhe---iJlspH4pQnGgcaHPwacs38dfHTCiUbcLYxATwzWg9042nNRtgVQXS0J0Lq8OIT8DMNiUB2B1gr2-FHgXtQLO2WDP6CSIZLnR152NlHszg_x2etG4U804uvHT92zPbAp7E7BSr3ET3bUN1tgUGkE6sQiJeBEYIzeBJezzcmnzO_jwNrQNju8WvJ9PyOgw6OeT02ybHpCxSCpo_GQWge37cVUa_94IHXcOfufkKGbqWAY0HjRwxiFwv3QLgIYRfMIOEPg9SMPHjXt-fZnN8CYBmleq_xaSaO0QjkOfOa6pphMVMyn15xKQZJoXjV4gJ4L1Tw4_a1-1LZ-EU0By0CsXh-zfXOBawAnClhAuymtu0TFZ6-i9d-i9I2cmevUaiVkYMHtU9u0Q8nOznPx1rpT-HGqmWSGY_a9YGyi8y9O7sBb2WaE8AOsExYFOoANd-h_jfpS_sojv7JDXJJwGsoHmNCR1qR_LKsFeX4YwT6qABG_0pjbnizGPPXL7N6XZt5Zug-P5k23Rw9eK3quPLNMe7cWaC3z0G8ZvWMs9GKxcWZiWfe1RGVJq04onze-cUigqkmoXyuDfmr7tML3WDzUv1x_Rq6MsZ14U217akwnpL8ONp49a4ZMBxF0qQ0_wETORtdrdiaedCBUSV468dbv9hK47tqeKFs3BtA4s9Pd07YJ1Y90yxLskElp3vdE3iZkEjmFZEhHcKHG0F1F5OGAfPgSF2b006Kuf34z4UjJM0aYOds5hEv9AGrKcbyNzjqMOQqftuuI1tV52l0PscCZCbxZ26o85mBXQmEyyhrY3lRWhCPsouuIS_"
+   },
+   {
+    "id": "msg_0534175a0b87c410016ae30574ba4c87d1a74f9f017afb1d8b",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I cannot confidently translate this sequence from the sampled frames. The arm and underarm gestures are visible, but their linguistic meaning and the surrounding signs are unclear.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793262965.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 2039,
+   "input_tokens_details": {
+    "cache_write_tokens": 2036,
+    "cached_tokens": 0
+   },
+   "output_tokens": 335,
+   "output_tokens_details": {
+    "reasoning_tokens": 284
+   },
+   "total_tokens": 2374
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

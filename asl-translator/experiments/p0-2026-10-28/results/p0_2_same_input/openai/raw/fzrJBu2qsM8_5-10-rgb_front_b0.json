@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"The frames cover less than a quarter-second and show an incomplete sign near the mouth. There is not enough movement or context to translate it reliably.\"}",
+ "raw_response": {
+  "id": "resp_03885a16f69505d2016ae306d6956c87d18b3b744efb2be848",
+  "created_at": 1793263318.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_03885a16f69505d2016ae306d7cff487d1b356fd26fd749f7a",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wbgqz4ESXFVnYJ6tElvemPbZiM4Ahv1yJj49hIRw2nJKe7E43A74r_uWbap1P7aB0OBeh404duY9mIkz0STkVSwY6S9A7Ht2Fx-K7JTO266KOnwlkPjZF44Yl_CTOzldK9gg22bsXvh_PWhRLFVkTpv9fKnLKtC-6x1IQ0phLOGK2T0mU1SLIXfkML0vB38W3B7Rj_n_5Q98GKnjZ-uWZi78STDwvJtb8nACNGAu4UaO9pdddRe8fIzpGBGrsbKW1X8xC8ogdimqpkEtwFMvjmZFff_Fb-3k5yRN2_HGjYkx5P7VIQd5xh1-9-zVkIl3Y_Vlr91ZLMpA3QNGz41sBBYNNyfRYxPwShNHWtLpCAOGzS_vd98kMkWnalI_4ehSa5Xh6Gb-IidC3yjpwIdXJDGxHwedpdVPqBrfGFWAVzjxrkcbrffWSolK97vgM3rbmADleiNAbNVTXsPzJsolvxeottKAk_j9tdkwz9pzPG7kBdgqkiAWhX_jhYxznbjvzx7SUyGEtLsN4JMpfUV31nsS-gB3oD1wV0m7wJtwxqjsJxzjhuqw5XZ44twr54JX5DLj5sPoYH1CbjYakDukboWlZBD0TAZTmhiyEJNSvWHverA0jgp7WyJVsHT1tfw521TOEw5tpHkIsyfXOl6L8Pbl0RUvAZY0tEd3Pp0VMyOw49fPAZmVb8lrQS3TMArbGk66lRiIhmqeibiVt0EQI0yByRUvXxtgi8L6luFNJZsAGoDwW5k26Ho8cbTp-_WC09RLhWQUFgVJJZcPmAGBPiy0JY_9zSpfXYPm2fpq9TuQVxhm9IegV5tvDs3XSkOYsXjBD7PKbVMPYqTvIaQoIit5YBpJrc4REfstTQzpbONOXUcm5l4YS2JYZy9GDwA0-FeLrsqDTQ-PknV2c2Eq0Sr1dPUmzDZal9OFgpnN9_cseZDzw-nt-msp-d90MpVYiMOOCLkj3wmEVsFner8cWWZTuqhNj3NWTY92R6mTGmnr2gyQH6S4MYlwUy3dsK1ftoEkDs36g67ZjkeoFW3CLbjjVUfoadKBu-M5bkDS_H-yR_5url0n9-CwAeNcCzdUy3JyJRDvt9W5X7KdbeB21YDI86z9Cc2k5lAviOIo4maBR-aM9lXgFrkaKpm5VOWYy9rpeoM8ASuh5KacfozQlAH36lNNokM4o3uEL2oLnq2i-70VLoY_ZTuoZ_Kf4r0ZlcGsRjSPDRJqWWqfpC9lEaetDJ94Q1EbqSoeY4O-pXLEWtd5KbMG59lmhJohqrp300ZVXfY96pfbWyZaHBP9bcHlbFn8JAwwdc5OKplYZIFQjRQcEjtM3-o_XuXRZo_Evl__Nree7ntuC8XUVkukle6TLzDp1eObt5Qw69a-pU9kueaAjqIaAJzYzq791eaftEZ0mvqkP1bsQj5g2RqZoGj1GDvfgeCPVVb7dkNZex6iFVzgqNU24Eq9I_pdoMaxinvgmFYcFgtMOdhf0bs1p12qIVJUwo3GdrAaUPXBSlrZ0Dr6an41HBmem8x8HyrJBKALkqsF3ylzissyX_873cHwVDs53jsgbDdQiKjA5-3wjYPYnuxoJ7cEVDbxZ_jVP5MbLGwiWqghznIa_p3HnNPO4gX789J5jpKuMhPKAVjDBvtf32jM84oe8GUzc5seAUCN-YtFDcC-OGebJlvrvuHbq9eJOOudnBQLKXCBliff2BFXJZl-71CE5mF1RyGlHr_L1n57h6BiRlLS6B9UyLOyJbg0enUApapp2BnqmOa33lWCASWvDtIkZgOjVITiInSXzxbbS420ZZFPKQGSeAQ3YbImOUHnevnHG7Jqwg6DXnkP_2faU1iqrDGw4cGYXWx5PIGD2qbLyqBvwqGo-D6hFnQKaRyU21C3Q0UX4WjnyjT4hPBgU4trbFNTcDewO3oVum626PeiuSmhx4ijMau-t-TRieK1qqaRUAXrjm3mtarNaXNLPKwN4uhtxbc1HKJMRFJic_FYR1VqmugdyWaq0z2hiGV4C69VOKklOLsEPNeZgAjKAmkDZjrMrfTymHITVMgOToxtM_-i3uClJd8Sr0sw6l-4vpNUgYsSGM6mcYews4G13e0xh9N4vXpOOpAU4rLyuWPQgyaKEZSQCgc38D1Fy9DoglNF5ku6CaLU7lI3b3YXYtZGY71TsXUgKNcMy1oCFtjgchoU2s2jbvac5VyKpKE17UcRgnFuasoduViEAr7SOnc2NpM6w2xkpFl-chuaF1EEK-1cO1hjaouHQ2Y5CcSqAft_YJ5sb6BeWffF3coIuTL8r-S8yobO6bL494IprjlVDr6P4R2Adlr0KUCR_kySxYwzS7T0FcApuvpQlQLtem2fUYoRRfeC0ftttgxPnmUeW9Xwbb98qTO9qVgXu-AL-fQ50vIXNoDT2hO77Z0kBeIUmFbvgcrZmoqur-s0GTxoWufACUwfP3a7gDuw1BW0ub3zW_tHRlFFIg0BuxvpoKPj4AibqjmbHLaCDrnGfzCI--EzabKtBe0xZ7gZWjP2oPkxWYr66sYBD2IfGDSef5uCyeSV90CpcahPM2veEtnumpLhqGpAIEp6xiO2y-JJ9IGq4FMtab1VFH_zREWamiKIhwcqP8iNs5EtkLkqIKfMwM8ajrPpGB86GGzrrZSG72N5QyGFhCNJ0-4-gFK6eEWTRpqiU-VmA286zuqnwICJpc5ytwPGDnwzKnfGR_puVWieEb8E_NwRXiqNdldHRo5Eaxm-n633p7me4RerawAwHzQifQojlXrSE6dGnZEVefW6nD_EZZ9mnlUmZSRMVCjMilMlss6Gt-rwYmMumX_w9h4bo_4efP6J5z99qFu1mTPV-vCXN9mZCERNCQFLWdJa75-jmj6IwuD0fj_lrzjI9B2dEomoxCuReprdfL2LITSLvvH-wMcvHzAQ63EkTeJn1_hT-KU_7XTlNdnLAldKUErBu7_g5RqvzpObuSnDdQVbVCYIseq2Y8P-AUXGxnFi4rrzvNgRJZGR2esvZCRtPE0w9Pfhm94Zh19gLGmLIeym2QVVg4hPJJTmICZpa4QjdUjesYDim58g21DvxCPV-JlAAZ2tlOSmEh2ovc6faA7TN6MdWNmIAioTkl99vSeqxNaqJ04dsiGMXJZERz_VQADqLVxPTkpQvucuktAP_K28qb2_CpGmBfXQIvQu8j0GhKmHNNpEA3nY35p-pH6l3j3mK2uc57Rnh5X5xgl-UuZsBLzMl3043Pl0Z249oKMSCMXN5EIkEYgwHnmn95Avi9YEUU830003Ol_Dnw-l1dY_zuty6Y1OvGEh2-TAbiXlnGtECVC3ue9u-TEB4WYm1IQKuE4ZFyDmdThOvfSS3kkcYreJq-0yREk8Eq3SzSsLeE1P8QF_gLIfE1ovq43Jq3GGguq5ZS_wG2TXssFjh0cUcDjGzV2AUykoKnRH9_juiGN920qZfotP0hX-p-4R06Y2jweGeHCQ3dAyMKTMoSS2JZMsfKFm4cjXSUSG8Ci99EKxab2vl3aJF-hFXDpwxYbVRXMP44f7zXGs-x8a4pIB2vt0ynivY5giUh8_nT2yBrL2zcsqHUaIdBNTmA18Y0KScVB5c7QsWWlarcXvrprnsy7rwL6yhFlniI-1Q2H4SWUYEt-ADg02-pCsDjBejhKrk-ixnFIabyeIY3kS3Q8vPCKkp4pRggyc02NlOx7_Sj4j3Y1P-Y9XjV1mUyq1HG1umOzuZ6gYpi-fdY0hCFqJ1254O0VPiM3kLt409YaEZzLYCu8Z9gs8EmoQtMj0upd--p9uEukJu91h9pJqDDQ3SJz7PAjupKcihIOggT-Kk46t_zdAXUKBmx--0ykYRAT8qeRK1ezznqEyaBq2I_b_xBo-1SW1s8="
+   },
+   {
+    "id": "msg_03885a16f69505d2016ae306dec5b087d19b11ba1021b44f79",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"The frames cover less than a quarter-second and show an incomplete sign near the mouth. There is not enough movement or context to translate it reliably.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793263328.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 4559,
+   "input_tokens_details": {
+    "cache_write_tokens": 4556,
+    "cached_tokens": 0
+   },
+   "output_tokens": 245,
+   "output_tokens_details": {
+    "reasoning_tokens": 196
+   },
+   "total_tokens": 4804
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "stage": "P0-2 Round 1 primary",
+ "started_utc": "2026-10-29T08:30:32.678+00:00",
+ "openai_model": "gpt-6.1-sol",
+ "gemini_model": "gemini-2.5-flash",
+ "image_detail": "high",
+ "pilot_ids": [
+  "-g0sqksgyc4_3-2-rgb_front",
+  "FZCEymcpq7I_14-1-rgb_front",
+  "FZd8Iv9ACVw_12-8-rgb_front",
+  "Fz-N1S0swh8_2-8-rgb_front",
+  "FzAIlhumvMA_4-2-rgb_front",
+  "FzQPg4aqNYc_13-1-rgb_front",
+  "FzoUVr98JmQ_6-8-rgb_front",
+  "G05uFub3YFc_9-2-rgb_front",
+  "G1hb5HugzVk_2-8-rgb_front",
+  "G23G21G49dk_14-2-rgb_front",
+  "G2T2WCuU39Y_5-10-rgb_front",
+  "G3FhmHz_7hs_20-10-rgb_front",
+  "fzOH00UZg84_30-8-rgb_front",
+  "fzcsY2gm7t0_8-8-rgb_front",
+  "fzrJBu2qsM8_5-10-rgb_front",
+  "fzueHkUDyhE_1-8-rgb_front",
+  "g0Abwige7MQ_2-8-rgb_front",
+  "g1HvmBOR7Y4_15-3-rgb_front",
+  "g1vUH8Iy4vw_8-3-rgb_front",
+  "g1z6HOJ0yRw_2-3-rgb_front",
+  "g2ELiaFjKfs_3-10-rgb_front",
+  "g2QdwYqm8pg_13-3-rgb_front",
+  "g3jQ5ecjGz8_6-3-rgb_front",
+  "g3ushtMfLiY_2-3-rgb_front"
+ ],
+ "subset_manifest_sha256": "b3310230a0e2cb42247c8b0db852742fcd1d1f89cf9e707af2f3d33a0bbcf396",
+ "production_file_sha256": "90df95635fcb3297e2c2b0cd6bf15061d398f9ae2ea3c66543b982487c59ffa5",
+ "prompt_sha256": "ea8c5cb130d41c9a7bb2de0b567ba2c99ebf4ea8658c962ec855ed2be6477dda",
+ "sdk": {
+  "openai": "3.41.0",
+  "google-genai": "2.20.0",
+  "python": "3.11.7"
+ },
+ "retries": "none in primary (SDK max_retries=0; genai default no retry)",
+ "credential_source": "OPENAI_API_KEY and GEMINI_API_KEY from the user-approved env file; values not stored"
+}

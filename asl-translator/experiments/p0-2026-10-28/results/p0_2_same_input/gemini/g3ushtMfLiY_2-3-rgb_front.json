@@ -1,0 +1,103 @@
+{
+ "clip_id": "g3ushtMfLiY_2-3-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 5.257,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "g3ushtMfLiY_2-3-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "49b975d70f49619db1a65694773d899f2b705bb21a1ef575536ade353f78ddd9",
+    "662a342fc5f6efdd6e4c1b9deaf827291535aa05e3d21cd9ef6a56fa47389010",
+    "4645ece5b7720d714615e2a58140aa13733efaa5261357b9e869906c8931eead",
+    "03495a8824363212d39bb8d6d01adbc84983af3ba418c96278fa17354be53db5",
+    "757bac82ef0a3c4ecec7ee63348b085afb0cfe242fa5a7f00c907a378789d61b",
+    "e291fb790d395adbb5f63b231931effaa5721e539ab661b64b8a72b6e5d2e4eb",
+    "3d31cadc48dd5a4475391a8e1565e6598e7453f06e1ad8934443b3a289bc54f3",
+    "acb40660696643bde3442bb1e6d17348b6a2c09cabbdb7591f750619b7f9c8f8",
+    "9a717851628d4404b05cfd79761cc63721af0622dbfd2f8383f3b00a3747dfbf",
+    "595272cf13bbd896f6c7565b8626a7510df631e89ace8e704f55491bcbb83542",
+    "1dd2ed2d6f6d86ce134cd4732a51501733ad299fc58cbed162f426949964a418",
+    "58def57863ec1507946af78178b7b4967363a3e05f252fc0ceedc1d91c1b2753",
+    "f371d7c7ec3b44e706284789c116bda98b0f1348daa95af2a867a8638bf571a0",
+    "86ef26b1f05d0b4bf03f338c24aefd95969fa067aa6d917c4ec44bf4b3716107",
+    "8e1d003f147045868c1117dc4f95c54fc1dad4b7c05730a78d0a3944e59717ea",
+    "7f4b56c52c57824626da232f6b02823bd3a730c67bd6281529be03c0bfe1be38",
+    "680d242906057fe43cbfa2547a7b1b96099255c95547790a2ddfd48302eefbfc",
+    "ced1a2a3c9d48174a6c7a96ed429dac8251b9afde27113ef11b9ee274fd50a33",
+    "ddce47d65d74492dd1bfdab54494a911d86e1b7e0da4916b034ca2b1a8ea568b",
+    "5387dc7c9e182ffc667813db3aebd877fdc6d6bf1dd529019d3dda79459556cb",
+    "38cde6b72fda79d141052b9353514392763030af914846b15decd4dcd354f072",
+    "ff1207dc4a2890168e2aab6e8dc2ab12c9bb2b524c1666a2c5670f0f8c6bb537",
+    "459509702572b6bcdacdee5bc2c2bca4c581d85d281183a202beb1f415bc5fe4",
+    "bd243110fcd3ea065a0e1cbd675cb4d08cf1aec0a03534115471fc7b60f57f57"
+   ],
+   "batch_input_sha256": "3c04e0f50f7c066de97b2c4e667fc78f9332720bac046c8b9ae25f80ab05bcef",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 134,
+    "reasoning_tokens": 889,
+    "total_tokens": 7676
+   },
+   "latency_s": 5.077,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:46:45.848+00:00",
+   "response_id": "9gfjatvZAai-jMcPq7Dz-Qw",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 3,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "My three teams are set up, but...",
+ "segments": [
+  {
+   "start": 1.56,
+   "end": 2.81,
+   "text": "My three teams",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.94,
+   "end": 3.31,
+   "text": "are set up,",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.44,
+   "end": 4.44,
+   "text": "but...",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

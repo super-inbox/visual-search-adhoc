@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 0.66,\n   \"end\": 3.91,\n   \"text\": \"It's important to connect and create things together.\"\n  },\n  {\n   \"start\": 4.23,\n   \"end\": 8.12,\n   \"text\": \"Do you want to help children grow and be involved?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 0.66,\n   \"end\": 3.91,\n   \"text\": \"It's important to connect and create things together.\"\n  },\n  {\n   \"start\": 4.23,\n   \"end\": 8.12,\n   \"text\": \"Do you want to help children grow and be involved?\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "awbjaomRJreN_PUP3funqAI",
+  "usage_metadata": {
+   "candidates_token_count": 112,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 2641,
+   "total_token_count": 9406
+  }
+ }
+}

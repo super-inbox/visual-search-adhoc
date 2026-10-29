@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 2.93,\n   \"end\": 8.08,\n   \"text\": \"What's happening now? What's already happened? What else?\"\n  },\n  {\n   \"start\": 10.93,\n   \"end\": 14.62,\n   \"text\": \"Things are being removed and discarded.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The first segment involves repetitive questioning about current and past events, which is summarized. The initial sign 'BIG' is interpreted as an intensifier for the question.\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 2.93,\n   \"end\": 8.08,\n   \"text\": \"What's happening now? What's already happened? What else?\"\n  },\n  {\n   \"start\": 10.93,\n   \"end\": 14.62,\n   \"text\": \"Things are being removed and discarded.\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The first segment involves repetitive questioning about current and past events, which is summarized. The initial sign 'BIG' is interpreted as an intensifier for the question.\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "dgXjarf2LMPU_uMPx6H70AE",
+  "usage_metadata": {
+   "candidates_token_count": 146,
+   "prompt_token_count": 6662,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 470
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 2820,
+   "total_token_count": 9628
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "clip_id": "fzcsY2gm7t0_8-8-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 7.606,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "313d51b227aebd8760bebebe917aaa16f58c448646af9a09520a724b2a6475a2",
+    "e08b76d02b0909614f557782ae0b9f3aacf0e4c870162d224243ee26691429be",
+    "bf754ce0b82bfb88f2ffd031dd1085ba38d39ce2523bd6b05648fd74e20dab3b",
+    "f5286d84bf15dc0c7f980c973cc86ac01614b99b1fa6e2fdfc23e77d978fb5e9",
+    "ee5d317514015aa60da5a6971861d85871082e6ebea92205b57fa03f9a42303c",
+    "33594907cfd1bbbba83f7897ca5e149d19bd59ce0d09d0b0faea60b2d0cd4960",
+    "695c61236cf5a62f42e843ac8a8a069430a50a66d022474f1343b186e7e361d1",
+    "6d2ca04c554b9d2bd8d8562781b5f1569e8bc8f1c4d4537a393082985fd3b3ab",
+    "e5e46489d48a2fc09eba82c10acee32e5eeb91d99096b1e7fe4343d46bef9204",
+    "caca4e2f27f15a5c2c517562c8ab69b6cb2b7754b723298ab402a301613d8a98",
+    "32b05b3b2da0f6bcb3cc9e9498c019ca7de2b5f8a269abb68a06e45b4ddc1278",
+    "47b5a3a2a357d2b30089c5e715d69de3cc3a8a54f308c888f43d150403a9567a",
+    "4e4d297a84757026a5df331f90b3a79e13c80ddd634966e9db65ba6a75880d13",
+    "103d86726c7c53ac232a6c31ff169ce1cfba724a4a3e94f11d5c89666e9407f4",
+    "ff87387f2053fe72955accc9bd1c1b5c145ed3f2257de9d8e15ec0e1a39bf638",
+    "bf42d78b707a625db089d100fe4264d335a1a646b047f91517b7a428e976d108",
+    "4ebf10f08f4b7fe2fa8254baa58e5f4ea8df29af0bad13455119fa00a9ca35d7",
+    "7d5834361d3192dfbcc84ace79fa01e8e92ebb3cfbce76d7085858f9f9fbce57",
+    "62b854e07a6f2b8a0da7a358b64d52e4421ccad96122d0eee865479473ce49fe",
+    "a06ab60dbd1a2b338cf81ae20d64f6fbf649e24b0b2d466c39d3249c44f6494a",
+    "dd66f3efd368ccba3020a7e76fe3d16d1ae109e4c5b9bdb172a407ebfedb6fcb",
+    "4c91ebd1eaa354950e22e804baf4ce9c1d2db8e70348cd2ce5fafe4c75e870ca",
+    "af41b66f3852f763addccb2233c0600ff836d9758eb3556054a6fb8e9d572169",
+    "b00d13dee846d8ee0103a175fe5b95194a363d4956c905ad53a7598d0aa17792"
+   ],
+   "batch_input_sha256": "e95a1471263bc5dcec9262846711724eb735cfa34a1efb2bc24deb3c6a008230",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 99,
+    "reasoning_tokens": 1270,
+    "total_tokens": 8022
+   },
+   "latency_s": 7.408,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:41:41.893+00:00",
+   "response_id": "xgbjarG-FMSR_uMP3qei-QM",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 2,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Perfect! What's up, friend?",
+ "segments": [
+  {
+   "start": 1.51,
+   "end": 2.97,
+   "text": "Perfect!",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 3.07,
+   "end": 3.7,
+   "text": "What's up, friend?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

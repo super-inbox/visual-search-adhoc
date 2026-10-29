@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[{\"start\":0.78,\"end\":1.97,\"text\":\"When?\"}],\"confidence\":\"medium\",\"notes\":\"The index-finger circling and contact appear to form the sign for 'when'; the lead-in hand position is less clear.\"}",
+ "raw_response": {
+  "id": "resp_0680d4922a4beedf016ae307b5268087d1b9bae6c25b2a96bd",
+  "created_at": 1793263541.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_0680d4922a4beedf016ae307b709e087d18325e7f0f7713de9",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wfDBuusyEiK0dSh8uj02Aw6aYLZnjdTx6moejtN2RUjvH_FjJNtQFdaOHZKBmX9IQYUjY1i1XWxsSKqLSjqirroz42BzhifUoHFwkLmwtTnQJAbz7R3RvlSTfLc-aBEU92xYpD8O44MAmlwu-VWKWwEWkPfxPePeJirN1hNbPYqvdGCdl4YHrUPqGjvLuDCM8dajfdHamBsL2JiCiPiODDdF3vqL_HiYHr2KwWCTNwApPeH5_4j6IUd1wbm-rP9-duIIpJWJSDrzeP3feQq9XNMnLlNvxAfE9kQD6hPWH-A-waKnRlN62oly-utwbVbsn5aYXWJKXNv_2KJz2UulBYrny2M5LthyQMSle3j220COt3NbzHYV5t_kMtgK4Hb6d_Xr4zQZGv3G3ivBsF5ymscRz_DHJslxtbMsew6afnIDbcdBL8cLBP5DbYByYkY3Ad_JJNyGLySvxxPzshfQNZGIM-QhFjjQe8ecgms-ndp2t40Uu-vgN_wc0YX7E6dr2JNoDije9S19Bni4WsFQWo8ixqMOkhe-uSzeGm-L-5Ym5eOYV8CCusgQc-5zFrM9BjEksVkXEHrU-fDoXpGYywBG24bPC8pOYkIpMwPiSJ_8ghWMZU7dQ9enFFh_u0wrCpuhADz9LxN1v2luereCJ-NmTMtBEvmZngyOQKtlhYgJvsDx8kuMQKyUnVaoXF2bgEuCuQC3Nhmcwm99kR_LD3WgQSc0MiY9Q-5uVXby1hfJwiCH_5mzFd7_z-e7ESEtN3HOa0Mwws49EXZiOfZGh8FwTyd1naKIFmor9kOP8qcsAyEh0DGes6PMV1sBR3m1BV6C_OX7tYcG_FuYV6iX5iaP6GfaCiiHqAel1kr06wT5MnkRT2VQyw0Gf_fpq8lH7uXz8lWcMDn5p5gBs4BYgvn66Q_3k2V4KmMeEdlqN36ELlVu_Z4uYLPoW1Z9zbk4UCafuR2LOuqNeZfLbklkxala70PDzaNnIcS-xfKqXEW2Mtd2iJ_71tmBhs1H8TinEZUBTz6afO-4gGJlLg1jmoBZSWnoLw2W-YSpKO-_J2waUnPjQfrg0tzef8jqdywP0qlI-sFZcfxKGiFs9ovZNM5CFjTaRZQG4aadjdxryIt5vdZpsiOd8lz2DzC9lwOXag1RzehIvcp7BqtEOSIAG4t8aC1R7b9r83KOvd7gy7kOCaCIADDWrj5J5rAbzaJXOt8jZryv_r1Mmu20FrlnqfAJUZ6JaEBkwSjpGYDY02ZZ5q2rOzcfO81ctko8VpjAdP1TOAR0tN9mI7PdGhNFh6j7b8CHuqGKUYkAj01iT67juOxc0ESZ0IZE0fJ76glEpgB5RShUDf7beL-QfdZUYFPOLHD2lrQHgyD9fFaXNIbBOT9hykTbCxLVD4Jh1o0-dO2_6Z8covFD5yuwJZNPZiUenbHdKVEx8MLy5ac8noIC4Ncu1YapaARY15IpKRB-NU6J_NkSItNP6zvPlwHN64EB9j96p3E7GW7XUF-SE5ksY7L-EyaPKoH9lyGrsJoTx6dcELG8Vi077leXfXLVrH8E1-JWAtwbdjPDedtHv7HrMrBfz6-SJKWxb58oAXtHW7ootCwE5f7rxAeJ1WOGHnymOgsgK-HLT3S09XtiL1qwr-q2oids04cplPPFAc4jW6MEsOA8JKp5FDURRKHaQPAIO0DpWvolnWjVP1TJb4MfqOuQSaFalcXUHuKlAyjmqa9R_zxmK3VfLt_iJruE8-BSgZbFA8I6sZyEk6Eaf8RP_UF4CYPqYNwhdHJ0s2NO6UI6ybx4KBipzqnE4ump_xUEmwlx1Y6CpbmeB5km3oDQVVYE8PWJJu2OXCmi7JqaDtghsvr2pRW6kX58tjHvDaSMc37bMuTUj_0sAyNocPc3Ge68lPhlgFGzlkevUyjl8VuPB3x5DkVHAndDopC5kk-uKnx9r1HXAbZK5PQVyLXyKhXo1plTFXMiKHFFVEryqp35DP9mDqeo4SFJtCLmnGpCoKpqDzNwJQ6hvaMTxiJzDcpoIAPdWxB0cV6MugMfIpx0j8HNn4KTzMIuGHwaaAjaO7_8IZkTttN7TPgFrW6cY5WRVtElSZvIE0XZ5igQWBjzS-T9Pa3EyNvgC1vIMUAYl4cGkhj9pLsjNhGyitdFLuexUB_daxdFN8GbGW9YpI-l7dLi0WtaDVu6Rt7I2uybupxSGjNHshfKHaGT6jmN7WXnBKsTenv4FWCdkfLF1DPJEzJTUygLDlY6f-M1F95iG7QKVeC4xsBzxygEh919s2uJrc0mSSf2gIGumzZwvkJmoY7iFiLwybsyUZZ_IFsxMfddurrKUWOskxKmNXNZh0lWaDIkdjZbpw6CN-Vupquplj_87H8jLEOaqzSXM6_r_Eih0M8hzCvtJ5LF1jCim99UltZDVMLFqQLZzZv1xB-9vXdGtjM-8eelLZFnrwtg0Ao05pAi5nKmO8JJFShN5ta7ggvF8378z1adlcKnL5eSLPQP3G52w3BTay_jK2NwVWYxKTc9dczx-5XYPkx2tW-mn3R5_vrk5uOP9MH2iP-LpwepW3bMb7wOihfZkhnndgXQNiokB2ZBtLzdWCIG8_miDBMD32oiqNnrujmCuLi3vKJweUpVwTLTN76kWQBnAn3diUVCOemdmy2QsaV3ebSxbv6HX327OvQ6xPtjXalNoh7PNRMPkLLfLHjxadyXzqOrraahHmNkWHgA4PDUcVP6OcCoeL-ik2BB3s8xCFtDnD0m8MYJezYpBz-onwbcekgmfQ7N55qCdXX7A3y9Kx_h1NDexssakfzTSuqR74nlI9E1OGrHrbI_ubdEhJGlvgh9f0FF8fB7TKbMN5RFvwozNIPTw67YmW1VxxNUhQkat6pPoUtMy9-fdgaRrtI5DFrNEmDFLXGAbrxybVqku8Fb8hCyg5-IuCFYi8CqaVNzIa2NwH-dWwuAasR8i5Y270oXQrh_iCPjIiN0eJj6eY3Loa3ZSLJJy2UROp7YEpVHE9G5JuWlC74T-rGdNOCRQG_xwhHIp6TH6opUFe0SCJxDbdpx0GYyGvzrVvsl3eWW7dCg74djpLwUbMLA7fs0L-OIsDeWCUFH14XYfRXXWNNdSRfVznVDsKT9GkxhW-z9lY2KHj2ud2s1fEdjl7JO1jSzt28pfQUnJxTGFs7ec6EOJ1Lpm_HE6eBOUi6YqmhNMhxVFk_LhaS6jho5YJfwOvvemkeiCCbGyL7w1OK2L6S6etxc7_KHY3cNliDp1oU3ITveg1560fOar01wR3-s-qQsJC1Tif0XujWn6Q5c-OmV0vE6PFRQ1tpCfnXdFitqjDKxKJsv5lzbyvzzYgwe_qet5fDx2TTTWJH3KuhBhQLFiC6bUPuMYGzUrjdeIIrh0FBuo5-lbuLoKZqtjPqeji_W6T5tPO1RstWgILL_hCWX5jG3-xzp7gMwdQ6XjOwYuIvV4ALJiYlNp8auLIL8AsIPxSfL4EuKVlmPBP_IGtCW0fSvktsF-89jrN0yVfWi1l_PXH6H7KVMsBSWTPr4HlSD-z2viw-SRU28Q46_1xEpQ3pSB_BZX34TMCdYj0RrBuaA9ZB8q1IpofuuzlIz6skU6XJHkPguNeK4h2jtWZ419R8oX5Kk_ebGyp_50rMFSpq5GYVMww9uE8H4RlHusEcKILpG4PWFqV7OFWonsek0303OuK8VFBKZiudsWFHGKvAoMhY6MRtkMyEC9wBRkl6g5zUei3rNuhgTD_DKEJkwAHyr1yBuSgECGK1XCCi4lQN9eFElgQx-MSs5Ffd44rTdo_KwoRz1fbWHaBB1xruiYQHHlD7iTpTs4GJRJJDbqOscossAVIMzZ3KlhBwmlPTSlphVmQwysshHlGxNRBlu0faSTqJSSM2jXqgRAb2D8RU0yUSbQyj4AFLv42QzaMH-8LOn-AHu1GVS0Izh_6Plcoc2N2zXDdd6Pg6t6GG55_5OVkdfEZU0zyeQoaE4gmrXd3eADuDjzB5-V59Fr3Y0Ye3Rzye3UmSyJXynRRHNTjpmymbootVBhWNocZ6KjvVwTuvtRN_w2Wbf24BF9emIoNbl2USIbLzPgB2QKpKWEFlhddZSrXHZ6F886WzLDX0PKTDovFWW7uhRhImLANxzU3rFY9Uaf8_W1COK92-2VkBgSD96cNK1xldDHCLer2vK10SDKpedyuue-2xLGRBxlyEsoaSYdxXkWLPU7-pcSzWt3ddb3XvQPgmXsmc1GJkr3q_au_X14iHFco5RwxGWVD7DpfvYsKT8kTmwuNhlqpbM4WdTfRP90dmGPV10PHZxFlwwjJ7aJ3QK52gQM5eid2adUvGHvylER4baYW0WKpmUgkyVxmZ-DFwmGbRblwHn6Dw9_cU1FfZVrwzc8PoxDwE3aSqgLKZDFX1GRKXJcSPxLaI8JJP-40GZQnwo6laBzBCUAuykKbtNlerP6yl5CxZAZes_xhfc9oIAETzCsz8sEDpjWbgRQA1AuFRAnll09q50Ow142GJFqmVgVCOwGBchm4o__AHJ9whgVZ8T1sv5qSUBH2ZbOoYboOGI9EhEtFTi8Rl3oLoP2HyC7mghXOyEnMtg0xVb-Z1JM36whB6TCDVDKBE3QjlOFz2s4a5HGSt43O_vlJf5zm19vsGftPSTXEOtI8TBpSDBsM93qI1Mb17kwTd0IeDb8QcQV26CZBPWj3J0zZMQmZ205j88WEiJfMpoPzidNCOGDeXVYUbRg_ogmS9Chwy4EQmWxiPa31a4DIBEDrvDseEZqkZWrVKl93vH1cl0cUqMTCEUkaJL4CEngVXIAham93KR1MmGVmmh8kvmIUZ9MjkmHTP7Z1jc_kwJDdrOyIdaQa3uz9_UQkpzGN8GdTjoN4YRASJZ0Ysfk-5r8VV4vOYfdoRnIlkx21RlfXS0W-xyhUT2BiSqEzhsbQip3W6ReWEojFPtQ-dck6JsfbtCp017zT0vb2q6zq-DGpLzjixvz2VLzNZFNmh9SsXi-_9-U1arLkJ58aXgo7SjTB_9bNhtCYN5p-kkK26HYDbY3XzG55ZBecG0YAS47y53KIdzS3UVWRECZglzl_hKDXjjR8G-GlXrwV6_xADImZY6CO-NP88IRpcmRPLHtJ--zimVxuOWm6bQ3dgnQQ86ByUggmYS_tL1rURVu8LmdydC1qruuOL"
+   },
+   {
+    "id": "msg_0680d4922a4beedf016ae307c1bce087d1bf09bb48d2a10c0d",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[{\"start\":0.78,\"end\":1.97,\"text\":\"When?\"}],\"confidence\":\"medium\",\"notes\":\"The index-finger circling and contact appear to form the sign for 'when'; the lead-in hand position is less clear.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793263555.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 4559,
+   "input_tokens_details": {
+    "cache_write_tokens": 4556,
+    "cached_tokens": 0
+   },
+   "output_tokens": 384,
+   "output_tokens_details": {
+    "reasoning_tokens": 320
+   },
+   "total_tokens": 4943
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

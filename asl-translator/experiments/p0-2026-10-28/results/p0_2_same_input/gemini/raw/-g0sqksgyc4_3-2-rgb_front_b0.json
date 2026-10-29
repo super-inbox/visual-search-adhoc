@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.06,\n   \"end\": 1.40,\n   \"text\": \"Someone\"\n  },\n  {\n   \"start\": 1.52,\n   \"end\": 2.32,\n   \"text\": \"wanders around\"\n  },\n  {\n   \"start\": 2.43,\n   \"end\": 2.89,\n   \"text\": \"or\"\n  },\n  {\n   \"start\": 3.01,\n   \"end\": 3.69,\n   \"text\": \"gets caught.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 1.06,\n   \"end\": 1.40,\n   \"text\": \"Someone\"\n  },\n  {\n   \"start\": 1.52,\n   \"end\": 2.32,\n   \"text\": \"wanders around\"\n  },\n  {\n   \"start\": 2.43,\n   \"end\": 2.89,\n   \"text\": \"or\"\n  },\n  {\n   \"start\": 3.01,\n   \"end\": 3.69,\n   \"text\": \"gets caught.\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "KQTjaonZFa-M9MoPj6fN4AI",
+  "usage_metadata": {
+   "candidates_token_count": 169,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 591,
+   "total_token_count": 7413
+  }
+ }
+}

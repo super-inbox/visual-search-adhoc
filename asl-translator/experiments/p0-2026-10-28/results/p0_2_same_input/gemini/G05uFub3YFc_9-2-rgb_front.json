@@ -1,0 +1,171 @@
+{
+ "clip_id": "G05uFub3YFc_9-2-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 2,
+ "n_batches_called": 2,
+ "wall_s": 25.617,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "G05uFub3YFc_9-2-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "37358d397a6a399a6f3842c972efc495650db6bb942fbfcfce008336e2e08831",
+    "610c01265f4046494fb3b5f7a3aa6a585794368e8554729ac0940bf7fd579768",
+    "56948a5ab733d65f22421746eb6b3ed129976072878398e3ae59b074ac383d75",
+    "a459d6e79b2b15726a3649d5657d73747645e0dc898e3095af33c227e45dcfc4",
+    "a183d92f7a572877900434fb67f11dab162ebd8cf6a10e17b5bb0b8d837e3829",
+    "60cb121ddafca10fc68ea77ef02b431735590e7e2cb848c9c1915cfc446c1213",
+    "2e75ac84ad45e759d3bb6ce25781f2924ba5c4b822f30922193197bb737f21f5",
+    "84e57157901ffa244e9092c7a97e5e33ea9bd54f49265094f92c41a450b3b95e",
+    "470e44c3265fec9bcd8e661146b5979d08ace325f841740caadb05f924ae7fd1",
+    "acb951fc649ffa984db753b29389aca891293281d9181d2fc4418b21da2e41b5",
+    "0c3495eb1f61332717e9c8879f62ae06338b0c296acc989bb1ef0dee80282926",
+    "639521914058e2b5d484a2e76a0b0803f0afa127a216ce878fa697c902c34653",
+    "27eb94d936e019235490bf60ea2ced347d39b5ab78571c1de97e8ad92857011e",
+    "a2199a8629ed1a233fe1f1d896bf7e528fe0c10fe9ccb0cb051c795ad2f46f7c",
+    "0c1eba95f6ccba2fb0a94cdb62fc00865b4863ee86025909bff8229fbc23af56",
+    "1311fc6779f3f24169cf6c57eab3e90b9b25db221671fda3c95627fbcbadd2e9",
+    "27f71de49c21d67a44c0c0486ce48a2f1b2ada3325ae3415fb51c506cc48be7c",
+    "a3a97d87c7faac3fc6412aeb2cb7f73f8f1a71e338c3d3f682db33d2d16289ca",
+    "03f8a3c696b0797ce7fd59962b2db42cf8d25cba0f00b7ff93014beb81deed32",
+    "f8ef9c4ae51cfdf7bf2ba7f24689e31fff90ae4f0007f14386a575fd0d1067a1",
+    "992ac584682112b21a022b0d6361bc8e4c339ea3b6cf642dadf32337c401858d",
+    "da1d2ae3e0f7dd0ae4bf555e0e2e73b6c7e201763ddc8dd36640fa43ece04771",
+    "e7d5e4d0774707cb9222d4096ff57d005a697c219e6484b343c74aa200bc0d98",
+    "ef78ec8c3ae6f4a2cecd7b089252ee0b71aff436e0f1e60b962129c30d4c748d"
+   ],
+   "batch_input_sha256": "ec54e0957a6ab19714d9cf56cad488a2bf901ebee1e90af2c13004bf1c174d8b",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6664,
+    "cached_input_tokens": null,
+    "output_tokens": 141,
+    "reasoning_tokens": 2541,
+    "total_tokens": 9346
+   },
+   "latency_s": 13.128,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:34:49.588+00:00",
+   "response_id": "KQXjat-dNdaa9MoP4Z_lkQM",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 3,
+   "n_rejected_segments": 0
+  },
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "G05uFub3YFc_9-2-rgb_front",
+   "batch_index": 1,
+   "n_frames": 10,
+   "frame_sha256": [
+    "3fcff5ccf96c833399c3cec27bfb8c5fc857bf3e46d822be312f4ec445e4bac2",
+    "8d685accf1071b45971495002b5ec20aa0c746f5f84b795b126f214a9c4bdb57",
+    "f3db379ec503a38285b2561397f9b19eeca5df9cbbed049ed276160ce11adfce",
+    "41c08818f9fbf7e13f5803ffa1457ae4649c6fd5883fe4d85b0924783ace73e5",
+    "f62e3172d88d846cea4fb61ab6abc84bc3e4d587c80945f6f06440f1d4677823",
+    "ed1c88858c159ab161552b08af620a3e34b801e753ef6d7bec1e6fb1bfa7c24c",
+    "041ae440c5fadf094c598f1aec38a3b4309f6945f1be087cb02f795beb1e9195",
+    "e0c0d1e91ec57fc3cdd75b69b8d7431ee93b96c4268ef9d9d46ca4c6aab23b7f",
+    "67436354b395000d6bf681b4cb700276f87ec0b4abe7891acbee80d7a469cddc",
+    "34567d952d741f17edfc22fb213799e3de179b180744f98280379425064d6608"
+   ],
+   "batch_input_sha256": "b41760440a11dbd35872a91a793794e6d2583adb5a7c81576ad21659ddb8d062",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 2925,
+    "cached_input_tokens": null,
+    "output_tokens": 192,
+    "reasoning_tokens": 2269,
+    "total_tokens": 5386
+   },
+   "latency_s": 12.239,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 21,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:35:02.722+00:00",
+   "response_id": "NgXjarS2NYeb9MoPmL26gQE",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 3,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "It's everywhere. It's all over. Call me back. Come, take off your coat. Join us and ask. What will you give?",
+ "segments": [
+  {
+   "start": 1.19,
+   "end": 4.62,
+   "text": "It's everywhere.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 7.96,
+   "end": 8.79,
+   "text": "It's all over.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 10.9,
+   "end": 14.15,
+   "text": "Call me back.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 14.44,
+   "end": 14.74,
+   "text": "Come, take off your coat.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 15.03,
+   "end": 16.22,
+   "text": "Join us and ask.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 16.81,
+   "end": 17.1,
+   "text": "What will you give?",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 34,
+ "resumed": false
+}

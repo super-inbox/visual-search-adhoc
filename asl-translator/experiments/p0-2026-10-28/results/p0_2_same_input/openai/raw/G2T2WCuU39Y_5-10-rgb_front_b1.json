@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read this passage with reasonable confidence. Several handshapes and movements are ambiguous in the sampled frames, particularly the extended two-handed sequence from 20.19 to 22.78 seconds. I cannot reliably identify its referent or translate the surrounding signs without guessing.\"}",
+ "raw_response": {
+  "id": "resp_08f225286a6217da016ae306130a1c87d1944b78ae02c5ea39",
+  "created_at": 1793263123.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_08f225286a6217da016ae30614f57487d1a38a69d5f40c5219",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wYk635e482fjw0TRwPgE4hjakpIuEPQ5s15MWIB28wJ6dMMdqV4N_DSM1n-btmhoQU6YbmQu2Ve6D1S5ukU8M-nVRqJsnCY8g0OtxfXCM-js_hnpIn7fHnxU599W_ORbTqjqyUJ9zQfzIcxojLwRRpfFg9VTxfgJ04jtNOkrOmouh82JNkON9A9oemzhNzW_MJsRan-9I98SC7EOyDbmwJAqQBhbRUZm50_Ild6gQ3xczd_5mStOtm3kHZ-SxWoxp019nOn1infCmIVF_jkpSz9QtsNgmEwhL0dQDcvuUhLPONm6pW6CouvPGWgKNQbL8C2rT5zC35mKWttfyG5RT6Jk7v1W8DteeYxoScr65Rn_anRnaXswmAAz1XM8v_jjMrOXx3RpCIKTRBXS-UcfRg8P4_CPD8e3MVMu_A2d51IlMWDXBgadqQcatsoeRYUeesBrxVgR9hfhv051bYPw7kvLgUCvh3tAvKl6sBTQf5UX6Ne1U2mscQqkzTeK1HdF1O816w-suyttn0QpI_iSCltxqm__NAyVhwoViDpnputC4vZ3Cf74XrUN6kJLETrzT3eq3r1bFkLXy63OXEZbvc0AYvzNzQSQG3N-E4XhKrWG-ukzF1whk9ld3HmqNcfA6_YKCOtRYGHHuh5MhPxz018jkLqAEB2zPXE-GTD2_KkqtrUM0tij00hA_zp78lvlmNK_T8m-NwnINNW6oc1UNXG8WMMjv43I1oH2TofDmaquijaUhwAa6RGGuzCjhWjZsw0UnWM5y_hUpjSOf94jdSpa0ak3tTSUt67b9Jx4lAdeBruxLhckS4upuF3xt25JIzTcCXfFGVTVCE-gp_kR2vOVrhDU54cKnmFX1tOPJ0Oqh6fg85AhXOkQuv4fwlTu5V60W1os90pnfuegJhErC-bgfkJKlObDKV2WmSc8GBGufLGr0_NU8V1h8eW0tDpQJMtk3wMQqegmvLld2gQaAtaJ4SHF3sIBHj4lplVrklV9Y7hHbkVLO3lvUHMTSrR6oC09RkNWQS4-XodSb8Mc1oJEMBHrsW6jSOERDS4MpaxY_sNlzltrriqsqYpDsBo1ydRh8QevGX436FhnvJDR5RNeDixOXWIvIvYk-ZaHXia0WSriGRV92vfDJMvtDtsgRINtbJaKGDLiu63mIs1q8NFSa8o0DFwGugd_qw2cKccj1xKJtKoWK1QiOE9GvqJfmDpNLqcYVakYeBybM6MiFZLrRuGso2CJYUJMh4dMxZyXIbfJsNjcb0IA70U2e7elBIm6UQ3UkwkCxGCVHka3ZdWm61Ia0-xrHpBIIg9W74SDM93PGmrvz9OYQ375fg4VuP91zGM0EnszZ4GfApeWamHOmSgJVWdRPWlJybmLfAkrQL2Ll2AiUT7i0i2RxUiyziCObj7-pJLXiXhdWH_xdzQITKkaW_1-Gxcx_MwX20MMJayh1OVrCwXXCU83SdtPcV_m-cSUFZPDGOc4hfO94c-UvvAP6McwygcXxMeeOg1oh90T9hOK4My2PdKqiPfgjJtU2NOUZlHRlThPnktu7-FdwaaW59IVO8OluZne3IvxgVc8xcaIe-cKpW8GdTm579XcyGlghMA0cxR9vQHg-vLfGwCAbqULRLfUeSQUWlTJhu9MTfgvx4yZo4xtoBHSvoW3QrSnxa1hONFXy7j4sw-iExIXKwptaGsCkqcjGl3_5I8KY6503_TW_O64c_M0vbZ0CR8bR3yOM18jaijv8XbpHsicKkRpAnFJDu8TaPrVfHUo0hpNErKRwpLcQwsUqMNiv_MwUWwp3Xv56FhqjXBC8IEvveaJdlI8V2PmnyAFqemafGiuOzTvQ7uYxmlDhjTBCl34IcoMF4-A47p18OofaD6cOXA--AKOI4geBTmtKZ_KoZuQObaro70BIKXKkNeU-n81HgbwXLUGIB1TIsn9L4KfD-v_XT6Wb6gVU8EukUN4hSR3xO3BE1CraBDLs8ovkQAF5lIOL916JGi97RAZ2QhqfoIkxfBmVxvuTxPjl15WESk7b7UtzKXdRjlMbU5bnkCaPBayMmYo-pvBHoPcd5pSA77RYGiqM3YpcWMC15Mr0S0zZmkar_s3Pway_NeoFDp8J96zzX5YvomHr8hqf2W0EjwrGkhov6TXsIClKnyAuZOWmqww0X3CXw-N0wfxfFtn_1is4ISWAuazdHoXu05532WJ-5bbSMfO4B7yd0XGl-Y_bUPigWG2cuQLtDWzPR1QyyP7dS-wZo4Jpgw0hRYCZ-zJSO_9nlLdVCwUXOuS85Ebul2c7Q8Lol0qL8CZUUl8oDJ-c5Kzivvc-b8yl-I7Xjvbkpo51n1rWYryUVNtmumRe-nFRT185EiXHaOFYmE9RgM25US3OmVxDx3-QLWFNlk16ouPL7VBVxL9xGXDLcm3O1IO3Dustn6lw1OPSjYy6aR7Eg-0MMdZltam0zYokJO-b8ixiWLHUDZ9ik2SKeSOuZBqdWAIMGlJY52TNvuCcqJ6JvExiysnoY_bPt_Sz0gqXOSxtrcrvdygUcR5UI_4HYB6ErGdfIzAgLewhk0L7PtRGYy_MI_dxvcsbDZ8fCwkJ1QVc6PEhq1m2QyUb35Hs8zMtwUwjDEvX3pczhoF-STLyJ37Y9pQw7Zkvxa878boQg_ImkRJG-fq9a2yH_H4Ycm7pFOCLig6yOe5NEv3bL3_OpVQsO1CajgC9WsDvS3zBQm2ri8I8KjFLguL58ehCOuzv84uMrmB3-cKRi9MnWmaOlT2MIhmUswo4b2HypUwVddRI3rJsMvbuB37JNVPqTQdJWLoT7pBCxTpGM6_RzmjOft4e2-Xcz9sQw8BSynbyIRwFaKMSnQujkPmqB4nOg4lRrfou1VewumzR1H8TEGgv7tHINGA-tYq24DsvGLyEGlPXrC-NPvFN9DxS6KimBtZIhATDcQbBPIKaErkk9WoHTQS43Takc6ZkV3Wb3R7dYnoVsrWuc7vMuBepSZzCXTYzAxBE2jhvHl-7q3ZKuZihRkdoTslqNfiB3Ntrpl-qFvkhiuW06lTSVhHa2A13ITW1c0puhI7rebsGdx3KyJSk0CfNiWrv06i_LAcbn3MjFT5gTeFYMnqklGtZpyLkhLHTMTQhbv2YfNGYN93Zwel9cVKy78joBfQRTex5gi8ax-ZEkBcioUqv9aj4FcrIitMEqmIuiSiNMXOajo5ss1qU8MR7vlM8qi8yAIrggqkldbz4LrV_tvQ6AD1O7aW3-arCD-_-cu8sMVVOwijhASpSckO8uCY3g-FZVC6zMaeDikVFjGHBRw7kxS2WFaAYC8NW3xUps8zvBsbVpNO6SlCldqCrM9paqdzcQ3ovovYIgQbJB1LiGFvpmCPUqQVS2brmg9-fb9CNZHuRcKdo6S2KUwNSbzapQETtSQByjkT3LYHsP__4JKeVKGPNHCxPTjoezcbrjt0QbZjZYMH-QGd9csBdf2jJfiKhPK7CYKsLyzWJJXby8EDGkxdqwS10qgRixJWEkJvVZeRD_fWFRqwUX0xCe2YC3xQUTi2WQEsl_5dNxFEsas0mSxQsFUpc3sARynr6-zLXXcR394ieyI3en2S340wQSoOjXgp8yN4r44_9Av5XG78RCrMpfXr4hEo32pGf7uiVcyVLREKt0qy0V6Va81G4xfeiX_mWgVFA-iSwxqjuV6OxaxxViypobKhoJ9E0gBmTKoHzNuajNFMlQUOOID1LnR9ggbSC_ZrWe3cRYtfbRl9ZIcjcC_yv487BZhi8VSNRAhl-CawI97ReQgcGfZwhEbscHiUmIDuiwbltUTkO09Bf2IvT-J3_b-rxLrKIjWW90ZwWA77pH9Y4XQFnTHSi3yyHWxL0TyAa6_NgDwXmau1xUjRfDAUSw7AE1Ux_NFHBrCzuWnn7vmTVrDaryz39JhDAjoF_1a5DnD-wDYuFg0K-C6o051OeASp11UzfrqE3w_4ksjpH5MUyM_G0BZV0vG5Bycay7CcnDX47XbHlgzxcY6kRdN9G0usFA1HDs7NuH9ILmRgVW6SFxkJa1PnA2HaCOrQIzCdujfjtLZ6l3-cB8aVlYrz858Ul9t-twUVuZqC6dT1uvbFYbSoMwwqeeYN2v4Aml7CGKmqEzVrdM6RENfXEMTtRhcXnsHGNEIZBu9qC_GWomoAj0inwco7WofDNRYUu0ezRXnCLDW4mazBZVXvjvEHXMROE6neKiHeA9w5JonWuXwMKZJxDDaauu3qPRGZD8glTCz4IZXQ4mavrFkeYlBZKVS4m7Lea_ARCx32L40lE90bkGaGvd03qJaq2bK79lVbnmARLP30PgEXaf5eR7wpKApqiUptPgdUGKcqtxC5QTCTpRYlWYFZN6ijFapC-oAHrSpcUxUvlJ0CeuqOKdZLEXNrfwzll7TPIXHU0zpZAkJjijlttts1_rB1qLNiTRNhkbgYIpOmycfgtCw8WCF3Z62rUWheYoIkw1pjPHBFZ07bY6qfCcTIwjjS-pHeOmdjmpTb-emmfk_HIb37gU6o3Ctasq1S14q02kpb4DR0Fmw46f8yMx3sTDyNaYJbwylgAjuSI5ds3Ak4LvSDe-vuzXANWgScmQWii06ezxw53OA5yHssVIWRJeHt0MiJgvoZVhHhsr4ooReSJt5HiFRffZWYDpg92grKRG82QUhR6H5LwX851ZvfASvRewUeTGY1xrPuvKufmbk5dAAY85uxKX5yh3uQR5s1d2-gAaEhYc9cWD1V7EUjuFlfi8vf-gdNPCNNRdqvPCn6N40UvmdjFjPfCuqNHepVA1Bk4qlDndJmyli77vg4o3COYnCsScyfuNLDP6gRuPG-trUnxxI7DRJkuc51wljjVnZVrDIQNvhFzIDJKiWVoeYAx4QfjNOdV_7xBGzl6wGS9tpLtO6rCF0L3Zmpqmhjg5ztdKVEhU9rJaDqXHqDGDMor6IQxOXZ09yd32mxlwMQgU_75yNfMtQtflmkWjnhcbb3SYRraNASJaUSW0QaGceSxFg_p1bmSc0O_kjxtyzazX-azfbzB44IqMVgwE0qA1p5QVdU5rncLDND5VMxniJn1-tCjeyQ33IDD6qVyIm997jCMI6F-YPNpQoj-vspSAtXHkVlPYNfH-9FQrVx4W4xpqn8yClk1KtpLVA85ytU6C-oI7jVapVLFpFN1FnmIxwwmRfPxkbcBM7YFVB_2Hqbt3z-ZbR3oMLpjEQwMx4K67Xu2aIqcZ3yotbR9xgxT9l5mi064r-vQmxJLosVmqVCavt6bjoUyi5WEIpdBjiYWBIabMi819-DEzvLEB23WZIUfIdhoDH1jEytjHxLPTFzUEzJyv070ZObc1FA3TNTl-KG7HyNmSFG0UeT-tFpZnFmH5yCK6sd5JaJaVH9CZVwseCKDmGThXKN3m4oxUTxxlK8cCKm7sj7sw3C_vxBet32aqd4kwIGCCM8eoSOHnz0g=="
+   },
+   {
+    "id": "msg_08f225286a6217da016ae306221d2c87d19c82092f62752a59",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[],\"confidence\":\"low\",\"notes\":\"I could not read this passage with reasonable confidence. Several handshapes and movements are ambiguous in the sampled frames, particularly the extended two-handed sequence from 20.19 to 22.78 seconds. I cannot reliably identify its referent or translate the surrounding signs without guessing.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793263140.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 4379,
+   "input_tokens_details": {
+    "cache_write_tokens": 4376,
+    "cached_tokens": 0
+   },
+   "output_tokens": 395,
+   "output_tokens_details": {
+    "reasoning_tokens": 319
+   },
+   "total_tokens": 4774
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}

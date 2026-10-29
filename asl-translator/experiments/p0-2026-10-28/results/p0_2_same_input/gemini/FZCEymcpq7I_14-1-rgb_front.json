@@ -1,0 +1,97 @@
+{
+ "clip_id": "FZCEymcpq7I_14-1-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 20.047,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "FZCEymcpq7I_14-1-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "5f2e0c3b375fee7780da1c18b7f6c4b2bbd7b4b0b908e9aba31a330410d9458f",
+    "0c9ecad7ee2ec28b6a3c6ef126da6ed5394424dfc58304e893c0416e3e218780",
+    "607537bbbfbe619370c004ced840b4b264a3654fd3fd370d733dc23bf573d102",
+    "2ffd6d281b6b3e64b662af71f6d6de619f39c6a63d52ca66eaafcdec2ecfa434",
+    "f574057b899902bfc33332a621b657abf69c376183e54a1585d09c431c33f63e",
+    "5378ea46c9f5a7f219f20e10ac517d41ab352f1e27787b0ef5069d62d95833f1",
+    "9487c846bc0c816a562871a01e85f66561e475810464616b94fed6aaa4fed739",
+    "134667587ea0b308d5051256191f8ed1e9cfb5c4321a809bca30910d30028eb2",
+    "d173c5ff4961b9c8736be63e84e083b96fb5f1d80c41d806e4c95d680331cc6a",
+    "d8f76370a8357b5be096b66373da542246b2ae0c56a8aa57181788a1770a7b00",
+    "52c835463ec41cfb7ee6c09bc097df4b9b88144f4879841b230069213f6e60ad",
+    "77d97ce552b51f7c2ca2b3304225838a71ebff6da78f67baff08a65887b92cb8",
+    "ecc84c66d3c9818a730d0872ac860e64eb81b49b7a0114322ddb1c27819984d6",
+    "0100714e181ef85284ede3c2307a44f215bf77f5d99826210e22264c272024d1",
+    "e263e2b348261be8087eea53c166d404092a1b04727a852843d9d904aacccee8",
+    "39b99cf29ddcb0be2428b4658e72b15213767bc412f1ec1d9b9bd2e2a2e5e986",
+    "85c1f3e410cd0b977811703b6c1a3a62d1812bb6220962e38eb338ca895bb08f",
+    "6319470c10ed04e3c05a976c40bd9887477bd1e9d053450c22c6e1625d189be1",
+    "b1cb0568d88eae762af9acf6cc42fe228340dc56dd1d6b466b4bf3cd1b27c020",
+    "0d6f8def1b35012ba67698f82d32d8c9209b33afa4bec2de24a99e05c2f66c37",
+    "45b4048a7e39b3a39294205242886693c0fb99fa12f5d1e13884f1c71206a5e4",
+    "721cb5faf0f9049a390b4d04ee13a5cfe9741420a2b1bd0c7556604565a4e9ba",
+    "0b3a2aff31851c512db329a623565ed28916d38a190ca6411ca2a550902c80da",
+    "10a29b05ca6bc1b9b4bed9bbcc421b6234c72a211da39f99fda47ff9d9f28f5f"
+   ],
+   "batch_input_sha256": "a468291275f3d71d2608e3245af11de84a778de7ca090b92d49b9d8d01086297",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 168,
+    "reasoning_tokens": 3936,
+    "total_tokens": 10757
+   },
+   "latency_s": 19.823,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:30:59.153+00:00",
+   "response_id": "QwTjavenHauj_uMP1ZbI8QE",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 2,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Let's plan to develop this together. What to do? Get ready for a good dropoff.",
+ "segments": [
+  {
+   "start": 0.88,
+   "end": 2.38,
+   "text": "Let's plan to develop this together.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.38,
+   "end": 8.62,
+   "text": "What to do? Get ready for a good dropoff.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

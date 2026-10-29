@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 1.56,\n   \"end\": 2.81,\n   \"text\": \"My three teams\"\n  },\n  {\n   \"start\": 2.94,\n   \"end\": 3.31,\n   \"text\": \"are set up,\"\n  },\n  {\n   \"start\": 3.44,\n   \"end\": 4.44,\n   \"text\": \"but...\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 1.56,\n   \"end\": 2.81,\n   \"text\": \"My three teams\"\n  },\n  {\n   \"start\": 2.94,\n   \"end\": 3.31,\n   \"text\": \"are set up,\"\n  },\n  {\n   \"start\": 3.44,\n   \"end\": 4.44,\n   \"text\": \"but...\"\n  }\n ],\n \"confidence\": \"high\",\n \"notes\": \"\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "9gfjatvZAai-jMcPq7Dz-Qw",
+  "usage_metadata": {
+   "candidates_token_count": 134,
+   "prompt_token_count": 6653,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 461
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 6192
+    }
+   ],
+   "thoughts_token_count": 889,
+   "total_token_count": 7676
+  }
+ }
+}

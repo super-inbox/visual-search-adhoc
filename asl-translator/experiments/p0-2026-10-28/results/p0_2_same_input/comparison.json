@@ -1,0 +1,1515 @@
+{
+ "stage": "P0-2 Round 1 primary run: comparison (automatic metrics only)",
+ "references": "10.13 inputs_128.jsonl (scoring only)",
+ "interpretations_fixed_before_reading_outputs": ", before outputs were read, where the pre-registered text leaves a detail open:\n  - non-answer case = empty output text, or case status no_signing_detected / parse_failure / transport_failure;\n  - win / loss / tie on sentence chrF: tie if |delta| < 1, win if delta >= 1, loss if delta <= -1;\n  - B strata comparator = Gemini (the input-matched arm) for every stratum; the Uni-Sign stratum only selects cases;\n    \"one signer proxy\" = each signer proxy with >= 5 pilot cases, tested separately;\n  - generic/hallucinated automatic proxy = a non-empty output repeated verbatim on 2+ different clips within one arm;\n  - cost = token counts x official list prices read on the run date (2026-10-29): OpenAI gpt-6.1-sol $2 / $0.10 cached /\n    $10 output (reasoning billed as output); Gemini 2.5 Flash $0.30 / $0.03 cached / $2.50 output incl. thinking.",
+ "integrity": {
+  "halted": false,
+  "cases_per_arm": {
+   "gemini": 24,
+   "openai": 24
+  },
+  "requests_attempted": {
+   "gemini": 29,
+   "openai": 29
+  },
+  "requests_expected": 29,
+  "no_retry": true,
+  "frame_hashes_frozen": true,
+  "prompt_hash_frozen": true,
+  "openai_model_exact_every_successful_call": true,
+  "openai_successful_calls": 29,
+  "gemini_model_versions": [
+   "gemini-2.5-flash"
+  ],
+  "call_order_followed": true,
+  "call_order_counts": {
+   "gemini_first": 12,
+   "openai_first": 12
+  },
+  "all_cases_in_denominator": true,
+  "run_manifest": {
+   "started_utc": "2026-10-29T08:30:32.678+00:00",
+   "openai_model": "gpt-6.1-sol",
+   "gemini_model": "gemini-2.5-flash",
+   "image_detail": "high",
+   "sdk": {
+    "openai": "3.41.0",
+    "google-genai": "2.20.0",
+    "python": "3.11.7"
+   },
+   "retries": "none in primary (SDK max_retries=0; genai default no retry)"
+  }
+ },
+ "arms": {
+  "gemini": {
+   "corpus": {
+    "n": 24,
+    "chrF": 13.208,
+    "BLEU4": 0.4962,
+    "WER": 94.7368,
+    "mean_len_ratio": 0.4175,
+    "loop_out": 0,
+    "empty": 0
+   },
+   "degenerate_repetition": 0,
+   "status_counts": {
+    "success": 24,
+    "partial": 0,
+    "no_signing_detected": 0,
+    "parse_failure": 0,
+    "transport_failure": 0,
+    "missing": 0
+   },
+   "non_answer_cases": 0,
+   "generic_proxy_repeated_verbatim_outputs": 0,
+   "usage_cost_latency": {
+    "calls": 29,
+    "tokens": {
+     "input_tokens": 182370,
+     "cached_input_tokens": 0,
+     "output_tokens": 3879,
+     "reasoning_tokens": 61531,
+     "total_tokens": 247780
+    },
+    "billed_output_tokens": 65410,
+    "cost_usd": 0.2182,
+    "price_per_1M": {
+     "input": 0.3,
+     "cached_input": 0.03,
+     "output": 2.5
+    },
+    "price_source": "ai.google.dev/gemini-api/docs/pricing (last updated 2026-10-28), read 2026-10-29",
+    "latency_s": {
+     "median": 11.198,
+     "mean": 11.359,
+     "max": 22.832,
+     "sum": 329.403
+    }
+   }
+  },
+  "openai": {
+   "corpus": {
+    "n": 24,
+    "chrF": 1.3602,
+    "BLEU4": 0.0,
+    "WER": 100.0,
+    "mean_len_ratio": 0.053,
+    "loop_out": 0,
+    "empty": 15
+   },
+   "degenerate_repetition": 0,
+   "status_counts": {
+    "success": 9,
+    "partial": 0,
+    "no_signing_detected": 15,
+    "parse_failure": 0,
+    "transport_failure": 0,
+    "missing": 0
+   },
+   "non_answer_cases": 15,
+   "generic_proxy_repeated_verbatim_outputs": 0,
+   "usage_cost_latency": {
+    "calls": 29,
+    "tokens": {
+     "input_tokens": 125011,
+     "cached_input_tokens": 0,
+     "output_tokens": 20115,
+     "reasoning_tokens": 18439,
+     "total_tokens": 145126
+    },
+    "billed_output_tokens": 20115,
+    "cost_usd": 0.4512,
+    "price_per_1M": {
+     "input": 2.0,
+     "cached_input": 0.1,
+     "output": 10.0
+    },
+    "price_source": "developers.openai.com/api/docs/models/gpt-6.1-sol, read 2026-10-29",
+    "latency_s": {
+     "median": 22.858,
+     "mean": 23.005,
+     "max": 41.155,
+     "sum": 667.153
+    }
+   }
+  }
+ },
+ "unisign_reference_column": {
+  "label": "Uni-Sign A_official committed predictions: NOT input-matched, reference column only",
+  "corpus": {
+   "n": 24,
+   "chrF": 29.3247,
+   "BLEU4": 10.7292,
+   "WER": 88.7946,
+   "mean_len_ratio": 0.9008,
+   "loop_out": 7,
+   "empty": 0
+  }
+ },
+ "paired": {
+  "delta_sentence_chrF": {
+   "mean": -9.7194,
+   "median": -10.0641,
+   "wins": 1,
+   "losses": 22,
+   "ties": 1,
+   "bootstrap95_case": {
+    "lo": -12.301,
+    "hi": -7.2041,
+    "resamples": 10000,
+    "seed": 20261028
+   },
+   "bootstrap95_signer_cluster": {
+    "lo": -10.4645,
+    "hi": -8.8213,
+    "resamples": 10000,
+    "seed": 20261028
+   }
+  },
+  "delta_sentence_WER": {
+   "mean": 4.7551,
+   "median": 3.0776,
+   "openai_lower": 0,
+   "openai_higher": 14,
+   "ties": 10
+  }
+ },
+ "regression_gain": {
+  "regressions": 12,
+  "gains": 0,
+  "threshold": "sentence chrF |delta| >= 10"
+ },
+ "gates": {
+  "R_reliability": {
+   "non_answers": {
+    "openai": 15,
+    "gemini": 0
+   },
+   "partial": {
+    "openai": 0,
+    "gemini": 0
+   },
+   "pass": false
+  },
+  "Q_quality": {
+   "corpus_chrF_delta": -11.8478,
+   "ci_lower": -12.301,
+   "corpus_WER": {
+    "openai": 100.0,
+    "gemini": 94.7368
+   },
+   "gemini_repeat": "not run",
+   "conditions": {
+    "chrF_delta_ge_2": false,
+    "ci_lower_gt_0": false,
+    "wer_o_le_g": false
+   },
+   "pass": false
+  },
+  "S_safety": {
+   "regressions": 12,
+   "gains": 0,
+   "generic_proxy": {
+    "openai": 0,
+    "gemini": 0
+   },
+   "blind_review": "not done",
+   "conditions": {
+    "regressions_le_gains": false,
+    "generic_o_le_g_automatic_proxy": true
+   },
+   "pass": false,
+   "provisional": true
+  },
+  "C_cost_latency": {
+   "median_call_latency_s": {
+    "openai": 22.858,
+    "gemini": 11.198
+   },
+   "total_cost_usd": {
+    "openai": 0.4512,
+    "gemini": 0.2182
+   },
+   "conditions": {
+    "latency_o_le_2g": false,
+    "cost_o_le_3g": true
+   },
+   "pass": false
+  }
+ },
+ "B_strata": {
+  "multi_batch": {
+   "n": 5,
+   "eligible_n_ge_5": true,
+   "comparator": "gemini",
+   "mean_delta_chrF": -16.2898,
+   "wins": 0,
+   "losses": 5,
+   "ties": 0,
+   "win_share": 0.0,
+   "passes": false
+  },
+  "signer_proxy_1": {
+   "n": 2,
+   "eligible_n_ge_5": false,
+   "comparator": "gemini",
+   "mean_delta_chrF": -11.5364,
+   "wins": 0,
+   "losses": 2,
+   "ties": 0,
+   "win_share": 0.0,
+   "passes": false
+  },
+  "signer_proxy_2": {
+   "n": 4,
+   "eligible_n_ge_5": false,
+   "comparator": "gemini",
+   "mean_delta_chrF": -9.8622,
+   "wins": 0,
+   "losses": 4,
+   "ties": 0,
+   "win_share": 0.0,
+   "passes": false
+  },
+  "signer_proxy_3": {
+   "n": 6,
+   "eligible_n_ge_5": true,
+   "comparator": "gemini",
+   "mean_delta_chrF": -9.2431,
+   "wins": 0,
+   "losses": 5,
+   "ties": 1,
+   "win_share": 0.0,
+   "passes": false
+  },
+  "signer_proxy_8": {
+   "n": 8,
+   "eligible_n_ge_5": true,
+   "comparator": "gemini",
+   "mean_delta_chrF": -10.347,
+   "wins": 1,
+   "losses": 7,
+   "ties": 0,
+   "win_share": 0.125,
+   "passes": false
+  },
+  "signer_proxy_10": {
+   "n": 4,
+   "eligible_n_ge_5": false,
+   "comparator": "gemini",
+   "mean_delta_chrF": -8.1274,
+   "wins": 0,
+   "losses": 4,
+   "ties": 0,
+   "win_share": 0.0,
+   "passes": false
+  },
+  "gemini_nonanswer_loop_or_degenerate": {
+   "n": 0,
+   "eligible_n_ge_5": false,
+   "comparator": "gemini",
+   "passes": false
+  },
+  "unisign_loop_out_or_empty": {
+   "n": 7,
+   "eligible_n_ge_5": true,
+   "comparator": "gemini",
+   "mean_delta_chrF": -12.0589,
+   "wins": 0,
+   "losses": 7,
+   "ties": 0,
+   "win_share": 0.0,
+   "passes": false
+  }
+ },
+ "verdict": "C",
+ "verdict_note": "A requires human blind review of key-content errors; without it the best possible verdict is 'A provisional'. Automatic metrics do not establish semantic superiority.",
+ "per_case": [
+  {
+   "clip_id": "-g0sqksgyc4_3-2-rgb_front",
+   "signer_proxy": "2",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 9.8316,
+     "WER": 100.0,
+     "words": 6,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 47.0006,
+    "WER": 112.5,
+    "words": 24,
+    "loop_out": true
+   },
+   "delta_chrF": -9.8316,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "FZCEymcpq7I_14-1-rgb_front",
+   "signer_proxy": "1",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 12.4008,
+     "WER": 89.7436,
+     "words": 15,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 24.8487,
+    "WER": 94.8718,
+    "words": 33,
+    "loop_out": true
+   },
+   "delta_chrF": -12.4008,
+   "delta_WER": 10.2564,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "FZd8Iv9ACVw_12-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 11.7996,
+     "WER": 96.9697,
+     "words": 10,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 43.5038,
+    "WER": 66.6667,
+    "words": 23,
+    "loop_out": false
+   },
+   "delta_chrF": -11.7996,
+   "delta_WER": 3.0303,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "Fz-N1S0swh8_2-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 22.086,
+     "WER": 85.7143,
+     "words": 9,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 2.8045,
+     "WER": 100.0,
+     "words": 2,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 36.5271,
+    "WER": 64.2857,
+    "words": 7,
+    "loop_out": false
+   },
+   "delta_chrF": -19.2815,
+   "delta_WER": 14.2857,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "FzAIlhumvMA_4-2-rgb_front",
+   "signer_proxy": "2",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 4.4113,
+     "WER": 100.0,
+     "words": 2,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 1.6478,
+     "WER": 100.0,
+     "words": 2,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 34.1692,
+    "WER": 127.7778,
+    "words": 29,
+    "loop_out": true
+   },
+   "delta_chrF": -2.7635,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "FzQPg4aqNYc_13-1-rgb_front",
+   "signer_proxy": "1",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 10.6719,
+     "WER": 100.0,
+     "words": 8,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 17.3832,
+    "WER": 125.0,
+    "words": 22,
+    "loop_out": true
+   },
+   "delta_chrF": -10.6719,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "FzoUVr98JmQ_6-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 11.3333,
+     "WER": 88.0,
+     "words": 10,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 3.1123,
+     "WER": 100.0,
+     "words": 3,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 40.8075,
+    "WER": 64.0,
+    "words": 18,
+    "loop_out": false
+   },
+   "delta_chrF": -8.221,
+   "delta_WER": 12.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "G05uFub3YFc_9-2-rgb_front",
+   "signer_proxy": "2",
+   "n_batches": 2,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok",
+     "ok"
+    ],
+    "openai": [
+     "valid_empty",
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 13.4303,
+     "WER": 94.1176,
+     "words": 21,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 35.7914,
+    "WER": 85.2941,
+    "words": 28,
+    "loop_out": true
+   },
+   "delta_chrF": -13.4303,
+   "delta_WER": 5.8824,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "G1hb5HugzVk_2-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 2,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok",
+     "ok"
+    ],
+    "openai": [
+     "ok",
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 18.2429,
+     "WER": 93.3333,
+     "words": 27,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 2.7201,
+     "WER": 100.0,
+     "words": 4,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 15.0489,
+    "WER": 90.0,
+    "words": 36,
+    "loop_out": true
+   },
+   "delta_chrF": -15.5228,
+   "delta_WER": 6.6667,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "G23G21G49dk_14-2-rgb_front",
+   "signer_proxy": "2",
+   "n_batches": 2,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok",
+     "ok"
+    ],
+    "openai": [
+     "valid_empty",
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 14.0987,
+     "WER": 96.875,
+     "words": 21,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.6752,
+     "WER": 100.0,
+     "words": 1,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 43.4255,
+    "WER": 90.625,
+    "words": 34,
+    "loop_out": false
+   },
+   "delta_chrF": -13.4235,
+   "delta_WER": 3.125,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "G2T2WCuU39Y_5-10-rgb_front",
+   "signer_proxy": "10",
+   "n_batches": 2,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok",
+     "ok"
+    ],
+    "openai": [
+     "valid_empty",
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 19.7915,
+     "WER": 96.9697,
+     "words": 39,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 12.879,
+    "WER": 93.9394,
+    "words": 28,
+    "loop_out": true
+   },
+   "delta_chrF": -19.7915,
+   "delta_WER": 3.0303,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "G3FhmHz_7hs_20-10-rgb_front",
+   "signer_proxy": "10",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 6.0306,
+     "WER": 95.4545,
+     "words": 7,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 18.5695,
+    "WER": 95.4545,
+    "words": 17,
+    "loop_out": false
+   },
+   "delta_chrF": -6.0306,
+   "delta_WER": 4.5455,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "fzOH00UZg84_30-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 2,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok",
+     "ok"
+    ],
+    "openai": [
+     "valid_empty",
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 19.2808,
+     "WER": 94.5946,
+     "words": 26,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 24.8641,
+    "WER": 91.8919,
+    "words": 34,
+    "loop_out": false
+   },
+   "delta_chrF": -19.2808,
+   "delta_WER": 5.4054,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "fzcsY2gm7t0_8-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 5.848,
+     "WER": 100.0,
+     "words": 4,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 18.1123,
+    "WER": 83.3333,
+    "words": 9,
+    "loop_out": false
+   },
+   "delta_chrF": -5.848,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "fzrJBu2qsM8_5-10-rgb_front",
+   "signer_proxy": "10",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 3.9062,
+     "WER": 100.0,
+     "words": 1,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 4.2109,
+    "WER": 100.0,
+    "words": 1,
+    "loop_out": false
+   },
+   "delta_chrF": -3.9062,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "fzueHkUDyhE_1-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 5.5948,
+     "WER": 100.0,
+     "words": 3,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 20.0272,
+    "WER": 90.4762,
+    "words": 15,
+    "loop_out": false
+   },
+   "delta_chrF": -5.5948,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "g0Abwige7MQ_2-8-rgb_front",
+   "signer_proxy": "8",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 7.5806,
+     "WER": 85.7143,
+     "words": 7,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 10.3528,
+     "WER": 100.0,
+     "words": 6,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 60.6426,
+    "WER": 33.3333,
+    "words": 19,
+    "loop_out": false
+   },
+   "delta_chrF": 2.7722,
+   "delta_WER": 14.2857,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "g1HvmBOR7Y4_15-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 21.5333,
+     "WER": 78.9474,
+     "words": 15,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 22.0669,
+    "WER": 89.4737,
+    "words": 18,
+    "loop_out": false
+   },
+   "delta_chrF": -21.5333,
+   "delta_WER": 21.0526,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "g1vUH8Iy4vw_8-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 14.7417,
+     "WER": 94.4444,
+     "words": 10,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 35.7265,
+    "WER": 72.2222,
+    "words": 13,
+    "loop_out": false
+   },
+   "delta_chrF": -14.7417,
+   "delta_WER": 5.5556,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "g1z6HOJ0yRw_2-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 10.2967,
+     "WER": 100.0,
+     "words": 5,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 25.2173,
+    "WER": 92.3077,
+    "words": 9,
+    "loop_out": false
+   },
+   "delta_chrF": -10.2967,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": true,
+   "gain": false
+  },
+  {
+   "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "signer_proxy": "10",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 5.8205,
+     "WER": 100.0,
+     "words": 4,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 3.0393,
+     "WER": 100.0,
+     "words": 2,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 37.0067,
+    "WER": 207.6923,
+    "words": 33,
+    "loop_out": false
+   },
+   "delta_chrF": -2.7812,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "g2QdwYqm8pg_13-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 5.83,
+     "WER": 100.0,
+     "words": 5,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 1.6414,
+     "WER": 100.0,
+     "words": 1,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 55.5236,
+    "WER": 53.3333,
+    "words": 12,
+    "loop_out": false
+   },
+   "delta_chrF": -4.1886,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "g3jQ5ecjGz8_6-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "no_signing_detected"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "valid_empty"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 5.2291,
+     "WER": 95.0,
+     "words": 5,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 0.0,
+     "WER": 100.0,
+     "words": 0,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 21.9901,
+    "WER": 85.0,
+    "words": 15,
+    "loop_out": false
+   },
+   "delta_chrF": -5.2291,
+   "delta_WER": 5.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  },
+  {
+   "clip_id": "g3ushtMfLiY_2-3-rgb_front",
+   "signer_proxy": "3",
+   "n_batches": 1,
+   "status": {
+    "gemini": "success",
+    "openai": "success"
+   },
+   "batch_outcomes": {
+    "gemini": [
+     "ok"
+    ],
+    "openai": [
+     "ok"
+    ]
+   },
+   "failure_categories": {
+    "gemini": [],
+    "openai": []
+   },
+   "sentence": {
+    "gemini": {
+     "chrF": 9.4212,
+     "WER": 100.0,
+     "words": 7,
+     "loop_out": false
+    },
+    "openai": {
+     "chrF": 9.9518,
+     "WER": 100.0,
+     "words": 5,
+     "loop_out": false
+    }
+   },
+   "unisign_sentence": {
+    "chrF": 38.2416,
+    "WER": 64.7059,
+    "words": 14,
+    "loop_out": false
+   },
+   "delta_chrF": 0.5306,
+   "delta_WER": 0.0,
+   "degenerate": {
+    "gemini": false,
+    "openai": false
+   },
+   "regression": false,
+   "gain": false
+  }
+ ]
+}

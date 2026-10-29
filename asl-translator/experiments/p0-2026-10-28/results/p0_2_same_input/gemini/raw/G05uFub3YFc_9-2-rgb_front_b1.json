@@ -1,0 +1,37 @@
+{
+ "raw_text": "{\n \"segments\": [\n  {\n   \"start\": 14.44,\n   \"end\": 14.74,\n   \"text\": \"Come, take off your coat.\"\n  },\n  {\n   \"start\": 15.03,\n   \"end\": 16.22,\n   \"text\": \"Join us and ask.\"\n  },\n  {\n   \"start\": 16.81,\n   \"end\": 17.10,\n   \"text\": \"What will you give?\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The individual signs are clear. The interpretation of the final 'GIVE' sign as a question ('What will you give?') is based on the open-mouthed facial expression, which often indicates a question in ASL.\"\n}",
+ "raw_response": {
+  "candidates": [
+   {
+    "content": {
+     "parts": [
+      {
+       "text": "{\n \"segments\": [\n  {\n   \"start\": 14.44,\n   \"end\": 14.74,\n   \"text\": \"Come, take off your coat.\"\n  },\n  {\n   \"start\": 15.03,\n   \"end\": 16.22,\n   \"text\": \"Join us and ask.\"\n  },\n  {\n   \"start\": 16.81,\n   \"end\": 17.10,\n   \"text\": \"What will you give?\"\n  }\n ],\n \"confidence\": \"medium\",\n \"notes\": \"The individual signs are clear. The interpretation of the final 'GIVE' sign as a question ('What will you give?') is based on the open-mouthed facial expression, which often indicates a question in ASL.\"\n}"
+      }
+     ],
+     "role": "model"
+    },
+    "finish_reason": "STOP",
+    "index": 0
+   }
+  ],
+  "model_version": "gemini-2.5-flash",
+  "response_id": "NgXjarS2NYeb9MoPmL26gQE",
+  "usage_metadata": {
+   "candidates_token_count": 192,
+   "prompt_token_count": 2925,
+   "prompt_tokens_details": [
+    {
+     "modality": "TEXT",
+     "token_count": 345
+    },
+    {
+     "modality": "IMAGE",
+     "token_count": 2580
+    }
+   ],
+   "thoughts_token_count": 2269,
+   "total_token_count": 5386
+  }
+ }
+}

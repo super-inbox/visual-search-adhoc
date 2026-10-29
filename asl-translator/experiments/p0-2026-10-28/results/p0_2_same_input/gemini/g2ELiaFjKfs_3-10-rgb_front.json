@@ -1,0 +1,109 @@
+{
+ "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+ "provider": "gemini",
+ "mode": "primary",
+ "n_batches_expected": 1,
+ "n_batches_called": 1,
+ "wall_s": 6.465,
+ "batches": [
+  {
+   "provider": "gemini",
+   "mode": "primary",
+   "clip_id": "g2ELiaFjKfs_3-10-rgb_front",
+   "batch_index": 0,
+   "n_frames": 24,
+   "frame_sha256": [
+    "b54aae0f26b038ea0a7a15b5d2d46463b92771848fe45bdd3431948e78cc433b",
+    "9e6268930aefce2a7519262ef77e1341f0d64702d44da64ef21fecb9729ff5d9",
+    "7478fd6ddfc7406cdd0a47e41d2e66c2c97fb84127b37e6e1a33b2a4a913e393",
+    "8dc23e2568e2c471e4f1cf7a9879250bcadc15c735053dedda8ae9c5d70c42ec",
+    "8088c2c4b524eee71736acd596db5babe62f2f004b6d1543c771e64b5f8062de",
+    "7f6666ddeb3987c329e9093e0fae0430b8c8ab56ccf9cbdcdbca6657c9574a8f",
+    "8646c64823046749681deac97759e0bf7576dccac001ea5aabe9894b41ce1c12",
+    "29228755aaf1b89e48fadd766fb47e262c3af347adb6fde6e5e44fb5cca4caf4",
+    "0645c0f06cc357786cd99b85dc9b35ee217b0d1b4a2dc707044b3f2ec622752f",
+    "66433525d607689c80d0b6dc645999a319e9ef26d2947b16c27ef3e40a9a831c",
+    "fcf10ef59aaddacde33dae5e4a85505a00a37211130d9e4107257b5a49601a01",
+    "f1d9f2762a3786ec93beaad5b85a578cb2b1780b5f01e40b91c7e4057544f958",
+    "1076d1f42e78e0bc4c0efbee9da5e2737bfcdcef4d44c2099303c10c0dedaf0a",
+    "f6c6f61a43b33b62865b45737b57c884f422bec2148a9d27f346ee8d32bc1079",
+    "7ab752376b92c5e18c7a5a520328ae33c5b6ce4c52113925d023ce828bf40a85",
+    "0393dcb6c72e9075fe543a500011f4875e4d74693937cb293f2de4661735d978",
+    "128d740baa284cb20a2764a278c21fdb920dc1e8ae494702d386d6d86fb3e3af",
+    "682e5988d6998946ecdb9a1e2bfa02e5137731a9d27d0cbf3751c0ae2ac4ea61",
+    "029e05ac495ea335f4486f78c289ba6bca19f1b0c47633d11617b0eefa5d57e8",
+    "a38b819214557fb86c05a6d88fb5d58e095b4d837185cdbd1b9e20e5ed5c3908",
+    "cbf16e2d2e766c4095efa80eec17e1c47d93deeabcac6c6fe4ab9910f82bbd2b",
+    "c65ab76cdd1ea6baf78ffef6cc13128f37cf06e30f4674bbede2a64641b4bd21",
+    "f435ad614c5a1d0870c6817e72586cee6b66286df2ccdd563e095a804cdc384e",
+    "5dd495fdc99c23ca4514e3b6fba248ef904b428957b359324d77c30f7d39b1d2"
+   ],
+   "batch_input_sha256": "f462975792f000f8c47eac25cb1c4fff7452312f2346deed154694133e0ef042",
+   "model_requested": "gemini-2.5-flash",
+   "model_returned": "gemini-2.5-flash",
+   "usage": {
+    "input_tokens": 6653,
+    "cached_input_tokens": null,
+    "output_tokens": 202,
+    "reasoning_tokens": 1059,
+    "total_tokens": 7914
+   },
+   "latency_s": 6.282,
+   "est_cost_usd": null,
+   "attempt": 1,
+   "api_attempted": true,
+   "api_ok": true,
+   "outcome": "ok",
+   "failure_category": null,
+   "same_input_verified": true,
+   "request": {
+    "model": "gemini-2.5-flash",
+    "n_parts": 49,
+    "response_mime_type": "application/json",
+    "temperature": 0.0,
+    "thinking_config": null
+   },
+   "call_utc": "2026-10-29T08:45:34.452+00:00",
+   "response_id": "rgfjasKdLdPVjMcPnYzeuQ8",
+   "finish": "FinishReason.STOP",
+   "model_version_matches": true,
+   "n_valid_segments": 5,
+   "n_rejected_segments": 0
+  }
+ ],
+ "case_status": "success",
+ "output_text": "Stand. Sit. Join. You.",
+ "segments": [
+  {
+   "start": 0.56,
+   "end": 0.81,
+   "text": "Stand.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 0.94,
+   "end": 2.19,
+   "text": "Sit.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 2.81,
+   "end": 3.44,
+   "text": "Join.",
+   "speaker": "SIGNER"
+  },
+  {
+   "start": 4.06,
+   "end": 4.19,
+   "text": "You.",
+   "speaker": "SIGNER"
+  }
+ ],
+ "production_error": null,
+ "quota_exhausted": false,
+ "had_transport_error": false,
+ "degenerate_repetition": false,
+ "low_density": false,
+ "frames_sampled": 24,
+ "resumed": false
+}

@@ -1,0 +1,93 @@
+{
+ "raw_text": "{\"segments\":[{\"start\":0.53,\"end\":1.62,\"text\":\"It's awkward.\"}],\"confidence\":\"low\",\"notes\":\"The handshapes and twisting movement appear to indicate awkwardness, but the brief signing is ambiguous.\"}",
+ "raw_response": {
+  "id": "resp_004e5213b42faae7016ae304a7b0e087d184c03543bd52d1bc",
+  "created_at": 1793262759.0,
+  "metadata": {},
+  "model": "gpt-6.1-sol",
+  "object": "response",
+  "output": [
+   {
+    "id": "rs_004e5213b42faae7016ae304a916c887d1932f5d9dce0bf1c2",
+    "summary": [],
+    "type": "reasoning",
+    "content": [],
+    "encrypted_content": "gAAAAABq4wS5ipDOd_NxoWQi6gDjFIsx_3VM9hOQmLA34H5wjHYszUT7MSs1-Esf9WhnFOydE0ePKvTFiP6gmi_r1RatZzq6ASMLfENdNpiBMpZFwYsG56OfXCqxyYaxEdz68GnCMRg35FCmD3Xr5a3PdLeZNKAt480Mc8weBxsJAnee78CIUz01B0NEpBBydnakOE28oNLwg3g9iV-tUaJnAQv66KqgvS_w5ThLlIQerglhbY6CumypW7QMMIMEWwe_2NRyBOG4t-snZFfBS7I2lXYJDvbjx-XEL1eHcAVmFQ1FlviauF3YVJoxN9RVT8kpAoFHZFZaeeJqknWQUAYW78sd8YkgNUOvvapKqo4Tmra63ODKefr-RIwnon4ZsJMWBjo8PxvFzbQ5DqGAf72ITyBL_OQmJR1tWHMgmN-bBjFG38EG6xwgo-PKQ7BdvLirwHL5dB4viqH2-bC33GchzA-UmP1BWboszwFIl_x69DkRLDS1JJgum9MjTi0FJ0BpKgrcI9zQKwll10LZdyaCH_IH2gYatcB0S_kdlmjaxQ2wyRFIgY6paO5ZU9_V-e4lDKuhdH7BWITkXHXIRXqYT6qe2OAxOY00HYW1Heow9spPlSSEJgxMo2fSk0c5y63L0pGU_irTg2QgDIszNVPjOuAgKmjyKpv2sFFmWwiUzi--9IvfV7FmOXKthG3Eq_CHwRiKSEMwbRAaq6w38jIFYXHWQVQlnTShLnKMBfuhcwBngn2LiaGR_aGkZc50psovx0OEeB69mMhljLxUUrBLMx62dk73Io0Yg8-O9XfKpqDZl4dNxyggPObXQqLKDvHM6ov1G1twy1obzlmwRhcELpvexqbigbCqORTszSzxTaDCVDxCbjxK7geCF_xLzwg1Veb8HAD69a6qmPkOjRy2yXNLxuBfRdbJIYC73hMteqSSMsIKCxIYjRaeh6FJfqogeg0QdJ7P9hZZIe54mynhGbKd95wCioZnrVKb8E5b_IYQxnY_hX57VxP1Uc56pF7JgmQdzahM-cvK7SqpUIDSqFDoOPkgPxg-tdvXKshu-q64CZSVxrYASdfmtAU7jIoJcHPdukT0-k996QXUdBCpkW2H46Cg_MB8gLV25oAPPS2OXf-0IKJsac0IRyys1z_xbAw-w1IokpWL6t4GJNXw0dMSCsGWNPJug2LTLxgh4I3GQKLIxAGABsUgtbvUUHCYaDy2qh2ZsLHkcZeGukDB5En2hPC1neKM2lfFnxrzYothhu4vzVp39R6Afq9dk5AP2Jq3YaeIDYOZUugEdfyo0uBmkuQWjzrpRiaubGakZBmk66SxAidV_EY8GJJfk23Y-UxQgsauC7uD4yk6X4T9mMMfbo9KviNTy7AaM8iWQONTgeXnV0tu22LAG9EVGWuUGKuH4_Vb9DBAjYdyhvQQ0v2XEwLczeotF_qewIgMKZF_e9NBQcoS5WqfCnzW86KitTuN2EIUbARdnCFNGrUmRsQ03N7jcLzi2-99W3RGWsle3w1kb2BW6Ezy9JJLWIxzA2SCrCDWxEXUOnmT1Hs_BxMzCe9VUbkikqzDw7y1QDUlQnS5LDzyx2cHCeMzIq-CKkihQ7eZniZjUvT7t7jLGhj-licrMIUh-mHUWs9YlbPn4WZK9Kd7KB9uLGbEobIIGoGBFwJODMD-gMmFM7j3rc-tttd3YnZNF0Tjwg_ofRQ1KpoCxOaXFbsU8U7dLwiSRZZxDF2qwI3b8VBV3iYW8YpEdOTDPGheOYxGB7HSAhlvs5e0woeGPOFplGMFqFtOZMyzl2T9jj_lyDZxO1I43MXW8OV-CjCoIcgqtpZM_vmEquG830ZiCwMLODsnefKNhpZ3g2yL1iNfO4QOOGsLn4b3ft2iLe2GpFYDnjyaDyao544dQw9j_qA9sAkpj-8g0MQ9taPnTABZgCznRhQ1TzR1JWALCH4Erz7iqkWzcJXa-qZoyyqIueKtiXo78pHn9_ob4hI-ydpTk-Gi4wQcAkaIA6mxjKetHCiIejAuEIKVzxMpf6JQjXOP2RoIg9bkj5a0eRzpbdlAd1cSDu6t_qn3YzqO6KGtBOMWMkQcYmbfv5ntLp2ZvfsQZf20PWO26Owj_CFkfbvlD3SjsrlQg0MT7rh8JD5JmaT5BWxtxKJ0OjcsFf6YQio6ZsiETRIM-ee9Ig1FnkeqZXUsZVB4eWvy-f_HJoVh9SZ4TbwdEDGvn9g0Id4wVAU4h8WVoUi3X42kFq1fODsnCb9t-Oc6NahQbu0vTIxnUTMBDW4QU_Gnpk2vtmxkezGU5b-T8J08h4N44JggGs5HFIg2TSZ51UPIAKMZ9CeqnAt2Gk-i1uWKOEvrAtmp_wj42qiFJeOh61dUzLH-82XJjKtz_w25O4gjeFcxAo1ukizYlvXvjqcuchaI36038DU-WqTXDb3LqxqjUvSzP9nB62RkqBLZh_AjNMDNNo7HwKhAPSxBT2aRTttkw5yMLkBRZGMw1SxGyYHG2mOXqYlVmQPeYmEljPCjD0udJYAyGeE436axF19v1trUPxPmd43QLN8d4AkkNfmXhoTeOSgbIup6aLW60Gfy-vAh9cYMXc2XXHlSgqxK8-IzV4xACdtbfwoNxyOnKqE8XVgqrR6syC3YMH5Sqzdp9Sr_CLCP_fJW8Sn7Phj-xTw_jDPEdi5J_12p25lWi3u0KumuDqWJAnxbuCCpeFnxWW2AERYox1L5OTO2Jduq-oqW5hHO7dyUqxHZ2jRNxEb9MxsDtgHJmGACeJaNqZivOViLk0qUmMq8hYgz0w5cyCXlg8cloxAoz7qM2BEvQdVksdkRwSXxMNpAMwDqKaAqgLx-i_mg3V4vOVpI433ro1K1YGJ8YUfon3pQ7cntZGgnOlAnQYzd7nfCMXDX0XXlCHpLPIMx3cXJJCflCv8wBETJhny2qXOp_o_U12R1_2Xdho8gkjU1SO6z5pb0RGjEB0LEZNo1Td0J0qg0ruoHsb6RSbcAFwREH986XMNwqq2jwboKdEUFsNLV5MG-iihEY5OK64_DbJGnM0DuBImWtiKA028hUmmHpmYQ2maACS2Qj6BxnxZW7EIbkNeygTufsIxgBhaEVrjSFwj0U9ovaBNZCZOU5QM61Yf0S8l_TCyUZ4oYXc2vpqVXmdlakKPfEfqa4ARnLegDFc_QTp85--jlB53jdE6yMaZtsXQSumL3LBgxDKiakhbboFtqtcIsnXX-ksD9sAJ_h4zg079lqJ4lRZUvXMm-UqOo79uOucWQzlohArFdgEr3WWesl5juEkPW-ylNEEBHoStSmX2hFvIsUjRNHHpIHImrOXnyQUBR91f6B_l3HPwrRsYztcs0HrbG8cuz6kOuSgk9cD8wMEh5j_NPxB4ZMZd_47MgDBDlc9faWFXVUdWnWNkr-a1WGfPzpKRGnK5lxgsUaX1El8VDDyO-aXbse94eF6iq0Zh52PYGAEXfH9b21k9JNIBdwKoVjQeeuy0LmKg4uGK_80gk6WUb6FNQ8VDQZtoFMZCIgfFxHC7wEv8QjUM3pL03ollI03Pwgh5qJ2GiRhGszbQvOkS__C2RG7dkKo1-KopiqlntqlQBIrd7W9tcYkXzNKMqld7xB7TYrW_3JRU-vwMgMMBVVd1uO2n7A14_v_3SjC9jqIn2NaRDQtlDypcKixk2JHx5QVvXe0JnD_fNDIDs9Xe-5TYJb0YPsombfShh-zorqOBrj-T4-cQkIXiTHSHBSNcjKMpls8DPMGdQmmWW8MJmx2IMsgFhF0VlGuXyVMoX93LeJSIcK4SXLR35bRKHQY9dYxB7fyFmn4_HOevB983aAImXMJ7QEuFxXzb6AB4nibnqRvSO96LtbCkAC-Bb5Ht-I-c0TjCwrb6c4BgwVg-S05Dyu2rmYvRxVDsLy1FKu9dVaV6C_VY89fQh9Y-C4HL8KgMxLrrpooNrLhf_50TmhzGAFIZxtwNJKHCOHJi7g8eynAtJUEQCxU-2wcpR5DmU5pp7i-yM4t3x5Ee0deNb6eQqBefbbT8RMeICcYlfrEx-1993C1vYuK7RUqW4q4E30gonenvaTJatMKoIYi7NmIL0Ep3CfX3YjPixvE_KT7ZbE_dv0WYXSMpVf_nENJiqAn6hQP3mL5Pr-BIT8jF1RehudtkBRVzQ2dv55NwjXdz6dHzS2W1_tzKgVvJbCTNpx7MaIrbTFBMKKL0WaxDJWrldEGKCRA_clXTTrkqkJwPYGaFGpbiNS_10LbOVF6_YuVJVHGc-rXbLv4HaK_QwCmH_xDYDnpzrGqSVQRU0W3CFFGnryQM_XD7UpcXqhBLY67xSqLUc8nAbq22BPm9ra0qPJv4NvZ4TqSkqPDhhI2m2xsCSK8o_zeAKim9pYTuJa7xe-MrBUw2tPHlH1V4bELW4smmGk1KM15iKe_mnE4a8RfZfL41sIIIDiR9IHJDfwBXRA9NTu16QHNWomn5Zv7RRgjDmCAcWC5NioLWOEDhY3fdHa5sjx57kQqui7cAbjTOrdJ7qevStGYI75r-xd_z8CDK8lPW6TlbjCE18Vj9RXAZx0DVFFz4R5zZ-QXvMO4s-FcoPzKuOT74Tl78gE1HqT4to-_MpKsVK97Gg55BrnGgEtrLlwwQ1dHND7F6AOgneRKtnTI2AcOIdLsBQZOJnWf4qEKTjfa6K4EjBiLof75XLd0jD_riQ8-djrd-NWvrMEVNn-9s5OWIWhGrXld_Tz6aPpfk8LzJfR1koXsRSCjroLFGPZVCx6dP7bp_oFjPdA9esVNtQiIYmxWgqUcZvchKVWYZUxcciU8YDvtev35iIeUu79o9-y-H4jZ-qejojd8MqMvqzXbKNL8at57DpbQSP9DCIEIYX-jGQL1Vtvd91rd7T4_xrXXtkV1e4HjS49BDrzXprVxv-5Skpjqm5gZ-1WPB46FvegSRagCtSY7EemZ-gkRoSCYCF6aN0-xoDXbZUhLhql4gfORl7I8UMsbNqFRoo0YTLAQnFgaf4z5dFFYrlXXqF5uGBS04ZBfsbyWg2n4nhRmmstlJDQTsiz2eDQmJKR3zErcEKuSBZ3ekoucydSeJkWZUKAJrltRtSalKhPhc4hWsdYJA29ywyCURuKs1JJmxSUzCgmVTSD_jpWM46pKNxBe5E_nVZFXxzNxwWtkfhJktjnJ2_NX2Ol-dRRom7MFaVVW5DscKs9YN6LYjCSEicUO5aed1nH6dRcX6bv0mN_uoeiPgTYIFL7drRDI8aoE4q8XABnnjcBIf70pebxLOLir0N_PZxdz0QlBsvMby5yNe5AKojVEZTXCJUPpluzeUgjdtox25zo0VCyVzJNIF7DmEw8YtFpJy7odlLHor4s8m5Ix22Je-BhHdQybCqMFkDyO-itEGvLZjaH0hby9YXT3JfHkywNLikrYDLU8AQQZRhJxXivBTcY88IK7jWXZNM8nJuiJhduxQDl8IuNguSJ2_YJ1r90-7StSl72G3YDTflg_o5R7TJhOw2FerLqdTzcqPq50mY_g-1hw7SW1Ux0MJFIhT9M5E_8V3gE5WAXwckW0XTeBI4ZtDOd_9WsyOpBJW1w_wlx6-cBZkcufc-ewmu1QZlNctNdiH61rPLakcnE1euA2qt4v-SmH9HFkCEL_uer2Zi1PRe9en2lf4pgniUem63ERzJOXcZSDu3X7XYipXGQ5MBt6x-CeB4eiXxyZnuReI7U04oyaI5k2WLBRRxq76SqNB1ZBJwKHTgXqcvxdPZEIF5DjmnnDlkUCjRWJ08g-mE24hmORpMcOUZH7E8IfFY7RJMCsAuuuIfeJXpLLykeJaCs02F2G6idTPXdEXxVB1Q90prrY-4e9bwe67G46-qtmTY4S8TDOKtjppT-lh9qRyEZAf6D0c8PAMxeaJDjZ2-dZTgI_9GA49xTez-b4L5WO6oQXruza60yWUgNznpxN6SQRiOZJlgetdz0dcC-QKbPFVBeTpJO9C1KpWkrFjSZYam7pH1CGAQwjSM4o01TZsvoScsCqiOgzNg4NSHK_nqvIRKdJbyu37yd2GOnHcq-jCYxajqWfXILcGVTDLsENISgft8mek1Er461OWCp6wofvqpVFPp98t4ggrbF3Q19Z5Qs0dmJLCjPQszJFqt-SeuDfV06mHFNj4vW4mQY6QgiWfvhLv7QLeGaVWGsERo6TDY8EGF95lz5RUPotwZ0NJ58bWKaom2DUCORyp-L8QcvbHEOLzNnhFxZSQ4mUZoXXaUecXJaTuuzHPxXnlH_0yV3XvAd-r1yScSoXpufcTOhLksmjXLnIpIufne7P82MTgX1eJpO-75_XRKtWng2PBPzGcS3OHqCi64YQi9L2slOG7Iw__OoVPoVbt1uC3WgbdxqaCIa7s_LKaXbIOAYPai8aAuWTJHXR_oZNc2E5T6jIBD0xflRPzCLSBsAMTE3sixqbHIdQxbt1DNbSsn-XjKzLVDiiJa1J64PZAAgMDwWkN4ShPuvbqBq_0eRrCSCkKAZd8ow5Wu2qtAMj6negSBGiGbSGW2xIS3n3lBHSrfkXUhgnRlsc8j6m8FtfqqTY1VTFKia2xqWCUSC17AWbve6mOGy1PTTAqZ5k5iuS9uyqLTB1D1ctiMqMhp0auoSs17BRDtutU2oGYe-AYYZqTdDZtaXjdsAqSiMocplI1EX7yI4E_H9razSOTGyJo6efVLq2cvPwGk2YGbcTuXks_0mnlE45LEU6aJEYZVUpZL93yOu_q6szZGaK3eIldD6c9OydK-M9rLwsJIEmfeNhL5aWOqKw3eClJHcaIcrjVaA8-2GYZWmpp169CHgG3y6QkaRRKBBELUqdairfs2fGFZnIXLQTqRKT7USqA6clBWzDyIgiDcoRGMr2ttDpsy-mGafSASlLXyTELy0aC97vdPVQc8l1zFpzBdIZKPljLfYNUHxH2P7uWOKpQKL9ayIWdrp6kSL_4RSFhzQKyrhG-p4zUJsHeglIJlS9OErVUv-ZDnQuGQDUDUiOfgI56QZ9QfvnfwB0rNOk4Yy0l_-VuqS6Uf8VNaz8SWU1Qlhv90Jqg0bXQ1wfGeierQwE217b3z4jcWkBUyS9iqEiHKRB9ePDYN3I2XoD-yycoYN2U3vPSkFnmmrmABAzJnuOgeI9_BRVjGgY-mAMnUPabjnJZzLJL-ihg6wWG8IGEqTsLYtYOrmBIyRuGbjlY04amaggAsKk-Y-bf_ciMZrgmRQQWnIqfWi91vVc0zUL5M36EgYbRWuR-sq95U3b9Dbp5lnaQWbSUmws3aozM9_qbtA_TQ8PrqhzKNP4jMhFsi"
+   },
+   {
+    "id": "msg_004e5213b42faae7016ae304b87dc887d1aed48efe8a95cfcd",
+    "content": [
+     {
+      "annotations": [],
+      "text": "{\"segments\":[{\"start\":0.53,\"end\":1.62,\"text\":\"It's awkward.\"}],\"confidence\":\"low\",\"notes\":\"The handshapes and twisting movement appear to indicate awkwardness, but the brief signing is ambiguous.\"}",
+      "type": "output_text",
+      "logprobs": []
+     }
+    ],
+    "role": "assistant",
+    "status": "completed",
+    "type": "message",
+    "phase": "final_answer"
+   }
+  ],
+  "parallel_tool_calls": true,
+  "temperature": 1.0,
+  "tool_choice": "auto",
+  "tools": [],
+  "top_p": 0.98,
+  "background": false,
+  "completed_at": 1793262777.0,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+   "context": "all_turns",
+   "effort": "medium",
+   "mode": "standard"
+  },
+  "service_tier": "default",
+  "status": "completed",
+  "text": {
+   "format": {
+    "type": "json_object"
+   },
+   "verbosity": "medium"
+  },
+  "tool_usage": {
+   "image_gen": {
+    "input_tokens": 0,
+    "input_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    },
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "output_tokens_details": {
+     "image_tokens": 0,
+     "text_tokens": 0
+    }
+   },
+   "web_search": {
+    "num_requests": 0
+   }
+  },
+  "top_logprobs": 0,
+  "truncation": "disabled",
+  "usage": {
+   "input_tokens": 4559,
+   "input_tokens_details": {
+    "cache_write_tokens": 4556,
+    "cached_tokens": 0
+   },
+   "output_tokens": 538,
+   "output_tokens_details": {
+    "reasoning_tokens": 479
+   },
+   "total_tokens": 5097
+  },
+  "billing": {
+   "payer": "developer"
+  },
+  "frequency_penalty": 0.0,
+  "presence_penalty": 0.0,
+  "store": false
+ }
+}
