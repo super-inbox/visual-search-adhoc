@@ -4,6 +4,59 @@
 >
 > [Research summary — 2026-10-20 (PDF)](asl-research-retrospective-2026-10-20.pdf). The PDF is a dated snapshot; maintain this Markdown index for future updates.
 
+## 当前进展与 P0 — 2026-10-30
+
+本节是当前决策入口，取代下方历史快照中的“current”、待办顺序和状态判断；历史实验记录保留用于追溯。依据 baobao 的 **2026-10-29 NEXT_P0** 提交 `b084709` 更新。这里整理已保存的实验结果，没有重跑模型，也没有修改或部署生产代码。
+
+**当前判断：内部可执行的本轮研究实验已收尾，但还没有验证新的翻译质量提升，也没有证据支持更换 production Gemini 或启动更大规模 Fusion 训练。** 剩余核心研究 blocker 是独立、盲态的人工 ASL 标签；生产 R03 的可靠性修复仍是可并行推进的工程 P0。
+
+### 最新证据与决策
+
+| 工作 | 已完成与证据 | 当前决策 / 尚未完成 |
+|---|---|---|
+| **P0-1：手部 RGB / 拼写 Stage A** | OpenFS 关键点基线和 HandReader_RGB 已冻结；RGB checkpoint 严格加载、合成输入 CPU forward 通过；36 个 blind clips 和标注页已准备 | **PREPARATION COMPLETE / EVALUATION BLOCKED**。没有在这 36 例上运行识别器，没有 CER 或完整词准确率；RGB 是否有收益未知 |
+| **P0-2：OpenAI 同输入对照** | 24 clips、656 个相同 JPEG 帧、各 29 次调用；`gpt-6.1-sol` vs `gemini-2.5-flash`，chrF **1.36 vs 13.21**；OpenAI 15/24 返回 no_signing，Gemini 0/24；句级 chrF 胜/负/平为 **1/22/1** | **C / PAUSE**。不继续 Round 2，也不在该子集调 prompt。仅约束此次模型、提示与设置，不泛化成 OpenAI 不会 ASL，也不证明 Gemini 语义正确 |
+| **P0-3：条件防重复** | 冻结 trigger 命中 9/45；其余 36 条逐字节不变。循环 **9→0**，chrF **23.76→24.93**；但 9 条中的 **7 条改动循环开始前的内容**，R42/R20/R01 分数下降 | **KEEP trigger / STOP 当前再生成方法**。trigger 仅保留作研究检测候选，尚无独立泛化验证；不部署当前 `no_repeat_ngram_size=3` 修复 |
+| **R03 部分转录丢失** | 保存响应经真实生产代码路径离线重放：2 个 batch 中 1 个 JSON 格式错误，24/30 帧输入对应结果被丢弃，却返回完整成功；PARTIAL＋仅失败 batch 重试的参考策略通过 14 个离线 fixtures | **诊断与参考策略完成，生产修复未实施**。本轮 45 例既有 chrF 9.27 不变，不把预计重试收益当实测 |
+| **5 条输入溯源** | R26 A、R28 A、R35 A、R42 A、R32 B 新增 AI 视觉时间锚点支持 | 自动状态仍 **UNRESOLVED**；不是人工验证。4 条 A 的原始 crop-box 位置仍未知；不能将补充证据写成溯源全部通过 |
+
+P0-2 的子集在 45 例开发集之外，但每条已有研究暴露，**不是干净 holdout**。输入、窗口、JPEG 字节和 batch 边界在两家 API 间匹配；Uni-Sign 仅供非匹配输入的方向性参考。OpenAI/Gemini 中位延迟分别为 22.9/11.2 秒，估算 benchmark 调用成本约 $0.45/$0.22。失败和弃答均保留在分母；弃答的谨慎程度和实际语义正确性尚未盲评。
+
+P0-3 是复用已保存 treatment 的描述性分析，没有新 decode。自动指标上涨尚不构成语义质量提升；条件触发消除了未命中输出的误伤，但没有解决触发后整句重解码的副作用。
+
+### P0 执行顺序
+
+1. **研究 P0：取得 36 条 blind human ASL labels，解锁 Stage A。** 请 ASL-fluent reviewer 在不看 reference、模型输出、目标字母或筛选层级的条件下标注：是否有 fingerspelling、区间起止秒、实际字母（不可读用 `?`）、置信度、使用手及遮挡。允许 no / uncertain，不强迫猜测。最低 G0：至少 **12 个 high/medium confidence、带字母的正例 spans＋8 个负例**。不足时按冻结顺序每批补 8 clips（6 个按 screen 分数，2 个按 hash），不能挑模型成功例补样本。
+2. **工程 P0，可与标注并行：落实 R03 PARTIAL 状态和有界失败 batch 重试。** 已完成的仅是离线参考策略。实际修复需覆盖后端结果完整性、前端/管理端部分失败展示与失败追踪；有失败 batch 时不能标为完整 success。参考上限是每 batch 重试 1 次、每视频最多 2 次，quota/spend-cap 错误不重试。上线前验证实际集成、成本与状态流转。该事项是下一步建议，本次未改生产代码。
+3. **标签通过 G0 后：运行冻结的 OpenFS vs HandReader_RGB 已知区间对照。** Primary decoder 固定 CTC beam 5、无语言模型；greedy 仅诊断。分别报告 CER、完整词准确率、弃答、负例误报、源视频聚类 bootstrap 与误伤；遵守已注册阈值，不看结果后改 gate。
+
+Stage A 的预注册收益要求包括：RGB CER 至少比关键点低 **0.10**，配对 per-span ΔCER 的聚类置信区间上界 < 0；词准确率不降；负例误报不超过基线 +0.10；去掉两个最大收益 spans 后仍有优势，且 wins ≥ 1.5 × losses。另有可读性门槛：较好识别器 **CER ≤0.35 且完整词准确率 ≥0.30**。已知区间仍读不对，就优先改识别器，暂停自动定位 Stage B 和融合 Stage C；不要用模型生成标签替代这项判断。
+
+**当前不安排：** 重跑已存在的大规模 Gemini/Uni-Sign 基线、扩大当前 OpenAI 配置、当前防重复再生成、继续调采样/旧候选重排、无前置信号的 Fusion 训练。已有大规模基线应复用；新策略通过开发门槛并冻结后，才进入未用于调参数据的增量确认。36 例是启发式富集的诊断样本，不代表总体分布，也不自动构成干净 holdout。
+
+### 标注包交接与证据边界
+
+- **36 clips：FSA-001…FSA-036**。完整 `send_step1_blind/` 或 zip 约 42 MB，位于报告作者的本地 package，**视频与 zip 未提交 Git**；GitHub 中有 builder 和 reviewer-facing 文本。转发报告链接不等于 reviewer 已收到可播放的完整包。由 baobao 提供完整 blind 包，避免混入 team-only mapping。
+- 报告记录了标注页导出/导入 round trip 和全部视频 ffmpeg 解码通过，但**没有验证浏览器内视频播放**。交付前应做实际播放检查；本次未重新构建或独立复验视频包。
+- HandReader_RGB 只证明技术上可运行；MediaPipe 手部 crop 与训练 crop 来源不同，失败时需区分 crop 域偏移与 RGB 本身无效。代码许可不等于 checkpoint/数据许可，商业化另行确认。
+- AI 时间锚点只有一个 AI judge：R28/R42 完全盲，R26/R35/R32 曾见时间信息，R26 曾偶然见 reference；不升级为 human-verified。只有需要更强源时间结论时再安排独立复核，不阻塞所有其他研究。
+
+### 当前来源
+
+- [NEXT_P0 总报告（10/29）](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-29/ASL_NEXT_P0_WORK_REPORT.md)
+- [OpenAI vs Gemini 详细结果](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-29/P0_2_OPENAI_VS_GEMINI_ROUND1_RESULT.md)
+- [条件防重复结果](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-28/P0_3_CONDITIONAL_ANTI_REPEAT_RESULT.md)
+- [Stage A 预注册与评分门槛](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-29/P0_1_STAGE_A_PREPARATION.md)
+- [36 条标注包与 HandReader_RGB 技术验证](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-29/P0_1_STAGE_A_REVIEWER_PACKAGE_AND_RGB_FEASIBILITY.md)
+- [R03 离线回归与修复提案](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-28/R03_PARTIAL_TRANSCRIPTION_REGRESSION.md)
+- [5 条输入的 AI 时间锚点补充证据](https://github.com/super-inbox/visual-search-adhoc/blob/b084709236bc78ae12939138c1fcfa72f549d1f0/asl-translator/daily_report/2026-10-28/UNRESOLVED_SOURCE_POSITION_VERIFICATION.md)
+
+以下保留历史研究记录；其中 dated current、未测、许可和待办措辞只代表当时状态。当前 P0 以上节为准。所有新来源链接固定到 `b084709`，不要求读者切换本地研究分支。
+
+---
+
+## 历史更新记录（截至 2026-10-16）
+
 > **Entry point for everything ASL.** Read this before opening any other ASL file,
 > quoting a result, or touching `asl_utils.py` / `asl_pipeline.py`.
 > **Revised 2026-10-16 — current research entry point: §18.** Reviewed Baobao's branch
@@ -98,7 +151,7 @@
 
 ---
 
-## 0. Answer in one screen
+## 0. Historical answer in one screen — 2026-10-16
 
 **Current decision (2026-10-16):** retain the production-default decision; no new
 production-quality evidence justifies switching. Uni-Sign remains the strongest
